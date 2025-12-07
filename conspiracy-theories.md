@@ -1,6 +1,7 @@
 Delta = number of years from genesis to definitive revelation/confirmation.
 ## Exposed Theorized Conspiracies
 Widely suspected, officially denied, but later confirmed.
+
 | **Genesis** | **Revelation** | **Delta** | **Secret**                                                                 |
 | 1931        | 1932           | 1         | [](): Japan's false flag pretext for invading Manchuria |
 | 1933        | 1960           | 27        | [](): Nazi false flag                                    |
@@ -25,8 +26,10 @@ Widely suspected, officially denied, but later confirmed.
 | 1977        | 2002           | 25        | [North Korean abductions of Japanese citizens](wp>North_Korean_abductions_of_Japanese_citizens) |
 | 1991        | 1998           | 7         | [Bill Clinton sexual harrassment](wp>Bill_Clinton_sexual_assault_and_misconduct_allegations) |
 | 1999        | 2006           | 7         | [Russian apartment bombings](wp>1999_Russian_apartment_bombings): false flag for war with Chechnya |
+
 ## Exposed Untheorized Conspiracies
 Not widely suspected beforehand but later exposed.
+
 | **Genesis** | **Revelation** | **Delta** | **Secret**                                                                 |
 | 1865    | 1865       | 0     | [Lincoln assassination conspiracy](wp>Assassination_of_Abraham_Lincoln) |
 | 1921    | 1922       | 1     | [Teapot Dome corruption](wp>Teapot_Dome_scandal)                        |
