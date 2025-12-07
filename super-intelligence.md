@@ -118,7 +118,7 @@ Dimensions of improvement available to AGI that are not available to humans:
   * Super-beauty:Helen::Helen:ogre
 * Brooks's Law (Mythical Man Month), transaction/search costs, N² comms/coordination, Local Knowledge Problem, path dependence, diminishing returns, bottlenecks, scaling limits
 
-# Notes
+## Notes
   * A hint that individual intelligence has diminishing returns is that our advances come far more from minds cooperating than from individual brilliance. Human organizations and societies are far more capable than the most brilliant humans, and yet organizations do not recognizably possess the standard capabilities of intelligence.
   * The "capabilities" list above constitutes a report card for Artificial General Intelligence. Any claim that a particular AI system is a step toward AGI needs to include an explanation of how the system would mutually leverage these capacities. Nearly all narrow AI systems are not poised to mutually leverage any of these capacities. Such systems are essentially just tools that can extend a narrow ability of a general intelligence -- like night-vision goggles.
   * Crude analogies: super-intelligence is to human as human is to: ants, chimps, children
