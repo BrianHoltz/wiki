@@ -1,7 +1,8 @@
+# Alien Impacts
+
 Many UFOlogists posit that the U.S. government has since at least 1947 had access to alien technology. They sometimes even claim that aliens have been assisting government scientists and engineers. Is there evidence of such access or assistance in the postwar history of human science and technology?
 
-## Science
-### Physics and Cosmology
+## Physics and Cosmology
 The Big Bang's Cosmic Microwave Background Radiation was discovered accidentally only in 1965, by radio astronomers who first suspected the signal was due to pigeon shit on their antenna.
 
 Quantum Chromodynamics was developed gradually in the decade leading up to the mid-1960s, as particle detectors were steadily improved and generated observations of more and more esoteric particles.
@@ -16,7 +17,7 @@ The necessary existence of dark matter was not confirmed until 1980, and the nat
 
 extra-solar planets, accelerating expansion (dark energy), gamma ray bursters, solar neutrino problem, curvature of universe, quantum gravity, baryon asymmetry
 
-### Computer Science
+## Computer Science
 
 Monte Carlo, Simplex, Quicksort, Packet Switching, Heapsort, B-tree, Bloom filter, Public-Key Crypto, Blockchain, Fast Fourier Transforms, Neural Networks, Fast Mulitpole, compression
 

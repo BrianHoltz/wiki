@@ -79,7 +79,7 @@ Dimensions of improvement available to AGI that are not available to humans:
 
 ## Yudkowski IABIED
 
-"If ASI Suddenly Appears, Everyone Dies". UFO Disclosure and ASI Doom will be perpetually imminent. Believers will still be clinging to their unfalsifiable theories decades from now on their deathbeds. 
+"If ASI Suddenly Appears, Everyone Dies". UFO Disclosure and ASI Doom will be perpetually imminent. Believers will still be clinging to their unfalsifiable theories decades from now on their deathbeds.
 
 * Positives
   * Good movie script
@@ -155,7 +155,7 @@ Dimensions of improvement available to AGI that are not available to humans:
     * capital accumulation?
     * shelling out
     * specialization
-  * Society Of Mind: []()
+  * Society Of Mind: [Marvin Minsky's theory](https://en.wikipedia.org/wiki/Society_of_Mind)
   * Cyc
   * SOAR
   * Programming languages, IDEs, CAD, machine tools, manufacturing robots, Wikipedia
@@ -172,8 +172,8 @@ Dimensions of improvement available to AGI that are not available to humans:
       * Add an entirely novel category of major functionality e.g., rigorously applying complex human-readable business rules
       * Resolve all the TODO comments
       * Refactor all significant code duplication
- 
-It's similarly invalid to analogize the gap between super-intelligence and human intelligence to the gap between humans and some dumber species, be it chimp or ant or bacterium. Such naive analogies assume intelligence is an open-ended scalar capacity, like speed or strength or longevity. The analogy leans heavily on the (dumb?) notion that a dumber entity can't fathom the notion of a 
+
+It's similarly invalid to analogize the gap between super-intelligence and human intelligence to the gap between humans and some dumber species, be it chimp or ant or bacterium. Such naive analogies assume intelligence is an open-ended scalar capacity, like speed or strength or longevity. The analogy leans heavily on the (dumb?) notion that a dumber entity can't fathom the notion of a
 
 since an ant or chimp can't fathom having human-level intelligence, therefore humans must not be able to fathom having super-human intelligence.
 
@@ -185,7 +185,7 @@ Saturation: toxicity, visual acuity, height, camouflage, healing, invulnerabilit
 
 Saturation: algorithmic, computational, domain (tic tac toe), information-theoretic
 
-Such analogies assume intelligence is an open-ended scalar, like 
+Such analogies assume intelligence is an open-ended scalar, like
 
 altitude, latitude, temperature
 
@@ -201,6 +201,6 @@ But assumptions are no more privileged than an analogy to a quantity that has a 
 
 
 
-A better analogy would be to scales with definitions that are more subtle, while still being objectively defined, such as hardness, loudness, or sharpness. 
+A better analogy would be to scales with definitions that are more subtle, while still being objectively defined, such as hardness, loudness, or sharpness.
 
 Critique claim that human intelligence would be much higher without skull birth canal limit.
