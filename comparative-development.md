@@ -2,9 +2,8 @@
 
 ## National IQs Are Valid
 
-* 2025 5k wds by “Cremieux” (Substack, pseudonymous author)
+* 2025: 0 cite/yr, 10pp by “Cremieux” (Substack, pseudonymous author)
 * https://www.cremieux.xyz/p/national-iqs-are-valid
-* Influence: Cit≈0; Cit/yr≈0
 * Summary:
     * Argues that national IQ estimates, despite sampling noise, capture a real cross-national cognitive factor predictive of education outcomes and GDP.
     * Shows convergent validity across Lynn & Vanhanen, Becker, Rindermann, PISA, and TIMSS.
@@ -14,9 +13,8 @@
 
 ## The Demise of the Flynn Effect
 
-* 2025 5k wds by “Cremieux” (Substack)
+* 2025: 0 cite/yr, 10pp by “Cremieux” (Substack)
 * https://www.cremieux.xyz/p/the-demise-of-the-flynn-effect
-* Influence: Cit≈0; Cit/yr≈0
 * Summary:
     * Reviews evidence that the Flynn Effect has stalled or reversed in wealthy nations.
     * Notes heterogeneity across subtests and the influence of demographic and test-norm changes.
@@ -25,9 +23,8 @@
 
 ## Race, Genes, Evolution, and IQ: The Key Datasets and Arguments
 
-* 2025 6k wds by Brian R. Johnson (UC Davis), Sam Trejo (Univ. of Wisconsin–Madison), and Marissa E. Thompson (Columbia University)
+* 2025: 0 cite/yr, 12pp by Brian R. Johnson (UC Davis), Sam Trejo (Univ. of Wisconsin–Madison), and Marissa E. Thompson (Columbia University)
 * https://www.preprints.org/manuscript/202501.0379
-* Influence: Cit≈0; Cit/yr≈0
 * Summary:
     * Reviews hereditarian datasets: transracial adoption, admixture studies, polygenic scores, national IQs, and international assessments.
     * Shows adoption data suffer from small samples, attrition, and nonrepresentative family environments.
@@ -38,9 +35,8 @@
 
 ## The Intelligence of Nations: National IQs and Correlates
 
-* 2024 9pp by Ronald Henss (independent psychologist; formerly University of Saarland)
+* 2024: 7 cite/yr, 9pp by Ronald Henss (independent psychologist; formerly University of Saarland)
 * https://www.researchgate.net/publication/380384466
-* Influence: Cit≈20; Cit/yr≈7
 * Summary:
     * Reviews Lynn–Vanhanen, Becker, and Rindermann datasets.
     * Finds strong correlations among national IQ estimates and international assessments.
@@ -50,9 +46,8 @@
 
 ## The Nature of Social Mobility
 
-* 2024 312pp by Gregory Clark (economic historian; UC Davis)
+* 2024: 10 cite/yr, 312pp by Gregory Clark (economic historian; UC Davis)
 * https://www.gwern.net/docs/sociology/2024-clark-thenatureofsocialmobility.pdf
-* Influence: Cit≈30; Cit/yr≈10
 * Summary:
     * Argues that social mobility is remarkably stable across time, place, and institutional regimes.
     * Uses surnames to track long-run social persistence, finding high underlying heritability of status.
@@ -61,9 +56,8 @@
 
 ## The Economics of Reparations
 
-* 2023 ~25pp by Tyler Cowen (economist; George Mason University, Mercatus Center)
+* 2023: 15 cite/yr, ~25pp by Tyler Cowen (economist; George Mason University, Mercatus Center)
 * https://www.mercatus.org/research/policy-briefs/economics-reparations
-* Influence: Cit≈50; Cit/yr≈15
 * Summary:
     * Analyzes proposed reparations policies using cost–benefit frameworks, political economy constraints, and macroeconomic feasibility.
     * Argues that large-scale cash transfers face severe implementation, fiscal, and legitimacy challenges.
@@ -73,9 +67,8 @@
 
 ## The Deep Roots of Intelligence Differences
 
-* 2023 5k wds by “Cremieux” (Substack)
+* 2023: 2 cite/yr, 10pp by “Cremieux” (Substack)
 * https://www.cremieux.xyz/p/the-deep-roots-of-intelligence-differences
-* Influence: Cit≈5; Cit/yr≈2
 * Summary:
     * Explores deep historical drivers of cognitive differences such as early agriculture, disease burden, literacy traditions, and state capacity.
     * Describes long-run institutional and cultural persistence shaping human-capital accumulation.
@@ -84,9 +77,8 @@
 
 ## For Whom the Bell Curve Tolls
 
-* 2023 80pp by Gregory Clark (economic historian; UC Davis)
+* 2023: 15 cite/yr, 80pp by Gregory Clark (economic historian; UC Davis)
 * https://www.gwern.net/docs/iq/2023-clark-forwhomthebellcurvetolls.pdf
-* Influence: Cit≈40; Cit/yr≈15
 * Summary:
     * Responds to critiques of The Bell Curve using surname-based evidence on social mobility.
     * Argues that underlying social competence is strongly inherited and stable over centuries.
@@ -95,9 +87,8 @@
 
 ## The Scope of Racial Disparities in Test Scores in the United States
 
-* 2022 20k wds by “Jay M.” (Reason Without Restraint)
+* 2022: 7 cite/yr, 40pp by “Jay M.” (Reason Without Restraint)
 * https://reasonwithoutrestraint.com/the-scope-of-racial-disparities-in-test-scores-in-the-united-states/
-* Influence: Cit≈20; Cit/yr≈7
 * Summary:
     * Compiles test-score disparities across NAEP, SAT, ACT, AP exams, and state-level accountability tests.
     * Documents consistent gaps across grades, subjects, and time.
@@ -107,9 +98,8 @@
 
 ## 'National IQ' Datasets Do Not Provide Accurate, Unbiased, or Comparable Measures of Cognitive Ability Worldwide
 
-* 2022 20k wds by Rebecca Sear (Professor of Psychology, Brunel University London)
+* 2022: 33 cite/yr, 40pp by Rebecca Sear (Professor of Psychology, Brunel University London)
 * https://www.researchgate.net/publication/360665701_%27National-IQ%27-datasets-do-not-provide-accurate-unbiased-or-comparable-measures-of-cognitive-ability-worldwide
-* Influence: Cit≈100; Cit/yr≈33
 * Summary:
     * Reviews over 100 studies feeding into national IQ estimates.
     * Identifies pervasive sampling bias, especially in low-income regions (elite schools, atypical subsamples).
@@ -120,10 +110,8 @@
 
 ## Black Economic Progress After Slavery
 
-* 2022 ~10k wds by “Cremieux” (Substack, pseudonymous author)
+* 2022: 0 cite/yr, 20pp by “Cremieux” (Substack, pseudonymous author)
 * https://www.cremieux.xyz/p/black-economic-progress-after-slavery
-* Influence: Cit≈[0](https:*scholar.google.com/scholar?q=%22Black+Economic+Progress+After+Slavery%22); Cit/yr≈[0](https:*scholar.google.com/scholar?q=%22Black+Economic+Progress+After+Slavery%22)
-
 * Summary:
     * Analyzes Althoff & Reichardt’s “Jim Crow and Black Economic Progress After Slavery” using linked census and administrative data from 1850–2000.
     * Highlights that descendants of enslaved Black families show substantial convergence toward descendants of pre-war freedmen in education, income, and homeownership, especially once geography is controlled.
@@ -133,9 +121,8 @@
 
 ## Myths and Misconceptions about Intelligence: A Study of 35 Myths
 
-* 2021 6pp by Adrian Furnham (BI Norwegian Business School; UCL emeritus) and George Horne (Seeds of Science)
+* 2021: 30 cite/yr, 6pp by Adrian Furnham (BI Norwegian Business School; UCL emeritus) and George Horne (Seeds of Science)
 * https://gwern.net/doc/iq/2021-furnham.pdf
-* Influence: Cit≈150; Cit/yr≈30
 * Summary:
     * Presents 35 common misconceptions about intelligence research.
     * Clarifies predictive validity of IQ tests for academic and occupational outcomes.
@@ -145,9 +132,8 @@
 
 ## The Dawn of Everything: A New History of Humanity
 
-* 2021 704pp by David Graeber (anthropologist; LSE & Yale) and David Wengrow (archaeologist; University College London)
+* 2021: 400 cite/yr, 704pp by David Graeber (anthropologist; LSE & Yale) and David Wengrow (archaeologist; University College London)
 * https://en.wikipedia.org/wiki/The_Dawn_of_Everything
-* Influence: Cit≈2K; Cit/yr≈400
 * Summary:
     * Argues that human societies before agriculture and states were far more diverse, experimental, and politically creative than standard linear models suggest.
     * Challenges the idea that hierarchy and inequality naturally emerge from population growth or agricultural intensification.
@@ -156,9 +142,8 @@
 
 ## The Genetic Lottery: Why DNA Matters for Social Equality
 
-* 2021 400pp by Kathryn Paige Harden (behavioral geneticist, University of Texas at Austin)
+* 2021: 200 cite/yr, 400pp by Kathryn Paige Harden (behavioral geneticist, University of Texas at Austin)
 * https://en.wikipedia.org/wiki/The_Genetic_Lottery
-* Influence: Cit≈1K; Cit/yr≈200
 * Summary:
     * Argues genetics influences life outcomes but should motivate egalitarian policy, not hierarchy.
     * Defends polygenic methods while rejecting hereditarian claims about group differences.
@@ -166,9 +151,8 @@
 
 ## Labor Econ Versus the World: Essays on the World’s Greatest Market
 
-* 2020 564pp by Bryan Caplan (economist; George Mason University)
+* 2020: 30 cite/yr, 564pp by Bryan Caplan (economist; George Mason University)
 * https://www.amazon.com/Labor-Econ-versus-World-Greatest/dp/0990463174
-* Influence: Cit≈200; Cit/yr≈30
 * Summary:
     * Collects Caplan’s major essays on labor markets, human capital, signaling, immigration, wages, monopsony, and labor regulation.
     * Argues that most popular beliefs about labor markets are systematically wrong, emphasizing the predictive success of standard competitive labor-economics models.
@@ -178,9 +162,8 @@
 
 ## Bourgeois Dignity: Why Economics Can’t Explain the Modern World
 
-* 2010 592pp by Deirdre N. McCloskey (economic historian; University of Illinois at Chicago)
+* 2010: 250 cite/yr, 592pp by Deirdre N. McCloskey (economic historian; University of Illinois at Chicago)
 * https://en.wikipedia.org/wiki/Deirdre_McCloskey#The_Bourgeois_Era_trilogy
-* Influence: Cit≈4K; Cit/yr≈250
 * Summary:
     * Argues that neither capital accumulation, exploitation, property rights, nor geography adequately explain the Industrial Revolution.
     * Proposes that a cultural shift toward dignity and liberty for innovators (“bourgeois rhetoric”) produced modern economic growth.
@@ -190,9 +173,8 @@
 
 ## From Here to Equality: Reparations for Black Americans in the Twenty-First Century
 
-* 2020 424pp by William A. Darity Jr. (economist; Duke University) and A. Kirsten Mullen (independent scholar)
+* 2020: 150 cite/yr, 424pp by William A. Darity Jr. (economist; Duke University) and A. Kirsten Mullen (independent scholar)
 * https://en.wikipedia.org/wiki/From_Here_to_Equality
-* Influence: Cit≈1K; Cit/yr≈150
 * Summary:
     * Establishes the leading economic case for Black American reparations.
     * Argues that reparations should close the racial wealth gap, requiring large-scale financial transfers.
@@ -201,9 +183,8 @@
 
 ## Racial/Ethnic Group IQ Differences Are Completely Environmental in Origin
 
-* 2020 17pp by Russell T. Warne (quantitative psychologist; formerly Utah Valley University)
+* 2020: 25 cite/yr, 17pp by Russell T. Warne (quantitative psychologist; formerly Utah Valley University)
 * https://www.cambridge.org/core/books/abs/in-the-know/racialethnic-group-iq-differences-are-completely-environmental-in-origin/629C14E1004936C57232FB09739CD9E5
-* Influence: Cit≈150; Cit/yr≈25
 * Summary:
     * The chapter title is phrased as a myth; Warne argues the statement is false.
     * Reviews 50+ years of IQ data across U.S. racial and ethnic groups.
@@ -214,9 +195,8 @@
 
 ## The Hidden Half: How the World Conceals Its Secrets
 
-* 2020 400pp by Michael Blastland & David Spiegelhalter (Winton Centre for Risk & Evidence Communication, University of Cambridge)
+* 2020: 80 cite/yr, 400pp by Michael Blastland & David Spiegelhalter (Winton Centre for Risk & Evidence Communication, University of Cambridge)
 * https://en.wikipedia.org/wiki/Michael_Blastland
-* Influence: Cit≈500; Cit/yr≈80
 * Summary:
     * Argues that complex social outcomes hide vast unmeasured causal structure.
     * Presents case studies showing why prediction and causal inference often fail.
@@ -224,9 +204,8 @@
 
 ## Against the Grain: A Deep History of the Earliest States
 
-* 2017 312pp by James C. Scott (political scientist & anthropologist; Yale University)
+* 2017: 300 cite/yr, 312pp by James C. Scott (political scientist & anthropologist; Yale University)
 * https://en.wikipedia.org/wiki/James_C._Scott#Against_the_Grain
-* Influence: Cit≈3K; Cit/yr≈300
 * Summary:
     * Reinterprets the origins of agriculture and the earliest states as coercive, fragile, and frequently resisted.
     * Argues that grain agriculture spread primarily because it facilitated taxation and state control.
@@ -235,9 +214,8 @@
 
 ## Reparations for Slavery and the Slave Trade: A Moral and Legal Case?
 
-* 2015 21pp by Thomas Craemer (political scientist; University of Connecticut)
+* 2015: 30 cite/yr, 21pp by Thomas Craemer (political scientist; University of Connecticut)
 * https://www.cambridge.org/core/journals/du-bois-review/article/abs/reparations-for-slavery-and-the-slave-trade-a-moral-and-legal-case/29C3EAD022BC0F908DFDFEFEDDFA18B1
-* Influence: Cit≈400; Cit/yr≈30
 * Summary:
     * Provides rigorous quantitative estimates for the economic value of uncompensated labor under slavery.
     * Influential in contemporary reparations modeling and public policy design.
@@ -246,9 +224,8 @@
 
 ## Hive Mind: How Your Nation’s IQ Matters So Much More Than Your Own
 
-* 2015 320pp by Garett Jones (economist; George Mason University, Mercatus Center)
+* 2015: 10 cite/yr, 320pp by Garett Jones (economist; George Mason University, Mercatus Center)
 * https://en.wikipedia.org/wiki/Hive_Mind_(book)
-* Influence: Cit≈100; Cit/yr≈10
 * Summary:
     * Argues that average national cognitive ability has large, society-wide externalities for institutions, productivity, trust, and long-run development.
     * Uses cross-country data to show that higher average IQ predicts better governance, stronger markets, and greater social coordination.
@@ -257,9 +234,8 @@
 
 ## The Son Also Rises: Surnames and the History of Social Mobility
 
-* 2014 384pp by Gregory Clark (economic historian; UC Davis)
+* 2014: 200 cite/yr, 384pp by Gregory Clark (economic historian; UC Davis)
 * https://en.wikipedia.org/wiki/The_Son_Also_Rises
-* Influence: Cit≈3K; Cit/yr≈200
 * Summary:
     * Uses surname persistence to track long-run social mobility across centuries.
     * Finds much higher persistence of status than traditional measures suggest.
@@ -267,9 +243,8 @@
 
 ## Compensation, Reparations, and Intergenerational Justice
 
-* 2007 24pp by John E. Roemer (economist & political philosopher; Yale University)
+* 2007: 20 cite/yr, 24pp by John E. Roemer (economist & political philosopher; Yale University)
 * https://www.jstor.org/stable/20447039
-* Influence: Cit≈300; Cit/yr≈20
 * Summary:
     * Develops a formal framework for understanding intergenerational responsibility and compensation.
     * Influential in the philosophical foundations of reparations policy.
@@ -277,9 +252,8 @@
 
 ## A Farewell to Alms: A Brief Economic History of the World
 
-* 2007 420pp by Gregory Clark (economic historian; UC Davis)
+* 2007: 200 cite/yr, 420pp by Gregory Clark (economic historian; UC Davis)
 * https://en.wikipedia.org/wiki/A_Farewell_to_Alms
-* Influence: Cit≈3K; Cit/yr≈200
 * Summary:
     * Claims Malthusian pressures selected for behaviors conducive to economic growth in preindustrial England.
     * Argues industrialization reflects long-run demographic and cultural evolution rather than sudden institutional change.
@@ -288,9 +262,8 @@
 
 ## Empire: How Britain Made the Modern World
 
-* 2003 464pp by Niall Ferguson (Historian; Hoover Institution, Stanford University)
+* 2003: 100 cite/yr, 464pp by Niall Ferguson (Historian; Hoover Institution, Stanford University)
 * https://en.wikipedia.org/wiki/Empire_(book)
-* Influence: Cit≈3K; Cit/yr≈100
 * Summary:
     * Argues that the British Empire spread institutions foundational to global modernization.
     * Highlights rule of law, finance, governance, and trade networks.
@@ -298,9 +271,8 @@
 
 ## The Colonial Origins of Comparative Development
 
-* 2001 34pp by Daron Acemoglu🅒, Simon Johnson, and James A. Robinson (Economists; MIT / MIT Sloan / University of Chicago across careers)
+* 2001: 1000 cite/yr, 34pp by Daron Acemoglu🅒, Simon Johnson, and James A. Robinson (Economists; MIT / MIT Sloan / University of Chicago across careers)
 * https://economics.mit.edu/sites/default/files/publications/colonial-origins-of-comparative-development.pdf
-* Influence: Cit≈20K; Cit/yr≈1K
 * Summary:
     * Shows historically higher settler mortality led Europeans to install extractive institutions in many colonies.
     * Low-mortality regions received inclusive institutions with property rights and constraints on elites.
@@ -310,9 +282,8 @@
 
 ## Why I Am Not an Egalitarian
 
-* 2000 ~15pp by Bryan Caplan (economist; George Mason University)
+* 2000: 7 cite/yr, ~15pp by Bryan Caplan (economist; George Mason University)
 * https://www.econlib.org/library/Columns/y2001Caplanegalitarian.html
-* Influence: Cit≈200; Cit/yr≈7
 * Summary:
     * Argues that forced redistribution to correct historical injustices violates individual rights.
     * Rejects intergenerational collective responsibility and most egalitarian policy frameworks.
@@ -320,9 +291,8 @@
 
 ## Shelling Out: The Origins of Money
 
-* 1999 ~40pp by Nick Szabo (legal scholar, cryptographer)
+* 1999: 40 cite/yr, ~40pp by Nick Szabo (legal scholar, cryptographer)
 * https://nakamotoinstitute.org/shelling-out/
-* Influence: Cit≈1K; Cit/yr≈40
 * Summary:
     * Proposes that money originated from costly, hard-to-fake signaling behaviors.
     * Bridges anthropology, evolutionary psychology, and cryptography.
@@ -330,9 +300,8 @@
 
 ## Development as Freedom
 
-* 1999 366pp by Amartya Sen🅝 (economist & philosopher; Harvard University)
+* 1999: 2000 cite/yr, 366pp by Amartya Sen🅝 (economist & philosopher; Harvard University)
 * https://en.wikipedia.org/wiki/Development_as_Freedom
-* Influence: Cit≈45K; Cit/yr≈2K
 * Summary:
     * Argues that development is best understood as an expansion of human freedom—the capabilities people have to lead the lives they value.
     * Critiques narrow development metrics (GDP, growth-first strategies) and emphasizes education, health, rights, and governance as intrinsic components of development.
@@ -342,9 +311,8 @@
 
 ## The Wealth and Poverty of Nations
 
-* 1998 544pp by David Landes (Economic historian; Harvard University)
+* 1998: 200 cite/yr, 544pp by David Landes (Economic historian; Harvard University)
 * https://en.wikipedia.org/wiki/The_Wealth_and_Poverty_of_Nations
-* Influence: Cit≈6K; Cit/yr≈200
 * Summary:
     * Attributes global inequality primarily to cultural and institutional variation.
     * Critiques geographic determinism.
@@ -352,9 +320,8 @@
 
 ## Seeing Like a State: How Certain Schemes to Improve the Human Condition Have Failed
 
-* 1998 445pp by James C. Scott (political scientist & anthropologist; Yale University)
+* 1998: 1000 cite/yr, 445pp by James C. Scott (political scientist & anthropologist; Yale University)
 * https://en.wikipedia.org/wiki/Seeing_Like_a_State
-* Influence: Cit≈34K; Cit/yr≈1K
 * Summary:
     * Analyzes failed high-modernist social-engineering projects (e.g., Soviet collectivization, Tanzania villagization, scientific forestry).
     * Argues such schemes overestimate state vision and underestimate local knowledge (“metis”).
@@ -363,9 +330,8 @@
 
 ## Race, Culture, and Equality
 
-* 1998 20k wds by Thomas Sowell (Economist; Hoover Institution, Stanford University)
+* 1998: 10 cite/yr, 40pp by Thomas Sowell (Economist; Hoover Institution, Stanford University)
 * https://www.hoover.org/research/race-culture-and-equality
-* Influence: Cit≈300; Cit/yr≈10
 * Summary:
     * Argues cultural patterns, not genetics or discrimination alone, explain group differences.
     * Uses cross-cultural and historical evidence.
@@ -373,18 +339,16 @@
 
 ## Guns, Germs, and Steel
 
-* 1997 480pp by Jared Diamond🅜🅟 (Geographer and evolutionary biologist; UCLA)
+* 1997: 1000 cite/yr, 480pp by Jared Diamond🅜🅟 (Geographer and evolutionary biologist; UCLA)
 * https://en.wikipedia.org/wiki/Guns,_Germs,_and_Steel
-* Influence: Cit≈18K; Cit/yr≈1K
 * Summary:
     * Explains global inequality primarily via geographic and ecological luck.
     * Argues against genetic explanations of civilizational development.
 
 ## Race and Culture: A World View
 
-* 1994 352pp by Thomas Sowell (Economist; Hoover Institution, Stanford University)
+* 1994: 90 cite/yr, 40pp by Thomas Sowell (Economist; Hoover Institution, Stanford University)
 * https://en.wikipedia.org/wiki/Race_and_Culture
-* Influence: Cit≈3K; Cit/yr≈90
 * Summary:
     * Argues that cultural patterns—work habits, family structure, entrepreneurship, literacy, social capital—explain persistent group outcome differences across societies.
     * Synthesizes global historical data to show that migration, geographic displacement, and institutional incentives shape group success more than genetics or discrimination alone.
@@ -394,9 +358,8 @@
 
 ## The Bell Curve: Intelligence and Class Structure in American Life
 
-* 1994 845pp by Richard J. Herrnstein (psychologist, Harvard University) and Charles Murray (political scientist, American Enterprise Institute)
+* 1994: 500 cite/yr, 845pp by Richard J. Herrnstein (psychologist, Harvard University) and Charles Murray (political scientist, American Enterprise Institute)
 * https://en.wikipedia.org/wiki/The_Bell_Curve
-* Influence: Cit≈14K; Cit/yr≈500
 * Summary:
     * Argues that cognitive ability is a major predictor of socioeconomic outcomes.
     * Claims group IQ differences are partly genetic and socially significant.
@@ -406,9 +369,8 @@
 
 ## Governing the Commons: The Evolution of Institutions for Collective Action
 
-* 1990 280pp by Elinor Ostrom🅝 (political economist; Indiana University)
+* 1990: 3000 cite/yr, 280pp by Elinor Ostrom🅝 (political economist; Indiana University)
 * https://en.wikipedia.org/wiki/Governing_the_Commons
-* Influence: Cit≈90K; Cit/yr≈3K
 * Summary:
     * Demonstrates that communities around the world develop stable, efficient institutions to govern shared resources without relying on centralized states or privatization.
     * Uses case studies (forests, fisheries, irrigation systems) to show how “common-pool resource” users create monitoring, sanctioning, and conflict-resolution mechanisms.
@@ -416,12 +378,10 @@
     * Provides empirical grounding for critiques of high-modernist, top-down governance (resonating with Scott’s *Seeing Like a State*).
     * Foundational work in institutional economics and political economy, shaping development debates for decades.
 
-
 ## Human Capital: A Theoretical and Empirical Analysis, with Special Reference to Education
 
-* 1964 (3rd ed. 1993) ~390pp by Gary Becker🅝 (economist; University of Chicago)
+* 1964: 1300 cite/yr, ~390pp by Gary Becker🅝 (economist; University of Chicago)
 * https://en.wikipedia.org/wiki/Human_Capital_(book)
-* Influence: Cit≈[87K](https:*scholar.google.com/scholar?q=%22Human+Capital%22+Becker+1964); Cit/yr≈[1.3K](https:*scholar.google.com/scholar?q=%22Human+Capital%22+Becker+1964)
 * Summary:
     * Establishes education, skills, and cognitive traits as forms of capital yielding measurable returns to individuals and societies.
     * Provides the foundational economic theory linking micro-level human attributes to macro-level development outcomes.
