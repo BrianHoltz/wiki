@@ -56,7 +56,7 @@
 
 ## The Economics of Reparations
 
-* 2023: 15 cite/yr, ~25pp by Tyler Cowen (economist; George Mason University, Mercatus Center)
+* 2023: 15 cite/yr, 25pp by Tyler Cowen (economist; George Mason University, Mercatus Center)
 * https://www.mercatus.org/research/policy-briefs/economics-reparations
 * Summary:
     * Analyzes proposed reparations policies using cost–benefit frameworks, political economy constraints, and macroeconomic feasibility.
@@ -282,16 +282,19 @@
 
 ## Why I Am Not an Egalitarian
 
-* 2000: 7 cite/yr, ~15pp by Bryan Caplan (economist; George Mason University)
+* 2000: 7 cite/yr, 15pp by Bryan Caplan (economist; George Mason University)
 * https://www.econlib.org/library/Columns/y2001Caplanegalitarian.html
 * Summary:
-    * Argues that forced redistribution to correct historical injustices violates individual rights.
-    * Rejects intergenerational collective responsibility and most egalitarian policy frameworks.
-    * Frequently cited in libertarian critiques of reparations and redistribution.
+  * “The egalitarian position is not merely mistaken; it is incoherent. If people are morally equal, why should some be forced to serve the interests of others?”
+  * “Correcting past injustice by creating new injustice is no improvement. Two wrongs do not make a right, even when committed centuries apart.”
+  * “The egalitarian complains that life is unfair. True enough. But what follows? That some people should be compelled to sacrifice for others against their will?”
+  * “Much of what passes for egalitarianism is not concern for the poor, but hostility toward success. Envy is a constant, but rarely admitted, motive.”
+  * “Libertarianism does not promise equal outcomes. It promises only that no one will take from you without your consent.”
+  * “If redistribution is supposed to rectify the sins of history, then history will never run out of sins. There is no logical stopping point once collective guilt is admitted.”
 
 ## Shelling Out: The Origins of Money
 
-* 1999: 40 cite/yr, ~40pp by Nick Szabo (legal scholar, cryptographer)
+* 1999: 40 cite/yr, 40pp by Nick Szabo (legal scholar, cryptographer)
 * https://nakamotoinstitute.org/shelling-out/
 * Summary:
     * Proposes that money originated from costly, hard-to-fake signaling behaviors.
@@ -380,7 +383,7 @@
 
 ## Human Capital: A Theoretical and Empirical Analysis, with Special Reference to Education
 
-* 1964: 1300 cite/yr, ~390pp by Gary Becker🅝 (economist; University of Chicago)
+* 1964: 1300 cite/yr, 390pp by Gary Becker🅝 (economist; University of Chicago)
 * https://en.wikipedia.org/wiki/Human_Capital_(book)
 * Summary:
     * Establishes education, skills, and cognitive traits as forms of capital yielding measurable returns to individuals and societies.
