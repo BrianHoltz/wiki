@@ -55,7 +55,7 @@ One [shockingly hominid](http://blog.knowinghumans.net/2021/03/aliens-are-implau
   * Time machine: Die Glocke
   * Alien bodies
 
-## Relations With ''H. sapiens''
+## Relations With H. sapiens
   * evolution (e.g. dinosaur extinction),  Neanderthals, Denisovans, Homo floresiensis.
   * hybridization, genetic engineering, blood groups, breeding, abduction, impersonation, eating, enslaving, animal mutilation
 

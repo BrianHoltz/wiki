@@ -1,7 +1,8 @@
 # AI Predictions
-## Metaculus
-### Sharp Claims
 
+## Metaculus
+
+### Sharp Claims
 
 * [Which of Scott Aaronson's 5 AI worlds will come to pass?](https://www.metaculus.com/questions/20683/which-ai-world/)
   * Options: Futurama, AI-Fizzle, AI-Dystopia, Singularia, Paperclipalypse

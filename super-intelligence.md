@@ -1,4 +1,5 @@
-# Capabilities
+# Super-Intelligence
+
 Let's analyze the essential and expected capabilities of any general intelligence, in order to determine:
 
   * what capabilities a system must have to be intelligent, and
@@ -43,8 +44,6 @@ Powers are capabilities that seem somewhat independent of the ones above, that a
   * **Sociability:** producing better results by interacting with other minds
   * **Wit:** using humor and cleverness
   * **Mind Improvement:** increasing the capabilities of minds, whether self or others
-
-# Artificial Super-Intelligence
 
 ## Bostrom Superpowers
 Three of the superpowers are hand-waving:
