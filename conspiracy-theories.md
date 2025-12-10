@@ -122,10 +122,14 @@ Alleged conspiracies for which the actions and actors are well-known but their s
   * 1972 [Deep Throat](https://en.wikipedia.org/wiki/Deep_Throat_%28Watergate%29) Watergate disclosures
   * 1973 [Nixon White House tapes](https://en.wikipedia.org/wiki/Nixon_White_House_tapes) incl. 18min erasure 3d after Watergate break-in
   * 1986 [Vanunu](https://en.wikipedia.org/wiki/Mordechai_Vanunu) gets 18y sentence for leaking Israeli nuclear secrets
+  * 1996 [Tobacco industry whistleblowing](https://en.wikipedia.org/wiki/Jeffrey_Wigand) (Jeffrey Wigand)
   * 2006 [Room 641A](https://en.wikipedia.org/wiki/Room_641A) telecommunication interception facility operated by AT&T
-  * 2010 [U.S. diplomatic cables leak](https://en.wikipedia.org/wiki/United_States_diplomatic_cables_leak)
+  * 2007 [CIA waterboarding/torture exposure](https://en.wikipedia.org/wiki/John_Kiriakou) (John Kiriakou)
+  * 2010 [U.S. diplomatic cables leak](https://en.wikipedia.org/wiki/United_States_diplomatic_cables_leak) (Chelsea Manning)
+  * 2010 [NSA waste/privacy violations](https://en.wikipedia.org/wiki/Thomas_Andrews_Drake) (Thomas Drake)
   * 2012 [Stratfor email leak](https://en.wikipedia.org/wiki/Stratfor_email_leak)
-  * 2013 [Snowden disclosures](https://en.wikipedia.org/wiki/2010s_global_surveillance_disclosures)
+  * 2013 [Snowden disclosures](https://en.wikipedia.org/wiki/2010s_global_surveillance_disclosures) (Edward Snowden)
+  * 2014 [LuxLeaks](https://en.wikipedia.org/wiki/LuxLeaks) (Antoine Deltour)
   * 2014 [Sony hack](https://en.wikipedia.org/wiki/2014_Sony_Pictures_hack)
   * 2016 [Panama papers](https://en.wikipedia.org/wiki/Panama_Papers)
   * 2016 [Podesta email leak](https://en.wikipedia.org/wiki/Podesta_emails)
@@ -134,10 +138,14 @@ Alleged conspiracies for which the actions and actors are well-known but their s
   * 2016 [DNC email leak](https://en.wikipedia.org/wiki/2016_Democratic_National_Committee_email_leak)
   * 2017 [Vault 7](https://en.wikipedia.org/wiki/Vault_7) leak of CIA surveillance capabilities incl. 91 spyware tools
   * 2017 [China cables leak](https://en.wikipedia.org/wiki/China_Cables)
+  * 2017 [NSA Russia election interference leak](https://en.wikipedia.org/wiki/Reality_Winner) (Reality Winner)
   * 2017 [Paradise Papers](https://en.wikipedia.org/wiki/Paradise_Papers) e.g. Queen Elizabeth investments
-  * 2020 [BlueLeaks](https://en.wikipedia.org/wiki/BlueLeaks) law enforcement agencies leak
-  * 2020 [SolarWinds](https://en.wikipedia.org/wiki/2020_United_States_federal_government_data_breach) federal data breach
-  * 2021 [Pandora papers](https://en.wikipedia.org/wiki/Pandora_Papers)
+  * 2018 [Cambridge Analytica Facebook data leak](https://en.wikipedia.org/wiki/Christopher_Wylie) (Christopher Wylie)
+  * 2019 [Drone Papers leak](https://en.wikipedia.org/wiki/Daniel_Hale_(whistleblower)) (Daniel Hale) exposed 90% civilian casualty rate
+  * 2020 [BlueLeaks](https://en.wikipedia.org/wiki/BlueLeaks) law enforcement agencies leak exposed police misconduct & surveillance
+  * 2020 [SolarWinds](https://en.wikipedia.org/wiki/2020_United_States_federal_government_data_breach) federal data breach by Russian SVR compromised US govt agencies
+  * 2021 [Facebook Files leak](https://en.wikipedia.org/wiki/Frances_Haugen) (Frances Haugen) revealed harm to teens & VIP exemptions
+  * 2021 [Pandora papers](https://en.wikipedia.org/wiki/Pandora_Papers) exposed offshore wealth of 35 world leaders
 
 ## Formerly Disbelieved Phenomena
 Delta is from the year the phenomenon was first seriously claimed/hypothesized to the year that the phenomenon was generally accepted as real.
