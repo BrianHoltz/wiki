@@ -4,7 +4,7 @@
 
 * 2025: 0 cite/yr, 10pp by “Cremieux” (Substack, pseudonymous author)
 * https://www.cremieux.xyz/p/national-iqs-are-valid
-* Summary:
+* Summary
     * Argues that national IQ estimates, despite sampling noise, capture a real cross-national cognitive factor predictive of education outcomes and GDP.
     * Shows convergent validity across Lynn & Vanhanen, Becker, Rindermann, PISA, and TIMSS.
     * Notes that even non-Lynn datasets yield similar patterns, undermining claims that sampling bias invalidates them.
@@ -15,7 +15,7 @@
 
 * 2025: 0 cite/yr, 10pp by “Cremieux” (Substack)
 * https://www.cremieux.xyz/p/the-demise-of-the-flynn-effect
-* Summary:
+* Summary
     * Reviews evidence that the Flynn Effect has stalled or reversed in wealthy nations.
     * Notes heterogeneity across subtests and the influence of demographic and test-norm changes.
     * Observes continued cognitive gains in low- and middle-income countries, showing the reversal is not global.
@@ -25,7 +25,7 @@
 
 * 2025: 0 cite/yr, 12pp by Brian R. Johnson (UC Davis), Sam Trejo (Univ. of Wisconsin–Madison), and Marissa E. Thompson (Columbia University)
 * https://www.preprints.org/manuscript/202501.0379
-* Summary:
+* Summary
     * Reviews hereditarian datasets: transracial adoption, admixture studies, polygenic scores, national IQs, and international assessments.
     * Shows adoption data suffer from small samples, attrition, and nonrepresentative family environments.
     * Explains why current polygenic scores cannot distinguish genetic from environmental structure across populations.
@@ -37,7 +37,7 @@
 
 * 2024: 7 cite/yr, 9pp by Ronald Henss (independent psychologist; formerly University of Saarland)
 * https://www.researchgate.net/publication/380384466
-* Summary:
+* Summary
     * Reviews Lynn–Vanhanen, Becker, and Rindermann datasets.
     * Finds strong correlations among national IQ estimates and international assessments.
     * Reports robust associations with GDP and human development indicators.
@@ -48,7 +48,7 @@
 
 * 2024: 10 cite/yr, 312pp by Gregory Clark (economic historian; UC Davis)
 * https://www.gwern.net/docs/sociology/2024-clark-thenatureofsocialmobility.pdf
-* Summary:
+* Summary
     * Argues that social mobility is remarkably stable across time, place, and institutional regimes.
     * Uses surnames to track long-run social persistence, finding high underlying heritability of status.
     * Challenges assumptions that modern policies dramatically alter mobility patterns.
@@ -58,7 +58,7 @@
 
 * 2023: 15 cite/yr, 25pp by Tyler Cowen (economist; George Mason University, Mercatus Center)
 * https://www.mercatus.org/research/policy-briefs/economics-reparations
-* Summary:
+* Summary
     * Analyzes proposed reparations policies using cost–benefit frameworks, political economy constraints, and macroeconomic feasibility.
     * Argues that large-scale cash transfers face severe implementation, fiscal, and legitimacy challenges.
     * Highlights unintended consequences including political backlash, gaming, rent-seeking, and persistent measurement disputes over eligibility.
@@ -67,9 +67,13 @@
 
 ## The Deep Roots of Intelligence Differences
 
-* 2023: 2 cite/yr, 10pp by “Cremieux” (Substack)
+* 2023: 2 cite/yr, 10pp by "Cremieux" (Substack)
 * https://www.cremieux.xyz/p/the-deep-roots-of-intelligence-differences
-* Summary:
+* Tags
+    * Differences: hereditarian, race-realist 
+    * Times/Places: nineteenth-century, united-states, long-run
+    * Groups: black-african-american, white-european, multi-racial-admixture
+* Summary
     * Validates "age heaping" (rounding ages to multiples of 5 or 10) as a robust historical proxy for numeracy that correlates with modern literacy, height, and economic growth.
     * Analyzes 19th-century US Census data (1850–1900) to reveal Black-White numeracy gaps of approximately 1 standard deviation, comparable to modern intelligence gaps.
     * Demonstrates that these cognitive gaps persisted across different legal statuses (e.g., slavery vs. freedom) and have remained stable over nearly two centuries.
@@ -80,7 +84,7 @@
     * Examines selective migration patterns, noting that higher-numeracy Spaniards migrated to Mexico compared to Peru, influencing long-term regional productivity.
     * Argues that skin tone ("colorism") is a poor predictor of intelligence compared to genetic ancestry, contradicting common environmentalist alternative hypotheses.
     * Concludes that group differences in intelligence have deep, persistent roots driven significantly by genetic factors rather than transient environmental variables.
-* Quotes:
+* Quotes
     * ...accuracy of age reporting can proxy for numeracy, and for human capital more generally.
     * The 19ᵗʰ-century Black-White intelligence gap was highly similar to the one that has been regularly observed throughout the 20ᵗʰ and into the 21ˢᵗ century.
     * Admixture statistically explains an enormous part of the intelligence differences between SIRE groups in the U.S.
@@ -107,7 +111,7 @@
 
 * 2023: 15 cite/yr, 80pp by Gregory Clark (economic historian; UC Davis)
 * https://www.gwern.net/docs/iq/2023-clark-forwhomthebellcurvetolls.pdf
-* Summary:
+* Summary
     * Responds to critiques of The Bell Curve using surname-based evidence on social mobility.
     * Argues that underlying social competence is strongly inherited and stable over centuries.
     * Claims modern group disparities reflect long-run demographic sorting rather than contemporary discrimination.
@@ -117,7 +121,7 @@
 
 * 2022: 7 cite/yr, 40pp by “Jay M.” (Reason Without Restraint)
 * https://reasonwithoutrestraint.com/the-scope-of-racial-disparities-in-test-scores-in-the-united-states/
-* Summary:
+* Summary
     * Compiles test-score disparities across NAEP, SAT, ACT, AP exams, and state-level accountability tests.
     * Documents consistent gaps across grades, subjects, and time.
     * Analyzes distributional differences, including over- and underrepresentation in top percentiles.
@@ -128,7 +132,7 @@
 
 * 2022: 33 cite/yr, 40pp by Rebecca Sear (Professor of Psychology, Brunel University London)
 * https://www.researchgate.net/publication/360665701_%27National-IQ%27-datasets-do-not-provide-accurate-unbiased-or-comparable-measures-of-cognitive-ability-worldwide
-* Summary:
+* Summary
     * Reviews over 100 studies feeding into national IQ estimates.
     * Identifies pervasive sampling bias, especially in low-income regions (elite schools, atypical subsamples).
     * Shows test instruments vary widely in norms, translation quality, and cultural appropriateness.
@@ -140,18 +144,45 @@
 
 * 2022: 0 cite/yr, 20pp by “Cremieux” (Substack, pseudonymous author)
 * https://www.cremieux.xyz/p/black-economic-progress-after-slavery
-* Summary:
-    * Analyzes Althoff & Reichardt’s “Jim Crow and Black Economic Progress After Slavery” using linked census and administrative data from 1850–2000.
-    * Highlights that descendants of enslaved Black families show substantial convergence toward descendants of pre-war freedmen in education, income, and homeownership, especially once geography is controlled.
-    * Emphasizes that post-slavery oppression under Jim Crow and state-level institutional differences, rather than slavery exposure per se, explain most persistent gaps.
-    * Argues that once geographic and Jim Crow effects are properly accounted for, the direct legacy of slavery on present-day Black socioeconomic outcomes becomes small and possibly negligible.
-    * Interprets these findings as broadly consistent with a “Clarkian” view of status persistence and with selection and migration dynamics in the post-bellum South.
+* Summary
+    * Analyzes Althoff & Reichardt’s “Jim Crow and Black Economic Progress After Slavery” using linked census data (1850–2000) to trace the socioeconomic trajectories of descendants of enslaved vs. free Black families.
+    * Presents striking evidence that descendants of the enslaved converged rapidly with descendants of pre-war freedmen in literacy, income, and homeownership once geography is controlled.
+    * Argues that the "legacy of slavery" narrative is empirically weak; the persistence of gaps is driven almost entirely by the "Lower South" effect and oppressive Jim Crow institutions.
+    * Identifies specific mechanisms of oppression—enticement laws, vagrancy statutes, and mobility restrictions—that pinned Black workers to low-wage agricultural regions.
+    * Cites the success of Rosenwald schools as proof that when educational barriers were removed, Black human capital accumulation accelerated, ruling out intrinsic deficits.
+    * Critiques standard "White benchmarks" as flawed due to mean reversion (poor Whites defined by zero assets could only move up), showing Black convergence was robust when properly contextualized.
+    * Contends that the "freedmen" control group was highly selected for ability and "gumption" (via self-purchase and escape), making the convergence of the enslaved to this elite standard even more impressive.
+    * Frames findings as consistent with Gregory Clark’s "law of social mobility," where underlying status (human capital) persists across generations despite massive environmental shocks.
+    * Uses comparative examples (Cherokee Land Lottery, Chinese elites) to argue that material windfalls don't create long-term status, nor do shocks destroy it; underlying human capital is the robust predictor.
+    * Concludes that the primary barrier to Black progress was not the lingering trauma of slavery, but the active, state-sponsored suppression of mobility and opportunity under Jim Crow.
+* Quotes
+    * Black families who were enslaved until 1865 continue to have considerably lower socioeconomic status today... This persistence is entirely driven by post-slavery oppression under Jim Crow. (Althoff & Reichardt)
+    * The apparent effect of a longer time under slavery was actually the effect of living in poorer states and counties, with stronger Jim Crow laws.
+    * Geography respectively explained 95% and 75% of those [literacy and education] gaps.
+    * Slavery did not leave a lasting impact on subsequent generations... Nothing significant remained comparing either group of descendants within the same places.
+    * The big conclusion from the study should be that there is no legacy of slavery.
+    * If we define individuals in the modern census by having zero assets, we will be unsurprised to see a rapid increase in assets... The comparison is unfair precisely because it was defined as such.
+    * Self-purchasing implied a huge amount about a person’s human capital. It meant they were industrious... and quite likely highly capable.
+    * People of high status had genotypes that apparently disposed them to achieving high status even after radical upheavals.
+    * All of this evidence is consistent with a genetic model... the vast majority of the variance in intelligence is genetic in origin.
+    * Whatever people wish to contend about modern results, their alternative hypotheses need to be about things that vary within the populations being analyzed...
+* Criticism
+    * **Geography as Mechanism vs. Confounder:** Treating geography (Lower South) as a mere "control" risks masking the fact that slavery *placed* people there; if slavery's legacy is geographic entrapment, then "controlling away" geography analytically erases the very legacy being studied.
+    * **Selection Paradox:** The argument that freedmen were "highly selected" (genetically/culturally elite) creates a tension: if they were so superior, the fact that the enslaved group converged to them implies either the enslaved were also selected or the selection effect was weaker than claimed.
+    * **Hereditarian Leap:** The pivot from economic convergence data to a "genetic transmission of status" (citing Clark) is a significant theoretical leap not strictly supported by the Althoff & Reichardt data, which focuses on institutional barriers.
+    * **Slavery as "Shock":** Dismissing slavery as a temporary "shock" comparable to a financial loss underestimates the multi-generational systemic destruction of family, culture, and health, which is distinct from the "loss of assets" experienced by fallen elites.
+    * **Jim Crow vs. Slavery Distinction:** The sharp distinction between "slavery" and "Jim Crow" is analytically useful but historically porous; Jim Crow was the direct political and economic successor to the slave power structure, not an unrelated variable.
+    * **Data Limitations:** The census-linking methodology is prone to selection bias (linking is easier for those with stable names/families), potentially excluding the most marginalized descendants of the enslaved and overestimating convergence.
+    * **Rosenwald Schools Interpretation:** The success of Rosenwald schools is used to prove "lack of access" was the problem, which actually supports an environmentalist/institutionalist view, partially contradicting the text's later strong hereditarian gloss.
+    * **White Benchmark Validity:** While the technical critique of "regression to the mean" for poor Whites is valid, it ignores the structural reality that even poor Whites possessed the "freedom dividend" of legal rights that Blacks did not.
+    * **Windfall Simplification:** The comparison to the Cherokee Land Lottery (windfalls don't stick) critiques simple "reparations as checks" models but ignores that capital *combined with* opportunity (which Jim Crow denied) operates differently than a one-off cash windfall.
+    * **Clarkian Methodology:** The reliance on Gregory Clark’s surname-based persistence estimates is controversial in sociology, with critics arguing it tracks group averages rather than individual mobility, potentially overstating the "immutability" of status.
 
 ## Myths and Misconceptions about Intelligence: A Study of 35 Myths
 
 * 2021: 30 cite/yr, 6pp by Adrian Furnham (BI Norwegian Business School; UCL emeritus) and George Horne (Seeds of Science)
 * https://gwern.net/doc/iq/2021-furnham.pdf
-* Summary:
+* Summary
     * Presents 35 common misconceptions about intelligence research.
     * Clarifies predictive validity of IQ tests for academic and occupational outcomes.
     * Distinguishes between heritability within populations and causes of group differences.
@@ -162,7 +193,7 @@
 
 * 2021: 400 cite/yr, 704pp by David Graeber (anthropologist; LSE & Yale) and David Wengrow (archaeologist; University College London)
 * https://en.wikipedia.org/wiki/The_Dawn_of_Everything
-* Summary:
+* Summary
     * Argues that human societies before agriculture and states were far more diverse, experimental, and politically creative than standard linear models suggest.
     * Challenges the idea that hierarchy and inequality naturally emerge from population growth or agricultural intensification.
     * Synthesizes archaeological and anthropological evidence to show long periods of intentional political choice, seasonal governance, and decentralized organization.
@@ -172,7 +203,7 @@
 
 * 2021: 200 cite/yr, 400pp by Kathryn Paige Harden (behavioral geneticist, University of Texas at Austin)
 * https://en.wikipedia.org/wiki/The_Genetic_Lottery
-* Summary:
+* Summary
     * Argues genetics influences life outcomes but should motivate egalitarian policy, not hierarchy.
     * Defends polygenic methods while rejecting hereditarian claims about group differences.
     * Major recent intervention shaping public and academic debate on genetics and social outcomes.
@@ -181,7 +212,7 @@
 
 * 2020: 30 cite/yr, 564pp by Bryan Caplan (economist; George Mason University)
 * https://www.amazon.com/Labor-Econ-versus-World-Greatest/dp/0990463174
-* Summary:
+* Summary
     * Collects Caplan’s major essays on labor markets, human capital, signaling, immigration, wages, monopsony, and labor regulation.
     * Argues that most popular beliefs about labor markets are systematically wrong, emphasizing the predictive success of standard competitive labor-economics models.
     * Rejects widely held claims about worker exploitation, labor-market power, and the efficacy of regulation.
@@ -192,7 +223,7 @@
 
 * 2010: 250 cite/yr, 592pp by Deirdre N. McCloskey (economic historian; University of Illinois at Chicago)
 * https://en.wikipedia.org/wiki/Deirdre_McCloskey#The_Bourgeois_Era_trilogy
-* Summary:
+* Summary
     * Argues that neither capital accumulation, exploitation, property rights, nor geography adequately explain the Industrial Revolution.
     * Proposes that a cultural shift toward dignity and liberty for innovators (“bourgeois rhetoric”) produced modern economic growth.
     * Critiques materialist and institutional determinism as insufficient, repositioning cultural narratives as causal drivers of development.
@@ -203,7 +234,12 @@
 
 * 2020: 150 cite/yr, 424pp by William A. Darity Jr. (economist; Duke University) and A. Kirsten Mullen (independent scholar)
 * https://en.wikipedia.org/wiki/From_Here_to_Equality
-* Summary:
+* Tags
+    * Differences: inequality, slavery-legacy
+    * Politics: reparations-supportive, egalitarian
+    * Times/Places: nineteenth-century, twentieth-century, contemporary, united-states
+    * Groups: black-african-american
+* Summary
     * Establishes the leading economic case for Black American reparations.
     * Argues that reparations should close the racial wealth gap, requiring large-scale financial transfers.
     * Combines historical narrative, economic modeling, and policy analysis.
@@ -213,7 +249,7 @@
 
 * 2020: 25 cite/yr, 17pp by Russell T. Warne (quantitative psychologist; formerly Utah Valley University)
 * https://www.cambridge.org/core/books/abs/in-the-know/racialethnic-group-iq-differences-are-completely-environmental-in-origin/629C14E1004936C57232FB09739CD9E5
-* Summary:
+* Summary
     * The chapter title is phrased as a myth; Warne argues the statement is false.
     * Reviews 50+ years of IQ data across U.S. racial and ethnic groups.
     * Notes substantial gap stability across time and tests.
@@ -225,7 +261,7 @@
 
 * 2020: 80 cite/yr, 400pp by Michael Blastland & David Spiegelhalter (Winton Centre for Risk & Evidence Communication, University of Cambridge)
 * https://en.wikipedia.org/wiki/Michael_Blastland
-* Summary:
+* Summary
     * Argues that complex social outcomes hide vast unmeasured causal structure.
     * Presents case studies showing why prediction and causal inference often fail.
     * Influential for environmentalist critiques of overly gene-centric models of human differences.
@@ -234,7 +270,7 @@
 
 * 2017: 300 cite/yr, 312pp by James C. Scott (political scientist & anthropologist; Yale University)
 * https://en.wikipedia.org/wiki/James_C._Scott#Against_the_Grain
-* Summary:
+* Summary
     * Reinterprets the origins of agriculture and the earliest states as coercive, fragile, and frequently resisted.
     * Argues that grain agriculture spread primarily because it facilitated taxation and state control.
     * Presents non-state, mobile societies as often healthier and more prosperous.
@@ -244,7 +280,7 @@
 
 * 2015: 30 cite/yr, 21pp by Thomas Craemer (political scientist; University of Connecticut)
 * https://www.cambridge.org/core/journals/du-bois-review/article/abs/reparations-for-slavery-and-the-slave-trade-a-moral-and-legal-case/29C3EAD022BC0F908DFDFEFEDDFA18B1
-* Summary:
+* Summary
     * Provides rigorous quantitative estimates for the economic value of uncompensated labor under slavery.
     * Influential in contemporary reparations modeling and public policy design.
     * Argues that both moral and economic logic support restitution for historical injustice.
@@ -254,7 +290,7 @@
 
 * 2015: 10 cite/yr, 320pp by Garett Jones (economist; George Mason University, Mercatus Center)
 * https://en.wikipedia.org/wiki/Hive_Mind_(book)
-* Summary:
+* Summary
     * Argues that average national cognitive ability has large, society-wide externalities for institutions, productivity, trust, and long-run development.
     * Uses cross-country data to show that higher average IQ predicts better governance, stronger markets, and greater social coordination.
     * Distinguishes between individual-level returns to IQ and far larger macro-level effects.
@@ -264,7 +300,7 @@
 
 * 2014: 200 cite/yr, 384pp by Gregory Clark (economic historian; UC Davis)
 * https://en.wikipedia.org/wiki/The_Son_Also_Rises
-* Summary:
+* Summary
     * Uses surname persistence to track long-run social mobility across centuries.
     * Finds much higher persistence of status than traditional measures suggest.
     * Argues that mobility rates are surprisingly similar across countries and eras.
@@ -273,7 +309,7 @@
 
 * 2007: 20 cite/yr, 24pp by John E. Roemer (economist & political philosopher; Yale University)
 * https://www.jstor.org/stable/20447039
-* Summary:
+* Summary
     * Develops a formal framework for understanding intergenerational responsibility and compensation.
     * Influential in the philosophical foundations of reparations policy.
     * Distinguishes between correcting current inequities and assigning historical blame.
@@ -282,7 +318,7 @@
 
 * 2007: 200 cite/yr, 420pp by Gregory Clark (economic historian; UC Davis)
 * https://en.wikipedia.org/wiki/A_Farewell_to_Alms
-* Summary:
+* Summary
     * Claims Malthusian pressures selected for behaviors conducive to economic growth in preindustrial England.
     * Argues industrialization reflects long-run demographic and cultural evolution rather than sudden institutional change.
     * Places demographic selection at the heart of global divergence.
@@ -292,7 +328,7 @@
 
 * 2003: 100 cite/yr, 464pp by Niall Ferguson (Historian; Hoover Institution, Stanford University)
 * https://en.wikipedia.org/wiki/Empire_(book)
-* Summary:
+* Summary
     * Argues that the British Empire spread institutions foundational to global modernization.
     * Highlights rule of law, finance, governance, and trade networks.
     * Controversial but influential in debates over colonial legacies.
@@ -301,7 +337,10 @@
 
 * 2001: 1000 cite/yr, 34pp by Daron Acemoglu🅒, Simon Johnson, and James A. Robinson (Economists; MIT / MIT Sloan / University of Chicago across careers)
 * https://economics.mit.edu/sites/default/files/publications/colonial-origins-of-comparative-development.pdf
-* Summary:
+* Tags
+    * Development: institutionalist
+    * Times/Places: colonial-era, post-colonial, global, cross-national
+* Summary
     * Shows historically higher settler mortality led Europeans to install extractive institutions in many colonies.
     * Low-mortality regions received inclusive institutions with property rights and constraints on elites.
     * Institutions persisted after independence and strongly predict modern income differences.
@@ -312,7 +351,7 @@
 
 * 2000: 7 cite/yr, 15pp by Bryan Caplan (economist; George Mason University)
 * https://www.econlib.org/library/Columns/y2001Caplanegalitarian.html
-* Summary:
+* Summary
   * “The egalitarian position is not merely mistaken; it is incoherent. If people are morally equal, why should some be forced to serve the interests of others?”
   * “Correcting past injustice by creating new injustice is no improvement. Two wrongs do not make a right, even when committed centuries apart.”
   * “The egalitarian complains that life is unfair. True enough. But what follows? That some people should be compelled to sacrifice for others against their will?”
@@ -324,7 +363,7 @@
 
 * 1999: 40 cite/yr, 40pp by Nick Szabo (legal scholar, cryptographer)
 * https://nakamotoinstitute.org/shelling-out/
-* Summary:
+* Summary
     * Proposes that money originated from costly, hard-to-fake signaling behaviors.
     * Bridges anthropology, evolutionary psychology, and cryptography.
     * Highly influential in cryptocurrency philosophy.
@@ -333,7 +372,7 @@
 
 * 1999: 2000 cite/yr, 366pp by Amartya Sen🅝 (economist & philosopher; Harvard University)
 * https://en.wikipedia.org/wiki/Development_as_Freedom
-* Summary:
+* Summary
     * Argues that development is best understood as an expansion of human freedom—the capabilities people have to lead the lives they value.
     * Critiques narrow development metrics (GDP, growth-first strategies) and emphasizes education, health, rights, and governance as intrinsic components of development.
     * Provides theoretical grounding against single-factor explanations of cross-national inequality (e.g., genetics, geography, or institutions alone).
@@ -344,7 +383,7 @@
 
 * 1998: 200 cite/yr, 544pp by David Landes (Economic historian; Harvard University)
 * https://en.wikipedia.org/wiki/The_Wealth_and_Poverty_of_Nations
-* Summary:
+* Summary
     * Attributes global inequality primarily to cultural and institutional variation.
     * Critiques geographic determinism.
     * Major contribution to comparative economic history.
@@ -353,7 +392,7 @@
 
 * 1998: 1000 cite/yr, 445pp by James C. Scott (political scientist & anthropologist; Yale University)
 * https://en.wikipedia.org/wiki/Seeing_Like_a_State
-* Summary:
+* Summary
     * Analyzes failed high-modernist social-engineering projects (e.g., Soviet collectivization, Tanzania villagization, scientific forestry).
     * Argues such schemes overestimate state vision and underestimate local knowledge (“metis”).
     * Shows how top-down attempts to optimize society can generate catastrophic unintended consequences.
@@ -363,7 +402,7 @@
 
 * 1998: 10 cite/yr, 40pp by Thomas Sowell (Economist; Hoover Institution, Stanford University)
 * https://www.hoover.org/research/race-culture-and-equality
-* Summary:
+* Summary
     * Argues cultural patterns, not genetics or discrimination alone, explain group differences.
     * Uses cross-cultural and historical evidence.
     * Influential in conservative and libertarian literature.
@@ -372,7 +411,7 @@
 
 * 1997: 1000 cite/yr, 480pp by Jared Diamond🅜🅟 (Geographer and evolutionary biologist; UCLA)
 * https://en.wikipedia.org/wiki/Guns,_Germs,_and_Steel
-* Summary:
+* Summary
     * Explains global inequality primarily via geographic and ecological luck.
     * Argues against genetic explanations of civilizational development.
 
@@ -380,7 +419,7 @@
 
 * 1994: 90 cite/yr, 40pp by Thomas Sowell (Economist; Hoover Institution, Stanford University)
 * https://en.wikipedia.org/wiki/Race_and_Culture
-* Summary:
+* Summary
     * Argues that cultural patterns—work habits, family structure, entrepreneurship, literacy, social capital—explain persistent group outcome differences across societies.
     * Synthesizes global historical data to show that migration, geographic displacement, and institutional incentives shape group success more than genetics or discrimination alone.
     * Introduces Sowell’s framework of “middleman minorities,” human-capital niches, and cultural capital transfer.
@@ -391,7 +430,7 @@
 
 * 1994: 500 cite/yr, 845pp by Richard J. Herrnstein (psychologist, Harvard University) and Charles Murray (political scientist, American Enterprise Institute)
 * https://en.wikipedia.org/wiki/The_Bell_Curve
-* Summary:
+* Summary
     * Argues that cognitive ability is a major predictor of socioeconomic outcomes.
     * Claims group IQ differences are partly genetic and socially significant.
     * Asserts growing meritocratic stratification and a “cognitive elite.”
@@ -402,7 +441,7 @@
 
 * 1990: 3000 cite/yr, 280pp by Elinor Ostrom🅝 (political economist; Indiana University)
 * https://en.wikipedia.org/wiki/Governing_the_Commons
-* Summary:
+* Summary
     * Demonstrates that communities around the world develop stable, efficient institutions to govern shared resources without relying on centralized states or privatization.
     * Uses case studies (forests, fisheries, irrigation systems) to show how “common-pool resource” users create monitoring, sanctioning, and conflict-resolution mechanisms.
     * Identifies design principles underlying successful governance systems, challenging the standard “tragedy of the commons” narrative.
@@ -413,7 +452,7 @@
 
 * 1964: 1300 cite/yr, 390pp by Gary Becker🅝 (economist; University of Chicago)
 * https://en.wikipedia.org/wiki/Human_Capital_(book)
-* Summary:
+* Summary
     * Establishes education, skills, and cognitive traits as forms of capital yielding measurable returns to individuals and societies.
     * Provides the foundational economic theory linking micro-level human attributes to macro-level development outcomes.
     * Demonstrates how investment in human capital drives productivity growth, income differences, and national development trajectories.
