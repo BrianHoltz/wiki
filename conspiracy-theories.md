@@ -126,36 +126,35 @@ Alleged conspiracies for which the actions and actors are well-known but their s
 
 ## Sudden Revelations
 
-* 1963 [Spies For Peace](https://en.wikipedia.org/wiki/Spies_for_Peace) stole docs from UK government nuclear bunker
-* 1971 [Pennsylvania FBI office break-in](https://en.wikipedia.org/wiki/Citizens%27_Commission_to_Investigate_the_FBI) exposed COINTELPRO illegal surveillance
-* 1971 [Pentagon Papers](https://en.wikipedia.org/wiki/Pentagon_Papers) by Ellsberg/NYTImes revealed US deception in Vietnam War
-* 1972 [Deep Throat](https://en.wikipedia.org/wiki/Deep_Throat_%28Watergate%29) exposed White House Watergate break-in cover-up
-* 1973 [Nixon White House tapes](https://en.wikipedia.org/wiki/Nixon_White_House_tapes) included 18min erasure 3d after Watergate break-in
-* 1986 [Israeili nuclear secrets leak](https://en.wikipedia.org/wiki/Mordechai_Vanunu) by Vanunu got 18y sentence
-* 1996 [Tobacco industry leak](https://en.wikipedia.org/wiki/Jeffrey_Wigand) by Wigand revealed health risk lies
-* 2006 [AT&T Room 641A](https://en.wikipedia.org/wiki/Room_641A) warrantless NSA wiretapping leaked by Klein
-* 2007 [CIA waterboarding](https://en.wikipedia.org/wiki/John_Kiriakou) Kiriakou revealed CIA torture of terror suspects
-* 2010 [U.S. diplomatic cables](https://en.wikipedia.org/wiki/United_States_diplomatic_cables_leak) Manning leaked US diplomatic secrets, war crimes
-* 2010 [NSA waste/privacy violations](https://en.wikipedia.org/wiki/Thomas_Andrews_Drake) Thomas Drake revealed NSA waste and illegal surveillance
-* 2012 [Stratfor email leak](https://en.wikipedia.org/wiki/Stratfor_email_leak) exposed private intelligence firm operations
-* 2013 [Snowden disclosures](https://en.wikipedia.org/wiki/2010s_global_surveillance_disclosures) Edward Snowden revealed global NSA surveillance programs
-* 2014 [LuxLeaks](https://en.wikipedia.org/wiki/LuxLeaks) Deltour exposed Luxembourg tax avoidance deals
-* 2014 [Sony hack](https://en.wikipedia.org/wiki/2014_Sony_Pictures_hack) exposed internal Sony emails and unreleased films
-* 2016 [Panama papers](https://en.wikipedia.org/wiki/Panama_Papers) exposed global offshore tax evasion
-* 2016 [Podesta email hack](https://en.wikipedia.org/wiki/Podesta_emails) exposed Clinton campaign emails
-* 2016 [NATO supreme commander hack](https://en.wikipedia.org/wiki/DCLeaks) by GRU?/DCLeaks exposed emails
-* 2016 [Soros Open Society Foundation hack](https://en.wikipedia.org/wiki/DCLeaks) by GRU?/DCLeaks exposed documents
-* 2016 [DNC email hack](https://en.wikipedia.org/wiki/2016_Democratic_National_Committee_email_leak) by GRU?/DCLeaks exposed DNC bias against Bernie Sanders
-* 2017 [Vault 7](https://en.wikipedia.org/wiki/Vault_7) leak by Schulte/Wikileaks of CIA surveillance capabilities incl. 91 spyware tools
-* 2017 [China cables leak](https://en.wikipedia.org/wiki/China_Cables) revealed Xinjiang mass detention & surveillance
-* 2017 [NSA Russia election interference leak](https://en.wikipedia.org/wiki/Reality_Winner) (Reality Winner) revealed Russian hacking of US election systems
-* 2017 [Paradise Papers](https://en.wikipedia.org/wiki/Paradise_Papers) exposed offshore tax havens of corporations & politicians
-* 2018 [Cambridge Analytica Facebook leak](https://en.wikipedia.org/wiki/Christopher_Wylie) exposed data misuse for political ads
-* 2019 [Drone Papers leak](https://en.wikipedia.org/wiki/Daniel_Hale_(whistleblower)) (Daniel Hale) exposed 90% civilian casualty rate
-* 2020 [BlueLeaks](https://en.wikipedia.org/wiki/BlueLeaks) law enforcement agencies leak exposed police misconduct & surveillance
-* 2020 [SolarWinds](https://en.wikipedia.org/wiki/2020_United_States_federal_government_data_breach) federal data breach by Russian SVR compromised US govt agencies
-* 2021 [Facebook Files leak](https://en.wikipedia.org/wiki/Frances_Haugen) (Frances Haugen) revealed harm to teens & VIP exemptions
-* 2021 [Pandora papers](https://en.wikipedia.org/wiki/Pandora_Papers) exposed offshore wealth of 35 world leaders
+* 1963 [RSG-6 document theft](https://en.wikipedia.org/wiki/Spies_for_Peace) by Spies for Peace exposed UK government nuclear bunker locations
+* 1971 [FBI office theft](https://en.wikipedia.org/wiki/Citizens%27_Commission_to_Investigate_the_FBI) by Citizens' Commission to Investigate the FBI exposed COINTELPRO illegal surveillance
+* 1971 [Pentagon Papers disclosure](https://en.wikipedia.org/wiki/Pentagon_Papers) by Ellsberg revealed US deception in Vietnam War
+* 1972 [Watergate scandal leak](https://en.wikipedia.org/wiki/Deep_Throat_%28Watergate%29) by Felt exposed White House break-in cover-up
+* 1973 [White House tapes disclosure](https://en.wikipedia.org/wiki/Nixon_White_House_tapes) by Butterfield confirmed Nixon recording system
+* 1986 [Israeli nuclear secrets disclosure](https://en.wikipedia.org/wiki/Mordechai_Vanunu) by Vanunu exposed Dimona nuclear weapons program
+* 1996 [Tobacco industry disclosure](https://en.wikipedia.org/wiki/Jeffrey_Wigand) by Wigand revealed intentional nicotine manipulation
+* 2006 [Room 641A disclosure](https://en.wikipedia.org/wiki/Room_641A) by Klein exposed warrantless NSA wiretapping
+* 2007 [CIA torture program disclosure](https://en.wikipedia.org/wiki/John_Kiriakou) by Kiriakou confirmed waterboarding of detainees
+* 2010 [Diplomatic cables leak](https://en.wikipedia.org/wiki/United_States_diplomatic_cables_leak) by Manning exposed US diplomatic secrets and war crimes
+* 2010 [NSA waste disclosure](https://en.wikipedia.org/wiki/Thomas_Andrews_Drake) by Drake revealed Trailblazer project failure and privacy violations
+* 2012 [Stratfor email hack](https://en.wikipedia.org/wiki/Stratfor_email_leak) by Anonymous exposed private intelligence firm operations
+* 2013 [Global surveillance disclosure](https://en.wikipedia.org/wiki/2010s_global_surveillance_disclosures) by Snowden revealed NSA mass surveillance programs
+* 2014 [LuxLeaks tax avoidance leak](https://en.wikipedia.org/wiki/LuxLeaks) by Deltour exposed Luxembourg tax rulings
+* 2014 [Sony Pictures hack](https://en.wikipedia.org/wiki/2014_Sony_Pictures_hack) by Guardians of Peace exposed internal emails and unreleased films
+* 2016 [Panama Papers leak](https://en.wikipedia.org/wiki/Panama_Papers) by John Doe exposed global offshore tax evasion
+* 2016 [Podesta email hack](https://en.wikipedia.org/wiki/Podesta_emails) by Fancy Bear exposed Clinton campaign communications
+* 2016 [DCLeaks hack](https://en.wikipedia.org/wiki/DCLeaks) by Fancy Bear exposed NATO and Soros emails
+* 2016 [DNC email hack](https://en.wikipedia.org/wiki/2016_Democratic_National_Committee_email_leak) by Guccifer 2.0 exposed DNC bias against Sanders
+* 2017 [Vault 7 leak](https://en.wikipedia.org/wiki/Vault_7) by Schulte exposed CIA cyber warfare capabilities
+* 2017 [China Cables leak](https://en.wikipedia.org/wiki/China_Cables) by exiled Uyghurs revealed Xinjiang mass detention operations
+* 2017 [NSA election interference leak](https://en.wikipedia.org/wiki/Reality_Winner) by Winner revealed Russian hacking of US voting software
+* 2017 [Paradise Papers leak](https://en.wikipedia.org/wiki/Paradise_Papers) by unknown exposed offshore tax havens of corporations
+* 2018 [Cambridge Analytica data disclosure](https://en.wikipedia.org/wiki/Christopher_Wylie) by Wylie exposed Facebook data misuse for political ads
+* 2019 [Drone Papers leak](https://en.wikipedia.org/wiki/Daniel_Hale_(whistleblower)) by Hale exposed high civilian casualty rate in drone strikes
+* 2020 [BlueLeaks data breach](https://en.wikipedia.org/wiki/BlueLeaks) by Distributed Denial of Secrets exposed police misconduct
+* 2020 [SolarWinds data breach](https://en.wikipedia.org/wiki/2020_United_States_federal_government_data_breach) by SVR compromised US government agencies
+* 2021 [Facebook Files disclosure](https://en.wikipedia.org/wiki/Frances_Haugen) by Haugen revealed harm to teens and VIP exemptions
+* 2021 [Pandora Papers leak](https://en.wikipedia.org/wiki/Pandora_Papers) by unknown exposed offshore wealth of world leaders
 
 ## Formerly Disbelieved Phenomena
 
