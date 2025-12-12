@@ -110,6 +110,7 @@ Widely suspected, long denied, never confirmed.
 * 1969 [faked moon landings](https://en.wikipedia.org/wiki/Moon_landing_conspiracy_theories)
 * 1975 [Sam Giancana](https://en.wikipedia.org/wiki/Sam_Giancana) murdered right before testifying about CIA-mafia ties
 * 1981 [Pope John Paul II](https://en.wikipedia.org/wiki/Attempted_assassination_of_Pope_John_Paul_II) attempted assassination
+* 1985 [CIA + Contras cocaine trafficking](https://en.wikipedia.org/wiki/CIA_involvement_in_Contra_cocaine_trafficking)
 * 2001 [9/11 inside job](https://en.wikipedia.org/wiki/9/11_conspiracy_theories)
 * 2016 [Trump collusion with Russia](https://en.wikipedia.org/wiki/Links_between_Trump_associates_and_Russian_officials)
 * 2016 [Mud Flood theory of hidden history](https://en.wikipedia.org/wiki/Tartarian_Empire)
@@ -126,37 +127,45 @@ Alleged conspiracies for which the actions and actors are well-known but their s
 
 ## Sudden Revelations
 
-| When | Which                                                                                              | How      | Who                 | Way           | What                                                                     |
-| ------ | ---------------------------------------------------------------------------------------------------- | ---------- | --------------------- | --------------- | -------------------------------------------------------------------------- |
-| 1963 | [RSG-6 documents](https://en.wikipedia.org/wiki/Spies_for_Peace)                                   | steal    | Spies for Peace     | pamphlet      | UK plans for post‑nuclear‑war governance                               |
-| 1971 | [FBI office](https://en.wikipedia.org/wiki/Citizens%27_Commission_to_Investigate_the_FBI)          | steal    | Citizens Commission | WaPo          | COINTELPRO illegal surveillance                                          |
-| 1971 | [Pentagon Papers](https://en.wikipedia.org/wiki/Pentagon_Papers)                                   | leak     | Ellsberg            | NY Times      | US deception in Vietnam War                                              |
-| 1972 | [Watergate scandal](https://en.wikipedia.org/wiki/Deep_Throat_%28Watergate%29)                     | leak     | Felt                | WaPo          | White House break‑in cover‑up                                          |
-| 1973 | [White House tapes](https://en.wikipedia.org/wiki/Nixon_White_House_tapes)                         | disclose | Butterfield         | Senate        | Nixon recording system                                                   |
-| 1986 | [Israeli nuclear secrets](https://en.wikipedia.org/wiki/Mordechai_Vanunu)                          | disclose | Vanunu              | Sunday Times  | Dimona nuclear weapons program                                           |
-| 1996 | [Tobacco industry](https://en.wikipedia.org/wiki/Jeffrey_Wigand)                                   | disclose | Wigand              | 60 Minutes    | Intentional nicotine manipulation                                        |
-| 2006 | [Room 641A](https://en.wikipedia.org/wiki/Room_641A)                                               | disclose | Klein               | Wired         | Warrantless NSA wiretapping at AT&T facility                             |
-| 2007 | [CIA torture program](https://en.wikipedia.org/wiki/John_Kiriakou)                                 | disclose | Kiriakou            | ABC           | Use of waterboarding on detainees                                        |
-| 2010 | [Diplomatic cables](https://en.wikipedia.org/wiki/United_States_diplomatic_cables_leak)            | leak     | Manning             | WikiLeaks     | US diplomatic cables and related abuses                                  |
-| 2010 | [NSA waste](https://en.wikipedia.org/wiki/Thomas_Andrews_Drake)                                    | leak     | Drake               | Baltimore Sun | Trailblazer program failures and privacy violations                      |
-| 2012 | [Stratfor email](https://en.wikipedia.org/wiki/Stratfor_email_leak)                                | hack     | Anonymous           | WikiLeaks     | Private intelligence firm operations                                     |
-| 2013 | [Global surveillance](https://en.wikipedia.org/wiki/2010s_global_surveillance_disclosures)         | leak     | Snowden             | Guardian      | NSA mass surveillance programs (PRISM, Boundless Informant)              |
-| 2014 | [LuxLeaks tax avoidance](https://en.wikipedia.org/wiki/LuxLeaks)                                   | leak     | Deltour             | ICIJ          | Luxembourg tax rulings for multinationals                                |
-| 2014 | [Sony Pictures](https://en.wikipedia.org/wiki/2014_Sony_Pictures_hack)                             | hack     | Guardians of Peace  | Pastebin      | Internal emails and unreleased films                                     |
-| 2016 | [Panama Papers](https://en.wikipedia.org/wiki/Panama_Papers)                                       | leak     | ?                   | ICIJ          | Global offshore tax evasion                                              |
-| 2016 | [Podesta email](https://en.wikipedia.org/wiki/Podesta_emails)                                      | hack     | GRU                 | WikiLeaks     | Clinton campaign communications                                          |
-| 2016 | [DCLeaks](https://en.wikipedia.org/wiki/DCLeaks)                                                   | hack     | GRU                 | DCLeaks       | Emails related to NATO, Soros, and others                                |
-| 2016 | [DNC email](https://en.wikipedia.org/wiki/2016_Democratic_National_Committee_email_leak)           | hack     | GRU                 | WikiLeaks     | DNC bias against Sanders and internal strategy                           |
-| 2017 | [Vault 7](https://en.wikipedia.org/wiki/Vault_7)                                                   | leak     | Schulte             | WikiLeaks     | CIA cyber‑weapon tooling and capabilities                               |
-| 2017 | [China Cables](https://en.wikipedia.org/wiki/China_Cables)                                         | leak     | Uyghers             | ICIJ          | Xinjiang mass detention and surveillance operations                      |
-| 2017 | [NSA election interference](https://en.wikipedia.org/wiki/Reality_Winner)                          | leak     | Winner              | Intercept     | NSA report on Russian hacking of US voting systems                       |
-| 2017 | [Paradise Papers](https://en.wikipedia.org/wiki/Paradise_Papers)                                   | leak     | ?                   | ICIJ          | Offshore tax arrangements of corporations and individuals                |
-| 2018 | [Cambridge Analytica data](https://en.wikipedia.org/wiki/Christopher_Wylie)                        | disclose | Wylie               | Guardian      | Facebook data harvesting and political ad targeting                      |
-| 2019 | [Drone Papers](https://en.wikipedia.org/wiki/Daniel_Hale_(whistleblower))                          | leak     | Hale                | Intercept     | Targeting and civilian casualty data for drone program                   |
-| 2020 | [BlueLeaks data](https://en.wikipedia.org/wiki/BlueLeaks)                                          | hack     | Anonymous           | DDoSecrets    | Law‑enforcement fusion‑center documents on surveillance and misconduct |
-| 2020 | [SolarWinds data](https://en.wikipedia.org/wiki/2020_United_States_federal_government_data_breach) | breach   | SVR                 | FireEye       | Sunburst supply‑chain backdoor and compromise of US agencies and firms  |
-| 2021 | [Facebook Files](https://en.wikipedia.org/wiki/Frances_Haugen)                                     | disclose | Haugen              | WSJ           | Internal Facebook research on harm to teens and VIP exemptions           |
-| 2021 | [Pandora Papers](https://en.wikipedia.org/wiki/Pandora_Papers)                                     | leak     | ?                   | ICIJ          | Offshore wealth and secret holdings of world leaders and officials       |
+
+| When  | Which                                                                                              | How      | Who                 | Way                | What                                                      |
+| ------- | ---------------------------------------------------------------------------------------------------- | ---------- | --------------------- | -------------------- | ----------------------------------------------------------- |
+| 1963  | [RSG-6 documents](https://en.wikipedia.org/wiki/Spies_for_Peace)                                   | steal    | Spies for Peace     | pamphlet           | UK plans for post‑nuclear‑war governance                |
+| 1971  | [FBI office](https://en.wikipedia.org/wiki/Citizens%27_Commission_to_Investigate_the_FBI)          | steal    | Citizens Commission | WaPo               | COINTELPRO illegal surveillance                           |
+| 1971  | [Pentagon Papers](https://en.wikipedia.org/wiki/Pentagon_Papers)                                   | leak     | Ellsberg            | NY Times           | US deception in Vietnam War                               |
+| 1972  | [Watergate scandal](https://en.wikipedia.org/wiki/Deep_Throat_%28Watergate%29)                     | leak     | Felt                | WaPo               | White House break‑in cover‑up                           |
+| 1972  | [Tuskegee syphilis study](https://en.wikipedia.org/wiki/Tuskegee_Syphilis_Study)                   | disclose | Buxton              | AP                 | USPHS syphilis experiments on 400 Blacks                  |
+| 1973  | [White House tapes](https://en.wikipedia.org/wiki/Nixon_White_House_tapes)                         | disclose | Butterfield         | Senate             | Nixon recording system                                    |
+| 1986  | [Israeli nuclear secrets](https://en.wikipedia.org/wiki/Mordechai_Vanunu)                          | disclose | Vanunu              | Sunday Times       | Dimona nuclear weapons program                            |
+| 1990  | [Operation Gladio revelation](https://en.wikipedia.org/wiki/Operation_Gladio)                      | disclose | Andreotti           | Italian Parliament | NATO 'stay‑behind' networks in Western Europe            |
+| 1992  | [Operation Condor](https://en.wikipedia.org/wiki/Operation_Condor)                                 | discover | Almada              |                    | >20K killed by 8 S. America govts                         |
+| 1996  | [Tobacco industry](https://en.wikipedia.org/wiki/Jeffrey_Wigand)                                   | disclose | Wigand              | 60 Minutes         | Intentional nicotine manipulation                         |
+| 2000  | [ECHELON](https://en.wikipedia.org/wiki/ECHELON)                                                   | disclose | European Parliament | Ramparts           | Five Eyes SIGINT surveillance 1st leaked in 1972          |
+| 2004  | [Abu Ghraib photos](https://en.wikipedia.org/wiki/Abu_Ghraib_torture_and_abuse)                    | leak     | Darby               | 60 Minutes         | Photos of US prisoner abuse in Iraq                       |
+| 2006  | [Room 641A](https://en.wikipedia.org/wiki/Room_641A)                                               | disclose | Klein               | Wired              | Warrantless NSA wiretapping at AT&T facility              |
+| 2007  | [CIA torture program](https://en.wikipedia.org/wiki/John_Kiriakou)                                 | disclose | Kiriakou            | ABC                | Use of waterboarding on detainees                         |
+| 2010  | [Diplomatic cables](https://en.wikipedia.org/wiki/United_States_diplomatic_cables_leak)            | leak     | Manning             | WikiLeaks          | US diplomatic cables and related abuses                   |
+| 2010  | [NSA waste](https://en.wikipedia.org/wiki/Thomas_Andrews_Drake)                                    | leak     | Drake               | Baltimore Sun      | Trailblazer program failures and privacy violations       |
+| 2010  | [Stuxnet](https://en.wikipedia.org/wiki/Stuxnet)                                                   | discover | Ulasen              | Symantec           | Israeli malware targeting Iranian uranium centrifuges     |
+| 2012  | [Stratfor emails](https://en.wikipedia.org/wiki/Stratfor_email_leak)                               | hack     | Anonymous           | WikiLeaks          | Intelligence contractor secrets                           |
+| 2013  | [NSA global surveillance](https://en.wikipedia.org/wiki/2010s_global_surveillance_disclosures)     | disclose | Snowden             | Guardian           | Five Eyes mass surveillance programs (PRISM, XKeyscore)   |
+| 2014  | [LuxLeaks tax avoidance](https://en.wikipedia.org/wiki/LuxLeaks)                                   | leak     | Deltour             | ICIJ               | Luxembourg tax rulings for multinationals                 |
+| 2014  | [Operation Paperclip](https://en.wikipedia.org/wiki/Operation_Paperclip)                           | disclose | Lichtblau           | NY Times           | U.S. recruitment of former Nazi scientists                |
+| 2014  | [Sony emails](https://en.wikipedia.org/wiki/2014_Sony_Pictures_hack)                               | hack     | Guardians of Peace  | Pastebin           | Internal emails and unreleased films                      |
+| 2016  | [Panama Papers](https://en.wikipedia.org/wiki/Panama_Papers)                                       | leak     | ?                   | ICIJ               | Global offshore tax evasion                               |
+| 2016  | [Podesta emails](https://en.wikipedia.org/wiki/Podesta_emails)                                     | hack     | GRU                 | WikiLeaks          | Clinton campaign communications                           |
+| 2016S | [Soros, NATO emails](https://en.wikipedia.org/wiki/DCLeaks)                                        | hack     | GRU                 | DCLeaks            | Soros Foundation, NATO general, Sen. McCain               |
+| 2016  | [DNC emails](https://en.wikipedia.org/wiki/2016_Democratic_National_Committee_email_leak)          | hack     | GRU                 | DCLeaks            | DNC bias against Sanders, etc.                            |
+| 2017  | [Vault 7](https://en.wikipedia.org/wiki/Vault_7)                                                   | leak     | Schulte             | WikiLeaks          | CIA cyber‑weapon tooling and capabilities                |
+| 2017  | [China Cables](https://en.wikipedia.org/wiki/China_Cables)                                         | leak     | Uyghers             | ICIJ               | Xinjiang mass detention and surveillance operations       |
+| 2017  | [NSA election interference](https://en.wikipedia.org/wiki/Reality_Winner)                          | leak     | Winner              | Intercept          | NSA report on Russian hacking of US voting systems        |
+| 2017  | [Paradise Papers](https://en.wikipedia.org/wiki/Paradise_Papers)                                   | leak     | ?                   | ICIJ               | Offshore tax arrangements of corporations and individuals |
+| 2018  | [Cambridge Analytica data](https://en.wikipedia.org/wiki/Christopher_Wylie)                        | disclose | Wylie               | Guardian           | Facebook data harvesting and political ad targeting       |
+| 2019  | [Drone Papers](https://en.wikipedia.org/wiki/Daniel_Hale_(whistleblower))                          | leak     | Hale                | Intercept          | Drone targeting and civilian casualties                   |
+| 2020  | [BlueLeaks data](https://en.wikipedia.org/wiki/BlueLeaks)                                          | hack     | Anonymous           | DDoSecrets         | Law‑enforcement surveillance and misconduct              |
+| 2020  | [SolarWinds data](https://en.wikipedia.org/wiki/2020_United_States_federal_government_data_breach) | breach   | SVR                 | FireEye            | Backdoor compromise of US agencies and firms              |
+| 2021  | [Facebook Files](https://en.wikipedia.org/wiki/Frances_Haugen)                                     | disclose | Haugen              | WSJ                | FB research on harm to teens and VIP exemptions           |
+| 2021  | [Pandora Papers](https://en.wikipedia.org/wiki/Pandora_Papers)                                     | leak     | ?                   | ICIJ               | Offshore secret holdings of world leaders                 |
 
 ## Formerly Disbelieved Phenomena
 
