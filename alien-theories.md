@@ -79,3 +79,28 @@ Most of the following human groups know about aliens. Many are even controlled b
 
 ## Motives
   * gold, slaves, observation, quarantine, altruism
+
+## Levels of Belief
+
+A list of alien beliefs, in rough order of increasing implausibility. (By aliens I mean intelligent agents whose origin lies not with conventional humans or their contemporary technology, as opposed to agents whose origins are non-human / extra-terrestrial / extra-dimensional / extra-temporal / supernatural.)
+
+1. Alien craft/effects occasionally get observed, esp. by pilots/military.
+2. Government conceals definitive evidence of alien activity on Earth.
+3. Aliens mutilate farm animals and/or create crop circles.
+4. Alien tech is hypersonic / transmedium, defying our understanding of fluid dynamics.
+5. Alien tech is hyper-G / anti-gravity, defying our understanding of gravity/momentum.
+6. Aliens have abducted humans.
+7. Government possesses alien artifacts/bodies.
+8. Government possesses working alien technology.
+9. Government has communicated with aliens on Earth.
+10. Government cooperates with aliens on Earth.
+11. Governments/media are controlled by secret global group(s) with alien awareness/tech.
+12. Aliens have significantly influenced human history.
+13. Aliens have significantly influenced human evolution.
+14. Aliens have been in conflict with each other over Earth.
+15. Aliens have created alien-human hybrids.
+16. Aliens have installed hybrids as past or present important humans.
+17. Aliens have telepathy.
+18. Aliens have shape-shifting.
+19. Aliens have teleportation or faster-than-light travel.
+20. Aliens have time travel.
