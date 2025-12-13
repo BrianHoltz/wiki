@@ -51,3 +51,5 @@ Believes ([video](https:*www.youtube.com/watch?v=YxQLiy7AHx8), [transcript](http
   * Donald Keyhoe
   * Frank Scully
   * Gerald Heard 
+  * David Grusch
+  * Daniel Sheehan
