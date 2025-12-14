@@ -1,5 +1,50 @@
 # Comparative Development: A Bibliography
 
+Curation by Brian Holtz. Content by Gemini and GPT LLMs.
+
+## Table of contents
+
+- 2025 — [National IQs Are Valid](#national-iqs-are-valid)
+- 2025 — [The Demise of the Flynn Effect](#the-demise-of-the-flynn-effect)
+- 2025 — [Race, Genes, Evolution, and IQ: The Key Datasets and Arguments](#race-genes-evolution-and-iq-the-key-datasets-and-arguments)
+- 2024 — [The Intelligence of Nations: National IQs and Correlates](#the-intelligence-of-nations-national-iqs-and-correlates)
+- 2024 — [The Nature of Social Mobility](#the-nature-of-social-mobility)
+- 2023 — [The Economics of Reparations](#the-economics-of-reparations)
+- 2023 — [The Deep Roots of Intelligence Differences](#the-deep-roots-of-intelligence-differences)
+- 2023 — [For Whom the Bell Curve Tolls](#for-whom-the-bell-curve-tolls)
+- 2022 — [The Scope of Racial Disparities in Test Scores in the United States](#the-scope-of-racial-disparities-in-test-scores-in-the-united-states)
+- 2022 — ['National IQ' Datasets Do Not Provide Accurate, Unbiased, or Comparable Measures of Cognitive Ability Worldwide](#national-iq-datasets-do-not-provide-accurate-unbiased-or-comparable-measures-of-cognitive-ability-worldwide)
+- 2022 — [Black Economic Progress After Slavery](#black-economic-progress-after-slavery)
+- 2021 — [Myths and Misconceptions about Intelligence: A Study of 35 Myths](#myths-and-misconceptions-about-intelligence-a-study-of-35-myths)
+- 2021 — [The Dawn of Everything: A New History of Humanity](#the-dawn-of-everything-a-new-history-of-humanity)
+- 2021 — [The Genetic Lottery: Why DNA Matters for Social Equality](#the-genetic-lottery-why-dna-matters-for-social-equality)
+- 2020 — [Labor Econ Versus the World: Essays on the World’s Greatest Market](#labor-econ-versus-the-world-essays-on-the-worlds-greatest-market)
+- 2010 — [Bourgeois Dignity: Why Economics Can’t Explain the Modern World](#bourgeois-dignity-why-economics-cant-explain-the-modern-world)
+- 2020 — [From Here to Equality: Reparations for Black Americans in the Twenty-First Century](#from-here-to-equality-reparations-for-black-americans-in-the-twenty-first-century)
+- 2020 — [Racial/Ethnic Group IQ Differences Are Completely Environmental in Origin](#racialethnic-group-iq-differences-are-completely-environmental-in-origin)
+- 2020 — [The Hidden Half: How the World Conceals Its Secrets](#the-hidden-half-how-the-world-conceals-its-secrets)
+- 2017 — [Against the Grain: A Deep History of the Earliest States](#against-the-grain-a-deep-history-of-the-earliest-states)
+- 2015 — [Reparations for Slavery and the Slave Trade: A Moral and Legal Case?](#reparations-for-slavery-and-the-slave-trade-a-moral-and-legal-case)
+- 2015 — [Hive Mind: How Your Nation’s IQ Matters So Much More Than Your Own](#hive-mind-how-your-nations-iq-matters-so-much-more-than-your-own)
+- 2015 — [Why Did Europe Conquer the World?](#why-did-europe-conquer-the-world)
+- 2014 — [The Son Also Rises: Surnames and the History of Social Mobility](#the-son-also-rises-surnames-and-the-history-of-social-mobility)
+- 2007 — [Compensation, Reparations, and Intergenerational Justice](#compensation-reparations-and-intergenerational-justice)
+- 2007 — [A Farewell to Alms: A Brief Economic History of the World](#a-farewell-to-alms-a-brief-economic-history-of-the-world)
+- 2003 — [Empire: How Britain Made the Modern World](#empire-how-britain-made-the-modern-world)
+- 2001 — [The Colonial Origins of Comparative Development](#the-colonial-origins-of-comparative-development)
+- 2000 — [Why I Am Not an Egalitarian](#why-i-am-not-an-egalitarian)
+- 1999 — [Shelling Out: The Origins of Money](#shelling-out-the-origins-of-money)
+- 1999 — [Development as Freedom](#development-as-freedom)
+- 1998 — [The Wealth and Poverty of Nations](#the-wealth-and-poverty-of-nations)
+- 1998 — [Seeing Like a State: How Certain Schemes to Improve the Human Condition Have Failed](#seeing-like-a-state-how-certain-schemes-to-improve-the-human-condition-have-failed)
+- 1998 — [Race, Culture, and Equality](#race-culture-and-equality)
+- 1997 — [Guns, Germs, and Steel](#guns-germs-and-steel)
+- 1994 — [Race and Culture: A World View](#race-and-culture-a-world-view)
+- 1994 — [The Bell Curve: Intelligence and Class Structure in American Life](#the-bell-curve-intelligence-and-class-structure-in-american-life)
+- 1990 — [Governing the Commons: The Evolution of Institutions for Collective Action](#governing-the-commons-the-evolution-of-institutions-for-collective-action)
+- 1964 — [Human Capital: A Theoretical and Empirical Analysis, with Special Reference to Education](#human-capital-a-theoretical-and-empirical-analysis-with-special-reference-to-education)
+
+
 ## National IQs Are Valid
 * 2025: 0 cite/yr, 10pp by “Cremieux” (Substack, pseudonymous author)
 * https://www.cremieux.xyz/p/national-iqs-are-valid
@@ -34,14 +79,33 @@
     * Recommended hedge: when using national IQs for inference, prefer imputation‑free, well‑documented datasets (e.g., HLOs, carefully harmonised OSF compilations) and conduct robustness checks using alternative instruments and measurement‑invariance tests.
 
 ## The Demise of the Flynn Effect
-
 * 2025: 0 cite/yr, 10pp by “Cremieux” (Substack)
 * https://www.cremieux.xyz/p/the-demise-of-the-flynn-effect
 * Summary
-    * Reviews evidence that the Flynn Effect has stalled or reversed in wealthy nations.
-    * Notes heterogeneity across subtests and the influence of demographic and test-norm changes.
-    * Observes continued cognitive gains in low- and middle-income countries, showing the reversal is not global.
-    * Attributes stagnation to environmental saturation rather than biological decline.
+    * Central claim: large generational changes in test scores (the Flynn Effect and its putative reversal) often reflect changes in measurement properties and test bias rather than shifts in latent general intelligence.
+    * Key evidence: new cohort analyses (e.g., [Nordmo et al. (2025)](https://www.sciencedirect.com/science/article/pii/S0160289625000121)) show divergent trends across subtests — large gains on figural matrices, stagnation or declines on math and word‑similarities — inconsistent with a uniform rise or fall in g.
+    * Psychometric diagnosis: tests' relationships to g changed across cohorts (failure of strict factorial invariance); intercepts and reliabilities shifted, indicating cohort differences in how items function and what they measure.
+    * Mechanisms proposed: changing familiarity with test formats (games, matrices), schooling and curriculum shifts, and cohort‑specific test‑taking strategies produce test‑specific gains that do not generalize to g.
+    * Reanalysis outcome: after correcting for measurement non‑invariance and test‑specific effects, much of the apparent Flynn and Reverse‑Flynn patterns disappear, leaving modest net change consistent with demographic shifts.
+    * Methodological recommendation: resolve cohort comparisons with formal measurement‑invariance testing, longitudinal/cohort modeling, and careful interpretation of achievement vs. ability measures.
+    * Policy/pedagogy implication: public discourse should avoid literal interpretations of raw score trends; interventions should target demonstrated deficits (e.g., school attainment) rather than presumed population IQ collapse.
+
+* Quotes
+    * Massive changes in IQ scores over time are much less meaningful than people think
+    * The psychometric answer to each of those questions is the same, and it’s one word: bias
+    * Observed increases and subsequent decreases in intelligence scores do not reflect changes in latent intelligence
+    * After accounting for incomparability, the Flynn Effect and its reversal both tend to disappear, leaving behind no changes in intelligence and meager score changes after they’re fully corrected for changes in how people understand the tests
+    * People want to think that population intelligence shifts up and down, and that people become smarter and dumber all the time, but the reality is that the population practically hasn’t changed any more than you’d predict from shifts in demographics
+
+* Criticism
+    * National generalization risk: the clearest, best‑analyzed dataset (Norwegian conscripts; [Nordmo et al. (2025)](https://www.sciencedirect.com/science/article/pii/S0160289625000121)) documents compelling psychometric non‑invariance, but its results may not generalize everywhere—different countries, test batteries, and timing can produce different mixtures of test‑specific and g‑level change.
+    * Evidence for substantive gains in some contexts: a large body of historical meta‑analyses and cross‑national work (classic Flynn results) documents multi‑decadal gains on many instruments; these cannot be dismissed without careful, context‑by‑context comparison of tests and cohorts.
+    * Attribution uncertainty: Cremieux attributes much apparent change to psychometric bias, but the proximate causes of item‑ and test‑specific gains (nutrition, schooling quality, informal practice like videogames) remain empirical questions requiring multi‑method evidence.
+    * Measurement complexity: demonstrating strict measurement invariance is difficult in practice; failure to find strict invariance does not automatically imply zero change in latent ability — partial invariance or hierarchical models might still support substantive g‑level shifts.
+    * Method sensitivity: conclusions hinge on model specification (e.g., how g is modeled, whether intercepts or loadings are constrained); different reasonable modeling choices can yield different substantive conclusions.
+    * Distinguishing schooling from innate ability: achievement and IQ tests partly conflate schooling effects; even if psychometric adjustment reduces apparent gains, improvements in schooling‑related skills may still matter for policy and deserve recognition.
+    * Public communication tradeoffs: Cremieux's prescription to retire lay talk about the Flynn Effect is defensible methodologically but risks downplaying meaningful educational or public‑health trends if those are only detectable in domain‑specific measures.
+    * Recommended hedge: combine psychometric cohort methods with triangulation (historical nutrition/health data, longitudinal cohorts, cross‑national achievement datasets) before concluding that latent intelligence is stable.
 
 ## Race, Genes, Evolution, and IQ: The Key Datasets and Arguments
 
@@ -513,7 +577,7 @@
 * 🅗 = Holberg Prize
 
 ## Agent Prompt
-
 - Strictly follow the format you see for the longest entries in this doc. Study this document and its examples and make a detailed plan to follow the guidelines below. Take your time and don't hallucinate.
-- Summary and Quotes: You are an academic expert in economics, statistics, history, and social science who is sympathetic to the text's thesis and not afraid to follow evidence and arguments to uncomfortable conclusions. Give a fair and accurate and powerful set of Summary and Quotes bullets, up to ten each. Do not hallucinate. If the text is not available at the primary link, then for each quote give a link to where the quote can be validated. Only give as many quotes as you can find validated links for.
-- Criticism: You are a mainstream academic expert in economics, statistics, history, and social science who is neutral/skeptical about the text's thesis. Give a fair but skeptical critique of the text, up to ten bullets. Feel free to cite/link the most powerful critiques of the text in the academic literature.
+- Summary and Quotes: You are an academic expert in economics, statistics, history, and social science who is sympathetic to the text's thesis and not afraid to follow evidence and arguments to uncomfortable conclusions. Give a fair and accurate and powerful set of Summary and Quotes bullets, up to ten each. Do not hallucinate.
+    - Quotes: do not add surrounding quotation marks. Do not append citation metadata to each quote line (all quotes in the Quotes section should be verbatim lines taken from the target text). If the target text is not available at the primary link, include for each quote a validation link where the quote can be checked.
+- Criticism: You are a mainstream academic expert in economics, statistics, history, and social science who is neutral/skeptical about the text's thesis. Give a fair but skeptical critique of the text, up to ten bullets. Use linked citations where appropriate. Do NOT include raw URLs in the criticism bullets—format any external link as a citation using the lead author and year as the link text (for example: [Wicherts et al. (2010)](https://...)).
