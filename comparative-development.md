@@ -1,6 +1,7 @@
 # Comparative Development: A Bibliography
 
-Curation by Brian Holtz. Content by Gemini and GPT LLMs.
+- Curated by Brian Holtz. Content/tags prompted from Gemini and GPT.
+- Cit/yr = Google Scholar citations per year
 
 ## Table of contents
  
@@ -620,12 +621,12 @@ Curation by Brian Holtz. Content by Gemini and GPT LLMs.
 
 ---
 
-## Key (influence metrics)
+## Appendix
 
 * Cit = approximate academic citation count (“Cited by …”) from Google Scholar or publisher/association listings, rounded.
 * Cit/yr = “Lifetime Average Citations per Year” ≈ Cit / (years since publication + 1).
 
-## Prize glyphs (author-level)
+### Author Prizes
 
 * 🅝 = Nobel Memorial Prize in Economic Sciences
 * 🅒 = John Bates Clark Medal
@@ -633,16 +634,17 @@ Curation by Brian Holtz. Content by Gemini and GPT LLMs.
 * 🅟 = Pulitzer Prize
 * 🅗 = Holberg Prize
 
-## Agent Prompt
+### Agent Prompt
+
 - Strictly follow the format you see for the longest entries in this doc. Study this document and its examples and make a detailed plan to follow the guidelines below. Take your time and don't hallucinate.
 - Summary and Quotes: You are an academic expert in economics, statistics, history, and social science who is sympathetic to the text's thesis and not afraid to follow evidence and arguments to uncomfortable conclusions. Give a fair and accurate and powerful set of Summary and Quotes bullets, up to ten each. Do not hallucinate.
     - Quotes: do not add surrounding quotation marks. Do not append citation metadata to each quote line (all quotes in the Quotes section should be verbatim lines taken from the target text). If the target text is not available at the primary link, include for each quote a validation link where the quote can be checked.
 - Criticism: You are a mainstream academic expert in economics, statistics, history, and social science who is neutral/skeptical about the text's thesis. Give a fair but skeptical critique of the text, up to ten bullets. Use linked citations where appropriate. Do NOT include raw URLs in the criticism bullets—format any external link as a citation using the lead author and year as the link text (for example: [Wicherts et al. (2010)](https://...)).
 - Tags: add a tags section with one bullet for each of the 5 tag types below, ommiting any tag types for which you can't determine any tags. Use exactly the types and tags listed below, and add zero extra text in this area.
 
-## Tagging Scheme
+### Tagging Scheme
 
-### Political Theory
+#### Political Theory
 
 The political values evident in the text.
 
@@ -653,7 +655,7 @@ The political values evident in the text.
 - **anti-reparations** - Critical of or opposes large-scale reparations programs
 - **pro-reparations** - Supports reparations as policy solution
 
-### Differences Theory
+#### Differences Theory
 
 The text's causal theory explaining group differences.
 
@@ -661,7 +663,7 @@ The text's causal theory explaining group differences.
 - **environmentalist** — argues environmental factors explain group differences
 - **interactionist** — both genetic and environmental factors matter
 
-### Development Theory
+#### Development Theory
 
 The text's causal theory explaining regional/ethnic development differences.
 
@@ -673,7 +675,7 @@ The text's causal theory explaining regional/ethnic development differences.
 - **social-mobility** — intergenerational persistence, surnames
 - **inequality** — income/wealth disparities
 
-### Groups:
+#### Groups:
 - **african**
 - **african-american**
 - **european**
@@ -683,7 +685,7 @@ The text's causal theory explaining regional/ethnic development differences.
 - **multi-racial**
 - **jewish**
 
-### Times/Places:
+#### Times/Places:
 - **prehistoric** — before written records
 - **ancient** — pre-500 CE
 - **medieval** — c.500–1500
