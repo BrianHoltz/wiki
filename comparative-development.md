@@ -1,6 +1,6 @@
 # Comparative Development: A Bibliography
 
-- Curated by Brian Holtz. Content/tags prompted from Gemini and GPT.
+- Curated by Brian Holtz. Content/tags prompted from Gemini and GPT per appendix.
 - Cit/yr = Google Scholar citations per year
 
 ## Table of contents
