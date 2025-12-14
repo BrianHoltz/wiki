@@ -48,6 +48,10 @@ Curation by Brian Holtz. Content by Gemini and GPT LLMs.
 ## National IQs Are Valid
 * 2025: 0 cite/yr, 10pp by “Cremieux” (Substack, pseudonymous author)
 * https://www.cremieux.xyz/p/national-iqs-are-valid
+* Tags
+    * Differences Theory: hereditarian
+    * Development Theory: demography
+    * Times/Places: contemporary
 * Summary
     * Central claim: existing "national IQ" estimates (Lynn & Vanhanen and successors) are broadly robust and meaningful for cross‑national comparison when treated carefully and compared to independent achievement datasets.
     * Validation strategy: compares Lynn-era and later imputed estimates with independent datasets (OSF "current best" national IQ compilation, World Bank HLOs, PISA/TIMSS), reporting high correlations (e.g., r ≈ 0.9 with current best estimates; r ≈ 0.83 with HLOs).
@@ -81,6 +85,10 @@ Curation by Brian Holtz. Content by Gemini and GPT LLMs.
 ## The Demise of the Flynn Effect
 * 2025: 0 cite/yr, 10pp by “Cremieux” (Substack)
 * https://www.cremieux.xyz/p/the-demise-of-the-flynn-effect
+* Tags
+    * Differences Theory: hereditarian
+    * Development Theory: demography
+    * Times/Places: contemporary
 * Summary
     * Central claim: large generational changes in test scores (the Flynn Effect and its putative reversal) often reflect changes in measurement properties and test bias rather than shifts in latent general intelligence.
     * Key evidence: new cohort analyses (e.g., [Nordmo et al. (2025)](https://www.sciencedirect.com/science/article/pii/S0160289625000121)) show divergent trends across subtests — large gains on figural matrices, stagnation or declines on math and word‑similarities — inconsistent with a uniform rise or fall in g.
@@ -111,6 +119,12 @@ Curation by Brian Holtz. Content by Gemini and GPT LLMs.
 
 * 2025: 0 cite/yr, 12pp by Brian R. Johnson (UC Davis), Sam Trejo (Univ. of Wisconsin–Madison), and Marissa E. Thompson (Columbia University)
 * https://www.preprints.org/manuscript/202501.0379
+* Tags
+    * Political Theory: egalitarian
+    * Differences Theory: environmentalist
+    * Development Theory: human-capital, inequality
+    * Groups: african-american, european, hispanic-latino, multi-racial
+    * Times/Places: contemporary, united-states
 * Summary
     * Central claim: the documented mean differences in group IQ and achievement are best explained by environmental causes; the available experimental and quasi‑experimental evidence does not support large, systematic genetic differences between races.
     * Multi‑method evidence base: reviews transracial adoption studies, mixed‑ancestry comparisons, national achievement datasets (NAEP), cross‑regional natural experiments (e.g., East/West Germany), admixture analyses, and polygenic‑score results.
@@ -142,6 +156,9 @@ Curation by Brian Holtz. Content by Gemini and GPT LLMs.
 
 * 2024: 7 cite/yr, 9pp by Ronald Henss (independent psychologist; formerly University of Saarland)
 * https://www.researchgate.net/publication/380384466
+* Tags
+    * Development Theory: human-capital
+    * Times/Places: contemporary, africa
 * Summary
     * Reviews Lynn–Vanhanen, Becker, and Rindermann datasets.
     * Finds strong correlations among national IQ estimates and international assessments.
@@ -186,9 +203,10 @@ Curation by Brian Holtz. Content by Gemini and GPT LLMs.
 * 2023: 2 cite/yr, 10pp by "Cremieux" (Substack)
 * https://www.cremieux.xyz/p/the-deep-roots-of-intelligence-differences
 * Tags
-    * Differences: hereditarian, race-realist 
+    * Differences Theory: hereditarian
+    * Development Theory: demography
+    * Groups: african-american, european, multi-racial
     * Times/Places: nineteenth-century, united-states, long-run
-    * Groups: black-african-american, white-european, multi-racial-admixture
 * Summary
     * Validates "age heaping" (rounding ages to multiples of 5 or 10) as a robust historical proxy for numeracy that correlates with modern literacy, height, and economic growth.
     * Analyzes 19th-century US Census data (1850–1900) to reveal Black-White numeracy gaps of approximately 1 standard deviation, comparable to modern intelligence gaps.
@@ -260,6 +278,11 @@ Curation by Brian Holtz. Content by Gemini and GPT LLMs.
 
 * 2022: 0 cite/yr, 20pp by “Cremieux” (Substack, pseudonymous author)
 * https://www.cremieux.xyz/p/black-economic-progress-after-slavery
+* Tags
+    * Differences Theory: environmentalist, hereditarian
+    * Development Theory: demography
+    * Groups: african-american
+    * Times/Places: nineteenth-century, jim-crow-era, contemporary, united-states
 * Summary
     * Analyzes Althoff & Reichardt’s “Jim Crow and Black Economic Progress After Slavery” using linked census data (1850–2000) to trace the socioeconomic trajectories of descendants of enslaved vs. free Black families.
     * Presents striking evidence that descendants of the enslaved converged rapidly with descendants of pre-war freedmen in literacy, income, and homeownership once geography is controlled.
@@ -351,10 +374,10 @@ Curation by Brian Holtz. Content by Gemini and GPT LLMs.
 * 2020: 150 cite/yr, 424pp by William A. Darity Jr. (economist; Duke University) and A. Kirsten Mullen (independent scholar)
 * https://en.wikipedia.org/wiki/From_Here_to_Equality
 * Tags
-    * Differences: inequality, slavery-legacy
-    * Politics: reparations-supportive, egalitarian
+    * Political Theory: pro-reparations, egalitarian
+    * Development Theory: inequality
+    * Groups: african-american
     * Times/Places: nineteenth-century, twentieth-century, contemporary, united-states
-    * Groups: black-african-american
 * Summary
     * Establishes the leading economic case for Black American reparations.
     * Argues that reparations should close the racial wealth gap, requiring large-scale financial transfers.
@@ -470,8 +493,8 @@ Curation by Brian Holtz. Content by Gemini and GPT LLMs.
 * 2001: 1000 cite/yr, 34pp by Daron Acemoglu🅒, Simon Johnson, and James A. Robinson (Economists; MIT / MIT Sloan / University of Chicago across careers)
 * https://economics.mit.edu/sites/default/files/publications/colonial-origins-of-comparative-development.pdf
 * Tags
-    * Development: institutionalist
-    * Times/Places: colonial-era, post-colonial, global, cross-national
+    * Times/Places: colonial-era, post-colonial
+    * Development Theory: institutions
 * Summary
     * Shows historically higher settler mortality led Europeans to install extractive institutions in many colonies.
     * Low-mortality regions received inclusive institutions with property rights and constraints on elites.
@@ -611,8 +634,34 @@ Curation by Brian Holtz. Content by Gemini and GPT LLMs.
 - Summary and Quotes: You are an academic expert in economics, statistics, history, and social science who is sympathetic to the text's thesis and not afraid to follow evidence and arguments to uncomfortable conclusions. Give a fair and accurate and powerful set of Summary and Quotes bullets, up to ten each. Do not hallucinate.
     - Quotes: do not add surrounding quotation marks. Do not append citation metadata to each quote line (all quotes in the Quotes section should be verbatim lines taken from the target text). If the target text is not available at the primary link, include for each quote a validation link where the quote can be checked.
 - Criticism: You are a mainstream academic expert in economics, statistics, history, and social science who is neutral/skeptical about the text's thesis. Give a fair but skeptical critique of the text, up to ten bullets. Use linked citations where appropriate. Do NOT include raw URLs in the criticism bullets—format any external link as a citation using the lead author and year as the link text (for example: [Wicherts et al. (2010)](https://...)).
+- Tags: add a tags section with one bullet for each of the 5 tag types below, ommiting any tag types for which you can't determine any tags. Use exactly the types and tags listed below, and add zero extra text in this area.
 
 ## Tagging Scheme
+
+### Political Theory
+The political values evident in the text.
+- **libertarian** - Emphasizes individual liberty, minimal state intervention, free markets
+- **egalitarian** - Emphasizes equality of outcomes or capabilities, supports redistribution
+- **meritocratic** - Emphasizes individual merit, achievement, and cognitive stratification
+- **critical-theory** - Emphasizes power structures, oppression, social construction, systemic racism, structural inequality, historical injustice
+- **anti-reparations** - Critical of or opposes large-scale reparations programs
+- **pro-reparations** - Supports reparations as policy solution
+
+### Differences Theory
+The text's causal theory explaining group differences.
+- **hereditarian** — argues genetic factors explain group differences
+- **environmentalist** — argues environmental factors explain group differences
+- **interactionist** — both genetic and environmental factors matter
+
+-### Development Theory
+The text's causal theory explaining regional/ethnic development differences.
+- **human-capital** — education, skills, cognitive resources
+- **institutions** — property rights, governance, rule of law
+- **culture** — values, social capital, norms
+- **geography** — climate, ecology, spatial factors
+- **demography** — population dynamics, selection
+- **social-mobility** — intergenerational persistence, surnames
+- **inequality** — income/wealth disparities
 
 ### Groups:
 - **african**
@@ -635,28 +684,3 @@ Curation by Brian Holtz. Content by Gemini and GPT LLMs.
 - **long-run** — spans multiple centuries
 - **slavery-era**, **jim-crow-era**, **colonial-era**, **post-colonial**, **industrial-revolution** (specific historical contexts)
 - Geographic tags: **united-states**, **europe**, **africa**, **asia**, **latin-america**, **middle-east**, **oceania**, **british-empire**
-
-### Development Theory:
-- **economic-development** — GDP, growth, productivity
-- **human-capital** — education, skills, cognitive resources
-- **institutions** — property rights, governance, rule of law
-- **culture** — values, social capital, norms
-- **geography** — climate, ecology, spatial factors
-- **demography** — population dynamics, selection
-- **social-mobility** — intergenerational persistence, surnames
-- **inequality** — income/wealth disparities
-
-### Differences Theory:
-- **hereditarian** — argues genetic factors explain group differences
-- **environmentalist** — argues environmental factors explain group differences
-- **interactionist** — both genetic and environmental factors matter
-- **agnostic** — does not take a strong causal stance
-
-### Political Theory:
-- **libertarian** - Emphasizes individual liberty, minimal state intervention, free markets
-- **egalitarian** - Emphasizes equality of outcomes or capabilities, supports redistribution
-- **race-realist** - Acknowledges biological/genetic racial differences as meaningful
-- **meritocratic** - Emphasizes individual merit, achievement, and cognitive stratification
-- **critical-theory** - Emphasizes power structures, oppression, social construction, systemic racism, structural inequality, historical injustice
-- **anti-reparations** - Critical of or opposes large-scale reparations programs
-- **pro-reparations** - Supports reparations as policy solution
