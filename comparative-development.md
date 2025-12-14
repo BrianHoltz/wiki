@@ -296,6 +296,22 @@
     * Distinguishes between individual-level returns to IQ and far larger macro-level effects.
     * Influential in human capital–centric development debates and widely cited in libertarian policy circles.
 
+## Why Did Europe Conquer the World?
+
+* 2015: 60 cite/yr, 280pp by Philip T. Hoffman (economic historian; Caltech)
+* https://press.princeton.edu/books/hardcover/9780691168245/why-did-europe-conquer-the-world
+* Summary
+    * Argues that Europe's conquest of the world was driven by the "tournament model" of warfare: continuous, prize-driven military competition.
+    * Identifies four necessary conditions for this model: frequent war, massive military spending (often 75% of tax revenue), heavy use of gunpowder technology, and few obstacles to adopting military innovations.
+    * Contrasts Europe with China, where political unification (hegemony) halted the tournament, reducing the incentive to innovate in gunpowder technology despite its invention there.
+    * Explains that European fragmentation created a "winner-take-all" dynamic where rulers fought for glory, territory, and trade monopolies, driving rapid technological learning by doing.
+    * Rejects alternative explanations involving geography, disease, or industrialization as primary causes, positioning them as secondary or later factors.
+* Criticism
+    * **Financing Mechanisms:** Critics like Jari Eloranta argue the model downplays *how* states paid for war; the "financial revolution" (credit markets) was likely as crucial as the tournament incentives themselves.
+    * **Geography's Role:** While dismissing geography, the model implicitly relies on it; Europe's geography (mountains, rivers) arguably sustained the fragmentation that kept the tournament alive, unlike China's open plains.
+    * **Coal and Industrialization:** By focusing on 1492–1800, the model may overstate the role of gunpowder and understate the later, decisive role of coal and steam power in 19th-century imperialism.
+    * **Cultural Factors:** The "glory" motive is treated as an exogenous preference of rulers, leaving the cultural origins of this bellicosity unexplored compared to other regions.
+
 ## The Son Also Rises: Surnames and the History of Social Mobility
 
 * 2014: 200 cite/yr, 384pp by Gregory Clark (economic historian; UC Davis)
