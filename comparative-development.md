@@ -1,15 +1,37 @@
 # Comparative Development: A Bibliography
 
 ## National IQs Are Valid
-
 * 2025: 0 cite/yr, 10pp by “Cremieux” (Substack, pseudonymous author)
 * https://www.cremieux.xyz/p/national-iqs-are-valid
 * Summary
-    * Argues that national IQ estimates, despite sampling noise, capture a real cross-national cognitive factor predictive of education outcomes and GDP.
-    * Shows convergent validity across Lynn & Vanhanen, Becker, Rindermann, PISA, and TIMSS.
-    * Notes that even non-Lynn datasets yield similar patterns, undermining claims that sampling bias invalidates them.
-    * Frames national IQ as an environmental performance indicator rather than a biological constant.
-    * Concludes that research should focus on environmental determinants behind observed global variation.
+    * Central claim: existing "national IQ" estimates (Lynn & Vanhanen and successors) are broadly robust and meaningful for cross‑national comparison when treated carefully and compared to independent achievement datasets.
+    * Validation strategy: compares Lynn-era and later imputed estimates with independent datasets (OSF "current best" national IQ compilation, World Bank HLOs, PISA/TIMSS), reporting high correlations (e.g., r ≈ 0.9 with current best estimates; r ≈ 0.83 with HLOs).
+    * Responds to the "mean IQs in the 70s are impossible" objection by distinguishing idiopathic intellectual disability from population‑level, normally distributed low means; argues adaptive‑function criteria and test norming change interpretation of raw thresholds.
+    * Defends geographic imputation and Winsorizing used by Lynn as reasonable when data are missing nonrandomly, and shows imputed values correlate strongly with later, independently sampled data.
+    * Addresses sampling criticisms: many alleged counterexamples rely on noncomparable norms, selective (elite or coached) samples, or anecdotal/online tests rather than representative assessments.
+    * Tackles psychometric bias and Flynn‑effect arguments: claims bias is not systematically in one direction, that international achievement tests and IQ estimates load on a common g factor, and that Flynn‑type gains often reflect test bias or cohort effects rather than wholesale convergence.
+    * Presents empirical modeling linking national development (GDP PPP per capita or consumption) to measured national IQs, arguing that observed low means in poor countries are predictable from development levels and robust to nonlinear specification.
+    * On causality: surveys instrumental and historical strategies (head size, 19th‑century numeracy proxies, ancestry/UVR instruments) that the author claims support national IQs as antecedent predictors of development rather than mere consequences.
+    * Overall tone: methodological defense of national IQ constructs coupled with pragmatic recommendations (prefer imputation‑free datasets when concerned; use achievement links like HLOs; document sampling choices).
+
+* Quotes
+    * The estimates from IQ and the Wealth of Nations hold up; they are replicable and meaningful.
+    * Low IQs are also predictable from national development, making them that much more realistic.
+    * Lynn’s 2002 imputed national IQs correlate at r = 0.90 with our current best national IQs and 0.72 with HLOs.
+    * The World Bank HLOs correlate at 0.83 with Lynn’s estimates with imputation and 0.89 without imputation.
+    * Criticisms of National IQs Are Intellectually Lazy.
+    * The distinction between types of mental retardation that are demarcated by their symptoms and, thus, by their causes, is important to understand.
+
+* Criticism
+    * Sampling and representativeness remain serious concerns: many low‑income-country estimates derive from small, convenience, or school‑based samples that can over- or understate population means; see [Wicherts et al. (2010)](https://www.sciencedirect.com/science/article/abs/pii/S1041608010000348) on selection and sample‑quality problems.
+    * Measurement and norming differences: test norms, translation quality, and instrument heterogeneity complicate cross‑national comparability — a point emphasised by [Sear (2022)](https://www.researchgate.net/publication/360665701_%27National-IQ%27-datasets-do-not-provide-accurate-unbiased-or-comparable-measures-of-cognitive-ability-worldwide) and others reviewing national‑IQ source studies.
+    * Imputation assumptions can be fragile: geographic/spatial imputation presumes neighbouring countries provide valid information, which may fail in cases of sharp within‑region heterogeneity or data missing for systematic reasons (conflict, sampling frames). Cremieux shows high correlations, but critics warn correlations do not eliminate systematic bias for particular regions.
+    * Psychometric bias is uneven but real in places: some cross‑cultural DIF (differential item functioning) and construct non‑invariance has been documented for specific tests and contexts; blanket claims that bias is negligible are premature without systematic measurement‑invariance testing across all included instruments.
+    * Overextension to genetic causality: some proponents (not Cremieux) have interpreted national IQ maps as genetic hierarchies; mainstream scholars caution that correlations with development may reflect environmental effects, measurement artifacts, or historical institutions — causality remains contested. See broader critiques in the literature (e.g., Sear 2022; Wicherts et al. 2010).
+    * Temporal stability debate: while Cremieux highlights stability, other work documents cohort and period effects (the Flynn effect and its heterogeneity); claims of long‑run stability should be qualified by data availability, changing sampling regimes, and education expansion. [Cremieux (2025)](https://www.cremieux.xyz/p/the-demise-of-the-flynn-effect)
+    * Use of achievement tests as proxies: achievement datasets (PISA, TIMSS, HLOs) are powerful crosschecks but measure partly distinct constructs (schooling, curriculum alignment); equating them too readily with pure psychometric g risks conflating schooling inputs with underlying ability.
+    * Political and ethical sensitivities: the policy and rhetorical uses of national IQ claims have high social costs; critics argue research dissemination must carefully separate descriptive measurement work from normative or biological claims to avoid misuse.
+    * Recommended hedge: when using national IQs for inference, prefer imputation‑free, well‑documented datasets (e.g., HLOs, carefully harmonised OSF compilations) and conduct robustness checks using alternative instruments and measurement‑invariance tests.
 
 ## The Demise of the Flynn Effect
 
@@ -489,3 +511,9 @@
 * 🅜 = MacArthur Fellow
 * 🅟 = Pulitzer Prize
 * 🅗 = Holberg Prize
+
+## Agent Prompt
+
+- Strictly follow the format you see for the longest entries in this doc. Study this document and its examples and make a detailed plan to follow the guidelines below. Take your time and don't hallucinate.
+- Summary and Quotes: You are an academic expert in economics, statistics, history, and social science who is sympathetic to the text's thesis and not afraid to follow evidence and arguments to uncomfortable conclusions. Give a fair and accurate and powerful set of Summary and Quotes bullets, up to ten each. Do not hallucinate. If the text is not available at the primary link, then for each quote give a link to where the quote can be validated. Only give as many quotes as you can find validated links for.
+- Criticism: You are a mainstream academic expert in economics, statistics, history, and social science who is neutral/skeptical about the text's thesis. Give a fair but skeptical critique of the text, up to ten bullets. Feel free to cite/link the most powerful critiques of the text in the academic literature.
