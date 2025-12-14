@@ -3,46 +3,50 @@
 Curation by Brian Holtz. Content by Gemini and GPT LLMs.
 
 ## Table of contents
-
-- 2025 — [National IQs Are Valid](#national-iqs-are-valid)
-- 2025 — [The Demise of the Flynn Effect](#the-demise-of-the-flynn-effect)
-- 2025 — [Race, Genes, Evolution, and IQ: The Key Datasets and Arguments](#race-genes-evolution-and-iq-the-key-datasets-and-arguments)
-- 2024 — [The Intelligence of Nations: National IQs and Correlates](#the-intelligence-of-nations-national-iqs-and-correlates)
-- 2024 — [The Nature of Social Mobility](#the-nature-of-social-mobility)
-- 2023 — [The Economics of Reparations](#the-economics-of-reparations)
-- 2023 — [The Deep Roots of Intelligence Differences](#the-deep-roots-of-intelligence-differences)
-- 2023 — [For Whom the Bell Curve Tolls](#for-whom-the-bell-curve-tolls)
-- 2022 — [The Scope of Racial Disparities in Test Scores in the United States](#the-scope-of-racial-disparities-in-test-scores-in-the-united-states)
-- 2022 — ['National IQ' Datasets Do Not Provide Accurate, Unbiased, or Comparable Measures of Cognitive Ability Worldwide](#national-iq-datasets-do-not-provide-accurate-unbiased-or-comparable-measures-of-cognitive-ability-worldwide)
-- 2022 — [Black Economic Progress After Slavery](#black-economic-progress-after-slavery)
-- 2021 — [Myths and Misconceptions about Intelligence: A Study of 35 Myths](#myths-and-misconceptions-about-intelligence-a-study-of-35-myths)
-- 2021 — [The Dawn of Everything: A New History of Humanity](#the-dawn-of-everything-a-new-history-of-humanity)
-- 2021 — [The Genetic Lottery: Why DNA Matters for Social Equality](#the-genetic-lottery-why-dna-matters-for-social-equality)
-- 2020 — [Labor Econ Versus the World: Essays on the World’s Greatest Market](#labor-econ-versus-the-world-essays-on-the-worlds-greatest-market)
-- 2010 — [Bourgeois Dignity: Why Economics Can’t Explain the Modern World](#bourgeois-dignity-why-economics-cant-explain-the-modern-world)
-- 2020 — [From Here to Equality: Reparations for Black Americans in the Twenty-First Century](#from-here-to-equality-reparations-for-black-americans-in-the-twenty-first-century)
-- 2020 — [Racial/Ethnic Group IQ Differences Are Completely Environmental in Origin](#racialethnic-group-iq-differences-are-completely-environmental-in-origin)
-- 2020 — [The Hidden Half: How the World Conceals Its Secrets](#the-hidden-half-how-the-world-conceals-its-secrets)
-- 2017 — [Against the Grain: A Deep History of the Earliest States](#against-the-grain-a-deep-history-of-the-earliest-states)
-- 2015 — [Reparations for Slavery and the Slave Trade: A Moral and Legal Case?](#reparations-for-slavery-and-the-slave-trade-a-moral-and-legal-case)
-- 2015 — [Hive Mind: How Your Nation’s IQ Matters So Much More Than Your Own](#hive-mind-how-your-nations-iq-matters-so-much-more-than-your-own)
-- 2015 — [Why Did Europe Conquer the World?](#why-did-europe-conquer-the-world)
-- 2014 — [The Son Also Rises: Surnames and the History of Social Mobility](#the-son-also-rises-surnames-and-the-history-of-social-mobility)
-- 2007 — [Compensation, Reparations, and Intergenerational Justice](#compensation-reparations-and-intergenerational-justice)
-- 2007 — [A Farewell to Alms: A Brief Economic History of the World](#a-farewell-to-alms-a-brief-economic-history-of-the-world)
-- 2003 — [Empire: How Britain Made the Modern World](#empire-how-britain-made-the-modern-world)
-- 2001 — [The Colonial Origins of Comparative Development](#the-colonial-origins-of-comparative-development)
-- 2000 — [Why I Am Not an Egalitarian](#why-i-am-not-an-egalitarian)
-- 1999 — [Shelling Out: The Origins of Money](#shelling-out-the-origins-of-money)
-- 1999 — [Development as Freedom](#development-as-freedom)
-- 1998 — [The Wealth and Poverty of Nations](#the-wealth-and-poverty-of-nations)
-- 1998 — [Seeing Like a State: How Certain Schemes to Improve the Human Condition Have Failed](#seeing-like-a-state-how-certain-schemes-to-improve-the-human-condition-have-failed)
-- 1998 — [Race, Culture, and Equality](#race-culture-and-equality)
-- 1997 — [Guns, Germs, and Steel](#guns-germs-and-steel)
-- 1994 — [Race and Culture: A World View](#race-and-culture-a-world-view)
-- 1994 — [The Bell Curve: Intelligence and Class Structure in American Life](#the-bell-curve-intelligence-and-class-structure-in-american-life)
-- 1990 — [Governing the Commons: The Evolution of Institutions for Collective Action](#governing-the-commons-the-evolution-of-institutions-for-collective-action)
-- 1964 — [Human Capital: A Theoretical and Empirical Analysis, with Special Reference to Education](#human-capital-a-theoretical-and-empirical-analysis-with-special-reference-to-education)
+ 
+ - 2025 — [National IQs Are Valid](https://humanknowledge.net/wiki/#!./comparative-development.md#National_IQs_Are_Valid)
+ - 2025 — [The Demise of the Flynn Effect](https://humanknowledge.net/wiki/#!./comparative-development.md#The_Demise_of_the_Flynn_Effect)
+ - 2025 — [Race, Genes, Evolution, and IQ: The Key Datasets and Arguments](https://humanknowledge.net/wiki/#!././comparative-development.md#Race,_Genes,_Evolution,_and_IQ:_The_Key_Datasets_and_Arguments)
+ - 2024 — [The Intelligence of Nations: National IQs and Correlates](https://humanknowledge.net/wiki/#!././comparative-development.md#The_Intelligence_of_Nations:_National_IQs_and_Correlates)
+ - 2024 — [The Nature of Social Mobility](https://humanknowledge.net/wiki/#!./comparative-development.md#The_Nature_of_Social_Mobility)
+ - 2023 — [The Economics of Reparations](https://humanknowledge.net/wiki/#!./comparative-development.md#The_Economics_of_Reparations)
+ - 2023 — [The Deep Roots of Intelligence Differences](https://humanknowledge.net/wiki/#!./comparative-development.md#The_Deep_Roots_of_Intelligence_Differences)
+ - 2023 — [For Whom the Bell Curve Tolls](https://humanknowledge.net/wiki/#!./comparative-development.md#For_Whom_the_Bell_Curve_Tolls)
+ - 2022 — [The Scope of Racial Disparities in Test Scores in the United States](https://humanknowledge.net/wiki/#!./comparative-development.md#The_Scope_of_Racial_Disparities_in_Test_Scores_in_the_United_States)
+ - 2022 — ['National IQ' Datasets Do Not Provide Accurate, Unbiased, or Comparable Measures of Cognitive Ability Worldwide](https://humanknowledge.net/wiki/#!././comparative-development.md#'National_IQ'_Datasets_Do_Not_Provide_Accurate,_Unbiased,_or_Comparable_Measures_of_Cognitive_Ability_Worldwide)
+ - 2022 — [Black Economic Progress After Slavery](https://humanknowledge.net/wiki/#!./comparative-development.md#Black_Economic_Progress_After_Slavery)
+ - 2021 — [Myths and Misconceptions about Intelligence: A Study of 35 Myths](https://humanknowledge.net/wiki/#!././comparative-development.md#Myths_and_Misconceptions_about_Intelligence:_A_Study_of_35_Myths)
+ - 2021 — [The Dawn of Everything: A New History of Humanity](https://humanknowledge.net/wiki/#!././comparative-development.md#The_Dawn_of_Everything:_A_New_History_of_Humanity)
+ - 2021 — [The Genetic Lottery: Why DNA Matters for Social Equality](https://humanknowledge.net/wiki/#!././comparative-development.md#The_Genetic_Lottery:_Why_DNA_Matters_for_Social_Equality)
+ - 2020 — [Labor Econ Versus the World: Essays on the World’s Greatest Market](https://humanknowledge.net/wiki/#!./././comparative-development.md#Labor_Econ_Versus_the_World:_Essays_on_the_World%E2%80%99s_Greatest_Market)
+ - 2010 — [Bourgeois Dignity: Why Economics Can’t Explain the Modern World](https://humanknowledge.net/wiki/#!./././comparative-development.md#Bourgeois_Dignity:_Why_Economics_Can%E2%80%99t_Explain_the_Modern_World)
+ - 2020 — [From Here to Equality: Reparations for Black Americans in the Twenty-First Century](https://humanknowledge.net/wiki/#!././comparative-development.md#From_Here_to_Equality:_Reparations_for_Black_Americans_in_the_Twenty-First_Century)
+ - 2020 — [Racial/Ethnic Group IQ Differences Are Completely Environmental in Origin](https://humanknowledge.net/wiki/#!./comparative-development.md#Racial/Ethnic_Group_IQ_Differences_Are_Completely_Environmental_in_Origin)
+ - 2020 — [The Hidden Half: How the World Conceals Its Secrets](https://humanknowledge.net/wiki/#!././comparative-development.md#The_Hidden_Half:_How_the_World_Conceals_Its_Secrets)
+ - 2017 — [Against the Grain: A Deep History of the Earliest States](https://humanknowledge.net/wiki/#!././comparative-development.md#Against_the_Grain:_A_Deep_History_of_the_Earliest_States)
+ - 2015 — [Reparations for Slavery and the Slave Trade: A Moral and Legal Case?](https://humanknowledge.net/wiki/#!././comparative-development.md#Reparations_for_Slavery_and_the_Slave_Trade:_A_Moral_and_Legal_Case?)
+ - 2015 — [Hive Mind: How Your Nation’s IQ Matters So Much More Than Your Own](https://humanknowledge.net/wiki/#!./././comparative-development.md#Hive_Mind:_How_Your_Nation%E2%80%99s_IQ_Matters_So_Much_More_Than_Your_Own)
+ - 2015 — [Why Did Europe Conquer the World?](https://humanknowledge.net/wiki/#!./comparative-development.md#Why_Did_Europe_Conquer_the_World?)
+ - 2014 — [The Son Also Rises: Surnames and the History of Social Mobility](https://humanknowledge.net/wiki/#!././comparative-development.md#The_Son_Also_Rises:_Surnames_and_the_History_of_Social_Mobility)
+ - 2007 — [Compensation, Reparations, and Intergenerational Justice](https://humanknowledge.net/wiki/#!././comparative-development.md#Compensation,_Reparations,_and_Intergenerational_Justice)
+ - 2007 — [A Farewell to Alms: A Brief Economic History of the World](https://humanknowledge.net/wiki/#!././comparative-development.md#A_Farewell_to_Alms:_A_Brief_Economic_History_of_the_World)
+ - 2003 — [Empire: How Britain Made the Modern World](https://humanknowledge.net/wiki/#!././comparative-development.md#Empire:_How_Britain_Made_the_Modern_World)
+ - 2001 — [The Colonial Origins of Comparative Development](https://humanknowledge.net/wiki/#!./comparative-development.md#The_Colonial_Origins_of_Comparative_Development)
+ - 2000 — [Why I Am Not an Egalitarian](https://humanknowledge.net/wiki/#!./comparative-development.md#Why_I_Am_Not_an_Egalitarian)
+ - 1999 — [Shelling Out: The Origins of Money](https://humanknowledge.net/wiki/#!././comparative-development.md#Shelling_Out:_The_Origins_of_Money)
+ - 1999 — [Development as Freedom](https://humanknowledge.net/wiki/#!./comparative-development.md#Development_as_Freedom)
+ - 1998 — [The Wealth and Poverty of Nations](https://humanknowledge.net/wiki/#!./comparative-development.md#The_Wealth_and_Poverty_of_Nations)
+ - 1998 — [Seeing Like a State: How Certain Schemes to Improve the Human Condition Have Failed](https://humanknowledge.net/wiki/#!././comparative-development.md#Seeing_Like_a_State:_How_Certain_Schemes_to_Improve_the_Human_Condition_Have_Failed)
+ - 1998 — [Race, Culture, and Equality](https://humanknowledge.net/wiki/#!././comparative-development.md#Race,_Culture,_and_Equality)
+ - 1997 — [Guns, Germs, and Steel](https://humanknowledge.net/wiki/#!./comparative-development.md#Guns,_Germs,_and_Steel)
+ - 1994 — [Race and Culture: A World View](https://humanknowledge.net/wiki/#!././comparative-development.md#Race_and_Culture:_A_World_View)
+ - 1994 — [The Bell Curve: Intelligence and Class Structure in American Life](https://humanknowledge.net/wiki/#!././comparative-development.md#The_Bell_Curve:_Intelligence_and_Class_Structure_in_American_Life)
+ - 1990 — [Governing the Commons: The Evolution of Institutions for Collective Action](https://humanknowledge.net/wiki/#!././comparative-development.md#Governing_the_Commons:_The_Evolution_of_Institutions_for_Collective_Action)
+ - 1964 — [Human Capital: A Theoretical and Empirical Analysis, with Special Reference to Education](https://humanknowledge.net/wiki/#!././comparative-development.md#Human_Capital:_A_Theoretical_and_Empirical_Analysis,_with_Special_Reference_to_Education)
+ - [Key (influence metrics)](https://humanknowledge.net/wiki/#!./comparative-development.md#Key_(influence_metrics))
+ - [Prize glyphs (author-level)](https://humanknowledge.net/wiki/#!./comparative-development.md#Prize_glyphs_(author-level))
+ - [Agent Prompt](https://humanknowledge.net/wiki/#!./comparative-development.md#Agent_Prompt)
+ - [Tagging Scheme](https://humanknowledge.net/wiki/#!./comparative-development.md#Tagging_Scheme)
 
 
 ## National IQs Are Valid
@@ -639,7 +643,9 @@ Curation by Brian Holtz. Content by Gemini and GPT LLMs.
 ## Tagging Scheme
 
 ### Political Theory
+
 The political values evident in the text.
+
 - **libertarian** - Emphasizes individual liberty, minimal state intervention, free markets
 - **egalitarian** - Emphasizes equality of outcomes or capabilities, supports redistribution
 - **meritocratic** - Emphasizes individual merit, achievement, and cognitive stratification
@@ -648,13 +654,17 @@ The political values evident in the text.
 - **pro-reparations** - Supports reparations as policy solution
 
 ### Differences Theory
+
 The text's causal theory explaining group differences.
+
 - **hereditarian** — argues genetic factors explain group differences
 - **environmentalist** — argues environmental factors explain group differences
 - **interactionist** — both genetic and environmental factors matter
 
--### Development Theory
+### Development Theory
+
 The text's causal theory explaining regional/ethnic development differences.
+
 - **human-capital** — education, skills, cognitive resources
 - **institutions** — property rights, governance, rule of law
 - **culture** — values, social capital, norms
