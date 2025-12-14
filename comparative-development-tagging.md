@@ -173,14 +173,6 @@
 - **balanced** - Attempts balanced, nuanced view
 - **descriptive** - Primarily descriptive, less argumentative
 
-## Tagging Scheme
-
-* Groups: 
-* Times/Places: 
-* Development:
-* Differences:
-* Politics:
-
 ## Prompt To Analyze Texts
 
 This text is available at "HoltzDotOrg/Library/Social Science/Sociology/title.md". Make a plan to study and analyze this text deeply and thoroughly, and replace the existing summary with a 10-bullet-each Summary/Quotes/Criticsm section like those used in the longer entriese in this document. In summarizing and choosing the quotes, act as an expert sympathetic to the author, assembling the most compelling and powerful summary and quotes you can. For the criticism, act as a neutral academic expert who can dispassionately analyze the text's strength and weaknesses, fearlessly acknowledging any well-supported points it makes, while also highlighting any gaps in its arguments and evidence.

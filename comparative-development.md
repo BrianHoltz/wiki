@@ -112,12 +112,16 @@ Curation by Brian Holtz. Content by Gemini and GPT LLMs.
 * 2025: 0 cite/yr, 12pp by Brian R. Johnson (UC Davis), Sam Trejo (Univ. of Wisconsin–Madison), and Marissa E. Thompson (Columbia University)
 * https://www.preprints.org/manuscript/202501.0379
 * Summary
-    * Reviews hereditarian datasets: transracial adoption, admixture studies, polygenic scores, national IQs, and international assessments.
-    * Shows adoption data suffer from small samples, attrition, and nonrepresentative family environments.
-    * Explains why current polygenic scores cannot distinguish genetic from environmental structure across populations.
-    * Demonstrates sampling bias, extrapolation errors, and test-norm issues in national IQ datasets.
-    * Summarizes environmental evidence from secular IQ gains, desegregation, SES equalization, and cases where disadvantaged groups surpass others under improved conditions.
-    * Concludes environmental factors fully account for group disparities; hereditarian claims collapse under scrutiny.
+    * Central claim: the documented mean differences in group IQ and achievement are best explained by environmental causes; the available experimental and quasi‑experimental evidence does not support large, systematic genetic differences between races.
+    * Multi‑method evidence base: reviews transracial adoption studies, mixed‑ancestry comparisons, national achievement datasets (NAEP), cross‑regional natural experiments (e.g., East/West Germany), admixture analyses, and polygenic‑score results.
+    * Transracial adoption and mixed‑race evidence: the three main adoption series (Tizard; Scarr & Weinberg; Weinberg follow‑up; Moore) show inconsistent or null genetic patterns once age at adoption, attrition, and environmental covariates are accounted for; mixed‑race samples do not reliably show the intermediate means predicted by simple additive genetic models.
+    * Measurement and test bias: many observed gaps reflect instrument content (vocabulary, schooling‑dependent items) and sampling artifacts; when tests are less dependent on prior knowledge, Black–White IQ differences shrink or disappear (e.g., Fagan & Holland 2006).
+    * Environmental effect sizes comparable to gaps: examples include east–west German differences of ~6 IQ points after reunification and adoption‑related IQ increases of roughly 12–19 points in some interventions—showing environmental processes can generate between‑group magnitudes similar to those attributed to genetics.
+    * Achievement and economic data nuance: state‑level NAEP and income analyses (Chetty et al. 2020) reveal patterns inconsistent with a fixed genetic ranking (variation by state, sex‑specific income gaps), undermining a simple hereditarian causal story.
+    * Genomics and polygenic scores: current PGS evidence is limited by population stratification, poorly transferable GWAS, and confounding with socioeconomic structure; PGS cannot yet cleanly distinguish genetic from environmental structure across populations.
+    * Evolutionary critique: plausible selective scenarios for large intelligence differences across human populations are weak; the paper argues differential selection is an unlikely explanation for systematic, large-scale racial IQ gaps.
+    * Methodological recommendation: the authors call for rigorous triangulation—better controlled adoption/cohort studies, measurement‑invariance testing, longitudinal analyses, and careful integration of genomic data—to adjudicate small possible genetic contributions while accounting for strong environmental drivers.
+    * Overall tone and implication: cautious but decisive—environmental explanations account for the bulk of observed group differences, and policy should focus on measurable social determinants (education, early intervention, inequality) while researchers continue rigorous, multidisciplinary investigation.
 
 * Quotes
     * There is considerable variation in the mean IQ scores of human racial groups.
@@ -607,3 +611,52 @@ Curation by Brian Holtz. Content by Gemini and GPT LLMs.
 - Summary and Quotes: You are an academic expert in economics, statistics, history, and social science who is sympathetic to the text's thesis and not afraid to follow evidence and arguments to uncomfortable conclusions. Give a fair and accurate and powerful set of Summary and Quotes bullets, up to ten each. Do not hallucinate.
     - Quotes: do not add surrounding quotation marks. Do not append citation metadata to each quote line (all quotes in the Quotes section should be verbatim lines taken from the target text). If the target text is not available at the primary link, include for each quote a validation link where the quote can be checked.
 - Criticism: You are a mainstream academic expert in economics, statistics, history, and social science who is neutral/skeptical about the text's thesis. Give a fair but skeptical critique of the text, up to ten bullets. Use linked citations where appropriate. Do NOT include raw URLs in the criticism bullets—format any external link as a citation using the lead author and year as the link text (for example: [Wicherts et al. (2010)](https://...)).
+
+## Tagging Scheme
+
+### Groups:
+- **african**
+- **african-american**
+- **european**
+- **hispanic-latino**
+- **asian**
+- **indigenous**
+- **multi-racial**
+- **jewish**
+
+### Times/Places:
+- **prehistoric** — before written records
+- **ancient** — pre-500 CE
+- **medieval** — c.500–1500
+- **early-modern** — c.1500–1800
+- **nineteenth-century** — 1800–1900
+- **twentieth-century** — 1900–2000
+- **contemporary** — 2000–present
+- **long-run** — spans multiple centuries
+- **slavery-era**, **jim-crow-era**, **colonial-era**, **post-colonial**, **industrial-revolution** (specific historical contexts)
+- Geographic tags: **united-states**, **europe**, **africa**, **asia**, **latin-america**, **middle-east**, **oceania**, **british-empire**
+
+### Development Theory:
+- **economic-development** — GDP, growth, productivity
+- **human-capital** — education, skills, cognitive resources
+- **institutions** — property rights, governance, rule of law
+- **culture** — values, social capital, norms
+- **geography** — climate, ecology, spatial factors
+- **demography** — population dynamics, selection
+- **social-mobility** — intergenerational persistence, surnames
+- **inequality** — income/wealth disparities
+
+### Differences Theory:
+- **hereditarian** — argues genetic factors explain group differences
+- **environmentalist** — argues environmental factors explain group differences
+- **interactionist** — both genetic and environmental factors matter
+- **agnostic** — does not take a strong causal stance
+
+### Political Theory:
+- **libertarian** - Emphasizes individual liberty, minimal state intervention, free markets
+- **egalitarian** - Emphasizes equality of outcomes or capabilities, supports redistribution
+- **race-realist** - Acknowledges biological/genetic racial differences as meaningful
+- **meritocratic** - Emphasizes individual merit, achievement, and cognitive stratification
+- **critical-theory** - Emphasizes power structures, oppression, social construction, systemic racism, structural inequality, historical injustice
+- **anti-reparations** - Critical of or opposes large-scale reparations programs
+- **pro-reparations** - Supports reparations as policy solution
