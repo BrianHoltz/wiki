@@ -119,6 +119,21 @@ Curation by Brian Holtz. Content by Gemini and GPT LLMs.
     * Summarizes environmental evidence from secular IQ gains, desegregation, SES equalization, and cases where disadvantaged groups surpass others under improved conditions.
     * Concludes environmental factors fully account for group disparities; hereditarian claims collapse under scrutiny.
 
+* Quotes
+    * There is considerable variation in the mean IQ scores of human racial groups.
+    * Such group differences may be caused by genetic or environmental effects. Here we review and refute the claims of those who argue that mean IQ differences are the result of genetic effects.
+    * When researchers used intelligence tests that were not biased with respect to past knowledge (such as vocabulary), for example, the difference in IQ between Black and White Americans disappeared (Fagan and Holland 2006).
+    * In sum, there is nothing about the nature of racial IQ gaps that suggests a genetic explanation, and the experimental work does not support a genetic explanation.
+    * Mixed race persons of approximately equal white and black ancestry should be roughly intermediate between the white and black means if many roughly additive genetic effects determine IQ. This prediction is not supported
+
+* Criticism
+    * Transracial adoption studies are persuasive but limited: small samples, attrition, and uneven adoption timing complicate causal inference; see [Thomas (2016)](https://doi.org/10.3390/jintelligence5010001) on sample‑selection artifacts in adoption followups.
+    * Achievement proxies can mislead: using NAEP or household income as proxies for intelligence conflates schooling, family structure, and measurement differences; triangulation with direct cognitive batteries and longitudinal cohorts is required (see [Chetty et al. (2020)](https://doi.org/10.1093/qje/qjz042)).
+    * Measurement heterogeneity: many referenced IQ studies use instruments that differ in vocabulary loading and cultural content; failure to harmonise can produce artefactual gaps even when true latent differences exist.
+    * Generality risk: much of the paper's review emphasizes U.S. and UK datasets; global patterns (different test batteries, migration histories, and socioecologies) may show different mixtures of environmental and genetic correlates.
+    * Evolutionary plausibility is complex: the paper argues selection on intelligence is unlikely to produce large, systematic cross‑population differences — reasonable, but evolutionary models of polygenic adaptation remain an active research area and warrant careful engagement.
+    * Recommended hedge: combine adoption/transracial evidence with modern genomic analyses, high‑quality longitudinal cohorts, and rigorous measurement‑invariance testing before ruling out small genetic contributions to group differences.
+
 ## The Intelligence of Nations: National IQs and Correlates
 
 * 2024: 7 cite/yr, 9pp by Ronald Henss (independent psychologist; formerly University of Saarland)
@@ -129,6 +144,17 @@ Curation by Brian Holtz. Content by Gemini and GPT LLMs.
     * Reports robust associations with GDP and human development indicators.
     * Argues extremely low African estimates arise from unrepresentative samples.
     * Advocates for representative school-based assessments to replace speculative national IQ estimates.
+
+* Quotes
+    * TODO (Quotes for this ResearchGate report unavailable in-page; see the source for verbatim phrasing) — validation: [Henss (2024)](https://www.researchgate.net/publication/380384466)
+
+* Criticism
+    * Overreliance on aggregated national estimates: summary statistics can obscure within‑country heterogeneity and sampling biases—see broader methodological critiques such as [Sear (2022)](https://www.researchgate.net/publication/360665701_%27National-IQ%27-datasets-do-not-provide-accurate-unbiased-or-comparable-measures-of-cognitive-ability-worldwide).
+    * Representativeness concerns: many low‑income-country samples are nonrepresentative (elite schools, urban convenience samples), undermining cross‑national comparability; see [Wicherts et al. (2010)](https://www.sciencedirect.com/science/article/abs/pii/S1041608010000348).
+    * Instrument heterogeneity: mixing tests with different norms, translations, and construct coverage risks conflating schooling/achievement with latent g — harmonisation and measurement‑invariance testing are needed.
+    * Imputation fragility: geographic or regression‑based imputation for missing countries assumes neighbouring or covarying predictors are valid proxies; this can bias regional inferences when data are missing nonrandomly.
+    * Policy misuses: national‑level IQ summaries are easily politicised; analysts should separate descriptive measurement from causal interpretation to avoid normative or biological overreach.
+    * Recommended hedge: prefer well‑documented, imputation‑free national assessments (representative school surveys, HLOs, PISA/TIMSS harmonised analyses) and report sensitivity to sampling and instrument choice.
 
 ## The Nature of Social Mobility
 
