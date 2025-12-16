@@ -187,6 +187,9 @@ These are high‑impact alleged revelations presented as insider disclosures, le
 * 2016 [Pizzagate](https://en.wikipedia.org/wiki/Pizzagate) says the leaked Podesta emails encode revelations of a child-abuse Cabal
 * 2017 [QAnon ("Q" drops)](https://en.wikipedia.org/wiki/QAnon) reported that Hillary Clinton has been arrested as the Storm takes down the Cabal
 * 2023 [David Grusch](https://en.wikipedia.org/wiki/David_Grusch) says government possesses crashed UFOs and alien "biologics"
+* 1950 [**The Hottel Memo**](https://vault.fbi.gov/UFO/UFO%20Part%201%20of%205/view): This **actual declassified FBI memo**, publicly available in the FBI Vault, describes the alleged recovery of three crashed flying saucers and "alien bodies" in New Mexico.
+* 1997 [**Frank Kaufmann Roswell Eyewitness**](https://archive.seattletimes.com/archive/19970630/2547188/after-years-of-silence-roswell-witness-speaks-out): **Frank Kaufmann**, a named person and a former **civilian member of the 509th Bomb Group staff at Roswell**, came forward as an **eyewitness** who claimed to have personally seen the wreckage of the crashed craft and the dead alien bodies.
+
 
 ## Formerly Disbelieved Phenomena
 
