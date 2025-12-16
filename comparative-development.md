@@ -159,28 +159,48 @@
 
 ## The Intelligence of Nations: National IQs and Correlates
 
-* 2024: 7 cite/yr, 9pp by Ronald Henss (independent psychologist; formerly University of Saarland)
-* https://www.researchgate.net/publication/380384466
+* 2024: 7 cite/yr, 41pp by Ronald Henss (independent psychologist; formerly University of Saarland)
+* https://www.qeios.com/read/6IBSKW
 * Tags
+    * Political Theory: meritocratic
+    * Differences Theory: hereditarian
     * Development Theory: human-capital
-    * Times/Places: contemporary, africa
+    * Groups: african, european, asian, multi-racial
+    * Times/Places: contemporary, global
 * Summary
-    * Reviews Lynn–Vanhanen, Becker, and Rindermann datasets.
-    * Finds strong correlations among national IQ estimates and international assessments.
-    * Reports robust associations with GDP and human development indicators.
-    * Argues extremely low African estimates arise from unrepresentative samples.
-    * Advocates for representative school-based assessments to replace speculative national IQ estimates.
+    * Central claim: National IQs, as measured by both psychometric intelligence tests and international student assessment studies, are highly reliable, valid, and predictive of a vast array of national outcomes. The author argues that intelligence is the single most important human trait for explaining social, economic, and cultural development at the national level.
+    * Methodology: Integrates five major datasets (Lynn & Vanhanen, Rindermann, Becker, World Bank HLO, Gust et al.) to estimate national IQs for 205 countries, demonstrating extremely high correlations among them and with PISA scores. Introduces a "Threshold Model" to capture non-linear effects of intelligence on national outcomes.
+    * Key findings: National IQs are strongly correlated (often r > 0.8) with human development, social progress, innovation, health, peace, democracy, and economic freedom. Many relationships are non-linear, with intelligence only affecting outcomes above certain thresholds (e.g., corruption, scientific output, maternal mortality, GDP per capita).
+    * Historical perspective: Traces the development of intelligence research, the Flynn effect, and Piagetian developmental psychology. Argues that the global distribution of national IQs reflects deep historical, genetic, and cultural patterns, with East Asia and Northwestern Europe at the top, and sub-Saharan Africa and its diaspora at the bottom.
+    * Policy implication: Advocates for representative, imputation-free national assessments and warns against the misuse of national IQ data for political or biological determinism. Emphasizes that intelligence is not the sole cause of national outcomes but is a necessary condition for high development.
+    * Controversies: Addresses accusations of racism and scientific bias, arguing that critics misunderstand the meaning of low national IQs and the distinction between developmental level and intellectual disability. Defends the empirical robustness of national IQ research against ideological attacks.
+    * Demographic warning: Highlights the "intelligence–fertility paradox"—high-IQ nations have below-replacement fertility, while low-IQ nations have high fertility—predicting a global shift in population composition and a potential decline in world average IQ if current trends persist.
+    * Overall tone: Methodologically assertive, empirically dense, and polemical in defense of national IQ research as a central explanatory variable in comparative development.
 
 * Quotes
-    * TODO (Quotes for this ResearchGate report unavailable in-page; see the source for verbatim phrasing) — validation: [Henss (2024)](https://www.researchgate.net/publication/380384466)
+    * Intelligence is by far the most important human trait. This holds true at the level of individuals as well as at the level of nations.
+    * The average cognitive performance of their inhabitants is the most important determinant of the social, cultural, and economic development of nations.
+    * Far and wide, there is not a single variable in sight that is independent of intelligence and has nearly as much explanatory power in so many different domains as intelligence.
+    * Psychometric intelligence tests and the international student assessment studies essentially measure the same latent variable, namely intelligence.
+    * The range [of national IQs] extends from 62 to 107 IQ points. The difference of 45 points corresponds to three standard deviation units. Differences of this magnitude are extremely rare to find in the social sciences.
+    * National IQs are an excellent predictor of the well-being of nations.
+    * The gigantic cognitive differences between racial or ethnic groups are not the work of intelligence researchers. They are empirical realities that have emerged in human evolution due to extremely diverse environmental conditions and differential selection.
+    * The phenotypic intelligence of nations can be measured very reliably by both psychometric intelligence tests and international student assessment tests and our national IQs have extraordinarily high validity.
+    * Intelligence is not carved in stone, and so the fate of humanity depends crucially on the Flynn Effect of the 21st century.
+    * It is no exaggeration to state: Intelligence is by far the most important human trait. No one will be able to dig up a variable that is independent of intelligence and has greater explanatory power than that.
 
 * Criticism
-    * Overreliance on aggregated national estimates: summary statistics can obscure within‑country heterogeneity and sampling biases—see broader methodological critiques such as [Sear (2022)](https://www.researchgate.net/publication/360665701_%27National-IQ%27-datasets-do-not-provide-accurate-unbiased-or-comparable-measures-of-cognitive-ability-worldwide).
-    * Representativeness concerns: many low‑income-country samples are nonrepresentative (elite schools, urban convenience samples), undermining cross‑national comparability; see [Wicherts et al. (2010)](https://www.sciencedirect.com/science/article/abs/pii/S1041608010000348).
-    * Instrument heterogeneity: mixing tests with different norms, translations, and construct coverage risks conflating schooling/achievement with latent g — harmonisation and measurement‑invariance testing are needed.
-    * Imputation fragility: geographic or regression‑based imputation for missing countries assumes neighbouring or covarying predictors are valid proxies; this can bias regional inferences when data are missing nonrandomly.
-    * Policy misuses: national‑level IQ summaries are easily politicised; analysts should separate descriptive measurement from causal interpretation to avoid normative or biological overreach.
-    * Recommended hedge: prefer well‑documented, imputation‑free national assessments (representative school surveys, HLOs, PISA/TIMSS harmonised analyses) and report sensitivity to sampling and instrument choice.
+    * **Sampling and representativeness:** Many low-income and developing countries have sparse, non-representative, or urban-biased samples, making national IQ estimates fragile and potentially misleading; see [Sear (2022)](https://www.researchgate.net/publication/360665701_%27National-IQ%27-datasets-do-not-provide-accurate-unbiased-or-comparable-measures-of-cognitive-ability-worldwide).
+    * **Instrument heterogeneity:** Mixing results from different test batteries, translations, and norms risks conflating schooling/achievement with latent intelligence; harmonization and measurement-invariance testing are needed for robust cross-national comparisons ([Wicherts et al. (2010)](https://www.sciencedirect.com/science/article/abs/pii/S1041608010000348)).
+    * **Imputation and outliers:** Geographic or regression-based imputation for missing countries assumes neighboring predictors are valid proxies, which can bias regional inferences when data are missing nonrandomly.
+    * **Causal ambiguity:** The paper emphasizes correlation but does not resolve the direction of causality between intelligence and national outcomes; complex feedback loops and omitted variables (institutions, culture, geography) may confound results ([Acemoglu et al. (2001)](https://economics.mit.edu/sites/default/files/publications/colonial-origins-of-comparative-development.pdf)).
+    * **Political misuse:** National IQ data are easily politicized and can be misused to support deterministic or essentialist narratives about race and development; analysts should separate descriptive measurement from causal or normative claims.
+    * **Threshold model limitations:** The "Threshold Model" is theoretically interesting but may overfit to the available data and lacks independent validation in the literature.
+    * **Ecological fallacy:** Inferring individual-level cognitive ability or potential from national averages risks ecological fallacy and ignores within-country heterogeneity ([Warne (2022)](https://doi.org/10.1007/s40806-022-00351-y)).
+    * **Neglect of alternative explanations:** The focus on intelligence may underplay the role of institutions, historical contingencies, and policy choices in shaping national outcomes ([Sen (1999)](https://en.wikipedia.org/wiki/Development_as_Freedom)).
+    * **Demographic projections:** The dire predictions about global IQ decline rely on static assumptions about fertility and migration, which may not hold as development and education expand.
+    * **Recommended hedge:** Prefer well-documented, imputation-free national assessments (representative school surveys, HLOs, PISA/TIMSS harmonized analyses) and report sensitivity to sampling and instrument choice.
+
 
 ## The Nature of Social Mobility
 
