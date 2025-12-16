@@ -21,6 +21,23 @@ Worked at Area 51 in late 1980s on one of 9 functional alien spaceships, some of
 
 [SphereBeingAlliance.com](https://spherebeingalliance.com/faqs/tag/moon): The moon is an ancient "device" or space station that was built by the "Ancient Builder Race". It is hollow after hundreds of feet of debris that have collected on it.
 
+### ❌ Rejected Candidates Analysis
+
+These individuals do not meet the strict criteria for inclusion because they lack **verified insider status** corresponding to their claims, and they have failed to produce **physical leaked documents** that can be publicly examined.
+
+* **Arthur Neumann (aka Henry Deacon)**
+    * **Claim:** Claimed to be a physicist working for "three-letter agencies" and Lawrence Livermore National Laboratory, involved in time travel and Mars portal projects.
+    * **Reason for Rejection:** **Unverified Insider Status.** There is no public record or documentation confirming his employment at these agencies in a capacity that would grant access to such projects. He has produced no physical documents to support his testimony, making his claims unverifiable hearsay.
+
+* **Emery Smith**
+    * **Claim:** Claimed to have autopsied over 3,000 alien specimens in underground bases while serving in the US Air Force.
+    * **Reason for Rejection:** **Incompatible Verified Status.** While his Air Force service is verified, his official job was **Surgical Technologist** (a standard medical support role), not Intelligence or Biology. There is no official record of the security clearance or "moonlighting" assignment required for his claims. He has provided no physical evidence or leaked reports to corroborate the "autopsy" assertions.
+
+* **Corey Goode**
+    * **Claim:** Claimed to serve 20 years in a "Secret Space Program" (Solar Warden) and interact with the "Sphere Being Alliance."
+    * **Reason for Rejection:** **No Verified Status & Hearsay.** Goode has no verified military service record (no DD214). His claims rely on "recovered memories" and "intuitive" channeling rather than documented physical events witnessed during a confirmed official tenure. He has produced zero physical leaked documents.
+
+
 ## Hearsay Whistleblowers
 ### Paul Hellyer
 [Paul Hellyer](http://blog.knowinghumans.net/2021/03/hellyer-reports-on-galactic-federation.md) was Defense MInister of Canada in the 1960s and at age 82 in 2005 read a book (confirmed by some unnamed general) that convinced him the government is hiding its secret relations with at least four alien species who have been visiting Earth for thousands of years. He has learned that the aliens want humans to stop using clear-cutting, fracking, and fossil fuels, and to love each other.
