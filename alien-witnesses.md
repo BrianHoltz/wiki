@@ -56,17 +56,54 @@ Believes ([video](https:*www.youtube.com/watch?v=YxQLiy7AHx8), [transcript](http
 [UFOdigest.com](https://www.ufodigest.com/article/will-we-soon-learn-that-there-are-extraterrestrials-among-us/) (2014): a consortium or regional galactic governance council is responsible for the creation of our species homo sapiens as a 12-strand DNA Light being in the 3rd dimension. Homo sapiens were devolved into a 3-strand DNA slave race 280,000 years ago by the intervention of another predatory species – the Anunnaki – that in fact has instituted the models of all hierarchical monarchies, religions, human governance, and human duality-based monetary systems.
 
 ## TBD
-  * Bob Dean
-  * President Carter's investigative consultant Daniel Sheehan
-  * New York Times bestseller Jim Marrs
-  * US Air Force Captain Robert Salas
-  * Air Force Colonel/nuclear engineer Don Ware
-  * UK Ministry of Defense spokesman Nick Pope
-  * astronomer Jacques Vallee
-  * professor/abduction researcher David Jacobs
-  * nuclear physicist Stanton Friedman
-  * Donald Keyhoe
-  * Frank Scully
-  * Gerald Heard 
-  * David Grusch
-  * Daniel Sheehan
+
+### ❌ Rejected Candidates (Strict Criteria Evaluation)
+
+* **Bob Dean (US Army Command Sergeant Major)**
+    * **Evaluation:** **Rejected.**
+    * **Reason:** While a verified insider, Dean only *claimed to have read* the "Assessment" document. He did not leak the physical document for public examination, and he does not claim to have personally seen the aliens/craft in the flesh, only photos within a file he cannot produce.
+
+* **Daniel Sheehan (Investigative Counsel)**
+    * **Evaluation:** **Rejected.**
+    * **Reason:** Sheehan claims to have *seen* classified photos of UFOs in verified archives (Project Blue Book/Library of Congress). However, he did not leak or reproduce the photos. His testimony is seeing a photo, not being a first-hand eyewitness to the event or craft itself.
+
+* **David Grusch (NRO/NGA Intelligence Officer)**
+    * **Evaluation:** **Rejected.**
+    * **Reason:** Grusch is a verified insider and a legal whistleblower, but he admitted under oath that he has **not** seen the craft or bodies himself. His testimony is based on interviewing other insiders and reviewing files. He has not released the physical documents or photos he viewed. He is a "second-hand" witness.
+
+* **Robert Salas (USAF Captain/Launch Officer)**
+    * **Evaluation:** **Rejected.**
+    * **Reason:** Salas was a first-hand witness to the *missile shutdown*, but he was **not** a first-hand witness to the UFO. He admits he was underground in the capsule; the claim of a glowing red object came from the topside security guards calling down to him. This falls under "talking to eyewitnesses."
+
+* **Nick Pope (UK Ministry of Defence)**
+    * **Evaluation:** **Rejected.**
+    * **Reason:** Pope was an official desk officer investigating reports. He does not claim to have seen a craft or alien body himself; his knowledge comes from reading reports and interviewing witnesses (hearsay).
+
+* **Donald Keyhoe (USMC Major)**
+    * **Evaluation:** **Rejected.**
+    * **Reason:** Keyhoe was a verified officer but acted as an author/investigator. His claims were based on sources and leaked *stories*, not his own first-hand sighting of verified alien technology.
+
+* **Don Ware (USAF Colonel)**
+    * **Evaluation:** **Rejected.**
+    * **Reason:** Ware discusses spiritual/telepathic contact and aggregates data. He does not claim a specific instance of physically working on or seeing a recovered craft in his official capacity.
+
+* **Jim Marrs (Journalist)**
+    * **Evaluation:** **Rejected.**
+    * **Reason:** Investigative journalist and author. He compiles stories from others; he is not an insider witness.
+
+* **Jacques Vallee (Astronomer)**
+    * **Evaluation:** **Rejected.**
+    * **Reason:** Vallee is a researcher and analyst of the phenomenon. While he worked on Blue Book databases, he does not claim to be a whistleblower of a specific recovered craft he saw personally.
+
+* **David Jacobs (Professor)**
+    * **Evaluation:** **Rejected.**
+    * **Reason:** Jacobs conducts hypnosis on *other* people (abductees). He is a researcher of third-party testimony, not a first-hand witness to the phenomena.
+
+* **Frank Scully (Journalist)**
+    * **Evaluation:** **Rejected.**
+    * **Reason:** Scully was a journalist who published stories given to him by Silas Newton (who was later determined to be a con man). Scully had no first-hand access.
+
+* **Gerald Heard (Philosopher)**
+    * **Evaluation:** **Rejected.**
+    * **Reason:** Heard engaged in philosophical speculation about the nature of UFOs (the "bee" theory) but had no insider access or direct testimony.
+
