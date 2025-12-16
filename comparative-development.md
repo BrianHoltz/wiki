@@ -4,12 +4,12 @@
 - Cit/yr = Google Scholar citations per year
 
 ## Table of contents
- 
+
  - 2025 — [National IQs Are Valid](#National_IQs_Are_Valid)
  - 2025 — [The Demise of the Flynn Effect](#The_Demise_of_the_Flynn_Effect)
  - 2025 — [Race, Genes, Evolution, and IQ: The Key Datasets and Arguments](#Race,_Genes,_Evolution,_and_IQ:_The_Key_Datasets_and_Arguments)
  - 2024 — [The Intelligence of Nations: National IQs and Correlates](#The_Intelligence_of_Nations:_National_IQs_and_Correlates)
- - 2024 — [The Nature of Social Mobility](#The_Nature_of_Social_Mobility)
+ - 2024 — [Matriline versus Patriline: Social Mobility in England, 1754-2023](#Matriline_versus_Patriline:_Social_Mobility_in_England,_1754-2023)
  - 2023 — [The Economics of Reparations](#The_Economics_of_Reparations)
  - 2023 — [The Deep Roots of Intelligence Differences](#The_Deep_Roots_of_Intelligence_Differences)
  - 2023 — [For Whom the Bell Curve Tolls](#For_Whom_the_Bell_Curve_Tolls)
@@ -201,27 +201,47 @@
     * **Demographic projections:** The dire predictions about global IQ decline rely on static assumptions about fertility and migration, which may not hold as development and education expand.
     * **Recommended hedge:** Prefer well-documented, imputation-free national assessments (representative school surveys, HLOs, PISA/TIMSS harmonized analyses) and report sensitivity to sampling and instrument choice.
 
+## Matriline versus Patriline: Social Mobility in England, 1754-2023
 
-## The Nature of Social Mobility
-
-* 2024: 10 cite/yr, 312pp by Gregory Clark (economic historian; UC Davis)
-* https://www.gwern.net/docs/sociology/2024-clark-thenatureofsocialmobility.pdf
+* 2024: 0 cite/yr, 60pp by Gregory Clark (University of Southern Denmark) & Neil Cummins (LSE)
+* https://www.ehes.org/EHES_248.pdf
 * Summary
-    * Argues that social mobility is remarkably stable across time, place, and institutional regimes.
-    * Uses surnames to track long-run social persistence, finding high underlying heritability of status.
-    * Challenges assumptions that modern policies dramatically alter mobility patterns.
-    * Positions deep demographic and cultural transmission as central to long-run inequality.
-
-## The Economics of Reparations
-
-* 2023: 15 cite/yr, 25pp by Tyler Cowen (economist; George Mason University, Mercatus Center)
-* https://www.mercatus.org/research/policy-briefs/economics-reparations
-* Summary
-    * Analyzes proposed reparations policies using cost–benefit frameworks, political economy constraints, and macroeconomic feasibility.
-    * Argues that large-scale cash transfers face severe implementation, fiscal, and legitimacy challenges.
-    * Highlights unintended consequences including political backlash, gaming, rent-seeking, and persistent measurement disputes over eligibility.
-    * Suggests alternative approaches such as broad-based growth policies, improved governance, and future-oriented investment rather than backward-looking compensation.
-    * Influential among economists skeptical of large direct reparations programs.
+    * Analyzes 426,552 English family lineages (1754–2023) to compare the influence of mothers and fathers on child social outcomes.
+    * Finds that, across nearly three centuries, mothers’ and fathers’ education and social status are equally predictive of most child outcomes—even in highly patriarchal periods.
+    * Only for wealth is the patriline (father’s line) much more influential than the matriline.
+    * Challenges social and cultural theories predicting greater maternal influence due to mothers’ larger role in child nurture.
+    * Reviews prior literature and finds little empirical support for stronger maternal effects, even in contemporary or gender-unequal societies.
+    * Uses the Families of England (FOE) genealogical database to show strong, stable persistence of social status across generations, regardless of parental gender.
+    * Suggests that conventional approaches focusing on the father’s status may not misrepresent actual intergenerational mobility.
+    * Notes that the lack of maternal occupational/educational data in historical records complicates direct comparison, but available evidence supports the main findings.
+    * Concludes that both matrilineal and patrilineal influences are deeply persistent, with only wealth transmission showing a strong gender asymmetry.
+* Quotes
+    * Mothers’ and fathers’ education and social status are equally predictive of most child social outcomes across the entire period, even for the patriarchical society of eighteenth-nineteenth century England.
+    * Only for wealth was there a much stronger influence of the patriline.
+    * Social and cultural theories of status determination will generally predict that mothers and fathers have unequal effects.
+    * In England, for example, up until 1882 husbands had control of women’s property after marriage.
+    * In the genealogical database we use here to measure the comparative influence of fathers and mothers, the Families of England (FOE) Database, there is a strong and stable persistence of social status across many generations.
+    * Could this in part come from the FOE database mainly tracing descent on the male line? Is there potentially much more social mobility on the maternal line, and hence also in society as a whole, where social mobility is generally measured by comparing sons to fathers?
+    * Despite the expectations of greater influence by mothers, the existing empirical literature on the contemporary comparative effect of mothers versus fathers on child outcomes tends to find little difference in effects across parents.
+    * At least for education, then, we see clear indications in the literature of equal mother and father effects for societies where mother and father education levels tend to be relatively equal. Does this hold for the much more gender unequal societies of the past?
+    * As an example, consider Emma Wedgwood (1809-1896), who married Charles Darwin in 1839, and was mother of 10 children, three of whom became Fellows of the Royal Society. She appears in the census reports of 1851-1891, but only once with an occupational descriptor.
+    * Concludes that both matrilineal and patrilineal influences are deeply persistent, with only wealth transmission showing a strong gender asymmetry.
+* Criticism
+    * **Data Limitations:** The lack of direct occupational and educational data for women in historical records may obscure subtle maternal effects, especially in earlier centuries.
+    * **Database Bias:** The FOE database primarily traces patrilineal descent, which could understate matrilineal mobility or influence.
+    * **Generalizability:** Results from England may not generalize to societies with different family structures, inheritance laws, or gender norms.
+    * **Wealth Transmission:** The finding that only wealth is strongly patrilineal may reflect legal and institutional constraints unique to England’s history, not universal patterns.
+    * **Measurement Error:** Maternal influence may be underestimated due to missing or misclassified data, especially for non-elite or unmarried women.
+    * **Cultural Change:** The study spans periods of dramatic change in gender roles and legal rights, which may mask period-specific effects.
+    * **Sibling and Gender Effects:** The analysis may not fully capture differences in parental influence by child gender or among siblings.
+    * **Comparative Literature:** Some studies in other contexts (e.g., Espín-Sánchez et al., 2023, for the US) find stronger maternal effects, suggesting the English pattern is not universal.
+    * **Causal Mechanisms:** The study documents associations but cannot fully disentangle genetic, social, and institutional mechanisms of transmission.
+    * **Policy Implications:** The findings challenge assumptions in social policy and theory about the primacy of maternal nurture in shaping outcomes.
+* Tags
+    * Differences Theory: social-mobility
+    * Development Theory: social-mobility
+    * Groups: european
+    * Times/Places: eighteenth-century, nineteenth-century, twentieth-century, contemporary, long-run, englandC
 
 ## The Deep Roots of Intelligence Differences
 
