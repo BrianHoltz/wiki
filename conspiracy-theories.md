@@ -179,16 +179,14 @@ Alleged conspiracies for which the actions and actors are well-known but their s
 
 These are high‑impact alleged revelations presented as insider disclosures, leaked documents, or named whistleblower testimony but which mainstream consensus treats as non‑credible or unverified. Entries are limited to cases that rely on a named leaker/informant, leaked documents, or claimed direct evidence.
 
-* 1859 [Alta Vendita ("Permanent Instruction" claims)](https://en.wikipedia.org/wiki/Alta_Vendita)
-* 1903 [The Protocols of the Elders of Zion (forged document claims)](https://en.wikipedia.org/wiki/The_Protocols_of_the_Elders_of_Zion)
-* 1984 [Majestic 12 (MJ‑12) documents](https://en.wikipedia.org/wiki/Majestic_12)
-* 1989 [Bob Lazar S‑4 claims](https://en.wikipedia.org/wiki/Bob_Lazar)
-* 1993 [Robert Dean (ufologist) claims](https://en.wikipedia.org/wiki/Robert_Dean_(ufologist))
-* 1996 [Robert Salas Malmstrom/ICBM incident claims](https://en.wikipedia.org/wiki/Robert_Salas)
-* 1997 [Philip J. Corso – "The Day After Roswell" claims](https://en.wikipedia.org/wiki/Philip_J._Corso)
-* 2016 [Pizzagate (Podesta emails)](https://en.wikipedia.org/wiki/Pizzagate)
-* 2017 [QAnon ("Q" drops)](https://en.wikipedia.org/wiki/QAnon)
-* 2023 [David Grusch alleged UAP recovery whistleblower](https://en.wikipedia.org/wiki/David_Grusch)
+* 1903 [The Protocols of the Elders of Zion](https://en.wikipedia.org/wiki/The_Protocols_of_the_Elders_of_Zion) Jewish global plans
+* 1984 [Majestic 12 (MJ‑12)](https://en.wikipedia.org/wiki/Majestic_12) government committee to deal with aliens
+* 1989 [Bob Lazar S‑4 claims](https://en.wikipedia.org/wiki/Bob_Lazar) worked on flying saucers at area 51
+* 1996 [Robert Salas](https://en.wikipedia.org/wiki/Robert_Salas) realized 25 years later that the 1967 Malmstrom ICBM shutdown was caused by aliens
+* 1997 [Philip J. Corso – "The Day After Roswell"](https://en.wikipedia.org/wiki/Philip_J._Corso) saw an alien body while reverse engineering Roswell UFO
+* 2016 [Pizzagate](https://en.wikipedia.org/wiki/Pizzagate) says the leaked Podesta emails encode revelations of a child-abuse Cabal
+* 2017 [QAnon ("Q" drops)](https://en.wikipedia.org/wiki/QAnon) reported that Hillary Clinton has been arrested as the Storm takes down the Cabal
+* 2023 [David Grusch](https://en.wikipedia.org/wiki/David_Grusch) says government possesses crashed UFOs and alien "biologics"
 
 ## Formerly Disbelieved Phenomena
 
