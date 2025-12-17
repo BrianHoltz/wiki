@@ -1,10 +1,24 @@
-## Eyewitness Whistleblowers
+# Alien Witnesses
 
-These are eyewitnesses who claim personal experience with indisputably extraterrestrial technology or biology, and who claim that the government is concealing confirmation of their experiences. Their claims could in principle be confirmed by official channels e.g. other official witnesses, government leaks, etc. This category excludes:
+I categorize witnesses on several dimensions:
 
-  * hearsay e.g. my dad saw alien spacecraft at Area 51; a general told me the government has had meetings with aliens; my uncle performed an alien autopsy. The dad/general/uncle would be the eyewitnesses, but the people repeating the eyewitness testimony are merely hearsay witnesses.
-  * private experiences e.g. I was abducted onto an alien ship and probed by Greys, but I don't allege there is any official-but-secret corroborating information that a whistleblower or hacker could someday reveal.
-  * disputable evidence e.g. the Atacam skeleton; Fravor's report of a seeing flying tic-tac craft thousands of feet away; radar logs of mysterious blips.
+- **Insider vs outsider**: whether the witness claims to have been inside an organization, and so could in principle be corroborated by a leak or official disclosure.
+- **Credentialed vs uncredentialed**: whether an insider's crdentials have been verified by mainstream evaluators.
+- **Eyewitness vs hearsay**: whether the witness claims direct personal experience with the paranormal phenomenon, or at least has disclosed artifacts or source records/media that can be subject to skeptical examination.
+  - **Hearsay** examples: my dad saw alien spacecraft at Area 51; a general told me the government had meetings with aliens; my uncle performed an alien autopsy. The dad/general/uncle would be the eyewitnesses, but the people repeating the eyewitness testimony are merely hearsay witnesses.
+- **Public experience vs private**: whether the witness's claimed direct personal experience was in a public setting subject to later (dis)confirmation by independent witnesses.
+
+## Credentialed eyewitness insider
+
+## Uncredentialed eyewitness insider
+
+## Credentialed hearsay insider
+
+## Eyewitness outsider
+
+## Uncredentialed hearsay insider
+
+## Hearsay outsider
 
 ### Bob Lazar
 Worked at Area 51 in late 1980s on one of 9 functional alien spaceships, some of which were found in archaeological digs. Debunked [here](http://blog.knowinghumans.net/2021/03/bob-lazars-2011-nobel-prize.md).
