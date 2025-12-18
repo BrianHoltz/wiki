@@ -10,9 +10,14 @@
 
 ## Credentialed eyewitness insider
 
-### Bob Lazar: reverse engineer
+### Bob Lazar
 
-Allegedly worked at Area 51 in late 1980s on one of 9 functional alien spaceships, some of which were found in archaeological digs. Debunked on [Knowing Humans](http://blog.knowinghumans.net/2021/03/bob-lazars-2011-nobel-prize.md).
+* [1988–1989](https://en.wikipedia.org/wiki/Bob_Lazar) Claims to have been employed as a "Senior Staff Physicist" at Sector 4 (S-4) near Groom Lake, Nevada.
+* [1988](https://www.youtube.com/watch?v=4UjqFaQq_7I) 1st encountered insider reports when he was allegedly hired and briefed on the propulsion systems of nine extraterrestrial discs, some of which were found in archaeological digs.
+* [1989](https://www.youtube.com/watch?v=2GRjgBVw9Pk) 1st reported claims in a May interview with George Knapp on KLAS-TV, appearing in shadow under the pseudonym "Dennis."
+* [The Lazar Tape](https://www.youtube.com/watch?v=NoecOE2RKdk): Claims the craft was powered by an antimatter reactor using **Element 115** (Moscovium) to generate a "gravity wave" that bends space-time. Describes the "Sport Model" disc as being "made of a metallic substance similar in appearance and touch to liquid titanium" with no welding or seams.
+* Lazar is the primary source for the "S-4" reverse-engineering narrative. While he claims to be an insider, his credentials are unverified: MIT and Caltech have no record of his attendance, and Los Alamos National Laboratory phone books list him as a technician for a contractor (Kirk-Mayer), not a physicist. His only physical evidence, a W-2 form, lists a non-existent "Department of Naval Intelligence." His claims rely entirely on his own testimony without corroborated witnesses or leaked documentation.
+* Debunked on [Knowing Humans](http://blog.knowinghumans.net/2021/03/bob-lazars-2011-nobel-prize.md).
 
 ## Uncredentialed eyewitness insider
 
@@ -25,16 +30,18 @@ While his Air Force service is verified, his official job was **Surgical Technol
 
 ### David Grusch
 
-* [2019–2021](https://en.wikipedia.org/wiki/David_Grusch_UFO_whistleblower_claims) NRO/NGA Intelligence Officer
-* [2019](https://www.newsweek.com/whistleblower-david-grusch-ufo-claims-timeline-1811307) 1st encountered insider reports of NHI
-* [2023](https://www.thedebrief.org/intelligence-official-turned-whistleblower-says-u-s-has-retrieved-non-human-craft/) 1st reported claims about NHI
-* Grusch is a verified insider and a legal whistleblower, but he admitted under oath that he has **not** seen the craft or bodies himself. His testimony is based on interviewing other insiders and reviewing files. He has not released any documents or photos he claims he viewed.
+* [2007-2021](https://www.congress.gov/118/meeting/house/116282/documents/HHRG-118-GO06-Transcript-20230726.pdf) — “intelligence officer for 14 years … most recently … at the National Geospatial Intelligence Agency … at the GS–15 civilian level.”
+* [2019](https://www.congress.gov/118/meeting/house/116282/documents/HHRG-118-GO06-Transcript-20230726.pdf)  1st encountered NHI evidence when "I was informed in the course of my official duties of a multi-decade UAP crash retrieval and reverse engineering program to which I was denied access to those additional read-ons when I requested it."
+* [2023](https://www.congress.gov/118/meeting/house/116282/documents/HHRG-118-GO06-Transcript-20230726.pdf) 1st disclosed that "biologics came with some of these recoveries."
+* Grusch would not publically disclose whether "our government has made contact with intelligent extraterrestrials" or how his sources determined the "biologics [that] came with some of these recoveries" were "nonhuman". He frames his most extreme claims (recovered craft, biologics) as second-hand. He denies firsthand observation of craft or bodies and has not released publicly reviewable documents or images.
 
 ### Daniel Sheehan
 
-* [1977–1981](https://en.wikipedia.org/wiki/Daniel_Sheehan_(attorney)) "Sheehan is a constitutional and public interest lawyer, public speaker, political activist and educator."
-* (No strong source found for 1st encountered insider UFO reports; Sheehan's own site only says his advocacy dates to Carter administration)
-* (No strong source found for 1st public report; Wikipedia and Sheehan's site only state: "Sheehan claims to have *seen* classified photos of UFOs in verified archives (Project Blue Book/Library of Congress). However, he did not leak or reproduce the photos. His testimony is seeing a photo, not being a first-hand eyewitness to the event or craft itself.")
+* [1975–1985](https://www.danielpsheehan.com/about/) Chief Counsel, National Office of Social Ministries of the Jesuit Order.
+* [1977](https://www.ufojoe.net/sheehanlueig/) 1st experienced alien evidence when “In approximately May of 1977, I went to the Madison building of the United States Library of Congress" while “designated as a special consultant” to the Congressional Research Service / Library of Congress. “I was given access … to the classified portions of Project Blue Book …”. I saw “photographs … of what is unquestionably an unidentified flying object on the ground …”. “I physically traced the copies of the symbols …”
+* [2021](https://www.ufojoe.net/sheehanlueig/) 1st disclosed his 1977 discoveries.
+* Sheehan's UFO-related claims merely a one-time archival access and viewing of photographs—not firsthand witnessing of a craft, bodies, or an operational program. He did not leak or reproduce the materials he described 44 years later.
+* Marcia Smith authored the 1976 Congressional Research Service report The UFO Enigma while serving as an Analyst in Science and Technology at the Library of Congress. The paper concludes that the subject remains unresolved due to poor data quality, inconsistent reporting, and the absence of decisive physical evidence; it does not endorse the extraterrestrial hypothesis. Despite Sheehan’s later claims, we can find no documentary or on-the-record evidence that Smith worked with Daniel Sheehan, supervised him, or designated him as a consultant in connection with her CRS work.
 
 ### Robert Salas (USAF Captain/Launch Officer)
 
@@ -46,7 +53,11 @@ Pope was an official desk officer investigating reports. He does not claim to ha
 
 ### Paul Hellyer
 
-[Paul Hellyer](http://blog.knowinghumans.net/2021/03/hellyer-reports-on-galactic-federation.md) was Defense MInister of Canada in the 1960s and at age 82 in 2005 read a book (confirmed by some unnamed general) that convinced him the government is hiding its secret relations with at least four alien species who have been visiting Earth for thousands of years. He has learned that the aliens want humans to stop using clear-cutting, fracking, and fossil fuels, and to love each other.
+* [1963–1967](https://lop.parl.ca/sites/ParlInfo/default/en_CA/People/Profile?personId=1433) Served as the **Minister of National Defence** for Canada under Prime Minister Lester B. Pearson.
+* [2005](https://thecanadianencyclopedia.ca/en/article/paul-hellyer) 1st encountered "insider" reports *after* his political career, specifically by reading Col. Philip Corso's book *The Day After Roswell*, which he said confirmed his suspicions.
+* [2005](https://www.youtube.com/watch?v=Qt1WVeyMqdo) 1st reported claims publicly at a symposium at the University of Toronto, stating, "UFOs are as real as the airplanes that fly over your head."
+* [SophieCo Interview (RT)](https://www.youtube.com/watch?v=OFl29Uos9K8): Claims that "at least four known alien species have been visiting Earth for thousands of years" and that there is a **"Galactic Federation"** that manages these interactions. He asserts that some aliens, such as the "Tall Whites," are currently working with the U.S. government and can "walk down the street and you wouldn’t know."
+* [Knowing Humans](http://blog.knowinghumans.net/2021/03/hellyer-reports-on-galactic-federation.md) Hellyer at age 82 in 2005 read a book (allegedly confirmed by some unnamed general) that convinced him the government is hiding its secret relations with at least four alien species who have been visiting Earth for thousands of years. He has learned that the aliens want humans to stop using clear-cutting, fracking, and fossil fuels, and to love each other.
 
 ### Donald Keyhoe (USMC Major)
 
