@@ -23,13 +23,18 @@ While his Air Force service is verified, his official job was **Surgical Technol
 
 ## Credentialed hearsay insider
 
-### David Grusch (NRO/NGA Intelligence Officer)
+### David Grusch
 
-Grusch is a verified insider and a legal whistleblower, but he admitted under oath that he has **not** seen the craft or bodies himself. His testimony is based on interviewing other insiders and reviewing files. He has not released the physical documents or photos he viewed. He is a "second-hand" witness.
+* [2019–2021](https://en.wikipedia.org/wiki/David_Grusch_UFO_whistleblower_claims) NRO/NGA Intelligence Officer
+* [2019](https://www.newsweek.com/whistleblower-david-grusch-ufo-claims-timeline-1811307) 1st encountered insider reports of NHI
+* [2023](https://www.thedebrief.org/intelligence-official-turned-whistleblower-says-u-s-has-retrieved-non-human-craft/) 1st reported claims about NHI
+* Grusch is a verified insider and a legal whistleblower, but he admitted under oath that he has **not** seen the craft or bodies himself. His testimony is based on interviewing other insiders and reviewing files. He has not released any documents or photos he claims he viewed.
 
-### Daniel Sheehan (Investigative Counsel)
+### Daniel Sheehan
 
-Sheehan claims to have *seen* classified photos of UFOs in verified archives (Project Blue Book/Library of Congress). However, he did not leak or reproduce the photos. His testimony is seeing a photo, not being a first-hand eyewitness to the event or craft itself.
+* [1977–1981](https://en.wikipedia.org/wiki/Daniel_Sheehan_(attorney)) "Sheehan is a constitutional and public interest lawyer, public speaker, political activist and educator."
+* (No strong source found for 1st encountered insider UFO reports; Sheehan's own site only says his advocacy dates to Carter administration)
+* (No strong source found for 1st public report; Wikipedia and Sheehan's site only state: "Sheehan claims to have *seen* classified photos of UFOs in verified archives (Project Blue Book/Library of Congress). However, he did not leak or reproduce the photos. His testimony is seeing a photo, not being a first-hand eyewitness to the event or craft itself.")
 
 ### Robert Salas (USAF Captain/Launch Officer)
 
@@ -119,3 +124,15 @@ Ware discusses spiritual/telepathic contact and aggregates data. He does not cla
 Believes ([video](https:*www.youtube.com/watch?v=YxQLiy7AHx8), [transcript](https:*projectcamelot.org/lang/en/david_wilcock_interview_transcript_1_en.md)) he is "an extraterrestrial soul in a human body who has forgotten who you really are".
 
 [Vice expose](https://www.vice.com/en/article/4ayyqw/david-wilcock-ufo-conspiracy-theorist-covid-19-deep-state-ascension) on David Wilcock and Corey Goode.
+
+## Template
+
+This is a template for an insider entry. Every link MUST be validated. Every quote MUST be checkable in the linked source. Human revieweres will check every link and every quote. Research this deeply for the source(s) tha are most faithful to the witness's claim. Prefer sources that reliably quote the witness instead of paraphrasing him.
+
+### First Last
+
+* [YYYY-YYYY](link to source) Quote from source describing (alleged) insider position.
+* [YYYY](link to source) 1st encountered "quote from source describing earliest experience"
+* [YYYY](link to source) 1st reported claims that "quote from source describing most extreme claim"
+* [title of text describing claims](link to non-hallucinated source for this info): "direct quotes from this source describing the witness's most extreme claims"
+* Skeptical evaluation, describing available (and expected!) corroboration for insider status and paranormal claims, and emphasizing hearsay vs. eyewitness status
