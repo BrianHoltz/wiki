@@ -10,6 +10,41 @@
 
 ## Credentialed eyewitness insider
 
+### Jay Stratton
+
+* [2006–2022](https://www.linkedin.com/in/jay-stratton-0a866b8) Career in US Naval Intelligence and the Defense Intelligence Agency (DIA). Served as the **Director of the UAP Task Force** (UAPTF) and chief analyst for the phenomenon.
+* [2025](https://people.com/director-groundbreaking-ufo-doc-says-what-he-learned-left-him-rattled-11692704) 1st reported claims publicly in the film *The Age of Disclosure*, breaking his silence after leaving government service.
+* [2025](https://www.theguardian.com/film/2025/nov/22/age-of-disclosure-documentary-aliens): Claims "I have seen with my own eyes non-human craft and non-human beings." This is the first time a former Director of the UAP Task Force has gone on record with a first-hand eyewitness account of biological entities (aliens) and their craft, rather than just data or second-hand reports.
+
+### Ryan Graves
+
+* [2014–2015](https://www.nytimes.com/2019/05/26/us/politics/ufo-sightings-navy-pilots.html) **Lt. (US Navy)**, F/A-18F pilot.
+* [2019](https://www.nytimes.com/2019/05/26/us/politics/ufo-sightings-navy-pilots.html) 1st reported claims publicly of daily encounters with "Cube within a sphere" objects off the East Coast.
+* [2025: The Age of Disclosure](https://www.metacritic.com/movie/the-age-of-disclosure/): Discusses the "Gimbal" and "Go Fast" incidents and the safety risks posed by these objects.
+* Graves is a verified pilot. His claims are supported by pilot reports, the "Gimbal" video, and alleged radar tapes.
+
+### David Fravor
+
+* [2004](https://www.nytimes.com/2017/12/16/us/politics/pentagon-program-ufo-harry-reid.html) **Commander, VFA-41 "Black Aces"** (US Navy).
+* [2017](https://www.nytimes.com/2017/12/16/us/politics/pentagon-program-ufo-harry-reid.html) 1st reported claims publicly in the *New York Times* regarding the "Tic Tac" incident.
+* [2025: The Age of Disclosure](https://www.metacritic.com/movie/the-age-of-disclosure/): Describes engaging a white, Tic-Tac-shaped object with no wings or propulsion that mirrored his movements and accelerated instantly.
+* Fravor is a verified Top Gun pilot. His sighting is corroborated by wingman Alex Dietrich and FLIR footage, and allegedly corroborated by unreleased radar data.
+
+### Alex Dietrich
+
+* [2004](https://www.cbsnews.com/news/ufo-military-intelligence-60-minutes-2021-05-16/) **Lt. Cmdr. (US Navy)**.
+* [2021](https://www.cbsnews.com/news/ufo-military-intelligence-60-minutes-2021-05-16/) 1st reported claims publicly on *60 Minutes* as the wingman of David Fravor.
+* [2025: The Age of Disclosure](https://en.wikipedia.org/wiki/The_Age_of_Disclosure): Corroborates Fravor's account of the Tic Tac engagement.
+
+### Jeffrey Nuccetelli
+Retired U.S. Air Force Security Forces. Provided written testimony describing multiple UAP-related incidents at/near Vandenberg. Eyewitness to incidents and aftermath, though identification of the objects themselves remains inferential.
+
+### Chaz King
+Retired U.S. Air Force Security Forces. Appears in the film and is associated with Vandenberg-area UAP incident accounts similar to Nuccetelli’s; primary-source documentation is thinner but framed as direct involvement.
+
+### Robert Jacobs
+Retired U.S. Air Force officer associated with the “Big Sur” missile test case. Claims firsthand exposure to film evidence showing a UAP interacting with a missile test (eyewitness to records/media rather than open-sky observation).
+
 ### Bob Lazar
 
 * [1988–1989](https://en.wikipedia.org/wiki/Bob_Lazar) Claims to have been employed as a "Senior Staff Physicist" at Sector 4 (S-4) near Groom Lake, Nevada.
@@ -34,6 +69,85 @@ While his Air Force service is verified, his official job was **Surgical Technol
 * [2019](https://www.congress.gov/118/meeting/house/116282/documents/HHRG-118-GO06-Transcript-20230726.pdf)  1st encountered NHI evidence when "I was informed in the course of my official duties of a multi-decade UAP crash retrieval and reverse engineering program to which I was denied access to those additional read-ons when I requested it."
 * [2023](https://www.congress.gov/118/meeting/house/116282/documents/HHRG-118-GO06-Transcript-20230726.pdf) 1st disclosed that "biologics came with some of these recoveries."
 * Grusch would not publically disclose whether "our government has made contact with intelligent extraterrestrials" or how his sources determined the "biologics [that] came with some of these recoveries" were "nonhuman". He frames his most extreme claims (recovered craft, biologics) as second-hand. He denies firsthand observation of craft or bodies and has not released publicly reviewable documents or images.
+
+### Luis "Lue" Elizondo
+
+* [2008–2017](https://www.nytimes.com/2017/12/16/us/politics/pentagon-program-ufo-harry-reid.html) Served as the Director of the **Advanced Aerospace Threat Identification Program (AATIP)** within the OUSDI.
+* [2017](https://www.nytimes.com/2017/12/16/us/politics/pentagon-program-ufo-harry-reid.html) 1st reported claims of a secret Pentagon UFO program.
+* [The Age of Disclosure (2025)](https://www.motionpictures.org/2025/10/shocking-alien-doc-the-age-of-disclosure-to-make-contact-with-viewers-on-prime-video/): Narrates the film. Claims the US government is in possession of "exotic material" and has conducted a "decades-long cover-up."
+* Elizondo is a verified former intelligence official. While he claims to have "seen" the data and handled meta-materials, he generally stops short of claiming he *personally* saw a live alien entity (unlike Stratton), often citing his security oath. He is the primary source for the existence of AATIP.
+
+### Karl Nell
+
+* [2010s-2020s](https://www.linkedin.com/in/karl-nell-98205610) **Colonel (US Army Ret.)**, Army Futures Command.
+* [2023](https://thedebrief.org/intelligence-officials-say-u-s-has-retrieved-non-human-craft/) 1st reported claims supporting David Grusch's testimony.
+* [The Age of Disclosure (2025)](https://en.wikipedia.org/wiki/The_Age_of_Disclosure): Describes his own "experiences" in the 2010s and states that there is "zero doubt" non-human intelligence is interacting with humanity.
+* Nell is a verified high-ranking officer. His claims in the film support the reverse-engineering narrative. He is classified as Hearsay regarding the "crash retrieval program" unless his "experiences" (alluded to in the film) are clarified as direct sightings of the entities.
+
+### Tim Gallaudet
+
+* [2017–2019](https://www.navy.mil/Biographies/Bio-Display/Article/2236100/rear-admiral-timothy-gallaudet/) **Rear Admiral (US Navy)** and former Acting Administrator of NOAA.
+* [2023](https://www.newsnationnow.com/space/ufo/gallaudet-ufo-uap-disclosure/) 1st reported claims publicly that he saw the "Go Fast" video on a classified Navy network before it was deleted.
+* [The Age of Disclosure (2025)](https://www.metacritic.com/movie/the-age-of-disclosure/): Discusses the "Go Fast" email and the subsequent cover-up/deletion of data from the secure network.
+* Gallaudet is a verified Admiral. He is an "Eyewitness to the Cover-up" (seeing data disappear) and "Hearsay" regarding the origin of the craft.
+
+### James Cobb
+
+* [Unknown dates](https://en.wikipedia.org/wiki/The_Age_of_Disclosure) **Colonel (USAF Ret.)**, former Deputy Director of Operations at NORAD.
+* [2025](https://openthemagazine.com/entertainment/an-explosive-new-film-spotlights-a-secret-american-project-on-ufos-3) 1st reported claims in *The Age of Disclosure* regarding gaps in radar infrastructure and data related to UAP.
+* [The Age of Disclosure (2025)](https://politurco.com/the-age-of-disclosure-religion-and-the-end-of-human-centered-philosophy.html): Discusses documented gaps in aviation infrastructure preventing UAP reporting and tracking.
+* Cobb is a verified officer. His testimony focuses on the *data* and *operational* side (NORAD's inability/refusal to track these objects), making him a credentialed witness to the *systemic failure/secrecy* rather than a "being" witness.
+
+### Hal Puthoff
+
+* [1970s–Present](https://earthtech.org/) **Physicist**, SRI International (Stargate Project), AATIP contractor (BAASS).
+* [2018](https://www.mysterywire.com/ufo/hal-puthoff-presentation/) 1st reported claims regarding AATIP's study of meta-materials.
+* [The Age of Disclosure (2025)](https://www.metacritic.com/movie/the-age-of-disclosure/): Discusses the scientific analysis of materials and the "indisputable" nature of the classified data he accessed.
+* Puthoff is a verified scientist with a long history in government fringe research (Remote Viewing). He claims to have handled "meta-materials" (bismuth/magnesium layered samples), making him an eyewitness to *artifacts*, but his claims of their alien origin are based on analysis/inference.
+
+### Eric Davis
+
+* [1990s–Present](https://www.baylor.edu/casper/index.php?id=935661) **Astrophysicist**, contractor for AATIP and NIDS. Author of the "Wilson-Davis Notes."
+* [2020](https://www.nytimes.com/2020/07/23/us/politics/pentagon-ufo-harry-reid-navy.html) 1st reported claims in the *NYT* that he gave a classified briefing about "off-world vehicles not made on this earth."
+* [The Age of Disclosure (2025)](https://www.metacritic.com/movie/the-age-of-disclosure/): Reaffirms the reality of the crash retrieval program.
+* Davis is a verified physicist. His most explosive claims (the Wilson memo) are hearsay (notes from a conversation with Admiral Wilson), but he claims to have been briefed on the program directly.
+
+### Christopher Mellon
+
+* [1990s–2000s](https://www.linkedin.com/in/christopher-mellon-08662365) **Deputy Assistant Secretary of Defense for Intelligence**.
+* [2017](https://www.nytimes.com/2017/12/16/us/politics/pentagon-program-ufo-harry-reid.html) 1st reported claims aiding the release of the 3 Navy videos.
+* [The Age of Disclosure (2025)](https://www.geektyrant.com/news/trailer-for-the-upcoming-uap-documentary-the-age-of-disclosure): Calls the UAP reality "the biggest discovery in human history."
+* Mellon is a verified high-level official. He admits he has *not* seen a body, but has seen enough classified data to be convinced. He is a "Credentialed Hearsay Insider."
+
+### Jim Semivan
+
+* [1980s–2007](https://www.tothestarsacademy.com/jim-semivan) **Senior Intelligence Service (CIA)**, Directorate of Operations.
+* [2017](https://www.tothestarsacademy.com/jim-semivan) 1st reported claims as co-founder of To The Stars Academy.
+* [The Age of Disclosure (2025)](https://newspaceeconomy.ca/2025/11/25/the-age-of-disclosure-and-the-unraveling-of-government-secrecy/): Discusses the "hitchhiker effect" and the psychological/parapsychological aspects of the phenomenon.
+* Semivan is a verified CIA veteran. He claims personal "private" experiences (entities in his bedroom) which he attributes to the phenomenon, but also claims insider knowledge that the government is aware of this aspect.
+
+### Brett Feddersen
+
+* [Unknown dates](https://en.wikipedia.org/wiki/The_Age_of_Disclosure) **Director of Aviation Security**, National Security Council (NSC).
+* [2025](https://www.metacritic.com/movie/the-age-of-disclosure/) 1st reported claims in *The Age of Disclosure*.
+* [The Age of Disclosure (2025)](https://en.wikipedia.org/wiki/The_Age_of_Disclosure): Discusses aviation safety and government knowledge.
+* Feddersen is a verified former official.
+
+### Mike Gold
+
+Former NASA and aerospace executive. Public statements emphasize policy, access, and analysis rather than firsthand encounters.
+
+### Travis Taylor
+
+Aerospace engineer and government contractor. Publicly frames involvement as analytical and investigative rather than direct firsthand recovery work.
+
+### Mike Flaherty
+
+Former U.S. government official involved in aviation / security oversight. Appears as an insider commentator rather than a firsthand witness to exotic materials.
+
+### John Robert
+
+Credited interviewee associated with defense or aerospace roles. Public record suggests analysis/oversight rather than firsthand exposure.
 
 ### Daniel Sheehan
 
@@ -125,6 +239,10 @@ Scully was a journalist who published stories given to him by Silas Newton (who 
 Heard engaged in philosophical speculation about the nature of UFOs (the "bee" theory) but had no insider access or direct testimony.
 
 ## Private-experience eyewitness outsider
+
+### Terry Lovelace
+
+Retired U.S. Air Force officer who appears in the film. Known primarily for abduction/experiencer narratives involving private, non-public experiences. Under the taxonomy, this places him in the private-experience outsider category despite prior service.
 
 ### Don Ware (USAF Colonel)
 
