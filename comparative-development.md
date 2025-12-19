@@ -327,17 +327,6 @@
 
 ## The Scope of Racial Disparities in Test Scores in the United States
 
-* 2022: 7 cite/yr, 40pp by “Jay M.” (Reason Without Restraint)
-* https://reasonwithoutrestraint.com/the-scope-of-racial-disparities-in-test-scores-in-the-united-states/
-* Summary
-    * Compiles test-score disparities across NAEP, SAT, ACT, AP exams, and state-level accountability tests.
-    * Documents consistent gaps across grades, subjects, and time.
-    * Analyzes distributional differences, including over- and underrepresentation in top percentiles.
-    * Notes partial narrowing in some areas and stagnation or widening in others.
-    * Frames the piece as a descriptive reference rather than a causal argument.
-
-## The Scope of Racial Disparities in Test Scores in the United States
-
 * 2022: 7 cite/yr, ~40pp by “Jay M.” (Reason Without Restraint)
 * https://reasonwithoutrestraint.com/the-scope-of-racial-disparities-in-test-scores-in-the-united-states/
 
