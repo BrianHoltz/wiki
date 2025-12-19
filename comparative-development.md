@@ -289,7 +289,7 @@
 ## For Whom the Bell Curve Tolls
 
 * 2023: 15 cite/yr, 80pp by Gregory Clark (economic historian; UC Davis)
-* https://www.gwern.net/docs/iq/2023-clark-forwhomthebellcurvetolls.pdf
+* https://milkyeggs.com/wp-content/uploads/2023/02/ClarkGlasgow2021.pdf
 * Tags
     * Political Theory: egalitarian
     * Differences Theory: hereditarian
@@ -297,27 +297,27 @@
     * Groups: african-american, european
     * Times/Places: contemporary, united-states, long-run
 * Summary
-    * Re-evaluates *The Bell Curve* three decades later, arguing that Murray and Herrnstein actually *underestimated* the heritability and persistence of social status.
-    * Applies Clark’s "surname" methodology to demonstrate that the intergenerational correlation of underlying "social competence" ($x$) is roughly 0.75, far higher than standard parent-child income/education correlations of 0.3–0.5.
-    * Contends that observed social mobility is largely "noise" (random luck) masking a rigid, genetically driven class structure that persists for centuries across diverse political regimes.
-    * Analyzes US racial disparities as a function of this universal persistence; argues that the "regression to the mean" for Black Americans is towards a lower underlying group mean determined by deep history/genetics, not the national mean.
-    * Challenges the meritocratic ideal: since status is determined by lineage (a "genetic lottery") rather than individual effort, high achievers do not "deserve" their rewards in a moral sense.
-    * Argues that if *The Bell Curve* is correct about high heritability, the logical policy conclusion is not libertarianism but radical redistribution (Rawlsian luck egalitarianism) to decouple life conditions from genetic accidents.
-    * Dismisses the efficacy of standard environmental interventions (schooling, Head Start) to alter these long-run group trajectories, citing the "law of social mobility."
-* Quotes
+    * Re-evaluates *The Bell Curve* three decades later using a massive dataset of 402,385 English individuals (1750–2020) and a surname-based "lineage" methodology.
+    * Finds that the underlying correlation of social status between parents and children is roughly 0.75, far higher than standard estimates (0.3–0.5), and has remained constant for centuries despite massive social and political changes.
+    * Argues that this persistence is best explained by a simple additive genetic model where "social competence" is highly heritable, rather than by cultural transmission or environmental privilege.
+    * Demonstrates that assortative mating is far stronger than previously thought (correlation ~0.8) when measured by underlying lineage status rather than observed phenotypes like income or education.
+    * Contends that because life outcomes are largely determined by a "genetic lottery," the meritocratic ideal is a mirage; high achievers do not morally "deserve" their rewards.
+    * Concludes that the only just policy response to such high heritability is not eugenics or libertarianism, but radical redistribution (Rawlsian luck egalitarianism) to break the link between genetic luck and material well-being.
+    * Posits that social interventions (free education, democracy, taxation) can reduce inequality of *outcomes* (variance) but fail to change the *ranking* of individuals or groups, which remains rigidly determined by lineage.
+* Quotes TODO check for hallucinations
     * The Bell Curve was right that in a meritocracy, social status will be highly heritable.
-    * Social status is inherited as strongly as any biological trait.
-    * The correlations of status across generations are much higher than conventionally estimated, typically lying between 0.7 and 0.8.
+    * We see in this English lineage data that the underlying correlation of status, 0.76, is very close to the 0.73 found for the modern US.
+    * There is no evidence that the correlation of underlying status between fathers and sons has changed at all from 1750–2020.
     * We are all the beneficiaries or victims of our lineage.
-    * If social position is largely determined by lineage, then the meritocratic argument for inequality collapses.
-    * The son also rises, and the daughter too, but they rise only to the level predicted by their lineage.
-    * We see in the United States a persistence of racial status hierarchies that is consistent with the surname evidence.
     * The world is much more determined than we like to think.
-    * Meritocracy is a mirage.
+    * If social position is largely determined by lineage, then the meritocratic argument for inequality collapses.
     * The appropriate response to the genetic lottery is insurance, not rewards.
+    * Whatever the mechanism of inheritance, the high persistence of status has important implications for social policy.
+    * A world of high social mobility is a world of low predictability.
+    * The son also rises, and the daughter too, but they rise only to the level predicted by their lineage.
 * Criticism
     * **Mobility Measurement:** Clark's surname method is heavily criticized for tracking group averages rather than individuals, which mathematically inflates persistence estimates and may not reflect actual individual mobility; see [Torche & Corvalan (2010)](https://www.journals.uchicago.edu/doi/abs/10.1086/655756).
-    * **Genetic Determinism:** The assumption that the latent factor $x$ is primarily genetic ignores the transmission of cultural capital, wealth, and networks which also persist within lineages; the "Dynastic" critique suggests these mechanisms are distinct from DNA.
+    * **Genetic Determinism:** The assumption that the latent factor is primarily genetic ignores the transmission of cultural capital, wealth, and networks which also persist within lineages; the "Dynastic" critique suggests these mechanisms are distinct from DNA.
     * **US Specifics:** Recent administrative data using tax records finds significantly higher mobility rates in the US than Clark's "universal constant" predicts; see [Chetty et al. (2014)](https://www.aeaweb.org/articles?id=10.1257/aer.104.5.141).
     * **Racial Fatalism:** The model treats the Black-White gap as an equilibrium state of differing "competence," ignoring active institutional suppression (redlining, incarceration, discrimination) that artificially depresses Black mobility independent of ability.
     * **Reductionism:** Reduces complex, multi-dimensional social phenomena (wealth, education, occupation) to a single unobserved "social competence" factor, which may oversimplify the diverse pathways of success.
@@ -342,65 +342,38 @@
 * https://reasonwithoutrestraint.com/the-scope-of-racial-disparities-in-test-scores-in-the-united-states/
 
 * Tags
-
     * Development Theory: human-capital
-
     * Groups: african-american, european, hispanic-latino, asian
-
     * Times/Places: contemporary, united-states
 
 * Summary
-
     * Central aim: a “comprehensive overview” of racial/ethnic disparities across U.S. cognitive and academic tests, with primary emphasis on Black–White comparisons and secondary coverage of Hispanic and Asian gaps where data exist.
-
     * Scope of evidence: compiles and juxtaposes results from cognitive-ability measures and major educational testing regimes (e.g., NAEP, college admissions tests, AP, state accountability exams), focusing on the *size*, *distributional shape*, and *pervasiveness* of gaps.
-
     * Organizing logic: (1) establish baseline magnitudes in cognitive-ability testing via reviews and prominent summaries; (2) show that achievement/admissions-test disparities are “about as large” as cognitive-ability disparities; (3) contextualize racial gaps by comparing them to other gaps (SES, parental SES, cross-national); (4) document “ubiquity” across geography, age, schooling level, and socioeconomic strata.
-
     * Descriptive posture: explicitly brackets causal explanations and policy prescriptions; the intended contribution is a “reference” of observational regularities that any explanatory theory must accommodate.
-
     * Distributional emphasis: repeatedly stresses that mean gaps mechanically imply large differences at the tails (e.g., representation in high percentiles), and therefore substantially affect outcomes tied to selective thresholds.
-
     * Geographic invariance claim: argues that gaps appear in essentially all states/districts/counties, with “near zero” gaps largely restricted to contexts of low overall achievement or very small minority enrollment.
-
     * SES non-erasure claim: presents the gap as persisting across socioeconomic levels and parental socioeconomic strata, and treats this persistence as a key constraint on simple “resource-only” accounts.
-
     * “Implications” section: contends that durable gaps in measured achievement/cognitive scores help explain persistent downstream inequality, including intergenerational mobility differences; warns that one-time resource transfers are unlikely to permanently equalize outcomes if gaps remain.
 
 * Quotes
-
     * The purpose of this post is to provide a comprehensive overview of racial and ethnic disparities on cognitive and academic tests in the United States.
-
     * This post is mainly a descriptive exercise.
-
     * In this post, I don’t concern myself with explanatory questions … or with prescriptive questions …
-
     * Racial gaps in test scores are ubiquitous.
-
     * They persist across all places in the country, across age, across educational levels, and across socioeconomic levels.
-
     * Any adequate explanation of racial disparities in tests must be able to explain the following observations that were noted above:
-
     * One-time transfers of resources are unlikely to have permanent impacts on racial inequality, because cognitive and achievement gaps persist even after controlling for conventional measures of parental SES.
 
 * Criticism
-
     * Methodological heterogeneity: aggregating gaps across different instruments (IQ tests, NAEP, SAT/ACT, AP, state tests) risks commensurability errors; differences in scaling, norms, and construct coverage can make “gap size” comparisons look cleaner than they are.
-
     * “Descriptive” framing still embeds theory: selection of which tests, which subgroup definitions, and which time slices to emphasize implicitly prioritizes certain causal narratives (e.g., stable rank-ordering), even if the post avoids explicit causal claims.
-
     * SES adjustment limits: “controlling for parental SES” is not equivalent to controlling for the full causal environment (wealth, neighborhood effects, school quality, health, stress exposure, discrimination, and measurement non-invariance); residual gaps do not identify etiology.
-
     * Measurement-invariance blind spot: without explicit cross-group invariance testing, comparable observed-score gaps do not guarantee comparable latent-trait gaps across groups, especially across diverse test families.
-
     * Ubiquity ≠ invariance: the fact that gaps appear “everywhere” can be consistent with many mechanisms (common structural factors, broad institutional patterns, cumulative disadvantage), not uniquely with any single theory.
-
     * Tail inferences can be brittle: translating mean gaps into tail representation assumes stable distributional forms and comparable variance; group differences in variance, ceiling effects, and test design can shift tail proportions materially.
-
     * Cross-national analogies are tricky: comparing racial gaps to country gaps (or SES gaps) can mislead because the institutional meaning of scores, selection into testing, and curriculum alignment differ sharply across contexts.
-
     * Data-quality dependence: state/district/county gap estimates can be sensitive to sampling error, exclusion rates, missingness, and the choice of unit-of-analysis; “near zero” gaps in small-minority districts may be largely statistical artifacts.
-
     * Normative leap in “implications”: the inference that one-time transfers are unlikely to have lasting effects is plausible but not established by descriptive gap persistence alone; policy effects can operate through multiple channels (health, neighborhood, schooling inputs, opportunity constraints) that may shift score distributions over time.
 
 
