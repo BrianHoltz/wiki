@@ -378,13 +378,49 @@
 
 - 2022: 33 cite/yr, 40pp by Rebecca Sear (Professor of Psychology, Brunel University London)
 - https://www.researchgate.net/publication/360665701_%27National-IQ%27-datasets-do-not-provide-accurate-unbiased-or-comparable-measures-of-cognitive-ability-worldwide
+- Tags
+  - Political Theory: egalitarian, critical-theory
+  - Differences Theory: environmentalist
+  - Development Theory: human-capital, inequality
+  - Groups: african, multi-racial
+  - Times/Places: contemporary, global, africa
 - Summary
-  - Reviews over 100 studies feeding into national IQ estimates.
-  - Identifies pervasive sampling bias, especially in low-income regions (elite schools, atypical subsamples).
-  - Shows test instruments vary widely in norms, translation quality, and cultural appropriateness.
-  - Criticizes imputation of scores for countries lacking data.
-  - Argues extremely low African IQ estimates are artifacts of poor data.
-  - Concludes national IQ datasets are unsuitable for strong scientific inference about global cognitive hierarchies.
+  - Central critique: the Lynn and Becker (2019) national IQ dataset provides estimates for 131 measured and 72 imputed countries, but is fundamentally unsuitable for scientific inference due to pervasive sampling bias, lack of transparency, and systematic regional biases.
+  - Three-part evaluation: (1) examines sample representativeness by reviewing Lynn & Becker's own secondary data; (2) assesses transparency of construction methods; (3) evaluates whether the same construct is measured cross-nationally.
+  - Implausible African estimates: sub-Saharan Africa's average "national IQ" of 70 would place an entire region on the threshold of intellectual disability (IQ <70-75), which the author deems "wholly implausible" and indicative of measurement failure rather than actual population characteristics.
+  - Sample size problems: 37% of countries have national IQs estimated from fewer than 1,000 individuals; six countries from fewer than 100 (Angola: 19, Dominican Republic: 34, Greenland: 40); 30% of countries rely on a single sample; 63% include only children under age 18.
+  - Sample representativeness crisis: examination of sub-Saharan African primary sources reveals almost none attempted representative national sampling; most are convenience samples; many deliberately sampled special populations (twins, health conditions, specific exposures) and used only control groups.
+  - Egregious specific examples: Angola's IQ from 19 individuals with no malaria; Eritrea's from orphanage children; Congo's from 88 sixth-year schoolchildren; Namibia's from an ethnic group comprising 7% of population; Somalia's from Kenyan refugee camp; Botswana's from South African adolescents assumed to be Botswanan based on ethnicity.
+  - Authors' own admission of bias: Lynn & Becker themselves demonstrate in their book that "national IQs depend partly on characteristics of the samples" and show significant correlations between IQ estimates and sample age, test year, test norms, and urban/rural location—proving systematic regional bias.
+  - Lack of transparency: no clear literature search methodology or inclusion/exclusion criteria provided; only vague statement about searching "studies and reports"; methodology for transforming diverse raw scores into comparable IQ estimates inadequately documented with arbitrary assumptions (e.g., assuming Gambian children solved only easiest Raven's items).
+  - Cross-cultural invalidity: many included studies explicitly warn against cross-cultural comparison; Mali study states Ravens "may substantially underestimate intelligence" and warns against "comparisons across cultures using the same test and norms"; Congo study warns of "major cultural obstacles" to valid testing; tests are culturally specific, affected by education, motivation, coaching, and familiarity.
+  - Imputed values mask ignorance: approximately one-third of "national IQs" (72 countries) are not measured but extrapolated from neighboring countries, giving false appearance of comprehensive global coverage while actually documenting absence of data.
+  - Policy dangers explicitly noted: dataset has been used to draw conclusions about innate racial differences in intelligence affecting economics, health, and social outcomes; authors themselves draw eugenic policy conclusions about differential fertility and immigration restrictions; a Harvard dissertation using this dataset informed U.S. immigration policy recommendations.
+
+- Quotes
+  - In 2002, Lynn and Vanhanen produced a dataset which claimed to provide average 'national IQs' for nation-states worldwide. Despite extensive critique, this dataset, and subsequent updated versions, have been used in a large number of empirical publications.
+  - Here I evaluate the latest version, produced in 2019 by Lynn and Becker, and show that this dataset is not fit for purpose.
+  - The primary data sources are inadequate for estimating 'national IQs'. The majority of data included originates from samples which are wholly unrepresentative of their national populations.
+  - Many are convenience samples with small sample sizes, often including only children and often including individuals chosen because they had particular characteristics (i.e., samples which were deliberately chosen to be unrepresentative).
+  - Data were collected using a range of different cognitive tests and from such diverse populations that it is impossible to generate comparable measure of cognitive ability.
+  - The extent of these biases differs by world region, meaning that the dataset is not only inaccurate but systematically biased.
+  - This 'national IQ' dataset therefore does not provide comparable, accurate and unbiased measures of cognitive ability worldwide, and should not be used be draw inferences about global variation in intelligence.
+  - The average IQ of sub-Saharan Africa is calculated to be 70. IQs below ~70-75 are considered to indicate intellectual disability (American Psychological Association, 2013) and it is wholly implausible that an entire world region should, on average, be on the verge of intellectual impairment.
+  - The 'national IQ' datasets have been extensively criticised on multiple grounds, including cherry-picking of evidence and inadequate primary data sources
+  - Despite extensive documentation of methodological flaws, in their book published alongside the 2019 version of the dataset, The Intelligence of Nations, Lynn and Becker consider the dataset to have achieved 'mainstream acceptance'
+
+- Criticism
+  - Scope specificity: Sear's detailed examination focused primarily on sub-Saharan African samples to demonstrate problems with the lowest-IQ region; while she documents systematic issues, the paper provides less granular analysis of high-income country samples, where data quality may genuinely be better and concerns less severe.
+  - Cross-validation with achievement data: critics note that independent international student assessment datasets (PISA, TIMSS, PIRLS) produce similar country rank-orderings despite being constructed differently; Sear dismisses these as measuring "educational attainment" rather than IQ, but the convergence of rankings across methods suggests some signal amid the noise; see [Rindermann et al. (2020)](https://www.sciencedirect.com/science/article/abs/pii/S0160289620300325).
+  - Imputation as standard practice: while Sear criticizes imputation as masking ignorance, defenders note that imputation is standard in econometrics and cross-national research when data are missing not-at-random; the validity of imputation depends on whether predictive relationships hold, which could be empirically tested by comparing later-measured values to earlier imputations.
+  - Construct vs. measurement validity: Sear's argument that "the same cognitive tests cannot be used to measure the same underlying construct of 'intelligence' cross-culturally" is a strong claim that conflicts with large psychometric literatures on test adaptation and cross-cultural g-loading; while measurement non-invariance is real, some researchers argue partial invariance and shared variance structures allow meaningful (if imperfect) comparisons.
+  - Cultural specificity as evidence of validity: paradoxically, the fact that some primary studies warn that Ravens "may substantially underestimate intelligence" in Mali could be read as evidence that researchers are aware of and attempting to address cultural bias, not that all testing is invalid; the question is whether corrections are possible, not whether first-attempt raw scores are biased.
+  - Lynn & Becker's adjustments: the paper criticizes arbitrary assumptions (e.g., Gambian children solved only Set A of Ravens) but does not fully engage with whether such adjustments, even if imperfect, move estimates closer to or further from truth; systematic conservative adjustments might reduce rather than increase bias.
+  - Sample-characteristic correlations as feature not bug: Lynn & Becker's finding that sample characteristics (age, test year, norms, urban/rural) correlate with IQs is precisely what one would expect if real developmental, cohort, and environmental differences exist; the authors attempted statistical corrections for these factors, which Sear critiques as insufficient but does not fully assess.
+  - Alternative measurement approaches underexplored: Sear recommends "direct measures of educational achievement and learning trajectories" but does not acknowledge that such measures also suffer from cross-national comparability problems (curriculum differences, test participation selection, motivation variation) and may be more, not less, confounded with schooling inputs.
+  - Policy use vs. data quality: Sear's strongest arguments concern racist and eugenic policy applications, but the inferential leap from "data are flawed" to "any use is invalid" may overstate; even noisy proxies can be informative for some purposes (identifying regions with low educational access), provided users acknowledge uncertainty and avoid deterministic interpretations.
+  - Rejection rather than correction: Sear calls for papers using the dataset to be "corrected or retracted" but offers limited guidance on staged improvements; data-quality scores, regional confidence intervals, or tiered usage recommendations might be more constructive than wholesale rejection, given that better global data may not materialize soon.
+  - Recommended hedge: Sear's critique is most compelling for sub-Saharan Africa and other low-income regions with tiny, non-representative samples; users should weight estimates by sample size and representativeness, report data provenance transparently, use sensitivity analyses, and avoid causal or genetic claims; for high-quality samples from representative surveys, cautious descriptive use may be defensible.
 
 ## Black Economic Progress After Slavery
 
