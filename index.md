@@ -15,4 +15,4 @@
 ### Social Science
 
 - [Capacity Disruptions](capacity-disruptions.md)
-- [Comparative Development](comparative-development.md)
+- [Comparative Development](comparative-development-biblio.md)
