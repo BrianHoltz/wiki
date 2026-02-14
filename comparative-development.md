@@ -4,24 +4,24 @@ A catalog of evidence (esp. natural experiments) supporting various explanatory 
 
 ## Natural Experiments: Theory Matrix
 
-This table summarizes how major historical natural experiments support or challenge each theoretical framework. **Strong Support (✓✓)** indicates the experiment provides primary evidence for that theory. **Support (✓)** indicates consistent with but not definitive for the theory. **Neutral (—)** means the experiment doesn't clearly favor or disfavor the theory. **Challenges (✗)** means the experiment provides evidence against the theory.
+This table summarizes how major historical natural experiments support or challenge each theoretical framework. **Strong Support (✚)** indicates the experiment provides primary evidence for that theory. **Support (✓)** indicates consistent with but not definitive for the theory. **Neutral (—)** means the experiment doesn't clearly favor or disfavor the theory. **Challenges (✗)** means the experiment provides evidence against the theory.
 
-| Experiment                   | Period        | Institutionalism                                           | Cultural Determinism                                 | Geographic Determinism                              | Human Capital Theory                                                                | Selectionism                                  |
-|------------------------------|---------------|------------------------------------------------------------|------------------------------------------------------|-----------------------------------------------------|-------------------------------------------------------------------------------------|-----------------------------------------------|
-| **Singapore**                | 1965-present  | ✓ Strong property rights, rule of law                      | ✓✓ Chinese middleman minority culture                | ✗ No resources, tropical                            | ✓✓ Education-first policy; immigrant selection                                      | — Modern timeline                             |
-| **China vs. Taiwan**         | 1949-present  | ✓✓ Market institutions vs. Maoist collectivism             | — Han Chinese culture constant                       | — Geography similar                                 | ✓ Institutions enable HC utilization                                                | — Timeline too short                          |
-| **N. vs. S. Korea**          | 1945-present  | ✓✓ Same culture, different institutions → 14:1 GDP ratio n | — Culture constant; outcome driven by institutions   | — Geography constant                                | ✓ Institutions enable HC developmentn                                               | — Timeline too short                          |
-| **E. vs. W. Germany**        | 1945-1990     | ✓✓ Same culture, different institutions → massive TFP gap  | — Culture constant; outcome driven by institutions   | — Geography constant                                | ✓ Institutions enable HC accumulation                                               | — Timeline too short                          |
-| **West Indian vs. US Black** | 1900-2000     | ✗ Same institutions, different outcomes                    | ✓✓ Different cultural starting points                | — Geography constant in US                          | ✓ Different educational emphasis                                                    | — Same genetic ancestry                       |
-| **Japan Meiji**              | 1868-1920     | ✓ Institutional reforms enabled catch-up                   | ✓✓ Rapid cultural adaptation; literacy surge         | ✗ Poor resources/geography                          | ✓✓ Invested heavily in education/skills                                             | ✓ Pre-existing HC from Edo period             |
-| **Aboriginal Australia**     | 1788-1900     | ✓ British institutions introduced                          | ✓ British cultural transplant                        | ✗ Natives survived harsh geography for 65,000 years | ✓✓ No indigenous iron use despite ore deposits; isolation prevented HC accumulation | ✓ 65,000 years of isolation                   |
-| **Scots Enlightenment**      | 1707-1800     | ✓ Union opened access to English markets                   | ✓✓ Rapid literacy/cultural surge                     | — Geography unchanged                               | ✓✓ Acquired missing prerequisites (literacy)                                        | — Too rapid for selection                     |
-| **Spanish Conquests**        | 1492-1532     | ✓ Spanish legal/admin systems                              | ✓ European cultural package                          | ✓ Eurasian diseases decisive                        | ✓✓ Multi-millennial tech gap (literacy, metallurgy, navigation)                     | ✓ Eurasian populations had longer development |
-| **Roman Britain**            | 43-410 CE     | ✓✓ Roman legal/administrative system                       | ✓ Latin literacy, urban culture                      | — Geography constant                                | ✓✓ Literacy, engineering, law transplanted                                          | — Rapid for selection                         |
-| **Bantu Expansion**          | 1000 BCE      | — No institutional records                                 | ✓ Agricultural culture spread                        | ✓ African geography shaped diffusion                | ✓✓ Agriculture/iron technology advantage                                            | — Displacement, not selection                 |
-| **Yamnaya into Europe**      | 3000 BCE      | — No institutional records                                 | ✓ Introduced pastoralist culture                     | ✓ Steppe geography enabled horse/wheel              | ✓✓ Horse, wheel technology advantage                                                | — Displacement, not selection                 |
-| **Austronesian Expansion**   | 3000 BCE      | — No institutional records                                 | ✓ Maritime culture enabled expansion                 | ✓✓ Island geography favored navigation              | ✓✓ Sail/outrigger technology                                                        | — Expansion, not selection                    |
-| **Middleman Minorities**     | Various       | ✓ Success despite hostile institutions                     | ✓✓ Portable cultural capital across contexts         | — Succeed in diverse geographies                    | ✓✓ High literacy, education emphasis                                                | ✓ Persistence across generations              |
+| Experiment                   | Period        | Institutionalism                                         | Cultural Determinism                               | Geographic Determinism                      | Human Capital Theory                               | Selectionism                      |
+|------------------------------|---------------|----------------------------------------------------------|----------------------------------------------------|---------------------------------------------|----------------------------------------------------|-----------------------------------|
+| **Singapore**                | 1965-present  | ✓ Strong property rights, rule of law                    | ✚ Chinese middleman minority culture               | ✗ No resources, tropical                    | ✚ Education-first policy; immigrant selection      | — Too rapid for selection         |
+| **China vs. Taiwan**         | 1949-present  | ✚ Market institutions vs. Maoist collectivism            | — Han Chinese culture constant                     | — Geography similar                         | ✓ Institutions enable HC utilization               | — Too rapid for selection         |
+| **N. vs. S. Korea**          | 1945-present  | ✚ Same culture, different institutions → 14:1 GDP ratio  | — Culture constant; outcome driven by institutions | — Geography constant                        | ✓ Institutions enable HC developmennt              | — Too rapid for selection         |
+| **E. vs. W. Germany**        | 1945-1990     | ✚ Same culture, different institutions → massive TFP gap | — Culture constant; outcome driven by institutions | — Geography constant                        | ✓ Institutions enable HC accumulation              | — Too rapid for selection         |
+| **West Indian vs. US Black** | 1900-2000     | ✗ Same institutions, different outcomes                  | ✚ Different cultural starting points               | — Geography constant in US                  | ✓ Different educational emphasis                   | — Same genetic ancestry           |
+| **Japan Meiji**              | 1868-1920     | ✓ Institutional reforms enabled catch-up                 | ✚ Rapid cultural adaptation; literacy surge        | ✗ Poor resources/geography                  | ✚ Invested heavily in education/skills             | — Too rapid for selection         |
+| **Aboriginal Australia**     | 1788-1900     | ✓ British institutions introduced                        | ✓ British cultural transplant                      | ✗ Natives survived harsh geography for 65Ky | ✚ Isolated → no iron use or HC accumulation        | ✓ 65,000 years of isolation       |
+| **Scots Enlightenment**      | 1707-1800     | ✓ Union opened access to English markets                 | ✚ Rapid literacy/cultural surge                    | — Geography unchanged                       | ✚ Acquired missing prerequisites (literacy)        | — Too rapid for selection         |
+| **Spanish Conquests**        | 1492-1532     | ✓ Spanish legal/admin systems                            | ✓ European cultural package                        | ✓ Eurasian diseases decisive                | ✚ Multi-Kyr gap (literacy, metallurgy, navigation) | ✓ Civilization selects for IQ     |
+| **Roman Britain**            | 43-410 CE     | ✚ Roman legal/administrative system                      | ✓ Latin literacy, urban culture                    | — Geography constant                        | ✚ Literacy, engineering, law transplanted          | — Too rapid for selection         |
+| **Bantu Expansion**          | 1000 BCE      | — No institutional records                               | ✓ Agricultural culture spread                      | ✓ African geography shaped diffusion        | ✚ Agriculture/iron technology advantage            | — Displacement, not selection     |
+| **Yamnaya into Europe**      | 3000 BCE      | — No institutional records                               | ✓ Introduced pastoralist culture                   | ✓ Steppe geography enabled horse/wheel      | ✚ Horse, wheel technology advantage                | — Displacement, not selection     |
+| **Austronesian Expansion**   | 3000 BCE      | — No institutional records                               | ✓ Maritime culture enabled expansion               | ✚ Island geography favored navigation       | ✚ Sail/outrigger technology                        | — Expansion, not selection        |
+| **Middleman Minorities**     | Various       | ✓ Success despite hostile institutions                   | ✚ Portable cultural capital across contexts        | — Succeed in diverse geographies            | ✚ High literacy, education emphasis                | ✓ Persistence across generations  |
 
 ## Detailed Natural Experiments
 
@@ -37,7 +37,7 @@ This table summarizes how major historical natural experiments support or challe
 - Systemic famine in North, prosperity in South
 
 **Theory Implications**:
-- **Institutionalism**: ✓✓ Definitive evidence that institutions override culture
+- **Institutionalism**: ✚ Definitive evidence that institutions override culture
 - **Cultural Determinism**: Ruled out (culture held constant)
 - **Geographic Determinism**: Ruled out (geography held constant)
 - **Human Capital Theory**: ✓ South's institutions enabled HC development, North's destroyed it
@@ -52,7 +52,7 @@ This table summarizes how major historical natural experiments support or challe
 - Legacy persists post-reunification
 
 **Theory Implications**:
-- **Institutionalism**: ✓✓ Identical cultural base, radically different outcomes from institutional divergence
+- **Institutionalism**: ✚ Identical cultural base, radically different outcomes from institutional divergence
 - **Cultural Determinism**: Ruled out initially, but culture began diverging under different institutions
 - **Geographic Determinism**: Ruled out (geography constant)
 
@@ -62,7 +62,7 @@ This table summarizes how major historical natural experiments support or challe
 **Outcomes**: Taiwan achieved dramatically higher GDP per capita for decades until mainland reforms
 
 **Theory Implications**:
-- **Institutionalism**: ✓✓ Same ethnic group, different institutions → massive divergence
+- **Institutionalism**: ✚ Same ethnic group, different institutions → massive divergence
 - **Cultural Determinism**: Culture constant but utilized differently under different institutions
 
 ### Cultural Capital Experiments
@@ -78,8 +78,8 @@ This table summarizes how major historical natural experiments support or challe
 - Their departure causes economic collapse in host countries (e.g., Indians expelled from Uganda)
 
 **Theory Implications**:
-- **Cultural Determinism**: ✓✓ Portable cultural capital succeeds across diverse contexts
-- **Human Capital Theory**: ✓✓ Groups carry specific skills/habits that generate success
+- **Cultural Determinism**: ✚ Portable cultural capital succeeds across diverse contexts
+- **Human Capital Theory**: ✚ Groups carry specific skills/habits that generate success
 - **Institutionalism**: ✓ Often succeed despite hostile institutions
 - **Selectionism**: ✓ Cultural traits persist across generations
 
@@ -89,8 +89,8 @@ This table summarizes how major historical natural experiments support or challe
 **Outcome**: Within generations produced Adam Smith, David Hume, James Watt - "burst upon the world scene"
 
 **Theory Implications**:
-- **Cultural Determinism**: ✓✓ Rapid cultural acquisition transformed capabilities
-- **Human Capital Theory**: ✓✓ Acquired "missing prerequisites" (literacy, language access)
+- **Cultural Determinism**: ✚ Rapid cultural acquisition transformed capabilities
+- **Human Capital Theory**: ✚ Acquired "missing prerequisites" (literacy, language access)
 - **Institutionalism**: ✓ Union provided access to English markets and institutions
 - **Selectionism**: ✗ Too rapid for genetic selection
 
@@ -100,7 +100,7 @@ This table summarizes how major historical natural experiments support or challe
 **Outcome**: West Indian immigrants and their descendants showed higher average socioeconomic outcomes
 
 **Theory Implications**:
-- **Cultural Determinism**: ✓✓ Different cultural orientations produce different outcomes under same institutions
+- **Cultural Determinism**: ✚ Different cultural orientations produce different outcomes under same institutions
 - **Institutionalism**: ✗ Same institutions, different outcomes
 - **Human Capital Theory**: ✓ Different emphasis on education and entrepreneurship
 - **Genetic Determinism**: ✗ Same genetic ancestry, different outcomes
@@ -114,10 +114,10 @@ This table summarizes how major historical natural experiments support or challe
 
 **Theory Implications**:
 - **Geographic Determinism**: ✗ Poor geography/resources but achieved success
-- **Cultural Determinism**: ✓✓ Cultural emphasis on discipline, learning, adaptation
-- **Human Capital Theory**: ✓✓ Massive investment in education and skills
+- **Cultural Determinism**: ✚ Cultural emphasis on discipline, learning, adaptation
+- **Human Capital Theory**: ✚ Massive investment in education and skills; built on Edo period literacy
 - **Institutionalism**: ✓ Reformed institutions to enable modernization
-- **Selectionism**: ✓ Built on existing HC from Edo period literacy
+- **Selectionism**: — Too rapid for genetic selection (Edo period only 265 years)
 
 #### Singapore (1965-present)
 **Baseline**: Tiny tropical island, no natural resources, ethnically diverse
@@ -126,9 +126,9 @@ This table summarizes how major historical natural experiments support or challe
 
 **Theory Implications**:
 - **Geographic Determinism**: ✗ Tropical, no resources, yet succeeded
-- **Cultural Determinism**: ✓✓ Chinese middleman minority work ethic
+- **Cultural Determinism**: ✚ Chinese middleman minority work ethic
 - **Institutionalism**: ✓ Property rights and rule of law
-- **Human Capital Theory**: ✓✓ Education-first policy, selective immigration
+- **Human Capital Theory**: ✚ Education-first policy, selective immigration
 
 #### Sub-Saharan Africa Geography
 **Geographic Handicaps**:
@@ -144,7 +144,7 @@ This table summarizes how major historical natural experiments support or challe
 - Limited integration with Eurasian technological developments
 
 **Theory Implications**:
-- **Geographic Determinism**: ✓✓ Physical barriers to trade and cultural exchange
+- **Geographic Determinism**: ✚ Physical barriers to trade and cultural exchange
 - **Cultural Determinism**: Geography shaped "cultural universe" available
 - **Human Capital Theory**: Isolation prevented HC accumulation from outside sources
 
@@ -167,7 +167,7 @@ This table summarizes how major historical natural experiments support or challe
 **Outcome**: Replaced hunter-gatherer Jomon culture; laid agrarian foundation for Japanese civilization
 
 **Theory Implications for All Prehistoric Displacements**:
-- **Human Capital Theory**: ✓✓ Technology/skill differentials explain displacement
+- **Human Capital Theory**: ✚ Technology/skill differentials explain displacement
 - **Cultural Determinism**: ✓ New cultural packages spread with migrations
 - **Geographic Determinism**: ✓ Geography shaped which technologies emerged where
 - **Selectionism**: — These are displacements/migrations, not selection within populations
@@ -185,7 +185,7 @@ These represent encounters between societies separated by 1,000+ years of differ
 **Additional Factor**: Disease - Eurasian populations carried diseases that devastated isolated American populations
 
 **Theory Implications**:
-- **Human Capital Theory**: ✓✓ Multi-millennial technology gap was decisive
+- **Human Capital Theory**: ✚ Multi-millennial technology gap was decisive
 - **Geographic Determinism**: ✓ Eurasian landmass advantages (Diamond's thesis)
 - **Selectionism**: ✓ Eurasian populations had longer civilizational development timeline
 - **Cultural Determinism**: ✓ Spanish brought complete cultural/institutional package
@@ -196,7 +196,7 @@ These represent encounters between societies separated by 1,000+ years of differ
 **Outcome**: Rapid displacement; subsequent development driven by British human capital
 
 **Theory Implications**:
-- **Human Capital Theory**: ✓✓ Dramatic HC gap from 65,000 years of geographic isolation
+- **Human Capital Theory**: ✚ Dramatic HC gap from 65,000 years of geographic isolation
 - **Geographic Determinism**: ✗ Aboriginals survived harsh geography for millennia but didn't develop advanced technology; geography alone insufficient
 - **Selectionism**: ✓ Extreme isolation prevented cumulative HC development
 
@@ -214,8 +214,8 @@ These represent encounters between societies separated by 1,000+ years of differ
 **Long-term Multiplier**: British literacy in Roman alphabet gave Western Europe centuries of head start over Eastern Europe (which adopted Cyrillic later)
 
 **Theory Implications**:
-- **Human Capital Theory**: ✓✓ Literacy and institutional knowledge transplanted
-- **Institutionalism**: ✓✓ Roman legal/administrative systems
+- **Human Capital Theory**: ✚ Literacy and institutional knowledge transplanted
+- **Institutionalism**: ✚ Roman legal/administrative systems
 - **Cultural Determinism**: ✓ Roman culture package transplanted
 - **Path Dependency**: Early literacy advantage compounded over centuries
 
@@ -225,9 +225,9 @@ These represent encounters between societies separated by 1,000+ years of differ
 **Outcome**: Persistent development gap; Eastern European immigrants to US/Australia initially lagged
 
 **Theory Implications**:
-- **Human Capital Theory**: ✓✓ Earlier literacy provided cumulative advantage
+- **Human Capital Theory**: ✚ Earlier literacy provided cumulative advantage
 - **Institutionalism**: ✓ Repeated subjugation prevented stable institutional development
-- **Path Dependency**: ✓✓ Early advantages compound over centuries
+- **Path Dependency**: ✚ Early advantages compound over centuries
 
 ## Institutionalism
 
