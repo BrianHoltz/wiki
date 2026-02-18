@@ -13,15 +13,20 @@ This table summarizes how major historical natural experiments support or challe
 | **N. vs. S. Korea**          | 1945-present  | ✚ Same culture, different institutions → 14:1 GDP ratio  | — Culture constant; outcome driven by institutions | — Geography constant                        | ✓ Institutions enable HC developmennt              | — Too rapid for selection         |
 | **E. vs. W. Germany**        | 1945-1990     | ✚ Same culture, different institutions → massive TFP gap | — Culture constant; outcome driven by institutions | — Geography constant                        | ✓ Institutions enable HC accumulation              | — Too rapid for selection         |
 | **West Indian vs. US Black** | 1900-2000     | ✗ Same institutions, different outcomes                  | ✚ Different cultural starting points               | — Geography constant in US                  | ✓ Different educational emphasis                   | — Same genetic ancestry           |
+| **Ibos in Nigeria**          | 1900-1966     | ✓ Success despite hostile institutions                   | ✚ Portable cultural capital across contexts        | — Succeed in diverse geographies            | ✚ High literacy, education emphasis                | — Too rapid for selection         |
+| **Indians in E. Africa**     | 1890-1972     | ✓ Success despite hostile institutions                   | ✚ Portable cultural capital across contexts        | — Succeed in diverse geographies            | ✚ High literacy, education emphasis                | — Too rapid for selection         |
+| **Lebanese in W. Africa**    | 1890-1970     | ✓ Success despite hostile institutions                   | ✚ Portable cultural capital across contexts        | — Succeed in diverse geographies            | ✚ High literacy, education emphasis                | — Too rapid for selection         |
 | **Japan Meiji**              | 1868-1920     | ✓ Institutional reforms enabled catch-up                 | ✚ Rapid cultural adaptation; literacy surge        | ✗ Poor resources/geography                  | ✚ Invested heavily in education/skills             | — Too rapid for selection         |
+| **Overseas Chinese (SEA)**   | 1800-1965     | ✓ Success despite hostile institutions                   | ✚ Portable cultural capital across contexts        | — Succeed in diverse geographies            | ✚ High literacy, education emphasis                | — Too rapid for selection         |
 | **Aboriginal Australia**     | 1788-1900     | ✓ British institutions introduced                        | ✓ British cultural transplant                      | ✗ Natives survived harsh geography for 65Ky | ✚ Isolated → no iron use or HC accumulation        | ✓ 65,000 years of isolation       |
 | **Scots Enlightenment**      | 1707-1800     | ✓ Union opened access to English markets                 | ✚ Rapid literacy/cultural surge                    | — Geography unchanged                       | ✚ Acquired missing prerequisites (literacy)        | — Too rapid for selection         |
+| **England Malthusian**       | 1200-1800     | ✓ Property rights enabled wealth accumulation            | ✚ Upper-class traits spread via reproduction       | — Geography constant                        | ✚ Literacy, skills spread down social hierarchy    | ✚ 600yr differential reproduction |
 | **Spanish Conquests**        | 1492-1532     | ✓ Spanish legal/admin systems                            | ✓ European cultural package                        | ✓ Eurasian diseases decisive                | ✚ Multi-Kyr gap (literacy, metallurgy, navigation) | ✓ Civilization selects for IQ     |
+| **Jews in Europe**           | 1000-1940     | ✓ Success despite hostile institutions                   | ✚ Portable cultural capital across contexts        | — Succeed in diverse geographies            | ✚ High literacy, education emphasis                | ✓ Multi-generational persistence  |
 | **Roman Britain**            | 43-410 CE     | ✚ Roman legal/administrative system                      | ✓ Latin literacy, urban culture                    | — Geography constant                        | ✚ Literacy, engineering, law transplanted          | — Too rapid for selection         |
 | **Bantu Expansion**          | 1000 BCE      | — No institutional records                               | ✓ Agricultural culture spread                      | ✓ African geography shaped diffusion        | ✚ Agriculture/iron technology advantage            | — Displacement, not selection     |
 | **Yamnaya into Europe**      | 3000 BCE      | — No institutional records                               | ✓ Introduced pastoralist culture                   | ✓ Steppe geography enabled horse/wheel      | ✚ Horse, wheel technology advantage                | — Displacement, not selection     |
 | **Austronesian Expansion**   | 3000 BCE      | — No institutional records                               | ✓ Maritime culture enabled expansion               | ✚ Island geography favored navigation       | ✚ Sail/outrigger technology                        | — Expansion, not selection        |
-| **Middleman Minorities**     | Various       | ✓ Success despite hostile institutions                   | ✚ Portable cultural capital across contexts        | — Succeed in diverse geographies            | ✚ High literacy, education emphasis                | ✓ Persistence across generations  |
 
 ## Detailed Natural Experiments
 
@@ -71,17 +76,49 @@ This table summarizes how major historical natural experiments support or challe
 **Natural Experiment**: Same ethnic groups succeed across radically different institutional and geographic contexts
 **Groups**: Overseas Chinese (Southeast Asia), Jews (Europe/Middle East), Lebanese (West Africa), Indians/Parsees (East Africa), Ibos (Nigeria)
 
-**Pattern**:
+**Common Pattern**:
 - Begin in poverty, often as petty peddlers
 - Face political hostility, labeled "parasites"
 - Rise to economic dominance through: extreme frugality, high literacy, educational emphasis, in-group trust
 - Their departure causes economic collapse in host countries (e.g., Indians expelled from Uganda)
 
-**Theory Implications**:
+##### Jews in Europe (1000-1940 CE)
+**Period**: Medieval to Modern Europe (~900 years)
+**Context**: Operated as merchants, moneylenders, professionals across diverse European polities
+**Outcome**: Persistent success despite severe institutional hostility (ghettos, expulsions, pogroms)
+**Selectionism Note**: 900-year period potentially sufficient for some demographic selection; persistent urban/commercial occupation
+
+##### Overseas Chinese in Southeast Asia (1800-1965)
+**Period**: Major migration waves 1800s-1900s (~165 years)
+**Context**: Thailand, Malaysia, Indonesia, Philippines under colonial and post-colonial regimes
+**Outcome**: Dominated commerce despite restrictions and periodic violence
+**Selectionism Note**: Too rapid for genetic selection (only ~6-8 generations)
+
+##### Indians/Parsees in East Africa (1890-1972)
+**Period**: British colonial period (~82 years)
+**Context**: Kenya, Uganda, Tanzania; brought as railroad workers, became merchants
+**Outcome**: Dominated retail/commerce; expelled from Uganda 1972, causing economic collapse
+**Selectionism Note**: Too rapid for genetic selection (only ~3-4 generations)
+
+##### Lebanese in West Africa (1890-1970)
+**Period**: Colonial and early independence period (~80 years)
+**Context**: Senegal, Côte d'Ivoire, Sierra Leone
+**Outcome**: Dominated retail commerce despite minimal education upon arrival
+**Selectionism Note**: Too rapid for genetic selection (only ~3-4 generations)
+
+##### Ibos in Nigeria (1900-1966)
+**Period**: British colonial administration (~66 years)
+**Context**: Migrated from Eastern Nigeria to North; dominated commerce
+**Outcome**: Massacred/expelled 1966-1970 (Biafran War); Northern economy suffered
+**Selectionism Note**: Too rapid for genetic selection (only ~2-3 generations)
+
+**Theory Implications (All Groups)**:
 - **Cultural Determinism**: ✚ Portable cultural capital succeeds across diverse contexts
 - **Human Capital Theory**: ✚ Groups carry specific skills/habits that generate success
 - **Institutionalism**: ✓ Often succeed despite hostile institutions
-- **Selectionism**: ✓ Cultural traits persist across generations
+- **Selectionism**: Varies by group
+  - Jews (1000-1940): ✓ Multi-century urban/commercial selection plausible
+  - All others (1800s-1900s): — Too rapid for genetic selection (cultural transmission only)
 
 #### Scots Enlightenment (1707-1800)
 **Baseline**: Scots were "backward fringes of European civilization" - tribal, largely illiterate
@@ -93,6 +130,31 @@ This table summarizes how major historical natural experiments support or challe
 - **Human Capital Theory**: ✚ Acquired "missing prerequisites" (literacy, language access)
 - **Institutionalism**: ✓ Union provided access to English markets and institutions
 - **Selectionism**: ✗ Too rapid for genetic selection
+
+#### England Malthusian Selection (1200-1800)
+**Baseline**: Preindustrial England under Malthusian constraints
+**Pattern**: Upper classes (literate, skilled, future-oriented) had higher reproductive success; lower classes had lower survival rates
+**Mechanism**: Wealth enabled more surviving offspring; downward social mobility spread upper-class traits through population
+**Outcome**: By 1800, population exhibited higher literacy, work discipline, future orientation than 1200; England industrialized first
+
+**Clark's Evidence**:
+- Wills show upper classes had 2x reproductive success of laborers
+- Literacy rates rose from ~10% (1500) to ~60% male (1800)
+- Real wages stagnated despite technological progress (Malthusian trap)
+- Work discipline, time preference, innovation increased over centuries
+- Downward mobility: Most upper-class descendants moved down social ladder
+
+**Theory Implications**:
+- **Selectionism**: ✚ 600 years (~25 generations) of differential reproduction by social class
+- **Cultural Determinism**: ✚ Traits could be culturally transmitted downward through apprenticeships, marriage
+- **Human Capital Theory**: ✚ Gradual spread of literacy and skills through population
+- **Institutionalism**: ✓ Property rights and inheritance laws enabled wealth accumulation and differential reproduction
+- **Alternative Explanation**: Could be purely cultural transmission rather than genetic selection (hard to distinguish)
+
+**Controversy**:
+- Timeline (600 years) is longer than most modern experiments but short for significant genetic change
+- Cultural transmission vs. genetic selection cannot be cleanly separated
+- "The Son Also Rises" data shows 0.75 correlation persists across massive institutional changes, suggesting heritable component
 
 #### West Indian vs. African American (20th century US)
 **Control Variables**: Same race, same institutions (US laws), similar geography
