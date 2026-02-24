@@ -1,6 +1,6 @@
-### Philosophy
+### Human Knowledge
 
-- [Worldview](worldview.md) — AI proxy guide for Autocosmology
+- [BrianThinks](BrianThinks.md) — AI proxy guide
 
 ### Artificial Intelligence
 
