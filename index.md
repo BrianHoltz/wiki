@@ -1,3 +1,7 @@
+### Philosophy
+
+- [Worldview](worldview.md) — AI proxy guide for Autocosmology
+
 ### Artificial Intelligence
 
 - [Super Intelligence](super-intelligence.md)
