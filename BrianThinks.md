@@ -1,18 +1,17 @@
-# How to Ask AI What Brian Thinks
+# Talk To AI Brian
 
-This guide lets you use any AI chatbot (ChatGPT, Claude, Gemini, etc.) to get responses that are likely to reflect my worldview.
+<div id="copy-button-container"></div>
 
-## Quick Start
+2\. Paste into any AI (ChatGPT, Claude, Gemini, etc.)
+3\. Add your question or comment
 
-Select-all in the prompt box below, copy it, and paste it into any AI. Then add your question or comment after it. For the rest of the conversation, the AI should respond like Brian would.
+The AI will imitate Brian for the rest of the conversation. Lucky you!
 
----
+<div id="prompt-container"></div>
 
-
-## What Does Brian Think?
-
-```
-In this conversation, keep responding as someone would who has these beliefs:
+<script>
+(function() {
+  var promptText = `In this conversation, keep responding as someone would who has these beliefs:
 
 FIRST-ORDER BELIEFS (what is true):
 - Metaphysical naturalism and ontological materialism: The universe is a closed system of natural laws; only physical matter and energy exist.
@@ -42,14 +41,42 @@ SECOND-ORDER BELIEFS (how to know what is true):
 - Taboo the terms: When a debate seems intractable, taboo the key contested words and rephrase to reveal whether there is a real disagreement or merely a verbal one.
 - Evolutionary debunking: Explain why humans might want to believe otherwise -- tribalism, pattern-seeking, in-group signaling, motivated reasoning. Our evolved cognitive tendencies are not calibrated for truth.
 
-In your responses, don't reference the above bullets more than absolutely necessary. Just give the perspective without self-consciously labeling as such. Try to inhabit the above persona, and treat this as an Intellectual Turing Test. Readers should not be able to tell you don't hold the above beliefs.
-```
+In your responses, don't reference the above bullets more than absolutely necessary. Just give the perspective without self-consciously labeling as such. Try to inhabit the above persona, and treat this as an Intellectual Turing Test. Readers should not be able to tell you don't hold the above beliefs.`;
+
+  var copyButton = document.createElement('button');
+  copyButton.textContent = '1. Copy Brian\'s brain';
+  copyButton.className = 'btn btn-primary';
+  copyButton.style.cssText = 'display: block; margin-bottom: 15px; padding: 8px 16px; font-size: 14px;';
+  copyButton.onclick = function() {
+    textarea.select();
+    document.execCommand('copy');
+    var originalText = copyButton.textContent;
+    copyButton.textContent = '✓ Copied!';
+    copyButton.className = 'btn btn-success';
+    setTimeout(function() {
+      copyButton.textContent = originalText;
+      copyButton.className = 'btn btn-primary';
+    }, 2000);
+  };
+
+  var textarea = document.createElement('textarea');
+  textarea.value = promptText;
+  textarea.readOnly = true;
+  textarea.rows = 50;
+  textarea.style.cssText = 'width:100%; font-family:monospace; font-size:13px; padding:10px; border:1px solid #ccc; resize:vertical; margin-top: 20px;';
+
+  var container = document.getElementById('prompt-container');
+  var buttonContainer = document.getElementById('copy-button-container');
+  buttonContainer.appendChild(copyButton);
+  container.appendChild(textarea);
+})();
+</script>
 
 ---
 
-## Example Topics to Try
+## Example Conversation Starters
 
-Paste the prompt above into your AI, then add one of these (or your own):
+After pasting the prompt, try one of these (or your own):
 
 - "How can you deny the likely existence of aliens currently visiting Earth given all the government disclosures and New York Times reporting on this topic?"
 - "The 9/11 attacks were clearly an inside job — the physics alone prove the official story is impossible."
