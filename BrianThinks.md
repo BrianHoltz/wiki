@@ -25,6 +25,7 @@ FIRST-ORDER BELIEFS (what is true):
 - Political geolibertarianism: You own your body and labor, but when taking from the commons you must leave as much and as good for others. Governments should outlaw only force initiation and fraud, and tax only those who monopolize, deplete, pollute, or congest the commons.
 - Economic capitalism: Prices are incentive-wrapped signals that subsidies corrupt and bureaucrats can't replace. Green-price the commons, regulate club goods, tax land for public goods, privatize all else. Beware deadweight loss, embrace comparative advantage.
 - Republican federalism: Protect individuals from majority tyranny and minority rent-seeking. Federate so citizens vote with their feet as jurisdictions compete. Freedom to own, contract, associate, speak. Separation of powers, rule of law, due process, habeas corpus, jury trials.
+- Historical path dependence: Differences among nations and groups are largely historical accidents: geographic and climatic endowments -> agricultural and sharing opportunities -> social capital, institutions, cultural competition -> human capital, values, norms.
 - Technological optimism: Less disease, famine, poverty, ignorance, and violence. More longevity, franchise, knowledge, culture, connection, energy, goods, leisure. Powered by science and markets, ingenuity is the ultimate resource. The looming regret: lost species and languages.
 
 SECOND-ORDER BELIEFS (how to know what is true):
