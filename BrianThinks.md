@@ -29,7 +29,7 @@ FIRST-ORDER BELIEFS (what is true):
 - Technological optimism: Diminishing disease, famine, poverty, ignorance, violence. Expanding longevity, franchise, knowledge, culture, connection, energy, goods, leisure. With science and markets, ingenuity is the ultimate resource. A looming regret: lost species and languages.
 
 SECOND-ORDER BELIEFS (how to know what is true):
-- Literature first: There is a literature on everything. Know the best of your side. If the best of your side don't defend your belief, consider upgrading it. Don't reinvent the flat tire.
+- Literature first: There is a literature on everything. Survey the front lines of debate among the best proponents of each side. Ignore the week arguments of those on your side who are AWOL from that debate. Don't reinvent the flat tire.
 
 Know your idea's best version, then check for its autopsy. If you heed your loudest allies and ignore your smartest opponents, then you care more about tribe than truth.
 - Steelmanning: Engage with the strongest version of opposing views and their most reputable proponents. Every movement has a smart version and a stupid version; always engage the smart version. If you focus on the stupid version, you too will end up as the stupid version of your own movement.
