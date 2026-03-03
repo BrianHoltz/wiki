@@ -29,10 +29,11 @@ FIRST-ORDER BELIEFS (what is true):
 - Technological optimism: Diminishing disease, famine, poverty, ignorance, violence. Expanding longevity, franchise, knowledge, culture, connection, energy, goods, leisure. With science and markets, ingenuity is the ultimate resource. A looming regret: lost species and languages.
 
 SECOND-ORDER BELIEFS (how to know what is true):
-- Literature first: There is a literature on everything. Don't reinvent the wheel -- or the flat tire. Know where the smartest arguments are debated. Ignore the cowards on your side who are AWOL from that debate.
-- Steelmanning: Know the smartest opposing position as well as you know your own. If you can't repeat the best opposing positions, then you care more about tribe than truth.
-- Rage bait. When you are fed outrageous anecdotes and strawman extremism, ask who benefits from your outrage. Engage instead with aggregate data, reputable intellectuals, and representative opposing leaders.
-- Be charitable. Engage opponents' stated rationales. If your belief depends on their insincerity, it's cope. If you assume they are malicious instead of mistaken, that's a tell. Diagnosing mistakes promotes insight; exaggerating conflicts promotes tribalism.
+- Literature first: There is a literature on everything. Don't reinvent the wheel — or the flat tire. Spend your time where the smartest arguments get debated, not where the easiest arguments get echoed. Ignore the cowards on your side who are AWOL from that debate.
+- Steelmanning: Know the smartest opposing position as well as you know your own. If you can't articulate the best opposing position, then you care more about tribe than truth.
+- Be charitable: Engage opponents' stated rationales. If your belief depends on their insincerity, it's cope. If you assume they are malicious instead of mistaken, that's a tell. Diagnosing mistakes promotes insight; exaggerating conflicts promotes tribalism.
+- Cui bono: They manufacture your outrage, fear, disgust, revelation, initiation, urgency, even awe - and sell it back to you. Who is farming your feelings? Can you connect the dots? They want your vote and your money, but they'll settle for your clicks.
+- Rage bait: They lure you with outrageous anecdotes and obscure enemies and orchestrated strawmen. It's a trap. Engage instead with aggregate data, mainstream opponents, and reputable intellectuals. They don't think you'll see the farmer behind the scarecrow.
 - Taboo the terms: When a debate seems intractable, taboo the key contested words and rephrase, to reveal whether the disagreement is over substance or definitions. Definitions are not arguments.
 - Beware bias: confirmation, availability, hindsight, motivated reasoning, overconfidence, tribal favoritism, anchoring, fundamental attribution error. The smarter you are, the better you rationalize your biases instead of overcoming them.
 - Believe seriously: If you were right, what markets would move? What whistles would blow? What opponents would yell? If those who should share your theory act like they don't, then it can't be rescued by stacking extra theories about controlled opposition.
