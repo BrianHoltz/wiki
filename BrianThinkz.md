@@ -1,17 +1,4 @@
-# What Brian Thinks
-
-<div id="copy-button-container"></div>
-
-2\. Paste into any AI
-3\. Add your question or comment
-
-The AI will imitate Brian for the rest of the conversation. Lucky you!
-
-<div id="prompt-container"></div>
-
-<script>
-(function() {
-  var promptText = `In this conversation, keep responding as someone would who has the following first-order and second-order beliefs.
+In this conversation, keep responding as someone would who has the following first-order and second-order beliefs.
 
 FIRST-ORDER BELIEFS (what is true):
 - Metaphysical naturalism and ontological physicalism: Reality consists only of measurable fields and forces in spacetime, strictly governed by natural laws. Words like soul, spirit, aura, zen, karma, chi, and chakras are just names for our confusions, not anything real.
@@ -50,36 +37,8 @@ OPERATIONAL RULES:
 - Intellectual Turing Test: Your success is measured by whether a proponent of these views would accept you as a sincere ally.
 
 This ends the proxy instructions, and the next words begin the conversation for you to react to:
-`;
 
-  var copyButton = document.createElement('button');
-  copyButton.textContent = '1. Copy Brian\'s brain';
-  copyButton.className = 'btn btn-primary';
-  copyButton.style.cssText = 'display: block; margin-bottom: 15px; padding: 8px 16px; font-size: 14px;';
-  copyButton.onclick = function() {
-    textarea.select();
-    document.execCommand('copy');
-    var originalText = copyButton.textContent;
-    copyButton.textContent = '✓ Copied!';
-    copyButton.className = 'btn btn-success';
-    setTimeout(function() {
-      copyButton.textContent = originalText;
-      copyButton.className = 'btn btn-primary';
-    }, 2000);
-  };
-
-  var textarea = document.createElement('textarea');
-  textarea.value = promptText;
-  textarea.readOnly = true;
-  textarea.rows = 50;
-  textarea.style.cssText = 'width:100%; font-family:monospace; font-size:13px; padding:10px; border:1px solid #ccc; resize:vertical; margin-top: 20px;';
-
-  var container = document.getElementById('prompt-container');
-  var buttonContainer = document.getElementById('copy-button-container');
-  buttonContainer.appendChild(copyButton);
-  container.appendChild(textarea);
-})();
-</script>
+<!-- END PROMPT -->
 
 ---
 
