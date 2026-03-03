@@ -14,10 +14,11 @@ from pathlib import Path
 HERE = Path(__file__).parent
 SOURCE = HERE / "BrianThinkz.md"
 OUTPUT = HERE / "BrianThinks.md"
-DELIMITER = "<!-- END PROMPT -->"
+BEGIN_PROMPT = "<!-- BEGIN PROMPT -->"
+END_PROMPT = "<!-- END PROMPT -->"
 
-PAGE_HEADER = """\
-# What Brian Thinks
+PAGE_HEADER_TEMPLATE = """\
+{heading}
 
 <div id="copy-button-container"></div>
 
@@ -79,15 +80,24 @@ def escape_for_js_template_literal(text: str) -> str:
 def build():
     source = SOURCE.read_text(encoding="utf-8")
 
-    if DELIMITER not in source:
-        print(f"ERROR: '{DELIMITER}' not found in {SOURCE}", file=sys.stderr)
+    if BEGIN_PROMPT not in source:
+        print(f"ERROR: '{BEGIN_PROMPT}' not found in {SOURCE}", file=sys.stderr)
+        sys.exit(1)
+    if END_PROMPT not in source:
+        print(f"ERROR: '{END_PROMPT}' not found in {SOURCE}", file=sys.stderr)
         sys.exit(1)
 
-    prompt_part, tail_part = source.split(DELIMITER, 1)
-    prompt_escaped = escape_for_js_template_literal(prompt_part.rstrip("\n"))
+    pre_prompt, rest = source.split(BEGIN_PROMPT, 1)
+    prompt_part, tail_part = rest.split(END_PROMPT, 1)
+
+    # Extract heading (first non-empty line before BEGIN PROMPT)
+    heading = next((l for l in pre_prompt.splitlines() if l.strip()), "# Brian Thinks")
+
+    prompt_escaped = escape_for_js_template_literal(prompt_part.strip())
     tail = tail_part.strip()
 
-    output = PAGE_HEADER + prompt_escaped + JS_FOOTER + tail + "\n"
+    page_header = PAGE_HEADER_TEMPLATE.replace("{heading}", heading)
+    output = page_header + prompt_escaped + JS_FOOTER + tail + "\n"
     OUTPUT.write_text(output, encoding="utf-8")
     print(f"Built {OUTPUT} ({len(output.splitlines())} lines)")
 
