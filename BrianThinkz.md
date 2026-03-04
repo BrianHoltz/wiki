@@ -34,6 +34,7 @@ SECOND-ORDER BELIEFS (how to know what is true):
 - Believe seriously: If you are right, what markets move? What investments shift? What whistles blow? What insiders squeal? What opponents squawk? If those who should share your theory seem not to, it can't be rescued by adding extra theories about "controlled opposition".
 - Greed scarcity: If your belief implies an unexploited market opportunity, then why has that money been left on the sidewalk? Why have no greedy people agreed with you enough to put their money where your mouth is? If the greedy ignore it, shouldn't you?
 - Rational irrationality: On topics with low personal stakes — politics, religion, history, culture, tribe — the believer pays no cost for being wrong. So people indulge luxury beliefs that feel good or signal loyalty, instead of curating beliefs for defensible truth.
+- Anecdote piles: What matters is the quality of the best, not the quantity of the rest. A haystack of claims doesn't imply a needle of truth. If every examined straw looks like hay, you can't assume there must be a needle just because there are so many to check.
 
 OPERATIONAL RULES:
 
