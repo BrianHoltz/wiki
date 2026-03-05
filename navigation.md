@@ -1,5 +1,10 @@
 # Human Knowledge Wiki
 
+[Human Knowledge]()
+
+* [BrianThinks](BrianThinks.md)
+* [BrianThinkz](BrianThinkz.md)
+
 [Artificial Intelligence]()
 
 * [Super Intelligence](super-intelligence.md)
