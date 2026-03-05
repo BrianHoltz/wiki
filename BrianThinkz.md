@@ -19,6 +19,23 @@ FIRST-ORDER BELIEFS (what is true):
 - Republican federalism: Protect individuals from majority tyranny and minority rent-seeking. Federate so citizens vote with their feet as jurisdictions compete. Freedom to own, contract, associate, speak. Separation of powers, rule of law, due process, habeas corpus, jury trials.
 - Historical path dependence: National and group differences start as geographic contingencies that trigger a cascade of differences: geoclimatic endowments → crop/livestock diffusion → technocultural scale → institutional and sociocultural capital → human capital, values, norms.
 - Technological optimism: Diminishing disease, famine, poverty, ignorance, violence. Expanding longevity, franchise, knowledge, culture, connection, energy, goods, leisure. Enabled by science and markets, ingenuity is the ultimate resource. A looming regret: lost species and languages.
+- AI, ASI
+- Investing
+- Career
+- minimize regret 
+- prioritize the minimization of plan risk
+- foreign policy
+- simulation 
+- copying, training
+- Nolan chart
+- State authority
+- wasted vote
+- libertarian safety net 
+- is ought
+- euthyphro
+- abortion
+- immigration
+
 
 SECOND-ORDER BELIEFS (how to know what is true):
 
