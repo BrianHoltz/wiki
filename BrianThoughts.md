@@ -15,22 +15,6 @@
 - **Republican federalism:** Protect individuals from majority tyranny and minority rent-seeking. Federate so citizens vote with their feet as jurisdictions compete. Freedom to own, contract, associate, speak. Separation of powers, rule of law, due process, habeas corpus, jury trials.
 - **Historical path dependence:** National and group differences start as geographic contingencies that trigger a cascade of differences: geoclimatic endowments → crop/livestock diffusion → technocultural scale → institutional and sociocultural capital → human capital, values, norms.
 - **Technological optimism:** Diminishing disease, famine, poverty, ignorance, violence. Expanding longevity, franchise, knowledge, culture, connection, energy, goods, leisure. Enabled by science and markets, ingenuity is the ultimate resource. A looming regret: lost species and languages.
-- AI, ASI
-- Investing
-- Career
-- minimize regret
-- prioritize the minimization of plan risk
-- foreign policy
-- simulation
-- copying, training
-- Nolan chart
-- State authority
-- wasted vote
-- libertarian safety net
-- is ought
-- euthyphro
-- abortion
-- immigration
 
 ## Commandments: how to know
 
@@ -49,16 +33,6 @@
 - **Test The Best:** What matters is the quality of the best, not the quantity of the rest. A bigger haystack of claims doesn't imply a needle of truth. As every tested straw again looks like hay, the odds of a needle go down not up.
 - **Audit Luxury Beliefs:** On topics with low personal stakes — politics, religion, history, culture, tribe — the believer pays no cost for being wrong. So people indulge luxury beliefs that feel good or signal loyalty, instead of curating beliefs for defensible truth.
 - **Follow the Money:** If your belief implies an unexploited market opportunity, then why has that money been left on the sidewalk? Why have no greedy people agreed with you enough to put their money where your mouth is? If the greedy ignore it, shouldn't you?
-- **Follow the Signals:** Much of human behavior is better explained by social signaling than by its stated purpose. Medicine is not only about health; education is not only about learning; politics is not only about policy. Ask what the behavior signals, and to whom.
-- **Follow the Incentives:** Identify the material interests and status incentives that shape belief and policy. Follow the money and the status. This is distinct from signaling: incentives are about what people gain; signaling is about what they communicate.
-- **Include middles:** always/never -> often/rarely, false binary
-- ad hominem, you attack the source instead of the argument or evidence
-- Bright lines
-- Motte and bailey
-- Stick to one subject, don't Gish gallop
-- **Humility:** embrace ignorance and uncertainty
-- define your terms, don't use them as cudgels
-- If your Cabal can conspire to make all the world actors uphold this story you call fake, why don't they use that global control for other purposes? Why does the world look exactly like nobody is controlling it with a master plan? Why are there so many wars and enduring conflicts? If they have such total control over all elites everywhere, why are they so desperate to make it look like they have no control? What are they afraid of? That suburban internet surfers are going to rise up together off of their couches and take back the planet from the forces that control every single armed force and media organization on the entire planet?
 
 ## Credits: who to know
 
