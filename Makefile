@@ -5,7 +5,7 @@ EXCLUDES := $(HOME)/rsync_excludes
 .PHONY: build deploy
 
 build:
-	python3 build.py
+	python3 BrianThinks.py
 
 deploy: build
 	rsync -lPOvrt --delete-after --delete-excluded \

@@ -12,6 +12,7 @@ placeholder inside the JS promptText template literal. That placeholder
 is replaced with the (JS-escaped) prompt content extracted above.
 """
 
+import re
 import sys
 from pathlib import Path
 
@@ -48,6 +49,7 @@ def build():
             break
 
     prompt_text = "\n".join(lines).strip()
+    prompt_text = re.sub(r'\*\*', '', prompt_text)  # strip bold markers for plain-text prompt
     prompt_escaped = escape_for_js_template_literal(prompt_text)
 
     output = template.replace(PLACEHOLDER, prompt_escaped, 1)
