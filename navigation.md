@@ -3,7 +3,7 @@
 [Human Knowledge]()
 
 * [BrianThinks](BrianThinks.md)
-* [BrianThinkz](BrianThinkz.md)
+* [BrianThinkz](BrianThoughts.md)
 
 [Artificial Intelligence]()
 

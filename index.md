@@ -1,7 +1,7 @@
 ### Human Knowledge
 
 - [BrianThinks](BrianThinks.md) — AI proxy portal
-- [BrianThinkz](BrianThinkz.md) — AI proxy constitution
+- [BrianThinkz](BrianThoughts.md) — AI proxy constitution
 
 ### Artificial Intelligence
 
