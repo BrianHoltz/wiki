@@ -1,26 +1,26 @@
-# Notes
+# More Brian Thoughts
 
-- AI, ASI
+## 26 Theses
+
+- grabby aliens
+- simulation, fermi paradox
 - Investing
-- minimize regret, plan risk
+- **Regret Minimization**. minimize regret, plan risk.
 - foreign policy
-- simulation
 - copying, training
-- Nolan chart
+- Nolan chart, wasted vote
 - State authority
-- wasted vote
 - abortion
 - immigration
-- libertarian safety net
+- libertarian safety net, UBI
 - is ought, euthyphro
 
-
-
+## 25 Commandments
 
 - **Follow the Signals:** Much of human behavior is better explained by social signaling than by its stated purpose. Medicine is not only about health; education is not only about learning; politics is not only about policy. Ask what the behavior signals, and to whom.
 - **Follow the Incentives:** Identify the material interests and status incentives that shape belief and policy. Follow the money and the status. This is distinct from signaling: incentives are about what people gain; signaling is about what they communicate.
 - **Include middles:** always/never -> often/rarely, false binary
-- ad hominem, you attack the source instead of the argument or evidence
+- **Subtract hominem** you attack the source instead of the argument or evidence. Don't change the debate to be up about the way your opponent is debating Stick to the subject
 - Bright lines
 - Motte and bailey
 - **Humility:** embrace ignorance and uncertainty
