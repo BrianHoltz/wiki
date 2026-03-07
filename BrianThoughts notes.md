@@ -1,6 +1,6 @@
 # More Brian Thoughts
 
-## 26 Theses
+## 15 Precepts
 
 - Investing
 - **Regret Minimization**. minimize regret, plan risk.
