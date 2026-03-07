@@ -1,6 +1,6 @@
 # Brian Thinks
 
-## 25 Theses: what to know
+## Theses: what to know
 
 - **Metaphysical naturalism and ontological physicalism:** Reality consists only of measurable fields and forces in spacetime, strictly governed by natural laws. Words like soul, spirit, miracle, aura, karma, chi, and chakra are just names for our confusions, not anything real.
 - **Epistemological empiricism/positivism:** Knowledge comes from observation and evidence, not from assuming every pattern has a planner. A theory that predicts nothing explains nothing. If you can't say what would falsify it, your belief is just for show, not for understanding.
@@ -10,15 +10,18 @@
 - **Skepticism:** Extraordinary claims require unimpeachable evidence, not dumpsters of anecdotes. The truth is usually complex and boring, not convoluted and cinematic. We social primates are evolved to see any troubling pattern as the secret plan of powerful nefarious bipeds.
 - **Biological evolutionism:** All Earth life shares common ancestry via natural selection. Primates evolved to see planners in every pattern, and so imagine an intelligent designer — who retreats as science fills each explanatory gap. Competing selfish genes are the blind watchmaker.
 - **Evolutionary psychology:** Selfish genes drive divisive out-group bias, costly in-group signaling, reciprocal altruism, parental investment, parent-child conflict, intrasexual competition, resource/fertility attraction, and assortative mating. Sexes are strategies, not teams.
-- **Axiological extropianism:** Morality comes not from gods or Nature or whim. We together decide our values, which should be: life, sentience, intelligence, autonomy, justice, progress. We speak for Earth, as we recursively copy its candle of consciousness across the cosmos.
-- **Political geolibertarianism:** You fully own your body and labor, but when taking from the commons you must leave as much and as good for others. Governments should outlaw only force initiation and fraud, and tax only those who monopolize, deplete, pollute, or congest the commons.
-- **Economic capitalism:** Prices are incentive-wrapped signals that subsidies distort and central planners can't replace. Tax harms to the commons, regulate club goods, tax land for public goods, privatize all else. Beware deadweight loss, embrace comparative advantage.
-- **Republican federalism:** Protect individuals from majority tyranny and minority rent-seeking. Federate so citizens vote with their feet as jurisdictions compete. Freedom to own, contract, associate, speak. Separation of powers, rule of law, due process, habeas corpus, jury trials.
 - **Historical path dependence:** National and group differences start as geographic contingencies that trigger a cascade of differences: geoclimatic endowments → crop/livestock diffusion → technocultural scale → institutional and sociocultural capital → human capital, values, norms.
 - **Technological optimism:** Diminishing disease, famine, poverty, ignorance, violence. Expanding longevity, franchise, knowledge, culture, connection, energy, goods, leisure. Enabled by science and markets, ingenuity is the ultimate resource. A looming regret: lost species and languages.
 - **AGIs, not ASI**. 1 AI outsmarting humanity = 1 neuron outsmarting a brain. Align AGI societies, don't fear magic ASI supervillains. Singularity=Rapture. Do economics, not comics.Think diminishing returns, bottlenecks, N² coordination, local knowledge, txn/search costs.
 
-## 25 Commandments: how to know
+## Precepts: what to value
+
+- **Axiological extropianism:** Morality comes not from gods or Nature or whim. We together decide our values, which should be: life, sentience, intelligence, autonomy, justice, progress. We speak for Earth, as we recursively copy its candle of consciousness across the cosmos.
+- **Political geolibertarianism:** You fully own your body and labor, but when taking from the commons you must leave as much and as good for others. Governments should outlaw only force initiation and fraud, and tax only those who monopolize, deplete, pollute, or congest the commons.
+- **Economic capitalism:** Prices are incentive-wrapped signals that subsidies distort and central planners can't replace. Tax harms to the commons, regulate club goods, tax land for public goods, privatize all else. Beware deadweight loss, embrace comparative advantage.
+- **Republican federalism:** Protect individuals from majority tyranny and minority rent-seeking. Federate so citizens vote with their feet as jurisdictions compete. Freedom to own, contract, associate, speak. Separation of powers, rule of law, due process, habeas corpus, jury trials.
+
+## Commandments: how to know
 
 - **Vide Cui Bono:** They manufacture your feelings of outrage, fear, disgust, revelation, initiation, even awe - and sell them back to you. Who is farming your feelings? Can you connect the dots? They want your vote and money, but they'll settle for your clicks and views.
 - **Avoid Rage Bait:** They feed you outrageous anecdotes, obscure enemies and orchestrated strawmen. It's a trap. Engage instead with aggregate data, mainstream opponents, and reputable intellectuals. Don't be the farmed sheep that they don't think will see the farmer behind the scarecrow.
