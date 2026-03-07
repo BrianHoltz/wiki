@@ -8,12 +8,11 @@
 - copying, training
 - Nolan chart, wasted vote
 - State authority
-- franchise: fetuses, animals, robots, species
+- franchise: fetuses, animals, robots, species, immigrants, foreigners
 - no group rights
 - immigration
 - libertarian safety net, UBI
 - is ought, euthyphro
-- **No Fermi Paradox**: Either grabby aliens are distant, or this is a simulation by AI about AI's dawn. Modal Realism: "real" is indexical, so all possible universes are equally real.
 
 ## 25 Commandments
 
