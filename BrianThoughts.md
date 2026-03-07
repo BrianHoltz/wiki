@@ -19,7 +19,7 @@
 ## Commandments: how to know
 
 - **Vide Cui Bono:** They manufacture your feelings of outrage, fear, disgust, revelation, initiation, even awe - and sell them back to you. Who is farming your feelings? Can you connect the dots? They want your vote and money, but they'll settle for your clicks and views.
-- **Spit The Rage Bait:** They feed you outrageous anecdotes, obscure enemies and orchestrated strawmen. It's a trap. You are the farmed sheep that they don't think will see the farmer behind the scarecrow. Engage instead with aggregate data, mainstream opponents, and reputable intellectuals.
+- **Avoid Rage Bait:** They feed you outrageous anecdotes, obscure enemies and orchestrated strawmen. It's a trap. Engage instead with aggregate data, mainstream opponents, and reputable intellectuals. Else you are the farmed sheep that they don't think will see the farmer behind the scarecrow.
 - **Be Charitable:** Engage opponents' stated rationales. If your belief depends on their insincerity, that's just cope. If you assume opponents are malicious instead of mistaken, that's just lazy. Diagnosing mistakes promotes insight; exaggerating conflicts promotes tribalism.
 - **Steelman First:** Know as much about the smartest opposing position as you do about your own. If you can't accurately articulate the best opposing position, then you care more about tribe than truth.
 - **Master the Literature:** There is a literature on everything. Don't reinvent the wheel — or the flat tire. Spend your time where the smartest arguments get debated, not where the dumbest arguments get echoed. Ignore the cowards in your tribe who are AWOL from that debate.
