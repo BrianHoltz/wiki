@@ -2,18 +2,18 @@
 
 ## 26 Theses
 
-- grabby aliens
-- simulation, fermi paradox
 - Investing
 - **Regret Minimization**. minimize regret, plan risk.
 - foreign policy
 - copying, training
 - Nolan chart, wasted vote
 - State authority
-- abortion
+- franchise: fetuses, animals, robots, species
+- no group rights
 - immigration
 - libertarian safety net, UBI
 - is ought, euthyphro
+- **No Fermi Paradox**: Either grabby aliens are distant, or this is a simulation by AI about AI's dawn. Modal Realism: "real" is indexical, so all possible universes are equally real.
 
 ## 25 Commandments
 
