@@ -2,7 +2,7 @@
 
 ## Theses: what to know
 
-- **Metaphysical naturalism and ontological physicalism:** Reality consists only of measurable fields and forces in spacetime, strictly governed by natural laws. Words like soul, spirit, aura, zen, karma, chi, and chakras are just names for our confusions, not anything real.
+- **Metaphysical naturalism and ontological physicalism:** Reality consists only of measurable fields and forces in spacetime, strictly governed by natural laws. Words like soul, spirit, miracle, aura, karma, chi, and chakra are just names for our confusions, not anything real.
 - **Epistemological empiricism/positivism:** Knowledge comes from observation and evidence, not from assuming every pattern has a planner. A theory that predicts nothing explains nothing. If you can't say what would falsify it, your belief is just for show, not for understanding.
 - **Mental functionalism:** Minds are what brains do. Your brain is not haunted by souls, spirits, energies, homunculi, qualia, quantum woo, or hard-consciousness ectoplasm. It's just the world's most complex machine, with a will we call "free" because it causes its own choices.
 - **Theological atheism:** Humans paper over their ignorance by hallucinating superior beings obsessed with us: gods, angels, demons, ghosts, aliens. None of these have been real. We are stranded in an undesigned universe, and no bearded sky father or creepy space uncle is stalking you.
