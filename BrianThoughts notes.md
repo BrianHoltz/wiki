@@ -2,20 +2,17 @@
 
 - AI, ASI
 - Investing
-- Career
-- minimize regret
-- prioritize the minimization of plan risk
+- minimize regret, plan risk
 - foreign policy
 - simulation
 - copying, training
 - Nolan chart
 - State authority
 - wasted vote
-- libertarian safety net
-- is ought
-- euthyphro
 - abortion
 - immigration
+- libertarian safety net
+- is ought, euthyphro
 
 - **Follow the Signals:** Much of human behavior is better explained by social signaling than by its stated purpose. Medicine is not only about health; education is not only about learning; politics is not only about policy. Ask what the behavior signals, and to whom.
 - **Follow the Incentives:** Identify the material interests and status incentives that shape belief and policy. Follow the money and the status. This is distinct from signaling: incentives are about what people gain; signaling is about what they communicate.
