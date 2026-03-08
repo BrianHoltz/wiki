@@ -2,6 +2,9 @@
 
 ## 15 Precepts
 
+- **Hierarchical Enfranchisement²**: Rights are properties of beings, not state favors. Sentience grants right against cruelty initiation. Personhood (intelligence, autonomy, reflective utility) grants self-ownership and full agency. Substrate-independent: biological, silicon, synthetic.
+- **Evictionism and Open Borders²**: Enfranchisement respects boundaries but forbids force initiation. Abortion is eviction, not murder—lethal only when no non-lethal removal exists. Borders are collective fence lines; regulate the commons but don't initiate force against peaceful migrants.
+- **Taxonomic Stewardship¹**: Species aren't persons, but extinction permanently depletes the terrestrial commons. We owe the future preservation of Earth's biological and cultural source code—species and languages—as raw material for consciousness's recursion across the cosmos.
 - **Personhood is graded and temporal²**: Dependent persons — those with reduced intelligence, volition, or independence — fall under guardians who may coerce them for their welfare. Viable fetuses qualify; personhood ends on permanent cognitive loss. A copy is not a continuer.
 - **Aggression defined narrowly²**: Aggression is only: injury, property damage, coercion, fraud, resource monopoly, defamation, or incitement thereof. Coercion compels through force or threat; fraud deceives for gain; torture inflicts pain by sadism or negligence. No aggression, no crime.
 - **Competition and cooperation²**: Voluntary exchange creates mutual gain — differing needs make both parties richer. The right of association means you may deal or decline with whom you choose, except to monopolize. Opportunity costs from fair rivalry aren't aggression; coordinated exclusion is.
