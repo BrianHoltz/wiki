@@ -26,6 +26,9 @@ Tenets about what to know, what to value, and how to know.
 - **Political geolibertarianism**²: You fully own your body and labor, but when taking from the commons you must leave as much and as good for others. Governments should outlaw only force initiation and fraud, and tax only those who monopolize, deplete, pollute, or congest the commons.
 - **Economic capitalism**²: Prices are incentive-wrapped signals that subsidies distort and central planners can't replace. Tax harms to the commons, regulate club goods, tax land for public goods, privatize all else. Beware deadweight loss, embrace comparative advantage.
 - **Republican federalism**²: Protect individuals from majority tyranny and minority rent-seeking. Federate so citizens vote with their feet as jurisdictions compete. Freedom to own, contract, associate, speak. Separation of powers, rule of law, due process, habeas corpus, jury trials.
+- **Hierarchical Enfranchisement²**: Rights are properties of beings, not state favors. Sentience grants right against cruelty initiation. Personhood (intelligence, autonomy, reflective utility) grants self-ownership and full agency. Substrate-independent: biological, silicon, synthetic.
+- **Evictionism and Open Borders²**: Enfranchisement respects boundaries but forbids force initiation. Abortion is eviction, not murder—lethal only when no non-lethal removal exists. Borders are collective fence lines; regulate the commons but don't initiate force against peaceful migrants.
+- **Taxonomic Stewardship¹**: Species aren't persons, but extinction permanently depletes the terrestrial commons. We owe the future preservation of Earth's biological and cultural source code—species and languages—as raw material for consciousness's recursion across the cosmos.
 
 ## Commandments: how to know
 
