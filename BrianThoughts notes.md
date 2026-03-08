@@ -2,10 +2,14 @@
 
 ## 15 Precepts
 
+- **Personhood is graded and temporal²**: Dependent persons — those with reduced intelligence, volition, or independence — fall under guardians who may coerce them for their welfare. Viable fetuses qualify; personhood ends on permanent cognitive loss. A copy is not a continuer.
+- **Aggression defined narrowly²**: Aggression is only: injury, property damage, coercion, fraud, resource monopoly, defamation, or incitement thereof. Coercion compels through force or threat; fraud deceives for gain; torture inflicts pain by sadism or negligence. No aggression, no crime.
+- **Competition and cooperation²**: Voluntary exchange creates mutual gain — differing needs make both parties richer. The right of association means you may deal or decline with whom you choose, except to monopolize. Opportunity costs from fair rivalry aren't aggression; coordinated exclusion is.
+- **Commons and property²**: You own what you create or receive by consent. Resources — air, land, water, bandwidth, orbits — can't be fully owned; polluting or monopolizing them is aggression against all who share them. Ownable: possessable resources, artifacts, and IP.
 - Investing
 - **Regret Minimization**. minimize regret, plan risk.
 - foreign policy
-- copying, training
+- **Intellectual property is bounded¹**: Copyright blocks competing reproduction, unattributed use, and defamatory modification — not fair use or AI training. Patent rights last only until independent discovery, or the product lifecycle, whichever longer. Digital abundance makes maximal copyright self-defeating.
 - Nolan chart, wasted vote
 - State authority
 - franchise: fetuses, animals, robots, species, immigrants, foreigners
