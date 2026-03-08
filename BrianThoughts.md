@@ -48,6 +48,8 @@ Tenets about what to know, what to value, and how to know.
 - **Test The Best**: What matters is the quality of the best evidence, not the quantity of the rest. A haystack of claims doesn't imply a needle of truth. As every examined straw again looks like hay, the odds of a needle go down not up.
 - **Audit Luxury Beliefs**: On topics with low personal stakes — politics, religion, history, culture, tribe — the believer pays no cost for being wrong. Question your beliefs that feel good or signal loyalty. Curate your beliefs for uncomfortable but defensible truth.
 - **Follow the Money**: If your belief implies an unexploited market opportunity, then why has that money been left on the sidewalk? Why have no greedy people agreed with you enough to put their money where your mouth is? If the greedy ignore it, shouldn't you?
+- **Question Revelation**: You can find a credentialed expert or persuasive witness for anything you want to believe. Place no faith in any one person or text. Test each against the others that should align with its truth. Truth is a messy boring web of all sources, not a neat exciting revelation from one.
+- **Explain Consensus**: Every true theory broke the earlier expert consensus. You need to explain why your contrarian theory is right AND why experts disagree. Your exciting theory is only as valid as your metatheory for why it isn't winning. If your metatheory is weak, your theory is surely wrong.
 
 ## Credits: who to know
 
