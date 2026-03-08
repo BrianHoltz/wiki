@@ -2,7 +2,7 @@
 
 Tenets about what to know, what to value, and how to know.
 
-## Theses: what to know
+## 11 Theses: what to know
 
 *Superscripts indicate the log₁₀ confidence the thesis is true: ¹≈90%, ²≈99%, ³≈99.9%, ⁴≈99.99%.*
 
@@ -18,7 +18,7 @@ Tenets about what to know, what to value, and how to know.
 - **Technological optimism**¹: Diminishing disease, famine, poverty, ignorance, violence. Expanding longevity, franchise, knowledge, culture, connection, energy, goods, leisure. Enabled by science and markets, ingenuity is the ultimate resource. A looming regret: lost species and languages.
 - **AGIs, not ASI**¹: 1 AI outsmarting humanity ≡ 1 neuron outsmarting a brain. Singularity ≡ Rapture. Align AGI societies, don't fear magic ASI supervillains. Economics, not comics.Think diminishing returns, bottlenecks, N² coordination, local knowledge problem, txn/search costs.
 
-## Precepts: what to value
+## 4 Precepts: what to value
 
 *Superscripts indicate the log₁₀ confidence I won't ever change my mind: ¹≈90%, ²≈99%, ³≈99.9%, ⁴≈99.99%.*
 
@@ -27,7 +27,7 @@ Tenets about what to know, what to value, and how to know.
 - **Economic capitalism**²: Prices are incentive-wrapped signals that subsidies distort and central planners can't replace. Tax harms to the commons, regulate club goods, tax land for public goods, privatize all else. Beware deadweight loss, embrace comparative advantage.
 - **Republican federalism**²: Protect individuals from majority tyranny and minority rent-seeking. Federate so citizens vote with their feet as jurisdictions compete. Freedom to own, contract, associate, speak. Separation of powers, rule of law, due process, habeas corpus, jury trials.
 
-## Commandments: how to know
+## 16 Commandments: how to know
 
 *For each there is ~99% confidence I'll always support this advice.*
 

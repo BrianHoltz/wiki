@@ -1,6 +1,6 @@
 # More Brian Thoughts
 
-## 15 Precepts
+## Precepts
 
 - **Hierarchical Enfranchisement²**: Rights are properties of beings, not state favors. Sentience grants right against cruelty initiation. Personhood (intelligence, autonomy, reflective utility) grants self-ownership and full agency. Substrate-independent: biological, silicon, synthetic.
 - **Evictionism and Open Borders²**: Enfranchisement respects boundaries but forbids force initiation. Abortion is eviction, not murder—lethal only when no non-lethal removal exists. Borders are collective fence lines; regulate the commons but don't initiate force against peaceful migrants.
@@ -21,7 +21,7 @@
 - libertarian safety net, UBI
 - is ought, euthyphro
 
-## 25 Commandments
+## Commandments
 
 - **Follow the Signals:** Much of human behavior is better explained by social signaling than by its stated purpose. Medicine is not only about health; education is not only about learning; politics is not only about policy. Ask what the behavior signals, and to whom.
 - **Follow the Incentives:** Identify the material interests and status incentives that shape belief and policy. Follow the money and the status. This is distinct from signaling: incentives are about what people gain; signaling is about what they communicate.
