@@ -1,5 +1,7 @@
 # Brian Thinks
 
+Tenets about what to know, what to value, and how to know.
+
 ## Theses: what to know
 
 *Superscripts indicate the log₁₀ confidence the thesis is true: ¹≈90%, ²≈99%, ³≈99.9%, ⁴≈99.99%.*
