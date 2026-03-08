@@ -49,7 +49,7 @@ Tenets about what to know, what to value, and how to know.
 - **Audit Luxury Beliefs**: On topics with low personal stakes — politics, religion, history, culture, tribe — the believer pays no cost for being wrong. Question your beliefs that feel good or signal loyalty. Curate your beliefs for uncomfortable but defensible truth.
 - **Follow the Money**: If your belief implies an unexploited market opportunity, then why has that money been left on the sidewalk? Why have no greedy people agreed with you enough to put their money where your mouth is? If the greedy ignore it, shouldn't you?
 - **Question Revelation**: There is a persuasive expert or witness for anything you want to believe. Place no faith in any  sources. Test each against ALL the others. Truth comes from the boring contentious web of all evidence, not from dramatic undebated revelations in internet videos.
-- **Explain Consensus**: Every true theory broke the earlier expert consensus. You need to explain why your contrarian theory is right AND why experts disagree. Your exciting theory is only as valid as your metatheory for why it isn't winning. If your metatheory is weak, your theory is surely wrong.
+- **Explain Consensus**: You must explain both why your contrarian theory is right AND why most experts disagree with it. Your exciting theory is only as valid as your meta-theory for why it's losing. If the consensus is wrong, where are your profits and/or vindicating predictions?
 
 ## Credits: who to know
 
