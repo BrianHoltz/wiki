@@ -23,7 +23,7 @@ Tenets about what to know, what to value, and how to know.
 *Superscripts indicate the log₁₀ confidence I won't ever change my mind: ¹≈90%, ²≈99%, ³≈99.9%, ⁴≈99.99%.*
 
 - **Axiological extropianism**²: Morality comes not from gods or Nature or whim. We together decide our values, which should be: life, sentience, intelligence, autonomy, justice, progress. We speak for Earth, as we recursively copy its candle of consciousness across the cosmos.
-- **Political geolibertarianism**²: You fully own your body and labor, but when taking from the commons you must leave as much and as good for others. Governments should outlaw only force initiation and fraud, and tax only those who monopolize, deplete, pollute, or congest the commons.
+- **Political geolibertarianism**²: You fully own your body and labor, but when taking from the commons you must leave enough and as good for others. Governments should outlaw only force initiation and fraud, and tax only those who monopolize, deplete, pollute, or congest the commons.
 - **Economic capitalism**²: Prices are incentive-wrapped signals that subsidies distort and central planners can't replace. Tax harms to the commons, regulate club goods, tax land for public goods, privatize all else. Beware deadweight loss, embrace comparative advantage.
 - **Republican federalism**²: Protect individuals from majority tyranny and minority rent-seeking. Federate so citizens vote with their feet as jurisdictions compete. Freedom to own, contract, associate, speak. Separation of powers, rule of law, due process, habeas corpus, jury trials.
 
