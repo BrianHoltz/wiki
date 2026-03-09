@@ -79,7 +79,7 @@ Click [BrianThinks](https://holtz.org/BrianThinks) to engage this worldview.
 - 1986 **Marvin Minsky**, *The Society of Mind*: "minds are what brains do"
 - 1995 **David Chalmers**, [*Facing Up to the Problem of Consciousness*](https://consc.net/papers/facing.html): the "hard problem of consciousness" — mocked here as "hard-consciousness ectoplasm"
 - 1998 **Daniel Dennett**, *Brain Children* (ch. 25, "Self-Portrait"): "a brain was always going to do what it was caused to do by current, local, mechanical circumstances... But over the long haul, brains could be designed – by evolutionary processes – to do the right thing... with high reliability." — compatibilist free will
-- 1998 **Nick Bostrom**, [*Are You Living in a Computer Simulation?*](https://simulation-argument.com/simulation.html) (*Philosophical Quarterly*): "If there is a substantial chance that our civilization will ever reach a posthuman stage and run many ancestor-simulations, then it is almost certain that we are living in a simulation."
+- 2003 **Nick Bostrom**, [*Are You Living in a Computer Simulation?*](https://simulation-argument.com/simulation.html) (*Philosophical Quarterly*): "If there is a substantial chance that our civilization will ever reach a posthuman stage and run many ancestor-simulations, then it is almost certain that we are living in a simulation."
 - 2006 **Robin Hanson**, [*Overcoming Bias*](https://www.overcomingbias.com/): applying economics and evolutionary psychology to identify and correct cognitive biases
 - 2007 **Bryan Caplan**, *The Myth of the Rational Voter*: "rational irrationality"
 - 2009 **Alex Tabarrok & Tyler Cowen**, *Modern Principles of Economics*: "A price is a signal wrapped up in an incentive."
