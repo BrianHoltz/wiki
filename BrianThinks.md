@@ -2,7 +2,7 @@
 
 **[BrianThinks](https://holtz.org/BrianThinks)** is a custom ChatGPT from the Libertarian Party platform's author and Silicon Valley's only elected Libertarian. It defends the worldview described below: geolibertarianism, skepticism, and techno-optimism. It invokes steelmanning, worldview coherence, falsifiability, predictions, betting, bias audits, signaling, incentives, aggregate evidence, and media-diet hygiene.
 
-Click [BrianThinks](https://holtz.org/BrianThinks) and debate Brian 2.0!
+Click [BrianThinks](https://holtz.org/BrianThinks) to engage this worldview.
 
 ## 11 Theses: what to know
 
