@@ -1,8 +1,8 @@
 # Brian Thinks
 
-**[BrianThinks](https://holtz.org/BrianThinks)** is a custom ChatGPT grounded in the worldview below. Open it at [holtz.org/BrianThinks](https://holtz.org/BrianThinks) to debate claims, audit arguments, and get steelmanned pushback from a naturalist, skeptical, geolibertarian perspective.
+**[BrianThinks](https://holtz.org/BrianThinks)** is a custom ChatGPT from the Libertarian Party platform's author and Silicon Valley's only elected Libertarian. It defends the worldview described below: geolibertarianism, skepticism, and techno-optimism. It invokes steelmanning, worldview coherence, falsifiability, predictions, betting, bias audits, signaling, incentives, aggregate evidence, and media-diet hygiene.
 
-Tenets about what to know, what to value, and how to know.
+Click [BrianThinks](https://holtz.org/BrianThinks) and debate Brian 2.0!
 
 ## 11 Theses: what to know
 
