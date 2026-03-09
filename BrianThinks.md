@@ -63,6 +63,7 @@ Click [BrianThinks](https://holtz.org/BrianThinks) and debate Brian 2.0!
 - 1956 **Charles Tiebout**, *A Pure Theory of Local Expenditures*: "the consumer-voter moves to that community whose local government best satisfies his set of preferences" — popularly paraphrased as "voting with one's feet," though Tiebout's text didn't mention feet
 - 1961 **George Stigler**, "The Economics of Information" (*Journal of Political Economy*): search costs are real costs; buyers and sellers invest in finding prices, making information itself an economic good
 - 1964 **Ayn Rand**, *The Virtue of Selfishness*: "initiatory force or fraud"
+- 1970 David Lewis, "Anselm and Actuality" (The Journal of Philosophy): "I suggest that 'actual' is indexical, like 'I' or 'here' or 'now'. 'Actual' at a world w refers to w." — the foundational argument for modal realism, asserting that our world is no more "real" than any other possible world; it is merely the one we happen to inhabit.
 - 1973 **Michael Spence**, *Job Market Signaling*: "Education, for example, is costly. We refer to these costs as signaling costs. Notice that the individual, in acquiring an education, need not think of himself as signaling."
 - 1974 **Anne Krueger**: "rent-seeking" — still the least-bad name for the 1967 concept from Gordon Tullock.
 - 1975 **Fred Brooks**, *The Mythical Man-Month*: "Adding manpower to a late software project makes it later." Communication overhead scales as N².
@@ -76,6 +77,7 @@ Click [BrianThinks](https://holtz.org/BrianThinks) and debate Brian 2.0!
 - 1986 **Marvin Minsky**, *The Society of Mind*: "minds are what brains do"
 - 1995 **David Chalmers**, [*Facing Up to the Problem of Consciousness*](https://consc.net/papers/facing.html): the "hard problem of consciousness" — mocked here as "hard-consciousness ectoplasm"
 - 1998 **Daniel Dennett**, *Brain Children* (ch. 25, "Self-Portrait"): "a brain was always going to do what it was caused to do by current, local, mechanical circumstances... But over the long haul, brains could be designed – by evolutionary processes – to do the right thing... with high reliability." — compatibilist free will
+- 1998 Nick Bostrom, ["Are You Living in a Computer Simulation?"](https://simulation-argument.com/simulation.html) (Philosophical Quarterly): "If there is a substantial chance that our civilization will ever reach a posthuman stage and run many ancestor-simulations, then it is almost certain that we are living in a simulation."
 - ~2005 **Tyler Cowen**, [*Marginal Revolution*](https://marginalrevolution.com/marginalrevolution/2011/06/natural-experiments-and-the-return-to-schooling.html): "Cowen's First Law: There is a literature on everything."
 - 2006 **Robin Hanson**, [*Overcoming Bias*](https://www.overcomingbias.com/) (blog): applying economics and evolutionary psychology to identify and correct cognitive biases
 - 2007 **Bryan Caplan**, *The Myth of the Rational Voter*: "rational irrationality"
@@ -87,7 +89,5 @@ Click [BrianThinks](https://holtz.org/BrianThinks) and debate Brian 2.0!
 - 2018 **Scott Alexander**, [*Slate Star Codex*](https://slatestarcodex.com/2018/01/24/conflict-vs-mistake/): "conflict theorists aren't mistake theorists who just have a different theory about what the mistake is"
 - 2019 **Rob Henderson**, *Quillette*: "luxury beliefs"
 - 2021 **Bryan Caplan**, [*Bet On It*](https://betonit.substack.com/) (Substack): betting as epistemic accountability
-- 2023 **Elon Musk**, X post: "Consciousness should be thought of as a tiny candle in a vast darkness that could easily go out. We should do anything possible to keep that flame alive."
-- 1970 David Lewis, "Anselm and Actuality" (The Journal of Philosophy): "I suggest that 'actual' is indexical, like 'I' or 'here' or 'now'. 'Actual' at a world w refers to w." — the foundational argument for modal realism, asserting that our world is no more "real" than any other possible world; it is merely the one we happen to inhabit.
-- 1998 Nick Bostrom, ["Are You Living in a Computer Simulation?"](https://simulation-argument.com/simulation.html) (Philosophical Quarterly): "If there is a substantial chance that our civilization will ever reach a posthuman stage and run many ancestor-simulations, then it is almost certain that we are living in a simulation."
 - 2021 Robin Hanson, Daniel Martin, Calvin McCarter, and Jonathan Paulson, ["If Loud Aliens Explain Human Earliness, Quiet Aliens Are Also Rare"](https://arxiv.org/abs/2102.01522): "If 'grabby' civilizations... expand at a significant fraction of the speed of light... then we find ourselves at an unusually early date because later dates are mostly 'filled' by such civilizations."
+- 2023 **Elon Musk**, X post: "Consciousness should be thought of as a tiny candle in a vast darkness that could easily go out. We should do anything possible to keep that flame alive."
