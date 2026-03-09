@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """
-Build BrianThinks.md from BrianThinksTemplate.md and BrianThoughts.md.
+Build BrianThinksManually.md from BrianThinksTemplate.md and BrianThinks.md.
 
-BrianThoughts.md format:
+BrianThinks.md format:
   Line 1: heading (ignored — template supplies the page heading)
   Lines 2–N: prompt content
   ## Credits: who to know  <- everything from here onward is omitted
@@ -17,9 +17,9 @@ import sys
 from pathlib import Path
 
 HERE = Path(__file__).parent
-THOUGHTS = HERE / "BrianThoughts.md"
+THOUGHTS = HERE / "BrianThinks.md"
 TEMPLATE = HERE / "BrianThinksTemplate.md"
-OUTPUT = HERE / "BrianThinks.md"
+OUTPUT = HERE / "BrianThinksManually.md"
 
 PLACEHOLDER = "## BrianThoughts"
 CREDITS_HEADING = "## Credits"
