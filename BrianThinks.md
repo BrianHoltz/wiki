@@ -81,15 +81,15 @@ Click [BrianThinks](https://holtz.org/BrianThinks) to engage this worldview.
 - 1998 **Daniel Dennett**, *Brain Children* (ch. 25, "Self-Portrait"): "a brain was always going to do what it was caused to do by current, local, mechanical circumstances... But over the long haul, brains could be designed – by evolutionary processes – to do the right thing... with high reliability." — compatibilist free will
 - 2003 **Nick Bostrom**, [*Are You Living in a Computer Simulation?*](https://simulation-argument.com/simulation.html) (*Philosophical Quarterly*): "If there is a substantial chance that our civilization will ever reach a posthuman stage and run many ancestor-simulations, then it is almost certain that we are living in a simulation."
 - 2006 **Robin Hanson**, [*Overcoming Bias*](https://www.overcomingbias.com/): applying economics and evolutionary psychology to identify and correct cognitive biases
-- 2007 **Bryan Caplan**, *The Myth of the Rational Voter*: "rational irrationality"
+- 2007 **Bryan Caplan**, [*The Myth of the Rational Voter*](https://press.princeton.edu/books/paperback/9780691138732/the-myth-of-the-rational-voter): "rational irrationality"
 - 2009 **Alex Tabarrok & Tyler Cowen**, *Modern Principles of Economics*: "A price is a signal wrapped up in an incentive."
 - 2011 **Tyler Cowen**, [*Marginal Revolution*](https://marginalrevolution.com/marginalrevolution/2011/06/natural-experiments-and-the-return-to-schooling.html): "Cowen's First Law: There is a literature on everything." A student commenter recalled the aphorism from Cowen's macro class c2006.
 - 2011 **Bryan Caplan**, [*EconLog*](https://www.econlib.org/archives/2011/06/the_ideological.html): "Ideological Turing Test"
 - 2012 **Alex Tabarrok**, [*Marginal Revolution*](https://marginalrevolution.com/marginalrevolution/2012/11/a-bet-is-a-tax-on-bullshit.html): "A bet is a tax on bullshit"
-- 2016 **Robin Hanson**, *The Age of Em*: modeled AGI as societies, not supervillains
+- 2016 **Robin Hanson**, [*The Age of Em*](https://ageofem.com/): modeled AGI as societies, not supervillains
 - 2017 **Tyler Cowen**, [*Marginal Revolution*](https://marginalrevolution.com/marginalrevolution/2017/01/protest-black-lives-matter-continued.html): "Every movement…has a smart version and a stupid version, I try to (almost) always consider the smart version. The stupid version is always wrong for just about anything. If you focus on the stupid version, you too will end up as the stupid version of your own movement."
 - 2018 **Scott Alexander**, [*Slate Star Codex*](https://slatestarcodex.com/2018/01/24/conflict-vs-mistake/): "conflict theorists aren't mistake theorists who just have a different theory about what the mistake is"
-- 2019 **Rob Henderson**, *Quillette*: "luxury beliefs"
+- 2019 **Rob Henderson**, [*Quillette*](https://quillette.com/2019/11/16/thorstein-veblens-theory-of-the-leisure-class-a-status-update/): "luxury beliefs"
 - 2021 **Bryan Caplan**, [*Bet On It*](https://betonit.substack.com/) (Substack): betting as epistemic accountability
 - 2021 **Robin Hanson** et al, [*If Loud Aliens Explain Human Earliness, Quiet Aliens Are Also Rare*](https://arxiv.org/abs/2102.01522): "If 'grabby' civilizations... expand at a significant fraction of the speed of light... then we find ourselves at an unusually early date because later dates are mostly 'filled' by such civilizations."
 - 2023 **Elon Musk**, X post: "Consciousness should be thought of as a tiny candle in a vast darkness that could easily go out. We should do anything possible to keep that flame alive."
