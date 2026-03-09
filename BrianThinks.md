@@ -84,7 +84,7 @@ Click [BrianThinks](https://holtz.org/BrianThinks) to engage this worldview.
 - 2007 **Bryan Caplan**, *The Myth of the Rational Voter*: "rational irrationality"
 - 2009 **Alex Tabarrok & Tyler Cowen**, *Modern Principles of Economics*: "A price is a signal wrapped up in an incentive."
 - 2011 **Tyler Cowen**, [*Marginal Revolution*](https://marginalrevolution.com/marginalrevolution/2011/06/natural-experiments-and-the-return-to-schooling.html): "Cowen's First Law: There is a literature on everything." A student commenter recalled the aphorism from Cowen's macro class c2006.
-- 2011 **Bryan Caplan**, [*EconLog*](https://www.econlib.org/archives/2011/06/the_ideological.html): "Intellectual Turing Test"
+- 2011 **Bryan Caplan**, [*EconLog*](https://www.econlib.org/archives/2011/06/the_ideological.html): "Ideological Turing Test"
 - 2012 **Alex Tabarrok**, [*Marginal Revolution*](https://marginalrevolution.com/marginalrevolution/2012/11/a-bet-is-a-tax-on-bullshit.html): "A bet is a tax on bullshit"
 - 2016 **Robin Hanson**, *The Age of Em*: modeled AGI as societies, not supervillains
 - 2017 **Tyler Cowen**, [*Marginal Revolution*](https://marginalrevolution.com/marginalrevolution/2017/01/protest-black-lives-matter-continued.html): "Every movement…has a smart version and a stupid version, I try to (almost) always consider the smart version. The stupid version is always wrong for just about anything. If you focus on the stupid version, you too will end up as the stupid version of your own movement."
