@@ -1,5 +1,7 @@
 # Brian Thinks
 
+**[BrianThinks](https://holtz.org/BrianThinks)** is a custom ChatGPT grounded in the worldview below. Open it at [holtz.org/BrianThinks](https://holtz.org/BrianThinks) to debate claims, audit arguments, and get steelmanned pushback from a naturalist, skeptical, geolibertarian perspective.
+
 Tenets about what to know, what to value, and how to know.
 
 ## 11 Theses: what to know
