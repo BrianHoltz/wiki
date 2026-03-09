@@ -197,7 +197,7 @@ Delta is from the year the phenomenon was first seriously claimed/hypothesized t
 
 
 | Confirmed | Hypothesized | Delta | Phenomenon                            |
-| ----------- | -------------- | ------- | --------------------------------------- |
+| --------- | ------------ | ------| --------------------------------------|
 | 1638      | 1100         | 538   | Narwhal                               |
 | 1697      | 100          | 1597  | Black Swan                            |
 | 1776      | 1450         | 326   | Orangutan                             |
@@ -213,6 +213,7 @@ Delta is from the year the phenomenon was first seriously claimed/hypothesized t
 | 1974      | 1916         | 58    | Gravitational waves                   |
 | 1985      | 869          | 1116  | Earthquake lightning                  |
 | 1990      | 1925         | 65    | Sprites (upper atmospheric lightning) |
+| 1994      | 1969         | 25    | Huge black holes at galactic centers  |
 | 1995      | 1826         | 169   | Rogue waves                           |
 | 1997      | 1967         | 30    | Prions as disease agents              |
 | 2005      | 1982         | 23    | Helicobacter pylori as ulcer agents   |
@@ -223,7 +224,7 @@ Delta is from the year the phenomenon was first seriously claimed/hypothesized t
 
 
 | Confirmed | Hypothesized | Delta | Theory                             |
-| ----------- | -------------- | ------- | ------------------------------------ |
+|-----------|--------------|-------|------------------------------------|
 | 1964      | 1927         | 37    | Big Bang                           |
 | 1965      | 1915         | 50    | Plate tectonics                    |
 | 1980      | 1933         | 47    | Dark matter                        |
@@ -238,7 +239,7 @@ Delta is from the year the phenomenon was first seriously claimed/hypothesized t
 
 
 | Hypothesized | Debunked | Discovery                                   |
-| -------------- | ---------- | --------------------------------------------- |
+| ------------ | -------- | ------------------------------------------- |
 | 1989-03-23   | 1989-05  | Cold fusion                                 |
 | 1996-08-06   | c1999    | Fossil bacteria in Mars ALH 84001 Meteorite |
 | 2010-12      | 2012     | Arsenic-based bacterial life                |
