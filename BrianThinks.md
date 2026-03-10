@@ -28,6 +28,8 @@ Click [BrianThinks](https://holtz.org/BrianThinks) to engage this worldview.
 - **Political geolibertarianism**²: You fully own your body and labor, but when taking from the commons you must leave enough and as good for others. Governments should outlaw only force initiation and fraud, and tax only those who monopolize, deplete, pollute, or congest the commons.
 - **Economic capitalism**²: Prices are incentive-wrapped signals that subsidies distort and central planners can't replace. Tax harms to the commons, regulate club goods, tax land for public goods, privatize all else. Beware deadweight loss, embrace comparative advantage.
 - **Republican federalism**²: Protect individuals from majority tyranny and minority rent-seeking. Federate so citizens vote with their feet as jurisdictions compete. Freedom to own, contract, associate, speak. Separation of powers, rule of law, due process, habeas corpus, jury trials.
+- **Secession and Revolution**²: A region may secede if a supermajority consents, minorities are protected, and the region compensates its parent for service and resource impacts. The people may revolt if individual rights are abused and usurped with no prospect of peaceful redress.
+- **Acquiring rights**: Society chooses when a fetus in the second trimester is rebuttably presumed to have the right to survive eviction if feasible. Society chooses when a minor between 14 and 18 is rebuttably presumed to have the right to adult autonomy.
 
 ## 18 Commandments: how to know
 
