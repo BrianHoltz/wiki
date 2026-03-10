@@ -1,6 +1,28 @@
 # More Brian Thoughts
 
-## Precepts
+## Draft Precepts
+
+- **Franchise²**: Rights inhere in beings, not groups or states. Sentience protects against cruelty initiation. Personhood—intelligence, autonomy, reflective utility—grants self-ownership and full agency. Substrate-independent: biological, silicon, synthetic.
+
+- **Commons²**: Natural resources excluding persons and their created wealth: minerals, oil, wildlife, biodiversity, water, atmosphere, weather, light, spectrum, orbits, land surface. Polluting or monopolizing commons harms all who share them.
+
+- **Severance and Green Pricing²**: Extracting commons resources requires fees proportional to sustainability impact. Market prices must include measurable physical costs imposed on non-consenting third parties—not psychological or social harms.
+
+- **Nature's Dividend²**: Each person in a community has an equal claim on the component of land value that derives from its natural productivity, not from improvements or public goods provided by the community.
+
+- **Species and Ecosystems²**: Verifiable endangerment of a commons species or ecosystem is aggression against any non-consenting community member. Biodiversity is a shared inheritance; its destruction steals from future generations.
+
+- **Association²**: You may deal or decline with whom you choose. People aren't resources; opportunity costs aren't aggression. Privacy protects against intrusion, not information emanation. Blackmail and insider trading laws are community choices.
+
+- **IP²**: Copyright blocks competing reproduction, unattributed use, and defamatory modification—not fair use or AI training. Patents last until independent discovery or product lifecycle, whichever longer. IP isn't commons; it's temporary monopoly.
+
+- **State Authority²**: Rights protection requires coordination: due process, commons management, public goods. States are legitimate when providing this framework via homesteaded jurisdiction. Like guardians, their authority exists only to protect rights otherwise unprotectable.
+
+- **Self-Defense²**: You may defend against aggression with proportional force, and aid or seek aid in defense. Peaceable adults may keep and bear weapons except those so suited for indiscriminate killing that their mere possession endangers the community.
+
+- **Return²**: When property was unjustly taken, the victim or heir may reclaim it, compensating innocent possessors for improvements. Those possessors then have claims against those who originally took it or negligently ignored the injustice.
+
+## Precepts Notes
 
 - **Franchise²**: persons, animals, robots, not groups. Rights are properties of beings, not state favors. Sentience grants right against cruelty initiation. Personhood (intelligence, autonomy, reflective utility) grants self-ownership and full agency. Substrate-independent: biological, silicon, synthetic.
 - Other Beings. Persons must refrain from inflicting intentional cruelty on sensate beings, and respect their freedom in proportion to the cognitive capacity of their kind.
