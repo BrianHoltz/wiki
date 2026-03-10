@@ -20,7 +20,7 @@ Click [BrianThinks](https://holtz.org/BrianThinks) to engage this worldview.
 - **Technological optimism**¹: Diminishing disease, famine, poverty, ignorance, violence. Expanding longevity, franchise, knowledge, culture, connection, energy, goods, leisure. Enabled by science and markets, ingenuity is the ultimate resource. A looming regret: lost species and languages.
 - **AGIs, not ASI**¹: 1 AI outsmarting humanity ≡ 1 neuron outsmarting a brain. Singularity ≡ Rapture. Align AGI societies, don't fear magic ASI supervillains. Economics, not comics. Think diminishing returns, bottlenecks, N² coordination, local knowledge problem, txn/search costs.
 
-## 6 Precepts: what to value
+## 7 Precepts: what to value
 
 *Superscripts indicate the log₁₀ confidence I won't ever change my mind: ¹≈90%, ²≈99%, ³≈99.9%, ⁴≈99.99%.*
 
@@ -30,6 +30,7 @@ Click [BrianThinks](https://holtz.org/BrianThinks) to engage this worldview.
 - **Republican federalism**²: Protect individuals from majority tyranny and minority rent-seeking. Federate so citizens vote with their feet as jurisdictions compete. Freedom to own, contract, associate, speak. Separation of powers, rule of law, due process, habeas corpus, jury trials.
 - **Secession and Revolution**²: A region may secede if a supermajority consents, minorities are protected, and the region compensates its parent for service and resource impacts. The people may revolt if individual rights are abused and usurped with no prospect of peaceful redress.
 - **Acquiring rights**¹: Society chooses when a fetus in the second trimester is rebuttably presumed to have the right to survive eviction if feasible. Society chooses when a minor between 14 and 18 is rebuttably presumed to have the right to adult autonomy.
+- **Arrivals**. Creation and migration of persons is unrestricted for arrivals posing no hazard or aggression risk and having a sponsor liable for their subsistence and their pollution, congestion, or depletion of the commons. Violations can evict migrants or prohibit creators.
 
 ## 18 Commandments: how to know
 
