@@ -21,6 +21,22 @@
 
 - foreign policy
 - State authority
+
+
+Whence The Authority Of The State?
+How can individual officials of the State have any more rights, authority, or power than private individuals?
+
+Everyone is created with an equal right to protect the rights of other individuals. However, certain procedural and substantive rights require a coordination framework to ensure their adequate protection:
+
+Due process rights require coordination to avoid problems like conflict among competing courts or laws, double jeopardy, and inconsistent or capricious interpretation of rights.
+Protection of common goods (i.e. natural resources) requires coordination of policy throughout the geographic extent of a resource.
+Regulation of site monopolization, and the return of site rents due to provision of public goods, requires coordination throughout the region benefiting from a given public good.
+These kinds of coordination cannot plausibly be achieved — and thus the underlying rights cannot be protected — without clearly defined geographic jurisdictions with the authority to impose standards of rights protection within them and at their borders.
+
+When such a jurisdiction (i.e. rights-protection coordination framework) does not exist or is inadequate, anyone may homestead the right to provide it. Where an adequate such framework is in place, random individuals may neither usurp that framework nor ignore its authority to protect rights. Thus a state is legitimate to the extent that it provides such a framework.
+
+The original question above is roughly analogous to the question of how an individual guardian can have any more rights, authority, or power over a child in her custody than other random private individuals. The answer is that guardianship can be acquired through a symmetry-breaking process like homesteading, with a first-mover effect thus resulting in an asymmetry in authority over the person(s) in question. The institution (and authority) of guardianship exists only because of the individual rights that could not be protected without it; the same is true of the State. In both cases, the legitimacy of the institution depends on the consent of the governed — not in the sense of having arbitrary veto or secession power, but rather in having recourse to a process of emancipation. In the context of the state, that process is either revolution or geographic secession, as described in the Free Earth Manifesto
+
 - Self-Defense. Every person has the right to defend himself against aggression, and to aid others or seek their aid for such defense, so long as they use no greater force than necessary to prevent or minimize the harm caused by the aggression. Peacable adults have the right to keep and bear any weapon except those so clearly suited for indiscriminate killing that their mere possession puts the community at risk.
 - Return. When an individual (or his heir) can show that a particular piece of property was unjustly taken from him, he has a right to (his share of) it being returned to him, provided he compensate any innocent possessor(s) of it for any abandoned improvements to it, with such innocent possessor(s) in turn having a claim against the individual(s) who earlier acquired the property through that original unjust taking or by negligently ignoring that injustice.
 
