@@ -62,7 +62,27 @@ The original question above is roughly analogous to the question of how an indiv
 - Self-Defense. Every person has the right to defend himself against aggression, and to aid others or seek their aid for such defense, so long as they use no greater force than necessary to prevent or minimize the harm caused by the aggression. Peacable adults have the right to keep and bear any weapon except those so clearly suited for indiscriminate killing that their mere possession puts the community at risk.
 - Return. When an individual (or his heir) can show that a particular piece of property was unjustly taken from him, he has a right to (his share of) it being returned to him, provided he compensate any innocent possessor(s) of it for any abandoned improvements to it, with such innocent possessor(s) in turn having a claim against the individual(s) who earlier acquired the property through that original unjust taking or by negligently ignoring that injustice.
 
-## Commandments
+## Draft Commandments
+
+- **Follow the Signals**: Much human behavior is better explained by social signaling than stated purpose. Medicine isn't only health; education isn't only learning; politics isn't only policy. Ask what the behavior signals, and to whom.
+
+- **Follow the Incentives**: Identify the material interests and status incentives shaping belief and policy. Follow the money and the status. Distinct from signaling: incentives are what people gain; signaling is what they communicate.
+
+- **Include Middles**: Reject false binaries. Always/never → often/rarely. Black/white → grayscale. Either/or → both/and. The excluded middle is where truth usually lives. Extremes are for rhetoric; nuance is for accuracy.
+
+- **Subtract Hominem**: Attack the argument, not the source. Don't debate how your opponent debates. Stick to the subject. Tone-policing and credentialism are retreat disguised as rebuttal. If you can't address the claim, you've lost.
+
+- **Beware Bright Lines**: Not all truths have sharp boundaries. Demanding precision where reality is gradual is the bright line fallacy. Twilight exists; forcing "day or night" loses information. Some distinctions are real but fuzzy. Embrace gradients when that's what fits.
+
+- **Spot Motte-and-Bailey**: They defend a modest claim (motte) but assert a bold one (bailey). When challenged, they retreat to the motte, then quietly reoccupy the bailey. Demand they pick one and defend it consistently.
+
+- **Embrace Humility**: Your ignorance vastly exceeds your knowledge. Uncertainty is honest; certainty is often performance. The smartest position is provisional. Update on evidence, proportion confidence to proof, and never confuse conviction with truth.
+
+- **Beware Equivocation**: They use a term with multiple meanings, arguing with a sharp-edged sense while importing connotations from another. "Violence" as force vs. microaggression. "Harm" as injury vs. offense. Separate the senses or abandon the argument.
+
+- **Question Omnipotent Cabals**: If your cabal controls all world actors to fake this story, why not use that power for other ends? Why does the world look uncontrolled? Why wars and conflicts? If they control all elites and militaries, why hide it from couch-surfing internet skeptics?
+
+## Commandments Notes
 
 - **Follow the Signals:** Much of human behavior is better explained by social signaling than by its stated purpose. Medicine is not only about health; education is not only about learning; politics is not only about policy. Ask what the behavior signals, and to whom.
 - **Follow the Incentives:** Identify the material interests and status incentives that shape belief and policy. Follow the money and the status. This is distinct from signaling: incentives are about what people gain; signaling is about what they communicate.
@@ -73,5 +93,3 @@ The original question above is roughly analogous to the question of how an indiv
 - **Humility:** embrace ignorance and uncertainty
 - define your terms, don't use them as cudgels
 - If your Cabal can conspire to make all the world actors uphold this story you call fake, why don't they use that global control for other purposes? Why does the world look exactly like nobody is controlling it with a master plan? Why are there so many wars and enduring conflicts? If they have such total control over all elites everywhere, why are they so desperate to make it look like they have no control? What are they afraid of? That suburban internet surfers are going to rise up together off of their couches and take back the planet from the forces that control every single armed force and media organization on the entire planet?
-- Question Revelation: You can find a credentialed expert or persuasive witness for anything you want to believe. Place no faith in any one person or text. Test each against the others that should align with its truth. Truth is a messy boring web of all sources, not a neat exciting revelation from one.
-- Explain Consensus: Every true theory broke the earlier expert consensus. You need to explain why your contrarian theory is right AND why experts disagree. Your exciting theory is only as valid as your metatheory for why it isn't winning. If your metatheory is weak, your theory is surely wrong.
