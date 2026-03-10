@@ -6,9 +6,20 @@
 - franchise: species, ecosystems, animals, robots, no group rights, extinction permanently depletes the terrestrial commons. 
 - foreign policy
 - State authority
+Self-Defense. Every person has the right to defend himself against aggression, and to aid others or seek their aid for such defense, so long as they use no greater force than necessary to prevent or minimize the harm caused by the aggression. Peacable adults have the right to keep and bear any weapon except those so clearly suited for indiscriminate killing that their mere possession puts the community at risk.
 - **Commons and property²**: You own what you create or receive by consent. Resources — air, land, water, bandwidth, orbits — can't be fully owned; polluting or monopolizing them is aggression against all who share them. Ownable: possessable resources, artifacts, and IP.
-- **Intellectual property is bounded¹**: Copyright blocks competing reproduction, unattributed use, and defamatory modification — not fair use or AI training. Patent rights last only until independent discovery, or the product lifecycle, whichever longer. Digital abundance makes maximal copyright self-defeating.
-- The right of association means you may deal or decline with whom you choose. Opportunity costs aren't aggression.
+- Species and Ecosystems. Verifiable endangerment of a species or ecosystem that is part of the commons of a community is aggression against any non-consenting member of that community.
+- Other Beings. Persons must refrain from inflicting intentional cruelty on sensate beings, and respect their freedom in proportion to the cognitive capacity of their kind.
+- Natural Resources. Natural resources are everything except persons and the wealth that they have produced, and thus include underground minerals, metals, and oil; wildlife, including forests; the genetic variety of life; oceans, lakes, and streams; the atmosphere, wind, precipitation, sunlight and darkness; the electromagnetic spectrum; orbits; and the surface area of the Earth.
+- Resource Severance. Production of property via extraction of natural resources from a community commons should require a fee to the community proportional to the decrease in the ability of that commons to sustainably support such extraction.
+- Green Pricing. Market prices should include the measurable costs that products and actions demonstrably and physically (not psychologically or sociologically) impose on non-consenting third parties.
+- Nature's Dividend. Each person in a community has an equal claim on the component of land value that derives from its natural productivity.
+- Return. When an individual (or his heir) can show that a particular piece of property was unjustly taken from him, he has a right to (his share of) it being returned to him, provided he compensate any innocent possessor(s) of it for any abandoned improvements to it, with such innocent possessor(s) in turn having a claim against the individual(s) who earlier acquired the property through that original unjust taking or by negligently ignoring that injustice.
+- The right of association means you may deal or decline with whom you choose. People aren't resources. Opportunity costs aren't aggression. insider trading, blackmail, defamation, privacy
+- Copyright. Communities may recognize intellectual property in expression only to prevent unauthorized reproduction in cases of a) competition that diverts commercial benefit from the owner to the competitor, b) attributed use with unattributed defamatory modification, or c) unattributed use that misleads about who the owner is.
+- Privacy. Private parties are free to negotiate how they use information voluntarily disclosed to each other. The right of privacy protects against intrusion upon a person's body or property, but does not confer ownership of information the person allows to emanate from his body or property.
+- Blackmail. Communities may decide whether the truth of some information is a valid defense against charges of blackmail for threatening to reveal it.
+- intellectual property is not a commons: Copyright blocks competing reproduction, unattributed use, and defamatory modification — not fair use or AI training. Patent rights last only until independent discovery, or the product lifecycle, whichever longer.
 - libertarian safety net, UBI
 
 ## Commandments
