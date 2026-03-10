@@ -30,7 +30,7 @@ Click [BrianThinks](https://holtz.org/BrianThinks) to engage this worldview.
 - **Republican federalism**²: Protect individuals from majority tyranny and minority rent-seeking. Federate so citizens vote with their feet as jurisdictions compete. Freedom to own, contract, associate, speak. Separation of powers, rule of law, due process, habeas corpus, jury trials.
 - **Secession and Revolution**²: A region may secede if a supermajority consents, minorities are protected, and the region compensates its parent for service and resource impacts. The people may revolt if individual rights are abused and usurped with no prospect of peaceful redress.
 - **Acquiring rights**¹: Society chooses when a fetus in the second trimester is rebuttably presumed to have the right to survive eviction if feasible. Society chooses when a minor between 14 and 18 is rebuttably presumed to have the right to adult autonomy.
-- **Arrivals**. Creation and migration of persons is unrestricted for arrivals posing no hazard or aggression risk and having a sponsor liable for their subsistence and their pollution, congestion, or depletion of the commons. Violations can evict migrants or prohibit creators.
+- **Arrivals**¹. Creation and migration of persons is unrestricted for arrivals posing no hazard or aggression risk and having a sponsor liable for their subsistence and their pollution, congestion, or depletion of the commons. Violations can evict migrants or prohibit creators.
 
 ## 18 Commandments: how to know
 
