@@ -2,7 +2,13 @@
 
 ## Draft Precepts
 
-- **Franchise²**: Rights inhere in beings, not groups or states. Sentience protects against cruelty initiation. Personhood—intelligence, autonomy, reflective utility—grants self-ownership and full agency. Substrate-independent: biological, silicon, synthetic.
+- **Franchise²**: Rights inhere in beings, not groups or states. Sentience protects against cruelty initiation. Personhood—intelligence, autonomy, reflective utility—grants self-ownership and full agency. Substrate-independent. Personhood ends on permanent loss of life, intelligence, or volition.
+
+- **Identity²**: Personal identity tracks through the closest sufficiently continuous continuer. A copy is a new person—ethically a child of the original's age, not the same identity. A split yields co-equal continuers who share the predecessor's identity and must partition their unsharable relations.
+
+- **Guardianship²**: Dependent persons—those with diminished intelligence, volition, or physiological independence, including minor children, the cognitively impaired, and viable fetuses—may be coerced by their guardian solely in their interest. States are guardians of last resort.
+
+- **Property²**: You own any unowned thing you first control, anything you create from your property, and anything consensually transferred to you. On death, property passes to your chosen assignee or reverts to unowned. Positive externalities confer no right to compensation.
 
 - **Commons²**: Natural resources excluding persons and their created wealth: minerals, oil, wildlife, biodiversity, water, atmosphere, weather, light, spectrum, orbits, land surface. Polluting or monopolizing commons harms all who share them.
 
@@ -12,7 +18,9 @@
 
 - **Species and Ecosystems²**: Verifiable endangerment of a commons species or ecosystem is aggression against any non-consenting community member. Biodiversity is a shared inheritance; its destruction steals from future generations.
 
-- **Association²**: You may deal or decline with whom you choose. People aren't resources; opportunity costs aren't aggression. Privacy protects against intrusion, not information emanation. Blackmail and insider trading laws are community choices.
+- **Aggression²**: Aggression: personal injury, property damage, resource infringement, coercion, fraud, theft, anti-competitive monopoly, or inducement thereto. Expression is aggression only if deceptive and harmful. Non-deceptive incitement is not itself aggression.
+
+- **Association²**: You may deal or decline with whom you choose—except anti-competitive monopoly, which is aggression. Contracts are explicit consensual commitments to exchange. People aren't resources; opportunity costs aren't aggression. Privacy protects against intrusion, not information emanation.
 
 - **IP²**: Copyright blocks competing reproduction, unattributed use, and defamatory modification—not fair use or AI training. Patents last until independent discovery or product lifecycle, whichever longer. IP isn't commons; it's temporary monopoly.
 
@@ -20,30 +28,43 @@
 
 - **Self-Defense²**: You may defend against aggression with proportional force, and aid or seek aid in defense. Peaceable adults may keep and bear weapons except those so suited for indiscriminate killing that their mere possession endangers the community.
 
+- **Justice²**: Justice is minimizing, reversing, and punishing aggression—the most liberty for the most persons. Aggression is reversed by damages or property restoration. Serious aggression warrants loss of freedom; extreme aggression may forfeit life.
+
 - **Return²**: When property was unjustly taken, the victim or heir may reclaim it, compensating innocent possessors for improvements. Those possessors then have claims against those who originally took it or negligently ignored the injustice.
 
 ## Precepts Notes
 
 - **Franchise²**: persons, animals, robots, not groups. Rights are properties of beings, not state favors. Sentience grants right against cruelty initiation. Personhood (intelligence, autonomy, reflective utility) grants self-ownership and full agency. Substrate-independent: biological, silicon, synthetic.
+
 - Other Beings. Persons must refrain from inflicting intentional cruelty on sensate beings, and respect their freedom in proportion to the cognitive capacity of their kind.
 
 - Commons. Natural resources are everything except persons and the wealth that they have produced, and thus include underground minerals, metals, and oil; wildlife, including forests; the genetic variety of life; oceans, lakes, and streams; the atmosphere, wind, precipitation, sunlight and darkness; the electromagnetic spectrum; orbits; and the surface area of the Earth.
+
 - **Commons and property²**: You own what you create or receive by consent. Resources — air, land, water, bandwidth, orbits — can't be fully owned; polluting or monopolizing them is aggression against all who share them. Ownable: possessable resources, artifacts, and IP.
+
 - Species and Ecosystems. Verifiable endangerment of a species or ecosystem that is part of the commons of a community is aggression against any non-consenting member of that community.
+
 - Resource Severance. Production of property via extraction of natural resources from a community commons should require a fee to the community proportional to the decrease in the ability of that commons to sustainably support such extraction.
+
 - Green Pricing. Market prices should include the measurable costs that products and actions demonstrably and physically (not psychologically or sociologically) impose on non-consenting third parties.
+
 - Nature's Dividend. Each person in a community has an equal claim on the component of land value that derives from its natural productivity.
 
 - Non-Commons
+
 - The right of association means you may deal or decline with whom you choose. People aren't resources. Opportunity costs aren't aggression. insider trading, blackmail, defamation, privacy
+
 - Copyright. Communities may recognize intellectual property in expression only to prevent unauthorized reproduction in cases of a) competition that diverts commercial benefit from the owner to the competitor, b) attributed use with unattributed defamatory modification, or c) unattributed use that misleads about who the owner is.
+
 - Privacy. Private parties are free to negotiate how they use information voluntarily disclosed to each other. The right of privacy protects against intrusion upon a person's body or property, but does not confer ownership of information the person allows to emanate from his body or property.
+
 - Blackmail. Communities may decide whether the truth of some information is a valid defense against charges of blackmail for threatening to reveal it.
+
 - intellectual property is not a commons: Copyright blocks competing reproduction, unattributed use, and defamatory modification — not fair use or AI training. Patent rights last only until independent discovery, or the product lifecycle, whichever longer.
 
 - foreign policy
-- State authority
 
+- State authority
 
 Whence The Authority Of The State?
 How can individual officials of the State have any more rights, authority, or power than private individuals?
@@ -77,7 +98,7 @@ Sub-Persons? A dependent person is a person who has less than the normal amount 
 
 Super-Persons? No amount of mental or physical power makes any entity deserve more rights than persons. Bioengineered and artificial beings are fully persons if they meet the tests of intelligence and volition.
 
-Pre-Persons. A being is also a person if it is of a kind that ordinarily are or become persons and has either significant cognition or both sentience and physiological independence.  Viable human fetuses thus are dependent persons, in the same sense that minor children are. Genotypes of persons are not themselves persons, and have no right not to be modified.
+Pre-Persons. A being is also a person if it is of a kind that ordinarily are or become persons and has either significant cognition or both sentience and physiological independence. Viable human fetuses thus are dependent persons, in the same sense that minor children are. Genotypes of persons are not themselves persons, and have no right not to be modified.
 
 Post-Persons. A person ceases to be a person when it permanently loses its life, intelligence, or volition. A person must be considered a dependent person if he does not want personal responsibility for any intermittent loss of intelligence or volition.
 
@@ -104,7 +125,7 @@ Ethical Relations
 Persons have no right to inflict negative externalities impacting property and resource rights, and no right to demand compensation for positive externalities.
 Cooperation is the interaction among persons for mutual benefit. Cooperation is usually positive-sum even for direct and reversible exchanges, because the exchanging persons have differing needs or values. The right of association is the right of persons, except in cases of anti-competitive monopoly, to cooperate or decline to cooperate with whom they choose. Cooperation can take many forms. A contract is an explicit understanding among consenting agents to exchange with or affect each other in a specified way. Marriage is a form of contract that unites many of the property rights and liabilities of the marrying persons.
 
-Aggression is the violation by a person of another person's rights, and consists only of: personal injury, damage to property, infringement of resource rights, coercion, fraud, anti-competitive monopoly, or inducement or deceptive incitement of third parties to any of these. Coercion is compulsion of one person by another through force or threat of aggression. Fraud is any attempt  to profit by deceiving a person into making a choice intended to cause him economic harm relative to what would have been his undeceived choice. Deception is the statement of demonstrable falsehoods or the omission of relevant truths that has the intentional effect of encouraging a false belief in another person. Theft is the unjust and non-consensual taking of property from its rightful owner. Anti-competitive monopoly is the intentional control or denial of a person's participation in an industry by the coordinated action of the person(s) controlling that industry. Torture is the infliction of pain on any being as a result of the sadistic intention or callous negligence of a person.
+Aggression is the violation by a person of another person's rights, and consists only of: personal injury, damage to property, infringement of resource rights, coercion, fraud, anti-competitive monopoly, or inducement or deceptive incitement of third parties to any of these. Coercion is compulsion of one person by another through force or threat of aggression. Fraud is any attempt to profit by deceiving a person into making a choice intended to cause him economic harm relative to what would have been his undeceived choice. Deception is the statement of demonstrable falsehoods or the omission of relevant truths that has the intentional effect of encouraging a false belief in another person. Theft is the unjust and non-consensual taking of property from its rightful owner. Anti-competitive monopoly is the intentional control or denial of a person's participation in an industry by the coordinated action of the person(s) controlling that industry. Torture is the infliction of pain on any being as a result of the sadistic intention or callous negligence of a person.
 
 Competition is the contrary efforts of persons to win the consent of some other person(s) to associate in some way. The infliction of opportunity costs through non-monopolistic competition does not by itself constitute aggression. Expression is only aggression if it involves deception that intentionally or negligently causes actual harm or serious risk thereof, for example by yelling "fire!" in a crowded (but not burning) theater. Non-deceptive incitement to aggression is not itself aggression.
 
@@ -136,7 +157,7 @@ Liberty is volition in the absence of aggression. Thus justice can also be defin
 
 - **Follow the Signals:** Much of human behavior is better explained by social signaling than by its stated purpose. Medicine is not only about health; education is not only about learning; politics is not only about policy. Ask what the behavior signals, and to whom.
 - **Follow the Incentives:** Identify the material interests and status incentives that shape belief and policy. Follow the money and the status. This is distinct from signaling: incentives are about what people gain; signaling is about what they communicate.
-- **Include middles:** always/never -> often/rarely, false binary
+- **Include middles:** always/never -&gt; often/rarely, false binary
 - **Subtract hominem** you attack the source instead of the argument or evidence. Don't change the debate to be up about the way your opponent is debating Stick to the subject
 - Bright lines
 - Motte and bailey
