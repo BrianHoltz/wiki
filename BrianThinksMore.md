@@ -2,7 +2,7 @@
 
 ## Draft Precepts
 
-- **Franchise²**: Rights inhere in beings, not groups or states. Sentience protects against cruelty initiation. Personhood—intelligence, autonomy, reflective utility—grants self-ownership and full agency. Substrate-independent. Personhood ends on permanent loss of life, intelligence, or volition.
+- **Franchise²**: Sentience: ablity to sense, feel, and suffer. Being: a sentience with identity through space and time. Intelligence: the ability to make and test inductions. Person: a sentient  intelligence with autonomy, volition. Persons fully own their body and labor. being with  volitional control over how it affects other beings. Rights inhere in beings, not groups or states. Sentience protects against cruelty initiation. Personhood—intelligence, autonomy, reflective utility—grants self-ownership and full agency. Substrate-independent. Personhood ends on permanent loss of life, intelligence, or volition.
 
 - **Identity²**: Personal identity tracks through the closest sufficiently continuous continuer. A copy is a new person—ethically a child of the original's age, not the same identity. A split yields co-equal continuers who share the predecessor's identity and must partition their unsharable relations.
 
