@@ -2,14 +2,9 @@
 
 ## Draft Precepts
 
-- **Franchise²**: Sentience: ablity to sense, feel, and suffer. Being: a sentience with identity through space and time. Intelligence: the ability to make and test inductions. Person: a sentient  intelligence with autonomy, volition. Persons fully own their body and labor. being with  volitional control over how it affects other beings. Rights inhere in beings, not groups or states. Sentience protects against cruelty initiation. Personhood—intelligence, autonomy, reflective utility—grants self-ownership and full agency. Substrate-independent. Personhood ends on permanent loss of life, intelligence, or volition.
-
-- **Identity²**: Personal identity tracks through the closest sufficiently continuous continuer. A copy is a new person—ethically a child of the original's age, not the same identity. A split yields co-equal continuers who share the predecessor's identity and must partition their unsharable relations.
-
-- **Guardianship²**: Dependent persons—those with diminished intelligence, volition, or physiological independence, including minor children, the cognitively impaired, and viable fetuses—may be coerced by their guardian solely in their interest. States are guardians of last resort.
-
+- **Franchise²**: Sentience: ablity to sense and suffer. Being: a sentience with identity through space and time. Intelligence: ability to make and apply inductions about self and world. Person: a sentient intelligence with autonomy, volition, and goals. 
+- **Rights**: Persons fully own their body and labor. Beings have a right against cruelty. Groups have zero extra rights.
 - **Property²**: You own any unowned thing you first control, anything you create from your property, and anything consensually transferred to you. On death, property passes to your chosen assignee or reverts to unowned. Positive externalities confer no right to compensation.
-
 - **Commons²**: Natural resources excluding persons and their created wealth: minerals, oil, wildlife, biodiversity, water, atmosphere, weather, light, spectrum, orbits, land surface. Polluting or monopolizing commons harms all who share them.
 
 - **Severance and Green Pricing²**: Extracting commons resources requires fees proportional to sustainability impact. Market prices must include measurable physical costs imposed on non-consenting third parties—not psychological or social harms.
