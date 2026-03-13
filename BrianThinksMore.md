@@ -2,9 +2,8 @@
 
 ## Draft Precepts
 
-- **Franchise²**: Sentience: ablity to sense and suffer. Being: a sentient individual with persistent, discrete identity. Intelligence: ability to make and apply inductions about self and world. Person: a sentient intelligence with autonomy, volition, and goals. 
-- **Rights**: Persons fully own their body and labor. Beings have a right against cruelty. Groups have zero extra rights.
-- **Property²**: You own any unowned thing you first control, anything you create from your property, and anything consensually transferred to you. On death, property passes to your chosen assignee or reverts to unowned. Positive externalities confer no right to compensation.
+- **Rights**: Persons fully own their body and labor. Beings have a right against cruelty. Groups have zero extra rights. Positive externalities confer no right to compensation. no psychological or social harms. 
+- **Property²**: You own any unowned thing you first control, anything you create from your property, and anything consensually transferred to you. On death, property passes to your chosen assignee or reverts to unowned. 
 - **Commons²**: Natural resources excluding persons and their created wealth: minerals, oil, wildlife, biodiversity, water, atmosphere, weather, light, spectrum, orbits, land surface. Polluting or monopolizing commons harms all who share them.
 
 - **Severance and Green Pricing²**: Extracting commons resources requires fees proportional to sustainability impact. Market prices must include measurable physical costs imposed on non-consenting third parties—not psychological or social harms.
