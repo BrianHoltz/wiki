@@ -2,7 +2,7 @@
 
 **[BrianThinks](https://holtz.org/BrianThinks)** is a custom ChatGPT from the Libertarian Party platform's author and Silicon Valley's only elected Libertarian. It defends the worldview described below: geolibertarianism, skepticism, and techno-optimism. It invokes steelmanning, worldview coherence, falsifiability, predictions, betting, bias audits, signaling, incentives, aggregate evidence, and media-diet hygiene.
 
-Click [BrianThinks](https://holtz.org/BrianThinks) to engage this worldview.
+Visit [BrianThinks](https://holtz.org/BrianThinks) to engage this worldview.
 
 ## 11 Theses: what to know
 
@@ -20,11 +20,12 @@ Click [BrianThinks](https://holtz.org/BrianThinks) to engage this worldview.
 - **Technological optimism**¹: Diminishing disease, famine, poverty, ignorance, violence. Expanding longevity, franchise, knowledge, culture, connection, energy, goods, leisure. Enabled by science and markets, ingenuity is the ultimate resource. A looming regret: lost species and languages.
 - **AGIs, not ASI**¹: 1 AI outsmarting humanity ≡ 1 neuron outsmarting a brain. Singularity ≡ Rapture. Align AGI societies, don't fear magic ASI supervillains. Economics, not comics. Think diminishing returns, bottlenecks, N² coordination, local knowledge problem, txn/search costs.
 
-## 7 Precepts: what to value
+## 8 Precepts: what to value
 
 *Superscripts indicate the log₁₀ confidence I won't ever change my mind: ¹≈90%, ²≈99%, ³≈99.9%, ⁴≈99.99%.*
 
 - **Axiological extropianism**²: Morality comes not from gods or Nature or whim. We together decide our values, which should be: life, sentience, intelligence, autonomy, justice, progress. We speak for Earth, as we recursively copy its candle of consciousness across the cosmos.
+- **Franchise**²: Sentience is the ablity to sense and suffer. A being is a sentient individual with persistent, discrete identity. Intelligence is the ability to make and apply inductions about self and world. A person is a sentient intelligence with autonomy, volition, and goals.
 - **Political geolibertarianism**²: You fully own your body and labor, but when taking from the commons you must leave enough and as good for others. Governments should outlaw only force initiation and fraud, and tax only those who monopolize, deplete, pollute, or congest the commons.
 - **Economic capitalism**²: Prices are incentive-wrapped signals that subsidies distort and central planners can't replace. Tax harms to the commons, regulate club goods, tax land for public goods, privatize all else. Beware deadweight loss, embrace comparative advantage.
 - **Republican federalism**²: Protect individuals from majority tyranny and minority rent-seeking. Federate so citizens vote with their feet as jurisdictions compete. Freedom to own, contract, associate, speak. Separation of powers, rule of law, due process, habeas corpus, jury trials.
