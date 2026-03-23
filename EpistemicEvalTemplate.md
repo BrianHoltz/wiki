@@ -32,19 +32,17 @@ A framework for critically evaluating any artifact — interview, podcast, video
   - History: summary of how the source's origin and evolution
   - Transparency: what notable facts above does the artifact leave unsaid?
 
-## Sight: Most Notable Predictions
+## Stakes: Most Notable Predictions
 
 - Quoted with context and verifiable citation
 
 ## Strengths: Most Credible Claims
 
-- Common ground where we most agree with the claims
 - Probabilities, falsification, counterfactuals, implications
 
 ## Stumbles: Least Credible Claims
 
-- Where we most disagree with the claims
-- Terse: probabilities, falsification, counterfactuals, implications
+- Probabilities, falsification, counterfactuals, implications
 
 ## Sins: Epistemic Hygiene
 
