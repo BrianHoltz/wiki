@@ -1,6 +1,6 @@
 # Epistemic Evaluation Template
 
-A framework for critically evaluating any artifact — interview, podcast, video, book, essay, report, theory, advocacy, testimony, manifesto, post, or movement.
+A framework for critically evaluating any specimen — interview, podcast, video, book, essay, report, theory, advocacy, testimony, manifesto, post, or movement.
 
 **Style:**
 - Terse and bullet-heavy
@@ -41,7 +41,7 @@ A framework for critically evaluating any artifact — interview, podcast, video
   - Incentives: financial, status, tribal
   - Record: notable past claims
   - History: summary of how the source's origin and evolution
-  - Transparency: what notable facts above does the artifact leave unsaid?
+  - Transparency: what notable facts above does the specimen leave unsaid?
 - This section is the heavy lifting for the AI agent. It needs to dig deep into each 
 
 ## Stakes: Most Notable Predictions
@@ -58,11 +58,11 @@ A framework for critically evaluating any artifact — interview, podcast, video
 
 ## Sins: Epistemic Hygiene
 
-- Which of the BrianThinks epistemic commandments does the artifact specifically violate, and where?
+- Which of the BrianThinks epistemic commandments does the specimen specifically violate, and where?
 
 ## Silence: Things Unsaid, Implications, Counterfactuals
 
-- Cite where the artifact should have considered alternative evidence/arguments but didn't
+- Cite where the specimen should have considered alternative evidence/arguments but didn't
 - Whether claimants engage the best critical forums/champions
 
 ## Steelman
@@ -96,7 +96,7 @@ Each entry follows this structure:
 ## References
 
 - The best references for each side
-- Whether they were ommitted/engaged by the artifact
+- Whether they were omitted/engaged by the specimen
 
 ## TODOs
 

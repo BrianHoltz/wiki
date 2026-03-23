@@ -1,7 +1,5 @@
 # Hogan: Knights Templar & Esoteric Claims
 
-**Supporting material:** [transcript](20260322_HoganKnightsTemplar/Hogan.txt)
-
 ## Summary
 
 ### Specimen
@@ -66,7 +64,8 @@ All empirical claims are cited inline with `†` linking to entries here. See [`
 
 ## References
 
-- TODO
+- [Hogan transcript — diarized](20260322_HoganKnightsTemplar/Hogan_diarized.md) — heuristic speaker attribution (A.J. / Hogan), 305 turns
+- [Hogan transcript — raw](20260322_HoganKnightsTemplar/Hogan.txt) — Whisper `medium` transcription, single-line blob
 
 ## TODOs
 
