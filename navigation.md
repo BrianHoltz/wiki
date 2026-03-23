@@ -11,6 +11,11 @@
 * [AI Economic Evals](ai-economic-evals.md)
 * [AI Predictions](ai-predictions.md)
 
+[Evaluations]()
+
+* [Evaluations Index](evaluations/index.md)
+* [Eval Template](EpistemicEvalTemplate.md)
+
 [Conspiracies & Aliens]()
 
 * [Conspiracy Theories](conspiracy-theories.md)

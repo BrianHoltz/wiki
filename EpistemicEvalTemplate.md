@@ -2,18 +2,29 @@
 
 A framework for critically evaluating any artifact — interview, podcast, video, book, essay, report, theory, advocacy, testimony, manifesto, post, or movement.
 
+**Style:**
+- Terse and bullet-heavy
+- Prioritize scan-ability — readers should be able to skip sections without losing the thread
+- Prefer short labeled bullets over narrative paragraphs
+- Use prose only when compression would sacrifice clarity
+
+**Organization:**
+- All evaluations live in `evaluations/`
+- File naming: `YYYYMMDD_MixedCaseEvalTitle.md` (e.g. `20260322_HoganKnightsTemplar.md`)
+- Supporting material (transcripts, source PDFs, clips, etc.) goes in a sibling folder: `YYYYMMDD_MixedCaseEvalTitle/`
+- Maintain `evaluations/index.md` — one-line summary + link per eval, newest first
+
 ## Summary
 
 ### Specimen
 
-- Titles
+- Title(s)
   - Format (interview, essay, documentary, thread, lecture, etc.)
   - Date published, accessed
   - Size (pages / minutes / words / MB)
-- Authors, Presenters, Claimants, Witnesses
-- Platform, venue, outlet, channel
-- Evaluated by: BrianThinks + [model/date]
-- Evaluated on
+- Sources: authors, claimants, wtnesses, presenters, promoters
+- Meta-sources: platform, venue, outlet, channel
+- Evaluated by: BrianThinks + [model/version]
 
 ### Synopsis
 
@@ -31,6 +42,7 @@ A framework for critically evaluating any artifact — interview, podcast, video
   - Record: notable past claims
   - History: summary of how the source's origin and evolution
   - Transparency: what notable facts above does the artifact leave unsaid?
+- This section is the heavy lifting for the AI agent. It needs to dig deep into each 
 
 ## Stakes: Most Notable Predictions
 
@@ -63,6 +75,24 @@ A framework for critically evaluating any artifact — interview, podcast, video
 - Expand the evaluation and least credible claims with evidence, arguments
 - Give qualitative/quantitative judgments about sources
 
+## Evidence
+
+All empirical claims are cited inline with `†` linking to entries here. See [`~/bin/AgentRules.md`](~/bin/AgentRules.md) § Evidence for the full standard.
+
+Each entry follows this structure:
+
+### \<description\>
+<a id="e-slug"></a>
+
+- **Claim:**
+- **Source:**
+- **Dates:**
+- **Quote/data:**
+
+## History
+
+- 2026.03.22 Created
+
 ## References
 
 - The best references for each side
@@ -71,8 +101,3 @@ A framework for critically evaluating any artifact — interview, podcast, video
 ## TODOs
 
 - Improvements needed in this document
-
-## History
-
-- 2026.03.22 Created
-

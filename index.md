@@ -9,6 +9,11 @@
 - [AI Economic Evals](ai-economic-evals.md)
 - [AI Predictions](ai-predictions.md)
 
+### Evaluations
+
+- [Evaluations Index](evaluations/index.md) — all epistemic evals
+- [Eval Template](EpistemicEvalTemplate.md) — evaluation framework
+
 ### Conspiracies & Aliens
 
 - [Conspiracy Theories](conspiracy-theories.md)
