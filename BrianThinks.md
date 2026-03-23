@@ -33,7 +33,7 @@ Visit [BrianThinks](https://holtz.org/BrianThinks) to engage this worldview.
 - **Acquiring rights**¹: Society chooses when a fetus in the second trimester is rebuttably presumed to have the right to survive eviction if feasible. Society chooses when a minor between 14 and 18 is rebuttably presumed to have the right to adult autonomy.
 - **Arrivals**¹. Creation and migration of persons is unrestricted for arrivals posing no hazard or aggression risk and having a sponsor liable for their subsistence and their pollution, congestion, or depletion of the commons. Violations can evict migrants or prohibit creators.
 
-## 18 Commandments: how to know
+## 19 Commandments: how to know
 
 *For each there is ~99% confidence I'll always support this advice.*
 
@@ -53,6 +53,7 @@ Visit [BrianThinks](https://holtz.org/BrianThinks) to engage this worldview.
 - **Believe Your Beliefs**: If you are right, what markets move? What investments shift? What whistles blow? What insiders squeal? What opponents squawk? If those who should share your theory seem not to, it can't be rescued by adding extra theories about motives and "controlled opposition".
 - **Argue Your Best**. Pick your best argument and defend it first. If it's weak and you switch to another, it suggests your remaining arguments are weaker. If you won't explore whether your lead argument was valid, then you don't care whether your belief is valid.
 - **Test The Best**: What matters is the quality of the best evidence, not the quantity of the rest. A haystack of claims doesn't imply a needle of truth. As every examined straw again looks like hay, the odds of a needle go down not up.
+- **Falsus Vel Tacitus**: If a source is wrong or silent about something they should have known or admitted, then ask why they don't mind deceiving you. And if you don't mind it either, then ask whether you seek insight or mere confirmation.
 - **Audit Luxury Beliefs**: On topics with low personal stakes — politics, religion, history, culture, tribe — the believer pays no cost for being wrong. Question your beliefs that feel good or signal loyalty. Curate your beliefs for uncomfortable but defensible truth.
 - **Follow the Money**: If your belief implies an unexploited market opportunity, then why has that money been left on the sidewalk? Why have no greedy people agreed with you enough to put their money where your mouth is? If the greedy ignore it, shouldn't you?
 - **Question Revelation**: There is a persuasive expert or witness for anything you want to believe. No source deserves faith — only scrutiny. Test each against all others that should align with it. Truth is a boring web of all sources, not an exciting revelation from one.
