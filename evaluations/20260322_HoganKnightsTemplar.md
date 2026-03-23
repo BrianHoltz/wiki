@@ -104,6 +104,66 @@ These are the specific, forward-looking, or potentially testable claims the epis
   - *"Rastow"* (Egyptian *Ro-Setau*, name for the Giza necropolis area) *→ "rose" + "cross"* — false; English *rose* and *cross* derive from Latin *rosa* and *crux*; no documented etymological connection.
   [†](#folk-etymology-errors)
 
+## Bible Claims
+
+Hogan makes approximately 20 distinct scriptural or textual claims. Evaluated below, grouped by accuracy.
+
+---
+
+### Correctly cited — the text says what Hogan says it says
+
+- **Uzzah struck dead for touching the Ark (2 Samuel 6:6–7)** — ✓ Accurate citation. The text reads: "When they came to the threshing floor of Nacon, Uzzah reached out and took hold of the ark of God, because the oxen stumbled. The LORD's anger burned against Uzzah because of his irreverent act; therefore God struck him down, and he died there beside the ark." The electrocution interpretation is speculative but the textual event is correctly reported. [†](#ark-capacitor-theory)
+
+- **A pot of manna was placed inside the Ark (Hebrews 9:4)** — ✓ Accurate citation. Hebrews 9:4 explicitly states the Ark of the Covenant "contained the gold jar of manna, Aaron's staff that had budded, and the stone tablets of the covenant." Hogan's claim that "even the Bible says that there was a pot of mana placed in the Ark" is correct. [†](#manna-etymology)
+
+- **Aaron's rod served a distinct ceremonial function near the Ark** — ✓ Accurate. Numbers 17 and Hebrews 9:4 both confirm Aaron's rod/staff was preserved with the Ark. Hogan's interpretation of it as a grounding rod is speculative but the textual datum is real. [†](#ark-capacitor-theory)
+
+- **Manna (Hebrew "man hu") means "what is it?"** — ✓ Accurate. Exodus 16:15: "When the Israelites saw it, they said to each other, 'What is it?' (*man hu*)" — standard Hebrew etymology. Hogan: "mana just in Hebrew means what is it? It's literally what it means is what is it?" Correct. [†](#manna-etymology)
+
+- **Elijah taken bodily to heaven (2 Kings 2:11)** — ✓ Accurate. "A chariot of fire and horses of fire appeared and separated the two of them, and Elijah went up to heaven in a whirlwind." Hogan also correctly notes this creates a logical problem for the reincarnation-as-John reading, which he then uses as an argument for literal reincarnation in the text.
+
+- **Matthew 17:12–13: Jesus identifies John the Baptist as Elijah returned** — ✓ Accurate citation. Matthew 17:12–13: "But I tell you, Elijah has already come, and they did not recognize him, but have done to him everything they wished… Then the disciples understood that he was talking to them about John the Baptist." Hogan uses this accurately. Whether this implies literal reincarnation or prophetic typology ("in the spirit of Elijah," cf. Luke 1:17) is a matter of theological interpretation.
+
+- **John 14:12 — "these miracles ye shall do also, and greater"** — ✓ Accurate citation. John 14:12: "Very truly I tell you, whoever believes in me will do the works I have been doing, and they will do even greater things than these." Hogan quotes this correctly.
+
+- **Gospel of Philip (Nag Hammadi): Mary Magdalene as companion, Jesus kissed her** — ✓ Accurate citation. Gospel of Philip 63:34–36: "And the companion of the Saviour is Mary Magdalene. But Christ loved her more than all the disciples, and used to kiss her often on her mouth." Hogan reports this accurately. [†](#nag-hammadi)
+
+- **"Magdala" (Magdalene) derives from the Aramaic/Hebrew for tower** — ✓ Accurate etymology. *Magdala* (מַגְדָּלָא) is Aramaic for tower (*migdal* in Hebrew — מִגְדָּל). This is standard scholarship. Whether Magdalene the person was literally "the woman of this tower" or a wealthy financier is speculative, but the root meaning is correctly stated.
+
+---
+
+### Mixed — textual datum is real; interpretation is speculative or added
+
+- **Moses burned the golden calf into a white powder (Exodus 32:20)** — ✓/⚠️ The text does say Moses "burned it in the fire; then he ground it to powder." The powder outcome is textual. The claim that this was an alchemical production of monoatomic gold is Hogan's inference; the text describes burning followed by mechanical grinding, not a phase-transition alchemical process. The scientists-said-impossible framing misrepresents chemistry: you cannot convert bulk gold to monoatomic powder by burning, but you can grind gold to a fine powder.
+
+- **"Born again" (John 3:3) could mean literal reincarnation** — ⚠️ Partially defensible. The Greek ἄνωθεν (*anothen*) can mean either "again" or "from above" — John 3:4 shows even the narrative character Nicodemus interprets it as literal rebirth ("can they enter a second time into their mother's womb?"), which the text treats as a misunderstanding. Gnostic texts do read *anothen* as a reincarnation teaching. This is a legitimate minority textual interpretation, not a mainstream one.
+
+- **Lazarus raising was a Templar-style initiation rite** — ⚠️ Speculative but not textually excluded. John 11's Lazarus narrative does contain ritual structure (four-day death period, stone tomb, specific commands). That this matches cross-cultural death-and-raising initiation rites (as Hogan claims) is a serious comparative religion argument made by scholars like Hugh Schonfield. However:
+
+- **"Lazarus" = Hebrew "El Asur" (soul of Osiris)** — ✗ False etymology. "Lazarus" is the Greek/Latin form of Hebrew/Aramaic *Elazar* (אֶלְעָזָר), from *El* (God) + *azar* (helped), meaning "God has helped." The *-azar* root has no connection to the Egyptian god Osiris (*Osar/Usir*). Hogan's connection is phonetically motivated, not etymological. [†](#lazarus-bethany-etymology)
+
+- **"Bethany" = "Beth-Anu" (house of the Egyptian underworld)** — ✗ False etymology. *Bethany* (בֵּית עַנְיָה) most likely means "house of affliction/poverty" (*aniyah*) or possibly "house of dates/figs" (from *te'enim*). The second element is not *Anu*. Hogan's interpretation reverses the causal direction: he derives "Bethany" from the Egyptian toponym when the words have unrelated roots in unrelated language families. [†](#lazarus-bethany-etymology)
+
+---
+
+### False or contradicted by the text
+
+- **The burning bush was a Tamarisk catching fire; Moses calcinates it to extract mana** — ✗ Directly contradicts the text's central detail. Exodus 3:2–3: "There the angel of the LORD appeared to him in flames of fire from within a bush. Moses saw that though the bush was on fire *it did not burn up*." The text's explicit point is that the bush was *not consumed* — the opposite of the calcination (burn-to-ash) process Hogan proposes. Hogan omits this and presents the burning bush as ordinary spontaneous combustion from volatile plant oils. [†](#burning-bush-text)
+
+- **Priests tied ropes around their ankles to be dragged out if electrocuted in the tabernacle** — ✗ Not in the biblical text. Hogan and AJ present this as biblical fact. Exodus 28:33–35 describes bells on the hem of the High Priest's robe so his sound "will be heard when he enters the Holy Place before the LORD and when he comes out, so that he will not die" — but there is no mention of ropes or corpse-recovery. The rope tradition is a modern popular legend with no textual or Talmudic basis. [†](#priests-rope-legend)
+
+- **"Amen" derives from the Egyptian god Amun** — ✗ Mainstream linguistics does not support this. Hebrew *amen* (אָמֵן) derives from the Semitic root *ʾ-m-n* (faithfulness, firmness) — the same root as *emunah* (faith) and *emet* (truth). The Egyptian deity Amun (𓇋𓏐𓌀) belongs to an entirely separate linguistic family (Afroasiatic/Egyptian branch) and the proposed phonetic match is not a documented borrowing. The connection is popular in Afrocentric religious writing but rejected by Semitic linguists. [†](#amen-amun)
+
+- **"Adonai" (Hebrew "Lord") derives from Egyptian "Atini" (Aten)** — ✗ False etymology. *Adonai* (אֲדֹנָי) is Hebrew for "my Lords/Master," from *adon* (lord), a common Semitic word. The Egyptian Aten (𓇳) belongs to a different language family, and no linguistic pathway connects the two roots. Hogan: "Atini became Adonai, which meant Lord in Hebrew." This is not supported by any Semitic linguistics scholarship. [†](#adonai-etymology)
+
+- **"Mount Ararat" is Sanskrit for "illuminated one"** — ✗ False. *Ararat* in the Hebrew Bible (אֲרָרַט) corresponds to the ancient kingdom of Urartu, centered in modern-day Armenia and eastern Turkey — a well-documented kingdom attested in Assyrian records. The word is Urartian/Hurrian in origin, not Sanskrit. "Illuminated one" has no connection to any reconstruction of the word's etymology. [†](#mount-ararat-etymology)
+
+- **The Council of Nicaea (325 CE) removed Gnostic texts from the Bible** — ✗ Common misconception. The Council of Nicaea was convened primarily to address the Arian controversy (the nature of Christ's divinity). It did not deliberate on the biblical canon. The canon was debated and progressively standardized through several later synods: the Synod of Hippo (393 CE) and Councils of Carthage (397, 419 CE) are the key events. The framing that Nicaea "decided what went in the Bible" is a widely repeated error with no conciliar historical basis. [†](#nicaea-canon)
+
+- **John the Baptist was the original Messiah; Mary Magdalene was his financier/wife** — ✗ Not supported by canonical Gospels or most scholarly tradition. All four Gospels present John as the forerunner (Isaiah 40:3 fulfillment), not the Messiah. Luke 1:17 says John came "in the spirit and power of Elijah." The Mandaean tradition does regard John highly, but Hogan presents this as hidden Templar knowledge rather than a sectarian religious position. No canonical or widely accepted extra-canonical text presents Mary Magdalene as John's financier or wife.
+
+- **Burnt sacrifices at Solomon's temple served to extract monoatomic gold (mana) from the ash** — ✗ Interpretive overlay with no textual basis. The Torah's detailed sacrifice legislation (Leviticus 1–7) contains no reference to substance extraction. The sacrifices had explicit theological functions (atonement, thanksgiving, fellowship). Hogan's claim adds an entirely external alchemical purpose to a textually and historically well-documented ritual system.
+
 ## Sins: Epistemic Hygiene
 
 - TODO
@@ -324,6 +384,62 @@ All empirical claims are cited inline with `†` linking to entries here. See [`
 - **Dates:** Curie experiments 1880; Aswan granite composition documented by geological survey
 - **Quote/data:** Quartz (SiO₂) is a strongly piezoelectric material; mechanical stress generates a measurable voltage. Aswan rose granite is approximately 26–30% quartz by volume. The property is real. Application to the Great Pyramid requires: (a) sufficient stress cycling, (b) a circuit to collect the charge, and (c) a mechanism for coherent current flow through the structure — none of which have been demonstrated. The claim that the pyramid apex emits visible spark discharge from ambient static is a much stronger claim beyond the confirmed piezoelectric property.
 
+### Manna etymology
+
+- **Claim:** Manna is Hebrew *man hu* ("what is it?"); manna was golden or white; the pot of manna was kept inside the Ark
+- **Source:** Exodus 16:15 (Hebrew text); Hebrews 9:4; Brown-Driver-Briggs Hebrew lexicon
+- **Dates:** Exodus narrative conventionally dated to 13th–15th century BCE; Hebrews written ~60–95 CE
+- **Quote/data:** Exodus 16:15 (NIV): "When the Israelites saw it, they said to each other, 'What is it?' For they did not know what it was. Moses said to them, 'It is the bread the LORD has given you to eat.'" The Hebrew *man hu* (מָן הוּא) is correctly glossed as "what is it?" Hebrews 9:4 confirms the manna jar's presence in the Ark. The monoatomic-gold identification of manna is an extra-biblical interpretation originating with David Hudson's ORME patents (1989) and has no textual or archaeological support.
+
+### Burning bush text
+
+- **Claim:** The burning bush was a Tamarisk spontaneously combusting; Moses extracted (calcinates) the ash to obtain mana; this is what God commanded
+- **Source:** Exodus 3:1–6
+- **Dates:** Exodus narrative conventionally dated to 13th–15th century BCE
+- **Quote/data:** Exodus 3:2–3 (NIV): "There the angel of the LORD appeared to him in flames of fire from within a bush. Moses saw that though the bush was on fire *it did not burn up*. So Moses thought, 'I will go over and see this strange sight — why the bush does not burn up.'" The non-consumption is the text's stated miracle and the reason Moses investigated. The calcination (burn-to-ash) interpretation reverses the explicit textual point: the bush was notable precisely because it was NOT consumed.
+
+### Priests rope legend
+
+- **Claim:** Priests tied ropes to their ankles before entering the Holy of Holies so their bodies could be dragged out if they were struck dead (electrocuted by the Ark)
+- **Source:** Exodus 28:31–35 (the bells passage); Talmudic and Rabbinic literature survey
+- **Dates:** Exodus 28 legislation; Talmudic period 200–500 CE
+- **Quote/data:** Exodus 28:33–35: "Make pomegranates of blue, purple and scarlet yarn around the hem of the robe, with gold bells between them… Aaron must wear it when he ministers. The sound of the bells will be heard when he enters the Holy Place before the LORD and when he comes out, so that he will not die." The text mentions bells (as a sign of the priest's presence/sound), not ropes or corpse-retrieval. The rope legend does not appear in the Talmud (see Yoma tractate, which describes High Priest rituals in detail), nor in Josephus or any early Rabbinic source. It is a modern folk tradition that conflates the bell passage with the danger of entering the Holy of Holies.
+
+### Lazarus Bethany etymology
+
+- **Claim:** "Lazarus" = Hebrew *El Asur*, meaning "soul of Osiris"; "Bethany" = *Beth-Anu*, the Egyptian house of the underworld god Anu
+- **Source:** Standard Hebrew/Aramaic lexicography; BDB Hebrew Lexicon; BDAG Greek Lexicon
+- **Dates:** Gospel of John written ~90–110 CE; Lazarus/Bethany toponyms in earlier strata
+- **Quote/data:** *Lazarus* is the Greek/Latin rendering of Hebrew/Aramaic *Elazar* (אֶלְעָזָר = *El* [God] + *azar* [helped]) meaning "God has helped." It is the same name as Eleazar, a common Jewish name. The Egyptian deity Osiris is known in Egyptian as *Usir* (𓇋𓏏𓊃𓀭); no linguistic bridge to *Elazar* exists in either Semitic or Egyptian linguistics. *Bethany* (בֵּית עַנְיָה) most likely means "house of affliction/poverty" from *aniyah* or "house of dates/figs"; the second element is unrelated to the Egyptian toponym *Iunu* (Heliopolis, Greek: On). Both proposed etymologies are phonetic resemblances without linguistic or scholarly basis.
+
+### Nicaea canon
+
+- **Claim:** "The Council of Nicaea in 325 AD decided what went into the Bible and what didn't" and removed Gnostic texts
+- **Source:** Council of Nicaea primary acts (Eusebius of Caesarea); *Codex Theodosianus*; Synod of Hippo 393 CE; Council of Carthage 397 CE
+- **Dates:** Council of Nicaea: May–August 325 CE; Synod of Hippo: 393 CE; Third Council of Carthage: 397 CE; Fourth Council of Carthage: 419 CE
+- **Quote/data:** The Council of Nicaea (325 CE) was convened by Emperor Constantine I primarily to address the Arian controversy — the question of whether Christ was of the same substance (*homoousios*) as the Father. Thirty main canons were issued; none address the biblical canon. The first formal councils to finalize the New Testament canon were the Synod of Hippo (393 CE) and the Council of Carthage (397 CE). The claim that Nicaea decided the canon is one of the most commonly repeated misconceptions about early church history, popularized by *The Da Vinci Code* (2003) but rejected by all mainstream church historians.
+
+### Amen Amun etymology
+
+- **Claim:** The Hebrew word "amen" derives from the Egyptian god Amun; saying "amen" is invoking the Egyptian deity
+- **Source:** Brown-Driver-Briggs Hebrew Lexicon; HALOT (Hebrew Aramaic Lexicon of the Old Testament); Egyptological references for Amun
+- **Dates:** First attested use of Hebrew *amen*: Deuteronomy 27:15 (13th–7th century BCE); Amun worship in Egypt from Middle Kingdom (~2000 BCE)
+- **Quote/data:** Hebrew *amen* (אָמֵן) is from the Semitic root *ʾ-m-n* (אמן), meaning firmness, faithfulness, reliability — the same root as *emunah* (faith), *emet* (truth), and *oman* (craftsman/skilled). The word means "so be it" or "truly." The Egyptian deity Amun (𓇋𓏐𓌀𓀭) belongs to the Afroasiatic/Egyptian language branch and is unrelated to the Hebrew Semitic root. No documented linguistic borrowing or cognate relationship exists. The resemblance is phonetic coincidence. This etymology is common in Afrocentric and New Age religious writing but is not supported by any Semitic or Egyptological linguistics scholarship.
+
+### Adonai etymology
+
+- **Claim:** Hebrew "Adonai" (Lord) derives from Egyptian "Atini" or "Aten"; the Israelites carried Atenist monotheism out of Egypt
+- **Source:** BDB; HALOT; Egyptological records for Aten worship (Amarna period ~1353–1336 BCE)
+- **Dates:** Aten cult: Amarna period under Akhenaten (~1353–1336 BCE); Hebrew *adon* attested throughout Hebrew Bible
+- **Quote/data:** Hebrew *adonai* (אֲדֹנָי) is the plural of majesty of *adon* (lord/master), from the common Semitic root *ʾdn*, meaning lord or master. This root is attested in Ugaritic, Phoenician, and other Northwest Semitic languages with no Egyptian connection. Egyptian *Aten* (𓇳) is the solar disc deity; its name derives from the Egyptian root *itn*, meaning sun disc. These are separate words from separate branches of the Afroasiatic language family. The Atenism-to-Mosaic-monotheism hypothesis (associated with Sigmund Freud's *Moses and Monotheism*, 1939) is a minority scholarly position that argues for *influence*, not direct etymological derivation. Hogan presents the etymology as a direct derivation, which is not supported.
+
+### Mount Ararat etymology
+
+- **Claim:** "Mount Ararat" is a Sanskrit word meaning "illuminated one" (connecting Noah's Ark to Vedic traditions)
+- **Source:** Encyclopaedia Iranica; Urartian cuneiform records; Assyrian annals (Shalmaneser III)
+- **Dates:** Kingdom of Urartu documented in Assyrian records from ~860 BCE; Sanskrit "illuminated" concepts have distinct etymology
+- **Quote/data:** *Ararat* in the Hebrew Bible (אֲרָרַט, *Ararat*) corresponds to the ancient kingdom of *Urartu* — a Bronze/Iron Age civilization centered in the Lake Van region of modern-day eastern Turkey and Armenia. The name appears in Assyrian records as *Urartu* and in the Bible as *Ararat* (also 2 Kings 19:37, Isaiah 37:38, Jeremiah 51:27). The kingdom is well documented: Shalmaneser III's annals record battles against Urartu from 858 BCE. The word is Urartian or possibly Hurrian in origin; it is not Sanskrit. Sanskrit for "illuminated" or "enlightened" would derive from roots such as *prakāśa* (light/illumination) or *bodha* (awakening) — phonetically and etymologically unrelated to *Ararat/Urartu*.
+
 ## References
 
 - [Video: Basement #003 Tim Hogan](https://www.youtube.com/watch?v=nr-zETVa8mY) — The Why Files: Operation Podcast, 2026-02-12
@@ -362,3 +478,4 @@ All empirical claims are cited inline with `†` linking to entries here. See [`
 - 2026.03.22 Deep research pass: 4 Reddit thread batches fetched; Sources expanded with community record for both subjects; added Evidence entries for argyria, legal record, masonic community record, AJ self-describes-as-entertainer; References expanded with all research links
 - 2026.03.22 Full transcript analysis (609 lines, 305 turns); Stumbles (11 claims) and Silence (9 items) written; Evidence entries added: ORME, folk etymologies, Lewis & Clark records, Talpiot Tomb, Columbus wife, Oak Island, mammoth carvings, Chinon Parchment, YDIH status
 - 2026.03.22 Synopsis, Score, Stakes (5 claims), Strengths (8 claims) written; Evidence entries added: templar-history-standard, joseph-warren, howard-hogan-mayor, newton-alchemy, ark-capacitor-theory, akhenaten-monotheism, nag-hammadi, elephantine-island-arc, piezoelectric-granite
+- 2026.03.22 Bible Claims section written (~20 claims from transcript; grouped: accurate citations, plausible/mixed, false or contradicted by text); Evidence entries added: manna-etymology, burning-bush-text, priests-rope-legend, lazarus-bethany-etymology, nicaea-canon, amen-amun-etymology, adonai-etymology, mount-ararat-etymology
