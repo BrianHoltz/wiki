@@ -6,12 +6,12 @@
 
 - Title: *Basement #003 Tim Hogan | Templar Knights, Atlantis, and the MANY Arks of the Covenant*
 - Format: podcast interview ("Basement" series, ep. 003)
-- Channel: The Why Files: Operation Podcast (host A.J., merch code TWF)
-- Date published: TBD
-- Size: ~161 min
-- URL: TBD
+- Channel: [The Why Files: Operation Podcast](https://thewhyfiles.com/podcast) — AJ Gentile, 5.7M subscribers
+- Date published: 2026-02-12
+- Views: 1,758,764 (as of 2026-03-22)
+- URL: https://www.youtube.com/watch?v=nr-zETVa8mY
 - Claimants: Tim Hogan — Grand Master, Order of the Temple of the Secret Initiates; claims 32nd Degree Mason, family lineage to Gen. Joseph Warren
-- Host: A.J. (The Why Files)
+- Host: AJ Gentile
 - Evaluated by: BrianThinks + Claude Sonnet / 2026-03-22
 
 ### Synopsis
@@ -32,10 +32,10 @@
   - Transparency: does not disclose that monoatomic gold product sales create direct financial incentive for his supernatural claims; does not distinguish self-reported family history from documented record
 
 - **A.J. (The Why Files: Operation Podcast)**
-  - Credentials: podcast host, self-described fan and researcher of fringe topics
-  - Incentives: episode views, merch sales (code TWF, 10% off first order) — soft incentive to platform compelling guests, not to scrutinize them
+  - Credentials: podcast host (AJ Gentile); The Why Files YouTube channel, 5.7M subscribers
+  - Incentives: episode views, merch sales ([shop.thewhyfiles.com](https://shop.thewhyfiles.com), code LIZZIDPEEPLE for 10% off), Patreon, YouTube memberships — soft incentive to platform compelling guests, not to scrutinize them
   - Record: prior Knights Templar episode; introduced Hogan as "one of my favorite people," "kind, compassionate, knows everything" — not adversarial
-  - Transparency: discloses prior email relationship with Hogan; does not disclose merch/sponsor relationships in transcript
+  - Transparency: discloses prior email relationship with Hogan; does not call out financial incentives of guest's claims
 
 ## Stakes: Most Notable Predictions
 
@@ -87,7 +87,10 @@ All empirical claims are cited inline with `†` linking to entries here. See [`
 
 ## References
 
-- [Hogan transcript — diarized](20260322_HoganKnightsTemplar/Hogan_diarized.md) — heuristic speaker attribution (A.J. / Hogan), 305 turns
+- [Video: Basement #003 Tim Hogan](https://www.youtube.com/watch?v=nr-zETVa8mY) — The Why Files: Operation Podcast, 2026-02-12
+- Tim Hogan links: [books (Lulu)](https://www.lulu.com/spotlight/emerys) · YouTube @timothyhogan5494 · Instagram @timothyhogan5494 · [Facebook](https://www.facebook.com/TimothyW.Hogan/) · [templarcollegia.org](https://templarcollegia.org)
+- The Why Files: [website](https://thewhyfiles.com) · [podcast](https://thewhyfiles.com/podcast) · [Basement podcast site](https://thebasementpodcast.com/) · [Discord](https://thewhyfiles.com/discord)
+- [Hogan transcript — diarized](20260322_HoganKnightsTemplar/Hogan_diarized.md) — heuristic speaker attribution (AJ / Hogan), 305 turns
 - [Hogan transcript — raw](20260322_HoganKnightsTemplar/Hogan.txt) — Whisper `medium` transcription, single-line blob
 
 ## TODOs
