@@ -79,10 +79,11 @@ A framework for critically evaluating any specimen — interview, podcast, video
 
 All empirical claims are cited inline with `†` linking to entries here. See [`~/bin/AgentRules.md`](~/bin/AgentRules.md) § Evidence for the full standard.
 
+**MDwiki note:** Do not use raw `<a id>` tags — MDwiki breaks on them. Use the heading text as the anchor: `### My Claim Title` → link as `[†](#my-claim-title)` (lowercase, spaces→hyphens, parens dropped).
+
 Each entry follows this structure:
 
-### \<description\>
-<a id="e-slug"></a>
+### description-as-slug
 
 - **Claim:**
 - **Source:**

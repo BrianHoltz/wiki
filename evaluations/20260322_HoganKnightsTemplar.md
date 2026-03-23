@@ -24,9 +24,9 @@
 
 ## Sources
 
-- **Tim Hogan** [†](#e-hogan-credentials) [†](#e-hogan-incentives)
+- **Tim Hogan** [†](#hogan-credentials-self-reported) [†](#hogan-financial-incentives)
   - Credentials: self-described author, lecturer, esoteric researcher; Grand Master of the Order of the Temple of the Secret Initiates; claims 32nd Degree Mason across several rites; 7 books published; lectures internationally; leads tours to Egypt, Europe, Mesoamerica — all self-reported or via promotional copy, independently unverified
-  - Incentives: sells books (Amazon/Lulu), sells tours (Templar Travel Tours), sells monoatomic gold (Templar Made), sells initiations/membership (Templar Collegia, ~$40-50 application fee + study materials) — substantial financial interest in the claims he makes [†](#e-hogan-incentives)
+  - Incentives: sells books (Amazon/Lulu), sells tours (Templar Travel Tours), sells monoatomic gold (Templar Made), sells initiations/membership (Templar Collegia, ~$40-50 application fee + study materials) — substantial financial interest in the claims he makes [†](#hogan-financial-incentives)
   - Record: no known mainstream academic appointments or peer-reviewed publications; operates entirely within the esoteric/fringe publishing circuit
   - History: introduced to Templar tradition in childhood by family; grandfather Hugh Warren (named after Hugh de Payns per Hogan) enrolled him in a knighthood program at age 8; told of family Masonic/Templar lineage only at 18; traces lineage to Gen. Joseph Warren (Revolutionary War martyr, Grand Commander, Templar Order)
   - Transparency: does not disclose that monoatomic gold product sales create direct financial incentive for his supernatural claims; does not distinguish self-reported family history from documented record
@@ -70,7 +70,6 @@
 All empirical claims are cited inline with `†` linking to entries here. See [`~/bin/AgentRules.md`](~/bin/AgentRules.md) § Evidence for the full standard.
 
 ### Hogan credentials (self-reported)
-<a id="e-hogan-credentials"></a>
 
 - **Claim:** Grand Master, Order of the Temple of the Secret Initiates; 32nd Degree Mason; 7 books; international lecturer; Egypt/Europe/Mesoamerica tour operator
 - **Source:** YouTube description / promotional copy for this episode
@@ -78,7 +77,6 @@ All empirical claims are cited inline with `†` linking to entries here. See [`
 - **Quote/data:** "Timothy Hogan is an author, lecturer, and esoteric researcher specializing in the Knights Templar, alchemy, Gnosticism, and Hermetic traditions... He is the Grand Master of the Order of the Temple of the Secret Initiates and founded the Templar Collegia... Hogan has written seven books..."
 
 ### Hogan financial incentives
-<a id="e-hogan-incentives"></a>
 
 - **Claim:** Hogan has multiple revenue streams directly tied to the credibility of his esoteric claims
 - **Source:** Transcript (closing minutes) + Templar Collegia website (templarcollegia.org), Templar Made product line
