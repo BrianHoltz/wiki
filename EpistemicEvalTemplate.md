@@ -1,10 +1,10 @@
 # Epistemic Evaluation Template
 
-A reusable, principled framework for skeptically evaluating any artifact — interview, podcast, video, book, essay, report, theory, advocacy, testimony, manifesto, post, or movement.
+A framework for critically evaluating any artifact — interview, podcast, video, book, essay, report, theory, advocacy, testimony, manifesto, post, or movement.
 
 ## Summary
 
-### Artifact
+### Specimen
 
 - Titles
   - Format (interview, essay, documentary, thread, lecture, etc.)
@@ -14,9 +14,12 @@ A reusable, principled framework for skeptically evaluating any artifact — int
 - Platform, venue, outlet, channel
 - Evaluated by: BrianThinks + [model/date]
 - Evaluated on
-- Description: One-paragraph neutral description of what the artifact says
 
-### Evaluation
+### Synopsis
+
+- Bulleted neutral description of what the specimen says
+
+### Score
 
 - BrianThinks evaluation, predictions, probabilities
 
@@ -29,16 +32,16 @@ A reusable, principled framework for skeptically evaluating any artifact — int
   - History: summary of how the source's origin and evolution
   - Transparency: what notable facts above does the artifact leave unsaid?
 
-## Seer: Most Notable Predictions
+## Sight: Most Notable Predictions
 
 - Quoted with context and verifiable citation
 
-## Signal: Most Credible Claims
+## Strengths: Most Credible Claims
 
 - Common ground where we most agree with the claims
 - Probabilities, falsification, counterfactuals, implications
 
-## Least Credible Claims
+## Stumbles: Least Credible Claims
 
 - Where we most disagree with the claims
 - Terse: probabilities, falsification, counterfactuals, implications
@@ -73,4 +76,5 @@ A reusable, principled framework for skeptically evaluating any artifact — int
 
 ## History
 
-- YYYY.MM.DD description of doc update
+- 2026.03.22 Created
+
