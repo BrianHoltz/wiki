@@ -160,7 +160,7 @@ Hogan makes approximately 20 distinct scriptural or textual claims. Evaluated be
 
 ## Sins: Epistemic Hygiene
 
-Three violations of argumentative conduct, each cited with a direct transcript quote. See also **Believe Your Beliefs** (next section), which tests the same claims against implied market predictions — a distinct form of epistemic failure. Each maps to the 18 [BrianThinks Commandments](../BrianThinks.md#18-commandments-how-to-know).
+Four violations of argumentative conduct, each mapped to a commandment from the 18 [BrianThinks Commandments](../BrianThinks.md#18-commandments-how-to-know). Three are conduct violations with direct transcript quotes; the fourth — **Believe Your Beliefs** — tests Hogan's claims against the market predictions they imply.
 
 ### Vide Cui Bono
 
@@ -188,37 +188,37 @@ The commandment demands: "You must explain why your contrarian theory is right A
 
 The entire evidential architecture rests on a chain of authority: the Templars have secret knowledge *because* they have unbroken access, and they have unbroken access *because* they are the legitimate Templars. The lineage verifies the access; the access verifies the lineage. The commandment specifies: "No source deserves faith — only scrutiny. Test each against all others that should align with it." A Templar order with verified thousand-year continuity, private Egyptian archaeological access, and possession of the bones of Jesus would leave a substantial paper trail — in Vatican archives, Egyptian antiquities authority records, Zahi Hawass's public writings. None is offered. [†](#hogan-masonic-community-record)
 
-## Believe Your Beliefs
+### Believe Your Beliefs
 
 *The **Believe Your Beliefs** commandment asks: "If you are right, what markets move? What investments shift? What whistles blow? What insiders squeal? What opponents squawk? If those who should share your theory seem not to, it can't be rescued by adding extra theories about motives."*
 
 *This is distinct from **Silence** (what Hogan withheld about himself — personal record, conflicts of interest, community rejection). Believe Your Beliefs asks what the **world** would look like if Hogan were right, and whether it does.*
 
-### Monoatomic gold cures cancer — yet zero oncological or pharmaceutical investigation
+#### Monoatomic gold cures cancer — yet zero oncological or pharmaceutical investigation
 
 > *Hogan:* "[monoatomic gold] had incredible health benefits, you know, in terms of curing cancer and everything else."
 
 The global pharmaceutical industry spends $250B+ annually on cancer R&D precisely because any reliable cure would be among the most profitable products in history. If ORME gold reliably reduced tumors, independent oncology labs, university cancer centers, and biotech startups would have investigated it within years of Hudson's 1989 patents. MEDLINE contains no peer-reviewed clinical study of monoatomic gold as a cancer treatment. Hogan is the primary commercial producer of the substance. That he alone profits from a claim every oncologist in the world has passed over is precisely the pattern the commandment flags. [†](#orme-pseudoscience)
 
-### Jesus's bones in a DC national park vault — no intelligence service, journalist, or Vatican agent has found or leaked this
+#### Jesus's bones in a DC national park vault — no intelligence service, journalist, or Vatican agent has found or leaked this
 
 > *Hogan:* "One of the vaults is in Washington, D.C… on national park property… even the park service doesn't even know it's there."
 
 The verified recovery of Jesus's bones would be the most consequential geopolitical and religious event in history — destabilizing the world's largest institution, triggering financial and political consequences on a global scale. A DC vault on US national park land would be subject to routine soil surveys, utility easements, ground-penetrating radar surveys, and periodic excavation. For 700 years, no Templar member, no national park employee, no intelligence contractor, and no investigative journalist has surfaced credible evidence of it. Unlike most conspiracy claims, this one has a specific, testable location on US government-administered land with known physical characteristics ("buried under crushed lime and shells"). [†](#talpiot-tomb)
 
-### A civilization as advanced as ours existed 12,900 years ago — no industrial signature in any sediment or ice core record
+#### A civilization as advanced as ours existed 12,900 years ago — no industrial signature in any sediment or ice core record
 
 > *Hogan:* "I think by some accounts, the earth was as populated and as advanced as it is today."
 
 A civilization comparable to ours would produce non-trivial geological signatures even over thousands of years: isotopic traces of nuclear activity, heavy metal pollution layers, synthetic organic compounds, and anomalous carbon-14 profiles in sediment cores. These are exactly the records that paleoclimatologists routinely sample, have sampled globally, and publish in open literature. Critically: the YDIH cataclysm signal that Hogan and AJ cite approvingly as "mainstream catching up" was found precisely because scientists were looking for unusual sediment signatures. The same global sediment science that found the impact layer has not found industrial civilization. [†](#templar-history-standard)
 
-### Lewis and Clark's true mission was checking on a Templar vault — their million-word journals contain no reference to it
+#### Lewis and Clark's true mission was checking on a Templar vault — their million-word journals contain no reference to it
 
 > *Hogan:* "Lewis and Clark, when they did their excursion… one of the things they were checking on was that vault. That was part of their mission."
 
 The Lewis and Clark journals (Moulton edition, 13 volumes) are among the most thoroughly analyzed primary documents in American history, containing meticulous daily records of geography, flora, Native encounters, and logistics. Jefferson's instructions to Lewis (June 20, 1803, Library of Congress) are fully published. Neither documents nor letters contain any reference — coded or otherwise — to vaults, Templar artifacts, or esoteric mission. If two commissioned officers and their thirty-three crew members were secretly running a parallel Templar mission, they achieved perfect documentary silence across millions of words written for posterity. [†](#lewis-clark-records)
 
-### The Templars have exclusive overnight access to the Great Pyramid — the Egyptian antiquities authority has no record of this
+#### The Templars have exclusive overnight access to the Great Pyramid — the Egyptian antiquities authority has no record of this
 
 > *Hogan:* "We're the only group that's allowed to do this because we've been doing it for the last thousand years… They kick all the tourists off the Giza Plateau. We get a military escort."
 
