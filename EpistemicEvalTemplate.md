@@ -58,12 +58,32 @@ A framework for critically evaluating any specimen — interview, podcast, video
 
 ## Sins: Epistemic Hygiene
 
-- Which of the BrianThinks epistemic commandments does the specimen specifically violate, and where?
+Active violations — errors in what the specimen *said*, argued, or reasoned. Each violation names the commandment, quotes the instance, and explains the failure. Native commandments (violations of what was *said* or *concluded*):
 
-## Silence: Things Unsaid, Implications, Counterfactuals
+- **Vide Cui Bono** — undisclosed incentives shaping the argument
+- **Avoid Rage Bait** — anecdotes and strawmen substituted for aggregate data
+- **Be Charitable** — opponents' positions misrepresented or bad-faithed
+- **Beware Bias** — motivated reasoning, anchoring, tribal favoritism unreflected
+- **Converge On Facts** — evidence not converging is treated as converging
+- **Be Falsifiable** — claims immunized against any possible disconfirmation
+- **Argue Your Best** — weakest argument led; stronger ones abandoned without examination
+- **Test The Best** — quantity of claims substituted for quality of best evidence
+- **Audit Luxury Beliefs** — beliefs held at zero personal cost, signaling loyalty over truth
 
-- Cite where the specimen should have considered alternative evidence/arguments but didn't
-- Whether claimants engage the best critical forums/champions
+## Silence: Things Unsaid
+
+Omission violations — what a forthright, informed, non-conflicted speaker *should have surfaced* but didn't. For each item ask: what did they know or should have known, and why wasn't it said? Native commandments (violations of what was *withheld*):
+
+- **Falsus Vel Tacitus** — source is wrong or silent about something they should have known or admitted
+- **Follow the Money** — undisclosed financial conflicts or unexploited market implications
+- **Master the Literature** — existing scholarship that contradicts the claim, omitted
+- **Also Assess Answers** — implied conclusions hidden behind "just asking questions"
+- **Steelman First** — best opposing argument not presented to the audience
+- **Believe Your Beliefs** — market/prediction implications of the claim, not surfaced
+- **Explain Consensus** — expert disagreement not accounted for in the argument
+- **Question Revelation** — contradicting sources exist and were not tested against
+- **Bet On It** — no odds offered; evasion of epistemic accountability
+- **Predict It** — no testable predictions stated; unfalsifiable future left implicit
 
 ## Steelman
 
