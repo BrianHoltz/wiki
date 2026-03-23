@@ -108,8 +108,6 @@ These are the specific, forward-looking, or potentially testable claims the epis
 
 Hogan makes approximately 20 distinct scriptural or textual claims. Evaluated below, grouped by accuracy.
 
----
-
 ### Correctly cited — the text says what Hogan says it says
 
 - **Uzzah struck dead for touching the Ark (2 Samuel 6:6–7)** — ✓ Accurate citation. The text reads: "When they came to the threshing floor of Nacon, Uzzah reached out and took hold of the ark of God, because the oxen stumbled. The LORD's anger burned against Uzzah because of his irreverent act; therefore God struck him down, and he died there beside the ark." The electrocution interpretation is speculative but the textual event is correctly reported. [†](#ark-capacitor-theory)
@@ -130,8 +128,6 @@ Hogan makes approximately 20 distinct scriptural or textual claims. Evaluated be
 
 - **"Magdala" (Magdalene) derives from the Aramaic/Hebrew for tower** — ✓ Accurate etymology. *Magdala* (מַגְדָּלָא) is Aramaic for tower (*migdal* in Hebrew — מִגְדָּל). This is standard scholarship. Whether Magdalene the person was literally "the woman of this tower" or a wealthy financier is speculative, but the root meaning is correctly stated.
 
----
-
 ### Mixed — textual datum is real; interpretation is speculative or added
 
 - **Moses burned the golden calf into a white powder (Exodus 32:20)** — ✓/⚠️ The text does say Moses "burned it in the fire; then he ground it to powder." The powder outcome is textual. The claim that this was an alchemical production of monoatomic gold is Hogan's inference; the text describes burning followed by mechanical grinding, not a phase-transition alchemical process. The scientists-said-impossible framing misrepresents chemistry: you cannot convert bulk gold to monoatomic powder by burning, but you can grind gold to a fine powder.
@@ -143,8 +139,6 @@ Hogan makes approximately 20 distinct scriptural or textual claims. Evaluated be
 - **"Lazarus" = Hebrew "El Asur" (soul of Osiris)** — ✗ False etymology. "Lazarus" is the Greek/Latin form of Hebrew/Aramaic *Elazar* (אֶלְעָזָר), from *El* (God) + *azar* (helped), meaning "God has helped." The *-azar* root has no connection to the Egyptian god Osiris (*Osar/Usir*). Hogan's connection is phonetically motivated, not etymological. [†](#lazarus-bethany-etymology)
 
 - **"Bethany" = "Beth-Anu" (house of the Egyptian underworld)** — ✗ False etymology. *Bethany* (בֵּית עַנְיָה) most likely means "house of affliction/poverty" (*aniyah*) or possibly "house of dates/figs" (from *te'enim*). The second element is not *Anu*. Hogan's interpretation reverses the causal direction: he derives "Bethany" from the Egyptian toponym when the words have unrelated roots in unrelated language families. [†](#lazarus-bethany-etymology)
-
----
 
 ### False or contradicted by the text
 
@@ -168,28 +162,31 @@ Hogan makes approximately 20 distinct scriptural or textual claims. Evaluated be
 
 Three violations of argumentative conduct, each cited with a direct transcript quote. See also **Believe Your Beliefs** (next section), which tests the same claims against implied market predictions — a distinct form of epistemic failure. Each maps to the 18 [BrianThinks Commandments](../BrianThinks.md#18-commandments-how-to-know).
 
----
+### Vide Cui Bono
 
-**1. Monoatomic gold seller promotes monoatomic gold's miraculous properties — financial interest never disclosed**
+#### Monoatomic gold seller promotes monoatomic gold's miraculous properties — financial interest never disclosed
+
 > *Hogan:* "Templar Made is my company where we manufacture monoatomic gold… we make that available to the public."
 
-*Commandment violated: **Vide Cui Bono**.* The episode spends approximately 30 minutes establishing that monoatomic gold cures cancer, enables levitation of heavy objects, powers ancient capacitive energy grids, and may fuel UAPs. Only at the end of the commercial pitch segment does Hogan mention that he manufactures and sells monoatomic gold through *Templar Made*. The financial interest — speaker benefits directly if the audience buys the supernatural premise — is never named by either party. AJ's closing endorsement ("I can't debunk it") is not a disclosure; it is a qualified recommendation. [†](#hogan-financial-incentives)
+The episode spends approximately 30 minutes establishing that monoatomic gold cures cancer, enables levitation of heavy objects, powers ancient capacitive energy grids, and may fuel UAPs. Only at the end of the commercial pitch segment does Hogan mention that he manufactures and sells monoatomic gold through *Templar Made*. The financial interest — speaker benefits directly if the audience buys the supernatural premise — is never named by either party. AJ's closing endorsement ("I can't debunk it") is not a disclosure; it is a qualified recommendation. [†](#hogan-financial-incentives)
 
----
+### Explain Consensus
 
-**2. "Mainstream archaeology is going to become fringe" — consensus dismissed with no meta-theory**
+#### "Mainstream archaeology is going to become fringe" — consensus dismissed with no meta-theory
+
 > *AJ:* "In short order, mainstream archaeology is going to become the fringe archaeology."
 > *Hogan:* "I think you're right."
 
-*Commandment violated: **Explain Consensus**.* This dismissal is offered as a triumphant conclusion after piling up claims about Atlantis, Egyptian-Mayan contact, ancient nuclear war, and pre-Diluvian civilization. The commandment demands: "You must explain why your contrarian theory is right AND why the experts disagree with it." No mechanism is offered for why the entire global community of archaeologists, geologists, linguists, and historians has missed or suppressed these connections. The implicit meta-theory — experts are too conditioned, too institutional, too unready — appears obliquely ("people have all kinds of cultural conditioning and beliefs"), but is never defended and never tested. Without a credible meta-theory, "the mainstream is wrong" is not a position; it is a posture. [†](#templar-history-standard)
+The commandment demands: "You must explain why your contrarian theory is right AND why the experts disagree with it." No mechanism is offered for why the entire global community of archaeologists, geologists, linguists, and historians has missed or suppressed these connections. The implicit meta-theory — experts are too conditioned, too institutional, too unready — appears obliquely ("people have all kinds of cultural conditioning and beliefs"), but is never defended and never tested. Without a credible meta-theory, "the mainstream is wrong" is not a position; it is a posture. [†](#templar-history-standard)
 
----
+### Question Revelation
 
-**3. "We've been doing it for a thousand years" — circular authority seals off scrutiny**
+#### "We've been doing it for a thousand years" — circular authority seals off scrutiny
+
 > *Hogan:* "We're the only group that's allowed to do this because we've been doing it for the last thousand years."
 > *Hogan:* "They've always been respectful… so they just give us access, you know, because we've always been there."
 
-*Commandment violated: **Question Revelation**.* The entire evidential architecture rests on a chain of authority: the Templars have secret knowledge *because* they have unbroken access, and they have unbroken access *because* they are the legitimate Templars. The lineage verifies the access; the access verifies the lineage. The commandment specifies: "No source deserves faith — only scrutiny. Test each against all others that should align with it." A Templar order with verified thousand-year continuity, private Egyptian archaeological access, and possession of the bones of Jesus would leave a substantial paper trail — in Vatican archives, Egyptian antiquities authority records, Zahi Hawass's public writings. None is offered. [†](#hogan-masonic-community-record)
+The entire evidential architecture rests on a chain of authority: the Templars have secret knowledge *because* they have unbroken access, and they have unbroken access *because* they are the legitimate Templars. The lineage verifies the access; the access verifies the lineage. The commandment specifies: "No source deserves faith — only scrutiny. Test each against all others that should align with it." A Templar order with verified thousand-year continuity, private Egyptian archaeological access, and possession of the bones of Jesus would leave a substantial paper trail — in Vatican archives, Egyptian antiquities authority records, Zahi Hawass's public writings. None is offered. [†](#hogan-masonic-community-record)
 
 ## Believe Your Beliefs
 
@@ -197,37 +194,32 @@ Three violations of argumentative conduct, each cited with a direct transcript q
 
 *This is distinct from **Silence** (what Hogan withheld about himself — personal record, conflicts of interest, community rejection). Believe Your Beliefs asks what the **world** would look like if Hogan were right, and whether it does.*
 
----
+### Monoatomic gold cures cancer — yet zero oncological or pharmaceutical investigation
 
-**1. Monoatomic gold cures cancer — yet zero oncological or pharmaceutical investigation**
 > *Hogan:* "[monoatomic gold] had incredible health benefits, you know, in terms of curing cancer and everything else."
 
 The global pharmaceutical industry spends $250B+ annually on cancer R&D precisely because any reliable cure would be among the most profitable products in history. If ORME gold reliably reduced tumors, independent oncology labs, university cancer centers, and biotech startups would have investigated it within years of Hudson's 1989 patents. MEDLINE contains no peer-reviewed clinical study of monoatomic gold as a cancer treatment. Hogan is the primary commercial producer of the substance. That he alone profits from a claim every oncologist in the world has passed over is precisely the pattern the commandment flags. [†](#orme-pseudoscience)
 
----
+### Jesus's bones in a DC national park vault — no intelligence service, journalist, or Vatican agent has found or leaked this
 
-**2. Jesus's bones have been in a DC national park vault since the Middle Ages — no intelligence service, journalist, or Vatican agent has found or leaked this**
 > *Hogan:* "One of the vaults is in Washington, D.C… on national park property… even the park service doesn't even know it's there."
 
 The verified recovery of Jesus's bones would be the most consequential geopolitical and religious event in history — destabilizing the world's largest institution, triggering financial and political consequences on a global scale. A DC vault on US national park land would be subject to routine soil surveys, utility easements, ground-penetrating radar surveys, and periodic excavation. For 700 years, no Templar member, no national park employee, no intelligence contractor, and no investigative journalist has surfaced credible evidence of it. Unlike most conspiracy claims, this one has a specific, testable location on US government-administered land with known physical characteristics ("buried under crushed lime and shells"). [†](#talpiot-tomb)
 
----
+### A civilization as advanced as ours existed 12,900 years ago — no industrial signature in any sediment or ice core record
 
-**3. A civilization as advanced as ours existed 12,900 years ago — but has left no industrial signature in any sediment or ice core record**
 > *Hogan:* "I think by some accounts, the earth was as populated and as advanced as it is today."
 
 A civilization comparable to ours would produce non-trivial geological signatures even over thousands of years: isotopic traces of nuclear activity, heavy metal pollution layers, synthetic organic compounds, and anomalous carbon-14 profiles in sediment cores. These are exactly the records that paleoclimatologists routinely sample, have sampled globally, and publish in open literature. Critically: the YDIH cataclysm signal that Hogan and AJ cite approvingly as "mainstream catching up" was found precisely because scientists were looking for unusual sediment signatures. The same global sediment science that found the impact layer has not found industrial civilization. [†](#templar-history-standard)
 
----
+### Lewis and Clark's true mission was checking on a Templar vault — their million-word journals contain no reference to it
 
-**4. Lewis and Clark's true mission was checking on a Templar vault — but their million-word journals contain no reference to it**
 > *Hogan:* "Lewis and Clark, when they did their excursion… one of the things they were checking on was that vault. That was part of their mission."
 
 The Lewis and Clark journals (Moulton edition, 13 volumes) are among the most thoroughly analyzed primary documents in American history, containing meticulous daily records of geography, flora, Native encounters, and logistics. Jefferson's instructions to Lewis (June 20, 1803, Library of Congress) are fully published. Neither documents nor letters contain any reference — coded or otherwise — to vaults, Templar artifacts, or esoteric mission. If two commissioned officers and their thirty-three crew members were secretly running a parallel Templar mission, they achieved perfect documentary silence across millions of words written for posterity. [†](#lewis-clark-records)
 
----
+### The Templars have exclusive overnight access to the Great Pyramid — the Egyptian antiquities authority has no record of this
 
-**5. The Templars have exclusive overnight access to the Great Pyramid — but the Egyptian antiquities authority has no record of this standing arrangement**
 > *Hogan:* "We're the only group that's allowed to do this because we've been doing it for the last thousand years… They kick all the tourists off the Giza Plateau. We get a military escort."
 
 Zahi Hawass served as Secretary-General of Egypt's Supreme Council of Antiquities (1996–2011), wrote extensively about pyramid access control, and publicly documented controversies over unauthorized New Age ceremonies at Giza. A standing, formally recognized arrangement granting a Western private organization exclusive overnight rights to the Great Pyramid would require documented permission from the Ministry of Antiquities, named Egyptian counterparties, and leave a bureaucratic record. Hawass has never referenced it. No Egyptian official, no independent journalist covering archaeological access disputes, and no former Templar tour participant has produced documentation of the arrangement.
