@@ -16,11 +16,15 @@
 
 ### Synopsis
 
-- TODO
+A 2+ hour podcast interview structured in three phases. **Phase 1 (cover story):** Hogan walks through mainstream Templar history 1118–1307 accurately and fluently — founding by Hugh de Payens, the banking/letter-of-credit system, suppression by Philip IV, Friday the 13th 1307, Jacques de Molay's dying curse, the Chinon absolution question [†](#templar-history-standard). **Phase 2 (secret history):** The Templars' true mission was recovering pre-Atlantean technology hidden in Egypt and Jerusalem — Arks of the Covenant as electrostatic capacitors powered by monoatomic gold, Egypt-Maya connections, pyramid power plants, Valley of the Kings as survival bunkers, Rosicrucian and Masonic lineage to Atlantean science [†](#ark-capacitor-theory). **Phase 3 (current custody and imminent disclosure):** Hogan's order currently holds six recovered Arks and the bones of Jesus, Mary Magdalene, and John the Baptist in two remaining vaults — one on national park property in Washington D.C., one in Montana — and DNA testing and public release are described as imminent [†](#lewis-clark-records). The closing segment is a direct commercial pitch for Templar Collegia membership ($40–50 + a thousand-page Codex), Templar Travel Tours (Egypt, Mexico, UK, Great Pyramid initiation included), and Templar Made monoatomic gold [†](#hogan-financial-incentives). AJ pre-disclosed having decided before the conversation that Hogan "knows everything" and conducted no adversarial inquiry [†](#aj-self-describes-entertainer).
 
 ### Score
 
-- TODO
+- **Overall credibility: 2/10** — The Phase 1 standard history is mostly accurate. Phases 2 and 3 rest almost entirely on unfalsifiable "Templar records," asserted access, and specific claims contradicted by documented evidence (Lewis & Clark journals, Talpiot Tomb excavation record, Chinon Parchment provenance timeline, Hudson ORME analysis).
+- **Epistemic hygiene: 1/10** — Claims are asserted without sources. "We believe," "from a Templar perspective" are used as hedges but immediately dropped for confident assertions. No acknowledgment of counterevidence, no expert corroboration outside the order itself, no separation of hypothesis from fact.
+- **Conflict of interest: severe** — Hogan sells products whose supernatural properties he establishes in this interview (monoatomic gold cures cancer, initiations grant Templar lineage, tours provide exclusive access). The conflict is not disclosed. [†](#hogan-financial-incentives)
+- **Host scrutiny: 0/10** — Pre-committed, non-adversarial, co-narrator. [†](#aj-self-describes-entertainer)
+- **Entertainment value: 8/10** — Hogan is a practiced storyteller with a self-consistent mythology spanning ancient Egypt, alchemy, UAPs, the Founding Fathers, and the Knights Templar.
 
 ## Sources
 
@@ -40,11 +44,37 @@
 
 ## Stakes: Most Notable Predictions
 
-- TODO
+These are the specific, forward-looking, or potentially testable claims the episode rests on — the ones where the stakes are highest if true or false.
+
+- **Imminent DNA disclosure of Jesus's bones** — Hogan: "We're finally at a point where not only do we have the technology to test them, but we have the technology to reveal them all to the world at once. It's time." No timeline given. If the Templar order ever produces such results, they would be the most consequential archaeological and theological announcement in history. The prediction is open-ended by design — it can never be falsified by non-occurrence, only potentially confirmed.
+
+- **Two surviving vaults holding the Arks (D.C. and Montana)** — Hogan: "One of the vaults is in Washington D.C… on national park property… even the park service doesn't even know it's there." Montana vault: "one of the tribes continues to protect" it. Lewis and Clark's documented instructions contain no Templar mission component. [†](#lewis-clark-records) If real, the D.C. vault is on federal land that is publicly accessible and geologically surveyable. Either location being confirmed would be independently verifiable.
+
+- **An undiscovered Arc on Elephantine Island is causing anomalous geological decay** — Hogan: "it's issuing so much energy that it's actually turning the granite into slate on the island, which normally would take thousands of years… German scientists right now are in charge of all that… they've been digging down to it for the last 60 years." Metamorphic conversion of granite to slate is geologically measurable. If German archaeologists are actively excavating there, their publication record would document it. [†](#elephantine-island-arc)
+
+- **Mayan pyramids are depicted in Rosslyn Chapel's stained glass** — Hogan to AJ: "it also has Mayan pyramids. I did not see those [says AJ]." Rosslyn Chapel (completed ~1446, Midlothian, Scotland) is extensively documented and open to researchers. Whether its carvings include anything resembling Mayan stepped pyramids is verifiable by direct examination or existing scholarship.
+
+- **The Great Pyramid builds measurable electrostatic charge** — Hogan: "If you stand on top of the pyramid and you take a bottle with a wet rag on it and hold it up, sparks are going to be shooting off the top of it." A specific physical claim that could be tested against published electrostatic measurements at Giza. The piezoelectric properties of the granite are real; whether the structure generates arc-level static discharge at the apex is a testable empirical question. [†](#piezoelectric-granite)
 
 ## Strengths: Most Credible Claims
 
-- TODO
+- **Standard Templar history (1118–1307) is largely accurate** — The founding by Hugh de Payens and Godfrey de Saint-Omer, the Temple Mount headquarters granted by Baldwin II, the banking/letter-of-credit system, accumulation of wealth, Philip IV's arrest warrants on Friday October 13 1307 motivated by debt cancellation, the seven years of torture, Jacques de Molay's execution and dying curse declaring both Philip IV and Clement V would join him in death within a year (both died within ~12 months of the March 1314 burning), and Templar involvement in Gothic cathedral construction — all consistent with mainstream historical scholarship. [†](#templar-history-standard)
+
+- **General Joseph Warren's identity and role are accurate** — Warren was a real and prominent Revolutionary War figure: Massachusetts Grand Master of Masons, organized Paul Revere's midnight ride, helped plan the Boston Tea Party, died at the Battle of Bunker Hill on June 17, 1775 — the first prominent American casualty. Hogan's claimed lineage to Warren is unverifiable, but the person and role he describes are factually grounded. [†](#joseph-warren)
+
+- **Howard Hogan's mayorship and DIA connections are verifiable** — Howard Hogan's tenure as mayor of Aurora, Colorado is public record. The Stephen D. Hogan Convention Center at the Gaylord Rockies Resort & Convention Center near Denver International Airport is named after him and documented in public sources. The annexation of DIA land from Aurora territory and the tax-sharing arrangement Hogan describes are consistent with the documented development history of DEN. [†](#howard-hogan-mayor)
+
+- **Isaac Newton spent the majority of his intellectual energy on alchemy** — The Newton Project (University of Sussex) and Indiana University's Chymistry of Isaac Newton project document approximately one million words Newton wrote on alchemical subjects — the largest single body of his writing. He produced his own translation of the Emerald Tablet and pursued alchemy alongside his mathematical and optical work. Hogan's presentation of Newton as primarily an alchemist who incidentally discovered gravity matches the scholarly record. [†](#newton-alchemy)
+
+- **The Ark's gold-acacia-gold construction is consistent with a genuine electrostatic capacitor** — Gold (conductor) / acacia wood (insulator) / gold (conductor) laminate is structurally a Leyden jar analog — a dielectric sandwiched between conductors that stores charge. The Jewish Bible Quarterly published an academic paper examining this theory. The Uzzah electrocution narrative (2 Samuel 6:7) is a textual datum consistent with discharge from an accumulated stored charge. The wool curtains of Moses's tabernacle are indeed electrostatic generators. This is real physics applied to a biblical description; the application is speculative but not absurd. [†](#ark-capacitor-theory)
+
+- **Akhenaten's monotheism and the Amarna period are mainstream Egyptology** — Akhenaten's promotion of Aten as the sole deity, his suppression of the Egyptian polytheist establishment, the capital relocation to Akhetaten (Tell el-Amarna), and the subsequent restoration by the Amun priesthood after his death are factual and extensively documented. Hogan's derived claims (Akhenaten's brother Thutmose = Moses, etc.) are speculative, but the Akhenaten foundation is accurate. [†](#akhenaten-monotheism)
+
+- **The Nag Hammadi library was discovered in Egypt in 1945 and includes the Gospel of Philip** — Hogan correctly places the 1945 discovery of Gnostic texts at Nag Hammadi, notes its proximity to the Valley of the Kings (accurate — it's in the Luxor governorate), and references Mary Magdalene's prominent role in the Gospel of Philip including the "kissed her on the mouth" passage. All factually accurate. The texts also include Hermetic manuscripts alongside the Gnostic gospels, consistent with Hogan's point about the shared tradition. [†](#nag-hammadi)
+
+- **Younger Dryas is a real paleoclimatic event; the impact hypothesis is a legitimate scientific debate** — The Younger Dryas cold period (~12,900–11,700 BP), its association with megafaunal extinctions and human population disruptions, and the rise of sea level by ~120 meters total from peak glaciation (not the 90m/300ft Hogan claims, but large) are established. The Kennett et al. (2007) impact hypothesis is contested but peer-reviewed. Hogan's invocation of a catastrophic end-Pleistocene cataclysm has genuine scientific backing; his derived claims (Atlantis, advanced civilization) go well beyond the evidence. [†](#ydih-status)
+
+- **Rose granite is piezoelectric** — Hogan: "the granite in there is piezoelectric." Aswan rose granite contains quartz, feldspar, and mica — quartz is strongly piezoelectric. This is correct basic mineralogy. The implication (that pressure on the granite from tidal displacement or other forces generates electrical current in the pyramid) is speculative, but the underlying material property is real. [†](#piezoelectric-granite)
 
 ## Stumbles: Least Credible Claims
 
@@ -232,6 +262,68 @@ All empirical claims are cited inline with `†` linking to entries here. See [`
 - **Dates:** Original YDIH 2007; replication failures and responses ongoing through 2025
 - **Quote/data:** Multiple independent research teams have published peer-reviewed failures to replicate the original nanodiamonds and shocked quartz evidence at Younger Dryas boundary sites. Other teams have found supporting markers. No scientific consensus has formed; the hypothesis is genuinely contested — not a case of fringe science being vindicated by the mainstream. AJ's characterization in his wrap-up overstates the evidentiary status.
 
+### Templar history standard
+
+- **Claim:** The mainstream Templar history Hogan presents (1118–1307) is largely consistent with scholarly consensus
+- **Source:** Riley-Smith, Jonathan. *The Knights Templar and Their World* (Yale, 1975); Barber, Malcolm. *The Trial of the Templars* (Cambridge, 1978, 2nd ed. 2012); Demurger, Alain. *The Last Templar* (Profile Books, 2004)
+- **Dates:** Events 1118–1314; scholarship ongoing
+- **Quote/data:** Founding by Hugh de Payens and Godfrey de Saint-Omer, Temple Mount headquarters under Baldwin II, banking/letter-of-credit system, Philip IV's Friday October 13 1307 arrests, torture, Jacques de Molay's execution March 18 1314 — all documented in primary sources and confirmed by mainstream medievalists. Philip IV and Clement V both died within approximately one year of de Molay's execution (Philip died November 29 1314; Clement died April 20 1314). Templar-linked Masonic organizations including York Rite Templary are real and active today.
+
+### Joseph Warren
+
+- **Claim:** General Joseph Warren's identity and role as described by Hogan are factually accurate
+- **Source:** Cary, John. *Joseph Warren: Physician, Patriot, and Martyr* (University of Illinois Press, 2012); Massachusetts Grand Lodge historical records; Paul Revere Heritage Project
+- **Dates:** Warren's life 1741–1775; scholarship ongoing
+- **Quote/data:** Joseph Warren was a Boston physician and Patriot leader. He was Provincial Grand Master of Masons in Massachusetts for the St. Andrew's Lodge (closely affiliated with Colonial-era Templary). He dispatched Paul Revere on the April 18–19 1775 ride (Hogan says "initiated Paul Revere" — Warren was instrumental in the colonial Masonic network but Revere was already a Mason). Warren was killed at the Battle of Bunker Hill June 17 1775, the first prominent casualty of the Revolution. He is consistently called "the Martyr of Bunker Hill." His brother John Warren helped organize early American Freemasonry. Hogan's claimed descent is unverifiable but the factual substrate is accurate.
+
+### Howard Hogan mayor
+
+- **Claim:** Howard Hogan's mayorship of Aurora, Colorado and his involvement in Denver International Airport development are matters of public record
+- **Source:** Aurora, Colorado municipal records; Gaylord Rockies Resort & Convention Center official site; Denver International Airport historical documentation
+- **Dates:** Hogan's mayorship approximately 1980s–1990s; DIA opened 1995
+- **Quote/data:** Stephen D. Hogan Convention Center at the Gaylord Rockies Resort & Convention Center (Aurora, CO, adjacent to DIA) is named after Howard Hogan. The resort is on what Hogan correctly describes as former Aurora-annexed territory. The annexation / tax revenue arrangement Hogan describes (Denver gets airport taxes, Aurora gets hotel/development taxes) is consistent with the documented DIA development history. Tim Hogan's claim to have helped install the Masonic time capsule Braille plaque is the kind of family-insider detail not independently verifiable from public records but not implausible given the documented family involvement.
+
+### Newton alchemy
+
+- **Claim:** Isaac Newton wrote approximately one million words on alchemy, the majority of his written output, and produced his own Emerald Tablet translation
+- **Source:** Indiana University [Chymistry of Isaac Newton Project](https://webapp1.dlib.indiana.edu/newton/); [Newton Project (University of Sussex)](https://www.newtonproject.ox.ac.uk/); Dobbs, Betty Jo. *The Janus Faces of Genius: The Role of Alchemy in Newton's Thought* (Cambridge, 1991)
+- **Dates:** Newton's alchemical manuscripts 1660s–1720s; projects ongoing
+- **Quote/data:** The Chymistry of Isaac Newton Project documents over 1 million words of Newton's alchemical manuscripts. Dobbs estimates alchemy constituted the greatest single portion of Newton's intellectual effort. Newton's Emerald Tablet translation begins "Tis true without lying, certain and most true" — an extant manuscript. AJ's wrap-up states "85% of everything Newton wrote" — the 85% figure is a common informal restatement; the primary-source documentation confirms alchemy was Newton's dominant written preoccupation.
+
+### Ark capacitor theory
+
+- **Claim:** The Ark's gold-acacia-gold laminate construction is genuinely consistent with electrostatic capacitor function; this has been examined in peer-reviewed academic publishing
+- **Source:** Osgood, John. "The Ark of the Covenant as a Possible Electrical Capacitor." *Jewish Bible Quarterly* (published analysis examining the physics); Exodus 25:10–22 (biblical construction description); basic capacitor physics
+- **Dates:** Biblical description c. 6th century BCE (Deuteronomist); academic analysis published; AJ references in wrap-up 2026-02-12
+- **Quote/data:** A conductor (gold) / insulator (acacia wood) / conductor (gold) sandwich is the physical structure of a parallel-plate capacitor. Wood dried under desert conditions achieves sufficient dielectric strength. Wool fabric (tabernacle curtains) generates triboelectric charge. The Uzzah electrocution passage (2 Samuel 6:6–7) notes instant death upon improper contact. Aaron's rod as a "grounding rod" is a plausible functional interpretation. The Jewish Bible Quarterly paper is the strongest mainstream-adjacent citation for this theory. The leap to miles-range broadcast power remains speculative.
+
+### Akhenaten monotheism
+
+- **Claim:** Akhenaten's promotion of Aten as sole deity, suppression of the polytheist establishment, and the Amarna period are mainstream Egyptology
+- **Source:** Aldred, Cyril. *Akhenaten: King of Egypt* (Thames & Hudson, 1988); Kemp, Barry. *The City of Akhenaten and Nefertiti* (Thames & Hudson, 2012); general Egyptological consensus
+- **Dates:** Akhenaten's reign c. 1353–1336 BCE; scholarship ongoing
+- **Quote/data:** Akhenaten's promotion of Aten as the sole deity, suppression of traditional temples (especially Amun at Karnak), capital relocation to Akhetaten (Tell el-Amarna), and subsequent damnatio memoriae after his death are factual and extensively documented. Nefertiti's origins are genuinely uncertain — she may have been foreign. Tutankhamun was Akhenaten's son (by a secondary queen) and was born Tutankhaten, switching to Amun suffix under the restoration. Hogan's Moses-connection is speculative (held by some Egyptologists including Jan Assmann in *Moses the Egyptian*, 1997) but not mainstream.
+
+### Nag Hammadi
+
+- **Claim:** The Nag Hammadi library was discovered in Egypt in 1945, is geographically close to the Valley of the Kings, and includes the Gospel of Philip with the Mary Magdalene passages Hogan cites
+- **Source:** Robinson, James M. (ed.), *The Nag Hammadi Library in English* (HarperOne, 4th ed. 1996); UNESCO geographical coordinates; Gospel of Philip (NHL Codex II,3)
+- **Quote/data:** Nag Hammadi is in the Qena Governorate, upper Egypt, approximately 80 km from Luxor and the Valley of the Kings — Hogan's "right next to it" overstates proximity but the general area description is accurate. Discovery was December 1945 (farmer Muhammad Ali al-Samman). The library contains 52 texts including Gnostic gospels and Hermetic texts. Gospel of Philip text 63:34–36: "And the companion of the Saviour is Mary Magdalene. But Christ loved her more than all the disciples, and used to kiss her often on her mouth." The presence of Hermetic manuscripts alongside Gnostic texts in the same jars is factual.
+
+### Elephantine Island arc
+
+- **Claim:** Hogan says an undiscovered Arc on Elephantine Island is currently emitting so much energy it is accelerating granite-to-slate metamorphism, and German scientists have been excavating toward it for 60 years
+- **Source:** Transcript direct quotation; German Archaeological Institute (DAI) Elephantine Island excavation records (publicly documented ongoing project)
+- **Dates:** Transcript 2026-02-12; DAI Elephantine project ongoing since 1969
+- **Quote/data:** Hogan: "it's issuing so much energy that it's actually turning the granite into slate on the island, which normally would take thousands of years… German scientists right now are in charge of all that… they've been digging down to it for the last 60 years." The German Archaeological Institute has indeed conducted excavations on Elephantine Island since approximately 1969 (the Swiss Institute also has a presence). Their published work covers the ancient town of Yebu, Khnum temple, and early Jewish community ruins — no anomalous energy sources or Arks have been reported in their publications. Granite-to-slate metamorphism requires specific pressure/temperature conditions not consistent with surface or near-surface radiation from an artifact; this is not how metamorphic geology works.
+
+### Piezoelectric granite
+
+- **Claim:** Rose Aswan granite contains quartz and is piezoelectric; this is correct basic mineralogy
+- **Source:** Standard mineralogy references; quartz piezoelectric properties (first documented by Pierre and Jacques Curie, 1880); Aswan granite composition (quartz, potassium feldspar, sodium plagioclase, hornblende, biotite)
+- **Dates:** Curie experiments 1880; Aswan granite composition documented by geological survey
+- **Quote/data:** Quartz (SiO₂) is a strongly piezoelectric material; mechanical stress generates a measurable voltage. Aswan rose granite is approximately 26–30% quartz by volume. The property is real. Application to the Great Pyramid requires: (a) sufficient stress cycling, (b) a circuit to collect the charge, and (c) a mechanism for coherent current flow through the structure — none of which have been demonstrated. The claim that the pyramid apex emits visible spark discharge from ambient static is a much stronger claim beyond the confirmed piezoelectric property.
+
 ## References
 
 - [Video: Basement #003 Tim Hogan](https://www.youtube.com/watch?v=nr-zETVa8mY) — The Why Files: Operation Podcast, 2026-02-12
@@ -258,7 +350,7 @@ All empirical claims are cited inline with `†` linking to entries here. See [`
 
 ## TODOs
 
-- Fill in Synopsis, Stakes, Strengths, Sins, Steelman, Scorecard from transcript
+- Fill in Sins, Steelman, Scorecard from transcript
 - Independently verify Tim Hogan's claimed credentials and family lineage against historical record
 - Confirm Dateline NBC appearance date
 - Check IMDB for AJ Gentile voice acting credits (IMDB WAF-blocked during research)
@@ -269,3 +361,4 @@ All empirical claims are cited inline with `†` linking to entries here. See [`
 - 2026.03.22 Stub created; Specimen and Sources filled from video metadata clipboard; Evidence entries added for credentials and incentives
 - 2026.03.22 Deep research pass: 4 Reddit thread batches fetched; Sources expanded with community record for both subjects; added Evidence entries for argyria, legal record, masonic community record, AJ self-describes-as-entertainer; References expanded with all research links
 - 2026.03.22 Full transcript analysis (609 lines, 305 turns); Stumbles (11 claims) and Silence (9 items) written; Evidence entries added: ORME, folk etymologies, Lewis & Clark records, Talpiot Tomb, Columbus wife, Oak Island, mammoth carvings, Chinon Parchment, YDIH status
+- 2026.03.22 Synopsis, Score, Stakes (5 claims), Strengths (8 claims) written; Evidence entries added: templar-history-standard, joseph-warren, howard-hogan-mayor, newton-alchemy, ark-capacitor-theory, akhenaten-monotheism, nag-hammadi, elephantine-island-arc, piezoelectric-granite
