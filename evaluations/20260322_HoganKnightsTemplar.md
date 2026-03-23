@@ -166,71 +166,18 @@ Hogan makes approximately 20 distinct scriptural or textual claims. Evaluated be
 
 ## Sins: Epistemic Hygiene
 
-The following ten violations were identified by direct quote from the transcript. Each corresponds to one or more of the 18 [BrianThinks Commandments](../BrianThinks.md#18-commandments-how-to-know).
+Three violations of argumentative conduct, each cited with a direct transcript quote. See also **Believe Your Beliefs** (next section), which tests the same claims against implied market predictions — a distinct form of epistemic failure. Each maps to the 18 [BrianThinks Commandments](../BrianThinks.md#18-commandments-how-to-know).
 
 ---
 
-**1. Gold teleports to another dimension — presented as established mechanism, not speculation**
-> *Hogan:* "the gold disappears. Well, the lattice structure of the molecules falls away… But even before that, it literally disappears into a higher dimension. What? Yeah."
-
-*Commandment violated: **Be Falsifiable**, **Converge On Facts**.* Hogan states a phase-transition into "a higher dimension" as if it were an observed, reproducible process. No experimental datum is offered.  AJ's "What?" signals genuine surprise and is immediately swept past. The claim is unfalsifiable by construction — "another dimension" cannot be monitored, measured, or refuted. A falsifiable version would specify at minimum a temperature, a pressure, a spectroscopic signature, or a detectable mass change. None are given. [†](#orme-pseudoscience)
-
----
-
-**2. "Levites" sounds like "levitation" — phonetic coincidence treated as causal evidence**
-> *AJ:* "the priest that carried the Ark wore the Levites. Right. It sounds a lot like levitation."
-> *Hogan:* "Levitation. Yes. Right. Exactly. Yeah. Not that the word levitation is a Hebrew word, but I mean, you tell me where the word levitation comes from. It's just interesting."
-
-*Commandment violated: **Test the Best**, **Also Assess Answers**.* Hogan concedes *levitation* is not Hebrew — then cites the resemblance anyway as if it were suggestive. *Levitation* derives from Latin *levitas* (lightness), via *levare* (to lift), a wholly unrelated Indo-European root. *Levi* (לֵוִי) is a Hebrew name meaning "attached" or "joined." These words entered English from entirely different language families. Hogan plants the insinuation ("you tell me") while offering no etymology. This is exactly what the **Also Assess Answers** commandment identifies: implied answers disguised as open questions. [†](#folk-etymologies)
-
----
-
-**3. Host declares no more research needed before the interview begins**
-> *AJ:* "I started listening to your interviews and I said, I don't need to do any more research. This guy knows everything about the Knights."
-
-*Commandment violated: **Question Revelation**, **Steelman First**.* This is the show's epistemic baseline, stated on-camera before any claim is evaluated. The host self-reports that a single persuasive source has closed the investigation. The **Question Revelation** commandment applies directly: "There is a persuasive expert or witness for anything you want to believe. No source deserves faith — only scrutiny. Test each against all others that should align with it." No archaeologist, Masonic historian, physicist, or even a competing alternate-history theorist is introduced.
-
----
-
-**4. Jesus' bones held in a DC national park vault — claim designed to be permanently unverifiable**
-> *Hogan:* "One of the vaults is in Washington, D.C... It's on national park property... even the park service doesn't even know it's there."
-> *Hogan:* "We're finally at a point where not only do we have the technology to test them, but we have the technology to reveal them all to the world at once."
-
-*Commandment violated: **Bet On It**, **Be Falsifiable**, **Predict It**.* The claim is structured to be irrefutable: the location is secret, the evidence is sequestered, and the moment of disclosure is indefinitely postponed ("it's time" — yet no date, no institution, no protocol). A testable version would include: a target date for disclosure, a specified testing institution, an agreed chain of custody, and a named counterparty to a bet. Hogan offers none. His order has "been hanging on to these things for centuries" and the conditions for revelation are entirely within his own control — meaning skeptics have no path to falsification except waiting forever. [†](#talpiot-tomb)
-
----
-
-**5. Monoatomic gold seller promotes monoatomic gold's miraculous properties — financial interest never disclosed**
+**1. Monoatomic gold seller promotes monoatomic gold's miraculous properties — financial interest never disclosed**
 > *Hogan:* "Templar Made is my company where we manufacture monoatomic gold… we make that available to the public."
 
-*Commandment violated: **Vide Cui Bono**.* The episode spends approximately 30 minutes establishing that monoatomic gold cures cancer, enables levitation of heavy objects, powers ancient capacitive energy grids, and may fuel UAPs. Only at the end of the commercial pitch segment does Hogan mention that he manufactures and sells monoatomic gold through *Templar Made*. The financial interest — speaker benefits directly if audience buys the supernatural premise — is never named by either party. AJ's closing endorsement ("I can't debunk it") is not a disclosure; it is a qualified recommendation. [†](#hogan-financial-incentives)
+*Commandment violated: **Vide Cui Bono**.* The episode spends approximately 30 minutes establishing that monoatomic gold cures cancer, enables levitation of heavy objects, powers ancient capacitive energy grids, and may fuel UAPs. Only at the end of the commercial pitch segment does Hogan mention that he manufactures and sells monoatomic gold through *Templar Made*. The financial interest — speaker benefits directly if the audience buys the supernatural premise — is never named by either party. AJ's closing endorsement ("I can't debunk it") is not a disclosure; it is a qualified recommendation. [†](#hogan-financial-incentives)
 
 ---
 
-**6. "On" (English light-switch) derived from Egyptian "On" meaning light — no etymological pathway**
-> *Hogan:* "the word on, for example, when you turn on a light switch, on was the ancient Egyptian word for light. So you're literally turning on the light, you know, and there's lots of words like that that we've inherited."
-
-*Commandment violated: **Test the Best**, **Master the Literature**.* The English verb *on* (Old English *on*, Proto-Germanic \*ana, Proto-Indo-European \*h₂en-) meaning "into contact / activated" has a continuous documented etymology with no phonological or semantic route through Egyptian. The ancient Egyptian city *Iunu* (often rendered *On* in the Hebrew Bible, Greek *Heliopolis*) was a proper noun meaning "pillar city" — not a common noun meaning light. The coincidence is one consonant shared between unrelated language families. Hogan presents this as established philology ("you're literally turning on the light") without caveat. [†](#folk-etymologies)
-
----
-
-**7. Harry Truman quote "we have discovered an ancient weapon" stated as fact — AJ himself couldn't verify it**
-> *Hogan:* "Harry Truman, when he wrote in his diary entry about the discovering of the atomic bomb, he says… 'we have discovered an ancient weapon.' Those were his exact words."
-
-*AJ (in his post-episode fact-check):* "I searched Truman's actual diary entries from 1945. He calls it 'the most terrible thing ever discovered.' But I couldn't find that specific 'ancient weapon' language anywhere."
-
-*Commandment violated: **Converge On Facts**, **Question Revelation**.* Hogan delivers the quote with the confidence of citation ("those were his exact words") while offering no source. AJ's own post-episode research found the opposite: Truman's documented phrasing does not include "ancient weapon." Yet Hogan's claim is left standing in the episode itself, delivered to 60,000+ viewers before the fact-check note appears. The commandment "Converge on Facts" specifies: "evidence converges. Is the evidence not converging toward your factual claim? Then you don't have a hypothesis to interpret the evidence, you just have faith to shelter you from it."
-
----
-
-**8. "Saqqara → sacred" and "Rast + Tau → Rosicrucian" — made-up etymologies deployed as argumentative pivots**
-> *Hogan:* "That word Saqqara is actually where we get the word sacred from… Rast became rose and Tau became cross. Oh my goodness. So they adopted the symbol of the rose cross to talk about the secret underground area of Egypt."
-
-*Commandment violated: **Test the Best**, **Argue Your Best**.* *Sacred* is from Latin *sacer* (holy), Proto-Indo-European \*sak-, with continuous documentation through Old French *sacré* into Middle English. *Saqqara* is from Arabic *Ṣaqqāra*, a toponym named after the hawk-deity *Sokar* (*Seker*). No linguistic pathway connects them. *Rosicrucian* is attested from German *Rosenkreuzer* (rose + cross), a 17th-century coinage documented to the 1614–1616 *Fama Fraternitatis* pamphlets. The "Rast-Tau" derivation is Hogan's construction, not Rosicrucian scholarship. These fabricated etymologies are not marginal asides — they are deployed as pivots that "explain" how Templar knowledge encoded Egyptian secrets in European symbols, which is the thesis of the episode's core section. [†](#folk-etymologies)
-
----
-
-**9. "Mainstream archaeology is going to become fringe" — consensus dismissed with no meta-theory**
+**2. "Mainstream archaeology is going to become fringe" — consensus dismissed with no meta-theory**
 > *AJ:* "In short order, mainstream archaeology is going to become the fringe archaeology."
 > *Hogan:* "I think you're right."
 
@@ -238,11 +185,52 @@ The following ten violations were identified by direct quote from the transcript
 
 ---
 
-**10. "We've been doing it for a thousand years" — circular authority claim seals off scrutiny**
+**3. "We've been doing it for a thousand years" — circular authority seals off scrutiny**
 > *Hogan:* "We're the only group that's allowed to do this because we've been doing it for the last thousand years."
 > *Hogan:* "They've always been respectful… so they just give us access, you know, because we've always been there."
 
-*Commandment violated: **Be Falsifiable**, **Question Revelation**.* The entire evidential architecture rests on a chain of authority: the Templars have secret knowledge *because* they have unbroken access, and they have unbroken access *because* they are the legitimate Templars. The lineage verifies the access; the access verifies the lineage. To question Hogan's historical claims is to question the lineage; but the lineage is established by those same historical claims. This is a closed loop. The commandment applies: "Test each [source] against all others that should align with it." A Templar order with verified thousand-year continuity, private Egyptian archaeological access, and possession of the bones of Jesus would leave a very substantial paper trail — in Vatican archives, in Egyptian antiquities authority records, in Zahi Hawass's memoirs. None is offered. [†](#hogan-masonic-community-record)
+*Commandment violated: **Question Revelation**.* The entire evidential architecture rests on a chain of authority: the Templars have secret knowledge *because* they have unbroken access, and they have unbroken access *because* they are the legitimate Templars. The lineage verifies the access; the access verifies the lineage. The commandment specifies: "No source deserves faith — only scrutiny. Test each against all others that should align with it." A Templar order with verified thousand-year continuity, private Egyptian archaeological access, and possession of the bones of Jesus would leave a substantial paper trail — in Vatican archives, Egyptian antiquities authority records, Zahi Hawass's public writings. None is offered. [†](#hogan-masonic-community-record)
+
+## Believe Your Beliefs
+
+*The **Believe Your Beliefs** commandment asks: "If you are right, what markets move? What investments shift? What whistles blow? What insiders squeal? What opponents squawk? If those who should share your theory seem not to, it can't be rescued by adding extra theories about motives."*
+
+*This is distinct from **Silence** (what Hogan withheld about himself — personal record, conflicts of interest, community rejection). Believe Your Beliefs asks what the **world** would look like if Hogan were right, and whether it does.*
+
+---
+
+**1. Monoatomic gold cures cancer — yet zero oncological or pharmaceutical investigation**
+> *Hogan:* "[monoatomic gold] had incredible health benefits, you know, in terms of curing cancer and everything else."
+
+The global pharmaceutical industry spends $250B+ annually on cancer R&D precisely because any reliable cure would be among the most profitable products in history. If ORME gold reliably reduced tumors, independent oncology labs, university cancer centers, and biotech startups would have investigated it within years of Hudson's 1989 patents. MEDLINE contains no peer-reviewed clinical study of monoatomic gold as a cancer treatment. Hogan is the primary commercial producer of the substance. That he alone profits from a claim every oncologist in the world has passed over is precisely the pattern the commandment flags. [†](#orme-pseudoscience)
+
+---
+
+**2. Jesus's bones have been in a DC national park vault since the Middle Ages — no intelligence service, journalist, or Vatican agent has found or leaked this**
+> *Hogan:* "One of the vaults is in Washington, D.C… on national park property… even the park service doesn't even know it's there."
+
+The verified recovery of Jesus's bones would be the most consequential geopolitical and religious event in history — destabilizing the world's largest institution, triggering financial and political consequences on a global scale. A DC vault on US national park land would be subject to routine soil surveys, utility easements, ground-penetrating radar surveys, and periodic excavation. For 700 years, no Templar member, no national park employee, no intelligence contractor, and no investigative journalist has surfaced credible evidence of it. Unlike most conspiracy claims, this one has a specific, testable location on US government-administered land with known physical characteristics ("buried under crushed lime and shells"). [†](#talpiot-tomb)
+
+---
+
+**3. A civilization as advanced as ours existed 12,900 years ago — but has left no industrial signature in any sediment or ice core record**
+> *Hogan:* "I think by some accounts, the earth was as populated and as advanced as it is today."
+
+A civilization comparable to ours would produce non-trivial geological signatures even over thousands of years: isotopic traces of nuclear activity, heavy metal pollution layers, synthetic organic compounds, and anomalous carbon-14 profiles in sediment cores. These are exactly the records that paleoclimatologists routinely sample, have sampled globally, and publish in open literature. Critically: the YDIH cataclysm signal that Hogan and AJ cite approvingly as "mainstream catching up" was found precisely because scientists were looking for unusual sediment signatures. The same global sediment science that found the impact layer has not found industrial civilization. [†](#templar-history-standard)
+
+---
+
+**4. Lewis and Clark's true mission was checking on a Templar vault — but their million-word journals contain no reference to it**
+> *Hogan:* "Lewis and Clark, when they did their excursion… one of the things they were checking on was that vault. That was part of their mission."
+
+The Lewis and Clark journals (Moulton edition, 13 volumes) are among the most thoroughly analyzed primary documents in American history, containing meticulous daily records of geography, flora, Native encounters, and logistics. Jefferson's instructions to Lewis (June 20, 1803, Library of Congress) are fully published. Neither documents nor letters contain any reference — coded or otherwise — to vaults, Templar artifacts, or esoteric mission. If two commissioned officers and their thirty-three crew members were secretly running a parallel Templar mission, they achieved perfect documentary silence across millions of words written for posterity. [†](#lewis-clark-records)
+
+---
+
+**5. The Templars have exclusive overnight access to the Great Pyramid — but the Egyptian antiquities authority has no record of this standing arrangement**
+> *Hogan:* "We're the only group that's allowed to do this because we've been doing it for the last thousand years… They kick all the tourists off the Giza Plateau. We get a military escort."
+
+Zahi Hawass served as Secretary-General of Egypt's Supreme Council of Antiquities (1996–2011), wrote extensively about pyramid access control, and publicly documented controversies over unauthorized New Age ceremonies at Giza. A standing, formally recognized arrangement granting a Western private organization exclusive overnight rights to the Great Pyramid would require documented permission from the Ministry of Antiquities, named Egyptian counterparties, and leave a bureaucratic record. Hawass has never referenced it. No Egyptian official, no independent journalist covering archaeological access disputes, and no former Templar tour participant has produced documentation of the arrangement.
 
 ## Silence: Things Unsaid, Implications, Counterfactuals
 
@@ -556,3 +544,4 @@ All empirical claims are cited inline with `†` linking to entries here. See [`
 - 2026.03.22 Synopsis, Score, Stakes (5 claims), Strengths (8 claims) written; Evidence entries added: templar-history-standard, joseph-warren, howard-hogan-mayor, newton-alchemy, ark-capacitor-theory, akhenaten-monotheism, nag-hammadi, elephantine-island-arc, piezoelectric-granite
 - 2026.03.22 Bible Claims section written (~20 claims from transcript; grouped: accurate citations, plausible/mixed, false or contradicted by text); Evidence entries added: manna-etymology, burning-bush-text, priests-rope-legend, lazarus-bethany-etymology, nicaea-canon, amen-amun-etymology, adonai-etymology, mount-ararat-etymology
 - 2026.03.22 Sins: Epistemic Hygiene written (10 violations with direct quotes; mapped to BrianThinks 18 Commandments)
+- 2026.03.22 Sins revised to 3 violations (removed etymology/host-posture items already covered in Stumbles/Silence); added Believe Your Beliefs section (5 market/prediction failures)
