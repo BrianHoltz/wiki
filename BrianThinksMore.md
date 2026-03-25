@@ -158,3 +158,59 @@ Liberty is volition in the absence of aggression. Thus justice can also be defin
 - **Humility:** embrace ignorance and uncertainty
 - define your terms, don't use them as cudgels
 - If your Cabal can conspire to make all the world actors uphold this story you call fake, why don't they use that global control for other purposes? Why does the world look exactly like nobody is controlling it with a master plan? Why are there so many wars and enduring conflicts? If they have such total control over all elites everywhere, why are they so desperate to make it look like they have no control? What are they afraid of? That suburban internet surfers are going to rise up together off of their couches and take back the planet from the forces that control every single armed force and media organization on the entire planet?
+
+## Commandments: Classification
+
+| # | Commandment | Type | Cluster |
+|---|---|---|---|
+| 1 | Vide Cui Bono | Commission | **Biases & motives** |
+| 2 | Avoid Rage Bait | Commission | **Biases & motives** |
+| 3 | Be Charitable | Commission | **Confront best opposition** |
+| 4 | Steelman First | Silence | **Confront best opposition** |
+| 5 | Master the Literature | Silence | **Confront best opposition** |
+| 6 | Beware Bias | Commission | **Biases & motives** |
+| 7 | Also Assess Answers | Silence | **Committing** |
+| 8 | Bet On It | Silence | **Committing** |
+| 9 | Predict It | Silence | **Committing** |
+| 10 | Converge On Facts | Commission | **Evidence & argument standards** |
+| 11 | Be Falsifiable | Silence | **Committing** |
+| 12 | Explain Consensus | Silence | **Committing** |
+| 13 | Believe Your Beliefs | Silence | **Committing** |
+| 14 | Argue Your Best | Commission | **Evidence & argument standards** |
+| 15 | Test The Best | Commission | **Evidence & argument standards** |
+| 16 | Falsus Vel Tacitus | Silence | **Evidence & argument standards** |
+| 17 | Audit Luxury Beliefs | Commission | **Biases & motives** |
+| 18 | Follow the Money | Silence | **Committing** |
+| 19 | Question Revelation | Commission | **Evidence & argument standards** |
+
+**Cluster summary:**
+- **Biases & motives** — 1,2,6,17 (4: all commission)
+- **Confront best opposition** — 3,4,5 (3: 1 commission, 2 silence)
+- **Committing** — 7,8,9,11,12,13,18 (7: all silence)
+- **Evidence & argument standards** — 10,14,15,16,19 (5: 4 commission, 1 silence)
+
+## Commandments: Proposed Reorder
+
+Narrative: *clean your lens → face the hardest challenge → weigh the evidence → stand behind your conclusion*
+
+| New # | Commandment | Old # | Cluster |
+|---|---|---|---|
+| 1 | Vide Cui Bono | 1 | Biases & motives |
+| 2 | Avoid Rage Bait | 2 | Biases & motives |
+| 3 | Beware Bias | 6 | Biases & motives |
+| 4 | Audit Luxury Beliefs | 17 | Biases & motives |
+| 5 | Be Charitable | 3 | Confront best opposition |
+| 6 | Steelman First | 4 | Confront best opposition |
+| 7 | Master the Literature | 5 | Confront best opposition |
+| 8 | Converge On Facts | 10 | Evidence & argument standards |
+| 9 | Argue Your Best | 14 | Evidence & argument standards |
+| 10 | Test The Best | 15 | Evidence & argument standards |
+| 11 | Falsus Vel Tacitus | 16 | Evidence & argument standards |
+| 12 | Question Revelation | 19 | Evidence & argument standards |
+| 13 | Also Assess Answers | 7 | Committing |
+| 14 | Bet On It | 8 | Committing |
+| 15 | Predict It | 9 | Committing |
+| 16 | Be Falsifiable | 11 | Committing |
+| 17 | Explain Consensus | 12 | Committing |
+| 18 | Believe Your Beliefs | 13 | Committing |
+| 19 | Follow the Money | 18 | Committing |

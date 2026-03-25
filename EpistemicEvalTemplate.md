@@ -56,32 +56,32 @@ A framework for critically evaluating any specimen — interview, podcast, video
 
 - Probabilities, falsification, counterfactuals, implications
 
-## Sins: Epistemic Hygiene
+## Sins: Worst Epistemic Commissions
 
-Active violations — errors in what the specimen *said*, argued, or reasoned. Each violation names the commandment, quotes the instance, and explains the failure. Native commandments (violations of what was *said* or *concluded*):
+Sins of commission — errors in what the specimen *said*, argued, or reasoned. Group violations under each commandment as a subheading, with quotes and explanation. Native commandments (violations of what was *said* or *concluded*):
 
-- **Vide Cui Bono** — undisclosed incentives shaping the argument
-- **Avoid Rage Bait** — anecdotes and strawmen substituted for aggregate data
-- **Be Charitable** — opponents' positions misrepresented or bad-faithed
-- **Beware Bias** — motivated reasoning, anchoring, tribal favoritism unreflected
-- **Converge On Facts** — evidence not converging is treated as converging
-- **Be Falsifiable** — claims immunized against any possible disconfirmation
-- **Argue Your Best** — weakest argument led; stronger ones abandoned without examination
-- **Test The Best** — quantity of claims substituted for quality of best evidence
-- **Audit Luxury Beliefs** — beliefs held at zero personal cost, signaling loyalty over truth
+- 💰 **Vide Cui Bono** — undisclosed incentives shaping the argument
+- 🪤 **Avoid Rage Bait** — anecdotes and strawmen substituted for aggregate data
+- 🤡 **Be Charitable** — opponents' positions misrepresented or bad-faithed
+- ⚖️ **Beware Bias** — motivated reasoning, anchoring, tribal favoritism unreflected
+- 🔀 **Converge On Facts** — evidence not converging is treated as converging
+- 🏆 **Argue Your Best** — weakest argument led; stronger ones abandoned without examination
+- 🏆 **Test The Best** — quantity of claims substituted for quality of best evidence
+- 📜 **Question Revelation** — contradicting sources not tested against each other
+- 🏷️ **Audit Luxury Beliefs** — beliefs held at zero personal cost, signaling loyalty over truth
 
-## Silence: Things Unsaid
+## Silence: Most Convenient Omissions
 
-Omission violations — what a forthright, informed, non-conflicted speaker *should have surfaced* but didn't. For each item ask: what did they know or should have known, and why wasn't it said? Native commandments (violations of what was *withheld*):
+Sins of omission — what a forthright, informed, non-conflicted speaker *should have surfaced* but didn't. Group violations under each commandment as a subheading; for each ask: what did they know or should have known, and why wasn't it said? Native commandments (violations of what was *withheld*):
 
 - **Falsus Vel Tacitus** — source is wrong or silent about something they should have known or admitted
-- **Follow the Money** — undisclosed financial conflicts or unexploited market implications
+- **Follow the Money** — unexploited market implications
 - **Master the Literature** — existing scholarship that contradicts the claim, omitted
 - **Also Assess Answers** — implied conclusions hidden behind "just asking questions"
 - **Steelman First** — best opposing argument not presented to the audience
 - **Believe Your Beliefs** — market/prediction implications of the claim, not surfaced
 - **Explain Consensus** — expert disagreement not accounted for in the argument
-- **Question Revelation** — contradicting sources exist and were not tested against
+- **Be Falsifiable** — claims not stated in a form that could be disconfirmed
 - **Bet On It** — no odds offered; evasion of epistemic accountability
 - **Predict It** — no testable predictions stated; unfalsifiable future left implicit
 
