@@ -26,7 +26,7 @@
 
 - **Justice²**: Justice is minimizing, reversing, and punishing aggression—the most liberty for the most persons. Aggression is reversed by damages or property restoration. Serious aggression warrants loss of freedom; extreme aggression may forfeit life.
 
-- **Return²**: When property was unjustly taken, the victim or heir may reclaim it, compensating innocent possessors for improvements. Those possessors then have claims against those who originally took it or negligently ignored the injustice.
+- **Return²**: When property was unjustly taken, the victim or proven heir may reclaim (their share of) it, compensating innocent possessors for improvements. Those possessors then have claims against those who originally took it or negligently ignored the injustice.
 
 ## Precepts Notes
 
