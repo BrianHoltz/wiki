@@ -1,8 +1,9 @@
 WIKI_DIR  := $(shell pwd)
+# Canonical deploy for the markdown wiki tree (managed separately from site-wide rsync).
 REMOTE    := holtzorg@holtz.org:~/public_html/Thoughts/wiki/
 ROOT_DIR  := $(WIKI_DIR)/../..
 ROOT_REMOTE := holtzorg@holtz.org:~/public_html/
-EXCLUDES  := $(HOME)/rsync_excludes
+EXCLUDES  := $(HOME)/bin/rsync_excludes
 
 .PHONY: build deploy redirect
 
