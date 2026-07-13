@@ -10,6 +10,7 @@
 * [Super Intelligence](super-intelligence.md)
 * [AI Economic Evals](ai-economic-evals.md)
 * [AI Predictions](ai-predictions.md)
+* [How I Use AI](HowIUseAI.md)
 
 [Evaluations]()
 
