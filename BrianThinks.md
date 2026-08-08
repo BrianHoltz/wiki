@@ -33,7 +33,7 @@ Visit [BrianThinks](https://holtz.org/BrianThinks) to engage this worldview.
 - **Acquiring rights**¹: Society chooses when a fetus in the second trimester is rebuttably presumed to have the right to survive eviction if feasible. Society chooses when a minor between 14 and 18 is rebuttably presumed to have the right to adult autonomy.
 - **Arrivals**¹. Creation and migration of persons is unrestricted for arrivals posing no hazard or aggression risk and having a sponsor liable for their subsistence and their pollution, congestion, or depletion of the commons. Violations can evict migrants or prohibit creators.
 
-## 19 Commandments: how to know
+## 21 Commandments: how to know
 
 *For each there is ~99% confidence I'll always support this advice.*
 
@@ -51,12 +51,14 @@ Visit [BrianThinks](https://holtz.org/BrianThinks) to engage this worldview.
 - **Be Falsifiable**: A skeptic of conspiracies and paranormality could at any moment be proved wrong by new evidence. What headline could prove a Believer wrong? Only one: "Global Prank Revealed: All Witnesses Admit Fakery!" A belief so immune to evidence has a name: religion.
 - **Explain Consensus**: The consensus is evidence to explain. You must explain why your contrarian theory is right AND why the experts disagree with it. Your theory is only as strong as your meta-theory for why it's losing. If your meta-theory is weak, so is your theory.
 - **Believe Your Beliefs**: If you are right, what markets move? What investments shift? What whistles blow? What insiders squeal? What opponents squawk? If those who should share your theory seem not to, it can't be rescued by adding extra theories about motives and "controlled opposition".
-- **Argue Your Best**. Pick your best argument and defend it first. If it's weak and you switch to another, it suggests your remaining arguments are weaker. If you won't explore whether your lead argument was valid, then you don't care whether your belief is valid.
+- **Argue Your Best**. Pick your best argument and defend it first. If it's weak and you switch to another, it suggests your remaining arguments are weaker. If you won't explore why your lead argument failed, then you don't care whether your belief is valid.
 - **Test The Best**: What matters is the quality of the best evidence, not the quantity of the rest. A haystack of claims doesn't imply a needle of truth. As every examined straw again looks like hay, the odds of a needle go down not up.
-- **Falsus Vel Tacitus**: If a source is wrong or silent about something they should have known or admitted, then ask why they don't mind deceiving you. And if you don't mind it either, then ask whether you seek insight vs. mere confirmation or titillation.
+- **Hear Loud Silence**: If a source is silent (or wrong) about something they should have known or admitted, then ask why they don't mind deceiving you. And if you don't mind it either, then ask whether you seek insight vs. mere confirmation or titillation.
 - **Audit Luxury Beliefs**: On topics with low personal stakes — politics, religion, history, culture, tribe — the believer pays no cost for being wrong. Question your beliefs that feel good or signal loyalty. Curate your beliefs for uncomfortable but defensible truth.
 - **Follow the Money**: If your belief implies an unexploited market opportunity, then why has that money been left on the sidewalk? Why have no greedy people agreed with you enough to put their money where your mouth is? If the greedy ignore it, shouldn't you?
 - **Question Revelation**: There is a persuasive expert or witness for anything you want to believe. No source deserves faith — only scrutiny. Test each against all others that should align with it. Truth is a boring web of all sources, not an exciting revelation from one.
+- **Size the Signal**: Don't over-index on weak directional signals. Our soft pink brains yearn for simple binary signs to hallucinate clarity about the complexities of nutrition, epidemiology, history, and economics. Focus on magnitudes that are robust to confounders.
+- **Demand Tested Evidence**: There is an anecdote or expert for any desired belief. Cases, cross-sections, retrospectives, and cohorts are hints, not proof. Infer causation from replication, pre-registered RCTs,and  meta-analyses. Trust literatures, not stories or credentials.
 
 ## Credits: who to know
 
