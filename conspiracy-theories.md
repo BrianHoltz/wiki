@@ -207,7 +207,7 @@ Delta is from the year the phenomenon was first seriously claimed/hypothesized t
 | 1857      | 1639         | 218   | Giant squid                           |
 | 1860      | 500BCE       | 2360  | Gorilla                               |
 | 1902      | 1887         | 15    | Okapi                                 |
-| 1930      | 1892         | 38    | Viruses as disease agents             |
+| 1930c     | 1898         | 32    | Viruses as disease agents             |
 | 1956      | 1930         | 26    | Neutrinos                             |
 | 1971      | 1916         | 55    | Black holes                           |
 | 1974      | 1916         | 58    | Gravitational waves                   |
