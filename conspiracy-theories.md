@@ -206,8 +206,10 @@ Delta is from the year the phenomenon was first seriously claimed/hypothesized t
 | 1830      | 1798         | 32    | Platypus                              |
 | 1857      | 1639         | 218   | Giant squid                           |
 | 1860      | 500BCE       | 2360  | Gorilla                               |
+| 1870c     | 1847         | 23    | Hand contamination causes puerperal fever |
+| 1880c     | 1847         | 33    | Germs as disease agents               |
 | 1902      | 1887         | 15    | Okapi                                 |
-| 1930c     | 1898         | 32    | Viruses as disease agents             |
+| 1930c     | 1898         | 32    | Filterable viruses as disease agents  |
 | 1956      | 1930         | 26    | Neutrinos                             |
 | 1971      | 1916         | 55    | Black holes                           |
 | 1974      | 1916         | 58    | Gravitational waves                   |

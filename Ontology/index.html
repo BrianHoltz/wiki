@@ -1,0 +1,680 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>20 Questions Noun Hierarchy</title>
+<style>
+:root { color-scheme: light dark; --accent: #2f6feb; --panel: #f6f8fa; --muted: #57606a; }
+body { font: 15px/1.45 system-ui, -apple-system, sans-serif; margin: 0 auto; max-width: 1100px; padding: 24px; }
+h1 { margin-bottom: 6px; }
+.intro, .question { background: var(--panel); border-left: 4px solid var(--accent); padding: 10px 14px; margin: 10px 0; }
+.controls { display: flex; gap: 8px; flex-wrap: wrap; margin: 18px 0; }
+input { flex: 1 1 280px; padding: 9px; border: 1px solid #8c959f; border-radius: 6px; }
+button { padding: 9px 12px; border: 1px solid #8c959f; border-radius: 6px; cursor: pointer; }
+details { margin: 4px 0 4px 12px; }
+summary { cursor: pointer; font-weight: 650; padding: 5px; }
+summary:hover { background: var(--panel); }
+.children { border-left: 1px solid #8c959f; margin-left: 9px; padding-left: 8px; }
+.question { color: var(--muted); font-size: .94em; }
+.path, .leaf small { color: var(--muted); font-size: .82em; }
+.leaf { display: flex; gap: 12px; justify-content: space-between; padding: 3px 6px 3px 25px; }
+.leaf:hover { background: var(--panel); }
+[hidden] { display: none !important; }
+</style>
+</head>
+<body>
+<h1>20 Questions Noun Hierarchy</h1>
+<div class="intro"><strong>Opening question:</strong> Is the answer primarily physical, living, or abstract?</div>
+<div class="controls">
+  <input id="search" type="search" placeholder="Search nouns or categories...">
+  <button id="expand">Expand all</button>
+  <button id="collapse">Collapse all</button>
+</div>
+<main id="tree"><details class="node" data-search="Living Animal Vertebrate Mammal Companion and work dog cat horse cow pig goat sheep rabbit hamster mouse rat donkey camel llama alpaca elephant Wild land lion tiger bear wolf fox deer moose elk giraffe zebra rhinoceros hippopotamus gorilla chimpanzee kangaroo panda koala squirrel skunk raccoon Marine and flying whale dolphin seal walrus bat monkey sloth otter beaver Bird chicken duck goose turkey penguin eagle hawk owl parrot pigeon crow raven robin sparrow flamingo peacock swan woodpecker hummingbird Reptile and amphibian snake lizard turtle tortoise crocodile alligator frog toad salamander newt Fish salmon trout tuna cod bass carp goldfish shark ray seahorse eel piranha Invertebrate Insect and arthropod ant bee wasp fly mosquito butterfly moth beetle ladybug grasshopper cricket dragonfly spider scorpion tick flea centipede millipede Mollusk and worm snail slug clam oyster mussel scallop squid octopus earthworm leech Aquatic invertebrate crab lobster shrimp jellyfish coral starfish sea urchin sponge Plant Food crop apple orange banana lemon grape strawberry watermelon tomato potato carrot onion garlic lettuce spinach corn wheat rice bean pea soybean pepper mushroom coffee plant tea plant cocoa plant Tree and shrub oak pine maple birch willow palm cedar redwood sequoia cactus bamboo rose bush grapevine Flower and garden rose tulip daisy sunflower lily orchid violet lavender daffodil marigold fern ivy moss grass weed Fungus and microbe mushroom truffle mold yeast bacterium virus alga plankton Biological part or product bone tooth hair feather skin blood egg seed pollen wood milk honey silk leather Artifact Tool and instrument Cutting and shaping knife scissors saw axe razor chisel plane file grater drill screwdriver Fastening and gripping hammer wrench pliers clamp vise screw nail bolt staple tape measure level Measuring and observing ruler scale thermometer clock watch compass microscope telescope camera binoculars calculator Device and machine phone computer tablet television radio printer robot refrigerator oven washing machine vacuum fan air conditioner generator motor battery light bulb remote control Container and household Kitchen pot pan kettle bowl plate cup glass mug fork spoon chopsticks whisk spatula ladle colander bottle jar can basket Home chair table desk bed sofa shelf cabinet drawer mirror lamp candle towel blanket pillow broom mop bucket umbrella key lock door window Garment and personal item shirt coat dress pants skirt shoe boot sock hat glove scarf belt pajamas uniform ring necklace glasses wallet backpack handbag book newspaper toy doll ball puzzle Vehicle and structure Vehicle car truck bus bicycle motorcycle train tractor ship boat submarine airplane helicopter rocket spaceship wheelchair Structure house apartment school hospital church store office factory restaurant castle bridge road dam tower stadium temple pyramid statue fence tent Natural substance Material water ice steam air fire smoke soil sand clay mud rock stone metal iron steel gold silver copper glass plastic paper rubber oil gasoline salt sugar Earth and weather mountain hill valley canyon cave island beach desert forest river lake ocean waterfall cloud rain snow wind storm lightning rainbow earthquake volcano flood hurricane tornado Space and celestial Sun Moon Earth planet star comet asteroid meteor galaxy nebula black hole constellation Geographic entity Natural region Arctic Antarctica Amazon Sahara Pacific Ocean Atlantic Ocean Rocky Mountains Alps Grand Canyon Great Barrier Reef national park island Human place New York London Paris Tokyo Rome Washington United States Canada Mexico China India France city village capital airport museum" open><summary>Physical</summary><div class="question"><strong>Suggested question:</strong> Can it be touched or located in physical space?</div><div class="path">Physical</div><div class="children"><details class="node" data-search="Animal Vertebrate Mammal Companion and work dog cat horse cow pig goat sheep rabbit hamster mouse rat donkey camel llama alpaca elephant Wild land lion tiger bear wolf fox deer moose elk giraffe zebra rhinoceros hippopotamus gorilla chimpanzee kangaroo panda koala squirrel skunk raccoon Marine and flying whale dolphin seal walrus bat monkey sloth otter beaver Bird chicken duck goose turkey penguin eagle hawk owl parrot pigeon crow raven robin sparrow flamingo peacock swan woodpecker hummingbird Reptile and amphibian snake lizard turtle tortoise crocodile alligator frog toad salamander newt Fish salmon trout tuna cod bass carp goldfish shark ray seahorse eel piranha Invertebrate Insect and arthropod ant bee wasp fly mosquito butterfly moth beetle ladybug grasshopper cricket dragonfly spider scorpion tick flea centipede millipede Mollusk and worm snail slug clam oyster mussel scallop squid octopus earthworm leech Aquatic invertebrate crab lobster shrimp jellyfish coral starfish sea urchin sponge Plant Food crop apple orange banana lemon grape strawberry watermelon tomato potato carrot onion garlic lettuce spinach corn wheat rice bean pea soybean pepper mushroom coffee plant tea plant cocoa plant Tree and shrub oak pine maple birch willow palm cedar redwood sequoia cactus bamboo rose bush grapevine Flower and garden rose tulip daisy sunflower lily orchid violet lavender daffodil marigold fern ivy moss grass weed Fungus and microbe mushroom truffle mold yeast bacterium virus alga plankton Biological part or product bone tooth hair feather skin blood egg seed pollen wood milk honey silk leather"><summary>Living</summary><div class="question"><strong>Suggested question:</strong> Is it a whole organism, a part, or a biological product?</div><div class="path">Physical / Living</div><div class="children"><details class="node" data-search="Vertebrate Mammal Companion and work dog cat horse cow pig goat sheep rabbit hamster mouse rat donkey camel llama alpaca elephant Wild land lion tiger bear wolf fox deer moose elk giraffe zebra rhinoceros hippopotamus gorilla chimpanzee kangaroo panda koala squirrel skunk raccoon Marine and flying whale dolphin seal walrus bat monkey sloth otter beaver Bird chicken duck goose turkey penguin eagle hawk owl parrot pigeon crow raven robin sparrow flamingo peacock swan woodpecker hummingbird Reptile and amphibian snake lizard turtle tortoise crocodile alligator frog toad salamander newt Fish salmon trout tuna cod bass carp goldfish shark ray seahorse eel piranha Invertebrate Insect and arthropod ant bee wasp fly mosquito butterfly moth beetle ladybug grasshopper cricket dragonfly spider scorpion tick flea centipede millipede Mollusk and worm snail slug clam oyster mussel scallop squid octopus earthworm leech Aquatic invertebrate crab lobster shrimp jellyfish coral starfish sea urchin sponge"><summary>Animal</summary><div class="question"><strong>Suggested question:</strong> Does it move voluntarily and consume other organisms or organic matter?</div><div class="path">Physical / Living / Animal</div><div class="children"><details class="node" data-search="Mammal Companion and work dog cat horse cow pig goat sheep rabbit hamster mouse rat donkey camel llama alpaca elephant Wild land lion tiger bear wolf fox deer moose elk giraffe zebra rhinoceros hippopotamus gorilla chimpanzee kangaroo panda koala squirrel skunk raccoon Marine and flying whale dolphin seal walrus bat monkey sloth otter beaver Bird chicken duck goose turkey penguin eagle hawk owl parrot pigeon crow raven robin sparrow flamingo peacock swan woodpecker hummingbird Reptile and amphibian snake lizard turtle tortoise crocodile alligator frog toad salamander newt Fish salmon trout tuna cod bass carp goldfish shark ray seahorse eel piranha"><summary>Vertebrate</summary><div class="question"><strong>Suggested question:</strong> Does it have an internal backbone?</div><div class="path">Physical / Living / Animal / Vertebrate</div><div class="children"><details class="node" data-search="Companion and work dog cat horse cow pig goat sheep rabbit hamster mouse rat donkey camel llama alpaca elephant Wild land lion tiger bear wolf fox deer moose elk giraffe zebra rhinoceros hippopotamus gorilla chimpanzee kangaroo panda koala squirrel skunk raccoon Marine and flying whale dolphin seal walrus bat monkey sloth otter beaver"><summary>Mammal</summary><div class="question"><strong>Suggested question:</strong> Is it mainly associated with people, land, or water?</div><div class="path">Physical / Living / Animal / Vertebrate / Mammal</div><div class="children"><details class="node" data-search="dog cat horse cow pig goat sheep rabbit hamster mouse rat donkey camel llama alpaca elephant"><summary>Companion and work</summary><div class="question"><strong>Suggested question:</strong> Is it commonly kept, trained, or used by people?</div><div class="path">Physical / Living / Animal / Vertebrate / Mammal / Companion and work</div><div class="children"><div class="leaf" data-search="dog"><span>dog</span><small>Physical / Living / Animal / Vertebrate / Mammal / Companion and work / dog</small></div>
+<div class="leaf" data-search="cat"><span>cat</span><small>Physical / Living / Animal / Vertebrate / Mammal / Companion and work / cat</small></div>
+<div class="leaf" data-search="horse"><span>horse</span><small>Physical / Living / Animal / Vertebrate / Mammal / Companion and work / horse</small></div>
+<div class="leaf" data-search="cow"><span>cow</span><small>Physical / Living / Animal / Vertebrate / Mammal / Companion and work / cow</small></div>
+<div class="leaf" data-search="pig"><span>pig</span><small>Physical / Living / Animal / Vertebrate / Mammal / Companion and work / pig</small></div>
+<div class="leaf" data-search="goat"><span>goat</span><small>Physical / Living / Animal / Vertebrate / Mammal / Companion and work / goat</small></div>
+<div class="leaf" data-search="sheep"><span>sheep</span><small>Physical / Living / Animal / Vertebrate / Mammal / Companion and work / sheep</small></div>
+<div class="leaf" data-search="rabbit"><span>rabbit</span><small>Physical / Living / Animal / Vertebrate / Mammal / Companion and work / rabbit</small></div>
+<div class="leaf" data-search="hamster"><span>hamster</span><small>Physical / Living / Animal / Vertebrate / Mammal / Companion and work / hamster</small></div>
+<div class="leaf" data-search="mouse"><span>mouse</span><small>Physical / Living / Animal / Vertebrate / Mammal / Companion and work / mouse</small></div>
+<div class="leaf" data-search="rat"><span>rat</span><small>Physical / Living / Animal / Vertebrate / Mammal / Companion and work / rat</small></div>
+<div class="leaf" data-search="donkey"><span>donkey</span><small>Physical / Living / Animal / Vertebrate / Mammal / Companion and work / donkey</small></div>
+<div class="leaf" data-search="camel"><span>camel</span><small>Physical / Living / Animal / Vertebrate / Mammal / Companion and work / camel</small></div>
+<div class="leaf" data-search="llama"><span>llama</span><small>Physical / Living / Animal / Vertebrate / Mammal / Companion and work / llama</small></div>
+<div class="leaf" data-search="alpaca"><span>alpaca</span><small>Physical / Living / Animal / Vertebrate / Mammal / Companion and work / alpaca</small></div>
+<div class="leaf" data-search="elephant"><span>elephant</span><small>Physical / Living / Animal / Vertebrate / Mammal / Companion and work / elephant</small></div></div></details>
+<details class="node" data-search="lion tiger bear wolf fox deer moose elk giraffe zebra rhinoceros hippopotamus gorilla chimpanzee kangaroo panda koala squirrel skunk raccoon"><summary>Wild land</summary><div class="question"><strong>Suggested question:</strong> Is it a predator, grazer, or omnivore?</div><div class="path">Physical / Living / Animal / Vertebrate / Mammal / Wild land</div><div class="children"><div class="leaf" data-search="lion"><span>lion</span><small>Physical / Living / Animal / Vertebrate / Mammal / Wild land / lion</small></div>
+<div class="leaf" data-search="tiger"><span>tiger</span><small>Physical / Living / Animal / Vertebrate / Mammal / Wild land / tiger</small></div>
+<div class="leaf" data-search="bear"><span>bear</span><small>Physical / Living / Animal / Vertebrate / Mammal / Wild land / bear</small></div>
+<div class="leaf" data-search="wolf"><span>wolf</span><small>Physical / Living / Animal / Vertebrate / Mammal / Wild land / wolf</small></div>
+<div class="leaf" data-search="fox"><span>fox</span><small>Physical / Living / Animal / Vertebrate / Mammal / Wild land / fox</small></div>
+<div class="leaf" data-search="deer"><span>deer</span><small>Physical / Living / Animal / Vertebrate / Mammal / Wild land / deer</small></div>
+<div class="leaf" data-search="moose"><span>moose</span><small>Physical / Living / Animal / Vertebrate / Mammal / Wild land / moose</small></div>
+<div class="leaf" data-search="elk"><span>elk</span><small>Physical / Living / Animal / Vertebrate / Mammal / Wild land / elk</small></div>
+<div class="leaf" data-search="giraffe"><span>giraffe</span><small>Physical / Living / Animal / Vertebrate / Mammal / Wild land / giraffe</small></div>
+<div class="leaf" data-search="zebra"><span>zebra</span><small>Physical / Living / Animal / Vertebrate / Mammal / Wild land / zebra</small></div>
+<div class="leaf" data-search="rhinoceros"><span>rhinoceros</span><small>Physical / Living / Animal / Vertebrate / Mammal / Wild land / rhinoceros</small></div>
+<div class="leaf" data-search="hippopotamus"><span>hippopotamus</span><small>Physical / Living / Animal / Vertebrate / Mammal / Wild land / hippopotamus</small></div>
+<div class="leaf" data-search="gorilla"><span>gorilla</span><small>Physical / Living / Animal / Vertebrate / Mammal / Wild land / gorilla</small></div>
+<div class="leaf" data-search="chimpanzee"><span>chimpanzee</span><small>Physical / Living / Animal / Vertebrate / Mammal / Wild land / chimpanzee</small></div>
+<div class="leaf" data-search="kangaroo"><span>kangaroo</span><small>Physical / Living / Animal / Vertebrate / Mammal / Wild land / kangaroo</small></div>
+<div class="leaf" data-search="panda"><span>panda</span><small>Physical / Living / Animal / Vertebrate / Mammal / Wild land / panda</small></div>
+<div class="leaf" data-search="koala"><span>koala</span><small>Physical / Living / Animal / Vertebrate / Mammal / Wild land / koala</small></div>
+<div class="leaf" data-search="squirrel"><span>squirrel</span><small>Physical / Living / Animal / Vertebrate / Mammal / Wild land / squirrel</small></div>
+<div class="leaf" data-search="skunk"><span>skunk</span><small>Physical / Living / Animal / Vertebrate / Mammal / Wild land / skunk</small></div>
+<div class="leaf" data-search="raccoon"><span>raccoon</span><small>Physical / Living / Animal / Vertebrate / Mammal / Wild land / raccoon</small></div></div></details>
+<details class="node" data-search="whale dolphin seal walrus bat monkey sloth otter beaver"><summary>Marine and flying</summary><div class="question"><strong>Suggested question:</strong> Does it primarily live in water or fly?</div><div class="path">Physical / Living / Animal / Vertebrate / Mammal / Marine and flying</div><div class="children"><div class="leaf" data-search="whale"><span>whale</span><small>Physical / Living / Animal / Vertebrate / Mammal / Marine and flying / whale</small></div>
+<div class="leaf" data-search="dolphin"><span>dolphin</span><small>Physical / Living / Animal / Vertebrate / Mammal / Marine and flying / dolphin</small></div>
+<div class="leaf" data-search="seal"><span>seal</span><small>Physical / Living / Animal / Vertebrate / Mammal / Marine and flying / seal</small></div>
+<div class="leaf" data-search="walrus"><span>walrus</span><small>Physical / Living / Animal / Vertebrate / Mammal / Marine and flying / walrus</small></div>
+<div class="leaf" data-search="bat"><span>bat</span><small>Physical / Living / Animal / Vertebrate / Mammal / Marine and flying / bat</small></div>
+<div class="leaf" data-search="monkey"><span>monkey</span><small>Physical / Living / Animal / Vertebrate / Mammal / Marine and flying / monkey</small></div>
+<div class="leaf" data-search="sloth"><span>sloth</span><small>Physical / Living / Animal / Vertebrate / Mammal / Marine and flying / sloth</small></div>
+<div class="leaf" data-search="otter"><span>otter</span><small>Physical / Living / Animal / Vertebrate / Mammal / Marine and flying / otter</small></div>
+<div class="leaf" data-search="beaver"><span>beaver</span><small>Physical / Living / Animal / Vertebrate / Mammal / Marine and flying / beaver</small></div></div></details></div></details>
+<details class="node" data-search="chicken duck goose turkey penguin eagle hawk owl parrot pigeon crow raven robin sparrow flamingo peacock swan woodpecker hummingbird"><summary>Bird</summary><div class="question"><strong>Suggested question:</strong> Is it chiefly a familiar wild bird, domestic bird, or bird of prey?</div><div class="path">Physical / Living / Animal / Vertebrate / Bird</div><div class="children"><div class="leaf" data-search="chicken"><span>chicken</span><small>Physical / Living / Animal / Vertebrate / Bird / chicken</small></div>
+<div class="leaf" data-search="duck"><span>duck</span><small>Physical / Living / Animal / Vertebrate / Bird / duck</small></div>
+<div class="leaf" data-search="goose"><span>goose</span><small>Physical / Living / Animal / Vertebrate / Bird / goose</small></div>
+<div class="leaf" data-search="turkey"><span>turkey</span><small>Physical / Living / Animal / Vertebrate / Bird / turkey</small></div>
+<div class="leaf" data-search="penguin"><span>penguin</span><small>Physical / Living / Animal / Vertebrate / Bird / penguin</small></div>
+<div class="leaf" data-search="eagle"><span>eagle</span><small>Physical / Living / Animal / Vertebrate / Bird / eagle</small></div>
+<div class="leaf" data-search="hawk"><span>hawk</span><small>Physical / Living / Animal / Vertebrate / Bird / hawk</small></div>
+<div class="leaf" data-search="owl"><span>owl</span><small>Physical / Living / Animal / Vertebrate / Bird / owl</small></div>
+<div class="leaf" data-search="parrot"><span>parrot</span><small>Physical / Living / Animal / Vertebrate / Bird / parrot</small></div>
+<div class="leaf" data-search="pigeon"><span>pigeon</span><small>Physical / Living / Animal / Vertebrate / Bird / pigeon</small></div>
+<div class="leaf" data-search="crow"><span>crow</span><small>Physical / Living / Animal / Vertebrate / Bird / crow</small></div>
+<div class="leaf" data-search="raven"><span>raven</span><small>Physical / Living / Animal / Vertebrate / Bird / raven</small></div>
+<div class="leaf" data-search="robin"><span>robin</span><small>Physical / Living / Animal / Vertebrate / Bird / robin</small></div>
+<div class="leaf" data-search="sparrow"><span>sparrow</span><small>Physical / Living / Animal / Vertebrate / Bird / sparrow</small></div>
+<div class="leaf" data-search="flamingo"><span>flamingo</span><small>Physical / Living / Animal / Vertebrate / Bird / flamingo</small></div>
+<div class="leaf" data-search="peacock"><span>peacock</span><small>Physical / Living / Animal / Vertebrate / Bird / peacock</small></div>
+<div class="leaf" data-search="swan"><span>swan</span><small>Physical / Living / Animal / Vertebrate / Bird / swan</small></div>
+<div class="leaf" data-search="woodpecker"><span>woodpecker</span><small>Physical / Living / Animal / Vertebrate / Bird / woodpecker</small></div>
+<div class="leaf" data-search="hummingbird"><span>hummingbird</span><small>Physical / Living / Animal / Vertebrate / Bird / hummingbird</small></div></div></details>
+<details class="node" data-search="snake lizard turtle tortoise crocodile alligator frog toad salamander newt"><summary>Reptile and amphibian</summary><div class="question"><strong>Suggested question:</strong> Does it have scales, or does it undergo a water-to-land life cycle?</div><div class="path">Physical / Living / Animal / Vertebrate / Reptile and amphibian</div><div class="children"><div class="leaf" data-search="snake"><span>snake</span><small>Physical / Living / Animal / Vertebrate / Reptile and amphibian / snake</small></div>
+<div class="leaf" data-search="lizard"><span>lizard</span><small>Physical / Living / Animal / Vertebrate / Reptile and amphibian / lizard</small></div>
+<div class="leaf" data-search="turtle"><span>turtle</span><small>Physical / Living / Animal / Vertebrate / Reptile and amphibian / turtle</small></div>
+<div class="leaf" data-search="tortoise"><span>tortoise</span><small>Physical / Living / Animal / Vertebrate / Reptile and amphibian / tortoise</small></div>
+<div class="leaf" data-search="crocodile"><span>crocodile</span><small>Physical / Living / Animal / Vertebrate / Reptile and amphibian / crocodile</small></div>
+<div class="leaf" data-search="alligator"><span>alligator</span><small>Physical / Living / Animal / Vertebrate / Reptile and amphibian / alligator</small></div>
+<div class="leaf" data-search="frog"><span>frog</span><small>Physical / Living / Animal / Vertebrate / Reptile and amphibian / frog</small></div>
+<div class="leaf" data-search="toad"><span>toad</span><small>Physical / Living / Animal / Vertebrate / Reptile and amphibian / toad</small></div>
+<div class="leaf" data-search="salamander"><span>salamander</span><small>Physical / Living / Animal / Vertebrate / Reptile and amphibian / salamander</small></div>
+<div class="leaf" data-search="newt"><span>newt</span><small>Physical / Living / Animal / Vertebrate / Reptile and amphibian / newt</small></div></div></details>
+<details class="node" data-search="salmon trout tuna cod bass carp goldfish shark ray seahorse eel piranha"><summary>Fish</summary><div class="question"><strong>Suggested question:</strong> Is it a common food fish, aquarium fish, or large ocean fish?</div><div class="path">Physical / Living / Animal / Vertebrate / Fish</div><div class="children"><div class="leaf" data-search="salmon"><span>salmon</span><small>Physical / Living / Animal / Vertebrate / Fish / salmon</small></div>
+<div class="leaf" data-search="trout"><span>trout</span><small>Physical / Living / Animal / Vertebrate / Fish / trout</small></div>
+<div class="leaf" data-search="tuna"><span>tuna</span><small>Physical / Living / Animal / Vertebrate / Fish / tuna</small></div>
+<div class="leaf" data-search="cod"><span>cod</span><small>Physical / Living / Animal / Vertebrate / Fish / cod</small></div>
+<div class="leaf" data-search="bass"><span>bass</span><small>Physical / Living / Animal / Vertebrate / Fish / bass</small></div>
+<div class="leaf" data-search="carp"><span>carp</span><small>Physical / Living / Animal / Vertebrate / Fish / carp</small></div>
+<div class="leaf" data-search="goldfish"><span>goldfish</span><small>Physical / Living / Animal / Vertebrate / Fish / goldfish</small></div>
+<div class="leaf" data-search="shark"><span>shark</span><small>Physical / Living / Animal / Vertebrate / Fish / shark</small></div>
+<div class="leaf" data-search="ray"><span>ray</span><small>Physical / Living / Animal / Vertebrate / Fish / ray</small></div>
+<div class="leaf" data-search="seahorse"><span>seahorse</span><small>Physical / Living / Animal / Vertebrate / Fish / seahorse</small></div>
+<div class="leaf" data-search="eel"><span>eel</span><small>Physical / Living / Animal / Vertebrate / Fish / eel</small></div>
+<div class="leaf" data-search="piranha"><span>piranha</span><small>Physical / Living / Animal / Vertebrate / Fish / piranha</small></div></div></details></div></details>
+<details class="node" data-search="Insect and arthropod ant bee wasp fly mosquito butterfly moth beetle ladybug grasshopper cricket dragonfly spider scorpion tick flea centipede millipede Mollusk and worm snail slug clam oyster mussel scallop squid octopus earthworm leech Aquatic invertebrate crab lobster shrimp jellyfish coral starfish sea urchin sponge"><summary>Invertebrate</summary><div class="question"><strong>Suggested question:</strong> Does it have jointed legs, a shell, or a soft-bodied form?</div><div class="path">Physical / Living / Animal / Invertebrate</div><div class="children"><details class="node" data-search="ant bee wasp fly mosquito butterfly moth beetle ladybug grasshopper cricket dragonfly spider scorpion tick flea centipede millipede"><summary>Insect and arthropod</summary><div class="question"><strong>Suggested question:</strong> Does it have six legs, eight legs, or many legs?</div><div class="path">Physical / Living / Animal / Invertebrate / Insect and arthropod</div><div class="children"><div class="leaf" data-search="ant"><span>ant</span><small>Physical / Living / Animal / Invertebrate / Insect and arthropod / ant</small></div>
+<div class="leaf" data-search="bee"><span>bee</span><small>Physical / Living / Animal / Invertebrate / Insect and arthropod / bee</small></div>
+<div class="leaf" data-search="wasp"><span>wasp</span><small>Physical / Living / Animal / Invertebrate / Insect and arthropod / wasp</small></div>
+<div class="leaf" data-search="fly"><span>fly</span><small>Physical / Living / Animal / Invertebrate / Insect and arthropod / fly</small></div>
+<div class="leaf" data-search="mosquito"><span>mosquito</span><small>Physical / Living / Animal / Invertebrate / Insect and arthropod / mosquito</small></div>
+<div class="leaf" data-search="butterfly"><span>butterfly</span><small>Physical / Living / Animal / Invertebrate / Insect and arthropod / butterfly</small></div>
+<div class="leaf" data-search="moth"><span>moth</span><small>Physical / Living / Animal / Invertebrate / Insect and arthropod / moth</small></div>
+<div class="leaf" data-search="beetle"><span>beetle</span><small>Physical / Living / Animal / Invertebrate / Insect and arthropod / beetle</small></div>
+<div class="leaf" data-search="ladybug"><span>ladybug</span><small>Physical / Living / Animal / Invertebrate / Insect and arthropod / ladybug</small></div>
+<div class="leaf" data-search="grasshopper"><span>grasshopper</span><small>Physical / Living / Animal / Invertebrate / Insect and arthropod / grasshopper</small></div>
+<div class="leaf" data-search="cricket"><span>cricket</span><small>Physical / Living / Animal / Invertebrate / Insect and arthropod / cricket</small></div>
+<div class="leaf" data-search="dragonfly"><span>dragonfly</span><small>Physical / Living / Animal / Invertebrate / Insect and arthropod / dragonfly</small></div>
+<div class="leaf" data-search="spider"><span>spider</span><small>Physical / Living / Animal / Invertebrate / Insect and arthropod / spider</small></div>
+<div class="leaf" data-search="scorpion"><span>scorpion</span><small>Physical / Living / Animal / Invertebrate / Insect and arthropod / scorpion</small></div>
+<div class="leaf" data-search="tick"><span>tick</span><small>Physical / Living / Animal / Invertebrate / Insect and arthropod / tick</small></div>
+<div class="leaf" data-search="flea"><span>flea</span><small>Physical / Living / Animal / Invertebrate / Insect and arthropod / flea</small></div>
+<div class="leaf" data-search="centipede"><span>centipede</span><small>Physical / Living / Animal / Invertebrate / Insect and arthropod / centipede</small></div>
+<div class="leaf" data-search="millipede"><span>millipede</span><small>Physical / Living / Animal / Invertebrate / Insect and arthropod / millipede</small></div></div></details>
+<details class="node" data-search="snail slug clam oyster mussel scallop squid octopus earthworm leech"><summary>Mollusk and worm</summary><div class="question"><strong>Suggested question:</strong> Does it have a shell or a long, soft, wormlike body?</div><div class="path">Physical / Living / Animal / Invertebrate / Mollusk and worm</div><div class="children"><div class="leaf" data-search="snail"><span>snail</span><small>Physical / Living / Animal / Invertebrate / Mollusk and worm / snail</small></div>
+<div class="leaf" data-search="slug"><span>slug</span><small>Physical / Living / Animal / Invertebrate / Mollusk and worm / slug</small></div>
+<div class="leaf" data-search="clam"><span>clam</span><small>Physical / Living / Animal / Invertebrate / Mollusk and worm / clam</small></div>
+<div class="leaf" data-search="oyster"><span>oyster</span><small>Physical / Living / Animal / Invertebrate / Mollusk and worm / oyster</small></div>
+<div class="leaf" data-search="mussel"><span>mussel</span><small>Physical / Living / Animal / Invertebrate / Mollusk and worm / mussel</small></div>
+<div class="leaf" data-search="scallop"><span>scallop</span><small>Physical / Living / Animal / Invertebrate / Mollusk and worm / scallop</small></div>
+<div class="leaf" data-search="squid"><span>squid</span><small>Physical / Living / Animal / Invertebrate / Mollusk and worm / squid</small></div>
+<div class="leaf" data-search="octopus"><span>octopus</span><small>Physical / Living / Animal / Invertebrate / Mollusk and worm / octopus</small></div>
+<div class="leaf" data-search="earthworm"><span>earthworm</span><small>Physical / Living / Animal / Invertebrate / Mollusk and worm / earthworm</small></div>
+<div class="leaf" data-search="leech"><span>leech</span><small>Physical / Living / Animal / Invertebrate / Mollusk and worm / leech</small></div></div></details>
+<details class="node" data-search="crab lobster shrimp jellyfish coral starfish sea urchin sponge"><summary>Aquatic invertebrate</summary><div class="question"><strong>Suggested question:</strong> Does it live mainly in saltwater, freshwater, or a damp habitat?</div><div class="path">Physical / Living / Animal / Invertebrate / Aquatic invertebrate</div><div class="children"><div class="leaf" data-search="crab"><span>crab</span><small>Physical / Living / Animal / Invertebrate / Aquatic invertebrate / crab</small></div>
+<div class="leaf" data-search="lobster"><span>lobster</span><small>Physical / Living / Animal / Invertebrate / Aquatic invertebrate / lobster</small></div>
+<div class="leaf" data-search="shrimp"><span>shrimp</span><small>Physical / Living / Animal / Invertebrate / Aquatic invertebrate / shrimp</small></div>
+<div class="leaf" data-search="jellyfish"><span>jellyfish</span><small>Physical / Living / Animal / Invertebrate / Aquatic invertebrate / jellyfish</small></div>
+<div class="leaf" data-search="coral"><span>coral</span><small>Physical / Living / Animal / Invertebrate / Aquatic invertebrate / coral</small></div>
+<div class="leaf" data-search="starfish"><span>starfish</span><small>Physical / Living / Animal / Invertebrate / Aquatic invertebrate / starfish</small></div>
+<div class="leaf" data-search="sea urchin"><span>sea urchin</span><small>Physical / Living / Animal / Invertebrate / Aquatic invertebrate / sea urchin</small></div>
+<div class="leaf" data-search="sponge"><span>sponge</span><small>Physical / Living / Animal / Invertebrate / Aquatic invertebrate / sponge</small></div></div></details></div></details></div></details>
+<details class="node" data-search="Food crop apple orange banana lemon grape strawberry watermelon tomato potato carrot onion garlic lettuce spinach corn wheat rice bean pea soybean pepper mushroom coffee plant tea plant cocoa plant Tree and shrub oak pine maple birch willow palm cedar redwood sequoia cactus bamboo rose bush grapevine Flower and garden rose tulip daisy sunflower lily orchid violet lavender daffodil marigold fern ivy moss grass weed"><summary>Plant</summary><div class="question"><strong>Suggested question:</strong> Is it mainly recognized as food, a tree, a flower, or a wild plant?</div><div class="path">Physical / Living / Plant</div><div class="children"><details class="node" data-search="apple orange banana lemon grape strawberry watermelon tomato potato carrot onion garlic lettuce spinach corn wheat rice bean pea soybean pepper mushroom coffee plant tea plant cocoa plant"><summary>Food crop</summary><div class="question"><strong>Suggested question:</strong> Is the edible part a fruit, vegetable, grain, legume, or herb?</div><div class="path">Physical / Living / Plant / Food crop</div><div class="children"><div class="leaf" data-search="apple"><span>apple</span><small>Physical / Living / Plant / Food crop / apple</small></div>
+<div class="leaf" data-search="orange"><span>orange</span><small>Physical / Living / Plant / Food crop / orange</small></div>
+<div class="leaf" data-search="banana"><span>banana</span><small>Physical / Living / Plant / Food crop / banana</small></div>
+<div class="leaf" data-search="lemon"><span>lemon</span><small>Physical / Living / Plant / Food crop / lemon</small></div>
+<div class="leaf" data-search="grape"><span>grape</span><small>Physical / Living / Plant / Food crop / grape</small></div>
+<div class="leaf" data-search="strawberry"><span>strawberry</span><small>Physical / Living / Plant / Food crop / strawberry</small></div>
+<div class="leaf" data-search="watermelon"><span>watermelon</span><small>Physical / Living / Plant / Food crop / watermelon</small></div>
+<div class="leaf" data-search="tomato"><span>tomato</span><small>Physical / Living / Plant / Food crop / tomato</small></div>
+<div class="leaf" data-search="potato"><span>potato</span><small>Physical / Living / Plant / Food crop / potato</small></div>
+<div class="leaf" data-search="carrot"><span>carrot</span><small>Physical / Living / Plant / Food crop / carrot</small></div>
+<div class="leaf" data-search="onion"><span>onion</span><small>Physical / Living / Plant / Food crop / onion</small></div>
+<div class="leaf" data-search="garlic"><span>garlic</span><small>Physical / Living / Plant / Food crop / garlic</small></div>
+<div class="leaf" data-search="lettuce"><span>lettuce</span><small>Physical / Living / Plant / Food crop / lettuce</small></div>
+<div class="leaf" data-search="spinach"><span>spinach</span><small>Physical / Living / Plant / Food crop / spinach</small></div>
+<div class="leaf" data-search="corn"><span>corn</span><small>Physical / Living / Plant / Food crop / corn</small></div>
+<div class="leaf" data-search="wheat"><span>wheat</span><small>Physical / Living / Plant / Food crop / wheat</small></div>
+<div class="leaf" data-search="rice"><span>rice</span><small>Physical / Living / Plant / Food crop / rice</small></div>
+<div class="leaf" data-search="bean"><span>bean</span><small>Physical / Living / Plant / Food crop / bean</small></div>
+<div class="leaf" data-search="pea"><span>pea</span><small>Physical / Living / Plant / Food crop / pea</small></div>
+<div class="leaf" data-search="soybean"><span>soybean</span><small>Physical / Living / Plant / Food crop / soybean</small></div>
+<div class="leaf" data-search="pepper"><span>pepper</span><small>Physical / Living / Plant / Food crop / pepper</small></div>
+<div class="leaf" data-search="mushroom"><span>mushroom</span><small>Physical / Living / Plant / Food crop / mushroom</small></div>
+<div class="leaf" data-search="coffee plant"><span>coffee plant</span><small>Physical / Living / Plant / Food crop / coffee plant</small></div>
+<div class="leaf" data-search="tea plant"><span>tea plant</span><small>Physical / Living / Plant / Food crop / tea plant</small></div>
+<div class="leaf" data-search="cocoa plant"><span>cocoa plant</span><small>Physical / Living / Plant / Food crop / cocoa plant</small></div></div></details>
+<details class="node" data-search="oak pine maple birch willow palm cedar redwood sequoia cactus bamboo rose bush grapevine"><summary>Tree and shrub</summary><div class="question"><strong>Suggested question:</strong> Is it chiefly valued for wood, fruit, shade, or ornament?</div><div class="path">Physical / Living / Plant / Tree and shrub</div><div class="children"><div class="leaf" data-search="oak"><span>oak</span><small>Physical / Living / Plant / Tree and shrub / oak</small></div>
+<div class="leaf" data-search="pine"><span>pine</span><small>Physical / Living / Plant / Tree and shrub / pine</small></div>
+<div class="leaf" data-search="maple"><span>maple</span><small>Physical / Living / Plant / Tree and shrub / maple</small></div>
+<div class="leaf" data-search="birch"><span>birch</span><small>Physical / Living / Plant / Tree and shrub / birch</small></div>
+<div class="leaf" data-search="willow"><span>willow</span><small>Physical / Living / Plant / Tree and shrub / willow</small></div>
+<div class="leaf" data-search="palm"><span>palm</span><small>Physical / Living / Plant / Tree and shrub / palm</small></div>
+<div class="leaf" data-search="cedar"><span>cedar</span><small>Physical / Living / Plant / Tree and shrub / cedar</small></div>
+<div class="leaf" data-search="redwood"><span>redwood</span><small>Physical / Living / Plant / Tree and shrub / redwood</small></div>
+<div class="leaf" data-search="sequoia"><span>sequoia</span><small>Physical / Living / Plant / Tree and shrub / sequoia</small></div>
+<div class="leaf" data-search="cactus"><span>cactus</span><small>Physical / Living / Plant / Tree and shrub / cactus</small></div>
+<div class="leaf" data-search="bamboo"><span>bamboo</span><small>Physical / Living / Plant / Tree and shrub / bamboo</small></div>
+<div class="leaf" data-search="rose bush"><span>rose bush</span><small>Physical / Living / Plant / Tree and shrub / rose bush</small></div>
+<div class="leaf" data-search="grapevine"><span>grapevine</span><small>Physical / Living / Plant / Tree and shrub / grapevine</small></div></div></details>
+<details class="node" data-search="rose tulip daisy sunflower lily orchid violet lavender daffodil marigold fern ivy moss grass weed"><summary>Flower and garden</summary><div class="question"><strong>Suggested question:</strong> Is it a showy flower, bulb, houseplant, or garden plant?</div><div class="path">Physical / Living / Plant / Flower and garden</div><div class="children"><div class="leaf" data-search="rose"><span>rose</span><small>Physical / Living / Plant / Flower and garden / rose</small></div>
+<div class="leaf" data-search="tulip"><span>tulip</span><small>Physical / Living / Plant / Flower and garden / tulip</small></div>
+<div class="leaf" data-search="daisy"><span>daisy</span><small>Physical / Living / Plant / Flower and garden / daisy</small></div>
+<div class="leaf" data-search="sunflower"><span>sunflower</span><small>Physical / Living / Plant / Flower and garden / sunflower</small></div>
+<div class="leaf" data-search="lily"><span>lily</span><small>Physical / Living / Plant / Flower and garden / lily</small></div>
+<div class="leaf" data-search="orchid"><span>orchid</span><small>Physical / Living / Plant / Flower and garden / orchid</small></div>
+<div class="leaf" data-search="violet"><span>violet</span><small>Physical / Living / Plant / Flower and garden / violet</small></div>
+<div class="leaf" data-search="lavender"><span>lavender</span><small>Physical / Living / Plant / Flower and garden / lavender</small></div>
+<div class="leaf" data-search="daffodil"><span>daffodil</span><small>Physical / Living / Plant / Flower and garden / daffodil</small></div>
+<div class="leaf" data-search="marigold"><span>marigold</span><small>Physical / Living / Plant / Flower and garden / marigold</small></div>
+<div class="leaf" data-search="fern"><span>fern</span><small>Physical / Living / Plant / Flower and garden / fern</small></div>
+<div class="leaf" data-search="ivy"><span>ivy</span><small>Physical / Living / Plant / Flower and garden / ivy</small></div>
+<div class="leaf" data-search="moss"><span>moss</span><small>Physical / Living / Plant / Flower and garden / moss</small></div>
+<div class="leaf" data-search="grass"><span>grass</span><small>Physical / Living / Plant / Flower and garden / grass</small></div>
+<div class="leaf" data-search="weed"><span>weed</span><small>Physical / Living / Plant / Flower and garden / weed</small></div></div></details></div></details>
+<details class="node" data-search="mushroom truffle mold yeast bacterium virus alga plankton"><summary>Fungus and microbe</summary><div class="question"><strong>Suggested question:</strong> Is it a mushroom, mold, yeast, bacterium, or microscopic agent?</div><div class="path">Physical / Living / Fungus and microbe</div><div class="children"><div class="leaf" data-search="mushroom"><span>mushroom</span><small>Physical / Living / Fungus and microbe / mushroom</small></div>
+<div class="leaf" data-search="truffle"><span>truffle</span><small>Physical / Living / Fungus and microbe / truffle</small></div>
+<div class="leaf" data-search="mold"><span>mold</span><small>Physical / Living / Fungus and microbe / mold</small></div>
+<div class="leaf" data-search="yeast"><span>yeast</span><small>Physical / Living / Fungus and microbe / yeast</small></div>
+<div class="leaf" data-search="bacterium"><span>bacterium</span><small>Physical / Living / Fungus and microbe / bacterium</small></div>
+<div class="leaf" data-search="virus"><span>virus</span><small>Physical / Living / Fungus and microbe / virus</small></div>
+<div class="leaf" data-search="alga"><span>alga</span><small>Physical / Living / Fungus and microbe / alga</small></div>
+<div class="leaf" data-search="plankton"><span>plankton</span><small>Physical / Living / Fungus and microbe / plankton</small></div></div></details>
+<details class="node" data-search="bone tooth hair feather skin blood egg seed pollen wood milk honey silk leather"><summary>Biological part or product</summary><div class="question"><strong>Suggested question:</strong> Is it an anatomical part, a secretion, or a processed biological material?</div><div class="path">Physical / Living / Biological part or product</div><div class="children"><div class="leaf" data-search="bone"><span>bone</span><small>Physical / Living / Biological part or product / bone</small></div>
+<div class="leaf" data-search="tooth"><span>tooth</span><small>Physical / Living / Biological part or product / tooth</small></div>
+<div class="leaf" data-search="hair"><span>hair</span><small>Physical / Living / Biological part or product / hair</small></div>
+<div class="leaf" data-search="feather"><span>feather</span><small>Physical / Living / Biological part or product / feather</small></div>
+<div class="leaf" data-search="skin"><span>skin</span><small>Physical / Living / Biological part or product / skin</small></div>
+<div class="leaf" data-search="blood"><span>blood</span><small>Physical / Living / Biological part or product / blood</small></div>
+<div class="leaf" data-search="egg"><span>egg</span><small>Physical / Living / Biological part or product / egg</small></div>
+<div class="leaf" data-search="seed"><span>seed</span><small>Physical / Living / Biological part or product / seed</small></div>
+<div class="leaf" data-search="pollen"><span>pollen</span><small>Physical / Living / Biological part or product / pollen</small></div>
+<div class="leaf" data-search="wood"><span>wood</span><small>Physical / Living / Biological part or product / wood</small></div>
+<div class="leaf" data-search="milk"><span>milk</span><small>Physical / Living / Biological part or product / milk</small></div>
+<div class="leaf" data-search="honey"><span>honey</span><small>Physical / Living / Biological part or product / honey</small></div>
+<div class="leaf" data-search="silk"><span>silk</span><small>Physical / Living / Biological part or product / silk</small></div>
+<div class="leaf" data-search="leather"><span>leather</span><small>Physical / Living / Biological part or product / leather</small></div></div></details></div></details>
+<details class="node" data-search="Tool and instrument Cutting and shaping knife scissors saw axe razor chisel plane file grater drill screwdriver Fastening and gripping hammer wrench pliers clamp vise screw nail bolt staple tape measure level Measuring and observing ruler scale thermometer clock watch compass microscope telescope camera binoculars calculator Device and machine phone computer tablet television radio printer robot refrigerator oven washing machine vacuum fan air conditioner generator motor battery light bulb remote control Container and household Kitchen pot pan kettle bowl plate cup glass mug fork spoon chopsticks whisk spatula ladle colander bottle jar can basket Home chair table desk bed sofa shelf cabinet drawer mirror lamp candle towel blanket pillow broom mop bucket umbrella key lock door window Garment and personal item shirt coat dress pants skirt shoe boot sock hat glove scarf belt pajamas uniform ring necklace glasses wallet backpack handbag book newspaper toy doll ball puzzle Vehicle and structure Vehicle car truck bus bicycle motorcycle train tractor ship boat submarine airplane helicopter rocket spaceship wheelchair Structure house apartment school hospital church store office factory restaurant castle bridge road dam tower stadium temple pyramid statue fence tent"><summary>Artifact</summary><div class="question"><strong>Suggested question:</strong> Was it intentionally made by people?</div><div class="path">Physical / Artifact</div><div class="children"><details class="node" data-search="Cutting and shaping knife scissors saw axe razor chisel plane file grater drill screwdriver Fastening and gripping hammer wrench pliers clamp vise screw nail bolt staple tape measure level Measuring and observing ruler scale thermometer clock watch compass microscope telescope camera binoculars calculator"><summary>Tool and instrument</summary><div class="question"><strong>Suggested question:</strong> Is its main role cutting, fastening, measuring, striking, or shaping?</div><div class="path">Physical / Artifact / Tool and instrument</div><div class="children"><details class="node" data-search="knife scissors saw axe razor chisel plane file grater drill screwdriver"><summary>Cutting and shaping</summary><div class="question"><strong>Suggested question:</strong> Does it have an edge, teeth, abrasive surface, or shaping bit?</div><div class="path">Physical / Artifact / Tool and instrument / Cutting and shaping</div><div class="children"><div class="leaf" data-search="knife"><span>knife</span><small>Physical / Artifact / Tool and instrument / Cutting and shaping / knife</small></div>
+<div class="leaf" data-search="scissors"><span>scissors</span><small>Physical / Artifact / Tool and instrument / Cutting and shaping / scissors</small></div>
+<div class="leaf" data-search="saw"><span>saw</span><small>Physical / Artifact / Tool and instrument / Cutting and shaping / saw</small></div>
+<div class="leaf" data-search="axe"><span>axe</span><small>Physical / Artifact / Tool and instrument / Cutting and shaping / axe</small></div>
+<div class="leaf" data-search="razor"><span>razor</span><small>Physical / Artifact / Tool and instrument / Cutting and shaping / razor</small></div>
+<div class="leaf" data-search="chisel"><span>chisel</span><small>Physical / Artifact / Tool and instrument / Cutting and shaping / chisel</small></div>
+<div class="leaf" data-search="plane"><span>plane</span><small>Physical / Artifact / Tool and instrument / Cutting and shaping / plane</small></div>
+<div class="leaf" data-search="file"><span>file</span><small>Physical / Artifact / Tool and instrument / Cutting and shaping / file</small></div>
+<div class="leaf" data-search="grater"><span>grater</span><small>Physical / Artifact / Tool and instrument / Cutting and shaping / grater</small></div>
+<div class="leaf" data-search="drill"><span>drill</span><small>Physical / Artifact / Tool and instrument / Cutting and shaping / drill</small></div>
+<div class="leaf" data-search="screwdriver"><span>screwdriver</span><small>Physical / Artifact / Tool and instrument / Cutting and shaping / screwdriver</small></div></div></details>
+<details class="node" data-search="hammer wrench pliers clamp vise screw nail bolt staple tape measure level"><summary>Fastening and gripping</summary><div class="question"><strong>Suggested question:</strong> Does it hold, turn, clamp, join, or fasten something?</div><div class="path">Physical / Artifact / Tool and instrument / Fastening and gripping</div><div class="children"><div class="leaf" data-search="hammer"><span>hammer</span><small>Physical / Artifact / Tool and instrument / Fastening and gripping / hammer</small></div>
+<div class="leaf" data-search="wrench"><span>wrench</span><small>Physical / Artifact / Tool and instrument / Fastening and gripping / wrench</small></div>
+<div class="leaf" data-search="pliers"><span>pliers</span><small>Physical / Artifact / Tool and instrument / Fastening and gripping / pliers</small></div>
+<div class="leaf" data-search="clamp"><span>clamp</span><small>Physical / Artifact / Tool and instrument / Fastening and gripping / clamp</small></div>
+<div class="leaf" data-search="vise"><span>vise</span><small>Physical / Artifact / Tool and instrument / Fastening and gripping / vise</small></div>
+<div class="leaf" data-search="screw"><span>screw</span><small>Physical / Artifact / Tool and instrument / Fastening and gripping / screw</small></div>
+<div class="leaf" data-search="nail"><span>nail</span><small>Physical / Artifact / Tool and instrument / Fastening and gripping / nail</small></div>
+<div class="leaf" data-search="bolt"><span>bolt</span><small>Physical / Artifact / Tool and instrument / Fastening and gripping / bolt</small></div>
+<div class="leaf" data-search="staple"><span>staple</span><small>Physical / Artifact / Tool and instrument / Fastening and gripping / staple</small></div>
+<div class="leaf" data-search="tape measure"><span>tape measure</span><small>Physical / Artifact / Tool and instrument / Fastening and gripping / tape measure</small></div>
+<div class="leaf" data-search="level"><span>level</span><small>Physical / Artifact / Tool and instrument / Fastening and gripping / level</small></div></div></details>
+<details class="node" data-search="ruler scale thermometer clock watch compass microscope telescope camera binoculars calculator"><summary>Measuring and observing</summary><div class="question"><strong>Suggested question:</strong> Does it quantify, detect, magnify, or record a physical property?</div><div class="path">Physical / Artifact / Tool and instrument / Measuring and observing</div><div class="children"><div class="leaf" data-search="ruler"><span>ruler</span><small>Physical / Artifact / Tool and instrument / Measuring and observing / ruler</small></div>
+<div class="leaf" data-search="scale"><span>scale</span><small>Physical / Artifact / Tool and instrument / Measuring and observing / scale</small></div>
+<div class="leaf" data-search="thermometer"><span>thermometer</span><small>Physical / Artifact / Tool and instrument / Measuring and observing / thermometer</small></div>
+<div class="leaf" data-search="clock"><span>clock</span><small>Physical / Artifact / Tool and instrument / Measuring and observing / clock</small></div>
+<div class="leaf" data-search="watch"><span>watch</span><small>Physical / Artifact / Tool and instrument / Measuring and observing / watch</small></div>
+<div class="leaf" data-search="compass"><span>compass</span><small>Physical / Artifact / Tool and instrument / Measuring and observing / compass</small></div>
+<div class="leaf" data-search="microscope"><span>microscope</span><small>Physical / Artifact / Tool and instrument / Measuring and observing / microscope</small></div>
+<div class="leaf" data-search="telescope"><span>telescope</span><small>Physical / Artifact / Tool and instrument / Measuring and observing / telescope</small></div>
+<div class="leaf" data-search="camera"><span>camera</span><small>Physical / Artifact / Tool and instrument / Measuring and observing / camera</small></div>
+<div class="leaf" data-search="binoculars"><span>binoculars</span><small>Physical / Artifact / Tool and instrument / Measuring and observing / binoculars</small></div>
+<div class="leaf" data-search="calculator"><span>calculator</span><small>Physical / Artifact / Tool and instrument / Measuring and observing / calculator</small></div></div></details></div></details>
+<details class="node" data-search="phone computer tablet television radio printer robot refrigerator oven washing machine vacuum fan air conditioner generator motor battery light bulb remote control"><summary>Device and machine</summary><div class="question"><strong>Suggested question:</strong> Does it use electricity, an engine, or a network to perform work?</div><div class="path">Physical / Artifact / Device and machine</div><div class="children"><div class="leaf" data-search="phone"><span>phone</span><small>Physical / Artifact / Device and machine / phone</small></div>
+<div class="leaf" data-search="computer"><span>computer</span><small>Physical / Artifact / Device and machine / computer</small></div>
+<div class="leaf" data-search="tablet"><span>tablet</span><small>Physical / Artifact / Device and machine / tablet</small></div>
+<div class="leaf" data-search="television"><span>television</span><small>Physical / Artifact / Device and machine / television</small></div>
+<div class="leaf" data-search="radio"><span>radio</span><small>Physical / Artifact / Device and machine / radio</small></div>
+<div class="leaf" data-search="printer"><span>printer</span><small>Physical / Artifact / Device and machine / printer</small></div>
+<div class="leaf" data-search="robot"><span>robot</span><small>Physical / Artifact / Device and machine / robot</small></div>
+<div class="leaf" data-search="refrigerator"><span>refrigerator</span><small>Physical / Artifact / Device and machine / refrigerator</small></div>
+<div class="leaf" data-search="oven"><span>oven</span><small>Physical / Artifact / Device and machine / oven</small></div>
+<div class="leaf" data-search="washing machine"><span>washing machine</span><small>Physical / Artifact / Device and machine / washing machine</small></div>
+<div class="leaf" data-search="vacuum"><span>vacuum</span><small>Physical / Artifact / Device and machine / vacuum</small></div>
+<div class="leaf" data-search="fan"><span>fan</span><small>Physical / Artifact / Device and machine / fan</small></div>
+<div class="leaf" data-search="air conditioner"><span>air conditioner</span><small>Physical / Artifact / Device and machine / air conditioner</small></div>
+<div class="leaf" data-search="generator"><span>generator</span><small>Physical / Artifact / Device and machine / generator</small></div>
+<div class="leaf" data-search="motor"><span>motor</span><small>Physical / Artifact / Device and machine / motor</small></div>
+<div class="leaf" data-search="battery"><span>battery</span><small>Physical / Artifact / Device and machine / battery</small></div>
+<div class="leaf" data-search="light bulb"><span>light bulb</span><small>Physical / Artifact / Device and machine / light bulb</small></div>
+<div class="leaf" data-search="remote control"><span>remote control</span><small>Physical / Artifact / Device and machine / remote control</small></div></div></details>
+<details class="node" data-search="Kitchen pot pan kettle bowl plate cup glass mug fork spoon chopsticks whisk spatula ladle colander bottle jar can basket Home chair table desk bed sofa shelf cabinet drawer mirror lamp candle towel blanket pillow broom mop bucket umbrella key lock door window"><summary>Container and household</summary><div class="question"><strong>Suggested question:</strong> Is its main purpose to contain, prepare, clean, furnish, or illuminate?</div><div class="path">Physical / Artifact / Container and household</div><div class="children"><details class="node" data-search="pot pan kettle bowl plate cup glass mug fork spoon chopsticks whisk spatula ladle colander bottle jar can basket"><summary>Kitchen</summary><div class="question"><strong>Suggested question:</strong> Is it used for cooking, cutting, serving, or storing food?</div><div class="path">Physical / Artifact / Container and household / Kitchen</div><div class="children"><div class="leaf" data-search="pot"><span>pot</span><small>Physical / Artifact / Container and household / Kitchen / pot</small></div>
+<div class="leaf" data-search="pan"><span>pan</span><small>Physical / Artifact / Container and household / Kitchen / pan</small></div>
+<div class="leaf" data-search="kettle"><span>kettle</span><small>Physical / Artifact / Container and household / Kitchen / kettle</small></div>
+<div class="leaf" data-search="bowl"><span>bowl</span><small>Physical / Artifact / Container and household / Kitchen / bowl</small></div>
+<div class="leaf" data-search="plate"><span>plate</span><small>Physical / Artifact / Container and household / Kitchen / plate</small></div>
+<div class="leaf" data-search="cup"><span>cup</span><small>Physical / Artifact / Container and household / Kitchen / cup</small></div>
+<div class="leaf" data-search="glass"><span>glass</span><small>Physical / Artifact / Container and household / Kitchen / glass</small></div>
+<div class="leaf" data-search="mug"><span>mug</span><small>Physical / Artifact / Container and household / Kitchen / mug</small></div>
+<div class="leaf" data-search="fork"><span>fork</span><small>Physical / Artifact / Container and household / Kitchen / fork</small></div>
+<div class="leaf" data-search="spoon"><span>spoon</span><small>Physical / Artifact / Container and household / Kitchen / spoon</small></div>
+<div class="leaf" data-search="chopsticks"><span>chopsticks</span><small>Physical / Artifact / Container and household / Kitchen / chopsticks</small></div>
+<div class="leaf" data-search="whisk"><span>whisk</span><small>Physical / Artifact / Container and household / Kitchen / whisk</small></div>
+<div class="leaf" data-search="spatula"><span>spatula</span><small>Physical / Artifact / Container and household / Kitchen / spatula</small></div>
+<div class="leaf" data-search="ladle"><span>ladle</span><small>Physical / Artifact / Container and household / Kitchen / ladle</small></div>
+<div class="leaf" data-search="colander"><span>colander</span><small>Physical / Artifact / Container and household / Kitchen / colander</small></div>
+<div class="leaf" data-search="bottle"><span>bottle</span><small>Physical / Artifact / Container and household / Kitchen / bottle</small></div>
+<div class="leaf" data-search="jar"><span>jar</span><small>Physical / Artifact / Container and household / Kitchen / jar</small></div>
+<div class="leaf" data-search="can"><span>can</span><small>Physical / Artifact / Container and household / Kitchen / can</small></div>
+<div class="leaf" data-search="basket"><span>basket</span><small>Physical / Artifact / Container and household / Kitchen / basket</small></div></div></details>
+<details class="node" data-search="chair table desk bed sofa shelf cabinet drawer mirror lamp candle towel blanket pillow broom mop bucket umbrella key lock door window"><summary>Home</summary><div class="question"><strong>Suggested question:</strong> Is it furniture, bedding, cleaning equipment, or a decorative object?</div><div class="path">Physical / Artifact / Container and household / Home</div><div class="children"><div class="leaf" data-search="chair"><span>chair</span><small>Physical / Artifact / Container and household / Home / chair</small></div>
+<div class="leaf" data-search="table"><span>table</span><small>Physical / Artifact / Container and household / Home / table</small></div>
+<div class="leaf" data-search="desk"><span>desk</span><small>Physical / Artifact / Container and household / Home / desk</small></div>
+<div class="leaf" data-search="bed"><span>bed</span><small>Physical / Artifact / Container and household / Home / bed</small></div>
+<div class="leaf" data-search="sofa"><span>sofa</span><small>Physical / Artifact / Container and household / Home / sofa</small></div>
+<div class="leaf" data-search="shelf"><span>shelf</span><small>Physical / Artifact / Container and household / Home / shelf</small></div>
+<div class="leaf" data-search="cabinet"><span>cabinet</span><small>Physical / Artifact / Container and household / Home / cabinet</small></div>
+<div class="leaf" data-search="drawer"><span>drawer</span><small>Physical / Artifact / Container and household / Home / drawer</small></div>
+<div class="leaf" data-search="mirror"><span>mirror</span><small>Physical / Artifact / Container and household / Home / mirror</small></div>
+<div class="leaf" data-search="lamp"><span>lamp</span><small>Physical / Artifact / Container and household / Home / lamp</small></div>
+<div class="leaf" data-search="candle"><span>candle</span><small>Physical / Artifact / Container and household / Home / candle</small></div>
+<div class="leaf" data-search="towel"><span>towel</span><small>Physical / Artifact / Container and household / Home / towel</small></div>
+<div class="leaf" data-search="blanket"><span>blanket</span><small>Physical / Artifact / Container and household / Home / blanket</small></div>
+<div class="leaf" data-search="pillow"><span>pillow</span><small>Physical / Artifact / Container and household / Home / pillow</small></div>
+<div class="leaf" data-search="broom"><span>broom</span><small>Physical / Artifact / Container and household / Home / broom</small></div>
+<div class="leaf" data-search="mop"><span>mop</span><small>Physical / Artifact / Container and household / Home / mop</small></div>
+<div class="leaf" data-search="bucket"><span>bucket</span><small>Physical / Artifact / Container and household / Home / bucket</small></div>
+<div class="leaf" data-search="umbrella"><span>umbrella</span><small>Physical / Artifact / Container and household / Home / umbrella</small></div>
+<div class="leaf" data-search="key"><span>key</span><small>Physical / Artifact / Container and household / Home / key</small></div>
+<div class="leaf" data-search="lock"><span>lock</span><small>Physical / Artifact / Container and household / Home / lock</small></div>
+<div class="leaf" data-search="door"><span>door</span><small>Physical / Artifact / Container and household / Home / door</small></div>
+<div class="leaf" data-search="window"><span>window</span><small>Physical / Artifact / Container and household / Home / window</small></div></div></details></div></details>
+<details class="node" data-search="shirt coat dress pants skirt shoe boot sock hat glove scarf belt pajamas uniform ring necklace glasses wallet backpack handbag book newspaper toy doll ball puzzle"><summary>Garment and personal item</summary><div class="question"><strong>Suggested question:</strong> Is it worn, carried, read, played with, or used for personal identity?</div><div class="path">Physical / Artifact / Garment and personal item</div><div class="children"><div class="leaf" data-search="shirt"><span>shirt</span><small>Physical / Artifact / Garment and personal item / shirt</small></div>
+<div class="leaf" data-search="coat"><span>coat</span><small>Physical / Artifact / Garment and personal item / coat</small></div>
+<div class="leaf" data-search="dress"><span>dress</span><small>Physical / Artifact / Garment and personal item / dress</small></div>
+<div class="leaf" data-search="pants"><span>pants</span><small>Physical / Artifact / Garment and personal item / pants</small></div>
+<div class="leaf" data-search="skirt"><span>skirt</span><small>Physical / Artifact / Garment and personal item / skirt</small></div>
+<div class="leaf" data-search="shoe"><span>shoe</span><small>Physical / Artifact / Garment and personal item / shoe</small></div>
+<div class="leaf" data-search="boot"><span>boot</span><small>Physical / Artifact / Garment and personal item / boot</small></div>
+<div class="leaf" data-search="sock"><span>sock</span><small>Physical / Artifact / Garment and personal item / sock</small></div>
+<div class="leaf" data-search="hat"><span>hat</span><small>Physical / Artifact / Garment and personal item / hat</small></div>
+<div class="leaf" data-search="glove"><span>glove</span><small>Physical / Artifact / Garment and personal item / glove</small></div>
+<div class="leaf" data-search="scarf"><span>scarf</span><small>Physical / Artifact / Garment and personal item / scarf</small></div>
+<div class="leaf" data-search="belt"><span>belt</span><small>Physical / Artifact / Garment and personal item / belt</small></div>
+<div class="leaf" data-search="pajamas"><span>pajamas</span><small>Physical / Artifact / Garment and personal item / pajamas</small></div>
+<div class="leaf" data-search="uniform"><span>uniform</span><small>Physical / Artifact / Garment and personal item / uniform</small></div>
+<div class="leaf" data-search="ring"><span>ring</span><small>Physical / Artifact / Garment and personal item / ring</small></div>
+<div class="leaf" data-search="necklace"><span>necklace</span><small>Physical / Artifact / Garment and personal item / necklace</small></div>
+<div class="leaf" data-search="glasses"><span>glasses</span><small>Physical / Artifact / Garment and personal item / glasses</small></div>
+<div class="leaf" data-search="wallet"><span>wallet</span><small>Physical / Artifact / Garment and personal item / wallet</small></div>
+<div class="leaf" data-search="backpack"><span>backpack</span><small>Physical / Artifact / Garment and personal item / backpack</small></div>
+<div class="leaf" data-search="handbag"><span>handbag</span><small>Physical / Artifact / Garment and personal item / handbag</small></div>
+<div class="leaf" data-search="book"><span>book</span><small>Physical / Artifact / Garment and personal item / book</small></div>
+<div class="leaf" data-search="newspaper"><span>newspaper</span><small>Physical / Artifact / Garment and personal item / newspaper</small></div>
+<div class="leaf" data-search="toy"><span>toy</span><small>Physical / Artifact / Garment and personal item / toy</small></div>
+<div class="leaf" data-search="doll"><span>doll</span><small>Physical / Artifact / Garment and personal item / doll</small></div>
+<div class="leaf" data-search="ball"><span>ball</span><small>Physical / Artifact / Garment and personal item / ball</small></div>
+<div class="leaf" data-search="puzzle"><span>puzzle</span><small>Physical / Artifact / Garment and personal item / puzzle</small></div></div></details>
+<details class="node" data-search="Vehicle car truck bus bicycle motorcycle train tractor ship boat submarine airplane helicopter rocket spaceship wheelchair Structure house apartment school hospital church store office factory restaurant castle bridge road dam tower stadium temple pyramid statue fence tent"><summary>Vehicle and structure</summary><div class="question"><strong>Suggested question:</strong> Does it transport people or goods, or provide a place to live/work?</div><div class="path">Physical / Artifact / Vehicle and structure</div><div class="children"><details class="node" data-search="car truck bus bicycle motorcycle train tractor ship boat submarine airplane helicopter rocket spaceship wheelchair"><summary>Vehicle</summary><div class="question"><strong>Suggested question:</strong> Does it travel mainly by road, rail, water, or air?</div><div class="path">Physical / Artifact / Vehicle and structure / Vehicle</div><div class="children"><div class="leaf" data-search="car"><span>car</span><small>Physical / Artifact / Vehicle and structure / Vehicle / car</small></div>
+<div class="leaf" data-search="truck"><span>truck</span><small>Physical / Artifact / Vehicle and structure / Vehicle / truck</small></div>
+<div class="leaf" data-search="bus"><span>bus</span><small>Physical / Artifact / Vehicle and structure / Vehicle / bus</small></div>
+<div class="leaf" data-search="bicycle"><span>bicycle</span><small>Physical / Artifact / Vehicle and structure / Vehicle / bicycle</small></div>
+<div class="leaf" data-search="motorcycle"><span>motorcycle</span><small>Physical / Artifact / Vehicle and structure / Vehicle / motorcycle</small></div>
+<div class="leaf" data-search="train"><span>train</span><small>Physical / Artifact / Vehicle and structure / Vehicle / train</small></div>
+<div class="leaf" data-search="tractor"><span>tractor</span><small>Physical / Artifact / Vehicle and structure / Vehicle / tractor</small></div>
+<div class="leaf" data-search="ship"><span>ship</span><small>Physical / Artifact / Vehicle and structure / Vehicle / ship</small></div>
+<div class="leaf" data-search="boat"><span>boat</span><small>Physical / Artifact / Vehicle and structure / Vehicle / boat</small></div>
+<div class="leaf" data-search="submarine"><span>submarine</span><small>Physical / Artifact / Vehicle and structure / Vehicle / submarine</small></div>
+<div class="leaf" data-search="airplane"><span>airplane</span><small>Physical / Artifact / Vehicle and structure / Vehicle / airplane</small></div>
+<div class="leaf" data-search="helicopter"><span>helicopter</span><small>Physical / Artifact / Vehicle and structure / Vehicle / helicopter</small></div>
+<div class="leaf" data-search="rocket"><span>rocket</span><small>Physical / Artifact / Vehicle and structure / Vehicle / rocket</small></div>
+<div class="leaf" data-search="spaceship"><span>spaceship</span><small>Physical / Artifact / Vehicle and structure / Vehicle / spaceship</small></div>
+<div class="leaf" data-search="wheelchair"><span>wheelchair</span><small>Physical / Artifact / Vehicle and structure / Vehicle / wheelchair</small></div></div></details>
+<details class="node" data-search="house apartment school hospital church store office factory restaurant castle bridge road dam tower stadium temple pyramid statue fence tent"><summary>Structure</summary><div class="question"><strong>Suggested question:</strong> Is it a home, public building, infrastructure, or monument?</div><div class="path">Physical / Artifact / Vehicle and structure / Structure</div><div class="children"><div class="leaf" data-search="house"><span>house</span><small>Physical / Artifact / Vehicle and structure / Structure / house</small></div>
+<div class="leaf" data-search="apartment"><span>apartment</span><small>Physical / Artifact / Vehicle and structure / Structure / apartment</small></div>
+<div class="leaf" data-search="school"><span>school</span><small>Physical / Artifact / Vehicle and structure / Structure / school</small></div>
+<div class="leaf" data-search="hospital"><span>hospital</span><small>Physical / Artifact / Vehicle and structure / Structure / hospital</small></div>
+<div class="leaf" data-search="church"><span>church</span><small>Physical / Artifact / Vehicle and structure / Structure / church</small></div>
+<div class="leaf" data-search="store"><span>store</span><small>Physical / Artifact / Vehicle and structure / Structure / store</small></div>
+<div class="leaf" data-search="office"><span>office</span><small>Physical / Artifact / Vehicle and structure / Structure / office</small></div>
+<div class="leaf" data-search="factory"><span>factory</span><small>Physical / Artifact / Vehicle and structure / Structure / factory</small></div>
+<div class="leaf" data-search="restaurant"><span>restaurant</span><small>Physical / Artifact / Vehicle and structure / Structure / restaurant</small></div>
+<div class="leaf" data-search="castle"><span>castle</span><small>Physical / Artifact / Vehicle and structure / Structure / castle</small></div>
+<div class="leaf" data-search="bridge"><span>bridge</span><small>Physical / Artifact / Vehicle and structure / Structure / bridge</small></div>
+<div class="leaf" data-search="road"><span>road</span><small>Physical / Artifact / Vehicle and structure / Structure / road</small></div>
+<div class="leaf" data-search="dam"><span>dam</span><small>Physical / Artifact / Vehicle and structure / Structure / dam</small></div>
+<div class="leaf" data-search="tower"><span>tower</span><small>Physical / Artifact / Vehicle and structure / Structure / tower</small></div>
+<div class="leaf" data-search="stadium"><span>stadium</span><small>Physical / Artifact / Vehicle and structure / Structure / stadium</small></div>
+<div class="leaf" data-search="temple"><span>temple</span><small>Physical / Artifact / Vehicle and structure / Structure / temple</small></div>
+<div class="leaf" data-search="pyramid"><span>pyramid</span><small>Physical / Artifact / Vehicle and structure / Structure / pyramid</small></div>
+<div class="leaf" data-search="statue"><span>statue</span><small>Physical / Artifact / Vehicle and structure / Structure / statue</small></div>
+<div class="leaf" data-search="fence"><span>fence</span><small>Physical / Artifact / Vehicle and structure / Structure / fence</small></div>
+<div class="leaf" data-search="tent"><span>tent</span><small>Physical / Artifact / Vehicle and structure / Structure / tent</small></div></div></details></div></details></div></details>
+<details class="node" data-search="Material water ice steam air fire smoke soil sand clay mud rock stone metal iron steel gold silver copper glass plastic paper rubber oil gasoline salt sugar Earth and weather mountain hill valley canyon cave island beach desert forest river lake ocean waterfall cloud rain snow wind storm lightning rainbow earthquake volcano flood hurricane tornado Space and celestial Sun Moon Earth planet star comet asteroid meteor galaxy nebula black hole constellation"><summary>Natural substance</summary><div class="question"><strong>Suggested question:</strong> Is it primarily a material, a mineral, a physical force, or a phenomenon?</div><div class="path">Physical / Natural substance</div><div class="children"><details class="node" data-search="water ice steam air fire smoke soil sand clay mud rock stone metal iron steel gold silver copper glass plastic paper rubber oil gasoline salt sugar"><summary>Material</summary><div class="question"><strong>Suggested question:</strong> Is it solid, liquid, gas, or a manufactured substance?</div><div class="path">Physical / Natural substance / Material</div><div class="children"><div class="leaf" data-search="water"><span>water</span><small>Physical / Natural substance / Material / water</small></div>
+<div class="leaf" data-search="ice"><span>ice</span><small>Physical / Natural substance / Material / ice</small></div>
+<div class="leaf" data-search="steam"><span>steam</span><small>Physical / Natural substance / Material / steam</small></div>
+<div class="leaf" data-search="air"><span>air</span><small>Physical / Natural substance / Material / air</small></div>
+<div class="leaf" data-search="fire"><span>fire</span><small>Physical / Natural substance / Material / fire</small></div>
+<div class="leaf" data-search="smoke"><span>smoke</span><small>Physical / Natural substance / Material / smoke</small></div>
+<div class="leaf" data-search="soil"><span>soil</span><small>Physical / Natural substance / Material / soil</small></div>
+<div class="leaf" data-search="sand"><span>sand</span><small>Physical / Natural substance / Material / sand</small></div>
+<div class="leaf" data-search="clay"><span>clay</span><small>Physical / Natural substance / Material / clay</small></div>
+<div class="leaf" data-search="mud"><span>mud</span><small>Physical / Natural substance / Material / mud</small></div>
+<div class="leaf" data-search="rock"><span>rock</span><small>Physical / Natural substance / Material / rock</small></div>
+<div class="leaf" data-search="stone"><span>stone</span><small>Physical / Natural substance / Material / stone</small></div>
+<div class="leaf" data-search="metal"><span>metal</span><small>Physical / Natural substance / Material / metal</small></div>
+<div class="leaf" data-search="iron"><span>iron</span><small>Physical / Natural substance / Material / iron</small></div>
+<div class="leaf" data-search="steel"><span>steel</span><small>Physical / Natural substance / Material / steel</small></div>
+<div class="leaf" data-search="gold"><span>gold</span><small>Physical / Natural substance / Material / gold</small></div>
+<div class="leaf" data-search="silver"><span>silver</span><small>Physical / Natural substance / Material / silver</small></div>
+<div class="leaf" data-search="copper"><span>copper</span><small>Physical / Natural substance / Material / copper</small></div>
+<div class="leaf" data-search="glass"><span>glass</span><small>Physical / Natural substance / Material / glass</small></div>
+<div class="leaf" data-search="plastic"><span>plastic</span><small>Physical / Natural substance / Material / plastic</small></div>
+<div class="leaf" data-search="paper"><span>paper</span><small>Physical / Natural substance / Material / paper</small></div>
+<div class="leaf" data-search="rubber"><span>rubber</span><small>Physical / Natural substance / Material / rubber</small></div>
+<div class="leaf" data-search="oil"><span>oil</span><small>Physical / Natural substance / Material / oil</small></div>
+<div class="leaf" data-search="gasoline"><span>gasoline</span><small>Physical / Natural substance / Material / gasoline</small></div>
+<div class="leaf" data-search="salt"><span>salt</span><small>Physical / Natural substance / Material / salt</small></div>
+<div class="leaf" data-search="sugar"><span>sugar</span><small>Physical / Natural substance / Material / sugar</small></div></div></details>
+<details class="node" data-search="mountain hill valley canyon cave island beach desert forest river lake ocean waterfall cloud rain snow wind storm lightning rainbow earthquake volcano flood hurricane tornado"><summary>Earth and weather</summary><div class="question"><strong>Suggested question:</strong> Is it a landform, water feature, weather event, or natural hazard?</div><div class="path">Physical / Natural substance / Earth and weather</div><div class="children"><div class="leaf" data-search="mountain"><span>mountain</span><small>Physical / Natural substance / Earth and weather / mountain</small></div>
+<div class="leaf" data-search="hill"><span>hill</span><small>Physical / Natural substance / Earth and weather / hill</small></div>
+<div class="leaf" data-search="valley"><span>valley</span><small>Physical / Natural substance / Earth and weather / valley</small></div>
+<div class="leaf" data-search="canyon"><span>canyon</span><small>Physical / Natural substance / Earth and weather / canyon</small></div>
+<div class="leaf" data-search="cave"><span>cave</span><small>Physical / Natural substance / Earth and weather / cave</small></div>
+<div class="leaf" data-search="island"><span>island</span><small>Physical / Natural substance / Earth and weather / island</small></div>
+<div class="leaf" data-search="beach"><span>beach</span><small>Physical / Natural substance / Earth and weather / beach</small></div>
+<div class="leaf" data-search="desert"><span>desert</span><small>Physical / Natural substance / Earth and weather / desert</small></div>
+<div class="leaf" data-search="forest"><span>forest</span><small>Physical / Natural substance / Earth and weather / forest</small></div>
+<div class="leaf" data-search="river"><span>river</span><small>Physical / Natural substance / Earth and weather / river</small></div>
+<div class="leaf" data-search="lake"><span>lake</span><small>Physical / Natural substance / Earth and weather / lake</small></div>
+<div class="leaf" data-search="ocean"><span>ocean</span><small>Physical / Natural substance / Earth and weather / ocean</small></div>
+<div class="leaf" data-search="waterfall"><span>waterfall</span><small>Physical / Natural substance / Earth and weather / waterfall</small></div>
+<div class="leaf" data-search="cloud"><span>cloud</span><small>Physical / Natural substance / Earth and weather / cloud</small></div>
+<div class="leaf" data-search="rain"><span>rain</span><small>Physical / Natural substance / Earth and weather / rain</small></div>
+<div class="leaf" data-search="snow"><span>snow</span><small>Physical / Natural substance / Earth and weather / snow</small></div>
+<div class="leaf" data-search="wind"><span>wind</span><small>Physical / Natural substance / Earth and weather / wind</small></div>
+<div class="leaf" data-search="storm"><span>storm</span><small>Physical / Natural substance / Earth and weather / storm</small></div>
+<div class="leaf" data-search="lightning"><span>lightning</span><small>Physical / Natural substance / Earth and weather / lightning</small></div>
+<div class="leaf" data-search="rainbow"><span>rainbow</span><small>Physical / Natural substance / Earth and weather / rainbow</small></div>
+<div class="leaf" data-search="earthquake"><span>earthquake</span><small>Physical / Natural substance / Earth and weather / earthquake</small></div>
+<div class="leaf" data-search="volcano"><span>volcano</span><small>Physical / Natural substance / Earth and weather / volcano</small></div>
+<div class="leaf" data-search="flood"><span>flood</span><small>Physical / Natural substance / Earth and weather / flood</small></div>
+<div class="leaf" data-search="hurricane"><span>hurricane</span><small>Physical / Natural substance / Earth and weather / hurricane</small></div>
+<div class="leaf" data-search="tornado"><span>tornado</span><small>Physical / Natural substance / Earth and weather / tornado</small></div></div></details>
+<details class="node" data-search="Sun Moon Earth planet star comet asteroid meteor galaxy nebula black hole constellation"><summary>Space and celestial</summary><div class="question"><strong>Suggested question:</strong> Is it a planet, star, moon, small body, or large cosmic system?</div><div class="path">Physical / Natural substance / Space and celestial</div><div class="children"><div class="leaf" data-search="sun"><span>Sun</span><small>Physical / Natural substance / Space and celestial / Sun</small></div>
+<div class="leaf" data-search="moon"><span>Moon</span><small>Physical / Natural substance / Space and celestial / Moon</small></div>
+<div class="leaf" data-search="earth"><span>Earth</span><small>Physical / Natural substance / Space and celestial / Earth</small></div>
+<div class="leaf" data-search="planet"><span>planet</span><small>Physical / Natural substance / Space and celestial / planet</small></div>
+<div class="leaf" data-search="star"><span>star</span><small>Physical / Natural substance / Space and celestial / star</small></div>
+<div class="leaf" data-search="comet"><span>comet</span><small>Physical / Natural substance / Space and celestial / comet</small></div>
+<div class="leaf" data-search="asteroid"><span>asteroid</span><small>Physical / Natural substance / Space and celestial / asteroid</small></div>
+<div class="leaf" data-search="meteor"><span>meteor</span><small>Physical / Natural substance / Space and celestial / meteor</small></div>
+<div class="leaf" data-search="galaxy"><span>galaxy</span><small>Physical / Natural substance / Space and celestial / galaxy</small></div>
+<div class="leaf" data-search="nebula"><span>nebula</span><small>Physical / Natural substance / Space and celestial / nebula</small></div>
+<div class="leaf" data-search="black hole"><span>black hole</span><small>Physical / Natural substance / Space and celestial / black hole</small></div>
+<div class="leaf" data-search="constellation"><span>constellation</span><small>Physical / Natural substance / Space and celestial / constellation</small></div></div></details></div></details>
+<details class="node" data-search="Natural region Arctic Antarctica Amazon Sahara Pacific Ocean Atlantic Ocean Rocky Mountains Alps Grand Canyon Great Barrier Reef national park island Human place New York London Paris Tokyo Rome Washington United States Canada Mexico China India France city village capital airport museum"><summary>Geographic entity</summary><div class="question"><strong>Suggested question:</strong> Is it a natural region, a human settlement, a political unit, or a route?</div><div class="path">Physical / Geographic entity</div><div class="children"><details class="node" data-search="Arctic Antarctica Amazon Sahara Pacific Ocean Atlantic Ocean Rocky Mountains Alps Grand Canyon Great Barrier Reef national park island"><summary>Natural region</summary><div class="question"><strong>Suggested question:</strong> Is it identified mainly by terrain, climate, ecosystem, or water?</div><div class="path">Physical / Geographic entity / Natural region</div><div class="children"><div class="leaf" data-search="arctic"><span>Arctic</span><small>Physical / Geographic entity / Natural region / Arctic</small></div>
+<div class="leaf" data-search="antarctica"><span>Antarctica</span><small>Physical / Geographic entity / Natural region / Antarctica</small></div>
+<div class="leaf" data-search="amazon"><span>Amazon</span><small>Physical / Geographic entity / Natural region / Amazon</small></div>
+<div class="leaf" data-search="sahara"><span>Sahara</span><small>Physical / Geographic entity / Natural region / Sahara</small></div>
+<div class="leaf" data-search="pacific ocean"><span>Pacific Ocean</span><small>Physical / Geographic entity / Natural region / Pacific Ocean</small></div>
+<div class="leaf" data-search="atlantic ocean"><span>Atlantic Ocean</span><small>Physical / Geographic entity / Natural region / Atlantic Ocean</small></div>
+<div class="leaf" data-search="rocky mountains"><span>Rocky Mountains</span><small>Physical / Geographic entity / Natural region / Rocky Mountains</small></div>
+<div class="leaf" data-search="alps"><span>Alps</span><small>Physical / Geographic entity / Natural region / Alps</small></div>
+<div class="leaf" data-search="grand canyon"><span>Grand Canyon</span><small>Physical / Geographic entity / Natural region / Grand Canyon</small></div>
+<div class="leaf" data-search="great barrier reef"><span>Great Barrier Reef</span><small>Physical / Geographic entity / Natural region / Great Barrier Reef</small></div>
+<div class="leaf" data-search="national park"><span>national park</span><small>Physical / Geographic entity / Natural region / national park</small></div>
+<div class="leaf" data-search="island"><span>island</span><small>Physical / Geographic entity / Natural region / island</small></div></div></details>
+<details class="node" data-search="New York London Paris Tokyo Rome Washington United States Canada Mexico China India France city village capital airport museum"><summary>Human place</summary><div class="question"><strong>Suggested question:</strong> Is it a city, country, neighborhood, institution, or landmark?</div><div class="path">Physical / Geographic entity / Human place</div><div class="children"><div class="leaf" data-search="new york"><span>New York</span><small>Physical / Geographic entity / Human place / New York</small></div>
+<div class="leaf" data-search="london"><span>London</span><small>Physical / Geographic entity / Human place / London</small></div>
+<div class="leaf" data-search="paris"><span>Paris</span><small>Physical / Geographic entity / Human place / Paris</small></div>
+<div class="leaf" data-search="tokyo"><span>Tokyo</span><small>Physical / Geographic entity / Human place / Tokyo</small></div>
+<div class="leaf" data-search="rome"><span>Rome</span><small>Physical / Geographic entity / Human place / Rome</small></div>
+<div class="leaf" data-search="washington"><span>Washington</span><small>Physical / Geographic entity / Human place / Washington</small></div>
+<div class="leaf" data-search="united states"><span>United States</span><small>Physical / Geographic entity / Human place / United States</small></div>
+<div class="leaf" data-search="canada"><span>Canada</span><small>Physical / Geographic entity / Human place / Canada</small></div>
+<div class="leaf" data-search="mexico"><span>Mexico</span><small>Physical / Geographic entity / Human place / Mexico</small></div>
+<div class="leaf" data-search="china"><span>China</span><small>Physical / Geographic entity / Human place / China</small></div>
+<div class="leaf" data-search="india"><span>India</span><small>Physical / Geographic entity / Human place / India</small></div>
+<div class="leaf" data-search="france"><span>France</span><small>Physical / Geographic entity / Human place / France</small></div>
+<div class="leaf" data-search="city"><span>city</span><small>Physical / Geographic entity / Human place / city</small></div>
+<div class="leaf" data-search="village"><span>village</span><small>Physical / Geographic entity / Human place / village</small></div>
+<div class="leaf" data-search="capital"><span>capital</span><small>Physical / Geographic entity / Human place / capital</small></div>
+<div class="leaf" data-search="airport"><span>airport</span><small>Physical / Geographic entity / Human place / airport</small></div>
+<div class="leaf" data-search="museum"><span>museum</span><small>Physical / Geographic entity / Human place / museum</small></div></div></details></div></details></div></details>
+<details class="node" data-search="Person or character Historical and contemporary Abraham Lincoln George Washington Cleopatra Julius Caesar Napoleon Mahatma Gandhi Martin Luther King Jr. Albert Einstein Marie Curie William Shakespeare Leonardo da Vinci Beethoven Elvis Presley Michael Jackson Serena Williams Michael Jordan Neil Armstrong Amelia Earhart Queen Elizabeth II Fictional and mythic Harry Potter Sherlock Holmes James Bond Cinderella Santa Claus Superman Batman Spider-Man Mickey Mouse Darth Vader Yoda Frodo Gandalf Hercules Zeus Thor dragon unicorn vampire zombie ghost mermaid fairy wizard detective pirate Role and group member parent child friend neighbor teacher doctor nurse lawyer engineer artist musician farmer soldier pilot chef president king queen hero villain celebrity athlete Organization and institution country government army police company corporation brand school university hospital church club team band family community political party nonprofit court parliament Event and time birthday wedding holiday festival party concert game race battle war revolution election ceremony meeting journey disaster day week month year century season past future Information and media word name number letter symbol question answer fact idea map document contract law book novel poem song film photograph painting sculpture news website email message password program algorithm database State and relation love hate friendship family anger fear joy sadness hope dream memory knowledge truth beauty freedom justice peace war power money health death life birth change motion speed size color shape cause effect problem solution rule plan promise secret luck chance number mathematics science religion language culture" open><summary>Abstract</summary><div class="question"><strong>Suggested question:</strong> Is it chiefly a person/entity, event, information, social system, or idea?</div><div class="path">Abstract</div><div class="children"><details class="node" data-search="Historical and contemporary Abraham Lincoln George Washington Cleopatra Julius Caesar Napoleon Mahatma Gandhi Martin Luther King Jr. Albert Einstein Marie Curie William Shakespeare Leonardo da Vinci Beethoven Elvis Presley Michael Jackson Serena Williams Michael Jordan Neil Armstrong Amelia Earhart Queen Elizabeth II Fictional and mythic Harry Potter Sherlock Holmes James Bond Cinderella Santa Claus Superman Batman Spider-Man Mickey Mouse Darth Vader Yoda Frodo Gandalf Hercules Zeus Thor dragon unicorn vampire zombie ghost mermaid fairy wizard detective pirate Role and group member parent child friend neighbor teacher doctor nurse lawyer engineer artist musician farmer soldier pilot chef president king queen hero villain celebrity athlete"><summary>Person or character</summary><div class="question"><strong>Suggested question:</strong> Is it a real individual, a fictional character, a mythic being, or a role?</div><div class="path">Abstract / Person or character</div><div class="children"><details class="node" data-search="Abraham Lincoln George Washington Cleopatra Julius Caesar Napoleon Mahatma Gandhi Martin Luther King Jr. Albert Einstein Marie Curie William Shakespeare Leonardo da Vinci Beethoven Elvis Presley Michael Jackson Serena Williams Michael Jordan Neil Armstrong Amelia Earhart Queen Elizabeth II"><summary>Historical and contemporary</summary><div class="question"><strong>Suggested question:</strong> Is the person known mainly for politics, science, art, sport, or exploration?</div><div class="path">Abstract / Person or character / Historical and contemporary</div><div class="children"><div class="leaf" data-search="abraham lincoln"><span>Abraham Lincoln</span><small>Abstract / Person or character / Historical and contemporary / Abraham Lincoln</small></div>
+<div class="leaf" data-search="george washington"><span>George Washington</span><small>Abstract / Person or character / Historical and contemporary / George Washington</small></div>
+<div class="leaf" data-search="cleopatra"><span>Cleopatra</span><small>Abstract / Person or character / Historical and contemporary / Cleopatra</small></div>
+<div class="leaf" data-search="julius caesar"><span>Julius Caesar</span><small>Abstract / Person or character / Historical and contemporary / Julius Caesar</small></div>
+<div class="leaf" data-search="napoleon"><span>Napoleon</span><small>Abstract / Person or character / Historical and contemporary / Napoleon</small></div>
+<div class="leaf" data-search="mahatma gandhi"><span>Mahatma Gandhi</span><small>Abstract / Person or character / Historical and contemporary / Mahatma Gandhi</small></div>
+<div class="leaf" data-search="martin luther king jr."><span>Martin Luther King Jr.</span><small>Abstract / Person or character / Historical and contemporary / Martin Luther King Jr.</small></div>
+<div class="leaf" data-search="albert einstein"><span>Albert Einstein</span><small>Abstract / Person or character / Historical and contemporary / Albert Einstein</small></div>
+<div class="leaf" data-search="marie curie"><span>Marie Curie</span><small>Abstract / Person or character / Historical and contemporary / Marie Curie</small></div>
+<div class="leaf" data-search="william shakespeare"><span>William Shakespeare</span><small>Abstract / Person or character / Historical and contemporary / William Shakespeare</small></div>
+<div class="leaf" data-search="leonardo da vinci"><span>Leonardo da Vinci</span><small>Abstract / Person or character / Historical and contemporary / Leonardo da Vinci</small></div>
+<div class="leaf" data-search="beethoven"><span>Beethoven</span><small>Abstract / Person or character / Historical and contemporary / Beethoven</small></div>
+<div class="leaf" data-search="elvis presley"><span>Elvis Presley</span><small>Abstract / Person or character / Historical and contemporary / Elvis Presley</small></div>
+<div class="leaf" data-search="michael jackson"><span>Michael Jackson</span><small>Abstract / Person or character / Historical and contemporary / Michael Jackson</small></div>
+<div class="leaf" data-search="serena williams"><span>Serena Williams</span><small>Abstract / Person or character / Historical and contemporary / Serena Williams</small></div>
+<div class="leaf" data-search="michael jordan"><span>Michael Jordan</span><small>Abstract / Person or character / Historical and contemporary / Michael Jordan</small></div>
+<div class="leaf" data-search="neil armstrong"><span>Neil Armstrong</span><small>Abstract / Person or character / Historical and contemporary / Neil Armstrong</small></div>
+<div class="leaf" data-search="amelia earhart"><span>Amelia Earhart</span><small>Abstract / Person or character / Historical and contemporary / Amelia Earhart</small></div>
+<div class="leaf" data-search="queen elizabeth ii"><span>Queen Elizabeth II</span><small>Abstract / Person or character / Historical and contemporary / Queen Elizabeth II</small></div></div></details>
+<details class="node" data-search="Harry Potter Sherlock Holmes James Bond Cinderella Santa Claus Superman Batman Spider-Man Mickey Mouse Darth Vader Yoda Frodo Gandalf Hercules Zeus Thor dragon unicorn vampire zombie ghost mermaid fairy wizard detective pirate"><summary>Fictional and mythic</summary><div class="question"><strong>Suggested question:</strong> Is it from literature, film, television, games, religion, or mythology?</div><div class="path">Abstract / Person or character / Fictional and mythic</div><div class="children"><div class="leaf" data-search="harry potter"><span>Harry Potter</span><small>Abstract / Person or character / Fictional and mythic / Harry Potter</small></div>
+<div class="leaf" data-search="sherlock holmes"><span>Sherlock Holmes</span><small>Abstract / Person or character / Fictional and mythic / Sherlock Holmes</small></div>
+<div class="leaf" data-search="james bond"><span>James Bond</span><small>Abstract / Person or character / Fictional and mythic / James Bond</small></div>
+<div class="leaf" data-search="cinderella"><span>Cinderella</span><small>Abstract / Person or character / Fictional and mythic / Cinderella</small></div>
+<div class="leaf" data-search="santa claus"><span>Santa Claus</span><small>Abstract / Person or character / Fictional and mythic / Santa Claus</small></div>
+<div class="leaf" data-search="superman"><span>Superman</span><small>Abstract / Person or character / Fictional and mythic / Superman</small></div>
+<div class="leaf" data-search="batman"><span>Batman</span><small>Abstract / Person or character / Fictional and mythic / Batman</small></div>
+<div class="leaf" data-search="spider-man"><span>Spider-Man</span><small>Abstract / Person or character / Fictional and mythic / Spider-Man</small></div>
+<div class="leaf" data-search="mickey mouse"><span>Mickey Mouse</span><small>Abstract / Person or character / Fictional and mythic / Mickey Mouse</small></div>
+<div class="leaf" data-search="darth vader"><span>Darth Vader</span><small>Abstract / Person or character / Fictional and mythic / Darth Vader</small></div>
+<div class="leaf" data-search="yoda"><span>Yoda</span><small>Abstract / Person or character / Fictional and mythic / Yoda</small></div>
+<div class="leaf" data-search="frodo"><span>Frodo</span><small>Abstract / Person or character / Fictional and mythic / Frodo</small></div>
+<div class="leaf" data-search="gandalf"><span>Gandalf</span><small>Abstract / Person or character / Fictional and mythic / Gandalf</small></div>
+<div class="leaf" data-search="hercules"><span>Hercules</span><small>Abstract / Person or character / Fictional and mythic / Hercules</small></div>
+<div class="leaf" data-search="zeus"><span>Zeus</span><small>Abstract / Person or character / Fictional and mythic / Zeus</small></div>
+<div class="leaf" data-search="thor"><span>Thor</span><small>Abstract / Person or character / Fictional and mythic / Thor</small></div>
+<div class="leaf" data-search="dragon"><span>dragon</span><small>Abstract / Person or character / Fictional and mythic / dragon</small></div>
+<div class="leaf" data-search="unicorn"><span>unicorn</span><small>Abstract / Person or character / Fictional and mythic / unicorn</small></div>
+<div class="leaf" data-search="vampire"><span>vampire</span><small>Abstract / Person or character / Fictional and mythic / vampire</small></div>
+<div class="leaf" data-search="zombie"><span>zombie</span><small>Abstract / Person or character / Fictional and mythic / zombie</small></div>
+<div class="leaf" data-search="ghost"><span>ghost</span><small>Abstract / Person or character / Fictional and mythic / ghost</small></div>
+<div class="leaf" data-search="mermaid"><span>mermaid</span><small>Abstract / Person or character / Fictional and mythic / mermaid</small></div>
+<div class="leaf" data-search="fairy"><span>fairy</span><small>Abstract / Person or character / Fictional and mythic / fairy</small></div>
+<div class="leaf" data-search="wizard"><span>wizard</span><small>Abstract / Person or character / Fictional and mythic / wizard</small></div>
+<div class="leaf" data-search="detective"><span>detective</span><small>Abstract / Person or character / Fictional and mythic / detective</small></div>
+<div class="leaf" data-search="pirate"><span>pirate</span><small>Abstract / Person or character / Fictional and mythic / pirate</small></div></div></details>
+<details class="node" data-search="parent child friend neighbor teacher doctor nurse lawyer engineer artist musician farmer soldier pilot chef president king queen hero villain celebrity athlete"><summary>Role and group member</summary><div class="question"><strong>Suggested question:</strong> Is it a profession, relationship, rank, identity, or social role?</div><div class="path">Abstract / Person or character / Role and group member</div><div class="children"><div class="leaf" data-search="parent"><span>parent</span><small>Abstract / Person or character / Role and group member / parent</small></div>
+<div class="leaf" data-search="child"><span>child</span><small>Abstract / Person or character / Role and group member / child</small></div>
+<div class="leaf" data-search="friend"><span>friend</span><small>Abstract / Person or character / Role and group member / friend</small></div>
+<div class="leaf" data-search="neighbor"><span>neighbor</span><small>Abstract / Person or character / Role and group member / neighbor</small></div>
+<div class="leaf" data-search="teacher"><span>teacher</span><small>Abstract / Person or character / Role and group member / teacher</small></div>
+<div class="leaf" data-search="doctor"><span>doctor</span><small>Abstract / Person or character / Role and group member / doctor</small></div>
+<div class="leaf" data-search="nurse"><span>nurse</span><small>Abstract / Person or character / Role and group member / nurse</small></div>
+<div class="leaf" data-search="lawyer"><span>lawyer</span><small>Abstract / Person or character / Role and group member / lawyer</small></div>
+<div class="leaf" data-search="engineer"><span>engineer</span><small>Abstract / Person or character / Role and group member / engineer</small></div>
+<div class="leaf" data-search="artist"><span>artist</span><small>Abstract / Person or character / Role and group member / artist</small></div>
+<div class="leaf" data-search="musician"><span>musician</span><small>Abstract / Person or character / Role and group member / musician</small></div>
+<div class="leaf" data-search="farmer"><span>farmer</span><small>Abstract / Person or character / Role and group member / farmer</small></div>
+<div class="leaf" data-search="soldier"><span>soldier</span><small>Abstract / Person or character / Role and group member / soldier</small></div>
+<div class="leaf" data-search="pilot"><span>pilot</span><small>Abstract / Person or character / Role and group member / pilot</small></div>
+<div class="leaf" data-search="chef"><span>chef</span><small>Abstract / Person or character / Role and group member / chef</small></div>
+<div class="leaf" data-search="president"><span>president</span><small>Abstract / Person or character / Role and group member / president</small></div>
+<div class="leaf" data-search="king"><span>king</span><small>Abstract / Person or character / Role and group member / king</small></div>
+<div class="leaf" data-search="queen"><span>queen</span><small>Abstract / Person or character / Role and group member / queen</small></div>
+<div class="leaf" data-search="hero"><span>hero</span><small>Abstract / Person or character / Role and group member / hero</small></div>
+<div class="leaf" data-search="villain"><span>villain</span><small>Abstract / Person or character / Role and group member / villain</small></div>
+<div class="leaf" data-search="celebrity"><span>celebrity</span><small>Abstract / Person or character / Role and group member / celebrity</small></div>
+<div class="leaf" data-search="athlete"><span>athlete</span><small>Abstract / Person or character / Role and group member / athlete</small></div></div></details></div></details>
+<details class="node" data-search="country government army police company corporation brand school university hospital church club team band family community political party nonprofit court parliament"><summary>Organization and institution</summary><div class="question"><strong>Suggested question:</strong> Is it a government, business, educational body, association, or group?</div><div class="path">Abstract / Organization and institution</div><div class="children"><div class="leaf" data-search="country"><span>country</span><small>Abstract / Organization and institution / country</small></div>
+<div class="leaf" data-search="government"><span>government</span><small>Abstract / Organization and institution / government</small></div>
+<div class="leaf" data-search="army"><span>army</span><small>Abstract / Organization and institution / army</small></div>
+<div class="leaf" data-search="police"><span>police</span><small>Abstract / Organization and institution / police</small></div>
+<div class="leaf" data-search="company"><span>company</span><small>Abstract / Organization and institution / company</small></div>
+<div class="leaf" data-search="corporation"><span>corporation</span><small>Abstract / Organization and institution / corporation</small></div>
+<div class="leaf" data-search="brand"><span>brand</span><small>Abstract / Organization and institution / brand</small></div>
+<div class="leaf" data-search="school"><span>school</span><small>Abstract / Organization and institution / school</small></div>
+<div class="leaf" data-search="university"><span>university</span><small>Abstract / Organization and institution / university</small></div>
+<div class="leaf" data-search="hospital"><span>hospital</span><small>Abstract / Organization and institution / hospital</small></div>
+<div class="leaf" data-search="church"><span>church</span><small>Abstract / Organization and institution / church</small></div>
+<div class="leaf" data-search="club"><span>club</span><small>Abstract / Organization and institution / club</small></div>
+<div class="leaf" data-search="team"><span>team</span><small>Abstract / Organization and institution / team</small></div>
+<div class="leaf" data-search="band"><span>band</span><small>Abstract / Organization and institution / band</small></div>
+<div class="leaf" data-search="family"><span>family</span><small>Abstract / Organization and institution / family</small></div>
+<div class="leaf" data-search="community"><span>community</span><small>Abstract / Organization and institution / community</small></div>
+<div class="leaf" data-search="political party"><span>political party</span><small>Abstract / Organization and institution / political party</small></div>
+<div class="leaf" data-search="nonprofit"><span>nonprofit</span><small>Abstract / Organization and institution / nonprofit</small></div>
+<div class="leaf" data-search="court"><span>court</span><small>Abstract / Organization and institution / court</small></div>
+<div class="leaf" data-search="parliament"><span>parliament</span><small>Abstract / Organization and institution / parliament</small></div></div></details>
+<details class="node" data-search="birthday wedding holiday festival party concert game race battle war revolution election ceremony meeting journey disaster day week month year century season past future"><summary>Event and time</summary><div class="question"><strong>Suggested question:</strong> Is it a recurring natural/social event, a historical event, or a time unit?</div><div class="path">Abstract / Event and time</div><div class="children"><div class="leaf" data-search="birthday"><span>birthday</span><small>Abstract / Event and time / birthday</small></div>
+<div class="leaf" data-search="wedding"><span>wedding</span><small>Abstract / Event and time / wedding</small></div>
+<div class="leaf" data-search="holiday"><span>holiday</span><small>Abstract / Event and time / holiday</small></div>
+<div class="leaf" data-search="festival"><span>festival</span><small>Abstract / Event and time / festival</small></div>
+<div class="leaf" data-search="party"><span>party</span><small>Abstract / Event and time / party</small></div>
+<div class="leaf" data-search="concert"><span>concert</span><small>Abstract / Event and time / concert</small></div>
+<div class="leaf" data-search="game"><span>game</span><small>Abstract / Event and time / game</small></div>
+<div class="leaf" data-search="race"><span>race</span><small>Abstract / Event and time / race</small></div>
+<div class="leaf" data-search="battle"><span>battle</span><small>Abstract / Event and time / battle</small></div>
+<div class="leaf" data-search="war"><span>war</span><small>Abstract / Event and time / war</small></div>
+<div class="leaf" data-search="revolution"><span>revolution</span><small>Abstract / Event and time / revolution</small></div>
+<div class="leaf" data-search="election"><span>election</span><small>Abstract / Event and time / election</small></div>
+<div class="leaf" data-search="ceremony"><span>ceremony</span><small>Abstract / Event and time / ceremony</small></div>
+<div class="leaf" data-search="meeting"><span>meeting</span><small>Abstract / Event and time / meeting</small></div>
+<div class="leaf" data-search="journey"><span>journey</span><small>Abstract / Event and time / journey</small></div>
+<div class="leaf" data-search="disaster"><span>disaster</span><small>Abstract / Event and time / disaster</small></div>
+<div class="leaf" data-search="day"><span>day</span><small>Abstract / Event and time / day</small></div>
+<div class="leaf" data-search="week"><span>week</span><small>Abstract / Event and time / week</small></div>
+<div class="leaf" data-search="month"><span>month</span><small>Abstract / Event and time / month</small></div>
+<div class="leaf" data-search="year"><span>year</span><small>Abstract / Event and time / year</small></div>
+<div class="leaf" data-search="century"><span>century</span><small>Abstract / Event and time / century</small></div>
+<div class="leaf" data-search="season"><span>season</span><small>Abstract / Event and time / season</small></div>
+<div class="leaf" data-search="past"><span>past</span><small>Abstract / Event and time / past</small></div>
+<div class="leaf" data-search="future"><span>future</span><small>Abstract / Event and time / future</small></div></div></details>
+<details class="node" data-search="word name number letter symbol question answer fact idea map document contract law book novel poem song film photograph painting sculpture news website email message password program algorithm database"><summary>Information and media</summary><div class="question"><strong>Suggested question:</strong> Is it a language symbol, document, artwork, story, sound, or digital object?</div><div class="path">Abstract / Information and media</div><div class="children"><div class="leaf" data-search="word"><span>word</span><small>Abstract / Information and media / word</small></div>
+<div class="leaf" data-search="name"><span>name</span><small>Abstract / Information and media / name</small></div>
+<div class="leaf" data-search="number"><span>number</span><small>Abstract / Information and media / number</small></div>
+<div class="leaf" data-search="letter"><span>letter</span><small>Abstract / Information and media / letter</small></div>
+<div class="leaf" data-search="symbol"><span>symbol</span><small>Abstract / Information and media / symbol</small></div>
+<div class="leaf" data-search="question"><span>question</span><small>Abstract / Information and media / question</small></div>
+<div class="leaf" data-search="answer"><span>answer</span><small>Abstract / Information and media / answer</small></div>
+<div class="leaf" data-search="fact"><span>fact</span><small>Abstract / Information and media / fact</small></div>
+<div class="leaf" data-search="idea"><span>idea</span><small>Abstract / Information and media / idea</small></div>
+<div class="leaf" data-search="map"><span>map</span><small>Abstract / Information and media / map</small></div>
+<div class="leaf" data-search="document"><span>document</span><small>Abstract / Information and media / document</small></div>
+<div class="leaf" data-search="contract"><span>contract</span><small>Abstract / Information and media / contract</small></div>
+<div class="leaf" data-search="law"><span>law</span><small>Abstract / Information and media / law</small></div>
+<div class="leaf" data-search="book"><span>book</span><small>Abstract / Information and media / book</small></div>
+<div class="leaf" data-search="novel"><span>novel</span><small>Abstract / Information and media / novel</small></div>
+<div class="leaf" data-search="poem"><span>poem</span><small>Abstract / Information and media / poem</small></div>
+<div class="leaf" data-search="song"><span>song</span><small>Abstract / Information and media / song</small></div>
+<div class="leaf" data-search="film"><span>film</span><small>Abstract / Information and media / film</small></div>
+<div class="leaf" data-search="photograph"><span>photograph</span><small>Abstract / Information and media / photograph</small></div>
+<div class="leaf" data-search="painting"><span>painting</span><small>Abstract / Information and media / painting</small></div>
+<div class="leaf" data-search="sculpture"><span>sculpture</span><small>Abstract / Information and media / sculpture</small></div>
+<div class="leaf" data-search="news"><span>news</span><small>Abstract / Information and media / news</small></div>
+<div class="leaf" data-search="website"><span>website</span><small>Abstract / Information and media / website</small></div>
+<div class="leaf" data-search="email"><span>email</span><small>Abstract / Information and media / email</small></div>
+<div class="leaf" data-search="message"><span>message</span><small>Abstract / Information and media / message</small></div>
+<div class="leaf" data-search="password"><span>password</span><small>Abstract / Information and media / password</small></div>
+<div class="leaf" data-search="program"><span>program</span><small>Abstract / Information and media / program</small></div>
+<div class="leaf" data-search="algorithm"><span>algorithm</span><small>Abstract / Information and media / algorithm</small></div>
+<div class="leaf" data-search="database"><span>database</span><small>Abstract / Information and media / database</small></div></div></details>
+<details class="node" data-search="love hate friendship family anger fear joy sadness hope dream memory knowledge truth beauty freedom justice peace war power money health death life birth change motion speed size color shape cause effect problem solution rule plan promise secret luck chance number mathematics science religion language culture"><summary>State and relation</summary><div class="question"><strong>Suggested question:</strong> Is it a quality, emotion, relationship, process, rule, or value judgment?</div><div class="path">Abstract / State and relation</div><div class="children"><div class="leaf" data-search="love"><span>love</span><small>Abstract / State and relation / love</small></div>
+<div class="leaf" data-search="hate"><span>hate</span><small>Abstract / State and relation / hate</small></div>
+<div class="leaf" data-search="friendship"><span>friendship</span><small>Abstract / State and relation / friendship</small></div>
+<div class="leaf" data-search="family"><span>family</span><small>Abstract / State and relation / family</small></div>
+<div class="leaf" data-search="anger"><span>anger</span><small>Abstract / State and relation / anger</small></div>
+<div class="leaf" data-search="fear"><span>fear</span><small>Abstract / State and relation / fear</small></div>
+<div class="leaf" data-search="joy"><span>joy</span><small>Abstract / State and relation / joy</small></div>
+<div class="leaf" data-search="sadness"><span>sadness</span><small>Abstract / State and relation / sadness</small></div>
+<div class="leaf" data-search="hope"><span>hope</span><small>Abstract / State and relation / hope</small></div>
+<div class="leaf" data-search="dream"><span>dream</span><small>Abstract / State and relation / dream</small></div>
+<div class="leaf" data-search="memory"><span>memory</span><small>Abstract / State and relation / memory</small></div>
+<div class="leaf" data-search="knowledge"><span>knowledge</span><small>Abstract / State and relation / knowledge</small></div>
+<div class="leaf" data-search="truth"><span>truth</span><small>Abstract / State and relation / truth</small></div>
+<div class="leaf" data-search="beauty"><span>beauty</span><small>Abstract / State and relation / beauty</small></div>
+<div class="leaf" data-search="freedom"><span>freedom</span><small>Abstract / State and relation / freedom</small></div>
+<div class="leaf" data-search="justice"><span>justice</span><small>Abstract / State and relation / justice</small></div>
+<div class="leaf" data-search="peace"><span>peace</span><small>Abstract / State and relation / peace</small></div>
+<div class="leaf" data-search="war"><span>war</span><small>Abstract / State and relation / war</small></div>
+<div class="leaf" data-search="power"><span>power</span><small>Abstract / State and relation / power</small></div>
+<div class="leaf" data-search="money"><span>money</span><small>Abstract / State and relation / money</small></div>
+<div class="leaf" data-search="health"><span>health</span><small>Abstract / State and relation / health</small></div>
+<div class="leaf" data-search="death"><span>death</span><small>Abstract / State and relation / death</small></div>
+<div class="leaf" data-search="life"><span>life</span><small>Abstract / State and relation / life</small></div>
+<div class="leaf" data-search="birth"><span>birth</span><small>Abstract / State and relation / birth</small></div>
+<div class="leaf" data-search="change"><span>change</span><small>Abstract / State and relation / change</small></div>
+<div class="leaf" data-search="motion"><span>motion</span><small>Abstract / State and relation / motion</small></div>
+<div class="leaf" data-search="speed"><span>speed</span><small>Abstract / State and relation / speed</small></div>
+<div class="leaf" data-search="size"><span>size</span><small>Abstract / State and relation / size</small></div>
+<div class="leaf" data-search="color"><span>color</span><small>Abstract / State and relation / color</small></div>
+<div class="leaf" data-search="shape"><span>shape</span><small>Abstract / State and relation / shape</small></div>
+<div class="leaf" data-search="cause"><span>cause</span><small>Abstract / State and relation / cause</small></div>
+<div class="leaf" data-search="effect"><span>effect</span><small>Abstract / State and relation / effect</small></div>
+<div class="leaf" data-search="problem"><span>problem</span><small>Abstract / State and relation / problem</small></div>
+<div class="leaf" data-search="solution"><span>solution</span><small>Abstract / State and relation / solution</small></div>
+<div class="leaf" data-search="rule"><span>rule</span><small>Abstract / State and relation / rule</small></div>
+<div class="leaf" data-search="plan"><span>plan</span><small>Abstract / State and relation / plan</small></div>
+<div class="leaf" data-search="promise"><span>promise</span><small>Abstract / State and relation / promise</small></div>
+<div class="leaf" data-search="secret"><span>secret</span><small>Abstract / State and relation / secret</small></div>
+<div class="leaf" data-search="luck"><span>luck</span><small>Abstract / State and relation / luck</small></div>
+<div class="leaf" data-search="chance"><span>chance</span><small>Abstract / State and relation / chance</small></div>
+<div class="leaf" data-search="number"><span>number</span><small>Abstract / State and relation / number</small></div>
+<div class="leaf" data-search="mathematics"><span>mathematics</span><small>Abstract / State and relation / mathematics</small></div>
+<div class="leaf" data-search="science"><span>science</span><small>Abstract / State and relation / science</small></div>
+<div class="leaf" data-search="religion"><span>religion</span><small>Abstract / State and relation / religion</small></div>
+<div class="leaf" data-search="language"><span>language</span><small>Abstract / State and relation / language</small></div>
+<div class="leaf" data-search="culture"><span>culture</span><small>Abstract / State and relation / culture</small></div></div></details></div></details></main>
+<script>
+const nodes = [...document.querySelectorAll(".node, .leaf")];
+const search = document.querySelector("#search");
+search.addEventListener("input", () => {
+  const query = search.value.trim().toLowerCase();
+  document.querySelectorAll(".node, .leaf").forEach((node) => {
+    const match = !query || node.dataset.search.toLowerCase().includes(query);
+    node.hidden = !match;
+    if (match && node.classList.contains("node") && query) node.open = true;
+  });
+  if (query) document.querySelectorAll(".node").forEach((node) => {
+    if (node.querySelector(".leaf:not([hidden]), .node:not([hidden])")) node.open = true;
+  });
+});
+document.querySelector("#expand").onclick = () => document.querySelectorAll(".node").forEach(n => n.open = true);
+document.querySelector("#collapse").onclick = () => document.querySelectorAll(".node").forEach(n => n.open = false);
+</script>
+</body>
+</html>
