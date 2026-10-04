@@ -2,6 +2,7 @@
 
 - [BrianThinks](BrianThinks.md) — AI proxy constitution
 - [BrianThinksManually](BrianThinksManually.md) — AI proxy portal
+- [20 Questions Noun Hierarchy](Ontology/)
 
 ### Artificial Intelligence
 
@@ -28,7 +29,3 @@
 - [Capacity Disruptions](capacity-disruptions.md)
 - [Comparative Development](comparative-development.md)
 - [Comparative Development Bibliography](comparative-development-biblio.md)
-
-### Ontology
-
-- [20 Questions Noun Hierarchy](Ontology/)
