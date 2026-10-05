@@ -2,7 +2,7 @@
 
 - [BrianThinks](BrianThinks.md) — AI proxy constitution
 - [BrianThinksManually](BrianThinksManually.md) — AI proxy portal
-- [20 Questions Noun Hierarchy](Ontology/) — 678 nodes: 50 semantic branches and 628 terminal noun categories ([ontology options and provenance](Ontology/Ontology.md))
+- [20 Questions Noun Hierarchy](Ontology/) — curated baseline: 678 nodes; [WordNet 3.0 experiment](Ontology/wordnet_20q.html): 8,957 nodes; ([design and prior art](Ontology/Ontology.md))
 
 ### Artificial Intelligence
 
