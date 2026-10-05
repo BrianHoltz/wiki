@@ -18,10 +18,11 @@ The first standards-based experiment is now also committed:
 It uses Princeton WordNet 3.0 noun synsets. It selects the top 7,000
 frequency-weighted noun synsets that have a hypernym path to WordNet's
 `entity.n.01` root and adds their complete hypernym ancestry, producing 8,974
-display nodes: 3,832 branches and 5,142 terminal categories. This root
+display nodes: 3,831 branches and 5,143 terminal categories. This root
 connectivity filter prevents WordNet's disconnected proper names, places,
 events, and other top-level records from being flattened directly under the
-display root.
+display root. The game profile also suppresses the degenerate generic
+`thing -> horror` stub.
 The selected source pool contains 82,115 noun synsets, of which 13,739 have
 nonzero WordNet corpus-frequency counts.
 
@@ -60,6 +61,10 @@ The build proceeds as follows:
   preferring the highest-scoring available parent and breaking ties by source
   ID. This creates a single navigable tree while preserving every original
   hypernym edge in the manifest.
+- **Apply profile presentation exclusions:** suppress the generic
+  `thing.n.08` branch when it would appear only as the degenerate
+  `thing -> horror` stub. This is a game-profile cleanup, not a claim that
+  WordNet's `horror.n.02` hypernym link is invalid.
 - **Generate the outputs:** write a collapsible, searchable HTML page with
   suggested category questions; a YAML tree for inspection and tooling; and a
   JSON manifest containing source IDs, labels, glosses, frequencies, all
@@ -119,6 +124,35 @@ snapshot-dependent; links are the authoritative places to refresh them.
   [WordNet paper](https://doi.org/10.1007/978-94-011-2016-8_2) is a standard
   reference point for lexical-semantic systems.
 - **Fit:** best initial canonical backbone for common noun gameplay.
+
+### 20Q.net and Akinator
+
+These are notable game systems rather than downloadable ontologies. They are
+important prior art because they optimize the actual interaction this project
+is trying to support: identifying a player-selected answer through a sequence
+of questions.
+
+- **20Q.net:** Robin Burgener's computerized 20 Questions experiment began in
+  1988; the commercial handheld version appeared in 2003, and the service was
+  also published as a website. The system is described as a learned neural
+  network and folk taxonomy rather than a fixed public hierarchy. Its current
+  internal question/answer inventory and node count are proprietary or
+  undocumented. Its historical existence as a web and handheld product,
+  multiple category editions, and long-running public use are the relevant
+  prominence measures. See the
+  [20Q overview](https://en.wikipedia.org/wiki/20Q).
+- **Akinator:** Elokence launched this French video game in 2007. It asks
+  about characters, objects, films, and animals, learns from prior players,
+  and accepts graded answers such as “probably” and “probably not.” Its
+  internal classification database and node count are not public. Its
+  commercial web, mobile, and game presence and its sustained international
+  availability are practical prominence proxies. See the
+  [Akinator overview](https://en.wikipedia.org/wiki/Akinator).
+- **Fit:** both systems demonstrate that question selection, uncertainty
+  handling, and feedback can matter more to gameplay than a formally pure
+  hierarchy. They are useful behavioral benchmarks, but their learned
+  databases should not be silently substituted for WordNet's auditable source
+  graph.
 
 ### Wikidata
 

@@ -3,17 +3,17 @@
 # This is a deterministic one-parent presentation projection.
 wordnet_3_0_20q:
   "entity [entity.n.01]":
-    "abstraction [abstraction.n.06]":  # Q: Is the answer a kind of abstraction?
-      "attribute [attribute.n.02]":  # Q: Is the answer a kind of attribute?
-        "inheritance [inheritance.n.04]":  # Q: Is the answer a kind of inheritance?
+    "abstraction [abstraction.n.06]":  # Q: Is it a kind of abstraction?
+      "attribute [attribute.n.02]":  # Q: Is it a kind of attribute?
+        "inheritance [inheritance.n.04]":  # Q: Is it a kind of inheritance?
           "background [background.n.01]":
-          "upbringing [upbringing.n.01]":  # Q: Is the answer a kind of upbringing?
+          "upbringing [upbringing.n.01]":  # Q: Is it a kind of upbringing?
             "education [education.n.05]":
-        "personality [personality.n.01]":  # Q: Is the answer a kind of personality?
+        "personality [personality.n.01]":  # Q: Is it a kind of personality?
           "identity [identity.n.01]":
-        "property [property.n.02]":  # Q: Is the answer a kind of property?
+        "property [property.n.02]":  # Q: Is it a kind of property?
           "age [age.n.01]":
-          "bodily property [bodily_property.n.01]":  # Q: Is the answer a kind of bodily property?
+          "bodily property [bodily_property.n.01]":  # Q: Is it a kind of bodily property?
             "carriage [carriage.n.03]":
               "gracefulness [gracefulness.n.01]":
                 "grace [grace.n.02]":
@@ -28,20 +28,20 @@ wordnet_3_0_20q:
             "physique [physique.n.01]":
             "position [position.n.04]":
             "stature [stature.n.02]":
-          "concentration [concentration.n.01]":  # Q: Is the answer a kind of concentration?
+          "concentration [concentration.n.01]":  # Q: Is it a kind of concentration?
             "hydrogen ion concentration [hydrogen_ion_concentration.n.01]":
               "pH [ph.n.01]":
             "molarity [molarity.n.01]":
             "titer [titer.n.01]":
-          "consistency [consistency.n.01]":  # Q: Is the answer a kind of consistency?
+          "consistency [consistency.n.01]":  # Q: Is it a kind of consistency?
             "solidity [solidity.n.01]":
               "compactness [compactness.n.02]":
                 "density [density.n.01]":
             "viscosity [viscosity.n.01]":
-          "constitution [constitution.n.04]":  # Q: Is the answer a kind of constitution?
+          "constitution [constitution.n.04]":  # Q: Is it a kind of constitution?
             "structure [structure.n.02]":
               "framework [framework.n.02]":
-          "degree [degree.n.01]":  # Q: Is the answer a kind of degree?
+          "degree [degree.n.01]":  # Q: Is it a kind of degree?
             "depth [depth.n.02]":
             "extreme [extreme.n.01]":
             "high [high.n.01]":
@@ -56,16 +56,16 @@ wordnet_3_0_20q:
               "vehemence [vehemence.n.01]":
             "quality [quality.n.02]":
               "superiority [superiority.n.01]":
-          "disposition [disposition.n.04]":  # Q: Is the answer a kind of disposition?
+          "disposition [disposition.n.04]":  # Q: Is it a kind of disposition?
             "tendency [tendency.n.03]":
               "desire [desire.n.02]":
                 "hunger [hunger.n.02]":
           "fullness [fullness.n.02]":
-          "heredity [heredity.n.02]":  # Q: Is the answer a kind of heredity?
+          "heredity [heredity.n.02]":  # Q: Is it a kind of heredity?
             "inheritance [inheritance.n.03]":
               "ancestry [ancestry.n.02]":
                 "origin [origin.n.02]":
-          "magnitude [magnitude.n.01]":  # Q: Is the answer a kind of magnitude?
+          "magnitude [magnitude.n.01]":  # Q: Is it a kind of magnitude?
             "amount [amount.n.02]":
               "decrease [decrease.n.03]":
               "increase [increase.n.04]":
@@ -117,13 +117,14 @@ wordnet_3_0_20q:
               "largeness [largeness.n.03]":
                 "capaciousness [capaciousness.n.02]":
                 "enormousness [enormousness.n.01]":
-          "manner [manner.n.01]":  # Q: Is the answer a kind of manner?
+              "smallness [smallness.n.01]":
+          "manner [manner.n.01]":  # Q: Is it a kind of manner?
             "artistic style [artistic_style.n.01]":
               "treatment [treatment.n.03]":
             "life style [life_style.n.01]":
             "touch [touch.n.04]":
           "olfactory property [olfactory_property.n.01]":
-          "physical property [physical_property.n.01]":  # Q: Is the answer a kind of physical property?
+          "physical property [physical_property.n.01]":  # Q: Is it a kind of physical property?
             "elasticity [elasticity.n.01]":
               "bounce [bounce.n.01]":
               "give [give.n.01]":
@@ -149,7 +150,7 @@ wordnet_3_0_20q:
               "heaviness [heaviness.n.01]":
               "lightness [lightness.n.02]":
           "size [size.n.02]":
-          "sound property [sound_property.n.01]":  # Q: Is the answer a kind of sound property?
+          "sound property [sound_property.n.01]":  # Q: Is it a kind of sound property?
             "pitch [pitch.n.01]":
               "tone [tone.n.02]":
             "silence [silence.n.02]":
@@ -161,7 +162,7 @@ wordnet_3_0_20q:
             "timbre [timbre.n.01]":
               "color [color.n.03]":
               "plangency [plangency.n.01]":
-          "spatial property [spatial_property.n.01]":  # Q: Is the answer a kind of spatial property?
+          "spatial property [spatial_property.n.01]":  # Q: Is it a kind of spatial property?
             "asymmetry [asymmetry.n.01]":
               "radial asymmetry [radial_asymmetry.n.01]":
                 "directivity [directivity.n.01]":
@@ -175,19 +176,19 @@ wordnet_3_0_20q:
                 "sphericity [sphericity.n.01]":
               "topography [topography.n.01]":
             "symmetry [symmetry.n.01]":
-          "strength [strength.n.01]":  # Q: Is the answer a kind of strength?
+          "strength [strength.n.01]":  # Q: Is it a kind of strength?
             "endurance [endurance.n.01]":
             "might [might.n.01]":
-          "tactile property [tactile_property.n.01]":  # Q: Is the answer a kind of tactile property?
+          "tactile property [tactile_property.n.01]":  # Q: Is it a kind of tactile property?
             "texture [texture.n.01]":
               "roughness [roughness.n.01]":
                 "harshness [harshness.n.01]":
               "smoothness [smoothness.n.01]":
                 "polish [polish.n.01]":
-          "taste property [taste_property.n.01]":  # Q: Is the answer a kind of taste property?
+          "taste property [taste_property.n.01]":  # Q: Is it a kind of taste property?
             "spiciness [spiciness.n.01]":
               "nip [nip.n.05]":
-          "temporal property [temporal_property.n.01]":  # Q: Is the answer a kind of temporal property?
+          "temporal property [temporal_property.n.01]":  # Q: Is it a kind of temporal property?
             "duration [duration.n.03]":
               "impermanence [impermanence.n.01]":
                 "mortality [mortality.n.01]":
@@ -209,7 +210,7 @@ wordnet_3_0_20q:
                     "modernity [modernity.n.01]":
                 "simultaneity [simultaneity.n.01]":
                   "concurrence [concurrence.n.04]":
-          "visual property [visual_property.n.01]":  # Q: Is the answer a kind of visual property?
+          "visual property [visual_property.n.01]":  # Q: Is it a kind of visual property?
             "color [color.n.01]":
               "achromatic color [achromatic_color.n.01]":
                 "black [black.n.01]":
@@ -251,12 +252,12 @@ wordnet_3_0_20q:
             "texture [texture.n.04]":
               "grain [grain.n.10]":
                 "graining [graining.n.01]":
-          "weakness [weakness.n.03]":  # Q: Is the answer a kind of weakness?
+          "weakness [weakness.n.03]":  # Q: Is it a kind of weakness?
             "vulnerability [vulnerability.n.02]":
               "exposure [exposure.n.01]":
             "weak part [weak_part.n.01]":
-        "quality [quality.n.01]":  # Q: Is the answer a kind of quality?
-          "ability [ability.n.01]":  # Q: Is the answer a kind of ability?
+        "quality [quality.n.01]":  # Q: Is it a kind of quality?
+          "ability [ability.n.01]":  # Q: Is it a kind of ability?
             "adaptability [adaptability.n.01]":
               "flexibility [flexibility.n.02]":
             "capability [capability.n.01]":
@@ -265,11 +266,11 @@ wordnet_3_0_20q:
             "competence [competence.n.01]":
             "sensitivity [sensitivity.n.05]":
               "antenna [antenna.n.02]":
-          "accuracy [accuracy.n.01]":  # Q: Is the answer a kind of accuracy?
+          "accuracy [accuracy.n.01]":  # Q: Is it a kind of accuracy?
             "exactness [exactness.n.01]":
               "preciseness [preciseness.n.02]":
           "air [air.n.03]":
-          "appearance [appearance.n.01]":  # Q: Is the answer a kind of appearance?
+          "appearance [appearance.n.01]":  # Q: Is it a kind of appearance?
             "beauty [beauty.n.01]":
               "attractiveness [attractiveness.n.02]":
                 "appeal [appeal.n.02]":
@@ -294,7 +295,7 @@ wordnet_3_0_20q:
             "semblance [semblance.n.01]":
               "disguise [disguise.n.01]":
             "stain [stain.n.01]":
-          "asset [asset.n.01]":  # Q: Is the answer a kind of asset?
+          "asset [asset.n.01]":  # Q: Is it a kind of asset?
             "advantage [advantage.n.01]":
               "favor [favor.n.02]":
               "good [good.n.01]":
@@ -306,22 +307,22 @@ wordnet_3_0_20q:
             "forte [forte.n.01]":
             "resource [resource.n.02]":
               "aid [aid.n.01]":
-          "attraction [attraction.n.03]":  # Q: Is the answer a kind of attraction?
+          "attraction [attraction.n.03]":  # Q: Is it a kind of attraction?
             "binding [binding.n.01]":
-          "bad [bad.n.01]":  # Q: Is the answer a kind of bad?
+          "bad [bad.n.01]":  # Q: Is it a kind of bad?
             "evil [evil.n.02]":
             "liability [liability.n.03]":
               "disadvantage [disadvantage.n.01]":
                 "defect [defect.n.02]":
                 "limitation [limitation.n.02]":
                 "loss [loss.n.04]":
-          "changeableness [changeableness.n.01]":  # Q: Is the answer a kind of changeableness?
+          "changeableness [changeableness.n.01]":  # Q: Is it a kind of changeableness?
             "variability [variability.n.01]":
-          "changelessness [changelessness.n.02]":  # Q: Is the answer a kind of changelessness?
+          "changelessness [changelessness.n.02]":  # Q: Is it a kind of changelessness?
             "invariability [invariability.n.02]":
               "unvariedness [unvariedness.n.01]":
                 "monotony [monotony.n.01]":
-          "characteristic [characteristic.n.02]":  # Q: Is the answer a kind of characteristic?
+          "characteristic [characteristic.n.02]":  # Q: Is it a kind of characteristic?
             "aspect [aspect.n.02]":
             "compatibility [compatibility.n.02]":
               "agreement [agreement.n.02]":
@@ -335,18 +336,18 @@ wordnet_3_0_20q:
               "incongruity [incongruity.n.01]":
                 "irony [irony.n.02]":
             "point [point.n.14]":
-          "clearness [clearness.n.02]":  # Q: Is the answer a kind of clearness?
+          "clearness [clearness.n.02]":  # Q: Is it a kind of clearness?
             "distinctness [distinctness.n.01]":
               "definition [definition.n.02]":
               "focus [focus.n.02]":
           "complexity [complexity.n.01]":
-          "comprehensibility [comprehensibility.n.01]":  # Q: Is the answer a kind of comprehensibility?
+          "comprehensibility [comprehensibility.n.01]":  # Q: Is it a kind of comprehensibility?
             "clarity [clarity.n.01]":
-          "credibility [credibility.n.01]":  # Q: Is the answer a kind of credibility?
+          "credibility [credibility.n.01]":  # Q: Is it a kind of credibility?
             "authenticity [authenticity.n.01]":
               "real McCoy [real_mccoy.n.01]":
             "cogency [cogency.n.02]":
-          "difference [difference.n.01]":  # Q: Is the answer a kind of difference?
+          "difference [difference.n.01]":  # Q: Is it a kind of difference?
             "discrepancy [discrepancy.n.01]":
             "dissimilarity [dissimilarity.n.01]":
               "nonuniformity [nonuniformity.n.01]":
@@ -356,35 +357,35 @@ wordnet_3_0_20q:
             "inequality [inequality.n.01]":
               "disparity [disparity.n.01]":
                 "gap [gap.n.01]":
-          "difficulty [difficulty.n.04]":  # Q: Is the answer a kind of difficulty?
+          "difficulty [difficulty.n.04]":  # Q: Is it a kind of difficulty?
             "asperity [asperity.n.01]":
             "troublesomeness [troublesomeness.n.01]":
           "distinction [distinction.n.03]":
-          "elegance [elegance.n.01]":  # Q: Is the answer a kind of elegance?
+          "elegance [elegance.n.01]":  # Q: Is it a kind of elegance?
             "daintiness [daintiness.n.01]":
             "dash [dash.n.01]":
             "magnificence [magnificence.n.02]":
-          "fidelity [fidelity.n.02]":  # Q: Is the answer a kind of fidelity?
+          "fidelity [fidelity.n.02]":  # Q: Is it a kind of fidelity?
             "dedication [dedication.n.01]":
             "loyalty [loyalty.n.01]":
               "patriotism [patriotism.n.01]":
-          "fruitfulness [fruitfulness.n.01]":  # Q: Is the answer a kind of fruitfulness?
+          "fruitfulness [fruitfulness.n.01]":  # Q: Is it a kind of fruitfulness?
             "productiveness [productiveness.n.01]":
-          "generality [generality.n.02]":  # Q: Is the answer a kind of generality?
+          "generality [generality.n.02]":  # Q: Is it a kind of generality?
             "commonality [commonality.n.02]":
               "solidarity [solidarity.n.01]":
             "universality [universality.n.01]":
-          "good [good.n.03]":  # Q: Is the answer a kind of good?
+          "good [good.n.03]":  # Q: Is it a kind of good?
             "benefit [benefit.n.02]":
               "sake [sake.n.01]":
             "worthiness [worthiness.n.01]":
               "deservingness [deservingness.n.01]":
           "holiness [holiness.n.01]":
-          "immobility [immobility.n.02]":  # Q: Is the answer a kind of immobility?
+          "immobility [immobility.n.02]":  # Q: Is it a kind of immobility?
             "immovability [immovability.n.01]":
               "steadiness [steadiness.n.02]":
                 "stability [stability.n.01]":
-          "immorality [immorality.n.01]":  # Q: Is the answer a kind of immorality?
+          "immorality [immorality.n.01]":  # Q: Is it a kind of immorality?
             "corruption [corruption.n.04]":
             "evil [evil.n.03]":
               "error [error.n.05]":
@@ -396,21 +397,21 @@ wordnet_3_0_20q:
               "injustice [injustice.n.02]":
                 "wrong [wrong.n.01]":
               "sin [sin.n.01]":
-          "incomprehensibility [incomprehensibility.n.01]":  # Q: Is the answer a kind of incomprehensibility?
+          "incomprehensibility [incomprehensibility.n.01]":  # Q: Is it a kind of incomprehensibility?
             "obscureness [obscureness.n.03]":
-          "incorrectness [incorrectness.n.02]":  # Q: Is the answer a kind of incorrectness?
+          "incorrectness [incorrectness.n.02]":  # Q: Is it a kind of incorrectness?
             "erroneousness [erroneousness.n.01]":
-          "inelegance [inelegance.n.01]":  # Q: Is the answer a kind of inelegance?
+          "inelegance [inelegance.n.01]":  # Q: Is it a kind of inelegance?
             "ostentation [ostentation.n.02]":
-          "inhumaneness [inhumaneness.n.01]":  # Q: Is the answer a kind of inhumaneness?
+          "inhumaneness [inhumaneness.n.01]":  # Q: Is it a kind of inhumaneness?
             "mercilessness [mercilessness.n.02]":
               "relentlessness [relentlessness.n.01]":
-          "inutility [inutility.n.01]":  # Q: Is the answer a kind of inutility?
+          "inutility [inutility.n.01]":  # Q: Is it a kind of inutility?
             "futility [futility.n.01]":
-          "materiality [materiality.n.02]":  # Q: Is the answer a kind of materiality?
+          "materiality [materiality.n.02]":  # Q: Is it a kind of materiality?
             "concreteness [concreteness.n.01]":
               "literalness [literalness.n.01]":
-          "morality [morality.n.01]":  # Q: Is the answer a kind of morality?
+          "morality [morality.n.01]":  # Q: Is it a kind of morality?
             "conscience [conscience.n.02]":
             "good [good.n.02]":
               "kindness [kindness.n.01]":
@@ -428,17 +429,17 @@ wordnet_3_0_20q:
               "honorableness [honorableness.n.01]":
                 "nobility [nobility.n.02]":
               "justice [justice.n.01]":
-          "naivete [naivete.n.01]":  # Q: Is the answer a kind of naivete?
+          "naivete [naivete.n.01]":  # Q: Is it a kind of naivete?
             "artlessness [artlessness.n.01]":
-          "naturalness [naturalness.n.01]":  # Q: Is the answer a kind of naturalness?
+          "naturalness [naturalness.n.01]":  # Q: Is it a kind of naturalness?
             "spontaneity [spontaneity.n.01]":
           "nature [nature.n.01]":
-          "originality [originality.n.02]":  # Q: Is the answer a kind of originality?
+          "originality [originality.n.02]":  # Q: Is it a kind of originality?
             "freshness [freshness.n.02]":
-          "particularity [particularity.n.01]":  # Q: Is the answer a kind of particularity?
+          "particularity [particularity.n.01]":  # Q: Is it a kind of particularity?
             "specificity [specificity.n.01]":
           "popularity [popularity.n.01]":
-          "power [power.n.01]":  # Q: Is the answer a kind of power?
+          "power [power.n.01]":  # Q: Is it a kind of power?
             "control [control.n.01]":
               "authority [authority.n.01]":
                 "command [command.n.03]":
@@ -452,12 +453,12 @@ wordnet_3_0_20q:
               "color [color.n.02]":
             "legal power [legal_power.n.01]":
             "potency [potency.n.02]":
-          "powerlessness [powerlessness.n.01]":  # Q: Is the answer a kind of powerlessness?
+          "powerlessness [powerlessness.n.01]":  # Q: Is it a kind of powerlessness?
             "helplessness [helplessness.n.01]":
-          "regularity [regularity.n.02]":  # Q: Is the answer a kind of regularity?
+          "regularity [regularity.n.02]":  # Q: Is it a kind of regularity?
             "cyclicity [cyclicity.n.01]":
               "rhythm [rhythm.n.02]":
-          "sameness [sameness.n.01]":  # Q: Is the answer a kind of sameness?
+          "sameness [sameness.n.01]":  # Q: Is it a kind of sameness?
             "equality [equality.n.01]":
               "balance [balance.n.02]":
             "identity [identity.n.04]":
@@ -472,20 +473,20 @@ wordnet_3_0_20q:
                 "consistency [consistency.n.02]":
                 "homogeneity [homogeneity.n.01]":
           "simplicity [simplicity.n.01]":
-          "suitability [suitability.n.01]":  # Q: Is the answer a kind of suitability?
+          "suitability [suitability.n.01]":  # Q: Is it a kind of suitability?
             "convenience [convenience.n.02]":
               "handiness [handiness.n.02]":
             "fitness [fitness.n.01]":
               "qualification [qualification.n.01]":
-          "uncertainty [uncertainty.n.01]":  # Q: Is the answer a kind of uncertainty?
+          "uncertainty [uncertainty.n.01]":  # Q: Is it a kind of uncertainty?
             "doubt [doubt.n.02]":
-          "unnaturalness [unnaturalness.n.01]":  # Q: Is the answer a kind of unnaturalness?
+          "unnaturalness [unnaturalness.n.01]":  # Q: Is it a kind of unnaturalness?
             "affectedness [affectedness.n.01]":
               "airs [airs.n.01]":
               "coyness [coyness.n.01]":
             "artificiality [artificiality.n.01]":
               "pretension [pretension.n.01]":
-          "utility [utility.n.02]":  # Q: Is the answer a kind of utility?
+          "utility [utility.n.02]":  # Q: Is it a kind of utility?
             "detergency [detergency.n.01]":
             "function [function.n.02]":
             "helpfulness [helpfulness.n.01]":
@@ -495,7 +496,7 @@ wordnet_3_0_20q:
             "practicality [practicality.n.01]":
               "realism [realism.n.01]":
             "use [use.n.03]":
-          "worth [worth.n.02]":  # Q: Is the answer a kind of worth?
+          "worth [worth.n.02]":  # Q: Is it a kind of worth?
             "merit [merit.n.01]":
             "value [value.n.02]":
               "gross national product [gross_national_product.n.01]":
@@ -513,17 +514,17 @@ wordnet_3_0_20q:
                 "average cost [average_cost.n.01]":
                 "marginal cost [marginal_cost.n.01]":
               "price [price.n.03]":
-          "worthlessness [worthlessness.n.01]":  # Q: Is the answer a kind of worthlessness?
+          "worthlessness [worthlessness.n.01]":  # Q: Is it a kind of worthlessness?
             "damn [damn.n.01]":
-        "shape [shape.n.02]":  # Q: Is the answer a kind of shape?
+        "shape [shape.n.02]":  # Q: Is it a kind of shape?
           "amorphous shape [amorphous_shape.n.01]":
-          "angular shape [angular_shape.n.01]":  # Q: Is the answer a kind of angular shape?
+          "angular shape [angular_shape.n.01]":  # Q: Is it a kind of angular shape?
             "fold [fold.n.01]":
           "circle [circle.n.03]":
           "column [column.n.04]":
-          "distorted shape [distorted_shape.n.01]":  # Q: Is the answer a kind of distorted shape?
+          "distorted shape [distorted_shape.n.01]":  # Q: Is it a kind of distorted shape?
             "tortuosity [tortuosity.n.01]":
-          "figure [figure.n.06]":  # Q: Is the answer a kind of figure?
+          "figure [figure.n.06]":  # Q: Is it a kind of figure?
             "plane figure [plane_figure.n.01]":
               "conic section [conic_section.n.01]":
                 "ellipse [ellipse.n.01]":
@@ -545,7 +546,7 @@ wordnet_3_0_20q:
                 "statue [statue.n.01]":
             "subfigure [subfigure.n.01]":
               "branch [branch.n.03]":
-          "line [line.n.04]":  # Q: Is the answer a kind of line?
+          "line [line.n.04]":  # Q: Is it a kind of line?
             "boundary [boundary.n.02]":
               "brink [brink.n.01]":
               "margin [margin.n.01]":
@@ -563,10 +564,10 @@ wordnet_3_0_20q:
               "regression line [regression_line.n.01]":
             "straight line [straight_line.n.01]":
               "tangent [tangent.n.01]":
-          "plane [plane.n.02]":  # Q: Is the answer a kind of plane?
+          "plane [plane.n.02]":  # Q: Is it a kind of plane?
             "facet plane [facet_plane.n.01]":
             "picture plane [picture_plane.n.01]":
-          "round shape [round_shape.n.01]":  # Q: Is the answer a kind of round shape?
+          "round shape [round_shape.n.01]":  # Q: Is it a kind of round shape?
             "coil [coil.n.02]":
             "cylinder [cylinder.n.02]":
               "barrel [barrel.n.03]":
@@ -580,7 +581,7 @@ wordnet_3_0_20q:
                       "soapsuds [soapsuds.n.01]":
               "drop [drop.n.01]":
             "whirl [whirl.n.02]":
-          "solid [solid.n.03]":  # Q: Is the answer a kind of solid?
+          "solid [solid.n.03]":  # Q: Is it a kind of solid?
             "cast [cast.n.03]":
             "concave shape [concave_shape.n.01]":
               "depression [depression.n.08]":
@@ -599,15 +600,15 @@ wordnet_3_0_20q:
                 "cube [cube.n.01]":
             "toroid [toroid.n.01]":
               "ring [ring.n.02]":
-        "space [space.n.01]":  # Q: Is the answer a kind of space?
-          "mathematical space [mathematical_space.n.01]":  # Q: Is the answer a kind of mathematical space?
+        "space [space.n.01]":  # Q: Is it a kind of space?
+          "mathematical space [mathematical_space.n.01]":  # Q: Is it a kind of mathematical space?
             "null space [null_space.n.01]":
             "subspace [subspace.n.01]":
-        "state [state.n.02]":  # Q: Is the answer a kind of state?
-          "action [action.n.02]":  # Q: Is the answer a kind of action?
+        "state [state.n.02]":  # Q: Is it a kind of state?
+          "action [action.n.02]":  # Q: Is it a kind of action?
             "behavior [behavior.n.02]":
             "operation [operation.n.01]":
-          "being [being.n.01]":  # Q: Is the answer a kind of being?
+          "being [being.n.01]":  # Q: Is it a kind of being?
             "actuality [actuality.n.01]":
               "reality [reality.n.02]":
                 "fact [fact.n.03]":
@@ -627,7 +628,7 @@ wordnet_3_0_20q:
                 "prospect [prospect.n.01]":
             "presence [presence.n.01]":
               "occurrence [occurrence.n.02]":
-          "condition [condition.n.01]":  # Q: Is the answer a kind of condition?
+          "condition [condition.n.01]":  # Q: Is it a kind of condition?
             "atmosphere [atmosphere.n.01]":
               "spirit [spirit.n.02]":
             "circumstance [circumstance.n.01]":
@@ -873,7 +874,7 @@ wordnet_3_0_20q:
             "way [way.n.04]":
             "wetness [wetness.n.01]":
               "moisture [moisture.n.01]":
-          "condition [condition.n.03]":  # Q: Is the answer a kind of condition?
+          "condition [condition.n.03]":  # Q: Is it a kind of condition?
             "fortune [fortune.n.04]":
               "failure [failure.n.03]":
               "good fortune [good_fortune.n.01]":
@@ -889,16 +890,16 @@ wordnet_3_0_20q:
                     "misery [misery.n.01]":
                       "suffering [suffering.n.02]":
                   "nadir [nadir.n.01]":
-          "conflict [conflict.n.04]":  # Q: Is the answer a kind of conflict?
+          "conflict [conflict.n.04]":  # Q: Is it a kind of conflict?
             "clash [clash.n.02]":
             "disagreement [disagreement.n.01]":
           "death [death.n.03]":
-          "degree [degree.n.02]":  # Q: Is the answer a kind of degree?
+          "degree [degree.n.02]":  # Q: Is it a kind of degree?
             "acme [acme.n.01]":
             "extent [extent.n.01]":
             "plane [plane.n.03]":
           "dependence [dependence.n.01]":
-          "disorder [disorder.n.03]":  # Q: Is the answer a kind of disorder?
+          "disorder [disorder.n.03]":  # Q: Is it a kind of disorder?
             "confusion [confusion.n.01]":
               "chaos [chaos.n.01]":
             "disturbance [disturbance.n.03]":
@@ -910,7 +911,7 @@ wordnet_3_0_20q:
           "employment [employment.n.01]":
           "end [end.n.06]":
           "enlargement [enlargement.n.02]":
-          "feeling [feeling.n.01]":  # Q: Is the answer a kind of feeling?
+          "feeling [feeling.n.01]":  # Q: Is it a kind of feeling?
             "affection [affection.n.01]":
             "ambivalence [ambivalence.n.01]":
               "conflict [conflict.n.02]":
@@ -1073,7 +1074,7 @@ wordnet_3_0_20q:
             "unconcern [unconcern.n.02]":
               "indifference [indifference.n.01]":
                 "distance [distance.n.04]":
-          "freedom [freedom.n.01]":  # Q: Is the answer a kind of freedom?
+          "freedom [freedom.n.01]":  # Q: Is it a kind of freedom?
             "independence [independence.n.01]":
               "autonomy [autonomy.n.01]":
                 "self-government [self-government.n.01]":
@@ -1081,10 +1082,10 @@ wordnet_3_0_20q:
               "discretion [discretion.n.01]":
               "license [license.n.02]":
           "grace [grace.n.01]":
-          "hostility [hostility.n.02]":  # Q: Is the answer a kind of hostility?
+          "hostility [hostility.n.02]":  # Q: Is it a kind of hostility?
             "cold war [cold_war.n.01]":
             "war [war.n.02]":
-          "illumination [illumination.n.02]":  # Q: Is the answer a kind of illumination?
+          "illumination [illumination.n.02]":  # Q: Is it a kind of illumination?
             "dark [dark.n.01]":
               "semidarkness [semidarkness.n.01]":
                 "gloom [gloom.n.01]":
@@ -1093,39 +1094,39 @@ wordnet_3_0_20q:
                   "shadow [shadow.n.01]":
               "total darkness [total_darkness.n.01]":
             "light [light.n.09]":
-          "imperfection [imperfection.n.01]":  # Q: Is the answer a kind of imperfection?
+          "imperfection [imperfection.n.01]":  # Q: Is it a kind of imperfection?
             "defect [defect.n.03]":
             "failing [failing.n.01]":
-          "inaction [inaction.n.01]":  # Q: Is the answer a kind of inaction?
+          "inaction [inaction.n.01]":  # Q: Is it a kind of inaction?
             "arrest [arrest.n.02]":
-          "integrity [integrity.n.01]":  # Q: Is the answer a kind of integrity?
+          "integrity [integrity.n.01]":  # Q: Is it a kind of integrity?
             "completeness [completeness.n.01]":
               "entirety [entirety.n.01]":
                 "whole shebang [whole_shebang.n.01]":
-          "maturity [maturity.n.02]":  # Q: Is the answer a kind of maturity?
+          "maturity [maturity.n.02]":  # Q: Is it a kind of maturity?
             "adulthood [adulthood.n.02]":
               "parenthood [parenthood.n.01]":
-          "motion [motion.n.04]":  # Q: Is the answer a kind of motion?
+          "motion [motion.n.04]":  # Q: Is it a kind of motion?
             "shaking [shaking.n.02]":
             "stream [stream.n.04]":
-          "obligation [obligation.n.02]":  # Q: Is the answer a kind of obligation?
+          "obligation [obligation.n.02]":  # Q: Is it a kind of obligation?
             "indebtedness [indebtedness.n.01]":
               "debt [debt.n.01]":
           "office [office.n.04]":
-          "order [order.n.03]":  # Q: Is the answer a kind of order?
+          "order [order.n.03]":  # Q: Is it a kind of order?
             "harmony [harmony.n.03]":
               "agreement [agreement.n.03]":
                 "consensus [consensus.n.01]":
               "peace [peace.n.02]":
             "peace [peace.n.01]":
-          "perfection [perfection.n.01]":  # Q: Is the answer a kind of perfection?
+          "perfection [perfection.n.01]":  # Q: Is it a kind of perfection?
             "polish [polish.n.02]":
           "readiness [readiness.n.01]":
-          "relationship [relationship.n.02]":  # Q: Is the answer a kind of relationship?
+          "relationship [relationship.n.02]":  # Q: Is it a kind of relationship?
             "love affair [love_affair.n.01]":
             "sexual relationship [sexual_relationship.n.01]":
               "affair [affair.n.02]":
-          "relationship [relationship.n.03]":  # Q: Is the answer a kind of relationship?
+          "relationship [relationship.n.03]":  # Q: Is it a kind of relationship?
             "account [account.n.03]":
             "affiliation [affiliation.n.01]":
             "friendship [friendship.n.01]":
@@ -1135,13 +1136,13 @@ wordnet_3_0_20q:
               "bondage [bondage.n.02]":
               "confinement [confinement.n.03]":
                 "captivity [captivity.n.01]":
-          "separation [separation.n.01]":  # Q: Is the answer a kind of separation?
+          "separation [separation.n.01]":  # Q: Is it a kind of separation?
             "discontinuity [discontinuity.n.01]":
             "isolation [isolation.n.01]":
               "insulation [insulation.n.01]":
               "loneliness [loneliness.n.01]":
               "privacy [privacy.n.02]":
-          "situation [situation.n.01]":  # Q: Is the answer a kind of situation?
+          "situation [situation.n.01]":  # Q: Is it a kind of situation?
             "acceptance [acceptance.n.03]":
               "acquiescence [acquiescence.n.01]":
               "recognition [recognition.n.01]":
@@ -1163,12 +1164,12 @@ wordnet_3_0_20q:
             "picture [picture.n.04]":
             "status quo [status_quo.n.01]":
             "thing [thing.n.01]":
-          "skillfulness [skillfulness.n.01]":  # Q: Is the answer a kind of skillfulness?
+          "skillfulness [skillfulness.n.01]":  # Q: Is it a kind of skillfulness?
             "adeptness [adeptness.n.01]":
             "command [command.n.06]":
             "efficiency [efficiency.n.02]":
             "proficiency [proficiency.n.02]":
-          "status [status.n.01]":  # Q: Is the answer a kind of status?
+          "status [status.n.01]":  # Q: Is it a kind of status?
             "equality [equality.n.02]":
               "tie [tie.n.03]":
             "footing [footing.n.01]":
@@ -1213,11 +1214,11 @@ wordnet_3_0_20q:
                 "oblivion [oblivion.n.01]":
               "prestige [prestige.n.01]":
               "prominence [prominence.n.01]":
-          "temporary state [temporary_state.n.01]":  # Q: Is the answer a kind of temporary state?
+          "temporary state [temporary_state.n.01]":  # Q: Is it a kind of temporary state?
             "drunkenness [drunkenness.n.01]":
             "fatigue [fatigue.n.01]":
           "unemployment [unemployment.n.01]":
-          "union [union.n.04]":  # Q: Is the answer a kind of union?
+          "union [union.n.04]":  # Q: Is it a kind of union?
             "association [association.n.03]":
             "connection [connection.n.02]":
               "coherence [coherence.n.01]":
@@ -1225,36 +1226,36 @@ wordnet_3_0_20q:
             "junction [junction.n.02]":
               "anastomosis [anastomosis.n.01]":
         "thing [thing.n.09]":
-        "time [time.n.05]":  # Q: Is the answer a kind of time?
-          "continuum [continuum.n.01]":  # Q: Is the answer a kind of continuum?
+        "time [time.n.05]":  # Q: Is it a kind of time?
+          "continuum [continuum.n.01]":  # Q: Is it a kind of continuum?
             "history [history.n.04]":
-          "cosmic time [cosmic_time.n.01]":  # Q: Is the answer a kind of cosmic time?
+          "cosmic time [cosmic_time.n.01]":  # Q: Is it a kind of cosmic time?
             "solstice [solstice.n.01]":
               "summer solstice [summer_solstice.n.01]":
           "eternity [eternity.n.01]":
-          "future [future.n.01]":  # Q: Is the answer a kind of future?
+          "future [future.n.01]":  # Q: Is it a kind of future?
             "tomorrow [tomorrow.n.02]":
           "Greenwich Mean Time [greenwich_mean_time.n.01]":
-          "musical time [musical_time.n.01]":  # Q: Is the answer a kind of musical time?
+          "musical time [musical_time.n.01]":  # Q: Is it a kind of musical time?
             "rhythm [rhythm.n.01]":
             "tempo [tempo.n.01]":
-          "past [past.n.01]":  # Q: Is the answer a kind of past?
+          "past [past.n.01]":  # Q: Is it a kind of past?
             "history [history.n.01]":
-          "present [present.n.01]":  # Q: Is the answer a kind of present?
+          "present [present.n.01]":  # Q: Is it a kind of present?
             "here and now [here_and_now.n.01]":
             "now [now.n.01]":
             "today [today.n.01]":
             "tonight [tonight.n.01]":
-        "trait [trait.n.01]":  # Q: Is the answer a kind of trait?
-          "activeness [activeness.n.02]":  # Q: Is the answer a kind of activeness?
+        "trait [trait.n.01]":  # Q: Is it a kind of trait?
+          "activeness [activeness.n.02]":  # Q: Is it a kind of activeness?
             "animation [animation.n.03]":
               "liveliness [liveliness.n.02]":
                 "energy [energy.n.04]":
                   "vitality [vitality.n.01]":
                 "exuberance [exuberance.n.02]":
-          "attentiveness [attentiveness.n.03]":  # Q: Is the answer a kind of attentiveness?
+          "attentiveness [attentiveness.n.03]":  # Q: Is it a kind of attentiveness?
             "caution [caution.n.01]":
-          "character [character.n.03]":  # Q: Is the answer a kind of character?
+          "character [character.n.03]":  # Q: Is it a kind of character?
             "spirit [spirit.n.03]":
               "courage [courage.n.01]":
                 "fearlessness [fearlessness.n.02]":
@@ -1266,9 +1267,9 @@ wordnet_3_0_20q:
                 "heroism [heroism.n.01]":
               "cowardice [cowardice.n.01]":
           "compulsiveness [compulsiveness.n.01]":
-          "conceit [conceit.n.05]":  # Q: Is the answer a kind of conceit?
+          "conceit [conceit.n.05]":  # Q: Is it a kind of conceit?
             "egotism [egotism.n.01]":
-          "demeanor [demeanor.n.01]":  # Q: Is the answer a kind of demeanor?
+          "demeanor [demeanor.n.01]":  # Q: Is it a kind of demeanor?
             "manner [manner.n.02]":
               "bearing [bearing.n.03]":
                 "dignity [dignity.n.02]":
@@ -1281,34 +1282,35 @@ wordnet_3_0_20q:
             "manners [manners.n.01]":
             "propriety [propriety.n.01]":
               "modesty [modesty.n.02]":
-          "discipline [discipline.n.03]":  # Q: Is the answer a kind of discipline?
+              "seemliness [seemliness.n.01]":
+          "discipline [discipline.n.03]":  # Q: Is it a kind of discipline?
             "restraint [restraint.n.02]":
-          "drive [drive.n.05]":  # Q: Is the answer a kind of drive?
+          "drive [drive.n.05]":  # Q: Is it a kind of drive?
             "aggressiveness [aggressiveness.n.01]":
               "competitiveness [competitiveness.n.01]":
             "energy [energy.n.03]":
             "enterprise [enterprise.n.03]":
-          "emotionality [emotionality.n.01]":  # Q: Is the answer a kind of emotionality?
+          "emotionality [emotionality.n.01]":  # Q: Is it a kind of emotionality?
             "affectionateness [affectionateness.n.02]":
               "tenderness [tenderness.n.01]":
             "heat [heat.n.04]":
             "mawkishness [mawkishness.n.02]":
           "folly [folly.n.01]":
-          "frivolity [frivolity.n.01]":  # Q: Is the answer a kind of frivolity?
+          "frivolity [frivolity.n.01]":  # Q: Is it a kind of frivolity?
             "playfulness [playfulness.n.02]":
               "humor [humor.n.02]":
-          "indiscipline [indiscipline.n.01]":  # Q: Is the answer a kind of indiscipline?
+          "indiscipline [indiscipline.n.01]":  # Q: Is it a kind of indiscipline?
             "indulgence [indulgence.n.01]":
               "luxury [luxury.n.01]":
             "unrestraint [unrestraint.n.01]":
               "abandon [abandon.n.01]":
-          "individuality [individuality.n.01]":  # Q: Is the answer a kind of individuality?
+          "individuality [individuality.n.01]":  # Q: Is it a kind of individuality?
             "peculiarity [peculiarity.n.02]":
               "idiosyncrasy [idiosyncrasy.n.01]":
             "singularity [singularity.n.01]":
-          "intractability [intractability.n.01]":  # Q: Is the answer a kind of intractability?
+          "intractability [intractability.n.01]":  # Q: Is it a kind of intractability?
             "defiance [defiance.n.01]":
-          "nature [nature.n.04]":  # Q: Is the answer a kind of nature?
+          "nature [nature.n.04]":  # Q: Is it a kind of nature?
             "disposition [disposition.n.01]":
               "aloneness [aloneness.n.01]":
                 "reclusiveness [reclusiveness.n.01]":
@@ -1333,34 +1335,34 @@ wordnet_3_0_20q:
               "willingness [willingness.n.01]":
                 "readiness [readiness.n.02]":
           "pride [pride.n.03]":
-          "resoluteness [resoluteness.n.01]":  # Q: Is the answer a kind of resoluteness?
+          "resoluteness [resoluteness.n.01]":  # Q: Is it a kind of resoluteness?
             "determination [determination.n.02]":
               "doggedness [doggedness.n.01]":
             "self-control [self-control.n.02]":
             "stubbornness [stubbornness.n.02]":
-          "seriousness [seriousness.n.03]":  # Q: Is the answer a kind of seriousness?
+          "seriousness [seriousness.n.03]":  # Q: Is it a kind of seriousness?
             "graveness [graveness.n.01]":
-          "stinginess [stinginess.n.01]":  # Q: Is the answer a kind of stinginess?
+          "stinginess [stinginess.n.01]":  # Q: Is it a kind of stinginess?
             "selfishness [selfishness.n.01]":
               "opportunism [opportunism.n.01]":
           "trust [trust.n.03]":
-          "trustworthiness [trustworthiness.n.01]":  # Q: Is the answer a kind of trustworthiness?
+          "trustworthiness [trustworthiness.n.01]":  # Q: Is it a kind of trustworthiness?
             "responsibility [responsibility.n.03]":
               "dependability [dependability.n.01]":
                 "reproducibility [reproducibility.n.01]":
-          "uncommunicativeness [uncommunicativeness.n.01]":  # Q: Is the answer a kind of uncommunicativeness?
+          "uncommunicativeness [uncommunicativeness.n.01]":  # Q: Is it a kind of uncommunicativeness?
             "muteness [muteness.n.02]":
             "secrecy [secrecy.n.01]":
-          "unemotionality [unemotionality.n.02]":  # Q: Is the answer a kind of unemotionality?
+          "unemotionality [unemotionality.n.02]":  # Q: Is it a kind of unemotionality?
             "coldness [coldness.n.02]":
             "stoicism [stoicism.n.01]":
-          "unthoughtfulness [unthoughtfulness.n.01]":  # Q: Is the answer a kind of unthoughtfulness?
+          "unthoughtfulness [unthoughtfulness.n.01]":  # Q: Is it a kind of unthoughtfulness?
             "recklessness [recklessness.n.01]":
           "wisdom [wisdom.n.02]":
-      "communication [communication.n.02]":  # Q: Is the answer a kind of communication?
-        "auditory communication [auditory_communication.n.01]":  # Q: Is the answer a kind of auditory communication?
+      "communication [communication.n.02]":  # Q: Is it a kind of communication?
+        "auditory communication [auditory_communication.n.01]":  # Q: Is it a kind of auditory communication?
           "audio [audio.n.01]":
-          "music [music.n.01]":  # Q: Is the answer a kind of music?
+          "music [music.n.01]":  # Q: Is it a kind of music?
             "harmony [harmony.n.02]":
             "music genre [music_genre.n.01]":
               "classical music [classical_music.n.01]":
@@ -1401,7 +1403,7 @@ wordnet_3_0_20q:
                 "swoop [swoop.n.01]":
               "part [part.n.11]":
                 "accompaniment [accompaniment.n.02]":
-          "speech [speech.n.02]":  # Q: Is the answer a kind of speech?
+          "speech [speech.n.02]":  # Q: Is it a kind of speech?
             "conversation [conversation.n.01]":
               "chat [chat.n.01]":
                 "chitchat [chitchat.n.01]":
@@ -1431,7 +1433,7 @@ wordnet_3_0_20q:
             "spell [spell.n.04]":
               "hex [hex.n.01]":
             "words [words.n.01]":
-          "utterance [utterance.n.01]":  # Q: Is the answer a kind of utterance?
+          "utterance [utterance.n.01]":  # Q: Is it a kind of utterance?
             "cry [cry.n.01]":
               "bellow [bellow.n.01]":
               "clamor [clamor.n.02]":
@@ -1454,17 +1456,17 @@ wordnet_3_0_20q:
             "speaking [speaking.n.01]":
               "whisper [whisper.n.01]":
             "speech [speech.n.03]":
-        "display [display.n.05]":  # Q: Is the answer a kind of display?
-          "ostentation [ostentation.n.01]":  # Q: Is the answer a kind of ostentation?
+        "display [display.n.05]":  # Q: Is it a kind of display?
+          "ostentation [ostentation.n.01]":  # Q: Is it a kind of ostentation?
             "bravado [bravado.n.01]":
-          "presentation [presentation.n.03]":  # Q: Is the answer a kind of presentation?
+          "presentation [presentation.n.03]":  # Q: Is it a kind of presentation?
             "production [production.n.02]":
-          "sight [sight.n.02]":  # Q: Is the answer a kind of sight?
+          "sight [sight.n.02]":  # Q: Is it a kind of sight?
             "spectacle [spectacle.n.01]":
-        "document [document.n.03]":  # Q: Is the answer a kind of document?
-          "debt instrument [debt_instrument.n.01]":  # Q: Is the answer a kind of debt instrument?
+        "document [document.n.03]":  # Q: Is it a kind of document?
+          "debt instrument [debt_instrument.n.01]":  # Q: Is it a kind of debt instrument?
             "bond [bond.n.02]":
-          "record [record.n.07]":  # Q: Is the answer a kind of record?
+          "record [record.n.07]":  # Q: Is it a kind of record?
             "checkbook [checkbook.n.01]":
             "ledger [ledger.n.01]":
             "register [register.n.03]":
@@ -1472,15 +1474,15 @@ wordnet_3_0_20q:
                 "audited account [audited_account.n.01]":
                 "entry [entry.n.03]":
                   "credit [credit.n.03]":
-        "expressive style [expressive_style.n.01]":  # Q: Is the answer a kind of expressive style?
-          "device [device.n.02]":  # Q: Is the answer a kind of device?
+        "expressive style [expressive_style.n.01]":  # Q: Is it a kind of expressive style?
+          "device [device.n.02]":  # Q: Is it a kind of device?
             "rhetorical device [rhetorical_device.n.01]":
               "trope [trope.n.01]":
                 "metaphor [metaphor.n.01]":
-          "formulation [formulation.n.03]":  # Q: Is the answer a kind of formulation?
+          "formulation [formulation.n.03]":  # Q: Is it a kind of formulation?
             "parlance [parlance.n.01]":
             "wording [wording.n.01]":
-          "manner of speaking [manner_of_speaking.n.01]":  # Q: Is the answer a kind of manner of speaking?
+          "manner of speaking [manner_of_speaking.n.01]":  # Q: Is it a kind of manner of speaking?
             "prosody [prosody.n.01]":
               "intonation [intonation.n.01]":
                 "monotone [monotone.n.01]":
@@ -1488,7 +1490,7 @@ wordnet_3_0_20q:
             "tone [tone.n.01]":
               "note [note.n.04]":
           "vein [vein.n.02]":
-          "writing style [writing_style.n.01]":  # Q: Is the answer a kind of writing style?
+          "writing style [writing_style.n.01]":  # Q: Is it a kind of writing style?
             "drama [drama.n.03]":
               "comedy [comedy.n.01]":
                 "farce [farce.n.01]":
@@ -1502,8 +1504,8 @@ wordnet_3_0_20q:
                 "article [article.n.01]":
                   "column [column.n.05]":
                   "paper [paper.n.05]":
-        "indication [indication.n.01]":  # Q: Is the answer a kind of indication?
-          "evidence [evidence.n.02]":  # Q: Is the answer a kind of evidence?
+        "indication [indication.n.01]":  # Q: Is it a kind of indication?
+          "evidence [evidence.n.02]":  # Q: Is it a kind of evidence?
             "argument [argument.n.01]":
               "case [case.n.09]":
               "proof [proof.n.02]":
@@ -1532,7 +1534,7 @@ wordnet_3_0_20q:
           "gesture [gesture.n.03]":
           "hint [hint.n.02]":
           "manifestation [manifestation.n.02]":
-          "mark [mark.n.04]":  # Q: Is the answer a kind of mark?
+          "mark [mark.n.04]":  # Q: Is it a kind of mark?
             "fingerprint [fingerprint.n.01]":
             "line [line.n.02]":
               "isometric line [isometric_line.n.01]":
@@ -1540,9 +1542,9 @@ wordnet_3_0_20q:
               "shaft [shaft.n.01]":
           "symptom [symptom.n.02]":
           "trace [trace.n.02]":
-        "language [language.n.01]":  # Q: Is the answer a kind of language?
+        "language [language.n.01]":  # Q: Is it a kind of language?
           "barrage [barrage.n.01]":
-          "natural language [natural_language.n.01]":  # Q: Is the answer a kind of natural language?
+          "natural language [natural_language.n.01]":  # Q: Is it a kind of natural language?
             "Amerind [amerind.n.01]":
               "Algonquian [algonquian.n.02]":
                 "Massachuset [massachuset.n.01]":
@@ -1569,7 +1571,7 @@ wordnet_3_0_20q:
                 "Chinese [chinese.n.01]":
                   "Min [min.n.02]":
             "tone language [tone_language.n.01]":
-          "string of words [string_of_words.n.01]":  # Q: Is the answer a kind of string of words?
+          "string of words [string_of_words.n.01]":  # Q: Is it a kind of string of words?
             "sentence [sentence.n.01]":
               "question [question.n.03]":
             "syntagma [syntagma.n.01]":
@@ -1578,14 +1580,14 @@ wordnet_3_0_20q:
                   "complement [complement.n.01]":
                   "phrase [phrase.n.01]":
                 "subject [subject.n.05]":
-        "message [message.n.01]":  # Q: Is the answer a kind of message?
+        "message [message.n.01]":  # Q: Is it a kind of message?
           "broadcast [broadcast.n.01]":
-          "mail [mail.n.01]":  # Q: Is the answer a kind of mail?
+          "mail [mail.n.01]":  # Q: Is it a kind of mail?
             "first class [first_class.n.02]":
-          "telegram [telegram.n.01]":  # Q: Is the answer a kind of telegram?
+          "telegram [telegram.n.01]":  # Q: Is it a kind of telegram?
             "cable [cable.n.01]":
-        "message [message.n.02]":  # Q: Is the answer a kind of message?
-          "acknowledgment [acknowledgment.n.03]":  # Q: Is the answer a kind of acknowledgment?
+        "message [message.n.02]":  # Q: Is it a kind of message?
+          "acknowledgment [acknowledgment.n.03]":  # Q: Is it a kind of acknowledgment?
             "admission [admission.n.02]":
               "confession [confession.n.01]":
             "farewell [farewell.n.01]":
@@ -1599,7 +1601,7 @@ wordnet_3_0_20q:
             "thanks [thanks.n.01]":
               "bow [bow.n.07]":
               "thank you [thank_you.n.01]":
-          "approval [approval.n.04]":  # Q: Is the answer a kind of approval?
+          "approval [approval.n.04]":  # Q: Is it a kind of approval?
             "applause [applause.n.01]":
             "cheer [cheer.n.01]":
             "encouragement [encouragement.n.01]":
@@ -1615,18 +1617,18 @@ wordnet_3_0_20q:
             "recognition [recognition.n.03]":
             "sanction [sanction.n.01]":
             "tribute [tribute.n.01]":
-          "commitment [commitment.n.04]":  # Q: Is the answer a kind of commitment?
+          "commitment [commitment.n.04]":  # Q: Is it a kind of commitment?
             "assurance [assurance.n.02]":
               "guarantee [guarantee.n.01]":
             "promise [promise.n.01]":
               "betrothal [betrothal.n.01]":
-          "direction [direction.n.06]":  # Q: Is the answer a kind of direction?
+          "direction [direction.n.06]":  # Q: Is it a kind of direction?
             "recipe [recipe.n.01]":
             "rule [rule.n.03]":
               "canon [canon.n.01]":
               "principle [principle.n.05]":
               "regulation [regulation.n.01]":
-          "disapproval [disapproval.n.02]":  # Q: Is the answer a kind of disapproval?
+          "disapproval [disapproval.n.02]":  # Q: Is it a kind of disapproval?
             "criticism [criticism.n.01]":
               "fire [fire.n.09]":
               "rebuke [rebuke.n.01]":
@@ -1634,19 +1636,19 @@ wordnet_3_0_20q:
                 "reproach [reproach.n.01]":
                   "blame [blame.n.02]":
             "disapprobation [disapprobation.n.01]":
-          "disrespect [disrespect.n.01]":  # Q: Is the answer a kind of disrespect?
+          "disrespect [disrespect.n.01]":  # Q: Is it a kind of disrespect?
             "abuse [abuse.n.02]":
             "derision [derision.n.01]":
               "jeer [jeer.n.01]":
             "disparagement [disparagement.n.01]":
               "defamation [defamation.n.01]":
                 "name [name.n.06]":
-          "drivel [drivel.n.01]":  # Q: Is the answer a kind of drivel?
+          "drivel [drivel.n.01]":  # Q: Is it a kind of drivel?
             "bunk [bunk.n.04]":
               "bullshit [bullshit.n.01]":
-          "guidance [guidance.n.01]":  # Q: Is the answer a kind of guidance?
+          "guidance [guidance.n.01]":  # Q: Is it a kind of guidance?
             "tip [tip.n.03]":
-          "information [information.n.01]":  # Q: Is the answer a kind of information?
+          "information [information.n.01]":  # Q: Is it a kind of information?
             "course of study [course_of_study.n.01]":
             "database [database.n.01]":
               "list [list.n.01]":
@@ -1672,7 +1674,7 @@ wordnet_3_0_20q:
                 "newsletter [newsletter.n.01]":
             "propaganda [propaganda.n.01]":
             "secret [secret.n.01]":
-          "meaning [meaning.n.01]":  # Q: Is the answer a kind of meaning?
+          "meaning [meaning.n.01]":  # Q: Is it a kind of meaning?
             "effect [effect.n.04]":
             "intension [intension.n.01]":
             "intent [intent.n.02]":
@@ -1680,19 +1682,19 @@ wordnet_3_0_20q:
             "nuance [nuance.n.01]":
             "point [point.n.03]":
             "sense [sense.n.02]":
-          "narrative [narrative.n.01]":  # Q: Is the answer a kind of narrative?
+          "narrative [narrative.n.01]":  # Q: Is it a kind of narrative?
             "fairytale [fairytale.n.01]":
-          "nonsense [nonsense.n.01]":  # Q: Is the answer a kind of nonsense?
+          "nonsense [nonsense.n.01]":  # Q: Is it a kind of nonsense?
             "absurdity [absurdity.n.01]":
           "offer [offer.n.02]":
-          "opinion [opinion.n.02]":  # Q: Is the answer a kind of opinion?
+          "opinion [opinion.n.02]":  # Q: Is it a kind of opinion?
             "guess [guess.n.01]":
-          "promotion [promotion.n.01]":  # Q: Is the answer a kind of promotion?
+          "promotion [promotion.n.01]":  # Q: Is it a kind of promotion?
             "ad [ad.n.01]":
               "circular [circular.n.01]":
               "commercial [commercial.n.01]":
             "public relations [public_relations.n.01]":
-          "proposal [proposal.n.01]":  # Q: Is the answer a kind of proposal?
+          "proposal [proposal.n.01]":  # Q: Is it a kind of proposal?
             "advice [advice.n.01]":
               "admonition [admonition.n.01]":
                 "example [example.n.04]":
@@ -1703,13 +1705,13 @@ wordnet_3_0_20q:
               "overture [overture.n.03]":
               "touch [touch.n.03]":
           "reminder [reminder.n.01]":
-          "request [request.n.01]":  # Q: Is the answer a kind of request?
+          "request [request.n.01]":  # Q: Is it a kind of request?
             "application [application.n.02]":
             "demand [demand.n.01]":
               "call [call.n.04]":
               "insistence [insistence.n.01]":
           "respects [respects.n.01]":
-          "statement [statement.n.01]":  # Q: Is the answer a kind of statement?
+          "statement [statement.n.01]":  # Q: Is it a kind of statement?
             "agreement [agreement.n.01]":
               "bargain [bargain.n.01]":
               "conspiracy [conspiracy.n.01]":
@@ -1800,13 +1802,13 @@ wordnet_3_0_20q:
             "truth [truth.n.03]":
               "truism [truism.n.01]":
             "word [word.n.02]":
-          "subject [subject.n.01]":  # Q: Is the answer a kind of subject?
+          "subject [subject.n.01]":  # Q: Is it a kind of subject?
             "question [question.n.02]":
               "problem [problem.n.02]":
                 "case [case.n.08]":
-          "submission [submission.n.01]":  # Q: Is the answer a kind of submission?
+          "submission [submission.n.01]":  # Q: Is it a kind of submission?
             "filing [filing.n.01]":
-          "wit [wit.n.01]":  # Q: Is the answer a kind of wit?
+          "wit [wit.n.01]":  # Q: Is it a kind of wit?
             "caricature [caricature.n.01]":
               "parody [parody.n.01]":
             "fun [fun.n.02]":
@@ -1815,19 +1817,19 @@ wordnet_3_0_20q:
             "repartee [repartee.n.01]":
               "banter [banter.n.01]":
             "sarcasm [sarcasm.n.01]":
-        "sign [sign.n.02]":  # Q: Is the answer a kind of sign?
+        "sign [sign.n.02]":  # Q: Is it a kind of sign?
           "poster [poster.n.01]":
-        "signal [signal.n.01]":  # Q: Is the answer a kind of signal?
-          "animal communication [animal_communication.n.01]":  # Q: Is the answer a kind of animal communication?
+        "signal [signal.n.01]":  # Q: Is it a kind of signal?
+          "animal communication [animal_communication.n.01]":  # Q: Is it a kind of animal communication?
             "birdcall [birdcall.n.01]":
-          "indicator [indicator.n.02]":  # Q: Is the answer a kind of indicator?
+          "indicator [indicator.n.02]":  # Q: Is it a kind of indicator?
             "reference point [reference_point.n.01]":
               "target [target.n.01]":
           "input signal [input_signal.n.01]":
           "phone number [phone_number.n.01]":
           "radio beam [radio_beam.n.01]":
           "recording [recording.n.01]":
-          "symbol [symbol.n.01]":  # Q: Is the answer a kind of symbol?
+          "symbol [symbol.n.01]":  # Q: Is it a kind of symbol?
             "award [award.n.02]":
               "academic degree [academic_degree.n.01]":
               "citation [citation.n.01]":
@@ -1845,36 +1847,36 @@ wordnet_3_0_20q:
                 "space [space.n.05]":
               "mark [mark.n.10]":
                 "arrow [arrow.n.01]":
-        "visual communication [visual_communication.n.01]":  # Q: Is the answer a kind of visual communication?
-          "artwork [artwork.n.01]":  # Q: Is the answer a kind of artwork?
+        "visual communication [visual_communication.n.01]":  # Q: Is it a kind of visual communication?
+          "artwork [artwork.n.01]":  # Q: Is it a kind of artwork?
             "drawing [drawing.n.01]":
             "illustration [illustration.n.01]":
               "figure [figure.n.01]":
               "picture [picture.n.05]":
-          "chart [chart.n.01]":  # Q: Is the answer a kind of chart?
+          "chart [chart.n.01]":  # Q: Is it a kind of chart?
             "profile [profile.n.01]":
-          "demonstration [demonstration.n.05]":  # Q: Is the answer a kind of demonstration?
+          "demonstration [demonstration.n.05]":  # Q: Is it a kind of demonstration?
             "display [display.n.01]":
             "exemplification [exemplification.n.01]":
             "expression [expression.n.02]":
               "effusion [effusion.n.01]":
-          "gesture [gesture.n.02]":  # Q: Is the answer a kind of gesture?
+          "gesture [gesture.n.02]":  # Q: Is it a kind of gesture?
             "facial expression [facial_expression.n.01]":
               "smile [smile.n.01]":
             "shrug [shrug.n.01]":
-          "graph [graph.n.01]":  # Q: Is the answer a kind of graph?
+          "graph [graph.n.01]":  # Q: Is it a kind of graph?
             "electroencephalogram [electroencephalogram.n.01]":
           "projection [projection.n.02]":
           "video [video.n.01]":
         "voice [voice.n.02]":
         "voice [voice.n.06]":
-        "written communication [written_communication.n.01]":  # Q: Is the answer a kind of written communication?
+        "written communication [written_communication.n.01]":  # Q: Is it a kind of written communication?
           "code [code.n.01]":
-          "correspondence [correspondence.n.01]":  # Q: Is the answer a kind of correspondence?
+          "correspondence [correspondence.n.01]":  # Q: Is it a kind of correspondence?
             "card [card.n.03]":
               "greeting card [greeting_card.n.01]":
                 "Christmas card [christmas_card.n.01]":
-          "writing [writing.n.02]":  # Q: Is the answer a kind of writing?
+          "writing [writing.n.02]":  # Q: Is it a kind of writing?
             "criticism [criticism.n.03]":
               "review [review.n.02]":
             "diary [diary.n.01]":
@@ -1977,7 +1979,7 @@ wordnet_3_0_20q:
               "Bible [bible.n.01]":
               "Gospel [gospel.n.01]":
           "writing [writing.n.03]":
-          "writing [writing.n.04]":  # Q: Is the answer a kind of writing?
+          "writing [writing.n.04]":  # Q: Is it a kind of writing?
             "coding system [coding_system.n.01]":
               "code [code.n.03]":
                 "address [address.n.01]":
@@ -1991,14 +1993,14 @@ wordnet_3_0_20q:
                   "trill [trill.n.01]":
             "orthography [orthography.n.01]":
             "typing [typing.n.01]":
-      "group [group.n.01]":  # Q: Is the answer a kind of group?
-        "arrangement [arrangement.n.02]":  # Q: Is the answer a kind of arrangement?
-          "array [array.n.01]":  # Q: Is the answer a kind of array?
+      "group [group.n.01]":  # Q: Is it a kind of group?
+        "arrangement [arrangement.n.02]":  # Q: Is it a kind of arrangement?
+          "array [array.n.01]":  # Q: Is it a kind of array?
             "column [column.n.03]":
             "spectrum [spectrum.n.01]":
             "table [table.n.01]":
           "classification [classification.n.02]":
-          "formation [formation.n.01]":  # Q: Is the answer a kind of formation?
+          "formation [formation.n.01]":  # Q: Is it a kind of formation?
             "flank [flank.n.01]":
             "flight [flight.n.01]":
             "head [head.n.05]":
@@ -2009,7 +2011,7 @@ wordnet_3_0_20q:
               "file [file.n.02]":
                 "column [column.n.01]":
             "rear [rear.n.01]":
-          "ordering [ordering.n.01]":  # Q: Is the answer a kind of ordering?
+          "ordering [ordering.n.01]":  # Q: Is it a kind of ordering?
             "series [series.n.01]":
               "chain [chain.n.01]":
               "course [course.n.02]":
@@ -2019,14 +2021,14 @@ wordnet_3_0_20q:
                 "string [string.n.05]":
               "succession [succession.n.02]":
                 "streak [streak.n.01]":
-        "biological group [biological_group.n.01]":  # Q: Is the answer a kind of biological group?
-          "animal group [animal_group.n.01]":  # Q: Is the answer a kind of animal group?
+        "biological group [biological_group.n.01]":  # Q: Is it a kind of biological group?
+          "animal group [animal_group.n.01]":  # Q: Is it a kind of animal group?
             "brood [brood.n.01]":
             "herd [herd.n.01]":
             "litter [litter.n.01]":
             "team [team.n.02]":
           "generation [generation.n.02]":
-          "taxonomic group [taxonomic_group.n.01]":  # Q: Is the answer a kind of taxonomic group?
+          "taxonomic group [taxonomic_group.n.01]":  # Q: Is it a kind of taxonomic group?
             "family [family.n.06]":
               "dicot family [dicot_family.n.01]":
                 "asterid dicot family [asterid_dicot_family.n.01]":
@@ -2044,16 +2046,16 @@ wordnet_3_0_20q:
             "subspecies [subspecies.n.01]":
             "variety [variety.n.03]":
               "breed [breed.n.01]":
-        "citizenry [citizenry.n.01]":  # Q: Is the answer a kind of citizenry?
+        "citizenry [citizenry.n.01]":  # Q: Is it a kind of citizenry?
           "governed [governed.n.01]":
-        "collection [collection.n.01]":  # Q: Is the answer a kind of collection?
-          "agglomeration [agglomeration.n.01]":  # Q: Is the answer a kind of agglomeration?
+        "collection [collection.n.01]":  # Q: Is it a kind of collection?
+          "agglomeration [agglomeration.n.01]":  # Q: Is it a kind of agglomeration?
             "ball [ball.n.08]":
             "bunch [bunch.n.01]":
-          "assortment [assortment.n.01]":  # Q: Is the answer a kind of assortment?
+          "assortment [assortment.n.01]":  # Q: Is it a kind of assortment?
             "odds and ends [odds_and_ends.n.01]":
           "bunch [bunch.n.03]":
-          "class [class.n.01]":  # Q: Is the answer a kind of class?
+          "class [class.n.01]":  # Q: Is it a kind of class?
             "grammatical category [grammatical_category.n.01]":
               "gender [gender.n.01]":
               "part of speech [part_of_speech.n.01]":
@@ -2067,7 +2069,7 @@ wordnet_3_0_20q:
           "content [content.n.01]":
           "data [data.n.01]":
           "exhibition [exhibition.n.02]":
-          "law [law.n.01]":  # Q: Is the answer a kind of law?
+          "law [law.n.01]":  # Q: Is it a kind of law?
             "civil law [civil_law.n.01]":
               "case law [case_law.n.02]":
               "legislation [legislation.n.01]":
@@ -2075,19 +2077,19 @@ wordnet_3_0_20q:
             "mercantile law [mercantile_law.n.01]":
           "mass [mass.n.03]":
           "mythology [mythology.n.01]":
-          "pack [pack.n.02]":  # Q: Is the answer a kind of pack?
+          "pack [pack.n.02]":  # Q: Is it a kind of pack?
             "pack of cards [pack_of_cards.n.01]":
           "package [package.n.01]":
           "pile [pile.n.01]":
           "population [population.n.03]":
-          "procession [procession.n.02]":  # Q: Is the answer a kind of procession?
+          "procession [procession.n.02]":  # Q: Is it a kind of procession?
             "parade [parade.n.01]":
-          "set [set.n.01]":  # Q: Is the answer a kind of set?
+          "set [set.n.01]":  # Q: Is it a kind of set?
             "core [core.n.01]":
             "pair [pair.n.01]":
             "score [score.n.04]":
           "traffic [traffic.n.01]":
-          "vegetation [vegetation.n.01]":  # Q: Is the answer a kind of vegetation?
+          "vegetation [vegetation.n.01]":  # Q: Is it a kind of vegetation?
             "brier [brier.n.01]":
             "brush [brush.n.01]":
               "underbrush [underbrush.n.01]":
@@ -2096,19 +2098,19 @@ wordnet_3_0_20q:
             "garden [garden.n.02]":
             "growth [growth.n.04]":
             "scrub [scrub.n.01]":
-        "community [community.n.06]":  # Q: Is the answer a kind of community?
+        "community [community.n.06]":  # Q: Is it a kind of community?
           "biome [biome.n.01]":
         "ethnic group [ethnic_group.n.01]":
         "halogen [halogen.n.01]":
-        "multitude [multitude.n.03]":  # Q: Is the answer a kind of multitude?
-          "audience [audience.n.02]":  # Q: Is the answer a kind of audience?
+        "multitude [multitude.n.03]":  # Q: Is it a kind of multitude?
+          "audience [audience.n.02]":  # Q: Is it a kind of audience?
             "viewing audience [viewing_audience.n.01]":
           "laity [laity.n.01]":
-        "people [people.n.01]":  # Q: Is the answer a kind of people?
-          "age group [age_group.n.01]":  # Q: Is the answer a kind of age group?
+        "people [people.n.01]":  # Q: Is it a kind of people?
+          "age group [age_group.n.01]":  # Q: Is it a kind of age group?
             "young [young.n.09]":
           "blind [blind.n.01]":
-          "class [class.n.03]":  # Q: Is the answer a kind of class?
+          "class [class.n.03]":  # Q: Is it a kind of class?
             "brotherhood [brotherhood.n.02]":
             "labor [labor.n.01]":
             "market [market.n.02]":
@@ -2124,7 +2126,7 @@ wordnet_3_0_20q:
           "dead [dead.n.01]":
           "enemy [enemy.n.03]":
           "folk [folk.n.01]":
-          "nation [nation.n.02]":  # Q: Is the answer a kind of nation?
+          "nation [nation.n.02]":  # Q: Is it a kind of nation?
             "British [british.n.01]":
             "English [english.n.02]":
             "French [french.n.02]":
@@ -2132,10 +2134,10 @@ wordnet_3_0_20q:
           "populace [populace.n.01]":
           "population [population.n.01]":
         "population [population.n.02]":
-        "race [race.n.03]":  # Q: Is the answer a kind of race?
+        "race [race.n.03]":  # Q: Is it a kind of race?
           "color [color.n.04]":
-        "social group [social_group.n.01]":  # Q: Is the answer a kind of social group?
-          "body [body.n.02]":  # Q: Is the answer a kind of body?
+        "social group [social_group.n.01]":  # Q: Is it a kind of social group?
+          "body [body.n.02]":  # Q: Is it a kind of body?
             "administration [administration.n.02]":
               "government officials [government_officials.n.01]":
                 "bureaucracy [bureaucracy.n.01]":
@@ -2155,7 +2157,7 @@ wordnet_3_0_20q:
             "staff [staff.n.03]":
             "university [university.n.01]":
           "congregation [congregation.n.01]":
-          "gathering [gathering.n.01]":  # Q: Is the answer a kind of gathering?
+          "gathering [gathering.n.01]":  # Q: Is it a kind of gathering?
             "assembly [assembly.n.04]":
               "court [court.n.01]":
                 "federal court [federal_court.n.01]":
@@ -2198,7 +2200,7 @@ wordnet_3_0_20q:
                   "banquet [banquet.n.01]":
                 "reception [reception.n.02]":
           "interest [interest.n.06]":
-          "kin [kin.n.02]":  # Q: Is the answer a kind of kin?
+          "kin [kin.n.02]":  # Q: Is it a kind of kin?
             "family [family.n.02]":
               "couple [couple.n.02]":
               "marriage [marriage.n.02]":
@@ -2212,12 +2214,12 @@ wordnet_3_0_20q:
                   "name [name.n.03]":
                   "people [people.n.03]":
           "minority [minority.n.01]":
-          "movement [movement.n.04]":  # Q: Is the answer a kind of movement?
+          "movement [movement.n.04]":  # Q: Is it a kind of movement?
             "artistic movement [artistic_movement.n.01]":
               "Abstract Expressionism [abstract_expressionism.n.01]":
               "cubism [cubism.n.01]":
                 "analytical cubism [analytical_cubism.n.01]":
-          "organization [organization.n.01]":  # Q: Is the answer a kind of organization?
+          "organization [organization.n.01]":  # Q: Is it a kind of organization?
             "alliance [alliance.n.03]":
               "world organization [world_organization.n.01]":
                 "United Nations [united_nations.n.01]":
@@ -2408,34 +2410,34 @@ wordnet_3_0_20q:
                 "football team [football_team.n.01]":
               "working group [working_group.n.01]":
                 "expedition [expedition.n.02]":
-          "organized crime [organized_crime.n.01]":  # Q: Is the answer a kind of organized crime?
+          "organized crime [organized_crime.n.01]":  # Q: Is it a kind of organized crime?
             "syndicate [syndicate.n.01]":
-          "political system [political_system.n.01]":  # Q: Is the answer a kind of political system?
+          "political system [political_system.n.01]":  # Q: Is it a kind of political system?
             "autocracy [autocracy.n.01]":
               "dictatorship [dictatorship.n.01]":
             "democracy [democracy.n.02]":
-          "sector [sector.n.02]":  # Q: Is the answer a kind of sector?
+          "sector [sector.n.02]":  # Q: Is it a kind of sector?
             "business [business.n.07]":
-          "set [set.n.05]":  # Q: Is the answer a kind of set?
+          "set [set.n.05]":  # Q: Is it a kind of set?
             "clique [clique.n.01]":
               "cabal [cabal.n.01]":
               "faction [faction.n.02]":
                 "left [left.n.02]":
                 "right [right.n.04]":
             "party [party.n.03]":
-          "society [society.n.01]":  # Q: Is the answer a kind of society?
+          "society [society.n.01]":  # Q: Is it a kind of society?
             "civilization [civilization.n.01]":
             "culture [culture.n.01]":
-        "system [system.n.02]":  # Q: Is the answer a kind of system?
+        "system [system.n.02]":  # Q: Is it a kind of system?
           "body [body.n.06]":
-          "economy [economy.n.01]":  # Q: Is the answer a kind of economy?
+          "economy [economy.n.01]":  # Q: Is it a kind of economy?
             "market economy [market_economy.n.01]":
               "capitalism [capitalism.n.01]":
             "non-market economy [non-market_economy.n.01]":
               "managed economy [managed_economy.n.01]":
                 "socialism [socialism.n.02]":
                   "communism [communism.n.01]":
-          "language system [language_system.n.01]":  # Q: Is the answer a kind of language system?
+          "language system [language_system.n.01]":  # Q: Is it a kind of language system?
             "morphophonemic system [morphophonemic_system.n.01]":
             "phonemic system [phonemic_system.n.01]":
               "consonant system [consonant_system.n.01]":
@@ -2447,9 +2449,9 @@ wordnet_3_0_20q:
           "social organization [social_organization.n.01]":
           "solar system [solar_system.n.01]":
           "subsystem [subsystem.n.01]":
-      "measure [measure.n.02]":  # Q: Is the answer a kind of measure?
-        "definite quantity [definite_quantity.n.01]":  # Q: Is the answer a kind of definite quantity?
-          "number [number.n.02]":  # Q: Is the answer a kind of number?
+      "measure [measure.n.02]":  # Q: Is it a kind of measure?
+        "definite quantity [definite_quantity.n.01]":  # Q: Is it a kind of definite quantity?
+          "number [number.n.02]":  # Q: Is it a kind of number?
             "cardinal number [cardinal_number.n.01]":
               "frequency [frequency.n.03]":
             "complex number [complex_number.n.01]":
@@ -2508,7 +2510,7 @@ wordnet_3_0_20q:
               "first [first.n.02]":
             "record [record.n.03]":
             "score [score.n.03]":
-          "unit of measurement [unit_of_measurement.n.01]":  # Q: Is the answer a kind of unit of measurement?
+          "unit of measurement [unit_of_measurement.n.01]":  # Q: Is it a kind of unit of measurement?
             "angular unit [angular_unit.n.01]":
               "degree [degree.n.04]":
             "area unit [area_unit.n.01]":
@@ -2580,8 +2582,8 @@ wordnet_3_0_20q:
               "apothecaries' unit [apothecaries'_unit.n.01]":
                 "ounce [ounce.n.01]":
               "troy unit [troy_unit.n.01]":
-        "fundamental quantity [fundamental_quantity.n.01]":  # Q: Is the answer a kind of fundamental quantity?
-          "time period [time_period.n.01]":  # Q: Is the answer a kind of time period?
+        "fundamental quantity [fundamental_quantity.n.01]":  # Q: Is it a kind of fundamental quantity?
+          "time period [time_period.n.01]":  # Q: Is it a kind of time period?
             "calendar day [calendar_day.n.01]":
               "day [day.n.03]":
                 "anniversary [anniversary.n.01]":
@@ -2718,28 +2720,28 @@ wordnet_3_0_20q:
               "school year [school_year.n.01]":
             "year [year.n.03]":
             "youth [youth.n.05]":
-        "indefinite quantity [indefinite_quantity.n.01]":  # Q: Is the answer a kind of indefinite quantity?
+        "indefinite quantity [indefinite_quantity.n.01]":  # Q: Is it a kind of indefinite quantity?
           "addition [addition.n.03]":
-          "containerful [containerful.n.01]":  # Q: Is the answer a kind of containerful?
+          "containerful [containerful.n.01]":  # Q: Is it a kind of containerful?
             "box [box.n.03]":
             "cup [cup.n.02]":
             "glass [glass.n.03]":
             "handful [handful.n.02]":
           "dose [dose.n.02]":
           "footstep [footstep.n.03]":
-          "large indefinite quantity [large_indefinite_quantity.n.01]":  # Q: Is the answer a kind of large indefinite quantity?
+          "large indefinite quantity [large_indefinite_quantity.n.01]":  # Q: Is it a kind of large indefinite quantity?
             "batch [batch.n.02]":
               "flood [flood.n.02]":
             "battalion [battalion.n.02]":
             "much [much.n.01]":
             "ocean [ocean.n.02]":
             "tons [tons.n.01]":
-          "limit [limit.n.06]":  # Q: Is the answer a kind of limit?
+          "limit [limit.n.06]":  # Q: Is it a kind of limit?
             "extremum [extremum.n.02]":
               "maximum [maximum.n.01]":
               "minimum [minimum.n.01]":
           "load [load.n.02]":
-          "small indefinite quantity [small_indefinite_quantity.n.01]":  # Q: Is the answer a kind of small indefinite quantity?
+          "small indefinite quantity [small_indefinite_quantity.n.01]":  # Q: Is it a kind of small indefinite quantity?
             "couple [couple.n.03]":
             "drop [drop.n.02]":
               "droplet [droplet.n.01]":
@@ -2759,14 +2761,14 @@ wordnet_3_0_20q:
             "trace [trace.n.01]":
           "supply [supply.n.01]":
           "worth [worth.n.01]":
-        "playing period [playing_period.n.01]":  # Q: Is the answer a kind of playing period?
+        "playing period [playing_period.n.01]":  # Q: Is it a kind of playing period?
           "hole [hole.n.03]":
-        "point [point.n.06]":  # Q: Is the answer a kind of point?
-          "beginning [beginning.n.02]":  # Q: Is the answer a kind of beginning?
+        "point [point.n.06]":  # Q: Is it a kind of point?
+          "beginning [beginning.n.02]":  # Q: Is it a kind of beginning?
             "birth [birth.n.01]":
             "incipiency [incipiency.n.01]":
             "threshold [threshold.n.01]":
-          "end [end.n.02]":  # Q: Is the answer a kind of end?
+          "end [end.n.02]":  # Q: Is it a kind of end?
             "death [death.n.04]":
               "grave [grave.n.01]":
             "death [death.n.05]":
@@ -2774,17 +2776,17 @@ wordnet_3_0_20q:
             "stopping point [stopping_point.n.01]":
             "termination [termination.n.01]":
             "terminus ad quem [terminus_ad_quem.n.01]":
-          "moment [moment.n.01]":  # Q: Is the answer a kind of moment?
+          "moment [moment.n.01]":  # Q: Is it a kind of moment?
             "time [time.n.04]":
           "then [then.n.01]":
         "probability [probability.n.01]":
-        "relative quantity [relative_quantity.n.01]":  # Q: Is the answer a kind of relative quantity?
-          "enough [enough.n.01]":  # Q: Is the answer a kind of enough?
+        "relative quantity [relative_quantity.n.01]":  # Q: Is it a kind of relative quantity?
+          "enough [enough.n.01]":  # Q: Is it a kind of enough?
             "fill [fill.n.01]":
           "majority [majority.n.02]":
           "nothing [nothing.n.01]":
-        "system of measurement [system_of_measurement.n.01]":  # Q: Is the answer a kind of system of measurement?
-          "standard [standard.n.01]":  # Q: Is the answer a kind of standard?
+        "system of measurement [system_of_measurement.n.01]":  # Q: Is it a kind of system of measurement?
+          "standard [standard.n.01]":  # Q: Is it a kind of standard?
             "medium of exchange [medium_of_exchange.n.01]":
               "currency [currency.n.01]":
                 "cash [cash.n.01]":
@@ -2803,17 +2805,17 @@ wordnet_3_0_20q:
                   "savings [savings.n.01]":
             "norm [norm.n.01]":
             "scale [scale.n.01]":
-        "time interval [time_interval.n.01]":  # Q: Is the answer a kind of time interval?
+        "time interval [time_interval.n.01]":  # Q: Is it a kind of time interval?
           "cycle [cycle.n.01]":
           "interlude [interlude.n.01]":
-          "pause [pause.n.01]":  # Q: Is the answer a kind of pause?
+          "pause [pause.n.01]":  # Q: Is it a kind of pause?
             "delay [delay.n.01]":
               "extension [extension.n.01]":
             "letup [letup.n.01]":
             "respite [respite.n.04]":
               "breath [breath.n.03]":
-        "time unit [time_unit.n.01]":  # Q: Is the answer a kind of time unit?
-          "day [day.n.01]":  # Q: Is the answer a kind of day?
+        "time unit [time_unit.n.01]":  # Q: Is it a kind of time unit?
+          "day [day.n.01]":  # Q: Is it a kind of day?
             "date [date.n.01]":
               "maturity [maturity.n.03]":
             "today [today.n.02]":
@@ -2823,16 +2825,16 @@ wordnet_3_0_20q:
           "hour [hour.n.01]":
           "microsecond [microsecond.n.01]":
           "minute [minute.n.01]":
-          "month [month.n.02]":  # Q: Is the answer a kind of month?
+          "month [month.n.02]":  # Q: Is it a kind of month?
             "lunar month [lunar_month.n.01]":
           "quarter-hour [quarter-hour.n.01]":
           "second [second.n.01]":
         "value [value.n.03]":
-        "volume [volume.n.01]":  # Q: Is the answer a kind of volume?
+        "volume [volume.n.01]":  # Q: Is it a kind of volume?
           "capacity [capacity.n.03]":
-      "psychological feature [psychological_feature.n.01]":  # Q: Is the answer a kind of psychological feature?
-        "cognition [cognition.n.01]":  # Q: Is the answer a kind of cognition?
-          "ability [ability.n.02]":  # Q: Is the answer a kind of ability?
+      "psychological feature [psychological_feature.n.01]":  # Q: Is it a kind of psychological feature?
+        "cognition [cognition.n.01]":  # Q: Is it a kind of cognition?
+          "ability [ability.n.02]":  # Q: Is it a kind of ability?
             "aptitude [aptitude.n.01]":
               "capability [capability.n.03]":
                 "compass [compass.n.03]":
@@ -2915,7 +2917,7 @@ wordnet_3_0_20q:
             "skill [skill.n.02]":
             "superior skill [superior_skill.n.01]":
               "art [art.n.03]":
-          "attitude [attitude.n.01]":  # Q: Is the answer a kind of attitude?
+          "attitude [attitude.n.01]":  # Q: Is it a kind of attitude?
             "credence [credence.n.01]":
             "inclination [inclination.n.01]":
               "bent [bent.n.01]":
@@ -2945,7 +2947,7 @@ wordnet_3_0_20q:
               "point of view [point_of_view.n.01]":
                 "slant [slant.n.01]":
             "respect [respect.n.03]":
-          "cognitive factor [cognitive_factor.n.01]":  # Q: Is the answer a kind of cognitive factor?
+          "cognitive factor [cognitive_factor.n.01]":  # Q: Is it a kind of cognitive factor?
             "determinant [determinant.n.01]":
               "influence [influence.n.03]":
                 "support [support.n.03]":
@@ -2956,7 +2958,7 @@ wordnet_3_0_20q:
                 "obstacle [obstacle.n.01]":
                   "barrier [barrier.n.02]":
               "trouble [trouble.n.01]":
-          "content [content.n.05]":  # Q: Is the answer a kind of content?
+          "content [content.n.05]":  # Q: Is it a kind of content?
             "acculturation [acculturation.n.02]":
             "belief [belief.n.01]":
               "conviction [conviction.n.01]":
@@ -3246,15 +3248,15 @@ wordnet_3_0_20q:
               "area [area.n.02]":
             "tradition [tradition.n.01]":
             "wisdom [wisdom.n.01]":
-          "equivalent [equivalent.n.01]":  # Q: Is the answer a kind of equivalent?
+          "equivalent [equivalent.n.01]":  # Q: Is it a kind of equivalent?
             "counterpart [counterpart.n.01]":
             "substitute [substitute.n.01]":
           "history [history.n.05]":
-          "inability [inability.n.01]":  # Q: Is the answer a kind of inability?
+          "inability [inability.n.01]":  # Q: Is it a kind of inability?
             "stupidity [stupidity.n.01]":
             "unskillfulness [unskillfulness.n.01]":
               "awkwardness [awkwardness.n.01]":
-          "information [information.n.02]":  # Q: Is the answer a kind of information?
+          "information [information.n.02]":  # Q: Is it a kind of information?
             "acquaintance [acquaintance.n.01]":
             "background [background.n.03]":
             "circumstance [circumstance.n.03]":
@@ -3326,16 +3328,16 @@ wordnet_3_0_20q:
                 "bonus [bonus.n.01]":
                 "joy [joy.n.02]":
           "mind [mind.n.01]":
-          "perception [perception.n.04]":  # Q: Is the answer a kind of perception?
+          "perception [perception.n.04]":  # Q: Is it a kind of perception?
             "penetration [penetration.n.02]":
           "place [place.n.03]":
-          "practice [practice.n.05]":  # Q: Is the answer a kind of practice?
+          "practice [practice.n.05]":  # Q: Is it a kind of practice?
             "convention [convention.n.02]":
               "code of conduct [code_of_conduct.n.01]":
             "custom [custom.n.02]":
               "habit [habit.n.01]":
             "heritage [heritage.n.01]":
-          "process [process.n.02]":  # Q: Is the answer a kind of process?
+          "process [process.n.02]":  # Q: Is it a kind of process?
             "basic cognitive process [basic_cognitive_process.n.01]":
               "attention [attention.n.01]":
                 "attentiveness [attentiveness.n.01]":
@@ -3474,10 +3476,10 @@ wordnet_3_0_20q:
                     "projection [projection.n.01]":
                     "prophecy [prophecy.n.01]":
                   "synthesis [synthesis.n.02]":
-          "process [process.n.04]":  # Q: Is the answer a kind of process?
+          "process [process.n.04]":  # Q: Is it a kind of process?
             "condensation [condensation.n.01]":
             "defense mechanism [defense_mechanism.n.01]":
-          "structure [structure.n.03]":  # Q: Is the answer a kind of structure?
+          "structure [structure.n.03]":  # Q: Is it a kind of structure?
             "arrangement [arrangement.n.03]":
               "design [design.n.02]":
                 "configuration [configuration.n.01]":
@@ -3488,8 +3490,8 @@ wordnet_3_0_20q:
             "form [form.n.03]":
             "syntax [syntax.n.01]":
           "vocabulary [vocabulary.n.02]":
-        "event [event.n.01]":  # Q: Is the answer a kind of event?
-          "act [act.n.02]":  # Q: Is the answer a kind of act?
+        "event [event.n.01]":  # Q: Is it a kind of event?
+          "act [act.n.02]":  # Q: Is it a kind of act?
             "acquiring [acquiring.n.01]":
               "acquisition [acquisition.n.01]":
                 "inheritance [inheritance.n.01]":
@@ -4448,7 +4450,7 @@ wordnet_3_0_20q:
                 "fly [fly.n.04]":
                   "liner [liner.n.01]":
               "kiss [kiss.n.01]":
-          "group action [group_action.n.01]":  # Q: Is the answer a kind of group action?
+          "group action [group_action.n.01]":  # Q: Is it a kind of group action?
             "assembly [assembly.n.06]":
               "meeting [meeting.n.04]":
                 "rendezvous [rendezvous.n.01]":
@@ -4600,7 +4602,7 @@ wordnet_3_0_20q:
             "vote [vote.n.02]":
               "election [election.n.01]":
                 "primary [primary.n.01]":
-          "happening [happening.n.01]":  # Q: Is the answer a kind of happening?
+          "happening [happening.n.01]":  # Q: Is it a kind of happening?
             "accident [accident.n.02]":
               "break [break.n.02]":
               "coincidence [coincidence.n.01]":
@@ -4816,7 +4818,7 @@ wordnet_3_0_20q:
             "union [union.n.09]":
               "fusion [fusion.n.01]":
             "wonder [wonder.n.02]":
-          "social event [social_event.n.01]":  # Q: Is the answer a kind of social event?
+          "social event [social_event.n.01]":  # Q: Is it a kind of social event?
             "affair [affair.n.03]":
               "celebration [celebration.n.01]":
               "ceremony [ceremony.n.01]":
@@ -4851,45 +4853,45 @@ wordnet_3_0_20q:
               "play [play.n.02]":
               "variety show [variety_show.n.01]":
                 "vaudeville [vaudeville.n.01]":
-        "motivation [motivation.n.01]":  # Q: Is the answer a kind of motivation?
-          "ethical motive [ethical_motive.n.01]":  # Q: Is the answer a kind of ethical motive?
+        "motivation [motivation.n.01]":  # Q: Is it a kind of motivation?
+          "ethical motive [ethical_motive.n.01]":  # Q: Is it a kind of ethical motive?
             "conscience [conscience.n.01]":
-          "irrational motive [irrational_motive.n.01]":  # Q: Is the answer a kind of irrational motive?
+          "irrational motive [irrational_motive.n.01]":  # Q: Is it a kind of irrational motive?
             "irrational impulse [irrational_impulse.n.01]":
               "compulsion [compulsion.n.01]":
             "mania [mania.n.01]":
-          "rational motive [rational_motive.n.01]":  # Q: Is the answer a kind of rational motive?
+          "rational motive [rational_motive.n.01]":  # Q: Is it a kind of rational motive?
             "incentive [incentive.n.01]":
             "reason [reason.n.01]":
               "occasion [occasion.n.03]":
               "score [score.n.05]":
           "urge [urge.n.01]":
-      "relation [relation.n.01]":  # Q: Is the answer a kind of relation?
-        "affinity [affinity.n.04]":  # Q: Is the answer a kind of affinity?
+      "relation [relation.n.01]":  # Q: Is it a kind of relation?
+        "affinity [affinity.n.04]":  # Q: Is it a kind of affinity?
           "sympathy [sympathy.n.03]":
-        "business relation [business_relation.n.01]":  # Q: Is the answer a kind of business relation?
-          "competition [competition.n.01]":  # Q: Is the answer a kind of competition?
+        "business relation [business_relation.n.01]":  # Q: Is it a kind of business relation?
+          "competition [competition.n.01]":  # Q: Is it a kind of competition?
             "price war [price_war.n.01]":
-        "change [change.n.02]":  # Q: Is the answer a kind of change?
-          "gradient [gradient.n.01]":  # Q: Is the answer a kind of gradient?
+        "change [change.n.02]":  # Q: Is it a kind of change?
+          "gradient [gradient.n.01]":  # Q: Is it a kind of gradient?
             "temperature gradient [temperature_gradient.n.01]":
         "comparison [comparison.n.02]":
-        "connection [connection.n.01]":  # Q: Is the answer a kind of connection?
+        "connection [connection.n.01]":  # Q: Is it a kind of connection?
           "alliance [alliance.n.02]":
-          "linkage [linkage.n.01]":  # Q: Is the answer a kind of linkage?
+          "linkage [linkage.n.01]":  # Q: Is it a kind of linkage?
             "link [link.n.01]":
-          "relevance [relevance.n.01]":  # Q: Is the answer a kind of relevance?
+          "relevance [relevance.n.01]":  # Q: Is it a kind of relevance?
             "applicability [applicability.n.01]":
         "control [control.n.02]":
-        "foundation [foundation.n.01]":  # Q: Is the answer a kind of foundation?
+        "foundation [foundation.n.01]":  # Q: Is it a kind of foundation?
           "footing [footing.n.02]":
         "interrelation [interrelation.n.01]":
-        "linguistic relation [linguistic_relation.n.01]":  # Q: Is the answer a kind of linguistic relation?
-          "grammatical relation [grammatical_relation.n.01]":  # Q: Is the answer a kind of grammatical relation?
+        "linguistic relation [linguistic_relation.n.01]":  # Q: Is it a kind of linguistic relation?
+          "grammatical relation [grammatical_relation.n.01]":  # Q: Is it a kind of grammatical relation?
             "inflection [inflection.n.01]":
               "paradigm [paradigm.n.01]":
-        "magnitude relation [magnitude_relation.n.01]":  # Q: Is the answer a kind of magnitude relation?
-          "rate [rate.n.01]":  # Q: Is the answer a kind of rate?
+        "magnitude relation [magnitude_relation.n.01]":  # Q: Is it a kind of magnitude relation?
+          "rate [rate.n.01]":  # Q: Is it a kind of rate?
             "flow [flow.n.02]":
             "flux [flux.n.01]":
             "frequency [frequency.n.01]":
@@ -4902,7 +4904,7 @@ wordnet_3_0_20q:
             "pace [pace.n.01]":
             "revolutions per minute [revolutions_per_minute.n.01]":
             "speed [speed.n.01]":
-          "ratio [ratio.n.01]":  # Q: Is the answer a kind of ratio?
+          "ratio [ratio.n.01]":  # Q: Is it a kind of ratio?
             "average [average.n.02]":
               "batting average [batting_average.n.01]":
             "efficiency [efficiency.n.01]":
@@ -4917,25 +4919,25 @@ wordnet_3_0_20q:
                 "percentage [percentage.n.01]":
                 "scale [scale.n.03]":
           "scale [scale.n.02]":
-        "mathematical relation [mathematical_relation.n.01]":  # Q: Is the answer a kind of mathematical relation?
-          "function [function.n.01]":  # Q: Is the answer a kind of function?
+        "mathematical relation [mathematical_relation.n.01]":  # Q: Is it a kind of mathematical relation?
+          "function [function.n.01]":  # Q: Is it a kind of function?
             "operator [operator.n.01]":
               "identity [identity.n.03]":
               "linear operator [linear_operator.n.01]":
             "polynomial [polynomial.n.01]":
               "monic polynomial [monic_polynomial.n.01]":
-        "opposition [opposition.n.02]":  # Q: Is the answer a kind of opposition?
+        "opposition [opposition.n.02]":  # Q: Is it a kind of opposition?
           "contradiction [contradiction.n.01]":
           "contrast [contrast.n.01]":
           "mutual opposition [mutual_opposition.n.01]":
           "reverse [reverse.n.01]":
-        "ownership [ownership.n.01]":  # Q: Is the answer a kind of ownership?
+        "ownership [ownership.n.01]":  # Q: Is it a kind of ownership?
           "community [community.n.02]":
           "proprietorship [proprietorship.n.01]":
-        "part [part.n.01]":  # Q: Is the answer a kind of part?
+        "part [part.n.01]":  # Q: Is it a kind of part?
           "detail [detail.n.02]":
           "item [item.n.01]":
-          "language unit [language_unit.n.01]":  # Q: Is the answer a kind of language unit?
+          "language unit [language_unit.n.01]":  # Q: Is it a kind of language unit?
             "discourse [discourse.n.01]":
               "context [context.n.01]":
             "morpheme [morpheme.n.01]":
@@ -4968,9 +4970,9 @@ wordnet_3_0_20q:
               "term [term.n.01]":
               "terminology [terminology.n.01]":
           "member [member.n.02]":
-          "remainder [remainder.n.01]":  # Q: Is the answer a kind of remainder?
+          "remainder [remainder.n.01]":  # Q: Is it a kind of remainder?
             "leftover [leftover.n.01]":
-          "substance [substance.n.01]":  # Q: Is the answer a kind of substance?
+          "substance [substance.n.01]":  # Q: Is it a kind of substance?
             "activator [activator.n.01]":
               "catalyst [catalyst.n.01]":
             "atom [atom.n.01]":
@@ -5206,17 +5208,17 @@ wordnet_3_0_20q:
             "protoplasm [protoplasm.n.01]":
               "cytoplasm [cytoplasm.n.01]":
           "unit [unit.n.02]":
-        "position [position.n.07]":  # Q: Is the answer a kind of position?
-          "direction [direction.n.02]":  # Q: Is the answer a kind of direction?
+        "position [position.n.07]":  # Q: Is it a kind of position?
+          "direction [direction.n.02]":  # Q: Is it a kind of direction?
             "compass point [compass_point.n.01]":
               "cardinal compass point [cardinal_compass_point.n.01]":
                 "east [east.n.01]":
                 "north [north.n.03]":
                 "south [south.n.03]":
                 "west [west.n.02]":
-          "gradient [gradient.n.02]":  # Q: Is the answer a kind of gradient?
+          "gradient [gradient.n.02]":  # Q: Is it a kind of gradient?
             "pitch [pitch.n.05]":
-          "placement [placement.n.01]":  # Q: Is the answer a kind of placement?
+          "placement [placement.n.01]":  # Q: Is it a kind of placement?
             "composition [composition.n.01]":
             "formation [formation.n.05]":
             "spacing [spacing.n.02]":
@@ -5233,8 +5235,8 @@ wordnet_3_0_20q:
               "distribution [distribution.n.02]":
           "room [room.n.02]":
           "slot [slot.n.01]":
-        "possession [possession.n.02]":  # Q: Is the answer a kind of possession?
-          "assets [assets.n.01]":  # Q: Is the answer a kind of assets?
+        "possession [possession.n.02]":  # Q: Is it a kind of possession?
+          "assets [assets.n.01]":  # Q: Is it a kind of assets?
             "capital [capital.n.01]":
               "stock [stock.n.01]":
                 "authorized shares [authorized_shares.n.01]":
@@ -5280,7 +5282,7 @@ wordnet_3_0_20q:
                     "return [return.n.06]":
               "gross [gross.n.02]":
               "loss [loss.n.06]":
-          "liabilities [liabilities.n.01]":  # Q: Is the answer a kind of liabilities?
+          "liabilities [liabilities.n.01]":  # Q: Is it a kind of liabilities?
             "charge [charge.n.08]":
               "levy [levy.n.01]":
                 "tax [tax.n.01]":
@@ -5291,7 +5293,7 @@ wordnet_3_0_20q:
               "loan [loan.n.01]":
                 "participation loan [participation_loan.n.01]":
               "principal [principal.n.01]":
-          "property [property.n.01]":  # Q: Is the answer a kind of property?
+          "property [property.n.01]":  # Q: Is it a kind of property?
             "estate [estate.n.01]":
             "personal property [personal_property.n.01]":
             "real property [real_property.n.01]":
@@ -5303,7 +5305,7 @@ wordnet_3_0_20q:
             "wealth [wealth.n.04]":
               "money [money.n.02]":
                 "pile [pile.n.03]":
-          "transferred property [transferred_property.n.01]":  # Q: Is the answer a kind of transferred property?
+          "transferred property [transferred_property.n.01]":  # Q: Is it a kind of transferred property?
             "acquisition [acquisition.n.02]":
               "gift [gift.n.01]":
                 "aid [aid.n.03]":
@@ -5361,29 +5363,29 @@ wordnet_3_0_20q:
                 "ransom [ransom.n.01]":
             "stolen property [stolen_property.n.01]":
               "loot [loot.n.01]":
-        "reciprocality [reciprocality.n.01]":  # Q: Is the answer a kind of reciprocality?
+        "reciprocality [reciprocality.n.01]":  # Q: Is it a kind of reciprocality?
           "correlation [correlation.n.01]":
           "mutuality [mutuality.n.02]":
         "relationship [relationship.n.01]":
-        "social relation [social_relation.n.01]":  # Q: Is the answer a kind of social relation?
+        "social relation [social_relation.n.01]":  # Q: Is it a kind of social relation?
           "politics [politics.n.01]":
           "relations [relations.n.01]":
-        "temporal relation [temporal_relation.n.01]":  # Q: Is the answer a kind of temporal relation?
+        "temporal relation [temporal_relation.n.01]":  # Q: Is it a kind of temporal relation?
           "asynchronism [asynchronism.n.01]":
           "synchronism [synchronism.n.01]":
-      "set [set.n.02]":  # Q: Is the answer a kind of set?
+      "set [set.n.02]":  # Q: Is it a kind of set?
         "field [field.n.10]":
-        "interval [interval.n.02]":  # Q: Is the answer a kind of interval?
+        "interval [interval.n.02]":  # Q: Is it a kind of interval?
           "closed interval [closed_interval.n.01]":
           "sub-interval [sub-interval.n.01]":
         "solution [solution.n.04]":
-    "physical entity [physical_entity.n.01]":  # Q: Is the answer a kind of physical entity?
-      "causal agent [causal_agent.n.01]":  # Q: Is the answer a kind of causal agent?
-        "agent [agent.n.01]":  # Q: Is the answer a kind of agent?
+    "physical entity [physical_entity.n.01]":  # Q: Is it a kind of physical entity?
+      "causal agent [causal_agent.n.01]":  # Q: Is it a kind of causal agent?
+        "agent [agent.n.01]":  # Q: Is it a kind of agent?
           "infectious agent [infectious_agent.n.01]":
           "vasoconstrictor [vasoconstrictor.n.01]":
-        "agent [agent.n.03]":  # Q: Is the answer a kind of agent?
-          "chemical agent [chemical_agent.n.01]":  # Q: Is the answer a kind of chemical agent?
+        "agent [agent.n.03]":  # Q: Is it a kind of agent?
+          "chemical agent [chemical_agent.n.01]":  # Q: Is it a kind of chemical agent?
             "active agent [active_agent.n.01]":
             "oxidant [oxidant.n.01]":
               "hydrogen peroxide [hydrogen_peroxide.n.01]":
@@ -5391,7 +5393,7 @@ wordnet_3_0_20q:
             "wetting agent [wetting_agent.n.01]":
               "detergent [detergent.n.01]":
                 "anionic detergent [anionic_detergent.n.01]":
-          "drug [drug.n.01]":  # Q: Is the answer a kind of drug?
+          "drug [drug.n.01]":  # Q: Is it a kind of drug?
             "controlled substance [controlled_substance.n.01]":
               "opium [opium.n.01]":
             "diuretic drug [diuretic_drug.n.01]":
@@ -5429,23 +5431,23 @@ wordnet_3_0_20q:
             "soporific [soporific.n.01]":
           "hypnagogue [hypnagogue.n.01]":
           "hypoglycemic agent [hypoglycemic_agent.n.01]":
-        "danger [danger.n.03]":  # Q: Is the answer a kind of danger?
+        "danger [danger.n.03]":  # Q: Is it a kind of danger?
           "hazard [hazard.n.01]":
           "menace [menace.n.01]":
         "destiny [destiny.n.02]":
         "nature [nature.n.02]":
-        "operator [operator.n.02]":  # Q: Is the answer a kind of operator?
-          "driver [driver.n.01]":  # Q: Is the answer a kind of driver?
+        "operator [operator.n.02]":  # Q: Is it a kind of operator?
+          "driver [driver.n.01]":  # Q: Is it a kind of driver?
             "taxidriver [taxidriver.n.01]":
           "telegrapher [telegrapher.n.01]":
           "telephone operator [telephone_operator.n.01]":
         "power [power.n.05]":
-        "vital principle [vital_principle.n.01]":  # Q: Is the answer a kind of vital principle?
-          "spirit [spirit.n.01]":  # Q: Is the answer a kind of spirit?
+        "vital principle [vital_principle.n.01]":  # Q: Is it a kind of vital principle?
+          "spirit [spirit.n.01]":  # Q: Is it a kind of spirit?
             "soul [soul.n.01]":
-      "matter [matter.n.03]":  # Q: Is the answer a kind of matter?
-        "fluid [fluid.n.02]":  # Q: Is the answer a kind of fluid?
-          "gas [gas.n.02]":  # Q: Is the answer a kind of gas?
+      "matter [matter.n.03]":  # Q: Is it a kind of matter?
+        "fluid [fluid.n.02]":  # Q: Is it a kind of fluid?
+          "gas [gas.n.02]":  # Q: Is it a kind of gas?
             "air [air.n.01]":
               "breath [breath.n.02]":
               "liquid air [liquid_air.n.01]":
@@ -5463,20 +5465,20 @@ wordnet_3_0_20q:
             "noble gas [noble_gas.n.01]":
             "oxygen [oxygen.n.01]":
             "ozone [ozone.n.01]":
-          "liquid [liquid.n.03]":  # Q: Is the answer a kind of liquid?
+          "liquid [liquid.n.03]":  # Q: Is it a kind of liquid?
             "water [water.n.01]":
               "fresh water [fresh_water.n.01]":
                 "rain [rain.n.02]":
               "seawater [seawater.n.01]":
-        "sediment [sediment.n.01]":  # Q: Is the answer a kind of sediment?
+        "sediment [sediment.n.01]":  # Q: Is it a kind of sediment?
           "dregs [dregs.n.01]":
-        "solid [solid.n.01]":  # Q: Is the answer a kind of solid?
-          "crystal [crystal.n.01]":  # Q: Is the answer a kind of crystal?
+        "solid [solid.n.01]":  # Q: Is it a kind of solid?
+          "crystal [crystal.n.01]":  # Q: Is it a kind of crystal?
             "gem [gem.n.02]":
               "opaque gem [opaque_gem.n.01]":
                 "jade [jade.n.01]":
             "ice [ice.n.01]":
-          "food [food.n.02]":  # Q: Is the answer a kind of food?
+          "food [food.n.02]":  # Q: Is it a kind of food?
             "baked goods [baked_goods.n.01]":
               "cake [cake.n.03]":
                 "cookie [cookie.n.01]":
@@ -5504,15 +5506,15 @@ wordnet_3_0_20q:
                 "root vegetable [root_vegetable.n.01]":
                   "potato [potato.n.01]":
                 "solanaceous vegetable [solanaceous_vegetable.n.01]":
-          "glass [glass.n.01]":  # Q: Is the answer a kind of glass?
+          "glass [glass.n.01]":  # Q: Is it a kind of glass?
             "Pyrex [pyrex.n.01]":
           "powder [powder.n.01]":
-          "precipitate [precipitate.n.01]":  # Q: Is the answer a kind of precipitate?
+          "precipitate [precipitate.n.01]":  # Q: Is it a kind of precipitate?
             "sludge [sludge.n.01]":
-        "substance [substance.n.07]":  # Q: Is the answer a kind of substance?
-          "antigen [antigen.n.01]":  # Q: Is the answer a kind of antigen?
+        "substance [substance.n.07]":  # Q: Is it a kind of substance?
+          "antigen [antigen.n.01]":  # Q: Is it a kind of antigen?
             "rhesus factor [rhesus_factor.n.01]":
-          "food [food.n.01]":  # Q: Is the answer a kind of food?
+          "food [food.n.01]":  # Q: Is it a kind of food?
             "beverage [beverage.n.01]":
               "alcohol [alcohol.n.01]":
                 "brew [brew.n.01]":
@@ -5584,30 +5586,30 @@ wordnet_3_0_20q:
                   "B-complex vitamin [b-complex_vitamin.n.01]":
                     "vitamin B2 [vitamin_b2.n.01]":
             "water [water.n.06]":
-          "fuel [fuel.n.01]":  # Q: Is the answer a kind of fuel?
+          "fuel [fuel.n.01]":  # Q: Is it a kind of fuel?
             "fossil fuel [fossil_fuel.n.01]":
               "coal [coal.n.01]":
                 "lignite [lignite.n.01]":
             "gasoline [gasoline.n.01]":
           "nutrient [nutrient.n.02]":
-          "poison [poison.n.01]":  # Q: Is the answer a kind of poison?
+          "poison [poison.n.01]":  # Q: Is it a kind of poison?
             "toxin [toxin.n.01]":
               "plant toxin [plant_toxin.n.01]":
                 "strychnine [strychnine.n.01]":
-          "refrigerant [refrigerant.n.01]":  # Q: Is the answer a kind of refrigerant?
+          "refrigerant [refrigerant.n.01]":  # Q: Is it a kind of refrigerant?
             "cryogen [cryogen.n.01]":
         "system [system.n.03]":
         "vegetable matter [vegetable_matter.n.01]":
-      "object [object.n.01]":  # Q: Is the answer a kind of object?
-        "curio [curio.n.01]":  # Q: Is the answer a kind of curio?
+      "object [object.n.01]":  # Q: Is it a kind of object?
+        "curio [curio.n.01]":  # Q: Is it a kind of curio?
           "collector's item [collector's_item.n.01]":
         "draw [draw.n.04]":
         "film [film.n.04]":
-        "geological formation [geological_formation.n.01]":  # Q: Is the answer a kind of geological formation?
+        "geological formation [geological_formation.n.01]":  # Q: Is it a kind of geological formation?
           "beach [beach.n.01]":
           "cave [cave.n.01]":
           "cliff [cliff.n.01]":
-          "natural depression [natural_depression.n.01]":  # Q: Is the answer a kind of natural depression?
+          "natural depression [natural_depression.n.01]":  # Q: Is it a kind of natural depression?
             "bed [bed.n.03]":
               "ocean floor [ocean_floor.n.01]":
               "streambed [streambed.n.01]":
@@ -5623,7 +5625,7 @@ wordnet_3_0_20q:
                 "draw [draw.n.01]":
               "ravine [ravine.n.01]":
                 "canyon [canyon.n.01]":
-          "natural elevation [natural_elevation.n.01]":  # Q: Is the answer a kind of natural elevation?
+          "natural elevation [natural_elevation.n.01]":  # Q: Is it a kind of natural elevation?
             "hill [hill.n.01]":
               "knoll [knoll.n.01]":
             "mountain [mountain.n.01]":
@@ -5632,9 +5634,9 @@ wordnet_3_0_20q:
               "bank [bank.n.03]":
                 "bluff [bluff.n.01]":
               "dune [dune.n.01]":
-          "shore [shore.n.01]":  # Q: Is the answer a kind of shore?
+          "shore [shore.n.01]":  # Q: Is it a kind of shore?
             "seashore [seashore.n.01]":
-          "slope [slope.n.01]":  # Q: Is the answer a kind of slope?
+          "slope [slope.n.01]":  # Q: Is it a kind of slope?
             "ascent [ascent.n.01]":
             "bank [bank.n.01]":
               "riverbank [riverbank.n.01]":
@@ -5642,21 +5644,21 @@ wordnet_3_0_20q:
             "hillside [hillside.n.01]":
           "spring [spring.n.03]":
         "keepsake [keepsake.n.01]":
-        "land [land.n.02]":  # Q: Is the answer a kind of land?
+        "land [land.n.02]":  # Q: Is it a kind of land?
           "turf [turf.n.01]":
-          "wetland [wetland.n.01]":  # Q: Is the answer a kind of wetland?
+          "wetland [wetland.n.01]":  # Q: Is it a kind of wetland?
             "swamp [swamp.n.01]":
-        "land [land.n.04]":  # Q: Is the answer a kind of land?
+        "land [land.n.04]":  # Q: Is it a kind of land?
           "forest [forest.n.02]":
           "island [island.n.01]":
-          "landmass [landmass.n.01]":  # Q: Is the answer a kind of landmass?
+          "landmass [landmass.n.01]":  # Q: Is it a kind of landmass?
             "continent [continent.n.01]":
           "mainland [mainland.n.01]":
           "plain [plain.n.01]":
-        "location [location.n.01]":  # Q: Is the answer a kind of location?
+        "location [location.n.01]":  # Q: Is it a kind of location?
           "Earth [earth.n.04]":
           "home [home.n.03]":
-          "line [line.n.11]":  # Q: Is the answer a kind of line?
+          "line [line.n.11]":  # Q: Is it a kind of line?
             "axis [axis.n.01]":
               "major axis [major_axis.n.01]":
             "crest [crest.n.01]":
@@ -5675,7 +5677,7 @@ wordnet_3_0_20q:
               "trail [trail.n.01]":
             "side [side.n.07]":
           "outer space [outer_space.n.01]":
-          "point [point.n.02]":  # Q: Is the answer a kind of point?
+          "point [point.n.02]":  # Q: Is it a kind of point?
             "beginning [beginning.n.04]":
               "birthplace [birthplace.n.02]":
             "center [center.n.04]":
@@ -5725,7 +5727,7 @@ wordnet_3_0_20q:
               "peak [peak.n.04]":
                 "hilltop [hilltop.n.01]":
               "target [target.n.03]":
-          "region [region.n.01]":  # Q: Is the answer a kind of region?
+          "region [region.n.01]":  # Q: Is it a kind of region?
             "air [air.n.02]":
             "atmosphere [atmosphere.n.03]":
             "bottom [bottom.n.02]":
@@ -5785,7 +5787,7 @@ wordnet_3_0_20q:
               "combat zone [combat_zone.n.02]":
                 "bridgehead [bridgehead.n.01]":
                   "beachhead [beachhead.n.01]":
-          "region [region.n.03]":  # Q: Is the answer a kind of region?
+          "region [region.n.03]":  # Q: Is it a kind of region?
             "area [area.n.01]":
               "block [block.n.02]":
               "center [center.n.01]":
@@ -5892,7 +5894,7 @@ wordnet_3_0_20q:
               "wilderness [wilderness.n.03]":
                 "barren [barren.n.01]":
             "unknown [unknown.n.01]":
-          "space [space.n.02]":  # Q: Is the answer a kind of space?
+          "space [space.n.02]":  # Q: Is it a kind of space?
             "angle [angle.n.01]":
             "cavity [cavity.n.02]":
               "pouch [pouch.n.02]":
@@ -5909,14 +5911,14 @@ wordnet_3_0_20q:
               "hole [hole.n.01]":
               "rip [rip.n.02]":
           "whereabouts [whereabouts.n.01]":
-        "part [part.n.02]":  # Q: Is the answer a kind of part?
-          "appendage [appendage.n.03]":  # Q: Is the answer a kind of appendage?
+        "part [part.n.02]":  # Q: Is it a kind of part?
+          "appendage [appendage.n.03]":  # Q: Is it a kind of appendage?
             "handle [handle.n.01]":
               "knob [knob.n.02]":
                 "doorknob [doorknob.n.01]":
               "stock [stock.n.15]":
                 "butt [butt.n.01]":
-          "component [component.n.03]":  # Q: Is the answer a kind of component?
+          "component [component.n.03]":  # Q: Is it a kind of component?
             "accessory [accessory.n.02]":
               "fitting [fitting.n.02]":
                 "receptacle [receptacle.n.03]":
@@ -5926,17 +5928,17 @@ wordnet_3_0_20q:
             "hardware [hardware.n.03]":
             "ingredient [ingredient.n.01]":
           "fraction [fraction.n.02]":
-          "piece [piece.n.01]":  # Q: Is the answer a kind of piece?
+          "piece [piece.n.01]":  # Q: Is it a kind of piece?
             "beam [beam.n.02]":
             "shard [shard.n.01]":
-          "section [section.n.04]":  # Q: Is the answer a kind of section?
+          "section [section.n.04]":  # Q: Is it a kind of section?
             "subsection [subsection.n.01]":
         "ribbon [ribbon.n.01]":
-        "stuff [stuff.n.02]":  # Q: Is the answer a kind of stuff?
+        "stuff [stuff.n.02]":  # Q: Is it a kind of stuff?
           "etcetera [etcetera.n.01]":
         "wall [wall.n.02]":
-        "whole [whole.n.02]":  # Q: Is the answer a kind of whole?
-          "artifact [artifact.n.01]":  # Q: Is the answer a kind of artifact?
+        "whole [whole.n.02]":  # Q: Is it a kind of whole?
+          "artifact [artifact.n.01]":  # Q: Is it a kind of artifact?
             "Americana [americana.n.01]":
             "article [article.n.02]":
               "ware [ware.n.01]":
@@ -7188,9 +7190,9 @@ wordnet_3_0_20q:
             "weight [weight.n.04]":
               "counterweight [counterweight.n.01]":
               "load [load.n.01]":
-          "item [item.n.03]":  # Q: Is the answer a kind of item?
+          "item [item.n.03]":  # Q: Is it a kind of item?
             "piece [piece.n.02]":
-          "living thing [living_thing.n.01]":  # Q: Is the answer a kind of living thing?
+          "living thing [living_thing.n.01]":  # Q: Is it a kind of living thing?
             "cell [cell.n.02]":
               "fiber [fiber.n.03]":
                 "muscle cell [muscle_cell.n.01]":
@@ -8373,7 +8375,7 @@ wordnet_3_0_20q:
                       "willow [willow.n.01]":
                 "wilding [wilding.n.01]":
               "relative [relative.n.02]":
-          "natural object [natural_object.n.01]":  # Q: Is the answer a kind of natural object?
+          "natural object [natural_object.n.01]":  # Q: Is it a kind of natural object?
             "black body [black_body.n.01]":
             "body [body.n.01]":
               "human body [human_body.n.01]":
@@ -8468,28 +8470,28 @@ wordnet_3_0_20q:
             "universe [universe.n.01]":
               "nature [nature.n.03]":
           "sum [sum.n.05]":
-      "process [process.n.06]":  # Q: Is the answer a kind of process?
-        "decrease [decrease.n.02]":  # Q: Is the answer a kind of decrease?
+      "process [process.n.06]":  # Q: Is it a kind of process?
+        "decrease [decrease.n.02]":  # Q: Is it a kind of decrease?
           "decay [decay.n.02]":
-          "decline [decline.n.01]":  # Q: Is the answer a kind of decline?
+          "decline [decline.n.01]":  # Q: Is it a kind of decline?
             "deterioration [deterioration.n.02]":
               "slump [slump.n.01]":
             "loss [loss.n.02]":
-        "development [development.n.02]":  # Q: Is the answer a kind of development?
+        "development [development.n.02]":  # Q: Is it a kind of development?
           "growth [growth.n.02]":
-        "economic process [economic_process.n.01]":  # Q: Is the answer a kind of economic process?
+        "economic process [economic_process.n.01]":  # Q: Is it a kind of economic process?
           "demand [demand.n.02]":
           "supply [supply.n.02]":
-        "human process [human_process.n.01]":  # Q: Is the answer a kind of human process?
+        "human process [human_process.n.01]":  # Q: Is it a kind of human process?
           "psychoanalytic process [psychoanalytic_process.n.01]":
-        "increase [increase.n.03]":  # Q: Is the answer a kind of increase?
+        "increase [increase.n.03]":  # Q: Is it a kind of increase?
           "accretion [accretion.n.01]":
-        "natural process [natural_process.n.01]":  # Q: Is the answer a kind of natural process?
+        "natural process [natural_process.n.01]":  # Q: Is it a kind of natural process?
           "absorption [absorption.n.02]":
           "aeration [aeration.n.01]":
-          "centrifugation [centrifugation.n.01]":  # Q: Is the answer a kind of centrifugation?
+          "centrifugation [centrifugation.n.01]":  # Q: Is it a kind of centrifugation?
             "ultracentrifugation [ultracentrifugation.n.01]":
-          "chemical process [chemical_process.n.01]":  # Q: Is the answer a kind of chemical process?
+          "chemical process [chemical_process.n.01]":  # Q: Is it a kind of chemical process?
             "chemical reaction [chemical_reaction.n.01]":
               "chemical equilibrium [chemical_equilibrium.n.01]":
               "oxidation [oxidation.n.01]":
@@ -8501,34 +8503,34 @@ wordnet_3_0_20q:
             "polymerization [polymerization.n.01]":
             "synthesis [synthesis.n.01]":
           "chromatography [chromatography.n.01]":
-          "diffusion [diffusion.n.01]":  # Q: Is the answer a kind of diffusion?
+          "diffusion [diffusion.n.01]":  # Q: Is it a kind of diffusion?
             "permeation [permeation.n.01]":
               "impregnation [impregnation.n.02]":
           "distillation [distillation.n.01]":
-          "extraction [extraction.n.01]":  # Q: Is the answer a kind of extraction?
+          "extraction [extraction.n.01]":  # Q: Is it a kind of extraction?
             "elution [elution.n.01]":
-          "feedback [feedback.n.01]":  # Q: Is the answer a kind of feedback?
+          "feedback [feedback.n.01]":  # Q: Is it a kind of feedback?
             "positive feedback [positive_feedback.n.01]":
               "vicious circle [vicious_circle.n.01]":
           "flow [flow.n.04]":
-          "phase change [phase_change.n.01]":  # Q: Is the answer a kind of phase change?
+          "phase change [phase_change.n.01]":  # Q: Is it a kind of phase change?
             "vaporization [vaporization.n.02]":
               "smoke [smoke.n.02]":
-          "release [release.n.03]":  # Q: Is the answer a kind of release?
+          "release [release.n.03]":  # Q: Is it a kind of release?
             "emission [emission.n.03]":
               "radiation [radiation.n.04]":
                 "corpuscular radiation [corpuscular_radiation.n.01]":
-          "sorption [sorption.n.01]":  # Q: Is the answer a kind of sorption?
+          "sorption [sorption.n.01]":  # Q: Is it a kind of sorption?
             "absorption [absorption.n.01]":
-          "temperature change [temperature_change.n.01]":  # Q: Is the answer a kind of temperature change?
+          "temperature change [temperature_change.n.01]":  # Q: Is it a kind of temperature change?
             "cooling [cooling.n.01]":
             "heating [heating.n.01]":
               "thaw [thaw.n.01]":
           "transpiration [transpiration.n.01]":
-        "organic process [organic_process.n.01]":  # Q: Is the answer a kind of organic process?
+        "organic process [organic_process.n.01]":  # Q: Is it a kind of organic process?
           "agglutination [agglutination.n.01]":
           "blooming [blooming.n.01]":
-          "bodily process [bodily_process.n.01]":  # Q: Is the answer a kind of bodily process?
+          "bodily process [bodily_process.n.01]":  # Q: Is it a kind of bodily process?
             "breath [breath.n.01]":
               "inhalation [inhalation.n.01]":
                 "gasp [gasp.n.01]":
@@ -8560,20 +8562,20 @@ wordnet_3_0_20q:
               "reproduction [reproduction.n.05]":
                 "generation [generation.n.07]":
               "sexual intercourse [sexual_intercourse.n.01]":
-          "growth [growth.n.01]":  # Q: Is the answer a kind of growth?
+          "growth [growth.n.01]":  # Q: Is it a kind of growth?
             "blossoming [blossoming.n.01]":
             "proliferation [proliferation.n.01]":
           "maturation [maturation.n.01]":
           "organification [organification.n.01]":
           "ossification [ossification.n.01]":
-          "parturition [parturition.n.01]":  # Q: Is the answer a kind of parturition?
+          "parturition [parturition.n.01]":  # Q: Is it a kind of parturition?
             "calving [calving.n.01]":
             "hatch [hatch.n.01]":
             "laying [laying.n.01]":
             "parturiency [parturiency.n.01]":
           "secretion [secretion.n.01]":
-        "phenomenon [phenomenon.n.01]":  # Q: Is the answer a kind of phenomenon?
-          "consequence [consequence.n.01]":  # Q: Is the answer a kind of consequence?
+        "phenomenon [phenomenon.n.01]":  # Q: Is it a kind of phenomenon?
+          "consequence [consequence.n.01]":  # Q: Is it a kind of consequence?
             "aftermath [aftermath.n.01]":
             "by-product [by-product.n.01]":
             "change [change.n.04]":
@@ -8582,7 +8584,7 @@ wordnet_3_0_20q:
             "response [response.n.01]":
           "luck [luck.n.02]":
           "luck [luck.n.03]":
-          "natural phenomenon [natural_phenomenon.n.01]":  # Q: Is the answer a kind of natural phenomenon?
+          "natural phenomenon [natural_phenomenon.n.01]":  # Q: Is it a kind of natural phenomenon?
             "chemical phenomenon [chemical_phenomenon.n.01]":
               "exchange [exchange.n.01]":
                 "photochemical exchange [photochemical_exchange.n.01]":
@@ -8699,33 +8701,33 @@ wordnet_3_0_20q:
               "resonance [resonance.n.01]":
               "surface tension [surface_tension.n.01]":
                 "interfacial tension [interfacial_tension.n.01]":
-        "processing [processing.n.01]":  # Q: Is the answer a kind of processing?
+        "processing [processing.n.01]":  # Q: Is it a kind of processing?
           "blowing [blowing.n.01]":
-          "data processing [data_processing.n.01]":  # Q: Is the answer a kind of data processing?
+          "data processing [data_processing.n.01]":  # Q: Is it a kind of data processing?
             "operation [operation.n.04]":
               "search [search.n.03]":
-      "thing [thing.n.12]":  # Q: Is the answer a kind of thing?
-        "body of water [body_of_water.n.01]":  # Q: Is the answer a kind of body of water?
+      "thing [thing.n.12]":  # Q: Is it a kind of thing?
+        "body of water [body_of_water.n.01]":  # Q: Is it a kind of body of water?
           "bay [bay.n.01]":
-          "channel [channel.n.04]":  # Q: Is the answer a kind of channel?
+          "channel [channel.n.04]":  # Q: Is it a kind of channel?
             "strait [strait.n.01]":
           "inlet [inlet.n.01]":
-          "lake [lake.n.01]":  # Q: Is the answer a kind of lake?
+          "lake [lake.n.01]":  # Q: Is it a kind of lake?
             "lagoon [lagoon.n.01]":
             "pond [pond.n.01]":
             "reservoir [reservoir.n.02]":
           "ocean [ocean.n.01]":
           "sea [sea.n.01]":
-          "stream [stream.n.01]":  # Q: Is the answer a kind of stream?
+          "stream [stream.n.01]":  # Q: Is it a kind of stream?
             "brook [brook.n.01]":
             "river [river.n.01]":
           "waterfall [waterfall.n.01]":
-        "inessential [inessential.n.01]":  # Q: Is the answer a kind of inessential?
+        "inessential [inessential.n.01]":  # Q: Is it a kind of inessential?
           "adjunct [adjunct.n.01]":
-        "necessity [necessity.n.02]":  # Q: Is the answer a kind of necessity?
+        "necessity [necessity.n.02]":  # Q: Is it a kind of necessity?
           "need [need.n.02]":
-        "part [part.n.03]":  # Q: Is the answer a kind of part?
-          "body part [body_part.n.01]":  # Q: Is the answer a kind of body part?
+        "part [part.n.03]":  # Q: Is it a kind of part?
+          "body part [body_part.n.01]":  # Q: Is it a kind of body part?
             "abdomen [abdomen.n.01]":
             "area [area.n.03]":
               "middle [middle.n.03]":
@@ -8935,20 +8937,20 @@ wordnet_3_0_20q:
                     "nerve pathway [nerve_pathway.n.01]":
                 "parenchyma [parenchyma.n.01]":
             "torso [torso.n.01]":
-          "fragment [fragment.n.01]":  # Q: Is the answer a kind of fragment?
+          "fragment [fragment.n.01]":  # Q: Is it a kind of fragment?
             "bit [bit.n.02]":
               "splinter [splinter.n.01]":
-          "slice [slice.n.05]":  # Q: Is the answer a kind of slice?
+          "slice [slice.n.05]":  # Q: Is it a kind of slice?
             "section [section.n.02]":
           "strip [strip.n.01]":
           "world [world.n.06]":
         "subject [subject.n.02]":
-        "unit [unit.n.05]":  # Q: Is the answer a kind of unit?
+        "unit [unit.n.05]":  # Q: Is it a kind of unit?
           "chain [chain.n.02]":
-          "couple [couple.n.05]":  # Q: Is the answer a kind of couple?
+          "couple [couple.n.05]":  # Q: Is it a kind of couple?
             "dipole [dipole.n.01]":
           "group [group.n.02]":
-          "molecule [molecule.n.01]":  # Q: Is the answer a kind of molecule?
+          "molecule [molecule.n.01]":  # Q: Is it a kind of molecule?
             "macromolecule [macromolecule.n.01]":
               "carbohydrate [carbohydrate.n.01]":
                 "polysaccharide [polysaccharide.n.01]":
@@ -8974,5 +8976,3 @@ wordnet_3_0_20q:
                   "globulin [globulin.n.01]":
           "unit cell [unit_cell.n.01]":
         "variable [variable.n.01]":
-    "thing [thing.n.08]":  # Q: Is the answer a kind of thing?
-      "horror [horror.n.02]":

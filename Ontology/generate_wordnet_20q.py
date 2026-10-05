@@ -30,6 +30,7 @@ from nltk.corpus import wordnet as wn
 
 DEFAULT_SELECTED = 7000
 ROOT_NAME = "entity.n.01"
+SUPPRESSED_PROFILE_ROOTS = frozenset({"thing.n.08"})
 
 
 def frequency(synset: Any) -> int:
@@ -54,13 +55,25 @@ def connected_to_root(synset: Any) -> bool:
     )
 
 
+@lru_cache(maxsize=None)
+def suppressed_from_profile(synset: Any) -> bool:
+    """Exclude the generic singleton branch from the game-oriented profile."""
+    return synset.name() in SUPPRESSED_PROFILE_ROOTS or any(
+        suppressed_from_profile(parent) for parent in synset.hypernyms()
+    )
+
+
 def choose_synsets(target: int) -> tuple[set[Any], list[Any]]:
     all_nouns = list(wn.all_synsets(pos="n"))
     ranked = sorted(
         (
             synset
             for synset in all_nouns
-            if frequency(synset) > 0 and connected_to_root(synset)
+            if (
+                frequency(synset) > 0
+                and connected_to_root(synset)
+                and not suppressed_from_profile(synset)
+            )
         ),
         key=lambda synset: (-score(synset), synset.name()),
     )
@@ -106,8 +119,8 @@ def make_projection(selected: set[Any]) -> tuple[dict[Any, list[Any]], dict[Any,
 def question_for(synset: Any) -> str:
     label = synset.lemma_names()[0].replace("_", " ")
     if synset == wn.synset(ROOT_NAME):
-        return "Is the answer a physical entity, an abstraction, or another entity?"
-    return f"Is the answer a kind of {label}?"
+        return "Is it an abstraction or a physical entity?"
+    return f"Is it a kind of {label}?"
 
 
 def make_tree(synset: Any, children: dict[Any, list[Any]]) -> OrderedDict[str, Any]:
@@ -214,6 +227,8 @@ summary:hover {{ background: var(--panel); }}
   toward specific ones. Display nodes: {counts["selected"]:,}; terminal
   categories: {counts["leaves"]:,}. Use the suggested questions to navigate,
   search for a word, or expand the whole tree.</div>
+<div class="question"><strong>Top-level question:</strong>
+  Is it an abstraction or a physical entity?</div>
 <div class="controls">
   <input id="search" type="search" placeholder="Search WordNet synsets or lemmas...">
   <button id="expand">Expand all</button>
@@ -263,8 +278,8 @@ def main() -> None:
         "version": wn.get_version(),
         "root": ROOT_NAME,
         "selection": (
-            "top frequency-weighted root-connected noun synsets plus complete "
-            "hypernym ancestry"
+            "top frequency-weighted root-connected noun synsets, excluding the "
+            "generic thing.n.08 profile branch, plus complete hypernym ancestry"
         ),
         "presentation": "one deterministic parent selected from source hypernyms",
         "counts": counts,
