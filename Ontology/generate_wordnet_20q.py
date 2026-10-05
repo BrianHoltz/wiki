@@ -198,13 +198,16 @@ def render_html(tree: OrderedDict[str, Any], counts: dict[str, int]) -> str:
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>WordNet 3.0 20 Questions Profile</title>
 <style>
-:root {{ color-scheme: light dark; --accent: #2f6feb; --panel: #f6f8fa; --muted: #57606a; }}
-body {{ font: 14px/1.4 system-ui, -apple-system, sans-serif; margin: 0 auto; max-width: 1200px; padding: 22px; }}
+:root {{ color-scheme: light dark; --accent: #2f6feb; --background: #ffffff; --text: #1f2328; --panel: #f6f8fa; --muted: #57606a; --border: #8c959f; }}
+@media (prefers-color-scheme: dark) {{
+  :root {{ --background: #0d1117; --text: #e6edf3; --panel: #161b22; --muted: #8b949e; --border: #6e7681; }}
+}}
+body {{ color: var(--text); background: var(--background); font: 14px/1.4 system-ui, -apple-system, sans-serif; margin: 0 auto; max-width: 1200px; padding: 22px; }}
 h1 {{ margin-bottom: 4px; }}
 .intro, .question {{ background: var(--panel); border-left: 4px solid var(--accent); padding: 9px 13px; margin: 9px 0; }}
 .controls {{ display: flex; gap: 8px; flex-wrap: wrap; margin: 16px 0; }}
-input {{ flex: 1 1 300px; padding: 9px; border: 1px solid #8c959f; border-radius: 6px; }}
-button {{ padding: 9px 12px; border: 1px solid #8c959f; border-radius: 6px; cursor: pointer; }}
+input {{ color: var(--text); background: var(--panel); flex: 1 1 300px; padding: 9px; border: 1px solid var(--border); border-radius: 6px; }}
+button {{ color: var(--text); background: var(--panel); padding: 9px 12px; border: 1px solid var(--border); border-radius: 6px; cursor: pointer; }}
 details {{ margin: 3px 0 3px 10px; }}
 summary {{ cursor: pointer; font-weight: 650; padding: 4px; }}
 summary:hover {{ background: var(--panel); }}
