@@ -40,6 +40,7 @@ wordnet_3_0_20q:
             "viscosity [viscosity.n.01]":
           "constitution [constitution.n.04]":  # Q: Is the answer a kind of constitution?
             "structure [structure.n.02]":
+              "framework [framework.n.02]":
           "degree [degree.n.01]":  # Q: Is the answer a kind of degree?
             "depth [depth.n.02]":
             "extreme [extreme.n.01]":
@@ -66,6 +67,7 @@ wordnet_3_0_20q:
                 "origin [origin.n.02]":
           "magnitude [magnitude.n.01]":  # Q: Is the answer a kind of magnitude?
             "amount [amount.n.02]":
+              "decrease [decrease.n.03]":
               "increase [increase.n.04]":
                 "amplification [amplification.n.02]":
                 "raise [raise.n.01]":
@@ -82,6 +84,7 @@ wordnet_3_0_20q:
                   "profusion [profusion.n.01]":
                   "wealth [wealth.n.02]":
             "bulk [bulk.n.02]":
+              "dollar volume [dollar_volume.n.01]":
             "dimension [dimension.n.01]":
               "fourth dimension [fourth_dimension.n.01]":
               "height [height.n.01]":
@@ -122,6 +125,7 @@ wordnet_3_0_20q:
           "olfactory property [olfactory_property.n.01]":
           "physical property [physical_property.n.01]":  # Q: Is the answer a kind of physical property?
             "elasticity [elasticity.n.01]":
+              "bounce [bounce.n.01]":
               "give [give.n.01]":
             "heat content [heat_content.n.01]":
             "luminosity [luminosity.n.01]":
@@ -129,6 +133,8 @@ wordnet_3_0_20q:
             "malleability [malleability.n.01]":
               "flexibility [flexibility.n.01]":
             "mass [mass.n.01]":
+              "atomic mass [atomic_mass.n.01]":
+                "milliequivalent [milliequivalent.n.01]":
               "molecular weight [molecular_weight.n.01]":
             "reflection [reflection.n.08]":
               "echo [echo.n.01]":
@@ -140,12 +146,15 @@ wordnet_3_0_20q:
               "room temperature [room_temperature.n.01]":
             "weight [weight.n.01]":
               "body weight [body_weight.n.01]":
+              "heaviness [heaviness.n.01]":
+              "lightness [lightness.n.02]":
           "size [size.n.02]":
           "sound property [sound_property.n.01]":  # Q: Is the answer a kind of sound property?
             "pitch [pitch.n.01]":
               "tone [tone.n.02]":
             "silence [silence.n.02]":
               "hush [hush.n.01]":
+              "quietness [quietness.n.01]":
             "sound [sound.n.01]":
               "ring [ring.n.01]":
               "voice [voice.n.01]":
@@ -218,6 +227,7 @@ wordnet_3_0_20q:
                   "yellowish brown [yellowish_brown.n.01]":
                 "green [green.n.01]":
                 "orange [orange.n.02]":
+                "purple [purple.n.01]":
                 "red [red.n.01]":
                   "dark red [dark_red.n.01]":
                     "wine [wine.n.02]":
@@ -247,10 +257,14 @@ wordnet_3_0_20q:
             "weak part [weak_part.n.01]":
         "quality [quality.n.01]":  # Q: Is the answer a kind of quality?
           "ability [ability.n.01]":  # Q: Is the answer a kind of ability?
+            "adaptability [adaptability.n.01]":
+              "flexibility [flexibility.n.02]":
             "capability [capability.n.01]":
               "capacity [capacity.n.01]":
               "military capability [military_capability.n.01]":
             "competence [competence.n.01]":
+            "sensitivity [sensitivity.n.05]":
+              "antenna [antenna.n.02]":
           "accuracy [accuracy.n.01]":  # Q: Is the answer a kind of accuracy?
             "exactness [exactness.n.01]":
               "preciseness [preciseness.n.02]":
@@ -261,6 +275,7 @@ wordnet_3_0_20q:
                 "appeal [appeal.n.02]":
               "comeliness [comeliness.n.01]":
               "glory [glory.n.02]":
+              "handsomeness [handsomeness.n.01]":
             "blemish [blemish.n.01]":
               "scratch [scratch.n.10]":
               "smudge [smudge.n.02]":
@@ -277,6 +292,7 @@ wordnet_3_0_20q:
             "persona [persona.n.02]":
             "phase [phase.n.04]":
             "semblance [semblance.n.01]":
+              "disguise [disguise.n.01]":
             "stain [stain.n.01]":
           "asset [asset.n.01]":  # Q: Is the answer a kind of asset?
             "advantage [advantage.n.01]":
@@ -286,6 +302,7 @@ wordnet_3_0_20q:
               "privilege [privilege.n.01]":
               "profit [profit.n.02]":
               "superiority [superiority.n.02]":
+                "upper hand [upper_hand.n.01]":
             "forte [forte.n.01]":
             "resource [resource.n.02]":
               "aid [aid.n.01]":
@@ -465,6 +482,7 @@ wordnet_3_0_20q:
           "unnaturalness [unnaturalness.n.01]":  # Q: Is the answer a kind of unnaturalness?
             "affectedness [affectedness.n.01]":
               "airs [airs.n.01]":
+              "coyness [coyness.n.01]":
             "artificiality [artificiality.n.01]":
               "pretension [pretension.n.01]":
           "utility [utility.n.02]":  # Q: Is the answer a kind of utility?
@@ -539,8 +557,10 @@ wordnet_3_0_20q:
                 "simple closed curve [simple_closed_curve.n.01]":
                   "loop [loop.n.02]":
                     "belt [belt.n.01]":
+                      "conveyer belt [conveyer_belt.n.01]":
               "spiral [spiral.n.01]":
             "curve [curve.n.02]":
+              "regression line [regression_line.n.01]":
             "straight line [straight_line.n.01]":
               "tangent [tangent.n.01]":
           "plane [plane.n.02]":  # Q: Is the answer a kind of plane?
@@ -548,6 +568,8 @@ wordnet_3_0_20q:
             "picture plane [picture_plane.n.01]":
           "round shape [round_shape.n.01]":  # Q: Is the answer a kind of round shape?
             "coil [coil.n.02]":
+            "cylinder [cylinder.n.02]":
+              "barrel [barrel.n.03]":
             "disk [disk.n.01]":
               "point [point.n.09]":
             "sphere [sphere.n.05]":
@@ -592,6 +614,7 @@ wordnet_3_0_20q:
               "reality [reality.n.03]":
               "truth [truth.n.02]":
             "animation [animation.n.01]":
+              "eternal life [eternal_life.n.01]":
               "survival [survival.n.01]":
             "eternity [eternity.n.02]":
             "life [life.n.01]":
@@ -626,6 +649,7 @@ wordnet_3_0_20q:
                 "crisis [crisis.n.01]":
                   "depression [depression.n.02]":
                 "deadlock [deadlock.n.01]":
+                "nightmare [nightmare.n.01]":
               "stress [stress.n.04]":
             "discomfort [discomfort.n.01]":
               "malaise [malaise.n.01]":
@@ -695,6 +719,7 @@ wordnet_3_0_20q:
               "drive [drive.n.09]":
                 "hunger [hunger.n.01]":
                   "starvation [starvation.n.01]":
+                "thirst [thirst.n.01]":
               "good health [good_health.n.01]":
                 "bloom [bloom.n.04]":
                 "freshness [freshness.n.03]":
@@ -774,6 +799,7 @@ wordnet_3_0_20q:
               "agitation [agitation.n.01]":
                 "disturbance [disturbance.n.02]":
               "anxiety [anxiety.n.01]":
+                "panic [panic.n.02]":
               "cognitive state [cognitive_state.n.01]":
                 "amnesia [amnesia.n.01]":
                   "forgetfulness [forgetfulness.n.01]":
@@ -915,6 +941,7 @@ wordnet_3_0_20q:
               "wish [wish.n.01]":
             "despair [despair.n.02]":
               "discouragement [discouragement.n.01]":
+              "resignation [resignation.n.01]":
             "dislike [dislike.n.02]":
               "alienation [alienation.n.01]":
               "antipathy [antipathy.n.01]":
@@ -1036,7 +1063,9 @@ wordnet_3_0_20q:
             "soul [soul.n.03]":
             "sympathy [sympathy.n.02]":
               "commiseration [commiseration.n.01]":
+              "compassion [compassion.n.01]":
               "concern [concern.n.03]":
+                "solicitude [solicitude.n.01]":
             "temper [temper.n.02]":
               "good humor [good_humor.n.01]":
               "ill humor [ill_humor.n.01]":
@@ -1059,6 +1088,7 @@ wordnet_3_0_20q:
             "dark [dark.n.01]":
               "semidarkness [semidarkness.n.01]":
                 "gloom [gloom.n.01]":
+                "obscurity [obscurity.n.03]":
                 "shade [shade.n.01]":
                   "shadow [shadow.n.01]":
               "total darkness [total_darkness.n.01]":
@@ -1072,7 +1102,9 @@ wordnet_3_0_20q:
             "completeness [completeness.n.01]":
               "entirety [entirety.n.01]":
                 "whole shebang [whole_shebang.n.01]":
-          "maturity [maturity.n.02]":
+          "maturity [maturity.n.02]":  # Q: Is the answer a kind of maturity?
+            "adulthood [adulthood.n.02]":
+              "parenthood [parenthood.n.01]":
           "motion [motion.n.04]":  # Q: Is the answer a kind of motion?
             "shaking [shaking.n.02]":
             "stream [stream.n.04]":
@@ -1120,8 +1152,10 @@ wordnet_3_0_20q:
               "context [context.n.02]":
               "milieu [milieu.n.01]":
               "setting [setting.n.02]":
+                "showcase [showcase.n.01]":
               "sphere [sphere.n.01]":
                 "kingdom [kingdom.n.01]":
+                "political arena [political_arena.n.01]":
                 "province [province.n.02]":
             "equilibrium [equilibrium.n.01]":
               "balance [balance.n.01]":
@@ -1155,6 +1189,7 @@ wordnet_3_0_20q:
               "third [third.n.03]":
             "retirement [retirement.n.01]":
             "social station [social_station.n.01]":
+              "place [place.n.10]":
             "standing [standing.n.01]":
               "dishonor [dishonor.n.01]":
                 "disrepute [disrepute.n.01]":
@@ -1174,9 +1209,12 @@ wordnet_3_0_20q:
               "importance [importance.n.02]":
                 "emphasis [emphasis.n.01]":
                   "stress [stress.n.03]":
+              "obscurity [obscurity.n.02]":
+                "oblivion [oblivion.n.01]":
               "prestige [prestige.n.01]":
               "prominence [prominence.n.01]":
           "temporary state [temporary_state.n.01]":  # Q: Is the answer a kind of temporary state?
+            "drunkenness [drunkenness.n.01]":
             "fatigue [fatigue.n.01]":
           "unemployment [unemployment.n.01]":
           "union [union.n.04]":  # Q: Is the answer a kind of union?
@@ -1226,6 +1264,7 @@ wordnet_3_0_20q:
                   "backbone [backbone.n.02]":
                 "heart [heart.n.03]":
                 "heroism [heroism.n.01]":
+              "cowardice [cowardice.n.01]":
           "compulsiveness [compulsiveness.n.01]":
           "conceit [conceit.n.05]":  # Q: Is the answer a kind of conceit?
             "egotism [egotism.n.01]":
@@ -1246,12 +1285,14 @@ wordnet_3_0_20q:
             "restraint [restraint.n.02]":
           "drive [drive.n.05]":  # Q: Is the answer a kind of drive?
             "aggressiveness [aggressiveness.n.01]":
+              "competitiveness [competitiveness.n.01]":
             "energy [energy.n.03]":
             "enterprise [enterprise.n.03]":
           "emotionality [emotionality.n.01]":  # Q: Is the answer a kind of emotionality?
             "affectionateness [affectionateness.n.02]":
               "tenderness [tenderness.n.01]":
             "heat [heat.n.04]":
+            "mawkishness [mawkishness.n.02]":
           "folly [folly.n.01]":
           "frivolity [frivolity.n.01]":  # Q: Is the answer a kind of frivolity?
             "playfulness [playfulness.n.02]":
@@ -1297,6 +1338,8 @@ wordnet_3_0_20q:
               "doggedness [doggedness.n.01]":
             "self-control [self-control.n.02]":
             "stubbornness [stubbornness.n.02]":
+          "seriousness [seriousness.n.03]":  # Q: Is the answer a kind of seriousness?
+            "graveness [graveness.n.01]":
           "stinginess [stinginess.n.01]":  # Q: Is the answer a kind of stinginess?
             "selfishness [selfishness.n.01]":
               "opportunism [opportunism.n.01]":
@@ -1304,10 +1347,12 @@ wordnet_3_0_20q:
           "trustworthiness [trustworthiness.n.01]":  # Q: Is the answer a kind of trustworthiness?
             "responsibility [responsibility.n.03]":
               "dependability [dependability.n.01]":
+                "reproducibility [reproducibility.n.01]":
           "uncommunicativeness [uncommunicativeness.n.01]":  # Q: Is the answer a kind of uncommunicativeness?
             "muteness [muteness.n.02]":
             "secrecy [secrecy.n.01]":
           "unemotionality [unemotionality.n.02]":  # Q: Is the answer a kind of unemotionality?
+            "coldness [coldness.n.02]":
             "stoicism [stoicism.n.01]":
           "unthoughtfulness [unthoughtfulness.n.01]":  # Q: Is the answer a kind of unthoughtfulness?
             "recklessness [recklessness.n.01]":
@@ -1328,6 +1373,7 @@ wordnet_3_0_20q:
                   "symphony [symphony.n.01]":
               "religious music [religious_music.n.01]":
             "musical composition [musical_composition.n.01]":
+              "divertimento [divertimento.n.01]":
               "movement [movement.n.05]":
               "musical arrangement [musical_arrangement.n.01]":
                 "orchestration [orchestration.n.01]":
@@ -1341,14 +1387,18 @@ wordnet_3_0_20q:
                 "dirge [dirge.n.01]":
                 "religious song [religious_song.n.01]":
                   "hymn [hymn.n.01]":
+                  "spiritual [spiritual.n.01]":
             "refrain [refrain.n.01]":
             "section [section.n.01]":
+              "article [article.n.03]":
               "chapter [chapter.n.01]":
               "conclusion [conclusion.n.08]":
                 "finale [finale.n.01]":
               "episode [episode.n.02]":
               "passage [passage.n.02]":
             "tune [tune.n.01]":
+              "glissando [glissando.n.01]":
+                "swoop [swoop.n.01]":
               "part [part.n.11]":
                 "accompaniment [accompaniment.n.02]":
           "speech [speech.n.02]":  # Q: Is the answer a kind of speech?
@@ -1373,6 +1423,8 @@ wordnet_3_0_20q:
               "slang [slang.n.02]":
             "saying [saying.n.01]":
               "ambiguity [ambiguity.n.01]":
+              "anatomical reference [anatomical_reference.n.01]":
+              "maxim [maxim.n.01]":
               "motto [motto.n.01]":
               "proverb [proverb.n.01]":
             "soliloquy [soliloquy.n.01]":
@@ -1492,6 +1544,8 @@ wordnet_3_0_20q:
           "barrage [barrage.n.01]":
           "natural language [natural_language.n.01]":  # Q: Is the answer a kind of natural language?
             "Amerind [amerind.n.01]":
+              "Algonquian [algonquian.n.02]":
+                "Massachuset [massachuset.n.01]":
               "Athapaskan [athapaskan.n.02]":
               "Penutian [penutian.n.01]":
                 "Mariposan [mariposan.n.01]":
@@ -1536,12 +1590,14 @@ wordnet_3_0_20q:
               "confession [confession.n.01]":
             "farewell [farewell.n.01]":
               "adieu [adieu.n.01]":
+              "good morning [good_morning.n.01]":
               "good night [good_night.n.01]":
             "greeting [greeting.n.01]":
               "hello [hello.n.01]":
               "reception [reception.n.01]":
             "handshake [handshake.n.01]":
             "thanks [thanks.n.01]":
+              "bow [bow.n.07]":
               "thank you [thank_you.n.01]":
           "approval [approval.n.04]":  # Q: Is the answer a kind of approval?
             "applause [applause.n.01]":
@@ -1568,6 +1624,7 @@ wordnet_3_0_20q:
             "recipe [recipe.n.01]":
             "rule [rule.n.03]":
               "canon [canon.n.01]":
+              "principle [principle.n.05]":
               "regulation [regulation.n.01]":
           "disapproval [disapproval.n.02]":  # Q: Is the answer a kind of disapproval?
             "criticism [criticism.n.01]":
@@ -1612,6 +1669,7 @@ wordnet_3_0_20q:
             "news [news.n.02]":
               "report [report.n.03]":
                 "dispatch [dispatch.n.01]":
+                "newsletter [newsletter.n.01]":
             "propaganda [propaganda.n.01]":
             "secret [secret.n.01]":
           "meaning [meaning.n.01]":  # Q: Is the answer a kind of meaning?
@@ -1648,6 +1706,7 @@ wordnet_3_0_20q:
           "request [request.n.01]":  # Q: Is the answer a kind of request?
             "application [application.n.02]":
             "demand [demand.n.01]":
+              "call [call.n.04]":
               "insistence [insistence.n.01]":
           "respects [respects.n.01]":
           "statement [statement.n.01]":  # Q: Is the answer a kind of statement?
@@ -1665,6 +1724,8 @@ wordnet_3_0_20q:
               "handout [handout.n.01]":
               "notice [notice.n.01]":
             "answer [answer.n.01]":
+            "bid [bid.n.04]":
+              "contract [contract.n.02]":
             "comment [comment.n.02]":
               "note [note.n.07]":
                 "citation [citation.n.03]":
@@ -1707,6 +1768,8 @@ wordnet_3_0_20q:
               "equation [equation.n.01]":
                 "differential equation [differential_equation.n.01]":
               "formula [formula.n.01]":
+            "misstatement [misstatement.n.01]":
+              "error [error.n.07]":
             "pleading [pleading.n.01]":
               "charge [charge.n.02]":
                 "accusation [accusation.n.01]":
@@ -1767,16 +1830,19 @@ wordnet_3_0_20q:
           "symbol [symbol.n.01]":  # Q: Is the answer a kind of symbol?
             "award [award.n.02]":
               "academic degree [academic_degree.n.01]":
+              "citation [citation.n.01]":
               "decoration [decoration.n.02]":
               "pennant [pennant.n.01]":
             "marker [marker.n.02]":
               "label [label.n.04]":
                 "tag [tag.n.01]":
+              "milestone [milestone.n.01]":
             "written symbol [written_symbol.n.01]":
               "character [character.n.08]":
                 "asterisk [asterisk.n.01]":
                 "letter [letter.n.02]":
                   "block letter [block_letter.n.01]":
+                "space [space.n.05]":
               "mark [mark.n.10]":
                 "arrow [arrow.n.01]":
         "visual communication [visual_communication.n.01]":  # Q: Is the answer a kind of visual communication?
@@ -1817,6 +1883,7 @@ wordnet_3_0_20q:
               "certificate [certificate.n.01]":
               "commercial document [commercial_document.n.01]":
                 "appraisal [appraisal.n.02]":
+                "order [order.n.07]":
                 "statement [statement.n.07]":
                   "bill [bill.n.02]":
                     "check [check.n.03]":
@@ -1872,6 +1939,7 @@ wordnet_3_0_20q:
               "composition [composition.n.08]":
             "inscription [inscription.n.01]":
             "literary composition [literary_composition.n.01]":
+              "dialogue [dialogue.n.03]":
               "fiction [fiction.n.01]":
                 "novel [novel.n.01]":
                 "story [story.n.02]":
@@ -1946,8 +2014,11 @@ wordnet_3_0_20q:
               "chain [chain.n.01]":
               "course [course.n.02]":
                 "stream [stream.n.02]":
+              "progression [progression.n.01]":
               "sequence [sequence.n.01]":
                 "string [string.n.05]":
+              "succession [succession.n.02]":
+                "streak [streak.n.01]":
         "biological group [biological_group.n.01]":  # Q: Is the answer a kind of biological group?
           "animal group [animal_group.n.01]":  # Q: Is the answer a kind of animal group?
             "brood [brood.n.01]":
@@ -1965,6 +2036,7 @@ wordnet_3_0_20q:
             "genus [genus.n.02]":
               "arthropod genus [arthropod_genus.n.01]":
                 "Bombus [bombus.n.01]":
+                "nomia [nomia.n.01]":
                 "Psithyrus [psithyrus.n.01]":
             "phylum [phylum.n.02]":
               "Protozoa [protozoa.n.01]":
@@ -2046,6 +2118,7 @@ wordnet_3_0_20q:
                 "cream [cream.n.01]":
                 "nobility [nobility.n.01]":
                 "society [society.n.04]":
+              "gentry [gentry.n.01]":
             "world [world.n.02]":
           "coevals [coevals.n.01]":
           "dead [dead.n.01]":
@@ -2066,9 +2139,11 @@ wordnet_3_0_20q:
             "administration [administration.n.02]":
               "government officials [government_officials.n.01]":
                 "bureaucracy [bureaucracy.n.01]":
+              "judiciary [judiciary.n.01]":
               "management [management.n.02]":
             "college [college.n.01]":
             "colony [colony.n.01]":
+              "frontier settlement [frontier_settlement.n.01]":
             "jury [jury.n.01]":
               "grand jury [grand_jury.n.01]":
             "leadership [leadership.n.02]":
@@ -2139,6 +2214,7 @@ wordnet_3_0_20q:
           "minority [minority.n.01]":
           "movement [movement.n.04]":  # Q: Is the answer a kind of movement?
             "artistic movement [artistic_movement.n.01]":
+              "Abstract Expressionism [abstract_expressionism.n.01]":
               "cubism [cubism.n.01]":
                 "analytical cubism [analytical_cubism.n.01]":
           "organization [organization.n.01]":  # Q: Is the answer a kind of organization?
@@ -2192,6 +2268,7 @@ wordnet_3_0_20q:
                 "navy [navy.n.01]":
               "police [police.n.01]":
                 "posse [posse.n.01]":
+                "Scotland Yard [scotland_yard.n.01]":
               "rank and file [rank_and_file.n.01]":
               "staff [staff.n.01]":
               "work force [work_force.n.01]":
@@ -2245,6 +2322,7 @@ wordnet_3_0_20q:
                   "Anglican Church [anglican_church.n.01]":
               "mission [mission.n.01]":
             "party [party.n.01]":
+              "Republican Party [republican_party.n.01]":
             "polity [polity.n.02]":
               "government [government.n.01]":
                 "court [court.n.03]":
@@ -2372,6 +2450,8 @@ wordnet_3_0_20q:
       "measure [measure.n.02]":  # Q: Is the answer a kind of measure?
         "definite quantity [definite_quantity.n.01]":  # Q: Is the answer a kind of definite quantity?
           "number [number.n.02]":  # Q: Is the answer a kind of number?
+            "cardinal number [cardinal_number.n.01]":
+              "frequency [frequency.n.03]":
             "complex number [complex_number.n.01]":
               "real number [real_number.n.01]":
                 "rational number [rational_number.n.01]":
@@ -2438,8 +2518,10 @@ wordnet_3_0_20q:
             "electromagnetic unit [electromagnetic_unit.n.01]":
               "current unit [current_unit.n.01]":
                 "ampere [ampere.n.02]":
+                "milliampere [milliampere.n.01]":
               "power unit [power_unit.n.01]":
                 "horsepower [horsepower.n.01]":
+                "watt [watt.n.01]":
             "force unit [force_unit.n.01]":
               "g [g.n.05]":
             "linear unit [linear_unit.n.01]":
@@ -2456,6 +2538,7 @@ wordnet_3_0_20q:
               "mile [mile.n.01]":
               "nautical linear unit [nautical_linear_unit.n.01]":
                 "nautical mile [nautical_mile.n.02]":
+              "quarter mile [quarter_mile.n.01]":
               "yard [yard.n.01]":
             "mass unit [mass_unit.n.01]":
               "avoirdupois unit [avoirdupois_unit.n.01]":
@@ -2482,6 +2565,7 @@ wordnet_3_0_20q:
               "kelvin [kelvin.n.01]":
               "millidegree [millidegree.n.01]":
             "volume unit [volume_unit.n.01]":
+              "cubic foot [cubic_foot.n.01]":
               "dry unit [dry_unit.n.01]":
                 "United States dry unit [united_states_dry_unit.n.01]":
                   "bushel [bushel.n.01]":
@@ -2546,9 +2630,11 @@ wordnet_3_0_20q:
               "afternoon [afternoon.n.01]":
               "evening [evening.n.01]":
             "decade [decade.n.01]":
+              "fifties [fifties.n.01]":
               "sixties [sixties.n.01]":
             "duration [duration.n.01]":
               "span [span.n.01]":
+            "enlistment [enlistment.n.01]":
             "era [era.n.01]":
               "day [day.n.06]":
               "historic period [historic_period.n.01]":
@@ -2599,8 +2685,10 @@ wordnet_3_0_20q:
                 "majority [majority.n.03]":
               "childhood [childhood.n.01]":
                 "boyhood [boyhood.n.01]":
+              "fifties [fifties.n.02]":
               "infancy [infancy.n.01]":
               "old age [old_age.n.01]":
+              "schooldays [schooldays.n.01]":
               "teens [teens.n.01]":
               "thirties [thirties.n.01]":
               "twenties [twenties.n.01]":
@@ -2627,6 +2715,7 @@ wordnet_3_0_20q:
               "calendar year [calendar_year.n.01]":
               "fiscal year [fiscal_year.n.01]":
             "year [year.n.02]":
+              "school year [school_year.n.01]":
             "year [year.n.03]":
             "youth [youth.n.05]":
         "indefinite quantity [indefinite_quantity.n.01]":  # Q: Is the answer a kind of indefinite quantity?
@@ -2795,6 +2884,7 @@ wordnet_3_0_20q:
               "acuteness [acuteness.n.02]":
               "brain [brain.n.02]":
               "breadth [breadth.n.01]":
+              "brilliance [brilliance.n.03]":
               "mind [mind.n.07]":
             "know-how [know-how.n.01]":
               "method [method.n.01]":
@@ -3043,6 +3133,7 @@ wordnet_3_0_20q:
                 "error [error.n.03]":
                 "illusion [illusion.n.02]":
                 "mistake [mistake.n.02]":
+                "self-deception [self-deception.n.01]":
               "notion [notion.n.03]":
               "plan [plan.n.01]":
                 "agenda [agenda.n.01]":
@@ -3064,10 +3155,12 @@ wordnet_3_0_20q:
                       "voting system [voting_system.n.01]":
                         "uninominal system [uninominal_system.n.01]":
                   "tactic [tactic.n.01]":
+                "project [project.n.02]":
               "reaction [reaction.n.02]":
               "suggestion [suggestion.n.01]":
               "theme [theme.n.02]":
             "ignorance [ignorance.n.01]":
+              "inexperience [inexperience.n.01]":
               "unenlightenment [unenlightenment.n.01]":
                 "dark [dark.n.05]":
             "issue [issue.n.01]":
@@ -3132,6 +3225,8 @@ wordnet_3_0_20q:
                   "apparition [apparition.n.03]":
                     "ghost [ghost.n.01]":
               "blur [blur.n.01]":
+              "concretism [concretism.n.01]":
+                "shape [shape.n.04]":
               "image [image.n.01]":
                 "mental picture [mental_picture.n.01]":
               "interpretation [interpretation.n.01]":
@@ -3198,6 +3293,7 @@ wordnet_3_0_20q:
                   "the shits [the_shits.n.01]":
                 "fever [fever.n.01]":
                 "ketonemia [ketonemia.n.01]":
+                "nausea [nausea.n.01]":
                 "pain [pain.n.01]":
                   "ache [ache.n.01]":
                     "headache [headache.n.02]":
@@ -3380,10 +3476,12 @@ wordnet_3_0_20q:
                   "synthesis [synthesis.n.02]":
           "process [process.n.04]":  # Q: Is the answer a kind of process?
             "condensation [condensation.n.01]":
+            "defense mechanism [defense_mechanism.n.01]":
           "structure [structure.n.03]":  # Q: Is the answer a kind of structure?
             "arrangement [arrangement.n.03]":
               "design [design.n.02]":
                 "configuration [configuration.n.01]":
+                "trap [trap.n.03]":
               "distribution [distribution.n.01]":
                 "binomial distribution [binomial_distribution.n.01]":
                 "sample distribution [sample_distribution.n.01]":
@@ -3460,6 +3558,8 @@ wordnet_3_0_20q:
                     "consolidation [consolidation.n.02]":
                       "amalgamation [amalgamation.n.01]":
                     "mix [mix.n.03]":
+                    "union [union.n.11]":
+                      "coalescence [coalescence.n.01]":
                   "damage [damage.n.03]":
                   "explosion [explosion.n.02]":
                   "joining [joining.n.01]":
@@ -3644,6 +3744,7 @@ wordnet_3_0_20q:
                       "way [way.n.07]":
                     "stage [stage.n.06]":
                     "walk [walk.n.04]":
+                      "amble [amble.n.01]":
                       "hike [hike.n.01]":
                     "water travel [water_travel.n.01]":
                       "boating [boating.n.01]":
@@ -3695,6 +3796,7 @@ wordnet_3_0_20q:
                 "courtesy [courtesy.n.01]":
                   "attention [attention.n.04]":
                 "deference [deference.n.01]":
+              "reference [reference.n.07]":
               "resistance [resistance.n.01]":
               "thing [thing.n.02]":
             "activity [activity.n.01]":
@@ -3843,6 +3945,7 @@ wordnet_3_0_20q:
                 "course [course.n.01]":
                   "art class [art_class.n.01]":
                     "life class [life_class.n.01]":
+              "enjoyment [enjoyment.n.02]":
               "game [game.n.01]":
                 "athletic game [athletic_game.n.01]":
                   "court game [court_game.n.01]":
@@ -3960,6 +4063,7 @@ wordnet_3_0_20q:
                 "immunization [immunization.n.01]":
                   "inoculation [inoculation.n.01]":
                 "shielding [shielding.n.01]":
+                "waterproofing [waterproofing.n.01]":
               "provision [provision.n.02]":
                 "feeding [feeding.n.02]":
                 "issue [issue.n.04]":
@@ -4085,6 +4189,7 @@ wordnet_3_0_20q:
                   "venture [venture.n.01]":
                     "campaign [campaign.n.02]":
                       "advertising campaign [advertising_campaign.n.01]":
+                      "campaigning [campaigning.n.01]":
                     "experiment [experiment.n.03]":
                     "risk [risk.n.02]":
                       "chance [chance.n.03]":
@@ -4127,6 +4232,7 @@ wordnet_3_0_20q:
                       "profanation [profanation.n.01]":
                   "sin [sin.n.02]":
                     "mortal sin [mortal_sin.n.01]":
+                      "avarice [avarice.n.01]":
                       "pride [pride.n.05]":
                         "arrogance [arrogance.n.01]":
                           "condescension [condescension.n.01]":
@@ -4136,6 +4242,7 @@ wordnet_3_0_20q:
                     "intemperance [intemperance.n.02]":
                       "drink [drink.n.02]":
                 "trespass [trespass.n.02]":
+                "violation [violation.n.02]":
             "causing [causing.n.01]":
               "influence [influence.n.02]":
                 "exposure [exposure.n.02]":
@@ -4181,6 +4288,7 @@ wordnet_3_0_20q:
                 "designation [designation.n.03]":
                   "diagnosis [diagnosis.n.01]":
                 "localization [localization.n.01]":
+                "resolution [resolution.n.04]":
                 "validation [validation.n.01]":
                   "documentation [documentation.n.03]":
             "distribution [distribution.n.03]":
@@ -4229,6 +4337,7 @@ wordnet_3_0_20q:
                 "blunder [blunder.n.01]":
                   "faux pas [faux_pas.n.01]":
                 "miscalculation [miscalculation.n.01]":
+                "omission [omission.n.01]":
                 "oversight [oversight.n.03]":
                 "stupidity [stupidity.n.02]":
               "negligence [negligence.n.01]":
@@ -4311,17 +4420,20 @@ wordnet_3_0_20q:
                 "complaint [complaint.n.03]":
                   "grumble [grumble.n.02]":
                 "protest [protest.n.01]":
+              "offer [offer.n.01]":
               "reply [reply.n.02]":
                 "answer [answer.n.03]":
                 "rejoinder [rejoinder.n.01]":
                   "sass [sass.n.01]":
               "request [request.n.02]":
                 "entreaty [entreaty.n.01]":
+                "notification [notification.n.03]":
                 "prayer [prayer.n.02]":
                 "questioning [questioning.n.01]":
                   "interrogation [interrogation.n.03]":
                     "interview [interview.n.01]":
                   "question [question.n.01]":
+                "wish [wish.n.02]":
               "resignation [resignation.n.02]":
                 "renunciation [renunciation.n.03]":
                   "relinquishment [relinquishment.n.01]":
@@ -4331,6 +4443,7 @@ wordnet_3_0_20q:
             "stop [stop.n.02]":
             "touch [touch.n.05]":
               "contact [contact.n.02]":
+              "handling [handling.n.02]":
               "hit [hit.n.02]":
                 "fly [fly.n.04]":
                   "liner [liner.n.01]":
@@ -4349,6 +4462,7 @@ wordnet_3_0_20q:
               "fight [fight.n.02]":
                 "brush [brush.n.06]":
                 "hassle [hassle.n.02]":
+                "shock [shock.n.02]":
               "rebellion [rebellion.n.02]":
             "cooperation [cooperation.n.01]":
               "collaboration [collaboration.n.01]":
@@ -4363,6 +4477,7 @@ wordnet_3_0_20q:
                   "conviction [conviction.n.02]":
                 "finding [finding.n.02]":
                 "opinion [opinion.n.05]":
+              "presentment [presentment.n.01]":
               "proceeding [proceeding.n.01]":
                 "appeal [appeal.n.03]":
                 "hearing [hearing.n.01]":
@@ -4402,6 +4517,7 @@ wordnet_3_0_20q:
             "revolution [revolution.n.02]":
             "separation [separation.n.05]":
               "divorce [divorce.n.01]":
+              "isolation [isolation.n.03]":
             "social activity [social_activity.n.01]":
               "association [association.n.02]":
             "social control [social_control.n.01]":
@@ -4441,6 +4557,9 @@ wordnet_3_0_20q:
                 "imprisonment [imprisonment.n.01]":
               "socialization [socialization.n.03]":
                 "breeding [breeding.n.03]":
+              "standardization [standardization.n.02]":
+                "stabilization [stabilization.n.01]":
+                "stylization [stylization.n.01]":
             "submission [submission.n.02]":
               "obedience [obedience.n.01]":
             "transaction [transaction.n.01]":
@@ -4529,6 +4648,7 @@ wordnet_3_0_20q:
               "separation [separation.n.02]":
                 "rupture [rupture.n.02]":
               "surprise [surprise.n.02]":
+                "shock [shock.n.06]":
               "transformation [transformation.n.01]":
                 "conversion [conversion.n.01]":
                 "improvement [improvement.n.01]":
@@ -4569,6 +4689,7 @@ wordnet_3_0_20q:
             "experience [experience.n.03]":
               "augury [augury.n.01]":
                 "omen [omen.n.01]":
+              "flash [flash.n.03]":
               "loss [loss.n.05]":
               "ordeal [ordeal.n.01]":
               "time [time.n.06]":
@@ -4586,7 +4707,9 @@ wordnet_3_0_20q:
             "incident [incident.n.01]":
               "scene [scene.n.02]":
             "interruption [interruption.n.02]":
+              "eclipse [eclipse.n.01]":
             "juncture [juncture.n.01]":
+              "climax [climax.n.01]":
               "crisis [crisis.n.02]":
                 "emergency [emergency.n.01]":
               "landmark [landmark.n.02]":
@@ -4739,6 +4862,7 @@ wordnet_3_0_20q:
             "incentive [incentive.n.01]":
             "reason [reason.n.01]":
               "occasion [occasion.n.03]":
+              "score [score.n.05]":
           "urge [urge.n.01]":
       "relation [relation.n.01]":  # Q: Is the answer a kind of relation?
         "affinity [affinity.n.04]":  # Q: Is the answer a kind of affinity?
@@ -4779,6 +4903,8 @@ wordnet_3_0_20q:
             "revolutions per minute [revolutions_per_minute.n.01]":
             "speed [speed.n.01]":
           "ratio [ratio.n.01]":  # Q: Is the answer a kind of ratio?
+            "average [average.n.02]":
+              "batting average [batting_average.n.01]":
             "efficiency [efficiency.n.01]":
             "employee turnover [employee_turnover.n.01]":
             "frequency [frequency.n.02]":
@@ -4813,7 +4939,10 @@ wordnet_3_0_20q:
             "discourse [discourse.n.01]":
               "context [context.n.01]":
             "morpheme [morpheme.n.01]":
+              "bound morpheme [bound_morpheme.n.01]":
+                "affix [affix.n.01]":
               "ending [ending.n.01]":
+                "suffix [suffix.n.01]":
             "name [name.n.01]":
               "appellation [appellation.n.01]":
                 "nickname [nickname.n.01]":
@@ -4835,6 +4964,7 @@ wordnet_3_0_20q:
                 "root [root.n.03]":
               "function word [function_word.n.01]":
                 "pronoun [pronoun.n.01]":
+              "monosyllable [monosyllable.n.01]":
               "term [term.n.01]":
               "terminology [terminology.n.01]":
           "member [member.n.02]":
@@ -4866,6 +4996,7 @@ wordnet_3_0_20q:
                     "thyroid hormone [thyroid_hormone.n.01]":
                       "thyroxine [thyroxine.n.01]":
                     "thyrotropin [thyrotropin.n.01]":
+                  "mucus [mucus.n.01]":
                   "nectar [nectar.n.01]":
                   "perspiration [perspiration.n.01]":
                   "saliva [saliva.n.01]":
@@ -5020,6 +5151,8 @@ wordnet_3_0_20q:
                     "page [page.n.01]":
                 "tissue [tissue.n.02]":
                 "wallpaper [wallpaper.n.01]":
+                "writing paper [writing_paper.n.01]":
+                  "stationery [stationery.n.01]":
               "particulate [particulate.n.01]":
                 "dust [dust.n.01]":
                   "fallout [fallout.n.01]":
@@ -5225,6 +5358,7 @@ wordnet_3_0_20q:
                     "wage [wage.n.01]":
                   "royalty [royalty.n.01]":
                 "price [price.n.02]":
+                "ransom [ransom.n.01]":
             "stolen property [stolen_property.n.01]":
               "loot [loot.n.01]":
         "reciprocality [reciprocality.n.01]":  # Q: Is the answer a kind of reciprocality?
@@ -5243,151 +5377,6 @@ wordnet_3_0_20q:
           "closed interval [closed_interval.n.01]":
           "sub-interval [sub-interval.n.01]":
         "solution [solution.n.04]":
-    "Adam [adam.n.01]":
-    "Aegean [aegean.n.01]":
-    "Africa [africa.n.01]":
-    "Alaska [alaska.n.01]":
-    "Albany [albany.n.01]":
-    "Amsterdam [amsterdam.n.01]":
-    "Arctic [arctic.n.01]":
-    "Aristotle [aristotle.n.01]":
-    "Arkansas [arkansas.n.01]":
-    "Asia [asia.n.01]":
-    "Atlanta [atlanta.n.01]":
-    "Atlantic [atlantic.n.01]":
-    "Austin [austin.n.01]":
-    "Australia [australia.n.01]":
-    "B-52 [b-52.n.01]":
-    "Baltimore [baltimore.n.01]":
-    "Berlin [berlin.n.01]":
-    "Bern [bern.n.01]":
-    "Boston [boston.n.01]":
-    "Brazil [brazil.n.01]":
-    "Broadway [broadway.n.01]":
-    "Brooklyn [brooklyn.n.01]":
-    "Buddha [buddha.n.01]":
-    "Caesar [caesar.n.01]":
-    "California [california.n.01]":
-    "Canada [canada.n.01]":
-    "Capital [capital.n.06]":
-    "Cheyenne [cheyenne.n.01]":
-    "Chicago [chicago.n.01]":
-    "China [china.n.01]":
-    "Cleveland [cleveland.n.01]":
-    "Colorado [colorado.n.01]":
-    "Columbus [columbus.n.01]":
-    "Confederacy [confederacy.n.01]":
-    "Connecticut [connecticut.n.01]":
-    "Copenhagen [copenhagen.n.01]":
-    "Cuba [cuba.n.01]":
-    "Czechoslovakia [czechoslovakia.n.01]":
-    "Dallas [dallas.n.01]":
-    "Death [death.n.06]":
-    "Declaration of Independence [declaration_of_independence.n.01]":
-    "Denmark [denmark.n.01]":
-    "Denver [denver.n.01]":
-    "Detroit [detroit.n.01]":
-    "District of Columbia [district_of_columbia.n.01]":
-    "Don Quixote [don_quixote.n.01]":
-    "Earth [earth.n.01]":
-    "East [east.n.02]":
-    "Egypt [egypt.n.01]":
-    "England [england.n.01]":
-    "Europe [europe.n.01]":
-    "Eve [eve.n.01]":
-    "Fall [fall.n.03]":
-    "Father [father.n.06]":
-    "Florida [florida.n.01]":
-    "France [france.n.01]":
-    "French Revolution [french_revolution.n.01]":
-    "Georgia [georgia.n.01]":
-    "Germany [germany.n.01]":
-    "God [god.n.01]":
-    "Godhead [godhead.n.01]":
-    "Greece [greece.n.01]":
-    "Greenland [greenland.n.01]":
-    "Greenwich Village [greenwich_village.n.01]":
-    "Guam [guam.n.01]":
-    "Harvard University [harvard_university.n.01]":
-    "Hawaii [hawaii.n.01]":
-    "Hawaii [hawaii.n.02]":
-    "Hawaiian Islands [hawaiian_islands.n.01]":
-    "Hegel [hegel.n.01]":
-    "Hitler [hitler.n.01]":
-    "Holy Ghost [holy_ghost.n.01]":
-    "Honolulu [honolulu.n.01]":
-    "Houston [houston.n.01]":
-    "Hudson [hudson.n.01]":
-    "Hungary [hungary.n.01]":
-    "Iceland [iceland.n.01]":
-    "Iliad [iliad.n.01]":
-    "Illinois [illinois.n.01]":
-    "India [india.n.01]":
-    "Indiana [indiana.n.01]":
-    "Indianapolis [indianapolis.n.01]":
-    "Industrial Revolution [industrial_revolution.n.01]":
-    "Iraq [iraq.n.01]":
-    "Ireland [ireland.n.01]":
-    "Italy [italy.n.01]":
-    "Japan [japan.n.01]":
-    "Japan [japan.n.02]":
-    "Jerusalem [jerusalem.n.01]":
-    "Jesus [jesus.n.01]":
-    "Jupiter [jupiter.n.01]":
-    "Kansas City [kansas_city.n.01]":
-    "Kentucky [kentucky.n.01]":
-    "Korea [korea.n.01]":
-    "Korean War [korean_war.n.01]":
-    "Laos [laos.n.01]":
-    "Latin America [latin_america.n.01]":
-    "Leyte [leyte.n.01]":
-    "Lincoln [lincoln.n.01]":
-    "London [london.n.01]":
-    "Long Island [long_island.n.01]":
-    "Los Angeles [los_angeles.n.01]":
-    "Louisiana [louisiana.n.01]":
-    "Maine [maine.n.01]":
-    "Manchester [manchester.n.01]":
-    "Manhattan [manhattan.n.01]":
-    "Mars [mars.n.01]":
-    "Martian [martian.n.01]":
-    "Mary [mary.n.01]":
-    "Massachusetts [massachusetts.n.01]":
-    "Memphis [memphis.n.01]":
-    "Mexico [mexico.n.01]":
-    "Michigan [michigan.n.01]":
-    "Middle Ages [middle_ages.n.01]":
-    "Midwest [midwest.n.01]":
-    "Minnesota [minnesota.n.01]":
-    "Mississippi [mississippi.n.01]":
-    "Mississippi [mississippi.n.02]":
-    "Missouri [missouri.n.01]":
-    "Montreal [montreal.n.01]":
-    "Moon [moon.n.01]":
-    "Morocco [morocco.n.01]":
-    "Moscow [moscow.n.01]":
-    "Myanmar [myanmar.n.01]":
-    "Napoleon [napoleon.n.01]":
-    "Netherlands [netherlands.n.01]":
-    "New England [new_england.n.01]":
-    "New Jersey [new_jersey.n.01]":
-    "New Mexico [new_mexico.n.01]":
-    "New York [new_york.n.01]":
-    "New York [new_york.n.02]":
-    "Newport [newport.n.01]":
-    "North [north.n.01]":
-    "North America [north_america.n.01]":
-    "North Carolina [north_carolina.n.01]":
-    "Ohio [ohio.n.01]":
-    "Oklahoma [oklahoma.n.01]":
-    "Old South [old_south.n.01]":
-    "Oregon [oregon.n.01]":
-    "Pacific [pacific.n.01]":
-    "Palestine [palestine.n.01]":
-    "Paris [paris.n.01]":
-    "Pennsylvania [pennsylvania.n.01]":
-    "Philadelphia [philadelphia.n.01]":
-    "Philippines [philippines.n.01]":
     "physical entity [physical_entity.n.01]":  # Q: Is the answer a kind of physical entity?
       "causal agent [causal_agent.n.01]":  # Q: Is the answer a kind of causal agent?
         "agent [agent.n.01]":  # Q: Is the answer a kind of agent?
@@ -5396,6 +5385,8 @@ wordnet_3_0_20q:
         "agent [agent.n.03]":  # Q: Is the answer a kind of agent?
           "chemical agent [chemical_agent.n.01]":  # Q: Is the answer a kind of chemical agent?
             "active agent [active_agent.n.01]":
+            "oxidant [oxidant.n.01]":
+              "hydrogen peroxide [hydrogen_peroxide.n.01]":
             "reagent [reagent.n.01]":
             "wetting agent [wetting_agent.n.01]":
               "detergent [detergent.n.01]":
@@ -5461,6 +5452,8 @@ wordnet_3_0_20q:
             "atmosphere [atmosphere.n.05]":
               "sky [sky.n.01]":
                 "blue sky [blue_sky.n.01]":
+            "butylene [butylene.n.01]":
+              "polybutylene [polybutylene.n.01]":
             "chlorine [chlorine.n.01]":
               "radiochlorine [radiochlorine.n.01]":
             "exhaust [exhaust.n.01]":
@@ -5498,6 +5491,7 @@ wordnet_3_0_20q:
               "cut [cut.n.06]":
                 "cut of pork [cut_of_pork.n.01]":
                   "bacon [bacon.n.01]":
+              "mouton [mouton.n.01]":
               "pork [pork.n.01]":
             "produce [produce.n.01]":
               "vegetable [vegetable.n.01]":
@@ -5506,6 +5500,7 @@ wordnet_3_0_20q:
                 "legume [legume.n.03]":
                   "bean [bean.n.01]":
                   "pea [pea.n.01]":
+                "pieplant [pieplant.n.01]":
                 "root vegetable [root_vegetable.n.01]":
                   "potato [potato.n.01]":
                 "solanaceous vegetable [solanaceous_vegetable.n.01]":
@@ -5615,9 +5610,12 @@ wordnet_3_0_20q:
           "natural depression [natural_depression.n.01]":  # Q: Is the answer a kind of natural depression?
             "bed [bed.n.03]":
               "ocean floor [ocean_floor.n.01]":
+              "streambed [streambed.n.01]":
+                "wash [wash.n.03]":
             "hole [hole.n.05]":
               "burrow [burrow.n.01]":
               "pit [pit.n.01]":
+              "pothole [pothole.n.01]":
             "trough [trough.n.01]":
             "valley [valley.n.01]":
               "gully [gully.n.01]":
@@ -5637,7 +5635,9 @@ wordnet_3_0_20q:
           "shore [shore.n.01]":  # Q: Is the answer a kind of shore?
             "seashore [seashore.n.01]":
           "slope [slope.n.01]":  # Q: Is the answer a kind of slope?
+            "ascent [ascent.n.01]":
             "bank [bank.n.01]":
+              "riverbank [riverbank.n.01]":
             "descent [descent.n.05]":
             "hillside [hillside.n.01]":
           "spring [spring.n.03]":
@@ -5666,6 +5666,7 @@ wordnet_3_0_20q:
             "isogram [isogram.n.01]":
             "part [part.n.10]":
             "path [path.n.03]":
+              "beat [beat.n.01]":
               "direction [direction.n.01]":
                 "course [course.n.03]":
                 "tendency [tendency.n.04]":
@@ -5678,6 +5679,7 @@ wordnet_3_0_20q:
             "beginning [beginning.n.04]":
               "birthplace [birthplace.n.02]":
             "center [center.n.04]":
+              "bull's eye [bull's_eye.n.02]":
               "core [core.n.02]":
               "nucleus [nucleus.n.02]":
             "corner [corner.n.02]":
@@ -5711,9 +5713,11 @@ wordnet_3_0_20q:
               "right [right.n.02]":
             "position [position.n.08]":
             "topographic point [topographic_point.n.01]":
+              "birthplace [birthplace.n.01]":
               "grave [grave.n.02]":
               "hiding place [hiding_place.n.01]":
                 "hideout [hideout.n.01]":
+              "high [high.n.05]":
               "junction [junction.n.01]":
                 "interchange [interchange.n.01]":
                 "intersection [intersection.n.02]":
@@ -5820,6 +5824,7 @@ wordnet_3_0_20q:
                 "township [township.n.01]":
               "city district [city_district.n.01]":
                 "business district [business_district.n.01]":
+                "outskirt [outskirt.n.01]":
                 "quarter [quarter.n.02]":
                   "ghetto [ghetto.n.01]":
                 "slum [slum.n.01]":
@@ -5942,6 +5947,7 @@ wordnet_3_0_20q:
                   "flatware [flatware.n.01]":
                     "plate [plate.n.04]":
             "block [block.n.01]":
+              "cake [cake.n.01]":
               "cube [cube.n.05]":
                 "die [die.n.01]":
               "slab [slab.n.01]":
@@ -6017,6 +6023,7 @@ wordnet_3_0_20q:
                   "linen [linen.n.03]":
                     "bed linen [bed_linen.n.01]":
                       "sheet [sheet.n.03]":
+              "import [import.n.01]":
               "merchandise [merchandise.n.01]":
                 "cargo [cargo.n.01]":
                 "line [line.n.22]":
@@ -6108,16 +6115,19 @@ wordnet_3_0_20q:
                   "feature [feature.n.03]":
                   "musical [musical.n.01]":
                   "silent movie [silent_movie.n.01]":
+                "newspaper [newspaper.n.03]":
                 "work [work.n.02]":
                   "masterpiece [masterpiece.n.01]":
                   "publication [publication.n.01]":
                     "book [book.n.01]":
+                      "booklet [booklet.n.01]":
                       "catalog [catalog.n.01]":
                       "reference book [reference_book.n.01]":
                         "wordbook [wordbook.n.01]":
                           "dictionary [dictionary.n.01]":
                           "glossary [glossary.n.01]":
                           "vocabulary [vocabulary.n.01]":
+                      "textbook [textbook.n.01]":
                       "trade book [trade_book.n.01]":
                         "best seller [best_seller.n.01]":
                     "impression [impression.n.06]":
@@ -6192,6 +6202,7 @@ wordnet_3_0_20q:
                   "wildcat well [wildcat_well.n.01]":
             "fabric [fabric.n.01]":
               "canvas [canvas.n.01]":
+                "tarpaulin [tarpaulin.n.01]":
               "piece of cloth [piece_of_cloth.n.01]":
                 "handkerchief [handkerchief.n.01]":
                 "rag [rag.n.01]":
@@ -6232,6 +6243,8 @@ wordnet_3_0_20q:
               "transportation system [transportation_system.n.01]":
                 "public transit [public_transit.n.01]":
                   "rapid transit [rapid_transit.n.01]":
+              "utility [utility.n.06]":
+                "plumbing [plumbing.n.01]":
               "water system [water_system.n.02]":
             "fixture [fixture.n.01]":
               "lighting fixture [lighting_fixture.n.01]":
@@ -6253,6 +6266,7 @@ wordnet_3_0_20q:
                   "joint [joint.n.05]":
                     "hinge [hinge.n.01]":
                 "telephone line [telephone_line.n.02]":
+                "yoke [yoke.n.06]":
               "container [container.n.01]":
                 "bag [bag.n.01]":
                   "backpack [backpack.n.01]":
@@ -6803,6 +6817,7 @@ wordnet_3_0_20q:
                 "cosmetic [cosmetic.n.01]":
                   "makeup [makeup.n.01]":
                     "lipstick [lipstick.n.01]":
+                "perfume [perfume.n.02]":
               "weaponry [weaponry.n.01]":
                 "ammunition [ammunition.n.01]":
                   "cartridge [cartridge.n.01]":
@@ -6829,9 +6844,12 @@ wordnet_3_0_20q:
             "opening [opening.n.10]":
               "exit [exit.n.01]":
               "gap [gap.n.03]":
+              "gun muzzle [gun_muzzle.n.01]":
               "hole [hole.n.02]":
                 "vent [vent.n.01]":
               "slit [slit.n.01]":
+              "spout [spout.n.01]":
+                "nozzle [nozzle.n.01]":
               "window [window.n.02]":
                 "car window [car_window.n.01]":
                   "rear window [rear_window.n.01]":
@@ -6840,8 +6858,10 @@ wordnet_3_0_20q:
                 "pillow [pillow.n.01]":
             "paving [paving.n.01]":
               "concrete [concrete.n.01]":
+                "reinforced concrete [reinforced_concrete.n.01]":
             "plaything [plaything.n.01]":
             "sheet [sheet.n.06]":
+              "blackboard [blackboard.n.01]":
               "board [board.n.03]":
                 "drafting board [drafting_board.n.01]":
                 "floorboard [floorboard.n.01]":
@@ -6853,6 +6873,7 @@ wordnet_3_0_20q:
               "plate glass [plate_glass.n.01]":
                 "pane [pane.n.01]":
                   "windowpane [windowpane.n.01]":
+                "slide [slide.n.01]":
               "sheet metal [sheet_metal.n.01]":
                 "foil [foil.n.01]":
                   "aluminum foil [aluminum_foil.n.01]":
@@ -6880,6 +6901,7 @@ wordnet_3_0_20q:
                   "recess [recess.n.04]":
                     "fireplace [fireplace.n.01]":
                       "fire [fire.n.04]":
+                "patio [patio.n.01]":
                 "room [room.n.01]":
                   "anteroom [anteroom.n.01]":
                   "ballroom [ballroom.n.01]":
@@ -6915,6 +6937,8 @@ wordnet_3_0_20q:
                   "toilet [toilet.n.01]":
                 "storage space [storage_space.n.01]":
                   "cupboard [cupboard.n.01]":
+              "balance [balance.n.04]":
+                "symmetry [symmetry.n.02]":
               "bridge [bridge.n.01]":
               "building [building.n.01]":
                 "apartment building [apartment_building.n.01]":
@@ -7140,6 +7164,7 @@ wordnet_3_0_20q:
                   "corridor [corridor.n.01]":
                     "hallway [hallway.n.01]":
               "path [path.n.02]":
+                "pathway [pathway.n.02]":
                 "walk [walk.n.05]":
                   "sidewalk [sidewalk.n.01]":
               "road [road.n.01]":
@@ -7339,6 +7364,7 @@ wordnet_3_0_20q:
                   "worm [worm.n.01]":
                 "larva [larva.n.01]":
                 "male [male.n.01]":
+                "prey [prey.n.02]":
                 "young [young.n.01]":
                   "young bird [young_bird.n.01]":
                   "young mammal [young_mammal.n.01]":
@@ -7365,6 +7391,8 @@ wordnet_3_0_20q:
                   "schoolmate [schoolmate.n.01]":
                 "acquirer [acquirer.n.01]":
                   "recipient [recipient.n.01]":
+                    "beneficiary [beneficiary.n.01]":
+                    "dependant [dependant.n.01]":
                     "heir [heir.n.01]":
                 "adjudicator [adjudicator.n.01]":
                   "official [official.n.02]":
@@ -7388,6 +7416,7 @@ wordnet_3_0_20q:
                     "very important person [very_important_person.n.01]":
                   "liberal [liberal.n.01]":
                   "man [man.n.01]":
+                    "bachelor [bachelor.n.01]":
                     "boy [boy.n.02]":
                     "boyfriend [boyfriend.n.01]":
                     "dandy [dandy.n.01]":
@@ -7447,6 +7476,8 @@ wordnet_3_0_20q:
                     "widow [widow.n.01]":
                     "wife [wife.n.01]":
                       "housewife [housewife.n.01]":
+                "adventurer [adventurer.n.01]":
+                  "daredevil [daredevil.n.01]":
                 "adversary [adversary.n.01]":
                   "enemy [enemy.n.02]":
                 "advocate [advocate.n.01]":
@@ -7463,6 +7494,8 @@ wordnet_3_0_20q:
                 "anomaly [anomaly.n.02]":
                   "eccentric [eccentric.n.01]":
                     "crackpot [crackpot.n.01]":
+                  "misfit [misfit.n.01]":
+                    "jerk [jerk.n.01]":
                 "applicant [applicant.n.01]":
                   "claimant [claimant.n.01]":
                   "petitioner [petitioner.n.01]":
@@ -7470,6 +7503,7 @@ wordnet_3_0_20q:
                   "civil authority [civil_authority.n.01]":
                 "bad person [bad_person.n.01]":
                   "libertine [libertine.n.01]":
+                    "adulterer [adulterer.n.01]":
                     "rake [rake.n.01]":
                   "wrongdoer [wrongdoer.n.01]":
                     "attacker [attacker.n.01]":
@@ -7554,6 +7588,7 @@ wordnet_3_0_20q:
                   "layman [layman.n.01]":
                   "proletarian [proletarian.n.01]":
                   "rustic [rustic.n.01]":
+                    "hillbilly [hillbilly.n.01]":
                     "peasant [peasant.n.01]":
                     "yokel [yokel.n.01]":
                 "communicator [communicator.n.01]":
@@ -7593,6 +7628,7 @@ wordnet_3_0_20q:
                 "contestant [contestant.n.01]":
                   "athlete [athlete.n.01]":
                     "gymnast [gymnast.n.01]":
+                    "professional [professional.n.02]":
                     "sport [sport.n.05]":
                     "weightlifter [weightlifter.n.01]":
                   "opposition [opposition.n.04]":
@@ -7607,6 +7643,7 @@ wordnet_3_0_20q:
                         "outfielder [outfielder.n.01]":
                       "pitcher [pitcher.n.01]":
                         "left-handed pitcher [left-handed_pitcher.n.01]":
+                        "right-handed pitcher [right-handed_pitcher.n.01]":
                     "football player [football_player.n.01]":
                       "back [back.n.04]":
                         "quarterback [quarterback.n.01]":
@@ -7615,9 +7652,11 @@ wordnet_3_0_20q:
                       "lineman [lineman.n.01]":
                         "end [end.n.08]":
                     "golfer [golfer.n.01]":
+                    "most valuable player [most_valuable_player.n.01]":
                   "rival [rival.n.01]":
                     "champion [champion.n.01]":
                     "foe [foe.n.02]":
+                    "runner-up [runner-up.n.01]":
                 "convert [convert.n.01]":
                 "coward [coward.n.01]":
                   "sissy [sissy.n.01]":
@@ -7648,6 +7687,7 @@ wordnet_3_0_20q:
                 "dead person [dead_person.n.01]":
                 "disputant [disputant.n.01]":
                   "reformer [reformer.n.01]":
+                    "abolitionist [abolitionist.n.01]":
                     "insurgent [insurgent.n.01]":
                     "Utopian [utopian.n.01]":
                 "dissenter [dissenter.n.01]":
@@ -7673,6 +7713,7 @@ wordnet_3_0_20q:
                       "screen actor [screen_actor.n.01]":
                       "star [star.n.04]":
                         "film star [film_star.n.01]":
+                    "baton twirler [baton_twirler.n.01]":
                     "comedian [comedian.n.01]":
                     "dancer [dancer.n.01]":
                       "chorus girl [chorus_girl.n.01]":
@@ -7683,6 +7724,7 @@ wordnet_3_0_20q:
                       "pianist [pianist.n.01]":
                       "singer [singer.n.01]":
                       "soloist [soloist.n.01]":
+                      "violinist [violinist.n.01]":
                     "stripper [stripper.n.03]":
                 "expert [expert.n.01]":
                   "ace [ace.n.03]":
@@ -7691,6 +7733,7 @@ wordnet_3_0_20q:
                     "adviser [adviser.n.01]":
                       "amicus curiae [amicus_curiae.n.01]":
                       "counselor [counselor.n.01]":
+                    "connoisseur [connoisseur.n.01]":
                     "evaluator [evaluator.n.01]":
                       "critic [critic.n.02]":
                         "panelist [panelist.n.01]":
@@ -7743,6 +7786,7 @@ wordnet_3_0_20q:
                 "individualist [individualist.n.01]":
                 "inhabitant [inhabitant.n.01]":
                   "American [american.n.01]":
+                    "Alabaman [alabaman.n.01]":
                     "Anglo-American [anglo-american.n.01]":
                     "New Englander [new_englander.n.01]":
                     "Rhode Islander [rhode_islander.n.01]":
@@ -7750,6 +7794,7 @@ wordnet_3_0_20q:
                       "Confederate [confederate.n.01]":
                     "Yankee [yankee.n.01]":
                   "American [american.n.03]":
+                    "Latin American [latin_american.n.01]":
                     "North American [north_american.n.01]":
                       "Central American [central_american.n.01]":
                         "Mexican [mexican.n.01]":
@@ -7895,6 +7940,7 @@ wordnet_3_0_20q:
                   "treasurer [treasurer.n.01]":
                 "national [national.n.01]":
                   "citizen [citizen.n.01]":
+                    "freeman [freeman.n.01]":
                     "voter [voter.n.01]":
                   "compatriot [compatriot.n.01]":
                     "countryman [countryman.n.01]":
@@ -7927,6 +7973,7 @@ wordnet_3_0_20q:
                     "defendant [defendant.n.01]":
                 "peer [peer.n.01]":
                   "associate [associate.n.01]":
+                    "ally [ally.n.02]":
                     "collaborator [collaborator.n.03]":
                     "colleague [colleague.n.01]":
                     "colleague [colleague.n.02]":
@@ -8027,6 +8074,7 @@ wordnet_3_0_20q:
                       "pope [pope.n.01]":
                       "Roman Catholic [roman_catholic.n.01]":
                     "Protestant [protestant.n.01]":
+                  "Muslim [muslim.n.01]":
                   "non-Catholic [non-catholic.n.01]":
                   "religious [religious.n.01]":
                     "monk [monk.n.01]":
@@ -8036,6 +8084,7 @@ wordnet_3_0_20q:
                 "rich person [rich_person.n.01]":
                   "man of means [man_of_means.n.01]":
                 "ruler [ruler.n.01]":
+                  "caliph [caliph.n.01]":
                   "overlord [overlord.n.01]":
                   "sovereign [sovereign.n.01]":
                     "king [king.n.01]":
@@ -8044,6 +8093,8 @@ wordnet_3_0_20q:
                     "zoologist [zoologist.n.01]":
                       "herpetologist [herpetologist.n.01]":
                   "chemist [chemist.n.01]":
+                  "geologist [geologist.n.01]":
+                    "petroleum geologist [petroleum_geologist.n.01]":
                   "linguist [linguist.n.01]":
                   "physicist [physicist.n.01]":
                   "psychologist [psychologist.n.01]":
@@ -8056,7 +8107,9 @@ wordnet_3_0_20q:
                 "sensualist [sensualist.n.01]":
                   "epicure [epicure.n.01]":
                 "simpleton [simpleton.n.01]":
+                  "dumbbell [dumbbell.n.02]":
                   "fool [fool.n.01]":
+                    "clown [clown.n.01]":
                     "fathead [fathead.n.01]":
                   "idiot [idiot.n.01]":
                   "stupid [stupid.n.01]":
@@ -8074,6 +8127,7 @@ wordnet_3_0_20q:
                   "follower [follower.n.02]":
                     "pursuer [pursuer.n.01]":
                   "foreigner [foreigner.n.01]":
+                    "exile [exile.n.02]":
                   "messenger [messenger.n.01]":
                   "migrant [migrant.n.01]":
                     "immigrant [immigrant.n.01]":
@@ -8094,6 +8148,8 @@ wordnet_3_0_20q:
                     "vagrant [vagrant.n.01]":
                       "tramp [tramp.n.01]":
                 "unfortunate [unfortunate.n.01]":
+                  "desperate [desperate.n.01]":
+                    "goner [goner.n.01]":
                   "failure [failure.n.04]":
                   "mourner [mourner.n.01]":
                   "outcast [outcast.n.01]":
@@ -8114,8 +8170,10 @@ wordnet_3_0_20q:
                     "apprentice [apprentice.n.01]":
                     "cub [cub.n.01]":
                     "newcomer [newcomer.n.01]":
+                      "recruit [recruit.n.02]":
                 "unwelcome person [unwelcome_person.n.01]":
                   "intruder [intruder.n.01]":
+                    "invader [invader.n.01]":
                     "stranger [stranger.n.01]":
                       "foreigner [foreigner.n.02]":
                   "troublemaker [troublemaker.n.01]":
@@ -8157,6 +8215,7 @@ wordnet_3_0_20q:
                   "assistant [assistant.n.01]":
                     "aide [aide.n.02]":
                     "attendant [attendant.n.01]":
+                    "deputy [deputy.n.02]":
                     "model [model.n.03]":
                     "secretary [secretary.n.02]":
                       "receptionist [receptionist.n.01]":
@@ -8205,6 +8264,7 @@ wordnet_3_0_20q:
                       "potter [potter.n.01]":
                       "woodworker [woodworker.n.01]":
                         "carpenter [carpenter.n.01]":
+                    "crewman [crewman.n.02]":
                     "editor [editor.n.01]":
                     "fisherman [fisherman.n.01]":
                     "hunter [hunter.n.01]":
@@ -8319,8 +8379,10 @@ wordnet_3_0_20q:
               "human body [human_body.n.01]":
             "body [body.n.03]":
               "cadaver [cadaver.n.01]":
+              "carcase [carcase.n.01]":
             "body [body.n.04]":
               "mass [mass.n.05]":
+                "pulp [pulp.n.01]":
               "particle [particle.n.02]":
                 "elementary particle [elementary_particle.n.01]":
                   "lepton [lepton.n.02]":
@@ -8399,6 +8461,7 @@ wordnet_3_0_20q:
             "radiator [radiator.n.01]":
               "radio source [radio_source.n.01]":
             "rock [rock.n.01]":
+              "boulder [boulder.n.01]":
               "pebble [pebble.n.01]":
             "sample [sample.n.03]":
               "specimen [specimen.n.02]":
@@ -8417,6 +8480,8 @@ wordnet_3_0_20q:
         "economic process [economic_process.n.01]":  # Q: Is the answer a kind of economic process?
           "demand [demand.n.02]":
           "supply [supply.n.02]":
+        "human process [human_process.n.01]":  # Q: Is the answer a kind of human process?
+          "psychoanalytic process [psychoanalytic_process.n.01]":
         "increase [increase.n.03]":  # Q: Is the answer a kind of increase?
           "accretion [accretion.n.01]":
         "natural process [natural_process.n.01]":  # Q: Is the answer a kind of natural process?
@@ -8426,6 +8491,7 @@ wordnet_3_0_20q:
             "ultracentrifugation [ultracentrifugation.n.01]":
           "chemical process [chemical_process.n.01]":  # Q: Is the answer a kind of chemical process?
             "chemical reaction [chemical_reaction.n.01]":
+              "chemical equilibrium [chemical_equilibrium.n.01]":
               "oxidation [oxidation.n.01]":
                 "combustion [combustion.n.01]":
                   "fire [fire.n.03]":
@@ -8435,7 +8501,9 @@ wordnet_3_0_20q:
             "polymerization [polymerization.n.01]":
             "synthesis [synthesis.n.01]":
           "chromatography [chromatography.n.01]":
-          "diffusion [diffusion.n.01]":
+          "diffusion [diffusion.n.01]":  # Q: Is the answer a kind of diffusion?
+            "permeation [permeation.n.01]":
+              "impregnation [impregnation.n.02]":
           "distillation [distillation.n.01]":
           "extraction [extraction.n.01]":  # Q: Is the answer a kind of extraction?
             "elution [elution.n.01]":
@@ -8627,6 +8695,7 @@ wordnet_3_0_20q:
               "reflection [reflection.n.02]":
               "refraction [refraction.n.01]":
                 "double refraction [double_refraction.n.01]":
+              "resolving power [resolving_power.n.01]":
               "resonance [resonance.n.01]":
               "surface tension [surface_tension.n.01]":
                 "interfacial tension [interfacial_tension.n.01]":
@@ -8721,6 +8790,7 @@ wordnet_3_0_20q:
                     "latissimus dorsi [latissimus_dorsi.n.01]":
                     "pectoral [pectoral.n.01]":
                     "serratus [serratus.n.01]":
+              "foot [foot.n.06]":
               "gland [gland.n.01]":
                 "endocrine gland [endocrine_gland.n.01]":
                   "gonad [gonad.n.01]":
@@ -8742,6 +8812,7 @@ wordnet_3_0_20q:
                   "lung [lung.n.01]":
                 "stomach [stomach.n.01]":
               "organelle [organelle.n.01]":
+                "nucleolus [nucleolus.n.01]":
                 "nucleus [nucleus.n.01]":
               "reproductive organ [reproductive_organ.n.01]":
                 "genitalia [genitalia.n.01]":
@@ -8762,6 +8833,8 @@ wordnet_3_0_20q:
             "partition [partition.n.03]":
               "septum [septum.n.01]":
             "process [process.n.05]":
+              "caruncle [caruncle.n.01]":
+                "wattle [wattle.n.01]":
               "horn [horn.n.02]":
               "tail [tail.n.01]":
             "shoulder [shoulder.n.01]":
@@ -8818,7 +8891,9 @@ wordnet_3_0_20q:
             "system [system.n.06]":
               "muscular structure [muscular_structure.n.01]":
                 "diaphragm [diaphragm.n.02]":
+              "nervous system [nervous_system.n.01]":
               "tract [tract.n.02]":
+                "respiratory tract [respiratory_tract.n.01]":
             "thorax [thorax.n.02]":
             "tissue [tissue.n.01]":
               "animal tissue [animal_tissue.n.01]":
@@ -8852,6 +8927,7 @@ wordnet_3_0_20q:
                   "mucous membrane [mucous_membrane.n.01]":
                   "serous membrane [serous_membrane.n.01]":
                     "pleura [pleura.n.01]":
+                "muscle [muscle.n.02]":
                 "nervous tissue [nervous_tissue.n.01]":
                   "fiber bundle [fiber_bundle.n.01]":
                     "nerve [nerve.n.01]":
@@ -8898,64 +8974,5 @@ wordnet_3_0_20q:
                   "globulin [globulin.n.01]":
           "unit cell [unit_cell.n.01]":
         "variable [variable.n.01]":
-    "Picasso [picasso.n.01]":
-    "Pittsburgh [pittsburgh.n.01]":
-    "Plato [plato.n.01]":
-    "Poland [poland.n.01]":
-    "Providence [providence.n.01]":
-    "Puerto Rico [puerto_rico.n.01]":
-    "Red [red.n.02]":
-    "Renaissance [renaissance.n.01]":
-    "Rhode Island [rhode_island.n.01]":
-    "Richmond [richmond.n.01]":
-    "Rome [rome.n.01]":
-    "Roosevelt [roosevelt.n.01]":
-    "Rousseau [rousseau.n.01]":
-    "Saint Louis [saint_louis.n.02]":
-    "Saint Paul [saint_paul.n.02]":
-    "San Francisco [san_francisco.n.01]":
-    "Satan [satan.n.01]":
-    "Saturn [saturn.n.01]":
-    "Savannah [savannah.n.01]":
-    "Shakespeare [shakespeare.n.01]":
-    "Sherlock Holmes [sherlock_holmes.n.01]":
-    "Siberia [siberia.n.01]":
-    "Son [son.n.02]":
-    "South [south.n.01]":  # Q: Is the answer a kind of South?
-      "Alabama [alabama.n.01]":
-    "South America [south_america.n.01]":
-    "Soviet Union [soviet_union.n.01]":
-    "Spain [spain.n.01]":
-    "Springfield [springfield.n.01]":
-    "Stravinsky [stravinsky.n.01]":
-    "sun [sun.n.01]":
-    "Sweden [sweden.n.01]":
-    "Texas [texas.n.01]":
     "thing [thing.n.08]":  # Q: Is the answer a kind of thing?
       "horror [horror.n.02]":
-    "Tibet [tibet.n.01]":
-    "Tokyo [tokyo.n.01]":
-    "Uncle Sam [uncle_sam.n.01]":
-    "Union [union.n.02]":
-    "United Kingdom [united_kingdom.n.01]":
-    "United States [united_states.n.01]":
-    "Utah [utah.n.01]":
-    "Utopia [utopia.n.01]":
-    "Vatican [vatican.n.01]":
-    "Venus [venus.n.01]":
-    "Vermont [vermont.n.01]":
-    "Vientiane [vientiane.n.01]":
-    "Virgin Islands [virgin_islands.n.01]":
-    "Virginia [virginia.n.01]":
-    "Voltaire [voltaire.n.01]":
-    "Wall Street [wall_street.n.01]":
-    "Warszawa [warszawa.n.01]":
-    "Washington [washington.n.01]":
-    "Washington [washington.n.02]":
-    "Washington [washington.n.04]":
-    "West [west.n.01]":
-    "West [west.n.03]":
-    "World War I [world_war_i.n.01]":
-    "World War II [world_war_ii.n.01]":
-    "Wyoming [wyoming.n.01]":
-    "Yale University [yale_university.n.01]":

@@ -16,8 +16,12 @@ The first standards-based experiment is now also committed:
   builder.
 
 It uses Princeton WordNet 3.0 noun synsets. It selects the top 7,000
-frequency-weighted noun synsets and adds their complete hypernym ancestry,
-producing 8,957 display nodes: 3,774 branches and 5,183 terminal categories.
+frequency-weighted noun synsets that have a hypernym path to WordNet's
+`entity.n.01` root and adds their complete hypernym ancestry, producing 8,974
+display nodes: 3,832 branches and 5,142 terminal categories. This root
+connectivity filter prevents WordNet's disconnected proper names, places,
+events, and other top-level records from being flattened directly under the
+display root.
 The selected source pool contains 82,115 noun synsets, of which 13,739 have
 nonzero WordNet corpus-frequency counts.
 
@@ -27,7 +31,7 @@ WordNet: all source hypernyms remain in the manifest.
 
 ## Practical scope and UI constraint
 
-The useful target is **5,000–10,000 displayed nodes**, with the current 8,957
+The useful target is **5,000–10,000 displayed nodes**, with the current 8,974
 node profile as a promising operating point. The existing UI is deliberately a
 single static page with collapsible sections, suggested questions, search, and
 expand/collapse controls. It can remain fully expanded on one page, but the
@@ -206,22 +210,46 @@ snapshot-dependent; links are the authoritative places to refresh them.
   cannot logically serve as the ontology’s root. It may be studied separately,
   but this project will not merge it into the WordNet tree.
 
-### Mozilla
+### DMOZ/Open Directory Project RDF hierarchy
 
-There is no single broadly recognized, maintained “Mozilla Ontology”
-comparable to WordNet, Wikidata, or SUMO. Mozilla has web-platform
-vocabularies, browser schemas, extension manifests, and RDF-era projects, but
-no canonical general-purpose noun ontology with a stable node count.
+The large RDF/XML text dump available for this project is not a general
+“Mozilla Ontology.” It is a snapshot of the **Open Directory Project (ODP),
+also called DMOZ**, a human-edited web-directory topic hierarchy. The
+historical association with Netscape and Mozilla explains the earlier label,
+but DMOZ is the precise name for the data structure.
 
-- **Origin/status:** Mozilla began as an open-source browser project in 1998
-  and remains active; see the
-  [Mozilla Manifesto](https://www.mozilla.org/about/manifesto/).
-- **Node count:** not applicable for a general Mozilla ontology; any claimed
-  number would refer to a particular schema or project.
-- **Prominence proxy:** Mozilla’s browser/community reach is measurable, but
-  that is not an ontology prominence metric.
-- **Fit:** excluded as a canonical source unless a specific Mozilla schema is
-  identified and its scope is justified.
+- **Origin:** ODP was founded in the United States in 1998 as Netscape’s Open
+  Directory Project and was later commonly known as DMOZ. Its categories were
+  organized as web subjects rather than as a formal noun or upper ontology.
+- **Source and release:** the supplied file is an RDF/XML snapshot whose
+  header says it was generated on 2006-10-10 01:06:26 GMT on `dust`; its
+  records include category IDs, titles, update timestamps, editors, and
+  `narrow` links to child topics. The dump size is approximately 600 MB.
+- **Current status:** the directory was discontinued in 2017 and is no
+  longer an actively maintained public authority. The snapshot is therefore
+  historically valuable but frozen and release-specific. See the
+  [Open Directory Project history](https://en.wikipedia.org/wiki/DMOZ).
+- **Node count:** not yet measured for this particular dump. A valid count
+  must be produced by streaming the RDF/XML, counting distinct `Topic`
+  resources, counting `narrow` edges, and reporting disconnected components,
+  missing targets, duplicate labels, and cycles. The count must not be
+  inferred from the 600 MB file size.
+- **Prominence proxy:** DMOZ was one of the best-known human-edited web
+  directories, and its category data was reused by search engines,
+  directories, and the RDF community during the Web 1.0 era. Historical
+  prominence is the appropriate metric; it should not be compared directly
+  with current Wikidata item or Wikipedia article counts.
+- **Fit:** useful as a separate, human-curated topical browsing profile and as
+  a source of realistic category distinctions. It is not a canonical noun
+  backbone: many nodes describe websites, audiences, regions, editorial
+  maintenance categories, or topical collections rather than kinds of
+  things. Multiple parents and cycles must be preserved in the source
+  manifest and resolved only in a declared display projection.
+- **20 Questions use:** after graph validation, a 5K–10K projection could
+  provide an interesting contrast to WordNet. Selection should favor
+  frequently encountered, semantically concrete categories while retaining
+  source IDs and alternate parent links. It should remain a separately named
+  DMOZ profile rather than being silently merged into the WordNet tree.
 
 ## 20 Questions projection algorithm
 

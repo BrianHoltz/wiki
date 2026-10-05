@@ -2,15 +2,15 @@
   "source": "Princeton WordNet",
   "version": "3.0",
   "root": "entity.n.01",
-  "selection": "top frequency-weighted noun synsets plus complete hypernym ancestry",
+  "selection": "top frequency-weighted root-connected noun synsets plus complete hypernym ancestry",
   "presentation": "one deterministic parent selected from source hypernyms",
   "counts": {
     "all_noun_synsets": 82115,
     "frequency_noun_synsets": 13739,
     "requested": 7000,
-    "selected": 8957,
-    "branches": 3774,
-    "leaves": 5183
+    "selected": 8974,
+    "branches": 3832,
+    "leaves": 5142
   },
   "synsets": {
     "abandon.n.01": {
@@ -126,6 +126,18 @@
         "misbehavior.n.01"
       ],
       "display_parent": "misbehavior.n.01"
+    },
+    "abolitionist.n.01": {
+      "label": [
+        "abolitionist",
+        "emancipationist"
+      ],
+      "gloss": "a reformer who favors abolishing slavery",
+      "frequency": 2,
+      "hypernyms": [
+        "reformer.n.01"
+      ],
+      "display_parent": "reformer.n.01"
     },
     "aborigine.n.02": {
       "label": [
@@ -286,6 +298,18 @@
         "self-denial.n.02"
       ],
       "display_parent": "self-denial.n.02"
+    },
+    "abstract_expressionism.n.01": {
+      "label": [
+        "Abstract_Expressionism",
+        "action_painting"
+      ],
+      "gloss": "a New York school of painting characterized by freely created abstractions; the first important school of American painting to develop independently of European styles",
+      "frequency": 2,
+      "hypernyms": [
+        "artistic_movement.n.01"
+      ],
+      "display_parent": "artistic_movement.n.01"
     },
     "abstractedness.n.01": {
       "label": [
@@ -1270,14 +1294,16 @@
       ],
       "display_parent": "promotion.n.01"
     },
-    "adam.n.01": {
+    "adaptability.n.01": {
       "label": [
-        "Adam"
+        "adaptability"
       ],
-      "gloss": "(Old Testament) in Judeo-Christian mythology; the first man and the husband of Eve and the progenitor of the human race",
-      "frequency": 14,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
+      "gloss": "the ability to change (or be changed) to fit changed circumstances",
+      "frequency": 0,
+      "hypernyms": [
+        "ability.n.01"
+      ],
+      "display_parent": "ability.n.01"
     },
     "addendum.n.01": {
       "label": [
@@ -1753,6 +1779,18 @@
       ],
       "display_parent": "animal.n.01"
     },
+    "adulterer.n.01": {
+      "label": [
+        "adulterer",
+        "fornicator"
+      ],
+      "gloss": "someone who commits adultery or fornication",
+      "frequency": 2,
+      "hypernyms": [
+        "libertine.n.01"
+      ],
+      "display_parent": "libertine.n.01"
+    },
     "adulthood.n.01": {
       "label": [
         "adulthood",
@@ -1764,6 +1802,17 @@
         "time_of_life.n.01"
       ],
       "display_parent": "time_of_life.n.01"
+    },
+    "adulthood.n.02": {
+      "label": [
+        "adulthood"
+      ],
+      "gloss": "the state (and responsibilities) of a person who has attained maturity",
+      "frequency": 0,
+      "hypernyms": [
+        "maturity.n.02"
+      ],
+      "display_parent": "maturity.n.02"
     },
     "advancement.n.03": {
       "label": [
@@ -1814,6 +1863,18 @@
         "undertaking.n.01"
       ],
       "display_parent": "undertaking.n.01"
+    },
+    "adventurer.n.01": {
+      "label": [
+        "adventurer",
+        "venturer"
+      ],
+      "gloss": "a person who enjoys taking risks",
+      "frequency": 1,
+      "hypernyms": [
+        "person.n.01"
+      ],
+      "display_parent": "person.n.01"
     },
     "adverb.n.01": {
       "label": [
@@ -1957,16 +2018,6 @@
         "lawyer.n.01"
       ],
       "display_parent": "lawyer.n.01"
-    },
-    "aegean.n.01": {
-      "label": [
-        "Aegean",
-        "Aegean_Sea"
-      ],
-      "gloss": "an arm of the Mediterranean between Greece and Turkey; a main trade route for the ancient civilizations of Crete and Greece and Rome and Persia",
-      "frequency": 7,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
     },
     "aeration.n.01": {
       "label": [
@@ -2126,6 +2177,17 @@
       ],
       "display_parent": "avowal.n.01"
     },
+    "affix.n.01": {
+      "label": [
+        "affix"
+      ],
+      "gloss": "a linguistic element added to a word to produce an inflected or derived form",
+      "frequency": 0,
+      "hypernyms": [
+        "bound_morpheme.n.01"
+      ],
+      "display_parent": "bound_morpheme.n.01"
+    },
     "affliction.n.03": {
       "label": [
         "affliction"
@@ -2161,15 +2223,6 @@
         "quarrel.n.01"
       ],
       "display_parent": "quarrel.n.01"
-    },
-    "africa.n.01": {
-      "label": [
-        "Africa"
-      ],
-      "gloss": "the second largest continent; located to the south of Europe and bordered to the west by the South Atlantic and to the east by the Indian Ocean",
-      "frequency": 10,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
     },
     "aftermath.n.01": {
       "label": [
@@ -2876,19 +2929,17 @@
       ],
       "display_parent": "passageway.n.01"
     },
-    "alabama.n.01": {
+    "alabaman.n.01": {
       "label": [
-        "Alabama",
-        "Heart_of_Dixie",
-        "Camellia_State",
-        "AL"
+        "Alabaman",
+        "Alabamian"
       ],
-      "gloss": "a state in the southeastern United States on the Gulf of Mexico; one of the Confederate states during the American Civil War",
-      "frequency": 3,
+      "gloss": "a native or resident of Alabama",
+      "frequency": 2,
       "hypernyms": [
-        "south.n.01"
+        "american.n.01"
       ],
-      "display_parent": "south.n.01"
+      "display_parent": "american.n.01"
     },
     "alarm.n.01": {
       "label": [
@@ -2915,27 +2966,6 @@
         "device.n.01"
       ],
       "display_parent": "device.n.01"
-    },
-    "alaska.n.01": {
-      "label": [
-        "Alaska",
-        "Last_Frontier",
-        "AK"
-      ],
-      "gloss": "a state in northwestern North America; the 49th state admitted to the union",
-      "frequency": 15,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
-    },
-    "albany.n.01": {
-      "label": [
-        "Albany",
-        "capital_of_New_York"
-      ],
-      "gloss": "state capital of New York; located in eastern New York State on the west bank of the Hudson river",
-      "frequency": 2,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
     },
     "album.n.01": {
       "label": [
@@ -3010,6 +3040,19 @@
         "pure_mathematics.n.01"
       ],
       "display_parent": "pure_mathematics.n.01"
+    },
+    "algonquian.n.02": {
+      "label": [
+        "Algonquian",
+        "Algonquin",
+        "Algonquian_language"
+      ],
+      "gloss": "family of North American Indian languages spoken from Labrador to South Carolina and west to the Great Plains",
+      "frequency": 0,
+      "hypernyms": [
+        "amerind.n.01"
+      ],
+      "display_parent": "amerind.n.01"
     },
     "alienation.n.01": {
       "label": [
@@ -3172,6 +3215,18 @@
         "state.n.04"
       ],
       "display_parent": "state.n.04"
+    },
+    "ally.n.02": {
+      "label": [
+        "ally",
+        "friend"
+      ],
+      "gloss": "an associate who provides cooperation or assistance",
+      "frequency": 2,
+      "hypernyms": [
+        "associate.n.01"
+      ],
+      "display_parent": "associate.n.01"
     },
     "aloes.n.01": {
       "label": [
@@ -3362,6 +3417,21 @@
         "feeling.n.01"
       ],
       "display_parent": "feeling.n.01"
+    },
+    "amble.n.01": {
+      "label": [
+        "amble",
+        "promenade",
+        "saunter",
+        "stroll",
+        "perambulation"
+      ],
+      "gloss": "a leisurely walk (usually in some public place)",
+      "frequency": 1,
+      "hypernyms": [
+        "walk.n.04"
+      ],
+      "display_parent": "walk.n.04"
     },
     "ambulance.n.01": {
       "label": [
@@ -3653,17 +3723,6 @@
       ],
       "display_parent": "shift.n.01"
     },
-    "amsterdam.n.01": {
-      "label": [
-        "Amsterdam",
-        "Dutch_capital",
-        "capital_of_The_Netherlands"
-      ],
-      "gloss": "an industrial center and the nominal capital of the Netherlands; center of the diamond-cutting industry; seat of an important stock exchange; known for its canals and art museum",
-      "frequency": 2,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
-    },
     "amusement.n.01": {
       "label": [
         "amusement"
@@ -3756,6 +3815,18 @@
         "junction.n.02"
       ],
       "display_parent": "junction.n.02"
+    },
+    "anatomical_reference.n.01": {
+      "label": [
+        "anatomical_reference",
+        "anatomical"
+      ],
+      "gloss": "an expression that relates to anatomy",
+      "frequency": 2,
+      "hypernyms": [
+        "saying.n.01"
+      ],
+      "display_parent": "saying.n.01"
     },
     "anatomy.n.01": {
       "label": [
@@ -4376,6 +4447,18 @@
         "electrical_device.n.01"
       ],
       "display_parent": "electrical_device.n.01"
+    },
+    "antenna.n.02": {
+      "label": [
+        "antenna",
+        "feeler"
+      ],
+      "gloss": "sensitivity similar to that of a receptor organ",
+      "frequency": 2,
+      "hypernyms": [
+        "sensitivity.n.05"
+      ],
+      "display_parent": "sensitivity.n.05"
     },
     "anteroom.n.01": {
       "label": [
@@ -5282,17 +5365,6 @@
       ],
       "display_parent": "building.n.01"
     },
-    "arctic.n.01": {
-      "label": [
-        "Arctic",
-        "Arctic_Zone",
-        "North_Frigid_Zone"
-      ],
-      "gloss": "the regions to the north of the Arctic Circle centered on the North Pole",
-      "frequency": 2,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
-    },
     "ardor.n.01": {
       "label": [
         "ardor",
@@ -5462,15 +5534,6 @@
       ],
       "display_parent": "leader.n.01"
     },
-    "aristotle.n.01": {
-      "label": [
-        "Aristotle"
-      ],
-      "gloss": "one of the greatest of the ancient Athenian philosophers; pupil of Plato; teacher of Alexander the Great (384-322 BC)",
-      "frequency": 4,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
-    },
     "arithmetic.n.01": {
       "label": [
         "arithmetic"
@@ -5481,17 +5544,6 @@
         "pure_mathematics.n.01"
       ],
       "display_parent": "pure_mathematics.n.01"
-    },
-    "arkansas.n.01": {
-      "label": [
-        "Arkansas",
-        "Land_of_Opportunity",
-        "AR"
-      ],
-      "gloss": "a state in south central United States; one of the Confederate states during the American Civil War",
-      "frequency": 4,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
     },
     "arm.n.01": {
       "label": [
@@ -5932,6 +5984,18 @@
       ],
       "display_parent": "artifact.n.01"
     },
+    "article.n.03": {
+      "label": [
+        "article",
+        "clause"
+      ],
+      "gloss": "a separate section of a legal document (as a statute or contract or will)",
+      "frequency": 2,
+      "hypernyms": [
+        "section.n.01"
+      ],
+      "display_parent": "section.n.01"
+    },
     "articulation.n.03": {
       "label": [
         "articulation",
@@ -6093,6 +6157,22 @@
       ],
       "display_parent": "visual_communication.n.01"
     },
+    "ascent.n.01": {
+      "label": [
+        "ascent",
+        "acclivity",
+        "rise",
+        "raise",
+        "climb",
+        "upgrade"
+      ],
+      "gloss": "an upward slope or grade (as in a road)",
+      "frequency": 1,
+      "hypernyms": [
+        "slope.n.01"
+      ],
+      "display_parent": "slope.n.01"
+    },
     "ash_grey.n.01": {
       "label": [
         "ash_grey",
@@ -6127,15 +6207,6 @@
         "bin.n.01"
       ],
       "display_parent": "bin.n.01"
-    },
-    "asia.n.01": {
-      "label": [
-        "Asia"
-      ],
-      "gloss": "the largest continent with 60% of the earth's population; it is joined to Europe on the west to form Eurasia; it is the site of some of the world's earliest civilizations",
-      "frequency": 5,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
     },
     "asian.n.01": {
       "label": [
@@ -6658,26 +6729,6 @@
       ],
       "display_parent": "game.n.01"
     },
-    "atlanta.n.01": {
-      "label": [
-        "Atlanta",
-        "capital_of_Georgia"
-      ],
-      "gloss": "state capital and largest city of Georgia; chief commercial center of the southeastern United States; was plundered and burned by Sherman's army during the American Civil War",
-      "frequency": 7,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
-    },
-    "atlantic.n.01": {
-      "label": [
-        "Atlantic",
-        "Atlantic_Ocean"
-      ],
-      "gloss": "the 2nd largest ocean; separates North and South America on the west from Europe and Africa on the east",
-      "frequency": 4,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
-    },
     "atmosphere.n.01": {
       "label": [
         "atmosphere",
@@ -6791,6 +6842,19 @@
         "nuclear_weapon.n.01"
       ],
       "display_parent": "bomb.n.01"
+    },
+    "atomic_mass.n.01": {
+      "label": [
+        "atomic_mass",
+        "atomic_weight",
+        "relative_atomic_mass"
+      ],
+      "gloss": "(chemistry) the mass of an atom of a chemical element expressed in atomic mass units",
+      "frequency": 0,
+      "hypernyms": [
+        "mass.n.01"
+      ],
+      "display_parent": "mass.n.01"
     },
     "atomizer.n.01": {
       "label": [
@@ -7312,26 +7376,6 @@
       ],
       "display_parent": "cartilaginous_structure.n.01"
     },
-    "austin.n.01": {
-      "label": [
-        "Austin",
-        "capital_of_Texas"
-      ],
-      "gloss": "state capital of Texas on the Colorado River; site of the University of Texas",
-      "frequency": 2,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
-    },
-    "australia.n.01": {
-      "label": [
-        "Australia",
-        "Commonwealth_of_Australia"
-      ],
-      "gloss": "a nation occupying the whole of the Australian continent; Aboriginal tribes are thought to have migrated from southeastern Asia 20,000 years ago; first Europeans were British convicts sent there as a penal colony",
-      "frequency": 3,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
-    },
     "australian.n.01": {
       "label": [
         "Australian",
@@ -7536,6 +7580,21 @@
       ],
       "display_parent": "helpfulness.n.01"
     },
+    "avarice.n.01": {
+      "label": [
+        "avarice",
+        "greed",
+        "covetousness",
+        "rapacity",
+        "avaritia"
+      ],
+      "gloss": "reprehensible acquisitiveness; insatiable desire for wealth (personified as one of the deadly sins)",
+      "frequency": 1,
+      "hypernyms": [
+        "mortal_sin.n.01"
+      ],
+      "display_parent": "mortal_sin.n.01"
+    },
     "average.n.01": {
       "label": [
         "average",
@@ -7547,6 +7606,17 @@
         "statistic.n.01"
       ],
       "display_parent": "statistic.n.01"
+    },
+    "average.n.02": {
+      "label": [
+        "average"
+      ],
+      "gloss": "(sports) the ratio of successful performances to opportunities",
+      "frequency": 0,
+      "hypernyms": [
+        "ratio.n.01"
+      ],
+      "display_parent": "ratio.n.01"
     },
     "average_cost.n.01": {
       "label": [
@@ -7785,15 +7855,6 @@
       ],
       "display_parent": "line.n.11"
     },
-    "b-52.n.01": {
-      "label": [
-        "B-52"
-      ],
-      "gloss": "United States military aircraft; B- stands for bomber",
-      "frequency": 4,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
-    },
     "b-complex_vitamin.n.01": {
       "label": [
         "B-complex_vitamin",
@@ -7834,6 +7895,18 @@
         "furniture.n.01"
       ],
       "display_parent": "furniture.n.01"
+    },
+    "bachelor.n.01": {
+      "label": [
+        "bachelor",
+        "unmarried_man"
+      ],
+      "gloss": "a man who has never been married",
+      "frequency": 2,
+      "hypernyms": [
+        "man.n.01"
+      ],
+      "display_parent": "man.n.01"
     },
     "back.n.01": {
       "label": [
@@ -8185,6 +8258,20 @@
       ],
       "display_parent": "equality.n.01"
     },
+    "balance.n.04": {
+      "label": [
+        "balance",
+        "equilibrium",
+        "equipoise",
+        "counterbalance"
+      ],
+      "gloss": "equality of distribution",
+      "frequency": 0,
+      "hypernyms": [
+        "structure.n.01"
+      ],
+      "display_parent": "structure.n.01"
+    },
     "balance_of_payments.n.01": {
       "label": [
         "balance_of_payments",
@@ -8355,15 +8442,6 @@
         "room.n.01"
       ],
       "display_parent": "room.n.01"
-    },
-    "baltimore.n.01": {
-      "label": [
-        "Baltimore"
-      ],
-      "gloss": "the largest city in Maryland; a major seaport and industrial center",
-      "frequency": 8,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
     },
     "balto-slavic.n.01": {
       "label": [
@@ -8772,6 +8850,18 @@
         "vessel.n.03"
       ],
       "display_parent": "vessel.n.03"
+    },
+    "barrel.n.03": {
+      "label": [
+        "barrel",
+        "drum"
+      ],
+      "gloss": "a bulging cylindrical shape; hollow with flat ends",
+      "frequency": 2,
+      "hypernyms": [
+        "cylinder.n.02"
+      ],
+      "display_parent": "cylinder.n.02"
     },
     "barren.n.01": {
       "label": [
@@ -9202,6 +9292,18 @@
       ],
       "display_parent": "rod.n.01"
     },
+    "baton_twirler.n.01": {
+      "label": [
+        "baton_twirler",
+        "twirler"
+      ],
+      "gloss": "someone who twirls a baton",
+      "frequency": 2,
+      "hypernyms": [
+        "performer.n.01"
+      ],
+      "display_parent": "performer.n.01"
+    },
     "battalion.n.02": {
       "label": [
         "battalion",
@@ -9264,6 +9366,18 @@
         "electrical_device.n.01"
       ],
       "display_parent": "electrical_device.n.01"
+    },
+    "batting_average.n.01": {
+      "label": [
+        "batting_average",
+        "hitting_average"
+      ],
+      "gloss": "(baseball) a measure of a batter's performance; the number of base hits divided by the number of official times at bat",
+      "frequency": 2,
+      "hypernyms": [
+        "average.n.02"
+      ],
+      "display_parent": "average.n.02"
     },
     "battle.n.01": {
       "label": [
@@ -9465,6 +9579,18 @@
         "attacker.n.01"
       ],
       "display_parent": "attacker.n.01"
+    },
+    "beat.n.01": {
+      "label": [
+        "beat",
+        "round"
+      ],
+      "gloss": "a regular route for a sentry or policeman",
+      "frequency": 2,
+      "hypernyms": [
+        "path.n.03"
+      ],
+      "display_parent": "path.n.03"
     },
     "beating.n.02": {
       "label": [
@@ -9948,6 +10074,18 @@
       ],
       "display_parent": "good_person.n.01"
     },
+    "beneficiary.n.01": {
+      "label": [
+        "beneficiary",
+        "donee"
+      ],
+      "gloss": "the recipient of funds or other benefits",
+      "frequency": 2,
+      "hypernyms": [
+        "recipient.n.01"
+      ],
+      "display_parent": "recipient.n.01"
+    },
     "benefit.n.01": {
       "label": [
         "benefit"
@@ -10008,27 +10146,6 @@
         "gift.n.01"
       ],
       "display_parent": "gift.n.01"
-    },
-    "berlin.n.01": {
-      "label": [
-        "Berlin",
-        "German_capital"
-      ],
-      "gloss": "capital of Germany located in eastern Germany",
-      "frequency": 6,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
-    },
-    "bern.n.01": {
-      "label": [
-        "Bern",
-        "Berne",
-        "capital_of_Switzerland"
-      ],
-      "gloss": "the capital of Switzerland; located in western Switzerland",
-      "frequency": 4,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
     },
     "berry.n.01": {
       "label": [
@@ -10196,6 +10313,18 @@
         "attempt.n.01"
       ],
       "display_parent": "attempt.n.01"
+    },
+    "bid.n.04": {
+      "label": [
+        "bid",
+        "bidding"
+      ],
+      "gloss": "(bridge) the number of tricks a bridge player is willing to contract to make",
+      "frequency": 0,
+      "hypernyms": [
+        "statement.n.01"
+      ],
+      "display_parent": "statement.n.01"
     },
     "big_cat.n.01": {
       "label": [
@@ -10565,6 +10694,18 @@
       ],
       "display_parent": "anniversary.n.01"
     },
+    "birthplace.n.01": {
+      "label": [
+        "birthplace",
+        "place_of_birth"
+      ],
+      "gloss": "the place where someone was born",
+      "frequency": 2,
+      "hypernyms": [
+        "topographic_point.n.01"
+      ],
+      "display_parent": "topographic_point.n.01"
+    },
     "birthplace.n.02": {
       "label": [
         "birthplace",
@@ -10685,6 +10826,18 @@
         "natural_object.n.01"
       ],
       "display_parent": "natural_object.n.01"
+    },
+    "blackboard.n.01": {
+      "label": [
+        "blackboard",
+        "chalkboard"
+      ],
+      "gloss": "sheet of slate; for writing with chalk",
+      "frequency": 2,
+      "hypernyms": [
+        "sheet.n.06"
+      ],
+      "display_parent": "sheet.n.06"
     },
     "blackmailer.n.01": {
       "label": [
@@ -11893,6 +12046,21 @@
       ],
       "display_parent": "employment.n.03"
     },
+    "booklet.n.01": {
+      "label": [
+        "booklet",
+        "brochure",
+        "folder",
+        "leaflet",
+        "pamphlet"
+      ],
+      "gloss": "a small book usually having a paper cover",
+      "frequency": 1,
+      "hypernyms": [
+        "book.n.01"
+      ],
+      "display_parent": "book.n.01"
+    },
     "boom.n.01": {
       "label": [
         "boom",
@@ -12003,19 +12171,6 @@
       ],
       "display_parent": "employer.n.01"
     },
-    "boston.n.01": {
-      "label": [
-        "Boston",
-        "Hub_of_the_Universe",
-        "Bean_Town",
-        "Beantown",
-        "capital_of_Massachusetts"
-      ],
-      "gloss": "state capital and largest city of Massachusetts; a major center for banking and financial services",
-      "frequency": 13,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
-    },
     "bottle.n.01": {
       "label": [
         "bottle"
@@ -12062,6 +12217,30 @@
       ],
       "display_parent": "limb.n.02"
     },
+    "boulder.n.01": {
+      "label": [
+        "boulder",
+        "bowlder"
+      ],
+      "gloss": "a large smooth mass of rock detached from its place of origin",
+      "frequency": 2,
+      "hypernyms": [
+        "rock.n.01"
+      ],
+      "display_parent": "rock.n.01"
+    },
+    "bounce.n.01": {
+      "label": [
+        "bounce",
+        "bounciness"
+      ],
+      "gloss": "the quality of a substance that is able to rebound",
+      "frequency": 2,
+      "hypernyms": [
+        "elasticity.n.01"
+      ],
+      "display_parent": "elasticity.n.01"
+    },
     "bounce.n.03": {
       "label": [
         "bounce",
@@ -12073,6 +12252,18 @@
         "recoil.n.02"
       ],
       "display_parent": "recoil.n.02"
+    },
+    "bound_morpheme.n.01": {
+      "label": [
+        "bound_morpheme",
+        "bound_form"
+      ],
+      "gloss": "a morpheme that occurs only as part of a larger construction; eg an -s at the end of plural nouns",
+      "frequency": 0,
+      "hypernyms": [
+        "morpheme.n.01"
+      ],
+      "display_parent": "morpheme.n.01"
     },
     "boundary.n.01": {
       "label": [
@@ -12185,6 +12376,18 @@
         "knot.n.02"
       ],
       "display_parent": "knot.n.02"
+    },
+    "bow.n.07": {
+      "label": [
+        "bow",
+        "curtain_call"
+      ],
+      "gloss": "an appearance by actors or performers at the end of the concert or play in order to acknowledge the applause of the audience",
+      "frequency": 2,
+      "hypernyms": [
+        "thanks.n.01"
+      ],
+      "display_parent": "thanks.n.01"
     },
     "bowed_stringed_instrument.n.01": {
       "label": [
@@ -12489,17 +12692,6 @@
         "ostentation.n.01"
       ],
       "display_parent": "ostentation.n.01"
-    },
-    "brazil.n.01": {
-      "label": [
-        "Brazil",
-        "Federative_Republic_of_Brazil",
-        "Brasil"
-      ],
-      "gloss": "the largest Latin American country and the largest Portuguese speaking country in the world; located in the central and northeastern part of South America; world's leading coffee exporter",
-      "frequency": 2,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
     },
     "bread.n.01": {
       "label": [
@@ -12920,6 +13112,18 @@
       ],
       "display_parent": "light.n.07"
     },
+    "brilliance.n.03": {
+      "label": [
+        "brilliance",
+        "genius"
+      ],
+      "gloss": "unusual mental ability",
+      "frequency": 2,
+      "hypernyms": [
+        "intelligence.n.01"
+      ],
+      "display_parent": "intelligence.n.01"
+    },
     "brink.n.01": {
       "label": [
         "brink",
@@ -13043,16 +13247,6 @@
       ],
       "display_parent": "telecommunication.n.01"
     },
-    "broadway.n.01": {
-      "label": [
-        "Broadway",
-        "Great_White_Way"
-      ],
-      "gloss": "a street in Manhattan that passes through Times Square; famous for its theaters",
-      "frequency": 4,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
-    },
     "bronchial_artery.n.01": {
       "label": [
         "bronchial_artery"
@@ -13137,15 +13331,6 @@
         "stream.n.01"
       ],
       "display_parent": "stream.n.01"
-    },
-    "brooklyn.n.01": {
-      "label": [
-        "Brooklyn"
-      ],
-      "gloss": "a borough of New York City",
-      "frequency": 6,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
     },
     "broom.n.01": {
       "label": [
@@ -13356,19 +13541,6 @@
         "flower.n.02"
       ],
       "display_parent": "flower.n.02"
-    },
-    "buddha.n.01": {
-      "label": [
-        "Buddha",
-        "Siddhartha",
-        "Gautama",
-        "Gautama_Siddhartha",
-        "Gautama_Buddha"
-      ],
-      "gloss": "founder of Buddhism; worshipped as a god (c 563-483 BC)",
-      "frequency": 3,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
     },
     "buddy.n.01": {
       "label": [
@@ -13597,6 +13769,18 @@
         "score.n.10"
       ],
       "display_parent": "score.n.10"
+    },
+    "bull's_eye.n.02": {
+      "label": [
+        "bull's_eye",
+        "bull"
+      ],
+      "gloss": "the center of a target",
+      "frequency": 2,
+      "hypernyms": [
+        "center.n.04"
+      ],
+      "display_parent": "center.n.04"
     },
     "bull.n.05": {
       "label": [
@@ -14159,6 +14343,18 @@
       ],
       "display_parent": "fastener.n.02"
     },
+    "butylene.n.01": {
+      "label": [
+        "butylene",
+        "butene"
+      ],
+      "gloss": "any of three isomeric hydrocarbons C4H8; all used in making synthetic rubbers",
+      "frequency": 0,
+      "hypernyms": [
+        "gas.n.02"
+      ],
+      "display_parent": "gas.n.02"
+    },
     "buying.n.01": {
       "label": [
         "buying",
@@ -14364,17 +14560,6 @@
       ],
       "display_parent": "body.n.03"
     },
-    "caesar.n.01": {
-      "label": [
-        "Caesar",
-        "Julius_Caesar",
-        "Gaius_Julius_Caesar"
-      ],
-      "gloss": "conqueror of Gaul and master of Italy (100-44 BC)",
-      "frequency": 2,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
-    },
     "cafe.n.01": {
       "label": [
         "cafe",
@@ -14411,6 +14596,18 @@
         "enclosure.n.01"
       ],
       "display_parent": "enclosure.n.01"
+    },
+    "cake.n.01": {
+      "label": [
+        "cake",
+        "bar"
+      ],
+      "gloss": "a block of solid substance (such as soap or wax)",
+      "frequency": 2,
+      "hypernyms": [
+        "block.n.01"
+      ],
+      "display_parent": "block.n.01"
     },
     "cake.n.03": {
       "label": [
@@ -14538,17 +14735,22 @@
       ],
       "display_parent": "activity.n.01"
     },
-    "california.n.01": {
+    "caliph.n.01": {
       "label": [
-        "California",
-        "Golden_State",
-        "CA",
-        "Calif."
+        "caliph",
+        "calif",
+        "kaliph",
+        "kalif",
+        "khalif",
+        "khalifah"
       ],
-      "gloss": "a state in the western United States on the Pacific; the 3rd largest state; known for earthquakes",
-      "frequency": 13,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
+      "gloss": "the civil and religious leader of a Muslim state considered to be a representative of Allah on earth",
+      "frequency": 1,
+      "hypernyms": [
+        "muslim.n.01",
+        "ruler.n.01"
+      ],
+      "display_parent": "ruler.n.01"
     },
     "call.n.01": {
       "label": [
@@ -14573,6 +14775,18 @@
         "inclination.n.01"
       ],
       "display_parent": "inclination.n.01"
+    },
+    "call.n.04": {
+      "label": [
+        "call",
+        "claim"
+      ],
+      "gloss": "a demand especially in the phrase",
+      "frequency": 2,
+      "hypernyms": [
+        "demand.n.01"
+      ],
+      "display_parent": "demand.n.01"
     },
     "caller.n.01": {
       "label": [
@@ -14732,6 +14946,21 @@
       ],
       "display_parent": "politician.n.02"
     },
+    "campaigning.n.01": {
+      "label": [
+        "campaigning",
+        "candidacy",
+        "candidature",
+        "electioneering",
+        "political_campaign"
+      ],
+      "gloss": "the campaign of a candidate to be elected",
+      "frequency": 1,
+      "hypernyms": [
+        "campaign.n.02"
+      ],
+      "display_parent": "campaign.n.02"
+    },
     "camper.n.01": {
       "label": [
         "camper"
@@ -14797,15 +15026,6 @@
         "container.n.01"
       ],
       "display_parent": "container.n.01"
-    },
-    "canada.n.01": {
-      "label": [
-        "Canada"
-      ],
-      "gloss": "a nation in northern North America; the French were the first Europeans to settle in mainland Canada",
-      "frequency": 9,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
     },
     "cancer.n.01": {
       "label": [
@@ -14893,8 +15113,8 @@
       "gloss": "the most commonly used illicit drug; considered a soft drug, it consists of the dried leaves of the hemp plant; smoked or chewed for euphoric effect",
       "frequency": 0,
       "hypernyms": [
-        "controlled_substance.n.01",
-        "soft_drug.n.01"
+        "soft_drug.n.01",
+        "controlled_substance.n.01"
       ],
       "display_parent": "soft_drug.n.01"
     },
@@ -15159,16 +15379,6 @@
       ],
       "display_parent": "seat.n.05"
     },
-    "capital.n.06": {
-      "label": [
-        "Capital",
-        "Washington"
-      ],
-      "gloss": "the federal government of the United States",
-      "frequency": 2,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
-    },
     "capital_gain.n.01": {
       "label": [
         "capital_gain"
@@ -15409,6 +15619,18 @@
       ],
       "display_parent": "solvent.n.01"
     },
+    "carcase.n.01": {
+      "label": [
+        "carcase",
+        "carcass"
+      ],
+      "gloss": "the dead body of an animal especially one slaughtered and dressed for food",
+      "frequency": 2,
+      "hypernyms": [
+        "body.n.03"
+      ],
+      "display_parent": "body.n.03"
+    },
     "card.n.01": {
       "label": [
         "card"
@@ -15453,6 +15675,18 @@
         "compass_point.n.01"
       ],
       "display_parent": "compass_point.n.01"
+    },
+    "cardinal_number.n.01": {
+      "label": [
+        "cardinal_number",
+        "cardinal"
+      ],
+      "gloss": "the number of elements in a mathematical set; denotes a quantity but not the order",
+      "frequency": 0,
+      "hypernyms": [
+        "number.n.02"
+      ],
+      "display_parent": "number.n.02"
     },
     "cardinal_virtue.n.01": {
       "label": [
@@ -15785,6 +16019,18 @@
         "supply_chamber.n.01"
       ],
       "display_parent": "supply_chamber.n.01"
+    },
+    "caruncle.n.01": {
+      "label": [
+        "caruncle",
+        "caruncula"
+      ],
+      "gloss": "an outgrowth on a plant or animal such as a fowl's wattle or a protuberance near the hilum of certain seeds",
+      "frequency": 0,
+      "hypernyms": [
+        "process.n.05"
+      ],
+      "display_parent": "process.n.05"
     },
     "case.n.01": {
       "label": [
@@ -17654,6 +17900,18 @@
       ],
       "display_parent": "substance.n.01"
     },
+    "chemical_equilibrium.n.01": {
+      "label": [
+        "chemical_equilibrium",
+        "equilibrium"
+      ],
+      "gloss": "a chemical reaction and its reverse proceed at equal rates",
+      "frequency": 2,
+      "hypernyms": [
+        "chemical_reaction.n.01"
+      ],
+      "display_parent": "chemical_reaction.n.01"
+    },
     "chemical_phenomenon.n.01": {
       "label": [
         "chemical_phenomenon"
@@ -17737,26 +17995,6 @@
         "furniture.n.01"
       ],
       "display_parent": "furniture.n.01"
-    },
-    "cheyenne.n.01": {
-      "label": [
-        "Cheyenne",
-        "capital_of_Wyoming"
-      ],
-      "gloss": "the capital and largest city of Wyoming; located in the southeastern corner of the state",
-      "frequency": 2,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
-    },
-    "chicago.n.01": {
-      "label": [
-        "Chicago",
-        "Windy_City"
-      ],
-      "gloss": "largest city in Illinois; a bustling Great Lakes port that extends 26 miles along the southwestern shoreline of Lake Michigan",
-      "frequency": 25,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
     },
     "chick.n.01": {
       "label": [
@@ -17914,21 +18152,6 @@
       ],
       "display_parent": "feature.n.02"
     },
-    "china.n.01": {
-      "label": [
-        "China",
-        "People's_Republic_of_China",
-        "mainland_China",
-        "Communist_China",
-        "Red_China",
-        "PRC",
-        "Cathay"
-      ],
-      "gloss": "a communist nation that covers a vast territory in eastern Asia; the most populous country in the world",
-      "frequency": 7,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
-    },
     "china.n.02": {
       "label": [
         "china"
@@ -18007,8 +18230,8 @@
       "gloss": "a common nonmetallic element belonging to the halogens; best known as a heavy yellow irritating toxic gas; used to purify water and as a bleaching agent and disinfectant; occurs naturally only as a salt (as in sea water)",
       "frequency": 32,
       "hypernyms": [
-        "halogen.n.01",
         "gas.n.02",
+        "halogen.n.01",
         "chemical_element.n.01"
       ],
       "display_parent": "gas.n.02"
@@ -18198,8 +18421,8 @@
       "frequency": 2,
       "hypernyms": [
         "holy_day_of_obligation.n.01",
-        "feast_day.n.01",
         "quarter_day.n.01",
+        "feast_day.n.01",
         "legal_holiday.n.01"
       ],
       "display_parent": "legal_holiday.n.01"
@@ -18538,6 +18761,18 @@
         "information.n.02"
       ],
       "display_parent": "information.n.02"
+    },
+    "citation.n.01": {
+      "label": [
+        "citation",
+        "commendation"
+      ],
+      "gloss": "an official award (as for bravery or service) usually given as formal public statement",
+      "frequency": 2,
+      "hypernyms": [
+        "award.n.02"
+      ],
+      "display_parent": "award.n.02"
     },
     "citation.n.03": {
       "label": [
@@ -19096,15 +19331,6 @@
       ],
       "display_parent": "employee.n.01"
     },
-    "cleveland.n.01": {
-      "label": [
-        "Cleveland"
-      ],
-      "gloss": "the largest city in Ohio; located in northeastern Ohio on Lake Erie; a major Great Lakes port",
-      "frequency": 5,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
-    },
     "client.n.01": {
       "label": [
         "client"
@@ -19152,6 +19378,18 @@
         "condition.n.01"
       ],
       "display_parent": "condition.n.01"
+    },
+    "climax.n.01": {
+      "label": [
+        "climax",
+        "flood_tide"
+      ],
+      "gloss": "the highest point of anything conceived of as growing or developing or unfolding",
+      "frequency": 2,
+      "hypernyms": [
+        "juncture.n.01"
+      ],
+      "display_parent": "juncture.n.01"
     },
     "clique.n.01": {
       "label": [
@@ -19353,6 +19591,18 @@
       ],
       "display_parent": "bad_weather.n.01"
     },
+    "clown.n.01": {
+      "label": [
+        "clown",
+        "buffoon"
+      ],
+      "gloss": "a rude or vulgar fool",
+      "frequency": 2,
+      "hypernyms": [
+        "fool.n.01"
+      ],
+      "display_parent": "fool.n.01"
+    },
     "club.n.02": {
       "label": [
         "club",
@@ -19523,6 +19773,21 @@
         "black.n.01"
       ],
       "display_parent": "black.n.01"
+    },
+    "coalescence.n.01": {
+      "label": [
+        "coalescence",
+        "coalescency",
+        "coalition",
+        "concretion",
+        "conglutination"
+      ],
+      "gloss": "the union of diverse things into one body or form or group; the growing together of parts",
+      "frequency": 1,
+      "hypernyms": [
+        "union.n.11"
+      ],
+      "display_parent": "union.n.11"
     },
     "coat.n.01": {
       "label": [
@@ -19895,6 +20160,22 @@
       ],
       "display_parent": "weather.n.01"
     },
+    "coldness.n.02": {
+      "label": [
+        "coldness",
+        "coolness",
+        "frigidity",
+        "frigidness",
+        "iciness",
+        "chilliness"
+      ],
+      "gloss": "a lack of affection or enthusiasm",
+      "frequency": 1,
+      "hypernyms": [
+        "unemotionality.n.02"
+      ],
+      "display_parent": "unemotionality.n.02"
+    },
     "coldness.n.03": {
       "label": [
         "coldness",
@@ -20240,17 +20521,6 @@
       ],
       "display_parent": "television.n.02"
     },
-    "colorado.n.01": {
-      "label": [
-        "Colorado",
-        "Centennial_State",
-        "CO"
-      ],
-      "gloss": "a state in west central United States in the Rocky Mountains",
-      "frequency": 2,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
-    },
     "coloring.n.03": {
       "label": [
         "coloring",
@@ -20326,16 +20596,6 @@
         "gallinaceous_bird.n.01"
       ],
       "display_parent": "gallinaceous_bird.n.01"
-    },
-    "columbus.n.01": {
-      "label": [
-        "Columbus",
-        "capital_of_Ohio"
-      ],
-      "gloss": "the state capital of Ohio; located in the center of the state; site of Ohio State University",
-      "frequency": 4,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
     },
     "column.n.01": {
       "label": [
@@ -21341,6 +21601,18 @@
       ],
       "display_parent": "direction.n.02"
     },
+    "compassion.n.01": {
+      "label": [
+        "compassion",
+        "compassionateness"
+      ],
+      "gloss": "a deep awareness of and sympathy for another's suffering",
+      "frequency": 2,
+      "hypernyms": [
+        "sympathy.n.02"
+      ],
+      "display_parent": "sympathy.n.02"
+    },
     "compatibility.n.02": {
       "label": [
         "compatibility"
@@ -21409,6 +21681,18 @@
         "group_action.n.01"
       ],
       "display_parent": "group_action.n.01"
+    },
+    "competitiveness.n.01": {
+      "label": [
+        "competitiveness",
+        "fight"
+      ],
+      "gloss": "an aggressive willingness to compete",
+      "frequency": 2,
+      "hypernyms": [
+        "aggressiveness.n.01"
+      ],
+      "display_parent": "aggressiveness.n.01"
     },
     "complacency.n.01": {
       "label": [
@@ -22157,6 +22441,18 @@
       ],
       "display_parent": "materiality.n.02"
     },
+    "concretism.n.01": {
+      "label": [
+        "concretism",
+        "concrete_representation"
+      ],
+      "gloss": "a representation of an abstract idea in concrete terms",
+      "frequency": 0,
+      "hypernyms": [
+        "representation.n.01"
+      ],
+      "display_parent": "representation.n.01"
+    },
     "concurrence.n.04": {
       "label": [
         "concurrence",
@@ -22339,20 +22635,6 @@
         "artifact.n.01"
       ],
       "display_parent": "artifact.n.01"
-    },
-    "confederacy.n.01": {
-      "label": [
-        "Confederacy",
-        "Confederate_States",
-        "Confederate_States_of_America",
-        "South",
-        "Dixie",
-        "Dixieland"
-      ],
-      "gloss": "the southern states that seceded from the United States in 1861",
-      "frequency": 6,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
     },
     "confederate.n.01": {
       "label": [
@@ -22729,18 +23011,6 @@
       ],
       "display_parent": "protein.n.01"
     },
-    "connecticut.n.01": {
-      "label": [
-        "Connecticut",
-        "Nutmeg_State",
-        "Constitution_State",
-        "CT"
-      ],
-      "gloss": "a New England state; one of the original 13 colonies",
-      "frequency": 3,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
-    },
     "connection.n.01": {
       "label": [
         "connection",
@@ -22792,6 +23062,18 @@
         "animal_tissue.n.01"
       ],
       "display_parent": "animal_tissue.n.01"
+    },
+    "connoisseur.n.01": {
+      "label": [
+        "connoisseur",
+        "cognoscente"
+      ],
+      "gloss": "an expert able to appreciate a field; especially in the fine arts",
+      "frequency": 2,
+      "hypernyms": [
+        "authority.n.03"
+      ],
+      "display_parent": "authority.n.03"
     },
     "conquest.n.01": {
       "label": [
@@ -23724,6 +24006,18 @@
       ],
       "display_parent": "written_agreement.n.01"
     },
+    "contract.n.02": {
+      "label": [
+        "contract",
+        "declaration"
+      ],
+      "gloss": "(contract bridge) the highest bid becomes the contract setting the number of tricks that the bidder must make",
+      "frequency": 2,
+      "hypernyms": [
+        "bid.n.04"
+      ],
+      "display_parent": "bid.n.04"
+    },
     "contractile_organ.n.01": {
       "label": [
         "contractile_organ",
@@ -24115,6 +24409,21 @@
       ],
       "display_parent": "instrumentality.n.03"
     },
+    "conveyer_belt.n.01": {
+      "label": [
+        "conveyer_belt",
+        "conveyor_belt",
+        "conveyer",
+        "conveyor",
+        "transporter"
+      ],
+      "gloss": "a moving belt that transports objects (as in a factory)",
+      "frequency": 1,
+      "hypernyms": [
+        "belt.n.01"
+      ],
+      "display_parent": "belt.n.01"
+    },
     "convict.n.01": {
       "label": [
         "convict",
@@ -24266,17 +24575,6 @@
         "commercial_enterprise.n.01"
       ],
       "display_parent": "commercial_enterprise.n.01"
-    },
-    "copenhagen.n.01": {
-      "label": [
-        "Copenhagen",
-        "Kobenhavn",
-        "Danish_capital"
-      ],
-      "gloss": "the capital and largest city of Denmark; located on the island of Zealand",
-      "frequency": 4,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
     },
     "copper-base_alloy.n.01": {
       "label": [
@@ -25366,6 +25664,18 @@
       ],
       "display_parent": "person.n.01"
     },
+    "cowardice.n.01": {
+      "label": [
+        "cowardice",
+        "cowardliness"
+      ],
+      "gloss": "the trait of lacking courage",
+      "frequency": 2,
+      "hypernyms": [
+        "spirit.n.03"
+      ],
+      "display_parent": "spirit.n.03"
+    },
     "cowboy.n.01": {
       "label": [
         "cowboy",
@@ -25383,6 +25693,18 @@
         "ranch_hand.n.01"
       ],
       "display_parent": "ranch_hand.n.01"
+    },
+    "coyness.n.01": {
+      "label": [
+        "coyness",
+        "demureness"
+      ],
+      "gloss": "the affectation of being demure in a provocative way",
+      "frequency": 2,
+      "hypernyms": [
+        "affectedness.n.01"
+      ],
+      "display_parent": "affectedness.n.01"
     },
     "crack.n.01": {
       "label": [
@@ -25755,6 +26077,18 @@
         "unit.n.03"
       ],
       "display_parent": "unit.n.03"
+    },
+    "crewman.n.02": {
+      "label": [
+        "crewman",
+        "crew_member"
+      ],
+      "gloss": "a member of a flight crew",
+      "frequency": 2,
+      "hypernyms": [
+        "skilled_worker.n.01"
+      ],
+      "display_parent": "skilled_worker.n.01"
     },
     "crib.n.01": {
       "label": [
@@ -26182,16 +26516,6 @@
       ],
       "display_parent": "male_child.n.01"
     },
-    "cuba.n.01": {
-      "label": [
-        "Cuba",
-        "Republic_of_Cuba"
-      ],
-      "gloss": "a communist state in the Caribbean on the island of Cuba",
-      "frequency": 17,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
-    },
     "cube.n.01": {
       "label": [
         "cube",
@@ -26215,6 +26539,18 @@
         "block.n.01"
       ],
       "display_parent": "block.n.01"
+    },
+    "cubic_foot.n.01": {
+      "label": [
+        "cubic_foot",
+        "cu_ft"
+      ],
+      "gloss": "the volume equal to a cube one foot on each side",
+      "frequency": 2,
+      "hypernyms": [
+        "volume_unit.n.01"
+      ],
+      "display_parent": "volume_unit.n.01"
     },
     "cubism.n.01": {
       "label": [
@@ -26673,6 +27009,17 @@
       ],
       "display_parent": "pedaler.n.01"
     },
+    "cylinder.n.02": {
+      "label": [
+        "cylinder"
+      ],
+      "gloss": "a surface generated by rotating a parallel line around a fixed line",
+      "frequency": 0,
+      "hypernyms": [
+        "round_shape.n.01"
+      ],
+      "display_parent": "round_shape.n.01"
+    },
     "cyst.n.01": {
       "label": [
         "cyst"
@@ -26695,15 +27042,6 @@
         "protoplasm.n.01"
       ],
       "display_parent": "protoplasm.n.01"
-    },
-    "czechoslovakia.n.01": {
-      "label": [
-        "Czechoslovakia"
-      ],
-      "gloss": "a former republic in central Europe; divided into Czech Republic and Slovakia in 1993",
-      "frequency": 4,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
     },
     "dad.n.01": {
       "label": [
@@ -26793,15 +27131,6 @@
         "platform.n.01"
       ],
       "display_parent": "platform.n.01"
-    },
-    "dallas.n.01": {
-      "label": [
-        "Dallas"
-      ],
-      "gloss": "a large commercial and industrial city in northeastern Texas located in the heart of the northern Texas oil fields",
-      "frequency": 19,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
     },
     "dam.n.01": {
       "label": [
@@ -27023,6 +27352,22 @@
         "causal_agent.n.01"
       ],
       "display_parent": "causal_agent.n.01"
+    },
+    "daredevil.n.01": {
+      "label": [
+        "daredevil",
+        "madcap",
+        "hothead",
+        "swashbuckler",
+        "lunatic",
+        "harum-scarum"
+      ],
+      "gloss": "a reckless impetuous irresponsible person",
+      "frequency": 1,
+      "hypernyms": [
+        "adventurer.n.01"
+      ],
+      "display_parent": "adventurer.n.01"
     },
     "dark.n.01": {
       "label": [
@@ -27523,15 +27868,6 @@
       ],
       "display_parent": "end.n.02"
     },
-    "death.n.06": {
-      "label": [
-        "Death"
-      ],
-      "gloss": "the personification of death",
-      "frequency": 3,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
-    },
     "debate.n.02": {
       "label": [
         "debate",
@@ -27746,15 +28082,6 @@
       ],
       "display_parent": "statement.n.01"
     },
-    "declaration_of_independence.n.01": {
-      "label": [
-        "Declaration_of_Independence"
-      ],
-      "gloss": "the document recording the proclamation of the second Continental Congress (4 July 1776) asserting the independence of the Colonies from Great Britain",
-      "frequency": 5,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
-    },
     "decline.n.01": {
       "label": [
         "decline",
@@ -27855,6 +28182,18 @@
         "process.n.06"
       ],
       "display_parent": "process.n.06"
+    },
+    "decrease.n.03": {
+      "label": [
+        "decrease",
+        "decrement"
+      ],
+      "gloss": "the amount by which something decreases",
+      "frequency": 2,
+      "hypernyms": [
+        "amount.n.02"
+      ],
+      "display_parent": "amount.n.02"
     },
     "decrease.n.04": {
       "label": [
@@ -28064,6 +28403,23 @@
         "justification.n.02"
       ],
       "display_parent": "justification.n.02"
+    },
+    "defense_mechanism.n.01": {
+      "label": [
+        "defense_mechanism",
+        "defense_reaction",
+        "defence_mechanism",
+        "defence_reaction",
+        "defense",
+        "defence"
+      ],
+      "gloss": "(psychiatry) an unconscious process that tries to reduce the anxiety associated with instinctive desires",
+      "frequency": 1,
+      "hypernyms": [
+        "psychoanalytic_process.n.01",
+        "process.n.04"
+      ],
+      "display_parent": "process.n.04"
     },
     "defense_program.n.01": {
       "label": [
@@ -28538,17 +28894,6 @@
       ],
       "display_parent": "assertion.n.01"
     },
-    "denmark.n.01": {
-      "label": [
-        "Denmark",
-        "Kingdom_of_Denmark",
-        "Danmark"
-      ],
-      "gloss": "a constitutional monarchy in northern Europe; consists of the mainland of Jutland and many islands between the North Sea and the Baltic Sea",
-      "frequency": 4,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
-    },
     "denomination.n.01": {
       "label": [
         "denomination"
@@ -28619,17 +28964,6 @@
         "speech_act.n.01"
       ],
       "display_parent": "speech_act.n.01"
-    },
-    "denver.n.01": {
-      "label": [
-        "Denver",
-        "Mile-High_City",
-        "capital_of_Colorado"
-      ],
-      "gloss": "the state capital and largest city of Colorado; located in central Colorado on the South Platte river",
-      "frequency": 8,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
     },
     "department.n.01": {
       "label": [
@@ -28754,6 +29088,18 @@
         "responsibility.n.03"
       ],
       "display_parent": "responsibility.n.03"
+    },
+    "dependant.n.01": {
+      "label": [
+        "dependant",
+        "dependent"
+      ],
+      "gloss": "a person who relies on another person for support (especially financial support)",
+      "frequency": 2,
+      "hypernyms": [
+        "recipient.n.01"
+      ],
+      "display_parent": "recipient.n.01"
     },
     "dependence.n.01": {
       "label": [
@@ -28918,6 +29264,18 @@
         "lawman.n.01"
       ],
       "display_parent": "lawman.n.01"
+    },
+    "deputy.n.02": {
+      "label": [
+        "deputy",
+        "lieutenant"
+      ],
+      "gloss": "an assistant with power to act when his superior is absent",
+      "frequency": 2,
+      "hypernyms": [
+        "assistant.n.01"
+      ],
+      "display_parent": "assistant.n.01"
     },
     "derision.n.01": {
       "label": [
@@ -29162,6 +29520,17 @@
         "feeling.n.01"
       ],
       "display_parent": "feeling.n.01"
+    },
+    "desperate.n.01": {
+      "label": [
+        "desperate"
+      ],
+      "gloss": "a person who is frightened and in need of help",
+      "frequency": 1,
+      "hypernyms": [
+        "unfortunate.n.01"
+      ],
+      "display_parent": "unfortunate.n.01"
     },
     "dessert.n.01": {
       "label": [
@@ -29473,17 +29842,6 @@
       ],
       "display_parent": "damage.n.01"
     },
-    "detroit.n.01": {
-      "label": [
-        "Detroit",
-        "Motor_City",
-        "Motown"
-      ],
-      "gloss": "the largest city in Michigan and a major Great Lakes port; center of the United States automobile industry; located in southeastern Michigan on the Detroit river across from Windsor",
-      "frequency": 9,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
-    },
     "devastation.n.01": {
       "label": [
         "devastation",
@@ -29789,6 +30147,18 @@
       ],
       "display_parent": "script.n.01"
     },
+    "dialogue.n.03": {
+      "label": [
+        "dialogue",
+        "dialog"
+      ],
+      "gloss": "a literary composition in the form of a conversation between two people",
+      "frequency": 2,
+      "hypernyms": [
+        "literary_composition.n.01"
+      ],
+      "display_parent": "literary_composition.n.01"
+    },
     "dialysis.n.01": {
       "label": [
         "dialysis"
@@ -29843,8 +30213,8 @@
       "gloss": "(anatomy) a muscular partition separating the abdominal and thoracic cavities; functions in respiration",
       "frequency": 2,
       "hypernyms": [
-        "membrane.n.02",
-        "muscular_structure.n.01"
+        "muscular_structure.n.01",
+        "membrane.n.02"
       ],
       "display_parent": "muscular_structure.n.01"
     },
@@ -31008,6 +31378,18 @@
       ],
       "display_parent": "inclination.n.01"
     },
+    "disguise.n.01": {
+      "label": [
+        "disguise",
+        "camouflage"
+      ],
+      "gloss": "an outward semblance that misrepresents the true nature of something",
+      "frequency": 2,
+      "hypernyms": [
+        "semblance.n.01"
+      ],
+      "display_parent": "semblance.n.01"
+    },
     "disgust.n.01": {
       "label": [
         "disgust"
@@ -31782,17 +32164,6 @@
       ],
       "display_parent": "director.n.01"
     },
-    "district_of_columbia.n.01": {
-      "label": [
-        "District_of_Columbia",
-        "D.C.",
-        "DC"
-      ],
-      "gloss": "the district occupied entirely by the city of Washington; chosen by George Washington as the site of the capital of the United States and created out of land ceded by Maryland and Virginia",
-      "frequency": 19,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
-    },
     "disturbance.n.02": {
       "label": [
         "disturbance",
@@ -31936,6 +32307,18 @@
         "attack.n.01"
       ],
       "display_parent": "attack.n.01"
+    },
+    "divertimento.n.01": {
+      "label": [
+        "divertimento",
+        "serenade"
+      ],
+      "gloss": "a musical composition in several movements; has no fixed form",
+      "frequency": 2,
+      "hypernyms": [
+        "musical_composition.n.01"
+      ],
+      "display_parent": "musical_composition.n.01"
     },
     "divestiture.n.01": {
       "label": [
@@ -32188,6 +32571,18 @@
       ],
       "display_parent": "bill.n.03"
     },
+    "dollar_volume.n.01": {
+      "label": [
+        "dollar_volume",
+        "turnover"
+      ],
+      "gloss": "the volume measured in dollars",
+      "frequency": 2,
+      "hypernyms": [
+        "bulk.n.02"
+      ],
+      "display_parent": "bulk.n.02"
+    },
     "domain.n.02": {
       "label": [
         "domain",
@@ -32319,15 +32714,6 @@
         "dominance.n.02"
       ],
       "display_parent": "dominance.n.02"
-    },
-    "don_quixote.n.01": {
-      "label": [
-        "Don_Quixote"
-      ],
-      "gloss": "the hero of a romance by Cervantes; chivalrous but impractical",
-      "frequency": 3,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
     },
     "donor.n.01": {
       "label": [
@@ -33278,6 +33664,22 @@
       ],
       "display_parent": "drinker.n.02"
     },
+    "drunkenness.n.01": {
+      "label": [
+        "drunkenness",
+        "inebriation",
+        "inebriety",
+        "intoxication",
+        "tipsiness",
+        "insobriety"
+      ],
+      "gloss": "a temporary state resulting from excessive consumption of alcohol",
+      "frequency": 1,
+      "hypernyms": [
+        "temporary_state.n.01"
+      ],
+      "display_parent": "temporary_state.n.01"
+    },
     "dry_unit.n.01": {
       "label": [
         "dry_unit",
@@ -33420,6 +33822,22 @@
         "weight.n.02"
       ],
       "display_parent": "weight.n.02"
+    },
+    "dumbbell.n.02": {
+      "label": [
+        "dumbbell",
+        "dummy",
+        "dope",
+        "boob",
+        "booby",
+        "pinhead"
+      ],
+      "gloss": "an ignorant or foolish person",
+      "frequency": 1,
+      "hypernyms": [
+        "simpleton.n.01"
+      ],
+      "display_parent": "simpleton.n.01"
     },
     "dump.n.02": {
       "label": [
@@ -33722,18 +34140,6 @@
       ],
       "display_parent": "range.n.02"
     },
-    "earth.n.01": {
-      "label": [
-        "Earth",
-        "earth",
-        "world",
-        "globe"
-      ],
-      "gloss": "the 3rd planet from the sun; the planet we live on",
-      "frequency": 82,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
-    },
     "earth.n.02": {
       "label": [
         "earth",
@@ -33796,16 +34202,6 @@
         "cardinal_compass_point.n.01"
       ],
       "display_parent": "cardinal_compass_point.n.01"
-    },
-    "east.n.02": {
-      "label": [
-        "East",
-        "Orient"
-      ],
-      "gloss": "the countries of Asia",
-      "frequency": 5,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
     },
     "easter.n.01": {
       "label": [
@@ -33883,6 +34279,18 @@
         "reflection.n.08"
       ],
       "display_parent": "reflection.n.08"
+    },
+    "eclipse.n.01": {
+      "label": [
+        "eclipse",
+        "occultation"
+      ],
+      "gloss": "one celestial body obscures another",
+      "frequency": 2,
+      "hypernyms": [
+        "interruption.n.02"
+      ],
+      "display_parent": "interruption.n.02"
     },
     "ecliptic.n.01": {
       "label": [
@@ -34477,17 +34885,6 @@
         "act.n.02"
       ],
       "display_parent": "act.n.02"
-    },
-    "egypt.n.01": {
-      "label": [
-        "Egypt",
-        "Arab_Republic_of_Egypt",
-        "United_Arab_Republic"
-      ],
-      "gloss": "a republic in northeastern Africa known as the United Arab Republic until 1971; site of an ancient civilization that flourished from 2600 to 30 BC",
-      "frequency": 2,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
     },
     "eight.n.01": {
       "label": [
@@ -35806,15 +36203,6 @@
       ],
       "display_parent": "discipline.n.01"
     },
-    "england.n.01": {
-      "label": [
-        "England"
-      ],
-      "gloss": "a division of the United Kingdom",
-      "frequency": 39,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
-    },
     "english.n.01": {
       "label": [
         "English",
@@ -35895,6 +36283,18 @@
       ],
       "display_parent": "pleasure.n.01"
     },
+    "enjoyment.n.02": {
+      "label": [
+        "enjoyment",
+        "delectation"
+      ],
+      "gloss": "act of receiving pleasure from something",
+      "frequency": 2,
+      "hypernyms": [
+        "activity.n.01"
+      ],
+      "display_parent": "activity.n.01"
+    },
     "enlargement.n.02": {
       "label": [
         "enlargement"
@@ -35938,6 +36338,22 @@
         "serviceman.n.01"
       ],
       "display_parent": "serviceman.n.01"
+    },
+    "enlistment.n.01": {
+      "label": [
+        "enlistment",
+        "hitch",
+        "term_of_enlistment",
+        "tour_of_duty",
+        "duty_tour",
+        "tour"
+      ],
+      "gloss": "a period of time spent in military service",
+      "frequency": 1,
+      "hypernyms": [
+        "time_period.n.01"
+      ],
+      "display_parent": "time_period.n.01"
     },
     "enormousness.n.01": {
       "label": [
@@ -36560,6 +36976,18 @@
       ],
       "display_parent": "evil.n.03"
     },
+    "error.n.07": {
+      "label": [
+        "error",
+        "mistake"
+      ],
+      "gloss": "part of a statement that is not correct",
+      "frequency": 2,
+      "hypernyms": [
+        "misstatement.n.01"
+      ],
+      "display_parent": "misstatement.n.01"
+    },
     "eruditeness.n.01": {
       "label": [
         "eruditeness",
@@ -36760,6 +37188,18 @@
       ],
       "display_parent": "stuff.n.02"
     },
+    "eternal_life.n.01": {
+      "label": [
+        "eternal_life",
+        "life_eternal"
+      ],
+      "gloss": "life without beginning or end",
+      "frequency": 2,
+      "hypernyms": [
+        "animation.n.01"
+      ],
+      "display_parent": "animation.n.01"
+    },
     "eternity.n.01": {
       "label": [
         "eternity",
@@ -36847,15 +37287,6 @@
       ],
       "display_parent": "linguistics.n.01"
     },
-    "europe.n.01": {
-      "label": [
-        "Europe"
-      ],
-      "gloss": "the 2nd smallest continent (actually a vast peninsula of Eurasia); the British use `Europe' to refer to all of the continent except the British Isles",
-      "frequency": 28,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
-    },
     "european.n.01": {
       "label": [
         "European"
@@ -36942,15 +37373,6 @@
         "negligence.n.01"
       ],
       "display_parent": "negligence.n.01"
-    },
-    "eve.n.01": {
-      "label": [
-        "Eve"
-      ],
-      "gloss": "(Old Testament) Adam's wife in Judeo-Christian mythology: the first woman and mother of the human race; God created Eve from Adam's rib and placed Adam and Eve in the Garden of Eden",
-      "frequency": 7,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
     },
     "even-toed_ungulate.n.01": {
       "label": [
@@ -37591,6 +38013,18 @@
         "absentee.n.01"
       ],
       "display_parent": "absentee.n.01"
+    },
+    "exile.n.02": {
+      "label": [
+        "exile",
+        "deportee"
+      ],
+      "gloss": "a person who is expelled from home or country by authority",
+      "frequency": 2,
+      "hypernyms": [
+        "foreigner.n.01"
+      ],
+      "display_parent": "foreigner.n.01"
     },
     "exit.n.01": {
       "label": [
@@ -38841,15 +39275,6 @@
       ],
       "display_parent": "season.n.02"
     },
-    "fall.n.03": {
-      "label": [
-        "Fall"
-      ],
-      "gloss": "the lapse of mankind into sinfulness because of the sin of Adam and Eve",
-      "frequency": 3,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
-    },
     "fallout.n.01": {
       "label": [
         "fallout",
@@ -39313,17 +39738,6 @@
         "title.n.06"
       ],
       "display_parent": "priest.n.01"
-    },
-    "father.n.06": {
-      "label": [
-        "Father",
-        "Father-God",
-        "Fatherhood"
-      ],
-      "gloss": "God when considered as the first person in the Trinity",
-      "frequency": 2,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
     },
     "fatherland.n.01": {
       "label": [
@@ -40220,6 +40634,30 @@
         "large_integer.n.01"
       ],
       "display_parent": "large_integer.n.01"
+    },
+    "fifties.n.01": {
+      "label": [
+        "fifties",
+        "1950s"
+      ],
+      "gloss": "the decade from 1950 to 1959",
+      "frequency": 2,
+      "hypernyms": [
+        "decade.n.01"
+      ],
+      "display_parent": "decade.n.01"
+    },
+    "fifties.n.02": {
+      "label": [
+        "fifties",
+        "mid-fifties"
+      ],
+      "gloss": "the time of life between 50 and 60",
+      "frequency": 2,
+      "hypernyms": [
+        "time_of_life.n.01"
+      ],
+      "display_parent": "time_of_life.n.01"
     },
     "fifty.n.01": {
       "label": [
@@ -41139,6 +41577,18 @@
       ],
       "display_parent": "brightness.n.01"
     },
+    "flash.n.03": {
+      "label": [
+        "flash",
+        "flashing"
+      ],
+      "gloss": "a short vivid experience",
+      "frequency": 2,
+      "hypernyms": [
+        "experience.n.03"
+      ],
+      "display_parent": "experience.n.03"
+    },
     "flashlight.n.01": {
       "label": [
         "flashlight",
@@ -41236,6 +41686,18 @@
         "malleability.n.01"
       ],
       "display_parent": "malleability.n.01"
+    },
+    "flexibility.n.02": {
+      "label": [
+        "flexibility",
+        "flexibleness"
+      ],
+      "gloss": "the quality of being adaptable or variable",
+      "frequency": 2,
+      "hypernyms": [
+        "adaptability.n.01"
+      ],
+      "display_parent": "adaptability.n.01"
     },
     "flicker.n.01": {
       "label": [
@@ -41448,18 +41910,6 @@
         "leaf.n.01"
       ],
       "display_parent": "leaf.n.01"
-    },
-    "florida.n.01": {
-      "label": [
-        "Florida",
-        "Sunshine_State",
-        "Everglade_State",
-        "FL"
-      ],
-      "gloss": "a state in southeastern United States between the Atlantic and the Gulf of Mexico; one of the Confederate states during the American Civil War",
-      "frequency": 4,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
     },
     "flour.n.01": {
       "label": [
@@ -42006,6 +42456,18 @@
       ],
       "display_parent": "bottom.n.02"
     },
+    "foot.n.06": {
+      "label": [
+        "foot",
+        "invertebrate_foot"
+      ],
+      "gloss": "any of various organs of locomotion or attachment in invertebrates",
+      "frequency": 2,
+      "hypernyms": [
+        "organ.n.01"
+      ],
+      "display_parent": "organ.n.01"
+    },
     "foot_rot.n.01": {
       "label": [
         "foot_rot"
@@ -42375,8 +42837,8 @@
       "gloss": "land that is covered with trees and shrubs",
       "frequency": 2,
       "hypernyms": [
-        "biome.n.01",
-        "land.n.04"
+        "land.n.04",
+        "biome.n.01"
       ],
       "display_parent": "land.n.04"
     },
@@ -42888,6 +43350,18 @@
       ],
       "display_parent": "photograph.n.01"
     },
+    "framework.n.02": {
+      "label": [
+        "framework",
+        "fabric"
+      ],
+      "gloss": "the underlying structure",
+      "frequency": 2,
+      "hypernyms": [
+        "structure.n.02"
+      ],
+      "display_parent": "structure.n.02"
+    },
     "framework.n.03": {
       "label": [
         "framework"
@@ -42898,16 +43372,6 @@
         "supporting_structure.n.01"
       ],
       "display_parent": "supporting_structure.n.01"
-    },
-    "france.n.01": {
-      "label": [
-        "France",
-        "French_Republic"
-      ],
-      "gloss": "a republic in western Europe; the largest country wholly in Europe",
-      "frequency": 10,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
     },
     "franchise.n.03": {
       "label": [
@@ -42996,6 +43460,18 @@
       ],
       "display_parent": "state.n.02"
     },
+    "freeman.n.01": {
+      "label": [
+        "freeman",
+        "freewoman"
+      ],
+      "gloss": "a person who is not a serf or a slave",
+      "frequency": 2,
+      "hypernyms": [
+        "citizen.n.01"
+      ],
+      "display_parent": "citizen.n.01"
+    },
     "freight_car.n.01": {
       "label": [
         "freight_car"
@@ -43029,15 +43505,6 @@
         "nation.n.02"
       ],
       "display_parent": "nation.n.02"
-    },
-    "french_revolution.n.01": {
-      "label": [
-        "French_Revolution"
-      ],
-      "gloss": "the revolution in France against the Bourbons; 1789-1799",
-      "frequency": 4,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
     },
     "frenchman.n.01": {
       "label": [
@@ -43076,6 +43543,18 @@
         "ratio.n.01"
       ],
       "display_parent": "ratio.n.01"
+    },
+    "frequency.n.03": {
+      "label": [
+        "frequency",
+        "absolute_frequency"
+      ],
+      "gloss": "the number of observations in a given statistical category",
+      "frequency": 2,
+      "hypernyms": [
+        "cardinal_number.n.01"
+      ],
+      "display_parent": "cardinal_number.n.01"
     },
     "fresh_water.n.01": {
       "label": [
@@ -43291,6 +43770,18 @@
         "extent.n.02"
       ],
       "display_parent": "extent.n.02"
+    },
+    "frontier_settlement.n.01": {
+      "label": [
+        "frontier_settlement",
+        "outpost"
+      ],
+      "gloss": "a settlement on the frontier of civilization",
+      "frequency": 2,
+      "hypernyms": [
+        "colony.n.01"
+      ],
+      "display_parent": "colony.n.01"
     },
     "fruit.n.01": {
       "label": [
@@ -43797,8 +44288,8 @@
       "gloss": "a public building in which a variety of games of chance can be played (operated as a business)",
       "frequency": 2,
       "hypernyms": [
-        "place_of_business.n.01",
-        "building.n.01"
+        "building.n.01",
+        "place_of_business.n.01"
       ],
       "display_parent": "building.n.01"
     },
@@ -44548,6 +45039,18 @@
       ],
       "display_parent": "man.n.01"
     },
+    "gentry.n.01": {
+      "label": [
+        "gentry",
+        "aristocracy"
+      ],
+      "gloss": "the most powerful members of a society",
+      "frequency": 2,
+      "hypernyms": [
+        "upper_class.n.01"
+      ],
+      "display_parent": "upper_class.n.01"
+    },
     "genus.n.02": {
       "label": [
         "genus"
@@ -44608,6 +45111,17 @@
       ],
       "display_parent": "natural_phenomenon.n.01"
     },
+    "geologist.n.01": {
+      "label": [
+        "geologist"
+      ],
+      "gloss": "a specialist in geology",
+      "frequency": 2,
+      "hypernyms": [
+        "scientist.n.01"
+      ],
+      "display_parent": "scientist.n.01"
+    },
     "geometry.n.01": {
       "label": [
         "geometry"
@@ -44618,18 +45132,6 @@
         "pure_mathematics.n.01"
       ],
       "display_parent": "pure_mathematics.n.01"
-    },
-    "georgia.n.01": {
-      "label": [
-        "Georgia",
-        "Empire_State_of_the_South",
-        "Peach_State",
-        "GA"
-      ],
-      "gloss": "a state in southeastern United States; one of the Confederate states during the American Civil War",
-      "frequency": 17,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
     },
     "german.n.01": {
       "label": [
@@ -44680,18 +45182,6 @@
         "chemical_element.n.01"
       ],
       "display_parent": "chemical_element.n.01"
-    },
-    "germany.n.01": {
-      "label": [
-        "Germany",
-        "Federal_Republic_of_Germany",
-        "Deutschland",
-        "FRG"
-      ],
-      "gloss": "a republic in central Europe; split into East Germany and West Germany after World War II and reunited in 1990",
-      "frequency": 11,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
     },
     "gesture.n.01": {
       "label": [
@@ -45007,6 +45497,17 @@
       ],
       "display_parent": "synovial_joint.n.01"
     },
+    "glissando.n.01": {
+      "label": [
+        "glissando"
+      ],
+      "gloss": "a rapid series of ascending or descending notes on the musical scale",
+      "frequency": 0,
+      "hypernyms": [
+        "tune.n.01"
+      ],
+      "display_parent": "tune.n.01"
+    },
     "glitter.n.01": {
       "label": [
         "glitter",
@@ -45174,32 +45675,6 @@
       ],
       "display_parent": "bovid.n.01"
     },
-    "god.n.01": {
-      "label": [
-        "God",
-        "Supreme_Being"
-      ],
-      "gloss": "the supernatural being conceived as the perfect and omnipotent and omniscient originator and ruler of the universe; the object of worship in monotheistic religions",
-      "frequency": 90,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
-    },
-    "godhead.n.01": {
-      "label": [
-        "Godhead",
-        "Lord",
-        "Creator",
-        "Maker",
-        "Divine",
-        "God_Almighty",
-        "Almighty",
-        "Jehovah"
-      ],
-      "gloss": "terms referring to the Judeo-Christian God",
-      "frequency": 14,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
-    },
     "goiter.n.01": {
       "label": [
         "goiter",
@@ -45286,6 +45761,18 @@
       ],
       "display_parent": "endocrine_gland.n.01"
     },
+    "goner.n.01": {
+      "label": [
+        "goner",
+        "toast"
+      ],
+      "gloss": "a person in desperate straits; someone doomed",
+      "frequency": 2,
+      "hypernyms": [
+        "desperate.n.01"
+      ],
+      "display_parent": "desperate.n.01"
+    },
     "good.n.01": {
       "label": [
         "good"
@@ -45359,6 +45846,19 @@
         "temper.n.02"
       ],
       "display_parent": "temper.n.02"
+    },
+    "good_morning.n.01": {
+      "label": [
+        "good_morning",
+        "morning"
+      ],
+      "gloss": "a conventional expression of greeting or farewell",
+      "frequency": 2,
+      "hypernyms": [
+        "farewell.n.01",
+        "greeting.n.01"
+      ],
+      "display_parent": "farewell.n.01"
     },
     "good_nature.n.01": {
       "label": [
@@ -46032,6 +46532,22 @@
       ],
       "display_parent": "rock.n.02"
     },
+    "graveness.n.01": {
+      "label": [
+        "graveness",
+        "gravity",
+        "sobriety",
+        "soberness",
+        "somberness",
+        "sombreness"
+      ],
+      "gloss": "a manner that is serious and solemn",
+      "frequency": 1,
+      "hypernyms": [
+        "seriousness.n.03"
+      ],
+      "display_parent": "seriousness.n.03"
+    },
     "graverobber.n.02": {
       "label": [
         "graverobber",
@@ -46133,17 +46649,6 @@
       ],
       "display_parent": "importance.n.01"
     },
-    "greece.n.01": {
-      "label": [
-        "Greece",
-        "Hellenic_Republic",
-        "Ellas"
-      ],
-      "gloss": "a republic in southeastern Europe on the southern part of the Balkan peninsula; known for grapes and olives and olive oil",
-      "frequency": 5,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
-    },
     "greek.n.01": {
       "label": [
         "Greek",
@@ -46198,17 +46703,6 @@
       ],
       "display_parent": "blue.n.01"
     },
-    "greenland.n.01": {
-      "label": [
-        "Greenland",
-        "Gronland",
-        "Kalaallit_Nunaat"
-      ],
-      "gloss": "the largest island in the world; lies between the North Atlantic and the Arctic Ocean; a self-governing province of Denmark",
-      "frequency": 2,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
-    },
     "greenwich_mean_time.n.01": {
       "label": [
         "Greenwich_Mean_Time",
@@ -46224,16 +46718,6 @@
         "time.n.05"
       ],
       "display_parent": "time.n.05"
-    },
-    "greenwich_village.n.01": {
-      "label": [
-        "Greenwich_Village",
-        "Village"
-      ],
-      "gloss": "a mainly residential district of Manhattan; `the Village' became a home for many writers and artists in the 20th century",
-      "frequency": 2,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
     },
     "greeting.n.01": {
       "label": [
@@ -46592,16 +47076,6 @@
       ],
       "display_parent": "noise.n.01"
     },
-    "guam.n.01": {
-      "label": [
-        "Guam",
-        "GU"
-      ],
-      "gloss": "the largest and southernmost island in the Marianas which is administered as a territory of the United States; it was ceded by Spain to the United States in 1898",
-      "frequency": 10,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
-    },
     "guarantee.n.01": {
       "label": [
         "guarantee",
@@ -46855,6 +47329,18 @@
         "weapon.n.01"
       ],
       "display_parent": "weapon.n.01"
+    },
+    "gun_muzzle.n.01": {
+      "label": [
+        "gun_muzzle",
+        "muzzle"
+      ],
+      "gloss": "the open circular discharging end of a gun",
+      "frequency": 2,
+      "hypernyms": [
+        "opening.n.10"
+      ],
+      "display_parent": "opening.n.10"
     },
     "gun_trigger.n.01": {
       "label": [
@@ -47372,6 +47858,18 @@
       ],
       "display_parent": "appendage.n.03"
     },
+    "handling.n.02": {
+      "label": [
+        "handling",
+        "manipulation"
+      ],
+      "gloss": "the action of touching with the hands (or the skillful use of the hands) or by the use of mechanical means",
+      "frequency": 2,
+      "hypernyms": [
+        "touch.n.05"
+      ],
+      "display_parent": "touch.n.05"
+    },
     "handout.n.01": {
       "label": [
         "handout",
@@ -47410,6 +47908,18 @@
         "acknowledgment.n.03"
       ],
       "display_parent": "acknowledgment.n.03"
+    },
+    "handsomeness.n.01": {
+      "label": [
+        "handsomeness",
+        "good_looks"
+      ],
+      "gloss": "the quality of having regular well-defined features (especially of a man)",
+      "frequency": 2,
+      "hypernyms": [
+        "beauty.n.01"
+      ],
+      "display_parent": "beauty.n.01"
     },
     "handspike.n.01": {
       "label": [
@@ -47616,16 +48126,6 @@
       ],
       "display_parent": "roughness.n.01"
     },
-    "harvard_university.n.01": {
-      "label": [
-        "Harvard_University",
-        "Harvard"
-      ],
-      "gloss": "a university in Massachusetts",
-      "frequency": 3,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
-    },
     "hassle.n.02": {
       "label": [
         "hassle",
@@ -47769,38 +48269,6 @@
         "disturbance.n.05"
       ],
       "display_parent": "disturbance.n.05"
-    },
-    "hawaii.n.01": {
-      "label": [
-        "Hawaii",
-        "Hawai'i",
-        "Aloha_State",
-        "HI"
-      ],
-      "gloss": "a state in the United States in the central Pacific on the Hawaiian Islands",
-      "frequency": 9,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
-    },
-    "hawaii.n.02": {
-      "label": [
-        "Hawaii",
-        "Hawaii_Island"
-      ],
-      "gloss": "the largest and southernmost of the Hawaii islands; has several volcanic peaks",
-      "frequency": 3,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
-    },
-    "hawaiian_islands.n.01": {
-      "label": [
-        "Hawaiian_Islands",
-        "Sandwich_Islands"
-      ],
-      "gloss": "a group of volcanic and coral islands in the central Pacific",
-      "frequency": 3,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
     },
     "hawk.n.01": {
       "label": [
@@ -48297,6 +48765,18 @@
       ],
       "display_parent": "aircraft.n.01"
     },
+    "heaviness.n.01": {
+      "label": [
+        "heaviness",
+        "weightiness"
+      ],
+      "gloss": "the property of being comparatively great in weight",
+      "frequency": 2,
+      "hypernyms": [
+        "weight.n.01"
+      ],
+      "display_parent": "weight.n.01"
+    },
     "hedge.n.01": {
       "label": [
         "hedge",
@@ -48330,16 +48810,6 @@
         "skeletal_structure.n.01"
       ],
       "display_parent": "skeletal_structure.n.01"
-    },
-    "hegel.n.01": {
-      "label": [
-        "Hegel",
-        "Georg_Wilhelm_Friedrich_Hegel"
-      ],
-      "gloss": "German philosopher whose three stage process of dialectical reasoning was adopted by Karl Marx (1770-1831)",
-      "frequency": 2,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
     },
     "height.n.01": {
       "label": [
@@ -48853,6 +49323,18 @@
       ],
       "display_parent": "degree.n.01"
     },
+    "high.n.05": {
+      "label": [
+        "high",
+        "heights"
+      ],
+      "gloss": "a high place",
+      "frequency": 2,
+      "hypernyms": [
+        "topographic_point.n.01"
+      ],
+      "display_parent": "topographic_point.n.01"
+    },
     "high_fidelity.n.01": {
       "label": [
         "high_fidelity",
@@ -48975,6 +49457,18 @@
         "natural_elevation.n.01"
       ],
       "display_parent": "natural_elevation.n.01"
+    },
+    "hillbilly.n.01": {
+      "label": [
+        "hillbilly",
+        "bushwhacker"
+      ],
+      "gloss": "a disparaging term for an unsophisticated person",
+      "frequency": 2,
+      "hypernyms": [
+        "rustic.n.01"
+      ],
+      "display_parent": "rustic.n.01"
     },
     "hillside.n.01": {
       "label": [
@@ -49237,17 +49731,6 @@
       ],
       "display_parent": "touch.n.05"
     },
-    "hitler.n.01": {
-      "label": [
-        "Hitler",
-        "Adolf_Hitler",
-        "Der_Fuhrer"
-      ],
-      "gloss": "German Nazi dictator during World War II (1889-1945)",
-      "frequency": 3,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
-    },
     "hog.n.03": {
       "label": [
         "hog",
@@ -49427,17 +49910,6 @@
         "sacrament.n.01"
       ],
       "display_parent": "sacrament.n.01"
-    },
-    "holy_ghost.n.01": {
-      "label": [
-        "Holy_Ghost",
-        "Holy_Spirit",
-        "Paraclete"
-      ],
-      "gloss": "the third person in the Trinity; Jesus promised the Apostles that he would send the Holy Spirit after his Crucifixion and Resurrection; it came on Pentecost",
-      "frequency": 2,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
     },
     "holy_order.n.01": {
       "label": [
@@ -49620,17 +50092,6 @@
         "cabaret.n.01"
       ],
       "display_parent": "cabaret.n.01"
-    },
-    "honolulu.n.01": {
-      "label": [
-        "Honolulu",
-        "capital_of_Hawaii",
-        "Hawaiian_capital"
-      ],
-      "gloss": "the capital and largest city of Hawaii; located on a large bay on the island of Oahu",
-      "frequency": 3,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
     },
     "honor.n.02": {
       "label": [
@@ -50139,8 +50600,8 @@
       "gloss": "a dwelling that serves as living quarters for one or more families",
       "frequency": 157,
       "hypernyms": [
-        "dwelling.n.01",
-        "building.n.01"
+        "building.n.01",
+        "dwelling.n.01"
       ],
       "display_parent": "dwelling.n.01"
     },
@@ -50216,15 +50677,6 @@
       ],
       "display_parent": "structure.n.01"
     },
-    "houston.n.01": {
-      "label": [
-        "Houston"
-      ],
-      "gloss": "the largest city in Texas; located in southeastern Texas near the Gulf of Mexico; site of the National Aeronautics and Space Administration",
-      "frequency": 5,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
-    },
     "hovel.n.01": {
       "label": [
         "hovel",
@@ -50291,16 +50743,6 @@
       ],
       "display_parent": "conference.n.03"
     },
-    "hudson.n.01": {
-      "label": [
-        "Hudson",
-        "Hudson_River"
-      ],
-      "gloss": "a New York river; flows southward into New York Bay; explored by Henry Hudson early in the 17th century",
-      "frequency": 7,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
-    },
     "hue.n.01": {
       "label": [
         "hue",
@@ -50336,6 +50778,17 @@
         "body.n.01"
       ],
       "display_parent": "body.n.01"
+    },
+    "human_process.n.01": {
+      "label": [
+        "human_process"
+      ],
+      "gloss": "a process in which human beings are involved",
+      "frequency": 0,
+      "hypernyms": [
+        "process.n.06"
+      ],
+      "display_parent": "process.n.06"
     },
     "humanistic_discipline.n.01": {
       "label": [
@@ -50413,17 +50866,6 @@
         "bill.n.03"
       ],
       "display_parent": "bill.n.03"
-    },
-    "hungary.n.01": {
-      "label": [
-        "Hungary",
-        "Republic_of_Hungary",
-        "Magyarorszag"
-      ],
-      "gloss": "a republic in central Europe",
-      "frequency": 2,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
     },
     "hunger.n.01": {
       "label": [
@@ -50621,6 +51063,18 @@
       ],
       "display_parent": "concentration.n.01"
     },
+    "hydrogen_peroxide.n.01": {
+      "label": [
+        "hydrogen_peroxide",
+        "peroxide"
+      ],
+      "gloss": "a viscous liquid with strong oxidizing properties; a powerful bleaching agent; also used (in aqueous solutions) as a mild disinfectant and (in strong concentrations) as an oxidant in rocket fuels",
+      "frequency": 2,
+      "hypernyms": [
+        "oxidant.n.01"
+      ],
+      "display_parent": "oxidant.n.01"
+    },
     "hymenopterous_insect.n.01": {
       "label": [
         "hymenopterous_insect",
@@ -50766,16 +51220,6 @@
         "drinking_water.n.01"
       ],
       "display_parent": "drinking_water.n.01"
-    },
-    "iceland.n.01": {
-      "label": [
-        "Iceland",
-        "Republic_of_Iceland"
-      ],
-      "gloss": "an island republic on the island of Iceland; became independent of Denmark in 1944",
-      "frequency": 2,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
     },
     "idea.n.01": {
       "label": [
@@ -50972,15 +51416,6 @@
       ],
       "display_parent": "content.n.05"
     },
-    "iliad.n.01": {
-      "label": [
-        "Iliad"
-      ],
-      "gloss": "a Greek epic poem (attributed to Homer) describing the siege of Troy",
-      "frequency": 5,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
-    },
     "ill-being.n.01": {
       "label": [
         "ill-being"
@@ -51028,18 +51463,6 @@
         "disposition.n.01"
       ],
       "display_parent": "disposition.n.01"
-    },
-    "illinois.n.01": {
-      "label": [
-        "Illinois",
-        "Prairie_State",
-        "Land_of_Lincoln",
-        "IL"
-      ],
-      "gloss": "a midwestern state in north-central United States",
-      "frequency": 8,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
     },
     "illness.n.01": {
       "label": [
@@ -51413,6 +51836,18 @@
       ],
       "display_parent": "accusation.n.01"
     },
+    "import.n.01": {
+      "label": [
+        "import",
+        "importation"
+      ],
+      "gloss": "commodities (goods or services) bought from a foreign country",
+      "frequency": 2,
+      "hypernyms": [
+        "commodity.n.01"
+      ],
+      "display_parent": "commodity.n.01"
+    },
     "importance.n.01": {
       "label": [
         "importance"
@@ -51493,6 +51928,18 @@
         "execration.n.02"
       ],
       "display_parent": "execration.n.02"
+    },
+    "impregnation.n.02": {
+      "label": [
+        "impregnation",
+        "saturation"
+      ],
+      "gloss": "the process of totally saturating something with a substance",
+      "frequency": 2,
+      "hypernyms": [
+        "permeation.n.01"
+      ],
+      "display_parent": "permeation.n.01"
     },
     "impression.n.01": {
       "label": [
@@ -51998,17 +52445,6 @@
       ],
       "display_parent": "finger.n.01"
     },
-    "india.n.01": {
-      "label": [
-        "India",
-        "Republic_of_India",
-        "Bharat"
-      ],
-      "gloss": "a republic in the Asian subcontinent in southern Asia; second most populous country in the world; achieved independence from the United Kingdom in 1947",
-      "frequency": 5,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
-    },
     "indian.n.01": {
       "label": [
         "Indian",
@@ -52033,27 +52469,6 @@
         "python.n.01"
       ],
       "display_parent": "python.n.01"
-    },
-    "indiana.n.01": {
-      "label": [
-        "Indiana",
-        "Hoosier_State",
-        "IN"
-      ],
-      "gloss": "a state in midwestern United States",
-      "frequency": 2,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
-    },
-    "indianapolis.n.01": {
-      "label": [
-        "Indianapolis",
-        "capital_of_Indiana"
-      ],
-      "gloss": "the capital and largest city of Indiana; a major commercial center in the country's heartland; site of an annual 500-mile automobile race",
-      "frequency": 2,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
     },
     "indication.n.01": {
       "label": [
@@ -52233,16 +52648,6 @@
       ],
       "display_parent": "gratification.n.02"
     },
-    "industrial_revolution.n.01": {
-      "label": [
-        "Industrial_Revolution",
-        "technological_revolution"
-      ],
-      "gloss": "the transformation from an agricultural to an industrial nation",
-      "frequency": 3,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
-    },
     "industrialization.n.01": {
       "label": [
         "industrialization",
@@ -52312,6 +52717,18 @@
         "thing.n.12"
       ],
       "display_parent": "thing.n.12"
+    },
+    "inexperience.n.01": {
+      "label": [
+        "inexperience",
+        "rawness"
+      ],
+      "gloss": "lack of experience and the knowledge and understanding derived from experience",
+      "frequency": 2,
+      "hypernyms": [
+        "ignorance.n.01"
+      ],
+      "display_parent": "ignorance.n.01"
     },
     "infamy.n.02": {
       "label": [
@@ -54046,6 +54463,18 @@
       ],
       "display_parent": "quality.n.01"
     },
+    "invader.n.01": {
+      "label": [
+        "invader",
+        "encroacher"
+      ],
+      "gloss": "someone who enters by force in order to conquer",
+      "frequency": 2,
+      "hypernyms": [
+        "intruder.n.01"
+      ],
+      "display_parent": "intruder.n.01"
+    },
     "invariability.n.02": {
       "label": [
         "invariability",
@@ -54321,30 +54750,6 @@
       ],
       "display_parent": "radiation.n.01"
     },
-    "iraq.n.01": {
-      "label": [
-        "Iraq",
-        "Republic_of_Iraq",
-        "Al-Iraq",
-        "Irak"
-      ],
-      "gloss": "a republic in the Middle East in western Asia; the ancient civilization of Mesopotamia was in the area now known as Iraq",
-      "frequency": 2,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
-    },
-    "ireland.n.01": {
-      "label": [
-        "Ireland",
-        "Republic_of_Ireland",
-        "Irish_Republic",
-        "Eire"
-      ],
-      "gloss": "a republic consisting of 26 of 32 counties comprising the island of Ireland; achieved independence from the United Kingdom in 1921",
-      "frequency": 2,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
-    },
     "iron.n.01": {
       "label": [
         "iron",
@@ -54492,6 +54897,18 @@
       ],
       "display_parent": "separation.n.01"
     },
+    "isolation.n.03": {
+      "label": [
+        "isolation",
+        "closing_off"
+      ],
+      "gloss": "the act of isolating something; setting something apart from others",
+      "frequency": 2,
+      "hypernyms": [
+        "separation.n.05"
+      ],
+      "display_parent": "separation.n.05"
+    },
     "isometric_line.n.01": {
       "label": [
         "isometric_line",
@@ -54586,17 +55003,6 @@
         "indo-european.n.02"
       ],
       "display_parent": "indo-european.n.02"
-    },
-    "italy.n.01": {
-      "label": [
-        "Italy",
-        "Italian_Republic",
-        "Italia"
-      ],
-      "gloss": "a republic in southern Europe on the Italian Peninsula; was the core of the Roman Republic and the Roman Empire between the 4th century BC and the 5th century AD",
-      "frequency": 6,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
     },
     "item.n.01": {
       "label": [
@@ -54760,28 +55166,6 @@
       ],
       "display_parent": "japanese.n.01"
     },
-    "japan.n.01": {
-      "label": [
-        "Japan",
-        "Japanese_Islands",
-        "Japanese_Archipelago"
-      ],
-      "gloss": "a string of more than 3,000 islands to the east of Asia extending 1,300 miles between the Sea of Japan and the western Pacific Ocean",
-      "frequency": 5,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
-    },
-    "japan.n.02": {
-      "label": [
-        "Japan",
-        "Nippon",
-        "Nihon"
-      ],
-      "gloss": "a constitutional monarchy occupying the Japanese Archipelago; a world leader in electronics and automobile manufacture and ship building",
-      "frequency": 3,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
-    },
     "japanese.n.01": {
       "label": [
         "Japanese",
@@ -54891,6 +55275,18 @@
       ],
       "display_parent": "small_intestine.n.01"
     },
+    "jerk.n.01": {
+      "label": [
+        "jerk",
+        "dork"
+      ],
+      "gloss": "a dull stupid fatuous person",
+      "frequency": 2,
+      "hypernyms": [
+        "misfit.n.01"
+      ],
+      "display_parent": "misfit.n.01"
+    },
     "jerk.n.02": {
       "label": [
         "jerk",
@@ -54904,34 +55300,6 @@
         "motion.n.03"
       ],
       "display_parent": "motion.n.03"
-    },
-    "jerusalem.n.01": {
-      "label": [
-        "Jerusalem",
-        "capital_of_Israel"
-      ],
-      "gloss": "capital and largest city of the modern state of Israel (although its status as capital is disputed); it was captured from Jordan in 1967 in the Six Day War; a holy city for Jews and Christians and Muslims; was the capital of an ancient kingdom",
-      "frequency": 4,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
-    },
-    "jesus.n.01": {
-      "label": [
-        "Jesus",
-        "Jesus_of_Nazareth",
-        "the_Nazarene",
-        "Jesus_Christ",
-        "Christ",
-        "Savior",
-        "Saviour",
-        "Good_Shepherd",
-        "Redeemer",
-        "Deliverer"
-      ],
-      "gloss": "a teacher and prophet born in Bethlehem and active in Nazareth; his life and sermons form the basis for Christianity (circa 4 BC - AD 29)",
-      "frequency": 35,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
     },
     "jet.n.01": {
       "label": [
@@ -55293,6 +55661,18 @@
       ],
       "display_parent": "day.n.02"
     },
+    "judiciary.n.01": {
+      "label": [
+        "judiciary",
+        "bench"
+      ],
+      "gloss": "persons who administer justice",
+      "frequency": 2,
+      "hypernyms": [
+        "administration.n.02"
+      ],
+      "display_parent": "administration.n.02"
+    },
     "judiciousness.n.01": {
       "label": [
         "judiciousness"
@@ -55409,15 +55789,6 @@
         "secondary_school.n.01"
       ],
       "display_parent": "secondary_school.n.01"
-    },
-    "jupiter.n.01": {
-      "label": [
-        "Jupiter"
-      ],
-      "gloss": "the largest planet and the 5th from the sun; has many satellites and is one of the brightest objects in the night sky",
-      "frequency": 7,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
     },
     "jurisprudence.n.01": {
       "label": [
@@ -55539,15 +55910,6 @@
       ],
       "display_parent": "person.n.01"
     },
-    "kansas_city.n.01": {
-      "label": [
-        "Kansas_City"
-      ],
-      "gloss": "a city in western Missouri situated at the confluence of the Kansas River and the Missouri River; adjacent to Kansas City, Kansas",
-      "frequency": 11,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
-    },
     "keep.n.02": {
       "label": [
         "keep",
@@ -55586,17 +55948,6 @@
         "temperature_unit.n.01"
       ],
       "display_parent": "temperature_unit.n.01"
-    },
-    "kentucky.n.01": {
-      "label": [
-        "Kentucky",
-        "Bluegrass_State",
-        "KY"
-      ],
-      "gloss": "a state in east central United States; a border state during the American Civil War; famous for breeding race horses",
-      "frequency": 3,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
     },
     "kernel.n.03": {
       "label": [
@@ -55716,8 +56067,8 @@
       "gloss": "someone who unlawfully seizes and detains a victim (usually for ransom)",
       "frequency": 4,
       "hypernyms": [
-        "captor.n.01",
-        "criminal.n.01"
+        "criminal.n.01",
+        "captor.n.01"
       ],
       "display_parent": "criminal.n.01"
     },
@@ -56151,27 +56502,6 @@
         "synovial_joint.n.01"
       ],
       "display_parent": "synovial_joint.n.01"
-    },
-    "korea.n.01": {
-      "label": [
-        "Korea",
-        "Korean_Peninsula",
-        "Dae-Han-Min-Gook",
-        "Han-Gook"
-      ],
-      "gloss": "an Asian peninsula (off Manchuria) separating the Yellow Sea and the Sea of Japan; the Korean name is Dae-Han-Min-Gook or Han-Gook",
-      "frequency": 4,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
-    },
-    "korean_war.n.01": {
-      "label": [
-        "Korean_War"
-      ],
-      "gloss": "a war between North and South Korea; South Korea was aided by the United States and other members of the United Nations; 1950-1953",
-      "frequency": 3,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
     },
     "lab.n.01": {
       "label": [
@@ -56610,16 +56940,6 @@
       ],
       "display_parent": "lamp.n.01"
     },
-    "laos.n.01": {
-      "label": [
-        "Laos",
-        "Lao_People's_Democratic_Republic"
-      ],
-      "gloss": "a mountainous landlocked communist state in southeastern Asia; achieved independence from France in 1949",
-      "frequency": 13,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
-    },
     "lap.n.01": {
       "label": [
         "lap"
@@ -56778,14 +57098,17 @@
       ],
       "display_parent": "italic.n.02"
     },
-    "latin_america.n.01": {
+    "latin_american.n.01": {
       "label": [
-        "Latin_America"
+        "Latin_American",
+        "Latino"
       ],
-      "gloss": "the parts of North America and South America to the south of the United States where Romance languages are spoken",
-      "frequency": 3,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
+      "gloss": "a native of Latin America",
+      "frequency": 2,
+      "hypernyms": [
+        "american.n.03"
+      ],
+      "display_parent": "american.n.03"
     },
     "latissimus_dorsi.n.01": {
       "label": [
@@ -57954,17 +58277,6 @@
       ],
       "display_parent": "etymology.n.02"
     },
-    "leyte.n.01": {
-      "label": [
-        "Leyte",
-        "Leyte_Island",
-        "Leyte_invasion"
-      ],
-      "gloss": "a battle in World War II; the return of United States troops to the Philippines began with landings on Leyte Island in October 1944; the battle marked first use of kamikaze aircraft by the Japanese",
-      "frequency": 2,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
-    },
     "liabilities.n.01": {
       "label": [
         "liabilities"
@@ -58501,6 +58813,18 @@
       ],
       "display_parent": "fixture.n.01"
     },
+    "lightness.n.02": {
+      "label": [
+        "lightness",
+        "weightlessness"
+      ],
+      "gloss": "the property of being comparatively small in weight",
+      "frequency": 2,
+      "hypernyms": [
+        "weight.n.01"
+      ],
+      "display_parent": "weight.n.01"
+    },
     "lightning.n.01": {
       "label": [
         "lightning"
@@ -58692,18 +59016,6 @@
         "disadvantage.n.01"
       ],
       "display_parent": "disadvantage.n.01"
-    },
-    "lincoln.n.01": {
-      "label": [
-        "Lincoln",
-        "Abraham_Lincoln",
-        "President_Lincoln",
-        "President_Abraham_Lincoln"
-      ],
-      "gloss": "16th President of the United States; saved the Union during the American Civil War and emancipated the slaves; was assassinated by Booth (1809-1865)",
-      "frequency": 3,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
     },
     "line.n.01": {
       "label": [
@@ -59673,18 +59985,6 @@
       ],
       "display_parent": "wood.n.01"
     },
-    "london.n.01": {
-      "label": [
-        "London",
-        "Greater_London",
-        "British_capital",
-        "capital_of_the_United_Kingdom"
-      ],
-      "gloss": "the capital and largest city of England; located on the Thames in southeastern England; financial and industrial and cultural center",
-      "frequency": 13,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
-    },
     "loneliness.n.01": {
       "label": [
         "loneliness",
@@ -59708,15 +60008,6 @@
         "bone.n.01"
       ],
       "display_parent": "bone.n.01"
-    },
-    "long_island.n.01": {
-      "label": [
-        "Long_Island"
-      ],
-      "gloss": "an island in southeastern New York; Brooklyn and Queens are on its western end",
-      "frequency": 4,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
     },
     "long_time.n.01": {
       "label": [
@@ -59826,16 +60117,6 @@
       ],
       "display_parent": "content.n.05"
     },
-    "los_angeles.n.01": {
-      "label": [
-        "Los_Angeles",
-        "City_of_the_Angels"
-      ],
-      "gloss": "a city in southern California; motion picture capital of the world; most populous city of California and second largest in the United States",
-      "frequency": 11,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
-    },
     "losings.n.01": {
       "label": [
         "losings",
@@ -59942,17 +60223,6 @@
         "electro-acoustic_transducer.n.01"
       ],
       "display_parent": "electro-acoustic_transducer.n.01"
-    },
-    "louisiana.n.01": {
-      "label": [
-        "Louisiana",
-        "Pelican_State",
-        "LA"
-      ],
-      "gloss": "a state in southern United States on the Gulf of Mexico; one of the Confederate states during the American Civil War",
-      "frequency": 3,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
     },
     "louse.n.01": {
       "label": [
@@ -60694,17 +60964,6 @@
       ],
       "display_parent": "street.n.01"
     },
-    "maine.n.01": {
-      "label": [
-        "Maine",
-        "Pine_Tree_State",
-        "ME"
-      ],
-      "gloss": "a state in New England",
-      "frequency": 2,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
-    },
     "mainland.n.01": {
       "label": [
         "mainland"
@@ -61123,15 +61382,6 @@
       ],
       "display_parent": "administration.n.02"
     },
-    "manchester.n.01": {
-      "label": [
-        "Manchester"
-      ],
-      "gloss": "largest city in New Hampshire; located in southeastern New Hampshire on the Merrimack river",
-      "frequency": 11,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
-    },
     "mandate.n.01": {
       "label": [
         "mandate",
@@ -61196,15 +61446,6 @@
         "container.n.01"
       ],
       "display_parent": "container.n.01"
-    },
-    "manhattan.n.01": {
-      "label": [
-        "Manhattan"
-      ],
-      "gloss": "one of the five boroughs of New York City",
-      "frequency": 6,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
     },
     "mania.n.01": {
       "label": [
@@ -61848,16 +62089,6 @@
       ],
       "display_parent": "connective_tissue.n.01"
     },
-    "mars.n.01": {
-      "label": [
-        "Mars",
-        "Red_Planet"
-      ],
-      "gloss": "a small reddish planet that is the 4th from the sun and is periodically visible to the naked eye; minerals rich in iron cover its surface and are responsible for its characteristic color",
-      "frequency": 14,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
-    },
     "marshal.n.01": {
       "label": [
         "marshal",
@@ -61882,15 +62113,6 @@
       ],
       "display_parent": "metatherian.n.01"
     },
-    "martian.n.01": {
-      "label": [
-        "Martian"
-      ],
-      "gloss": "imaginary people who live on the planet Mars",
-      "frequency": 3,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
-    },
     "martyr.n.01": {
       "label": [
         "martyr",
@@ -61902,19 +62124,6 @@
         "victim.n.01"
       ],
       "display_parent": "victim.n.01"
-    },
-    "mary.n.01": {
-      "label": [
-        "Mary",
-        "Virgin_Mary",
-        "The_Virgin",
-        "Blessed_Virgin",
-        "Madonna"
-      ],
-      "gloss": "the mother of Jesus; Christians refer to her as the Virgin Mary; she is especially honored by Roman Catholics",
-      "frequency": 5,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
     },
     "mass.n.01": {
       "label": [
@@ -61984,17 +62193,17 @@
       ],
       "display_parent": "unit_of_measurement.n.01"
     },
-    "massachusetts.n.01": {
+    "massachuset.n.01": {
       "label": [
-        "Massachusetts",
-        "Bay_State",
-        "Old_Colony",
-        "MA"
+        "Massachuset",
+        "Massachusetts"
       ],
-      "gloss": "a state in New England; one of the original 13 colonies",
-      "frequency": 5,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
+      "gloss": "the Algonquian language of the Massachuset",
+      "frequency": 2,
+      "hypernyms": [
+        "algonquian.n.02"
+      ],
+      "display_parent": "algonquian.n.02"
     },
     "massager.n.01": {
       "label": [
@@ -62357,6 +62566,34 @@
         "bread.n.01"
       ],
       "display_parent": "bread.n.01"
+    },
+    "mawkishness.n.02": {
+      "label": [
+        "mawkishness",
+        "sentimentality",
+        "drippiness",
+        "mushiness",
+        "soupiness",
+        "sloppiness"
+      ],
+      "gloss": "falsely emotional in a maudlin way",
+      "frequency": 1,
+      "hypernyms": [
+        "emotionality.n.01"
+      ],
+      "display_parent": "emotionality.n.01"
+    },
+    "maxim.n.01": {
+      "label": [
+        "maxim",
+        "axiom"
+      ],
+      "gloss": "a saying that is widely accepted on its own merits",
+      "frequency": 2,
+      "hypernyms": [
+        "saying.n.01"
+      ],
+      "display_parent": "saying.n.01"
     },
     "maximum.n.01": {
       "label": [
@@ -63167,15 +63404,6 @@
       ],
       "display_parent": "device.n.01"
     },
-    "memphis.n.01": {
-      "label": [
-        "Memphis"
-      ],
-      "gloss": "largest city of Tennessee; located in southwestern Tennessee on bluffs overlooking the Mississippi River",
-      "frequency": 4,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
-    },
     "menace.n.01": {
       "label": [
         "menace",
@@ -63639,8 +63867,8 @@
       "gloss": "a decimal unit of weight based on the gram",
       "frequency": 0,
       "hypernyms": [
-        "mass_unit.n.01",
-        "metric_unit.n.01"
+        "metric_unit.n.01",
+        "mass_unit.n.01"
       ],
       "display_parent": "metric_unit.n.01"
     },
@@ -63670,16 +63898,6 @@
       ],
       "display_parent": "central_american.n.01"
     },
-    "mexico.n.01": {
-      "label": [
-        "Mexico",
-        "United_Mexican_States"
-      ],
-      "gloss": "a republic in southern North America; became independent from Spain in 1810",
-      "frequency": 3,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
-    },
     "micelle.n.01": {
       "label": [
         "micelle"
@@ -63690,18 +63908,6 @@
         "particle.n.02"
       ],
       "display_parent": "particle.n.02"
-    },
-    "michigan.n.01": {
-      "label": [
-        "Michigan",
-        "Wolverine_State",
-        "Great_Lakes_State",
-        "MI"
-      ],
-      "gloss": "a midwestern state in north central United States in the Great Lakes region",
-      "frequency": 5,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
     },
     "micrometeorite.n.01": {
       "label": [
@@ -63787,16 +63993,6 @@
       ],
       "display_parent": "area.n.03"
     },
-    "middle_ages.n.01": {
-      "label": [
-        "Middle_Ages",
-        "Dark_Ages"
-      ],
-      "gloss": "the period of history between classical antiquity and the Italian Renaissance",
-      "frequency": 9,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
-    },
     "middle_class.n.01": {
       "label": [
         "middle_class",
@@ -63831,17 +64027,6 @@
         "inside.n.01"
       ],
       "display_parent": "inside.n.01"
-    },
-    "midwest.n.01": {
-      "label": [
-        "Midwest",
-        "middle_west",
-        "midwestern_United_States"
-      ],
-      "gloss": "the north central region of the United States (sometimes called the heartland or the breadbasket of America)",
-      "frequency": 2,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
     },
     "might.n.01": {
       "label": [
@@ -63895,6 +64080,18 @@
         "rate.n.01"
       ],
       "display_parent": "rate.n.01"
+    },
+    "milestone.n.01": {
+      "label": [
+        "milestone",
+        "milepost"
+      ],
+      "gloss": "stone post at side of a road to show distances",
+      "frequency": 2,
+      "hypernyms": [
+        "marker.n.02"
+      ],
+      "display_parent": "marker.n.02"
     },
     "milieu.n.01": {
       "label": [
@@ -64107,6 +64304,18 @@
       ],
       "display_parent": "time_period.n.01"
     },
+    "milliampere.n.01": {
+      "label": [
+        "milliampere",
+        "mA"
+      ],
+      "gloss": "one thousandth of an ampere",
+      "frequency": 2,
+      "hypernyms": [
+        "current_unit.n.01"
+      ],
+      "display_parent": "current_unit.n.01"
+    },
     "millidegree.n.01": {
       "label": [
         "millidegree"
@@ -64117,6 +64326,18 @@
         "temperature_unit.n.01"
       ],
       "display_parent": "temperature_unit.n.01"
+    },
+    "milliequivalent.n.01": {
+      "label": [
+        "milliequivalent",
+        "meq"
+      ],
+      "gloss": "one-thousandth of an equivalent",
+      "frequency": 2,
+      "hypernyms": [
+        "atomic_mass.n.01"
+      ],
+      "display_parent": "atomic_mass.n.01"
     },
     "milligram.n.01": {
       "label": [
@@ -64334,18 +64555,6 @@
       ],
       "display_parent": "executive.n.01"
     },
-    "minnesota.n.01": {
-      "label": [
-        "Minnesota",
-        "Gopher_State",
-        "North_Star_State",
-        "MN"
-      ],
-      "gloss": "a midwestern state",
-      "frequency": 5,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
-    },
     "minor_league.n.01": {
       "label": [
         "minor_league",
@@ -64502,6 +64711,17 @@
       ],
       "display_parent": "ill-being.n.01"
     },
+    "misfit.n.01": {
+      "label": [
+        "misfit"
+      ],
+      "gloss": "someone unable to adapt to their circumstances",
+      "frequency": 0,
+      "hypernyms": [
+        "anomaly.n.02"
+      ],
+      "display_parent": "anomaly.n.02"
+    },
     "misfortune.n.01": {
       "label": [
         "misfortune",
@@ -64642,37 +64862,16 @@
       ],
       "display_parent": "teacher.n.01"
     },
-    "mississippi.n.01": {
+    "misstatement.n.01": {
       "label": [
-        "Mississippi",
-        "Mississippi_River"
+        "misstatement"
       ],
-      "gloss": "a major North American river and the chief river of the United States; rises in northern Minnesota and flows southward into the Gulf of Mexico",
-      "frequency": 7,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
-    },
-    "mississippi.n.02": {
-      "label": [
-        "Mississippi",
-        "Magnolia_State",
-        "MS"
+      "gloss": "a statement that contains a mistake",
+      "frequency": 0,
+      "hypernyms": [
+        "statement.n.01"
       ],
-      "gloss": "a state in the Deep South on the gulf of Mexico; one of the Confederate States during the American Civil War",
-      "frequency": 5,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
-    },
-    "missouri.n.01": {
-      "label": [
-        "Missouri",
-        "Show_Me_State",
-        "MO"
-      ],
-      "gloss": "a midwestern state in central United States; a border state during the American Civil War, Missouri was admitted to the Confederacy without actually seceding from the Union",
-      "frequency": 7,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
+      "display_parent": "statement.n.01"
     },
     "mist.n.01": {
       "label": [
@@ -65224,6 +65423,18 @@
       ],
       "display_parent": "market.n.01"
     },
+    "monosyllable.n.01": {
+      "label": [
+        "monosyllable",
+        "monosyllabic_word"
+      ],
+      "gloss": "a word or utterance of one syllable",
+      "frequency": 2,
+      "hypernyms": [
+        "word.n.01"
+      ],
+      "display_parent": "word.n.01"
+    },
     "monotone.n.01": {
       "label": [
         "monotone",
@@ -65298,25 +65509,6 @@
       ],
       "display_parent": "time_unit.n.01"
     },
-    "montreal.n.01": {
-      "label": [
-        "Montreal"
-      ],
-      "gloss": "a city in southern Quebec province on the Saint Lawrence River; the largest city in Quebec and 2nd largest in Canada; the 2nd largest French-speaking city in the world",
-      "frequency": 3,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
-    },
-    "moon.n.01": {
-      "label": [
-        "Moon",
-        "moon"
-      ],
-      "gloss": "the natural satellite of the Earth",
-      "frequency": 30,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
-    },
     "moonlight.n.01": {
       "label": [
         "moonlight",
@@ -65379,19 +65571,6 @@
         "time_period.n.01"
       ],
       "display_parent": "time_period.n.01"
-    },
-    "morocco.n.01": {
-      "label": [
-        "Morocco",
-        "Kingdom_of_Morocco",
-        "Maroc",
-        "Marruecos",
-        "Al-Magrib"
-      ],
-      "gloss": "a kingdom (constitutional monarchy) in northwestern Africa with a largely Muslim population; achieved independence from France in 1956",
-      "frequency": 3,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
     },
     "morpheme.n.01": {
       "label": [
@@ -65511,16 +65690,17 @@
       ],
       "display_parent": "skilled_worker.n.01"
     },
-    "moscow.n.01": {
+    "most_valuable_player.n.01": {
       "label": [
-        "Moscow",
-        "capital_of_the_Russian_Federation",
-        "Russian_capital"
+        "most_valuable_player",
+        "MVP"
       ],
-      "gloss": "a city of central European Russia; formerly capital of both the Soviet Union and Soviet Russia; since 1991 the capital of the Russian Federation",
-      "frequency": 4,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
+      "gloss": "the player judged to be the most important to the sport",
+      "frequency": 2,
+      "hypernyms": [
+        "player.n.01"
+      ],
+      "display_parent": "player.n.01"
     },
     "moth.n.01": {
       "label": [
@@ -65756,6 +65936,18 @@
       ],
       "display_parent": "orifice.n.01"
     },
+    "mouton.n.01": {
+      "label": [
+        "mouton",
+        "mutton"
+      ],
+      "gloss": "meat from a mature domestic sheep",
+      "frequency": 2,
+      "hypernyms": [
+        "meat.n.01"
+      ],
+      "display_parent": "meat.n.01"
+    },
     "movable_barrier.n.01": {
       "label": [
         "movable_barrier"
@@ -65903,6 +66095,18 @@
         "membrane.n.02"
       ],
       "display_parent": "membrane.n.02"
+    },
+    "mucus.n.01": {
+      "label": [
+        "mucus",
+        "mucous_secretion"
+      ],
+      "gloss": "protective secretion of the mucus membranes; in the gut it lubricates the passage of food and protects the epithelial cells; in the nose and throat and lungs it can make it difficult for bacteria to penetrate the body through the epithelium",
+      "frequency": 2,
+      "hypernyms": [
+        "secretion.n.02"
+      ],
+      "display_parent": "secretion.n.02"
     },
     "mud.n.01": {
       "label": [
@@ -66069,6 +66273,18 @@
         "contractile_organ.n.01"
       ],
       "display_parent": "contractile_organ.n.01"
+    },
+    "muscle.n.02": {
+      "label": [
+        "muscle",
+        "muscular_tissue"
+      ],
+      "gloss": "animal tissue consisting predominantly of contractile cells",
+      "frequency": 2,
+      "hypernyms": [
+        "animal_tissue.n.01"
+      ],
+      "display_parent": "animal_tissue.n.01"
     },
     "muscle_cell.n.01": {
       "label": [
@@ -66350,6 +66566,18 @@
       ],
       "display_parent": "army_unit.n.01"
     },
+    "muslim.n.01": {
+      "label": [
+        "Muslim",
+        "Moslem"
+      ],
+      "gloss": "a believer in or follower of Islam",
+      "frequency": 0,
+      "hypernyms": [
+        "religious_person.n.01"
+      ],
+      "display_parent": "religious_person.n.01"
+    },
     "mustache.n.01": {
       "label": [
         "mustache",
@@ -66450,17 +66678,6 @@
         "firearm.n.01"
       ],
       "display_parent": "firearm.n.01"
-    },
-    "myanmar.n.01": {
-      "label": [
-        "Myanmar",
-        "Union_of_Burma",
-        "Burma"
-      ],
-      "gloss": "a mountainous republic in southeastern Asia on the Bay of Bengal",
-      "frequency": 3,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
     },
     "myofibril.n.01": {
       "label": [
@@ -66653,19 +66870,6 @@
         "defamation.n.01"
       ],
       "display_parent": "defamation.n.01"
-    },
-    "napoleon.n.01": {
-      "label": [
-        "Napoleon",
-        "Napoleon_I",
-        "Napoleon_Bonaparte",
-        "Bonaparte",
-        "Little_Corporal"
-      ],
-      "gloss": "French general who became emperor of the French (1769-1821)",
-      "frequency": 5,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
     },
     "narcotic.n.01": {
       "label": [
@@ -66973,6 +67177,18 @@
         "trait.n.01"
       ],
       "display_parent": "trait.n.01"
+    },
+    "nausea.n.01": {
+      "label": [
+        "nausea",
+        "sickness"
+      ],
+      "gloss": "the state that precedes vomiting",
+      "frequency": 2,
+      "hypernyms": [
+        "symptom.n.01"
+      ],
+      "display_parent": "symptom.n.01"
     },
     "nautical_linear_unit.n.01": {
       "label": [
@@ -67358,6 +67574,18 @@
       ],
       "display_parent": "disorder.n.01"
     },
+    "nervous_system.n.01": {
+      "label": [
+        "nervous_system",
+        "systema_nervosum"
+      ],
+      "gloss": "the sensory and control apparatus consisting of a network of nerve cells",
+      "frequency": 2,
+      "hypernyms": [
+        "system.n.06"
+      ],
+      "display_parent": "system.n.06"
+    },
     "nervous_tissue.n.01": {
       "label": [
         "nervous_tissue",
@@ -67409,19 +67637,6 @@
         "income.n.01"
       ],
       "display_parent": "income.n.01"
-    },
-    "netherlands.n.01": {
-      "label": [
-        "Netherlands",
-        "The_Netherlands",
-        "Kingdom_of_The_Netherlands",
-        "Nederland",
-        "Holland"
-      ],
-      "gloss": "a constitutional monarchy in western Europe on the North Sea; half the country lies below sea level",
-      "frequency": 3,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
     },
     "network.n.01": {
       "label": [
@@ -67541,15 +67756,6 @@
       ],
       "display_parent": "leukocyte.n.01"
     },
-    "new_england.n.01": {
-      "label": [
-        "New_England"
-      ],
-      "gloss": "a region of northeastern United States comprising Maine and New Hampshire and Vermont and Massachusetts and Rhode Island and Connecticut",
-      "frequency": 17,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
-    },
     "new_englander.n.01": {
       "label": [
         "New_Englander",
@@ -67561,29 +67767,6 @@
         "american.n.01"
       ],
       "display_parent": "american.n.01"
-    },
-    "new_jersey.n.01": {
-      "label": [
-        "New_Jersey",
-        "Jersey",
-        "Garden_State",
-        "NJ"
-      ],
-      "gloss": "a Mid-Atlantic state on the Atlantic; one of the original 13 colonies",
-      "frequency": 2,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
-    },
-    "new_mexico.n.01": {
-      "label": [
-        "New_Mexico",
-        "Land_of_Enchantment",
-        "NM"
-      ],
-      "gloss": "a state in southwestern United States on the Mexican border",
-      "frequency": 5,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
     },
     "new_year's_day.n.01": {
       "label": [
@@ -67609,29 +67792,6 @@
         "day.n.03"
       ],
       "display_parent": "day.n.03"
-    },
-    "new_york.n.01": {
-      "label": [
-        "New_York",
-        "New_York_City",
-        "Greater_New_York"
-      ],
-      "gloss": "the largest city in New York State and in the United States; located in southeastern New York at the mouth of the Hudson river; a major financial and cultural center",
-      "frequency": 52,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
-    },
-    "new_york.n.02": {
-      "label": [
-        "New_York",
-        "New_York_State",
-        "Empire_State",
-        "NY"
-      ],
-      "gloss": "a Mid-Atlantic state; one of the original 13 colonies",
-      "frequency": 16,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
     },
     "newcomer.n.01": {
       "label": [
@@ -67662,15 +67822,6 @@
         "spouse.n.01"
       ],
       "display_parent": "spouse.n.01"
-    },
-    "newport.n.01": {
-      "label": [
-        "Newport"
-      ],
-      "gloss": "a port city in southeastern Wales",
-      "frequency": 4,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
     },
     "news.n.01": {
       "label": [
@@ -67710,6 +67861,18 @@
       ],
       "display_parent": "broadcast.n.02"
     },
+    "newsletter.n.01": {
+      "label": [
+        "newsletter",
+        "newssheet"
+      ],
+      "gloss": "report or open letter giving informal or confidential news of interest to a special group",
+      "frequency": 2,
+      "hypernyms": [
+        "report.n.03"
+      ],
+      "display_parent": "report.n.03"
+    },
     "newspaper.n.01": {
       "label": [
         "newspaper",
@@ -67734,6 +67897,18 @@
         "publisher.n.01"
       ],
       "display_parent": "publisher.n.01"
+    },
+    "newspaper.n.03": {
+      "label": [
+        "newspaper",
+        "paper"
+      ],
+      "gloss": "the physical object that is the product of a newspaper publisher",
+      "frequency": 2,
+      "hypernyms": [
+        "product.n.02"
+      ],
+      "display_parent": "product.n.02"
     },
     "nickel.n.01": {
       "label": [
@@ -67815,6 +67990,18 @@
         "thrush.n.03"
       ],
       "display_parent": "thrush.n.03"
+    },
+    "nightmare.n.01": {
+      "label": [
+        "nightmare",
+        "incubus"
+      ],
+      "gloss": "a situation resembling a terrifying dream",
+      "frequency": 2,
+      "hypernyms": [
+        "situation.n.03"
+      ],
+      "display_parent": "situation.n.03"
     },
     "nine.n.01": {
       "label": [
@@ -67999,6 +68186,18 @@
         "device.n.01"
       ],
       "display_parent": "device.n.01"
+    },
+    "nomia.n.01": {
+      "label": [
+        "nomia",
+        "genus_Nomia"
+      ],
+      "gloss": "a genus of bee; some are important pollinators of legumes",
+      "frequency": 2,
+      "hypernyms": [
+        "arthropod_genus.n.01"
+      ],
+      "display_parent": "arthropod_genus.n.01"
     },
     "nomia_melanderi.n.01": {
       "label": [
@@ -68213,15 +68412,6 @@
       ],
       "display_parent": "standard.n.01"
     },
-    "north.n.01": {
-      "label": [
-        "North"
-      ],
-      "gloss": "the region of the United States lying to the north of the Mason-Dixon line",
-      "frequency": 20,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
-    },
     "north.n.03": {
       "label": [
         "north",
@@ -68236,15 +68426,6 @@
       ],
       "display_parent": "cardinal_compass_point.n.01"
     },
-    "north_america.n.01": {
-      "label": [
-        "North_America"
-      ],
-      "gloss": "a continent (the third largest) in the western hemisphere connected to South America by the Isthmus of Panama",
-      "frequency": 4,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
-    },
     "north_american.n.01": {
       "label": [
         "North_American"
@@ -68255,18 +68436,6 @@
         "american.n.03"
       ],
       "display_parent": "american.n.03"
-    },
-    "north_carolina.n.01": {
-      "label": [
-        "North_Carolina",
-        "Old_North_State",
-        "Tar_Heel_State",
-        "NC"
-      ],
-      "gloss": "a state in southeastern United States; one of the original 13 colonies",
-      "frequency": 3,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
     },
     "northerner.n.01": {
       "label": [
@@ -68424,6 +68593,18 @@
       ],
       "display_parent": "attention.n.01"
     },
+    "notification.n.03": {
+      "label": [
+        "notification",
+        "notice"
+      ],
+      "gloss": "a request for payment",
+      "frequency": 2,
+      "hypernyms": [
+        "request.n.02"
+      ],
+      "display_parent": "request.n.02"
+    },
     "notion.n.02": {
       "label": [
         "notion"
@@ -68521,6 +68702,18 @@
       ],
       "display_parent": "present.n.01"
     },
+    "nozzle.n.01": {
+      "label": [
+        "nozzle",
+        "nose"
+      ],
+      "gloss": "a projecting spout from which a fluid is discharged",
+      "frequency": 2,
+      "hypernyms": [
+        "spout.n.01"
+      ],
+      "display_parent": "spout.n.01"
+    },
     "nuance.n.01": {
       "label": [
         "nuance",
@@ -68547,6 +68740,18 @@
         "weapon_of_mass_destruction.n.01"
       ],
       "display_parent": "weapon_of_mass_destruction.n.01"
+    },
+    "nucleolus.n.01": {
+      "label": [
+        "nucleolus",
+        "nucleole"
+      ],
+      "gloss": "a small round body of protein in a cell nucleus; such organelles contain RNA and are involved in protein synthesis",
+      "frequency": 2,
+      "hypernyms": [
+        "organelle.n.01"
+      ],
+      "display_parent": "organelle.n.01"
     },
     "nucleus.n.01": {
       "label": [
@@ -68822,6 +69027,18 @@
       ],
       "display_parent": "state.n.02"
     },
+    "oblivion.n.01": {
+      "label": [
+        "oblivion",
+        "limbo"
+      ],
+      "gloss": "the state of being disregarded or forgotten",
+      "frequency": 2,
+      "hypernyms": [
+        "obscurity.n.02"
+      ],
+      "display_parent": "obscurity.n.02"
+    },
     "obscureness.n.03": {
       "label": [
         "obscureness",
@@ -68835,6 +69052,29 @@
         "incomprehensibility.n.01"
       ],
       "display_parent": "incomprehensibility.n.01"
+    },
+    "obscurity.n.02": {
+      "label": [
+        "obscurity"
+      ],
+      "gloss": "an obscure and unimportant standing; not well known",
+      "frequency": 2,
+      "hypernyms": [
+        "standing.n.01"
+      ],
+      "display_parent": "standing.n.01"
+    },
+    "obscurity.n.03": {
+      "label": [
+        "obscurity",
+        "obscureness"
+      ],
+      "gloss": "the state of being indistinct or indefinite for lack of adequate illumination",
+      "frequency": 2,
+      "hypernyms": [
+        "semidarkness.n.01"
+      ],
+      "display_parent": "semidarkness.n.01"
     },
     "observation.n.01": {
       "label": [
@@ -69117,6 +69357,18 @@
       ],
       "display_parent": "operation.n.05"
     },
+    "offer.n.01": {
+      "label": [
+        "offer",
+        "offering"
+      ],
+      "gloss": "the verbal act of offering",
+      "frequency": 2,
+      "hypernyms": [
+        "speech_act.n.01"
+      ],
+      "display_parent": "speech_act.n.01"
+    },
     "offer.n.02": {
       "label": [
         "offer",
@@ -69225,17 +69477,6 @@
       ],
       "display_parent": "relative.n.01"
     },
-    "ohio.n.01": {
-      "label": [
-        "Ohio",
-        "Buckeye_State",
-        "OH"
-      ],
-      "gloss": "a midwestern state in north central United States in the Great Lakes region",
-      "frequency": 9,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
-    },
     "oil.n.01": {
       "label": [
         "oil"
@@ -69306,17 +69547,6 @@
       ],
       "display_parent": "macintosh.n.02"
     },
-    "oklahoma.n.01": {
-      "label": [
-        "Oklahoma",
-        "Sooner_State",
-        "OK"
-      ],
-      "gloss": "a state in south central United States",
-      "frequency": 2,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
-    },
     "old_age.n.01": {
       "label": [
         "old_age",
@@ -69358,15 +69588,6 @@
         "oldster.n.01"
       ],
       "display_parent": "man.n.01"
-    },
-    "old_south.n.01": {
-      "label": [
-        "Old_South"
-      ],
-      "gloss": "the South of the United States before the American Civil War",
-      "frequency": 3,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
     },
     "old_testament.n.01": {
       "label": [
@@ -69449,6 +69670,18 @@
         "augury.n.01"
       ],
       "display_parent": "augury.n.01"
+    },
+    "omission.n.01": {
+      "label": [
+        "omission",
+        "skip"
+      ],
+      "gloss": "a mistake resulting from neglect",
+      "frequency": 2,
+      "hypernyms": [
+        "mistake.n.01"
+      ],
+      "display_parent": "mistake.n.01"
     },
     "omission.n.04": {
       "label": [
@@ -70120,6 +70353,18 @@
       ],
       "display_parent": "state.n.02"
     },
+    "order.n.07": {
+      "label": [
+        "order",
+        "purchase_order"
+      ],
+      "gloss": "a commercial document used to request someone to supply something in return for payment and providing specifications and quantities",
+      "frequency": 2,
+      "hypernyms": [
+        "commercial_document.n.01"
+      ],
+      "display_parent": "commercial_document.n.01"
+    },
     "order.n.15": {
       "label": [
         "order",
@@ -70191,17 +70436,6 @@
         "mineral.n.01"
       ],
       "display_parent": "mineral.n.01"
-    },
-    "oregon.n.01": {
-      "label": [
-        "Oregon",
-        "Beaver_State",
-        "OR"
-      ],
-      "gloss": "a state in northwestern United States on the Pacific",
-      "frequency": 2,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
     },
     "organ.n.01": {
       "label": [
@@ -70817,6 +71051,18 @@
       ],
       "display_parent": "surface.n.02"
     },
+    "outskirt.n.01": {
+      "label": [
+        "outskirt",
+        "fringe"
+      ],
+      "gloss": "a part of the city far removed from the center",
+      "frequency": 2,
+      "hypernyms": [
+        "city_district.n.01"
+      ],
+      "display_parent": "city_district.n.01"
+    },
     "outskirts.n.01": {
       "label": [
         "outskirts"
@@ -71023,6 +71269,20 @@
       ],
       "display_parent": "relation.n.01"
     },
+    "oxidant.n.01": {
+      "label": [
+        "oxidant",
+        "oxidizer",
+        "oxidiser",
+        "oxidizing_agent"
+      ],
+      "gloss": "a substance that oxidizes another substance",
+      "frequency": 0,
+      "hypernyms": [
+        "chemical_agent.n.01"
+      ],
+      "display_parent": "chemical_agent.n.01"
+    },
     "oxidation.n.01": {
       "label": [
         "oxidation",
@@ -71144,16 +71404,6 @@
         "placental.n.01"
       ],
       "display_parent": "placental.n.01"
-    },
-    "pacific.n.01": {
-      "label": [
-        "Pacific",
-        "Pacific_Ocean"
-      ],
-      "gloss": "the largest ocean in the world",
-      "frequency": 10,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
     },
     "pack.n.02": {
       "label": [
@@ -71372,15 +71622,6 @@
       ],
       "display_parent": "mansion.n.02"
     },
-    "palestine.n.01": {
-      "label": [
-        "Palestine"
-      ],
-      "gloss": "a former British mandate on the east coast of the Mediterranean; divided between Jordan and Israel in 1948",
-      "frequency": 4,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
-    },
     "palm.n.01": {
       "label": [
         "palm",
@@ -71505,6 +71746,18 @@
         "fear.n.01"
       ],
       "display_parent": "fear.n.01"
+    },
+    "panic.n.02": {
+      "label": [
+        "panic",
+        "scare"
+      ],
+      "gloss": "sudden mass fear and anxiety over anticipated events",
+      "frequency": 2,
+      "hypernyms": [
+        "anxiety.n.01"
+      ],
+      "display_parent": "anxiety.n.01"
     },
     "pansy.n.01": {
       "label": [
@@ -71797,17 +72050,17 @@
       ],
       "display_parent": "genitor.n.01"
     },
-    "paris.n.01": {
+    "parenthood.n.01": {
       "label": [
-        "Paris",
-        "City_of_Light",
-        "French_capital",
-        "capital_of_France"
+        "parenthood",
+        "parentage"
       ],
-      "gloss": "the capital and largest city of France; and international center of culture and commerce",
-      "frequency": 20,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
+      "gloss": "the state of being a parent",
+      "frequency": 2,
+      "hypernyms": [
+        "adulthood.n.02"
+      ],
+      "display_parent": "adulthood.n.02"
     },
     "parish.n.01": {
       "label": [
@@ -72591,6 +72844,18 @@
       ],
       "display_parent": "ill_health.n.01"
     },
+    "pathway.n.02": {
+      "label": [
+        "pathway",
+        "footpath"
+      ],
+      "gloss": "a trodden path",
+      "frequency": 2,
+      "hypernyms": [
+        "path.n.02"
+      ],
+      "display_parent": "path.n.02"
+    },
     "patience.n.01": {
       "label": [
         "patience",
@@ -72615,6 +72880,18 @@
         "case.n.06"
       ],
       "display_parent": "case.n.06"
+    },
+    "patio.n.01": {
+      "label": [
+        "patio",
+        "terrace"
+      ],
+      "gloss": "usually paved outdoor area adjoining a residence",
+      "frequency": 2,
+      "hypernyms": [
+        "area.n.05"
+      ],
+      "display_parent": "area.n.05"
     },
     "patriot.n.01": {
       "label": [
@@ -73157,17 +73434,6 @@
       ],
       "display_parent": "award.n.02"
     },
-    "pennsylvania.n.01": {
-      "label": [
-        "Pennsylvania",
-        "Keystone_State",
-        "PA"
-      ],
-      "gloss": "a Mid-Atlantic state; one of the original 13 colonies",
-      "frequency": 12,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
-    },
     "penny.n.02": {
       "label": [
         "penny",
@@ -73407,6 +73673,18 @@
       ],
       "display_parent": "humanistic_discipline.n.01"
     },
+    "perfume.n.02": {
+      "label": [
+        "perfume",
+        "essence"
+      ],
+      "gloss": "a toiletry that emits and diffuses a fragrant odor",
+      "frequency": 2,
+      "hypernyms": [
+        "toiletry.n.01"
+      ],
+      "display_parent": "toiletry.n.01"
+    },
     "pericarp.n.01": {
       "label": [
         "pericarp",
@@ -73466,6 +73744,19 @@
         "duration.n.03"
       ],
       "display_parent": "duration.n.03"
+    },
+    "permeation.n.01": {
+      "label": [
+        "permeation",
+        "pervasion",
+        "suffusion"
+      ],
+      "gloss": "the process of permeating or infusing something with a substance",
+      "frequency": 0,
+      "hypernyms": [
+        "diffusion.n.01"
+      ],
+      "display_parent": "diffusion.n.01"
     },
     "permission.n.01": {
       "label": [
@@ -73716,6 +74007,18 @@
       ],
       "display_parent": "applicant.n.01"
     },
+    "petroleum_geologist.n.01": {
+      "label": [
+        "petroleum_geologist",
+        "oil_geologist"
+      ],
+      "gloss": "a specialist in petroleum geology",
+      "frequency": 2,
+      "hypernyms": [
+        "geologist.n.01"
+      ],
+      "display_parent": "geologist.n.01"
+    },
     "ph.n.01": {
       "label": [
         "pH",
@@ -73861,26 +74164,6 @@
         "thiazine.n.01"
       ],
       "display_parent": "thiazine.n.01"
-    },
-    "philadelphia.n.01": {
-      "label": [
-        "Philadelphia",
-        "City_of_Brotherly_Love"
-      ],
-      "gloss": "the largest city in Pennsylvania; located in the southeastern part of the state on the Delaware river; site of Independence Hall where the Declaration of Independence and the Constitution were signed; site of the University of Pennsylvania",
-      "frequency": 9,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
-    },
-    "philippines.n.01": {
-      "label": [
-        "Philippines",
-        "Republic_of_the_Philippines"
-      ],
-      "gloss": "a republic on the Philippine Islands; achieved independence from the United States in 1946",
-      "frequency": 2,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
     },
     "philosopher.n.01": {
       "label": [
@@ -74246,16 +74529,6 @@
       ],
       "display_parent": "percussion_instrument.n.01"
     },
-    "picasso.n.01": {
-      "label": [
-        "Picasso",
-        "Pablo_Picasso"
-      ],
-      "gloss": "prolific and influential Spanish artist who lived in France (1881-1973)",
-      "frequency": 3,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
-    },
     "piciform_bird.n.01": {
       "label": [
         "piciform_bird"
@@ -74397,6 +74670,18 @@
         "piece.n.01"
       ],
       "display_parent": "fabric.n.01"
+    },
+    "pieplant.n.01": {
+      "label": [
+        "pieplant",
+        "rhubarb"
+      ],
+      "gloss": "long pinkish sour leafstalks usually eaten cooked and sweetened",
+      "frequency": 2,
+      "hypernyms": [
+        "vegetable.n.01"
+      ],
+      "display_parent": "vegetable.n.01"
     },
     "pier.n.01": {
       "label": [
@@ -74764,15 +75049,6 @@
       ],
       "display_parent": "playing.n.02"
     },
-    "pittsburgh.n.01": {
-      "label": [
-        "Pittsburgh"
-      ],
-      "gloss": "a city in southwestern Pennsylvania where the confluence of the Allegheny River and Monongahela River forms the Ohio River; long an important urban industrial area; site of Carnegie Mellon University and the University of Pittsburgh",
-      "frequency": 5,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
-    },
     "pituitary.n.01": {
       "label": [
         "pituitary",
@@ -74844,6 +75120,18 @@
         "situation.n.02"
       ],
       "display_parent": "situation.n.02"
+    },
+    "place.n.10": {
+      "label": [
+        "place",
+        "station"
+      ],
+      "gloss": "proper or designated social situation",
+      "frequency": 2,
+      "hypernyms": [
+        "social_station.n.01"
+      ],
+      "display_parent": "social_station.n.01"
     },
     "place_kick.n.01": {
       "label": [
@@ -75412,15 +75700,6 @@
       ],
       "display_parent": "remark.n.01"
     },
-    "plato.n.01": {
-      "label": [
-        "Plato"
-      ],
-      "gloss": "ancient Athenian philosopher; pupil of Socrates; teacher of Aristotle (428-347 BC)",
-      "frequency": 15,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
-    },
     "platonism.n.01": {
       "label": [
         "Platonism",
@@ -75803,6 +76082,18 @@
       ],
       "display_parent": "craftsman.n.03"
     },
+    "plumbing.n.01": {
+      "label": [
+        "plumbing",
+        "plumbing_system"
+      ],
+      "gloss": "utility consisting of the pipes and fixtures for the distribution of water or gas in a building and for the disposal of sewage",
+      "frequency": 2,
+      "hypernyms": [
+        "utility.n.06"
+      ],
+      "display_parent": "utility.n.06"
+    },
     "plumbing_fixture.n.01": {
       "label": [
         "plumbing_fixture"
@@ -76037,17 +76328,6 @@
       ],
       "display_parent": "substance.n.07"
     },
-    "poland.n.01": {
-      "label": [
-        "Poland",
-        "Republic_of_Poland",
-        "Polska"
-      ],
-      "gloss": "a republic in central Europe; the invasion of Poland by Germany in 1939 started World War II",
-      "frequency": 7,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
-    },
     "polarization.n.01": {
       "label": [
         "polarization",
@@ -76263,6 +76543,18 @@
       ],
       "display_parent": "action.n.01"
     },
+    "political_arena.n.01": {
+      "label": [
+        "political_arena",
+        "political_sphere"
+      ],
+      "gloss": "a sphere of intense political activity",
+      "frequency": 2,
+      "hypernyms": [
+        "sphere.n.01"
+      ],
+      "display_parent": "sphere.n.01"
+    },
     "political_campaign.n.01": {
       "label": [
         "political_campaign",
@@ -76420,6 +76712,18 @@
         "position.n.01"
       ],
       "display_parent": "position.n.01"
+    },
+    "polybutylene.n.01": {
+      "label": [
+        "polybutylene",
+        "polybutene"
+      ],
+      "gloss": "a polymer of butylene; used in lubricants and synthetic rubber",
+      "frequency": 2,
+      "hypernyms": [
+        "butylene.n.01"
+      ],
+      "display_parent": "butylene.n.01"
     },
     "polyethylene.n.01": {
       "label": [
@@ -77103,8 +77407,8 @@
       "gloss": "metal or earthenware cooking vessel that is usually round and deep; often has a handle and lid",
       "frequency": 6,
       "hypernyms": [
-        "vessel.n.03",
-        "cooking_utensil.n.01"
+        "cooking_utensil.n.01",
+        "vessel.n.03"
       ],
       "display_parent": "cooking_utensil.n.01"
     },
@@ -77209,6 +77513,18 @@
         "mechanical_energy.n.01"
       ],
       "display_parent": "mechanical_energy.n.01"
+    },
+    "pothole.n.01": {
+      "label": [
+        "pothole",
+        "chuckhole"
+      ],
+      "gloss": "a pit or hole produced by wear or weathering (especially in a road surface)",
+      "frequency": 2,
+      "hypernyms": [
+        "hole.n.05"
+      ],
+      "display_parent": "hole.n.05"
     },
     "potter.n.01": {
       "label": [
@@ -77942,6 +78258,18 @@
       ],
       "display_parent": "display.n.05"
     },
+    "presentment.n.01": {
+      "label": [
+        "presentment",
+        "notification"
+      ],
+      "gloss": "an accusation of crime made by a grand jury on its own initiative",
+      "frequency": 2,
+      "hypernyms": [
+        "due_process.n.01"
+      ],
+      "display_parent": "due_process.n.01"
+    },
     "presentness.n.01": {
       "label": [
         "presentness",
@@ -78221,6 +78549,18 @@
       ],
       "display_parent": "victim.n.01"
     },
+    "prey.n.02": {
+      "label": [
+        "prey",
+        "quarry"
+      ],
+      "gloss": "animal hunted or caught for food",
+      "frequency": 2,
+      "hypernyms": [
+        "animal.n.01"
+      ],
+      "display_parent": "animal.n.01"
+    },
     "price.n.02": {
       "label": [
         "price",
@@ -78469,6 +78809,18 @@
         "law.n.04"
       ],
       "display_parent": "law.n.04"
+    },
+    "principle.n.05": {
+      "label": [
+        "principle",
+        "precept"
+      ],
+      "gloss": "rule of personal conduct",
+      "frequency": 2,
+      "hypernyms": [
+        "rule.n.03"
+      ],
+      "display_parent": "rule.n.03"
     },
     "print_media.n.01": {
       "label": [
@@ -78994,6 +79346,18 @@
       ],
       "display_parent": "adult.n.01"
     },
+    "professional.n.02": {
+      "label": [
+        "professional",
+        "pro"
+      ],
+      "gloss": "an athlete who plays for pay",
+      "frequency": 2,
+      "hypernyms": [
+        "athlete.n.01"
+      ],
+      "display_parent": "athlete.n.01"
+    },
     "professor.n.01": {
       "label": [
         "professor",
@@ -79132,6 +79496,18 @@
       ],
       "display_parent": "change_of_location.n.01"
     },
+    "progression.n.01": {
+      "label": [
+        "progression",
+        "patterned_advance"
+      ],
+      "gloss": "a series with a definite pattern of advance",
+      "frequency": 2,
+      "hypernyms": [
+        "series.n.01"
+      ],
+      "display_parent": "series.n.01"
+    },
     "prohibition.n.01": {
       "label": [
         "prohibition"
@@ -79155,6 +79531,18 @@
         "decree.n.01"
       ],
       "display_parent": "decree.n.01"
+    },
+    "project.n.02": {
+      "label": [
+        "project",
+        "projection"
+      ],
+      "gloss": "a planned undertaking",
+      "frequency": 2,
+      "hypernyms": [
+        "plan.n.01"
+      ],
+      "display_parent": "plan.n.01"
     },
     "projectile.n.01": {
       "label": [
@@ -79268,8 +79656,8 @@
       "gloss": "a verbal commitment by one person to another agreeing to do (or not to do) something in the future",
       "frequency": 8,
       "hypernyms": [
-        "speech_act.n.01",
-        "commitment.n.04"
+        "commitment.n.04",
+        "speech_act.n.01"
       ],
       "display_parent": "commitment.n.04"
     },
@@ -79935,16 +80323,6 @@
       ],
       "display_parent": "saying.n.01"
     },
-    "providence.n.01": {
-      "label": [
-        "Providence",
-        "capital_of_Rhode_Island"
-      ],
-      "gloss": "the capital and largest city of Rhode Island; located in northeastern Rhode Island on Narragansett Bay; site of Brown University",
-      "frequency": 7,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
-    },
     "province.n.02": {
       "label": [
         "province",
@@ -80055,6 +80433,17 @@
         "drug.n.01"
       ],
       "display_parent": "drug.n.01"
+    },
+    "psychoanalytic_process.n.01": {
+      "label": [
+        "psychoanalytic_process"
+      ],
+      "gloss": "a process that is assumed to occur in psychoanalytic theory",
+      "frequency": 0,
+      "hypernyms": [
+        "human_process.n.01"
+      ],
+      "display_parent": "human_process.n.01"
     },
     "psychological_feature.n.01": {
       "label": [
@@ -80315,18 +80704,6 @@
       ],
       "display_parent": "professional.n.01"
     },
-    "puerto_rico.n.01": {
-      "label": [
-        "Puerto_Rico",
-        "Porto_Rico",
-        "Commonwealth_of_Puerto_Rico",
-        "PR"
-      ],
-      "gloss": "a self-governing commonwealth associated with the United States occupying the island of Puerto Rico",
-      "frequency": 17,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
-    },
     "pull-up.n.02": {
       "label": [
         "pull-up",
@@ -80388,6 +80765,18 @@
         "vein.n.01"
       ],
       "display_parent": "vein.n.01"
+    },
+    "pulp.n.01": {
+      "label": [
+        "pulp",
+        "mush"
+      ],
+      "gloss": "any soft or soggy mass",
+      "frequency": 2,
+      "hypernyms": [
+        "mass.n.05"
+      ],
+      "display_parent": "mass.n.05"
     },
     "pulsation.n.01": {
       "label": [
@@ -80539,6 +80928,18 @@
         "condition.n.01"
       ],
       "display_parent": "condition.n.01"
+    },
+    "purple.n.01": {
+      "label": [
+        "purple",
+        "purpleness"
+      ],
+      "gloss": "a purple color or pigment",
+      "frequency": 2,
+      "hypernyms": [
+        "chromatic_color.n.01"
+      ],
+      "display_parent": "chromatic_color.n.01"
     },
     "purpose.n.01": {
       "label": [
@@ -80868,6 +81269,18 @@
       ],
       "display_parent": "christian_holy_day.n.01"
     },
+    "quarter_mile.n.01": {
+      "label": [
+        "quarter_mile",
+        "440_yards"
+      ],
+      "gloss": "a unit of length equal to a quarter of 1 mile",
+      "frequency": 2,
+      "hypernyms": [
+        "linear_unit.n.01"
+      ],
+      "display_parent": "linear_unit.n.01"
+    },
     "quarterback.n.01": {
       "label": [
         "quarterback",
@@ -80979,6 +81392,18 @@
         "bread.n.01"
       ],
       "display_parent": "bread.n.01"
+    },
+    "quietness.n.01": {
+      "label": [
+        "quietness",
+        "soundlessness"
+      ],
+      "gloss": "the property of making no sound",
+      "frequency": 2,
+      "hypernyms": [
+        "silence.n.02"
+      ],
+      "display_parent": "silence.n.02"
     },
     "quirt.n.01": {
       "label": [
@@ -81723,6 +82148,18 @@
         "force.n.04"
       ],
       "display_parent": "force.n.04"
+    },
+    "ransom.n.01": {
+      "label": [
+        "ransom",
+        "ransom_money"
+      ],
+      "gloss": "money demanded for the return of a captured person",
+      "frequency": 2,
+      "hypernyms": [
+        "cost.n.01"
+      ],
+      "display_parent": "cost.n.01"
     },
     "rapid_transit.n.01": {
       "label": [
@@ -82820,6 +83257,18 @@
       ],
       "display_parent": "enlisted_man.n.01"
     },
+    "recruit.n.02": {
+      "label": [
+        "recruit",
+        "enlistee"
+      ],
+      "gloss": "any new member or supporter (as in the armed forces)",
+      "frequency": 2,
+      "hypernyms": [
+        "newcomer.n.01"
+      ],
+      "display_parent": "newcomer.n.01"
+    },
     "recruitment.n.01": {
       "label": [
         "recruitment",
@@ -82854,16 +83303,6 @@
         "chromatic_color.n.01"
       ],
       "display_parent": "chromatic_color.n.01"
-    },
-    "red.n.02": {
-      "label": [
-        "Red",
-        "Red_River"
-      ],
-      "gloss": "a tributary of the Mississippi River that flows eastward from Texas along the southern boundary of Oklahoma and through Louisiana",
-      "frequency": 17,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
     },
     "red_blood_cell.n.01": {
       "label": [
@@ -82965,6 +83404,18 @@
         "meaning.n.02"
       ],
       "display_parent": "meaning.n.02"
+    },
+    "reference.n.07": {
+      "label": [
+        "reference",
+        "consultation"
+      ],
+      "gloss": "the act of referring or consulting",
+      "frequency": 2,
+      "hypernyms": [
+        "action.n.01"
+      ],
+      "display_parent": "action.n.01"
     },
     "reference_book.n.01": {
       "label": [
@@ -83257,6 +83708,18 @@
       ],
       "display_parent": "entrance.n.03"
     },
+    "regression_line.n.01": {
+      "label": [
+        "regression_line",
+        "regression_curve"
+      ],
+      "gloss": "a smooth curve fitted to the set of paired data in regression analysis; for linear regression the curve is a straight line",
+      "frequency": 2,
+      "hypernyms": [
+        "curve.n.02"
+      ],
+      "display_parent": "curve.n.02"
+    },
     "regular_payment.n.01": {
       "label": [
         "regular_payment"
@@ -83351,6 +83814,18 @@
         "strap.n.01"
       ],
       "display_parent": "strap.n.01"
+    },
+    "reinforced_concrete.n.01": {
+      "label": [
+        "reinforced_concrete",
+        "ferroconcrete"
+      ],
+      "gloss": "concrete with metal and/or mesh added to provide extra support against stresses",
+      "frequency": 2,
+      "hypernyms": [
+        "concrete.n.01"
+      ],
+      "display_parent": "concrete.n.01"
     },
     "reissue.n.01": {
       "label": [
@@ -83855,16 +84330,6 @@
       ],
       "display_parent": "separation.n.09"
     },
-    "renaissance.n.01": {
-      "label": [
-        "Renaissance",
-        "Renascence"
-      ],
-      "gloss": "the period of European history at the close of the Middle Ages and the rise of the modern world; a cultural rebirth from the 14th through the middle of the 17th centuries",
-      "frequency": 5,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
-    },
     "renaissance_man.n.01": {
       "label": [
         "Renaissance_man",
@@ -84210,6 +84675,18 @@
       ],
       "display_parent": "audio_system.n.01"
     },
+    "reproducibility.n.01": {
+      "label": [
+        "reproducibility",
+        "duplicability"
+      ],
+      "gloss": "the quality of being reproducible",
+      "frequency": 2,
+      "hypernyms": [
+        "dependability.n.01"
+      ],
+      "display_parent": "dependability.n.01"
+    },
     "reproduction.n.04": {
       "label": [
         "reproduction",
@@ -84294,6 +84771,18 @@
         "politician.n.02"
       ],
       "display_parent": "politician.n.02"
+    },
+    "republican_party.n.01": {
+      "label": [
+        "Republican_Party",
+        "GOP"
+      ],
+      "gloss": "the younger of two major political parties in the United States; GOP is an acronym for grand old party",
+      "frequency": 2,
+      "hypernyms": [
+        "party.n.01"
+      ],
+      "display_parent": "party.n.01"
     },
     "repugnance.n.01": {
       "label": [
@@ -84532,6 +85021,18 @@
       ],
       "display_parent": "district.n.01"
     },
+    "resignation.n.01": {
+      "label": [
+        "resignation",
+        "surrender"
+      ],
+      "gloss": "acceptance of despair",
+      "frequency": 2,
+      "hypernyms": [
+        "despair.n.02"
+      ],
+      "display_parent": "despair.n.02"
+    },
     "resignation.n.02": {
       "label": [
         "resignation"
@@ -84628,6 +85129,30 @@
         "document.n.01"
       ],
       "display_parent": "document.n.01"
+    },
+    "resolution.n.04": {
+      "label": [
+        "resolution",
+        "solving"
+      ],
+      "gloss": "finding a solution to a problem",
+      "frequency": 2,
+      "hypernyms": [
+        "determination.n.01"
+      ],
+      "display_parent": "determination.n.01"
+    },
+    "resolving_power.n.01": {
+      "label": [
+        "resolving_power",
+        "resolution"
+      ],
+      "gloss": "the ability of a microscope or telescope to measure the angular separation of images that are close together",
+      "frequency": 2,
+      "hypernyms": [
+        "physical_phenomenon.n.01"
+      ],
+      "display_parent": "physical_phenomenon.n.01"
     },
     "resonance.n.01": {
       "label": [
@@ -84745,6 +85270,18 @@
         "internal_organ.n.01"
       ],
       "display_parent": "internal_organ.n.01"
+    },
+    "respiratory_tract.n.01": {
+      "label": [
+        "respiratory_tract",
+        "airway"
+      ],
+      "gloss": "the passages through which air enters and leaves the body",
+      "frequency": 2,
+      "hypernyms": [
+        "tract.n.02"
+      ],
+      "display_parent": "tract.n.02"
     },
     "respite.n.02": {
       "label": [
@@ -85337,18 +85874,6 @@
       ],
       "display_parent": "odd-toed_ungulate.n.01"
     },
-    "rhode_island.n.01": {
-      "label": [
-        "Rhode_Island",
-        "Little_Rhody",
-        "Ocean_State",
-        "RI"
-      ],
-      "gloss": "a state in New England; one of the original 13 colonies; the smallest state",
-      "frequency": 9,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
-    },
     "rhode_islander.n.01": {
       "label": [
         "Rhode_Islander"
@@ -85483,16 +86008,6 @@
       ],
       "display_parent": "person.n.01"
     },
-    "richmond.n.01": {
-      "label": [
-        "Richmond",
-        "capital_of_Virginia"
-      ],
-      "gloss": "capital of the state of Virginia located in the east central part of the state; was capital of the Confederacy during the American Civil War",
-      "frequency": 4,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
-    },
     "rickettsial_disease.n.01": {
       "label": [
         "rickettsial_disease",
@@ -85548,6 +86063,18 @@
         "marksman.n.01"
       ],
       "display_parent": "marksman.n.01"
+    },
+    "right-handed_pitcher.n.01": {
+      "label": [
+        "right-handed_pitcher",
+        "right-hander"
+      ],
+      "gloss": "(baseball) a pitcher who throws with the right hand",
+      "frequency": 2,
+      "hypernyms": [
+        "pitcher.n.01"
+      ],
+      "display_parent": "pitcher.n.01"
     },
     "right.n.01": {
       "label": [
@@ -85822,6 +86349,18 @@
         "stream.n.01"
       ],
       "display_parent": "stream.n.01"
+    },
+    "riverbank.n.01": {
+      "label": [
+        "riverbank",
+        "riverside"
+      ],
+      "gloss": "the bank of a river",
+      "frequency": 2,
+      "hypernyms": [
+        "bank.n.01"
+      ],
+      "display_parent": "bank.n.01"
     },
     "road.n.01": {
       "label": [
@@ -86105,19 +86644,6 @@
       ],
       "display_parent": "latin.n.01"
     },
-    "rome.n.01": {
-      "label": [
-        "Rome",
-        "Roma",
-        "Eternal_City",
-        "Italian_capital",
-        "capital_of_Italy"
-      ],
-      "gloss": "capital and largest city of Italy; on the Tiber; seat of the Roman Catholic Church; formerly the capital of the Roman Republic and the Roman Empire",
-      "frequency": 4,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
-    },
     "roof.n.01": {
       "label": [
         "roof"
@@ -86174,21 +86700,6 @@
         "temperature.n.01"
       ],
       "display_parent": "temperature.n.01"
-    },
-    "roosevelt.n.01": {
-      "label": [
-        "Roosevelt",
-        "Franklin_Roosevelt",
-        "Franklin_Delano_Roosevelt",
-        "F._D._Roosevelt",
-        "President_Roosevelt",
-        "President_Franklin_Roosevelt",
-        "FDR"
-      ],
-      "gloss": "32nd President of the United States; elected four times; instituted New Deal to counter the Great Depression and led country during World War II (1882-1945)",
-      "frequency": 1,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
     },
     "root.n.01": {
       "label": [
@@ -86379,16 +86890,6 @@
         "shape.n.01"
       ],
       "display_parent": "shape.n.01"
-    },
-    "rousseau.n.01": {
-      "label": [
-        "Rousseau",
-        "Jean-Jacques_Rousseau"
-      ],
-      "gloss": "French philosopher and writer born in Switzerland; believed that the natural goodness of man was warped by society; ideas influenced the French Revolution (1712-1778)",
-      "frequency": 13,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
     },
     "routine.n.01": {
       "label": [
@@ -86655,6 +87156,18 @@
         "victory.n.01"
       ],
       "display_parent": "victory.n.01"
+    },
+    "runner-up.n.01": {
+      "label": [
+        "runner-up",
+        "second_best"
+      ],
+      "gloss": "the competitor who finishes second",
+      "frequency": 2,
+      "hypernyms": [
+        "rival.n.01"
+      ],
+      "display_parent": "rival.n.01"
     },
     "running_away.n.01": {
       "label": [
@@ -87011,28 +87524,6 @@
       ],
       "display_parent": "good_person.n.01"
     },
-    "saint_louis.n.02": {
-      "label": [
-        "Saint_Louis",
-        "St._Louis",
-        "Gateway_to_the_West"
-      ],
-      "gloss": "the largest city in Missouri; a busy river port on the Mississippi River near its confluence with the Missouri River; was an important staging area for wagon trains westward in the 19th century",
-      "frequency": 9,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
-    },
-    "saint_paul.n.02": {
-      "label": [
-        "Saint_Paul",
-        "St._Paul",
-        "capital_of_Minnesota"
-      ],
-      "gloss": "capital of the state of Minnesota; located in southeastern Minnesota on the Mississippi river adjacent to Minneapolis; one of the Twin Cities",
-      "frequency": 3,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
-    },
     "sake.n.01": {
       "label": [
         "sake",
@@ -87260,15 +87751,6 @@
       ],
       "display_parent": "observation_station.n.01"
     },
-    "san_francisco.n.01": {
-      "label": [
-        "San_Francisco"
-      ],
-      "gloss": "a port in western California near the Golden Gate that is one of the major industrial and transportation centers; it has one of the world's finest harbors; site of the Golden Gate Bridge",
-      "frequency": 10,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
-    },
     "sanction.n.01": {
       "label": [
         "sanction",
@@ -87370,21 +87852,6 @@
       ],
       "display_parent": "rejoinder.n.01"
     },
-    "satan.n.01": {
-      "label": [
-        "Satan",
-        "Old_Nick",
-        "Devil",
-        "Lucifer",
-        "Beelzebub",
-        "the_Tempter",
-        "Prince_of_Darkness"
-      ],
-      "gloss": "(Judeo-Christian and Islamic religions) chief spirit of evil and adversary of God; tempter of mankind; master of Hell",
-      "frequency": 14,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
-    },
     "satellite.n.01": {
       "label": [
         "satellite",
@@ -87433,15 +87900,6 @@
       ],
       "display_parent": "weekday.n.01"
     },
-    "saturn.n.01": {
-      "label": [
-        "Saturn"
-      ],
-      "gloss": "a giant planet that is surrounded by three planar concentric rings of ice particles; the 6th planet from the sun",
-      "frequency": 3,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
-    },
     "savage.n.01": {
       "label": [
         "savage",
@@ -87453,15 +87911,6 @@
         "primitive.n.01"
       ],
       "display_parent": "primitive.n.01"
-    },
-    "savannah.n.01": {
-      "label": [
-        "Savannah"
-      ],
-      "gloss": "a port in eastern Georgia near the mouth of the Savannah river",
-      "frequency": 4,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
     },
     "savings.n.01": {
       "label": [
@@ -87834,6 +88283,30 @@
       ],
       "display_parent": "term.n.02"
     },
+    "school_year.n.01": {
+      "label": [
+        "school_year",
+        "academic_year"
+      ],
+      "gloss": "the period of time each year when the school is open and people are studying",
+      "frequency": 2,
+      "hypernyms": [
+        "year.n.02"
+      ],
+      "display_parent": "year.n.02"
+    },
+    "schooldays.n.01": {
+      "label": [
+        "schooldays",
+        "schooltime"
+      ],
+      "gloss": "the time of life when you are going to school",
+      "frequency": 2,
+      "hypernyms": [
+        "time_of_life.n.01"
+      ],
+      "display_parent": "time_of_life.n.01"
+    },
     "schoolmarm.n.01": {
       "label": [
         "schoolmarm",
@@ -87982,6 +88455,18 @@
       ],
       "display_parent": "set.n.01"
     },
+    "score.n.05": {
+      "label": [
+        "score",
+        "account"
+      ],
+      "gloss": "grounds",
+      "frequency": 2,
+      "hypernyms": [
+        "reason.n.01"
+      ],
+      "display_parent": "reason.n.01"
+    },
     "score.n.10": {
       "label": [
         "score"
@@ -88005,6 +88490,18 @@
         "european.n.01"
       ],
       "display_parent": "european.n.01"
+    },
+    "scotland_yard.n.01": {
+      "label": [
+        "Scotland_Yard",
+        "New_Scotland_Yard"
+      ],
+      "gloss": "the detective department of the metropolitan police force of London",
+      "frequency": 2,
+      "hypernyms": [
+        "police.n.01"
+      ],
+      "display_parent": "police.n.01"
     },
     "scours.n.01": {
       "label": [
@@ -88718,8 +89215,8 @@
       "gloss": "a self-contained part of a larger composition (written or musical)",
       "frequency": 43,
       "hypernyms": [
-        "music.n.01",
-        "writing.n.02"
+        "writing.n.02",
+        "music.n.01"
       ],
       "display_parent": "music.n.01"
     },
@@ -89011,6 +89508,18 @@
         "resoluteness.n.01"
       ],
       "display_parent": "resoluteness.n.01"
+    },
+    "self-deception.n.01": {
+      "label": [
+        "self-deception",
+        "self-deceit"
+      ],
+      "gloss": "a misconception that is favorable to the person who holds it",
+      "frequency": 2,
+      "hypernyms": [
+        "misconception.n.01"
+      ],
+      "display_parent": "misconception.n.01"
     },
     "self-denial.n.02": {
       "label": [
@@ -89371,6 +89880,18 @@
       ],
       "display_parent": "feeling.n.01"
     },
+    "sensitivity.n.05": {
+      "label": [
+        "sensitivity",
+        "sensitiveness"
+      ],
+      "gloss": "the ability to respond to affective changes in your interpersonal environment",
+      "frequency": 0,
+      "hypernyms": [
+        "ability.n.01"
+      ],
+      "display_parent": "ability.n.01"
+    },
     "sensory_activity.n.01": {
       "label": [
         "sensory_activity"
@@ -89604,6 +90125,20 @@
         "contest.n.01"
       ],
       "display_parent": "contest.n.01"
+    },
+    "seriousness.n.03": {
+      "label": [
+        "seriousness",
+        "earnestness",
+        "serious-mindedness",
+        "sincerity"
+      ],
+      "gloss": "the trait of being serious; - Robert Rice",
+      "frequency": 0,
+      "hypernyms": [
+        "trait.n.01"
+      ],
+      "display_parent": "trait.n.01"
     },
     "sermon.n.01": {
       "label": [
@@ -90137,19 +90672,6 @@
       ],
       "display_parent": "line.n.02"
     },
-    "shakespeare.n.01": {
-      "label": [
-        "Shakespeare",
-        "William_Shakespeare",
-        "Shakspere",
-        "William_Shakspere",
-        "Bard_of_Avon"
-      ],
-      "gloss": "English poet and dramatist considered one of the greatest English writers (1564-1616)",
-      "frequency": 11,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
-    },
     "shaking.n.02": {
       "label": [
         "shaking",
@@ -90217,6 +90739,18 @@
         "attribute.n.02"
       ],
       "display_parent": "attribute.n.02"
+    },
+    "shape.n.04": {
+      "label": [
+        "shape",
+        "embodiment"
+      ],
+      "gloss": "a concrete representation of an otherwise nebulous concept",
+      "frequency": 2,
+      "hypernyms": [
+        "concretism.n.01"
+      ],
+      "display_parent": "concretism.n.01"
     },
     "shard.n.01": {
       "label": [
@@ -90462,16 +90996,6 @@
       ],
       "display_parent": "lawman.n.01"
     },
-    "sherlock_holmes.n.01": {
-      "label": [
-        "Sherlock_Holmes",
-        "Holmes"
-      ],
-      "gloss": "a fictitious detective in stories by A. Conan Doyle",
-      "frequency": 25,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
-    },
     "sherry.n.01": {
       "label": [
         "sherry"
@@ -90599,6 +91123,30 @@
         "garment.n.01"
       ],
       "display_parent": "garment.n.01"
+    },
+    "shock.n.02": {
+      "label": [
+        "shock",
+        "impact"
+      ],
+      "gloss": "the violent interaction of individuals or groups entering into combat",
+      "frequency": 2,
+      "hypernyms": [
+        "fight.n.02"
+      ],
+      "display_parent": "fight.n.02"
+    },
+    "shock.n.06": {
+      "label": [
+        "shock",
+        "blow"
+      ],
+      "gloss": "an unpleasant or disappointing surprise",
+      "frequency": 2,
+      "hypernyms": [
+        "surprise.n.02"
+      ],
+      "display_parent": "surprise.n.02"
     },
     "shock_absorber.n.01": {
       "label": [
@@ -90888,6 +91436,18 @@
       ],
       "display_parent": "social_event.n.01"
     },
+    "showcase.n.01": {
+      "label": [
+        "showcase",
+        "show_window"
+      ],
+      "gloss": "a setting in which something can be displayed to best effect",
+      "frequency": 2,
+      "hypernyms": [
+        "setting.n.02"
+      ],
+      "display_parent": "setting.n.02"
+    },
     "shower.n.01": {
       "label": [
         "shower"
@@ -91009,15 +91569,6 @@
         "domestic_cat.n.01"
       ],
       "display_parent": "domestic_cat.n.01"
-    },
-    "siberia.n.01": {
-      "label": [
-        "Siberia"
-      ],
-      "gloss": "a vast Asian region of Russia; famous for long cold winters",
-      "frequency": 3,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
     },
     "sick_person.n.01": {
       "label": [
@@ -92204,6 +92755,18 @@
       ],
       "display_parent": "part.n.03"
     },
+    "slide.n.01": {
+      "label": [
+        "slide",
+        "microscope_slide"
+      ],
+      "gloss": "a small flat rectangular piece of glass on which specimens can be mounted for microscopic study",
+      "frequency": 2,
+      "hypernyms": [
+        "plate_glass.n.01"
+      ],
+      "display_parent": "plate_glass.n.01"
+    },
     "slip.n.07": {
       "label": [
         "slip",
@@ -92968,6 +93531,18 @@
       ],
       "display_parent": "bottom.n.01"
     },
+    "solicitude.n.01": {
+      "label": [
+        "solicitude",
+        "solicitousness"
+      ],
+      "gloss": "a feeling of excessive concern",
+      "frequency": 2,
+      "hypernyms": [
+        "concern.n.03"
+      ],
+      "display_parent": "concern.n.03"
+    },
     "solid.n.01": {
       "label": [
         "solid"
@@ -93187,17 +93762,6 @@
         "male_offspring.n.01"
       ],
       "display_parent": "male_offspring.n.01"
-    },
-    "son.n.02": {
-      "label": [
-        "Son",
-        "Word",
-        "Logos"
-      ],
-      "gloss": "the divine word of God; the second person in the Trinity (incarnate in Jesus)",
-      "frequency": 2,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
     },
     "sonar.n.01": {
       "label": [
@@ -93495,15 +94059,6 @@
       ],
       "display_parent": "device.n.01"
     },
-    "south.n.01": {
-      "label": [
-        "South"
-      ],
-      "gloss": "the region of the United States lying to the south of the Mason-Dixon line",
-      "frequency": 37,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
-    },
     "south.n.03": {
       "label": [
         "south",
@@ -93517,15 +94072,6 @@
         "cardinal_compass_point.n.01"
       ],
       "display_parent": "cardinal_compass_point.n.01"
-    },
-    "south_america.n.01": {
-      "label": [
-        "South_America"
-      ],
-      "gloss": "a continent in the western hemisphere connected to North America by the Isthmus of Panama",
-      "frequency": 3,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
     },
     "southerner.n.01": {
       "label": [
@@ -93551,18 +94097,6 @@
         "ruler.n.01"
       ],
       "display_parent": "ruler.n.01"
-    },
-    "soviet_union.n.01": {
-      "label": [
-        "Soviet_Union",
-        "Russia",
-        "Union_of_Soviet_Socialist_Republics",
-        "USSR"
-      ],
-      "gloss": "a former communist country in eastern Europe and northern Asia; established in 1922; included Russia and 14 other soviet socialist republics (Ukraine and Byelorussia and others); officially dissolved 31 December 1991",
-      "frequency": 17,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
     },
     "soviets.n.01": {
       "label": [
@@ -93610,6 +94144,18 @@
       ],
       "display_parent": "area.n.01"
     },
+    "space.n.05": {
+      "label": [
+        "space",
+        "blank"
+      ],
+      "gloss": "a blank character used to separate successive words in writing or printing",
+      "frequency": 2,
+      "hypernyms": [
+        "character.n.08"
+      ],
+      "display_parent": "character.n.08"
+    },
     "space.n.07": {
       "label": [
         "space",
@@ -93645,17 +94191,6 @@
         "placement.n.01"
       ],
       "display_parent": "placement.n.01"
-    },
-    "spain.n.01": {
-      "label": [
-        "Spain",
-        "Kingdom_of_Spain",
-        "Espana"
-      ],
-      "gloss": "a parliamentary monarchy in southwestern Europe on the Iberian Peninsula; a former colonial power",
-      "frequency": 2,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
     },
     "span.n.01": {
       "label": [
@@ -94373,6 +94908,18 @@
       ],
       "display_parent": "spiritual_being.n.01"
     },
+    "spiritual.n.01": {
+      "label": [
+        "spiritual",
+        "Negro_spiritual"
+      ],
+      "gloss": "a kind of religious song originated by Blacks in the southern United States",
+      "frequency": 2,
+      "hypernyms": [
+        "religious_song.n.01"
+      ],
+      "display_parent": "religious_song.n.01"
+    },
     "spiritual_being.n.01": {
       "label": [
         "spiritual_being",
@@ -94619,6 +95166,17 @@
       ],
       "display_parent": "relative.n.01"
     },
+    "spout.n.01": {
+      "label": [
+        "spout"
+      ],
+      "gloss": "an opening that allows the passage of liquids or grain",
+      "frequency": 0,
+      "hypernyms": [
+        "opening.n.10"
+      ],
+      "display_parent": "opening.n.10"
+    },
     "spray.n.01": {
       "label": [
         "spray"
@@ -94714,16 +95272,6 @@
         "preseason.n.01"
       ],
       "display_parent": "preseason.n.01"
-    },
-    "springfield.n.01": {
-      "label": [
-        "Springfield",
-        "capital_of_Illinois"
-      ],
-      "gloss": "capital of the state of Illinois",
-      "frequency": 2,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
     },
     "spy.n.01": {
       "label": [
@@ -94843,6 +95391,18 @@
         "steadiness.n.02"
       ],
       "display_parent": "steadiness.n.02"
+    },
+    "stabilization.n.01": {
+      "label": [
+        "stabilization",
+        "stabilisation"
+      ],
+      "gloss": "the act of stabilizing something or making it more stable",
+      "frequency": 2,
+      "hypernyms": [
+        "standardization.n.02"
+      ],
+      "display_parent": "standardization.n.02"
     },
     "stable.n.01": {
       "label": [
@@ -95131,6 +95691,20 @@
       ],
       "display_parent": "variance.n.03"
     },
+    "standardization.n.02": {
+      "label": [
+        "standardization",
+        "standardisation",
+        "normalization",
+        "normalisation"
+      ],
+      "gloss": "the imposition of standards or regulations",
+      "frequency": 0,
+      "hypernyms": [
+        "social_control.n.01"
+      ],
+      "display_parent": "social_control.n.01"
+    },
     "standing.n.01": {
       "label": [
         "standing"
@@ -95392,6 +95966,18 @@
         "facility.n.01"
       ],
       "display_parent": "facility.n.01"
+    },
+    "stationery.n.01": {
+      "label": [
+        "stationery",
+        "letter_paper"
+      ],
+      "gloss": "paper cut to an appropriate size for writing letters; usually with matching envelopes",
+      "frequency": 2,
+      "hypernyms": [
+        "writing_paper.n.01"
+      ],
+      "display_parent": "writing_paper.n.01"
     },
     "statistic.n.01": {
       "label": [
@@ -96221,17 +96807,6 @@
       ],
       "display_parent": "layer.n.02"
     },
-    "stravinsky.n.01": {
-      "label": [
-        "Stravinsky",
-        "Igor_Stravinsky",
-        "Igor_Fyodorovich_Stravinsky"
-      ],
-      "gloss": "composer who was born in Russia but lived in the United States after 1939 (1882-1971)",
-      "frequency": 6,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
-    },
     "straw.n.01": {
       "label": [
         "straw"
@@ -96242,6 +96817,18 @@
         "plant_fiber.n.01"
       ],
       "display_parent": "plant_fiber.n.01"
+    },
+    "streak.n.01": {
+      "label": [
+        "streak",
+        "run"
+      ],
+      "gloss": "an unbroken series of events",
+      "frequency": 2,
+      "hypernyms": [
+        "succession.n.02"
+      ],
+      "display_parent": "succession.n.02"
     },
     "stream.n.01": {
       "label": [
@@ -96279,6 +96866,18 @@
         "motion.n.04"
       ],
       "display_parent": "motion.n.04"
+    },
+    "streambed.n.01": {
+      "label": [
+        "streambed",
+        "creek_bed"
+      ],
+      "gloss": "a channel occupied (or formerly occupied) by a stream",
+      "frequency": 0,
+      "hypernyms": [
+        "bed.n.03"
+      ],
+      "display_parent": "bed.n.03"
     },
     "street.n.01": {
       "label": [
@@ -96925,6 +97524,18 @@
       ],
       "display_parent": "kind.n.01"
     },
+    "stylization.n.01": {
+      "label": [
+        "stylization",
+        "stylisation"
+      ],
+      "gloss": "the act of stylizing; causing to conform to a particular style",
+      "frequency": 2,
+      "hypernyms": [
+        "standardization.n.02"
+      ],
+      "display_parent": "standardization.n.02"
+    },
     "sub-interval.n.01": {
       "label": [
         "sub-interval"
@@ -97286,6 +97897,17 @@
       ],
       "display_parent": "prosperity.n.02"
     },
+    "succession.n.02": {
+      "label": [
+        "succession"
+      ],
+      "gloss": "a group of people or things arranged or following in order",
+      "frequency": 1,
+      "hypernyms": [
+        "series.n.01"
+      ],
+      "display_parent": "series.n.01"
+    },
     "succession.n.03": {
       "label": [
         "succession",
@@ -97333,6 +97955,19 @@
         "pain.n.02"
       ],
       "display_parent": "pain.n.02"
+    },
+    "suffix.n.01": {
+      "label": [
+        "suffix",
+        "postfix"
+      ],
+      "gloss": "an affix that is added at the end of the word",
+      "frequency": 2,
+      "hypernyms": [
+        "ending.n.01",
+        "affix.n.01"
+      ],
+      "display_parent": "ending.n.01"
     },
     "sugar.n.01": {
       "label": [
@@ -97509,16 +98144,6 @@
         "solstice.n.01"
       ],
       "display_parent": "solstice.n.01"
-    },
-    "sun.n.01": {
-      "label": [
-        "sun",
-        "Sun"
-      ],
-      "gloss": "the star that is the source of light and heat for the planets in the solar system",
-      "frequency": 42,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
     },
     "sunbeam.n.01": {
       "label": [
@@ -98153,17 +98778,6 @@
       ],
       "display_parent": "wetland.n.01"
     },
-    "sweden.n.01": {
-      "label": [
-        "Sweden",
-        "Kingdom_of_Sweden",
-        "Sverige"
-      ],
-      "gloss": "a Scandinavian kingdom in the eastern part of the Scandinavian Peninsula",
-      "frequency": 9,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
-    },
     "sweep.n.01": {
       "label": [
         "sweep",
@@ -98342,6 +98956,18 @@
       ],
       "display_parent": "change.n.03"
     },
+    "swoop.n.01": {
+      "label": [
+        "swoop",
+        "slide"
+      ],
+      "gloss": "(music) rapid sliding up or down the musical scale",
+      "frequency": 2,
+      "hypernyms": [
+        "glissando.n.01"
+      ],
+      "display_parent": "glissando.n.01"
+    },
     "sword.n.01": {
       "label": [
         "sword",
@@ -98405,6 +99031,18 @@
         "spatial_property.n.01"
       ],
       "display_parent": "spatial_property.n.01"
+    },
+    "symmetry.n.02": {
+      "label": [
+        "symmetry",
+        "proportion"
+      ],
+      "gloss": "balance among the parts of something",
+      "frequency": 2,
+      "hypernyms": [
+        "balance.n.04"
+      ],
+      "display_parent": "balance.n.04"
     },
     "sympathy.n.01": {
       "label": [
@@ -98974,6 +99612,18 @@
         "sports_equipment.n.01"
       ],
       "display_parent": "sports_equipment.n.01"
+    },
+    "tarpaulin.n.01": {
+      "label": [
+        "tarpaulin",
+        "tarp"
+      ],
+      "gloss": "waterproofed canvas",
+      "frequency": 2,
+      "hypernyms": [
+        "canvas.n.01"
+      ],
+      "display_parent": "canvas.n.01"
     },
     "task_force.n.01": {
       "label": [
@@ -100228,17 +100878,6 @@
       ],
       "display_parent": "compound.n.02"
     },
-    "texas.n.01": {
-      "label": [
-        "Texas",
-        "Lone-Star_State",
-        "TX"
-      ],
-      "gloss": "the second largest state; located in southwestern United States on the Gulf of Mexico",
-      "frequency": 14,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
-    },
     "text.n.01": {
       "label": [
         "text",
@@ -100250,6 +100889,21 @@
         "matter.n.06"
       ],
       "display_parent": "matter.n.06"
+    },
+    "textbook.n.01": {
+      "label": [
+        "textbook",
+        "text",
+        "text_edition",
+        "schoolbook",
+        "school_text"
+      ],
+      "gloss": "a book prepared for use in schools or colleges",
+      "frequency": 1,
+      "hypernyms": [
+        "book.n.01"
+      ],
+      "display_parent": "book.n.01"
     },
     "texture.n.01": {
       "label": [
@@ -100821,6 +101475,18 @@
       ],
       "display_parent": "position.n.09"
     },
+    "thirst.n.01": {
+      "label": [
+        "thirst",
+        "thirstiness"
+      ],
+      "gloss": "a physiological need to drink",
+      "frequency": 2,
+      "hypernyms": [
+        "drive.n.09"
+      ],
+      "display_parent": "drive.n.09"
+    },
     "thirties.n.01": {
       "label": [
         "thirties",
@@ -101212,18 +101878,6 @@
         "thyroid_hormone.n.01"
       ],
       "display_parent": "thyroid_hormone.n.01"
-    },
-    "tibet.n.01": {
-      "label": [
-        "Tibet",
-        "Thibet",
-        "Xizang",
-        "Sitsang"
-      ],
-      "gloss": "an autonomous region of the Peoples Republic of China; located in the Himalayas",
-      "frequency": 2,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
     },
     "ticket.n.01": {
       "label": [
@@ -101695,21 +102349,6 @@
         "instrumentality.n.03"
       ],
       "display_parent": "instrumentality.n.03"
-    },
-    "tokyo.n.01": {
-      "label": [
-        "Tokyo",
-        "Tokio",
-        "Yeddo",
-        "Yedo",
-        "Edo",
-        "Japanese_capital",
-        "capital_of_Japan"
-      ],
-      "gloss": "the capital and largest city of Japan; the economic and cultural center of Japan",
-      "frequency": 3,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
     },
     "tolerance.n.03": {
       "label": [
@@ -102914,6 +103553,18 @@
         "device.n.01"
       ],
       "display_parent": "device.n.01"
+    },
+    "trap.n.03": {
+      "label": [
+        "trap",
+        "snare"
+      ],
+      "gloss": "something (often something deceptively attractive) that catches you unawares",
+      "frequency": 2,
+      "hypernyms": [
+        "design.n.02"
+      ],
+      "display_parent": "design.n.02"
     },
     "trapper.n.01": {
       "label": [
@@ -104202,15 +104853,6 @@
       ],
       "display_parent": "kinsman.n.01"
     },
-    "uncle_sam.n.01": {
-      "label": [
-        "Uncle_Sam"
-      ],
-      "gloss": "a personification of the United States government",
-      "frequency": 3,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
-    },
     "uncommunicativeness.n.01": {
       "label": [
         "uncommunicativeness"
@@ -104478,16 +105120,6 @@
       ],
       "display_parent": "organization.n.01"
     },
-    "union.n.02": {
-      "label": [
-        "Union",
-        "North"
-      ],
-      "gloss": "the United States (especially the northern states during the American Civil War)",
-      "frequency": 5,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
-    },
     "union.n.04": {
       "label": [
         "union",
@@ -104510,6 +105142,21 @@
         "happening.n.01"
       ],
       "display_parent": "happening.n.01"
+    },
+    "union.n.11": {
+      "label": [
+        "union",
+        "unification",
+        "uniting",
+        "conjugation",
+        "jointure"
+      ],
+      "gloss": "the act of making or becoming a single unit",
+      "frequency": 0,
+      "hypernyms": [
+        "combination.n.07"
+      ],
+      "display_parent": "combination.n.07"
     },
     "unit.n.02": {
       "label": [
@@ -104580,20 +105227,6 @@
       ],
       "display_parent": "definite_quantity.n.01"
     },
-    "united_kingdom.n.01": {
-      "label": [
-        "United_Kingdom",
-        "UK",
-        "U.K.",
-        "Britain",
-        "United_Kingdom_of_Great_Britain_and_Northern_Ireland",
-        "Great_Britain"
-      ],
-      "gloss": "a monarchy in northwestern Europe occupying most of the British Isles; divided into England and Scotland and Wales and Northern Ireland; `Great Britain' is often used loosely to refer to the United Kingdom",
-      "frequency": 5,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
-    },
     "united_nations.n.01": {
       "label": [
         "United_Nations",
@@ -104605,22 +105238,6 @@
         "world_organization.n.01"
       ],
       "display_parent": "world_organization.n.01"
-    },
-    "united_states.n.01": {
-      "label": [
-        "United_States",
-        "United_States_of_America",
-        "America",
-        "the_States",
-        "US",
-        "U.S.",
-        "USA",
-        "U.S.A."
-      ],
-      "gloss": "North American republic containing 50 states - 48 conterminous states in North America plus Alaska in northwest North America and the Hawaiian Islands in the Pacific Ocean; achieved independence in 1776",
-      "frequency": 121,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
     },
     "united_states_dry_unit.n.01": {
       "label": [
@@ -104964,6 +105581,18 @@
       ],
       "display_parent": "class.n.03"
     },
+    "upper_hand.n.01": {
+      "label": [
+        "upper_hand",
+        "whip_hand"
+      ],
+      "gloss": "position of advantage and control",
+      "frequency": 2,
+      "hypernyms": [
+        "superiority.n.02"
+      ],
+      "display_parent": "superiority.n.02"
+    },
     "upper_surface.n.01": {
       "label": [
         "upper_surface"
@@ -105112,18 +105741,6 @@
       ],
       "display_parent": "person.n.01"
     },
-    "utah.n.01": {
-      "label": [
-        "Utah",
-        "Beehive_State",
-        "Mormon_State",
-        "UT"
-      ],
-      "gloss": "a state in the western United States; settled in 1847 by Mormons led by Brigham Young",
-      "frequency": 2,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
-    },
     "utensil.n.01": {
       "label": [
         "utensil"
@@ -105161,6 +105778,17 @@
       ],
       "display_parent": "quality.n.01"
     },
+    "utility.n.06": {
+      "label": [
+        "utility"
+      ],
+      "gloss": "a facility composed of one or more pieces of equipment connected to or part of a structure and designed to provide a service such as heat or electricity or water or sewage disposal",
+      "frequency": 0,
+      "hypernyms": [
+        "facility.n.01"
+      ],
+      "display_parent": "facility.n.01"
+    },
     "utmost.n.01": {
       "label": [
         "utmost",
@@ -105174,15 +105802,6 @@
         "limit.n.01"
       ],
       "display_parent": "limit.n.01"
-    },
-    "utopia.n.01": {
-      "label": [
-        "Utopia"
-      ],
-      "gloss": "a book written by Sir Thomas More (1516) describing the perfect society on an imaginary island",
-      "frequency": 15,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
     },
     "utopian.n.01": {
       "label": [
@@ -105592,16 +106211,6 @@
       ],
       "display_parent": "agent.n.01"
     },
-    "vatican.n.01": {
-      "label": [
-        "Vatican",
-        "Vatican_Palace"
-      ],
-      "gloss": "the residence of the Catholic Pope in the Vatican City",
-      "frequency": 2,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
-    },
     "vaudeville.n.01": {
       "label": [
         "vaudeville",
@@ -105830,15 +106439,6 @@
       ],
       "display_parent": "scene.n.01"
     },
-    "venus.n.01": {
-      "label": [
-        "Venus"
-      ],
-      "gloss": "the second nearest planet to the sun; it is peculiar in that its rotation is slow and retrograde (in the opposite sense of the Earth and all other planets except Uranus); it is visible from Earth as an early `morning star' or an `evening star'",
-      "frequency": 5,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
-    },
     "veranda.n.01": {
       "label": [
         "veranda",
@@ -105896,17 +106496,6 @@
         "flower.n.01"
       ],
       "display_parent": "flower.n.01"
-    },
-    "vermont.n.01": {
-      "label": [
-        "Vermont",
-        "Green_Mountain_State",
-        "VT"
-      ],
-      "gloss": "a state in New England",
-      "frequency": 3,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
     },
     "verse.n.02": {
       "label": [
@@ -106245,17 +106834,6 @@
       ],
       "display_parent": "visual_communication.n.01"
     },
-    "vientiane.n.01": {
-      "label": [
-        "Vientiane",
-        "Laotian_capital",
-        "capital_of_Laos"
-      ],
-      "gloss": "the capital and largest city of Laos",
-      "frequency": 6,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
-    },
     "view.n.02": {
       "label": [
         "view",
@@ -106392,6 +106970,18 @@
       ],
       "display_parent": "herb.n.01"
     },
+    "violation.n.02": {
+      "label": [
+        "violation",
+        "infringement"
+      ],
+      "gloss": "an act that disregards an agreement or a right",
+      "frequency": 2,
+      "hypernyms": [
+        "wrongdoing.n.02"
+      ],
+      "display_parent": "wrongdoing.n.02"
+    },
     "violence.n.01": {
       "label": [
         "violence",
@@ -106415,6 +107005,18 @@
         "bowed_stringed_instrument.n.01"
       ],
       "display_parent": "bowed_stringed_instrument.n.01"
+    },
+    "violinist.n.01": {
+      "label": [
+        "violinist",
+        "fiddler"
+      ],
+      "gloss": "a musician who plays the violin",
+      "frequency": 2,
+      "hypernyms": [
+        "musician.n.01"
+      ],
+      "display_parent": "musician.n.01"
     },
     "viper.n.01": {
       "label": [
@@ -106449,27 +107051,6 @@
       ],
       "display_parent": "innocent.n.01"
     },
-    "virgin_islands.n.01": {
-      "label": [
-        "Virgin_Islands"
-      ],
-      "gloss": "a group of islands in northeastern West Indies (east of Puerto Rico) discovered by Christopher Columbus in 1493; owned by United States and Britain",
-      "frequency": 12,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
-    },
-    "virginia.n.01": {
-      "label": [
-        "Virginia",
-        "Old_Dominion",
-        "Old_Dominion_State",
-        "VA"
-      ],
-      "gloss": "a state in the eastern United States; one of the original 13 colonies; one of the Confederate States in the American Civil War",
-      "frequency": 23,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
-    },
     "virtue.n.01": {
       "label": [
         "virtue",
@@ -106501,8 +107082,8 @@
       "gloss": "(virology) ultramicroscopic infectious agent that replicates itself only within cells of living hosts; many are pathogenic; a piece of nucleic acid (DNA or RNA) wrapped in a thin coat of protein",
       "frequency": 4,
       "hypernyms": [
-        "microorganism.n.01",
-        "infectious_agent.n.01"
+        "infectious_agent.n.01",
+        "microorganism.n.01"
       ],
       "display_parent": "microorganism.n.01"
     },
@@ -106889,17 +107470,6 @@
       ],
       "display_parent": "battery.n.02"
     },
-    "voltaire.n.01": {
-      "label": [
-        "Voltaire",
-        "Arouet",
-        "Francois-Marie_Arouet"
-      ],
-      "gloss": "French writer who was the embodiment of 18th century Enlightenment (1694-1778)",
-      "frequency": 8,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
-    },
     "volume.n.01": {
       "label": [
         "volume"
@@ -107284,16 +107854,6 @@
       ],
       "display_parent": "receptacle.n.03"
     },
-    "wall_street.n.01": {
-      "label": [
-        "Wall_Street",
-        "Wall_St."
-      ],
-      "gloss": "a street in lower Manhattan where the New York Stock Exchange is located; symbol of American finance",
-      "frequency": 2,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
-    },
     "wallet.n.01": {
       "label": [
         "wallet",
@@ -107491,17 +108051,6 @@
       ],
       "display_parent": "ship.n.01"
     },
-    "warszawa.n.01": {
-      "label": [
-        "Warszawa",
-        "Warsaw",
-        "capital_of_Poland"
-      ],
-      "gloss": "the capital and largest city of Poland; located in central Poland",
-      "frequency": 8,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
-    },
     "wash.n.01": {
       "label": [
         "wash"
@@ -107526,6 +108075,18 @@
       ],
       "display_parent": "work.n.01"
     },
+    "wash.n.03": {
+      "label": [
+        "wash",
+        "dry_wash"
+      ],
+      "gloss": "the dry bed of an intermittent stream (as at the bottom of a canyon)",
+      "frequency": 2,
+      "hypernyms": [
+        "streambed.n.01"
+      ],
+      "display_parent": "streambed.n.01"
+    },
     "washbasin.n.01": {
       "label": [
         "washbasin",
@@ -107541,40 +108102,6 @@
       ],
       "display_parent": "sink.n.01"
     },
-    "washington.n.01": {
-      "label": [
-        "Washington",
-        "Washington_D.C.",
-        "American_capital",
-        "capital_of_the_United_States"
-      ],
-      "gloss": "the capital of the United States in the District of Columbia and a tourist mecca; George Washington commissioned Charles L'Enfant to lay out the city in 1791",
-      "frequency": 27,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
-    },
-    "washington.n.02": {
-      "label": [
-        "Washington",
-        "Evergreen_State",
-        "WA"
-      ],
-      "gloss": "a state in northwestern United States on the Pacific",
-      "frequency": 3,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
-    },
-    "washington.n.04": {
-      "label": [
-        "Washington",
-        "George_Washington",
-        "President_Washington"
-      ],
-      "gloss": "1st President of the United States; commander-in-chief of the Continental Army during the American Revolution (1732-1799)",
-      "frequency": 2,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
-    },
     "washup.n.01": {
       "label": [
         "washup",
@@ -107583,8 +108110,8 @@
       "gloss": "the act of washing yourself (or another person)",
       "frequency": 2,
       "hypernyms": [
-        "cleaning.n.01",
-        "wash.n.02"
+        "wash.n.02",
+        "cleaning.n.01"
       ],
       "display_parent": "wash.n.02"
     },
@@ -107842,6 +108369,42 @@
         "aquatic_bird.n.01"
       ],
       "display_parent": "aquatic_bird.n.01"
+    },
+    "waterproofing.n.01": {
+      "label": [
+        "waterproofing",
+        "sealing"
+      ],
+      "gloss": "the act of treating something to make it repel water",
+      "frequency": 2,
+      "hypernyms": [
+        "protection.n.01"
+      ],
+      "display_parent": "protection.n.01"
+    },
+    "watt.n.01": {
+      "label": [
+        "watt",
+        "W"
+      ],
+      "gloss": "a unit of power equal to 1 joule per second; the power dissipated by a current of 1 ampere flowing across a resistance of 1 ohm",
+      "frequency": 2,
+      "hypernyms": [
+        "power_unit.n.01"
+      ],
+      "display_parent": "power_unit.n.01"
+    },
+    "wattle.n.01": {
+      "label": [
+        "wattle",
+        "lappet"
+      ],
+      "gloss": "a fleshy wrinkled and often brightly colored fold of skin hanging from the neck or throat of certain birds (chickens and turkeys) or lizards",
+      "frequency": 2,
+      "hypernyms": [
+        "caruncle.n.01"
+      ],
+      "display_parent": "caruncle.n.01"
     },
     "wave.n.01": {
       "label": [
@@ -108321,16 +108884,6 @@
       ],
       "display_parent": "prosperity.n.02"
     },
-    "west.n.01": {
-      "label": [
-        "West",
-        "Occident"
-      ],
-      "gloss": "the countries of (originally) Europe and (now including) North America and South America",
-      "frequency": 19,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
-    },
     "west.n.02": {
       "label": [
         "west",
@@ -108344,16 +108897,6 @@
         "cardinal_compass_point.n.01"
       ],
       "display_parent": "cardinal_compass_point.n.01"
-    },
-    "west.n.03": {
-      "label": [
-        "West",
-        "western_United_States"
-      ],
-      "gloss": "the region of the United States lying to the west of the Mississippi River",
-      "frequency": 6,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
     },
     "west_germanic.n.01": {
       "label": [
@@ -109096,6 +109639,18 @@
       ],
       "display_parent": "desire.n.01"
     },
+    "wish.n.02": {
+      "label": [
+        "wish",
+        "indirect_request"
+      ],
+      "gloss": "an expression of some desire or inclination",
+      "frequency": 2,
+      "hypernyms": [
+        "request.n.02"
+      ],
+      "display_parent": "request.n.02"
+    },
     "wit.n.01": {
       "label": [
         "wit",
@@ -109639,30 +110194,6 @@
       ],
       "display_parent": "series.n.04"
     },
-    "world_war_i.n.01": {
-      "label": [
-        "World_War_I",
-        "World_War_1",
-        "Great_War",
-        "First_World_War",
-        "War_to_End_War"
-      ],
-      "gloss": "a war between the allies (Russia, France, British Empire, Italy, United States, Japan, Rumania, Serbia, Belgium, Greece, Portugal, Montenegro) and the Central Powers (Germany, Austria-Hungary, Turkey, Bulgaria) from 1914 to 1918",
-      "frequency": 2,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
-    },
-    "world_war_ii.n.01": {
-      "label": [
-        "World_War_II",
-        "World_War_2",
-        "Second_World_War"
-      ],
-      "gloss": "a war between the Allies (Australia, Belgium, Bolivia, Brazil, Canada, China, Colombia, Costa Rica, Cuba, Czechoslovakia, Dominican Republic, El Salvador, Ethiopia, France, Greece, Guatemala, Haiti, Honduras, India, Iran, Iraq, Luxembourg, Mexico, Netherlands, New Zealand, Nicaragua, Norway, Panama, Philippines, Poland, South Africa, United Kingdom, United States, USSR, Yugoslavia) and the Axis (Albania, Bulgaria, Finland, Germany, Hungary, Italy, Japan, Rumania, Slovakia, Thailand) from 1939 to 1945",
-      "frequency": 2,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
-    },
     "worldly_concern.n.01": {
       "label": [
         "worldly_concern",
@@ -109988,6 +110519,17 @@
       ],
       "display_parent": "implement.n.01"
     },
+    "writing_paper.n.01": {
+      "label": [
+        "writing_paper"
+      ],
+      "gloss": "paper material made into thin sheets that are sized to take ink; used for writing correspondence and manuscripts",
+      "frequency": 1,
+      "hypernyms": [
+        "paper.n.01"
+      ],
+      "display_parent": "paper.n.01"
+    },
     "writing_style.n.01": {
       "label": [
         "writing_style",
@@ -110101,17 +110643,6 @@
       ],
       "display_parent": "activity.n.01"
     },
-    "wyoming.n.01": {
-      "label": [
-        "Wyoming",
-        "Equality_State",
-        "WY"
-      ],
-      "gloss": "a state in the western United States; mountainous in the west and north with the Great Plains in the east",
-      "frequency": 3,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
-    },
     "x-ray_diffraction.n.01": {
       "label": [
         "X-ray_diffraction"
@@ -110163,16 +110694,6 @@
         "talk.n.01"
       ],
       "display_parent": "talk.n.01"
-    },
-    "yale_university.n.01": {
-      "label": [
-        "Yale_University",
-        "Yale"
-      ],
-      "gloss": "a university in Connecticut",
-      "frequency": 2,
-      "hypernyms": [],
-      "display_parent": "entity.n.01"
     },
     "yankee.n.01": {
       "label": [
@@ -110357,6 +110878,18 @@
       ],
       "display_parent": "cry.n.05"
     },
+    "yoke.n.06": {
+      "label": [
+        "yoke",
+        "coupling"
+      ],
+      "gloss": "a connection (like a clamp or vise) between two things so they move together",
+      "frequency": 2,
+      "hypernyms": [
+        "connection.n.03"
+      ],
+      "display_parent": "connection.n.03"
+    },
     "yokel.n.01": {
       "label": [
         "yokel",
@@ -110417,8 +110950,8 @@
       "gloss": "a teenager or a young adult male",
       "frequency": 14,
       "hypernyms": [
-        "adolescent.n.01",
-        "man.n.01"
+        "man.n.01",
+        "adolescent.n.01"
       ],
       "display_parent": "man.n.01"
     },

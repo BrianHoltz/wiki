@@ -21,6 +21,7 @@ import html
 import json
 import math
 from collections import OrderedDict, defaultdict
+from functools import lru_cache
 from pathlib import Path
 from typing import Any
 
@@ -44,10 +45,23 @@ def score(synset: Any) -> float:
     )
 
 
+@lru_cache(maxsize=None)
+def connected_to_root(synset: Any) -> bool:
+    """Return whether WordNet provides a hypernym path to the display root."""
+    root = wn.synset(ROOT_NAME)
+    return synset == root or any(
+        connected_to_root(parent) for parent in synset.hypernyms()
+    )
+
+
 def choose_synsets(target: int) -> tuple[set[Any], list[Any]]:
     all_nouns = list(wn.all_synsets(pos="n"))
     ranked = sorted(
-        (synset for synset in all_nouns if frequency(synset) > 0),
+        (
+            synset
+            for synset in all_nouns
+            if frequency(synset) > 0 and connected_to_root(synset)
+        ),
         key=lambda synset: (-score(synset), synset.name()),
     )
     selected = set(ranked[:target])
@@ -243,7 +257,10 @@ def main() -> None:
         "source": "Princeton WordNet",
         "version": wn.get_version(),
         "root": ROOT_NAME,
-        "selection": "top frequency-weighted noun synsets plus complete hypernym ancestry",
+        "selection": (
+            "top frequency-weighted root-connected noun synsets plus complete "
+            "hypernym ancestry"
+        ),
         "presentation": "one deterministic parent selected from source hypernyms",
         "counts": counts,
         "synsets": {
