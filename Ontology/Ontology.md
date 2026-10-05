@@ -503,6 +503,15 @@ medium confidence. These are proposals, not accepted edits; a phrase such as
 “air” or “state” can match a v1 label while meaning something different in
 context, so every proposal needs semantic and gameplay review.
 
+[`Rogets/index2.html`](Rogets/index2.html) is the high-confidence review view.
+It keeps the original 628-leaf v1 tree and does not add automatic categories.
+Instead, it annotates existing labels whose exact title matches a Roget
+concept, exposes a small amount of Roget vocabulary to search, links each
+annotation to its source entry, and makes the first-pass uses visible:
+vocabulary discovery, sibling discovery, question-wording review, and
+abstract-branch review. It is an experimental review surface, not a proposed
+replacement for [`index.html`](index.html).
+
 There is no clean automatic graft from Roget into v1. A Roget concept such as
 “Existence,” “Quantity,” or “Answer” does not identify a single noun category,
 and even apparently concrete concepts can mix objects, actions, properties,
@@ -524,11 +533,11 @@ Roget can still improve v1 in several disciplined ways:
 - **Separate alternate profile:** preserve the Roget browser as a conceptual
   reference rather than pretending it is a superior replacement taxonomy.
 
-The clean next experiment is therefore a **review manifest**, not `index2.html`:
-map each candidate Roget concept or noun phrase to a v1 parent, record the
-proposed label and evidence, and accept only familiar terms with a clear
-answer interpretation. An automatic `index2.html` would either be a duplicate
-of the Roget browser or imply semantic mappings that have not been validated.
+The clean next experiment after this review view is to turn accepted proposals
+into a **reviewed manifest**: map each candidate Roget concept or noun phrase
+to a v1 parent, record the proposed label and evidence, and accept only
+familiar terms with a clear answer interpretation. The current `index2.html`
+deliberately stops before that irreversible step.
 
 ## 20 Questions projection algorithm
 
