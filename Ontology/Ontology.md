@@ -105,6 +105,45 @@ retaining ancestry and asking category-membership questions. It favors source
 fidelity by preserving synset identifiers, glosses, and all original
 hypernym edges.
 
+## Why the original tree may be the right foundation
+
+No surveyed resource combines all of the properties needed here: a broad
+everyday noun inventory, scientifically defensible biological branches,
+familiar labels, balanced game questions, a single-page browsing experience,
+and a stable public source graph. WordNet is a lexical-sense network rather
+than a game taxonomy; biological databases are scientifically stronger but
+focus on organisms; Roget's is conceptually rich but not a formal
+hypernym hierarchy; and Wikipedia, Wikidata, and game systems mix several
+different kinds of structure.
+
+The original curated tree can therefore remain the game-facing standard while
+borrowing systematic evidence from those sources:
+
+- **Biological extension:** replace broad organism leaves with reviewed
+  branches derived from Catalogue of Life, GBIF, NCBI, and Open Tree of Life.
+  Keep common-language labels at the playable level, but retain scientific
+  names, ranks, synonyms, extinct taxa, and source identifiers. Dinosaurs and
+  other extinct groups should be included where the source taxonomy supports
+  them, rather than being treated as fictional or historical artifacts.
+- **WordNet coverage audit:** score the roughly 3,000 most familiar eligible
+  WordNet terms, map them to existing curated branches, and produce proposed
+  additions for unmatched or underrepresented everyday nouns. Do not graft
+  WordNet paths automatically; require a parent, sense, familiarity, and
+  balance review for each accepted term.
+- **Cross-source validation:** use WordNet for lexical variants and glosses,
+  biological taxonomies for organism identity and ancestry, and Wikipedia or
+  Wikidata for named entities and cultural familiarity. Record source links
+  separately so disagreement is visible rather than averaged away.
+- **Controlled growth:** add only candidates that have a clear home, a
+  recognizable game answer, and a useful effect on branch coverage. Keep a
+  review manifest with accepted, rejected, and ambiguous candidates so the
+  tree remains reproducible and maintainable.
+
+This is a systemic extension strategy without surrendering the original
+tree's information design. It can plausibly grow from 678 nodes into the low
+thousands while remaining more useful for play than a mechanically projected
+WordNet tree.
+
 ## Prior art
 
 The figures below are scale or activity proxies, not claims that unlike
@@ -172,9 +211,16 @@ of questions.
 
 - **Origin:** launched in January 2001 as a global Wikimedia project.
 - **Current status:** active encyclopedia, category graph, portal system,
-  infobox vocabulary, redirects, and interlanguage links. This is an implicit
-  ontology assembled for navigation and editorial work, not one formal
-  ontology.
+  infobox vocabulary, redirects, interlanguage links, and a substantial
+  biological-taxonomy workflow. The [WikiProject Tree of
+  Life](https://en.wikipedia.org/wiki/Wikipedia:WikiProject_Tree_of_Life)
+  coordinates organism coverage; species articles commonly use standardized
+  [taxoboxes](https://en.wikipedia.org/wiki/Template:Taxobox) to display
+  ranks, accepted names, synonyms, and parent taxa; and
+  [Wikispecies](https://species.wikimedia.org/) provides a separate
+  Wikimedia taxonomy directory. These are valuable linked reference
+  structures, but Wikipedia's taxoboxes and categories are editorial
+  presentations, not a single versioned biological authority.
 - **Node count:** the English
   [Wikipedia statistics page](https://en.wikipedia.org/wiki/Wikipedia:Statistics)
   reports roughly 7.25 million articles and 2.6 million categories in its
@@ -183,8 +229,112 @@ of questions.
   edits by 12.4 million users; article and category counts are also direct
   scale measures.
 - **Fit:** excellent candidate source for familiarity and named-entity
-  expansion, but category membership is inconsistent and often editorial,
-  topical, or maintenance-driven.
+  expansion and biological cross-checking, but category membership is
+  inconsistent and often editorial, topical, or maintenance-driven. Taxobox
+  parentage is more useful for organisms than general Wikipedia categories,
+  although it still needs source/version tracking.
+
+### Online biological taxonomies
+
+These resources are the strongest available prior art for extending the
+organism portion of a general noun hierarchy. None is a complete 20 Questions
+ontology: they optimize taxonomic identity, scientific names, synonymy, and
+research interoperability rather than familiar labels or balanced gameplay.
+
+#### Catalogue of Life
+
+- **Origin:** an international taxonomic data initiative launched in 2001,
+  coordinated through the Species 2000 and Integrated Taxonomic Information
+  System communities and now hosted by the Catalogue of Life partnership.
+- **Current status:** active and release-based. The [Catalogue of Life
+  releases](https://www.catalogueoflife.org/data/download) distinguish a
+  verified Base Release from a broader Extended Release.
+- **Node count:** release-dependent; the current catalog reports millions of
+  accepted species and names, with counts varying by release and inclusion
+  policy. Use the release metadata rather than a timeless number.
+- **Prominence proxy:** widely used as a global checklist and taxonomic
+  reference, with expert-verified coverage and downloadable releases.
+- **Fit:** the best initial authority for accepted organism names and
+  high-level taxonomic placement. It should supply biological structure while
+  the curated tree supplies playable common-language grouping.
+
+#### GBIF Backbone Taxonomy
+
+- **Origin:** built by the Global Biodiversity Information Facility, an
+  international intergovernmental biodiversity-data infrastructure founded in
+  2001.
+- **Current status:** active, versioned, and designed to normalize names from
+  many biodiversity datasets. See the
+  [GBIF Backbone Taxonomy](https://www.gbif.org/dataset/7ddf754f-d193-4cc9-b351-99906754a03b).
+- **Node count:** release-dependent and measured in names, taxa, and
+  synonymized records rather than one fixed class count.
+- **Prominence proxy:** GBIF is a major global biodiversity data network; its
+  backbone is used for occurrence-data name matching across a large
+  publishing ecosystem.
+- **Fit:** excellent for resolving common names and synonyms to scientific
+  taxa and for finding candidate organisms. It is more of a cross-dataset
+  nomenclatural backbone than a carefully curated game hierarchy.
+
+#### NCBI Taxonomy
+
+- **Origin:** developed by the National Center for Biotechnology Information
+  at the U.S. National Library of Medicine to organize organisms represented
+  in genetic and genomic databases.
+- **Current status:** active, continuously updated, and available through the
+  [NCBI Taxonomy database](https://www.ncbi.nlm.nih.gov/taxonomy).
+- **Node count:** release- and database-dependent; it contains hundreds of
+  thousands of scientific taxa and many sequence-associated records, with
+  counts exposed through NCBI's statistics and downloads.
+- **Prominence proxy:** it is embedded in GenBank, RefSeq, and other major
+  NCBI sequence resources, making it a standard computational taxonomy for
+  molecular biology.
+- **Fit:** authoritative for sequence-linked scientific identity and useful
+  for validating deep organism branches, but too technical and unevenly
+  familiar to serve as the visible game taxonomy.
+
+#### Open Tree of Life
+
+- **Origin:** an open-science collaboration funded by the U.S. National
+  Science Foundation and other partners, launched in the 2010s.
+- **Current status:** active research infrastructure combining a synthetic
+  tree with source taxonomies and stable taxon identifiers. Browse it at the
+  [Open Tree of Life](https://tree.opentreeoflife.org/).
+- **Node count:** release-dependent and measured in taxa and phylogenetic
+  relationships; the synthetic tree incorporates millions of named taxa from
+  contributing sources.
+- **Prominence proxy:** open APIs, stable identifiers, and published
+  computational methods make it a notable research platform for large-scale
+  comparative biology.
+- **Fit:** useful for scientifically coherent ancestry and for checking
+  extinct groups, including dinosaurs. It should be treated as a validation
+  and enrichment source, not copied wholesale into a one-page game tree.
+
+#### Integrated Taxonomic Information System (ITIS)
+
+- **Origin:** a U.S. and international interagency project established in the
+  1990s to provide authoritative taxonomic names and hierarchy.
+- **Current status:** active, maintained, and available through the
+  [ITIS database](https://www.itis.gov/).
+- **Node count:** release-dependent, with hundreds of thousands of taxonomic
+  names and records across included organism groups.
+- **Prominence proxy:** long-running government-supported identifiers and
+  reuse in biodiversity and environmental datasets.
+- **Fit:** a useful stable-name and rank authority, especially for
+  cross-checking Catalogue of Life and GBIF mappings. Its coverage and
+  scientific granularity are too specialized to define the whole game tree.
+
+#### World Register of Marine Species
+
+- **Origin:** an international marine-taxonomy initiative launched in 2007
+  and coordinated through the Flanders Marine Institute.
+- **Current status:** active, expert-managed, and release-based; see
+  [WoRMS](https://www.marinespecies.org/).
+- **Node count:** release-dependent, with hundreds of thousands of marine
+  taxa and names across accepted and synonymized records.
+- **Prominence proxy:** the principal global reference for marine organism
+  names and taxonomic status.
+- **Fit:** a high-quality specialized supplement for marine life, but not a
+  general organism root.
 
 ### Roget’s Thesaurus
 
@@ -196,7 +346,10 @@ of questions.
   branches; the eighth edition is reported to contain about 443,000 words.
 - **Prominence proxy:** the edition scale itself is objective; the work has
   been continuously published since 1852 and remains a standard English
-  thesaurus reference. See the
+  thesaurus reference. The best freely browsable view of the original
+  conceptual class/division/section structure is the
+  [1911 edition at Project Gutenberg](https://www.gutenberg.org/ebooks/10681);
+  see also the
   [historical overview](https://en.wikipedia.org/wiki/Roget%27s_Thesaurus).
 - **Fit:** useful for lexical neighborhoods and question wording, not a
   reliable hypernym ontology. It should not replace WordNet’s synset IDs.
