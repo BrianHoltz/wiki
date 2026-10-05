@@ -494,6 +494,15 @@ playable physical, living, and abstract distinctions. Roget's entries are
 semantic neighborhoods containing synonyms and related expressions, not
 necessarily kinds of things.
 
+[`Rogets/crosswalk.json`](Rogets/crosswalk.json) is the first review artifact.
+It compares Roget's concept titles and extracted noun-list phrases with the
+628 v1 terminal labels using exact normalized text only. The first pass finds
+402 Roget concepts with at least one exact label or phrase match: 59 title
+matches are marked high confidence and 343 noun-list matches are marked
+medium confidence. These are proposals, not accepted edits; a phrase such as
+“air” or “state” can match a v1 label while meaning something different in
+context, so every proposal needs semantic and gameplay review.
+
 There is no clean automatic graft from Roget into v1. A Roget concept such as
 “Existence,” “Quantity,” or “Answer” does not identify a single noun category,
 and even apparently concrete concepts can mix objects, actions, properties,
