@@ -205,10 +205,15 @@ summary:hover {{ background: var(--panel); }}
 </head>
 <body>
 <h1>WordNet 3.0 20 Questions Profile</h1>
-<div class="intro">Source: Princeton WordNet 3.0.
-  Display nodes: {counts["selected"]:,}; terminal categories: {counts["leaves"]:,}.
-  The visible tree chooses one presentation parent per synset; the source graph
-  and alternate hypernyms are recorded in the manifest.</div>
+<div class="intro">
+  This is a browsable 20 Questions word-and-concept tree built from
+  <a href="https://en.wikipedia.org/wiki/WordNet" target="_blank"
+  rel="noopener">WordNet</a>, a large Princeton University lexical database
+  that groups related words by meaning. It is not a list of every possible
+  answer; it is a practical, familiar slice arranged from broad categories
+  toward specific ones. Display nodes: {counts["selected"]:,}; terminal
+  categories: {counts["leaves"]:,}. Use the suggested questions to navigate,
+  search for a word, or expand the whole tree.</div>
 <div class="controls">
   <input id="search" type="search" placeholder="Search WordNet synsets or lemmas...">
   <button id="expand">Expand all</button>

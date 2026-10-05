@@ -29,6 +29,52 @@ The display tree chooses one deterministic presentation parent when WordNet
 has multiple hypernym paths. That is a view projection, not a modification of
 WordNet: all source hypernyms remain in the manifest.
 
+## How the WordNet tree was generated
+
+The tree is a reproducible presentation of WordNet 3.0, not a hand-edited
+taxonomy. The builder is [`generate_wordnet_20q.py`](generate_wordnet_20q.py).
+It uses NLTK only as the loader for the local WordNet release; the generated
+HTML, YAML, and manifest are the project artifacts.
+
+The build proceeds as follows:
+
+- **Load the source:** read every WordNet noun synset, including its lemma
+  names, gloss, corpus-frequency counts, and authoritative hypernym links.
+- **Score familiarity:** calculate a deterministic score using twice the
+  natural logarithm of one plus the synset's corpus frequency, plus the
+  logarithm of one plus its number of lemma names, plus a small bounded depth
+  tie-break. Higher-frequency and more lexically represented synsets rank
+  first.
+- **Keep the declared root:** retain only noun synsets with a hypernym path to
+  `entity.n.01`, WordNet's general entity root. This excludes disconnected
+  records that would otherwise be incorrectly displayed as direct children of
+  the root.
+- **Select the source concepts:** take the top 7,000 eligible synsets and
+  always include `entity.n.01`. The number is a profile parameter, so nearby
+  5K and 10K experiments can be regenerated without changing the algorithm.
+- **Close over ancestry:** recursively add every hypernym required to connect
+  each selected synset to the root. These added ancestors explain why the
+  displayed count is larger than 7,000.
+- **Project the graph to one page:** WordNet can give a synset multiple
+  hypernyms. For browseability, choose one deterministic display parent,
+  preferring the highest-scoring available parent and breaking ties by source
+  ID. This creates a single navigable tree while preserving every original
+  hypernym edge in the manifest.
+- **Generate the outputs:** write a collapsible, searchable HTML page with
+  suggested category questions; a YAML tree for inspection and tooling; and a
+  JSON manifest containing source IDs, labels, glosses, frequencies, all
+  hypernyms, and the selected display parent.
+
+The source graph therefore remains authoritative. The one-parent tree is only
+the game-oriented view, and changing the target size or presentation
+tie-break does not silently rewrite WordNet semantics. A local regeneration
+uses the documented NLTK environment and:
+
+```sh
+NLTK_DATA=~/nltk_data /tmp/wordnet-ontology-venv/bin/python \
+  generate_wordnet_20q.py --target 7000 --output-dir .
+```
+
 ## Practical scope and UI constraint
 
 The useful target is **5,000–10,000 displayed nodes**, with the current 8,974
