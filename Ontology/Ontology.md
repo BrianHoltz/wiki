@@ -427,22 +427,6 @@ research interoperability rather than familiar labels or balanced gameplay.
 - **Fit:** useful as a high-quality familiarity and importance prior, not as a
   machine-readable noun hierarchy.
 
-### Human Knowledge
-
-- **Origin:** Brian Holtz’s *Human Knowledge 2000* outline, developed in the
-  late 1990s and early 2000s.
-- **Current status:** personal static reference material, not a community
-  ontology or standards body.
-- **Node count:** the `Thoughts 1-8.html` outline has 137 HTML heading nodes;
-  this is a document-structure count, not an ontology count.
-- **Prominence proxy:** no external citation, usage, or page-view metric has
-  been established; its relevance here is personal authorship, not public
-  prominence.
-- **Fit:** explicitly **not an input, root, ranking prior, or graft target** for
-  this ontology. “Ontology” is one topic within that outline, so the outline
-  cannot logically serve as the ontology’s root. It may be studied separately,
-  but this project will not merge it into the WordNet tree.
-
 ### DMOZ/Open Directory Project RDF hierarchy
 
 The large RDF/XML text dump available for this project is not a general
@@ -483,6 +467,59 @@ but DMOZ is the precise name for the data structure.
   frequently encountered, semantically concrete categories while retaining
   source IDs and alternate parent links. It should remain a separately named
   DMOZ profile rather than being silently merged into the WordNet tree.
+
+### Human Knowledge
+
+- **Origin:** Brian Holtz’s *Human Knowledge 2000* outline, developed in the
+  late 1990s and early 2000s.
+- **Current status:** personal static reference material, not a community
+  ontology or standards body.
+- **Node count:** the `Thoughts 1-8.html` outline has 137 HTML heading nodes;
+  this is a document-structure count, not an ontology count.
+- **Prominence proxy:** no external citation, usage, or page-view metric has
+  been established; its relevance here is personal authorship, not public
+  prominence.
+- **Fit:** explicitly **not an input, root, ranking prior, or graft target** for
+  this ontology. “Ontology” is one topic within that outline, so the outline
+  cannot logically serve as the ontology’s root. It may be studied separately,
+  but this project will not merge it into the WordNet tree.
+
+## Roget and the curated v1 tree
+
+[`Rogets/index.html`](Rogets/index.html) is a faithful browser of the 1,000
+numbered concepts in the 1911 Gutenberg edition. It differs fundamentally
+from v1: Roget organizes words into six broad conceptual classes, sections,
+and subsections, while v1 organizes familiar answer categories around
+playable physical, living, and abstract distinctions. Roget's entries are
+semantic neighborhoods containing synonyms and related expressions, not
+necessarily kinds of things.
+
+There is no clean automatic graft from Roget into v1. A Roget concept such as
+“Existence,” “Quantity,” or “Answer” does not identify a single noun category,
+and even apparently concrete concepts can mix objects, actions, properties,
+and phrases. Treating every Roget heading as a v1 node would make the game
+tree less noun-like and would reintroduce the imbalance and abstraction that
+the WordNet experiment exposed.
+
+Roget can still improve v1 in several disciplined ways:
+
+- **Vocabulary discovery:** use the concept entries and their noun lists to
+  find familiar labels missing from v1, then place only concrete game answers
+  under reviewed existing parents.
+- **Sibling discovery:** compare nearby Roget concepts to identify gaps such as
+  common foods, tools, materials, body parts, and organisms.
+- **Question wording:** use Roget's synonym neighborhoods to make search and
+  question phrasing more forgiving without adding duplicate concepts.
+- **Abstract branch review:** use Roget's classes to audit v1's abstract
+  coverage, while retaining v1's game-oriented boundaries.
+- **Separate alternate profile:** preserve the Roget browser as a conceptual
+  reference rather than pretending it is a superior replacement taxonomy.
+
+The clean next experiment is therefore a **review manifest**, not `index2.html`:
+map each candidate Roget concept or noun phrase to a v1 parent, record the
+proposed label and evidence, and accept only familiar terms with a clear
+answer interpretation. An automatic `index2.html` would either be a duplicate
+of the Roget browser or imply semantic mappings that have not been validated.
 
 ## 20 Questions projection algorithm
 
