@@ -269,6 +269,96 @@ notable ancestors, and preserve the seed examples that explain evolutionary
 history. This staged review is safer than mechanically promoting every
 scientific record to a casual-game answer.
 
+## Vocabulary coverage audits from open encyclopedias and scored word lists
+
+The tree should have an explicit **must-include audit** in addition to
+taxonomy-driven expansion. The goal is not to copy an encyclopedia's
+categories. It is to extract candidate entry titles, normalize them to noun
+senses, and check whether familiar answers have a clear home in v1 or v2.
+This gives us a defensible answer to “what obvious things did we forget?”
+
+### Open and openly accessible encyclopedia sources
+
+There is no single open, modern, general-purpose encyclopedia that is both
+compact and already shaped like a 20 Questions noun tree. A practical source
+set is therefore a combination of open-license article title lists and
+compact knowledge outlines:
+
+- **Simple English Wikipedia:** its CC BY-SA dump is a strong approachability
+  source because article titles and explanations are intentionally written for
+  a wider reading audience. It is broad but editorially noisy; use titles and
+  lead concepts for candidate discovery, not Wikipedia category parentage.
+- **English Wikipedia:** the full CC BY-SA dump supplies the largest open
+  candidate inventory, redirects, and links to taxobox-backed organism
+  articles. Page views, incoming links, and article lead quality can provide
+  familiarity signals, but article existence is not evidence that a noun is a
+  good game answer.
+- **Wiktionary:** its regularly published dumps provide open lexical entries,
+  parts of speech, definitions, inflections, synonyms, and language labels.
+  It is better than an encyclopedia for deciding whether a candidate is
+  actually used as an English noun, but its crowdsourced sense structure
+  requires filtering and quality checks.
+- **Encyclopedia of Life:** the open biodiversity portal is a useful
+  approachable organism-entry source with common names, images, and links to
+  scientific authorities. It is not a single-volume general encyclopedia, so
+  it should supply biological familiarity evidence rather than the general
+  ontology root.
+- **Public-domain reference works:** the 1911 *Encyclopaedia Britannica* and
+  other Internet Archive or Project Gutenberg encyclopedias can supply
+  historically prominent names and concepts. They are useful negative controls
+  for cultural coverage, but their dated science and vocabulary make them
+  unsuitable as the sole modern must-include list.
+
+The *Propædia* browser in [`Propaedia/index.html`](Propaedia/index.html) is a
+particularly useful compact outline for auditing broad domain coverage. It
+should be used to ask whether our top-level organization has room for a domain,
+while open encyclopedic article titles should supply candidate leaves.
+
+### Scored noun inventories
+
+We can also construct a ranked noun list rather than rely on one encyclopedia.
+The strongest openly available signals are complementary:
+
+- [wordfreq](https://github.com/rspeer/wordfreq) supplies frequency estimates
+  and top-word lists derived from multiple corpora. It is a good first
+  frequency prior, but its list is not noun-filtered and frequency is not the
+  same as game usefulness.
+- [WordNet](https://wordnet.princeton.edu/) supplies noun synsets, lemma
+  counts, glosses, and hypernyms. Its corpus counts provide a reproducible
+  lexical familiarity signal, while its sense inventory prevents treating
+  every spelling as a distinct concept.
+- The [MRC Psycholinguistic Database](https://websites.psychology.uwa.edu.au/school/MRCDatabase/uwa_mrc.htm)
+  and [Brysbaert concreteness ratings](https://doi.org/10.3758/s13428-015-0631-6)
+  provide familiarity, imageability, age-of-acquisition, and concreteness
+  features for many English words. These are especially useful for separating
+  playable concrete nouns from frequent but abstract function words.
+- [Google Books Ngram Viewer](https://books.google.com/ngrams/) and
+  [Wikipedia pageviews](https://pageviews.wmcloud.org/) provide historical
+  and current prominence signals. They should be treated as measurable
+  evidence, not as ground truth: corpus bias, capitalization, inflection, and
+  media attention can distort rankings.
+
+A reproducible must-include audit can combine these signals into a declared
+score such as:
+
+```text
+candidate score =
+    frequency
+  + concreteness and imageability
+  + age-of-acquisition familiarity
+  + encyclopedia/pageview prominence
+  + WordNet sense and noun evidence
+  - ambiguity, proper-name noise, and source disagreement
+```
+
+For each proposed noun, the audit should retain the raw features, candidate
+senses, source URLs or IDs, normalized label, and proposed v1/v2 parent. We
+should then publish separate thresholded lists—for example, the top 1,000,
+3,000, and 5,000 everyday nouns—rather than silently treating one ranking as
+canonical. A candidate becomes a must-include only after it also passes the
+game checks: a recognizable answer interpretation, a clear home, and a
+non-trivial question against its siblings.
+
 ## Prior art
 
 The figures below are scale or activity proxies, not claims that unlike
