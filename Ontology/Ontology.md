@@ -461,6 +461,81 @@ research interoperability rather than familiar labels or balanced gameplay.
 - **Fit:** a high-quality specialized supplement for marine life, but not a
   general organism root.
 
+### Approachable cladistic and evolutionary trees
+
+The most useful biological prior art for v2 is not a single taxonomy copied
+verbatim. It is a scientifically defensible source tree paired with a
+deliberately compressed display. A cladistic source should be allowed to say
+that humans are sarcopterygian vertebrates and therefore nested within the
+broader evolutionary history of fishes, even though “fish” remains an
+everyday answer category. The visible game tree can collapse intermediate
+clades when they do not create a recognizable answer or a useful question,
+while retaining the omitted clades, ranks, and source identifiers in metadata.
+
+#### OneZoom Tree of Life Explorer
+
+- **Origin:** conceived in 2011, released as open-source software in 2012,
+  and maintained since 2015 by a UK charitable organization.
+- **Current status:** active, free, and designed explicitly for public
+  exploration. OneZoom uses a fractal, map-like interface so a very large
+  tree can be explored on one page; its current tree relies heavily on the
+  Open Tree of Life and mixes other declared sources. See the
+  [OneZoom explorer](https://www.onezoom.org/) and its
+  [data and methodology overview](https://www.onezoom.org/about.html).
+- **Node count:** the project is intended to display a million-tip-scale tree;
+  the exact visible count changes with its source-data release and display
+  configuration.
+- **Prominence proxy:** open-source software, a charitable organization,
+  collaboration with the Linnean Society, and published methods including
+  [Dynamic visualisation of million-tip trees](https://doi.org/10.1111/2041-210X.13766).
+- **Fit:** the best interface prior art for keeping a huge scientifically
+  grounded tree navigable. Its species-first display is too deep and
+  biological for the whole 20 Questions ontology, but its zoomed overview,
+  common names, images, and source links suggest how v2 can hide taxonomic
+  detail without discarding it.
+
+#### TimeTree
+
+- **Origin:** developed by Blair Hedges, Sudhir Kumar, and collaborators as a
+  public knowledge base for evolutionary relationships and divergence times;
+  the current major resource is TimeTree 5.
+- **Current status:** active research and teaching resource. The
+  [TimeTree site](https://timetree.org/about) combines published divergence
+  estimates and lets users explore the evolutionary timescale between taxa.
+- **Node count:** release-dependent; TimeTree 5 is a large species-level
+  synthesis rather than a compact hand-authored hierarchy. Its useful unit is
+  a dated relationship, not a game category.
+- **Prominence proxy:** TimeTree 5 is described in a 2022 article in
+  *Molecular Biology and Evolution*,
+  [An Expanded Resource for Species Divergence Times](https://doi.org/10.1093/molbev/msac174).
+- **Fit:** useful for validating evolutionary-history examples and explaining
+  why apparently different organisms are convergent rather than close
+  relatives. It should validate relationships and dates, not dictate every
+  visible v2 split.
+
+#### Recommended collapsed-clade pattern
+
+These resources support a three-layer design for the life portion of v2:
+
+- **Source layer:** retain the accepted scientific tree, including clades
+  that are important for statements such as “tetrapods are nested within
+  lobe-finned fishes.”
+- **Navigation layer:** retain only ancestors that create a useful
+  distinction, explain a notable organism, or keep the visible branch
+  intelligible. Collapse ranks such as some orders and families when all
+  selected descendants would otherwise form a one-child chain.
+- **Answer layer:** show familiar common names and notable clades such as
+  mammals, birds, marsupials, dinosaurs, coelacanths, and monotremes. Add a
+  short scientific note where everyday language hides a meaningful
+  relationship, rather than forcing the player to answer with a Latin clade.
+
+This is not permission to redraw evolutionary relationships for convenience.
+It is a presentation projection: source parentage, alternate placements,
+synonyms, and suppressed intermediate clades remain auditable. OneZoom is the
+strongest model for the browsing interaction; Open Tree of Life and Catalogue
+of Life remain the principal candidates for taxonomic validation; and TimeTree
+is the best supplement for evolutionary-history and divergence-time context.
+
 ### Roget’s Thesaurus
 
 - **Origin:** Peter Mark Roget’s classification began in London in 1805 and
@@ -536,21 +611,29 @@ research interoperability rather than familiar labels or balanced gameplay.
 - **Fit:** a targeted supplement if WordNet coverage of prepared foods such as
   steak and salad is inadequate.
 
-### Encyclopaedia Britannica and the Macropædia
+### Encyclopaedia Britannica’s 15th-edition Propædia
 
 - **Origin:** Encyclopaedia Britannica began in Edinburgh, Scotland, in
-  1768. The 15th edition’s three-part structure, including the Macropædia,
-  was introduced in 1974.
-- **Current status:** Britannica is online; the final printed 15th edition
-  ended in 2010 and the company focuses on digital publication.
-- **Node count:** the Macropædia consisted of 17 volumes of long articles;
-  the broader 15th edition had 32 volumes and 32,640 pages. These are
-  editorial units, not ontology nodes.
-- **Prominence proxy:** Britannica reports a roughly 40-million-word
-  twentieth-century scale and has published continuously since 1768; see the
-  [Britannica history](https://en.wikipedia.org/wiki/Encyclop%C3%A6dia_Britannica).
-- **Fit:** useful as a high-quality familiarity and importance prior, not as a
-  machine-readable noun hierarchy.
+  1768. The one-volume *Propædia* was introduced with the 15th edition in
+  1974 as the topical “Outline of Knowledge” for the *Micropædia* and
+  *Macropædia*.
+- **Current status:** the print 15th edition ended in 2010, while Britannica
+  continues digitally. The best freely available outline of the single-volume
+  knowledge scheme is the detailed
+  [Propædia outline](https://en.wikipedia.org/wiki/Propaedia); Britannica’s
+  own shorter [Propædia entry](https://www.britannica.com/topic/Propaedia)
+  confirms its role in the 15th edition.
+- **Node count:** the *Outline of Knowledge* contains 10 parts, 41
+  divisions, and 167 sections. These are organizational topics, not a
+  biological or noun taxonomy.
+- **Prominence proxy:** it was designed over eight years by Mortimer Adler
+  with dozens of subject specialists as the organizing framework for the
+  entire 15th edition. It is one of the most prominent modern attempts to
+  provide a single synoptic outline of human knowledge.
+- **Fit:** useful prior art for broad top-level coverage and for testing
+  whether v1/v2 omit an important knowledge domain. It is intentionally
+  encyclopedic and circular rather than a balanced yes/no noun tree, so it
+  should inform coverage audits rather than supply parentage.
 
 ### DMOZ/Open Directory Project RDF hierarchy
 
