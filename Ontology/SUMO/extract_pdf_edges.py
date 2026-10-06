@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Extract measured primary-parent candidates from the Ontology4 SUMO PDF.
+"""Extract the implicit directed graph from the Ontology4 SUMO PDF.
 
 The PDF is converted to SVG and pdftotext -bbox output before this script runs:
   pdftocairo -svg SumoOntology.pdf SumoOntology.svg
@@ -13,7 +13,6 @@ import html
 import json
 import math
 import re
-from collections import defaultdict
 from pathlib import Path
 
 WORD_RE = re.compile(
@@ -25,35 +24,17 @@ PATH_RE = re.compile(
 NUMBER_RE = re.compile(r"-?\d+(?:\.\d+)?")
 
 
-def load_terms(source_dir: Path) -> tuple[set[str], dict[str, int]]:
-    pattern = re.compile(r"^\s*\(subclass\s+([^\s()]+)\s+([^\s()]+)\)")
-    terms, order = set(), {}
-    for path in sorted(source_dir.glob("*.kif")):
-        for line in path.read_text(encoding="utf-8", errors="replace").splitlines():
-            match = pattern.match(line)
-            if not match:
-                continue
-            for term in match.groups():
-                if not term.startswith("?"):
-                    terms.add(term)
-                    order.setdefault(term, len(order))
-    return terms, order
-
-
-def load_labels(bbox: Path, terms: set[str], page_height: float):
+def load_labels(bbox: Path, page_height: float):
     labels = []
     for match in WORD_RE.finditer(bbox.read_text(encoding="utf-8", errors="replace")):
         x1, y1, x2, y2, raw = match.groups()
         raw = html.unescape(raw)
-        if raw[:1] in "^°.>~":
-            term = raw[1:]
-        else:
+        if raw[:1] not in "^°.>~.":
             continue
-        if term in terms:
-            labels.append(
-                (term, (float(x1) + float(x2)) / 2,
-                 page_height - (float(y1) + float(y2)) / 2)
-            )
+        labels.append(
+            (raw[1:], (float(x1) + float(x2)) / 2,
+             page_height - (float(y1) + float(y2)) / 2)
+        )
     return labels
 
 
@@ -91,51 +72,45 @@ def nearest_label(point, labels):
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--source-dir", type=Path, required=True)
     parser.add_argument("--svg", type=Path, required=True)
     parser.add_argument("--bbox", type=Path, required=True)
     parser.add_argument("--output", type=Path, required=True)
     parser.add_argument("--page-height", type=float, default=11643)
     args = parser.parse_args()
 
-    terms, order = load_terms(args.source_dir)
-    labels = load_labels(args.bbox, terms, args.page_height)
-    parents = defaultdict(set)
-    pattern = re.compile(r"^\s*\(subclass\s+([^\s()]+)\s+([^\s()]+)\)")
-    for path in sorted(args.source_dir.glob("*.kif")):
-        for line in path.read_text(encoding="utf-8", errors="replace").splitlines():
-            match = pattern.match(line)
-            if match and not any(term.startswith("?") for term in match.groups()):
-                child, parent = match.groups()
-                parents[child].add(parent)
+    labels = load_labels(args.bbox, args.page_height)
 
-    candidates = {}
+    edges = {}
     for path_data in PATH_RE.findall(args.svg.read_text(encoding="utf-8", errors="replace")):
         points = curve_points(path_data)
         if not points:
             continue
         source = nearest_label(points[0], labels)
         target = nearest_label(points[-1], labels)
-        if source[0] == target[0] or source[0] not in parents[target[0]]:
+        if source[0] == target[0]:
             continue
         if math.dist(points[0], source[1:]) > 180 or math.dist(points[-1], target[1:]) > 180:
             continue
         length = sum(math.dist(a, b) for a, b in zip(points, points[1:]))
-        current = candidates.get(target[0])
+        key = (source[0], target[0])
+        current = edges.get(key)
         if current is None or length < current["length"]:
-            candidates[target[0]] = {
+            edges[key] = {
                 "parent": source[0],
+                "child": target[0],
                 "length": round(length, 3),
             }
 
     result = {
         "sourcePdf": "https://www.ontology4.us/download/dot/SumoOntology.pdf",
-        "method": "Shortest measured blue directed PDF arc among direct SUMO parents",
-        "candidateCount": len(candidates),
-        "primaryParents": candidates,
+        "method": "Directed blue vector arcs with endpoints mapped to PDF node labels",
+        "nodeCount": len({label for label, _, _ in labels}),
+        "edgeCount": len(edges),
+        "nodes": sorted({label for label, _, _ in labels}),
+        "edges": sorted(edges.values(), key=lambda edge: (edge["parent"], edge["child"])),
     }
     args.output.write_text(json.dumps(result, indent=2) + "\n", encoding="utf-8")
-    print(json.dumps({"candidateCount": len(candidates)}, indent=2))
+    print(json.dumps({"nodeCount": result["nodeCount"], "edgeCount": result["edgeCount"]}, indent=2))
 
 
 if __name__ == "__main__":

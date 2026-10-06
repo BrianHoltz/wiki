@@ -1,0 +1,3298 @@
+{
+  "sourcePdf": "https://www.ontology4.us/download/dot/SumoOntology.pdf",
+  "method": "Directed blue vector arcs with endpoints mapped to PDF node labels",
+  "nodeCount": 518,
+  "edgeCount": 554,
+  "nodes": [
+    "Abstract",
+    "Address",
+    "Adjective",
+    "Adverb",
+    "AgeGroup",
+    "Agent",
+    "AlethicAttribute",
+    "Alga",
+    "Ampere",
+    "Amphibian",
+    "Amu",
+    "AnatomicalStructure",
+    "AngleMeasure",
+    "Angstrom",
+    "AngularDegree",
+    "AnimacyAttribute",
+    "Animal",
+    "AnimalLanguage",
+    "Ape",
+    "April",
+    "AquaticMammal",
+    "AreaMeasure",
+    "ArtWork",
+    "Article",
+    "Artifact",
+    "Arti\ufb01cialLanguage",
+    "AsexualReplication",
+    "AstronomicalBody",
+    "Atom",
+    "AtomGram",
+    "AtomicNucleus",
+    "Attribute",
+    "August",
+    "Bacterium",
+    "Battle",
+    "Becquerel",
+    "Beverage",
+    "BinaryNumber",
+    "BiologicalAttribute",
+    "BiologicalProcess",
+    "BiologicallyActiveSubstance",
+    "Bird",
+    "Birth",
+    "Bit",
+    "Blood",
+    "BodyCovering",
+    "BodyJunction",
+    "BodyMotion",
+    "BodyPart",
+    "BodySubstance",
+    "BodyVessel",
+    "Boiling",
+    "Bone",
+    "Book",
+    "BreakabilityAttribute",
+    "BrithishTermalUnit",
+    "Building",
+    "Byte",
+    "Calorie",
+    "Candela",
+    "Canine",
+    "Carbohydrate",
+    "Carnivore",
+    "Cell",
+    "CelsiusDegree",
+    "Centimeter",
+    "CentralTimeZone",
+    "Certi\ufb01cate",
+    "ChangeOfPossession",
+    "Character",
+    "ChemicalDecomposition",
+    "ChemicalProcess",
+    "ChemicalSynthesis",
+    "City",
+    "Class",
+    "Clothing",
+    "CognitiveAgent",
+    "ColdBloodedVertebrate",
+    "Collection",
+    "ColorAttribute",
+    "Coloring",
+    "Communication",
+    "ComplexNumber",
+    "CompoundSubstance",
+    "ComputerLanguage",
+    "ComputerProgram",
+    "Condensing",
+    "ConsciousnessAttribute",
+    "ConstantQuantity",
+    "ConstructedLanguage",
+    "Constructing",
+    "ContentBearingObject",
+    "ContentDevelopment",
+    "Contest",
+    "ContestAttribute",
+    "Continent",
+    "Contract",
+    "Cooking",
+    "Cooling",
+    "Cooperation",
+    "CoordinatedUniversalTimeZone",
+    "Coorporation",
+    "CorpuscularObject",
+    "Coulomb",
+    "Creation",
+    "Cup",
+    "CurrencyMeasure",
+    "Damaging",
+    "Day",
+    "Death",
+    "December",
+    "Decreasing",
+    "DeonticAttribute",
+    "DeseaseOrSyndrome",
+    "Destruction",
+    "DevelopmentalAttribute",
+    "Device",
+    "DiagnosticProcess",
+    "Digesting",
+    "DirectedGraph",
+    "Directing",
+    "DirectionalAttribute",
+    "Disseminating",
+    "DualObjectProcess",
+    "EasternTimeZone",
+    "EducationalOrganization",
+    "EducationalProcess",
+    "Electron",
+    "ElectronVolt",
+    "ElementalSubstance",
+    "EmotionalState",
+    "EngineeringComponent",
+    "EngineeringConnection",
+    "Entity",
+    "Enzyme",
+    "EthnicGroup",
+    "Euro",
+    "EuroCent",
+    "Fabric",
+    "FahrenheitDegree",
+    "FamilyGroup",
+    "Farad",
+    "FatTissue",
+    "February",
+    "Feline",
+    "Fern",
+    "FieldOfStudy",
+    "FinancialTransaction",
+    "FiniteSet",
+    "Fish",
+    "FloweringPlant",
+    "Food",
+    "Foot",
+    "Formula",
+    "Freezing",
+    "FreshWaterArea",
+    "Friday",
+    "Fruit",
+    "FunctionQuantity",
+    "Fungus",
+    "Game",
+    "Gaming",
+    "GeoPoliticalArea",
+    "GeographicArea",
+    "GeopoliticalArea",
+    "Getting",
+    "Giving",
+    "Gland",
+    "Government",
+    "Gram",
+    "Graph",
+    "GraphArc",
+    "GraphElement",
+    "GraphLoop",
+    "GraphNode",
+    "Gray",
+    "Group",
+    "Growth",
+    "Guiding",
+    "Heating",
+    "Henry",
+    "Hertz",
+    "Hole",
+    "Hominid",
+    "HoofedMammal",
+    "Hormone",
+    "Hour",
+    "Human",
+    "HumanLanguage",
+    "Icon",
+    "ImaginaryNumber",
+    "Impelling",
+    "Inch",
+    "Increasing",
+    "InformationMeasure",
+    "Ingesting",
+    "Injuring",
+    "IntentionalProcess",
+    "IntentionalPsychologicalProcess",
+    "InternalAttribute",
+    "InternalChange",
+    "Invertebrate",
+    "Investigating",
+    "IrrationalNumber",
+    "Island",
+    "January",
+    "JoiningAnOrganization",
+    "Joule",
+    "July",
+    "June",
+    "Keeping",
+    "KelvinDegree",
+    "KiloByte",
+    "LandArea",
+    "Language",
+    "Law",
+    "LeapYear",
+    "LeavingAnOrganization",
+    "LegalAction",
+    "LengthMeasure",
+    "LinguisticCommunication",
+    "LinguisticExpression",
+    "List",
+    "Liter",
+    "Lumen",
+    "Lux",
+    "Machine",
+    "Maintaining",
+    "Making",
+    "Mammal",
+    "Managing",
+    "Maneuver",
+    "Manufacture",
+    "March",
+    "Marsupial",
+    "MassMeasure",
+    "May",
+    "Meat",
+    "Meeting",
+    "MegaByte",
+    "Melting",
+    "Metal",
+    "Meter",
+    "MicroOrganism",
+    "Mile",
+    "MilitaryProcess",
+    "Mineral",
+    "Minute",
+    "Mixture",
+    "Mole",
+    "Molecule",
+    "Monday",
+    "Monkey",
+    "Month",
+    "Morpheme",
+    "Moss",
+    "Motion",
+    "MotionPicture",
+    "MountainTimeZone",
+    "MultiGraph",
+    "Muscle",
+    "MusicalInstrument",
+    "MutuallyDisjointClass",
+    "NakedPromise",
+    "Nation",
+    "NaturalLanguage",
+    "Necessity",
+    "Neutron",
+    "Newton",
+    "NonFloweringPlant",
+    "NormativeAttribute",
+    "Noun",
+    "NounPhrase",
+    "November",
+    "Number",
+    "Nutrient",
+    "Object",
+    "ObjectiveNorm",
+    "Obligation",
+    "OccupationalRole",
+    "October",
+    "Ohm",
+    "OlfactoryAttribute",
+    "Organ",
+    "OrganOrTissueProcess",
+    "OrganicObject",
+    "Organism",
+    "OrganismProcess",
+    "Organization",
+    "OrganizationUnit",
+    "OrganizationalProcess",
+    "Ounce",
+    "Paci\ufb01cTimeZone",
+    "PairwiseDisjointClass",
+    "Particle",
+    "Pascal",
+    "Patent",
+    "PathologicProcess",
+    "Perception",
+    "PerceptualAttribute",
+    "Periodical",
+    "Permission",
+    "Phrase",
+    "Physical",
+    "PhysicalQuantity",
+    "PhysicalState",
+    "PhysiologicProcess",
+    "Pint",
+    "Plan",
+    "PlaneAngleMeasure",
+    "Plant",
+    "Poking",
+    "PoliticalOrganization",
+    "PoliticalProcess",
+    "Position",
+    "PositionalAttribute",
+    "Possibility",
+    "PoundForce",
+    "PoundMass",
+    "Predicate",
+    "PrepositionalPhrase",
+    "PrimaryColor",
+    "Primate",
+    "Procedure",
+    "Process",
+    "Product",
+    "Promise",
+    "Proposition",
+    "Protein",
+    "Proton",
+    "Province",
+    "PseudoGraph",
+    "PsychologicalAttribute",
+    "PsychologicalDysfunction",
+    "PsychologicalProcess",
+    "Publication",
+    "PurchaseContract",
+    "PureSubstance",
+    "Putting",
+    "Quantity",
+    "QuantityChange",
+    "Quart",
+    "Radian",
+    "Radiating",
+    "RadiatingLight",
+    "RadiatingSound",
+    "RankineDegree",
+    "RationalNumber",
+    "RealNumber",
+    "RecreationOrExercise",
+    "Region",
+    "RegulatoryProcess",
+    "RelationalAttribute",
+    "ReligiousOrganization",
+    "ReligiousProcess",
+    "Remembering",
+    "Removing",
+    "Repairing",
+    "Replication",
+    "ReproductiveBody",
+    "Reptile",
+    "Rodent",
+    "Room",
+    "SaltWaterArea",
+    "SaturationAttribute",
+    "Saturday",
+    "Searching",
+    "Second",
+    "SelfConnectedObject",
+    "Senctence",
+    "Sentence",
+    "SentientAgent",
+    "September",
+    "Series",
+    "ServiceContract",
+    "Set",
+    "SexAttribute",
+    "SexualReplication",
+    "ShapeAttribute",
+    "ShapeChange",
+    "Siemens",
+    "Sievert",
+    "Slug",
+    "SocialInteraction",
+    "SocialRole",
+    "SolidAngleMeasure",
+    "Solution",
+    "SoundAttribute",
+    "Sport",
+    "State",
+    "StateChange",
+    "StateOfMind",
+    "StaticWaterArea",
+    "StationaryArtifact",
+    "Steering",
+    "Steradian",
+    "StreamWaterArea",
+    "SubatomicParticle",
+    "SubjectiveAssessmentAttribute",
+    "Substance",
+    "Summary",
+    "Sunday",
+    "SurfaceChange",
+    "Surgery",
+    "SymbolicString",
+    "TactilePerception",
+    "TasteAttribute",
+    "TemperatureMeasure",
+    "Tesla",
+    "Text",
+    "TextureAttribute",
+    "TherapeuticalProcess",
+    "Thursday",
+    "TimeDependentQuantity",
+    "TimeDuration",
+    "TimeInterval",
+    "TimeMeasure",
+    "TimePosition",
+    "TimeZone",
+    "Tissue",
+    "Touching",
+    "ToxicOrganism",
+    "TraitAttribute",
+    "Transaction",
+    "Transfer",
+    "Transportation",
+    "TransportationDevice",
+    "Tree",
+    "TruthValue",
+    "Tuesday",
+    "UnaryConstantFunctionQuantity",
+    "UnilateralGetting",
+    "UnilateralGiving",
+    "UnitOfMeasure",
+    "UnitedKingdomGallon",
+    "UnitedStatesCent",
+    "UnitedStatesDollar",
+    "UnitedStatesGallon",
+    "Vegetable",
+    "Verb",
+    "VerbPhrase",
+    "Vertebrate",
+    "ViolentContest",
+    "Virus",
+    "VisualAttribute",
+    "Vitamin",
+    "Volt",
+    "VolumeMeasure",
+    "War",
+    "Warm-BloodedVertebrate",
+    "Warranty",
+    "Water",
+    "WaterArea",
+    "Watt",
+    "Weapon",
+    "Weber",
+    "Wednesday",
+    "Week",
+    "Word",
+    "Year",
+    "advertise",
+    "attach",
+    "bet",
+    "borrow",
+    "breath",
+    "buy",
+    "calculate",
+    "classify",
+    "combine",
+    "combust",
+    "committ",
+    "compare",
+    "con\ufb01ne",
+    "cover",
+    "cut",
+    "dance",
+    "declare",
+    "decode",
+    "detach",
+    "drink",
+    "dry",
+    "eat",
+    "encode",
+    "express",
+    "graduate",
+    "hear",
+    "hire",
+    "impact",
+    "kill",
+    "learn",
+    "lend",
+    "matriculate",
+    "music",
+    "order",
+    "plan",
+    "poison",
+    "predict",
+    "pretend",
+    "pursue",
+    "question",
+    "read",
+    "reason",
+    "request",
+    "see",
+    "select",
+    "sell",
+    "separate",
+    "shoot",
+    "smell",
+    "state",
+    "substitute",
+    "swim",
+    "taste",
+    "terminate_Employment",
+    "uncover",
+    "walk",
+    "wett",
+    "write"
+  ],
+  "edges": [
+    {
+      "parent": "Abstract",
+      "child": "Attribute",
+      "length": 791.146
+    },
+    {
+      "parent": "Abstract",
+      "child": "Class",
+      "length": 336.602
+    },
+    {
+      "parent": "Abstract",
+      "child": "Graph",
+      "length": 191.008
+    },
+    {
+      "parent": "Abstract",
+      "child": "GraphElement",
+      "length": 244.585
+    },
+    {
+      "parent": "Abstract",
+      "child": "Proposition",
+      "length": 243.377
+    },
+    {
+      "parent": "Abstract",
+      "child": "Quantity",
+      "length": 3384.176
+    },
+    {
+      "parent": "Abstract",
+      "child": "Set",
+      "length": 420.014
+    },
+    {
+      "parent": "Agent",
+      "child": "GeopoliticalArea",
+      "length": 607.292
+    },
+    {
+      "parent": "Agent",
+      "child": "Group",
+      "length": 256.243
+    },
+    {
+      "parent": "Agent",
+      "child": "Organism",
+      "length": 971.12
+    },
+    {
+      "parent": "Agent",
+      "child": "SentientAgent",
+      "length": 351.276
+    },
+    {
+      "parent": "AlethicAttribute",
+      "child": "Necessity",
+      "length": 236.779
+    },
+    {
+      "parent": "AlethicAttribute",
+      "child": "Possibility",
+      "length": 224.974
+    },
+    {
+      "parent": "AnatomicalStructure",
+      "child": "BodyPart",
+      "length": 209.4
+    },
+    {
+      "parent": "AnatomicalStructure",
+      "child": "ReproductiveBody",
+      "length": 184.172
+    },
+    {
+      "parent": "AngleMeasure",
+      "child": "PlaneAngleMeasure",
+      "length": 245.033
+    },
+    {
+      "parent": "AngleMeasure",
+      "child": "SolidAngleMeasure",
+      "length": 221.793
+    },
+    {
+      "parent": "AnimacyAttribute",
+      "child": "PsychologicalDysfunction",
+      "length": 268.966
+    },
+    {
+      "parent": "Animal",
+      "child": "Invertebrate",
+      "length": 242.21
+    },
+    {
+      "parent": "Animal",
+      "child": "Vertebrate",
+      "length": 280.935
+    },
+    {
+      "parent": "Artifact",
+      "child": "ArtWork",
+      "length": 287.173
+    },
+    {
+      "parent": "Artifact",
+      "child": "Clothing",
+      "length": 298.04
+    },
+    {
+      "parent": "Artifact",
+      "child": "Device",
+      "length": 331.193
+    },
+    {
+      "parent": "Artifact",
+      "child": "Fabric",
+      "length": 293.333
+    },
+    {
+      "parent": "Artifact",
+      "child": "Product",
+      "length": 300.578
+    },
+    {
+      "parent": "Artifact",
+      "child": "StationaryArtifact",
+      "length": 310.485
+    },
+    {
+      "parent": "Artifact",
+      "child": "Text",
+      "length": 449.308
+    },
+    {
+      "parent": "Arti\ufb01cialLanguage",
+      "child": "ComputerLanguage",
+      "length": 157.253
+    },
+    {
+      "parent": "Arti\ufb01cialLanguage",
+      "child": "ConstructedLanguage",
+      "length": 157.707
+    },
+    {
+      "parent": "Attribute",
+      "child": "InternalAttribute",
+      "length": 1080.645
+    },
+    {
+      "parent": "Attribute",
+      "child": "RelationalAttribute",
+      "length": 173.727
+    },
+    {
+      "parent": "BiologicalAttribute",
+      "child": "AnimacyAttribute",
+      "length": 188.887
+    },
+    {
+      "parent": "BiologicalAttribute",
+      "child": "DeseaseOrSyndrome",
+      "length": 174.219
+    },
+    {
+      "parent": "BiologicalAttribute",
+      "child": "DevelopmentalAttribute",
+      "length": 278.996
+    },
+    {
+      "parent": "BiologicalAttribute",
+      "child": "PsychologicalAttribute",
+      "length": 234.958
+    },
+    {
+      "parent": "BiologicalAttribute",
+      "child": "SexAttribute",
+      "length": 270.065
+    },
+    {
+      "parent": "BiologicalProcess",
+      "child": "PathologicProcess",
+      "length": 189.878
+    },
+    {
+      "parent": "BiologicalProcess",
+      "child": "PhysiologicProcess",
+      "length": 192.109
+    },
+    {
+      "parent": "BiologicalProcess",
+      "child": "PsychologicalProcess",
+      "length": 239.511
+    },
+    {
+      "parent": "BiologicallyActiveSubstance",
+      "child": "Hormone",
+      "length": 182.612
+    },
+    {
+      "parent": "BiologicallyActiveSubstance",
+      "child": "Nutrient",
+      "length": 325.427
+    },
+    {
+      "parent": "BodyMotion",
+      "child": "dance",
+      "length": 279.179
+    },
+    {
+      "parent": "BodyMotion",
+      "child": "swim",
+      "length": 252.144
+    },
+    {
+      "parent": "BodyMotion",
+      "child": "walk",
+      "length": 255.157
+    },
+    {
+      "parent": "BodyPart",
+      "child": "BodyCovering",
+      "length": 347.033
+    },
+    {
+      "parent": "BodyPart",
+      "child": "BodyJunction",
+      "length": 282.174
+    },
+    {
+      "parent": "BodyPart",
+      "child": "BodyVessel",
+      "length": 256.174
+    },
+    {
+      "parent": "BodyPart",
+      "child": "Cell",
+      "length": 244.546
+    },
+    {
+      "parent": "BodyPart",
+      "child": "Fruit",
+      "length": 526.51
+    },
+    {
+      "parent": "BodyPart",
+      "child": "Organ",
+      "length": 232.031
+    },
+    {
+      "parent": "BodyPart",
+      "child": "Vegetable",
+      "length": 775.017
+    },
+    {
+      "parent": "BodySubstance",
+      "child": "Blood",
+      "length": 238.616
+    },
+    {
+      "parent": "BodySubstance",
+      "child": "Hormone",
+      "length": 244.402
+    },
+    {
+      "parent": "BodySubstance",
+      "child": "Tissue",
+      "length": 241.362
+    },
+    {
+      "parent": "BreakabilityAttribute",
+      "child": "DevelopmentalAttribute",
+      "length": 216.867
+    },
+    {
+      "parent": "BreakabilityAttribute",
+      "child": "PoundForce",
+      "length": 230.974
+    },
+    {
+      "parent": "Carnivore",
+      "child": "Canine",
+      "length": 158.085
+    },
+    {
+      "parent": "Carnivore",
+      "child": "Feline",
+      "length": 152.613
+    },
+    {
+      "parent": "Certi\ufb01cate",
+      "child": "Patent",
+      "length": 226.72
+    },
+    {
+      "parent": "ChangeOfPossession",
+      "child": "Getting",
+      "length": 255.743
+    },
+    {
+      "parent": "ChangeOfPossession",
+      "child": "Giving",
+      "length": 222.766
+    },
+    {
+      "parent": "ChemicalDecomposition",
+      "child": "combust",
+      "length": 284.659
+    },
+    {
+      "parent": "ChemicalProcess",
+      "child": "ChemicalDecomposition",
+      "length": 560.914
+    },
+    {
+      "parent": "ChemicalProcess",
+      "child": "ChemicalSynthesis",
+      "length": 226.044
+    },
+    {
+      "parent": "Class",
+      "child": "MutuallyDisjointClass",
+      "length": 180.076
+    },
+    {
+      "parent": "Class",
+      "child": "PairwiseDisjointClass",
+      "length": 219.105
+    },
+    {
+      "parent": "CognitiveAgent",
+      "child": "Human",
+      "length": 2360.03
+    },
+    {
+      "parent": "CognitiveAgent",
+      "child": "OrganizationUnit",
+      "length": 245.493
+    },
+    {
+      "parent": "ColdBloodedVertebrate",
+      "child": "Amphibian",
+      "length": 192.495
+    },
+    {
+      "parent": "ColdBloodedVertebrate",
+      "child": "Fish",
+      "length": 191.936
+    },
+    {
+      "parent": "ColdBloodedVertebrate",
+      "child": "Reptile",
+      "length": 165.867
+    },
+    {
+      "parent": "Collection",
+      "child": "Group",
+      "length": 259.061
+    },
+    {
+      "parent": "ColorAttribute",
+      "child": "PrimaryColor",
+      "length": 219.574
+    },
+    {
+      "parent": "Communication",
+      "child": "Disseminating",
+      "length": 212.764
+    },
+    {
+      "parent": "Communication",
+      "child": "LinguisticCommunication",
+      "length": 212.512
+    },
+    {
+      "parent": "CompoundSubstance",
+      "child": "Molecule",
+      "length": 250.917
+    },
+    {
+      "parent": "CompoundSubstance",
+      "child": "Nutrient",
+      "length": 418.236
+    },
+    {
+      "parent": "CompoundSubstance",
+      "child": "Water",
+      "length": 258.478
+    },
+    {
+      "parent": "ConstantQuantity",
+      "child": "AngleMeasure",
+      "length": 380.792
+    },
+    {
+      "parent": "ConstantQuantity",
+      "child": "AreaMeasure",
+      "length": 567.93
+    },
+    {
+      "parent": "ConstantQuantity",
+      "child": "CurrencyMeasure",
+      "length": 531.916
+    },
+    {
+      "parent": "ConstantQuantity",
+      "child": "InformationMeasure",
+      "length": 285.508
+    },
+    {
+      "parent": "ConstantQuantity",
+      "child": "LengthMeasure",
+      "length": 313.257
+    },
+    {
+      "parent": "ConstantQuantity",
+      "child": "MassMeasure",
+      "length": 510.212
+    },
+    {
+      "parent": "ConstantQuantity",
+      "child": "TemperatureMeasure",
+      "length": 733.91
+    },
+    {
+      "parent": "ConstantQuantity",
+      "child": "TimeMeasure",
+      "length": 200.133
+    },
+    {
+      "parent": "ConstantQuantity",
+      "child": "VolumeMeasure",
+      "length": 1015.826
+    },
+    {
+      "parent": "ContentBearingObject",
+      "child": "Icon",
+      "length": 250.607
+    },
+    {
+      "parent": "ContentBearingObject",
+      "child": "LinguisticExpression",
+      "length": 160.496
+    },
+    {
+      "parent": "ContentBearingObject",
+      "child": "Series",
+      "length": 328.516
+    },
+    {
+      "parent": "ContentBearingObject",
+      "child": "SymbolicString",
+      "length": 236.736
+    },
+    {
+      "parent": "ContentDevelopment",
+      "child": "Publication",
+      "length": 1012.712
+    },
+    {
+      "parent": "ContentDevelopment",
+      "child": "read",
+      "length": 257.678
+    },
+    {
+      "parent": "ContentDevelopment",
+      "child": "write",
+      "length": 300.969
+    },
+    {
+      "parent": "Contest",
+      "child": "Gaming",
+      "length": 263.974
+    },
+    {
+      "parent": "Contest",
+      "child": "LegalAction",
+      "length": 250.611
+    },
+    {
+      "parent": "Contest",
+      "child": "ViolentContest",
+      "length": 254.641
+    },
+    {
+      "parent": "Contract",
+      "child": "PurchaseContract",
+      "length": 183.917
+    },
+    {
+      "parent": "Contract",
+      "child": "ServiceContract",
+      "length": 185.391
+    },
+    {
+      "parent": "CorpuscularObject",
+      "child": "Artifact",
+      "length": 243.463
+    },
+    {
+      "parent": "CorpuscularObject",
+      "child": "OrganicObject",
+      "length": 332.66
+    },
+    {
+      "parent": "Creation",
+      "child": "Making",
+      "length": 266.505
+    },
+    {
+      "parent": "CurrencyMeasure",
+      "child": "Euro",
+      "length": 267.977
+    },
+    {
+      "parent": "CurrencyMeasure",
+      "child": "EuroCent",
+      "length": 263.144
+    },
+    {
+      "parent": "CurrencyMeasure",
+      "child": "UnitedStatesCent",
+      "length": 288.227
+    },
+    {
+      "parent": "CurrencyMeasure",
+      "child": "UnitedStatesDollar",
+      "length": 257.589
+    },
+    {
+      "parent": "Damaging",
+      "child": "Destruction",
+      "length": 238.735
+    },
+    {
+      "parent": "Damaging",
+      "child": "Injuring",
+      "length": 635.655
+    },
+    {
+      "parent": "Day",
+      "child": "Friday",
+      "length": 307.396
+    },
+    {
+      "parent": "Day",
+      "child": "Monday",
+      "length": 254.714
+    },
+    {
+      "parent": "Day",
+      "child": "Saturday",
+      "length": 354.737
+    },
+    {
+      "parent": "Day",
+      "child": "Sunday",
+      "length": 271.339
+    },
+    {
+      "parent": "Day",
+      "child": "Thursday",
+      "length": 265.724
+    },
+    {
+      "parent": "Day",
+      "child": "Tuesday",
+      "length": 246.401
+    },
+    {
+      "parent": "Day",
+      "child": "Wednesday",
+      "length": 237.2
+    },
+    {
+      "parent": "Decreasing",
+      "child": "Cooling",
+      "length": 292.537
+    },
+    {
+      "parent": "DeonticAttribute",
+      "child": "Obligation",
+      "length": 225.223
+    },
+    {
+      "parent": "DeonticAttribute",
+      "child": "Permission",
+      "length": 217.443
+    },
+    {
+      "parent": "DeseaseOrSyndrome",
+      "child": "PsychologicalDysfunction",
+      "length": 184.33
+    },
+    {
+      "parent": "Destruction",
+      "child": "kill",
+      "length": 293.58
+    },
+    {
+      "parent": "DevelopmentalAttribute",
+      "child": "StateOfMind",
+      "length": 260.197
+    },
+    {
+      "parent": "Device",
+      "child": "EngineeringComponent",
+      "length": 244.133
+    },
+    {
+      "parent": "Device",
+      "child": "Machine",
+      "length": 294.817
+    },
+    {
+      "parent": "Device",
+      "child": "MusicalInstrument",
+      "length": 225.09
+    },
+    {
+      "parent": "Device",
+      "child": "TransportationDevice",
+      "length": 220.323
+    },
+    {
+      "parent": "Device",
+      "child": "Weapon",
+      "length": 336.258
+    },
+    {
+      "parent": "Directing",
+      "child": "order",
+      "length": 248.729
+    },
+    {
+      "parent": "Directing",
+      "child": "question",
+      "length": 229.012
+    },
+    {
+      "parent": "Directing",
+      "child": "request",
+      "length": 235.048
+    },
+    {
+      "parent": "Disseminating",
+      "child": "advertise",
+      "length": 240.272
+    },
+    {
+      "parent": "DualObjectProcess",
+      "child": "Transaction",
+      "length": 203.016
+    },
+    {
+      "parent": "DualObjectProcess",
+      "child": "attach",
+      "length": 223.365
+    },
+    {
+      "parent": "DualObjectProcess",
+      "child": "combine",
+      "length": 245.773
+    },
+    {
+      "parent": "DualObjectProcess",
+      "child": "compare",
+      "length": 1741.451
+    },
+    {
+      "parent": "DualObjectProcess",
+      "child": "detach",
+      "length": 300.602
+    },
+    {
+      "parent": "DualObjectProcess",
+      "child": "separate",
+      "length": 267.153
+    },
+    {
+      "parent": "DualObjectProcess",
+      "child": "substitute",
+      "length": 344.188
+    },
+    {
+      "parent": "ElementalSubstance",
+      "child": "Atom",
+      "length": 221.066
+    },
+    {
+      "parent": "ElementalSubstance",
+      "child": "Metal",
+      "length": 285.804
+    },
+    {
+      "parent": "ElementalSubstance",
+      "child": "SubatomicParticle",
+      "length": 239.103
+    },
+    {
+      "parent": "EngineeringComponent",
+      "child": "EngineeringConnection",
+      "length": 194.962
+    },
+    {
+      "parent": "Entity",
+      "child": "Abstract",
+      "length": 683.627
+    },
+    {
+      "parent": "Entity",
+      "child": "Physical",
+      "length": 1092.063
+    },
+    {
+      "parent": "FinancialTransaction",
+      "child": "bet",
+      "length": 206.983
+    },
+    {
+      "parent": "FinancialTransaction",
+      "child": "buy",
+      "length": 239.157
+    },
+    {
+      "parent": "FinancialTransaction",
+      "child": "sell",
+      "length": 239.526
+    },
+    {
+      "parent": "Food",
+      "child": "Beverage",
+      "length": 234.508
+    },
+    {
+      "parent": "Food",
+      "child": "Fruit",
+      "length": 479.515
+    },
+    {
+      "parent": "Food",
+      "child": "Meat",
+      "length": 253.821
+    },
+    {
+      "parent": "Food",
+      "child": "Vegetable",
+      "length": 338.051
+    },
+    {
+      "parent": "FunctionQuantity",
+      "child": "Ampere",
+      "length": 546.719
+    },
+    {
+      "parent": "FunctionQuantity",
+      "child": "BrithishTermalUnit",
+      "length": 631.091
+    },
+    {
+      "parent": "FunctionQuantity",
+      "child": "Calorie",
+      "length": 713.816
+    },
+    {
+      "parent": "FunctionQuantity",
+      "child": "Candela",
+      "length": 487.709
+    },
+    {
+      "parent": "FunctionQuantity",
+      "child": "ElectronVolt",
+      "length": 701.675
+    },
+    {
+      "parent": "FunctionQuantity",
+      "child": "Farad",
+      "length": 240.148
+    },
+    {
+      "parent": "FunctionQuantity",
+      "child": "Gray",
+      "length": 609.53
+    },
+    {
+      "parent": "FunctionQuantity",
+      "child": "Henry",
+      "length": 435.032
+    },
+    {
+      "parent": "FunctionQuantity",
+      "child": "Joule",
+      "length": 337.531
+    },
+    {
+      "parent": "FunctionQuantity",
+      "child": "Lumen",
+      "length": 489.169
+    },
+    {
+      "parent": "FunctionQuantity",
+      "child": "Lux",
+      "length": 550.407
+    },
+    {
+      "parent": "FunctionQuantity",
+      "child": "Newton",
+      "length": 432.713
+    },
+    {
+      "parent": "FunctionQuantity",
+      "child": "Ohm",
+      "length": 262.21
+    },
+    {
+      "parent": "FunctionQuantity",
+      "child": "Pascal",
+      "length": 383.262
+    },
+    {
+      "parent": "FunctionQuantity",
+      "child": "PoundForce",
+      "length": 758.596
+    },
+    {
+      "parent": "FunctionQuantity",
+      "child": "Siemens",
+      "length": 292.838
+    },
+    {
+      "parent": "FunctionQuantity",
+      "child": "Sievert",
+      "length": 656.023
+    },
+    {
+      "parent": "FunctionQuantity",
+      "child": "Tesla",
+      "length": 382.99
+    },
+    {
+      "parent": "FunctionQuantity",
+      "child": "UnaryConstantFunctionQuantity",
+      "length": 509.284
+    },
+    {
+      "parent": "FunctionQuantity",
+      "child": "Volt",
+      "length": 242.956
+    },
+    {
+      "parent": "FunctionQuantity",
+      "child": "Watt",
+      "length": 293.941
+    },
+    {
+      "parent": "FunctionQuantity",
+      "child": "Weber",
+      "length": 337.339
+    },
+    {
+      "parent": "Game",
+      "child": "Sport",
+      "length": 277.023
+    },
+    {
+      "parent": "GeoPoliticalArea",
+      "child": "City",
+      "length": 268.199
+    },
+    {
+      "parent": "GeoPoliticalArea",
+      "child": "Nation",
+      "length": 320.068
+    },
+    {
+      "parent": "GeoPoliticalArea",
+      "child": "Province",
+      "length": 257.519
+    },
+    {
+      "parent": "GeoPoliticalArea",
+      "child": "State",
+      "length": 309.163
+    },
+    {
+      "parent": "GeographicArea",
+      "child": "GeoPoliticalArea",
+      "length": 194.742
+    },
+    {
+      "parent": "GeographicArea",
+      "child": "LandArea",
+      "length": 281.377
+    },
+    {
+      "parent": "GeographicArea",
+      "child": "WaterArea",
+      "length": 437.137
+    },
+    {
+      "parent": "Getting",
+      "child": "UnilateralGetting",
+      "length": 204.532
+    },
+    {
+      "parent": "Getting",
+      "child": "borrow",
+      "length": 243.101
+    },
+    {
+      "parent": "Giving",
+      "child": "UnilateralGiving",
+      "length": 213.662
+    },
+    {
+      "parent": "Giving",
+      "child": "lend",
+      "length": 253.482
+    },
+    {
+      "parent": "Graph",
+      "child": "DirectedGraph",
+      "length": 226.708
+    },
+    {
+      "parent": "Graph",
+      "child": "MultiGraph",
+      "length": 209.675
+    },
+    {
+      "parent": "Graph",
+      "child": "PseudoGraph",
+      "length": 219.704
+    },
+    {
+      "parent": "Graph",
+      "child": "Tree",
+      "length": 234.164
+    },
+    {
+      "parent": "GraphArc",
+      "child": "GraphLoop",
+      "length": 215.508
+    },
+    {
+      "parent": "GraphElement",
+      "child": "GraphArc",
+      "length": 205.789
+    },
+    {
+      "parent": "GraphElement",
+      "child": "GraphNode",
+      "length": 177.68
+    },
+    {
+      "parent": "Group",
+      "child": "AgeGroup",
+      "length": 251.827
+    },
+    {
+      "parent": "Group",
+      "child": "EthnicGroup",
+      "length": 266.917
+    },
+    {
+      "parent": "Group",
+      "child": "FamilyGroup",
+      "length": 244.089
+    },
+    {
+      "parent": "Group",
+      "child": "Organization",
+      "length": 382.246
+    },
+    {
+      "parent": "Guiding",
+      "child": "EducationalProcess",
+      "length": 278.587
+    },
+    {
+      "parent": "Guiding",
+      "child": "Managing",
+      "length": 282.98
+    },
+    {
+      "parent": "Guiding",
+      "child": "RegulatoryProcess",
+      "length": 279.627
+    },
+    {
+      "parent": "Guiding",
+      "child": "Steering",
+      "length": 288.014
+    },
+    {
+      "parent": "Hominid",
+      "child": "Human",
+      "length": 121.796
+    },
+    {
+      "parent": "HumanLanguage",
+      "child": "ConstructedLanguage",
+      "length": 148.41
+    },
+    {
+      "parent": "HumanLanguage",
+      "child": "NaturalLanguage",
+      "length": 170.095
+    },
+    {
+      "parent": "Impelling",
+      "child": "shoot",
+      "length": 289.219
+    },
+    {
+      "parent": "Increasing",
+      "child": "Heating",
+      "length": 281.833
+    },
+    {
+      "parent": "InformationMeasure",
+      "child": "Bit",
+      "length": 258.172
+    },
+    {
+      "parent": "InformationMeasure",
+      "child": "Byte",
+      "length": 277.938
+    },
+    {
+      "parent": "InformationMeasure",
+      "child": "KiloByte",
+      "length": 304.481
+    },
+    {
+      "parent": "InformationMeasure",
+      "child": "MegaByte",
+      "length": 239.948
+    },
+    {
+      "parent": "Ingesting",
+      "child": "drink",
+      "length": 239.554
+    },
+    {
+      "parent": "Ingesting",
+      "child": "eat",
+      "length": 245.366
+    },
+    {
+      "parent": "Injuring",
+      "child": "poison",
+      "length": 917.065
+    },
+    {
+      "parent": "IntentionalProcess",
+      "child": "ContentDevelopment",
+      "length": 615.594
+    },
+    {
+      "parent": "IntentionalProcess",
+      "child": "Guiding",
+      "length": 271.154
+    },
+    {
+      "parent": "IntentionalProcess",
+      "child": "IntentionalPsychologicalProcess",
+      "length": 863.716
+    },
+    {
+      "parent": "IntentionalProcess",
+      "child": "Keeping",
+      "length": 332.682
+    },
+    {
+      "parent": "IntentionalProcess",
+      "child": "Maintaining",
+      "length": 404.393
+    },
+    {
+      "parent": "IntentionalProcess",
+      "child": "Making",
+      "length": 637.489
+    },
+    {
+      "parent": "IntentionalProcess",
+      "child": "Maneuver",
+      "length": 367.781
+    },
+    {
+      "parent": "IntentionalProcess",
+      "child": "OrganizationalProcess",
+      "length": 181.099
+    },
+    {
+      "parent": "IntentionalProcess",
+      "child": "Poking",
+      "length": 384.882
+    },
+    {
+      "parent": "IntentionalProcess",
+      "child": "RecreationOrExercise",
+      "length": 419.219
+    },
+    {
+      "parent": "IntentionalProcess",
+      "child": "Repairing",
+      "length": 447.599
+    },
+    {
+      "parent": "IntentionalProcess",
+      "child": "Searching",
+      "length": 515.933
+    },
+    {
+      "parent": "IntentionalProcess",
+      "child": "SocialInteraction",
+      "length": 943.437
+    },
+    {
+      "parent": "IntentionalPsychologicalProcess",
+      "child": "calculate",
+      "length": 221.31
+    },
+    {
+      "parent": "IntentionalPsychologicalProcess",
+      "child": "classify",
+      "length": 288.118
+    },
+    {
+      "parent": "IntentionalPsychologicalProcess",
+      "child": "compare",
+      "length": 593.049
+    },
+    {
+      "parent": "IntentionalPsychologicalProcess",
+      "child": "learn",
+      "length": 243.217
+    },
+    {
+      "parent": "IntentionalPsychologicalProcess",
+      "child": "plan",
+      "length": 190.273
+    },
+    {
+      "parent": "IntentionalPsychologicalProcess",
+      "child": "predict",
+      "length": 211.407
+    },
+    {
+      "parent": "IntentionalPsychologicalProcess",
+      "child": "reason",
+      "length": 323.229
+    },
+    {
+      "parent": "IntentionalPsychologicalProcess",
+      "child": "select",
+      "length": 273.286
+    },
+    {
+      "parent": "InternalAttribute",
+      "child": "BiologicalAttribute",
+      "length": 453.491
+    },
+    {
+      "parent": "InternalAttribute",
+      "child": "BreakabilityAttribute",
+      "length": 612.741
+    },
+    {
+      "parent": "InternalAttribute",
+      "child": "PerceptualAttribute",
+      "length": 161.758
+    },
+    {
+      "parent": "InternalAttribute",
+      "child": "PhysicalState",
+      "length": 291.061
+    },
+    {
+      "parent": "InternalAttribute",
+      "child": "SaturationAttribute",
+      "length": 409.43
+    },
+    {
+      "parent": "InternalAttribute",
+      "child": "ShapeAttribute",
+      "length": 294.794
+    },
+    {
+      "parent": "InternalChange",
+      "child": "BiologicalProcess",
+      "length": 187.176
+    },
+    {
+      "parent": "InternalChange",
+      "child": "ChemicalProcess",
+      "length": 646.749
+    },
+    {
+      "parent": "InternalChange",
+      "child": "Creation",
+      "length": 472.126
+    },
+    {
+      "parent": "InternalChange",
+      "child": "Damaging",
+      "length": 279.958
+    },
+    {
+      "parent": "InternalChange",
+      "child": "QuantityChange",
+      "length": 191.266
+    },
+    {
+      "parent": "InternalChange",
+      "child": "StateChange",
+      "length": 382.654
+    },
+    {
+      "parent": "InternalChange",
+      "child": "SurfaceChange",
+      "length": 288.085
+    },
+    {
+      "parent": "Investigating",
+      "child": "DiagnosticProcess",
+      "length": 208.258
+    },
+    {
+      "parent": "JoiningAnOrganization",
+      "child": "hire",
+      "length": 225.527
+    },
+    {
+      "parent": "JoiningAnOrganization",
+      "child": "matriculate",
+      "length": 489.729
+    },
+    {
+      "parent": "Keeping",
+      "child": "con\ufb01ne",
+      "length": 290.387
+    },
+    {
+      "parent": "LandArea",
+      "child": "Address",
+      "length": 339.964
+    },
+    {
+      "parent": "LandArea",
+      "child": "City",
+      "length": 352.633
+    },
+    {
+      "parent": "LandArea",
+      "child": "Continent",
+      "length": 300.596
+    },
+    {
+      "parent": "LandArea",
+      "child": "Island",
+      "length": 295.215
+    },
+    {
+      "parent": "LandArea",
+      "child": "Nation",
+      "length": 379.166
+    },
+    {
+      "parent": "LandArea",
+      "child": "Province",
+      "length": 303.123
+    },
+    {
+      "parent": "LandArea",
+      "child": "State",
+      "length": 293.317
+    },
+    {
+      "parent": "Language",
+      "child": "AnimalLanguage",
+      "length": 305.501
+    },
+    {
+      "parent": "Language",
+      "child": "Arti\ufb01cialLanguage",
+      "length": 366.889
+    },
+    {
+      "parent": "Language",
+      "child": "HumanLanguage",
+      "length": 424.742
+    },
+    {
+      "parent": "LeavingAnOrganization",
+      "child": "graduate",
+      "length": 202.727
+    },
+    {
+      "parent": "LeavingAnOrganization",
+      "child": "terminate_Employment",
+      "length": 220.568
+    },
+    {
+      "parent": "LengthMeasure",
+      "child": "Angstrom",
+      "length": 269.109
+    },
+    {
+      "parent": "LengthMeasure",
+      "child": "Centimeter",
+      "length": 299.334
+    },
+    {
+      "parent": "LengthMeasure",
+      "child": "Foot",
+      "length": 275.109
+    },
+    {
+      "parent": "LengthMeasure",
+      "child": "Inch",
+      "length": 292.479
+    },
+    {
+      "parent": "LengthMeasure",
+      "child": "Meter",
+      "length": 358.676
+    },
+    {
+      "parent": "LengthMeasure",
+      "child": "Mile",
+      "length": 324.484
+    },
+    {
+      "parent": "LinguisticCommunication",
+      "child": "Directing",
+      "length": 220.935
+    },
+    {
+      "parent": "LinguisticCommunication",
+      "child": "committ",
+      "length": 196.066
+    },
+    {
+      "parent": "LinguisticCommunication",
+      "child": "declare",
+      "length": 269.765
+    },
+    {
+      "parent": "LinguisticCommunication",
+      "child": "express",
+      "length": 253.257
+    },
+    {
+      "parent": "LinguisticCommunication",
+      "child": "state",
+      "length": 181.743
+    },
+    {
+      "parent": "LinguisticExpression",
+      "child": "Language",
+      "length": 289.07
+    },
+    {
+      "parent": "LinguisticExpression",
+      "child": "Morpheme",
+      "length": 229.941
+    },
+    {
+      "parent": "LinguisticExpression",
+      "child": "Phrase",
+      "length": 288.084
+    },
+    {
+      "parent": "LinguisticExpression",
+      "child": "Text",
+      "length": 488.469
+    },
+    {
+      "parent": "LinguisticExpression",
+      "child": "Word",
+      "length": 252.829
+    },
+    {
+      "parent": "Making",
+      "child": "Constructing",
+      "length": 272.895
+    },
+    {
+      "parent": "Making",
+      "child": "Cooking",
+      "length": 293.875
+    },
+    {
+      "parent": "Making",
+      "child": "Manufacture",
+      "length": 529.297
+    },
+    {
+      "parent": "Mammal",
+      "child": "AquaticMammal",
+      "length": 186.775
+    },
+    {
+      "parent": "Mammal",
+      "child": "Carnivore",
+      "length": 174.414
+    },
+    {
+      "parent": "Mammal",
+      "child": "HoofedMammal",
+      "length": 236.06
+    },
+    {
+      "parent": "Mammal",
+      "child": "Marsupial",
+      "length": 203.608
+    },
+    {
+      "parent": "Mammal",
+      "child": "Primate",
+      "length": 192.093
+    },
+    {
+      "parent": "Mammal",
+      "child": "Rodent",
+      "length": 192.12
+    },
+    {
+      "parent": "Manufacture",
+      "child": "Publication",
+      "length": 247.61
+    },
+    {
+      "parent": "MassMeasure",
+      "child": "Amu",
+      "length": 302.779
+    },
+    {
+      "parent": "MassMeasure",
+      "child": "AtomGram",
+      "length": 343.941
+    },
+    {
+      "parent": "MassMeasure",
+      "child": "Gram",
+      "length": 281.023
+    },
+    {
+      "parent": "MassMeasure",
+      "child": "Mole",
+      "length": 294.94
+    },
+    {
+      "parent": "MassMeasure",
+      "child": "PoundMass",
+      "length": 412.891
+    },
+    {
+      "parent": "MassMeasure",
+      "child": "Slug",
+      "length": 283.808
+    },
+    {
+      "parent": "MicroOrganism",
+      "child": "Bacterium",
+      "length": 209.541
+    },
+    {
+      "parent": "MicroOrganism",
+      "child": "Virus",
+      "length": 249.897
+    },
+    {
+      "parent": "Mixture",
+      "child": "BodySubstance",
+      "length": 292.697
+    },
+    {
+      "parent": "Mixture",
+      "child": "Mineral",
+      "length": 295.78
+    },
+    {
+      "parent": "Mixture",
+      "child": "Solution",
+      "length": 284.253
+    },
+    {
+      "parent": "Month",
+      "child": "April",
+      "length": 280.448
+    },
+    {
+      "parent": "Month",
+      "child": "August",
+      "length": 455.008
+    },
+    {
+      "parent": "Month",
+      "child": "December",
+      "length": 264.895
+    },
+    {
+      "parent": "Month",
+      "child": "February",
+      "length": 236.059
+    },
+    {
+      "parent": "Month",
+      "child": "January",
+      "length": 246.561
+    },
+    {
+      "parent": "Month",
+      "child": "July",
+      "length": 410.724
+    },
+    {
+      "parent": "Month",
+      "child": "June",
+      "length": 356.113
+    },
+    {
+      "parent": "Month",
+      "child": "March",
+      "length": 249.817
+    },
+    {
+      "parent": "Month",
+      "child": "May",
+      "length": 314.666
+    },
+    {
+      "parent": "Month",
+      "child": "November",
+      "length": 303.12
+    },
+    {
+      "parent": "Month",
+      "child": "October",
+      "length": 346.057
+    },
+    {
+      "parent": "Month",
+      "child": "September",
+      "length": 384.131
+    },
+    {
+      "parent": "Motion",
+      "child": "BodyMotion",
+      "length": 241.231
+    },
+    {
+      "parent": "Motion",
+      "child": "Radiating",
+      "length": 383.619
+    },
+    {
+      "parent": "Motion",
+      "child": "Removing",
+      "length": 233.996
+    },
+    {
+      "parent": "Motion",
+      "child": "Transfer",
+      "length": 286.574
+    },
+    {
+      "parent": "NonFloweringPlant",
+      "child": "Alga",
+      "length": 235.488
+    },
+    {
+      "parent": "NonFloweringPlant",
+      "child": "Fern",
+      "length": 208.824
+    },
+    {
+      "parent": "NonFloweringPlant",
+      "child": "Fungus",
+      "length": 246.113
+    },
+    {
+      "parent": "NonFloweringPlant",
+      "child": "Moss",
+      "length": 208.814
+    },
+    {
+      "parent": "NormativeAttribute",
+      "child": "ObjectiveNorm",
+      "length": 215.941
+    },
+    {
+      "parent": "NormativeAttribute",
+      "child": "SubjectiveAssessmentAttribute",
+      "length": 130.211
+    },
+    {
+      "parent": "Number",
+      "child": "ComplexNumber",
+      "length": 128.328
+    },
+    {
+      "parent": "Number",
+      "child": "ImaginaryNumber",
+      "length": 158.377
+    },
+    {
+      "parent": "Number",
+      "child": "RealNumber",
+      "length": 156.905
+    },
+    {
+      "parent": "Nutrient",
+      "child": "Carbohydrate",
+      "length": 229.328
+    },
+    {
+      "parent": "Nutrient",
+      "child": "Protein",
+      "length": 234.034
+    },
+    {
+      "parent": "Nutrient",
+      "child": "Vitamin",
+      "length": 229.465
+    },
+    {
+      "parent": "Object",
+      "child": "Agent",
+      "length": 513.267
+    },
+    {
+      "parent": "Object",
+      "child": "Collection",
+      "length": 378.91
+    },
+    {
+      "parent": "Object",
+      "child": "Region",
+      "length": 1317.556
+    },
+    {
+      "parent": "Object",
+      "child": "SelfConnectedObject",
+      "length": 399.788
+    },
+    {
+      "parent": "ObjectiveNorm",
+      "child": "AlethicAttribute",
+      "length": 247.66
+    },
+    {
+      "parent": "ObjectiveNorm",
+      "child": "ContestAttribute",
+      "length": 228.586
+    },
+    {
+      "parent": "ObjectiveNorm",
+      "child": "DeonticAttribute",
+      "length": 247.708
+    },
+    {
+      "parent": "Obligation",
+      "child": "Law",
+      "length": 237.376
+    },
+    {
+      "parent": "Obligation",
+      "child": "Promise",
+      "length": 222.789
+    },
+    {
+      "parent": "OccupationalRole",
+      "child": "Position",
+      "length": 251.219
+    },
+    {
+      "parent": "Organ",
+      "child": "Gland",
+      "length": 246.426
+    },
+    {
+      "parent": "OrganicObject",
+      "child": "AnatomicalStructure",
+      "length": 216.695
+    },
+    {
+      "parent": "OrganicObject",
+      "child": "Organism",
+      "length": 688.224
+    },
+    {
+      "parent": "Organism",
+      "child": "Animal",
+      "length": 285.03
+    },
+    {
+      "parent": "Organism",
+      "child": "MicroOrganism",
+      "length": 227.943
+    },
+    {
+      "parent": "Organism",
+      "child": "Plant",
+      "length": 261.279
+    },
+    {
+      "parent": "Organism",
+      "child": "ToxicOrganism",
+      "length": 249.458
+    },
+    {
+      "parent": "OrganismProcess",
+      "child": "Birth",
+      "length": 382.473
+    },
+    {
+      "parent": "OrganismProcess",
+      "child": "Death",
+      "length": 308.47
+    },
+    {
+      "parent": "OrganismProcess",
+      "child": "Digesting",
+      "length": 223.219
+    },
+    {
+      "parent": "OrganismProcess",
+      "child": "Growth",
+      "length": 780.4
+    },
+    {
+      "parent": "OrganismProcess",
+      "child": "Ingesting",
+      "length": 230.484
+    },
+    {
+      "parent": "OrganismProcess",
+      "child": "Replication",
+      "length": 419.8
+    },
+    {
+      "parent": "OrganismProcess",
+      "child": "breath",
+      "length": 252.348
+    },
+    {
+      "parent": "Organization",
+      "child": "Coorporation",
+      "length": 260.237
+    },
+    {
+      "parent": "Organization",
+      "child": "EducationalOrganization",
+      "length": 208.625
+    },
+    {
+      "parent": "Organization",
+      "child": "PoliticalOrganization",
+      "length": 234.421
+    },
+    {
+      "parent": "Organization",
+      "child": "ReligiousOrganization",
+      "length": 280.019
+    },
+    {
+      "parent": "OrganizationalProcess",
+      "child": "JoiningAnOrganization",
+      "length": 189.529
+    },
+    {
+      "parent": "OrganizationalProcess",
+      "child": "LeavingAnOrganization",
+      "length": 291.137
+    },
+    {
+      "parent": "OrganizationalProcess",
+      "child": "Managing",
+      "length": 319.363
+    },
+    {
+      "parent": "OrganizationalProcess",
+      "child": "PoliticalProcess",
+      "length": 376.488
+    },
+    {
+      "parent": "OrganizationalProcess",
+      "child": "RegulatoryProcess",
+      "length": 229.29
+    },
+    {
+      "parent": "OrganizationalProcess",
+      "child": "ReligiousProcess",
+      "length": 223.226
+    },
+    {
+      "parent": "PathologicProcess",
+      "child": "Injuring",
+      "length": 326.221
+    },
+    {
+      "parent": "Perception",
+      "child": "TactilePerception",
+      "length": 234.553
+    },
+    {
+      "parent": "Perception",
+      "child": "hear",
+      "length": 263.111
+    },
+    {
+      "parent": "Perception",
+      "child": "see",
+      "length": 320.356
+    },
+    {
+      "parent": "Perception",
+      "child": "smell",
+      "length": 372.179
+    },
+    {
+      "parent": "Perception",
+      "child": "taste",
+      "length": 259.44
+    },
+    {
+      "parent": "PerceptualAttribute",
+      "child": "OlfactoryAttribute",
+      "length": 178.066
+    },
+    {
+      "parent": "PerceptualAttribute",
+      "child": "SoundAttribute",
+      "length": 214.166
+    },
+    {
+      "parent": "PerceptualAttribute",
+      "child": "TasteAttribute",
+      "length": 207.116
+    },
+    {
+      "parent": "PerceptualAttribute",
+      "child": "TextureAttribute",
+      "length": 250.876
+    },
+    {
+      "parent": "PerceptualAttribute",
+      "child": "VisualAttribute",
+      "length": 270.476
+    },
+    {
+      "parent": "Phrase",
+      "child": "NounPhrase",
+      "length": 257.149
+    },
+    {
+      "parent": "Phrase",
+      "child": "PrepositionalPhrase",
+      "length": 232.777
+    },
+    {
+      "parent": "Phrase",
+      "child": "VerbPhrase",
+      "length": 248.773
+    },
+    {
+      "parent": "Physical",
+      "child": "Object",
+      "length": 191.434
+    },
+    {
+      "parent": "Physical",
+      "child": "Process",
+      "length": 1493.208
+    },
+    {
+      "parent": "PhysicalQuantity",
+      "child": "ConstantQuantity",
+      "length": 823.1
+    },
+    {
+      "parent": "PhysicalQuantity",
+      "child": "FunctionQuantity",
+      "length": 378.458
+    },
+    {
+      "parent": "PhysicalQuantity",
+      "child": "UnitOfMeasure",
+      "length": 900.362
+    },
+    {
+      "parent": "PhysicalState",
+      "child": "SexAttribute",
+      "length": 267.067
+    },
+    {
+      "parent": "PhysicalState",
+      "child": "VisualAttribute",
+      "length": 263.102
+    },
+    {
+      "parent": "PhysiologicProcess",
+      "child": "OrganOrTissueProcess",
+      "length": 198.008
+    },
+    {
+      "parent": "PhysiologicProcess",
+      "child": "OrganismProcess",
+      "length": 269.599
+    },
+    {
+      "parent": "PlaneAngleMeasure",
+      "child": "AngularDegree",
+      "length": 213.398
+    },
+    {
+      "parent": "PlaneAngleMeasure",
+      "child": "Radian",
+      "length": 236.327
+    },
+    {
+      "parent": "Plant",
+      "child": "FloweringPlant",
+      "length": 219.327
+    },
+    {
+      "parent": "Plant",
+      "child": "NonFloweringPlant",
+      "length": 203.111
+    },
+    {
+      "parent": "Poking",
+      "child": "cut",
+      "length": 307.535
+    },
+    {
+      "parent": "PoliticalOrganization",
+      "child": "Government",
+      "length": 198.604
+    },
+    {
+      "parent": "PoliticalProcess",
+      "child": "MilitaryProcess",
+      "length": 211.77
+    },
+    {
+      "parent": "PositionalAttribute",
+      "child": "DirectionalAttribute",
+      "length": 259.886
+    },
+    {
+      "parent": "Primate",
+      "child": "Ape",
+      "length": 164.902
+    },
+    {
+      "parent": "Primate",
+      "child": "Hominid",
+      "length": 187.812
+    },
+    {
+      "parent": "Primate",
+      "child": "Monkey",
+      "length": 163.687
+    },
+    {
+      "parent": "Procedure",
+      "child": "ComputerProgram",
+      "length": 191.199
+    },
+    {
+      "parent": "Procedure",
+      "child": "Plan",
+      "length": 236.58
+    },
+    {
+      "parent": "Process",
+      "child": "DualObjectProcess",
+      "length": 218.789
+    },
+    {
+      "parent": "Process",
+      "child": "IntentionalProcess",
+      "length": 1617.005
+    },
+    {
+      "parent": "Process",
+      "child": "InternalChange",
+      "length": 544.375
+    },
+    {
+      "parent": "Process",
+      "child": "Motion",
+      "length": 223.457
+    },
+    {
+      "parent": "Process",
+      "child": "ShapeChange",
+      "length": 197.624
+    },
+    {
+      "parent": "Promise",
+      "child": "Contract",
+      "length": 230.357
+    },
+    {
+      "parent": "Promise",
+      "child": "NakedPromise",
+      "length": 208.661
+    },
+    {
+      "parent": "Proposition",
+      "child": "FieldOfStudy",
+      "length": 202.906
+    },
+    {
+      "parent": "Proposition",
+      "child": "Procedure",
+      "length": 194.238
+    },
+    {
+      "parent": "Protein",
+      "child": "Enzyme",
+      "length": 235.461
+    },
+    {
+      "parent": "PsychologicalAttribute",
+      "child": "PsychologicalDysfunction",
+      "length": 180.368
+    },
+    {
+      "parent": "PsychologicalAttribute",
+      "child": "StateOfMind",
+      "length": 230.973
+    },
+    {
+      "parent": "PsychologicalAttribute",
+      "child": "TraitAttribute",
+      "length": 227.401
+    },
+    {
+      "parent": "PsychologicalProcess",
+      "child": "IntentionalPsychologicalProcess",
+      "length": 421.112
+    },
+    {
+      "parent": "PsychologicalProcess",
+      "child": "Perception",
+      "length": 231.387
+    },
+    {
+      "parent": "PsychologicalProcess",
+      "child": "Remembering",
+      "length": 247.21
+    },
+    {
+      "parent": "PureSubstance",
+      "child": "CompoundSubstance",
+      "length": 420.066
+    },
+    {
+      "parent": "PureSubstance",
+      "child": "ElementalSubstance",
+      "length": 213.047
+    },
+    {
+      "parent": "Putting",
+      "child": "cover",
+      "length": 296.484
+    },
+    {
+      "parent": "Quantity",
+      "child": "PhysicalQuantity",
+      "length": 181.441
+    },
+    {
+      "parent": "QuantityChange",
+      "child": "Decreasing",
+      "length": 226.275
+    },
+    {
+      "parent": "QuantityChange",
+      "child": "Increasing",
+      "length": 219.656
+    },
+    {
+      "parent": "Radiating",
+      "child": "RadiatingLight",
+      "length": 231.449
+    },
+    {
+      "parent": "Radiating",
+      "child": "RadiatingSound",
+      "length": 243.493
+    },
+    {
+      "parent": "RadiatingSound",
+      "child": "music",
+      "length": 265.156
+    },
+    {
+      "parent": "RealNumber",
+      "child": "BinaryNumber",
+      "length": 166.125
+    },
+    {
+      "parent": "RealNumber",
+      "child": "IrrationalNumber",
+      "length": 139.836
+    },
+    {
+      "parent": "RealNumber",
+      "child": "RationalNumber",
+      "length": 168.689
+    },
+    {
+      "parent": "RecreationOrExercise",
+      "child": "Game",
+      "length": 247.348
+    },
+    {
+      "parent": "Region",
+      "child": "AstronomicalBody",
+      "length": 200.203
+    },
+    {
+      "parent": "Region",
+      "child": "GeographicArea",
+      "length": 277.444
+    },
+    {
+      "parent": "Region",
+      "child": "Hole",
+      "length": 328.344
+    },
+    {
+      "parent": "RelationalAttribute",
+      "child": "NormativeAttribute",
+      "length": 299.532
+    },
+    {
+      "parent": "RelationalAttribute",
+      "child": "PositionalAttribute",
+      "length": 451.463
+    },
+    {
+      "parent": "RelationalAttribute",
+      "child": "SocialRole",
+      "length": 265.397
+    },
+    {
+      "parent": "RelationalAttribute",
+      "child": "TimeZone",
+      "length": 186.195
+    },
+    {
+      "parent": "RelationalAttribute",
+      "child": "TruthValue",
+      "length": 454.735
+    },
+    {
+      "parent": "Removing",
+      "child": "uncover",
+      "length": 248.648
+    },
+    {
+      "parent": "Repairing",
+      "child": "TherapeuticalProcess",
+      "length": 237.215
+    },
+    {
+      "parent": "Replication",
+      "child": "AsexualReplication",
+      "length": 188.383
+    },
+    {
+      "parent": "Replication",
+      "child": "SexualReplication",
+      "length": 194.874
+    },
+    {
+      "parent": "Searching",
+      "child": "Investigating",
+      "length": 291.373
+    },
+    {
+      "parent": "Searching",
+      "child": "pursue",
+      "length": 281.294
+    },
+    {
+      "parent": "SelfConnectedObject",
+      "child": "ContentBearingObject",
+      "length": 866.849
+    },
+    {
+      "parent": "SelfConnectedObject",
+      "child": "CorpuscularObject",
+      "length": 149.402
+    },
+    {
+      "parent": "SelfConnectedObject",
+      "child": "Food",
+      "length": 1752.2
+    },
+    {
+      "parent": "SelfConnectedObject",
+      "child": "Substance",
+      "length": 468.671
+    },
+    {
+      "parent": "Sentence",
+      "child": "Formula",
+      "length": 153.672
+    },
+    {
+      "parent": "SentientAgent",
+      "child": "CognitiveAgent",
+      "length": 257.151
+    },
+    {
+      "parent": "Series",
+      "child": "Periodical",
+      "length": 282.826
+    },
+    {
+      "parent": "ServiceContract",
+      "child": "Warranty",
+      "length": 152.336
+    },
+    {
+      "parent": "Set",
+      "child": "FiniteSet",
+      "length": 228.717
+    },
+    {
+      "parent": "SexAttribute",
+      "child": "ColorAttribute",
+      "length": 296.853
+    },
+    {
+      "parent": "SexAttribute",
+      "child": "PsychologicalDysfunction",
+      "length": 284.91
+    },
+    {
+      "parent": "ShapeAttribute",
+      "child": "TextureAttribute",
+      "length": 218.711
+    },
+    {
+      "parent": "SocialInteraction",
+      "child": "ChangeOfPossession",
+      "length": 336.215
+    },
+    {
+      "parent": "SocialInteraction",
+      "child": "Communication",
+      "length": 262.234
+    },
+    {
+      "parent": "SocialInteraction",
+      "child": "Contest",
+      "length": 391.934
+    },
+    {
+      "parent": "SocialInteraction",
+      "child": "Cooperation",
+      "length": 242.903
+    },
+    {
+      "parent": "SocialInteraction",
+      "child": "Meeting",
+      "length": 257.232
+    },
+    {
+      "parent": "SocialInteraction",
+      "child": "Transaction",
+      "length": 425.952
+    },
+    {
+      "parent": "SocialInteraction",
+      "child": "pretend",
+      "length": 265.41
+    },
+    {
+      "parent": "SocialRole",
+      "child": "OccupationalRole",
+      "length": 213.815
+    },
+    {
+      "parent": "SolidAngleMeasure",
+      "child": "Steradian",
+      "length": 228.91
+    },
+    {
+      "parent": "StateChange",
+      "child": "Boiling",
+      "length": 289.507
+    },
+    {
+      "parent": "StateChange",
+      "child": "Condensing",
+      "length": 236.159
+    },
+    {
+      "parent": "StateChange",
+      "child": "Freezing",
+      "length": 236.566
+    },
+    {
+      "parent": "StateChange",
+      "child": "Melting",
+      "length": 254.338
+    },
+    {
+      "parent": "StateOfMind",
+      "child": "ConsciousnessAttribute",
+      "length": 202.435
+    },
+    {
+      "parent": "StateOfMind",
+      "child": "EmotionalState",
+      "length": 215.5
+    },
+    {
+      "parent": "StationaryArtifact",
+      "child": "Building",
+      "length": 247.266
+    },
+    {
+      "parent": "StationaryArtifact",
+      "child": "Room",
+      "length": 231.93
+    },
+    {
+      "parent": "SubatomicParticle",
+      "child": "AtomicNucleus",
+      "length": 258.71
+    },
+    {
+      "parent": "SubatomicParticle",
+      "child": "Electron",
+      "length": 201.144
+    },
+    {
+      "parent": "SubatomicParticle",
+      "child": "Neutron",
+      "length": 220.341
+    },
+    {
+      "parent": "SubatomicParticle",
+      "child": "Proton",
+      "length": 199.547
+    },
+    {
+      "parent": "Substance",
+      "child": "BiologicallyActiveSubstance",
+      "length": 621.832
+    },
+    {
+      "parent": "Substance",
+      "child": "Mixture",
+      "length": 246.949
+    },
+    {
+      "parent": "Substance",
+      "child": "PureSubstance",
+      "length": 310.93
+    },
+    {
+      "parent": "SurfaceChange",
+      "child": "Coloring",
+      "length": 230.781
+    },
+    {
+      "parent": "SymbolicString",
+      "child": "Character",
+      "length": 271.127
+    },
+    {
+      "parent": "TemperatureMeasure",
+      "child": "CelsiusDegree",
+      "length": 296.301
+    },
+    {
+      "parent": "TemperatureMeasure",
+      "child": "FahrenheitDegree",
+      "length": 226.945
+    },
+    {
+      "parent": "TemperatureMeasure",
+      "child": "KelvinDegree",
+      "length": 267.511
+    },
+    {
+      "parent": "TemperatureMeasure",
+      "child": "RankineDegree",
+      "length": 235.273
+    },
+    {
+      "parent": "Text",
+      "child": "Article",
+      "length": 277.512
+    },
+    {
+      "parent": "Text",
+      "child": "Book",
+      "length": 290.553
+    },
+    {
+      "parent": "Text",
+      "child": "Certi\ufb01cate",
+      "length": 300.565
+    },
+    {
+      "parent": "Text",
+      "child": "MotionPicture",
+      "length": 280.264
+    },
+    {
+      "parent": "Text",
+      "child": "Senctence",
+      "length": 262.504
+    },
+    {
+      "parent": "Text",
+      "child": "Summary",
+      "length": 297.62
+    },
+    {
+      "parent": "TherapeuticalProcess",
+      "child": "Surgery",
+      "length": 262.938
+    },
+    {
+      "parent": "TimeDependentQuantity",
+      "child": "Becquerel",
+      "length": 209.145
+    },
+    {
+      "parent": "TimeDependentQuantity",
+      "child": "Coulomb",
+      "length": 219.809
+    },
+    {
+      "parent": "TimeDependentQuantity",
+      "child": "Hertz",
+      "length": 257.869
+    },
+    {
+      "parent": "TimeDuration",
+      "child": "Day",
+      "length": 413.081
+    },
+    {
+      "parent": "TimeDuration",
+      "child": "Hour",
+      "length": 272.038
+    },
+    {
+      "parent": "TimeDuration",
+      "child": "Minute",
+      "length": 245.364
+    },
+    {
+      "parent": "TimeDuration",
+      "child": "Second",
+      "length": 288.122
+    },
+    {
+      "parent": "TimeDuration",
+      "child": "Week",
+      "length": 251.363
+    },
+    {
+      "parent": "TimeDuration",
+      "child": "Year",
+      "length": 253.65
+    },
+    {
+      "parent": "TimeInterval",
+      "child": "Day",
+      "length": 321.669
+    },
+    {
+      "parent": "TimeInterval",
+      "child": "Hour",
+      "length": 410.406
+    },
+    {
+      "parent": "TimeInterval",
+      "child": "Minute",
+      "length": 288.4
+    },
+    {
+      "parent": "TimeInterval",
+      "child": "Month",
+      "length": 566.143
+    },
+    {
+      "parent": "TimeInterval",
+      "child": "Second",
+      "length": 275.117
+    },
+    {
+      "parent": "TimeInterval",
+      "child": "Week",
+      "length": 288.724
+    },
+    {
+      "parent": "TimeInterval",
+      "child": "Year",
+      "length": 357.23
+    },
+    {
+      "parent": "TimeMeasure",
+      "child": "TimeDuration",
+      "length": 604.953
+    },
+    {
+      "parent": "TimeMeasure",
+      "child": "TimePosition",
+      "length": 252.554
+    },
+    {
+      "parent": "TimePosition",
+      "child": "TimeInterval",
+      "length": 252.905
+    },
+    {
+      "parent": "TimeZone",
+      "child": "CentralTimeZone",
+      "length": 266.484
+    },
+    {
+      "parent": "TimeZone",
+      "child": "CoordinatedUniversalTimeZone",
+      "length": 201.785
+    },
+    {
+      "parent": "TimeZone",
+      "child": "EasternTimeZone",
+      "length": 237.823
+    },
+    {
+      "parent": "TimeZone",
+      "child": "MountainTimeZone",
+      "length": 270.129
+    },
+    {
+      "parent": "TimeZone",
+      "child": "Paci\ufb01cTimeZone",
+      "length": 247.861
+    },
+    {
+      "parent": "Tissue",
+      "child": "Bone",
+      "length": 249.862
+    },
+    {
+      "parent": "Tissue",
+      "child": "FatTissue",
+      "length": 230.84
+    },
+    {
+      "parent": "Tissue",
+      "child": "Muscle",
+      "length": 244.776
+    },
+    {
+      "parent": "Touching",
+      "child": "impact",
+      "length": 286.086
+    },
+    {
+      "parent": "Transaction",
+      "child": "FinancialTransaction",
+      "length": 249.093
+    },
+    {
+      "parent": "Transfer",
+      "child": "Impelling",
+      "length": 271.617
+    },
+    {
+      "parent": "Transfer",
+      "child": "Putting",
+      "length": 267.989
+    },
+    {
+      "parent": "Transfer",
+      "child": "Touching",
+      "length": 256.05
+    },
+    {
+      "parent": "Transfer",
+      "child": "Transportation",
+      "length": 236.256
+    },
+    {
+      "parent": "Transfer",
+      "child": "substitute",
+      "length": 387.04
+    },
+    {
+      "parent": "TruthValue",
+      "child": "ObjectiveNorm",
+      "length": 256.684
+    },
+    {
+      "parent": "UnaryConstantFunctionQuantity",
+      "child": "TimeDependentQuantity",
+      "length": 196.798
+    },
+    {
+      "parent": "Vertebrate",
+      "child": "ColdBloodedVertebrate",
+      "length": 170.07
+    },
+    {
+      "parent": "Vertebrate",
+      "child": "Warm-BloodedVertebrate",
+      "length": 243.756
+    },
+    {
+      "parent": "ViolentContest",
+      "child": "Battle",
+      "length": 218.208
+    },
+    {
+      "parent": "ViolentContest",
+      "child": "War",
+      "length": 223.583
+    },
+    {
+      "parent": "VisualAttribute",
+      "child": "ColorAttribute",
+      "length": 253.325
+    },
+    {
+      "parent": "VolumeMeasure",
+      "child": "Cup",
+      "length": 283.904
+    },
+    {
+      "parent": "VolumeMeasure",
+      "child": "Liter",
+      "length": 306.175
+    },
+    {
+      "parent": "VolumeMeasure",
+      "child": "Ounce",
+      "length": 272.574
+    },
+    {
+      "parent": "VolumeMeasure",
+      "child": "Pint",
+      "length": 338.265
+    },
+    {
+      "parent": "VolumeMeasure",
+      "child": "Quart",
+      "length": 377.904
+    },
+    {
+      "parent": "VolumeMeasure",
+      "child": "UnitedKingdomGallon",
+      "length": 236.493
+    },
+    {
+      "parent": "VolumeMeasure",
+      "child": "UnitedStatesGallon",
+      "length": 308.397
+    },
+    {
+      "parent": "Warm-BloodedVertebrate",
+      "child": "Bird",
+      "length": 190.735
+    },
+    {
+      "parent": "Warm-BloodedVertebrate",
+      "child": "Mammal",
+      "length": 150.977
+    },
+    {
+      "parent": "WaterArea",
+      "child": "FreshWaterArea",
+      "length": 255.858
+    },
+    {
+      "parent": "WaterArea",
+      "child": "SaltWaterArea",
+      "length": 252.801
+    },
+    {
+      "parent": "WaterArea",
+      "child": "StaticWaterArea",
+      "length": 264.3
+    },
+    {
+      "parent": "WaterArea",
+      "child": "StreamWaterArea",
+      "length": 291.582
+    },
+    {
+      "parent": "Word",
+      "child": "Adjective",
+      "length": 338.356
+    },
+    {
+      "parent": "Word",
+      "child": "Adverb",
+      "length": 302.876
+    },
+    {
+      "parent": "Word",
+      "child": "Noun",
+      "length": 277.789
+    },
+    {
+      "parent": "Word",
+      "child": "Particle",
+      "length": 276.197
+    },
+    {
+      "parent": "Word",
+      "child": "Verb",
+      "length": 282.913
+    },
+    {
+      "parent": "Year",
+      "child": "LeapYear",
+      "length": 242.605
+    },
+    {
+      "parent": "combine",
+      "child": "ChemicalSynthesis",
+      "length": 244.126
+    },
+    {
+      "parent": "combine",
+      "child": "wett",
+      "length": 293.414
+    },
+    {
+      "parent": "separate",
+      "child": "ChemicalDecomposition",
+      "length": 301.564
+    },
+    {
+      "parent": "separate",
+      "child": "dry",
+      "length": 295.574
+    },
+    {
+      "parent": "write",
+      "child": "decode",
+      "length": 273.937
+    },
+    {
+      "parent": "write",
+      "child": "encode",
+      "length": 270.859
+    }
+  ]
+}

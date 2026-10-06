@@ -117,13 +117,76 @@ def build(source_dir: Path, pdf_edges: Path | None = None):
     }
 
 
+def build_pdf(pdf_graph: Path):
+    graph = json.loads(pdf_graph.read_text(encoding="utf-8"))
+    nodes = set(graph["nodes"])
+    incoming = defaultdict(list)
+    for edge in graph["edges"]:
+        nodes.update((edge["parent"], edge["child"]))
+        incoming[edge["child"]].append(edge)
+
+    selected, alternates = {}, {}
+    for child, edges in incoming.items():
+        ordered = sorted(edges, key=lambda edge: (edge["length"], edge["parent"]))
+        selected[child] = ordered[0]["parent"]
+        alternates[child] = [edge["parent"] for edge in ordered[1:]]
+
+    projected = defaultdict(list)
+    for child, parent in selected.items():
+        projected[parent].append(child)
+    for parent in projected:
+        projected[parent].sort(key=lambda term: (label(term).lower(), term))
+
+    roots = sorted(nodes - set(selected), key=lambda term: (term != "Entity", label(term).lower(), term))
+    records = [
+        {
+            "id": term,
+            "label": label(term),
+            "children": projected.get(term, []),
+            "alternateParents": alternates.get(term, []),
+            "directParentCount": len(incoming.get(term, [])),
+        }
+        for term in sorted(nodes, key=lambda value: (value.lower(), value))
+    ]
+    unary = [record["id"] for record in records if len(record["children"]) == 1]
+    return {
+        "source": {
+            "name": "Suggested Upper Merged Ontology (SUMO), Ontology4 PDF graph",
+            "pdf": graph["sourcePdf"],
+            "primaryEdgeHeuristic": (
+                "For every PDF node with multiple incoming arcs, remove the "
+                "longest measured incoming arc repeatedly until one primary "
+                "parent remains. Retain removed parents as cross-links."
+            ),
+        },
+        "stats": {
+            "nodeCount": len(records),
+            "projectedEdgeCount": len(selected),
+            "multipleParentNodeCount": sum(bool(value) for value in alternates.values()),
+            "unaryNodeCount": len(unary),
+            "rootCount": len(roots),
+            "pdfEdgeCount": graph["edgeCount"],
+        },
+        "root": "Entity",
+        "rootNodes": roots,
+        "nodes": records,
+        "unaryNodes": unary,
+    }
+
+
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--source-dir", type=Path, required=True)
+    parser.add_argument("--source-dir", type=Path)
     parser.add_argument("--pdf-edges", type=Path)
+    parser.add_argument("--pdf-graph", type=Path)
     parser.add_argument("--output", type=Path, required=True)
     args = parser.parse_args()
-    result = build(args.source_dir, args.pdf_edges)
+    if args.pdf_graph:
+        result = build_pdf(args.pdf_graph)
+    elif args.source_dir:
+        result = build(args.source_dir, args.pdf_edges)
+    else:
+        parser.error("one of --source-dir or --pdf-graph is required")
     args.output.parent.mkdir(parents=True, exist_ok=True)
     args.output.write_text(json.dumps(result, separators=(",", ":")), encoding="utf-8")
     print(json.dumps(result["stats"], indent=2))

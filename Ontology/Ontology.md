@@ -557,30 +557,28 @@ reason to let SUMO dictate the game structure. The incumbent's main advantage
 is precisely that its visible questions were designed for play rather than
 inherited from a formal ontology.
 
-#### SUMO tree projection and unary-node audit
+#### SUMO PDF tree projection and unary-node audit
 
-The [SUMO browser](SUMO/index.html) is a derived navigation view of the
-official SUMO KIF files, not a claim that SUMO itself is a tree. It retains all
-8,823 concepts reachable from `Entity` and projects 8,822 primary edges. The
-source graph has 1,106 concepts with multiple direct parents.
+The [SUMO browser](SUMO/index.html) is now rebuilt from the nodes and directed
+blue arcs in the [official Ontology4 SUMO PDF](https://www.ontology4.us/download/dot/SumoOntology.pdf),
+not from the current KIF hierarchy. The checked-in
+[`pdf-graph.json`](SUMO/pdf-graph.json) records the extracted 518 PDF nodes and
+554 vector arcs.
 
-The PDF graph distinguishes a visually primary tree edge from longer curving
-cross-links. The projection now uses the
-[official Ontology4 SUMO PDF](https://www.ontology4.us/download/dot/SumoOntology.pdf):
-for nodes present in that PDF, it measures the directed blue arcs in the
-vector rendering and chooses the shortest arc among the node's direct SUMO
-parents. The resulting measured choices are preserved in
-[`pdf-primary-edges.json`](SUMO/pdf-primary-edges.json). Nodes absent from the
-older PDF use the first direct KIF declaration as a deterministic fallback.
-Each browser node exposes every dropped parent so this choice can be audited
-and revised.
+For each PDF node with multiple incoming arcs, the projection repeatedly
+removes the longest measured incoming arc until one primary parent remains.
+Removed parents remain visible as alternate cross-links. This makes `Object`
+have exactly the PDF's four visible children: `Agent`, `Collection`, `Region`,
+and `SelfConnectedObject`. The PDF extraction produces five roots:
+`Entity`, `List`, `Number`, `Predicate`, and `Sentence`; the browser presents
+each rather than inventing parentage for the disconnected PDF components.
 
-The projection currently retains every node with exactly one projected child,
+The projection contains 518 nodes and 513 primary edges, with 39 nodes having
+alternate parents. It retains every node with exactly one projected child,
 rather than silently collapsing these potentially meaningful distinctions.
-There are 653 such unary nodes. The [complete unary-node inventory](SUMO/unary-nodes.md)
+There are 53 such unary nodes. The [complete unary-node inventory](SUMO/unary-nodes.md)
 lists every one by SUMO identifier; the same list is embedded in
-`SUMO/sumo.json` for programmatic review. This inventory is the first cleanup
-queue for the next structural pass.
+`SUMO/sumo.json` for programmatic review.
 
 ### Wikidata
 
