@@ -6,31 +6,11 @@ The original curated tree remains committed as `index.html`,
 `20_questions_hierarchy.yaml`, and `generate_20q_hierarchy.py`. It contains
 678 display nodes: 50 branches and 628 terminal categories.
 
-The first v2 implementation is also committed:
-
-- [`v2.html`](v2.html) — the v1-organized, one-page expanded profile;
-- [`v2_20_questions_hierarchy.yaml`](v2_20_questions_hierarchy.yaml) — the
-  expanded tree;
-- [`v2_manifest.json`](v2_manifest.json) — counts, review seeds, source
-  parameters, and policy metadata; and
-- [`generate_v2_ontology.py`](generate_v2_ontology.py) — the reproducible
-  builder.
-
-The default reviewed build contains 9,955 displayed nodes: 4,979 branches and
-4,976 terminal categories. It preserves the v1 spine, adds 6,076 selected
-WordNet 3.0 source synsets, and adds 3,183 displayed NCBI life-taxonomy taxa
-from a 1,000-taxon common-name-weighted selection plus required ancestors.
-The NCBI taxonomy layer is explicitly a scientific detail and candidate layer;
-it does not claim that every scientific label is a good casual-game answer.
-The published artifacts were generated with the NCBI Taxonomy `nodes.dmp` and
-`names.dmp` files plus the local WordNet 3.0 corpus:
-
-```sh
-NLTK_DATA=~/nltk_data /tmp/wordnet-ontology-venv/bin/python \
-  generate_v2_ontology.py \
-  --ncbi-taxdump /path/to/ncbi-taxdump \
-  --wordnet-target 4500 --ncbi-target 1000
-```
+The mechanically expanded v2 profile has been retired from the public
+navigation. Its source artifacts remain available for analysis, but its
+display projection exposed too many unary branches and weak source-driven
+splits. The next expansion will follow structural review of v1 rather than
+adding more source ancestry to that profile.
 
 The first standards-based experiment is now also committed:
 
@@ -801,14 +781,13 @@ medium confidence. These are proposals, not accepted edits; a phrase such as
 “air” or “state” can match a v1 label while meaning something different in
 context, so every proposal needs semantic and gameplay review.
 
-[`Rogets/index2.html`](Rogets/index2.html) is the high-confidence review view.
-It keeps the original 628-leaf v1 tree and does not add automatic categories.
-Instead, it annotates existing labels whose exact title matches a Roget
-concept, exposes a small amount of Roget vocabulary to search, links each
-annotation to its source entry, and makes the first-pass uses visible:
-vocabulary discovery, sibling discovery, question-wording review, and
-abstract-branch review. It is an experimental review surface, not a proposed
-replacement for [`index.html`](index.html).
+[`Rogets/index2.html`](Rogets/index2.html) remains the detailed review view.
+The canonical [`index.html`](index.html) now exposes the accepted Roget
+vocabulary tranches as aliases on existing leaves and includes them in search.
+The two commits are intentionally separate: the 59 high-confidence concept
+matches landed first, followed by the 343 medium-confidence noun-list
+matches. Neither tranche changes the category structure or silently promotes
+a synonym into a new answer category.
 
 There is no clean automatic graft from Roget into v1. A Roget concept such as
 “Existence,” “Quantity,” or “Answer” does not identify a single noun category,
@@ -831,11 +810,38 @@ Roget can still improve v1 in several disciplined ways:
 - **Separate alternate profile:** preserve the Roget browser as a conceptual
   reference rather than pretending it is a superior replacement taxonomy.
 
-The clean next experiment after this review view is to turn accepted proposals
-into a **reviewed manifest**: map each candidate Roget concept or noun phrase
-to a v1 parent, record the proposed label and evidence, and accept only
-familiar terms with a clear answer interpretation. The current `index2.html`
-deliberately stops before that irreversible step.
+The next Roget step is not to add more raw words. It is to turn any proposed
+new answer categories into a reviewed manifest: map each candidate noun phrase
+to a v1 parent, record evidence and intended question behavior, and accept
+only familiar terms with a clear answer interpretation.
+
+## Structure before scale
+
+The central artifact is the decision tree, not its vocabulary count. Before
+adding hundreds or thousands of nouns, the next candidate should be a
+structure-first v1.1 review:
+
+- require every visible internal node to have at least two useful children;
+- collapse unary source paths and preserve their scientific/provenance detail
+  outside the default game view;
+- inspect every top-level and second-level split for balanced candidate mass;
+- rewrite questions so they test observable, stable distinctions rather than
+  merely restating a label;
+- identify misplaced leaves, duplicate labels, overloaded branches, and
+  missing everyday sibling categories; and
+- accept new leaves only after a parent and a useful discriminator already
+  exist.
+
+This ordering explains why the initial handcrafted tree performs better than
+the larger imported profiles. It was designed backward from the player's
+next question: choose a small number of familiar, answerable distinctions,
+keep sibling branches comparable, and stop at recognizable noun categories.
+Roget's tree optimizes conceptual association, Propædia optimizes coverage of
+human knowledge, and biological databases optimize scientific ancestry. None
+optimizes the joint objective of familiar answers, balanced questions,
+single-parent navigation, and useful stopping depth. That objective is a
+specialized design problem, so the absence of a ready-made prior-art tree is
+expected rather than evidence that the handcrafted structure is anomalous.
 
 ## 20 Questions projection algorithm
 
@@ -860,9 +866,9 @@ maximum depth, duplicate labels, and the quality of suggested questions.
 Prefer the smallest profile that covers common game answers while preserving
 the current one-page browsing experience.
 
-The next useful improvements are a v2 review manifest, a better question
+The next useful improvements are the v1.1 structural audit, a question
 generator based on subtree balance, a coverage report for ordinary game-answer
-lists, and a biological pilot containing the high-priority survivors,
+lists, and only then a biological pilot containing the high-priority survivors,
 convergent examples, marsupials, and extinct groups described above. The pilot
 should produce compact and fuller profiles from one source manifest rather than
 forking the ontology. Wikidata, FoodOn, and Wikipedia can then be tested as
