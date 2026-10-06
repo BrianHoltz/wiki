@@ -557,6 +557,29 @@ reason to let SUMO dictate the game structure. The incumbent's main advantage
 is precisely that its visible questions were designed for play rather than
 inherited from a formal ontology.
 
+#### SUMO tree projection and unary-node audit
+
+The [SUMO browser](SUMO/index.html) is a derived navigation view of the
+official SUMO KIF files, not a claim that SUMO itself is a tree. It retains all
+8,823 concepts reachable from `Entity` and projects 8,822 primary edges. The
+source graph has 1,106 concepts with multiple direct parents.
+
+The PDF graph appears to distinguish a visually primary tree edge from longer
+curving cross-links. Since KIF records assertions but not the PDF's geometric
+edge lengths, the reproducible extraction currently uses the first direct
+`subclass` declaration as the primary edge and retains subsequent direct
+parents as dropped cross-links. This is intentionally a source-order proxy for
+the PDF's visual convention, not the earlier and incorrect “shortest path to
+the root” heuristic. Each browser node exposes its dropped parents so this
+choice can be audited and revised.
+
+The projection currently retains every node with exactly one projected child,
+rather than silently collapsing these potentially meaningful distinctions.
+There are 654 such unary nodes. The [complete unary-node inventory](SUMO/unary-nodes.md)
+lists every one by SUMO identifier; the same list is embedded in
+`SUMO/sumo.json` for programmatic review. This inventory is the first cleanup
+queue for the next structural pass.
+
 ### Wikidata
 
 - **Origin:** Wikimedia Deutschland, Berlin, Germany, launched in 2012.

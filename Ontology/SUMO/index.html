@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SUMO projected hierarchy</title>
+<style>
+:root{color-scheme:light dark;--bg:#fff;--fg:#202124;--muted:#5f6368;--panel:#f5f7fa;--line:#c7cbd1;--accent:#1769aa}
+@media(prefers-color-scheme:dark){:root{--bg:#17191c;--fg:#e8eaed;--muted:#b4bac4;--panel:#24282e;--line:#59616d;--accent:#8ab4f8}}
+body{background:var(--bg);color:var(--fg);font:15px/1.45 system-ui,sans-serif;margin:0}
+main{max-width:1100px;margin:auto;padding:24px}h1{margin:0 0 4px}h2{margin-top:28px}
+.muted{color:var(--muted)}.notice{background:var(--panel);border-left:4px solid var(--accent);padding:12px 16px}
+.controls{display:flex;gap:8px;flex-wrap:wrap;margin:18px 0}
+input,button{background:var(--bg);border:1px solid var(--line);border-radius:5px;color:var(--fg);padding:8px 10px}
+input{min-width:280px;flex:1}button{cursor:pointer}ul{list-style:none;margin:0;padding-left:22px}li{margin:3px 0}
+summary{cursor:pointer}.meta{color:var(--muted);font-size:12px;margin-left:6px}.alt{color:var(--muted);font-size:12px;margin:4px 0 8px 22px}
+a{color:var(--accent)}#results{margin:10px 0 18px}.result{padding:5px 0;border-bottom:1px solid var(--line)}
+</style>
+</head>
+<body>
+<main>
+<h1>SUMO projected hierarchy</h1>
+<p class="muted">A browseable single-parent projection of the Suggested Upper Merged Ontology.</p>
+<div class="notice">SUMO is a formal multiply-inherited ontology, not a tree. This view extracts a
+primary navigation edge and drops longer cross-links from the visible tree. Every dropped
+direct parent remains visible on the node as an alternate parent.</div>
+<div class="controls"><input id="search" type="search" placeholder="Search SUMO concepts">
+<button id="expand">Expand all</button><button id="collapse">Collapse all</button></div>
+<div id="summary" class="muted"></div><div id="results"></div><section id="tree"></section>
+<h2>Unary nodes</h2>
+<p class="muted">These nodes have exactly one child in the projected tree. They are retained
+for now and listed here for structural review.</p>
+<details><summary id="unary-summary"></summary><ul id="unary"></ul></details>
+</main>
+<script>
+const esc=v=>String(v).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+let data,byId;
+function renderNode(id){const n=byId.get(id),alt=n.alternateParents.length?
+`<div class="alt">Dropped cross-links: ${n.alternateParents.map(esc).join(', ')}</div>`:'';
+const text=`${esc(n.label)} <span class="meta">${esc(n.id)}${n.directParentCount>1?` · ${n.directParentCount} parents`:''}</span>`;
+if(!n.children.length)return `<li>${text}${alt}</li>`;
+return `<li><details open><summary>${text}</summary>${alt}<ul>${n.children.map(renderNode).join('')}</ul></details></li>`}
+function render(){document.querySelector('#tree').innerHTML=`<ul>${renderNode(data.root)}</ul>`;
+document.querySelector('#summary').textContent=`${data.stats.nodeCount.toLocaleString()} concepts · ${data.stats.multipleParentNodeCount.toLocaleString()} with dropped cross-links`;
+document.querySelector('#unary-summary').textContent=`${data.stats.unaryNodeCount.toLocaleString()} unary nodes`;
+document.querySelector('#unary').innerHTML=data.unaryNodes.map(id=>`<li>${esc(byId.get(id).label)} <span class="meta">${esc(id)}</span></li>`).join('')}
+document.querySelector('#expand').onclick=()=>document.querySelectorAll('#tree details').forEach(x=>x.open=true);
+document.querySelector('#collapse').onclick=()=>document.querySelectorAll('#tree details').forEach(x=>x.open=false);
+document.querySelector('#search').oninput=e=>{const q=e.target.value.trim().toLowerCase();
+const hits=data.nodes.filter(n=>`${n.id} ${n.label}`.toLowerCase().includes(q)).slice(0,100);
+document.querySelector('#results').innerHTML=q?`<strong>${hits.length}${hits.length===100?'+':''} matches</strong>`+
+hits.map(n=>`<div class="result">${esc(n.label)} <span class="meta">${esc(n.id)}</span></div>`).join(''):''};
+fetch('sumo.json').then(r=>r.json()).then(x=>{data=x;byId=new Map(data.nodes.map(n=>[n.id,n]));render()})
+.catch(e=>document.querySelector('#tree').textContent=`Could not load sumo.json: ${e}`);
+</script>
+</body>
+</html>
