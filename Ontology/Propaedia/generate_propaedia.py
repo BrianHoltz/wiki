@@ -12,6 +12,7 @@ from __future__ import annotations
 import argparse
 import html
 import json
+import re
 from collections import OrderedDict
 from html.parser import HTMLParser
 from pathlib import Path
@@ -46,7 +47,7 @@ class OutlineParser(HTMLParser):
             node = {"label": label, "children": frame["children"]}
             if self.frames:
                 self.frames[-1]["children"].append(node)
-            elif self.current_part and label[:1].isdigit():
+            elif self.current_part and re.match(r"^\d+(?:\.\d+)+\b", label):
                 self.parts[self.current_part].append(node)
 
     def handle_data(self, data: str) -> None:
