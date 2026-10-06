@@ -1,7 +1,6 @@
 # SUMO unary-node inventory
 
-Generated from the current SUMO projection. These 654 concepts have exactly one projected child.
-
+Generated from the current SUMO projection. These 653 concepts have exactly one projected child.
 
 - `Abatacept` — Abatacept
 - `Accelerating` — Accelerating
@@ -43,6 +42,7 @@ Generated from the current SUMO projection. These 654 concepts have exactly one 
 - `AppraisalOfExpectedness` — Appraisal Of Expectedness
 - `AraonaTacanaLanguage` — Araona Tacana Language
 - `Article` — Article
+- `ArtificialLanguage` — Artificial Language
 - `ArtisticOccupation` — Artistic Occupation
 - `AtmosphericRegion` — Atmospheric Region
 - `Atom` — Atom
@@ -288,6 +288,7 @@ Generated from the current SUMO projection. These 654 concepts have exactly one 
 - `HickoryTree` — Hickory Tree
 - `HighTide` — High Tide
 - `HistoricalAccount` — Historical Account
+- `Hominid` — Hominid
 - `HornInstrument` — Horn Instrument
 - `Hose` — Hose
 - `HotelPackage` — Hotel Package
@@ -355,7 +356,6 @@ Generated from the current SUMO projection. These 654 concepts have exactly one 
 - `MalarialPlasmodium` — Malarial Plasmodium
 - `Man` — Man
 - `ManualLabor` — Manual Labor
-- `Manufacture` — Manufacture
 - `Manufacturer` — Manufacturer
 - `MarkupLanguage` — Markup Language
 - `Marsupial` — Marsupial
@@ -423,7 +423,6 @@ Generated from the current SUMO projection. These 654 concepts have exactly one 
 - `Orchard` — Orchard
 - `Ordering` — Ordering
 - `Organelle` — Organelle
-- `OrganicObject` — Organic Object
 - `OrganicThing` — Organic Thing
 - `OrganismRemains` — Organism Remains
 - `Orthopoxvirus` — Orthopoxvirus
@@ -586,7 +585,6 @@ Generated from the current SUMO projection. These 654 concepts have exactly one 
 - `Thyroxine` — Thyroxine
 - `TickBorneEncephalitisVirus` — Tick Borne Encephalitis Virus
 - `Ticket` — Ticket
-- `TimeMeasure` — Time Measure
 - `Toothbrush` — Toothbrush
 - `TopicalAntibiotic` — Topical Antibiotic
 - `TouchSensitiveComputerInputDevice` — Touch Sensitive Computer Input Device

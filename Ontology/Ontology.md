@@ -564,18 +564,20 @@ official SUMO KIF files, not a claim that SUMO itself is a tree. It retains all
 8,823 concepts reachable from `Entity` and projects 8,822 primary edges. The
 source graph has 1,106 concepts with multiple direct parents.
 
-The PDF graph appears to distinguish a visually primary tree edge from longer
-curving cross-links. Since KIF records assertions but not the PDF's geometric
-edge lengths, the reproducible extraction currently uses the first direct
-`subclass` declaration as the primary edge and retains subsequent direct
-parents as dropped cross-links. This is intentionally a source-order proxy for
-the PDF's visual convention, not the earlier and incorrect “shortest path to
-the root” heuristic. Each browser node exposes its dropped parents so this
-choice can be audited and revised.
+The PDF graph distinguishes a visually primary tree edge from longer curving
+cross-links. The projection now uses the
+[official Ontology4 SUMO PDF](https://www.ontology4.us/download/dot/SumoOntology.pdf):
+for nodes present in that PDF, it measures the directed blue arcs in the
+vector rendering and chooses the shortest arc among the node's direct SUMO
+parents. The resulting measured choices are preserved in
+[`pdf-primary-edges.json`](SUMO/pdf-primary-edges.json). Nodes absent from the
+older PDF use the first direct KIF declaration as a deterministic fallback.
+Each browser node exposes every dropped parent so this choice can be audited
+and revised.
 
 The projection currently retains every node with exactly one projected child,
 rather than silently collapsing these potentially meaningful distinctions.
-There are 654 such unary nodes. The [complete unary-node inventory](SUMO/unary-nodes.md)
+There are 653 such unary nodes. The [complete unary-node inventory](SUMO/unary-nodes.md)
 lists every one by SUMO identifier; the same list is embedded in
 `SUMO/sumo.json` for programmatic review. This inventory is the first cleanup
 queue for the next structural pass.

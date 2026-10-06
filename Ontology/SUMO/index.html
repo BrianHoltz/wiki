@@ -21,9 +21,10 @@ a{color:var(--accent)}#results{margin:10px 0 18px}.result{padding:5px 0;border-b
 <main>
 <h1>SUMO projected hierarchy</h1>
 <p class="muted">A browseable single-parent projection of the Suggested Upper Merged Ontology.</p>
-<div class="notice">SUMO is a formal multiply-inherited ontology, not a tree. This view extracts a
-primary navigation edge and drops longer cross-links from the visible tree. Every dropped
-direct parent remains visible on the node as an alternate parent.</div>
+<div class="notice">SUMO is a formal multiply-inherited ontology, not a tree. Where the
+official Ontology4 PDF contains a node, this view chooses the shortest measured directed
+blue arc among its direct parents and drops the longer cross-links from the visible tree.
+Every dropped direct parent remains visible on the node as an alternate parent.</div>
 <div class="controls"><input id="search" type="search" placeholder="Search SUMO concepts">
 <button id="expand">Expand all</button><button id="collapse">Collapse all</button></div>
 <div id="summary" class="muted"></div><div id="results"></div><section id="tree"></section>

@@ -35,7 +35,7 @@ def load_edges(source_dir: Path):
     return list(dict.fromkeys(edges)), order
 
 
-def build(source_dir: Path):
+def build(source_dir: Path, pdf_edges: Path | None = None):
     edges, order = load_edges(source_dir)
     parents, children = defaultdict(set), defaultdict(set)
     for child, parent in edges:
@@ -52,16 +52,23 @@ def build(source_dir: Path):
                 reachable.add(child)
                 queue.append(child)
 
-    # The SUMO graph contains both a visually primary tree edge and longer
-    # cross-links. KIF has no geometric edge lengths, so preserve declaration
-    # order as the reproducible proxy for the PDF's primary edge ordering.
+    measured = {}
+    if pdf_edges:
+        measured = json.loads(
+            pdf_edges.read_text(encoding="utf-8")
+        ).get("primaryParents", {})
     selected, alternates = {}, {}
     for child in reachable - {root}:
         direct = [parent for parent in sorted(parents[child], key=lambda term: order[term])
                   if parent in reachable]
         if direct:
-            selected[child] = direct[0]
-            alternates[child] = direct[1:]
+            pdf_parent = measured.get(child, {}).get("parent")
+            if pdf_parent in direct:
+                selected[child] = pdf_parent
+                alternates[child] = [parent for parent in direct if parent != pdf_parent]
+            else:
+                selected[child] = direct[0]
+                alternates[child] = direct[1:]
 
     projected = defaultdict(list)
     for child, parent in selected.items():
@@ -88,10 +95,14 @@ def build(source_dir: Path):
             "repository": "https://github.com/ontologyportal/sumo",
             "root": root,
             "primaryEdgeHeuristic": (
-                "Use the first direct subclass declaration as the primary "
-                "tree edge; retain later direct parents as cross-links. "
-                "This is a reproducible source-order proxy for the shorter "
-                "primary edges in the SUMO graph PDF, not a graph-distance rule."
+                "Where the Ontology4 PDF contains the node, choose the "
+                "shortest measured blue directed arc among its direct SUMO "
+                "parents; otherwise use the first direct subclass declaration. "
+                "All non-primary direct parents remain as cross-links."
+            ),
+            "pdfEdgeSource": (
+                "https://www.ontology4.us/download/dot/SumoOntology.pdf"
+                if pdf_edges else None
             ),
         },
         "stats": {
@@ -109,9 +120,10 @@ def build(source_dir: Path):
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--source-dir", type=Path, required=True)
+    parser.add_argument("--pdf-edges", type=Path)
     parser.add_argument("--output", type=Path, required=True)
     args = parser.parse_args()
-    result = build(args.source_dir)
+    result = build(args.source_dir, args.pdf_edges)
     args.output.parent.mkdir(parents=True, exist_ok=True)
     args.output.write_text(json.dumps(result, separators=(",", ":")), encoding="utf-8")
     print(json.dumps(result["stats"], indent=2))
