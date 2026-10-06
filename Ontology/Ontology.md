@@ -144,6 +144,157 @@ tree's information design. It can plausibly grow from 678 nodes into the low
 thousands while remaining more useful for play than a mechanically projected
 WordNet tree.
 
+## V2 expansion options: 5K–10K gameplay nodes
+
+The preferred v2 is not a wholesale import of any external ontology. It is a
+larger, reviewed version of the v1 tree that keeps v1's top-level questions
+and everyday answer categories intact, then spends most of its new-node
+budget on a selective, scientifically accurate life taxonomy. The page should
+still be understandable to someone playing ordinary 20 Questions: scientific
+rank names and identifiers are provenance and navigation aids, not a demand
+that players know biology jargon.
+
+The target should be stated as **displayed nodes**, counting visible branches
+and leaves but not aliases, source records, glosses, or hidden alternate
+parents. A practical first allocation is:
+
+- **About 1,000–1,500 nodes retained or refined from v1:** preserve the
+  familiar physical, living, geographic, food, artifact, person, and abstract
+  organization. V1 labels should not move merely to accommodate a source
+  taxonomy.
+- **About 2,500–5,000 life nodes:** expand animals, plants, fungi,
+  microorganisms, and extinct life under the existing living/natural
+  branches. This is the main v2 investment and can support either a 5K
+  conservative profile or a 10K richer profile.
+- **About 1,000–2,500 non-life additions:** use reviewed WordNet, Roget, and
+  reference-source candidates for familiar tools, foods, materials, places,
+  body parts, vehicles, occupations, and cultural objects. These additions
+  prevent v2 from becoming a biology encyclopedia with a thin everyday shell.
+
+There are three viable expansion profiles:
+
+- **Curated-plus-life (recommended):** retain the v1 structure, add a
+  reviewed list of familiar everyday nouns, and graft a notable organism
+  taxonomy. This gives the strongest balance of gameplay, scientific accuracy,
+  and explainability. The first implementation should target roughly 5,000
+  nodes, then grow toward 8,000–10,000 only when branch quality and browser
+  performance remain acceptable.
+- **Dual-resolution life branches:** show only broad and iconic organism
+  groups by default, while keeping reviewed intermediate taxa and aliases
+  available through search or an optional “show scientific detail” control.
+  This permits a richer underlying profile without making the initial page
+  visually exhausting. It is preferable to deleting scientifically important
+  ancestors solely to meet a display count.
+- **Separate profile variants:** publish a compact 5K page and a fuller 10K
+  page from the same reviewed manifest. The compact page can optimize a
+  casual game while the fuller page serves browsing and educational use.
+  Both profiles must preserve the same stable IDs and parent decisions where
+  they overlap; they should not become two independently edited trees.
+
+### Selecting notable life entries
+
+The biological graft should use a two-axis inclusion policy rather than simply
+taking the most frequent taxa or copying every species in a source database.
+Each candidate receives separate scores for **public familiarity** and
+**evolutionary or scientific interest**, with a minimum evidence threshold for
+either score and a manual placement review.
+
+Public-familiarity candidates include organisms that a general player is
+likely to recognize from ordinary life, food, pets, farming, medicine,
+children's education, news, or common media. This favors entries such as dog,
+cat, horse, cow, chicken, bee, butterfly, oak, rose, mushroom, wheat, corn,
+yeast, salmon, shark, whale, and crocodile. Common names remain the primary
+visible labels, with scientific names and accepted taxon IDs stored as
+metadata and searchable aliases.
+
+Scientific-interest candidates are deliberately not limited to familiar
+species. They include organisms or clades that make the tree explain
+evolutionary history, unusual body plans, or convergence. The initial
+high-priority set should include:
+
+- **Conspicuous evolutionary survivors and transitional examples:** coelacanth
+  (correctly spelled and linked to its lobe-finned lineage), horseshoe crab,
+  tuatara, nautilus, lungfish, monotremes, and other living lineages commonly
+  discussed as evolutionarily distinctive.
+- **Convergent-evolution examples:** marsupials as a complete visible branch
+  rather than a few isolated species; separately recognizable marsupials such
+  as kangaroo, koala, wombat, opossum, and Tasmanian devil; and representative
+  convergences such as bats versus birds, dolphins versus fish, sharks versus
+  other streamlined swimmers, cactus-like euphorbs versus cacti, and
+  anteaters versus aardvarks. The tree should not imply that convergent
+  appearance means close ancestry.
+- **Major extinct and deep-time groups:** dinosaurs, pterosaurs, trilobites,
+  ammonites, non-avian theropods, sauropods, early tetrapods, and other
+  culturally or scientifically notable extinct groups. Extinct taxa should
+  remain under biological history, not be diverted into “historical object” or
+  fictional branches.
+- **Representative diversity:** at least one playable set of entries for each
+  major animal, plant, fungal, and microbial branch, including organisms that
+  are ecologically important, medically important, agriculturally important,
+  or morphologically unusual. Selection should avoid spending the whole
+  budget on one charismatic group.
+
+This policy is a **notability sample**, not a claim that omitted taxa are
+unimportant. A candidate should be included only when its visible label has a
+clear answer interpretation, its taxonomic placement is supported by a
+declared source release, and it contributes either recognizable game coverage
+or a meaningful evolutionary contrast. A species with only a scientific
+binomial and no usable common-language label generally belongs in metadata or
+an optional detail layer, not as a default leaf.
+
+### How the graft should work
+
+The graft should begin from the v1 organism branches and map source taxa into
+those homes through an explicit reviewed crosswalk. The pipeline should:
+
+- choose one authority for accepted names and parentage for each release,
+  preferably Catalogue of Life or GBIF for broad coverage, with Open Tree of
+  Life, NCBI, ITIS, and specialized sources used for validation;
+- retain stable source identifiers, rank, accepted name, synonyms, extinct
+  status, and source version in a manifest;
+- collapse taxonomic ranks that do not improve a 20 Questions split, while
+  retaining enough ancestors to explain scientific placement;
+- create visible nodes only for selected notable taxa and the ancestors needed
+  to make their branches intelligible;
+- preserve alternate scientific placements and synonymy as metadata rather
+  than duplicating visible nodes;
+- attach a short plain-language description and, where useful, an “often
+  confused with” or “convergent with” note; and
+- run a gameplay review for every new branch: recognizable answers,
+  non-trivial sibling distinctions, balanced candidate mass, and a natural
+  yes/no question.
+
+The visible hierarchy must not use evolutionary relatedness as the only
+question strategy. A player should first encounter useful distinctions such
+as animal versus plant, vertebrate versus invertebrate, aquatic versus
+terrestrial, or domesticated versus wild where those splits are more
+answerable than a deep scientific rank. Scientific taxonomy determines
+correct homes and metadata; the v1 information design determines the
+player-facing order.
+
+### Acceptance and quality gates
+
+Every proposed v2 node should have a review record containing its label,
+parent, source identifier and release, common-name evidence, familiarity
+score, scientific-interest rationale, and rejection reason if not accepted.
+Automated checks should reject or flag:
+
+- duplicate visible labels with no disambiguating parent context;
+- branches containing only one weakly notable child;
+- taxa whose source parentage is unresolved or contradictory;
+- scientific-only labels that have no useful player interpretation;
+- nodes that make a suggested question nearly empty or nearly universal; and
+- overrepresented clades that consume the budget without adding distinct
+  gameplay choices.
+
+The first biological pilot should therefore be a reviewed **5K profile**,
+with a report comparing public-familiarity and evolutionary-interest coverage.
+If it remains browseable when fully expanded, the same manifest can produce an
+**8K–10K profile** by admitting lower-scoring but still well-supported taxa,
+additional extinct groups, and more everyday WordNet candidates. This staged
+growth is safer than starting with a 10K mechanical import and trying to
+repair noise afterward.
+
 ## Prior art
 
 The figures below are scale or activity proxies, not claims that unlike
@@ -562,7 +713,11 @@ maximum depth, duplicate labels, and the quality of suggested questions.
 Prefer the smallest profile that covers common game answers while preserving
 the current one-page browsing experience.
 
-The next useful improvements are a better question generator based on subtree
-balance and a coverage report for ordinary game-answer lists. Wikidata,
-FoodOn, and Wikipedia can then be tested as separately labeled enrichment
-profiles, not silently merged into the WordNet ontology.
+The next useful improvements are a v2 review manifest, a better question
+generator based on subtree balance, a coverage report for ordinary game-answer
+lists, and a biological pilot containing the high-priority survivors,
+convergent examples, marsupials, and extinct groups described above. The pilot
+should produce compact and fuller profiles from one source manifest rather than
+forking the ontology. Wikidata, FoodOn, and Wikipedia can then be tested as
+separately labeled enrichment profiles, not silently merged into the WordNet
+ontology.
