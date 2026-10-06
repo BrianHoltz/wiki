@@ -6,6 +6,32 @@ The original curated tree remains committed as `index.html`,
 `20_questions_hierarchy.yaml`, and `generate_20q_hierarchy.py`. It contains
 678 display nodes: 50 branches and 628 terminal categories.
 
+The first v2 implementation is also committed:
+
+- [`v2.html`](v2.html) — the v1-organized, one-page expanded profile;
+- [`v2_20_questions_hierarchy.yaml`](v2_20_questions_hierarchy.yaml) — the
+  expanded tree;
+- [`v2_manifest.json`](v2_manifest.json) — counts, review seeds, source
+  parameters, and policy metadata; and
+- [`generate_v2_ontology.py`](generate_v2_ontology.py) — the reproducible
+  builder.
+
+The default reviewed build contains 9,955 displayed nodes: 4,979 branches and
+4,976 terminal categories. It preserves the v1 spine, adds 6,076 selected
+WordNet 3.0 source synsets, and adds 3,183 displayed NCBI life-taxonomy taxa
+from a 1,000-taxon common-name-weighted selection plus required ancestors.
+The NCBI taxonomy layer is explicitly a scientific detail and candidate layer;
+it does not claim that every scientific label is a good casual-game answer.
+The published artifacts were generated with the NCBI Taxonomy `nodes.dmp` and
+`names.dmp` files plus the local WordNet 3.0 corpus:
+
+```sh
+NLTK_DATA=~/nltk_data /tmp/wordnet-ontology-venv/bin/python \
+  generate_v2_ontology.py \
+  --ncbi-taxdump /path/to/ncbi-taxdump \
+  --wordnet-target 4500 --ncbi-target 1000
+```
+
 The first standards-based experiment is now also committed:
 
 - [`wordnet_20q.html`](wordnet_20q.html) — the browseable one-page profile;
@@ -105,54 +131,14 @@ retaining ancestry and asking category-membership questions. It favors source
 fidelity by preserving synset identifiers, glosses, and all original
 hypernym edges.
 
-## Why the original tree may be the right foundation
+## V2 expansion: 5K–10K gameplay nodes
 
-No surveyed resource combines all of the properties needed here: a broad
-everyday noun inventory, scientifically defensible biological branches,
-familiar labels, balanced game questions, a single-page browsing experience,
-and a stable public source graph. WordNet is a lexical-sense network rather
-than a game taxonomy; biological databases are scientifically stronger but
-focus on organisms; Roget's is conceptually rich but not a formal
-hypernym hierarchy; and Wikipedia, Wikidata, and game systems mix several
-different kinds of structure.
-
-The original curated tree can therefore remain the game-facing standard while
-borrowing systematic evidence from those sources:
-
-- **Biological extension:** replace broad organism leaves with reviewed
-  branches derived from Catalogue of Life, GBIF, NCBI, and Open Tree of Life.
-  Keep common-language labels at the playable level, but retain scientific
-  names, ranks, synonyms, extinct taxa, and source identifiers. Dinosaurs and
-  other extinct groups should be included where the source taxonomy supports
-  them, rather than being treated as fictional or historical artifacts.
-- **WordNet coverage audit:** score the roughly 3,000 most familiar eligible
-  WordNet terms, map them to existing curated branches, and produce proposed
-  additions for unmatched or underrepresented everyday nouns. Do not graft
-  WordNet paths automatically; require a parent, sense, familiarity, and
-  balance review for each accepted term.
-- **Cross-source validation:** use WordNet for lexical variants and glosses,
-  biological taxonomies for organism identity and ancestry, and Wikipedia or
-  Wikidata for named entities and cultural familiarity. Record source links
-  separately so disagreement is visible rather than averaged away.
-- **Controlled growth:** add only candidates that have a clear home, a
-  recognizable game answer, and a useful effect on branch coverage. Keep a
-  review manifest with accepted, rejected, and ambiguous candidates so the
-  tree remains reproducible and maintainable.
-
-This is a systemic extension strategy without surrendering the original
-tree's information design. It can plausibly grow from 678 nodes into the low
-thousands while remaining more useful for play than a mechanically projected
-WordNet tree.
-
-## V2 expansion options: 5K–10K gameplay nodes
-
-The preferred v2 is not a wholesale import of any external ontology. It is a
-larger, reviewed version of the v1 tree that keeps v1's top-level questions
-and everyday answer categories intact, then spends most of its new-node
-budget on a selective, scientifically accurate life taxonomy. The page should
-still be understandable to someone playing ordinary 20 Questions: scientific
-rank names and identifiers are provenance and navigation aids, not a demand
-that players know biology jargon.
+V2 is a larger, reviewed version of the v1 tree, not a wholesale replacement
+with an external ontology. It keeps v1's top-level questions and everyday
+answer categories intact, then adds a selective life taxonomy and source-backed
+vocabulary candidates. The page remains understandable to someone playing
+ordinary 20 Questions: scientific rank names and identifiers are provenance
+and navigation aids, not a demand that players know biology jargon.
 
 The target should be stated as **displayed nodes**, counting visible branches
 and leaves but not aliases, source records, glosses, or hidden alternate
@@ -171,25 +157,14 @@ parents. A practical first allocation is:
   body parts, vehicles, occupations, and cultural objects. These additions
   prevent v2 from becoming a biology encyclopedia with a thin everyday shell.
 
-There are three viable expansion profiles:
+The implementation uses one shared manifest and can produce narrower profiles
+by lowering the source budgets:
 
-- **Curated-plus-life (recommended):** retain the v1 structure, add a
-  reviewed list of familiar everyday nouns, and graft a notable organism
-  taxonomy. This gives the strongest balance of gameplay, scientific accuracy,
-  and explainability. The first implementation should target roughly 5,000
-  nodes, then grow toward 8,000–10,000 only when branch quality and browser
-  performance remain acceptable.
-- **Dual-resolution life branches:** show only broad and iconic organism
-  groups by default, while keeping reviewed intermediate taxa and aliases
-  available through search or an optional “show scientific detail” control.
-  This permits a richer underlying profile without making the initial page
-  visually exhausting. It is preferable to deleting scientifically important
-  ancestors solely to meet a display count.
-- **Separate profile variants:** publish a compact 5K page and a fuller 10K
-  page from the same reviewed manifest. The compact page can optimize a
-  casual game while the fuller page serves browsing and educational use.
-  Both profiles must preserve the same stable IDs and parent decisions where
-  they overlap; they should not become two independently edited trees.
+The current profile uses a dual-resolution compromise: familiar v1 labels and
+reviewed examples are directly playable, while NCBI scientific detail and
+WordNet candidates are clearly labelled expansion branches. A compact profile
+can be generated later by lowering `--wordnet-target` and `--ncbi-target`; a
+fuller profile can raise them without forking the tree design.
 
 ### Selecting notable life entries
 
@@ -287,13 +262,12 @@ Automated checks should reject or flag:
 - overrepresented clades that consume the budget without adding distinct
   gameplay choices.
 
-The first biological pilot should therefore be a reviewed **5K profile**,
-with a report comparing public-familiarity and evolutionary-interest coverage.
-If it remains browseable when fully expanded, the same manifest can produce an
-**8K–10K profile** by admitting lower-scoring but still well-supported taxa,
-additional extinct groups, and more everyday WordNet candidates. This staged
-growth is safer than starting with a 10K mechanical import and trying to
-repair noise afterward.
+The implemented biological pilot is the reviewed **9,955-node profile**. It
+should be judged as a candidate browser, not yet as the final gameplay tree:
+the next review pass should demote or hide scientific-only leaves, retain
+notable ancestors, and preserve the seed examples that explain evolutionary
+history. This staged review is safer than mechanically promoting every
+scientific record to a casual-game answer.
 
 ## Prior art
 

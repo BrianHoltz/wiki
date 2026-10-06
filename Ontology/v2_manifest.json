@@ -1,0 +1,122 @@
+{
+  "profile": "v2",
+  "base": "20_questions_hierarchy.yaml",
+  "wordnet_release": "Princeton WordNet 3.0",
+  "wordnet_target": 4500,
+  "ncbi_taxdump": "NCBI Taxonomy nodes.dmp and names.dmp",
+  "counts": {
+    "selected_source_synsets": 6076,
+    "groups": {
+      "biological": 125,
+      "artifacts": 789,
+      "natural-and-places": 1138,
+      "abstract-and-social": 4023
+    },
+    "ncbi_taxonomy": {
+      "source": "NCBI Taxonomy",
+      "selected_taxa_with_common_name_or_rank": 1000,
+      "display_taxa_with_ancestors": 3183,
+      "candidate_taxa_available": 2518056
+    },
+    "display_branches": 4979,
+    "display_leaves": 4976,
+    "display_nodes": 9955,
+    "reviewed_seed_groups": 6
+  },
+  "reviewed_seeds": {
+    "marsupials_and_monotremes": {
+      "parent": "Physical / Living / Animal / Vertebrate / Mammal",
+      "question": "Is it a marsupial or a monotreme?",
+      "source": "Open Tree of Life and Catalogue of Life review seed",
+      "entries": [
+        "wallaby",
+        "wombat",
+        "opossum",
+        "Tasmanian devil",
+        "platypus",
+        "echidna",
+        "bandicoot",
+        "bilby"
+      ]
+    },
+    "lobe_finned_and_unusual_fish": {
+      "parent": "Physical / Living / Animal / Vertebrate / Fish",
+      "question": "Is it an ancient lineage or an unusual fish form?",
+      "source": "Open Tree of Life and Catalogue of Life review seed",
+      "entries": [
+        "coelacanth",
+        "lungfish",
+        "sturgeon",
+        "gar",
+        "arapaima",
+        "mudskipper",
+        "hagfish",
+        "lamprey"
+      ]
+    },
+    "ancient_and_unusual_reptiles": {
+      "parent": "Physical / Living / Animal / Vertebrate / Reptile and amphibian",
+      "question": "Is it an ancient, giant, or unusually adapted reptile?",
+      "source": "Open Tree of Life and Catalogue of Life review seed",
+      "entries": [
+        "tuatara",
+        "komodo dragon",
+        "chameleon",
+        "gecko",
+        "iguana",
+        "anaconda",
+        "boa constrictor",
+        "crocodile",
+        "turtle"
+      ]
+    },
+    "convergent_invertebrates": {
+      "parent": "Physical / Living / Animal / Invertebrate",
+      "question": "Does it show an unusual body plan or convergent adaptation?",
+      "source": "Open Tree of Life and Catalogue of Life review seed",
+      "entries": [
+        "horseshoe crab",
+        "nautilus",
+        "chambered nautilus",
+        "mantis shrimp",
+        "tardigrade",
+        "velvet worm",
+        "dragon millipede"
+      ]
+    },
+    "extinct_life": {
+      "parent": "Physical / Living / Animal",
+      "question": "Is it an extinct organism or major deep-time group?",
+      "source": "Open Tree of Life and Catalogue of Life review seed",
+      "entries": [
+        "dinosaur",
+        "tyrannosaurus",
+        "triceratops",
+        "stegosaurus",
+        "brontosaurus",
+        "sauropod",
+        "pterosaur",
+        "trilobite",
+        "ammonite",
+        "woolly mammoth",
+        "saber-toothed cat",
+        "early tetrapod"
+      ]
+    },
+    "convergent_plants": {
+      "parent": "Physical / Living / Plant",
+      "question": "Is it a plant with a convergent form or unusual adaptation?",
+      "source": "Open Tree of Life and Catalogue of Life review seed",
+      "entries": [
+        "euphorbia",
+        "welwitschia",
+        "venus flytrap",
+        "pitcher plant",
+        "carnivorous plant",
+        "mangrove",
+        "giant sequoia"
+      ]
+    }
+  },
+  "policy": "WordNet candidates are enrichment proposals; biological seeds require taxonomic cross-validation."
+}
