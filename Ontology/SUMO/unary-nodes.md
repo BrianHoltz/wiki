@@ -1,6 +1,6 @@
 # SUMO unary-node inventory
 
-Generated from the current PDF-derived SUMO projection. These 53 concepts have exactly one projected child.
+Generated from the current PDF-derived SUMO projection. These 51 concepts have exactly one projected child.
 
 - `ArtiﬁcialLanguage` — Artiﬁcial Language
 - `Certiﬁcate` — Certiﬁcate
@@ -33,7 +33,6 @@ Generated from the current PDF-derived SUMO projection. These 53 concepts have e
 - `PositionalAttribute` — Positional Attribute
 - `Protein` — Protein
 - `Putting` — Putting
-- `Quantity` — Quantity
 - `RadiatingSound` — Radiating Sound
 - `RecreationOrExercise` — Recreation Or Exercise
 - `Removing` — Removing
@@ -42,7 +41,6 @@ Generated from the current PDF-derived SUMO projection. These 53 concepts have e
 - `SentientAgent` — Sentient Agent
 - `Series` — Series
 - `ServiceContract` — Service Contract
-- `Set` — Set
 - `ShapeAttribute` — Shape Attribute
 - `SocialRole` — Social Role
 - `SolidAngleMeasure` — Solid Angle Measure

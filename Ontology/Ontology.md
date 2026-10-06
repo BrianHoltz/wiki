@@ -569,14 +569,19 @@ For each PDF node with multiple incoming arcs, the projection repeatedly
 removes the longest measured incoming arc until one primary parent remains.
 Removed parents remain visible as alternate cross-links. This makes `Object`
 have exactly the PDF's four visible children: `Agent`, `Collection`, `Region`,
-and `SelfConnectedObject`. The PDF extraction produces five roots:
-`Entity`, `List`, `Number`, `Predicate`, and `Sentence`; the browser presents
-each rather than inventing parentage for the disconnected PDF components.
+and `SelfConnectedObject`.
 
-The projection contains 518 nodes and 513 primary edges, with 39 nodes having
+`Entity` is now the only root. The four disconnected PDF labels receive
+explicit provisional placements: `List → Set`, `Number → Quantity`,
+`Predicate → Proposition`, and `Sentence → Proposition`. These are marked
+provisional in the browser and data rather than being misrepresented as
+PDF-derived edges. `Number` therefore sits in the abstract quantity branch,
+near the truth-value branch without being made a child of `True` or `False`.
+
+The projection contains 518 nodes and 517 primary edges, with 39 nodes having
 alternate parents. It retains every node with exactly one projected child,
 rather than silently collapsing these potentially meaningful distinctions.
-There are 53 such unary nodes. The [complete unary-node inventory](SUMO/unary-nodes.md)
+There are 51 such unary nodes. The [complete unary-node inventory](SUMO/unary-nodes.md)
 lists every one by SUMO identifier; the same list is embedded in
 `SUMO/sumo.json` for programmatic review.
 

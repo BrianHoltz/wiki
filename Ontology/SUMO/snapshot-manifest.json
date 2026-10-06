@@ -3,14 +3,20 @@
   "sourceRoot": "PDF roots",
   "derivedArtifact": "sumo.json",
   "nodeCount": 518,
-  "projectedEdgeCount": 513,
+  "projectedEdgeCount": 517,
   "multipleParentNodeCount": 39,
-  "unaryNodeCount": 53,
+  "unaryNodeCount": 51,
   "pdfSource": "https://www.ontology4.us/download/dot/SumoOntology.pdf",
   "pdfSha256": "78708ee74a7e37e1985a497aaad066db11c8c4579fa372ca78814fa1b72e1852",
   "pdfNodeCount": 518,
   "pdfEdgeCount": 554,
-  "pdfRootCount": 5,
-  "primaryEdgeRule": "Repeatedly remove the longest measured incoming PDF arc until each node has one primary parent",
+  "pdfRootCount": 1,
+  "primaryEdgeRule": "Repeatedly remove the longest measured incoming PDF arc until each node has one primary parent; apply four explicitly marked provisional placements to keep Entity as the only root",
+  "provisionalPlacements": {
+    "List": "Set",
+    "Number": "Quantity",
+    "Predicate": "Proposition",
+    "Sentence": "Proposition"
+  },
   "licenseNote": "SUMO source files contain their own licensing and attribution notices. Review those notices before redistribution."
 }

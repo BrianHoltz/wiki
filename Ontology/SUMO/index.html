@@ -38,7 +38,8 @@ const esc=v=>String(v).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'
 let data,byId;
 function renderNode(id){const n=byId.get(id),alt=n.alternateParents.length?
 `<div class="alt">Dropped cross-links: ${n.alternateParents.map(esc).join(', ')}</div>`:'';
-const text=`${esc(n.label)} <span class="meta">${esc(n.id)}${n.directParentCount>1?` · ${n.directParentCount} parents`:''}</span>`;
+const provisional=n.provisionalParent?` <span class="meta">provisional placement</span>`:'';
+const text=`${esc(n.label)} <span class="meta">${esc(n.id)}${n.directParentCount>1?` · ${n.directParentCount} parents`:''}</span>${provisional}`;
 if(!n.children.length)return `<li>${text}${alt}</li>`;
 return `<li><details open><summary>${text}</summary>${alt}<ul>${n.children.map(renderNode).join('')}</ul></details></li>`}
 function render(){document.querySelector('#tree').innerHTML=data.rootNodes.map(root=>`<h2>${esc(byId.get(root).label)}</h2><ul>${renderNode(root)}</ul>`).join('');

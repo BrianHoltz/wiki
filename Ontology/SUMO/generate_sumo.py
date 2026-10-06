@@ -131,6 +131,17 @@ def build_pdf(pdf_graph: Path):
         selected[child] = ordered[0]["parent"]
         alternates[child] = [edge["parent"] for edge in ordered[1:]]
 
+    provisional = {
+        "List": "Set",
+        "Number": "Quantity",
+        "Predicate": "Proposition",
+        "Sentence": "Proposition",
+    }
+    for child, parent in provisional.items():
+        if child in nodes and parent in nodes and child not in selected:
+            selected[child] = parent
+            alternates[child] = []
+
     projected = defaultdict(list)
     for child, parent in selected.items():
         projected[parent].append(child)
@@ -145,6 +156,7 @@ def build_pdf(pdf_graph: Path):
             "children": projected.get(term, []),
             "alternateParents": alternates.get(term, []),
             "directParentCount": len(incoming.get(term, [])),
+            "provisionalParent": provisional.get(term),
         }
         for term in sorted(nodes, key=lambda value: (value.lower(), value))
     ]
@@ -166,9 +178,13 @@ def build_pdf(pdf_graph: Path):
             "unaryNodeCount": len(unary),
             "rootCount": len(roots),
             "pdfEdgeCount": graph["edgeCount"],
+            "provisionalPlacementCount": sum(
+                child in selected for child in provisional
+            ),
         },
         "root": "Entity",
         "rootNodes": roots,
+        "provisionalPlacements": provisional,
         "nodes": records,
         "unaryNodes": unary,
     }
