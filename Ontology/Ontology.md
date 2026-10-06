@@ -388,6 +388,175 @@ of questions.
   databases should not be silently substituted for WordNet's auditable source
   graph.
 
+### Ontology4 upper-ontology survey
+
+The [Ontology4 upper-ontology index](https://www.ontology4.us/english/Ontologies/Upper-Ontologies/)
+collects several historically important approaches: Aristotle, Sowa, Cyc,
+SUMO, Schema.org, and the Ontological Sextett. The Sextett page also links
+the proposed UMO. Ontology4 is useful as a comparative visual catalog, but
+its pages are adaptations and diagrams rather than authoritative releases of
+the underlying ontologies. The following entries evaluate the linked
+approaches against this project's specific goal: a familiar, navigable,
+question-oriented noun hierarchy.
+
+#### Aristotle's categories
+
+- **Source:** [Ontology4's Aristotle page](https://www.ontology4.us/english/Ontologies/Upper-Ontologies/Aristotle%20Ontology/index.html)
+  and the [historical text](https://classics.mit.edu/Aristotle/categories.html).
+- **What it is:** a philosophical account of categories of being and
+  predication, traditionally including substance, quantity, quality,
+  relation, place, time, position, state, action, and passion.
+- **Structure:** a small conceptual partition, not a deep `is-a` hierarchy.
+  It separates entities from properties, relations, and event-like
+  predicates, but does not supply ordinary leaves such as `animal → mammal →
+  dog`.
+- **Status and access:** the historical work is public domain; the Ontology4
+  rendering is a modern adaptation with no clearly stated independent release
+  or machine-readable distribution.
+- **Fit:** low as the game hierarchy, medium as a design sanity check.
+  Aristotle can remind us to distinguish things, qualities, relations, and
+  events, but “substance” is far too broad and abstract to be a useful
+  player-facing branch.
+
+#### Sowa's KR ontology
+
+- **Source:** [Sowa's top-level ontology](https://www.jfsowa.com/ontology/toplevel.htm)
+  and [Ontology4's Sowa page](https://www.ontology4.us/english/Ontologies/Upper-Ontologies/Sowa%20Ontology/index.html).
+- **What it is:** a formal synthesis influenced by Peirce and Whitehead,
+  organized around distinctions such as independent, relative, and mediating;
+  physical and abstract; and continuant and occurrent.
+- **Structure:** a lattice or diamond rather than a tree, with categories such
+  as object, process, schema, script, participation, description, situation,
+  reason, and purpose. Its formal combinations are useful for knowledge
+  representation but do not naturally become familiar questions.
+- **Status and access:** maintained primarily as scholarly explanatory web
+  material rather than as a current, populated, independently versioned
+  ontology release. The source page is openly viewable; licensing for
+  derivative diagrams and text should be checked before redistribution.
+- **Fit:** low to medium. It is a useful internal type system if the game
+  expands beyond nouns into events, properties, and relations, but its
+  categories are not suitable as ordinary player language.
+
+#### Cyc and OpenCyc
+
+- **Source:** [Cyc](https://cyc.com/), the [Cyc FAQ](https://cyc.com/faq/),
+  and [Ontology4's Cyc rendering](https://www.ontology4.us/english/Ontologies/Upper-Ontologies/Cyc%20Ontology/index.html).
+- **What it is:** a large formal common-sense knowledge base, inference
+  system, and ontology rather than merely an upper-level taxonomy. It
+  represents classes, individuals, predicates, rules, and contextual
+  microtheories.
+- **Structure:** rich logical assertions and relations, with collections,
+  functions, predicates, and context-sensitive knowledge. It can express
+  exceptions and practical facts that a simple hierarchy cannot.
+- **Status and access:** Cycorp remains commercially active, but the current
+  Cyc system and knowledge base are not an unrestricted public ontology
+  download. Historical OpenCyc material should not be confused with the
+  current commercial system, and its exact license and currency require
+  verification before reuse.
+- **Fit:** medium for symbolic reasoning, low for a lightweight game tree.
+  Cyc could inspire rules such as typical uses or contexts, but its scale,
+  engineering burden, and access model make it a poor incumbent replacement.
+
+#### SUMO
+
+- **Source:** [Ontology4's SUMO page](https://www.ontology4.us/english/Ontologies/Upper-Ontologies/Sumo%20Ontology/index.html),
+  the [SUMO project](https://www.ontologyportal.org/), and its active
+  [public repository](https://github.com/ontologyportal/sumo).
+- **What it is:** the Suggested Upper Merged Ontology, combining a formal
+  upper ontology with broad domain ontologies, logical axioms, relations, and
+  WordNet-related mappings.
+- **Structure:** a substantial `subclass` hierarchy plus `instance`,
+  part-whole, temporal, spatial, and other relations. It covers animals,
+  anatomy, vehicles, geography, artifacts, processes, and culture, but uses
+  multiple inheritance and formal relations that do not fit a strict
+  single-parent browser.
+- **Status and access:** actively maintained in a public repository. The
+  repository is inspectable and substantially more current and reproducible
+  than the Ontology4 diagram. Licensing must be checked per file and
+  subcomponent, especially where WordNet-derived data is involved.
+- **Fit:** high as a semantic and provenance backbone, medium as direct game
+  vocabulary. SUMO is the best candidate from the Ontology4 list for a
+  structured improvement vector, but it should be projected into a curated
+  game tree rather than displayed raw.
+
+#### Schema.org
+
+- **Source:** [Ontology4's Schema.org page](https://www.ontology4.us/english/Ontologies/Upper-Ontologies/schema.org%20Ontology/index.html),
+  [Schema.org](https://schema.org/), its [latest vocabulary](https://schema.org/version/latest/),
+  and the [source repository](https://github.com/schemaorg/schemaorg).
+- **What it is:** a pragmatic web-markup vocabulary jointly developed for
+  structured data understood by search engines, not a universal formal upper
+  ontology.
+- **Structure:** a human-readable `Thing` hierarchy with branches such as
+  Person, Organization, Place, Product, Event, CreativeWork, MedicalEntity,
+  and Intangible, plus many properties and enumerations. It has multiple
+  inheritance and web/commerce/media/medical biases.
+- **Status and access:** actively released and openly inspectable through the
+  official site and repository. Its release process and licensing information
+  are documented by the project, but the exact terms should be preserved when
+  redistributing derived data.
+- **Fit:** medium-high for contemporary familiar labels and broad category
+  discovery, low as a complete noun ontology. It is especially useful for
+  people, places, products, food, media, vehicles, and events, but it omits
+  much of the ordinary physical and biological world that v1 handles well.
+
+#### Ontological Sextett
+
+- **Source:** [Ontology4's Sextett page](https://www.ontology4.us/english/Ontologies/Upper-Ontologies/Sextett%20Ontology/index.html).
+- **What it is:** a proposed extension of the classical ontological
+  rectangle, notably adding explicit relationships so statements such as
+  “Picasso painted Guernica” are not forced into an entity-only taxonomy.
+- **Structure:** a compact set of primitives involving entities, attributes,
+  and relations. The page does not establish a complete, independently
+  standardized machine-readable hierarchy.
+- **Status and access:** a static Ontology4 proposal with no evident current
+  release process, standards body, or independent implementation. No clear
+  redistribution license is stated.
+- **Fit:** low to medium as modeling inspiration, low as content. Its
+  strongest contribution is the reminder that relations and attributes should
+  be stored alongside the noun hierarchy rather than confused with noun
+  categories.
+
+#### UMO
+
+- **Source:** [Ontology4's UMO page](https://www.ontology4.us/english/Ontologies/Upper-Ontologies/UMO%20Ontology/index.html);
+  it is introduced from the [Sextett page](https://www.ontology4.us/english/Ontologies/Upper-Ontologies/Sextett%20Ontology/index.html).
+- **What it is:** an “upmost minimal ontology,” intended to extend the
+  Sextett with relations while reducing category names to base symbols.
+- **Structure:** minimal primitives, explicit relationships, attributes, and
+  superclass inheritance. The page illustrates distinguishing things using
+  attributes such as age, color, weight, nationality, and height.
+- **Status and access:** a static Ontology4 proposal without an evident
+  versioned release, active standards process, maintained repository, or
+  independent user community. Licensing is not clearly stated.
+- **Fit:** low as a ready-made hierarchy, medium as a custom-engineering
+  pattern. UMO's attribute emphasis could inform question generation, but it
+  supplies neither the familiar nouns nor the reviewed parentage needed by
+  this project.
+
+#### Ontology4 recommendation
+
+None of these upper ontologies should replace the incumbent v1 tree directly.
+The best alternative is **SUMO as a semantic backbone**, with Schema.org as a
+secondary source for contemporary human-facing categories and WordNet as the
+lexical bridge. The best improvement vector is therefore layered:
+
+- retain v1's player-facing top-level organization and hand-reviewed
+  discriminators;
+- map v1 leaves and future candidates to SUMO classes where a stable semantic
+  anchor exists;
+- use SUMO relations and axioms as validation and metadata, not as visible
+  unary or multi-parent branches;
+- use Schema.org and WordNet to discover familiar labels, aliases, and
+  missing everyday siblings; and
+- preserve all source identifiers and alternate parents in a manifest while
+  projecting only a balanced single-parent navigation tree.
+
+This is an improvement in auditability and scientific consistency, not a
+reason to let SUMO dictate the game structure. The incumbent's main advantage
+is precisely that its visible questions were designed for play rather than
+inherited from a formal ontology.
+
 ### Wikidata
 
 - **Origin:** Wikimedia Deutschland, Berlin, Germany, launched in 2012.
@@ -428,6 +597,21 @@ of questions.
   inconsistent and often editorial, topical, or maintenance-driven. Taxobox
   parentage is more useful for organisms than general Wikipedia categories,
   although it still needs source/version tracking.
+- **Browser:** [`Wikipedia/index.html`](Wikipedia/index.html) provides a
+  static, searchable, lazy-rendered browser beginning at
+  [Main topic classifications](https://en.wikipedia.org/wiki/Category:Main_topic_classifications)
+  and [Contents](https://en.wikipedia.org/wiki/Category:Contents). It
+  packages [`categories.json`](Wikipedia/categories.json) and records its
+  exact source, checksum, license, roots, and derivation parameters in
+  [`snapshot-manifest.json`](Wikipedia/snapshot-manifest.json). The October
+  3, 2026 English Categories RDF dump contains about 2 million categories
+  reachable from these roots; the checked-in derived snapshot includes 12,657
+  categories through depth 3 so the browser remains practical. Boundary
+  categories link to live Wikipedia pages for deeper exploration. The
+  reproducible parser is [`generate_categories.py`](Wikipedia/generate_categories.py).
+  It deliberately presents the result as a category graph: repeated
+  categories, cycles, maintenance branches, and multiple parents are not
+  collapsed into a falsely authoritative single tree.
 
 ### Online biological taxonomies
 

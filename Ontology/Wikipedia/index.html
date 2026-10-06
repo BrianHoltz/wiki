@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wikipedia Category Browser</title>
+<style>
+:root {
+  color-scheme: light dark;
+  --accent: #2f6feb;
+  --background: #fff;
+  --text: #1f2328;
+  --panel: #f6f8fa;
+  --muted: #57606a;
+  --border: #8c959f;
+  --link: #0969da;
+  --warning: #9a6700;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0d1117;
+    --text: #e6edf3;
+    --panel: #161b22;
+    --muted: #8b949e;
+    --border: #6e7681;
+    --link: #58a6ff;
+    --warning: #d29922;
+  }
+}
+body {
+  color: var(--text);
+  background: var(--background);
+  font: 15px/1.45 system-ui, -apple-system, sans-serif;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 24px;
+}
+h1 { margin-bottom: 6px; }
+a { color: var(--link); }
+.intro, .notice {
+  background: var(--panel);
+  border-left: 4px solid var(--accent);
+  padding: 10px 14px;
+  margin: 10px 0;
+}
+.notice { border-left-color: var(--warning); }
+.controls {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin: 18px 0;
+}
+input, select, button {
+  color: var(--text);
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 9px 12px;
+}
+input { flex: 1 1 280px; }
+button { cursor: pointer; }
+button:hover { border-color: var(--accent); }
+#status { color: var(--muted); margin: 8px 0; }
+#search-results { margin: 8px 0 18px; }
+.result {
+  display: inline-block;
+  margin: 3px 8px 3px 0;
+  padding: 4px 8px;
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  cursor: pointer;
+}
+details { margin: 4px 0 4px 12px; }
+summary { cursor: pointer; padding: 5px; }
+summary:hover { background: var(--panel); }
+.children { border-left: 1px solid var(--border); margin-left: 9px; padding-left: 8px; }
+.category-meta, .loading, .empty, .error {
+  color: var(--muted);
+  font-size: .9em;
+  padding: 3px 6px 6px 25px;
+}
+.error { color: var(--warning); }
+.category-meta a { margin-left: 8px; }
+.load-more { margin: 6px 0 8px 25px; }
+[hidden] { display: none !important; }
+</style>
+</head>
+<body>
+<h1>Wikipedia Category Browser</h1>
+<div class="intro">
+  This browser explores a static snapshot of Wikipedia’s category system,
+  beginning with
+  <a href="https://en.wikipedia.org/wiki/Category:Main_topic_classifications"
+     target="_blank" rel="noopener">Main topic classifications</a>.
+  Expand a category to browse its locally packaged subcategories. Search finds
+  categories in the snapshot, and every category has a link to its live
+  Wikipedia page.
+</div>
+<div class="notice">
+  Wikipedia categories are a many-parent graph, not a clean taxonomy. They
+  include article topics, people, places, maintenance groupings, and
+  navigation aids; cycles and duplicate paths are possible. This snapshot
+  contains the two navigation roots through depth 3. Deeper categories remain
+  available through their live links. This page does not claim that a
+  category is a noun class or a 20 Questions branch.
+</div>
+<div class="controls">
+  <select id="root">
+    <option value="Category:Main topic classifications">Main topic classifications</option>
+    <option value="Category:Contents">Contents</option>
+  </select>
+  <button id="load-root">Load root</button>
+  <input id="search" type="search" placeholder="Search Wikipedia categories...">
+  <button id="search-button">Search</button>
+</div>
+<div id="status" role="status"></div>
+<div id="search-results"></div>
+<main id="tree"></main>
+<script>
+const tree = document.querySelector("#tree");
+const status = document.querySelector("#status");
+const results = document.querySelector("#search-results");
+let snapshot = null;
+
+function categoryUrl(title) {
+  return `https://en.wikipedia.org/wiki/${encodeURIComponent(title.replaceAll(" ", "_"))}`;
+}
+
+function setStatus(text) {
+  status.textContent = text;
+}
+
+function categoryLabel(title) {
+  return title.replace(/^Category:/, "");
+}
+
+function addMessage(parent, className, text) {
+  const message = document.createElement("div");
+  message.className = className;
+  message.textContent = text;
+  parent.append(message);
+  return message;
+}
+
+function addCategory(parent, title, ancestry = new Set()) {
+  const details = document.createElement("details");
+  details.className = "category";
+  details.dataset.title = title;
+  const summary = document.createElement("summary");
+  summary.textContent = categoryLabel(title);
+  details.append(summary);
+
+  const meta = document.createElement("div");
+  meta.className = "category-meta";
+  const record = snapshot.categories[title];
+  if (!record) {
+    meta.textContent = "Outside the packaged snapshot.";
+    const link = document.createElement("a");
+    link.href = categoryUrl(title);
+    link.target = "_blank";
+    link.rel = "noopener";
+    link.textContent = "Open live category";
+    meta.append(link);
+  } else {
+    meta.textContent =
+      `Snapshot depth ${record.depth}; ${record.children.length} packaged subcategories`;
+    if (record.truncated) {
+      meta.textContent += "; deeper subcategories omitted";
+    }
+    const link = document.createElement("a");
+    link.href = categoryUrl(title);
+    link.target = "_blank";
+    link.rel = "noopener";
+    link.textContent = "Open live category";
+    meta.append(link);
+  }
+  details.append(meta);
+
+  const children = document.createElement("div");
+  children.className = "children";
+  details.append(children);
+  parent.append(details);
+
+  details.addEventListener("toggle", () => {
+    if (!details.open || details.dataset.loaded) return;
+    details.dataset.loaded = "true";
+    if (ancestry.has(title)) {
+      addMessage(children, "empty", "Cycle detected; this path is not expanded again.");
+      return;
+    }
+    const nextAncestry = new Set(ancestry);
+    nextAncestry.add(title);
+    if (!record || !record.children.length) {
+      addMessage(
+        children,
+        "empty",
+        record && record.truncated
+          ? "Deeper subcategories are outside this static snapshot."
+          : "No subcategories in this snapshot."
+      );
+      return;
+    }
+    record.children.forEach((child) => {
+      if (nextAncestry.has(child)) {
+        addMessage(children, "empty", `Cycle omitted: ${categoryLabel(child)}`);
+      } else {
+        addCategory(children, child, nextAncestry);
+      }
+    });
+    if (record.truncated) {
+      addMessage(children, "empty", "Deeper subcategories are omitted from this snapshot.");
+    }
+  });
+  return details;
+}
+
+function loadRoot() {
+  tree.replaceChildren();
+  results.replaceChildren();
+  if (!snapshot) return;
+  const title = document.querySelector("#root").value;
+  const root = addCategory(tree, title);
+  root.open = true;
+  setStatus(
+    `Loaded ${title}. Static snapshot: ${snapshot.snapshot.category_count.toLocaleString()} categories through depth ${snapshot.snapshot.max_depth}.`
+  );
+}
+
+function searchCategories() {
+  const query = document.querySelector("#search").value.trim();
+  results.replaceChildren();
+  if (!query) return;
+  const normalized = query.toLowerCase();
+  const matches = Object.keys(snapshot.categories)
+    .filter((title) => title.toLowerCase().includes(normalized))
+    .slice(0, 100);
+  if (!matches.length) {
+    addMessage(results, "empty", "No category pages found in the static snapshot.");
+  } else {
+    matches.forEach((title) => {
+      const result = document.createElement("button");
+      result.className = "result";
+      result.textContent = categoryLabel(title);
+      result.onclick = () => {
+        const root = addCategory(tree, title);
+        root.open = true;
+        root.scrollIntoView({ behavior: "smooth", block: "start" });
+      };
+      results.append(result);
+    });
+  }
+  setStatus(`Found ${matches.length}${matches.length === 100 ? "+" : ""} snapshot matches.`);
+}
+
+document.querySelector("#load-root").onclick = loadRoot;
+document.querySelector("#search-button").onclick = searchCategories;
+document.querySelector("#search").addEventListener("keydown", (event) => {
+  if (event.key === "Enter") searchCategories();
+});
+fetch("categories.json")
+  .then((response) => {
+    if (!response.ok) throw new Error(`Could not load categories.json (${response.status})`);
+    return response.json();
+  })
+  .then((data) => {
+    snapshot = data;
+    loadRoot();
+  })
+  .catch((error) => {
+    setStatus(`Static snapshot unavailable: ${error.message}`);
+  });
+</script>
+</body>
+</html>

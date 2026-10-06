@@ -1,0 +1,19 @@
+{
+  "source": "https://dumps.wikimedia.org/other/categoriesrdf/20261003/enwiki-20261003-categories.ttl.gz",
+  "source_date": "2026-10-03",
+  "source_sha256": "baf39e33a0d0a80bd79fa5c75fb95a42c8798d7e6d26d5a035fb6fff03103885",
+  "derived_at": "2026-10-06",
+  "roots": [
+    "Category:Main topic classifications",
+    "Category:Contents"
+  ],
+  "max_depth": 3,
+  "category_count": 12657,
+  "edge_count": 24174,
+  "license": "CC BY-SA 4.0",
+  "notes": [
+    "The complete English Wikipedia category graph is much larger and is a cyclic many-parent graph.",
+    "This derived snapshot includes categories reachable from the two navigation roots through depth 3.",
+    "Boundary categories link to live Wikipedia pages for deeper exploration."
+  ]
+}
