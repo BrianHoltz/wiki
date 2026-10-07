@@ -173,19 +173,31 @@ project, not by scientific authority alone:
 
 ### Single-pane and compressed tree renders
 
-The previous list was not responsive to the requirement: those are browsers,
-multi-pane teaching figures, or much larger trees, not true single-pane
-outlines. The useful search target is now a static classroom/poster-style
-whole-life tree with fewer than 300 visible labels. Ranked by breadth and
-fit:
+The previous list was not responsive to the requirement. The intended format
+is now clear from this [Open University-style example image](https://miro.medium.com/v2/resize:fit:4128/1*O-o2WDx710kxPczPH0UUug.jpeg):
+one tall, printable pane; colored evolutionary branches; named internal
+clades; and a curated representative organism, fossil, or plant at many
+leaves. This is not merely an outline of taxon names. It is a visual
+knowledge map that makes the biological hierarchy browseable through familiar
+specimens. The matching high-resolution copy is
+[available here](https://nicolasmicheletti.wordpress.com/wp-content/uploads/2015/09/treeoflife.jpg).
 
+The useful search target is therefore a static classroom/poster-style
+whole-life tree with fewer than 300 representative leaves and clade labels.
+Ranked by fit:
+
+- [Open University tree-of-life poster](https://nicolasmicheletti.wordpress.com/wp-content/uploads/2015/09/treeoflife.jpg)
+  — the exact format we should pursue. It uses roughly a hundred
+  representative organisms and fossils, colored branches, readable clade
+  labels, and a single origin-to-present composition. It is much closer to
+  the desired 20-Questions browsing experience than a genome-only tree.
+  Treat the image as presentation prior art; validate and modernize its
+  taxonomy from the authoritative sources above.
 - [Tree of life SVG](https://commons.wikimedia.org/wiki/File:Tree_of_life_SVG.svg)
-  — the strongest lead for the largest candidate under 300. It is one radial
-  genome tree, probably about 150–250 visible terminal taxa or genome labels
-  when counted from the artwork. The labels are converted to vector outlines,
-  so the count needs visual verification. It is dense and based on an older
-  sequenced-genome dataset, but it is the closest discovered match to “show
-  me a bigger one.”
+  — still worth checking as a denser candidate, but it is a genome tree with
+  tiny labels rather than a specimen-rich educational map. It may contain
+  150–250 visible terminal taxa, though the vectorized lettering requires
+  visual counting.
 - [Phylogenetic tree of life 2](https://commons.wikimedia.org/wiki/File:Phylogenetic_tree_of_life_2.svg)
   — the cleanest strict single-pane baseline: one rooted left-to-right tree
   with 33 machine-countable labels, spanning Bacteria, Archaea, and Eukarya.
