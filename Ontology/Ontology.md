@@ -1544,6 +1544,233 @@ cross-cuts it**. Add first-class patterns for processes, contexts, functions,
 collections, interpretations, time, modality, and identity instead of
 forcing those concepts into either triad.
 
+### Proposed triadic synthesis and optional subcategories
+
+The cleanest current synthesis is a visible top level of:
+
+```text
+Ontology
+├── Entity
+├── Property
+└── Relation
+```
+
+This is intentionally a semantic partition, not a claim that every concept
+has only one role. A class can be an entity that classifies other entities; a
+quality can be an entity in one context and a property in another; and a
+proposition can reify a relation while also carrying truth, evidence, and
+proof metadata. The authoritative data model should therefore permit typed
+cross-links and role annotations even when the browser chooses one primary
+display branch.
+
+#### Maximal candidate inventory
+
+The following is the deliberately generous candidate space. It is not a
+proposed set of siblings; several candidates are alternative ways to
+partition the same material. Keeping them together makes omissions and
+tradeoffs visible before we choose a compact projection.
+
+**Entity candidates**
+
+- **Physical entities** — matter, energy, fields, particles, materials,
+  organisms, bodies, artifacts, environments, and physical systems.
+- **Abstract entities** — numbers, sets, mathematical structures, properties
+  treated as objects, propositions, meanings, and other nonphysical objects.
+- **Informational entities** — data, symbols, records, documents, models,
+  software, messages, and reproducible works.
+- **Social and institutional entities** — persons, organizations, groups,
+  roles, statuses, institutions, laws, contracts, and currencies.
+- **Fictional, hypothetical, and possible entities** — characters, imagined
+  objects, counterfactual entities, simulated entities, and possible-world
+  inhabitants.
+- **Agents** — organisms, persons, organizations, software agents, and
+  systems capable of action, control, or communication.
+- **Objects or continuants** — relatively persistent bearers of properties,
+  including natural objects, artifacts, organisms, places, and abstract
+  objects.
+- **Processes or occurrents** — activities, events, changes, operations,
+  motions, computations, communications, and histories.
+- **States and situations** — temporally or contextually bounded
+  configurations in which entities participate or properties hold.
+- **Collections and wholes** — sets, classes, types, lists, bags, aggregates,
+  parts, wholes, systems, and populations.
+- **Places and spacetime regions** — locations, boundaries, paths, intervals,
+  instants, coordinate regions, and possible or actual worlds.
+- **Classes, types, and universals** — kinds that classify instances,
+  formal types, predicates reified as concepts, and universes of types.
+- **Mathematical structures** — algebraic, ordered, topological, geometric,
+  measurable, probabilistic, computational, and physical structures.
+- **Formal objects** — languages, signatures, formulas, theories, proofs,
+  programs, terms, values, models, and derivations.
+- **Propositions and statements** — reified claims, questions, commands,
+  hypotheses, assertions, and compound statements.
+- **Occurrences and tokens** — particular realizations of events, symbols,
+  words, measurements, observations, or documents.
+
+**Property candidates**
+
+- **Qualities** — color, shape, texture, temperature, mass, age, health,
+  intelligence, beauty, and other characteristic dimensions.
+- **Quantities and magnitudes** — amount, size, duration, distance, rate,
+  probability, concentration, intensity, and measurement result.
+- **Quality values** — red, heavy, warm, large, healthy, prime, continuous,
+  and other values filling a quality dimension.
+- **States** — alive, open, occupied, valid, employed, connected, or
+  functioning.
+- **Dispositions and capabilities** — soluble, fragile, edible, executable,
+  poisonous, intelligent, or able to perform an operation.
+- **Functions and purposes** — what an object or process is for, including
+  biological functions, designed functions, and intended use.
+- **Roles and statuses** — agent, owner, patient, employee, citizen, leader,
+  member, legal status, and other context-dependent ways of participating.
+- **Norms and obligations** — permissions, duties, prohibitions, rules,
+  standards, requirements, and institutional commitments.
+- **Goals and preferences** — aims, desires, priorities, utility, value,
+  relevance, and evaluation.
+- **Modal properties** — possible, necessary, contingent, dispositional,
+  counterfactual, or law-governed.
+- **Logical and mathematical properties** — true, false, equal, finite,
+  prime, continuous, measurable, decidable, or computable.
+- **Relational properties** — being adjacent, owned, caused, located,
+  represented, comparable, or dependent, when treated as a property of one
+  bearer rather than as a relation node.
+- **Type and refinement properties** — membership conditions, subtype
+  constraints, predicates, invariants, capabilities, and effect sets.
+
+**Relation candidates**
+
+- **Classification relations** — instance-of, subclass-of, type-of,
+  predicate application, realization-of, and member-of.
+- **Part-whole relations** — part-of, proper-part-of, component-of,
+  boundary-of, member-of, aggregate-of, and overlap.
+- **Spatial relations** — located-in, contains, adjacent-to, connected-to,
+  inside, outside, above, below, near, and intersects.
+- **Temporal relations** — before, after, during, overlaps, begins, ends,
+  persists-through, and occurs-at.
+- **Causal and explanatory relations** — causes, enables, prevents,
+  depends-on, explains, predicts, and results-in.
+- **Participation relations** — agent-in, patient-in, instrument-in,
+  location-of, beneficiary-of, and participant-in.
+- **Social and institutional relations** — owns, employs, governs, belongs-to,
+  married-to, represents, authorizes, owes, and contracts-with.
+- **Perceptual and epistemic relations** — observes, knows, believes,
+  justifies, evidences, measures, describes, refers-to, and is-about.
+- **Logical relations** — entails, contradicts, implies, is-consistent-with,
+  is-provable-from, and is-satisfied-by.
+- **Set and collection relations** — member-of, subset-of, disjoint-from,
+  partitions, indexes, enumerates, and is-cardinality-of.
+- **Mathematical relations** — equals, less-than, divides, maps-to,
+  isomorphic-to, homomorphic-to, composes-with, and is-an-instance-of.
+- **Transformation relations** — converts, derives, constructs, interprets,
+  translates, compiles, evaluates, and reduces-to.
+- **Representational relations** — names, denotes, encodes, quotes,
+  instantiates, models, formalizes, and is-described-by.
+- **Identity and equivalence relations** — same-as, equivalent-to,
+  observationally-equivalent-to, interchangeable-with, and version-of.
+- **Provenance relations** — sourced-from, asserted-by, generated-by,
+  inferred-from, proved-by, revised-from, and supersedes.
+
+#### Coherent subcategory variants
+
+These variants show how the maximal inventory could be made navigable. They
+are alternatives for the visible second and third levels, not separate
+ontologies.
+
+**Minimal semantic variant**
+
+- **Entity:** Physical, Abstract, Informational, Social
+- **Property:** Quality, Quantity, Disposition, Role, Function, Norm
+- **Relation:** Classification, Part-whole, Spatial/temporal, Causal,
+  Social, Representational
+
+This is the strongest starting point for a readable player-facing browser.
+It is compact, but it leaves mathematical foundations and formal systems in
+metadata or deeper branches.
+
+**SUMO/BFO-inspired variant**
+
+- **Entity:** Continuant, Occurrent, Quality, Disposition, Role, Site,
+  Information artifact
+- **Property:** Intrinsic quality, Relational quality, Function, Disposition,
+  Role, State
+- **Relation:** Participation, Parthood, Dependence, Location, Temporal,
+  Causal, Classification
+
+This is stronger for scientific and biomedical modeling, but its vocabulary
+is less familiar and some candidates are better modeled as facets than
+visible siblings.
+
+**Mathematical and formal variant**
+
+- **Entity:** Individual, Collection, Class/type, Structure, Proposition,
+  Model, Formal artifact
+- **Property:** Predicate, Refinement, Invariant, Quantity, Truth value,
+  Computability, Proof status
+- **Relation:** Membership, Typing, Application, Function, Interpretation,
+  Satisfaction, Entailment, Derivation, Isomorphism
+
+This gives numbers, sets, types, proofs, and models a principled home, but
+would be a poor default tree for ordinary physical nouns.
+
+**Event-and-situation variant**
+
+- **Entity:** Object, Agent, Process, Event, State, Situation, Place,
+  Information object
+- **Property:** Quality, Capability, Function, Role, Status, Goal, Norm
+- **Relation:** Participation, Part-whole, Location, Time, Causation,
+  Ownership, Communication, Evidence
+
+This is strongest for everyday questions and narratives, especially actions,
+agents, places, and social facts, but less explicit about mathematical
+structures and formal syntax.
+
+**Type-system variant**
+
+- **Entity:** Type, Term, Value, Structure, Proposition, Proof artifact,
+  Model
+- **Property:** Type constraint, Refinement, Effect, Invariant, Truth,
+  Computability, Capability
+- **Relation:** Inhabits, Subtypes, Applies-to, Evaluates-to, Constructs,
+  Proves, Interprets, Composes
+
+This variant aligns with Lean, Scala, proof assistants, and executable
+semantics. It should be a formal overlay or specialist view, not the sole
+visible organization of the noun ontology.
+
+**Roget-informed conceptual variant**
+
+- **Entity:** Matter and life, Space, Mind and knowledge, Society and action,
+  Abstract relations, Emotion and value
+- **Property:** Quality, Quantity, Evaluation, Disposition, Intention,
+  Social status
+- **Relation:** Association, Comparison, Causation, Participation,
+  Representation, Classification
+
+This variant maximizes familiar conceptual neighborhoods and vocabulary
+discovery. It is useful for the player-facing language layer, but its
+categories are not sufficiently formal to serve as the authoritative
+semantic model.
+
+#### Current recommendation
+
+Use the **minimal semantic variant** as the initial visible projection, with
+`Entity`, `Property`, and `Relation` as the only mandatory top-level nodes.
+Add the other variants as named profile projections over the same source
+graph. In particular:
+
+- keep physical/abstract/informational/social as entity facets or second-level
+  display candidates;
+- preserve process/event/state distinctions under Entity when they are
+  useful for navigation;
+- represent classes, types, propositions, proofs, and values as entities with
+  explicit typing, membership, denotation, and proof relations;
+- treat qualities, quantities, dispositions, roles, and functions as
+  properties unless a particular one is reified as an entity;
+- retain relation families as typed relation metadata rather than forcing all
+  relations into ordinary noun branches; and
+- generate specialist views for BFO/SUMO-style, mathematical, Lean/type
+  system, and Roget-informed browsing without changing the canonical graph.
+
 ### Revisit the highest layers: mathematics, types, and meaning
 
 The current SUMO projection is weakest at the top. `Entity`, `Abstract`,
