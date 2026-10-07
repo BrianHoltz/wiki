@@ -1730,85 +1730,86 @@ Entity
 │       └── Laboratory measurement
 └── Abstract
     ├── Mathematical entities
-    │   ├── Foundations
-    │   │   ├── Logic
+    │   ├── Foundational formal entities
+    │   │   ├── Logical entities
     │   │   │   ├── Terms and formulas
     │   │   │   ├── Predicates and propositions
-    │   │   │   ├── Connectives and quantifiers
-    │   │   │   ├── Inference rules and proofs
-    │   │   │   └── Models, truth, validity, and satisfiability
-    │   │   ├── Set theory
-    │   │   │   ├── Membership, subset, union, and intersection
-    │   │   │   ├── Ordered pairs, products, and relations
+    │   │   │   ├── Logical operators and quantifiers
+    │   │   │   ├── Inference rules and proof objects
+    │   │   │   └── Logical models and truth conditions
+    │   │   ├── Set-theoretic structures
+    │   │   │   ├── Sets and collections
+    │   │   │   ├── Set-membership and subset relations
+    │   │   │   ├── Set operations and products
     │   │   │   ├── Functions and power sets
     │   │   │   ├── Natural numbers, ordinals, and cardinals
-    │   │   │   └── ZFC, NBG, or alternative foundations
-    │   │   ├── Type theory
+    │   │   │   └── Set-theoretic formal theories
+    │   │   ├── Type-theoretic structures
     │   │   │   ├── Types, terms, and values
     │   │   │   ├── Products, sums, and function types
     │   │   │   ├── Inductive and dependent types
     │   │   │   ├── Universes and identity types
     │   │   │   └── Proofs as inhabitants of propositions
-    │   │   └── Category theory
+    │   │   └── Categorical structures
     │   │       ├── Objects and morphisms
     │   │       ├── Composition and identity
     │   │       ├── Functors and natural transformations
     │   │       ├── Limits, colimits, and adjunctions
-    │   │       └── Equivalence, toposes, and internal logic
-    │   ├── Numbers and arithmetic
+    │   │       └── Equivalences, toposes, and internal logics
+    │   ├── Number systems
     │   │   ├── Natural numbers
     │   │   ├── Integers
     │   │   ├── Rational numbers
     │   │   ├── Real numbers
     │   │   ├── Complex numbers
     │   │   ├── Algebraic and transcendental numbers
-    │   │   └── Operations, order, divisibility, and equations
+    │   │   └── Arithmetic operations, order relations, divisibility relations, and equations
     │   ├── Algebraic structures
     │   │   ├── Groups and subgroups
     │   │   ├── Rings and ideals
     │   │   ├── Fields and extensions
     │   │   ├── Vector spaces and linear maps
     │   │   ├── Modules, algebras, and representations
-    │   │   └── Categories of algebraic structures
-    │   ├── Geometry and topology
+    │   │   └── Algebraic structure categories
+    │   ├── Geometric and topological structures
     │   │   ├── Points, lines, planes, and spaces
-    │   │   ├── Angles, distances, and coordinates
+    │   │   ├── Angles, distances, and coordinate systems
     │   │   ├── Curves and conic sections
     │   │   │   ├── Circle
     │   │   │   ├── Ellipse
     │   │   │   ├── Parabola
     │   │   │   └── Hyperbola
     │   │   ├── Manifolds and tangent spaces
-    │   │   ├── Topological spaces and continuity
+    │   │   ├── Topological spaces and continuity structures
     │   │   ├── Metric spaces and measure spaces
-    │   │   └── Differential and algebraic geometry
-    │   ├── Analysis and dynamics
+    │   │   └── Differential structures and algebraic varieties
+    │   ├── Analytic and dynamical structures
     │   │   ├── Sequences, limits, and convergence
     │   │   ├── Derivatives and integrals
     │   │   ├── Differential equations
     │   │   ├── Dynamical systems
-    │   │   ├── Functional analysis
-    │   │   └── Fourier, distribution, and operator theories
-    │   ├── Discrete mathematics and computation
-    │   │   ├── Combinatorics and graph theory
-    │   │   ├── Algorithms and complexity
+    │   │   ├── Function spaces and operators
+    │   │   └── Fourier transforms and distributions
+    │   ├── Discrete and computational structures
+    │   │   ├── Combinatorial structures and graphs
+    │   │   ├── Algorithms and complexity classes
     │   │   ├── Automata and formal languages
-    │   │   ├── Computability and recursion
-    │   │   ├── Cryptography and information theory
-    │   │   └── Programming-language semantics
-    │   ├── Probability and statistics
+    │   │   ├── Computable and recursive functions
+    │   │   ├── Cryptographic constructions and information measures
+    │   │   └── Programming-language models and semantics
+    │   ├── Probabilistic and statistical structures
     │   │   ├── Sample spaces and random variables
     │   │   ├── Probability measures and distributions
     │   │   ├── Expectation and conditional probability
     │   │   ├── Statistical models and inference
     │   │   └── Stochastic processes
-    │   ├── Mathematical physics
-    │   │   ├── Classical mechanics
-    │   │   ├── Relativity and spacetime geometry
+    │   ├── Mathematical models of physical systems
+    │   │   ├── Classical dynamical models
+    │   │   ├── Relativistic spacetime models
     │   │   ├── Quantum states and observables
     │   │   ├── Hilbert spaces and operator algebras
-    │   │   ├── Quantum field theories
-    │   │   └── Gauge theories and geometric field theories
+    │   │   ├── Quantum field models
+    │   │   └── Gauge fields and geometric field models
     │   └── Mathematical objects and values
     │       ├── Sets, functions, sequences, and structures
     │       ├── Numbers and other values
@@ -1829,6 +1830,16 @@ Entity
         ├── Norms, obligations, and permissions
         └── Institutions and collective practices
 ```
+
+The naming rule is deliberate: a visible node must name a kind of entity,
+property, relation, structure, artifact, process, or formal object. A
+discipline, research program, school subject, or college course is
+provenance or metadata, not a parent category. Thus `Circle` and `Parabola`
+can be first-class geometric entities under `Curves and conic sections`,
+while “geometry” belongs in the source-discipline metadata. Likewise,
+`Computable function` is an entity or structure, while “computability” as a
+research topic is not a parent; `Classical dynamical model` is a mathematical
+model, while “classical mechanics” is a subject label.
 
 This projection deliberately repeats some concepts in different roles. For
 example:
