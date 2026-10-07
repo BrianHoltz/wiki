@@ -173,47 +173,48 @@ project, not by scientific authority alone:
 
 ### Single-pane and compressed tree renders
 
-The sources above are too inclusive to copy directly. The more relevant prior
-art is a deliberately compressed whole-tree presentation: roughly 500–2,000
-recognizable nodes on one canvas or one browsable pane, with omitted detail
-available through context rather than displayed by default. Ranked by fit:
+The previous list was not responsive to the requirement: those are browsers,
+multi-pane teaching figures, or much larger trees, not true single-pane
+outlines. The useful search target is now a static classroom/poster-style
+whole-life tree with fewer than 300 visible labels. Ranked by breadth and
+fit:
 
-- [Evogeneao Tree of Life diagram](https://www.evogeneao.com/en/learn/tree-of-life)
-  and [Tree of Life Explorer](https://www.evogeneao.com/en/explore/tree-of-life-explorer)
-  — best visual and pedagogical fit. It intentionally shows major and some
-  minor branches, extinct groups, and familiar labels in one comprehensible
-  diagram. Its authors explicitly warn that it is simplified, human-centered,
-  and not a scholarly reference, which is precisely why it is useful as
-  presentation prior art but not as the taxonomic authority.
+- [Tree of life SVG](https://commons.wikimedia.org/wiki/File:Tree_of_life_SVG.svg)
+  — the strongest lead for the largest candidate under 300. It is one radial
+  genome tree, probably about 150–250 visible terminal taxa or genome labels
+  when counted from the artwork. The labels are converted to vector outlines,
+  so the count needs visual verification. It is dense and based on an older
+  sequenced-genome dataset, but it is the closest discovered match to “show
+  me a bigger one.”
+- [Phylogenetic tree of life 2](https://commons.wikimedia.org/wiki/File:Phylogenetic_tree_of_life_2.svg)
+  — the cleanest strict single-pane baseline: one rooted left-to-right tree
+  with 33 machine-countable labels, spanning Bacteria, Archaea, and Eukarya.
+  It is public domain and easy to print, but too sparse to be the final target.
+- [Tree of life](https://commons.wikimedia.org/wiki/File:Tree_of_life.svg)
+  — one radial tree with approximately 35–50 readable group labels,
+  including major bacterial, archaeal, fungal, plant, and animal branches.
+  It is compact and visually legible, but scientifically dated and not a
+  current authority.
+- [Berkeley Evolution 101: The Family Tree](https://evolution.berkeley.edu/evolution-101/the-history-of-life-looking-at-the-patterns/the-family-tree/)
+  — explicitly school-oriented and broad, with a single tall image containing
+  nested phylogenies. It is useful presentation prior art, but not a strict
+  uninterrupted single-pane outline because it embeds several zoomed trees.
 - [UCMP Life on Earth / Three Domains of Life](https://ucmp.berkeley.edu/alllife/threedomains.html)
-  — strong compact model for showing Bacteria, Archaea, Eukaryota, and a
-  separate virus treatment, with linked deeper exhibits. It is smaller and
-  sparser than our target, but its visible-versus-linked-detail pattern is
-  highly suitable.
-- [Understanding Evolution: patterns of life's history](https://evolution.berkeley.edu/evolution-101/the-history-of-life-looking-at-the-patterns/)
-  — an unusually approachable compact cladogram using recognizable groups
-  such as sharks, ray-finned fish, amphibians, primates, rodents, crocodiles,
-  and dinosaurs/birds. It is far below 500 nodes, so it is a model for
-  branch labeling and explanatory annotations rather than a candidate import.
-- [TimeTree 5](https://timetree.org/) — a polished single visualization
-  experience with a spiral tree and extensive species coverage. Its roughly
-  148,000 species make it much too inclusive for direct import, but it is
-  valuable prior art for showing a large tree while keeping navigation
-  visually coherent.
-- [Tree of Life Web Project](https://tolweb.org/Life_on_Earth/1) — a
-  browsable linked tree with group pages, illustrations, and evolutionary
-  notes. It is not a single-pane 500–2,000-node rendering, but it is a useful
-  model for attaching explanatory pages to compressed clades.
+  — a compact educational whole-life treatment that gives viruses their own
+  biological-entities branch and links to deeper exhibits. It is a strong
+  model for visible-versus-linked detail, but it is smaller and partly
+  page-linked rather than a 300-node poster.
 - [Tree of life diagrams and historical examples](https://en.wikipedia.org/wiki/Tree_of_life_(biology))
-  — a useful gallery of Haeckel, Woese, and other whole-life diagrams. These
-  are historical or schematic rather than importable authorities, but they
-  show how much structure can be communicated in one static render.
+  — a useful index of static Haeckel, Woese, and other whole-life diagrams.
+  These are schematic or historical rather than importable authorities, but
+  they provide additional candidates for visual comparison.
 
-The likely next experiment is not to import OneZoom, Open Tree, or Catalogue
-of Life wholesale. Instead, use the best compressed render as a layout and
-labeling template, select approximately 500–2,000 major taxa from the
-recommended source combination, and preserve the complete scientific tree and
-source IDs behind the compressed display.
+The immediate next step is to inspect the first SVG at full resolution and
+count its visible labels. If it is genuinely below 300, it becomes the
+largest discovered single-pane template; if it is too dense or exceeds the
+limit, the 33-label tree is the verified fallback and we should construct an
+intermediate 100–300-node display ourselves from the authoritative source
+combination below.
 
 Recommended source combination: use Open Tree of Life for evolutionary
 structure, Catalogue of Life for accepted names and synonyms, GBIF and NCBI
