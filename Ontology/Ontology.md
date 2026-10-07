@@ -36,6 +36,11 @@ The display tree chooses one deterministic presentation parent when WordNet
 has multiple hypernym paths. That is a view projection, not a modification of
 WordNet: all source hypernyms remain in the manifest.
 
+The current phase is tree-first: structural quality, source comparison, and
+ordinary-language coverage take priority over question-generation mechanics.
+The historical 20 Questions material remains as provenance and as a
+downstream success criterion; it is not an active implementation workstream.
+
 ## How the WordNet tree was generated
 
 The tree is a reproducible presentation of WordNet 3.0, not a hand-edited
@@ -146,6 +151,111 @@ WordNet candidates are clearly labelled expansion branches. A compact profile
 can be generated later by lowering `--wordnet-target` and `--ncbi-target`; a
 fuller profile can raise them without forking the tree design.
 
+## Future leaf-node priorities
+
+The immediate objective is to improve the tree and its information design
+before adding a large undifferentiated noun list. Leaf additions should be
+grafted into a reviewed structural home, not used to compensate for a weak
+parent branch. The task list is:
+
+- [ ] **Complete the structural audit:** repair overloaded v1 branches,
+  improve sibling balance, clarify observable distinctions, and document
+  intentional unary paths before adding major leaf batches.
+- [ ] **Replace the organism subtree:** choose a public biological source
+  combination and build a curated display taxonomy that preserves
+  evolutionary accuracy while compressing opaque intermediate clades.
+- [ ] **Add the virus policy and pilot:** include important viruses and virus
+  families, but do not imply that viruses are ordinary organisms or that
+  viruses are primarily related to one another by host. Keep host range,
+  genome type, and transmission metadata separate from the visible parentage.
+- [ ] **Graft notable life leaves:** add familiar, medically or agriculturally
+  important, ecologically important, extinct, and evolutionarily instructive
+  organisms under the reviewed biological tree.
+- [ ] **Map Roget and WordNet vocabulary:** use their concepts, synsets,
+  aliases, glosses, and sense frequencies to make SUMO and the biological
+  tree searchable in ordinary language without copying their parentage
+  blindly.
+- [ ] **Graft product vocabulary:** compare Google Product Taxonomy, GS1 GPC,
+  UNSPSC, eCl@ss, ETIM, and authorized Amazon/Walmart category exports to
+  identify missing tools, foods, appliances, clothing, vehicles, electronics,
+  materials, and household goods. Import reviewed leaves and source mappings,
+  not retail department structure wholesale.
+- [ ] **Audit everyday noun coverage:** score candidate tools, foods,
+  materials, vehicles, body parts, places, occupations, cultural objects,
+  people, and fictional entities from encyclopedias, Schema.org, Wikipedia,
+  word-frequency lists, and concreteness data.
+- [ ] **Run tree and coverage review:** test branch balance, duplicate labels,
+  ambiguous senses, recognizable stopping points, source completeness, and the
+  5K–10K page-performance budget before promoting a tranche. Compatibility with
+  20 Questions remains a downstream success criterion, not the current design
+  activity.
+
+### Biological replacement criteria
+
+The organism replacement should be judged as a curated display taxonomy, not
+as a raw dump from whichever database has the most records. In addition to the
+three proposed criteria—scientific accuracy, notable organism coverage, and
+readable labels—it should satisfy these gates:
+
+- **Evolutionary correctness:** the tree should allow humans and other
+  tetrapods to remain nested within lobe-finned fish ancestry, birds beneath
+  dinosaurs, and mammals within the appropriate synapsid lineage. Everyday
+  labels such as “fish” may remain useful gameplay categories, but they must
+  not silently replace the scientific provenance.
+- **Authority and reproducibility:** every parentage decision needs a source,
+  release, stable identifier, rank, and date. Conflicts between authorities
+  should be retained as evidence and resolved by an explicit policy.
+- **Notability diversity:** budget for familiar organisms, food and farm
+  species, pets, disease agents, keystone organisms, culturally important
+  organisms, extinct groups, and evolutionary oddities. Do not let species
+  count or corpus frequency alone crowd out entire branches.
+- **Readable presentation:** every opaque taxon needs a short plain-language
+  description, an understandable visible label where one exists, and a
+  searchable scientific-name alias. Scientific-only names should normally be
+  metadata or an expandable detail layer rather than default leaves.
+- **Rank compression with provenance:** retain an intermediate clade when it
+  explains a major evolutionary distinction or supports a useful question;
+  collapse it when it adds no playable split. The hidden source path must
+  preserve every omitted ancestor.
+- **Convergence and polyphyly clarity:** convergent forms such as bats and
+  birds, dolphins and fish, cacti and euphorbs, or marsupial and placental
+  analogues must not be placed together merely because they look or behave
+  alike. Add “convergent with” metadata instead.
+- **Extinct-life continuity:** fossils, dinosaurs, trilobites, ammonites, and
+  other extinct groups should remain in the same evolutionary history as
+  living relatives, with extinct status visible in metadata and descriptions.
+- **Single-parent usability:** the visible tree needs one reviewed display
+  parent per node, while alternate placements, synonyms, taxonomic opinions,
+  and source edges remain available for audit.
+- **Classification utility:** each visible branch should create an intuitive,
+  non-trivial distinction and have a clear interpretation for a general
+  reader. Scientific rank alone is not a sufficient reason to expose a
+  branch.
+- **Budget and balance:** measure both node count and candidate mass by branch,
+  reserve capacity for plants, fungi, microbes, and extinct life, and prevent
+  charismatic animals from consuming the entire profile.
+- **Version stability:** retain a snapshot manifest and a migration report so
+  that a source update cannot silently move familiar leaves or erase aliases.
+
+### Virus placement policy
+
+Viruses deserve inclusion but should not be forced into the organism taxonomy.
+They are acellular infectious entities with diverse evolutionary histories;
+many are more meaningfully related through host, genome, replication strategy,
+or shared viral ancestry than through a single universal tree. The default
+visible design should therefore use a dedicated **Virus and other acellular
+infectious agents** subtree under the physical/biological-agent region, while
+retaining host associations and biological hypotheses as cross-links.
+
+The virus pilot should include familiar and high-impact examples—such as
+influenza, HIV, SARS-CoV-2, Ebola, rabies, herpesviruses, bacteriophages, and
+plant viruses—alongside a compact set of major genome or replication groups.
+It should not imply that all named viruses form a clean ranked lineage.
+Each entry should record host range, disease or ecological relevance, genome
+type, transmission mode, accepted name, synonyms, and source release. If a
+future authoritative source supports a stronger viral tree, it can replace
+the provisional subtree without changing the host-association metadata.
+
 ### Selecting notable life entries
 
 The biological graft should use a two-axis inclusion policy rather than simply
@@ -215,9 +325,8 @@ those homes through an explicit reviewed crosswalk. The pipeline should:
   than duplicating visible nodes;
 - attach a short plain-language description and, where useful, an “often
   confused with” or “convergent with” note; and
-- run a gameplay review for every new branch: recognizable answers,
-  non-trivial sibling distinctions, balanced candidate mass, and a natural
-  yes/no question.
+- run a tree review for every new branch: recognizable entries, non-trivial
+  sibling distinctions, balanced candidate mass, and a clear semantic split.
 
 The visible hierarchy must not use evolutionary relatedness as the only
 question strategy. A player should first encounter useful distinctions such
@@ -652,6 +761,119 @@ The reproducible extraction recipe is:
   categories, cycles, maintenance branches, and multiple parents are not
   collapsed into a falsely authoritative single tree.
 
+### Product-type taxonomies
+
+Product taxonomies are valuable prior art for the artifact, food, clothing,
+tool, appliance, vehicle, electronics, and household portions of the tree.
+They are usually optimized for retail navigation, search, listing validation,
+or supply-chain interoperability rather than general ontology design. Their
+strength is dense coverage of familiar manufactured goods; their weakness is
+that commercial departments, brands, attributes, and merchandising use cases
+are often mixed into the hierarchy.
+
+The top five publicly accessible product-classification systems to evaluate
+are:
+
+#### Google Product Taxonomy
+
+- **Source:** [Google's product taxonomy](https://www.google.com/basepages/producttype/taxonomy.en-US.txt)
+  and [Merchant Center product data documentation](https://support.google.com/merchants/answer/6324436).
+- **Structure:** a large, human-readable category path with numeric IDs,
+  designed for product feeds and shopping search.
+- **Access:** the taxonomy file is publicly downloadable. Its terms and
+  update policy should be recorded with each imported snapshot.
+- **Fit:** probably the best first retail source for familiar product names
+  and practical department coverage. It is useful for candidate discovery,
+  but should not dictate the ontology's treatment of natural objects,
+  services, or abstract concepts.
+
+#### GS1 Global Product Classification (GPC)
+
+- **Source:** [GS1 GPC](https://www.gs1.org/standards/gpc).
+- **Structure:** a global supply-chain classification organized around
+  segments, families, classes, and bricks, with attributes and rules that
+  support product identification across trading partners.
+- **Access:** the standard, browser, and release materials are publicly
+  discoverable; some downloadable content and reuse rights may require GS1
+  registration or acceptance of licensing terms.
+- **Fit:** excellent as a stable cross-industry product backbone and for
+  checking whether a proposed retail branch is missing a major category.
+  Its business-oriented granularity should be compressed before display.
+
+#### UNSPSC
+
+- **Source:** the [UNSPSC overview](https://en.wikipedia.org/wiki/United_Nations_Standard_Products_and_Services_Code)
+  and the code-set steward's historical [UNSPSC site](https://www.unspsc.org/).
+- **Structure:** a four-level hierarchical code set covering segments,
+  families, classes, and commodities across goods and services.
+- **Access:** the taxonomy is publicly documented and widely used, but the
+  steward's current site and code-set download availability should be
+  revalidated before importing a snapshot; the domain may not currently be a
+  reliable distribution endpoint.
+- **Fit:** useful for broad coverage and procurement-oriented gaps,
+  especially where consumer retail taxonomies omit industrial goods,
+  services, or professional equipment. It is less friendly as a visible
+  noun tree because many leaves are procurement labels.
+
+#### eCl@ss
+
+- **Source:** [eCl@ss International](https://eclass.eu/en/).
+- **Structure:** a hierarchical product and service classification with
+  standardized classes, properties, and value domains, used heavily in
+  industrial and business-to-business data exchange.
+- **Access:** the standard and documentation are publicly described, while
+  complete releases and some reuse rights may require registration or a
+  license.
+- **Fit:** strong for machinery, components, materials, industrial tools,
+  and technical products that consumer taxonomies underrepresent. It should
+  be an audit source and vocabulary reservoir, not a direct player-facing
+  hierarchy.
+
+#### ETIM
+
+- **Source:** [ETIM International](https://www.etim-international.com/).
+- **Structure:** a product-classification model centered on standardized
+  classes and product features, especially for electrical, HVAC, building,
+  installation, and technical-trade products.
+- **Access:** the model is publicly described and used through national
+  implementations; complete releases and commercial reuse conditions vary by
+  member and license.
+- **Fit:** valuable for tools, hardware, building products, appliances, and
+  technical equipment. It supplies detailed feature vocabulary that can
+  enrich leaves, but its feature-centric design should remain metadata
+  rather than become extra visible branches.
+
+#### Amazon and Walmart operational taxonomies
+
+Amazon and Walmart are important prior art even though neither appears to
+offer an unrestricted, complete public download of its live product-type
+hierarchy.
+
+- **Amazon:** Amazon exposes public documentation for the
+  [Selling Partner API product-type definitions](https://developer-docs.amazon.com/sp-api/docs/product-type-definitions-api)
+  and seller-facing browse/product-type concepts, but the complete current
+  category and product-type data is tied to marketplaces, regions,
+  authenticated APIs, and commercial operational use. Public documentation
+  is therefore available; a complete public taxonomy snapshot is not assumed.
+  Amazon is especially useful for studying retail granularity, browse-node
+  navigation, required attributes, and the distinction between product type
+  and department.
+- **Walmart:** Walmart Marketplace provides public entry points to its
+  [Marketplace APIs](https://developer.walmart.com/us-marketplace/docs/introduction-to-marketplace-apis)
+  and item-setup workflows, while the detailed category, item-specification,
+  and validation taxonomy is generally exposed through authenticated
+  seller/partner tooling. It should be treated as restricted prior art unless
+  a distributable public release can be identified. Its value is high for
+  practical retail category coverage, especially for grocery, consumables,
+  household goods, apparel, and general merchandise.
+
+The project should use the public systems as candidate generators and
+cross-checks, not merge their department trees directly. A product leaf
+should retain its source code and paths, then receive a reviewed home in the
+SUMO/PDF-derived tree. Amazon and Walmart material can be used for internal
+audits where authorized, but no proprietary taxonomy content should be copied
+into the public repository without permission.
+
 ### Online biological taxonomies
 
 These resources are the strongest available prior art for extending the
@@ -1026,8 +1248,8 @@ Roget can still improve v1 in several disciplined ways:
   under reviewed existing parents.
 - **Sibling discovery:** compare nearby Roget concepts to identify gaps such as
   common foods, tools, materials, body parts, and organisms.
-- **Question wording:** use Roget's synonym neighborhoods to make search and
-  question phrasing more forgiving without adding duplicate concepts.
+- **Vocabulary wording:** use Roget's synonym neighborhoods to make labels
+  and search more forgiving without adding duplicate concepts.
 - **Abstract branch review:** use Roget's classes to audit v1's abstract
   coverage, while retaining v1's game-oriented boundaries.
 - **Separate alternate profile:** preserve the Roget browser as a conceptual
@@ -1035,8 +1257,8 @@ Roget can still improve v1 in several disciplined ways:
 
 The next Roget step is not to add more raw words. It is to turn any proposed
 new answer categories into a reviewed manifest: map each candidate noun phrase
-to a v1 parent, record evidence and intended question behavior, and accept
-only familiar terms with a clear answer interpretation.
+to a v1 parent, record evidence and intended semantic placement, and accept
+only familiar terms with a clear interpretation.
 
 ## Structure before scale
 
@@ -1048,25 +1270,25 @@ structure-first v1.1 review:
 - collapse unary source paths and preserve their scientific/provenance detail
   outside the default game view;
 - inspect every top-level and second-level split for balanced candidate mass;
-- rewrite questions so they test observable, stable distinctions rather than
-  merely restating a label;
+- rewrite labels and branch descriptions so they express observable, stable
+  distinctions rather than merely restating a parent label;
 - identify misplaced leaves, duplicate labels, overloaded branches, and
   missing everyday sibling categories; and
 - accept new leaves only after a parent and a useful discriminator already
   exist.
 
 This ordering explains why the initial handcrafted tree performs better than
-the larger imported profiles. It was designed backward from the player's
-next question: choose a small number of familiar, answerable distinctions,
-keep sibling branches comparable, and stop at recognizable noun categories.
+the larger imported profiles. It was designed around small numbers of
+familiar, answerable distinctions, comparable siblings, and recognizable noun
+categories.
 Roget's tree optimizes conceptual association, Propædia optimizes coverage of
 human knowledge, and biological databases optimize scientific ancestry. None
-optimizes the joint objective of familiar answers, balanced questions,
+optimizes the joint objective of familiar labels, balanced semantic branches,
 single-parent navigation, and useful stopping depth. That objective is a
 specialized design problem, so the absence of a ready-made prior-art tree is
 expected rather than evidence that the handcrafted structure is anomalous.
 
-## 20 Questions projection algorithm
+## Navigation projection algorithm
 
 The source graph should remain authoritative. The build profile should:
 
@@ -1075,7 +1297,7 @@ The source graph should remain authoritative. The build profile should:
 - add complete source ancestry needed to connect selected concepts;
 - choose one deterministic display parent only for presentation;
 - calculate subtree candidate mass and prefer balanced displayed splits;
-- generate questions from source distinctions or declared attributes; and
+- expose source distinctions and declared attributes as branch metadata; and
 - preserve discarded candidates and alternate paths in a manifest.
 
 This keeps source semantics separate from game presentation. The one-page tree
@@ -1084,16 +1306,15 @@ is a reproducible view, not a hand-maintained fork.
 ## Future experiments
 
 The WordNet experiment should be evaluated at target sizes near 5K, 8.9K, and
-10K nodes. Measure browser load, full expansion, search latency, memory,
-maximum depth, duplicate labels, and the quality of suggested questions.
+10K nodes. Measure browser load, full expansion, search latency, memory, maximum depth,
+duplicate labels, and branch coverage.
 Prefer the smallest profile that covers common game answers while preserving
 the current one-page browsing experience.
 
-The next useful improvements are the v1.1 structural audit, a question
-generator based on subtree balance, a coverage report for ordinary game-answer
-lists, and only then a biological pilot containing the high-priority survivors,
-convergent examples, marsupials, and extinct groups described above. The pilot
-should produce compact and fuller profiles from one source manifest rather than
-forking the ontology. Wikidata, FoodOn, and Wikipedia can then be tested as
-separately labeled enrichment profiles, not silently merged into the WordNet
-ontology.
+The next useful improvements are the v1.1 structural audit, a coverage report
+for ordinary game-answer lists, and only then a biological pilot containing the
+high-priority survivors, convergent examples, marsupials, and extinct groups
+described above. The pilot should produce compact and fuller profiles from one
+source manifest rather than forking the ontology. Wikidata, FoodOn, and
+Wikipedia can then be tested as separately labeled enrichment profiles, not
+silently merged into the WordNet ontology.

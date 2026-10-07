@@ -13,7 +13,7 @@ main{max-width:1100px;margin:auto;padding:24px}h1{margin:0 0 4px}h2{margin-top:2
 .controls{display:flex;gap:8px;flex-wrap:wrap;margin:18px 0}
 input,button{background:var(--bg);border:1px solid var(--line);border-radius:5px;color:var(--fg);padding:8px 10px}
 input{min-width:280px;flex:1}button{cursor:pointer}ul{list-style:none;margin:0;padding-left:22px}li{margin:3px 0}
-summary{cursor:pointer}.meta{color:var(--muted);font-size:12px;margin-left:6px}.alt{color:var(--muted);font-size:12px;margin:4px 0 8px 22px}
+summary{cursor:pointer}.meta{color:var(--muted);font-size:12px;margin-left:6px}.definition{color:var(--muted);font-size:13px;margin-left:8px;display:inline-block;max-width:min(52vw,620px);overflow:hidden;text-overflow:ellipsis;white-space:nowrap;vertical-align:bottom}.full-definition{margin:8px 0;color:var(--fg)}.alt,.reverse{font-size:13px;margin:6px 0 8px 22px}.alt,.reverse{color:var(--muted)}
 a{color:var(--accent)}#results{margin:10px 0 18px}.result{padding:5px 0;border-bottom:1px solid var(--line)}
 </style>
 </head>
@@ -31,23 +31,30 @@ parent. Removed parents remain visible as alternate cross-links.</div>
 </main>
 <script>
 const esc=v=>String(v).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-let data,byId;
-function renderNode(id){const n=byId.get(id),alt=n.alternateParents.length?
-`<div class="alt">Dropped cross-links: ${n.alternateParents.map(esc).join(', ')}</div>`:'';
-const provisional=n.provisionalParent?` <span class="meta">provisional placement</span>`:'';
-const text=`${esc(n.label)} <span class="meta">${esc(n.id)}${n.directParentCount>1?` · ${n.directParentCount} parents`:''}</span>${provisional}`;
-if(!n.children.length)return `<li>${text}${alt}</li>`;
-return `<li><details open><summary>${text}</summary>${alt}<ul>${n.children.map(renderNode).join('')}</ul></details></li>`}
+let data,byId,alternateChildren;
+function link(id){const n=byId.get(id);return n?`<a href="#${encodeURIComponent(id)}" data-node="${esc(id)}">${esc(n.label)}</a>`:esc(id)}
+function renderNode(id){const n=byId.get(id);
+const childCount=`<span class="meta"> · ${n.children.length} &#8595;</span>`;
+const altCount=n.alternateParents.length?`<span class="meta"> · ${n.alternateParents.length} &#8593;</span>`:'';
+const provisional=n.provisionalParent?` <span class="meta">· provisional placement</span>`:'';
+const shortDef=n.definition?`<span class="definition" title="${esc(n.definition)}">${esc(n.definition)}</span>`:'';
+const text=`${esc(n.label)}${childCount}${altCount}${provisional}${shortDef}`;
+const full=n.definition?`<div class="full-definition">${esc(n.definition)}</div>`:'';
+const alts=n.alternateParents.length?`<div class="alt"><strong>Alternate Parents:</strong> ${n.alternateParents.map(link).join(', ')}</div>`:'';
+const reverse=alternateChildren.get(id)||[];
+const reverseBlock=reverse.length?`<div class="reverse"><strong>Alternate Children:</strong> ${reverse.map(link).join(', ')}</div>`:'';
+return `<li id="${encodeURIComponent(id)}"><details><summary>${text}</summary>${full}${alts}${reverseBlock}<ul>${n.children.map(renderNode).join('')}</ul></details></li>`}
 function render(){document.querySelector('#tree').innerHTML=data.rootNodes.map(root=>`<h2>${esc(byId.get(root).label)}</h2><ul>${renderNode(root)}</ul>`).join('');
 document.querySelector('#summary').textContent=`${data.stats.nodeCount.toLocaleString()} concepts · ${data.stats.projectedEdgeCount.toLocaleString()} primary edges · ${data.stats.multipleParentNodeCount.toLocaleString()} alternate-parent cases · ${data.stats.unaryNodeCount.toLocaleString()} unary nodes`;
 }
 document.querySelector('#expand').onclick=()=>document.querySelectorAll('#tree details').forEach(x=>x.open=true);
 document.querySelector('#collapse').onclick=()=>document.querySelectorAll('#tree details').forEach(x=>x.open=false);
+document.querySelector('#tree').onclick=e=>{const a=e.target.closest('a[data-node]');if(!a)return;e.preventDefault();const node=document.getElementById(encodeURIComponent(a.dataset.node));if(node){node.scrollIntoView({block:'center'});node.querySelector(':scope > details').open=true}};
 document.querySelector('#search').oninput=e=>{const q=e.target.value.trim().toLowerCase();
 const hits=data.nodes.filter(n=>`${n.id} ${n.label}`.toLowerCase().includes(q)).slice(0,100);
 document.querySelector('#results').innerHTML=q?`<strong>${hits.length}${hits.length===100?'+':''} matches</strong>`+
-hits.map(n=>`<div class="result">${esc(n.label)} <span class="meta">${esc(n.id)}</span></div>`).join(''):''};
-fetch('sumo.json').then(r=>r.json()).then(x=>{data=x;byId=new Map(data.nodes.map(n=>[n.id,n]));render()})
+hits.map(n=>`<div class="result">${link(n.id)} <span class="meta">${esc(n.id)}</span></div>`).join(''):''};
+fetch('sumo.json').then(r=>r.json()).then(x=>{data=x;byId=new Map(data.nodes.map(n=>[n.id,n]));alternateChildren=new Map();data.nodes.forEach(n=>n.alternateParents.forEach(parent=>{if(!alternateChildren.has(parent))alternateChildren.set(parent,[]);alternateChildren.get(parent).push(n.id)}));render()})
 .catch(e=>document.querySelector('#tree').textContent=`Could not load sumo.json: ${e}`);
 </script>
 </body>

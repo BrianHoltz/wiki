@@ -10,12 +10,47 @@ from collections import defaultdict, deque
 from pathlib import Path
 
 SUBCLASS_RE = re.compile(r"^\s*\(subclass\s+([^\s()]+)\s+([^\s()]+)\)")
+DOC_START_RE = re.compile(
+    r"\(documentation\s+([^\s()]+)\s+English(?:Language|WrittenLanguage)\s+\""
+)
 
 
 def label(term: str) -> str:
     words = re.sub(r"([a-z0-9])([A-Z])", r"\1 \2", term)
     words = re.sub(r"([A-Za-z])([0-9])", r"\1 \2", words)
     return words.replace("_", " ")
+
+
+def load_definitions(source_dir: Path | None, terms: set[str]) -> dict[str, str]:
+    if not source_dir:
+        return {}
+    definitions = {}
+    for path in sorted(source_dir.glob("*.kif")):
+        text = path.read_text(encoding="utf-8", errors="replace")
+        for match in DOC_START_RE.finditer(text):
+            term = match.group(1)
+            if term not in terms or term in definitions:
+                continue
+            index = match.end()
+            chars = []
+            escaped = False
+            while index < len(text):
+                char = text[index]
+                if escaped:
+                    chars.append(char)
+                    escaped = False
+                elif char == "\\":
+                    escaped = True
+                elif char == '"':
+                    break
+                else:
+                    chars.append(char)
+                index += 1
+            if index < len(text):
+                definition = re.sub(r"\s+", " ", "".join(chars)).strip()
+                if definition:
+                    definitions[term] = definition
+    return definitions
 
 
 def load_edges(source_dir: Path):
@@ -117,7 +152,7 @@ def build(source_dir: Path, pdf_edges: Path | None = None):
     }
 
 
-def build_pdf(pdf_graph: Path):
+def build_pdf(pdf_graph: Path, definitions_dir: Path | None = None):
     graph = json.loads(pdf_graph.read_text(encoding="utf-8"))
     nodes = set(graph["nodes"])
     incoming = defaultdict(list)
@@ -148,11 +183,13 @@ def build_pdf(pdf_graph: Path):
     for parent in projected:
         projected[parent].sort(key=lambda term: (label(term).lower(), term))
 
+    definitions = load_definitions(definitions_dir, nodes)
     roots = sorted(nodes - set(selected), key=lambda term: (term != "Entity", label(term).lower(), term))
     records = [
         {
             "id": term,
             "label": label(term),
+            "definition": definitions.get(term),
             "children": projected.get(term, []),
             "alternateParents": alternates.get(term, []),
             "directParentCount": len(incoming.get(term, [])),
@@ -169,6 +206,10 @@ def build_pdf(pdf_graph: Path):
                 "For every PDF node with multiple incoming arcs, remove the "
                 "longest measured incoming arc repeatedly until one primary "
                 "parent remains. Retain removed parents as cross-links."
+            ),
+            "definitionSource": (
+                "English documentation statements in the SUMO KIF source files."
+                if definitions_dir else None
             ),
         },
         "stats": {
@@ -195,10 +236,11 @@ def main():
     parser.add_argument("--source-dir", type=Path)
     parser.add_argument("--pdf-edges", type=Path)
     parser.add_argument("--pdf-graph", type=Path)
+    parser.add_argument("--definitions-dir", type=Path)
     parser.add_argument("--output", type=Path, required=True)
     args = parser.parse_args()
     if args.pdf_graph:
-        result = build_pdf(args.pdf_graph)
+        result = build_pdf(args.pdf_graph, args.definitions_dir)
     elif args.source_dir:
         result = build(args.source_dir, args.pdf_edges)
     else:
