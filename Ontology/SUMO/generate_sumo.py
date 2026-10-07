@@ -53,6 +53,19 @@ def load_definitions(source_dir: Path | None, terms: set[str]) -> dict[str, str]
     return definitions
 
 
+def load_definition_file(path: Path | None, terms: set[str]) -> dict[str, str]:
+    if not path:
+        return {}
+    payload = json.loads(path.read_text(encoding="utf-8"))
+    if isinstance(payload, dict) and "definitions" in payload:
+        payload = payload["definitions"]
+    return {
+        term: value if isinstance(value, str) else value["text"]
+        for term, value in payload.items()
+        if term in terms and (isinstance(value, str) or isinstance(value, dict))
+    }
+
+
 def load_edges(source_dir: Path):
     edges = []
     order = {}
@@ -152,7 +165,12 @@ def build(source_dir: Path, pdf_edges: Path | None = None):
     }
 
 
-def build_pdf(pdf_graph: Path, definitions_dir: Path | None = None):
+def build_pdf(
+    pdf_graph: Path,
+    definitions_dir: Path | None = None,
+    external_definitions: Path | None = None,
+    editorial_definitions: Path | None = None,
+):
     graph = json.loads(pdf_graph.read_text(encoding="utf-8"))
     nodes = set(graph["nodes"])
     incoming = defaultdict(list)
@@ -184,12 +202,23 @@ def build_pdf(pdf_graph: Path, definitions_dir: Path | None = None):
         projected[parent].sort(key=lambda term: (label(term).lower(), term))
 
     definitions = load_definitions(definitions_dir, nodes)
+    external = load_definition_file(external_definitions, nodes)
+    editorial = load_definition_file(editorial_definitions, nodes)
     roots = sorted(nodes - set(selected), key=lambda term: (term != "Entity", label(term).lower(), term))
     records = [
         {
             "id": term,
             "label": label(term),
-            "definition": definitions.get(term),
+            "definition": definitions.get(term) or external.get(term) or editorial.get(term),
+            "definitionSource": (
+                "SUMO KIF"
+                if term in definitions
+                else "external source"
+                if term in external
+                else "project editorial"
+                if term in editorial
+                else None
+            ),
             "children": projected.get(term, []),
             "alternateParents": alternates.get(term, []),
             "directParentCount": len(incoming.get(term, [])),
@@ -207,9 +236,9 @@ def build_pdf(pdf_graph: Path, definitions_dir: Path | None = None):
                 "longest measured incoming arc repeatedly until one primary "
                 "parent remains. Retain removed parents as cross-links."
             ),
-            "definitionSource": (
-                "English documentation statements in the SUMO KIF source files."
-                if definitions_dir else None
+            "definitionPolicy": (
+                "Prefer SUMO KIF documentation, then external source definitions, "
+                "then project editorial definitions."
             ),
         },
         "stats": {
@@ -218,6 +247,10 @@ def build_pdf(pdf_graph: Path, definitions_dir: Path | None = None):
             "multipleParentNodeCount": sum(bool(value) for value in alternates.values()),
             "unaryNodeCount": len(unary),
             "definitionCount": sum(bool(record["definition"]) for record in records),
+            "definitionCountsBySource": {
+                source: sum(record["definitionSource"] == source for record in records)
+                for source in ("SUMO KIF", "external source", "project editorial")
+            },
             "rootCount": len(roots),
             "pdfEdgeCount": graph["edgeCount"],
             "provisionalPlacementCount": sum(
@@ -238,10 +271,17 @@ def main():
     parser.add_argument("--pdf-edges", type=Path)
     parser.add_argument("--pdf-graph", type=Path)
     parser.add_argument("--definitions-dir", type=Path)
+    parser.add_argument("--external-definitions", type=Path)
+    parser.add_argument("--editorial-definitions", type=Path)
     parser.add_argument("--output", type=Path, required=True)
     args = parser.parse_args()
     if args.pdf_graph:
-        result = build_pdf(args.pdf_graph, args.definitions_dir)
+        result = build_pdf(
+            args.pdf_graph,
+            args.definitions_dir,
+            args.external_definitions,
+            args.editorial_definitions,
+        )
     elif args.source_dir:
         result = build(args.source_dir, args.pdf_edges)
     else:
