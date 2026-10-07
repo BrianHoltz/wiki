@@ -2,7 +2,7 @@
 
 - [BrianThinks](BrianThinks.md) — AI proxy constitution
 - [BrianThinksManually](BrianThinksManually.md) — AI proxy portal
-- [Ontology design and prior art](Ontology/Ontology.md)
+- [Ontology](Ontology/Ontology.md)
 
 ### Artificial Intelligence
 
