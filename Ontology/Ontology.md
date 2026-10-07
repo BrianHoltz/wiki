@@ -1014,6 +1014,37 @@ The key placement decisions are now explicit:
   representational or institutional patterns, while their physical
   embodiments remain linked to Physical entities.
 
+The four non-mathematical abstract branches are a strawman census, not an
+assertion that they are equally mature:
+
+- **Informational entity** — `Data`, `Record`, `Dataset`, `Signal`, `Message`,
+  `Observation`, `Measurement`, `Fact`, `Knowledge`, and `Belief`. These are
+  content-bearing or content-dependent entities whose identity depends on
+  information, evidence, or interpretation.
+- **Representational entity** — `Symbol`, `Name`, `Label`, `Notation`,
+  `Description`, `Classification`, `Schema`, `Ontology`, `Language`,
+  `Document`, `Image`, `Audio`, `Video`, `Software`, and `Model`. These are
+  entities that encode, express, preserve, or transmit content. A physical
+  inscription or device is linked separately as an embodied artifact.
+- **Social entity** — `Person`, `Group`, `Community`, `Relationship`,
+  `Role`, `Status`, `Agreement`, `Convention`, `Practice`, `Event`, and
+  `Institution`. This branch is for socially constituted entities and
+  patterns whose persistence depends on participants, recognition, or shared
+  practice.
+- **Institutional entity** — `Organization`, `Government`, `Corporation`,
+  `Club`, `School`, `Court`, `Market`, `Currency`, `Law`, `Contract`,
+  `License`, `Policy`, and `Office`. This is a proposed refinement of Social
+  entity for durable rule-governed structures, rather than a claim that every
+  institution is ontologically separate.
+
+The census exposes two likely tensions. `Document`, `Software`, and `Model`
+can be informational content, representational artifact, or physical
+artifact depending on whether the question concerns meaning, encoding, or
+embodiment. `Role`, `Status`, `Agreement`, and `Practice` can be social
+entities or properties of participants. The source graph should preserve
+those facets; the player-facing projection can retain the four siblings only
+if they produce useful questions and recognizable leaves.
+
 ### Top-layer coverage inventory
 Before choosing a root arrangement, we need an unordered inventory of the
 important high-level kinds of thing that must have a home in the first two or
@@ -1022,7 +1053,7 @@ items are mutually exclusive in a particular modeling scheme; others are
 orthogonal roles that should be represented as types, facets, or cross-links
 rather than forced into one `is-a` tree.
 
-### Worldly entities and occurrences
+#### Worldly entities and occurrences
 
 - **Entities and instances** — particular things, individuals, collections,
   kinds, classes, types, and tokens.
@@ -1052,7 +1083,7 @@ rather than forced into one `is-a` tree.
   dispositions, tendencies, possibilities, necessities, counterfactuals, and
   constraints.
 
-### Properties and ways of being
+#### Properties and ways of being
 
 - **Qualities** — color, shape, mass, temperature, age, health, texture,
   intelligence, beauty, and other attributes that characterize something.
@@ -1068,7 +1099,7 @@ rather than forced into one `is-a` tree.
   substitutability, similarity, and criteria for counting two descriptions as
   one thing.
 
-### Relations and structure
+#### Relations and structure
 
 - **Relations** — binary and n-ary connections among entities, including
   part-of, member-of, instance-of, subclass-of, located-in, owned-by,
@@ -1086,7 +1117,7 @@ rather than forced into one `is-a` tree.
 - **Structures and invariants** — entities defined by operations and laws,
   together with properties preserved by mappings or transformations.
 
-### Information, language, and representation
+#### Information, language, and representation
 
 - **Information and data** — signals, measurements, records, datasets,
   observations, messages, and stored or transmitted content.
@@ -1105,7 +1136,7 @@ rather than forced into one `is-a` tree.
 - **Knowledge and belief** — evidence, observation, belief, justification,
   explanation, prediction, inference, and uncertainty.
 
-### Logic and foundations
+#### Logic and foundations
 
 - **Logical objects** — terms, variables, constants, predicates, formulas,
   propositions, sequents, theories, and models.
@@ -1132,7 +1163,7 @@ rather than forced into one `is-a` tree.
 - **Mathematical models and theories** — formal structures interpreted as
   models of mathematics, science, computation, or possible worlds.
 
-### Time, change, and modality
+#### Time, change, and modality
 
 - **Time and temporal order** — instants, intervals, duration, succession,
   simultaneity, recurrence, history, and temporal precedence.
@@ -1143,7 +1174,7 @@ rather than forced into one `is-a` tree.
 - **Causation and explanation** — causal mechanism, intervention,
   correlation, dependence, explanation, prediction, and law.
 
-### Cross-cutting distinctions the upper layer must preserve
+#### Cross-cutting distinctions the upper layer must preserve
 
 - **Particular versus universal** — an individual dog versus the kind
   `dog`, and a particular event versus an event type.
@@ -2103,7 +2134,7 @@ discovery. It is useful for the player-facing language layer, but its
 categories are not sufficiently formal to serve as the authoritative
 semantic model.
 
-### Current recommendation
+### Canonical implementation rules
 
 Use the **minimal semantic variant** as the initial visible projection, with
 `Entity`, `Property`, and `Relation` as the only mandatory top-level nodes.
