@@ -171,6 +171,50 @@ project, not by scientific authority alone:
 - [TimeTree](https://timetree.org/) — useful for evolutionary relationships
   and divergence context, not as the visible noun hierarchy.
 
+### Single-pane and compressed tree renders
+
+The sources above are too inclusive to copy directly. The more relevant prior
+art is a deliberately compressed whole-tree presentation: roughly 500–2,000
+recognizable nodes on one canvas or one browsable pane, with omitted detail
+available through context rather than displayed by default. Ranked by fit:
+
+- [Evogeneao Tree of Life diagram](https://www.evogeneao.com/en/learn/tree-of-life)
+  and [Tree of Life Explorer](https://www.evogeneao.com/en/explore/tree-of-life-explorer)
+  — best visual and pedagogical fit. It intentionally shows major and some
+  minor branches, extinct groups, and familiar labels in one comprehensible
+  diagram. Its authors explicitly warn that it is simplified, human-centered,
+  and not a scholarly reference, which is precisely why it is useful as
+  presentation prior art but not as the taxonomic authority.
+- [UCMP Life on Earth / Three Domains of Life](https://ucmp.berkeley.edu/alllife/threedomains.html)
+  — strong compact model for showing Bacteria, Archaea, Eukaryota, and a
+  separate virus treatment, with linked deeper exhibits. It is smaller and
+  sparser than our target, but its visible-versus-linked-detail pattern is
+  highly suitable.
+- [Understanding Evolution: patterns of life's history](https://evolution.berkeley.edu/evolution-101/the-history-of-life-looking-at-the-patterns/)
+  — an unusually approachable compact cladogram using recognizable groups
+  such as sharks, ray-finned fish, amphibians, primates, rodents, crocodiles,
+  and dinosaurs/birds. It is far below 500 nodes, so it is a model for
+  branch labeling and explanatory annotations rather than a candidate import.
+- [TimeTree 5](https://timetree.org/) — a polished single visualization
+  experience with a spiral tree and extensive species coverage. Its roughly
+  148,000 species make it much too inclusive for direct import, but it is
+  valuable prior art for showing a large tree while keeping navigation
+  visually coherent.
+- [Tree of Life Web Project](https://tolweb.org/Life_on_Earth/1) — a
+  browsable linked tree with group pages, illustrations, and evolutionary
+  notes. It is not a single-pane 500–2,000-node rendering, but it is a useful
+  model for attaching explanatory pages to compressed clades.
+- [Tree of life diagrams and historical examples](https://en.wikipedia.org/wiki/Tree_of_life_(biology))
+  — a useful gallery of Haeckel, Woese, and other whole-life diagrams. These
+  are historical or schematic rather than importable authorities, but they
+  show how much structure can be communicated in one static render.
+
+The likely next experiment is not to import OneZoom, Open Tree, or Catalogue
+of Life wholesale. Instead, use the best compressed render as a layout and
+labeling template, select approximately 500–2,000 major taxa from the
+recommended source combination, and preserve the complete scientific tree and
+source IDs behind the compressed display.
+
 Recommended source combination: use Open Tree of Life for evolutionary
 structure, Catalogue of Life for accepted names and synonyms, GBIF and NCBI
 for normalization and coverage checks, and OneZoom as the browsing-model
