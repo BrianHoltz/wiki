@@ -1,10 +1,13 @@
 # SUMO unary-node inventory
 
 Generated from the current PDF-derived SUMO projection after the organism
-backbone graft. These 53 concepts have exactly one projected child.
+backbone graft. These 55 concepts have exactly one projected child.
 
 - `ArtiﬁcialLanguage` — Artiﬁcial Language
+- `BioCarnivora` — Carnivora
 - `BioDinosauria` — Dinosauria
+- `BioHomosapiens` — Homo sapiens
+- `BioOthergymnosperms` — Other gymnosperms
 - `BioStreptophyta` — Streptophyta
 - `BioSynapsida` — Synapsida
 - `Certiﬁcate` — Certiﬁcate

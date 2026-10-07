@@ -6,15 +6,15 @@
     "definitionPolicy": "Prefer SUMO KIF documentation, then external source definitions, then project editorial definitions."
   },
   "stats": {
-    "nodeCount": 563,
-    "projectedEdgeCount": 562,
+    "nodeCount": 607,
+    "projectedEdgeCount": 606,
     "multipleParentNodeCount": 38,
-    "unaryNodeCount": 53,
-    "definitionCount": 482,
+    "unaryNodeCount": 56,
+    "definitionCount": 526,
     "definitionCountsBySource": {
       "SUMO KIF": 403,
       "external source": 0,
-      "project editorial": 79
+      "project editorial": 123
     },
     "rootCount": 1,
     "pdfEdgeCount": 554,
@@ -5671,7 +5671,7 @@
     },
     {
       "id": "BioArchaeplastida",
-      "label": "Archaeplastida",
+      "label": "Archaeplastida (Plantae)",
       "definition": "1600Mya: eukaryotes descended from a primary cyanobacterial plastid acquisition",
       "definitionSource": "Human Knowledge 2000 taxonomy table + modern clade correction",
       "originYearsAgo": 1600000000,
@@ -5772,7 +5772,7 @@
     },
     {
       "id": "BioBryophytes",
-      "label": "Bryophytes",
+      "label": "Bryophytes (Bryophyta)",
       "definition": "470Mya: mosses, liverworts, and hornworts, generally lacking vascular tissue",
       "definitionSource": "Human Knowledge 2000 taxonomy table + modern clade correction",
       "originYearsAgo": 470000000,
@@ -5838,7 +5838,7 @@
     },
     {
       "id": "BioFernsandhorsetails",
-      "label": "Ferns and horsetails",
+      "label": "Ferns and horsetails (Monilophyta)",
       "definition": "370Mya: spore-producing euphyllophytes with fronds or jointed stems",
       "definitionSource": "Human Knowledge 2000 taxonomy table + modern clade correction",
       "originYearsAgo": 370000000,
@@ -5908,6 +5908,23 @@
       "definition": "320Mya: cycads, ginkgo, and gnetophytes",
       "definitionSource": "Human Knowledge 2000 taxonomy table + modern clade correction",
       "originYearsAgo": 320000000,
+      "children": [
+        "BioCycads"
+      ],
+      "alternateParents": [],
+      "directParentCount": 1,
+      "provisionalParent": null,
+      "sourceRefs": [
+        "Human Knowledge 2000 taxonomy table",
+        "Wikipedia clade articles"
+      ]
+    },
+    {
+      "id": "BioCycads",
+      "label": "Cycads (Cycadophyta)",
+      "definition": "280Mya: palm-like gymnosperms with large cones",
+      "definitionSource": "Human Knowledge 2000 taxonomy table + modern clade correction",
+      "originYearsAgo": 280000000,
       "children": [],
       "alternateParents": [],
       "directParentCount": 1,
@@ -6152,10 +6169,7 @@
       "originYearsAgo": 700000000,
       "children": [
         "BioPorifera",
-        "BioCtenophora",
-        "BioPlacozoa",
-        "BioCnidaria",
-        "BioBilateria"
+        "BioEumetazoa"
       ],
       "alternateParents": [],
       "directParentCount": 1,
@@ -6172,6 +6186,26 @@
       "definitionSource": "Human Knowledge 2000 taxonomy table + modern clade correction",
       "originYearsAgo": 650000000,
       "children": [],
+      "alternateParents": [],
+      "directParentCount": 1,
+      "provisionalParent": null,
+      "sourceRefs": [
+        "Human Knowledge 2000 taxonomy table",
+        "Wikipedia clade articles"
+      ]
+    },
+    {
+      "id": "BioEumetazoa",
+      "label": "Eumetazoa",
+      "definition": "600Mya: animals with true tissues, including cnidarians and bilaterians",
+      "definitionSource": "Human Knowledge 2000 taxonomy table + modern clade correction",
+      "originYearsAgo": 600000000,
+      "children": [
+        "BioCtenophora",
+        "BioPlacozoa",
+        "BioCnidaria",
+        "BioBilateria"
+      ],
       "alternateParents": [],
       "directParentCount": 1,
       "provisionalParent": null,
@@ -6776,6 +6810,694 @@
       "definition": "100Mya: mammals whose young develop through a complex placental connection",
       "definitionSource": "Human Knowledge 2000 taxonomy table + modern clade correction",
       "originYearsAgo": 100000000,
+      "children": [
+        "BioAfrotheria",
+        "BioXenarthra",
+        "BioLaurasiatheria",
+        "BioEuarchontoglires"
+      ],
+      "alternateParents": [],
+      "directParentCount": 1,
+      "provisionalParent": null,
+      "sourceRefs": [
+        "Human Knowledge 2000 taxonomy table",
+        "Wikipedia clade articles"
+      ]
+    },
+    {
+      "id": "BioAfrotheria",
+      "label": "Afrotheria",
+      "definition": "100Mya: placental mammals with African evolutionary roots",
+      "definitionSource": "Human Knowledge 2000 taxonomy table + modern clade correction",
+      "originYearsAgo": 100000000,
+      "children": [
+        "BioTubulidentata",
+        "BioProboscidea",
+        "BioSirenia",
+        "BioHyracoidea"
+      ],
+      "alternateParents": [],
+      "directParentCount": 1,
+      "provisionalParent": null,
+      "sourceRefs": [
+        "Human Knowledge 2000 taxonomy table",
+        "Wikipedia clade articles"
+      ]
+    },
+    {
+      "id": "BioTubulidentata",
+      "label": "Tubulidentata",
+      "definition": "60Mya: the aardvark order",
+      "definitionSource": "Human Knowledge 2000 taxonomy table + modern clade correction",
+      "originYearsAgo": 60000000,
+      "children": [],
+      "alternateParents": [],
+      "directParentCount": 1,
+      "provisionalParent": null,
+      "sourceRefs": [
+        "Human Knowledge 2000 taxonomy table",
+        "Wikipedia clade articles"
+      ]
+    },
+    {
+      "id": "BioProboscidea",
+      "label": "Proboscidea",
+      "definition": "60Mya: elephants and their extinct relatives",
+      "definitionSource": "Human Knowledge 2000 taxonomy table + modern clade correction",
+      "originYearsAgo": 60000000,
+      "children": [],
+      "alternateParents": [],
+      "directParentCount": 1,
+      "provisionalParent": null,
+      "sourceRefs": [
+        "Human Knowledge 2000 taxonomy table",
+        "Wikipedia clade articles"
+      ]
+    },
+    {
+      "id": "BioSirenia",
+      "label": "Sirenia",
+      "definition": "50Mya: manatees, dugongs, and their extinct relatives",
+      "definitionSource": "Human Knowledge 2000 taxonomy table + modern clade correction",
+      "originYearsAgo": 50000000,
+      "children": [],
+      "alternateParents": [],
+      "directParentCount": 1,
+      "provisionalParent": null,
+      "sourceRefs": [
+        "Human Knowledge 2000 taxonomy table",
+        "Wikipedia clade articles"
+      ]
+    },
+    {
+      "id": "BioHyracoidea",
+      "label": "Hyracoidea",
+      "definition": "50Mya: hyraxes and their close relatives",
+      "definitionSource": "Human Knowledge 2000 taxonomy table + modern clade correction",
+      "originYearsAgo": 50000000,
+      "children": [],
+      "alternateParents": [],
+      "directParentCount": 1,
+      "provisionalParent": null,
+      "sourceRefs": [
+        "Human Knowledge 2000 taxonomy table",
+        "Wikipedia clade articles"
+      ]
+    },
+    {
+      "id": "BioXenarthra",
+      "label": "Xenarthra",
+      "definition": "65Mya: placental mammals with distinctive extra spinal articulations",
+      "definitionSource": "Human Knowledge 2000 taxonomy table + modern clade correction",
+      "originYearsAgo": 65000000,
+      "children": [
+        "BioCingulata",
+        "BioPilosa"
+      ],
+      "alternateParents": [],
+      "directParentCount": 1,
+      "provisionalParent": null,
+      "sourceRefs": [
+        "Human Knowledge 2000 taxonomy table",
+        "Wikipedia clade articles"
+      ]
+    },
+    {
+      "id": "BioCingulata",
+      "label": "Cingulata",
+      "definition": "55Mya: armadillos and their extinct relatives",
+      "definitionSource": "Human Knowledge 2000 taxonomy table + modern clade correction",
+      "originYearsAgo": 55000000,
+      "children": [],
+      "alternateParents": [],
+      "directParentCount": 1,
+      "provisionalParent": null,
+      "sourceRefs": [
+        "Human Knowledge 2000 taxonomy table",
+        "Wikipedia clade articles"
+      ]
+    },
+    {
+      "id": "BioPilosa",
+      "label": "Pilosa",
+      "definition": "55Mya: sloths and anteaters",
+      "definitionSource": "Human Knowledge 2000 taxonomy table + modern clade correction",
+      "originYearsAgo": 55000000,
+      "children": [],
+      "alternateParents": [],
+      "directParentCount": 1,
+      "provisionalParent": null,
+      "sourceRefs": [
+        "Human Knowledge 2000 taxonomy table",
+        "Wikipedia clade articles"
+      ]
+    },
+    {
+      "id": "BioLaurasiatheria",
+      "label": "Laurasiatheria",
+      "definition": "90Mya: placental mammals with deep ancestry in northern Laurasia",
+      "definitionSource": "Human Knowledge 2000 taxonomy table + modern clade correction",
+      "originYearsAgo": 90000000,
+      "children": [
+        "BioEulipotyphla",
+        "BioPholidota",
+        "BioPerissodactyla",
+        "BioCarnivora",
+        "BioChiroptera",
+        "BioCetacea",
+        "BioCetartiodactyla"
+      ],
+      "alternateParents": [],
+      "directParentCount": 1,
+      "provisionalParent": null,
+      "sourceRefs": [
+        "Human Knowledge 2000 taxonomy table",
+        "Wikipedia clade articles"
+      ]
+    },
+    {
+      "id": "BioEulipotyphla",
+      "label": "Eulipotyphla",
+      "definition": "70Mya: modern shrews, moles, hedgehogs, and solenodons",
+      "definitionSource": "Human Knowledge 2000 taxonomy table + modern clade correction",
+      "originYearsAgo": 70000000,
+      "children": [],
+      "alternateParents": [],
+      "directParentCount": 1,
+      "provisionalParent": null,
+      "sourceRefs": [
+        "Human Knowledge 2000 taxonomy table",
+        "Wikipedia clade articles"
+      ]
+    },
+    {
+      "id": "BioPholidota",
+      "label": "Pholidota",
+      "definition": "50Mya: pangolins",
+      "definitionSource": "Human Knowledge 2000 taxonomy table + modern clade correction",
+      "originYearsAgo": 50000000,
+      "children": [],
+      "alternateParents": [],
+      "directParentCount": 1,
+      "provisionalParent": null,
+      "sourceRefs": [
+        "Human Knowledge 2000 taxonomy table",
+        "Wikipedia clade articles"
+      ]
+    },
+    {
+      "id": "BioPerissodactyla",
+      "label": "Perissodactyla",
+      "definition": "55Mya: odd-toed ungulates including horses, rhinos, and tapirs",
+      "definitionSource": "Human Knowledge 2000 taxonomy table + modern clade correction",
+      "originYearsAgo": 55000000,
+      "children": [],
+      "alternateParents": [],
+      "directParentCount": 1,
+      "provisionalParent": null,
+      "sourceRefs": [
+        "Human Knowledge 2000 taxonomy table",
+        "Wikipedia clade articles"
+      ]
+    },
+    {
+      "id": "BioCarnivora",
+      "label": "Carnivora",
+      "definition": "55Mya: carnivoran mammals including cats, dogs, bears, and seals",
+      "definitionSource": "Human Knowledge 2000 taxonomy table + modern clade correction",
+      "originYearsAgo": 55000000,
+      "children": [
+        "BioPinnipedia"
+      ],
+      "alternateParents": [],
+      "directParentCount": 1,
+      "provisionalParent": null,
+      "sourceRefs": [
+        "Human Knowledge 2000 taxonomy table",
+        "Wikipedia clade articles"
+      ]
+    },
+    {
+      "id": "BioPinnipedia",
+      "label": "Pinnipedia",
+      "definition": "30Mya: seals, sea lions, and walruses",
+      "definitionSource": "Human Knowledge 2000 taxonomy table + modern clade correction",
+      "originYearsAgo": 30000000,
+      "children": [],
+      "alternateParents": [],
+      "directParentCount": 1,
+      "provisionalParent": null,
+      "sourceRefs": [
+        "Human Knowledge 2000 taxonomy table",
+        "Wikipedia clade articles"
+      ]
+    },
+    {
+      "id": "BioChiroptera",
+      "label": "Chiroptera (bats)",
+      "definition": "55Mya: mammals with powered flight",
+      "definitionSource": "Human Knowledge 2000 taxonomy table + modern clade correction",
+      "originYearsAgo": 55000000,
+      "children": [],
+      "alternateParents": [],
+      "directParentCount": 1,
+      "provisionalParent": null,
+      "sourceRefs": [
+        "Human Knowledge 2000 taxonomy table",
+        "Wikipedia clade articles"
+      ]
+    },
+    {
+      "id": "BioCetacea",
+      "label": "Cetacea",
+      "definition": "50Mya: whales, dolphins, and porpoises",
+      "definitionSource": "Human Knowledge 2000 taxonomy table + modern clade correction",
+      "originYearsAgo": 50000000,
+      "children": [],
+      "alternateParents": [],
+      "directParentCount": 1,
+      "provisionalParent": null,
+      "sourceRefs": [
+        "Human Knowledge 2000 taxonomy table",
+        "Wikipedia clade articles"
+      ]
+    },
+    {
+      "id": "BioCetartiodactyla",
+      "label": "Cetartiodactyla (Artiodactyla)",
+      "definition": "55Mya: the inclusive even-toed ungulate and whale lineage",
+      "definitionSource": "Human Knowledge 2000 taxonomy table + modern clade correction",
+      "originYearsAgo": 55000000,
+      "children": [],
+      "alternateParents": [],
+      "directParentCount": 1,
+      "provisionalParent": null,
+      "sourceRefs": [
+        "Human Knowledge 2000 taxonomy table",
+        "Wikipedia clade articles"
+      ]
+    },
+    {
+      "id": "BioEuarchontoglires",
+      "label": "Euarchontoglires",
+      "definition": "90Mya: placental mammals including rodents, lagomorphs, colugos, and primates",
+      "definitionSource": "Human Knowledge 2000 taxonomy table + modern clade correction",
+      "originYearsAgo": 90000000,
+      "children": [
+        "BioRodentia",
+        "BioLagomorpha",
+        "BioDermoptera",
+        "BioPrimates"
+      ],
+      "alternateParents": [],
+      "directParentCount": 1,
+      "provisionalParent": null,
+      "sourceRefs": [
+        "Human Knowledge 2000 taxonomy table",
+        "Wikipedia clade articles"
+      ]
+    },
+    {
+      "id": "BioRodentia",
+      "label": "Rodentia",
+      "definition": "66Mya: gnawing mammals including mice, squirrels, beavers, and porcupines",
+      "definitionSource": "Human Knowledge 2000 taxonomy table + modern clade correction",
+      "originYearsAgo": 66000000,
+      "children": [],
+      "alternateParents": [],
+      "directParentCount": 1,
+      "provisionalParent": null,
+      "sourceRefs": [
+        "Human Knowledge 2000 taxonomy table",
+        "Wikipedia clade articles"
+      ]
+    },
+    {
+      "id": "BioLagomorpha",
+      "label": "Lagomorpha",
+      "definition": "60Mya: rabbits, hares, and pikas",
+      "definitionSource": "Human Knowledge 2000 taxonomy table + modern clade correction",
+      "originYearsAgo": 60000000,
+      "children": [],
+      "alternateParents": [],
+      "directParentCount": 1,
+      "provisionalParent": null,
+      "sourceRefs": [
+        "Human Knowledge 2000 taxonomy table",
+        "Wikipedia clade articles"
+      ]
+    },
+    {
+      "id": "BioDermoptera",
+      "label": "Dermoptera",
+      "definition": "50Mya: colugos or flying lemurs",
+      "definitionSource": "Human Knowledge 2000 taxonomy table + modern clade correction",
+      "originYearsAgo": 50000000,
+      "children": [],
+      "alternateParents": [],
+      "directParentCount": 1,
+      "provisionalParent": null,
+      "sourceRefs": [
+        "Human Knowledge 2000 taxonomy table",
+        "Wikipedia clade articles"
+      ]
+    },
+    {
+      "id": "BioPrimates",
+      "label": "Primates",
+      "definition": "65Mya: mammals with grasping hands or feet, nails, forward-facing eyes, and enlarged brains",
+      "definitionSource": "Human Knowledge 2000 taxonomy table + modern clade correction",
+      "originYearsAgo": 65000000,
+      "children": [
+        "BioStrepsirrhini",
+        "BioHaplorhini"
+      ],
+      "alternateParents": [],
+      "directParentCount": 1,
+      "provisionalParent": null,
+      "sourceRefs": [
+        "Human Knowledge 2000 taxonomy table",
+        "Wikipedia clade articles"
+      ]
+    },
+    {
+      "id": "BioStrepsirrhini",
+      "label": "Strepsirrhini",
+      "definition": "55Mya: lemurs, lorises, and galagos; the modern replacement for the paraphyletic Prosimians",
+      "definitionSource": "Human Knowledge 2000 taxonomy table + modern clade correction",
+      "originYearsAgo": 55000000,
+      "children": [],
+      "alternateParents": [],
+      "directParentCount": 1,
+      "provisionalParent": null,
+      "sourceRefs": [
+        "Human Knowledge 2000 taxonomy table",
+        "Wikipedia clade articles"
+      ]
+    },
+    {
+      "id": "BioHaplorhini",
+      "label": "Haplorhini",
+      "definition": "55Mya: tarsiers and simians with simpler noses and greater visual specialization",
+      "definitionSource": "Human Knowledge 2000 taxonomy table + modern clade correction",
+      "originYearsAgo": 55000000,
+      "children": [
+        "BioTarsiiformes",
+        "BioSimiiformes"
+      ],
+      "alternateParents": [],
+      "directParentCount": 1,
+      "provisionalParent": null,
+      "sourceRefs": [
+        "Human Knowledge 2000 taxonomy table",
+        "Wikipedia clade articles"
+      ]
+    },
+    {
+      "id": "BioTarsiiformes",
+      "label": "Tarsiiformes",
+      "definition": "45Mya: tarsiers",
+      "definitionSource": "Human Knowledge 2000 taxonomy table + modern clade correction",
+      "originYearsAgo": 45000000,
+      "children": [],
+      "alternateParents": [],
+      "directParentCount": 1,
+      "provisionalParent": null,
+      "sourceRefs": [
+        "Human Knowledge 2000 taxonomy table",
+        "Wikipedia clade articles"
+      ]
+    },
+    {
+      "id": "BioSimiiformes",
+      "label": "Simiiformes (Anthropoidea)",
+      "definition": "40Mya: the higher primates including New World monkeys, Old World monkeys, and apes",
+      "definitionSource": "Human Knowledge 2000 taxonomy table + modern clade correction",
+      "originYearsAgo": 40000000,
+      "children": [
+        "BioPlatyrrhini",
+        "BioCatarrhini"
+      ],
+      "alternateParents": [],
+      "directParentCount": 1,
+      "provisionalParent": null,
+      "sourceRefs": [
+        "Human Knowledge 2000 taxonomy table",
+        "Wikipedia clade articles"
+      ]
+    },
+    {
+      "id": "BioPlatyrrhini",
+      "label": "Platyrrhini",
+      "definition": "25Mya: New World monkeys with broad-set nostrils and many prehensile tails",
+      "definitionSource": "Human Knowledge 2000 taxonomy table + modern clade correction",
+      "originYearsAgo": 25000000,
+      "children": [
+        "BioCallitrichidae",
+        "BioCebidae"
+      ],
+      "alternateParents": [],
+      "directParentCount": 1,
+      "provisionalParent": null,
+      "sourceRefs": [
+        "Human Knowledge 2000 taxonomy table",
+        "Wikipedia clade articles"
+      ]
+    },
+    {
+      "id": "BioCallitrichidae",
+      "label": "Callitrichidae",
+      "definition": "20Mya: marmosets and tamarins",
+      "definitionSource": "Human Knowledge 2000 taxonomy table + modern clade correction",
+      "originYearsAgo": 20000000,
+      "children": [],
+      "alternateParents": [],
+      "directParentCount": 1,
+      "provisionalParent": null,
+      "sourceRefs": [
+        "Human Knowledge 2000 taxonomy table",
+        "Wikipedia clade articles"
+      ]
+    },
+    {
+      "id": "BioCebidae",
+      "label": "Cebidae",
+      "definition": "20Mya: capuchins, squirrel monkeys, and close relatives",
+      "definitionSource": "Human Knowledge 2000 taxonomy table + modern clade correction",
+      "originYearsAgo": 20000000,
+      "children": [],
+      "alternateParents": [],
+      "directParentCount": 1,
+      "provisionalParent": null,
+      "sourceRefs": [
+        "Human Knowledge 2000 taxonomy table",
+        "Wikipedia clade articles"
+      ]
+    },
+    {
+      "id": "BioCatarrhini",
+      "label": "Catarrhini",
+      "definition": "25Mya: Old World monkeys and apes with close-set nostrils",
+      "definitionSource": "Human Knowledge 2000 taxonomy table + modern clade correction",
+      "originYearsAgo": 25000000,
+      "children": [
+        "BioCercopithecoidea",
+        "BioHominoidea"
+      ],
+      "alternateParents": [],
+      "directParentCount": 1,
+      "provisionalParent": null,
+      "sourceRefs": [
+        "Human Knowledge 2000 taxonomy table",
+        "Wikipedia clade articles"
+      ]
+    },
+    {
+      "id": "BioCercopithecoidea",
+      "label": "Cercopithecoidea (Cercopithecidae)",
+      "definition": "20Mya: Old World monkeys including baboons, macaques, and colobus monkeys",
+      "definitionSource": "Human Knowledge 2000 taxonomy table + modern clade correction",
+      "originYearsAgo": 20000000,
+      "children": [],
+      "alternateParents": [],
+      "directParentCount": 1,
+      "provisionalParent": null,
+      "sourceRefs": [
+        "Human Knowledge 2000 taxonomy table",
+        "Wikipedia clade articles"
+      ]
+    },
+    {
+      "id": "BioHominoidea",
+      "label": "Hominoidea",
+      "definition": "20Mya: tailless apes including gibbons and great apes",
+      "definitionSource": "Human Knowledge 2000 taxonomy table + modern clade correction",
+      "originYearsAgo": 20000000,
+      "children": [
+        "BioHylobatidae",
+        "BioHominidae"
+      ],
+      "alternateParents": [],
+      "directParentCount": 1,
+      "provisionalParent": null,
+      "sourceRefs": [
+        "Human Knowledge 2000 taxonomy table",
+        "Wikipedia clade articles"
+      ]
+    },
+    {
+      "id": "BioHylobatidae",
+      "label": "Hylobatidae",
+      "definition": "15Mya: gibbons and siamangs, the lesser apes",
+      "definitionSource": "Human Knowledge 2000 taxonomy table + modern clade correction",
+      "originYearsAgo": 15000000,
+      "children": [],
+      "alternateParents": [],
+      "directParentCount": 1,
+      "provisionalParent": null,
+      "sourceRefs": [
+        "Human Knowledge 2000 taxonomy table",
+        "Wikipedia clade articles"
+      ]
+    },
+    {
+      "id": "BioHominidae",
+      "label": "Hominidae",
+      "definition": "18Mya: the great-ape family including orangutans, gorillas, chimpanzees, bonobos, and humans",
+      "definitionSource": "Human Knowledge 2000 taxonomy table + modern clade correction",
+      "originYearsAgo": 18000000,
+      "children": [
+        "BioPonginae",
+        "BioHomininae"
+      ],
+      "alternateParents": [],
+      "directParentCount": 1,
+      "provisionalParent": null,
+      "sourceRefs": [
+        "Human Knowledge 2000 taxonomy table",
+        "Wikipedia clade articles"
+      ]
+    },
+    {
+      "id": "BioPonginae",
+      "label": "Ponginae",
+      "definition": "15Mya: orangutans and their close relatives",
+      "definitionSource": "Human Knowledge 2000 taxonomy table + modern clade correction",
+      "originYearsAgo": 15000000,
+      "children": [],
+      "alternateParents": [],
+      "directParentCount": 1,
+      "provisionalParent": null,
+      "sourceRefs": [
+        "Human Knowledge 2000 taxonomy table",
+        "Wikipedia clade articles"
+      ]
+    },
+    {
+      "id": "BioHomininae",
+      "label": "Homininae",
+      "definition": "12Mya: the great-ape subfamily including gorillas, chimpanzees, bonobos, and humans",
+      "definitionSource": "Human Knowledge 2000 taxonomy table + modern clade correction",
+      "originYearsAgo": 12000000,
+      "children": [
+        "BioAustralopithecus",
+        "BioHomo"
+      ],
+      "alternateParents": [],
+      "directParentCount": 1,
+      "provisionalParent": null,
+      "sourceRefs": [
+        "Human Knowledge 2000 taxonomy table",
+        "Wikipedia clade articles"
+      ]
+    },
+    {
+      "id": "BioAustralopithecus",
+      "label": "Australopithecus",
+      "definition": "4Mya: extinct African hominins close to the ancestry of Homo",
+      "definitionSource": "Human Knowledge 2000 taxonomy table + modern clade correction",
+      "originYearsAgo": 4000000,
+      "children": [],
+      "alternateParents": [],
+      "directParentCount": 1,
+      "provisionalParent": null,
+      "sourceRefs": [
+        "Human Knowledge 2000 taxonomy table",
+        "Wikipedia clade articles"
+      ]
+    },
+    {
+      "id": "BioHomo",
+      "label": "Homo",
+      "definition": "2Mya: the hominin genus including humans and several extinct tool-using relatives",
+      "definitionSource": "Human Knowledge 2000 taxonomy table + modern clade correction",
+      "originYearsAgo": 2800000,
+      "children": [
+        "BioHomohabilis",
+        "BioHomoerectus",
+        "BioHomosapiens"
+      ],
+      "alternateParents": [],
+      "directParentCount": 1,
+      "provisionalParent": null,
+      "sourceRefs": [
+        "Human Knowledge 2000 taxonomy table",
+        "Wikipedia clade articles"
+      ]
+    },
+    {
+      "id": "BioHomohabilis",
+      "label": "Homo habilis",
+      "definition": "2Mya: an extinct early Homo species associated with Oldowan tools",
+      "definitionSource": "Human Knowledge 2000 taxonomy table + modern clade correction",
+      "originYearsAgo": 2400000,
+      "children": [],
+      "alternateParents": [],
+      "directParentCount": 1,
+      "provisionalParent": null,
+      "sourceRefs": [
+        "Human Knowledge 2000 taxonomy table",
+        "Wikipedia clade articles"
+      ]
+    },
+    {
+      "id": "BioHomoerectus",
+      "label": "Homo erectus",
+      "definition": "1Mya: an extinct widespread Homo species associated with early migrations and fire use",
+      "definitionSource": "Human Knowledge 2000 taxonomy table + modern clade correction",
+      "originYearsAgo": 1900000,
+      "children": [],
+      "alternateParents": [],
+      "directParentCount": 1,
+      "provisionalParent": null,
+      "sourceRefs": [
+        "Human Knowledge 2000 taxonomy table",
+        "Wikipedia clade articles"
+      ]
+    },
+    {
+      "id": "BioHomosapiens",
+      "label": "Homo sapiens",
+      "definition": "0Mya: the living human species",
+      "definitionSource": "Human Knowledge 2000 taxonomy table + modern clade correction",
+      "originYearsAgo": 300000,
+      "children": [
+        "BioHomosapiensneanderthalensis"
+      ],
+      "alternateParents": [],
+      "directParentCount": 1,
+      "provisionalParent": null,
+      "sourceRefs": [
+        "Human Knowledge 2000 taxonomy table",
+        "Wikipedia clade articles"
+      ]
+    },
+    {
+      "id": "BioHomosapiensneanderthalensis",
+      "label": "Homo sapiens neanderthalensis",
+      "definition": "0Mya: the extinct Neanderthal human lineage",
+      "definitionSource": "Human Knowledge 2000 taxonomy table + modern clade correction",
+      "originYearsAgo": 430000,
       "children": [],
       "alternateParents": [],
       "directParentCount": 1,
@@ -6902,7 +7624,10 @@
   ],
   "unaryNodes": [
     "ArtiﬁcialLanguage",
+    "BioCarnivora",
     "BioDinosauria",
+    "BioHomosapiens",
+    "BioOthergymnosperms",
     "BioStreptophyta",
     "BioSynapsida",
     "Certiﬁcate",
@@ -6959,6 +7684,27 @@
     "source": "Human Knowledge 2000 taxonomy table + modern Wikipedia clade corrections",
     "policy": "Monophyletic, interest-weighted backbone; specialist-only subdivisions telescoped",
     "originEstimatePolicy": "Every grafted clade definition begins with an integer Mya origin estimate",
-    "removedSumoDescendantCount": 78
+    "legacyTaxaReplaced": {
+      "Prokaryotae (Monera)": "Bacteria + Archaea",
+      "Archaebacteria": "Archaea",
+      "Eubacteria": "Bacteria",
+      "Protoctista (Protist)": "Major protist lineages",
+      "Filicinophyta": "Ferns and horsetails (Monilophyta)",
+      "Angiospermophyta": "Angiosperms (flowering plants)",
+      "Parazoa": "Porifera",
+      "Prosimians": "Strepsirrhini",
+      "Pongidae": "Hominidae -> Ponginae + Homininae",
+      "Prototheria": "Monotremata",
+      "Insectivora": "Eulipotyphla",
+      "Edentata": "Xenarthra",
+      "Artiodactylia": "Cetartiodactyla (Artiodactyla)",
+      "Cetecea": "Cetacea",
+      "Agnatha": "Jawless vertebrates",
+      "Chondrichthye": "Chondrichthyes",
+      "Reptilia": "Sauropsida",
+      "Pisces": "Gnathostomata -> Chondrichthyes + Osteichthyes",
+      "Coelenterates": "Cnidaria"
+    },
+    "removedSumoDescendantCount": 122
   }
 }

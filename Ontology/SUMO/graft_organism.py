@@ -29,7 +29,7 @@ BACKBONE = node(
         1_800_000_000,
         "organisms whose cells contain nuclei and membrane-bound organelles",
         node(
-            "Archaeplastida",
+            "Archaeplastida (Plantae)",
             1_600_000_000,
             "eukaryotes descended from a primary cyanobacterial plastid acquisition",
             node("Rhodophyta (red algae)", 1_600_000_000, "red algae with red or blue accessory pigments"),
@@ -46,7 +46,7 @@ BACKBONE = node(
                         "Embryophyta (land plants)",
                         470_000_000,
                         "plants adapted to life on land, retaining a protected multicellular embryo",
-                        node("Bryophytes", 470_000_000, "mosses, liverworts, and hornworts, generally lacking vascular tissue"),
+                        node("Bryophytes (Bryophyta)", 470_000_000, "mosses, liverworts, and hornworts, generally lacking vascular tissue"),
                         node(
                             "Tracheophyta (vascular plants)",
                             430_000_000,
@@ -56,7 +56,7 @@ BACKBONE = node(
                                 "Euphyllophytes",
                                 390_000_000,
                                 "vascular plants including ferns, horsetails, and seed plants",
-                                node("Ferns and horsetails", 370_000_000, "spore-producing euphyllophytes with fronds or jointed stems"),
+                                node("Ferns and horsetails (Monilophyta)", 370_000_000, "spore-producing euphyllophytes with fronds or jointed stems"),
                                 node(
                                     "Spermatophytes (seed plants)",
                                     365_000_000,
@@ -66,7 +66,7 @@ BACKBONE = node(
                                         320_000_000,
                                         "seed plants whose ovules are not enclosed in an ovary",
                                         node("Conifers", 300_000_000, "cone-bearing gymnosperms including pines, firs, spruces, and relatives"),
-                                        node("Other gymnosperms", 320_000_000, "cycads, ginkgo, and gnetophytes"),
+                                        node("Other gymnosperms", 320_000_000, "cycads, ginkgo, and gnetophytes", node("Cycads (Cycadophyta)", 280_000_000, "palm-like gymnosperms with large cones")),
                                     ),
                                     node(
                                         "Angiosperms (flowering plants)",
@@ -201,7 +201,113 @@ BACKBONE = node(
                                                                 170_000_000,
                                                                 "live-bearing mammals",
                                                                 node("Metatheria (marsupials)", 160_000_000, "mammals whose young complete development after birth, often in a pouch"),
-                                                                node("Eutheria (placental mammals)", 100_000_000, "mammals whose young develop through a complex placental connection"),
+                                                                node(
+                                                                    "Eutheria (placental mammals)",
+                                                                    100_000_000,
+                                                                    "mammals whose young develop through a complex placental connection",
+                                                                    node(
+                                                                        "Afrotheria",
+                                                                        100_000_000,
+                                                                        "placental mammals with African evolutionary roots",
+                                                                        node("Tubulidentata", 60_000_000, "the aardvark order"),
+                                                                        node("Proboscidea", 60_000_000, "elephants and their extinct relatives"),
+                                                                        node("Sirenia", 50_000_000, "manatees, dugongs, and their extinct relatives"),
+                                                                        node("Hyracoidea", 50_000_000, "hyraxes and their close relatives"),
+                                                                    ),
+                                                                    node(
+                                                                        "Xenarthra",
+                                                                        65_000_000,
+                                                                        "placental mammals with distinctive extra spinal articulations",
+                                                                        node("Cingulata", 55_000_000, "armadillos and their extinct relatives"),
+                                                                        node("Pilosa", 55_000_000, "sloths and anteaters"),
+                                                                    ),
+                                                                    node(
+                                                                        "Laurasiatheria",
+                                                                        90_000_000,
+                                                                        "placental mammals with deep ancestry in northern Laurasia",
+                                                                        node("Eulipotyphla", 70_000_000, "modern shrews, moles, hedgehogs, and solenodons"),
+                                                                        node("Pholidota", 50_000_000, "pangolins"),
+                                                                        node("Perissodactyla", 55_000_000, "odd-toed ungulates including horses, rhinos, and tapirs"),
+                                                                        node(
+                                                                            "Carnivora",
+                                                                            55_000_000,
+                                                                            "carnivoran mammals including cats, dogs, bears, and seals",
+                                                                            node("Pinnipedia", 30_000_000, "seals, sea lions, and walruses"),
+                                                                        ),
+                                                                        node("Chiroptera (bats)", 55_000_000, "mammals with powered flight"),
+                                                                        node("Cetacea", 50_000_000, "whales, dolphins, and porpoises"),
+                                                                        node("Cetartiodactyla (Artiodactyla)", 55_000_000, "the inclusive even-toed ungulate and whale lineage"),
+                                                                    ),
+                                                                    node(
+                                                                        "Euarchontoglires",
+                                                                        90_000_000,
+                                                                        "placental mammals including rodents, lagomorphs, colugos, and primates",
+                                                                        node("Rodentia", 66_000_000, "gnawing mammals including mice, squirrels, beavers, and porcupines"),
+                                                                        node("Lagomorpha", 60_000_000, "rabbits, hares, and pikas"),
+                                                                        node("Dermoptera", 50_000_000, "colugos or flying lemurs"),
+                                                                        node(
+                                                                            "Primates",
+                                                                            65_000_000,
+                                                                            "mammals with grasping hands or feet, nails, forward-facing eyes, and enlarged brains",
+                                                                            node("Strepsirrhini", 55_000_000, "lemurs, lorises, and galagos; the modern replacement for the paraphyletic Prosimians"),
+                                                                            node(
+                                                                                "Haplorhini",
+                                                                                55_000_000,
+                                                                                "tarsiers and simians with simpler noses and greater visual specialization",
+                                                                                node("Tarsiiformes", 45_000_000, "tarsiers"),
+                                                                                node(
+                                                                                    "Simiiformes (Anthropoidea)",
+                                                                                    40_000_000,
+                                                                                    "the higher primates including New World monkeys, Old World monkeys, and apes",
+                                                                                    node(
+                                                                                        "Platyrrhini",
+                                                                                        25_000_000,
+                                                                                        "New World monkeys with broad-set nostrils and many prehensile tails",
+                                                                                        node("Callitrichidae", 20_000_000, "marmosets and tamarins"),
+                                                                                        node("Cebidae", 20_000_000, "capuchins, squirrel monkeys, and close relatives"),
+                                                                                    ),
+                                                                                    node(
+                                                                                        "Catarrhini",
+                                                                                        25_000_000,
+                                                                                        "Old World monkeys and apes with close-set nostrils",
+                                                                                        node("Cercopithecoidea (Cercopithecidae)", 20_000_000, "Old World monkeys including baboons, macaques, and colobus monkeys"),
+                                                                                        node(
+                                                                                            "Hominoidea",
+                                                                                            20_000_000,
+                                                                                            "tailless apes including gibbons and great apes",
+                                                                                            node("Hylobatidae", 15_000_000, "gibbons and siamangs, the lesser apes"),
+                                                                                            node(
+                                                                                                "Hominidae",
+                                                                                                18_000_000,
+                                                                                                "the great-ape family including orangutans, gorillas, chimpanzees, bonobos, and humans",
+                                                                                                node("Ponginae", 15_000_000, "orangutans and their close relatives"),
+                                                                                                node(
+                                                                                                    "Homininae",
+                                                                                                    12_000_000,
+                                                                                                    "the great-ape subfamily including gorillas, chimpanzees, bonobos, and humans",
+                                                                                                    node("Australopithecus", 4_000_000, "extinct African hominins close to the ancestry of Homo"),
+                                                                                                    node(
+                                                                                                        "Homo",
+                                                                                                        2_800_000,
+                                                                                                        "the hominin genus including humans and several extinct tool-using relatives",
+                                                                                                        node("Homo habilis", 2_400_000, "an extinct early Homo species associated with Oldowan tools"),
+                                                                                                        node("Homo erectus", 1_900_000, "an extinct widespread Homo species associated with early migrations and fire use"),
+                                                                                                        node(
+                                                                                                            "Homo sapiens",
+                                                                                                            300_000,
+                                                                                                            "the living human species",
+                                                                                                            node("Homo sapiens neanderthalensis", 430_000, "the extinct Neanderthal human lineage"),
+                                                                                                        ),
+                                                                                                    ),
+                                                                                                ),
+                                                                                            ),
+                                                                                        ),
+                                                                                    ),
+                                                                                ),
+                                                                            ),
+                                                                        ),
+                                                                    ),
+                                                                ),
                                                             ),
                                                         ),
                                                     ),
@@ -237,6 +343,156 @@ BACKBONE = node(
         ),
     ),
 )
+
+def find_taxon(tree: dict, label: str) -> dict:
+    if tree["label"] == label:
+        return tree
+    for child in tree["children"]:
+        try:
+            return find_taxon(child, label)
+        except LookupError:
+            pass
+    raise LookupError(label)
+
+
+def augment_backbone(tree: dict) -> None:
+    find_taxon(tree, "Archaeplastida (Plantae)")["label"] = "Archaeplastida (Plantae)"
+    find_taxon(tree, "Bryophytes (Bryophyta)")["label"] = "Bryophytes (Bryophyta)"
+    find_taxon(tree, "Ferns and horsetails (Monilophyta)")["label"] = "Ferns and horsetails (Monilophyta)"
+    gymnosperms = find_taxon(tree, "Other gymnosperms")
+    if not any(child["label"] == "Cycads (Cycadophyta)" for child in gymnosperms["children"]):
+        gymnosperms["children"].append(
+            node("Cycads (Cycadophyta)", 280_000_000, "palm-like gymnosperms with large cones")
+        )
+
+    animals = find_taxon(tree, "Animalia")
+    porifera = next(child for child in animals["children"] if child["label"] == "Porifera (sponges)")
+    bilateria = next(child for child in animals["children"] if child["label"] == "Bilateria")
+    eumetazoa = node(
+        "Eumetazoa",
+        600_000_000,
+        "animals with true tissues, including cnidarians and bilaterians",
+        next(child for child in animals["children"] if child["label"] == "Ctenophora (comb jellies)"),
+        next(child for child in animals["children"] if child["label"] == "Placozoa"),
+        next(child for child in animals["children"] if child["label"] == "Cnidaria"),
+        bilateria,
+    )
+    animals["children"] = [porifera, eumetazoa]
+
+    eutheria = find_taxon(tree, "Eutheria (placental mammals)")
+    eutheria["children"] = [
+        node(
+            "Afrotheria",
+            100_000_000,
+            "placental mammals with African evolutionary roots",
+            node("Tubulidentata", 60_000_000, "the aardvark order"),
+            node("Proboscidea", 60_000_000, "elephants and their extinct relatives"),
+            node("Sirenia", 50_000_000, "manatees, dugongs, and their extinct relatives"),
+            node("Hyracoidea", 50_000_000, "hyraxes and their close relatives"),
+        ),
+        node(
+            "Xenarthra",
+            65_000_000,
+            "placental mammals with distinctive extra spinal articulations",
+            node("Cingulata", 55_000_000, "armadillos and their extinct relatives"),
+            node("Pilosa", 55_000_000, "sloths and anteaters"),
+        ),
+        node(
+            "Laurasiatheria",
+            90_000_000,
+            "placental mammals with deep ancestry in northern Laurasia",
+            node("Eulipotyphla", 70_000_000, "modern shrews, moles, hedgehogs, and solenodons"),
+            node("Pholidota", 50_000_000, "pangolins"),
+            node("Perissodactyla", 55_000_000, "odd-toed ungulates including horses, rhinos, and tapirs"),
+            node("Carnivora", 55_000_000, "carnivoran mammals including cats, dogs, bears, and seals", node("Pinnipedia", 30_000_000, "seals, sea lions, and walruses")),
+            node("Chiroptera (bats)", 55_000_000, "mammals with powered flight"),
+            node("Cetacea", 50_000_000, "whales, dolphins, and porpoises"),
+            node("Cetartiodactyla (Artiodactyla)", 55_000_000, "the inclusive even-toed ungulate and whale lineage"),
+        ),
+        node(
+            "Euarchontoglires",
+            90_000_000,
+            "placental mammals including rodents, lagomorphs, colugos, and primates",
+            node("Rodentia", 66_000_000, "gnawing mammals including mice, squirrels, beavers, and porcupines"),
+            node("Lagomorpha", 60_000_000, "rabbits, hares, and pikas"),
+            node("Dermoptera", 50_000_000, "colugos or flying lemurs"),
+            node(
+                "Primates",
+                65_000_000,
+                "mammals with grasping hands or feet, nails, forward-facing eyes, and enlarged brains",
+                node("Strepsirrhini", 55_000_000, "lemurs, lorises, and galagos; the modern replacement for the paraphyletic Prosimians"),
+                node(
+                    "Haplorhini",
+                    55_000_000,
+                    "tarsiers and simians with simpler noses and greater visual specialization",
+                    node("Tarsiiformes", 45_000_000, "tarsiers"),
+                    node(
+                        "Simiiformes (Anthropoidea)",
+                        40_000_000,
+                        "the higher primates including New World monkeys, Old World monkeys, and apes",
+                        node("Platyrrhini", 25_000_000, "New World monkeys with broad-set nostrils and many prehensile tails", node("Callitrichidae", 20_000_000, "marmosets and tamarins"), node("Cebidae", 20_000_000, "capuchins, squirrel monkeys, and close relatives")),
+                        node(
+                            "Catarrhini",
+                            25_000_000,
+                            "Old World monkeys and apes with close-set nostrils",
+                            node("Cercopithecoidea (Cercopithecidae)", 20_000_000, "Old World monkeys including baboons, macaques, and colobus monkeys"),
+                            node(
+                                "Hominoidea",
+                                20_000_000,
+                                "tailless apes including gibbons and great apes",
+                                node("Hylobatidae", 15_000_000, "gibbons and siamangs, the lesser apes"),
+                                node(
+                                    "Hominidae",
+                                    18_000_000,
+                                    "the great-ape family including orangutans, gorillas, chimpanzees, bonobos, and humans",
+                                    node("Ponginae", 15_000_000, "orangutans and their close relatives"),
+                                    node(
+                                        "Homininae",
+                                        12_000_000,
+                                        "the great-ape subfamily including gorillas, chimpanzees, bonobos, and humans",
+                                        node("Australopithecus", 4_000_000, "extinct African hominins close to the ancestry of Homo"),
+                                        node(
+                                            "Homo",
+                                            2_800_000,
+                                            "the hominin genus including humans and several extinct tool-using relatives",
+                                            node("Homo habilis", 2_400_000, "an extinct early Homo species associated with Oldowan tools"),
+                                            node("Homo erectus", 1_900_000, "an extinct widespread Homo species associated with early migrations and fire use"),
+                                            node("Homo sapiens", 300_000, "the living human species", node("Homo sapiens neanderthalensis", 430_000, "the extinct Neanderthal human lineage")),
+                                        ),
+                                    ),
+                                ),
+                            ),
+                        ),
+                    ),
+                ),
+            ),
+        ),
+    ]
+
+
+augment_backbone(BACKBONE)
+
+LEGACY_REPLACEMENTS = {
+    "Prokaryotae (Monera)": "Bacteria + Archaea",
+    "Archaebacteria": "Archaea",
+    "Eubacteria": "Bacteria",
+    "Protoctista (Protist)": "Major protist lineages",
+    "Filicinophyta": "Ferns and horsetails (Monilophyta)",
+    "Angiospermophyta": "Angiosperms (flowering plants)",
+    "Parazoa": "Porifera",
+    "Prosimians": "Strepsirrhini",
+    "Pongidae": "Hominidae -> Ponginae + Homininae",
+    "Prototheria": "Monotremata",
+    "Insectivora": "Eulipotyphla",
+    "Edentata": "Xenarthra",
+    "Artiodactylia": "Cetartiodactyla (Artiodactyla)",
+    "Cetecea": "Cetacea",
+    "Agnatha": "Jawless vertebrates",
+    "Chondrichthye": "Chondrichthyes",
+    "Reptilia": "Sauropsida",
+    "Pisces": "Gnathostomata -> Chondrichthyes + Osteichthyes",
+    "Coelenterates": "Cnidaria",
+}
 
 
 def make_id(label: str) -> str:
@@ -328,6 +584,7 @@ def graft(path: Path) -> None:
         "source": "Human Knowledge 2000 taxonomy table + modern Wikipedia clade corrections",
         "policy": "Monophyletic, interest-weighted backbone; specialist-only subdivisions telescoped",
         "originEstimatePolicy": "Every grafted clade definition begins with an integer Mya origin estimate",
+        "legacyTaxaReplaced": LEGACY_REPLACEMENTS,
         "removedSumoDescendantCount": len(old_ids),
     }
     path.write_text(json.dumps(data, indent=2, ensure_ascii=False) + "\n")

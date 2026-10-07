@@ -2,22 +2,23 @@
   "sourceRepository": "https://github.com/ontologyportal/sumo",
   "sourceRoot": "PDF roots",
   "derivedArtifact": "sumo.json",
-  "nodeCount": 563,
-  "projectedEdgeCount": 562,
+  "nodeCount": 607,
+  "projectedEdgeCount": 606,
   "multipleParentNodeCount": 38,
-  "unaryNodeCount": 53,
+  "unaryNodeCount": 56,
   "pdfSource": "https://www.ontology4.us/download/dot/SumoOntology.pdf",
   "pdfSha256": "78708ee74a7e37e1985a497aaad066db11c8c4579fa372ca78814fa1b72e1852",
   "pdfNodeCount": 518,
   "pdfEdgeCount": 554,
   "pdfRootCount": 1,
   "definitionSource": "English documentation statements in the SUMO KIF source files",
-  "definitionCount": 482,
+  "definitionCount": 526,
   "definitionPolicy": "Prefer SUMO KIF documentation, then external source definitions, then project editorial definitions",
   "organismGraft": {
     "source": "Human Knowledge 2000 taxonomy table + modern Wikipedia clade corrections",
     "policy": "Monophyletic, interest-weighted backbone; specialist-only subdivisions telescoped",
-    "originEstimatePolicy": "Every grafted clade definition begins with an integer Mya origin estimate"
+    "originEstimatePolicy": "Every grafted clade definition begins with an integer Mya origin estimate",
+    "legacyTaxaReplacementCount": 19
   },
   "primaryEdgeRule": "Repeatedly remove the longest measured incoming PDF arc until each node has one primary parent; apply four explicitly marked provisional placements to keep Entity as the only root",
   "provisionalPlacements": {
