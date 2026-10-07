@@ -854,7 +854,165 @@ reason to let SUMO dictate the game structure. The incumbent's main advantage
 is precisely that its visible questions were designed for play rather than
 inherited from a formal ontology.
 
+Product-type systems are another important prior-art family. The detailed
+comparison appears below as a prior-art supplement to the upper-layer
+discussion; its placement is editorial, not architectural. These systems
+inform physical-artifact vocabulary and coverage audits, never the upper
+ontology's root categories.
+
+### Mathematics
+
+Mathematics needs its own prior-art subsection because the available systems
+solve different problems and none is a ready-made noun taxonomy:
+
+- **MSC2020** is the strongest maintained classification of mathematical
+  literature. It is a subject and discipline classification, not a taxonomy
+  of mathematical entities. Use it as an orthogonal subject facet, never as
+  the parent of `Circle`, `Algorithm`, or `Group`.
+- **[OpenMath](https://openmath.org/)** represents the semantics of
+  mathematical objects and expressions through symbols and content
+  dictionaries. It is the best candidate for semantic symbols, operations,
+  functions, and relations, but it is not a complete browseable hierarchy.
+- **[OMDoc](https://en.wikipedia.org/wiki/OMDoc)** extends OpenMath to
+  definitions, theorems, proofs, examples, and theories. It is especially
+  useful for separating a mathematical object from a statement about it and
+  from a proof or theory containing it.
+- **[MMT](https://uniformal.github.io/)** is a foundation-independent
+  framework for formal theories, symbols, structures, imports, and
+  translations. It is a metamodel for mathematical knowledge, not a
+  player-facing tree.
+- **[Lean and Mathlib](https://github.com/leanprover-community/mathlib4)**
+  provide a large modern typed dependency graph of definitions, structures,
+  theorems, proofs, and typeclass relationships. They are valuable for
+  validating modern formal practice, but raw Mathlib ancestry reflects proof
+  engineering rather than a general-purpose noun hierarchy.
+- **OntoMathPRO** is the closest candidate for an ontology of mathematical
+  knowledge, including mathematical concepts, objects, theories, formulas,
+  theorems, and proofs. Its maintenance, licensing, machine-readable
+  distribution, and possible inheritance of subject-classification
+  structure require a dedicated audit before grafting.
+- **Type theory, category theory, set theory, and model theory** provide
+  foundations and structural languages. They supply types, terms, values,
+  proofs, sets, functions, morphisms, models, and interpretations, but none
+  should be copied wholesale as the visible mathematical branch.
+- **MathML and related notation standards** represent syntax or presentation
+  and therefore belong in the representation layer, not as the taxonomy of
+  the mathematical things represented.
+
+The current grafting hypothesis is therefore selective: use OpenMath and
+OMDoc for semantic mathematical objects and formal statements, MMT for
+cross-foundation theory structure, Lean/Mathlib for modern machine-checked
+examples, and MSC2020 as metadata. Do not graft MSC2020's disciplines into
+the noun tree. The entity branch should say `Computational structures` with
+separate children such as `Algorithms`, `Complexity classes`, `Computable
+functions`, `Recursive functions`, `Automata`, `Formal languages`, and
+`Graphs`, rather than a mixed node such as “Algorithms and complexity
+classes.”
+
 ## Upper ontology
+
+### Canonical synthesis
+
+This is the single current proposal. It is the default structure to review.
+The upper ontology defines the semantic projection; source systems,
+classification schemes, and extraction recipes belong in `Prior art` and are
+not repeated here.
+
+```text
+Ontology
+├── Entity
+│   ├── Physical entity
+│   │   └── SUMO-derived physical entity
+│   └── Abstract entity
+│       ├── Mathematical entity
+│       │   ├── Number
+│       │   ├── Set
+│       │   ├── Function
+│       │   ├── Mathematical relation
+│       │   ├── Logical object
+│       │   ├── Algebraic structure
+│       │   ├── Geometric structure
+│       │   │   ├── Curve
+│       │   │   │   ├── Circle
+│       │   │   │   ├── Ellipse
+│       │   │   │   ├── Parabola
+│       │   │   │   └── Hyperbola
+│       │   ├── Topological structure
+│       │   ├── Analytic structure
+│       │   ├── Probability structure
+│       │   ├── Computational structure
+│       │   │   ├── Algorithm
+│       │   │   ├── Complexity class
+│       │   │   ├── Computable function
+│       │   │   ├── Recursive function
+│       │   │   ├── Automaton
+│       │   │   ├── Formal language
+│       │   │   └── Graph
+│       │   ├── Physical system model
+│       │   ├── Formal expression
+│       │   ├── Proposition
+│       │   ├── Theorem
+│       │   ├── Proof
+│       │   ├── Definition
+│       │   └── Mathematical model
+│       ├── Informational entity
+│       ├── Representational entity
+│       ├── Social entity
+│       └── Institutional entity
+├── Property
+│   ├── Quality
+│   ├── Quantity
+│   ├── Quality value
+│   ├── Disposition
+│   ├── Capability
+│   ├── Function
+│   ├── Purpose
+│   ├── Role
+│   ├── Status
+│   ├── Norm
+│   ├── Obligation
+│   ├── Goal
+│   ├── Preference
+│   ├── Modal property
+│   ├── Logical property
+│   └── Mathematical property
+└── Relation
+    ├── Classification relation
+    ├── Part-whole relation
+    ├── Spatial relation
+    ├── Temporal relation
+    ├── Causal relation
+    ├── Explanatory relation
+    ├── Participation relation
+    ├── Social relation
+    ├── Institutional relation
+    ├── Perceptual relation
+    ├── Epistemic relation
+    ├── Logical relation
+    ├── Set-theoretic relation
+    ├── Mathematical relation
+    ├── Transformation relation
+    ├── Representational relation
+    ├── Identity relation
+    ├── Equivalence relation
+    └── Provenance relation
+```
+
+The key placement decisions are now explicit:
+
+- `Physical entity` and `Abstract entity` are the first visible entity
+  divisions.
+- The `SUMO-derived physical entity` supplies the initial physical subtree.
+- Mathematical entities are abstract entities, with a first cut by
+  entity kind rather than by college subject.
+- Properties and relations are siblings of Entity, not hidden under
+  `Abstract`.
+- Classes, types, propositions, proofs, and values are entities when they are
+  being discussed as things; their typing, membership, truth, proof, and
+  denotation relations remain cross-cutting metadata.
+- Informational and social entities are provisionally under Abstract as
+  representational or institutional patterns, while their physical
+  embodiments remain linked to Physical entities.
 
 ### Top-layer coverage inventory
 Before choosing a root arrangement, we need an unordered inventory of the
@@ -1545,9 +1703,12 @@ cross-cuts it**. Add first-class patterns for processes, contexts, functions,
 collections, interpretations, time, modality, and identity instead of
 forcing those concepts into either triad.
 
-### Proposed triadic synthesis and optional subcategories
+### Design alternatives retained for comparison
 
-The cleanest current synthesis is a visible top level of:
+The canonical tree above supersedes the earlier profiles in this subsection.
+The profiles below are retained only to document rejected projections and
+implementation tradeoffs; none is an alternative visible root. The visible
+top level remains:
 
 ```text
 Ontology
@@ -1713,12 +1874,15 @@ preserving their physical realizations and their relations to people,
 artifacts, and events. The data model should support both facets rather than
 forcing an informational or social concept to be exclusively abstract.
 
-### Mathematical placement under the physical/abstract split
+### Historical mathematical examples (non-canonical)
 
-The following worked projection gives a taste of where familiar mathematics
-and modern formal foundations could live. It is intentionally more detailed
-than the proposed final browser so that the available design space remains
-visible:
+The earlier large mathematical projection has been retired as a competing
+tree. Its surviving decisions are already incorporated into the canonical
+branch above: mathematics is organized by entity kind, not by academic
+discipline; foundations, formal artifacts, and models remain distinguishable;
+and properties, relations, representations, and proofs cross-cut the
+mathematical entities. The examples below are retained only to specify those
+role distinctions and are not an additional navigation tree.
 
 ```text
 Entity
@@ -1959,21 +2123,21 @@ graph. In particular:
 - generate specialist views for BFO/SUMO-style, mathematical, Lean/type
   system, and Roget-informed browsing without changing the canonical graph.
 
-### Revisit the highest layers: mathematics, types, and meaning
+### Formal-layer consequences of the canonical synthesis
 
-The current SUMO projection is weakest at the top. `Entity`, `Abstract`,
-`Attribute`, `Relation`, `Proposition`, and related categories mix several
-different questions:
+The canonical synthesis keeps the semantic tree separate from the formal
+layer. `Entity`, `Property`, and `Relation` answer different questions from
+`Type`, `Term`, `Value`, and `Proof`:
 
 - What sort of thing is this in the world?
 - Is it an object, event, quality, relation, description, or proposition?
 - Is it a mathematical structure, a formal symbol system, or a model of one?
 - Is it a class, an instance, a value, a type, or a type-level operation?
 
-These should not be forced into one shallow `Entity -> Abstract` ladder.
-SUMO remains useful as a source of formal distinctions and axioms, but its
-top-level presentation should be treated as a candidate mapping layer, not
-as the final upper ontology.
+These distinctions are represented as typed metadata and cross-links rather
+than as another visible root. SUMO remains useful as a source of formal
+distinctions and axioms, but its top-level presentation is a mapping layer,
+not the final upper ontology.
 
 ### Tegmark's mathematical-structure chart
 
@@ -1992,7 +2156,7 @@ source to cite for Tegmark's mathematical-structure/formal-system
 distinction; the image is useful as a compact design prompt for a future
 mathematical branch.
 
-### What modern mathematics contributes
+### Mathematical foundations retained as metadata
 
 Modern mathematics supplies a more disciplined upper-level vocabulary than
 SUMO's current abstraction branch, but not a ready-made everyday ontology.
@@ -2020,79 +2184,42 @@ The useful ideas are complementary:
   languages, theories, mathematical structures, and the real-world systems
   they describe.
 
-The proposed synthesis is therefore not “replace SUMO with set theory.”
-Instead, add an explicit foundation-and-description layer above or beside
-the ordinary-world hierarchy:
+These foundations do not replace the canonical tree. They supply metadata
+and relation vocabularies:
 
-```text
-Reality and discourse
-├── Things and occurrences
-│   ├── Objects
-│   ├── Processes and events
-│   ├── Qualities and quantities
-│   └── Relations and situations
-├── Representations
-│   ├── Names and symbols
-│   ├── Descriptions and classifications
-│   ├── Propositions and assertions
-│   └── Formal systems and theories
-└── Structures
-    ├── Sets and collections
-    ├── Types and instances
-    ├── Algebraic structures
-    ├── Ordered and topological structures
-    ├── Geometric and measurable structures
-    ├── Categories, functors, and transformations
-    └── Physical models and laws
-```
+In the data model, a node may have a **kind** (`object`, `event`, `quality`,
+`relation`, `representation`, `type`, `structure`, or `theory`) in addition
+to one or more parent links. The browser can project a single primary
+navigation parent while retaining cross-links between a type and its
+instances, a structure and its models, and a proposition and the situation
+it describes.
 
-This is a conceptual backbone, not yet a replacement tree. In the data
-model, a node may have a **kind** (`object`, `event`, `quality`, `relation`,
-`representation`, `type`, `structure`, or `theory`) in addition to one or
-more parent links. The browser can still project a single primary navigation
-parent while retaining cross-links between a type and its instances, a
-structure and its models, and a proposition and the situation it describes.
+### Retired synthesis notes
 
-### Candidate synthesis
+The former source-by-source synthesis table is retired. Its recommendations
+are now implemented directly: curated v1 and Roget inform player-facing
+labels; SUMO supplies semantic checks; Schema.org and WordNet supply
+contemporary labels and lexical bridges; and mathematical foundations supply
+formal metadata. None is a competing visible upper tree.
 
-The current best option is a deliberately federated upper layer:
+### Implementation consequences
 
-| Role | Preferred source or idea | Use |
-| --- | --- | --- |
-| Player-facing conceptual organization | Curated v1 plus Roget's six broad classes | Familiar labels, balanced navigation, lexical discovery |
-| Formal semantic categories | SUMO, checked against Aristotle and Sowa | Object/process/quality/relation distinctions and axioms |
-| Contemporary labels and web entities | Schema.org | People, places, products, events, media, organizations |
-| Mathematical foundation | Set theory and structural type theory | Sets, functions, types, instances, constructors, proofs |
-| Transformations and relational structure | Category theory | Morphisms, composition, products, mappings, and equivalence |
-| Lexical coverage | WordNet and Roget's Thesaurus | Synsets, aliases, senses, common wording, conceptual neighborhoods |
-| Common-sense rules | Cyc/OpenCyc where licensing and access permit | Context, defaults, exceptions, and practical relations |
-
-The design consequence is important: **Roget should influence the visible
-conceptual partition, while SUMO, type theory, and category theory should
-provide typed metadata and cross-links.** None should be made the sole
-visible tree. Roget's organization is not a formal `is-a` taxonomy, and
-mathematical foundations are not a catalog of ordinary nouns; each becomes
-useful when assigned the job it actually performs well.
-
-### Revisit procedure
-
-Before changing the published SUMO browser, build a small upper-ontology
-comparison manifest. For every top-level candidate, record its source
-definition, kind, intended children, alternate parents, and whether it is
-player-visible or metadata-only. Then test the competing projections against
-ordinary examples such as `dog`, `running`, `red`, `ownership`, `number`,
-`integer`, `group`, `function`, `software type`, `proposition`, and
-`quantum field`.
+Before changing the published browser, build a small upper-ontology
+comparison manifest. For every canonical node, record its kind, intended
+children, alternate parents, and whether it is player-visible or metadata
+only. Test the projection against ordinary examples such as `dog`,
+`running`, `red`, `ownership`, `number`, `integer`, `group`, `function`,
+`software type`, `proposition`, and `quantum field`.
 
 The review should prefer a split whenever a node currently answers multiple
 incompatible questions. In particular, `Abstract` should not remain a
 catch-all for mathematical structures, attributes, propositions, relations,
-and fictional or informational entities. The first implementation should
-preserve SUMO provenance and alternate parents while introducing explicit
-kind metadata; only after that audit should we decide whether the visible
-root needs a new top-level partition.
+and fictional or informational entities. The implementation should preserve source provenance and alternate parents
+while introducing explicit kind metadata. The visible root is now fixed
+provisionally as the triad; future changes should be evidence-driven rather
+than another wholesale top-layer redesign.
 
-### SUMO PDF tree projection and unary-node policy
+## Prior art: SUMO PDF tree projection and unary-node policy
 
 The [SUMO browser](SUMO/index.html) is rebuilt from the nodes and directed blue
 arcs in the [official Ontology4 SUMO PDF](https://www.ontology4.us/download/dot/SumoOntology.pdf),
@@ -2131,7 +2258,7 @@ The reproducible extraction recipe is:
 - apply only the four explicitly marked provisional placements needed to keep
   `Entity` as the sole root.
 
-### Wikidata
+## Prior art: Wikidata
 
 - **Origin:** Wikimedia Deutschland, Berlin, Germany, launched in 2012.
 - **Current status:** active collaborative knowledge graph.
@@ -2145,7 +2272,7 @@ The reproducible extraction recipe is:
 - **Fit:** useful later for people, places, organizations, brands, fictional
   entities, and current events; too noisy to be the first noun backbone.
 
-### Wikipedia’s implicit ontology
+## Prior art: Wikipedia’s implicit ontology
 
 - **Origin:** launched in January 2001 as a global Wikimedia project.
 - **Current status:** active encyclopedia, category graph, portal system,
@@ -2187,7 +2314,7 @@ The reproducible extraction recipe is:
   categories, cycles, maintenance branches, and multiple parents are not
   collapsed into a falsely authoritative single tree.
 
-### Product-type taxonomies
+## Prior art: Product-type taxonomies
 
 Product taxonomies are valuable prior art for the artifact, food, clothing,
 tool, appliance, vehicle, electronics, and household portions of the tree.
@@ -2196,6 +2323,15 @@ or supply-chain interoperability rather than general ontology design. Their
 strength is dense coverage of familiar manufactured goods; their weakness is
 that commercial departments, brands, attributes, and merchandising use cases
 are often mixed into the hierarchy.
+
+This detailed prior-art supplement is retained adjacent to the upper-layer
+discussion for implementation convenience. It does **not** belong in the
+canonical upper ontology and is not a candidate for `Entity`, `Property`, or
+`Relation`. Google, GS1, UNSPSC, eCl@ss, ETIM, Amazon, and Walmart are
+operational classification systems: use them to discover artifact vocabulary
+and coverage gaps, preserve their source paths as metadata, and map reviewed
+leaves into the physical subtree. Do not copy commercial departments, product
+types, brands, or proprietary paths into the ontology's highest layers.
 
 The top five publicly accessible product-classification systems to evaluate
 are:
