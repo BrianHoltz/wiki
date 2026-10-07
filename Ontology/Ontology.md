@@ -909,6 +909,733 @@ functions`, `Recursive functions`, `Automata`, `Formal languages`, and
 `Graphs`, rather than a mixed node such as “Algorithms and complexity
 classes.”
 
+
+### Upper-ontology approaches
+
+The following are the principal named approaches worth evaluating before we
+invent a new arrangement. They are not interchangeable: some are formal
+upper ontologies, some are domain or linguistic ontologies, some are
+foundational theories, and some are modeling methodologies. This list names
+the players without yet ranking their suitability or reproducing their
+structures.
+
+### Formal and foundational upper ontologies
+
+- **Aristotle's Categories** — the classical inventory of substance,
+  quantity, quality, relation, place, time, position, state, action, and
+  passion.
+- **Cyc / OpenCyc** — a large common-sense knowledge base with collections,
+  individuals, predicates, rules, and context-sensitive microtheories.
+- **Suggested Upper Merged Ontology (SUMO)** — a broad formal ontology with
+  entities, objects, processes, attributes, relations, axioms, and mappings.
+- **Sowa's Knowledge Representation Ontology** — a Peircean and
+  Whitehead-influenced lattice of physical, abstract, independent, relative,
+  and mediating categories.
+- **DOLCE (Descriptive Ontology for Linguistic and Cognitive Engineering)** —
+  a philosophically and linguistically motivated ontology distinguishing
+  endurants, perdurants, qualities, regions, abstracts, and social objects.
+- **BFO (Basic Formal Ontology)** — a realist upper ontology centered on
+  continuants, occurrents, material entities, processes, qualities, roles,
+  functions, dispositions, and sites; widely used in biomedical OBO
+  ontologies.
+- **GFO (General Formal Ontology)** — a broad foundational ontology with
+  continuants, presentials, processes, time, space, levels of reality,
+  categories, and formal relations.
+- **UFO (Unified Foundational Ontology)** — a foundational ontology for
+  conceptual modeling, especially objects, events, dispositions, situations,
+  roles, relators, qualities, and social commitments.
+- **OntoClean** — a methodology rather than a complete ontology; it uses
+  meta-properties such as rigidity, identity, unity, and dependence to audit
+  taxonomic commitments.
+- **gist** — a compact practical upper ontology emphasizing things,
+  organizations, people, events, places, physical and abstract entities, and
+  reusable semantic patterns.
+- **PROTON (Proto Ontology)** — a lightweight upper ontology designed for
+  broad semantic-web interoperability, including entities, events, agents,
+  information, and abstract concepts.
+- **Basic Formal Ontology 2020 and the OBO Foundry principles** — a current
+  ecosystem around BFO that adds governance, orthogonality, textual
+  definitions, identifiers, and domain-ontology interoperability.
+
+### Philosophical and metaphysical families
+
+- **Aristotelian substance-and-accident ontology** — substances bear
+  qualities, relations, quantities, and activities.
+- **Four-Category Ontology** — a modern Aristotelian framework distinguishing
+  substantial universals, substantial particulars, non-substantial
+  universals, and non-substantial particulars.
+- **Three-dimensional endurance ontology** — objects persist by being wholly
+  present at successive times.
+- **Four-dimensional perdurance ontology** — objects are extended through
+  time as temporal parts or spacetime worms.
+- **Process ontology** — processes, events, activities, and change are
+  fundamental rather than secondary to enduring objects.
+- **Trope theory** — particularized properties or property instances are
+  fundamental and resemblance classes can form universals.
+- **Mereology and formal mereotopology** — part, whole, overlap, boundary,
+  connection, and location provide a foundation for physical and spatial
+  organization.
+- **Realist, nominalist, conceptualist, and structuralist theories of
+  universals** — competing accounts of whether kinds and properties exist
+  independently, are names, are concepts, or are patterns of structure.
+- **Social ontology** — institutions, roles, statuses, norms, collective
+  intentionality, and institutional facts, associated with work by Searle,
+  Gilbert, Tuomela, and related traditions.
+
+### Linguistic and cognitive organization systems
+
+- **Roget's Thesaurus** — a broad conceptual-semantic classification of
+  language organized into major classes, divisions, sections, and synonym
+  neighborhoods.
+- **WordNet** — a lexical ontology of synsets connected mainly by
+  hypernymy, meronymy, entailment, and related semantic relations.
+- **FrameNet** — a frame-semantic resource organizing meanings around
+  situations, participants, roles, and lexical realizations.
+- **Propædia** — Encyclopaedia Britannica's knowledge classification,
+  organized around domains, disciplines, and the major branches of human
+  knowledge.
+- **The Generalized Upper Model (GUM)** — a linguistically motivated
+  ontology for semantic interpretation, including situations, processes,
+  objects, qualities, and roles.
+- **Jackendoff's conceptual semantics** — a theory of conceptual structure
+  involving events, things, paths, places, properties, states, and
+  argument structures.
+- **Cognitive linguistics and image-schema systems** — recurring structures
+  such as containment, source-path-goal, part-whole, force, and balance.
+- **The Lexical Markup Framework and ISO terminology standards** — standards
+  for representing lexical entries, concepts, designations, definitions, and
+  terminology systems rather than a complete upper ontology.
+
+### Knowledge-representation and semantic-web standards
+
+- **Common Logic (ISO/IEC 24707)** — a logic framework for exchanging
+  ontologies and theories across first-order and related logical notations.
+- **RDF, RDFS, and OWL** — W3C graph, vocabulary, and description-logic
+  standards for classes, properties, individuals, restrictions, and
+  inference.
+- **Schema.org** — a pragmatic web vocabulary covering things, actions,
+  people, organizations, places, products, events, creative works, and
+  intangible entities.
+- **SHACL** — a constraint language for validating RDF graphs; useful for
+  enforcing the data model even though it is not an upper ontology.
+- **CIDOC Conceptual Reference Model (CIDOC CRM)** — an event-and-history
+  ontology for cultural heritage, documentation, people, objects, places,
+  events, and provenance.
+- **ISO 15926** — a reference-data and lifecycle model for process plants and
+  engineering information, notable for its treatment of objects, activities,
+  temporal parts, and relationships.
+- **SIOC, FOAF, and related social-web vocabularies** — reusable models for
+  people, accounts, documents, communities, and online relations.
+- **OBO Foundry ontologies** — a coordinated family of domain ontologies
+  using shared identifiers, BFO alignment, and explicit relations.
+
+### Mathematical and computational foundations
+
+- **Zermelo-Fraenkel set theory with Choice (ZFC)** — the dominant classical
+  set-theoretic foundation for mathematics.
+- **NBG and Morse-Kelley class theories** — set theories that make classes
+  explicit alongside sets, useful when distinguishing collections from
+  proper classes.
+- **Structural set theory and ETCS** — category-oriented alternatives to
+  element-first set theory, emphasizing sets through maps and structure.
+- **Simple type theory and the typed lambda calculus** — foundations based on
+  types, terms, functions, and typed abstraction.
+- **Dependent type theory** — a foundation in which types may depend on
+  values and propositions can be represented as types.
+- **Martin-Löf type theory and the Calculus of Constructions** — influential
+  constructive and proof-assistant foundations.
+- **Homotopy Type Theory and the Univalent Foundations program** — a
+  type-theoretic foundation treating identity and equivalence structurally.
+- **Category theory** — a structural language of objects, morphisms,
+  composition, functors, natural transformations, limits, and equivalences.
+- **Topos theory** — category-theoretic foundations in which a topos behaves
+  like a generalized universe of sets and supports internal logic.
+- **Universal algebra and algebraic specification** — structures defined by
+  signatures, operations, equations, and homomorphisms.
+- **Model theory** — the distinction among formal languages, theories,
+  structures, interpretations, satisfaction, and models.
+- **Formal methods and proof assistants** — systems such as Lean, Coq, Agda,
+  Isabelle, and HOL that make types, terms, proofs, definitions, and
+  checked derivations computationally explicit.
+- **Programming-language type systems** — nominal, structural, algebraic,
+  refinement, effect, capability, and dependent types; Scala is a useful
+  practical example but not itself a universal ontology.
+
+### Broad domain and scientific frameworks
+
+- **Cognitive Atlas and schema-based cognitive ontologies** — concepts and
+  relations for mental functions, tasks, and brain measurements.
+- **Gene Ontology** — a controlled vocabulary organized around molecular
+  function, biological process, and cellular component.
+- **Environment Ontology and Phenotype ontologies** — examples of
+  interoperable domain systems for environments, traits, qualities, and
+  biological observations.
+- **CIDOC CRM and FRBR / IFLA Library Reference Model** — event, work,
+  expression, manifestation, item, agent, and bibliographic identity
+  frameworks.
+- **Geographic information ontologies and GeoSPARQL** — places, geometries,
+  coordinate reference systems, spatial relations, and geographic features.
+- **BFO-aligned biomedical ontologies** — a large practical test of whether
+  continuant, occurrent, quality, role, function, and disposition categories
+  can support detailed domain modeling.
+- **Systems engineering and product-lifecycle reference models** — examples
+  such as ISO 15926, STEP, and SysML that organize artifacts, functions,
+  requirements, states, activities, and system decomposition.
+
+This roster is intentionally broader than the Ontology4 catalog. The next
+research pass should compare the formal definitions, licensing, maintenance,
+machine-readable availability, and coverage of these players before selecting
+which structures deserve a detailed synthesis study.
+
+### SUMO PDF tree projection and unary-node policy
+
+The [SUMO browser](SUMO/index.html) is rebuilt from the nodes and directed blue
+arcs in the [official Ontology4 SUMO PDF](https://www.ontology4.us/download/dot/SumoOntology.pdf),
+not from the current KIF hierarchy. The checked-in
+[`pdf-graph.json`](SUMO/pdf-graph.json) records the extracted 518 PDF nodes and
+554 vector arcs. Unary nodes are first-class citizens: a node having one child
+is not, by itself, evidence of a bad tree or a reason to collapse it.
+
+For each PDF node with multiple incoming arcs, the projection repeatedly
+removes the longest measured incoming arc until one primary parent remains.
+Removed parents remain visible as alternate cross-links. This makes `Object`
+have exactly the PDF's four visible children: `Agent`, `Collection`, `Region`,
+and `SelfConnectedObject`.
+
+`Entity` is now the only root. The four disconnected PDF labels receive
+explicit provisional placements: `List → Set`, `Number → Quantity`,
+`Predicate → Proposition`, and `Sentence → Proposition`. These are marked
+provisional in the browser and data rather than being misrepresented as
+PDF-derived edges. `Number` therefore sits in the abstract quantity branch,
+near the truth-value branch without being made a child of `True` or `False`.
+
+The projection contains 518 nodes and 517 primary edges, with 39 nodes having
+alternate parents and 51 unary nodes. The [complete unary-node inventory](SUMO/unary-nodes.md)
+is retained as a data reference, not a cleanup queue.
+
+The reproducible extraction recipe is:
+
+- download the PDF and record its URL and SHA-256 in
+  [`snapshot-manifest.json`](SUMO/snapshot-manifest.json);
+- convert it with `pdftocairo -svg` and `pdftotext -bbox`;
+- run [`extract_pdf_edges.py`](SUMO/extract_pdf_edges.py) to map vector arc
+  endpoints to PDF labels and measure each directed arc;
+- run [`generate_sumo.py`](SUMO/generate_sumo.py) with `--pdf-graph`;
+- for multiple incoming arcs, remove the longest repeatedly until one primary
+  parent remains, retaining removed parents as alternate cross-links; and
+- apply only the four explicitly marked provisional placements needed to keep
+  `Entity` as the sole root.
+
+### Wikidata
+
+- **Origin:** Wikimedia Deutschland, Berlin, Germany, launched in 2012.
+- **Current status:** active collaborative knowledge graph.
+- **Node count:** live and release-dependent; the
+  [Wikidata statistics portal](https://www.wikidata.org/wiki/Wikidata:Statistics)
+  reports item, statement, edit, and community counts rather than a frozen
+  ontology release.
+- **Prominence proxy:** the live statistics portal exposes tens of millions
+  of items and a very large statement/edit graph; its scale is orders of
+  magnitude beyond a one-page game profile.
+- **Fit:** useful later for people, places, organizations, brands, fictional
+  entities, and current events; too noisy to be the first noun backbone.
+
+### Wikipedia’s implicit ontology
+
+- **Origin:** launched in January 2001 as a global Wikimedia project.
+- **Current status:** active encyclopedia, category graph, portal system,
+  infobox vocabulary, redirects, interlanguage links, and a substantial
+  biological-taxonomy workflow. The [WikiProject Tree of
+  Life](https://en.wikipedia.org/wiki/Wikipedia:WikiProject_Tree_of_Life)
+  coordinates organism coverage; species articles commonly use standardized
+  [taxoboxes](https://en.wikipedia.org/wiki/Template:Taxobox) to display
+  ranks, accepted names, synonyms, and parent taxa; and
+  [Wikispecies](https://species.wikimedia.org/) provides a separate
+  Wikimedia taxonomy directory. These are valuable linked reference
+  structures, but Wikipedia's taxoboxes and categories are editorial
+  presentations, not a single versioned biological authority.
+- **Node count:** the English
+  [Wikipedia statistics page](https://en.wikipedia.org/wiki/Wikipedia:Statistics)
+  reports roughly 7.25 million articles and 2.6 million categories in its
+  2026 snapshot.
+- **Prominence proxy:** the same snapshot reports about 872 million article
+  edits by 12.4 million users; article and category counts are also direct
+  scale measures.
+- **Fit:** excellent candidate source for familiarity and named-entity
+  expansion and biological cross-checking, but category membership is
+  inconsistent and often editorial, topical, or maintenance-driven. Taxobox
+  parentage is more useful for organisms than general Wikipedia categories,
+  although it still needs source/version tracking.
+- **Browser:** [`Wikipedia/index.html`](Wikipedia/index.html) provides a
+  static, searchable, lazy-rendered browser beginning at
+  [Main topic classifications](https://en.wikipedia.org/wiki/Category:Main_topic_classifications)
+  and [Contents](https://en.wikipedia.org/wiki/Category:Contents). It
+  packages [`categories.json`](Wikipedia/categories.json) and records its
+  exact source, checksum, license, roots, and derivation parameters in
+  [`snapshot-manifest.json`](Wikipedia/snapshot-manifest.json). The October
+  3, 2026 English Categories RDF dump contains about 2 million categories
+  reachable from these roots; the checked-in derived snapshot includes 12,657
+  categories through depth 3 so the browser remains practical. Boundary
+  categories link to live Wikipedia pages for deeper exploration. The
+  reproducible parser is [`generate_categories.py`](Wikipedia/generate_categories.py).
+  It deliberately presents the result as a category graph: repeated
+  categories, cycles, maintenance branches, and multiple parents are not
+  collapsed into a falsely authoritative single tree.
+
+### Product-type taxonomies
+
+Product taxonomies are valuable prior art for the artifact, food, clothing,
+tool, appliance, vehicle, electronics, and household portions of the tree.
+They are usually optimized for retail navigation, search, listing validation,
+or supply-chain interoperability rather than general ontology design. Their
+strength is dense coverage of familiar manufactured goods; their weakness is
+that commercial departments, brands, attributes, and merchandising use cases
+are often mixed into the hierarchy.
+
+This detailed prior-art supplement is retained adjacent to the upper-layer
+discussion for implementation convenience. It does **not** belong in the
+canonical upper ontology and is not a candidate for `Entity`, `Property`, or
+`Relation`. Google, GS1, UNSPSC, eCl@ss, ETIM, Amazon, and Walmart are
+operational classification systems: use them to discover artifact vocabulary
+and coverage gaps, preserve their source paths as metadata, and map reviewed
+leaves into the physical subtree. Do not copy commercial departments, product
+types, brands, or proprietary paths into the ontology's highest layers.
+
+The top five publicly accessible product-classification systems to evaluate
+are:
+
+#### Google Product Taxonomy
+
+- **Source:** [Google's product taxonomy](https://www.google.com/basepages/producttype/taxonomy.en-US.txt)
+  and [Merchant Center product data documentation](https://support.google.com/merchants/answer/6324436).
+- **Structure:** a large, human-readable category path with numeric IDs,
+  designed for product feeds and shopping search.
+- **Access:** the taxonomy file is publicly downloadable. Its terms and
+  update policy should be recorded with each imported snapshot.
+- **Fit:** probably the best first retail source for familiar product names
+  and practical department coverage. It is useful for candidate discovery,
+  but should not dictate the ontology's treatment of natural objects,
+  services, or abstract concepts.
+
+#### GS1 Global Product Classification (GPC)
+
+- **Source:** [GS1 GPC](https://www.gs1.org/standards/gpc).
+- **Structure:** a global supply-chain classification organized around
+  segments, families, classes, and bricks, with attributes and rules that
+  support product identification across trading partners.
+- **Access:** the standard, browser, and release materials are publicly
+  discoverable; some downloadable content and reuse rights may require GS1
+  registration or acceptance of licensing terms.
+- **Fit:** excellent as a stable cross-industry product backbone and for
+  checking whether a proposed retail branch is missing a major category.
+  Its business-oriented granularity should be compressed before display.
+
+#### UNSPSC
+
+- **Source:** the [UNSPSC overview](https://en.wikipedia.org/wiki/United_Nations_Standard_Products_and_Services_Code)
+  and the code-set steward's historical [UNSPSC site](https://www.unspsc.org/).
+- **Structure:** a four-level hierarchical code set covering segments,
+  families, classes, and commodities across goods and services.
+- **Access:** the taxonomy is publicly documented and widely used, but the
+  steward's current site and code-set download availability should be
+  revalidated before importing a snapshot; the domain may not currently be a
+  reliable distribution endpoint.
+- **Fit:** useful for broad coverage and procurement-oriented gaps,
+  especially where consumer retail taxonomies omit industrial goods,
+  services, or professional equipment. It is less friendly as a visible
+  noun tree because many leaves are procurement labels.
+
+#### eCl@ss
+
+- **Source:** [eCl@ss International](https://eclass.eu/en/).
+- **Structure:** a hierarchical product and service classification with
+  standardized classes, properties, and value domains, used heavily in
+  industrial and business-to-business data exchange.
+- **Access:** the standard and documentation are publicly described, while
+  complete releases and some reuse rights may require registration or a
+  license.
+- **Fit:** strong for machinery, components, materials, industrial tools,
+  and technical products that consumer taxonomies underrepresent. It should
+  be an audit source and vocabulary reservoir, not a direct player-facing
+  hierarchy.
+
+#### ETIM
+
+- **Source:** [ETIM International](https://www.etim-international.com/).
+- **Structure:** a product-classification model centered on standardized
+  classes and product features, especially for electrical, HVAC, building,
+  installation, and technical-trade products.
+- **Access:** the model is publicly described and used through national
+  implementations; complete releases and commercial reuse conditions vary by
+  member and license.
+- **Fit:** valuable for tools, hardware, building products, appliances, and
+  technical equipment. It supplies detailed feature vocabulary that can
+  enrich leaves, but its feature-centric design should remain metadata
+  rather than become extra visible branches.
+
+#### Amazon and Walmart operational taxonomies
+
+Amazon and Walmart are important prior art even though neither appears to
+offer an unrestricted, complete public download of its live product-type
+hierarchy.
+
+- **Amazon:** Amazon exposes public documentation for the
+  [Selling Partner API product-type definitions](https://developer-docs.amazon.com/sp-api/docs/product-type-definitions-api)
+  and seller-facing browse/product-type concepts, but the complete current
+  category and product-type data is tied to marketplaces, regions,
+  authenticated APIs, and commercial operational use. Public documentation
+  is therefore available; a complete public taxonomy snapshot is not assumed.
+  Amazon is especially useful for studying retail granularity, browse-node
+  navigation, required attributes, and the distinction between product type
+  and department.
+- **Walmart:** Walmart Marketplace provides public entry points to its
+  [Marketplace APIs](https://developer.walmart.com/us-marketplace/docs/introduction-to-marketplace-apis)
+  and item-setup workflows, while the detailed category, item-specification,
+  and validation taxonomy is generally exposed through authenticated
+  seller/partner tooling. It should be treated as restricted prior art unless
+  a distributable public release can be identified. Its value is high for
+  practical retail category coverage, especially for grocery, consumables,
+  household goods, apparel, and general merchandise.
+
+The project should use the public systems as candidate generators and
+cross-checks, not merge their department trees directly. A product leaf
+should retain its source code and paths, then receive a reviewed home in the
+SUMO/PDF-derived tree. Amazon and Walmart material can be used for internal
+audits where authorized, but no proprietary taxonomy content should be copied
+into the public repository without permission.
+
+### Online biological taxonomies
+
+These resources are the strongest available prior art for extending the
+organism portion of a general noun hierarchy. None is a complete 20 Questions
+ontology: they optimize taxonomic identity, scientific names, synonymy, and
+research interoperability rather than familiar labels or balanced gameplay.
+
+#### Catalogue of Life
+
+- **Origin:** an international taxonomic data initiative launched in 2001,
+  coordinated through the Species 2000 and Integrated Taxonomic Information
+  System communities and now hosted by the Catalogue of Life partnership.
+- **Current status:** active and release-based. The [Catalogue of Life
+  releases](https://www.catalogueoflife.org/data/download) distinguish a
+  verified Base Release from a broader Extended Release.
+- **Node count:** release-dependent; the current catalog reports millions of
+  accepted species and names, with counts varying by release and inclusion
+  policy. Use the release metadata rather than a timeless number.
+- **Prominence proxy:** widely used as a global checklist and taxonomic
+  reference, with expert-verified coverage and downloadable releases.
+- **Fit:** the best initial authority for accepted organism names and
+  high-level taxonomic placement. It should supply biological structure while
+  the curated tree supplies playable common-language grouping.
+
+#### GBIF Backbone Taxonomy
+
+- **Origin:** built by the Global Biodiversity Information Facility, an
+  international intergovernmental biodiversity-data infrastructure founded in
+  2001.
+- **Current status:** active, versioned, and designed to normalize names from
+  many biodiversity datasets. See the
+  [GBIF Backbone Taxonomy](https://www.gbif.org/dataset/7ddf754f-d193-4cc9-b351-99906754a03b).
+- **Node count:** release-dependent and measured in names, taxa, and
+  synonymized records rather than one fixed class count.
+- **Prominence proxy:** GBIF is a major global biodiversity data network; its
+  backbone is used for occurrence-data name matching across a large
+  publishing ecosystem.
+- **Fit:** excellent for resolving common names and synonyms to scientific
+  taxa and for finding candidate organisms. It is more of a cross-dataset
+  nomenclatural backbone than a carefully curated game hierarchy.
+
+#### NCBI Taxonomy
+
+- **Origin:** developed by the National Center for Biotechnology Information
+  at the U.S. National Library of Medicine to organize organisms represented
+  in genetic and genomic databases.
+- **Current status:** active, continuously updated, and available through the
+  [NCBI Taxonomy database](https://www.ncbi.nlm.nih.gov/taxonomy).
+- **Node count:** release- and database-dependent; it contains hundreds of
+  thousands of scientific taxa and many sequence-associated records, with
+  counts exposed through NCBI's statistics and downloads.
+- **Prominence proxy:** it is embedded in GenBank, RefSeq, and other major
+  NCBI sequence resources, making it a standard computational taxonomy for
+  molecular biology.
+- **Fit:** authoritative for sequence-linked scientific identity and useful
+  for validating deep organism branches, but too technical and unevenly
+  familiar to serve as the visible game taxonomy.
+
+#### Open Tree of Life
+
+- **Origin:** an open-science collaboration funded by the U.S. National
+  Science Foundation and other partners, launched in the 2010s.
+- **Current status:** active research infrastructure combining a synthetic
+  tree with source taxonomies and stable taxon identifiers. Browse it at the
+  [Open Tree of Life](https://tree.opentreeoflife.org/).
+- **Node count:** release-dependent and measured in taxa and phylogenetic
+  relationships; the synthetic tree incorporates millions of named taxa from
+  contributing sources.
+- **Prominence proxy:** open APIs, stable identifiers, and published
+  computational methods make it a notable research platform for large-scale
+  comparative biology.
+- **Fit:** useful for scientifically coherent ancestry and for checking
+  extinct groups, including dinosaurs. It should be treated as a validation
+  and enrichment source, not copied wholesale into a one-page game tree.
+
+#### Integrated Taxonomic Information System (ITIS)
+
+- **Origin:** a U.S. and international interagency project established in the
+  1990s to provide authoritative taxonomic names and hierarchy.
+- **Current status:** active, maintained, and available through the
+  [ITIS database](https://www.itis.gov/).
+- **Node count:** release-dependent, with hundreds of thousands of taxonomic
+  names and records across included organism groups.
+- **Prominence proxy:** long-running government-supported identifiers and
+  reuse in biodiversity and environmental datasets.
+- **Fit:** a useful stable-name and rank authority, especially for
+  cross-checking Catalogue of Life and GBIF mappings. Its coverage and
+  scientific granularity are too specialized to define the whole game tree.
+
+#### World Register of Marine Species
+
+- **Origin:** an international marine-taxonomy initiative launched in 2007
+  and coordinated through the Flanders Marine Institute.
+- **Current status:** active, expert-managed, and release-based; see
+  [WoRMS](https://www.marinespecies.org/).
+- **Node count:** release-dependent, with hundreds of thousands of marine
+  taxa and names across accepted and synonymized records.
+- **Prominence proxy:** the principal global reference for marine organism
+  names and taxonomic status.
+- **Fit:** a high-quality specialized supplement for marine life, but not a
+  general organism root.
+
+### Approachable cladistic and evolutionary trees
+
+The most useful biological prior art for v2 is not a single taxonomy copied
+verbatim. It is a scientifically defensible source tree paired with a
+deliberately compressed display. A cladistic source should be allowed to say
+that humans are sarcopterygian vertebrates and therefore nested within the
+broader evolutionary history of fishes, even though “fish” remains an
+everyday answer category. The visible game tree can collapse intermediate
+clades when they do not create a recognizable answer or a useful question,
+while retaining the omitted clades, ranks, and source identifiers in metadata.
+
+#### OneZoom Tree of Life Explorer
+
+- **Origin:** conceived in 2011, released as open-source software in 2012,
+  and maintained since 2015 by a UK charitable organization.
+- **Current status:** active, free, and designed explicitly for public
+  exploration. OneZoom uses a fractal, map-like interface so a very large
+  tree can be explored on one page; its current tree relies heavily on the
+  Open Tree of Life and mixes other declared sources. See the
+  [OneZoom explorer](https://www.onezoom.org/) and its
+  [data and methodology overview](https://www.onezoom.org/about.html).
+- **Node count:** the project is intended to display a million-tip-scale tree;
+  the exact visible count changes with its source-data release and display
+  configuration.
+- **Prominence proxy:** open-source software, a charitable organization,
+  collaboration with the Linnean Society, and published methods including
+  [Dynamic visualisation of million-tip trees](https://doi.org/10.1111/2041-210X.13766).
+- **Fit:** the best interface prior art for keeping a huge scientifically
+  grounded tree navigable. Its species-first display is too deep and
+  biological for the whole 20 Questions ontology, but its zoomed overview,
+  common names, images, and source links suggest how v2 can hide taxonomic
+  detail without discarding it.
+
+#### TimeTree
+
+- **Origin:** developed by Blair Hedges, Sudhir Kumar, and collaborators as a
+  public knowledge base for evolutionary relationships and divergence times;
+  the current major resource is TimeTree 5.
+- **Current status:** active research and teaching resource. The
+  [TimeTree site](https://timetree.org/about) combines published divergence
+  estimates and lets users explore the evolutionary timescale between taxa.
+- **Node count:** release-dependent; TimeTree 5 is a large species-level
+  synthesis rather than a compact hand-authored hierarchy. Its useful unit is
+  a dated relationship, not a game category.
+- **Prominence proxy:** TimeTree 5 is described in a 2022 article in
+  *Molecular Biology and Evolution*,
+  [An Expanded Resource for Species Divergence Times](https://doi.org/10.1093/molbev/msac174).
+- **Fit:** useful for validating evolutionary-history examples and explaining
+  why apparently different organisms are convergent rather than close
+  relatives. It should validate relationships and dates, not dictate every
+  visible v2 split.
+
+#### Recommended collapsed-clade pattern
+
+These resources support a three-layer design for the life portion of v2:
+
+- **Source layer:** retain the accepted scientific tree, including clades
+  that are important for statements such as “tetrapods are nested within
+  lobe-finned fishes.”
+- **Navigation layer:** retain only ancestors that create a useful
+  distinction, explain a notable organism, or keep the visible branch
+  intelligible. Collapse ranks such as some orders and families when all
+  selected descendants would otherwise form a one-child chain.
+- **Answer layer:** show familiar common names and notable clades such as
+  mammals, birds, marsupials, dinosaurs, coelacanths, and monotremes. Add a
+  short scientific note where everyday language hides a meaningful
+  relationship, rather than forcing the player to answer with a Latin clade.
+
+This is not permission to redraw evolutionary relationships for convenience.
+It is a presentation projection: source parentage, alternate placements,
+synonyms, and suppressed intermediate clades remain auditable. OneZoom is the
+strongest model for the browsing interaction; Open Tree of Life and Catalogue
+of Life remain the principal candidates for taxonomic validation; and TimeTree
+is the best supplement for evolutionary-history and divergence-time context.
+
+### Roget’s Thesaurus
+
+- **Origin:** Peter Mark Roget’s classification began in London in 1805 and
+  was published in 1852.
+- **Current status:** continuously republished in commercial and public
+  editions; its class/division/section structure remains recognizable.
+- **Node count:** six primary classes and more than 1,000 meaning-cluster
+  branches; the eighth edition is reported to contain about 443,000 words.
+- **Prominence proxy:** the edition scale itself is objective; the work has
+  been continuously published since 1852 and remains a standard English
+  thesaurus reference. The best freely browsable view of the original
+  conceptual class/division/section structure is the
+  [1911 edition at Project Gutenberg](https://www.gutenberg.org/ebooks/10681);
+  see also the
+  [historical overview](https://en.wikipedia.org/wiki/Roget%27s_Thesaurus).
+- **Fit:** useful for lexical neighborhoods and question wording, not a
+  reliable hypernym ontology. It should not replace WordNet’s synset IDs.
+
+### SUMO
+
+- **Origin:** the IEEE Standard Upper Ontology effort, developed by the
+  Teknowledge-led working group around 2000 in the United States.
+- **Current status:** maintained as an open formal upper ontology and mapping
+  resource.
+- **Node count:** release-dependent; commonly reported at roughly 25,000
+  terms with tens of thousands of axioms and mappings.
+- **Prominence proxy:** the
+  [SUMO overview](https://en.wikipedia.org/wiki/Suggested_Upper_Merged_Ontology)
+  and its open downloads provide a reproducible formal-ontology footprint.
+- **Fit:** valuable for high-level distinctions such as object, process,
+  attribute, and situation; too abstract and axiom-heavy for the default
+  everyday noun page.
+
+### DBpedia
+
+- **Origin:** Free University of Berlin, University of Leipzig, and OpenLink
+  Software; launched in 2007 in Germany.
+- **Current status:** active linked-data extraction project with release-based
+  datasets.
+- **Node count:** release-dependent and measured in millions of extracted
+  entities and hundreds of millions of RDF statements, rather than a compact
+  controlled vocabulary.
+- **Prominence proxy:** its recurring public releases and SPARQL endpoint make
+  it one of the most reused Wikipedia-derived linked-data resources; see
+  [DBpedia](https://www.dbpedia.org/).
+- **Fit:** useful bridge from article names to structured entities, but not a
+  clean noun hierarchy.
+
+### Schema.org
+
+- **Origin:** Google, Microsoft, Yahoo, and Yandex, launched in 2011 for
+  interoperable web markup.
+- **Current status:** actively maintained public vocabulary.
+- **Node count:** a few hundred types and over a thousand properties,
+  depending on whether pending and extension terms are included; the
+  [official vocabulary](https://schema.org/docs/full.html) is the authoritative
+  live count.
+- **Prominence proxy:** its vocabulary is embedded in web search and structured
+  data tooling across the four founding search ecosystems.
+- **Fit:** practical for artifact, organization, person, and event categories;
+  too shallow for a complete 20 Questions noun tree.
+
+### FoodOn
+
+- **Origin:** an open food ontology effort launched in the mid-2010s by
+  researchers and food-domain communities.
+- **Current status:** maintained in the OBO ecosystem.
+- **Node count:** release-dependent and typically tens of thousands of food
+  classes and terms; use the
+  [FoodOn releases](https://foodon.org/) for the current count.
+- **Prominence proxy:** OBO/OLS distribution and domain reuse provide a
+  measurable publication and reuse footprint.
+- **Fit:** a targeted supplement if WordNet coverage of prepared foods such as
+  steak and salad is inadequate.
+
+### Encyclopaedia Britannica’s 15th-edition Propædia
+
+- **Origin:** Encyclopaedia Britannica began in Edinburgh, Scotland, in
+  1768. The one-volume *Propædia* was introduced with the 15th edition in
+  1974 as the topical “Outline of Knowledge” for the *Micropædia* and
+  *Macropædia*.
+- **Current status:** the print 15th edition ended in 2010, while Britannica
+  continues digitally. The best freely available outline of the single-volume
+  knowledge scheme is the detailed
+  [Propædia outline](https://en.wikipedia.org/wiki/Propaedia); Britannica’s
+  own shorter [Propædia entry](https://www.britannica.com/topic/Propaedia)
+  confirms its role in the 15th edition.
+- **Node count:** the *Outline of Knowledge* contains 10 parts, 41
+  divisions, and 167 sections. These are organizational topics, not a
+  biological or noun taxonomy.
+- **Prominence proxy:** it was designed over eight years by Mortimer Adler
+  with dozens of subject specialists as the organizing framework for the
+  entire 15th edition. It is one of the most prominent modern attempts to
+  provide a single synoptic outline of human knowledge.
+- **Fit:** useful prior art for broad top-level coverage and for testing
+  whether v1/v2 omit an important knowledge domain. It is intentionally
+  encyclopedic and circular rather than a balanced yes/no noun tree, so it
+  should inform coverage audits rather than supply parentage.
+
+### DMOZ/Open Directory Project RDF hierarchy
+
+The large RDF/XML text dump available for this project is not a general
+“Mozilla Ontology.” It is a snapshot of the **Open Directory Project (ODP),
+also called DMOZ**, a human-edited web-directory topic hierarchy. The
+historical association with Netscape and Mozilla explains the earlier label,
+but DMOZ is the precise name for the data structure.
+
+- **Origin:** ODP was founded in the United States in 1998 as Netscape’s Open
+  Directory Project and was later commonly known as DMOZ. Its categories were
+  organized as web subjects rather than as a formal noun or upper ontology.
+- **Source and release:** the supplied file is an RDF/XML snapshot whose
+  header says it was generated on 2006-10-10 01:06:26 GMT on `dust`; its
+  records include category IDs, titles, update timestamps, editors, and
+  `narrow` links to child topics. The dump size is approximately 600 MB.
+- **Current status:** the directory was discontinued in 2017 and is no
+  longer an actively maintained public authority. The snapshot is therefore
+  historically valuable but frozen and release-specific. See the
+  [Open Directory Project history](https://en.wikipedia.org/wiki/DMOZ).
+- **Node count:** not yet measured for this particular dump. A valid count
+  must be produced by streaming the RDF/XML, counting distinct `Topic`
+  resources, counting `narrow` edges, and reporting disconnected components,
+  missing targets, duplicate labels, and cycles. The count must not be
+  inferred from the 600 MB file size.
+- **Prominence proxy:** DMOZ was one of the best-known human-edited web
+  directories, and its category data was reused by search engines,
+  directories, and the RDF community during the Web 1.0 era. Historical
+  prominence is the appropriate metric; it should not be compared directly
+  with current Wikidata item or Wikipedia article counts.
+- **Fit:** useful as a separate, human-curated topical browsing profile and as
+  a source of realistic category distinctions. It is not a canonical noun
+  backbone: many nodes describe websites, audiences, regions, editorial
+  maintenance categories, or topical collections rather than kinds of
+  things. Multiple parents and cycles must be preserved in the source
+  manifest and resolved only in a declared display projection.
+- **20 Questions use:** after graph validation, a 5K–10K projection could
+  provide an interesting contrast to WordNet. Selection should favor
+  frequently encountered, semantically concrete categories while retaining
+  source IDs and alternate parent links. It should remain a separately named
+  DMOZ profile rather than being silently merged into the WordNet tree.
+
+### Human Knowledge
+
+- **Origin:** Brian Holtz’s *Human Knowledge 2000* outline, developed in the
+  late 1990s and early 2000s.
+- **Current status:** personal static reference material, not a community
+  ontology or standards body.
+- **Node count:** the `Thoughts 1-8.html` outline has 137 HTML heading nodes;
+  this is a document-structure count, not an ontology count.
+- **Prominence proxy:** no external citation, usage, or page-view metric has
+  been established; its relevance here is personal authorship, not public
+  prominence.
+- **Fit:** explicitly **not an input, root, ranking prior, or graft target** for
+  this ontology. “Ontology” is one topic within that outline, so the outline
+  cannot logically serve as the ontology’s root. It may be studied separately,
+  but this project will not merge it into the WordNet tree.
 ## Upper ontology
 
 ### Canonical synthesis
@@ -1194,183 +1921,6 @@ rather than forced into one `is-a` tree.
   and causation versus membership, ordering, and function application.
 - **Source identity versus display identity** — one canonical concept may
   have aliases, synonyms, alternate parents, and multiple source mappings.
-
-### Prior-art players to consider before designing a new upper ontology
-
-The following are the principal named approaches worth evaluating before we
-invent a new arrangement. They are not interchangeable: some are formal
-upper ontologies, some are domain or linguistic ontologies, some are
-foundational theories, and some are modeling methodologies. This list names
-the players without yet ranking their suitability or reproducing their
-structures.
-
-### Formal and foundational upper ontologies
-
-- **Aristotle's Categories** — the classical inventory of substance,
-  quantity, quality, relation, place, time, position, state, action, and
-  passion.
-- **Cyc / OpenCyc** — a large common-sense knowledge base with collections,
-  individuals, predicates, rules, and context-sensitive microtheories.
-- **Suggested Upper Merged Ontology (SUMO)** — a broad formal ontology with
-  entities, objects, processes, attributes, relations, axioms, and mappings.
-- **Sowa's Knowledge Representation Ontology** — a Peircean and
-  Whitehead-influenced lattice of physical, abstract, independent, relative,
-  and mediating categories.
-- **DOLCE (Descriptive Ontology for Linguistic and Cognitive Engineering)** —
-  a philosophically and linguistically motivated ontology distinguishing
-  endurants, perdurants, qualities, regions, abstracts, and social objects.
-- **BFO (Basic Formal Ontology)** — a realist upper ontology centered on
-  continuants, occurrents, material entities, processes, qualities, roles,
-  functions, dispositions, and sites; widely used in biomedical OBO
-  ontologies.
-- **GFO (General Formal Ontology)** — a broad foundational ontology with
-  continuants, presentials, processes, time, space, levels of reality,
-  categories, and formal relations.
-- **UFO (Unified Foundational Ontology)** — a foundational ontology for
-  conceptual modeling, especially objects, events, dispositions, situations,
-  roles, relators, qualities, and social commitments.
-- **OntoClean** — a methodology rather than a complete ontology; it uses
-  meta-properties such as rigidity, identity, unity, and dependence to audit
-  taxonomic commitments.
-- **gist** — a compact practical upper ontology emphasizing things,
-  organizations, people, events, places, physical and abstract entities, and
-  reusable semantic patterns.
-- **PROTON (Proto Ontology)** — a lightweight upper ontology designed for
-  broad semantic-web interoperability, including entities, events, agents,
-  information, and abstract concepts.
-- **Basic Formal Ontology 2020 and the OBO Foundry principles** — a current
-  ecosystem around BFO that adds governance, orthogonality, textual
-  definitions, identifiers, and domain-ontology interoperability.
-
-### Philosophical and metaphysical families
-
-- **Aristotelian substance-and-accident ontology** — substances bear
-  qualities, relations, quantities, and activities.
-- **Four-Category Ontology** — a modern Aristotelian framework distinguishing
-  substantial universals, substantial particulars, non-substantial
-  universals, and non-substantial particulars.
-- **Three-dimensional endurance ontology** — objects persist by being wholly
-  present at successive times.
-- **Four-dimensional perdurance ontology** — objects are extended through
-  time as temporal parts or spacetime worms.
-- **Process ontology** — processes, events, activities, and change are
-  fundamental rather than secondary to enduring objects.
-- **Trope theory** — particularized properties or property instances are
-  fundamental and resemblance classes can form universals.
-- **Mereology and formal mereotopology** — part, whole, overlap, boundary,
-  connection, and location provide a foundation for physical and spatial
-  organization.
-- **Realist, nominalist, conceptualist, and structuralist theories of
-  universals** — competing accounts of whether kinds and properties exist
-  independently, are names, are concepts, or are patterns of structure.
-- **Social ontology** — institutions, roles, statuses, norms, collective
-  intentionality, and institutional facts, associated with work by Searle,
-  Gilbert, Tuomela, and related traditions.
-
-### Linguistic and cognitive organization systems
-
-- **Roget's Thesaurus** — a broad conceptual-semantic classification of
-  language organized into major classes, divisions, sections, and synonym
-  neighborhoods.
-- **WordNet** — a lexical ontology of synsets connected mainly by
-  hypernymy, meronymy, entailment, and related semantic relations.
-- **FrameNet** — a frame-semantic resource organizing meanings around
-  situations, participants, roles, and lexical realizations.
-- **Propædia** — Encyclopaedia Britannica's knowledge classification,
-  organized around domains, disciplines, and the major branches of human
-  knowledge.
-- **The Generalized Upper Model (GUM)** — a linguistically motivated
-  ontology for semantic interpretation, including situations, processes,
-  objects, qualities, and roles.
-- **Jackendoff's conceptual semantics** — a theory of conceptual structure
-  involving events, things, paths, places, properties, states, and
-  argument structures.
-- **Cognitive linguistics and image-schema systems** — recurring structures
-  such as containment, source-path-goal, part-whole, force, and balance.
-- **The Lexical Markup Framework and ISO terminology standards** — standards
-  for representing lexical entries, concepts, designations, definitions, and
-  terminology systems rather than a complete upper ontology.
-
-### Knowledge-representation and semantic-web standards
-
-- **Common Logic (ISO/IEC 24707)** — a logic framework for exchanging
-  ontologies and theories across first-order and related logical notations.
-- **RDF, RDFS, and OWL** — W3C graph, vocabulary, and description-logic
-  standards for classes, properties, individuals, restrictions, and
-  inference.
-- **Schema.org** — a pragmatic web vocabulary covering things, actions,
-  people, organizations, places, products, events, creative works, and
-  intangible entities.
-- **SHACL** — a constraint language for validating RDF graphs; useful for
-  enforcing the data model even though it is not an upper ontology.
-- **CIDOC Conceptual Reference Model (CIDOC CRM)** — an event-and-history
-  ontology for cultural heritage, documentation, people, objects, places,
-  events, and provenance.
-- **ISO 15926** — a reference-data and lifecycle model for process plants and
-  engineering information, notable for its treatment of objects, activities,
-  temporal parts, and relationships.
-- **SIOC, FOAF, and related social-web vocabularies** — reusable models for
-  people, accounts, documents, communities, and online relations.
-- **OBO Foundry ontologies** — a coordinated family of domain ontologies
-  using shared identifiers, BFO alignment, and explicit relations.
-
-### Mathematical and computational foundations
-
-- **Zermelo-Fraenkel set theory with Choice (ZFC)** — the dominant classical
-  set-theoretic foundation for mathematics.
-- **NBG and Morse-Kelley class theories** — set theories that make classes
-  explicit alongside sets, useful when distinguishing collections from
-  proper classes.
-- **Structural set theory and ETCS** — category-oriented alternatives to
-  element-first set theory, emphasizing sets through maps and structure.
-- **Simple type theory and the typed lambda calculus** — foundations based on
-  types, terms, functions, and typed abstraction.
-- **Dependent type theory** — a foundation in which types may depend on
-  values and propositions can be represented as types.
-- **Martin-Löf type theory and the Calculus of Constructions** — influential
-  constructive and proof-assistant foundations.
-- **Homotopy Type Theory and the Univalent Foundations program** — a
-  type-theoretic foundation treating identity and equivalence structurally.
-- **Category theory** — a structural language of objects, morphisms,
-  composition, functors, natural transformations, limits, and equivalences.
-- **Topos theory** — category-theoretic foundations in which a topos behaves
-  like a generalized universe of sets and supports internal logic.
-- **Universal algebra and algebraic specification** — structures defined by
-  signatures, operations, equations, and homomorphisms.
-- **Model theory** — the distinction among formal languages, theories,
-  structures, interpretations, satisfaction, and models.
-- **Formal methods and proof assistants** — systems such as Lean, Coq, Agda,
-  Isabelle, and HOL that make types, terms, proofs, definitions, and
-  checked derivations computationally explicit.
-- **Programming-language type systems** — nominal, structural, algebraic,
-  refinement, effect, capability, and dependent types; Scala is a useful
-  practical example but not itself a universal ontology.
-
-### Broad domain and scientific frameworks
-
-- **Cognitive Atlas and schema-based cognitive ontologies** — concepts and
-  relations for mental functions, tasks, and brain measurements.
-- **Gene Ontology** — a controlled vocabulary organized around molecular
-  function, biological process, and cellular component.
-- **Environment Ontology and Phenotype ontologies** — examples of
-  interoperable domain systems for environments, traits, qualities, and
-  biological observations.
-- **CIDOC CRM and FRBR / IFLA Library Reference Model** — event, work,
-  expression, manifestation, item, agent, and bibliographic identity
-  frameworks.
-- **Geographic information ontologies and GeoSPARQL** — places, geometries,
-  coordinate reference systems, spatial relations, and geographic features.
-- **BFO-aligned biomedical ontologies** — a large practical test of whether
-  continuant, occurrent, quality, role, function, and disposition categories
-  can support detailed domain modeling.
-- **Systems engineering and product-lifecycle reference models** — examples
-  such as ISO 15926, STEP, and SysML that organize artifacts, functions,
-  requirements, states, activities, and system decomposition.
-
-This roster is intentionally broader than the Ontology4 catalog. The next
-research pass should compare the formal definitions, licensing, maintenance,
-machine-readable availability, and coverage of these players before selecting
-which structures deserve a detailed synthesis study.
 
 ### Candidate top-level partitions
 
@@ -2249,556 +2799,6 @@ and fictional or informational entities. The implementation should preserve sour
 while introducing explicit kind metadata. The visible root is now fixed
 provisionally as the triad; future changes should be evidence-driven rather
 than another wholesale top-layer redesign.
-
-## Prior art: SUMO PDF tree projection and unary-node policy
-
-The [SUMO browser](SUMO/index.html) is rebuilt from the nodes and directed blue
-arcs in the [official Ontology4 SUMO PDF](https://www.ontology4.us/download/dot/SumoOntology.pdf),
-not from the current KIF hierarchy. The checked-in
-[`pdf-graph.json`](SUMO/pdf-graph.json) records the extracted 518 PDF nodes and
-554 vector arcs. Unary nodes are first-class citizens: a node having one child
-is not, by itself, evidence of a bad tree or a reason to collapse it.
-
-For each PDF node with multiple incoming arcs, the projection repeatedly
-removes the longest measured incoming arc until one primary parent remains.
-Removed parents remain visible as alternate cross-links. This makes `Object`
-have exactly the PDF's four visible children: `Agent`, `Collection`, `Region`,
-and `SelfConnectedObject`.
-
-`Entity` is now the only root. The four disconnected PDF labels receive
-explicit provisional placements: `List → Set`, `Number → Quantity`,
-`Predicate → Proposition`, and `Sentence → Proposition`. These are marked
-provisional in the browser and data rather than being misrepresented as
-PDF-derived edges. `Number` therefore sits in the abstract quantity branch,
-near the truth-value branch without being made a child of `True` or `False`.
-
-The projection contains 518 nodes and 517 primary edges, with 39 nodes having
-alternate parents and 51 unary nodes. The [complete unary-node inventory](SUMO/unary-nodes.md)
-is retained as a data reference, not a cleanup queue.
-
-The reproducible extraction recipe is:
-
-- download the PDF and record its URL and SHA-256 in
-  [`snapshot-manifest.json`](SUMO/snapshot-manifest.json);
-- convert it with `pdftocairo -svg` and `pdftotext -bbox`;
-- run [`extract_pdf_edges.py`](SUMO/extract_pdf_edges.py) to map vector arc
-  endpoints to PDF labels and measure each directed arc;
-- run [`generate_sumo.py`](SUMO/generate_sumo.py) with `--pdf-graph`;
-- for multiple incoming arcs, remove the longest repeatedly until one primary
-  parent remains, retaining removed parents as alternate cross-links; and
-- apply only the four explicitly marked provisional placements needed to keep
-  `Entity` as the sole root.
-
-## Prior art: Wikidata
-
-- **Origin:** Wikimedia Deutschland, Berlin, Germany, launched in 2012.
-- **Current status:** active collaborative knowledge graph.
-- **Node count:** live and release-dependent; the
-  [Wikidata statistics portal](https://www.wikidata.org/wiki/Wikidata:Statistics)
-  reports item, statement, edit, and community counts rather than a frozen
-  ontology release.
-- **Prominence proxy:** the live statistics portal exposes tens of millions
-  of items and a very large statement/edit graph; its scale is orders of
-  magnitude beyond a one-page game profile.
-- **Fit:** useful later for people, places, organizations, brands, fictional
-  entities, and current events; too noisy to be the first noun backbone.
-
-## Prior art: Wikipedia’s implicit ontology
-
-- **Origin:** launched in January 2001 as a global Wikimedia project.
-- **Current status:** active encyclopedia, category graph, portal system,
-  infobox vocabulary, redirects, interlanguage links, and a substantial
-  biological-taxonomy workflow. The [WikiProject Tree of
-  Life](https://en.wikipedia.org/wiki/Wikipedia:WikiProject_Tree_of_Life)
-  coordinates organism coverage; species articles commonly use standardized
-  [taxoboxes](https://en.wikipedia.org/wiki/Template:Taxobox) to display
-  ranks, accepted names, synonyms, and parent taxa; and
-  [Wikispecies](https://species.wikimedia.org/) provides a separate
-  Wikimedia taxonomy directory. These are valuable linked reference
-  structures, but Wikipedia's taxoboxes and categories are editorial
-  presentations, not a single versioned biological authority.
-- **Node count:** the English
-  [Wikipedia statistics page](https://en.wikipedia.org/wiki/Wikipedia:Statistics)
-  reports roughly 7.25 million articles and 2.6 million categories in its
-  2026 snapshot.
-- **Prominence proxy:** the same snapshot reports about 872 million article
-  edits by 12.4 million users; article and category counts are also direct
-  scale measures.
-- **Fit:** excellent candidate source for familiarity and named-entity
-  expansion and biological cross-checking, but category membership is
-  inconsistent and often editorial, topical, or maintenance-driven. Taxobox
-  parentage is more useful for organisms than general Wikipedia categories,
-  although it still needs source/version tracking.
-- **Browser:** [`Wikipedia/index.html`](Wikipedia/index.html) provides a
-  static, searchable, lazy-rendered browser beginning at
-  [Main topic classifications](https://en.wikipedia.org/wiki/Category:Main_topic_classifications)
-  and [Contents](https://en.wikipedia.org/wiki/Category:Contents). It
-  packages [`categories.json`](Wikipedia/categories.json) and records its
-  exact source, checksum, license, roots, and derivation parameters in
-  [`snapshot-manifest.json`](Wikipedia/snapshot-manifest.json). The October
-  3, 2026 English Categories RDF dump contains about 2 million categories
-  reachable from these roots; the checked-in derived snapshot includes 12,657
-  categories through depth 3 so the browser remains practical. Boundary
-  categories link to live Wikipedia pages for deeper exploration. The
-  reproducible parser is [`generate_categories.py`](Wikipedia/generate_categories.py).
-  It deliberately presents the result as a category graph: repeated
-  categories, cycles, maintenance branches, and multiple parents are not
-  collapsed into a falsely authoritative single tree.
-
-## Prior art: Product-type taxonomies
-
-Product taxonomies are valuable prior art for the artifact, food, clothing,
-tool, appliance, vehicle, electronics, and household portions of the tree.
-They are usually optimized for retail navigation, search, listing validation,
-or supply-chain interoperability rather than general ontology design. Their
-strength is dense coverage of familiar manufactured goods; their weakness is
-that commercial departments, brands, attributes, and merchandising use cases
-are often mixed into the hierarchy.
-
-This detailed prior-art supplement is retained adjacent to the upper-layer
-discussion for implementation convenience. It does **not** belong in the
-canonical upper ontology and is not a candidate for `Entity`, `Property`, or
-`Relation`. Google, GS1, UNSPSC, eCl@ss, ETIM, Amazon, and Walmart are
-operational classification systems: use them to discover artifact vocabulary
-and coverage gaps, preserve their source paths as metadata, and map reviewed
-leaves into the physical subtree. Do not copy commercial departments, product
-types, brands, or proprietary paths into the ontology's highest layers.
-
-The top five publicly accessible product-classification systems to evaluate
-are:
-
-#### Google Product Taxonomy
-
-- **Source:** [Google's product taxonomy](https://www.google.com/basepages/producttype/taxonomy.en-US.txt)
-  and [Merchant Center product data documentation](https://support.google.com/merchants/answer/6324436).
-- **Structure:** a large, human-readable category path with numeric IDs,
-  designed for product feeds and shopping search.
-- **Access:** the taxonomy file is publicly downloadable. Its terms and
-  update policy should be recorded with each imported snapshot.
-- **Fit:** probably the best first retail source for familiar product names
-  and practical department coverage. It is useful for candidate discovery,
-  but should not dictate the ontology's treatment of natural objects,
-  services, or abstract concepts.
-
-#### GS1 Global Product Classification (GPC)
-
-- **Source:** [GS1 GPC](https://www.gs1.org/standards/gpc).
-- **Structure:** a global supply-chain classification organized around
-  segments, families, classes, and bricks, with attributes and rules that
-  support product identification across trading partners.
-- **Access:** the standard, browser, and release materials are publicly
-  discoverable; some downloadable content and reuse rights may require GS1
-  registration or acceptance of licensing terms.
-- **Fit:** excellent as a stable cross-industry product backbone and for
-  checking whether a proposed retail branch is missing a major category.
-  Its business-oriented granularity should be compressed before display.
-
-#### UNSPSC
-
-- **Source:** the [UNSPSC overview](https://en.wikipedia.org/wiki/United_Nations_Standard_Products_and_Services_Code)
-  and the code-set steward's historical [UNSPSC site](https://www.unspsc.org/).
-- **Structure:** a four-level hierarchical code set covering segments,
-  families, classes, and commodities across goods and services.
-- **Access:** the taxonomy is publicly documented and widely used, but the
-  steward's current site and code-set download availability should be
-  revalidated before importing a snapshot; the domain may not currently be a
-  reliable distribution endpoint.
-- **Fit:** useful for broad coverage and procurement-oriented gaps,
-  especially where consumer retail taxonomies omit industrial goods,
-  services, or professional equipment. It is less friendly as a visible
-  noun tree because many leaves are procurement labels.
-
-#### eCl@ss
-
-- **Source:** [eCl@ss International](https://eclass.eu/en/).
-- **Structure:** a hierarchical product and service classification with
-  standardized classes, properties, and value domains, used heavily in
-  industrial and business-to-business data exchange.
-- **Access:** the standard and documentation are publicly described, while
-  complete releases and some reuse rights may require registration or a
-  license.
-- **Fit:** strong for machinery, components, materials, industrial tools,
-  and technical products that consumer taxonomies underrepresent. It should
-  be an audit source and vocabulary reservoir, not a direct player-facing
-  hierarchy.
-
-#### ETIM
-
-- **Source:** [ETIM International](https://www.etim-international.com/).
-- **Structure:** a product-classification model centered on standardized
-  classes and product features, especially for electrical, HVAC, building,
-  installation, and technical-trade products.
-- **Access:** the model is publicly described and used through national
-  implementations; complete releases and commercial reuse conditions vary by
-  member and license.
-- **Fit:** valuable for tools, hardware, building products, appliances, and
-  technical equipment. It supplies detailed feature vocabulary that can
-  enrich leaves, but its feature-centric design should remain metadata
-  rather than become extra visible branches.
-
-#### Amazon and Walmart operational taxonomies
-
-Amazon and Walmart are important prior art even though neither appears to
-offer an unrestricted, complete public download of its live product-type
-hierarchy.
-
-- **Amazon:** Amazon exposes public documentation for the
-  [Selling Partner API product-type definitions](https://developer-docs.amazon.com/sp-api/docs/product-type-definitions-api)
-  and seller-facing browse/product-type concepts, but the complete current
-  category and product-type data is tied to marketplaces, regions,
-  authenticated APIs, and commercial operational use. Public documentation
-  is therefore available; a complete public taxonomy snapshot is not assumed.
-  Amazon is especially useful for studying retail granularity, browse-node
-  navigation, required attributes, and the distinction between product type
-  and department.
-- **Walmart:** Walmart Marketplace provides public entry points to its
-  [Marketplace APIs](https://developer.walmart.com/us-marketplace/docs/introduction-to-marketplace-apis)
-  and item-setup workflows, while the detailed category, item-specification,
-  and validation taxonomy is generally exposed through authenticated
-  seller/partner tooling. It should be treated as restricted prior art unless
-  a distributable public release can be identified. Its value is high for
-  practical retail category coverage, especially for grocery, consumables,
-  household goods, apparel, and general merchandise.
-
-The project should use the public systems as candidate generators and
-cross-checks, not merge their department trees directly. A product leaf
-should retain its source code and paths, then receive a reviewed home in the
-SUMO/PDF-derived tree. Amazon and Walmart material can be used for internal
-audits where authorized, but no proprietary taxonomy content should be copied
-into the public repository without permission.
-
-### Online biological taxonomies
-
-These resources are the strongest available prior art for extending the
-organism portion of a general noun hierarchy. None is a complete 20 Questions
-ontology: they optimize taxonomic identity, scientific names, synonymy, and
-research interoperability rather than familiar labels or balanced gameplay.
-
-#### Catalogue of Life
-
-- **Origin:** an international taxonomic data initiative launched in 2001,
-  coordinated through the Species 2000 and Integrated Taxonomic Information
-  System communities and now hosted by the Catalogue of Life partnership.
-- **Current status:** active and release-based. The [Catalogue of Life
-  releases](https://www.catalogueoflife.org/data/download) distinguish a
-  verified Base Release from a broader Extended Release.
-- **Node count:** release-dependent; the current catalog reports millions of
-  accepted species and names, with counts varying by release and inclusion
-  policy. Use the release metadata rather than a timeless number.
-- **Prominence proxy:** widely used as a global checklist and taxonomic
-  reference, with expert-verified coverage and downloadable releases.
-- **Fit:** the best initial authority for accepted organism names and
-  high-level taxonomic placement. It should supply biological structure while
-  the curated tree supplies playable common-language grouping.
-
-#### GBIF Backbone Taxonomy
-
-- **Origin:** built by the Global Biodiversity Information Facility, an
-  international intergovernmental biodiversity-data infrastructure founded in
-  2001.
-- **Current status:** active, versioned, and designed to normalize names from
-  many biodiversity datasets. See the
-  [GBIF Backbone Taxonomy](https://www.gbif.org/dataset/7ddf754f-d193-4cc9-b351-99906754a03b).
-- **Node count:** release-dependent and measured in names, taxa, and
-  synonymized records rather than one fixed class count.
-- **Prominence proxy:** GBIF is a major global biodiversity data network; its
-  backbone is used for occurrence-data name matching across a large
-  publishing ecosystem.
-- **Fit:** excellent for resolving common names and synonyms to scientific
-  taxa and for finding candidate organisms. It is more of a cross-dataset
-  nomenclatural backbone than a carefully curated game hierarchy.
-
-#### NCBI Taxonomy
-
-- **Origin:** developed by the National Center for Biotechnology Information
-  at the U.S. National Library of Medicine to organize organisms represented
-  in genetic and genomic databases.
-- **Current status:** active, continuously updated, and available through the
-  [NCBI Taxonomy database](https://www.ncbi.nlm.nih.gov/taxonomy).
-- **Node count:** release- and database-dependent; it contains hundreds of
-  thousands of scientific taxa and many sequence-associated records, with
-  counts exposed through NCBI's statistics and downloads.
-- **Prominence proxy:** it is embedded in GenBank, RefSeq, and other major
-  NCBI sequence resources, making it a standard computational taxonomy for
-  molecular biology.
-- **Fit:** authoritative for sequence-linked scientific identity and useful
-  for validating deep organism branches, but too technical and unevenly
-  familiar to serve as the visible game taxonomy.
-
-#### Open Tree of Life
-
-- **Origin:** an open-science collaboration funded by the U.S. National
-  Science Foundation and other partners, launched in the 2010s.
-- **Current status:** active research infrastructure combining a synthetic
-  tree with source taxonomies and stable taxon identifiers. Browse it at the
-  [Open Tree of Life](https://tree.opentreeoflife.org/).
-- **Node count:** release-dependent and measured in taxa and phylogenetic
-  relationships; the synthetic tree incorporates millions of named taxa from
-  contributing sources.
-- **Prominence proxy:** open APIs, stable identifiers, and published
-  computational methods make it a notable research platform for large-scale
-  comparative biology.
-- **Fit:** useful for scientifically coherent ancestry and for checking
-  extinct groups, including dinosaurs. It should be treated as a validation
-  and enrichment source, not copied wholesale into a one-page game tree.
-
-#### Integrated Taxonomic Information System (ITIS)
-
-- **Origin:** a U.S. and international interagency project established in the
-  1990s to provide authoritative taxonomic names and hierarchy.
-- **Current status:** active, maintained, and available through the
-  [ITIS database](https://www.itis.gov/).
-- **Node count:** release-dependent, with hundreds of thousands of taxonomic
-  names and records across included organism groups.
-- **Prominence proxy:** long-running government-supported identifiers and
-  reuse in biodiversity and environmental datasets.
-- **Fit:** a useful stable-name and rank authority, especially for
-  cross-checking Catalogue of Life and GBIF mappings. Its coverage and
-  scientific granularity are too specialized to define the whole game tree.
-
-#### World Register of Marine Species
-
-- **Origin:** an international marine-taxonomy initiative launched in 2007
-  and coordinated through the Flanders Marine Institute.
-- **Current status:** active, expert-managed, and release-based; see
-  [WoRMS](https://www.marinespecies.org/).
-- **Node count:** release-dependent, with hundreds of thousands of marine
-  taxa and names across accepted and synonymized records.
-- **Prominence proxy:** the principal global reference for marine organism
-  names and taxonomic status.
-- **Fit:** a high-quality specialized supplement for marine life, but not a
-  general organism root.
-
-### Approachable cladistic and evolutionary trees
-
-The most useful biological prior art for v2 is not a single taxonomy copied
-verbatim. It is a scientifically defensible source tree paired with a
-deliberately compressed display. A cladistic source should be allowed to say
-that humans are sarcopterygian vertebrates and therefore nested within the
-broader evolutionary history of fishes, even though “fish” remains an
-everyday answer category. The visible game tree can collapse intermediate
-clades when they do not create a recognizable answer or a useful question,
-while retaining the omitted clades, ranks, and source identifiers in metadata.
-
-#### OneZoom Tree of Life Explorer
-
-- **Origin:** conceived in 2011, released as open-source software in 2012,
-  and maintained since 2015 by a UK charitable organization.
-- **Current status:** active, free, and designed explicitly for public
-  exploration. OneZoom uses a fractal, map-like interface so a very large
-  tree can be explored on one page; its current tree relies heavily on the
-  Open Tree of Life and mixes other declared sources. See the
-  [OneZoom explorer](https://www.onezoom.org/) and its
-  [data and methodology overview](https://www.onezoom.org/about.html).
-- **Node count:** the project is intended to display a million-tip-scale tree;
-  the exact visible count changes with its source-data release and display
-  configuration.
-- **Prominence proxy:** open-source software, a charitable organization,
-  collaboration with the Linnean Society, and published methods including
-  [Dynamic visualisation of million-tip trees](https://doi.org/10.1111/2041-210X.13766).
-- **Fit:** the best interface prior art for keeping a huge scientifically
-  grounded tree navigable. Its species-first display is too deep and
-  biological for the whole 20 Questions ontology, but its zoomed overview,
-  common names, images, and source links suggest how v2 can hide taxonomic
-  detail without discarding it.
-
-#### TimeTree
-
-- **Origin:** developed by Blair Hedges, Sudhir Kumar, and collaborators as a
-  public knowledge base for evolutionary relationships and divergence times;
-  the current major resource is TimeTree 5.
-- **Current status:** active research and teaching resource. The
-  [TimeTree site](https://timetree.org/about) combines published divergence
-  estimates and lets users explore the evolutionary timescale between taxa.
-- **Node count:** release-dependent; TimeTree 5 is a large species-level
-  synthesis rather than a compact hand-authored hierarchy. Its useful unit is
-  a dated relationship, not a game category.
-- **Prominence proxy:** TimeTree 5 is described in a 2022 article in
-  *Molecular Biology and Evolution*,
-  [An Expanded Resource for Species Divergence Times](https://doi.org/10.1093/molbev/msac174).
-- **Fit:** useful for validating evolutionary-history examples and explaining
-  why apparently different organisms are convergent rather than close
-  relatives. It should validate relationships and dates, not dictate every
-  visible v2 split.
-
-#### Recommended collapsed-clade pattern
-
-These resources support a three-layer design for the life portion of v2:
-
-- **Source layer:** retain the accepted scientific tree, including clades
-  that are important for statements such as “tetrapods are nested within
-  lobe-finned fishes.”
-- **Navigation layer:** retain only ancestors that create a useful
-  distinction, explain a notable organism, or keep the visible branch
-  intelligible. Collapse ranks such as some orders and families when all
-  selected descendants would otherwise form a one-child chain.
-- **Answer layer:** show familiar common names and notable clades such as
-  mammals, birds, marsupials, dinosaurs, coelacanths, and monotremes. Add a
-  short scientific note where everyday language hides a meaningful
-  relationship, rather than forcing the player to answer with a Latin clade.
-
-This is not permission to redraw evolutionary relationships for convenience.
-It is a presentation projection: source parentage, alternate placements,
-synonyms, and suppressed intermediate clades remain auditable. OneZoom is the
-strongest model for the browsing interaction; Open Tree of Life and Catalogue
-of Life remain the principal candidates for taxonomic validation; and TimeTree
-is the best supplement for evolutionary-history and divergence-time context.
-
-### Roget’s Thesaurus
-
-- **Origin:** Peter Mark Roget’s classification began in London in 1805 and
-  was published in 1852.
-- **Current status:** continuously republished in commercial and public
-  editions; its class/division/section structure remains recognizable.
-- **Node count:** six primary classes and more than 1,000 meaning-cluster
-  branches; the eighth edition is reported to contain about 443,000 words.
-- **Prominence proxy:** the edition scale itself is objective; the work has
-  been continuously published since 1852 and remains a standard English
-  thesaurus reference. The best freely browsable view of the original
-  conceptual class/division/section structure is the
-  [1911 edition at Project Gutenberg](https://www.gutenberg.org/ebooks/10681);
-  see also the
-  [historical overview](https://en.wikipedia.org/wiki/Roget%27s_Thesaurus).
-- **Fit:** useful for lexical neighborhoods and question wording, not a
-  reliable hypernym ontology. It should not replace WordNet’s synset IDs.
-
-### SUMO
-
-- **Origin:** the IEEE Standard Upper Ontology effort, developed by the
-  Teknowledge-led working group around 2000 in the United States.
-- **Current status:** maintained as an open formal upper ontology and mapping
-  resource.
-- **Node count:** release-dependent; commonly reported at roughly 25,000
-  terms with tens of thousands of axioms and mappings.
-- **Prominence proxy:** the
-  [SUMO overview](https://en.wikipedia.org/wiki/Suggested_Upper_Merged_Ontology)
-  and its open downloads provide a reproducible formal-ontology footprint.
-- **Fit:** valuable for high-level distinctions such as object, process,
-  attribute, and situation; too abstract and axiom-heavy for the default
-  everyday noun page.
-
-### DBpedia
-
-- **Origin:** Free University of Berlin, University of Leipzig, and OpenLink
-  Software; launched in 2007 in Germany.
-- **Current status:** active linked-data extraction project with release-based
-  datasets.
-- **Node count:** release-dependent and measured in millions of extracted
-  entities and hundreds of millions of RDF statements, rather than a compact
-  controlled vocabulary.
-- **Prominence proxy:** its recurring public releases and SPARQL endpoint make
-  it one of the most reused Wikipedia-derived linked-data resources; see
-  [DBpedia](https://www.dbpedia.org/).
-- **Fit:** useful bridge from article names to structured entities, but not a
-  clean noun hierarchy.
-
-### Schema.org
-
-- **Origin:** Google, Microsoft, Yahoo, and Yandex, launched in 2011 for
-  interoperable web markup.
-- **Current status:** actively maintained public vocabulary.
-- **Node count:** a few hundred types and over a thousand properties,
-  depending on whether pending and extension terms are included; the
-  [official vocabulary](https://schema.org/docs/full.html) is the authoritative
-  live count.
-- **Prominence proxy:** its vocabulary is embedded in web search and structured
-  data tooling across the four founding search ecosystems.
-- **Fit:** practical for artifact, organization, person, and event categories;
-  too shallow for a complete 20 Questions noun tree.
-
-### FoodOn
-
-- **Origin:** an open food ontology effort launched in the mid-2010s by
-  researchers and food-domain communities.
-- **Current status:** maintained in the OBO ecosystem.
-- **Node count:** release-dependent and typically tens of thousands of food
-  classes and terms; use the
-  [FoodOn releases](https://foodon.org/) for the current count.
-- **Prominence proxy:** OBO/OLS distribution and domain reuse provide a
-  measurable publication and reuse footprint.
-- **Fit:** a targeted supplement if WordNet coverage of prepared foods such as
-  steak and salad is inadequate.
-
-### Encyclopaedia Britannica’s 15th-edition Propædia
-
-- **Origin:** Encyclopaedia Britannica began in Edinburgh, Scotland, in
-  1768. The one-volume *Propædia* was introduced with the 15th edition in
-  1974 as the topical “Outline of Knowledge” for the *Micropædia* and
-  *Macropædia*.
-- **Current status:** the print 15th edition ended in 2010, while Britannica
-  continues digitally. The best freely available outline of the single-volume
-  knowledge scheme is the detailed
-  [Propædia outline](https://en.wikipedia.org/wiki/Propaedia); Britannica’s
-  own shorter [Propædia entry](https://www.britannica.com/topic/Propaedia)
-  confirms its role in the 15th edition.
-- **Node count:** the *Outline of Knowledge* contains 10 parts, 41
-  divisions, and 167 sections. These are organizational topics, not a
-  biological or noun taxonomy.
-- **Prominence proxy:** it was designed over eight years by Mortimer Adler
-  with dozens of subject specialists as the organizing framework for the
-  entire 15th edition. It is one of the most prominent modern attempts to
-  provide a single synoptic outline of human knowledge.
-- **Fit:** useful prior art for broad top-level coverage and for testing
-  whether v1/v2 omit an important knowledge domain. It is intentionally
-  encyclopedic and circular rather than a balanced yes/no noun tree, so it
-  should inform coverage audits rather than supply parentage.
-
-### DMOZ/Open Directory Project RDF hierarchy
-
-The large RDF/XML text dump available for this project is not a general
-“Mozilla Ontology.” It is a snapshot of the **Open Directory Project (ODP),
-also called DMOZ**, a human-edited web-directory topic hierarchy. The
-historical association with Netscape and Mozilla explains the earlier label,
-but DMOZ is the precise name for the data structure.
-
-- **Origin:** ODP was founded in the United States in 1998 as Netscape’s Open
-  Directory Project and was later commonly known as DMOZ. Its categories were
-  organized as web subjects rather than as a formal noun or upper ontology.
-- **Source and release:** the supplied file is an RDF/XML snapshot whose
-  header says it was generated on 2006-10-10 01:06:26 GMT on `dust`; its
-  records include category IDs, titles, update timestamps, editors, and
-  `narrow` links to child topics. The dump size is approximately 600 MB.
-- **Current status:** the directory was discontinued in 2017 and is no
-  longer an actively maintained public authority. The snapshot is therefore
-  historically valuable but frozen and release-specific. See the
-  [Open Directory Project history](https://en.wikipedia.org/wiki/DMOZ).
-- **Node count:** not yet measured for this particular dump. A valid count
-  must be produced by streaming the RDF/XML, counting distinct `Topic`
-  resources, counting `narrow` edges, and reporting disconnected components,
-  missing targets, duplicate labels, and cycles. The count must not be
-  inferred from the 600 MB file size.
-- **Prominence proxy:** DMOZ was one of the best-known human-edited web
-  directories, and its category data was reused by search engines,
-  directories, and the RDF community during the Web 1.0 era. Historical
-  prominence is the appropriate metric; it should not be compared directly
-  with current Wikidata item or Wikipedia article counts.
-- **Fit:** useful as a separate, human-curated topical browsing profile and as
-  a source of realistic category distinctions. It is not a canonical noun
-  backbone: many nodes describe websites, audiences, regions, editorial
-  maintenance categories, or topical collections rather than kinds of
-  things. Multiple parents and cycles must be preserved in the source
-  manifest and resolved only in a declared display projection.
-- **20 Questions use:** after graph validation, a 5K–10K projection could
-  provide an interesting contrast to WordNet. Selection should favor
-  frequently encountered, semantically concrete categories while retaining
-  source IDs and alternate parent links. It should remain a separately named
-  DMOZ profile rather than being silently merged into the WordNet tree.
-
-### Human Knowledge
-
-- **Origin:** Brian Holtz’s *Human Knowledge 2000* outline, developed in the
-  late 1990s and early 2000s.
-- **Current status:** personal static reference material, not a community
-  ontology or standards body.
-- **Node count:** the `Thoughts 1-8.html` outline has 137 HTML heading nodes;
-  this is a document-structure count, not an ontology count.
-- **Prominence proxy:** no external citation, usage, or page-view metric has
-  been established; its relevance here is personal authorship, not public
-  prominence.
-- **Fit:** explicitly **not an input, root, ranking prior, or graft target** for
-  this ontology. “Ontology” is one topic within that outline, so the outline
-  cannot logically serve as the ontology’s root. It may be studied separately,
-  but this project will not merge it into the WordNet tree.
 
 ## Roget as lexical enrichment for the curated v1 tree
 
