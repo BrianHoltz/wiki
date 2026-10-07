@@ -854,6 +854,157 @@ reason to let SUMO dictate the game structure. The incumbent's main advantage
 is precisely that its visible questions were designed for play rather than
 inherited from a formal ontology.
 
+### Top-layer coverage inventory
+
+Before choosing a root arrangement, we need an unordered inventory of the
+important high-level kinds of thing that must have a home in the first two or
+three layers. This is a coverage checklist, not a proposed hierarchy. Some
+items are mutually exclusive in a particular modeling scheme; others are
+orthogonal roles that should be represented as types, facets, or cross-links
+rather than forced into one `is-a` tree.
+
+#### Worldly entities and occurrences
+
+- **Entities and instances** — particular things, individuals, collections,
+  kinds, classes, types, and tokens.
+- **Physical entities** — matter, energy, fields, bodies, artifacts,
+  organisms, environments, and physical systems.
+- **Objects and continuants** — comparatively persistent entities that can
+  bear properties and participate in processes.
+- **Agents** — organisms, persons, organizations, software agents, and other
+  entities capable of initiating or controlling activity.
+- **Artifacts** — intentionally made objects, tools, machines, buildings,
+  documents, software, and engineered systems.
+- **Natural entities** — particles, materials, geological bodies, planets,
+  organisms, ecosystems, and other entities not primarily defined by human
+  manufacture.
+- **Processes and activities** — happenings extended through time, including
+  actions, operations, growth, motion, computation, communication, and
+  biological or social activity.
+- **Events and transitions** — occurrences treated as bounded changes,
+  beginnings, endings, interactions, failures, and discrete happenings.
+- **States and situations** — configurations or circumstances that hold over
+  an interval, including being located, owned, alive, valid, or operating.
+- **Systems and wholes** — entities organized by parts, dependencies,
+  boundaries, or coordinated behavior.
+- **Places, regions, and spacetime** — locations, geometric regions,
+  boundaries, paths, intervals, instants, and possible or actual worlds.
+- **Causal and modal structure** — causes, effects, mechanisms, abilities,
+  dispositions, tendencies, possibilities, necessities, counterfactuals, and
+  constraints.
+
+#### Properties and ways of being
+
+- **Qualities** — color, shape, mass, temperature, age, health, texture,
+  intelligence, beauty, and other attributes that characterize something.
+- **Quantities and magnitudes** — amount, size, duration, distance, rate,
+  probability, concentration, intensity, and measurement results.
+- **States or values of qualities** — red, heavy, warm, large, true, healthy,
+  and other value-like fillers of quality dimensions.
+- **Dispositions and capabilities** — soluble, fragile, edible, executable,
+  intelligent, poisonous, or able to perform an operation.
+- **Norms, functions, purposes, and values** — what something is for, what it
+  ought to do, permissions, obligations, goals, preferences, and evaluations.
+- **Identity and equivalence** — sameness, difference, isomorphism,
+  substitutability, similarity, and criteria for counting two descriptions as
+  one thing.
+
+#### Relations and structure
+
+- **Relations** — binary and n-ary connections among entities, including
+  part-of, member-of, instance-of, subclass-of, located-in, owned-by,
+  caused-by, knows, uses, and precedes.
+- **Attributes and role slots** — relation-like properties whose values fill a
+  place in a description, record, event, or structured object.
+- **Functions and mappings** — inputs, outputs, parameters, partial and total
+  functions, transformations, operators, interpretations, and evaluation.
+- **Collections and mereology** — sets, bags, lists, sequences, multisets,
+  parts, wholes, aggregates, partitions, and membership.
+- **Order and comparison** — equality, inequality, precedence, ranking,
+  divisibility, inclusion, lattices, and partial orders.
+- **Composition and transformation** — operations, identity operations,
+  composition, inverses, products, coproducts, limits, and symmetries.
+- **Structures and invariants** — entities defined by operations and laws,
+  together with properties preserved by mappings or transformations.
+
+#### Information, language, and representation
+
+- **Information and data** — signals, measurements, records, datasets,
+  observations, messages, and stored or transmitted content.
+- **Signs and symbols** — names, labels, tokens, notation, codes, and formal
+  symbols.
+- **Descriptions and classifications** — concepts, categories, taxonomies,
+  schemas, ontologies, definitions, and bibliographic or database records.
+- **Propositions and statements** — claims, questions, commands, assertions,
+  negations, and compound statements.
+- **Truth and reference** — truth, falsity, denotation, aboutness,
+  interpretation, ambiguity, context, and sense.
+- **Languages and grammars** — natural languages, programming languages,
+  logical languages, syntax, semantics, pragmatics, and type systems.
+- **Media and works** — text, image, audio, video, software, models,
+  documents, performances, and other reproducible information artifacts.
+- **Knowledge and belief** — evidence, observation, belief, justification,
+  explanation, prediction, inference, and uncertainty.
+
+#### Logic and foundations
+
+- **Logical objects** — terms, variables, constants, predicates, formulas,
+  propositions, sequents, theories, and models.
+- **Logical connectives and quantification** — identity, negation,
+  conjunction, disjunction, implication, equivalence, universal and
+  existential quantification, and higher-order quantification.
+- **Inference and proof** — rules, derivations, proofs, refutations,
+  satisfiability, validity, consistency, completeness, decidability, and
+  computability.
+- **Axioms and formal systems** — signatures, axioms, inference rules,
+  deductive closure, metatheories, interpretations, and models.
+- **Set-theoretic foundations** — membership, empty set, singleton,
+  pairing, union, power set, replacement, infinity, choice, cardinality,
+  ordinal, relation, function, and set-built structure.
+- **Type-theoretic foundations** — types, terms, inhabitants, subtypes,
+  products, sums, functions, dependent types, inductive types, universes,
+  constructors, eliminators, and proofs-as-objects.
+- **Category-theoretic foundations** — objects, morphisms, identity,
+  composition, functors, natural transformations, products, coproducts,
+  limits, colimits, adjunctions, and equivalences.
+- **Mathematical structures** — algebraic, ordered, topological, geometric,
+  measurable, probabilistic, analytic, computational, and physical
+  structures.
+- **Mathematical models and theories** — formal structures interpreted as
+  models of mathematics, science, computation, or possible worlds.
+
+#### Time, change, and modality
+
+- **Time and temporal order** — instants, intervals, duration, succession,
+  simultaneity, recurrence, history, and temporal precedence.
+- **Change and persistence** — identity through change, creation, destruction,
+  transformation, development, maintenance, and lifecycle.
+- **Possibility and necessity** — actual, possible, impossible, necessary,
+  contingent, hypothetical, counterfactual, and simulated.
+- **Causation and explanation** — causal mechanism, intervention,
+  correlation, dependence, explanation, prediction, and law.
+
+#### Cross-cutting distinctions the upper layer must preserve
+
+- **Particular versus universal** — an individual dog versus the kind
+  `dog`, and a particular event versus an event type.
+- **Class versus instance** — category membership must not be confused with
+  subclassing or ordinary set membership.
+- **Type versus value** — `integer` versus `3`, `red` versus a red object,
+  and a Scala-like type versus one of its values.
+- **Object versus description** — a tree versus a record or sentence about
+  the tree.
+- **Structure versus model** — a group, a formal theory of groups, and a
+  physical system modeled as a group must remain distinguishable.
+- **Syntax versus semantics** — a formula, its interpretation, and the
+  proposition expressed by that interpretation.
+- **Entity versus role** — a person, an agent-role played by that person,
+  and an organization in which the role is exercised.
+- **Worldly relation versus mathematical relation** — ownership, ancestry,
+  and causation versus membership, ordering, and function application.
+- **Source identity versus display identity** — one canonical concept may
+  have aliases, synonyms, alternate parents, and multiple source mappings.
+
 ### Revisit the highest layers: mathematics, types, and meaning
 
 The current SUMO projection is weakest at the top. `Entity`, `Abstract`,
