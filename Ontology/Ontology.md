@@ -1182,6 +1182,229 @@ research pass should compare the formal definitions, licensing, maintenance,
 machine-readable availability, and coverage of these players before selecting
 which structures deserve a detailed synthesis study.
 
+### Candidate top-level partitions
+
+The next design question is not yet which detailed taxonomy to import. It is
+which small set of divisions should organize the first layer or two. The
+following are the strongest recurring proposals in prior art. Each is listed
+as a candidate pattern, not as a recommendation.
+
+#### Physical versus abstract
+
+- **Top-level idea:** divide entities into physical things and abstract or
+  non-physical things; place objects, organisms, artifacts, and processes on
+  the physical side, and numbers, propositions, properties, relations, and
+  formal structures on the abstract side.
+- **Provenance:** common in philosophical and folk ontologies; explicit in
+  Sowa's physical/abstract distinction, many SUMO renderings, and the
+  current project tree.
+- **Strengths:** immediately intuitive; separates most everyday nouns from
+  mathematics and logic; gives the player a useful first question.
+- **Weaknesses:** “abstract” becomes a dangerous catch-all; information,
+  software, fictional entities, social institutions, spacetime, and
+  processes can be physical, abstract, or multiply realized depending on
+  the intended reading.
+
+#### Objects versus processes
+
+- **Top-level idea:** divide relatively persistent entities from happenings,
+  activities, events, and changes.
+- **Provenance:** SUMO's Object/Process pattern; BFO's continuant/occurrent
+  distinction; DOLCE's endurant/perdurant distinction; process philosophy.
+- **Strengths:** handles the object/process distinction the project already
+  finds useful; makes time and change first-class; gives actions, growth,
+  motion, computation, and communication a natural home.
+- **Weaknesses:** qualities, relations, states, boundaries, information, and
+  mathematical structures do not fit cleanly on either side; “object” can
+  still conceal physical, abstract, social, and informational entities.
+
+#### Continuants versus occurrents
+
+- **Top-level idea:** divide entities that persist through time from entities
+  that unfold in time, with qualities, roles, dispositions, and sites
+  attached to the appropriate side.
+- **Provenance:** BFO's continuant/occurrent architecture; DOLCE's
+  endurant/perdurant architecture; realist foundational ontology.
+- **Strengths:** more precise than physical/abstract; supports identity,
+  persistence, temporal parts, processes, qualities, dispositions, and
+  roles; has substantial biomedical and scientific reuse.
+- **Weaknesses:** terminology is not player-facing; the distinction is
+  metaphysically loaded; abstract objects, information artifacts, and
+  social objects require additional decisions rather than disappearing into
+  a clean binary.
+
+#### Substance, quality, relation, and activity
+
+- **Top-level idea:** begin with substances or things, qualities, relations,
+  quantities, places, times, positions, states, actions, and passions.
+- **Provenance:** Aristotle's Categories and the long Aristotelian
+  substance-and-accident tradition.
+- **Strengths:** covers many items in the inventory directly; keeps
+  qualities, relations, quantities, and activities from becoming invisible
+  subcases of “abstract”; historically durable and easy to explain.
+- **Weaknesses:** not a modern formal taxonomy; categories overlap; the
+  treatment of events, information, sets, types, and mathematical objects is
+  underdeveloped; “substance” does not provide a practical noun hierarchy.
+
+#### Independent, relative, and mediating
+
+- **Top-level idea:** divide independent entities, entities that depend on or
+  relate to others, and mediating structures or processes that connect them.
+- **Provenance:** Sowa's top-level ontology, influenced by Peirce and
+  Whitehead, including the physical/abstract and continuant/occurrent
+  dimensions.
+- **Strengths:** explicitly recognizes relations and mediators instead of
+  treating everything as an isolated object; can represent roles,
+  participation, situations, descriptions, and processes.
+- **Weaknesses:** naturally forms a lattice or diamond rather than a tree;
+  category boundaries are difficult to explain to players; the framework
+  risks becoming a formal classification of modeling constructs rather than
+  a familiar noun organization.
+
+#### Entity, relation, attribute, and proposition
+
+- **Top-level idea:** divide what a description talks about from the
+  properties, relationships, and propositions used to describe it.
+- **Provenance:** the Ontological Sextett and UMO proposals on Ontology4;
+  related classical ontological rectangles and semantic modeling systems.
+- **Strengths:** prevents relations, attributes, and propositions from being
+  mistaken for ordinary objects; matches the project's need to keep source
+  metadata and cross-links distinct from the visible noun tree.
+- **Weaknesses:** is primarily a modeling ontology, not an inventory of
+  worldly kinds; “entity” remains broad; it does not by itself distinguish
+  physical things, events, mathematical structures, information, and
+  fictional entities.
+
+#### Thing, event, agent, place, and information
+
+- **Top-level idea:** organize around practical semantic-web families such as
+  things, actions or events, people and agents, places, products, creative
+  works, and intangible entities.
+- **Provenance:** Schema.org and related web-vocabulary practice.
+- **Strengths:** uses readable labels; works well for people, places,
+  organizations, artifacts, products, events, media, and web entities; easy
+  to connect to contemporary data.
+- **Weaknesses:** optimized for markup rather than philosophical
+  completeness; branches mix ontological kinds with application domains;
+  mathematical foundations, qualities, relations, and natural processes are
+  thin or indirect.
+
+#### Objects, events, situations, qualities, and relators
+
+- **Top-level idea:** distinguish enduring objects, events, situations,
+  qualities, and relation-like entities that mediate connections among
+  objects.
+- **Provenance:** UFO and conceptual-modeling traditions, with related
+  distinctions in DOLCE and foundational ontology.
+- **Strengths:** handles social objects, roles, relators, events,
+  dispositions, situations, and qualities more explicitly than a simple
+  physical/abstract split; useful for representing ownership, employment,
+  membership, and institutional facts.
+- **Weaknesses:** “relator” and “situation” are technical; the categories
+  overlap in ordinary language; mathematical objects and formal systems need
+  a parallel treatment.
+
+#### Sets, structures, and interpretations
+
+- **Top-level idea:** distinguish collections or sets, structures built from
+  operations and relations, and interpretations or models of those
+  structures.
+- **Provenance:** structural mathematics, set theory, model theory,
+  category theory, ETCS, type theory, and formal-methods practice.
+- **Strengths:** gives numbers, functions, relations, types, proofs,
+  theories, models, and mathematical structures principled homes; directly
+  addresses the chart and the upper mathematical inventory.
+- **Weaknesses:** not a sufficient ontology of ordinary physical and social
+  life; a set-theoretic encoding is not the same as an intuitive category;
+  terms such as “structure” and “model” require careful metalevel
+  separation.
+
+#### Types, terms, proofs, and values
+
+- **Top-level idea:** distinguish types or propositions, terms or values,
+  operations and constructors, and proofs or evidence.
+- **Provenance:** simple and dependent type theory, typed lambda calculus,
+  Martin-Löf type theory, Curry–Howard, proof assistants, and programming
+  language design.
+- **Strengths:** naturally separates classes from instances, types from
+  values, syntax from semantics, and propositions from proofs; maps well to
+  Scala-like subtyping, traits, algebraic data types, and executable
+  validation.
+- **Weaknesses:** a computational type system is not automatically a theory
+  of physical existence; inheritance and substitutability differ from
+  biological or metaphysical `is-a`; ordinary processes, qualities, and
+  social relations need additional modeling patterns.
+
+#### Things, properties, and relations
+
+- **Top-level idea:** use a minimal three-way split between entities,
+  properties or attributes, and relations or mappings, with events and
+  descriptions modeled through these primitives.
+- **Provenance:** recurring pattern in knowledge representation, RDF/OWL,
+  conceptual modeling, semantic databases, and lightweight upper
+  ontologies.
+- **Strengths:** compact, orthogonal, and easy to implement; keeps
+  relation-like metadata out of the entity taxonomy; supports a graph
+  rather than pretending all knowledge is inheritance.
+- **Weaknesses:** too sparse to guide the first two player-facing levels;
+  processes, time, information, mathematics, and modality become modeling
+  conventions rather than visible top-level concepts.
+
+#### The six conceptual classes
+
+- **Top-level idea:** divide concepts into abstract relations or ideas,
+  space, matter, intellect, volition, and affection or emotion, in the
+  broad conceptual ordering of Roget's Thesaurus.
+- **Provenance:** Roget's six primary classes and its later divisions and
+  sections.
+- **Strengths:** broad lexical and conceptual coverage; closer to the
+  vocabulary of human thought than a formal upper ontology; useful for
+  finding familiar labels and balancing conceptual neighborhoods.
+- **Weaknesses:** it is a thesaurus, not a formal `is-a` hierarchy; classes
+  mix entities, properties, actions, and relations; the categories are
+  historically contingent and do not provide mathematical or logical
+  foundations.
+
+#### Reality, representation, and theory
+
+- **Top-level idea:** divide the world being described, the representations
+  used to describe it, and the formal theories or models that interpret
+  those representations.
+- **Provenance:** model theory, formal methods, semiotics, philosophy of
+  language, information ontology, and the distinction emphasized in
+  Tegmark's mathematical-structure discussion.
+- **Strengths:** prevents a physical object, a sentence about it, a data
+  record, and a mathematical model from collapsing into one category;
+  provides a natural home for logic, language, information, and ontology
+  metadata.
+- **Weaknesses:** this is a metalevel partition rather than a complete
+  ontology of what exists; the same artifact can be both a physical object
+  and an information carrier; users may find the distinction less intuitive
+  than object/process or physical/abstract.
+
+#### Domains of being, knowing, and making
+
+- **Top-level idea:** divide the inventory into what exists, how it is
+  represented or known, and how it is acted upon, designed, or produced.
+- **Provenance:** broad knowledge-organization systems such as Propædia,
+  library and information-science models, systems engineering, and
+  practical knowledge graphs.
+- **Strengths:** accommodates worldly entities, information, knowledge,
+  artifacts, processes, purposes, and human practices; aligns with how the
+  project will actually use the ontology.
+- **Weaknesses:** mixes ontological categories with epistemic and practical
+  perspectives; can classify the same item in multiple top-level branches;
+  less precise as a formal upper ontology.
+
+No candidate covers the entire inventory without auxiliary dimensions. The
+most important recurring choice is therefore whether the first visible split
+should be a distinction among kinds of entity (for example,
+object/process/quality/relation), a distinction among levels of description
+(reality/representation/theory), or a practical conceptual partition
+(Roget-like classes). The later synthesis should compare these as alternative
+projections over a shared typed graph rather than assuming that one tree must
+serve every purpose.
+
 ### Revisit the highest layers: mathematics, types, and meaning
 
 The current SUMO projection is weakest at the top. `Entity`, `Abstract`,
