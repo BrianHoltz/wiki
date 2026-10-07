@@ -1379,7 +1379,7 @@ which small set of divisions should organize the first layer or two. The
 following are the strongest recurring proposals in prior art. Each is listed
 as a candidate pattern, not as a recommendation.
 
-### Physical versus abstract
+#### Physical versus abstract
 
 - **Top-level idea:** divide entities into physical things and abstract or
   non-physical things; place objects, organisms, artifacts, and processes on
@@ -1395,7 +1395,7 @@ as a candidate pattern, not as a recommendation.
   processes can be physical, abstract, or multiply realized depending on
   the intended reading.
 
-### Objects versus processes
+#### Objects versus processes
 
 - **Top-level idea:** divide relatively persistent entities from happenings,
   activities, events, and changes.
@@ -1408,7 +1408,7 @@ as a candidate pattern, not as a recommendation.
   mathematical structures do not fit cleanly on either side; “object” can
   still conceal physical, abstract, social, and informational entities.
 
-### Continuants versus occurrents
+#### Continuants versus occurrents
 
 - **Top-level idea:** divide entities that persist through time from entities
   that unfold in time, with qualities, roles, dispositions, and sites
@@ -1423,7 +1423,7 @@ as a candidate pattern, not as a recommendation.
   social objects require additional decisions rather than disappearing into
   a clean binary.
 
-### Substance, quality, relation, and activity
+#### Substance, quality, relation, and activity
 
 - **Top-level idea:** begin with substances or things, qualities, relations,
   quantities, places, times, positions, states, actions, and passions.
@@ -1436,7 +1436,7 @@ as a candidate pattern, not as a recommendation.
   treatment of events, information, sets, types, and mathematical objects is
   underdeveloped; “substance” does not provide a practical noun hierarchy.
 
-### Independent, relative, and mediating
+#### Independent, relative, and mediating
 
 - **Top-level idea:** divide independent entities, entities that depend on or
   relate to others, and mediating structures or processes that connect them.
@@ -1451,7 +1451,7 @@ as a candidate pattern, not as a recommendation.
   risks becoming a formal classification of modeling constructs rather than
   a familiar noun organization.
 
-### Entity, relation, attribute, and proposition
+#### Entity, relation, attribute, and proposition
 
 - **Top-level idea:** divide what a description talks about from the
   properties, relationships, and propositions used to describe it.
@@ -1465,7 +1465,7 @@ as a candidate pattern, not as a recommendation.
   physical things, events, mathematical structures, information, and
   fictional entities.
 
-### Thing, event, agent, place, and information
+#### Thing, event, agent, place, and information
 
 - **Top-level idea:** organize around practical semantic-web families such as
   things, actions or events, people and agents, places, products, creative
@@ -1479,7 +1479,7 @@ as a candidate pattern, not as a recommendation.
   mathematical foundations, qualities, relations, and natural processes are
   thin or indirect.
 
-### Objects, events, situations, qualities, and relators
+#### Objects, events, situations, qualities, and relators
 
 - **Top-level idea:** distinguish enduring objects, events, situations,
   qualities, and relation-like entities that mediate connections among
@@ -1494,7 +1494,7 @@ as a candidate pattern, not as a recommendation.
   overlap in ordinary language; mathematical objects and formal systems need
   a parallel treatment.
 
-### Sets, structures, and interpretations
+#### Sets, structures, and interpretations
 
 - **Top-level idea:** distinguish collections or sets, structures built from
   operations and relations, and interpretations or models of those
@@ -1509,7 +1509,7 @@ as a candidate pattern, not as a recommendation.
   terms such as “structure” and “model” require careful metalevel
   separation.
 
-### Types, terms, proofs, and values
+#### Types, terms, proofs, and values
 
 - **Top-level idea:** distinguish types or propositions, terms or values,
   operations and constructors, and proofs or evidence.
@@ -1525,7 +1525,7 @@ as a candidate pattern, not as a recommendation.
   biological or metaphysical `is-a`; ordinary processes, qualities, and
   social relations need additional modeling patterns.
 
-### Things, properties, and relations
+#### Things, properties, and relations
 
 - **Top-level idea:** use a minimal three-way split between entities,
   properties or attributes, and relations or mappings, with events and
@@ -1540,7 +1540,7 @@ as a candidate pattern, not as a recommendation.
   processes, time, information, mathematics, and modality become modeling
   conventions rather than visible top-level concepts.
 
-### The six conceptual classes
+#### The six conceptual classes
 
 - **Top-level idea:** divide concepts into abstract relations or ideas,
   space, matter, intellect, volition, and affection or emotion, in the
@@ -1555,7 +1555,7 @@ as a candidate pattern, not as a recommendation.
   historically contingent and do not provide mathematical or logical
   foundations.
 
-### Reality, representation, and theory
+#### Reality, representation, and theory
 
 - **Top-level idea:** divide the world being described, the representations
   used to describe it, and the formal theories or models that interpret
@@ -1572,7 +1572,7 @@ as a candidate pattern, not as a recommendation.
   and an information carrier; users may find the distinction less intuitive
   than object/process or physical/abstract.
 
-### Domains of being, knowing, and making
+#### Domains of being, knowing, and making
 
 - **Top-level idea:** divide the inventory into what exists, how it is
   represented or known, and how it is acted upon, designed, or produced.
