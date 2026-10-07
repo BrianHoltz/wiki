@@ -1005,6 +1005,183 @@ rather than forced into one `is-a` tree.
 - **Source identity versus display identity** — one canonical concept may
   have aliases, synonyms, alternate parents, and multiple source mappings.
 
+### Prior-art players to consider before designing a new upper ontology
+
+The following are the principal named approaches worth evaluating before we
+invent a new arrangement. They are not interchangeable: some are formal
+upper ontologies, some are domain or linguistic ontologies, some are
+foundational theories, and some are modeling methodologies. This list names
+the players without yet ranking their suitability or reproducing their
+structures.
+
+#### Formal and foundational upper ontologies
+
+- **Aristotle's Categories** — the classical inventory of substance,
+  quantity, quality, relation, place, time, position, state, action, and
+  passion.
+- **Cyc / OpenCyc** — a large common-sense knowledge base with collections,
+  individuals, predicates, rules, and context-sensitive microtheories.
+- **Suggested Upper Merged Ontology (SUMO)** — a broad formal ontology with
+  entities, objects, processes, attributes, relations, axioms, and mappings.
+- **Sowa's Knowledge Representation Ontology** — a Peircean and
+  Whitehead-influenced lattice of physical, abstract, independent, relative,
+  and mediating categories.
+- **DOLCE (Descriptive Ontology for Linguistic and Cognitive Engineering)** —
+  a philosophically and linguistically motivated ontology distinguishing
+  endurants, perdurants, qualities, regions, abstracts, and social objects.
+- **BFO (Basic Formal Ontology)** — a realist upper ontology centered on
+  continuants, occurrents, material entities, processes, qualities, roles,
+  functions, dispositions, and sites; widely used in biomedical OBO
+  ontologies.
+- **GFO (General Formal Ontology)** — a broad foundational ontology with
+  continuants, presentials, processes, time, space, levels of reality,
+  categories, and formal relations.
+- **UFO (Unified Foundational Ontology)** — a foundational ontology for
+  conceptual modeling, especially objects, events, dispositions, situations,
+  roles, relators, qualities, and social commitments.
+- **OntoClean** — a methodology rather than a complete ontology; it uses
+  meta-properties such as rigidity, identity, unity, and dependence to audit
+  taxonomic commitments.
+- **gist** — a compact practical upper ontology emphasizing things,
+  organizations, people, events, places, physical and abstract entities, and
+  reusable semantic patterns.
+- **PROTON (Proto Ontology)** — a lightweight upper ontology designed for
+  broad semantic-web interoperability, including entities, events, agents,
+  information, and abstract concepts.
+- **Basic Formal Ontology 2020 and the OBO Foundry principles** — a current
+  ecosystem around BFO that adds governance, orthogonality, textual
+  definitions, identifiers, and domain-ontology interoperability.
+
+#### Philosophical and metaphysical families
+
+- **Aristotelian substance-and-accident ontology** — substances bear
+  qualities, relations, quantities, and activities.
+- **Four-Category Ontology** — a modern Aristotelian framework distinguishing
+  substantial universals, substantial particulars, non-substantial
+  universals, and non-substantial particulars.
+- **Three-dimensional endurance ontology** — objects persist by being wholly
+  present at successive times.
+- **Four-dimensional perdurance ontology** — objects are extended through
+  time as temporal parts or spacetime worms.
+- **Process ontology** — processes, events, activities, and change are
+  fundamental rather than secondary to enduring objects.
+- **Trope theory** — particularized properties or property instances are
+  fundamental and resemblance classes can form universals.
+- **Mereology and formal mereotopology** — part, whole, overlap, boundary,
+  connection, and location provide a foundation for physical and spatial
+  organization.
+- **Realist, nominalist, conceptualist, and structuralist theories of
+  universals** — competing accounts of whether kinds and properties exist
+  independently, are names, are concepts, or are patterns of structure.
+- **Social ontology** — institutions, roles, statuses, norms, collective
+  intentionality, and institutional facts, associated with work by Searle,
+  Gilbert, Tuomela, and related traditions.
+
+#### Linguistic and cognitive organization systems
+
+- **Roget's Thesaurus** — a broad conceptual-semantic classification of
+  language organized into major classes, divisions, sections, and synonym
+  neighborhoods.
+- **WordNet** — a lexical ontology of synsets connected mainly by
+  hypernymy, meronymy, entailment, and related semantic relations.
+- **FrameNet** — a frame-semantic resource organizing meanings around
+  situations, participants, roles, and lexical realizations.
+- **Propædia** — Encyclopaedia Britannica's knowledge classification,
+  organized around domains, disciplines, and the major branches of human
+  knowledge.
+- **The Generalized Upper Model (GUM)** — a linguistically motivated
+  ontology for semantic interpretation, including situations, processes,
+  objects, qualities, and roles.
+- **Jackendoff's conceptual semantics** — a theory of conceptual structure
+  involving events, things, paths, places, properties, states, and
+  argument structures.
+- **Cognitive linguistics and image-schema systems** — recurring structures
+  such as containment, source-path-goal, part-whole, force, and balance.
+- **The Lexical Markup Framework and ISO terminology standards** — standards
+  for representing lexical entries, concepts, designations, definitions, and
+  terminology systems rather than a complete upper ontology.
+
+#### Knowledge-representation and semantic-web standards
+
+- **Common Logic (ISO/IEC 24707)** — a logic framework for exchanging
+  ontologies and theories across first-order and related logical notations.
+- **RDF, RDFS, and OWL** — W3C graph, vocabulary, and description-logic
+  standards for classes, properties, individuals, restrictions, and
+  inference.
+- **Schema.org** — a pragmatic web vocabulary covering things, actions,
+  people, organizations, places, products, events, creative works, and
+  intangible entities.
+- **SHACL** — a constraint language for validating RDF graphs; useful for
+  enforcing the data model even though it is not an upper ontology.
+- **CIDOC Conceptual Reference Model (CIDOC CRM)** — an event-and-history
+  ontology for cultural heritage, documentation, people, objects, places,
+  events, and provenance.
+- **ISO 15926** — a reference-data and lifecycle model for process plants and
+  engineering information, notable for its treatment of objects, activities,
+  temporal parts, and relationships.
+- **SIOC, FOAF, and related social-web vocabularies** — reusable models for
+  people, accounts, documents, communities, and online relations.
+- **OBO Foundry ontologies** — a coordinated family of domain ontologies
+  using shared identifiers, BFO alignment, and explicit relations.
+
+#### Mathematical and computational foundations
+
+- **Zermelo-Fraenkel set theory with Choice (ZFC)** — the dominant classical
+  set-theoretic foundation for mathematics.
+- **NBG and Morse-Kelley class theories** — set theories that make classes
+  explicit alongside sets, useful when distinguishing collections from
+  proper classes.
+- **Structural set theory and ETCS** — category-oriented alternatives to
+  element-first set theory, emphasizing sets through maps and structure.
+- **Simple type theory and the typed lambda calculus** — foundations based on
+  types, terms, functions, and typed abstraction.
+- **Dependent type theory** — a foundation in which types may depend on
+  values and propositions can be represented as types.
+- **Martin-Löf type theory and the Calculus of Constructions** — influential
+  constructive and proof-assistant foundations.
+- **Homotopy Type Theory and the Univalent Foundations program** — a
+  type-theoretic foundation treating identity and equivalence structurally.
+- **Category theory** — a structural language of objects, morphisms,
+  composition, functors, natural transformations, limits, and equivalences.
+- **Topos theory** — category-theoretic foundations in which a topos behaves
+  like a generalized universe of sets and supports internal logic.
+- **Universal algebra and algebraic specification** — structures defined by
+  signatures, operations, equations, and homomorphisms.
+- **Model theory** — the distinction among formal languages, theories,
+  structures, interpretations, satisfaction, and models.
+- **Formal methods and proof assistants** — systems such as Lean, Coq, Agda,
+  Isabelle, and HOL that make types, terms, proofs, definitions, and
+  checked derivations computationally explicit.
+- **Programming-language type systems** — nominal, structural, algebraic,
+  refinement, effect, capability, and dependent types; Scala is a useful
+  practical example but not itself a universal ontology.
+
+#### Broad domain and scientific frameworks
+
+- **Cognitive Atlas and schema-based cognitive ontologies** — concepts and
+  relations for mental functions, tasks, and brain measurements.
+- **Gene Ontology** — a controlled vocabulary organized around molecular
+  function, biological process, and cellular component.
+- **Environment Ontology and Phenotype ontologies** — examples of
+  interoperable domain systems for environments, traits, qualities, and
+  biological observations.
+- **CIDOC CRM and FRBR / IFLA Library Reference Model** — event, work,
+  expression, manifestation, item, agent, and bibliographic identity
+  frameworks.
+- **Geographic information ontologies and GeoSPARQL** — places, geometries,
+  coordinate reference systems, spatial relations, and geographic features.
+- **BFO-aligned biomedical ontologies** — a large practical test of whether
+  continuant, occurrent, quality, role, function, and disposition categories
+  can support detailed domain modeling.
+- **Systems engineering and product-lifecycle reference models** — examples
+  such as ISO 15926, STEP, and SysML that organize artifacts, functions,
+  requirements, states, activities, and system decomposition.
+
+This roster is intentionally broader than the Ontology4 catalog. The next
+research pass should compare the formal definitions, licensing, maintenance,
+machine-readable availability, and coverage of these players before selecting
+which structures deserve a detailed synthesis study.
+
 ### Revisit the highest layers: mathematics, types, and meaning
 
 The current SUMO projection is weakest at the top. `Entity`, `Abstract`,
