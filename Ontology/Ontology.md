@@ -1405,6 +1405,145 @@ object/process/quality/relation), a distinction among levels of description
 projections over a shared typed graph rather than assuming that one tree must
 serve every purpose.
 
+### Entity, property, relation versus type, term, proof, value
+
+The recurring three-way split between **entities, properties, and relations**
+is genuinely promising, but it should not be treated as a rival to the
+type-theoretic split between **types, terms, proofs, and values**. They answer
+different questions.
+
+#### What the entity/property/relation triad classifies
+
+- An **entity** is something the ontology talks about: a person, dog,
+  number, event, organization, proposition, set, or mathematical structure.
+- A **property** is a characteristic, quality, quantity, disposition, role,
+  or predicate-like aspect attributed to an entity: red, heavy, soluble,
+  employed, prime, or continuous.
+- A **relation** connects two or more relata or maps inputs to outputs:
+  part-of, older-than, owns, causes, member-of, subset-of, equal-to, or
+  applies-to.
+
+This is primarily a **semantic and metaphysical partition**. It says what
+sort of contribution a concept makes to a description of a world or domain.
+It is close to RDF-style triples, conceptual modeling, property graphs, and
+the Ontological Sextett. Its advantage is breadth and intelligibility: it
+can describe physical things, processes, mathematical objects, social facts,
+and information without pretending they are all the same kind of entity.
+
+Its limitation is that it is not a complete `is-a` taxonomy. “Property” can
+mean a universal, a particular quality, a value, a predicate, or a field in
+an information record. “Relation” can mean a worldly connection, a
+mathematical relation, a logical symbol, or a database edge. The triad needs
+typed subcategories and metalevel distinctions.
+
+#### What the type/term/proof/value system classifies
+
+- A **type** specifies a family of admissible terms or values, or a
+  proposition in propositions-as-types foundations.
+- A **term** is a syntactic expression that may denote, compute, construct,
+  or inhabit something.
+- A **value** is a canonical or evaluated term, such as `3`, a record, a
+  function, or a constructed data object.
+- A **proof** is a term inhabiting a proposition or evidence accepted by a
+  formal system; in Curry–Howard settings, propositions are types and proofs
+  are terms.
+
+This is primarily a **formal, computational, and epistemic partition**. It
+describes expressions, typing judgments, computation, construction, and
+justified derivation inside a language or formal calculus. Its advantage is
+precision: it distinguishes a class from an instance, a formula from its
+interpretation, and a proposition from a proof of that proposition. It is
+also well suited to machine checking, Scala-like type systems, algebraic
+data types, proof assistants, and executable ontology constraints.
+
+Its limitation is that “value” is usually a language-relative notion, not a
+category of everything that exists. A dog in the world is not automatically
+a value; a physical process is not automatically a term; and a property such
+as redness is not automatically a type. The same real-world entity may be
+represented by many terms in many languages, while one term may denote
+different things in different interpretations.
+
+#### The correspondence is partial, not one-to-one
+
+| World-facing semantic notion | Formal/type-theoretic analogue | Why the mapping is imperfect |
+| --- | --- | --- |
+| Entity | Term, value, or inhabitant of a type | An entity may be represented by many terms, and not every entity is computationally canonical |
+| Kind or class | Type, sort, or universe | A type may be a data domain, a proposition, or a computational interface rather than a worldly kind |
+| Property | Predicate, dependent type, refinement, field, or proposition | A property may be intrinsic, relational, role-like, context-dependent, or merely representational |
+| Relation | Function type, relation-valued predicate, record field, morphism, or proof | A relation can be data, logic, structure, or a worldly fact |
+| Proposition | Type or proposition in a logic | A proposition may be true, false, undecided, hypothetical, or interpreted differently across models |
+| Proof or evidence | Term inhabiting a proposition | Evidence is not the same thing as the fact or relation that it supports |
+| Mathematical structure | Typed record, algebraic structure, category, or model | The formal encoding depends on the chosen foundation and signature |
+
+The most important mismatch is that the first triad is **about semantic
+roles in what is described**, while the second is **about expressions,
+inhabitants, evaluation, and justification within a formal system**. A
+relation such as `owns(person, bicycle)` is not itself a proof. A proof that
+the relation holds is a separate formal object, and a term representing the
+relation is yet another object at the syntax or data level.
+
+#### A reconciliation for this project
+
+The cleanest synthesis is a typed, multi-layer graph rather than a single
+four-way root:
+
+```text
+World-facing layer
+├── Entities
+├── Properties and qualities
+└── Relations and mappings
+
+Formal-description layer
+├── Types and propositions
+├── Terms and values
+├── Functions and constructors
+└── Proofs, evidence, and derivations
+
+Interpretation layer
+├── Denotation and reference
+├── Satisfaction and truth
+├── Models and possible worlds
+└── Translation between representations
+```
+
+The browser could expose the first layer as the most intelligible upper
+ontology while storing the latter layers as typed metadata and cross-links.
+Mathematical and computational concepts could optionally enter through both
+paths: `integer` is an entity-like mathematical structure and also a type;
+`3` is a mathematical value and a term inhabiting that type; `3 is prime` is
+a proposition; and a checked derivation of that proposition is a proof.
+
+#### What is missing from both triads
+
+Neither triad alone covers several categories that must remain explicit:
+
+- **Events and processes** — entities/properties/relations can represent
+  them, and type theory can encode them, but neither triad says that time,
+  change, activity, and participation deserve first-class treatment.
+- **States, situations, and contexts** — properties and propositions often
+  depend on a situation, time, agent, or possible world.
+- **Functions and operations** — these are relations in one reading, terms or
+  constructors in another, and structure-preserving maps in category theory.
+- **Collections and mereology** — sets, lists, bags, parts, wholes, and
+  membership need explicit patterns rather than being reduced to values.
+- **Syntax, semantics, and pragmatics** — terms, values, denotations,
+  interpretations, uses, and communicative acts belong at different levels.
+- **Kinds and metatypes** — types themselves may be entities, terms, or
+  inhabitants of higher universes; a type hierarchy must not be confused
+  with ordinary instance membership.
+- **Time, modality, causation, and normativity** — necessity, possibility,
+  causes, obligations, purposes, and counterfactuals require relations to
+  worlds, times, agents, or rules.
+- **Identity and equivalence** — equality, sameness of entity, isomorphism,
+  observational equivalence, and substitutability are not interchangeable.
+
+The working hypothesis should therefore be: **use
+entity/property/relation as the compact semantic upper partition, and use
+types/terms/values/proofs as a formalization and validation layer that
+cross-cuts it**. Add first-class patterns for processes, contexts, functions,
+collections, interpretations, time, modality, and identity instead of
+forcing those concepts into either triad.
+
 ### Revisit the highest layers: mathematics, types, and meaning
 
 The current SUMO projection is weakest at the top. `Entity`, `Abstract`,
