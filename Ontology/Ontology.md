@@ -854,8 +854,9 @@ reason to let SUMO dictate the game structure. The incumbent's main advantage
 is precisely that its visible questions were designed for play rather than
 inherited from a formal ontology.
 
-### Top-layer coverage inventory
+## Upper ontology
 
+### Top-layer coverage inventory
 Before choosing a root arrangement, we need an unordered inventory of the
 important high-level kinds of thing that must have a home in the first two or
 three layers. This is a coverage checklist, not a proposed hierarchy. Some
@@ -863,7 +864,7 @@ items are mutually exclusive in a particular modeling scheme; others are
 orthogonal roles that should be represented as types, facets, or cross-links
 rather than forced into one `is-a` tree.
 
-#### Worldly entities and occurrences
+### Worldly entities and occurrences
 
 - **Entities and instances** — particular things, individuals, collections,
   kinds, classes, types, and tokens.
@@ -893,7 +894,7 @@ rather than forced into one `is-a` tree.
   dispositions, tendencies, possibilities, necessities, counterfactuals, and
   constraints.
 
-#### Properties and ways of being
+### Properties and ways of being
 
 - **Qualities** — color, shape, mass, temperature, age, health, texture,
   intelligence, beauty, and other attributes that characterize something.
@@ -909,7 +910,7 @@ rather than forced into one `is-a` tree.
   substitutability, similarity, and criteria for counting two descriptions as
   one thing.
 
-#### Relations and structure
+### Relations and structure
 
 - **Relations** — binary and n-ary connections among entities, including
   part-of, member-of, instance-of, subclass-of, located-in, owned-by,
@@ -927,7 +928,7 @@ rather than forced into one `is-a` tree.
 - **Structures and invariants** — entities defined by operations and laws,
   together with properties preserved by mappings or transformations.
 
-#### Information, language, and representation
+### Information, language, and representation
 
 - **Information and data** — signals, measurements, records, datasets,
   observations, messages, and stored or transmitted content.
@@ -946,7 +947,7 @@ rather than forced into one `is-a` tree.
 - **Knowledge and belief** — evidence, observation, belief, justification,
   explanation, prediction, inference, and uncertainty.
 
-#### Logic and foundations
+### Logic and foundations
 
 - **Logical objects** — terms, variables, constants, predicates, formulas,
   propositions, sequents, theories, and models.
@@ -973,7 +974,7 @@ rather than forced into one `is-a` tree.
 - **Mathematical models and theories** — formal structures interpreted as
   models of mathematics, science, computation, or possible worlds.
 
-#### Time, change, and modality
+### Time, change, and modality
 
 - **Time and temporal order** — instants, intervals, duration, succession,
   simultaneity, recurrence, history, and temporal precedence.
@@ -984,7 +985,7 @@ rather than forced into one `is-a` tree.
 - **Causation and explanation** — causal mechanism, intervention,
   correlation, dependence, explanation, prediction, and law.
 
-#### Cross-cutting distinctions the upper layer must preserve
+### Cross-cutting distinctions the upper layer must preserve
 
 - **Particular versus universal** — an individual dog versus the kind
   `dog`, and a particular event versus an event type.
@@ -1014,7 +1015,7 @@ foundational theories, and some are modeling methodologies. This list names
 the players without yet ranking their suitability or reproducing their
 structures.
 
-#### Formal and foundational upper ontologies
+### Formal and foundational upper ontologies
 
 - **Aristotle's Categories** — the classical inventory of substance,
   quantity, quality, relation, place, time, position, state, action, and
@@ -1052,7 +1053,7 @@ structures.
   ecosystem around BFO that adds governance, orthogonality, textual
   definitions, identifiers, and domain-ontology interoperability.
 
-#### Philosophical and metaphysical families
+### Philosophical and metaphysical families
 
 - **Aristotelian substance-and-accident ontology** — substances bear
   qualities, relations, quantities, and activities.
@@ -1077,7 +1078,7 @@ structures.
   intentionality, and institutional facts, associated with work by Searle,
   Gilbert, Tuomela, and related traditions.
 
-#### Linguistic and cognitive organization systems
+### Linguistic and cognitive organization systems
 
 - **Roget's Thesaurus** — a broad conceptual-semantic classification of
   language organized into major classes, divisions, sections, and synonym
@@ -1101,7 +1102,7 @@ structures.
   for representing lexical entries, concepts, designations, definitions, and
   terminology systems rather than a complete upper ontology.
 
-#### Knowledge-representation and semantic-web standards
+### Knowledge-representation and semantic-web standards
 
 - **Common Logic (ISO/IEC 24707)** — a logic framework for exchanging
   ontologies and theories across first-order and related logical notations.
@@ -1124,7 +1125,7 @@ structures.
 - **OBO Foundry ontologies** — a coordinated family of domain ontologies
   using shared identifiers, BFO alignment, and explicit relations.
 
-#### Mathematical and computational foundations
+### Mathematical and computational foundations
 
 - **Zermelo-Fraenkel set theory with Choice (ZFC)** — the dominant classical
   set-theoretic foundation for mathematics.
@@ -1156,7 +1157,7 @@ structures.
   refinement, effect, capability, and dependent types; Scala is a useful
   practical example but not itself a universal ontology.
 
-#### Broad domain and scientific frameworks
+### Broad domain and scientific frameworks
 
 - **Cognitive Atlas and schema-based cognitive ontologies** — concepts and
   relations for mental functions, tasks, and brain measurements.
@@ -1189,7 +1190,7 @@ which small set of divisions should organize the first layer or two. The
 following are the strongest recurring proposals in prior art. Each is listed
 as a candidate pattern, not as a recommendation.
 
-#### Physical versus abstract
+### Physical versus abstract
 
 - **Top-level idea:** divide entities into physical things and abstract or
   non-physical things; place objects, organisms, artifacts, and processes on
@@ -1205,7 +1206,7 @@ as a candidate pattern, not as a recommendation.
   processes can be physical, abstract, or multiply realized depending on
   the intended reading.
 
-#### Objects versus processes
+### Objects versus processes
 
 - **Top-level idea:** divide relatively persistent entities from happenings,
   activities, events, and changes.
@@ -1218,7 +1219,7 @@ as a candidate pattern, not as a recommendation.
   mathematical structures do not fit cleanly on either side; “object” can
   still conceal physical, abstract, social, and informational entities.
 
-#### Continuants versus occurrents
+### Continuants versus occurrents
 
 - **Top-level idea:** divide entities that persist through time from entities
   that unfold in time, with qualities, roles, dispositions, and sites
@@ -1233,7 +1234,7 @@ as a candidate pattern, not as a recommendation.
   social objects require additional decisions rather than disappearing into
   a clean binary.
 
-#### Substance, quality, relation, and activity
+### Substance, quality, relation, and activity
 
 - **Top-level idea:** begin with substances or things, qualities, relations,
   quantities, places, times, positions, states, actions, and passions.
@@ -1246,7 +1247,7 @@ as a candidate pattern, not as a recommendation.
   treatment of events, information, sets, types, and mathematical objects is
   underdeveloped; “substance” does not provide a practical noun hierarchy.
 
-#### Independent, relative, and mediating
+### Independent, relative, and mediating
 
 - **Top-level idea:** divide independent entities, entities that depend on or
   relate to others, and mediating structures or processes that connect them.
@@ -1261,7 +1262,7 @@ as a candidate pattern, not as a recommendation.
   risks becoming a formal classification of modeling constructs rather than
   a familiar noun organization.
 
-#### Entity, relation, attribute, and proposition
+### Entity, relation, attribute, and proposition
 
 - **Top-level idea:** divide what a description talks about from the
   properties, relationships, and propositions used to describe it.
@@ -1275,7 +1276,7 @@ as a candidate pattern, not as a recommendation.
   physical things, events, mathematical structures, information, and
   fictional entities.
 
-#### Thing, event, agent, place, and information
+### Thing, event, agent, place, and information
 
 - **Top-level idea:** organize around practical semantic-web families such as
   things, actions or events, people and agents, places, products, creative
@@ -1289,7 +1290,7 @@ as a candidate pattern, not as a recommendation.
   mathematical foundations, qualities, relations, and natural processes are
   thin or indirect.
 
-#### Objects, events, situations, qualities, and relators
+### Objects, events, situations, qualities, and relators
 
 - **Top-level idea:** distinguish enduring objects, events, situations,
   qualities, and relation-like entities that mediate connections among
@@ -1304,7 +1305,7 @@ as a candidate pattern, not as a recommendation.
   overlap in ordinary language; mathematical objects and formal systems need
   a parallel treatment.
 
-#### Sets, structures, and interpretations
+### Sets, structures, and interpretations
 
 - **Top-level idea:** distinguish collections or sets, structures built from
   operations and relations, and interpretations or models of those
@@ -1319,7 +1320,7 @@ as a candidate pattern, not as a recommendation.
   terms such as “structure” and “model” require careful metalevel
   separation.
 
-#### Types, terms, proofs, and values
+### Types, terms, proofs, and values
 
 - **Top-level idea:** distinguish types or propositions, terms or values,
   operations and constructors, and proofs or evidence.
@@ -1335,7 +1336,7 @@ as a candidate pattern, not as a recommendation.
   biological or metaphysical `is-a`; ordinary processes, qualities, and
   social relations need additional modeling patterns.
 
-#### Things, properties, and relations
+### Things, properties, and relations
 
 - **Top-level idea:** use a minimal three-way split between entities,
   properties or attributes, and relations or mappings, with events and
@@ -1350,7 +1351,7 @@ as a candidate pattern, not as a recommendation.
   processes, time, information, mathematics, and modality become modeling
   conventions rather than visible top-level concepts.
 
-#### The six conceptual classes
+### The six conceptual classes
 
 - **Top-level idea:** divide concepts into abstract relations or ideas,
   space, matter, intellect, volition, and affection or emotion, in the
@@ -1365,7 +1366,7 @@ as a candidate pattern, not as a recommendation.
   historically contingent and do not provide mathematical or logical
   foundations.
 
-#### Reality, representation, and theory
+### Reality, representation, and theory
 
 - **Top-level idea:** divide the world being described, the representations
   used to describe it, and the formal theories or models that interpret
@@ -1382,7 +1383,7 @@ as a candidate pattern, not as a recommendation.
   and an information carrier; users may find the distinction less intuitive
   than object/process or physical/abstract.
 
-#### Domains of being, knowing, and making
+### Domains of being, knowing, and making
 
 - **Top-level idea:** divide the inventory into what exists, how it is
   represented or known, and how it is acted upon, designed, or produced.
@@ -1412,7 +1413,7 @@ is genuinely promising, but it should not be treated as a rival to the
 type-theoretic split between **types, terms, proofs, and values**. They answer
 different questions.
 
-#### What the entity/property/relation triad classifies
+### What the entity/property/relation triad classifies
 
 - An **entity** is something the ontology talks about: a person, dog,
   number, event, organization, proposition, set, or mathematical structure.
@@ -1436,7 +1437,7 @@ an information record. “Relation” can mean a worldly connection, a
 mathematical relation, a logical symbol, or a database edge. The triad needs
 typed subcategories and metalevel distinctions.
 
-#### What the type/term/proof/value system classifies
+### What the type/term/proof/value system classifies
 
 - A **type** specifies a family of admissible terms or values, or a
   proposition in propositions-as-types foundations.
@@ -1463,7 +1464,7 @@ as redness is not automatically a type. The same real-world entity may be
 represented by many terms in many languages, while one term may denote
 different things in different interpretations.
 
-#### The correspondence is partial, not one-to-one
+### The correspondence is partial, not one-to-one
 
 | World-facing semantic notion | Formal/type-theoretic analogue | Why the mapping is imperfect |
 | --- | --- | --- |
@@ -1482,7 +1483,7 @@ relation such as `owns(person, bicycle)` is not itself a proof. A proof that
 the relation holds is a separate formal object, and a term representing the
 relation is yet another object at the syntax or data level.
 
-#### A reconciliation for this project
+### A reconciliation for this project
 
 The cleanest synthesis is a typed, multi-layer graph rather than a single
 four-way root:
@@ -1513,7 +1514,7 @@ paths: `integer` is an entity-like mathematical structure and also a type;
 `3` is a mathematical value and a term inhabiting that type; `3 is prime` is
 a proposition; and a checked derivation of that proposition is a proof.
 
-#### What is missing from both triads
+### What is missing from both triads
 
 Neither triad alone covers several categories that must remain explicit:
 
@@ -1563,7 +1564,7 @@ proof metadata. The authoritative data model should therefore permit typed
 cross-links and role annotations even when the browser chooses one primary
 display branch.
 
-#### Maximal candidate inventory
+### Maximal candidate inventory
 
 The following is the deliberately generous candidate space. It is not a
 proposed set of siblings; several candidates are alternative ways to
@@ -1670,7 +1671,7 @@ tradeoffs visible before we choose a compact projection.
 - **Provenance relations** — sourced-from, asserted-by, generated-by,
   inferred-from, proved-by, revised-from, and supersedes.
 
-#### Coherent subcategory variants
+### Coherent subcategory variants
 
 These variants show how the maximal inventory could be made navigable. They
 are alternatives for the visible second and third levels, not separate
@@ -1712,7 +1713,7 @@ preserving their physical realizations and their relations to people,
 artifacts, and events. The data model should support both facets rather than
 forcing an informational or social concept to be exclusively abstract.
 
-#### Mathematical placement under the physical/abstract split
+### Mathematical placement under the physical/abstract split
 
 The following worked projection gives a taste of where familiar mathematics
 and modern formal foundations could live. It is intentionally more detailed
@@ -1938,7 +1939,7 @@ discovery. It is useful for the player-facing language layer, but its
 categories are not sufficiently formal to serve as the authoritative
 semantic model.
 
-#### Current recommendation
+### Current recommendation
 
 Use the **minimal semantic variant** as the initial visible projection, with
 `Entity`, `Property`, and `Relation` as the only mandatory top-level nodes.
@@ -1974,7 +1975,7 @@ SUMO remains useful as a source of formal distinctions and axioms, but its
 top-level presentation should be treated as a candidate mapping layer, not
 as the final upper ontology.
 
-#### Tegmark's mathematical-structure chart
+### Tegmark's mathematical-structure chart
 
 The attached chart is best treated as a visual prior-art rendering of the
 idea that increasingly rich mathematical structures arise by adding
@@ -1991,7 +1992,7 @@ source to cite for Tegmark's mathematical-structure/formal-system
 distinction; the image is useful as a compact design prompt for a future
 mathematical branch.
 
-#### What modern mathematics contributes
+### What modern mathematics contributes
 
 Modern mathematics supplies a more disciplined upper-level vocabulary than
 SUMO's current abstraction branch, but not a ready-made everyday ontology.
@@ -2052,7 +2053,7 @@ more parent links. The browser can still project a single primary navigation
 parent while retaining cross-links between a type and its instances, a
 structure and its models, and a proposition and the situation it describes.
 
-#### Candidate synthesis
+### Candidate synthesis
 
 The current best option is a deliberately federated upper layer:
 
@@ -2073,7 +2074,7 @@ visible tree. Roget's organization is not a formal `is-a` taxonomy, and
 mathematical foundations are not a catalog of ordinary nouns; each becomes
 useful when assigned the job it actually performs well.
 
-#### Revisit procedure
+### Revisit procedure
 
 Before changing the published SUMO browser, build a small upper-ontology
 comparison manifest. For every top-level candidate, record its source
@@ -2091,7 +2092,7 @@ preserve SUMO provenance and alternate parents while introducing explicit
 kind metadata; only after that audit should we decide whether the visible
 root needs a new top-level partition.
 
-#### SUMO PDF tree projection and unary-node policy
+### SUMO PDF tree projection and unary-node policy
 
 The [SUMO browser](SUMO/index.html) is rebuilt from the nodes and directed blue
 arcs in the [official Ontology4 SUMO PDF](https://www.ontology4.us/download/dot/SumoOntology.pdf),
@@ -2632,7 +2633,15 @@ but DMOZ is the precise name for the data structure.
   cannot logically serve as the ontology’s root. It may be studied separately,
   but this project will not merge it into the WordNet tree.
 
-## Roget and the curated v1 tree
+## Roget as lexical enrichment for the curated v1 tree
+
+This section should be retained, but its scope is narrower than the new
+`Upper ontology` section. The upper-ontology discussion treats Roget as
+candidate prior art for conceptual partitioning; this section records the
+concrete lexical crosswalk and the implementation decision that Roget
+enriches v1 without becoming its structural parent taxonomy. It is therefore
+not redundant: one section concerns upper-level design, while this one
+concerns vocabulary evidence, aliases, and gameplay-oriented placement.
 
 [`Rogets/index.html`](Rogets/index.html) is a faithful browser of the 1,000
 numbered concepts in the 1911 Gutenberg edition. It differs fundamentally
