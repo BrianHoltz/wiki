@@ -13,7 +13,7 @@ def node(label: str, years_ago: int, description: str, *children: dict) -> dict:
     return {
         "label": label,
         "originYearsAgo": years_ago,
-        "definition": f"~{years_ago:,} years ago: {description}",
+        "definition": f"{years_ago // 1_000_000}Mya: {description}",
         "children": list(children),
     }
 
@@ -327,7 +327,7 @@ def graft(path: Path) -> None:
     data["organismGraft"] = {
         "source": "Human Knowledge 2000 taxonomy table + modern Wikipedia clade corrections",
         "policy": "Monophyletic, interest-weighted backbone; specialist-only subdivisions telescoped",
-        "originEstimatePolicy": "Every grafted clade definition begins with an approximate years-ago origin",
+        "originEstimatePolicy": "Every grafted clade definition begins with an integer Mya origin estimate",
         "removedSumoDescendantCount": len(old_ids),
     }
     path.write_text(json.dumps(data, indent=2, ensure_ascii=False) + "\n")

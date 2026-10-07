@@ -17,7 +17,7 @@
   "organismGraft": {
     "source": "Human Knowledge 2000 taxonomy table + modern Wikipedia clade corrections",
     "policy": "Monophyletic, interest-weighted backbone; specialist-only subdivisions telescoped",
-    "originEstimatePolicy": "Every grafted clade definition begins with an approximate years-ago origin"
+    "originEstimatePolicy": "Every grafted clade definition begins with an integer Mya origin estimate"
   },
   "primaryEdgeRule": "Repeatedly remove the longest measured incoming PDF arc until each node has one primary parent; apply four explicitly marked provisional placements to keep Entity as the only root",
   "provisionalPlacements": {
