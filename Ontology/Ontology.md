@@ -228,6 +228,97 @@ limit, the 33-label tree is the verified fallback and we should construct an
 intermediate 100–300-node display ourselves from the authoritative source
 combination below.
 
+### Compressed taxon-backbone target
+
+The poster is useful as a visual clue to the desired *kind* of taxonomy, but
+its organism illustrations are not yet the target data. First reconstruct a
+single-parent taxon tree whose nodes express the most important evolutionary
+divisions and transitions; only afterward add representative, familiar,
+important, and notable species beneath selected taxon leaves.
+
+The first-pass backbone should preserve this path, while telescoping
+specialist-only ranks and unstable deep clades:
+
+```text
+Cellular life
+├── Bacteria
+├── Archaea
+└── Eukaryota
+    ├── Archaeplastida
+    │   ├── Red algae
+    │   └── Green plants
+    │       ├── Green algae
+    │       └── Land plants
+    │           ├── Bryophytes
+    │           └── Vascular plants
+    │               ├── Ferns and horsetails
+    │               └── Seed plants
+    │                   ├── Gymnosperms
+    │                   │   └── Conifers
+    │                   └── Flowering plants
+    │                       ├── Early-diverging groups and magnoliids
+    │                       ├── Monocots
+    │                       └── Eudicots
+    ├── Major protist lineages
+    │   ├── SAR
+    │   ├── Amoebozoa
+    │   └── Other deep eukaryote branches
+    └── Opisthokonta
+        ├── Fungi
+        │   ├── Early-diverging fungi
+        │   └── Dikarya
+        │       ├── Ascomycota
+        │       └── Basidiomycota
+        └── Animals
+            ├── Sponges, comb jellies, placozoans and cnidarians
+            └── Bilaterians
+                ├── Protostomes
+                │   ├── Arthropods and other ecdysozoans
+                │   └── Molluscs, annelids and other spiralians
+                └── Deuterostomes
+                    ├── Echinoderms
+                    └── Chordates
+                        ├── Tunicates and lancelets
+                        └── Vertebrates
+                            ├── Jawless vertebrates
+                            └── Jawed vertebrates
+                                ├── Cartilaginous fishes
+                                └── Bony vertebrates
+                                    ├── Ray-finned fishes
+                                    └── Lobe-finned vertebrates
+                                        ├── Coelacanths and lungfishes
+                                        └── Tetrapods
+                                            ├── Amphibians
+                                            └── Amniotes
+                                                ├── Synapsids
+                                                │   └── Mammals
+                                                └── Sauropsids
+                                                    ├── Lepidosaurs and turtles
+                                                    └── Archosaurs
+                                                        ├── Crocodilians
+                                                        └── Dinosaurs
+                                                            ├── Non-avian dinosaurs
+                                                            └── Birds
+```
+
+This wording deliberately uses **bony vertebrates** rather than only “bony
+fish,” because tetrapods are nested within Osteichthyes, and **lobe-finned
+vertebrates** rather than only “lobe-finned fish,” because tetrapods are
+nested within Sarcopterygii. It also places birds inside dinosaurs and
+mammals inside synapsids. “Fish,” “algae,” “protist,” “invertebrate,” and
+“reptile” may remain familiar search or display labels, but should not be
+silently treated as equivalent to clean clades.
+
+The backbone should retain evolutionary milestones as node annotations rather
+than inventing extra taxon branches: cellular organization, mitochondria,
+plastids, multicellularity, land plants, vascular tissue, seeds, flowers,
+animal bilateral symmetry, moulting, jaws, bony skeletons, lobed fins,
+limbs, amniotic reproduction, feathers, and mammalian traits. Deep microbial
+and protist topology should use compact polytomies or “major lineages” until
+the source evidence justifies more resolution. Horizontal gene transfer,
+endosymbiosis, uncertain roots, and disputed deep relationships belong in
+provenance and notes, not hidden by false precision.
+
 Recommended source combination: use Open Tree of Life for evolutionary
 structure, Catalogue of Life for accepted names and synonyms, GBIF and NCBI
 for normalization and coverage checks, and OneZoom as the browsing-model
