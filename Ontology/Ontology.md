@@ -1687,6 +1687,182 @@ This is the strongest starting point for a readable player-facing browser.
 It is compact, but it leaves mathematical foundations and formal systems in
 metadata or deeper branches.
 
+For the current design, we should provisionally collapse the visible
+top-level entity split to:
+
+```text
+Entity
+├── Physical
+└── Abstract
+```
+
+“Informational” and “social” should initially be treated as abstract or
+representational patterns, with an explicit physical embodiment when one
+exists. A book, computer, contract, or organization can therefore have both:
+
+```text
+Abstract content, role, or institution
+└── physically embodied by
+    └── Physical artifact, person, document, or activity
+```
+
+This is not a claim that information or society are unreal. It is a
+presentation decision that keeps the top-level question simple while
+preserving their physical realizations and their relations to people,
+artifacts, and events. The data model should support both facets rather than
+forcing an informational or social concept to be exclusively abstract.
+
+#### Mathematical placement under the physical/abstract split
+
+The following worked projection gives a taste of where familiar mathematics
+and modern formal foundations could live. It is intentionally more detailed
+than the proposed final browser so that the available design space remains
+visible:
+
+```text
+Entity
+├── Physical
+│   ├── Matter, energy, fields, organisms, artifacts, places
+│   └── Physical inscriptions and implementations
+│       ├── Written equation on paper
+│       ├── Executing program
+│       ├── Printed proof
+│       └── Laboratory measurement
+└── Abstract
+    ├── Mathematical entities
+    │   ├── Foundations
+    │   │   ├── Logic
+    │   │   │   ├── Terms and formulas
+    │   │   │   ├── Predicates and propositions
+    │   │   │   ├── Connectives and quantifiers
+    │   │   │   ├── Inference rules and proofs
+    │   │   │   └── Models, truth, validity, and satisfiability
+    │   │   ├── Set theory
+    │   │   │   ├── Membership, subset, union, and intersection
+    │   │   │   ├── Ordered pairs, products, and relations
+    │   │   │   ├── Functions and power sets
+    │   │   │   ├── Natural numbers, ordinals, and cardinals
+    │   │   │   └── ZFC, NBG, or alternative foundations
+    │   │   ├── Type theory
+    │   │   │   ├── Types, terms, and values
+    │   │   │   ├── Products, sums, and function types
+    │   │   │   ├── Inductive and dependent types
+    │   │   │   ├── Universes and identity types
+    │   │   │   └── Proofs as inhabitants of propositions
+    │   │   └── Category theory
+    │   │       ├── Objects and morphisms
+    │   │       ├── Composition and identity
+    │   │       ├── Functors and natural transformations
+    │   │       ├── Limits, colimits, and adjunctions
+    │   │       └── Equivalence, toposes, and internal logic
+    │   ├── Numbers and arithmetic
+    │   │   ├── Natural numbers
+    │   │   ├── Integers
+    │   │   ├── Rational numbers
+    │   │   ├── Real numbers
+    │   │   ├── Complex numbers
+    │   │   ├── Algebraic and transcendental numbers
+    │   │   └── Operations, order, divisibility, and equations
+    │   ├── Algebraic structures
+    │   │   ├── Groups and subgroups
+    │   │   ├── Rings and ideals
+    │   │   ├── Fields and extensions
+    │   │   ├── Vector spaces and linear maps
+    │   │   ├── Modules, algebras, and representations
+    │   │   └── Categories of algebraic structures
+    │   ├── Geometry and topology
+    │   │   ├── Points, lines, planes, and spaces
+    │   │   ├── Angles, distances, and coordinates
+    │   │   ├── Curves and conic sections
+    │   │   │   ├── Circle
+    │   │   │   ├── Ellipse
+    │   │   │   ├── Parabola
+    │   │   │   └── Hyperbola
+    │   │   ├── Manifolds and tangent spaces
+    │   │   ├── Topological spaces and continuity
+    │   │   ├── Metric spaces and measure spaces
+    │   │   └── Differential and algebraic geometry
+    │   ├── Analysis and dynamics
+    │   │   ├── Sequences, limits, and convergence
+    │   │   ├── Derivatives and integrals
+    │   │   ├── Differential equations
+    │   │   ├── Dynamical systems
+    │   │   ├── Functional analysis
+    │   │   └── Fourier, distribution, and operator theories
+    │   ├── Discrete mathematics and computation
+    │   │   ├── Combinatorics and graph theory
+    │   │   ├── Algorithms and complexity
+    │   │   ├── Automata and formal languages
+    │   │   ├── Computability and recursion
+    │   │   ├── Cryptography and information theory
+    │   │   └── Programming-language semantics
+    │   ├── Probability and statistics
+    │   │   ├── Sample spaces and random variables
+    │   │   ├── Probability measures and distributions
+    │   │   ├── Expectation and conditional probability
+    │   │   ├── Statistical models and inference
+    │   │   └── Stochastic processes
+    │   ├── Mathematical physics
+    │   │   ├── Classical mechanics
+    │   │   ├── Relativity and spacetime geometry
+    │   │   ├── Quantum states and observables
+    │   │   ├── Hilbert spaces and operator algebras
+    │   │   ├── Quantum field theories
+    │   │   └── Gauge theories and geometric field theories
+    │   └── Mathematical objects and values
+    │       ├── Sets, functions, sequences, and structures
+    │       ├── Numbers and other values
+    │       ├── Equations and solutions
+    │       ├── Curves, surfaces, and spaces
+    │       ├── Proofs, theorems, and counterexamples
+    │       └── Models and interpretations
+    ├── Informational and representational entities
+    │   ├── Symbols, names, and notation
+    │   ├── Data, records, and messages
+    │   ├── Documents, software, and media contents
+    │   ├── Definitions, classifications, and ontologies
+    │   └── Statements, propositions, and theories
+    └── Social and institutional entities
+        ├── Roles and statuses
+        ├── Organizations and communities
+        ├── Rules, laws, contracts, and currencies
+        ├── Norms, obligations, and permissions
+        └── Institutions and collective practices
+```
+
+This projection deliberately repeats some concepts in different roles. For
+example:
+
+- **Three** is an abstract mathematical entity, a value, and an inhabitant of
+  the type `Natural`.
+- **Prime** is a mathematical property or predicate; `Prime(3)` is a
+  proposition; and a proof of `Prime(3)` is a formal evidence object.
+- A **circle** is an abstract geometric structure; its equation is a
+  representation; a chalk drawing is a physical artifact; and “this point
+  lies on the circle” is a relation or proposition.
+- **Truth** is a property of propositions or models, while `True` may be a
+  logical value or a proposition depending on the formal system.
+- A **conic section** is a geometric entity, its defining equation is a
+  representation, and the relation between the curve and its focus or
+  directrix is part of its mathematical structure.
+- A **Lean theorem** is an abstract proposition, its proof term is an
+  abstract formal object, its source file is an informational artifact, and
+  the checked compilation is a physical or computational event.
+
+The mathematical branch should therefore not be a flat list of school
+subjects. It should distinguish at least four cross-cutting roles:
+
+```text
+Mathematical concept
+├── Object or structure
+├── Property or predicate
+├── Relation, operation, or mapping
+└── Representation, proposition, proof, or model
+```
+
+The visible browser may eventually collapse much of this structure for
+ordinary play, while the formal profile retains the full distinctions.
+
 **SUMO/BFO-inspired variant**
 
 - **Entity:** Continuant, Occurrent, Quality, Disposition, Role, Site,
