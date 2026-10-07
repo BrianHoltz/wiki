@@ -20,11 +20,9 @@ a{color:var(--accent)}#results{margin:10px 0 18px}.result{padding:5px 0;border-b
 <body>
 <main>
 <h1>SUMO PDF hierarchy</h1>
-<p class="muted">A browseable single-parent rendering of the Ontology4 SUMO graph.</p>
-<div class="notice">This browser is rebuilt from the nodes and directed blue arcs in the
-official Ontology4 PDF graph, not from the current KIF hierarchy. For every node with
-multiple incoming arcs, it removes the longest arc and keeps the shortest as the visible
-parent. Removed parents remain visible as alternate cross-links.</div>
+<p class="muted">A browseable single-parent rendering of the
+<a href="https://www.ontology4.us/download/dot/SumoOntology.pdf">Ontology4 SUMO PDF graph</a>,
+with definitions from the <a href="https://github.com/ontologyportal/sumo">SUMO source</a>.</p>
 <div class="controls"><input id="search" type="search" placeholder="Search SUMO concepts">
 <button id="expand">Expand all</button><button id="collapse">Collapse all</button></div>
 <div id="summary" class="muted"></div><div id="results"></div><section id="tree"></section>
@@ -38,13 +36,13 @@ function renderNode(id){const n=byId.get(id);
 const childCount=`<span class="meta"> · ${n.children.length} &#8595;</span>`;
 const altCount=n.alternateParents.length?`<span class="meta"> · ${n.alternateParents.length} &#8593;</span>`:'';
 const provisional=n.provisionalParent?` <span class="meta">· provisional placement</span>`:'';
-const shortDef=n.definition?`<span class="definition" title="${esc(n.definition)}">&mdash; ${formatDefinition(n.definition)}</span>`:'';
+const shortDef=n.definition?`<span class="definition" title="${esc(n.definition)}">${formatDefinition(n.definition)}</span>`:'';
 const text=`${esc(n.label)}${childCount}${altCount}${provisional}${shortDef}`;
 const alts=n.alternateParents.length?`<div class="alt"><strong>Alternate Parents:</strong> ${n.alternateParents.map(link).join(', ')}</div>`:'';
 const reverse=alternateChildren.get(id)||[];
 const reverseBlock=reverse.length?`<div class="reverse"><strong>Alternate Children:</strong> ${reverse.map(link).join(', ')}</div>`:'';
 return `<li id="${encodeURIComponent(id)}"><details><summary>${text}</summary>${alts}${reverseBlock}<ul>${n.children.map(renderNode).join('')}</ul></details></li>`}
-function render(){document.querySelector('#tree').innerHTML=data.rootNodes.map(root=>`<h2>${esc(byId.get(root).label)}</h2><ul>${renderNode(root)}</ul>`).join('');
+function render(){document.querySelector('#tree').innerHTML=data.rootNodes.map(root=>`<ul>${renderNode(root)}</ul>`).join('');
 const stats=data.stats||{}, count=(key,fallback=0)=>Number.isFinite(stats[key])?stats[key]:fallback;
 document.querySelector('#summary').textContent=`${count('nodeCount',data.nodes.length).toLocaleString()} concepts · ${count('definitionCount',data.nodes.filter(n=>n.definition).length).toLocaleString()} definitions · ${count('projectedEdgeCount').toLocaleString()} primary edges · ${count('multipleParentNodeCount').toLocaleString()} alternate-parent cases · ${count('unaryNodeCount').toLocaleString()} unary nodes`;
 }
