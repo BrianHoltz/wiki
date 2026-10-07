@@ -30,6 +30,7 @@ from nltk.corpus import wordnet as wn
 
 DEFAULT_SELECTED = 7000
 ROOT_NAME = "entity.n.01"
+SUPPRESSED_PROFILE_ROOTS = frozenset({"thing.n.08"})
 
 
 def frequency(synset: Any) -> int:
@@ -54,13 +55,25 @@ def connected_to_root(synset: Any) -> bool:
     )
 
 
+@lru_cache(maxsize=None)
+def suppressed_from_profile(synset: Any) -> bool:
+    """Exclude the generic singleton branch from the game-oriented profile."""
+    return synset.name() in SUPPRESSED_PROFILE_ROOTS or any(
+        suppressed_from_profile(parent) for parent in synset.hypernyms()
+    )
+
+
 def choose_synsets(target: int) -> tuple[set[Any], list[Any]]:
     all_nouns = list(wn.all_synsets(pos="n"))
     ranked = sorted(
         (
             synset
             for synset in all_nouns
-            if frequency(synset) > 0 and connected_to_root(synset)
+            if (
+                frequency(synset) > 0
+                and connected_to_root(synset)
+                and not suppressed_from_profile(synset)
+            )
         ),
         key=lambda synset: (-score(synset), synset.name()),
     )
@@ -106,8 +119,8 @@ def make_projection(selected: set[Any]) -> tuple[dict[Any, list[Any]], dict[Any,
 def question_for(synset: Any) -> str:
     label = synset.lemma_names()[0].replace("_", " ")
     if synset == wn.synset(ROOT_NAME):
-        return "Is the answer a physical entity, an abstraction, or another entity?"
-    return f"Is the answer a kind of {label}?"
+        return "Is it an abstraction or a physical entity?"
+    return f"Is it a kind of {label}?"
 
 
 def make_tree(synset: Any, children: dict[Any, list[Any]]) -> OrderedDict[str, Any]:
@@ -185,13 +198,16 @@ def render_html(tree: OrderedDict[str, Any], counts: dict[str, int]) -> str:
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>WordNet 3.0 20 Questions Profile</title>
 <style>
-:root {{ color-scheme: light dark; --accent: #2f6feb; --panel: #f6f8fa; --muted: #57606a; }}
-body {{ font: 14px/1.4 system-ui, -apple-system, sans-serif; margin: 0 auto; max-width: 1200px; padding: 22px; }}
+:root {{ color-scheme: light dark; --accent: #2f6feb; --background: #ffffff; --text: #1f2328; --panel: #f6f8fa; --muted: #57606a; --border: #8c959f; }}
+@media (prefers-color-scheme: dark) {{
+  :root {{ --background: #0d1117; --text: #e6edf3; --panel: #161b22; --muted: #8b949e; --border: #6e7681; }}
+}}
+body {{ color: var(--text); background: var(--background); font: 14px/1.4 system-ui, -apple-system, sans-serif; margin: 0 auto; max-width: 1200px; padding: 22px; }}
 h1 {{ margin-bottom: 4px; }}
 .intro, .question {{ background: var(--panel); border-left: 4px solid var(--accent); padding: 9px 13px; margin: 9px 0; }}
 .controls {{ display: flex; gap: 8px; flex-wrap: wrap; margin: 16px 0; }}
-input {{ flex: 1 1 300px; padding: 9px; border: 1px solid #8c959f; border-radius: 6px; }}
-button {{ padding: 9px 12px; border: 1px solid #8c959f; border-radius: 6px; cursor: pointer; }}
+input {{ color: var(--text); background: var(--panel); flex: 1 1 300px; padding: 9px; border: 1px solid var(--border); border-radius: 6px; }}
+button {{ color: var(--text); background: var(--panel); padding: 9px 12px; border: 1px solid var(--border); border-radius: 6px; cursor: pointer; }}
 details {{ margin: 3px 0 3px 10px; }}
 summary {{ cursor: pointer; font-weight: 650; padding: 4px; }}
 summary:hover {{ background: var(--panel); }}
@@ -205,10 +221,17 @@ summary:hover {{ background: var(--panel); }}
 </head>
 <body>
 <h1>WordNet 3.0 20 Questions Profile</h1>
-<div class="intro">Source: Princeton WordNet 3.0.
-  Display nodes: {counts["selected"]:,}; terminal categories: {counts["leaves"]:,}.
-  The visible tree chooses one presentation parent per synset; the source graph
-  and alternate hypernyms are recorded in the manifest.</div>
+<div class="intro">
+  This is a browsable 20 Questions word-and-concept tree built from
+  <a href="https://en.wikipedia.org/wiki/WordNet" target="_blank"
+  rel="noopener">WordNet</a>, a large Princeton University lexical database
+  that groups related words by meaning. It is not a list of every possible
+  answer; it is a practical, familiar slice arranged from broad categories
+  toward specific ones. Display nodes: {counts["selected"]:,}; terminal
+  categories: {counts["leaves"]:,}. Use the suggested questions to navigate,
+  search for a word, or expand the whole tree.</div>
+<div class="question"><strong>Top-level question:</strong>
+  Is it an abstraction or a physical entity?</div>
 <div class="controls">
   <input id="search" type="search" placeholder="Search WordNet synsets or lemmas...">
   <button id="expand">Expand all</button>
@@ -258,8 +281,8 @@ def main() -> None:
         "version": wn.get_version(),
         "root": ROOT_NAME,
         "selection": (
-            "top frequency-weighted root-connected noun synsets plus complete "
-            "hypernym ancestry"
+            "top frequency-weighted root-connected noun synsets, excluding the "
+            "generic thing.n.08 profile branch, plus complete hypernym ancestry"
         ),
         "presentation": "one deterministic parent selected from source hypernyms",
         "counts": counts,

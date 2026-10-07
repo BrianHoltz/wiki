@@ -6,6 +6,12 @@ The original curated tree remains committed as `index.html`,
 `20_questions_hierarchy.yaml`, and `generate_20q_hierarchy.py`. It contains
 678 display nodes: 50 branches and 628 terminal categories.
 
+The mechanically expanded v2 profile has been retired from the public
+navigation. Its source artifacts remain available for analysis, but its
+display projection exposed too many unary branches and weak source-driven
+splits. The next expansion will follow structural review of v1 rather than
+adding more source ancestry to that profile.
+
 The first standards-based experiment is now also committed:
 
 - [`wordnet_20q.html`](wordnet_20q.html) — the browseable one-page profile;
@@ -18,16 +24,90 @@ The first standards-based experiment is now also committed:
 It uses Princeton WordNet 3.0 noun synsets. It selects the top 7,000
 frequency-weighted noun synsets that have a hypernym path to WordNet's
 `entity.n.01` root and adds their complete hypernym ancestry, producing 8,974
-display nodes: 3,832 branches and 5,142 terminal categories. This root
+display nodes: 3,831 branches and 5,143 terminal categories. This root
 connectivity filter prevents WordNet's disconnected proper names, places,
 events, and other top-level records from being flattened directly under the
-display root.
+display root. The game profile also suppresses the degenerate generic
+`thing -> horror` stub.
 The selected source pool contains 82,115 noun synsets, of which 13,739 have
 nonzero WordNet corpus-frequency counts.
 
 The display tree chooses one deterministic presentation parent when WordNet
 has multiple hypernym paths. That is a view projection, not a modification of
 WordNet: all source hypernyms remain in the manifest.
+
+The current phase is tree-first: structural quality, source comparison, and
+ordinary-language coverage take priority over question-generation mechanics.
+The historical 20 Questions material remains as provenance and as a
+downstream success criterion; it is not an active implementation workstream.
+
+Firm decisions:
+
+- The handcrafted v1 remains the incumbent player-facing tree; imported
+  ontologies are source, audit, and enrichment layers rather than replacements.
+- The mechanically expanded v2 is retired. Structural refinement comes before
+  large vocabulary batches.
+- The visible navigation tree has one primary parent per node. Alternate
+  parents remain typed, source-backed cross-links; unary nodes are allowed.
+- SUMO's public browser is a PDF-derived projection, not a current KIF-derived
+  taxonomy. Its PDF arc rule and four provisional placements are recorded in
+  the SUMO artifacts.
+- Biological expansion will use a curated, evolutionary source tree with
+  readable labels and compressed intermediate clades. Viruses get a separate
+  acellular-infectious-agent policy rather than being forced into ordinary
+  organism ancestry.
+- Definitions, aliases, source IDs, alternate edges, and provenance belong in
+  the data layer even when the default browser keeps them compact.
+
+## How the WordNet tree was generated
+
+The tree is a reproducible presentation of WordNet 3.0, not a hand-edited
+taxonomy. The builder is [`generate_wordnet_20q.py`](generate_wordnet_20q.py).
+It uses NLTK only as the loader for the local WordNet release; the generated
+HTML, YAML, and manifest are the project artifacts.
+
+The build proceeds as follows:
+
+- **Load the source:** read every WordNet noun synset, including its lemma
+  names, gloss, corpus-frequency counts, and authoritative hypernym links.
+- **Score familiarity:** calculate a deterministic score using twice the
+  natural logarithm of one plus the synset's corpus frequency, plus the
+  logarithm of one plus its number of lemma names, plus a small bounded depth
+  tie-break. Higher-frequency and more lexically represented synsets rank
+  first.
+- **Keep the declared root:** retain only noun synsets with a hypernym path to
+  `entity.n.01`, WordNet's general entity root. This excludes disconnected
+  records that would otherwise be incorrectly displayed as direct children of
+  the root.
+- **Select the source concepts:** take the top 7,000 eligible synsets and
+  always include `entity.n.01`. The number is a profile parameter, so nearby
+  5K and 10K experiments can be regenerated without changing the algorithm.
+- **Close over ancestry:** recursively add every hypernym required to connect
+  each selected synset to the root. These added ancestors explain why the
+  displayed count is larger than 7,000.
+- **Project the graph to one page:** WordNet can give a synset multiple
+  hypernyms. For browseability, choose one deterministic display parent,
+  preferring the highest-scoring available parent and breaking ties by source
+  ID. This creates a single navigable tree while preserving every original
+  hypernym edge in the manifest.
+- **Apply profile presentation exclusions:** suppress the generic
+  `thing.n.08` branch when it would appear only as the degenerate
+  `thing -> horror` stub. This is a game-profile cleanup, not a claim that
+  WordNet's `horror.n.02` hypernym link is invalid.
+- **Generate the outputs:** write a collapsible, searchable HTML page with
+  suggested category questions; a YAML tree for inspection and tooling; and a
+  JSON manifest containing source IDs, labels, glosses, frequencies, all
+  hypernyms, and the selected display parent.
+
+The source graph therefore remains authoritative. The one-parent tree is only
+the game-oriented view, and changing the target size or presentation
+tie-break does not silently rewrite WordNet semantics. A local regeneration
+uses the documented NLTK environment and:
+
+```sh
+NLTK_DATA=~/nltk_data /tmp/wordnet-ontology-venv/bin/python \
+  generate_wordnet_20q.py --target 7000 --output-dir .
+```
 
 ## Practical scope and UI constraint
 
@@ -54,6 +134,508 @@ retaining ancestry and asking category-membership questions. It favors source
 fidelity by preserving synset identifiers, glosses, and all original
 hypernym edges.
 
+## Retired v2 expansion
+
+The mechanically expanded 5K–10K profile is retained only for analysis. It
+was rejected because source-driven ancestry produced sparse nonliving coverage,
+unhelpful unary chains, and poor visible splits. No node budget or source
+target should be treated as a current commitment. The next profile must first
+pass the structural audit and then add reviewed leaves through a shared,
+versioned manifest.
+
+## Biological taxonomy graft
+
+The immediate biological task is to replace the current organism subtree with
+a curated display taxonomy. The links below are ordered by usefulness for this
+project, not by scientific authority alone:
+
+- [OneZoom Tree of Life Explorer](https://www.onezoom.org/) — best browsing
+  model for a large evolutionary tree; use its interface and common-name
+  presentation as design prior art, not as the sole authority.
+- [Open Tree of Life](https://tree.opentreeoflife.org/) — strongest open
+  candidate for evolutionary ancestry, stable taxon identifiers, and a tree
+  that keeps humans within tetrapod and lobe-finned-fish history.
+- [Catalogue of Life](https://www.catalogueoflife.org/explore) — strongest
+  candidate for accepted names, synonyms, and broad checklist authority;
+  compare its Base and Extended releases.
+- [GBIF Backbone Taxonomy](https://www.gbif.org/species) — excellent
+  browsable name-resolution and synonymy backbone for finding and normalizing
+  familiar organisms.
+- [NCBI Taxonomy Browser](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi)
+  — authoritative computational and sequence-linked taxonomy, especially for
+  microbes and viruses; too technical to copy directly.
+- [ITIS](https://www.itis.gov/) — stable government-supported name and rank
+  reference useful for cross-checking accepted placement.
+- [World Register of Marine Species](https://www.marinespecies.org/) —
+  expert-maintained marine supplement, not a general root.
+- [TimeTree](https://timetree.org/) — useful for evolutionary relationships
+  and divergence context, not as the visible noun hierarchy.
+
+### Single-pane and compressed tree renders
+
+The previous list was not responsive to the requirement. The intended format
+is now clear from this [Open University-style example image](https://miro.medium.com/v2/resize:fit:4128/1*O-o2WDx710kxPczPH0UUug.jpeg):
+one tall, printable pane; colored evolutionary branches; named internal
+clades; and a curated representative organism, fossil, or plant at many
+leaves. This is not merely an outline of taxon names. It is a visual
+knowledge map that makes the biological hierarchy browseable through familiar
+specimens. The matching high-resolution copy is
+[available here](https://nicolasmicheletti.wordpress.com/wp-content/uploads/2015/09/treeoflife.jpg).
+
+The useful search target is therefore a static classroom/poster-style
+whole-life tree with fewer than 300 representative leaves and clade labels.
+Ranked by fit:
+
+- [Open University tree-of-life poster](https://nicolasmicheletti.wordpress.com/wp-content/uploads/2015/09/treeoflife.jpg)
+  — the exact format we should pursue. It uses roughly a hundred
+  representative organisms and fossils, colored branches, readable clade
+  labels, and a single origin-to-present composition. It is much closer to
+  the desired 20-Questions browsing experience than a genome-only tree.
+  Treat the image as presentation prior art; validate and modernize its
+  taxonomy from the authoritative sources above.
+- [Tree of life SVG](https://commons.wikimedia.org/wiki/File:Tree_of_life_SVG.svg)
+  — still worth checking as a denser candidate, but it is a genome tree with
+  tiny labels rather than a specimen-rich educational map. It may contain
+  150–250 visible terminal taxa, though the vectorized lettering requires
+  visual counting.
+- [Phylogenetic tree of life 2](https://commons.wikimedia.org/wiki/File:Phylogenetic_tree_of_life_2.svg)
+  — the cleanest strict single-pane baseline: one rooted left-to-right tree
+  with 33 machine-countable labels, spanning Bacteria, Archaea, and Eukarya.
+  It is public domain and easy to print, but too sparse to be the final target.
+- [Tree of life](https://commons.wikimedia.org/wiki/File:Tree_of_life.svg)
+  — one radial tree with approximately 35–50 readable group labels,
+  including major bacterial, archaeal, fungal, plant, and animal branches.
+  It is compact and visually legible, but scientifically dated and not a
+  current authority.
+- [Berkeley Evolution 101: The Family Tree](https://evolution.berkeley.edu/evolution-101/the-history-of-life-looking-at-the-patterns/the-family-tree/)
+  — explicitly school-oriented and broad, with a single tall image containing
+  nested phylogenies. It is useful presentation prior art, but not a strict
+  uninterrupted single-pane outline because it embeds several zoomed trees.
+- [UCMP Life on Earth / Three Domains of Life](https://ucmp.berkeley.edu/alllife/threedomains.html)
+  — a compact educational whole-life treatment that gives viruses their own
+  biological-entities branch and links to deeper exhibits. It is a strong
+  model for visible-versus-linked detail, but it is smaller and partly
+  page-linked rather than a 300-node poster.
+- [Tree of life diagrams and historical examples](https://en.wikipedia.org/wiki/Tree_of_life_(biology))
+  — a useful index of static Haeckel, Woese, and other whole-life diagrams.
+  These are schematic or historical rather than importable authorities, but
+  they provide additional candidates for visual comparison.
+
+The immediate next step is to inspect the first SVG at full resolution and
+count its visible labels. If it is genuinely below 300, it becomes the
+largest discovered single-pane template; if it is too dense or exceeds the
+limit, the 33-label tree is the verified fallback and we should construct an
+intermediate 100–300-node display ourselves from the authoritative source
+combination below.
+
+### Compressed taxon-backbone target
+
+The poster is useful as a visual clue to the desired *kind* of taxonomy, but
+its organism illustrations are not yet the target data. First reconstruct a
+single-parent taxon tree whose nodes express the most important evolutionary
+divisions and transitions; only afterward add representative, familiar,
+important, and notable species beneath selected taxon leaves.
+
+The first-pass backbone should preserve this path, while telescoping
+specialist-only ranks and unstable deep clades:
+
+```text
+Cellular life
+├── Bacteria
+├── Archaea
+└── Eukaryota
+    ├── Archaeplastida
+    │   ├── Red algae
+    │   └── Green plants
+    │       ├── Green algae
+    │       └── Land plants
+    │           ├── Bryophytes
+    │           └── Vascular plants
+    │               ├── Ferns and horsetails
+    │               └── Seed plants
+    │                   ├── Gymnosperms
+    │                   │   └── Conifers
+    │                   └── Flowering plants
+    │                       ├── Early-diverging groups and magnoliids
+    │                       ├── Monocots
+    │                       └── Eudicots
+    ├── Major protist lineages
+    │   ├── SAR
+    │   ├── Amoebozoa
+    │   └── Other deep eukaryote branches
+    └── Opisthokonta
+        ├── Fungi
+        │   ├── Early-diverging fungi
+        │   └── Dikarya
+        │       ├── Ascomycota
+        │       └── Basidiomycota
+        └── Animals
+            ├── Sponges, comb jellies, placozoans and cnidarians
+            └── Bilaterians
+                ├── Protostomes
+                │   ├── Arthropods and other ecdysozoans
+                │   └── Molluscs, annelids and other spiralians
+                └── Deuterostomes
+                    ├── Echinoderms
+                    └── Chordates
+                        ├── Tunicates and lancelets
+                        └── Vertebrates
+                            ├── Jawless vertebrates
+                            └── Jawed vertebrates
+                                ├── Cartilaginous fishes
+                                └── Bony vertebrates
+                                    ├── Ray-finned fishes
+                                    └── Lobe-finned vertebrates
+                                        ├── Coelacanths and lungfishes
+                                        └── Tetrapods
+                                            ├── Amphibians
+                                            └── Amniotes
+                                                ├── Synapsids
+                                                │   └── Mammals
+                                                └── Sauropsids
+                                                    ├── Lepidosaurs and turtles
+                                                    └── Archosaurs
+                                                        ├── Crocodilians
+                                                        └── Dinosaurs
+                                                            ├── Non-avian dinosaurs
+                                                            └── Birds
+```
+
+This wording deliberately uses **bony vertebrates** rather than only “bony
+fish,” because tetrapods are nested within Osteichthyes, and **lobe-finned
+vertebrates** rather than only “lobe-finned fish,” because tetrapods are
+nested within Sarcopterygii. It also places birds inside dinosaurs and
+mammals inside synapsids. “Fish,” “algae,” “protist,” “invertebrate,” and
+“reptile” may remain familiar search or display labels, but should not be
+silently treated as equivalent to clean clades.
+
+The backbone should retain evolutionary milestones as node annotations rather
+than inventing extra taxon branches: cellular organization, mitochondria,
+plastids, multicellularity, land plants, vascular tissue, seeds, flowers,
+animal bilateral symmetry, moulting, jaws, bony skeletons, lobed fins,
+limbs, amniotic reproduction, feathers, and mammalian traits. Deep microbial
+and protist topology should use compact polytomies or “major lineages” until
+the source evidence justifies more resolution. Horizontal gene transfer,
+endosymbiosis, uncertain roots, and disputed deep relationships belong in
+provenance and notes, not hidden by false precision.
+
+Recommended source combination: use Open Tree of Life for evolutionary
+structure, Catalogue of Life for accepted names and synonyms, GBIF and NCBI
+for normalization and coverage checks, and OneZoom as the browsing-model
+reference. Use ITIS, WoRMS, and TimeTree to resolve domain-specific gaps.
+Do not import any of these raw. Produce one reviewed crosswalk that preserves
+source IDs, accepted names, synonyms, rank, release, extinct status, and
+alternate placements while projecting a readable single-parent display tree.
+
+The visible tree should preserve major evolutionary facts—birds under
+dinosaurs and humans within tetrapods and lobe-finned fishes—while collapsing
+intermediate clades that do not improve a recognizable distinction. Common
+names lead; scientific names remain searchable aliases and provenance.
+Viruses receive a dedicated acellular-infectious-agent subtree with host,
+genome, transmission, disease, and ecological metadata rather than being
+forced into ordinary organism ancestry.
+
+The detailed criteria, notable-life policy, virus policy, and graft workflow
+below are the acceptance specification for this task. The later biological
+prior-art entries retain source-specific notes and access details.
+
+## Future leaf-node priorities
+
+The immediate objective is to improve the tree and its information design
+before adding a large undifferentiated noun list. Leaf additions should be
+grafted into a reviewed structural home, not used to compensate for a weak
+parent branch. The task list is:
+
+- [ ] **Complete the structural audit:** repair overloaded v1 branches,
+  improve sibling balance, clarify observable distinctions, and document
+  intentional unary paths before adding major leaf batches.
+- [ ] **Replace the organism subtree:** choose a public biological source
+  combination and build a curated display taxonomy that preserves
+  evolutionary accuracy while compressing opaque intermediate clades.
+- [ ] **Add the virus policy and pilot:** include important viruses and virus
+  families, but do not imply that viruses are ordinary organisms or that
+  viruses are primarily related to one another by host. Keep host range,
+  genome type, and transmission metadata separate from the visible parentage.
+- [ ] **Graft notable life leaves:** add familiar, medically or agriculturally
+  important, ecologically important, extinct, and evolutionarily instructive
+  organisms under the reviewed biological tree.
+- [ ] **Map Roget and WordNet vocabulary:** use their concepts, synsets,
+  aliases, glosses, and sense frequencies to make SUMO and the biological
+  tree searchable in ordinary language without copying their parentage
+  blindly.
+- [ ] **Graft product vocabulary:** compare Google Product Taxonomy, GS1 GPC,
+  UNSPSC, eCl@ss, ETIM, and authorized Amazon/Walmart category exports to
+  identify missing tools, foods, appliances, clothing, vehicles, electronics,
+  materials, and household goods. Import reviewed leaves and source mappings,
+  not retail department structure wholesale.
+- [ ] **Audit everyday noun coverage:** score candidate tools, foods,
+  materials, vehicles, body parts, places, occupations, cultural objects,
+  people, and fictional entities from encyclopedias, Schema.org, Wikipedia,
+  word-frequency lists, and concreteness data.
+- [ ] **Run tree and coverage review:** test branch balance, duplicate labels,
+  ambiguous senses, recognizable stopping points, source completeness, and the
+  5K–10K page-performance budget before promoting a tranche. Compatibility with
+  20 Questions remains a downstream success criterion, not the current design
+  activity.
+
+### Biological replacement criteria
+
+The organism replacement should be judged as a curated display taxonomy, not
+as a raw dump from whichever database has the most records. In addition to the
+three proposed criteria—scientific accuracy, notable organism coverage, and
+readable labels—it should satisfy these gates:
+
+- **Evolutionary correctness:** the tree should allow humans and other
+  tetrapods to remain nested within lobe-finned fish ancestry, birds beneath
+  dinosaurs, and mammals within the appropriate synapsid lineage. Everyday
+  labels such as “fish” may remain useful gameplay categories, but they must
+  not silently replace the scientific provenance.
+- **Authority and reproducibility:** every parentage decision needs a source,
+  release, stable identifier, rank, and date. Conflicts between authorities
+  should be retained as evidence and resolved by an explicit policy.
+- **Notability diversity:** budget for familiar organisms, food and farm
+  species, pets, disease agents, keystone organisms, culturally important
+  organisms, extinct groups, and evolutionary oddities. Do not let species
+  count or corpus frequency alone crowd out entire branches.
+- **Readable presentation:** every opaque taxon needs a short plain-language
+  description, an understandable visible label where one exists, and a
+  searchable scientific-name alias. Scientific-only names should normally be
+  metadata or an expandable detail layer rather than default leaves.
+- **Rank compression with provenance:** retain an intermediate clade when it
+  explains a major evolutionary distinction or supports a useful question;
+  collapse it when it adds no playable split. The hidden source path must
+  preserve every omitted ancestor.
+- **Convergence and polyphyly clarity:** convergent forms such as bats and
+  birds, dolphins and fish, cacti and euphorbs, or marsupial and placental
+  analogues must not be placed together merely because they look or behave
+  alike. Add “convergent with” metadata instead.
+- **Extinct-life continuity:** fossils, dinosaurs, trilobites, ammonites, and
+  other extinct groups should remain in the same evolutionary history as
+  living relatives, with extinct status visible in metadata and descriptions.
+- **Single-parent usability:** the visible tree needs one reviewed display
+  parent per node, while alternate placements, synonyms, taxonomic opinions,
+  and source edges remain available for audit.
+- **Classification utility:** each visible branch should create an intuitive,
+  non-trivial distinction and have a clear interpretation for a general
+  reader. Scientific rank alone is not a sufficient reason to expose a
+  branch.
+- **Budget and balance:** measure both node count and candidate mass by branch,
+  reserve capacity for plants, fungi, microbes, and extinct life, and prevent
+  charismatic animals from consuming the entire profile.
+- **Version stability:** retain a snapshot manifest and a migration report so
+  that a source update cannot silently move familiar leaves or erase aliases.
+
+### Virus placement policy
+
+Viruses deserve inclusion but should not be forced into the organism taxonomy.
+They are acellular infectious entities with diverse evolutionary histories;
+many are more meaningfully related through host, genome, replication strategy,
+or shared viral ancestry than through a single universal tree. The default
+visible design should therefore use a dedicated **Virus and other acellular
+infectious agents** subtree under the physical/biological-agent region, while
+retaining host associations and biological hypotheses as cross-links.
+
+The virus pilot should include familiar and high-impact examples—such as
+influenza, HIV, SARS-CoV-2, Ebola, rabies, herpesviruses, bacteriophages, and
+plant viruses—alongside a compact set of major genome or replication groups.
+It should not imply that all named viruses form a clean ranked lineage.
+Each entry should record host range, disease or ecological relevance, genome
+type, transmission mode, accepted name, synonyms, and source release. If a
+future authoritative source supports a stronger viral tree, it can replace
+the provisional subtree without changing the host-association metadata.
+
+### Selecting notable life entries
+
+The biological graft should use a two-axis inclusion policy rather than simply
+taking the most frequent taxa or copying every species in a source database.
+Each candidate receives separate scores for **public familiarity** and
+**evolutionary or scientific interest**, with a minimum evidence threshold for
+either score and a manual placement review.
+
+Public-familiarity candidates include organisms that a general player is
+likely to recognize from ordinary life, food, pets, farming, medicine,
+children's education, news, or common media. This favors entries such as dog,
+cat, horse, cow, chicken, bee, butterfly, oak, rose, mushroom, wheat, corn,
+yeast, salmon, shark, whale, and crocodile. Common names remain the primary
+visible labels, with scientific names and accepted taxon IDs stored as
+metadata and searchable aliases.
+
+Scientific-interest candidates are deliberately not limited to familiar
+species. They include organisms or clades that make the tree explain
+evolutionary history, unusual body plans, or convergence. The initial
+high-priority set should include:
+
+- **Conspicuous evolutionary survivors and transitional examples:** coelacanth
+  (correctly spelled and linked to its lobe-finned lineage), horseshoe crab,
+  tuatara, nautilus, lungfish, monotremes, and other living lineages commonly
+  discussed as evolutionarily distinctive.
+- **Convergent-evolution examples:** marsupials as a complete visible branch
+  rather than a few isolated species; separately recognizable marsupials such
+  as kangaroo, koala, wombat, opossum, and Tasmanian devil; and representative
+  convergences such as bats versus birds, dolphins versus fish, sharks versus
+  other streamlined swimmers, cactus-like euphorbs versus cacti, and
+  anteaters versus aardvarks. The tree should not imply that convergent
+  appearance means close ancestry.
+- **Major extinct and deep-time groups:** dinosaurs, pterosaurs, trilobites,
+  ammonites, non-avian theropods, sauropods, early tetrapods, and other
+  culturally or scientifically notable extinct groups. Extinct taxa should
+  remain under biological history, not be diverted into “historical object” or
+  fictional branches.
+- **Representative diversity:** at least one playable set of entries for each
+  major animal, plant, fungal, and microbial branch, including organisms that
+  are ecologically important, medically important, agriculturally important,
+  or morphologically unusual. Selection should avoid spending the whole
+  budget on one charismatic group.
+
+This policy is a **notability sample**, not a claim that omitted taxa are
+unimportant. A candidate should be included only when its visible label has a
+clear answer interpretation, its taxonomic placement is supported by a
+declared source release, and it contributes either recognizable game coverage
+or a meaningful evolutionary contrast. A species with only a scientific
+binomial and no usable common-language label generally belongs in metadata or
+an optional detail layer, not as a default leaf.
+
+### How the graft should work
+
+The graft should begin from the v1 organism branches and map source taxa into
+those homes through an explicit reviewed crosswalk. The pipeline should:
+
+- choose one authority for accepted names and parentage for each release,
+  preferably Catalogue of Life or GBIF for broad coverage, with Open Tree of
+  Life, NCBI, ITIS, and specialized sources used for validation;
+- retain stable source identifiers, rank, accepted name, synonyms, extinct
+  status, and source version in a manifest;
+- collapse taxonomic ranks that do not improve a 20 Questions split, while
+  retaining enough ancestors to explain scientific placement;
+- create visible nodes only for selected notable taxa and the ancestors needed
+  to make their branches intelligible;
+- preserve alternate scientific placements and synonymy as metadata rather
+  than duplicating visible nodes;
+- attach a short plain-language description and, where useful, an “often
+  confused with” or “convergent with” note; and
+- run a tree review for every new branch: recognizable entries, non-trivial
+  sibling distinctions, balanced candidate mass, and a clear semantic split.
+
+The visible hierarchy must not use evolutionary relatedness as the only
+question strategy. A player should first encounter useful distinctions such
+as animal versus plant, vertebrate versus invertebrate, aquatic versus
+terrestrial, or domesticated versus wild where those splits are more
+answerable than a deep scientific rank. Scientific taxonomy determines
+correct homes and metadata; the v1 information design determines the
+player-facing order.
+
+### Acceptance and quality gates
+
+Every proposed v2 node should have a review record containing its label,
+parent, source identifier and release, common-name evidence, familiarity
+score, scientific-interest rationale, and rejection reason if not accepted.
+Automated checks should reject or flag:
+
+- duplicate visible labels with no disambiguating parent context;
+- branches containing only one weakly notable child;
+- taxa whose source parentage is unresolved or contradictory;
+- scientific-only labels that have no useful player interpretation;
+- nodes that make a suggested question nearly empty or nearly universal; and
+- overrepresented clades that consume the budget without adding distinct
+  gameplay choices.
+
+The implemented biological pilot is the reviewed **9,955-node profile**. It
+should be judged as a candidate browser, not yet as the final gameplay tree:
+the next review pass should demote or hide scientific-only leaves, retain
+notable ancestors, and preserve the seed examples that explain evolutionary
+history. This staged review is safer than mechanically promoting every
+scientific record to a casual-game answer.
+
+## Vocabulary coverage audits from open encyclopedias and scored word lists
+
+The tree should have an explicit **must-include audit** in addition to
+taxonomy-driven expansion. The goal is not to copy an encyclopedia's
+categories. It is to extract candidate entry titles, normalize them to noun
+senses, and check whether familiar answers have a clear home in v1 or v2.
+This gives us a defensible answer to “what obvious things did we forget?”
+
+### Open and openly accessible encyclopedia sources
+
+There is no single open, modern, general-purpose encyclopedia that is both
+compact and already shaped like a 20 Questions noun tree. A practical source
+set is therefore a combination of open-license article title lists and
+compact knowledge outlines:
+
+- **Simple English Wikipedia:** its CC BY-SA dump is a strong approachability
+  source because article titles and explanations are intentionally written for
+  a wider reading audience. It is broad but editorially noisy; use titles and
+  lead concepts for candidate discovery, not Wikipedia category parentage.
+- **English Wikipedia:** the full CC BY-SA dump supplies the largest open
+  candidate inventory, redirects, and links to taxobox-backed organism
+  articles. Page views, incoming links, and article lead quality can provide
+  familiarity signals, but article existence is not evidence that a noun is a
+  good game answer.
+- **Wiktionary:** its regularly published dumps provide open lexical entries,
+  parts of speech, definitions, inflections, synonyms, and language labels.
+  It is better than an encyclopedia for deciding whether a candidate is
+  actually used as an English noun, but its crowdsourced sense structure
+  requires filtering and quality checks.
+- **Encyclopedia of Life:** the open biodiversity portal is a useful
+  approachable organism-entry source with common names, images, and links to
+  scientific authorities. It is not a single-volume general encyclopedia, so
+  it should supply biological familiarity evidence rather than the general
+  ontology root.
+- **Public-domain reference works:** the 1911 *Encyclopaedia Britannica* and
+  other Internet Archive or Project Gutenberg encyclopedias can supply
+  historically prominent names and concepts. They are useful negative controls
+  for cultural coverage, but their dated science and vocabulary make them
+  unsuitable as the sole modern must-include list.
+
+The *Propædia* browser in [`Propaedia/index.html`](Propaedia/index.html) is a
+particularly useful compact outline for auditing broad domain coverage. It
+should be used to ask whether our top-level organization has room for a domain,
+while open encyclopedic article titles should supply candidate leaves.
+
+### Scored noun inventories
+
+We can also construct a ranked noun list rather than rely on one encyclopedia.
+The strongest openly available signals are complementary:
+
+- [wordfreq](https://github.com/rspeer/wordfreq) supplies frequency estimates
+  and top-word lists derived from multiple corpora. It is a good first
+  frequency prior, but its list is not noun-filtered and frequency is not the
+  same as game usefulness.
+- [WordNet](https://wordnet.princeton.edu/) supplies noun synsets, lemma
+  counts, glosses, and hypernyms. Its corpus counts provide a reproducible
+  lexical familiarity signal, while its sense inventory prevents treating
+  every spelling as a distinct concept.
+- The [MRC Psycholinguistic Database](https://websites.psychology.uwa.edu.au/school/MRCDatabase/uwa_mrc.htm)
+  and [Brysbaert concreteness ratings](https://doi.org/10.3758/s13428-015-0631-6)
+  provide familiarity, imageability, age-of-acquisition, and concreteness
+  features for many English words. These are especially useful for separating
+  playable concrete nouns from frequent but abstract function words.
+- [Google Books Ngram Viewer](https://books.google.com/ngrams/) and
+  [Wikipedia pageviews](https://pageviews.wmcloud.org/) provide historical
+  and current prominence signals. They should be treated as measurable
+  evidence, not as ground truth: corpus bias, capitalization, inflection, and
+  media attention can distort rankings.
+
+A reproducible must-include audit can combine these signals into a declared
+score such as:
+
+```text
+candidate score =
+    frequency
+  + concreteness and imageability
+  + age-of-acquisition familiarity
+  + encyclopedia/pageview prominence
+  + WordNet sense and noun evidence
+  - ambiguity, proper-name noise, and source disagreement
+```
+
+For each proposed noun, the audit should retain the raw features, candidate
+senses, source URLs or IDs, normalized label, and proposed v1/v2 parent. We
+should then publish separate thresholded lists—for example, the top 1,000,
+3,000, and 5,000 everyday nouns—rather than silently treating one ranking as
+canonical. A candidate becomes a must-include only after it also passes the
+game checks: a recognizable answer interpretation, a clear home, and a
+non-trivial question against its siblings.
+
 ## Prior art
 
 The figures below are scale or activity proxies, not claims that unlike
@@ -74,6 +656,476 @@ snapshot-dependent; links are the authoritative places to refresh them.
   reference point for lexical-semantic systems.
 - **Fit:** best initial canonical backbone for common noun gameplay.
 
+### 20Q.net and Akinator
+
+These are notable game systems rather than downloadable ontologies. They are
+important prior art because they optimize the actual interaction this project
+is trying to support: identifying a player-selected answer through a sequence
+of questions.
+
+- **20Q.net:** Robin Burgener's computerized 20 Questions experiment began in
+  1988; the commercial handheld version appeared in 2003, and the service was
+  also published as a website. The system is described as a learned neural
+  network and folk taxonomy rather than a fixed public hierarchy. Its current
+  internal question/answer inventory and node count are proprietary or
+  undocumented. Its historical existence as a web and handheld product,
+  multiple category editions, and long-running public use are the relevant
+  prominence measures. See the
+  [20Q overview](https://en.wikipedia.org/wiki/20Q).
+- **Akinator:** Elokence launched this French video game in 2007. It asks
+  about characters, objects, films, and animals, learns from prior players,
+  and accepts graded answers such as “probably” and “probably not.” Its
+  internal classification database and node count are not public. Its
+  commercial web, mobile, and game presence and its sustained international
+  availability are practical prominence proxies. See the
+  [Akinator overview](https://en.wikipedia.org/wiki/Akinator).
+- **Fit:** both systems demonstrate that question selection, uncertainty
+  handling, and feedback can matter more to gameplay than a formally pure
+  hierarchy. They are useful behavioral benchmarks, but their learned
+  databases should not be silently substituted for WordNet's auditable source
+  graph.
+
+### Ontology4 upper-ontology survey
+
+The [Ontology4 upper-ontology index](https://www.ontology4.us/english/Ontologies/Upper-Ontologies/)
+collects several historically important approaches: Aristotle, Sowa, Cyc,
+SUMO, Schema.org, and the Ontological Sextett. The Sextett page also links
+the proposed UMO. Ontology4 is useful as a comparative visual catalog, but
+its pages are adaptations and diagrams rather than authoritative releases of
+the underlying ontologies. The following entries evaluate the linked
+approaches against this project's specific goal: a familiar, navigable,
+question-oriented noun hierarchy.
+
+#### Aristotle's categories
+
+- **Source:** [Ontology4's Aristotle page](https://www.ontology4.us/english/Ontologies/Upper-Ontologies/Aristotle%20Ontology/index.html)
+  and the [historical text](https://classics.mit.edu/Aristotle/categories.html).
+- **What it is:** a philosophical account of categories of being and
+  predication, traditionally including substance, quantity, quality,
+  relation, place, time, position, state, action, and passion.
+- **Structure:** a small conceptual partition, not a deep `is-a` hierarchy.
+  It separates entities from properties, relations, and event-like
+  predicates, but does not supply ordinary leaves such as `animal → mammal →
+  dog`.
+- **Status and access:** the historical work is public domain; the Ontology4
+  rendering is a modern adaptation with no clearly stated independent release
+  or machine-readable distribution.
+- **Fit:** low as the game hierarchy, medium as a design sanity check.
+  Aristotle can remind us to distinguish things, qualities, relations, and
+  events, but “substance” is far too broad and abstract to be a useful
+  player-facing branch.
+
+#### Sowa's KR ontology
+
+- **Source:** [Sowa's top-level ontology](https://www.jfsowa.com/ontology/toplevel.htm)
+  and [Ontology4's Sowa page](https://www.ontology4.us/english/Ontologies/Upper-Ontologies/Sowa%20Ontology/index.html).
+- **What it is:** a formal synthesis influenced by Peirce and Whitehead,
+  organized around distinctions such as independent, relative, and mediating;
+  physical and abstract; and continuant and occurrent.
+- **Structure:** a lattice or diamond rather than a tree, with categories such
+  as object, process, schema, script, participation, description, situation,
+  reason, and purpose. Its formal combinations are useful for knowledge
+  representation but do not naturally become familiar questions.
+- **Status and access:** maintained primarily as scholarly explanatory web
+  material rather than as a current, populated, independently versioned
+  ontology release. The source page is openly viewable; licensing for
+  derivative diagrams and text should be checked before redistribution.
+- **Fit:** low to medium. It is a useful internal type system if the game
+  expands beyond nouns into events, properties, and relations, but its
+  categories are not suitable as ordinary player language.
+
+#### Cyc and OpenCyc
+
+- **Source:** [Cyc](https://cyc.com/), the [Cyc FAQ](https://cyc.com/faq/),
+  and [Ontology4's Cyc rendering](https://www.ontology4.us/english/Ontologies/Upper-Ontologies/Cyc%20Ontology/index.html).
+- **What it is:** a large formal common-sense knowledge base, inference
+  system, and ontology rather than merely an upper-level taxonomy. It
+  represents classes, individuals, predicates, rules, and contextual
+  microtheories.
+- **Structure:** rich logical assertions and relations, with collections,
+  functions, predicates, and context-sensitive knowledge. It can express
+  exceptions and practical facts that a simple hierarchy cannot.
+- **Status and access:** Cycorp remains commercially active, but the current
+  Cyc system and knowledge base are not an unrestricted public ontology
+  download. Historical OpenCyc material should not be confused with the
+  current commercial system, and its exact license and currency require
+  verification before reuse.
+- **Fit:** medium for symbolic reasoning, low for a lightweight game tree.
+  Cyc could inspire rules such as typical uses or contexts, but its scale,
+  engineering burden, and access model make it a poor incumbent replacement.
+
+#### SUMO
+
+- **Source:** [Ontology4's SUMO page](https://www.ontology4.us/english/Ontologies/Upper-Ontologies/Sumo%20Ontology/index.html),
+  the [SUMO project](https://www.ontologyportal.org/), and its active
+  [public repository](https://github.com/ontologyportal/sumo).
+- **What it is:** the Suggested Upper Merged Ontology, combining a formal
+  upper ontology with broad domain ontologies, logical axioms, relations, and
+  WordNet-related mappings.
+- **Structure:** a substantial `subclass` hierarchy plus `instance`,
+  part-whole, temporal, spatial, and other relations. It covers animals,
+  anatomy, vehicles, geography, artifacts, processes, and culture, but uses
+  multiple inheritance and formal relations that do not fit a strict
+  single-parent browser.
+- **Status and access:** actively maintained in a public repository. The
+  repository is inspectable and substantially more current and reproducible
+  than the Ontology4 diagram. Licensing must be checked per file and
+  subcomponent, especially where WordNet-derived data is involved.
+- **Fit:** high as a semantic and provenance backbone, medium as direct game
+  vocabulary. SUMO is the best candidate from the Ontology4 list for a
+  structured improvement vector, but it should be projected into a curated
+  game tree rather than displayed raw.
+
+#### Schema.org
+
+- **Source:** [Ontology4's Schema.org page](https://www.ontology4.us/english/Ontologies/Upper-Ontologies/schema.org%20Ontology/index.html),
+  [Schema.org](https://schema.org/), its [latest vocabulary](https://schema.org/version/latest/),
+  and the [source repository](https://github.com/schemaorg/schemaorg).
+- **What it is:** a pragmatic web-markup vocabulary jointly developed for
+  structured data understood by search engines, not a universal formal upper
+  ontology.
+- **Structure:** a human-readable `Thing` hierarchy with branches such as
+  Person, Organization, Place, Product, Event, CreativeWork, MedicalEntity,
+  and Intangible, plus many properties and enumerations. It has multiple
+  inheritance and web/commerce/media/medical biases.
+- **Status and access:** actively released and openly inspectable through the
+  official site and repository. Its release process and licensing information
+  are documented by the project, but the exact terms should be preserved when
+  redistributing derived data.
+- **Fit:** medium-high for contemporary familiar labels and broad category
+  discovery, low as a complete noun ontology. It is especially useful for
+  people, places, products, food, media, vehicles, and events, but it omits
+  much of the ordinary physical and biological world that v1 handles well.
+
+#### Ontological Sextett
+
+- **Source:** [Ontology4's Sextett page](https://www.ontology4.us/english/Ontologies/Upper-Ontologies/Sextett%20Ontology/index.html).
+- **What it is:** a proposed extension of the classical ontological
+  rectangle, notably adding explicit relationships so statements such as
+  “Picasso painted Guernica” are not forced into an entity-only taxonomy.
+- **Structure:** a compact set of primitives involving entities, attributes,
+  and relations. The page does not establish a complete, independently
+  standardized machine-readable hierarchy.
+- **Status and access:** a static Ontology4 proposal with no evident current
+  release process, standards body, or independent implementation. No clear
+  redistribution license is stated.
+- **Fit:** low to medium as modeling inspiration, low as content. Its
+  strongest contribution is the reminder that relations and attributes should
+  be stored alongside the noun hierarchy rather than confused with noun
+  categories.
+
+#### UMO
+
+- **Source:** [Ontology4's UMO page](https://www.ontology4.us/english/Ontologies/Upper-Ontologies/UMO%20Ontology/index.html);
+  it is introduced from the [Sextett page](https://www.ontology4.us/english/Ontologies/Upper-Ontologies/Sextett%20Ontology/index.html).
+- **What it is:** an “upmost minimal ontology,” intended to extend the
+  Sextett with relations while reducing category names to base symbols.
+- **Structure:** minimal primitives, explicit relationships, attributes, and
+  superclass inheritance. The page illustrates distinguishing things using
+  attributes such as age, color, weight, nationality, and height.
+- **Status and access:** a static Ontology4 proposal without an evident
+  versioned release, active standards process, maintained repository, or
+  independent user community. Licensing is not clearly stated.
+- **Fit:** low as a ready-made hierarchy, medium as a custom-engineering
+  pattern. UMO's attribute emphasis could inform question generation, but it
+  supplies neither the familiar nouns nor the reviewed parentage needed by
+  this project.
+
+#### Ontology4 recommendation
+
+None of these upper ontologies should replace the incumbent v1 tree directly.
+The best alternative is **SUMO as a semantic backbone**, with Schema.org as a
+secondary source for contemporary human-facing categories and WordNet as the
+lexical bridge. The best improvement vector is therefore layered:
+
+- retain v1's player-facing top-level organization and hand-reviewed
+  discriminators;
+- map v1 leaves and future candidates to SUMO classes where a stable semantic
+  anchor exists;
+- use SUMO relations and axioms as validation and metadata, not as visible
+  unary or multi-parent branches;
+- use Schema.org and WordNet to discover familiar labels, aliases, and
+  missing everyday siblings; and
+- preserve all source identifiers and alternate parents in a manifest while
+  projecting only a balanced single-parent navigation tree.
+
+This is an improvement in auditability and scientific consistency, not a
+reason to let SUMO dictate the game structure. The incumbent's main advantage
+is precisely that its visible questions were designed for play rather than
+inherited from a formal ontology.
+
+Product-type systems are another important prior-art family. The detailed
+comparison appears below as a prior-art supplement to the upper-layer
+discussion; its placement is editorial, not architectural. These systems
+inform physical-artifact vocabulary and coverage audits, never the upper
+ontology's root categories.
+
+### Mathematics
+
+Mathematics needs its own prior-art subsection because the available systems
+solve different problems and none is a ready-made noun taxonomy:
+
+- **MSC2020** is the strongest maintained classification of mathematical
+  literature. It is a subject and discipline classification, not a taxonomy
+  of mathematical entities. Use it as an orthogonal subject facet, never as
+  the parent of `Circle`, `Algorithm`, or `Group`.
+- **[OpenMath](https://openmath.org/)** represents the semantics of
+  mathematical objects and expressions through symbols and content
+  dictionaries. It is the best candidate for semantic symbols, operations,
+  functions, and relations, but it is not a complete browseable hierarchy.
+- **[OMDoc](https://en.wikipedia.org/wiki/OMDoc)** extends OpenMath to
+  definitions, theorems, proofs, examples, and theories. It is especially
+  useful for separating a mathematical object from a statement about it and
+  from a proof or theory containing it.
+- **[MMT](https://uniformal.github.io/)** is a foundation-independent
+  framework for formal theories, symbols, structures, imports, and
+  translations. It is a metamodel for mathematical knowledge, not a
+  player-facing tree.
+- **[Lean and Mathlib](https://github.com/leanprover-community/mathlib4)**
+  provide a large modern typed dependency graph of definitions, structures,
+  theorems, proofs, and typeclass relationships. They are valuable for
+  validating modern formal practice, but raw Mathlib ancestry reflects proof
+  engineering rather than a general-purpose noun hierarchy.
+- **OntoMathPRO** is the closest candidate for an ontology of mathematical
+  knowledge, including mathematical concepts, objects, theories, formulas,
+  theorems, and proofs. Its maintenance, licensing, machine-readable
+  distribution, and possible inheritance of subject-classification
+  structure require a dedicated audit before grafting.
+- **Type theory, category theory, set theory, and model theory** provide
+  foundations and structural languages. They supply types, terms, values,
+  proofs, sets, functions, morphisms, models, and interpretations, but none
+  should be copied wholesale as the visible mathematical branch.
+- **MathML and related notation standards** represent syntax or presentation
+  and therefore belong in the representation layer, not as the taxonomy of
+  the mathematical things represented.
+
+The current grafting hypothesis is therefore selective: use OpenMath and
+OMDoc for semantic mathematical objects and formal statements, MMT for
+cross-foundation theory structure, Lean/Mathlib for modern machine-checked
+examples, and MSC2020 as metadata. Do not graft MSC2020's disciplines into
+the noun tree. The entity branch should say `Computational structures` with
+separate children such as `Algorithms`, `Complexity classes`, `Computable
+functions`, `Recursive functions`, `Automata`, `Formal languages`, and
+`Graphs`, rather than a mixed node such as “Algorithms and complexity
+classes.”
+
+
+### Upper-ontology approaches
+
+The following are the principal named approaches worth evaluating before we
+invent a new arrangement. They are not interchangeable: some are formal
+upper ontologies, some are domain or linguistic ontologies, some are
+foundational theories, and some are modeling methodologies. This list names
+the players without yet ranking their suitability or reproducing their
+structures.
+
+### Formal and foundational upper ontologies
+
+- **Aristotle's Categories** — the classical inventory of substance,
+  quantity, quality, relation, place, time, position, state, action, and
+  passion.
+- **Cyc / OpenCyc** — a large common-sense knowledge base with collections,
+  individuals, predicates, rules, and context-sensitive microtheories.
+- **Suggested Upper Merged Ontology (SUMO)** — a broad formal ontology with
+  entities, objects, processes, attributes, relations, axioms, and mappings.
+- **Sowa's Knowledge Representation Ontology** — a Peircean and
+  Whitehead-influenced lattice of physical, abstract, independent, relative,
+  and mediating categories.
+- **DOLCE (Descriptive Ontology for Linguistic and Cognitive Engineering)** —
+  a philosophically and linguistically motivated ontology distinguishing
+  endurants, perdurants, qualities, regions, abstracts, and social objects.
+- **BFO (Basic Formal Ontology)** — a realist upper ontology centered on
+  continuants, occurrents, material entities, processes, qualities, roles,
+  functions, dispositions, and sites; widely used in biomedical OBO
+  ontologies.
+- **GFO (General Formal Ontology)** — a broad foundational ontology with
+  continuants, presentials, processes, time, space, levels of reality,
+  categories, and formal relations.
+- **UFO (Unified Foundational Ontology)** — a foundational ontology for
+  conceptual modeling, especially objects, events, dispositions, situations,
+  roles, relators, qualities, and social commitments.
+- **OntoClean** — a methodology rather than a complete ontology; it uses
+  meta-properties such as rigidity, identity, unity, and dependence to audit
+  taxonomic commitments.
+- **gist** — a compact practical upper ontology emphasizing things,
+  organizations, people, events, places, physical and abstract entities, and
+  reusable semantic patterns.
+- **PROTON (Proto Ontology)** — a lightweight upper ontology designed for
+  broad semantic-web interoperability, including entities, events, agents,
+  information, and abstract concepts.
+- **Basic Formal Ontology 2020 and the OBO Foundry principles** — a current
+  ecosystem around BFO that adds governance, orthogonality, textual
+  definitions, identifiers, and domain-ontology interoperability.
+
+### Philosophical and metaphysical families
+
+- **Aristotelian substance-and-accident ontology** — substances bear
+  qualities, relations, quantities, and activities.
+- **Four-Category Ontology** — a modern Aristotelian framework distinguishing
+  substantial universals, substantial particulars, non-substantial
+  universals, and non-substantial particulars.
+- **Three-dimensional endurance ontology** — objects persist by being wholly
+  present at successive times.
+- **Four-dimensional perdurance ontology** — objects are extended through
+  time as temporal parts or spacetime worms.
+- **Process ontology** — processes, events, activities, and change are
+  fundamental rather than secondary to enduring objects.
+- **Trope theory** — particularized properties or property instances are
+  fundamental and resemblance classes can form universals.
+- **Mereology and formal mereotopology** — part, whole, overlap, boundary,
+  connection, and location provide a foundation for physical and spatial
+  organization.
+- **Realist, nominalist, conceptualist, and structuralist theories of
+  universals** — competing accounts of whether kinds and properties exist
+  independently, are names, are concepts, or are patterns of structure.
+- **Social ontology** — institutions, roles, statuses, norms, collective
+  intentionality, and institutional facts, associated with work by Searle,
+  Gilbert, Tuomela, and related traditions.
+
+### Linguistic and cognitive organization systems
+
+- **Roget's Thesaurus** — a broad conceptual-semantic classification of
+  language organized into major classes, divisions, sections, and synonym
+  neighborhoods.
+- **WordNet** — a lexical ontology of synsets connected mainly by
+  hypernymy, meronymy, entailment, and related semantic relations.
+- **FrameNet** — a frame-semantic resource organizing meanings around
+  situations, participants, roles, and lexical realizations.
+- **Propædia** — Encyclopaedia Britannica's knowledge classification,
+  organized around domains, disciplines, and the major branches of human
+  knowledge.
+- **The Generalized Upper Model (GUM)** — a linguistically motivated
+  ontology for semantic interpretation, including situations, processes,
+  objects, qualities, and roles.
+- **Jackendoff's conceptual semantics** — a theory of conceptual structure
+  involving events, things, paths, places, properties, states, and
+  argument structures.
+- **Cognitive linguistics and image-schema systems** — recurring structures
+  such as containment, source-path-goal, part-whole, force, and balance.
+- **The Lexical Markup Framework and ISO terminology standards** — standards
+  for representing lexical entries, concepts, designations, definitions, and
+  terminology systems rather than a complete upper ontology.
+
+### Knowledge-representation and semantic-web standards
+
+- **Common Logic (ISO/IEC 24707)** — a logic framework for exchanging
+  ontologies and theories across first-order and related logical notations.
+- **RDF, RDFS, and OWL** — W3C graph, vocabulary, and description-logic
+  standards for classes, properties, individuals, restrictions, and
+  inference.
+- **Schema.org** — a pragmatic web vocabulary covering things, actions,
+  people, organizations, places, products, events, creative works, and
+  intangible entities.
+- **SHACL** — a constraint language for validating RDF graphs; useful for
+  enforcing the data model even though it is not an upper ontology.
+- **CIDOC Conceptual Reference Model (CIDOC CRM)** — an event-and-history
+  ontology for cultural heritage, documentation, people, objects, places,
+  events, and provenance.
+- **ISO 15926** — a reference-data and lifecycle model for process plants and
+  engineering information, notable for its treatment of objects, activities,
+  temporal parts, and relationships.
+- **SIOC, FOAF, and related social-web vocabularies** — reusable models for
+  people, accounts, documents, communities, and online relations.
+- **OBO Foundry ontologies** — a coordinated family of domain ontologies
+  using shared identifiers, BFO alignment, and explicit relations.
+
+### Mathematical and computational foundations
+
+- **Zermelo-Fraenkel set theory with Choice (ZFC)** — the dominant classical
+  set-theoretic foundation for mathematics.
+- **NBG and Morse-Kelley class theories** — set theories that make classes
+  explicit alongside sets, useful when distinguishing collections from
+  proper classes.
+- **Structural set theory and ETCS** — category-oriented alternatives to
+  element-first set theory, emphasizing sets through maps and structure.
+- **Simple type theory and the typed lambda calculus** — foundations based on
+  types, terms, functions, and typed abstraction.
+- **Dependent type theory** — a foundation in which types may depend on
+  values and propositions can be represented as types.
+- **Martin-Löf type theory and the Calculus of Constructions** — influential
+  constructive and proof-assistant foundations.
+- **Homotopy Type Theory and the Univalent Foundations program** — a
+  type-theoretic foundation treating identity and equivalence structurally.
+- **Category theory** — a structural language of objects, morphisms,
+  composition, functors, natural transformations, limits, and equivalences.
+- **Topos theory** — category-theoretic foundations in which a topos behaves
+  like a generalized universe of sets and supports internal logic.
+- **Universal algebra and algebraic specification** — structures defined by
+  signatures, operations, equations, and homomorphisms.
+- **Model theory** — the distinction among formal languages, theories,
+  structures, interpretations, satisfaction, and models.
+- **Formal methods and proof assistants** — systems such as Lean, Coq, Agda,
+  Isabelle, and HOL that make types, terms, proofs, definitions, and
+  checked derivations computationally explicit.
+- **Programming-language type systems** — nominal, structural, algebraic,
+  refinement, effect, capability, and dependent types; Scala is a useful
+  practical example but not itself a universal ontology.
+
+### Broad domain and scientific frameworks
+
+- **Cognitive Atlas and schema-based cognitive ontologies** — concepts and
+  relations for mental functions, tasks, and brain measurements.
+- **Gene Ontology** — a controlled vocabulary organized around molecular
+  function, biological process, and cellular component.
+- **Environment Ontology and Phenotype ontologies** — examples of
+  interoperable domain systems for environments, traits, qualities, and
+  biological observations.
+- **CIDOC CRM and FRBR / IFLA Library Reference Model** — event, work,
+  expression, manifestation, item, agent, and bibliographic identity
+  frameworks.
+- **Geographic information ontologies and GeoSPARQL** — places, geometries,
+  coordinate reference systems, spatial relations, and geographic features.
+- **BFO-aligned biomedical ontologies** — a large practical test of whether
+  continuant, occurrent, quality, role, function, and disposition categories
+  can support detailed domain modeling.
+- **Systems engineering and product-lifecycle reference models** — examples
+  such as ISO 15926, STEP, and SysML that organize artifacts, functions,
+  requirements, states, activities, and system decomposition.
+
+This roster is intentionally broader than the Ontology4 catalog. The next
+research pass should compare the formal definitions, licensing, maintenance,
+machine-readable availability, and coverage of these players before selecting
+which structures deserve a detailed synthesis study.
+
+### SUMO PDF tree projection and unary-node policy
+
+The [SUMO browser](SUMO/index.html) is rebuilt from the nodes and directed blue
+arcs in the [official Ontology4 SUMO PDF](https://www.ontology4.us/download/dot/SumoOntology.pdf),
+not from the current KIF hierarchy. The checked-in
+[`pdf-graph.json`](SUMO/pdf-graph.json) records the extracted 518 PDF nodes and
+554 vector arcs. Unary nodes are first-class citizens: a node having one child
+is not, by itself, evidence of a bad tree or a reason to collapse it.
+
+For each PDF node with multiple incoming arcs, the projection repeatedly
+removes the longest measured incoming arc until one primary parent remains.
+Removed parents remain visible as alternate cross-links. This makes `Object`
+have exactly the PDF's four visible children: `Agent`, `Collection`, `Region`,
+and `SelfConnectedObject`.
+
+`Entity` is now the only root. The four disconnected PDF labels receive
+explicit provisional placements: `List → Set`, `Number → Quantity`,
+`Predicate → Proposition`, and `Sentence → Proposition`. These are marked
+provisional in the browser and data rather than being misrepresented as
+PDF-derived edges. `Number` therefore sits in the abstract quantity branch,
+near the truth-value branch without being made a child of `True` or `False`.
+
+The projection contains 518 nodes and 517 primary edges, with 39 nodes having
+alternate parents and 51 unary nodes. The [complete unary-node inventory](SUMO/unary-nodes.md)
+is retained as a data reference, not a cleanup queue.
+
+The reproducible extraction recipe is:
+
+- download the PDF and record its URL and SHA-256 in
+  [`snapshot-manifest.json`](SUMO/snapshot-manifest.json);
+- convert it with `pdftocairo -svg` and `pdftotext -bbox`;
+- run [`extract_pdf_edges.py`](SUMO/extract_pdf_edges.py) to map vector arc
+  endpoints to PDF labels and measure each directed arc;
+- run [`generate_sumo.py`](SUMO/generate_sumo.py) with `--pdf-graph`;
+- for multiple incoming arcs, remove the longest repeatedly until one primary
+  parent remains, retaining removed parents as alternate cross-links; and
+- apply only the four explicitly marked provisional placements needed to keep
+  `Entity` as the sole root.
+
 ### Wikidata
 
 - **Origin:** Wikimedia Deutschland, Berlin, Germany, launched in 2012.
@@ -92,9 +1144,16 @@ snapshot-dependent; links are the authoritative places to refresh them.
 
 - **Origin:** launched in January 2001 as a global Wikimedia project.
 - **Current status:** active encyclopedia, category graph, portal system,
-  infobox vocabulary, redirects, and interlanguage links. This is an implicit
-  ontology assembled for navigation and editorial work, not one formal
-  ontology.
+  infobox vocabulary, redirects, interlanguage links, and a substantial
+  biological-taxonomy workflow. The [WikiProject Tree of
+  Life](https://en.wikipedia.org/wiki/Wikipedia:WikiProject_Tree_of_Life)
+  coordinates organism coverage; species articles commonly use standardized
+  [taxoboxes](https://en.wikipedia.org/wiki/Template:Taxobox) to display
+  ranks, accepted names, synonyms, and parent taxa; and
+  [Wikispecies](https://species.wikimedia.org/) provides a separate
+  Wikimedia taxonomy directory. These are valuable linked reference
+  structures, but Wikipedia's taxoboxes and categories are editorial
+  presentations, not a single versioned biological authority.
 - **Node count:** the English
   [Wikipedia statistics page](https://en.wikipedia.org/wiki/Wikipedia:Statistics)
   reports roughly 7.25 million articles and 2.6 million categories in its
@@ -103,8 +1162,324 @@ snapshot-dependent; links are the authoritative places to refresh them.
   edits by 12.4 million users; article and category counts are also direct
   scale measures.
 - **Fit:** excellent candidate source for familiarity and named-entity
-  expansion, but category membership is inconsistent and often editorial,
-  topical, or maintenance-driven.
+  expansion and biological cross-checking, but category membership is
+  inconsistent and often editorial, topical, or maintenance-driven. Taxobox
+  parentage is more useful for organisms than general Wikipedia categories,
+  although it still needs source/version tracking.
+- **Browser:** [`Wikipedia/index.html`](Wikipedia/index.html) provides a
+  static, searchable, lazy-rendered browser beginning at
+  [Main topic classifications](https://en.wikipedia.org/wiki/Category:Main_topic_classifications)
+  and [Contents](https://en.wikipedia.org/wiki/Category:Contents). It
+  packages [`categories.json`](Wikipedia/categories.json) and records its
+  exact source, checksum, license, roots, and derivation parameters in
+  [`snapshot-manifest.json`](Wikipedia/snapshot-manifest.json). The October
+  3, 2026 English Categories RDF dump contains about 2 million categories
+  reachable from these roots; the checked-in derived snapshot includes 12,657
+  categories through depth 3 so the browser remains practical. Boundary
+  categories link to live Wikipedia pages for deeper exploration. The
+  reproducible parser is [`generate_categories.py`](Wikipedia/generate_categories.py).
+  It deliberately presents the result as a category graph: repeated
+  categories, cycles, maintenance branches, and multiple parents are not
+  collapsed into a falsely authoritative single tree.
+
+### Product-type taxonomies
+
+Product taxonomies are valuable prior art for the artifact, food, clothing,
+tool, appliance, vehicle, electronics, and household portions of the tree.
+They are usually optimized for retail navigation, search, listing validation,
+or supply-chain interoperability rather than general ontology design. Their
+strength is dense coverage of familiar manufactured goods; their weakness is
+that commercial departments, brands, attributes, and merchandising use cases
+are often mixed into the hierarchy.
+
+This detailed prior-art supplement is retained adjacent to the upper-layer
+discussion for implementation convenience. It does **not** belong in the
+canonical upper ontology and is not a candidate for `Entity`, `Property`, or
+`Relation`. Google, GS1, UNSPSC, eCl@ss, ETIM, Amazon, and Walmart are
+operational classification systems: use them to discover artifact vocabulary
+and coverage gaps, preserve their source paths as metadata, and map reviewed
+leaves into the physical subtree. Do not copy commercial departments, product
+types, brands, or proprietary paths into the ontology's highest layers.
+
+The top five publicly accessible product-classification systems to evaluate
+are:
+
+#### Google Product Taxonomy
+
+- **Source:** [Google's product taxonomy](https://www.google.com/basepages/producttype/taxonomy.en-US.txt)
+  and [Merchant Center product data documentation](https://support.google.com/merchants/answer/6324436).
+- **Structure:** a large, human-readable category path with numeric IDs,
+  designed for product feeds and shopping search.
+- **Access:** the taxonomy file is publicly downloadable. Its terms and
+  update policy should be recorded with each imported snapshot.
+- **Fit:** probably the best first retail source for familiar product names
+  and practical department coverage. It is useful for candidate discovery,
+  but should not dictate the ontology's treatment of natural objects,
+  services, or abstract concepts.
+
+#### GS1 Global Product Classification (GPC)
+
+- **Source:** [GS1 GPC](https://www.gs1.org/standards/gpc).
+- **Structure:** a global supply-chain classification organized around
+  segments, families, classes, and bricks, with attributes and rules that
+  support product identification across trading partners.
+- **Access:** the standard, browser, and release materials are publicly
+  discoverable; some downloadable content and reuse rights may require GS1
+  registration or acceptance of licensing terms.
+- **Fit:** excellent as a stable cross-industry product backbone and for
+  checking whether a proposed retail branch is missing a major category.
+  Its business-oriented granularity should be compressed before display.
+
+#### UNSPSC
+
+- **Source:** the [UNSPSC overview](https://en.wikipedia.org/wiki/United_Nations_Standard_Products_and_Services_Code)
+  and the code-set steward's historical [UNSPSC site](https://www.unspsc.org/).
+- **Structure:** a four-level hierarchical code set covering segments,
+  families, classes, and commodities across goods and services.
+- **Access:** the taxonomy is publicly documented and widely used, but the
+  steward's current site and code-set download availability should be
+  revalidated before importing a snapshot; the domain may not currently be a
+  reliable distribution endpoint.
+- **Fit:** useful for broad coverage and procurement-oriented gaps,
+  especially where consumer retail taxonomies omit industrial goods,
+  services, or professional equipment. It is less friendly as a visible
+  noun tree because many leaves are procurement labels.
+
+#### eCl@ss
+
+- **Source:** [eCl@ss International](https://eclass.eu/en/).
+- **Structure:** a hierarchical product and service classification with
+  standardized classes, properties, and value domains, used heavily in
+  industrial and business-to-business data exchange.
+- **Access:** the standard and documentation are publicly described, while
+  complete releases and some reuse rights may require registration or a
+  license.
+- **Fit:** strong for machinery, components, materials, industrial tools,
+  and technical products that consumer taxonomies underrepresent. It should
+  be an audit source and vocabulary reservoir, not a direct player-facing
+  hierarchy.
+
+#### ETIM
+
+- **Source:** [ETIM International](https://www.etim-international.com/).
+- **Structure:** a product-classification model centered on standardized
+  classes and product features, especially for electrical, HVAC, building,
+  installation, and technical-trade products.
+- **Access:** the model is publicly described and used through national
+  implementations; complete releases and commercial reuse conditions vary by
+  member and license.
+- **Fit:** valuable for tools, hardware, building products, appliances, and
+  technical equipment. It supplies detailed feature vocabulary that can
+  enrich leaves, but its feature-centric design should remain metadata
+  rather than become extra visible branches.
+
+#### Amazon and Walmart operational taxonomies
+
+Amazon and Walmart are important prior art even though neither appears to
+offer an unrestricted, complete public download of its live product-type
+hierarchy.
+
+- **Amazon:** Amazon exposes public documentation for the
+  [Selling Partner API product-type definitions](https://developer-docs.amazon.com/sp-api/docs/product-type-definitions-api)
+  and seller-facing browse/product-type concepts, but the complete current
+  category and product-type data is tied to marketplaces, regions,
+  authenticated APIs, and commercial operational use. Public documentation
+  is therefore available; a complete public taxonomy snapshot is not assumed.
+  Amazon is especially useful for studying retail granularity, browse-node
+  navigation, required attributes, and the distinction between product type
+  and department.
+- **Walmart:** Walmart Marketplace provides public entry points to its
+  [Marketplace APIs](https://developer.walmart.com/us-marketplace/docs/introduction-to-marketplace-apis)
+  and item-setup workflows, while the detailed category, item-specification,
+  and validation taxonomy is generally exposed through authenticated
+  seller/partner tooling. It should be treated as restricted prior art unless
+  a distributable public release can be identified. Its value is high for
+  practical retail category coverage, especially for grocery, consumables,
+  household goods, apparel, and general merchandise.
+
+The project should use the public systems as candidate generators and
+cross-checks, not merge their department trees directly. A product leaf
+should retain its source code and paths, then receive a reviewed home in the
+SUMO/PDF-derived tree. Amazon and Walmart material can be used for internal
+audits where authorized, but no proprietary taxonomy content should be copied
+into the public repository without permission.
+
+### Online biological taxonomies
+
+These resources are the strongest available prior art for extending the
+organism portion of a general noun hierarchy. None is a complete 20 Questions
+ontology: they optimize taxonomic identity, scientific names, synonymy, and
+research interoperability rather than familiar labels or balanced gameplay.
+
+#### Catalogue of Life
+
+- **Origin:** an international taxonomic data initiative launched in 2001,
+  coordinated through the Species 2000 and Integrated Taxonomic Information
+  System communities and now hosted by the Catalogue of Life partnership.
+- **Current status:** active and release-based. The [Catalogue of Life
+  releases](https://www.catalogueoflife.org/data/download) distinguish a
+  verified Base Release from a broader Extended Release.
+- **Node count:** release-dependent; the current catalog reports millions of
+  accepted species and names, with counts varying by release and inclusion
+  policy. Use the release metadata rather than a timeless number.
+- **Prominence proxy:** widely used as a global checklist and taxonomic
+  reference, with expert-verified coverage and downloadable releases.
+- **Fit:** the best initial authority for accepted organism names and
+  high-level taxonomic placement. It should supply biological structure while
+  the curated tree supplies playable common-language grouping.
+
+#### GBIF Backbone Taxonomy
+
+- **Origin:** built by the Global Biodiversity Information Facility, an
+  international intergovernmental biodiversity-data infrastructure founded in
+  2001.
+- **Current status:** active, versioned, and designed to normalize names from
+  many biodiversity datasets. See the
+  [GBIF Backbone Taxonomy](https://www.gbif.org/dataset/7ddf754f-d193-4cc9-b351-99906754a03b).
+- **Node count:** release-dependent and measured in names, taxa, and
+  synonymized records rather than one fixed class count.
+- **Prominence proxy:** GBIF is a major global biodiversity data network; its
+  backbone is used for occurrence-data name matching across a large
+  publishing ecosystem.
+- **Fit:** excellent for resolving common names and synonyms to scientific
+  taxa and for finding candidate organisms. It is more of a cross-dataset
+  nomenclatural backbone than a carefully curated game hierarchy.
+
+#### NCBI Taxonomy
+
+- **Origin:** developed by the National Center for Biotechnology Information
+  at the U.S. National Library of Medicine to organize organisms represented
+  in genetic and genomic databases.
+- **Current status:** active, continuously updated, and available through the
+  [NCBI Taxonomy database](https://www.ncbi.nlm.nih.gov/taxonomy).
+- **Node count:** release- and database-dependent; it contains hundreds of
+  thousands of scientific taxa and many sequence-associated records, with
+  counts exposed through NCBI's statistics and downloads.
+- **Prominence proxy:** it is embedded in GenBank, RefSeq, and other major
+  NCBI sequence resources, making it a standard computational taxonomy for
+  molecular biology.
+- **Fit:** authoritative for sequence-linked scientific identity and useful
+  for validating deep organism branches, but too technical and unevenly
+  familiar to serve as the visible game taxonomy.
+
+#### Open Tree of Life
+
+- **Origin:** an open-science collaboration funded by the U.S. National
+  Science Foundation and other partners, launched in the 2010s.
+- **Current status:** active research infrastructure combining a synthetic
+  tree with source taxonomies and stable taxon identifiers. Browse it at the
+  [Open Tree of Life](https://tree.opentreeoflife.org/).
+- **Node count:** release-dependent and measured in taxa and phylogenetic
+  relationships; the synthetic tree incorporates millions of named taxa from
+  contributing sources.
+- **Prominence proxy:** open APIs, stable identifiers, and published
+  computational methods make it a notable research platform for large-scale
+  comparative biology.
+- **Fit:** useful for scientifically coherent ancestry and for checking
+  extinct groups, including dinosaurs. It should be treated as a validation
+  and enrichment source, not copied wholesale into a one-page game tree.
+
+#### Integrated Taxonomic Information System (ITIS)
+
+- **Origin:** a U.S. and international interagency project established in the
+  1990s to provide authoritative taxonomic names and hierarchy.
+- **Current status:** active, maintained, and available through the
+  [ITIS database](https://www.itis.gov/).
+- **Node count:** release-dependent, with hundreds of thousands of taxonomic
+  names and records across included organism groups.
+- **Prominence proxy:** long-running government-supported identifiers and
+  reuse in biodiversity and environmental datasets.
+- **Fit:** a useful stable-name and rank authority, especially for
+  cross-checking Catalogue of Life and GBIF mappings. Its coverage and
+  scientific granularity are too specialized to define the whole game tree.
+
+#### World Register of Marine Species
+
+- **Origin:** an international marine-taxonomy initiative launched in 2007
+  and coordinated through the Flanders Marine Institute.
+- **Current status:** active, expert-managed, and release-based; see
+  [WoRMS](https://www.marinespecies.org/).
+- **Node count:** release-dependent, with hundreds of thousands of marine
+  taxa and names across accepted and synonymized records.
+- **Prominence proxy:** the principal global reference for marine organism
+  names and taxonomic status.
+- **Fit:** a high-quality specialized supplement for marine life, but not a
+  general organism root.
+
+### Approachable cladistic and evolutionary trees
+
+The most useful biological prior art for v2 is not a single taxonomy copied
+verbatim. It is a scientifically defensible source tree paired with a
+deliberately compressed display. A cladistic source should be allowed to say
+that humans are sarcopterygian vertebrates and therefore nested within the
+broader evolutionary history of fishes, even though “fish” remains an
+everyday answer category. The visible game tree can collapse intermediate
+clades when they do not create a recognizable answer or a useful question,
+while retaining the omitted clades, ranks, and source identifiers in metadata.
+
+#### OneZoom Tree of Life Explorer
+
+- **Origin:** conceived in 2011, released as open-source software in 2012,
+  and maintained since 2015 by a UK charitable organization.
+- **Current status:** active, free, and designed explicitly for public
+  exploration. OneZoom uses a fractal, map-like interface so a very large
+  tree can be explored on one page; its current tree relies heavily on the
+  Open Tree of Life and mixes other declared sources. See the
+  [OneZoom explorer](https://www.onezoom.org/) and its
+  [data and methodology overview](https://www.onezoom.org/about.html).
+- **Node count:** the project is intended to display a million-tip-scale tree;
+  the exact visible count changes with its source-data release and display
+  configuration.
+- **Prominence proxy:** open-source software, a charitable organization,
+  collaboration with the Linnean Society, and published methods including
+  [Dynamic visualisation of million-tip trees](https://doi.org/10.1111/2041-210X.13766).
+- **Fit:** the best interface prior art for keeping a huge scientifically
+  grounded tree navigable. Its species-first display is too deep and
+  biological for the whole 20 Questions ontology, but its zoomed overview,
+  common names, images, and source links suggest how v2 can hide taxonomic
+  detail without discarding it.
+
+#### TimeTree
+
+- **Origin:** developed by Blair Hedges, Sudhir Kumar, and collaborators as a
+  public knowledge base for evolutionary relationships and divergence times;
+  the current major resource is TimeTree 5.
+- **Current status:** active research and teaching resource. The
+  [TimeTree site](https://timetree.org/about) combines published divergence
+  estimates and lets users explore the evolutionary timescale between taxa.
+- **Node count:** release-dependent; TimeTree 5 is a large species-level
+  synthesis rather than a compact hand-authored hierarchy. Its useful unit is
+  a dated relationship, not a game category.
+- **Prominence proxy:** TimeTree 5 is described in a 2022 article in
+  *Molecular Biology and Evolution*,
+  [An Expanded Resource for Species Divergence Times](https://doi.org/10.1093/molbev/msac174).
+- **Fit:** useful for validating evolutionary-history examples and explaining
+  why apparently different organisms are convergent rather than close
+  relatives. It should validate relationships and dates, not dictate every
+  visible v2 split.
+
+#### Recommended collapsed-clade pattern
+
+These resources support a three-layer design for the life portion of v2:
+
+- **Source layer:** retain the accepted scientific tree, including clades
+  that are important for statements such as “tetrapods are nested within
+  lobe-finned fishes.”
+- **Navigation layer:** retain only ancestors that create a useful
+  distinction, explain a notable organism, or keep the visible branch
+  intelligible. Collapse ranks such as some orders and families when all
+  selected descendants would otherwise form a one-child chain.
+- **Answer layer:** show familiar common names and notable clades such as
+  mammals, birds, marsupials, dinosaurs, coelacanths, and monotremes. Add a
+  short scientific note where everyday language hides a meaningful
+  relationship, rather than forcing the player to answer with a Latin clade.
+
+This is not permission to redraw evolutionary relationships for convenience.
+It is a presentation projection: source parentage, alternate placements,
+synonyms, and suppressed intermediate clades remain auditable. OneZoom is the
+strongest model for the browsing interaction; Open Tree of Life and Catalogue
+of Life remain the principal candidates for taxonomic validation; and TimeTree
+is the best supplement for evolutionary-history and divergence-time context.
 
 ### Roget’s Thesaurus
 
@@ -116,7 +1491,10 @@ snapshot-dependent; links are the authoritative places to refresh them.
   branches; the eighth edition is reported to contain about 443,000 words.
 - **Prominence proxy:** the edition scale itself is objective; the work has
   been continuously published since 1852 and remains a standard English
-  thesaurus reference. See the
+  thesaurus reference. The best freely browsable view of the original
+  conceptual class/division/section structure is the
+  [1911 edition at Project Gutenberg](https://www.gutenberg.org/ebooks/10681);
+  see also the
   [historical overview](https://en.wikipedia.org/wiki/Roget%27s_Thesaurus).
 - **Fit:** useful for lexical neighborhoods and question wording, not a
   reliable hypernym ontology. It should not replace WordNet’s synset IDs.
@@ -178,37 +1556,29 @@ snapshot-dependent; links are the authoritative places to refresh them.
 - **Fit:** a targeted supplement if WordNet coverage of prepared foods such as
   steak and salad is inadequate.
 
-### Encyclopaedia Britannica and the Macropædia
+### Encyclopaedia Britannica’s 15th-edition Propædia
 
 - **Origin:** Encyclopaedia Britannica began in Edinburgh, Scotland, in
-  1768. The 15th edition’s three-part structure, including the Macropædia,
-  was introduced in 1974.
-- **Current status:** Britannica is online; the final printed 15th edition
-  ended in 2010 and the company focuses on digital publication.
-- **Node count:** the Macropædia consisted of 17 volumes of long articles;
-  the broader 15th edition had 32 volumes and 32,640 pages. These are
-  editorial units, not ontology nodes.
-- **Prominence proxy:** Britannica reports a roughly 40-million-word
-  twentieth-century scale and has published continuously since 1768; see the
-  [Britannica history](https://en.wikipedia.org/wiki/Encyclop%C3%A6dia_Britannica).
-- **Fit:** useful as a high-quality familiarity and importance prior, not as a
-  machine-readable noun hierarchy.
-
-### Human Knowledge
-
-- **Origin:** Brian Holtz’s *Human Knowledge 2000* outline, developed in the
-  late 1990s and early 2000s.
-- **Current status:** personal static reference material, not a community
-  ontology or standards body.
-- **Node count:** the `Thoughts 1-8.html` outline has 137 HTML heading nodes;
-  this is a document-structure count, not an ontology count.
-- **Prominence proxy:** no external citation, usage, or page-view metric has
-  been established; its relevance here is personal authorship, not public
-  prominence.
-- **Fit:** explicitly **not an input, root, ranking prior, or graft target** for
-  this ontology. “Ontology” is one topic within that outline, so the outline
-  cannot logically serve as the ontology’s root. It may be studied separately,
-  but this project will not merge it into the WordNet tree.
+  1768. The one-volume *Propædia* was introduced with the 15th edition in
+  1974 as the topical “Outline of Knowledge” for the *Micropædia* and
+  *Macropædia*.
+- **Current status:** the print 15th edition ended in 2010, while Britannica
+  continues digitally. The best freely available outline of the single-volume
+  knowledge scheme is the detailed
+  [Propædia outline](https://en.wikipedia.org/wiki/Propaedia); Britannica’s
+  own shorter [Propædia entry](https://www.britannica.com/topic/Propaedia)
+  confirms its role in the 15th edition.
+- **Node count:** the *Outline of Knowledge* contains 10 parts, 41
+  divisions, and 167 sections. These are organizational topics, not a
+  biological or noun taxonomy.
+- **Prominence proxy:** it was designed over eight years by Mortimer Adler
+  with dozens of subject specialists as the organizing framework for the
+  entire 15th edition. It is one of the most prominent modern attempts to
+  provide a single synoptic outline of human knowledge.
+- **Fit:** useful prior art for broad top-level coverage and for testing
+  whether v1/v2 omit an important knowledge domain. It is intentionally
+  encyclopedic and circular rather than a balanced yes/no noun tree, so it
+  should inform coverage audits rather than supply parentage.
 
 ### DMOZ/Open Directory Project RDF hierarchy
 
@@ -251,7 +1621,1285 @@ but DMOZ is the precise name for the data structure.
   source IDs and alternate parent links. It should remain a separately named
   DMOZ profile rather than being silently merged into the WordNet tree.
 
-## 20 Questions projection algorithm
+### Human Knowledge
+
+- **Origin:** Brian Holtz’s *Human Knowledge 2000* outline, developed in the
+  late 1990s and early 2000s.
+- **Current status:** personal static reference material, not a community
+  ontology or standards body.
+- **Node count:** the `Thoughts 1-8.html` outline has 137 HTML heading nodes;
+  this is a document-structure count, not an ontology count.
+- **Prominence proxy:** no external citation, usage, or page-view metric has
+  been established; its relevance here is personal authorship, not public
+  prominence.
+- **Fit:** explicitly **not an input, root, ranking prior, or graft target** for
+  this ontology. “Ontology” is one topic within that outline, so the outline
+  cannot logically serve as the ontology’s root. It may be studied separately,
+  but this project will not merge it into the WordNet tree.
+## Upper ontology
+
+### Canonical synthesis
+
+This is the single current proposal. It is the default structure to review.
+The upper ontology defines the semantic projection; source systems,
+classification schemes, and extraction recipes belong in `Prior art` and are
+not repeated here.
+
+```text
+Ontology
+├── Entity
+│   ├── Physical entity
+│   └── Abstract entity
+│       ├── Mathematical entity
+│       │   ├── Number
+│       │   ├── Set
+│       │   ├── Function
+│       │   ├── Logical entity
+│       │   ├── Algebraic entity
+│       │   ├── Geometric entity
+│       │   │   ├── Curve
+│       │   │   │   ├── Circle
+│       │   │   │   ├── Ellipse
+│       │   │   │   ├── Parabola
+│       │   │   │   └── Hyperbola
+│       │   ├── Topological entity
+│       │   ├── Analytic entity
+│       │   ├── Probability entity
+│       │   ├── Computational entity
+│       │   │   ├── Algorithm
+│       │   │   ├── Complexity class
+│       │   │   ├── Computable function
+│       │   │   ├── Recursive function
+│       │   │   ├── Automaton
+│       │   │   ├── Formal language
+│       │   │   └── Graph
+│       │   ├── Physical system model
+│       │   ├── Formal expression
+│       │   ├── Proposition
+│       │   ├── Theorem
+│       │   ├── Proof
+│       │   ├── Definition
+│       │   └── Mathematical model
+│       ├── Informational entity
+│       ├── Representational entity
+│       ├── Social entity
+│       └── Institutional entity
+├── Property
+│   ├── Quality
+│   ├── Quantity
+│   ├── Quality value
+│   ├── Disposition
+│   ├── Capability
+│   ├── Function
+│   ├── Purpose
+│   ├── Role
+│   ├── Status
+│   ├── Norm
+│   ├── Obligation
+│   ├── Goal
+│   ├── Preference
+│   ├── Modal property
+│   ├── Logical property
+│   └── Mathematical property
+└── Relation
+    ├── Classification relation
+    ├── Part-whole relation
+    ├── Spatial relation
+    ├── Temporal relation
+    ├── Causal relation
+    ├── Explanatory relation
+    ├── Participation relation
+    ├── Social relation
+    ├── Institutional relation
+    ├── Perceptual relation
+    ├── Epistemic relation
+    ├── Logical relation
+    ├── Set-theoretic relation
+    ├── Mathematical relation
+    ├── Transformation relation
+    ├── Representational relation
+    ├── Identity relation
+    ├── Equivalence relation
+    └── Provenance relation
+```
+
+The key placement decisions are now explicit:
+
+- `Physical entity` and `Abstract entity` are the first visible entity
+  divisions.
+- The physical branch uses the existing SUMO-derived projection without
+  treating `SUMO` as a visible ontological node.
+- Mathematical entities are abstract entities, with a first cut by
+  entity kind rather than by college subject.
+- Properties and relations are siblings of Entity, not hidden under
+  `Abstract`.
+- Classes, types, propositions, proofs, and values are entities when they are
+  being discussed as things; their typing, membership, truth, proof, and
+  denotation relations remain cross-cutting metadata.
+- Informational and social entities are provisionally under Abstract as
+  representational or institutional patterns, while their physical
+  embodiments remain linked to Physical entities.
+
+### Node naming standard
+
+Every visible node is a singular noun or a singular noun phrase. A modifier
+must refine a noun rather than stand alone; when a branch would otherwise be
+named only by an adjective such as `Physical` or `Abstract`, the parent noun
+is repeated as `Physical entity` or `Abstract entity`. Node names never use
+`and`; split distinct concepts into separate siblings. A category such as
+`Algebraic entity` is preferred to the course-like or overly generic
+`Algebraic structure`, and a relation belongs under `Relation` rather than
+being duplicated as a mathematical entity.
+
+The four non-mathematical abstract branches are a strawman census, not an
+assertion that they are equally mature:
+
+- **Informational entity** — `Data`, `Record`, `Dataset`, `Signal`, `Message`,
+  `Observation`, `Measurement`, `Fact`, `Knowledge`, and `Belief`. These are
+  content-bearing or content-dependent entities whose identity depends on
+  information, evidence, or interpretation.
+- **Representational entity** — `Symbol`, `Name`, `Label`, `Notation`,
+  `Description`, `Classification`, `Schema`, `Ontology`, `Language`,
+  `Document`, `Image`, `Audio`, `Video`, `Software`, and `Model`. These are
+  entities that encode, express, preserve, or transmit content. A physical
+  inscription or device is linked separately as an embodied artifact.
+- **Social entity** — `Person`, `Group`, `Community`, `Relationship`,
+  `Role`, `Status`, `Agreement`, `Convention`, `Practice`, `Event`, and
+  `Institution`. This branch is for socially constituted entities and
+  patterns whose persistence depends on participants, recognition, or shared
+  practice.
+- **Institutional entity** — `Organization`, `Government`, `Corporation`,
+  `Club`, `School`, `Court`, `Market`, `Currency`, `Law`, `Contract`,
+  `License`, `Policy`, and `Office`. This is a proposed refinement of Social
+  entity for durable rule-governed structures, rather than a claim that every
+  institution is ontologically separate.
+
+The census exposes two likely tensions. `Document`, `Software`, and `Model`
+can be informational content, representational artifact, or physical
+artifact depending on whether the question concerns meaning, encoding, or
+embodiment. `Role`, `Status`, `Agreement`, and `Practice` can be social
+entities or properties of participants. The source graph should preserve
+those facets; the player-facing projection can retain the four siblings only
+if they produce useful questions and recognizable leaves.
+
+### Top-layer coverage inventory
+Before choosing a root arrangement, we need an unordered inventory of the
+important high-level kinds of thing that must have a home in the first two or
+three layers. This is a coverage checklist, not a proposed hierarchy. Some
+items are mutually exclusive in a particular modeling scheme; others are
+orthogonal roles that should be represented as types, facets, or cross-links
+rather than forced into one `is-a` tree.
+
+#### Worldly entities and occurrences
+
+- **Entities and instances** — particular things, individuals, collections,
+  kinds, classes, types, and tokens.
+- **Physical entities** — matter, energy, fields, bodies, artifacts,
+  organisms, environments, and physical systems.
+- **Objects and continuants** — comparatively persistent entities that can
+  bear properties and participate in processes.
+- **Agents** — organisms, persons, organizations, software agents, and other
+  entities capable of initiating or controlling activity.
+- **Artifacts** — intentionally made objects, tools, machines, buildings,
+  documents, software, and engineered systems.
+- **Natural entities** — particles, materials, geological bodies, planets,
+  organisms, ecosystems, and other entities not primarily defined by human
+  manufacture.
+- **Processes and activities** — happenings extended through time, including
+  actions, operations, growth, motion, computation, communication, and
+  biological or social activity.
+- **Events and transitions** — occurrences treated as bounded changes,
+  beginnings, endings, interactions, failures, and discrete happenings.
+- **States and situations** — configurations or circumstances that hold over
+  an interval, including being located, owned, alive, valid, or operating.
+- **Systems and wholes** — entities organized by parts, dependencies,
+  boundaries, or coordinated behavior.
+- **Places, regions, and spacetime** — locations, geometric regions,
+  boundaries, paths, intervals, instants, and possible or actual worlds.
+- **Causal and modal structure** — causes, effects, mechanisms, abilities,
+  dispositions, tendencies, possibilities, necessities, counterfactuals, and
+  constraints.
+
+#### Properties and ways of being
+
+- **Qualities** — color, shape, mass, temperature, age, health, texture,
+  intelligence, beauty, and other attributes that characterize something.
+- **Quantities and magnitudes** — amount, size, duration, distance, rate,
+  probability, concentration, intensity, and measurement results.
+- **States or values of qualities** — red, heavy, warm, large, true, healthy,
+  and other value-like fillers of quality dimensions.
+- **Dispositions and capabilities** — soluble, fragile, edible, executable,
+  intelligent, poisonous, or able to perform an operation.
+- **Norms, functions, purposes, and values** — what something is for, what it
+  ought to do, permissions, obligations, goals, preferences, and evaluations.
+- **Identity and equivalence** — sameness, difference, isomorphism,
+  substitutability, similarity, and criteria for counting two descriptions as
+  one thing.
+
+#### Relations and structure
+
+- **Relations** — binary and n-ary connections among entities, including
+  part-of, member-of, instance-of, subclass-of, located-in, owned-by,
+  caused-by, knows, uses, and precedes.
+- **Attributes and role slots** — relation-like properties whose values fill a
+  place in a description, record, event, or structured object.
+- **Functions and mappings** — inputs, outputs, parameters, partial and total
+  functions, transformations, operators, interpretations, and evaluation.
+- **Collections and mereology** — sets, bags, lists, sequences, multisets,
+  parts, wholes, aggregates, partitions, and membership.
+- **Order and comparison** — equality, inequality, precedence, ranking,
+  divisibility, inclusion, lattices, and partial orders.
+- **Composition and transformation** — operations, identity operations,
+  composition, inverses, products, coproducts, limits, and symmetries.
+- **Structures and invariants** — entities defined by operations and laws,
+  together with properties preserved by mappings or transformations.
+
+#### Information, language, and representation
+
+- **Information and data** — signals, measurements, records, datasets,
+  observations, messages, and stored or transmitted content.
+- **Signs and symbols** — names, labels, tokens, notation, codes, and formal
+  symbols.
+- **Descriptions and classifications** — concepts, categories, taxonomies,
+  schemas, ontologies, definitions, and bibliographic or database records.
+- **Propositions and statements** — claims, questions, commands, assertions,
+  negations, and compound statements.
+- **Truth and reference** — truth, falsity, denotation, aboutness,
+  interpretation, ambiguity, context, and sense.
+- **Languages and grammars** — natural languages, programming languages,
+  logical languages, syntax, semantics, pragmatics, and type systems.
+- **Media and works** — text, image, audio, video, software, models,
+  documents, performances, and other reproducible information artifacts.
+- **Knowledge and belief** — evidence, observation, belief, justification,
+  explanation, prediction, inference, and uncertainty.
+
+#### Logic and foundations
+
+- **Logical objects** — terms, variables, constants, predicates, formulas,
+  propositions, sequents, theories, and models.
+- **Logical connectives and quantification** — identity, negation,
+  conjunction, disjunction, implication, equivalence, universal and
+  existential quantification, and higher-order quantification.
+- **Inference and proof** — rules, derivations, proofs, refutations,
+  satisfiability, validity, consistency, completeness, decidability, and
+  computability.
+- **Axioms and formal systems** — signatures, axioms, inference rules,
+  deductive closure, metatheories, interpretations, and models.
+- **Set-theoretic foundations** — membership, empty set, singleton,
+  pairing, union, power set, replacement, infinity, choice, cardinality,
+  ordinal, relation, function, and set-built structure.
+- **Type-theoretic foundations** — types, terms, inhabitants, subtypes,
+  products, sums, functions, dependent types, inductive types, universes,
+  constructors, eliminators, and proofs-as-objects.
+- **Category-theoretic foundations** — objects, morphisms, identity,
+  composition, functors, natural transformations, products, coproducts,
+  limits, colimits, adjunctions, and equivalences.
+- **Mathematical structures** — algebraic, ordered, topological, geometric,
+  measurable, probabilistic, analytic, computational, and physical
+  structures.
+- **Mathematical models and theories** — formal structures interpreted as
+  models of mathematics, science, computation, or possible worlds.
+
+#### Time, change, and modality
+
+- **Time and temporal order** — instants, intervals, duration, succession,
+  simultaneity, recurrence, history, and temporal precedence.
+- **Change and persistence** — identity through change, creation, destruction,
+  transformation, development, maintenance, and lifecycle.
+- **Possibility and necessity** — actual, possible, impossible, necessary,
+  contingent, hypothetical, counterfactual, and simulated.
+- **Causation and explanation** — causal mechanism, intervention,
+  correlation, dependence, explanation, prediction, and law.
+
+#### Cross-cutting distinctions the upper layer must preserve
+
+- **Particular versus universal** — an individual dog versus the kind
+  `dog`, and a particular event versus an event type.
+- **Class versus instance** — category membership must not be confused with
+  subclassing or ordinary set membership.
+- **Type versus value** — `integer` versus `3`, `red` versus a red object,
+  and a Scala-like type versus one of its values.
+- **Object versus description** — a tree versus a record or sentence about
+  the tree.
+- **Structure versus model** — a group, a formal theory of groups, and a
+  physical system modeled as a group must remain distinguishable.
+- **Syntax versus semantics** — a formula, its interpretation, and the
+  proposition expressed by that interpretation.
+- **Entity versus role** — a person, an agent-role played by that person,
+  and an organization in which the role is exercised.
+- **Worldly relation versus mathematical relation** — ownership, ancestry,
+  and causation versus membership, ordering, and function application.
+- **Source identity versus display identity** — one canonical concept may
+  have aliases, synonyms, alternate parents, and multiple source mappings.
+
+### Candidate top-level partitions
+
+The next design question is not yet which detailed taxonomy to import. It is
+which small set of divisions should organize the first layer or two. The
+following are the strongest recurring proposals in prior art. Each is listed
+as a candidate pattern, not as a recommendation.
+
+#### Physical versus abstract
+
+- **Top-level idea:** divide entities into physical things and abstract or
+  non-physical things; place objects, organisms, artifacts, and processes on
+  the physical side, and numbers, propositions, properties, relations, and
+  formal structures on the abstract side.
+- **Provenance:** common in philosophical and folk ontologies; explicit in
+  Sowa's physical/abstract distinction, many SUMO renderings, and the
+  current project tree.
+- **Strengths:** immediately intuitive; separates most everyday nouns from
+  mathematics and logic; gives the player a useful first question.
+- **Weaknesses:** “abstract” becomes a dangerous catch-all; information,
+  software, fictional entities, social institutions, spacetime, and
+  processes can be physical, abstract, or multiply realized depending on
+  the intended reading.
+
+#### Objects versus processes
+
+- **Top-level idea:** divide relatively persistent entities from happenings,
+  activities, events, and changes.
+- **Provenance:** SUMO's Object/Process pattern; BFO's continuant/occurrent
+  distinction; DOLCE's endurant/perdurant distinction; process philosophy.
+- **Strengths:** handles the object/process distinction the project already
+  finds useful; makes time and change first-class; gives actions, growth,
+  motion, computation, and communication a natural home.
+- **Weaknesses:** qualities, relations, states, boundaries, information, and
+  mathematical structures do not fit cleanly on either side; “object” can
+  still conceal physical, abstract, social, and informational entities.
+
+#### Continuants versus occurrents
+
+- **Top-level idea:** divide entities that persist through time from entities
+  that unfold in time, with qualities, roles, dispositions, and sites
+  attached to the appropriate side.
+- **Provenance:** BFO's continuant/occurrent architecture; DOLCE's
+  endurant/perdurant architecture; realist foundational ontology.
+- **Strengths:** more precise than physical/abstract; supports identity,
+  persistence, temporal parts, processes, qualities, dispositions, and
+  roles; has substantial biomedical and scientific reuse.
+- **Weaknesses:** terminology is not player-facing; the distinction is
+  metaphysically loaded; abstract objects, information artifacts, and
+  social objects require additional decisions rather than disappearing into
+  a clean binary.
+
+#### Substance, quality, relation, and activity
+
+- **Top-level idea:** begin with substances or things, qualities, relations,
+  quantities, places, times, positions, states, actions, and passions.
+- **Provenance:** Aristotle's Categories and the long Aristotelian
+  substance-and-accident tradition.
+- **Strengths:** covers many items in the inventory directly; keeps
+  qualities, relations, quantities, and activities from becoming invisible
+  subcases of “abstract”; historically durable and easy to explain.
+- **Weaknesses:** not a modern formal taxonomy; categories overlap; the
+  treatment of events, information, sets, types, and mathematical objects is
+  underdeveloped; “substance” does not provide a practical noun hierarchy.
+
+#### Independent, relative, and mediating
+
+- **Top-level idea:** divide independent entities, entities that depend on or
+  relate to others, and mediating structures or processes that connect them.
+- **Provenance:** Sowa's top-level ontology, influenced by Peirce and
+  Whitehead, including the physical/abstract and continuant/occurrent
+  dimensions.
+- **Strengths:** explicitly recognizes relations and mediators instead of
+  treating everything as an isolated object; can represent roles,
+  participation, situations, descriptions, and processes.
+- **Weaknesses:** naturally forms a lattice or diamond rather than a tree;
+  category boundaries are difficult to explain to players; the framework
+  risks becoming a formal classification of modeling constructs rather than
+  a familiar noun organization.
+
+#### Entity, relation, attribute, and proposition
+
+- **Top-level idea:** divide what a description talks about from the
+  properties, relationships, and propositions used to describe it.
+- **Provenance:** the Ontological Sextett and UMO proposals on Ontology4;
+  related classical ontological rectangles and semantic modeling systems.
+- **Strengths:** prevents relations, attributes, and propositions from being
+  mistaken for ordinary objects; matches the project's need to keep source
+  metadata and cross-links distinct from the visible noun tree.
+- **Weaknesses:** is primarily a modeling ontology, not an inventory of
+  worldly kinds; “entity” remains broad; it does not by itself distinguish
+  physical things, events, mathematical structures, information, and
+  fictional entities.
+
+#### Thing, event, agent, place, and information
+
+- **Top-level idea:** organize around practical semantic-web families such as
+  things, actions or events, people and agents, places, products, creative
+  works, and intangible entities.
+- **Provenance:** Schema.org and related web-vocabulary practice.
+- **Strengths:** uses readable labels; works well for people, places,
+  organizations, artifacts, products, events, media, and web entities; easy
+  to connect to contemporary data.
+- **Weaknesses:** optimized for markup rather than philosophical
+  completeness; branches mix ontological kinds with application domains;
+  mathematical foundations, qualities, relations, and natural processes are
+  thin or indirect.
+
+#### Objects, events, situations, qualities, and relators
+
+- **Top-level idea:** distinguish enduring objects, events, situations,
+  qualities, and relation-like entities that mediate connections among
+  objects.
+- **Provenance:** UFO and conceptual-modeling traditions, with related
+  distinctions in DOLCE and foundational ontology.
+- **Strengths:** handles social objects, roles, relators, events,
+  dispositions, situations, and qualities more explicitly than a simple
+  physical/abstract split; useful for representing ownership, employment,
+  membership, and institutional facts.
+- **Weaknesses:** “relator” and “situation” are technical; the categories
+  overlap in ordinary language; mathematical objects and formal systems need
+  a parallel treatment.
+
+#### Sets, structures, and interpretations
+
+- **Top-level idea:** distinguish collections or sets, structures built from
+  operations and relations, and interpretations or models of those
+  structures.
+- **Provenance:** structural mathematics, set theory, model theory,
+  category theory, ETCS, type theory, and formal-methods practice.
+- **Strengths:** gives numbers, functions, relations, types, proofs,
+  theories, models, and mathematical structures principled homes; directly
+  addresses the chart and the upper mathematical inventory.
+- **Weaknesses:** not a sufficient ontology of ordinary physical and social
+  life; a set-theoretic encoding is not the same as an intuitive category;
+  terms such as “structure” and “model” require careful metalevel
+  separation.
+
+#### Types, terms, proofs, and values
+
+- **Top-level idea:** distinguish types or propositions, terms or values,
+  operations and constructors, and proofs or evidence.
+- **Provenance:** simple and dependent type theory, typed lambda calculus,
+  Martin-Löf type theory, Curry–Howard, proof assistants, and programming
+  language design.
+- **Strengths:** naturally separates classes from instances, types from
+  values, syntax from semantics, and propositions from proofs; maps well to
+  Scala-like subtyping, traits, algebraic data types, and executable
+  validation.
+- **Weaknesses:** a computational type system is not automatically a theory
+  of physical existence; inheritance and substitutability differ from
+  biological or metaphysical `is-a`; ordinary processes, qualities, and
+  social relations need additional modeling patterns.
+
+#### Things, properties, and relations
+
+- **Top-level idea:** use a minimal three-way split between entities,
+  properties or attributes, and relations or mappings, with events and
+  descriptions modeled through these primitives.
+- **Provenance:** recurring pattern in knowledge representation, RDF/OWL,
+  conceptual modeling, semantic databases, and lightweight upper
+  ontologies.
+- **Strengths:** compact, orthogonal, and easy to implement; keeps
+  relation-like metadata out of the entity taxonomy; supports a graph
+  rather than pretending all knowledge is inheritance.
+- **Weaknesses:** too sparse to guide the first two player-facing levels;
+  processes, time, information, mathematics, and modality become modeling
+  conventions rather than visible top-level concepts.
+
+#### The six conceptual classes
+
+- **Top-level idea:** divide concepts into abstract relations or ideas,
+  space, matter, intellect, volition, and affection or emotion, in the
+  broad conceptual ordering of Roget's Thesaurus.
+- **Provenance:** Roget's six primary classes and its later divisions and
+  sections.
+- **Strengths:** broad lexical and conceptual coverage; closer to the
+  vocabulary of human thought than a formal upper ontology; useful for
+  finding familiar labels and balancing conceptual neighborhoods.
+- **Weaknesses:** it is a thesaurus, not a formal `is-a` hierarchy; classes
+  mix entities, properties, actions, and relations; the categories are
+  historically contingent and do not provide mathematical or logical
+  foundations.
+
+#### Reality, representation, and theory
+
+- **Top-level idea:** divide the world being described, the representations
+  used to describe it, and the formal theories or models that interpret
+  those representations.
+- **Provenance:** model theory, formal methods, semiotics, philosophy of
+  language, information ontology, and the distinction emphasized in
+  Tegmark's mathematical-structure discussion.
+- **Strengths:** prevents a physical object, a sentence about it, a data
+  record, and a mathematical model from collapsing into one category;
+  provides a natural home for logic, language, information, and ontology
+  metadata.
+- **Weaknesses:** this is a metalevel partition rather than a complete
+  ontology of what exists; the same artifact can be both a physical object
+  and an information carrier; users may find the distinction less intuitive
+  than object/process or physical/abstract.
+
+#### Domains of being, knowing, and making
+
+- **Top-level idea:** divide the inventory into what exists, how it is
+  represented or known, and how it is acted upon, designed, or produced.
+- **Provenance:** broad knowledge-organization systems such as Propædia,
+  library and information-science models, systems engineering, and
+  practical knowledge graphs.
+- **Strengths:** accommodates worldly entities, information, knowledge,
+  artifacts, processes, purposes, and human practices; aligns with how the
+  project will actually use the ontology.
+- **Weaknesses:** mixes ontological categories with epistemic and practical
+  perspectives; can classify the same item in multiple top-level branches;
+  less precise as a formal upper ontology.
+
+No candidate covers the entire inventory without auxiliary dimensions. The
+most important recurring choice is therefore whether the first visible split
+should be a distinction among kinds of entity (for example,
+object/process/quality/relation), a distinction among levels of description
+(reality/representation/theory), or a practical conceptual partition
+(Roget-like classes). The later synthesis should compare these as alternative
+projections over a shared typed graph rather than assuming that one tree must
+serve every purpose.
+
+### Entity, property, relation versus type, term, proof, value
+
+The recurring three-way split between **entities, properties, and relations**
+is genuinely promising, but it should not be treated as a rival to the
+type-theoretic split between **types, terms, proofs, and values**. They answer
+different questions.
+
+### What the entity/property/relation triad classifies
+
+- An **entity** is something the ontology talks about: a person, dog,
+  number, event, organization, proposition, set, or mathematical structure.
+- A **property** is a characteristic, quality, quantity, disposition, role,
+  or predicate-like aspect attributed to an entity: red, heavy, soluble,
+  employed, prime, or continuous.
+- A **relation** connects two or more relata or maps inputs to outputs:
+  part-of, older-than, owns, causes, member-of, subset-of, equal-to, or
+  applies-to.
+
+This is primarily a **semantic and metaphysical partition**. It says what
+sort of contribution a concept makes to a description of a world or domain.
+It is close to RDF-style triples, conceptual modeling, property graphs, and
+the Ontological Sextett. Its advantage is breadth and intelligibility: it
+can describe physical things, processes, mathematical objects, social facts,
+and information without pretending they are all the same kind of entity.
+
+Its limitation is that it is not a complete `is-a` taxonomy. “Property” can
+mean a universal, a particular quality, a value, a predicate, or a field in
+an information record. “Relation” can mean a worldly connection, a
+mathematical relation, a logical symbol, or a database edge. The triad needs
+typed subcategories and metalevel distinctions.
+
+### What the type/term/proof/value system classifies
+
+- A **type** specifies a family of admissible terms or values, or a
+  proposition in propositions-as-types foundations.
+- A **term** is a syntactic expression that may denote, compute, construct,
+  or inhabit something.
+- A **value** is a canonical or evaluated term, such as `3`, a record, a
+  function, or a constructed data object.
+- A **proof** is a term inhabiting a proposition or evidence accepted by a
+  formal system; in Curry–Howard settings, propositions are types and proofs
+  are terms.
+
+This is primarily a **formal, computational, and epistemic partition**. It
+describes expressions, typing judgments, computation, construction, and
+justified derivation inside a language or formal calculus. Its advantage is
+precision: it distinguishes a class from an instance, a formula from its
+interpretation, and a proposition from a proof of that proposition. It is
+also well suited to machine checking, Scala-like type systems, algebraic
+data types, proof assistants, and executable ontology constraints.
+
+Its limitation is that “value” is usually a language-relative notion, not a
+category of everything that exists. A dog in the world is not automatically
+a value; a physical process is not automatically a term; and a property such
+as redness is not automatically a type. The same real-world entity may be
+represented by many terms in many languages, while one term may denote
+different things in different interpretations.
+
+### The correspondence is partial, not one-to-one
+
+| World-facing semantic notion | Formal/type-theoretic analogue | Why the mapping is imperfect |
+| --- | --- | --- |
+| Entity | Term, value, or inhabitant of a type | An entity may be represented by many terms, and not every entity is computationally canonical |
+| Kind or class | Type, sort, or universe | A type may be a data domain, a proposition, or a computational interface rather than a worldly kind |
+| Property | Predicate, dependent type, refinement, field, or proposition | A property may be intrinsic, relational, role-like, context-dependent, or merely representational |
+| Relation | Function type, relation-valued predicate, record field, morphism, or proof | A relation can be data, logic, structure, or a worldly fact |
+| Proposition | Type or proposition in a logic | A proposition may be true, false, undecided, hypothetical, or interpreted differently across models |
+| Proof or evidence | Term inhabiting a proposition | Evidence is not the same thing as the fact or relation that it supports |
+| Mathematical structure | Typed record, algebraic structure, category, or model | The formal encoding depends on the chosen foundation and signature |
+
+The most important mismatch is that the first triad is **about semantic
+roles in what is described**, while the second is **about expressions,
+inhabitants, evaluation, and justification within a formal system**. A
+relation such as `owns(person, bicycle)` is not itself a proof. A proof that
+the relation holds is a separate formal object, and a term representing the
+relation is yet another object at the syntax or data level.
+
+### A reconciliation for this project
+
+The cleanest synthesis is a typed, multi-layer graph rather than a single
+four-way root:
+
+```text
+World-facing layer
+├── Entities
+├── Properties and qualities
+└── Relations and mappings
+
+Formal-description layer
+├── Types and propositions
+├── Terms and values
+├── Functions and constructors
+└── Proofs, evidence, and derivations
+
+Interpretation layer
+├── Denotation and reference
+├── Satisfaction and truth
+├── Models and possible worlds
+└── Translation between representations
+```
+
+The browser could expose the first layer as the most intelligible upper
+ontology while storing the latter layers as typed metadata and cross-links.
+Mathematical and computational concepts could optionally enter through both
+paths: `integer` is an entity-like mathematical structure and also a type;
+`3` is a mathematical value and a term inhabiting that type; `3 is prime` is
+a proposition; and a checked derivation of that proposition is a proof.
+
+### What is missing from both triads
+
+Neither triad alone covers several categories that must remain explicit:
+
+- **Events and processes** — entities/properties/relations can represent
+  them, and type theory can encode them, but neither triad says that time,
+  change, activity, and participation deserve first-class treatment.
+- **States, situations, and contexts** — properties and propositions often
+  depend on a situation, time, agent, or possible world.
+- **Functions and operations** — these are relations in one reading, terms or
+  constructors in another, and structure-preserving maps in category theory.
+- **Collections and mereology** — sets, lists, bags, parts, wholes, and
+  membership need explicit patterns rather than being reduced to values.
+- **Syntax, semantics, and pragmatics** — terms, values, denotations,
+  interpretations, uses, and communicative acts belong at different levels.
+- **Kinds and metatypes** — types themselves may be entities, terms, or
+  inhabitants of higher universes; a type hierarchy must not be confused
+  with ordinary instance membership.
+- **Time, modality, causation, and normativity** — necessity, possibility,
+  causes, obligations, purposes, and counterfactuals require relations to
+  worlds, times, agents, or rules.
+- **Identity and equivalence** — equality, sameness of entity, isomorphism,
+  observational equivalence, and substitutability are not interchangeable.
+
+The working hypothesis should therefore be: **use
+entity/property/relation as the compact semantic upper partition, and use
+types/terms/values/proofs as a formalization and validation layer that
+cross-cuts it**. Add first-class patterns for processes, contexts, functions,
+collections, interpretations, time, modality, and identity instead of
+forcing those concepts into either triad.
+
+### Design alternatives retained for comparison
+
+The canonical tree above supersedes the earlier profiles in this subsection.
+The profiles below are retained only to document rejected projections and
+implementation tradeoffs; none is an alternative visible root. The visible
+top level remains:
+
+```text
+Ontology
+├── Entity
+├── Property
+└── Relation
+```
+
+This is intentionally a semantic partition, not a claim that every concept
+has only one role. A class can be an entity that classifies other entities; a
+quality can be an entity in one context and a property in another; and a
+proposition can reify a relation while also carrying truth, evidence, and
+proof metadata. The authoritative data model should therefore permit typed
+cross-links and role annotations even when the browser chooses one primary
+display branch.
+
+### Maximal candidate inventory
+
+The following is the deliberately generous candidate space. It is not a
+proposed set of siblings; several candidates are alternative ways to
+partition the same material. Keeping them together makes omissions and
+tradeoffs visible before we choose a compact projection.
+
+**Entity candidates**
+
+- **Physical entities** — matter, energy, fields, particles, materials,
+  organisms, bodies, artifacts, environments, and physical systems.
+- **Abstract entities** — numbers, sets, mathematical structures, properties
+  treated as objects, propositions, meanings, and other nonphysical objects.
+- **Informational entities** — data, symbols, records, documents, models,
+  software, messages, and reproducible works.
+- **Social and institutional entities** — persons, organizations, groups,
+  roles, statuses, institutions, laws, contracts, and currencies.
+- **Fictional, hypothetical, and possible entities** — characters, imagined
+  objects, counterfactual entities, simulated entities, and possible-world
+  inhabitants.
+- **Agents** — organisms, persons, organizations, software agents, and
+  systems capable of action, control, or communication.
+- **Objects or continuants** — relatively persistent bearers of properties,
+  including natural objects, artifacts, organisms, places, and abstract
+  objects.
+- **Processes or occurrents** — activities, events, changes, operations,
+  motions, computations, communications, and histories.
+- **States and situations** — temporally or contextually bounded
+  configurations in which entities participate or properties hold.
+- **Collections and wholes** — sets, classes, types, lists, bags, aggregates,
+  parts, wholes, systems, and populations.
+- **Places and spacetime regions** — locations, boundaries, paths, intervals,
+  instants, coordinate regions, and possible or actual worlds.
+- **Classes, types, and universals** — kinds that classify instances,
+  formal types, predicates reified as concepts, and universes of types.
+- **Mathematical structures** — algebraic, ordered, topological, geometric,
+  measurable, probabilistic, computational, and physical structures.
+- **Formal objects** — languages, signatures, formulas, theories, proofs,
+  programs, terms, values, models, and derivations.
+- **Propositions and statements** — reified claims, questions, commands,
+  hypotheses, assertions, and compound statements.
+- **Occurrences and tokens** — particular realizations of events, symbols,
+  words, measurements, observations, or documents.
+
+**Property candidates**
+
+- **Qualities** — color, shape, texture, temperature, mass, age, health,
+  intelligence, beauty, and other characteristic dimensions.
+- **Quantities and magnitudes** — amount, size, duration, distance, rate,
+  probability, concentration, intensity, and measurement result.
+- **Quality values** — red, heavy, warm, large, healthy, prime, continuous,
+  and other values filling a quality dimension.
+- **States** — alive, open, occupied, valid, employed, connected, or
+  functioning.
+- **Dispositions and capabilities** — soluble, fragile, edible, executable,
+  poisonous, intelligent, or able to perform an operation.
+- **Functions and purposes** — what an object or process is for, including
+  biological functions, designed functions, and intended use.
+- **Roles and statuses** — agent, owner, patient, employee, citizen, leader,
+  member, legal status, and other context-dependent ways of participating.
+- **Norms and obligations** — permissions, duties, prohibitions, rules,
+  standards, requirements, and institutional commitments.
+- **Goals and preferences** — aims, desires, priorities, utility, value,
+  relevance, and evaluation.
+- **Modal properties** — possible, necessary, contingent, dispositional,
+  counterfactual, or law-governed.
+- **Logical and mathematical properties** — true, false, equal, finite,
+  prime, continuous, measurable, decidable, or computable.
+- **Relational properties** — being adjacent, owned, caused, located,
+  represented, comparable, or dependent, when treated as a property of one
+  bearer rather than as a relation node.
+- **Type and refinement properties** — membership conditions, subtype
+  constraints, predicates, invariants, capabilities, and effect sets.
+
+**Relation candidates**
+
+- **Classification relations** — instance-of, subclass-of, type-of,
+  predicate application, realization-of, and member-of.
+- **Part-whole relations** — part-of, proper-part-of, component-of,
+  boundary-of, member-of, aggregate-of, and overlap.
+- **Spatial relations** — located-in, contains, adjacent-to, connected-to,
+  inside, outside, above, below, near, and intersects.
+- **Temporal relations** — before, after, during, overlaps, begins, ends,
+  persists-through, and occurs-at.
+- **Causal and explanatory relations** — causes, enables, prevents,
+  depends-on, explains, predicts, and results-in.
+- **Participation relations** — agent-in, patient-in, instrument-in,
+  location-of, beneficiary-of, and participant-in.
+- **Social and institutional relations** — owns, employs, governs, belongs-to,
+  married-to, represents, authorizes, owes, and contracts-with.
+- **Perceptual and epistemic relations** — observes, knows, believes,
+  justifies, evidences, measures, describes, refers-to, and is-about.
+- **Logical relations** — entails, contradicts, implies, is-consistent-with,
+  is-provable-from, and is-satisfied-by.
+- **Set and collection relations** — member-of, subset-of, disjoint-from,
+  partitions, indexes, enumerates, and is-cardinality-of.
+- **Mathematical relations** — equals, less-than, divides, maps-to,
+  isomorphic-to, homomorphic-to, composes-with, and is-an-instance-of.
+- **Transformation relations** — converts, derives, constructs, interprets,
+  translates, compiles, evaluates, and reduces-to.
+- **Representational relations** — names, denotes, encodes, quotes,
+  instantiates, models, formalizes, and is-described-by.
+- **Identity and equivalence relations** — same-as, equivalent-to,
+  observationally-equivalent-to, interchangeable-with, and version-of.
+- **Provenance relations** — sourced-from, asserted-by, generated-by,
+  inferred-from, proved-by, revised-from, and supersedes.
+
+### Coherent subcategory variants
+
+These variants show how the maximal inventory could be made navigable. They
+are alternatives for the visible second and third levels, not separate
+ontologies.
+
+**Minimal semantic variant**
+
+- **Entity:** Physical, Abstract, Informational, Social
+- **Property:** Quality, Quantity, Disposition, Role, Function, Norm
+- **Relation:** Classification, Part-whole, Spatial/temporal, Causal,
+  Social, Representational
+
+This is the strongest starting point for a readable player-facing browser.
+It is compact, but it leaves mathematical foundations and formal systems in
+metadata or deeper branches.
+
+For the current design, we should provisionally collapse the visible
+top-level entity split to:
+
+```text
+Entity
+├── Physical
+└── Abstract
+```
+
+“Informational” and “social” should initially be treated as abstract or
+representational patterns, with an explicit physical embodiment when one
+exists. A book, computer, contract, or organization can therefore have both:
+
+```text
+Abstract content, role, or institution
+└── physically embodied by
+    └── Physical artifact, person, document, or activity
+```
+
+This is not a claim that information or society are unreal. It is a
+presentation decision that keeps the top-level question simple while
+preserving their physical realizations and their relations to people,
+artifacts, and events. The data model should support both facets rather than
+forcing an informational or social concept to be exclusively abstract.
+
+### Historical mathematical examples (non-canonical)
+
+The earlier large mathematical projection has been retired as a competing
+tree. Its surviving decisions are already incorporated into the canonical
+branch above: mathematics is organized by entity kind, not by academic
+discipline; foundations, formal artifacts, and models remain distinguishable;
+and properties, relations, representations, and proofs cross-cut the
+mathematical entities. The examples below are retained only to specify those
+role distinctions and are not an additional navigation tree.
+
+```text
+Entity
+├── Physical
+│   ├── Matter, energy, fields, organisms, artifacts, places
+│   └── Physical inscriptions and implementations
+│       ├── Written equation on paper
+│       ├── Executing program
+│       ├── Printed proof
+│       └── Laboratory measurement
+└── Abstract
+    ├── Mathematical entities
+    │   ├── Foundational formal entities
+    │   │   ├── Logical entities
+    │   │   │   ├── Terms and formulas
+    │   │   │   ├── Predicates and propositions
+    │   │   │   ├── Logical operators and quantifiers
+    │   │   │   ├── Inference rules and proof objects
+    │   │   │   └── Logical models and truth conditions
+    │   │   ├── Set-theoretic structures
+    │   │   │   ├── Sets and collections
+    │   │   │   ├── Set-membership and subset relations
+    │   │   │   ├── Set operations and products
+    │   │   │   ├── Functions and power sets
+    │   │   │   ├── Natural numbers, ordinals, and cardinals
+    │   │   │   └── Set-theoretic formal theories
+    │   │   ├── Type-theoretic structures
+    │   │   │   ├── Types, terms, and values
+    │   │   │   ├── Products, sums, and function types
+    │   │   │   ├── Inductive and dependent types
+    │   │   │   ├── Universes and identity types
+    │   │   │   └── Proofs as inhabitants of propositions
+    │   │   └── Categorical structures
+    │   │       ├── Objects and morphisms
+    │   │       ├── Composition and identity
+    │   │       ├── Functors and natural transformations
+    │   │       ├── Limits, colimits, and adjunctions
+    │   │       └── Equivalences, toposes, and internal logics
+    │   ├── Number systems
+    │   │   ├── Natural numbers
+    │   │   ├── Integers
+    │   │   ├── Rational numbers
+    │   │   ├── Real numbers
+    │   │   ├── Complex numbers
+    │   │   ├── Algebraic and transcendental numbers
+    │   │   └── Arithmetic operations, order relations, divisibility relations, and equations
+    │   ├── Algebraic structures
+    │   │   ├── Groups and subgroups
+    │   │   ├── Rings and ideals
+    │   │   ├── Fields and extensions
+    │   │   ├── Vector spaces and linear maps
+    │   │   ├── Modules, algebras, and representations
+    │   │   └── Algebraic structure categories
+    │   ├── Geometric and topological structures
+    │   │   ├── Points, lines, planes, and spaces
+    │   │   ├── Angles, distances, and coordinate systems
+    │   │   ├── Curves and conic sections
+    │   │   │   ├── Circle
+    │   │   │   ├── Ellipse
+    │   │   │   ├── Parabola
+    │   │   │   └── Hyperbola
+    │   │   ├── Manifolds and tangent spaces
+    │   │   ├── Topological spaces and continuity structures
+    │   │   ├── Metric spaces and measure spaces
+    │   │   └── Differential structures and algebraic varieties
+    │   ├── Analytic and dynamical structures
+    │   │   ├── Sequences, limits, and convergence
+    │   │   ├── Derivatives and integrals
+    │   │   ├── Differential equations
+    │   │   ├── Dynamical systems
+    │   │   ├── Function spaces and operators
+    │   │   └── Fourier transforms and distributions
+    │   ├── Discrete and computational structures
+    │   │   ├── Combinatorial structures and graphs
+    │   │   ├── Algorithms and complexity classes
+    │   │   ├── Automata and formal languages
+    │   │   ├── Computable and recursive functions
+    │   │   ├── Cryptographic constructions and information measures
+    │   │   └── Programming-language models and semantics
+    │   ├── Probabilistic and statistical structures
+    │   │   ├── Sample spaces and random variables
+    │   │   ├── Probability measures and distributions
+    │   │   ├── Expectation and conditional probability
+    │   │   ├── Statistical models and inference
+    │   │   └── Stochastic processes
+    │   ├── Mathematical models of physical systems
+    │   │   ├── Classical dynamical models
+    │   │   ├── Relativistic spacetime models
+    │   │   ├── Quantum states and observables
+    │   │   ├── Hilbert spaces and operator algebras
+    │   │   ├── Quantum field models
+    │   │   └── Gauge fields and geometric field models
+    │   └── Mathematical objects and values
+    │       ├── Sets, functions, sequences, and structures
+    │       ├── Numbers and other values
+    │       ├── Equations and solutions
+    │       ├── Curves, surfaces, and spaces
+    │       ├── Proofs, theorems, and counterexamples
+    │       └── Models and interpretations
+    ├── Informational and representational entities
+    │   ├── Symbols, names, and notation
+    │   ├── Data, records, and messages
+    │   ├── Documents, software, and media contents
+    │   ├── Definitions, classifications, and ontologies
+    │   └── Statements, propositions, and theories
+    └── Social and institutional entities
+        ├── Roles and statuses
+        ├── Organizations and communities
+        ├── Rules, laws, contracts, and currencies
+        ├── Norms, obligations, and permissions
+        └── Institutions and collective practices
+```
+
+The naming rule is deliberate: a visible node must name a kind of entity,
+property, relation, structure, artifact, process, or formal object. A
+discipline, research program, school subject, or college course is
+provenance or metadata, not a parent category. Thus `Circle` and `Parabola`
+can be first-class geometric entities under `Curves and conic sections`,
+while “geometry” belongs in the source-discipline metadata. Likewise,
+`Computable function` is an entity or structure, while “computability” as a
+research topic is not a parent; `Classical dynamical model` is a mathematical
+model, while “classical mechanics” is a subject label.
+
+This projection deliberately repeats some concepts in different roles. For
+example:
+
+- **Three** is an abstract mathematical entity, a value, and an inhabitant of
+  the type `Natural`.
+- **Prime** is a mathematical property or predicate; `Prime(3)` is a
+  proposition; and a proof of `Prime(3)` is a formal evidence object.
+- A **circle** is an abstract geometric structure; its equation is a
+  representation; a chalk drawing is a physical artifact; and “this point
+  lies on the circle” is a relation or proposition.
+- **Truth** is a property of propositions or models, while `True` may be a
+  logical value or a proposition depending on the formal system.
+- A **conic section** is a geometric entity, its defining equation is a
+  representation, and the relation between the curve and its focus or
+  directrix is part of its mathematical structure.
+- A **Lean theorem** is an abstract proposition, its proof term is an
+  abstract formal object, its source file is an informational artifact, and
+  the checked compilation is a physical or computational event.
+
+The mathematical branch should therefore not be a flat list of school
+subjects. It should distinguish at least four cross-cutting roles:
+
+```text
+Mathematical concept
+├── Object or structure
+├── Property or predicate
+├── Relation, operation, or mapping
+└── Representation, proposition, proof, or model
+```
+
+The visible browser may eventually collapse much of this structure for
+ordinary play, while the formal profile retains the full distinctions.
+
+**SUMO/BFO-inspired variant**
+
+- **Entity:** Continuant, Occurrent, Quality, Disposition, Role, Site,
+  Information artifact
+- **Property:** Intrinsic quality, Relational quality, Function, Disposition,
+  Role, State
+- **Relation:** Participation, Parthood, Dependence, Location, Temporal,
+  Causal, Classification
+
+This is stronger for scientific and biomedical modeling, but its vocabulary
+is less familiar and some candidates are better modeled as facets than
+visible siblings.
+
+**Mathematical and formal variant**
+
+- **Entity:** Individual, Collection, Class/type, Structure, Proposition,
+  Model, Formal artifact
+- **Property:** Predicate, Refinement, Invariant, Quantity, Truth value,
+  Computability, Proof status
+- **Relation:** Membership, Typing, Application, Function, Interpretation,
+  Satisfaction, Entailment, Derivation, Isomorphism
+
+This gives numbers, sets, types, proofs, and models a principled home, but
+would be a poor default tree for ordinary physical nouns.
+
+**Event-and-situation variant**
+
+- **Entity:** Object, Agent, Process, Event, State, Situation, Place,
+  Information object
+- **Property:** Quality, Capability, Function, Role, Status, Goal, Norm
+- **Relation:** Participation, Part-whole, Location, Time, Causation,
+  Ownership, Communication, Evidence
+
+This is strongest for everyday questions and narratives, especially actions,
+agents, places, and social facts, but less explicit about mathematical
+structures and formal syntax.
+
+**Type-system variant**
+
+- **Entity:** Type, Term, Value, Structure, Proposition, Proof artifact,
+  Model
+- **Property:** Type constraint, Refinement, Effect, Invariant, Truth,
+  Computability, Capability
+- **Relation:** Inhabits, Subtypes, Applies-to, Evaluates-to, Constructs,
+  Proves, Interprets, Composes
+
+This variant aligns with Lean, Scala, proof assistants, and executable
+semantics. It should be a formal overlay or specialist view, not the sole
+visible organization of the noun ontology.
+
+**Roget-informed conceptual variant**
+
+- **Entity:** Matter and life, Space, Mind and knowledge, Society and action,
+  Abstract relations, Emotion and value
+- **Property:** Quality, Quantity, Evaluation, Disposition, Intention,
+  Social status
+- **Relation:** Association, Comparison, Causation, Participation,
+  Representation, Classification
+
+This variant maximizes familiar conceptual neighborhoods and vocabulary
+discovery. It is useful for the player-facing language layer, but its
+categories are not sufficiently formal to serve as the authoritative
+semantic model.
+
+### Canonical implementation rules
+
+Use the **minimal semantic variant** as the initial visible projection, with
+`Entity`, `Property`, and `Relation` as the only mandatory top-level nodes.
+Add the other variants as named profile projections over the same source
+graph. In particular:
+
+- keep physical/abstract/informational/social as entity facets or second-level
+  display candidates;
+- preserve process/event/state distinctions under Entity when they are
+  useful for navigation;
+- represent classes, types, propositions, proofs, and values as entities with
+  explicit typing, membership, denotation, and proof relations;
+- treat qualities, quantities, dispositions, roles, and functions as
+  properties unless a particular one is reified as an entity;
+- retain relation families as typed relation metadata rather than forcing all
+  relations into ordinary noun branches; and
+- generate specialist views for BFO/SUMO-style, mathematical, Lean/type
+  system, and Roget-informed browsing without changing the canonical graph.
+
+### Formal-layer consequences of the canonical synthesis
+
+The canonical synthesis keeps the semantic tree separate from the formal
+layer. `Entity`, `Property`, and `Relation` answer different questions from
+`Type`, `Term`, `Value`, and `Proof`:
+
+- What sort of thing is this in the world?
+- Is it an object, event, quality, relation, description, or proposition?
+- Is it a mathematical structure, a formal symbol system, or a model of one?
+- Is it a class, an instance, a value, a type, or a type-level operation?
+
+These distinctions are represented as typed metadata and cross-links rather
+than as another visible root. SUMO remains useful as a source of formal
+distinctions and axioms, but its top-level presentation is a mapping layer,
+not the final upper ontology.
+
+### Tegmark's mathematical-structure chart
+
+The attached chart is best treated as a visual prior-art rendering of the
+idea that increasingly rich mathematical structures arise by adding
+operations, predicates, axioms, topology, measure, geometry, and physical
+interpretation. The definitive scholarly source for that Tegmark framework is
+Max Tegmark's *The Mathematical Universe*:
+
+- [arXiv record and authoritative preprint](https://arxiv.org/abs/0704.0646)
+- [Published version, Foundations of Physics](https://doi.org/10.1007/s10701-007-9186-9)
+
+The chart image itself is not an authority for taxonomy, and its exact
+provenance should not be inferred from the screenshot alone. The paper is the
+source to cite for Tegmark's mathematical-structure/formal-system
+distinction; the image is useful as a compact design prompt for a future
+mathematical branch.
+
+### Mathematical foundations retained as metadata
+
+Modern mathematics supplies a more disciplined upper-level vocabulary than
+SUMO's current abstraction branch, but not a ready-made everyday ontology.
+The useful ideas are complementary:
+
+- **Set-theoretic foundations** provide membership, subset, union, product,
+  function, relation, and structure-building operations. ZFC is a foundation
+  for mathematics, not a claim that every ordinary noun is best represented
+  as a set.
+- **Type theory** distinguishes terms, types, dependent types, constructors,
+  and proofs. This is close to the intuition behind Scala class hierarchies:
+  a type describes admissible values, subtyping expresses substitutability,
+  and traits or interfaces express reusable capabilities. Scala's model is
+  not itself an ontology, but it is a useful implementation metaphor for
+  separating nominal categories, structural capabilities, and instances.
+- **Category theory** emphasizes objects, morphisms, composition, identity,
+  products, coproducts, limits, and functors. It is especially valuable for
+  modeling relations and transformations that a noun-only tree cannot show.
+- **Structural mathematics** treats a mathematical object by its operations,
+  relations, and laws rather than by its material or name. This is a strong
+  antidote to confusing a class label with the properties that make its
+  instances members of the class.
+- **Formal systems and model theory** distinguish syntax, axioms, derivations,
+  interpretations, and models. This gives the ontology a clean place for
+  languages, theories, mathematical structures, and the real-world systems
+  they describe.
+
+These foundations do not replace the canonical tree. They supply metadata
+and relation vocabularies:
+
+In the data model, a node may have a **kind** (`object`, `event`, `quality`,
+`relation`, `representation`, `type`, `structure`, or `theory`) in addition
+to one or more parent links. The browser can project a single primary
+navigation parent while retaining cross-links between a type and its
+instances, a structure and its models, and a proposition and the situation
+it describes.
+
+### Retired synthesis notes
+
+The former source-by-source synthesis table is retired. Its recommendations
+are now implemented directly: curated v1 and Roget inform player-facing
+labels; SUMO supplies semantic checks; Schema.org and WordNet supply
+contemporary labels and lexical bridges; and mathematical foundations supply
+formal metadata. None is a competing visible upper tree.
+
+### Implementation consequences
+
+Before changing the published browser, build a small upper-ontology
+comparison manifest. For every canonical node, record its kind, intended
+children, alternate parents, and whether it is player-visible or metadata
+only. Test the projection against ordinary examples such as `dog`,
+`running`, `red`, `ownership`, `number`, `integer`, `group`, `function`,
+`software type`, `proposition`, and `quantum field`.
+
+The review should prefer a split whenever a node currently answers multiple
+incompatible questions. In particular, `Abstract` should not remain a
+catch-all for mathematical structures, attributes, propositions, relations,
+and fictional or informational entities. The implementation should preserve source provenance and alternate parents
+while introducing explicit kind metadata. The visible root is now fixed
+provisionally as the triad; future changes should be evidence-driven rather
+than another wholesale top-layer redesign.
+
+## Roget as lexical enrichment for the curated v1 tree
+
+This section should be retained, but its scope is narrower than the new
+`Upper ontology` section. The upper-ontology discussion treats Roget as
+candidate prior art for conceptual partitioning; this section records the
+concrete lexical crosswalk and the implementation decision that Roget
+enriches v1 without becoming its structural parent taxonomy. It is therefore
+not redundant: one section concerns upper-level design, while this one
+concerns vocabulary evidence, aliases, and gameplay-oriented placement.
+
+[`Rogets/index.html`](Rogets/index.html) is a faithful browser of the 1,000
+numbered concepts in the 1911 Gutenberg edition. It differs fundamentally
+from v1: Roget organizes words into six broad conceptual classes, sections,
+and subsections, while v1 organizes familiar answer categories around
+playable physical, living, and abstract distinctions. Roget's entries are
+semantic neighborhoods containing synonyms and related expressions, not
+necessarily kinds of things.
+
+[`Rogets/crosswalk.json`](Rogets/crosswalk.json) is the first review artifact.
+It compares Roget's concept titles and extracted noun-list phrases with the
+628 v1 terminal labels using exact normalized text only. The first pass finds
+402 Roget concepts with at least one exact label or phrase match: 59 title
+matches are marked high confidence and 343 noun-list matches are marked
+medium confidence. These are proposals, not accepted edits; a phrase such as
+“air” or “state” can match a v1 label while meaning something different in
+context, so every proposal needs semantic and gameplay review.
+
+[`Rogets/index2.html`](Rogets/index2.html) remains the detailed review view.
+The canonical [`index.html`](index.html) now exposes the accepted Roget
+vocabulary tranches as aliases on existing leaves and includes them in search.
+The two commits are intentionally separate: the 59 high-confidence concept
+matches landed first, followed by the 343 medium-confidence noun-list
+matches. Neither tranche changes the category structure or silently promotes
+a synonym into a new answer category.
+
+There is no clean automatic graft from Roget into v1. A Roget concept such as
+“Existence,” “Quantity,” or “Answer” does not identify a single noun category,
+and even apparently concrete concepts can mix objects, actions, properties,
+and phrases. Treating every Roget heading as a v1 node would make the game
+tree less noun-like and would reintroduce the imbalance and abstraction that
+the WordNet experiment exposed.
+
+Roget can still improve v1 in several disciplined ways:
+
+- **Vocabulary discovery:** use the concept entries and their noun lists to
+  find familiar labels missing from v1, then place only concrete game answers
+  under reviewed existing parents.
+- **Sibling discovery:** compare nearby Roget concepts to identify gaps such as
+  common foods, tools, materials, body parts, and organisms.
+- **Vocabulary wording:** use Roget's synonym neighborhoods to make labels
+  and search more forgiving without adding duplicate concepts.
+- **Abstract branch review:** use Roget's classes to audit v1's abstract
+  coverage, while retaining v1's game-oriented boundaries.
+- **Separate alternate profile:** preserve the Roget browser as a conceptual
+  reference rather than pretending it is a superior replacement taxonomy.
+
+The next Roget step is not to add more raw words. It is to turn any proposed
+new answer categories into a reviewed manifest: map each candidate noun phrase
+to a v1 parent, record evidence and intended semantic placement, and accept
+only familiar terms with a clear interpretation.
+
+## Structure before scale
+
+The central artifact is the decision tree, not its vocabulary count. Before
+adding hundreds or thousands of nouns, the next candidate should be a
+structure-first v1.1 review:
+
+- require every visible internal node to have at least two useful children;
+- retain unary paths when they carry useful meaning or provenance; do not
+  treat one-child structure as an automatic defect;
+- inspect every top-level and second-level split for balanced candidate mass;
+- rewrite labels and branch descriptions so they express observable, stable
+  distinctions rather than merely restating a parent label;
+- identify misplaced leaves, duplicate labels, overloaded branches, and
+  missing everyday sibling categories; and
+- accept new leaves only after a parent and a useful discriminator already
+  exist.
+
+This ordering explains why the initial handcrafted tree performs better than
+the larger imported profiles. It was designed around small numbers of
+familiar, answerable distinctions, comparable siblings, and recognizable noun
+categories.
+Roget's tree optimizes conceptual association, Propædia optimizes coverage of
+human knowledge, and biological databases optimize scientific ancestry. None
+optimizes the joint objective of familiar labels, balanced semantic branches,
+single-parent navigation, and useful stopping depth. That objective is a
+specialized design problem, so the absence of a ready-made prior-art tree is
+expected rather than evidence that the handcrafted structure is anomalous.
+
+## Navigation projection algorithm
 
 The source graph should remain authoritative. The build profile should:
 
@@ -260,7 +2908,7 @@ The source graph should remain authoritative. The build profile should:
 - add complete source ancestry needed to connect selected concepts;
 - choose one deterministic display parent only for presentation;
 - calculate subtree candidate mass and prefer balanced displayed splits;
-- generate questions from source distinctions or declared attributes; and
+- expose source distinctions and declared attributes as branch metadata; and
 - preserve discarded candidates and alternate paths in a manifest.
 
 This keeps source semantics separate from game presentation. The one-page tree
@@ -269,12 +2917,12 @@ is a reproducible view, not a hand-maintained fork.
 ## Future experiments
 
 The WordNet experiment should be evaluated at target sizes near 5K, 8.9K, and
-10K nodes. Measure browser load, full expansion, search latency, memory,
-maximum depth, duplicate labels, and the quality of suggested questions.
+10K nodes. Measure browser load, full expansion, search latency, memory, maximum depth,
+duplicate labels, and branch coverage.
 Prefer the smallest profile that covers common game answers while preserving
 the current one-page browsing experience.
 
-The next useful improvements are a better question generator based on subtree
-balance and a coverage report for ordinary game-answer lists. Wikidata,
-FoodOn, and Wikipedia can then be tested as separately labeled enrichment
-profiles, not silently merged into the WordNet ontology.
+The next useful improvements are the structural audit, the biological graft
+specified above, and a coverage report for ordinary noun candidates. Each
+profile should come from one source manifest rather than a forked ontology;
+Wikidata, FoodOn, and Wikipedia remain separately labeled enrichment sources.

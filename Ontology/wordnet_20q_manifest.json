@@ -2,15 +2,15 @@
   "source": "Princeton WordNet",
   "version": "3.0",
   "root": "entity.n.01",
-  "selection": "top frequency-weighted root-connected noun synsets plus complete hypernym ancestry",
+  "selection": "top frequency-weighted root-connected noun synsets, excluding the generic thing.n.08 profile branch, plus complete hypernym ancestry",
   "presentation": "one deterministic parent selected from source hypernyms",
   "counts": {
     "all_noun_synsets": 82115,
     "frequency_noun_synsets": 13739,
     "requested": 7000,
     "selected": 8974,
-    "branches": 3832,
-    "leaves": 5142
+    "branches": 3831,
+    "leaves": 5143
   },
   "synsets": {
     "abandon.n.01": {
@@ -1128,8 +1128,8 @@
       "gloss": "the performance of a part or role in a drama",
       "frequency": 6,
       "hypernyms": [
-        "activity.n.01",
-        "performing_arts.n.01"
+        "performing_arts.n.01",
+        "activity.n.01"
       ],
       "display_parent": "activity.n.01"
     },
@@ -2364,8 +2364,8 @@
       "gloss": "a substance that exerts some force or effect",
       "frequency": 5,
       "hypernyms": [
-        "causal_agent.n.01",
-        "substance.n.07"
+        "substance.n.07",
+        "causal_agent.n.01"
       ],
       "display_parent": "causal_agent.n.01"
     },
@@ -3563,8 +3563,8 @@
       "gloss": "any member of the peoples living in North or South America before the Europeans arrived",
       "frequency": 0,
       "hypernyms": [
-        "person.n.01",
-        "person_of_color.n.01"
+        "person_of_color.n.01",
+        "person.n.01"
       ],
       "display_parent": "person.n.01"
     },
@@ -5476,8 +5476,8 @@
       "gloss": "a colorless and odorless inert gas; one of the six inert gases; comprises approximately 1% of the earth's atmosphere",
       "frequency": 7,
       "hypernyms": [
-        "noble_gas.n.01",
-        "chemical_element.n.01"
+        "chemical_element.n.01",
+        "noble_gas.n.01"
       ],
       "display_parent": "chemical_element.n.01"
     },
@@ -6216,8 +6216,8 @@
       "gloss": "a native or inhabitant of Asia",
       "frequency": 0,
       "hypernyms": [
-        "inhabitant.n.01",
-        "person_of_color.n.01"
+        "person_of_color.n.01",
+        "inhabitant.n.01"
       ],
       "display_parent": "inhabitant.n.01"
     },
@@ -6724,8 +6724,8 @@
       "gloss": "a game involving athletic activity",
       "frequency": 0,
       "hypernyms": [
-        "sport.n.01",
-        "game.n.01"
+        "game.n.01",
+        "sport.n.01"
       ],
       "display_parent": "game.n.01"
     },
@@ -6784,8 +6784,8 @@
       "gloss": "electrical discharges in the atmosphere",
       "frequency": 0,
       "hypernyms": [
-        "atmospheric_phenomenon.n.01",
-        "electrical_discharge.n.01"
+        "electrical_discharge.n.01",
+        "atmospheric_phenomenon.n.01"
       ],
       "display_parent": "atmospheric_phenomenon.n.01"
     },
@@ -7257,8 +7257,8 @@
       "gloss": "a system of electronic equipment for recording or reproducing sound",
       "frequency": 1,
       "hypernyms": [
-        "electronic_equipment.n.01",
-        "system.n.01"
+        "system.n.01",
+        "electronic_equipment.n.01"
       ],
       "display_parent": "system.n.01"
     },
@@ -8425,8 +8425,8 @@
       "gloss": "an athlete who plays baseball",
       "frequency": 8,
       "hypernyms": [
-        "athlete.n.01",
-        "player.n.01"
+        "player.n.01",
+        "athlete.n.01"
       ],
       "display_parent": "player.n.01"
     },
@@ -9177,8 +9177,8 @@
       "gloss": "largest and lowest member of the violin family",
       "frequency": 4,
       "hypernyms": [
-        "bass.n.07",
-        "bowed_stringed_instrument.n.01"
+        "bowed_stringed_instrument.n.01",
+        "bass.n.07"
       ],
       "display_parent": "bowed_stringed_instrument.n.01"
     },
@@ -9490,8 +9490,8 @@
       "gloss": "long thick piece of wood or metal or concrete, etc., used in construction",
       "frequency": 9,
       "hypernyms": [
-        "structural_member.n.01",
-        "piece.n.01"
+        "piece.n.01",
+        "structural_member.n.01"
       ],
       "display_parent": "piece.n.01"
     },
@@ -9927,8 +9927,8 @@
       "gloss": "a reflex that expels gas noisily from the stomach through the mouth",
       "frequency": 3,
       "hypernyms": [
-        "expulsion.n.03",
-        "reflex.n.01"
+        "reflex.n.01",
+        "expulsion.n.03"
       ],
       "display_parent": "reflex.n.01"
     },
@@ -9963,8 +9963,8 @@
       "gloss": "a hollow device made of metal that makes a ringing sound when struck",
       "frequency": 9,
       "hypernyms": [
-        "signaling_device.n.01",
-        "acoustic_device.n.01"
+        "acoustic_device.n.01",
+        "signaling_device.n.01"
       ],
       "display_parent": "acoustic_device.n.01"
     },
@@ -10142,8 +10142,8 @@
       "gloss": "(law) a gift of personal property by will",
       "frequency": 5,
       "hypernyms": [
-        "inheritance.n.02",
-        "gift.n.01"
+        "gift.n.01",
+        "inheritance.n.02"
       ],
       "display_parent": "gift.n.01"
     },
@@ -10217,8 +10217,8 @@
       "gloss": "any liquid suitable for drinking",
       "frequency": 5,
       "hypernyms": [
-        "liquid.n.01",
-        "food.n.01"
+        "food.n.01",
+        "liquid.n.01"
       ],
       "display_parent": "food.n.01"
     },
@@ -10809,8 +10809,8 @@
       "gloss": "a person with dark skin who comes from Africa (or whose ancestors came from Africa)",
       "frequency": 22,
       "hypernyms": [
-        "person.n.01",
-        "person_of_color.n.01"
+        "person_of_color.n.01",
+        "person.n.01"
       ],
       "display_parent": "person.n.01"
     },
@@ -11182,8 +11182,8 @@
       "gloss": "invasion of the bloodstream by virulent microorganisms from a focus of infection",
       "frequency": 0,
       "hypernyms": [
-        "sepsis.n.01",
-        "blood_disease.n.01"
+        "blood_disease.n.01",
+        "sepsis.n.01"
       ],
       "display_parent": "blood_disease.n.01"
     },
@@ -11802,8 +11802,8 @@
       "gloss": "an explosive device fused to explode under specific conditions",
       "frequency": 8,
       "hypernyms": [
-        "explosive_device.n.01",
-        "weaponry.n.01"
+        "weaponry.n.01",
+        "explosive_device.n.01"
       ],
       "display_parent": "weaponry.n.01"
     },
@@ -11839,8 +11839,8 @@
       "gloss": "a military aircraft that drops bombs during flight",
       "frequency": 9,
       "hypernyms": [
-        "warplane.n.01",
-        "airplane.n.01"
+        "airplane.n.01",
+        "warplane.n.01"
       ],
       "display_parent": "airplane.n.01"
     },
@@ -11876,8 +11876,8 @@
       "gloss": "a certificate of debt (usually interest-bearing or discounted) that is issued by a government or corporation in order to raise money; the issuer is required to pay a fixed sum annually until maturity and then a fixed sum to repay the principal",
       "frequency": 13,
       "hypernyms": [
-        "security.n.04",
-        "debt_instrument.n.01"
+        "debt_instrument.n.01",
+        "security.n.04"
       ],
       "display_parent": "debt_instrument.n.01"
     },
@@ -12480,8 +12480,8 @@
       "gloss": "a man who is the lover of a girl or young woman",
       "frequency": 4,
       "hypernyms": [
-        "man.n.01",
-        "lover.n.01"
+        "lover.n.01",
+        "man.n.01"
       ],
       "display_parent": "man.n.01"
     },
@@ -12504,8 +12504,8 @@
       "gloss": "a structural member used to stiffen a framework",
       "frequency": 2,
       "hypernyms": [
-        "structural_member.n.01",
-        "strengthener.n.01"
+        "strengthener.n.01",
+        "structural_member.n.01"
       ],
       "display_parent": "strengthener.n.01"
     },
@@ -12702,8 +12702,8 @@
       "gloss": "food made from dough of flour or meal and usually raised with yeast or baking powder and then baked",
       "frequency": 3,
       "hypernyms": [
-        "starches.n.01",
-        "baked_goods.n.01"
+        "baked_goods.n.01",
+        "starches.n.01"
       ],
       "display_parent": "starches.n.01"
     },
@@ -12923,8 +12923,8 @@
       "gloss": "a special variety of domesticated animals within a species",
       "frequency": 4,
       "hypernyms": [
-        "variety.n.03",
-        "animal_group.n.01"
+        "animal_group.n.01",
+        "variety.n.03"
       ],
       "display_parent": "variety.n.03"
     },
@@ -15113,8 +15113,8 @@
       "gloss": "the most commonly used illicit drug; considered a soft drug, it consists of the dried leaves of the hemp plant; smoked or chewed for euphoric effect",
       "frequency": 0,
       "hypernyms": [
-        "soft_drug.n.01",
-        "controlled_substance.n.01"
+        "controlled_substance.n.01",
+        "soft_drug.n.01"
       ],
       "display_parent": "soft_drug.n.01"
     },
@@ -18004,8 +18004,8 @@
       "gloss": "young bird especially of domestic fowl",
       "frequency": 2,
       "hypernyms": [
-        "chicken.n.02",
-        "young_bird.n.01"
+        "young_bird.n.01",
+        "chicken.n.02"
       ],
       "display_parent": "chicken.n.02"
     },
@@ -18230,9 +18230,9 @@
       "gloss": "a common nonmetallic element belonging to the halogens; best known as a heavy yellow irritating toxic gas; used to purify water and as a bleaching agent and disinfectant; occurs naturally only as a salt (as in sea water)",
       "frequency": 32,
       "hypernyms": [
-        "gas.n.02",
+        "chemical_element.n.01",
         "halogen.n.01",
-        "chemical_element.n.01"
+        "gas.n.02"
       ],
       "display_parent": "gas.n.02"
     },
@@ -18244,8 +18244,8 @@
       "gloss": "a diuretic drug (trade name Diuril) used in the treatment of edema and hypertension",
       "frequency": 2,
       "hypernyms": [
-        "thiazide.n.01",
-        "antihypertensive.n.01"
+        "antihypertensive.n.01",
+        "thiazide.n.01"
       ],
       "display_parent": "antihypertensive.n.01"
     },
@@ -18420,10 +18420,10 @@
       "gloss": "a Christian holiday celebrating the birth of Christ; a quarter day in England, Wales, and Ireland",
       "frequency": 2,
       "hypernyms": [
-        "holy_day_of_obligation.n.01",
-        "quarter_day.n.01",
         "feast_day.n.01",
-        "legal_holiday.n.01"
+        "legal_holiday.n.01",
+        "holy_day_of_obligation.n.01",
+        "quarter_day.n.01"
       ],
       "display_parent": "legal_holiday.n.01"
     },
@@ -19537,8 +19537,8 @@
       "gloss": "a covering designed to be worn on a person's body",
       "frequency": 9,
       "hypernyms": [
-        "covering.n.02",
-        "consumer_goods.n.01"
+        "consumer_goods.n.01",
+        "covering.n.02"
       ],
       "display_parent": "consumer_goods.n.01"
     },
@@ -19753,8 +19753,8 @@
       "gloss": "fossil fuel consisting of carbonized vegetable matter deposited in the Carboniferous period",
       "frequency": 5,
       "hypernyms": [
-        "fossil_fuel.n.01",
-        "vegetable_matter.n.01"
+        "vegetable_matter.n.01",
+        "fossil_fuel.n.01"
       ],
       "display_parent": "fossil_fuel.n.01"
     },
@@ -20122,8 +20122,8 @@
       "gloss": "a mild viral infection involving the nose and respiratory passages (but not the lungs)",
       "frequency": 5,
       "hypernyms": [
-        "respiratory_disease.n.01",
-        "communicable_disease.n.01"
+        "communicable_disease.n.01",
+        "respiratory_disease.n.01"
       ],
       "display_parent": "respiratory_disease.n.01"
     },
@@ -22643,8 +22643,8 @@
       "gloss": "a supporter of the Confederate States of America",
       "frequency": 1,
       "hypernyms": [
-        "southerner.n.01",
-        "supporter.n.01"
+        "supporter.n.01",
+        "southerner.n.01"
       ],
       "display_parent": "southerner.n.01"
     },
@@ -24596,8 +24596,8 @@
       "gloss": "a ductile malleable reddish-brown corrosion-resistant diamagnetic metallic element; occurs in various minerals but is the only metal that occurs abundantly in large masses; used as an electrical and thermal conductor",
       "frequency": 4,
       "hypernyms": [
-        "conductor.n.02",
-        "metallic_element.n.01"
+        "metallic_element.n.01",
+        "conductor.n.02"
       ],
       "display_parent": "metallic_element.n.01"
     },
@@ -24946,8 +24946,8 @@
       "gloss": "communication by the exchange of letters",
       "frequency": 5,
       "hypernyms": [
-        "first_class.n.02",
-        "written_communication.n.01"
+        "written_communication.n.01",
+        "first_class.n.02"
       ],
       "display_parent": "written_communication.n.01"
     },
@@ -26632,8 +26632,8 @@
       "gloss": "a small open container usually used for drinking; usually has a handle",
       "frequency": 14,
       "hypernyms": [
-        "container.n.01",
-        "crockery.n.01"
+        "crockery.n.01",
+        "container.n.01"
       ],
       "display_parent": "container.n.01"
     },
@@ -26805,8 +26805,8 @@
       "gloss": "hanging cloth used as a blind (especially for a window)",
       "frequency": 11,
       "hypernyms": [
-        "furnishing.n.02",
-        "blind.n.03"
+        "blind.n.03",
+        "furnishing.n.02"
       ],
       "display_parent": "blind.n.03"
     },
@@ -26866,8 +26866,8 @@
       "gloss": "accepted or habitual practice",
       "frequency": 5,
       "hypernyms": [
-        "practice.n.01",
-        "survival.n.03"
+        "survival.n.03",
+        "practice.n.01"
       ],
       "display_parent": "practice.n.01"
     },
@@ -28297,8 +28297,8 @@
       "gloss": "an unsuccessful ending to a struggle or contest",
       "frequency": 14,
       "hypernyms": [
-        "failure.n.02",
-        "ending.n.04"
+        "ending.n.04",
+        "failure.n.02"
       ],
       "display_parent": "failure.n.02"
     },
@@ -29175,8 +29175,8 @@
       "gloss": "decrease in value of an asset due to obsolescence or use",
       "frequency": 1,
       "hypernyms": [
-        "financial_loss.n.01",
-        "non-cash_expense.n.01"
+        "non-cash_expense.n.01",
+        "financial_loss.n.01"
       ],
       "display_parent": "non-cash_expense.n.01"
     },
@@ -29212,8 +29212,8 @@
       "gloss": "a long-term economic state characterized by unemployment and low prices and low levels of trade and investment",
       "frequency": 3,
       "hypernyms": [
-        "crisis.n.01",
-        "economic_condition.n.01"
+        "economic_condition.n.01",
+        "crisis.n.01"
       ],
       "display_parent": "crisis.n.01"
     },
@@ -30213,8 +30213,8 @@
       "gloss": "(anatomy) a muscular partition separating the abdominal and thoracic cavities; functions in respiration",
       "frequency": 2,
       "hypernyms": [
-        "muscular_structure.n.01",
-        "membrane.n.02"
+        "membrane.n.02",
+        "muscular_structure.n.01"
       ],
       "display_parent": "muscular_structure.n.01"
     },
@@ -31408,8 +31408,8 @@
       "gloss": "a piece of dishware normally used as a container for holding or serving food",
       "frequency": 9,
       "hypernyms": [
-        "container.n.01",
-        "crockery.n.01"
+        "crockery.n.01",
+        "container.n.01"
       ],
       "display_parent": "container.n.01"
     },
@@ -31704,8 +31704,8 @@
       "gloss": "the feeling of being displeased or annoyed or dissatisfied with someone or something",
       "frequency": 3,
       "hypernyms": [
-        "dissatisfaction.n.01",
-        "annoyance.n.02"
+        "annoyance.n.02",
+        "dissatisfaction.n.01"
       ],
       "display_parent": "annoyance.n.02"
     },
@@ -32511,8 +32511,8 @@
       "gloss": "a member of the genus Canis (probably descended from the common wolf) that has been domesticated by man since prehistoric times; occurs in many breeds",
       "frequency": 42,
       "hypernyms": [
-        "canine.n.02",
-        "domestic_animal.n.01"
+        "domestic_animal.n.01",
+        "canine.n.02"
       ],
       "display_parent": "domestic_animal.n.01"
     },
@@ -32631,8 +32631,8 @@
       "gloss": "any domesticated member of the genus Felis",
       "frequency": 0,
       "hypernyms": [
-        "cat.n.01",
-        "domestic_animal.n.01"
+        "domestic_animal.n.01",
+        "cat.n.01"
       ],
       "display_parent": "cat.n.01"
     },
@@ -32847,8 +32847,8 @@
       "gloss": "a college or university building containing living quarters for students",
       "frequency": 5,
       "hypernyms": [
-        "building.n.01",
-        "living_quarters.n.01"
+        "living_quarters.n.01",
+        "building.n.01"
       ],
       "display_parent": "building.n.01"
     },
@@ -33167,8 +33167,8 @@
       "gloss": "a boxlike container in a piece of furniture; made so as to slide in and out",
       "frequency": 5,
       "hypernyms": [
-        "container.n.01",
-        "storage_space.n.01"
+        "storage_space.n.01",
+        "container.n.01"
       ],
       "display_parent": "container.n.01"
     },
@@ -35156,8 +35156,8 @@
       "gloss": "the administration of a strong electric current that passes through the brain to induce convulsions and coma",
       "frequency": 3,
       "hypernyms": [
-        "electrotherapy.n.01",
-        "shock_therapy.n.01"
+        "shock_therapy.n.01",
+        "electrotherapy.n.01"
       ],
       "display_parent": "shock_therapy.n.01"
     },
@@ -35310,8 +35310,8 @@
       "gloss": "five-toed pachyderm",
       "frequency": 3,
       "hypernyms": [
-        "proboscidean.n.01",
-        "pachyderm.n.01"
+        "pachyderm.n.01",
+        "proboscidean.n.01"
       ],
       "display_parent": "proboscidean.n.01"
     },
@@ -37960,8 +37960,8 @@
       "gloss": "gases ejected from an engine as waste products",
       "frequency": 2,
       "hypernyms": [
-        "waste.n.01",
-        "gas.n.02"
+        "gas.n.02",
+        "waste.n.01"
       ],
       "display_parent": "gas.n.02"
     },
@@ -39931,8 +39931,8 @@
       "gloss": "the light horny waterproof structure forming the external covering of birds",
       "frequency": 6,
       "hypernyms": [
-        "animal_material.n.01",
-        "body_covering.n.01"
+        "body_covering.n.01",
+        "animal_material.n.01"
       ],
       "display_parent": "body_covering.n.01"
     },
@@ -40448,8 +40448,8 @@
       "gloss": "tissue consisting of or containing fibers in both animals and plants",
       "frequency": 3,
       "hypernyms": [
-        "animal_tissue.n.01",
-        "plant_tissue.n.01"
+        "plant_tissue.n.01",
+        "animal_tissue.n.01"
       ],
       "display_parent": "plant_tissue.n.01"
     },
@@ -40695,8 +40695,8 @@
       "gloss": "a high-speed military or naval airplane designed to destroy enemy aircraft in the air",
       "frequency": 3,
       "hypernyms": [
-        "warplane.n.01",
-        "airplane.n.01"
+        "airplane.n.01",
+        "warplane.n.01"
       ],
       "display_parent": "airplane.n.01"
     },
@@ -40908,8 +40908,8 @@
       "gloss": "a star who plays leading roles in the cinema",
       "frequency": 2,
       "hypernyms": [
-        "star.n.04",
-        "screen_actor.n.01"
+        "screen_actor.n.01",
+        "star.n.04"
       ],
       "display_parent": "star.n.04"
     },
@@ -41059,8 +41059,8 @@
       "gloss": "any of the terminal members of the hand (sometimes excepting the thumb)",
       "frequency": 53,
       "hypernyms": [
-        "extremity.n.05",
-        "digit.n.03"
+        "digit.n.03",
+        "extremity.n.05"
       ],
       "display_parent": "digit.n.03"
     },
@@ -41071,8 +41071,8 @@
       "gloss": "a print made by an impression of the ridges in the skin of a finger; often used for biometric identification in criminal investigations",
       "frequency": 5,
       "hypernyms": [
-        "mark.n.04",
-        "biometric_identification.n.01"
+        "biometric_identification.n.01",
+        "mark.n.04"
       ],
       "display_parent": "mark.n.04"
     },
@@ -42487,8 +42487,8 @@
       "gloss": "any of various games played with a ball (round or oval) in which two teams try to kick or carry or propel the ball into each other's goal",
       "frequency": 9,
       "hypernyms": [
-        "field_game.n.01",
-        "contact_sport.n.01"
+        "contact_sport.n.01",
+        "field_game.n.01"
       ],
       "display_parent": "contact_sport.n.01"
     },
@@ -42511,8 +42511,8 @@
       "gloss": "an athlete who plays American football",
       "frequency": 2,
       "hypernyms": [
-        "athlete.n.01",
-        "player.n.01"
+        "player.n.01",
+        "athlete.n.01"
       ],
       "display_parent": "player.n.01"
     },
@@ -43082,8 +43082,8 @@
       "gloss": "strength of mind that enables one to endure adversity with courage",
       "frequency": 3,
       "hypernyms": [
-        "natural_virtue.n.01",
-        "courage.n.01"
+        "courage.n.01",
+        "natural_virtue.n.01"
       ],
       "display_parent": "courage.n.01"
     },
@@ -44288,8 +44288,8 @@
       "gloss": "a public building in which a variety of games of chance can be played (operated as a business)",
       "frequency": 2,
       "hypernyms": [
-        "building.n.01",
-        "place_of_business.n.01"
+        "place_of_business.n.01",
+        "building.n.01"
       ],
       "display_parent": "building.n.01"
     },
@@ -48845,8 +48845,8 @@
       "gloss": "a very light colorless element that is one of the six inert gasses; the most difficult gas to liquefy; occurs in economically extractable amounts in certain natural gases (as those found in Texas and Kansas)",
       "frequency": 15,
       "hypernyms": [
-        "noble_gas.n.01",
-        "chemical_element.n.01"
+        "chemical_element.n.01",
+        "noble_gas.n.01"
       ],
       "display_parent": "chemical_element.n.01"
     },
@@ -50327,17 +50327,6 @@
       ],
       "display_parent": "fear.n.01"
     },
-    "horror.n.02": {
-      "label": [
-        "horror"
-      ],
-      "gloss": "something that inspires dislike; something horrible",
-      "frequency": 6,
-      "hypernyms": [
-        "thing.n.08"
-      ],
-      "display_parent": "thing.n.08"
-    },
     "horse-drawn_vehicle.n.01": {
       "label": [
         "horse-drawn_vehicle"
@@ -50901,8 +50890,8 @@
       "gloss": "the pursuit and killing or capture of wild animals regarded as a sport",
       "frequency": 14,
       "hypernyms": [
-        "blood_sport.n.01",
-        "outdoor_sport.n.01"
+        "outdoor_sport.n.01",
+        "blood_sport.n.01"
       ],
       "display_parent": "outdoor_sport.n.01"
     },
@@ -51025,8 +51014,8 @@
       "gloss": "a nonmetallic univalent element that is normally a colorless and odorless highly flammable diatomic gas; the simplest and lightest and most abundant element in the universe",
       "frequency": 6,
       "hypernyms": [
-        "gas.n.02",
-        "chemical_element.n.01"
+        "chemical_element.n.01",
+        "gas.n.02"
       ],
       "display_parent": "gas.n.02"
     },
@@ -52953,8 +52942,8 @@
       "gloss": "an acute febrile highly contagious viral disease",
       "frequency": 2,
       "hypernyms": [
-        "respiratory_disease.n.01",
-        "contagious_disease.n.01"
+        "contagious_disease.n.01",
+        "respiratory_disease.n.01"
       ],
       "display_parent": "respiratory_disease.n.01"
     },
@@ -53722,8 +53711,8 @@
       "gloss": "a person who takes part in an armed rebellion against the constituted authority (especially in the hope of improving conditions)",
       "frequency": 3,
       "hypernyms": [
-        "revolutionist.n.01",
-        "reformer.n.01"
+        "reformer.n.01",
+        "revolutionist.n.01"
       ],
       "display_parent": "reformer.n.01"
     },
@@ -54678,8 +54667,8 @@
       "gloss": "a nonmetallic element belonging to the halogens; used especially in medicine and photography and in dyes; occurs naturally only in combination in small quantities (as in sea water or rocks)",
       "frequency": 17,
       "hypernyms": [
-        "halogen.n.01",
-        "chemical_element.n.01"
+        "chemical_element.n.01",
+        "halogen.n.01"
       ],
       "display_parent": "chemical_element.n.01"
     },
@@ -55847,8 +55836,8 @@
       "gloss": "the quality of being just or fair",
       "frequency": 16,
       "hypernyms": [
-        "natural_virtue.n.01",
-        "righteousness.n.01"
+        "righteousness.n.01",
+        "natural_virtue.n.01"
       ],
       "display_parent": "righteousness.n.01"
     },
@@ -56067,8 +56056,8 @@
       "gloss": "someone who unlawfully seizes and detains a victim (usually for ransom)",
       "frequency": 4,
       "hypernyms": [
-        "criminal.n.01",
-        "captor.n.01"
+        "captor.n.01",
+        "criminal.n.01"
       ],
       "display_parent": "criminal.n.01"
     },
@@ -58040,9 +58029,9 @@
       "gloss": "the linear extent in space from one end to the other; the longest dimension of something that is fixed in place",
       "frequency": 38,
       "hypernyms": [
-        "dimension.n.01",
         "fundamental_quantity.n.01",
-        "physical_property.n.01"
+        "physical_property.n.01",
+        "dimension.n.01"
       ],
       "display_parent": "dimension.n.01"
     },
@@ -58114,8 +58103,8 @@
       "gloss": "an elementary particle that participates in weak interactions; has a baryon number of 0",
       "frequency": 0,
       "hypernyms": [
-        "fermion.n.01",
-        "elementary_particle.n.01"
+        "elementary_particle.n.01",
+        "fermion.n.01"
       ],
       "display_parent": "elementary_particle.n.01"
     },
@@ -58856,8 +58845,8 @@
       "gloss": "intermediate between peat and bituminous coal",
       "frequency": 4,
       "hypernyms": [
-        "humate.n.01",
-        "coal.n.01"
+        "coal.n.01",
+        "humate.n.01"
       ],
       "display_parent": "coal.n.01"
     },
@@ -59375,8 +59364,8 @@
       "gloss": "either of two fleshy folds of tissue that surround the mouth and play a role in speaking",
       "frequency": 57,
       "hypernyms": [
-        "external_body_part.n.01",
-        "articulator.n.02"
+        "articulator.n.02",
+        "external_body_part.n.01"
       ],
       "display_parent": "articulator.n.02"
     },
@@ -59448,8 +59437,8 @@
       "gloss": "air in a liquid state",
       "frequency": 3,
       "hypernyms": [
-        "air.n.01",
-        "cryogen.n.01"
+        "cryogen.n.01",
+        "air.n.01"
       ],
       "display_parent": "air.n.01"
     },
@@ -60362,8 +60351,8 @@
       "gloss": "the jaw in vertebrates that is hinged to open the mouth",
       "frequency": 3,
       "hypernyms": [
-        "jaw.n.01",
-        "articulator.n.02"
+        "articulator.n.02",
+        "jaw.n.01"
       ],
       "display_parent": "jaw.n.01"
     },
@@ -60737,8 +60726,8 @@
       "gloss": "any very large complex molecule; found only in plants and animals",
       "frequency": 0,
       "hypernyms": [
-        "molecule.n.01",
-        "organic_compound.n.01"
+        "organic_compound.n.01",
+        "molecule.n.01"
       ],
       "display_parent": "molecule.n.01"
     },
@@ -60762,8 +60751,8 @@
       "gloss": "a periodic publication containing pictures and stories and articles of interest to those who purchase it or subscribe to it",
       "frequency": 13,
       "hypernyms": [
-        "publication.n.01",
-        "press.n.02"
+        "press.n.02",
+        "publication.n.01"
       ],
       "display_parent": "publication.n.01"
     },
@@ -61222,8 +61211,8 @@
       "gloss": "a tumor that is malignant and tends to spread to other parts of the body",
       "frequency": 0,
       "hypernyms": [
-        "malignancy.n.01",
-        "tumor.n.01"
+        "tumor.n.01",
+        "malignancy.n.01"
       ],
       "display_parent": "tumor.n.01"
     },
@@ -62603,8 +62592,8 @@
       "gloss": "the largest possible quantity",
       "frequency": 13,
       "hypernyms": [
-        "extremum.n.02",
-        "large_indefinite_quantity.n.01"
+        "large_indefinite_quantity.n.01",
+        "extremum.n.02"
       ],
       "display_parent": "extremum.n.02"
     },
@@ -62627,8 +62616,8 @@
       "gloss": "the head of a city government",
       "frequency": 9,
       "hypernyms": [
-        "politician.n.01",
-        "civil_authority.n.01"
+        "civil_authority.n.01",
+        "politician.n.01"
       ],
       "display_parent": "politician.n.01"
     },
@@ -63842,8 +63831,8 @@
       "gloss": "a linear unit of distance in metric terms",
       "frequency": 0,
       "hypernyms": [
-        "linear_unit.n.01",
-        "metric_unit.n.01"
+        "metric_unit.n.01",
+        "linear_unit.n.01"
       ],
       "display_parent": "linear_unit.n.01"
     },
@@ -64526,8 +64515,8 @@
       "gloss": "the smallest possible quantity",
       "frequency": 12,
       "hypernyms": [
-        "extremum.n.02",
-        "small_indefinite_quantity.n.01"
+        "small_indefinite_quantity.n.01",
+        "extremum.n.02"
       ],
       "display_parent": "extremum.n.02"
     },
@@ -64930,8 +64919,8 @@
       "gloss": "an adulterous woman; a woman who has an ongoing extramarital sexual relationship with a man",
       "frequency": 4,
       "hypernyms": [
-        "lover.n.03",
-        "woman.n.01"
+        "woman.n.01",
+        "lover.n.03"
       ],
       "display_parent": "woman.n.01"
     },
@@ -66166,9 +66155,9 @@
       "gloss": "a chronic progressive nervous disorder involving loss of myelin sheath around certain nerve fibers",
       "frequency": 2,
       "hypernyms": [
+        "degenerative_disorder.n.01",
         "autoimmune_disease.n.01",
-        "sclerosis.n.01",
-        "degenerative_disorder.n.01"
+        "sclerosis.n.01"
       ],
       "display_parent": "autoimmune_disease.n.01"
     },
@@ -66219,8 +66208,8 @@
       "gloss": "an urban district having corporate status and powers of self-government",
       "frequency": 0,
       "hypernyms": [
-        "urban_area.n.01",
-        "administrative_district.n.01"
+        "administrative_district.n.01",
+        "urban_area.n.01"
       ],
       "display_parent": "urban_area.n.01"
     },
@@ -66257,8 +66246,8 @@
       "gloss": "a criminal who commits homicide (who performs the unlawful premeditated killing of another human being)",
       "frequency": 12,
       "hypernyms": [
-        "criminal.n.01",
-        "killer.n.01"
+        "killer.n.01",
+        "criminal.n.01"
       ],
       "display_parent": "criminal.n.01"
     },
@@ -66492,8 +66481,8 @@
       "gloss": "the act of performing music",
       "frequency": 0,
       "hypernyms": [
-        "performance.n.02",
-        "performing_arts.n.01"
+        "performing_arts.n.01",
+        "performance.n.02"
       ],
       "display_parent": "performance.n.02"
     },
@@ -66749,8 +66738,8 @@
       "gloss": "a monster renowned in folklore and myth",
       "frequency": 0,
       "hypernyms": [
-        "monster.n.01",
-        "mythical_being.n.01"
+        "mythical_being.n.01",
+        "monster.n.01"
       ],
       "display_parent": "monster.n.01"
     },
@@ -68085,8 +68074,8 @@
       "gloss": "a common nonmetallic element that is normally a colorless odorless tasteless inert diatomic gas; constitutes 78 percent of the atmosphere by volume; a constituent of all living tissues",
       "frequency": 5,
       "hypernyms": [
-        "gas.n.02",
-        "chemical_element.n.01"
+        "chemical_element.n.01",
+        "gas.n.02"
       ],
       "display_parent": "gas.n.02"
     },
@@ -68136,8 +68125,8 @@
       "gloss": "any of the chemically inert gaseous elements of the helium group in the periodic table",
       "frequency": 0,
       "hypernyms": [
-        "gas.n.02",
-        "chemical_element.n.01"
+        "chemical_element.n.01",
+        "gas.n.02"
       ],
       "display_parent": "gas.n.02"
     },
@@ -69424,8 +69413,8 @@
       "gloss": "someone who is appointed or elected to an office and who holds a position of trust",
       "frequency": 23,
       "hypernyms": [
-        "holder.n.02",
-        "official.n.01"
+        "official.n.01",
+        "holder.n.02"
       ],
       "display_parent": "official.n.01"
     },
@@ -69584,8 +69573,8 @@
       "gloss": "a man who is very old",
       "frequency": 39,
       "hypernyms": [
-        "man.n.01",
-        "oldster.n.01"
+        "oldster.n.01",
+        "man.n.01"
       ],
       "display_parent": "man.n.01"
     },
@@ -70100,8 +70089,8 @@
       "gloss": "an addictive narcotic extracted from seed capsules of the opium poppy",
       "frequency": 14,
       "hypernyms": [
-        "controlled_substance.n.01",
-        "narcotic.n.01"
+        "narcotic.n.01",
+        "controlled_substance.n.01"
       ],
       "display_parent": "controlled_substance.n.01"
     },
@@ -70937,8 +70926,8 @@
       "gloss": "any location outside the Earth's atmosphere",
       "frequency": 5,
       "hypernyms": [
-        "location.n.01",
-        "space.n.01"
+        "space.n.01",
+        "location.n.01"
       ],
       "display_parent": "location.n.01"
     },
@@ -71316,8 +71305,8 @@
       "gloss": "a nonmetallic bivalent element that is normally a colorless odorless tasteless nonflammable diatomic gas; constitutes 21 percent of the atmosphere by volume; the most abundant element in the earth's crust",
       "frequency": 42,
       "hypernyms": [
-        "gas.n.02",
-        "chemical_element.n.01"
+        "chemical_element.n.01",
+        "gas.n.02"
       ],
       "display_parent": "gas.n.02"
     },
@@ -71571,8 +71560,8 @@
       "gloss": "creating a picture with paints",
       "frequency": 9,
       "hypernyms": [
-        "fine_arts.n.01",
-        "art.n.02"
+        "art.n.02",
+        "fine_arts.n.01"
       ],
       "display_parent": "art.n.02"
     },
@@ -73175,8 +73164,8 @@
       "gloss": "sweet juicy gritty-textured fruit available in many varieties",
       "frequency": 3,
       "hypernyms": [
-        "pome.n.01",
-        "edible_fruit.n.01"
+        "edible_fruit.n.01",
+        "pome.n.01"
       ],
       "display_parent": "pome.n.01"
     },
@@ -74126,8 +74115,8 @@
       "gloss": "a time when the Moon presents a particular recurring appearance",
       "frequency": 0,
       "hypernyms": [
-        "phase.n.04",
-        "time_period.n.01"
+        "time_period.n.01",
+        "phase.n.04"
       ],
       "display_parent": "time_period.n.01"
     },
@@ -74666,8 +74655,8 @@
       "gloss": "a separate part consisting of fabric",
       "frequency": 0,
       "hypernyms": [
-        "fabric.n.01",
-        "piece.n.01"
+        "piece.n.01",
+        "fabric.n.01"
       ],
       "display_parent": "fabric.n.01"
     },
@@ -75021,8 +75010,8 @@
       "gloss": "(baseball) the person who does the pitching",
       "frequency": 17,
       "hypernyms": [
-        "ballplayer.n.01",
-        "thrower.n.02"
+        "thrower.n.02",
+        "ballplayer.n.01"
       ],
       "display_parent": "ballplayer.n.01"
     },
@@ -75446,8 +75435,8 @@
       "gloss": "fiber derived from plants",
       "frequency": 0,
       "hypernyms": [
-        "natural_fiber.n.01",
-        "plant_product.n.01"
+        "plant_product.n.01",
+        "natural_fiber.n.01"
       ],
       "display_parent": "natural_fiber.n.01"
     },
@@ -75585,8 +75574,8 @@
       "gloss": "a mixture of lime or gypsum with sand and water; hardens into a smooth solid; used to cover walls and ceilings",
       "frequency": 3,
       "hypernyms": [
-        "mixture.n.01",
-        "covering_material.n.01"
+        "covering_material.n.01",
+        "mixture.n.01"
       ],
       "display_parent": "mixture.n.01"
     },
@@ -75695,8 +75684,8 @@
       "gloss": "a trite or obvious remark",
       "frequency": 6,
       "hypernyms": [
-        "remark.n.01",
-        "truism.n.01"
+        "truism.n.01",
+        "remark.n.01"
       ],
       "display_parent": "remark.n.01"
     },
@@ -76372,8 +76361,8 @@
       "gloss": "the force of policemen and officers",
       "frequency": 36,
       "hypernyms": [
-        "force.n.04",
-        "law_enforcement_agency.n.01"
+        "law_enforcement_agency.n.01",
+        "force.n.04"
       ],
       "display_parent": "force.n.04"
     },
@@ -77459,8 +77448,8 @@
       "gloss": "an edible tuber native to South America; a staple food of Ireland",
       "frequency": 2,
       "hypernyms": [
-        "starches.n.01",
         "solanaceous_vegetable.n.01",
+        "starches.n.01",
         "root_vegetable.n.01"
       ],
       "display_parent": "root_vegetable.n.01"
@@ -78663,8 +78652,8 @@
       "gloss": "a clergyman in Christian churches who has the authority to perform or administer various religious rites; one of the Holy Orders",
       "frequency": 10,
       "hypernyms": [
-        "holy_order.n.01",
-        "clergyman.n.01"
+        "clergyman.n.01",
+        "holy_order.n.01"
       ],
       "display_parent": "clergyman.n.01"
     },
@@ -79175,8 +79164,8 @@
       "gloss": "the group action of a collection of people or animals or vehicles moving ahead in more or less regular formation",
       "frequency": 0,
       "hypernyms": [
-        "group_action.n.01",
-        "collection.n.01"
+        "collection.n.01",
+        "group_action.n.01"
       ],
       "display_parent": "collection.n.01"
     },
@@ -79986,8 +79975,8 @@
       "gloss": "a government official who conducts criminal prosecutions on behalf of the state",
       "frequency": 6,
       "hypernyms": [
-        "lawyer.n.01",
-        "official.n.01"
+        "official.n.01",
+        "lawyer.n.01"
       ],
       "display_parent": "lawyer.n.01"
     },
@@ -81096,8 +81085,8 @@
       "gloss": "an untrained person who pretends to be a physician and who dispenses medical advice",
       "frequency": 14,
       "hypernyms": [
-        "mountebank.n.01",
-        "doctor.n.01"
+        "doctor.n.01",
+        "mountebank.n.01"
       ],
       "display_parent": "doctor.n.01"
     },
@@ -81768,8 +81757,8 @@
       "gloss": "pungent fleshy edible root",
       "frequency": 8,
       "hypernyms": [
-        "root_vegetable.n.01",
-        "cruciferous_vegetable.n.01"
+        "cruciferous_vegetable.n.01",
+        "root_vegetable.n.01"
       ],
       "display_parent": "cruciferous_vegetable.n.01"
     },
@@ -84080,8 +84069,8 @@
       "gloss": "a strong belief in a supernatural power or powers that control human destiny",
       "frequency": 87,
       "hypernyms": [
-        "theological_virtue.n.01",
-        "belief.n.01"
+        "belief.n.01",
+        "theological_virtue.n.01"
       ],
       "display_parent": "belief.n.01"
     },
@@ -84177,8 +84166,8 @@
       "gloss": "religious music for singing",
       "frequency": 0,
       "hypernyms": [
-        "religious_music.n.01",
-        "song.n.01"
+        "song.n.01",
+        "religious_music.n.01"
       ],
       "display_parent": "song.n.01"
     },
@@ -85504,8 +85493,8 @@
       "gloss": "a merchant who sells goods at retail",
       "frequency": 5,
       "hypernyms": [
-        "distributor.n.01",
-        "merchant.n.01"
+        "merchant.n.01",
+        "distributor.n.01"
       ],
       "display_parent": "merchant.n.01"
     },
@@ -85979,8 +85968,8 @@
       "gloss": "grains used as food either unpolished or more often polished",
       "frequency": 5,
       "hypernyms": [
-        "starches.n.01",
-        "grain.n.02"
+        "grain.n.02",
+        "starches.n.01"
       ],
       "display_parent": "grain.n.02"
     },
@@ -86988,8 +86977,8 @@
       "gloss": "floor covering consisting of a piece of thick heavy fabric (usually with nap or pile)",
       "frequency": 7,
       "hypernyms": [
-        "furnishing.n.02",
-        "floor_cover.n.01"
+        "floor_cover.n.01",
+        "furnishing.n.02"
       ],
       "display_parent": "floor_cover.n.01"
     },
@@ -88172,8 +88161,8 @@
       "gloss": "financial aid provided to a student on the basis of academic merit",
       "frequency": 7,
       "hypernyms": [
-        "prize.n.01",
-        "aid.n.03"
+        "aid.n.03",
+        "prize.n.01"
       ],
       "display_parent": "prize.n.01"
     },
@@ -88734,8 +88723,8 @@
       "gloss": "creating figures or designs in three dimensions",
       "frequency": 3,
       "hypernyms": [
-        "fine_arts.n.01",
-        "art.n.02"
+        "art.n.02",
+        "fine_arts.n.01"
       ],
       "display_parent": "art.n.02"
     },
@@ -89215,8 +89204,8 @@
       "gloss": "a self-contained part of a larger composition (written or musical)",
       "frequency": 43,
       "hypernyms": [
-        "writing.n.02",
-        "music.n.01"
+        "music.n.01",
+        "writing.n.02"
       ],
       "display_parent": "music.n.01"
     },
@@ -89452,6 +89441,18 @@
         "store.n.02"
       ],
       "display_parent": "store.n.02"
+    },
+    "seemliness.n.01": {
+      "label": [
+        "seemliness",
+        "grace"
+      ],
+      "gloss": "a sense of propriety and consideration for others",
+      "frequency": 2,
+      "hypernyms": [
+        "propriety.n.01"
+      ],
+      "display_parent": "propriety.n.01"
     },
     "seizure.n.01": {
       "label": [
@@ -92096,8 +92097,8 @@
       "gloss": "the act of singing vocal music",
       "frequency": 6,
       "hypernyms": [
-        "vocal_music.n.02",
-        "musical_performance.n.01"
+        "musical_performance.n.01",
+        "vocal_music.n.02"
       ],
       "display_parent": "musical_performance.n.01"
     },
@@ -92494,8 +92495,8 @@
       "gloss": "a natural protective body covering and site of the sense of touch",
       "frequency": 11,
       "hypernyms": [
-        "body_covering.n.01",
-        "connective_tissue.n.01"
+        "connective_tissue.n.01",
+        "body_covering.n.01"
       ],
       "display_parent": "connective_tissue.n.01"
     },
@@ -92934,6 +92935,18 @@
         "intestine.n.01"
       ],
       "display_parent": "intestine.n.01"
+    },
+    "smallness.n.01": {
+      "label": [
+        "smallness",
+        "littleness"
+      ],
+      "gloss": "the property of having a relatively small size",
+      "frequency": 2,
+      "hypernyms": [
+        "size.n.01"
+      ],
+      "display_parent": "size.n.01"
     },
     "smasher.n.02": {
       "label": [
@@ -93446,8 +93459,8 @@
       "gloss": "a drug of abuse that is considered relatively mild and not likely to cause addiction",
       "frequency": 0,
       "hypernyms": [
-        "drug_of_abuse.n.01",
-        "narcotic.n.01"
+        "narcotic.n.01",
+        "drug_of_abuse.n.01"
       ],
       "display_parent": "drug_of_abuse.n.01"
     },
@@ -93772,8 +93785,8 @@
       "gloss": "a measuring instrument that sends out an acoustic pulse in water and measures distances in terms of the time for the echo of the pulse to return",
       "frequency": 6,
       "hypernyms": [
-        "navigational_instrument.n.01",
-        "measuring_instrument.n.01"
+        "measuring_instrument.n.01",
+        "navigational_instrument.n.01"
       ],
       "display_parent": "measuring_instrument.n.01"
     },
@@ -94247,8 +94260,8 @@
       "gloss": "merriment expressed by a brightness or gleam or animation of countenance",
       "frequency": 8,
       "hypernyms": [
-        "expression.n.01",
-        "vitality.n.01"
+        "vitality.n.01",
+        "expression.n.01"
       ],
       "display_parent": "expression.n.01"
     },
@@ -95161,8 +95174,8 @@
       "gloss": "a person's partner in marriage",
       "frequency": 12,
       "hypernyms": [
-        "domestic_partner.n.01",
-        "relative.n.01"
+        "relative.n.01",
+        "domestic_partner.n.01"
       ],
       "display_parent": "relative.n.01"
     },
@@ -95304,8 +95317,8 @@
       "gloss": "(geometry) a plane rectangle with four equal sides and four right angles; a four-sided regular polygon",
       "frequency": 23,
       "hypernyms": [
-        "regular_polygon.n.01",
-        "rectangle.n.01"
+        "rectangle.n.01",
+        "regular_polygon.n.01"
       ],
       "display_parent": "rectangle.n.01"
     },
@@ -95509,8 +95522,8 @@
       "gloss": "a show involving artistic dancing",
       "frequency": 2,
       "hypernyms": [
-        "dancing.n.01",
-        "show.n.03"
+        "show.n.03",
+        "dancing.n.01"
       ],
       "display_parent": "dancing.n.01"
     },
@@ -95773,8 +95786,8 @@
       "gloss": "a six-pointed star formed from two equilateral triangles; an emblem symbolizing Judaism",
       "frequency": 2,
       "hypernyms": [
-        "hexagram.n.01",
-        "emblem.n.02"
+        "emblem.n.02",
+        "hexagram.n.01"
       ],
       "display_parent": "emblem.n.02"
     },
@@ -97100,8 +97113,8 @@
       "gloss": "a linear sequence of words as spoken or written",
       "frequency": 0,
       "hypernyms": [
-        "string.n.05",
-        "language.n.01"
+        "language.n.01",
+        "string.n.05"
       ],
       "display_parent": "language.n.01"
     },
@@ -97344,8 +97357,8 @@
       "gloss": "an alkaloid plant toxin extracted chiefly from nux vomica; formerly used as a stimulant",
       "frequency": 4,
       "hypernyms": [
-        "alkaloid.n.01",
-        "plant_toxin.n.01"
+        "plant_toxin.n.01",
+        "alkaloid.n.01"
       ],
       "display_parent": "plant_toxin.n.01"
     },
@@ -97772,8 +97785,8 @@
       "gloss": "the real physical matter of which a person or thing consists",
       "frequency": 17,
       "hypernyms": [
-        "part.n.01",
-        "matter.n.03"
+        "matter.n.03",
+        "part.n.01"
       ],
       "display_parent": "part.n.01"
     },
@@ -97964,8 +97977,8 @@
       "gloss": "an affix that is added at the end of the word",
       "frequency": 2,
       "hypernyms": [
-        "ending.n.01",
-        "affix.n.01"
+        "affix.n.01",
+        "ending.n.01"
       ],
       "display_parent": "ending.n.01"
     },
@@ -98860,8 +98873,8 @@
       "gloss": "an abnormal protuberance or localized enlargement",
       "frequency": 3,
       "hypernyms": [
-        "symptom.n.01",
-        "enlargement.n.02"
+        "enlargement.n.02",
+        "symptom.n.01"
       ],
       "display_parent": "symptom.n.01"
     },
@@ -98874,8 +98887,8 @@
       "gloss": "pool that provides a facility for swimming",
       "frequency": 3,
       "hypernyms": [
-        "pool.n.01",
-        "athletic_facility.n.01"
+        "athletic_facility.n.01",
+        "pool.n.01"
       ],
       "display_parent": "pool.n.01"
     },
@@ -99535,9 +99548,9 @@
       "gloss": "an enclosed armored military vehicle; has a cannon and moves on caterpillar treads",
       "frequency": 7,
       "hypernyms": [
+        "armored_vehicle.n.01",
         "military_vehicle.n.01",
-        "tracked_vehicle.n.01",
-        "armored_vehicle.n.01"
+        "tracked_vehicle.n.01"
       ],
       "display_parent": "military_vehicle.n.01"
     },
@@ -99957,8 +99970,8 @@
       "gloss": "the practical application of science to commerce or industry",
       "frequency": 18,
       "hypernyms": [
-        "application.n.01",
-        "profession.n.02"
+        "profession.n.02",
+        "application.n.01"
       ],
       "display_parent": "application.n.01"
     },
@@ -100862,8 +100875,8 @@
       "gloss": "one of the two male reproductive glands that produce spermatozoa and secrete androgens",
       "frequency": 3,
       "hypernyms": [
-        "gonad.n.01",
-        "male_reproductive_gland.n.01"
+        "male_reproductive_gland.n.01",
+        "gonad.n.01"
       ],
       "display_parent": "gonad.n.01"
     },
@@ -100968,8 +100981,8 @@
       "gloss": "fourth Thursday in November in the United States; second Monday in October in Canada; commemorates a feast held in 1621 by the Pilgrims and the Wampanoag",
       "frequency": 2,
       "hypernyms": [
-        "feast_day.n.01",
-        "legal_holiday.n.01"
+        "legal_holiday.n.01",
+        "feast_day.n.01"
       ],
       "display_parent": "legal_holiday.n.01"
     },
@@ -100983,8 +100996,8 @@
       "gloss": "the process whereby heat changes something from a solid to a liquid",
       "frequency": 3,
       "hypernyms": [
-        "phase_change.n.01",
-        "heating.n.01"
+        "heating.n.01",
+        "phase_change.n.01"
       ],
       "display_parent": "heating.n.01"
     },
@@ -101344,17 +101357,6 @@
         "statement.n.01"
       ],
       "display_parent": "statement.n.01"
-    },
-    "thing.n.08": {
-      "label": [
-        "thing"
-      ],
-      "gloss": "an entity that is not named specifically",
-      "frequency": 26,
-      "hypernyms": [
-        "entity.n.01"
-      ],
-      "display_parent": "entity.n.01"
     },
     "thing.n.09": {
       "label": [
@@ -102298,8 +102300,8 @@
       "gloss": "one of the digits of the foot",
       "frequency": 13,
       "hypernyms": [
-        "extremity.n.05",
-        "digit.n.03"
+        "digit.n.03",
+        "extremity.n.05"
       ],
       "display_parent": "digit.n.03"
     },
@@ -102440,8 +102442,8 @@
       "gloss": "a mobile mass of muscular tissue covered with mucous membrane and located in the oral cavity",
       "frequency": 13,
       "hypernyms": [
-        "organ.n.01",
-        "articulator.n.02"
+        "articulator.n.02",
+        "organ.n.01"
       ],
       "display_parent": "organ.n.01"
     },
@@ -102715,8 +102717,8 @@
       "gloss": "the faculty by which external objects or forces are perceived through contact with the body (especially the hands)",
       "frequency": 13,
       "hypernyms": [
-        "somatosense.n.01",
-        "exteroception.n.01"
+        "exteroception.n.01",
+        "somatosense.n.01"
       ],
       "display_parent": "exteroception.n.01"
     },
@@ -103291,8 +103293,8 @@
       "gloss": "a drug used to reduce stress or tension without reducing mental clarity",
       "frequency": 3,
       "hypernyms": [
-        "sedative-hypnotic.n.01",
-        "psychotropic_agent.n.01"
+        "psychotropic_agent.n.01",
+        "sedative-hypnotic.n.01"
       ],
       "display_parent": "sedative-hypnotic.n.01"
     },
@@ -105912,8 +105914,8 @@
       "gloss": "a manservant who acts as a personal attendant to his employer",
       "frequency": 2,
       "hypernyms": [
-        "body_servant.n.01",
-        "manservant.n.01"
+        "manservant.n.01",
+        "body_servant.n.01"
       ],
       "display_parent": "body_servant.n.01"
     },
@@ -106817,8 +106819,8 @@
       "gloss": "a successful ending of a struggle or contest",
       "frequency": 48,
       "hypernyms": [
-        "success.n.01",
-        "ending.n.04"
+        "ending.n.04",
+        "success.n.01"
       ],
       "display_parent": "success.n.01"
     },
@@ -107535,8 +107537,8 @@
       "gloss": "the reflex act of ejecting the contents of the stomach through the mouth",
       "frequency": 1,
       "hypernyms": [
-        "expulsion.n.03",
-        "reflex.n.01"
+        "reflex.n.01",
+        "expulsion.n.03"
       ],
       "display_parent": "reflex.n.01"
     },
@@ -108021,8 +108023,8 @@
       "gloss": "an aircraft designed and used for combat",
       "frequency": 0,
       "hypernyms": [
-        "military_vehicle.n.01",
-        "heavier-than-air_craft.n.01"
+        "heavier-than-air_craft.n.01",
+        "military_vehicle.n.01"
       ],
       "display_parent": "military_vehicle.n.01"
     },
@@ -108110,8 +108112,8 @@
       "gloss": "the act of washing yourself (or another person)",
       "frequency": 2,
       "hypernyms": [
-        "wash.n.02",
-        "cleaning.n.01"
+        "cleaning.n.01",
+        "wash.n.02"
       ],
       "display_parent": "wash.n.02"
     },
@@ -108249,8 +108251,8 @@
       "gloss": "binary compound that occurs at room temperature as a clear colorless odorless tasteless liquid; freezes into ice below 0 degrees centigrade and boils above 100 degrees centigrade; widely used as a solvent",
       "frequency": 136,
       "hypernyms": [
-        "binary_compound.n.01",
-        "liquid.n.03"
+        "liquid.n.03",
+        "binary_compound.n.01"
       ],
       "display_parent": "liquid.n.03"
     },
@@ -108261,9 +108263,9 @@
       "gloss": "a liquid necessary for the life of most animals and plants",
       "frequency": 0,
       "hypernyms": [
+        "food.n.01",
         "nutrient.n.02",
-        "liquid.n.01",
-        "food.n.01"
+        "liquid.n.01"
       ],
       "display_parent": "food.n.01"
     },
@@ -109154,8 +109156,8 @@
       "gloss": "a man who is White",
       "frequency": 4,
       "hypernyms": [
-        "man.n.01",
-        "white.n.01"
+        "white.n.01",
+        "man.n.01"
       ],
       "display_parent": "man.n.01"
     },
@@ -109277,8 +109279,8 @@
       "gloss": "a married woman; a man's partner in marriage",
       "frequency": 120,
       "hypernyms": [
-        "spouse.n.01",
-        "woman.n.01"
+        "woman.n.01",
+        "spouse.n.01"
       ],
       "display_parent": "woman.n.01"
     },
@@ -109326,8 +109328,8 @@
       "gloss": "wild or uncultivated flowering plant",
       "frequency": 0,
       "hypernyms": [
-        "angiosperm.n.01",
-        "wilding.n.01"
+        "wilding.n.01",
+        "angiosperm.n.01"
       ],
       "display_parent": "angiosperm.n.01"
     },
@@ -109697,8 +109699,8 @@
       "gloss": "someone who sees an event and reports what happened",
       "frequency": 7,
       "hypernyms": [
-        "speaker.n.01",
-        "perceiver.n.01"
+        "perceiver.n.01",
+        "speaker.n.01"
       ],
       "display_parent": "perceiver.n.01"
     },
@@ -110492,8 +110494,8 @@
       "gloss": "(usually plural) the collected work of an author",
       "frequency": 4,
       "hypernyms": [
-        "oeuvre.n.01",
-        "written_communication.n.01"
+        "written_communication.n.01",
+        "oeuvre.n.01"
       ],
       "display_parent": "written_communication.n.01"
     },
@@ -110550,8 +110552,8 @@
       "gloss": "a legal document summarizing the agreement between parties",
       "frequency": 0,
       "hypernyms": [
-        "agreement.n.01",
-        "legal_document.n.01"
+        "legal_document.n.01",
+        "agreement.n.01"
       ],
       "display_parent": "agreement.n.01"
     },
@@ -110950,8 +110952,8 @@
       "gloss": "a teenager or a young adult male",
       "frequency": 14,
       "hypernyms": [
-        "man.n.01",
-        "adolescent.n.01"
+        "adolescent.n.01",
+        "man.n.01"
       ],
       "display_parent": "man.n.01"
     },

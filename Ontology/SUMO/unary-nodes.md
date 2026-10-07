@@ -1,0 +1,61 @@
+# SUMO unary-node inventory
+
+Generated from the current PDF-derived SUMO projection after the organism
+backbone graft. These 55 concepts have exactly one projected child.
+
+- `ArtiﬁcialLanguage` — Artiﬁcial Language
+- `BioCarnivora` — Carnivora
+- `BioDinosauria` — Dinosauria
+- `BioHomosapiens` — Homo sapiens
+- `BioOthergymnosperms` — Other gymnosperms
+- `BioStreptophyta` — Streptophyta
+- `BioSynapsida` — Synapsida
+- `Certiﬁcate` — Certiﬁcate
+- `ChemicalDecomposition` — Chemical Decomposition
+- `ChemicalProcess` — Chemical Process
+- `CognitiveAgent` — Cognitive Agent
+- `ColorAttribute` — Color Attribute
+- `combine` — combine
+- `Creation` — Creation
+- `Damaging` — Damaging
+- `Decreasing` — Decreasing
+- `Destruction` — Destruction
+- `Disseminating` — Disseminating
+- `EngineeringComponent` — Engineering Component
+- `Game` — Game
+- `GraphArc` — Graph Arc
+- `Impelling` — Impelling
+- `Increasing` — Increasing
+- `Injuring` — Injuring
+- `Investigating` — Investigating
+- `Keeping` — Keeping
+- `Manufacture` — Manufacture
+- `OccupationalRole` — Occupational Role
+- `Organ` — Organ
+- `PathologicProcess` — Pathologic Process
+- `Poking` — Poking
+- `PoliticalOrganization` — Political Organization
+- `PoliticalProcess` — Political Process
+- `PositionalAttribute` — Positional Attribute
+- `Protein` — Protein
+- `Putting` — Putting
+- `RadiatingSound` — Radiating Sound
+- `RecreationOrExercise` — Recreation Or Exercise
+- `Removing` — Removing
+- `Repairing` — Repairing
+- `Sentence` — Sentence
+- `SentientAgent` — Sentient Agent
+- `Series` — Series
+- `ServiceContract` — Service Contract
+- `ShapeAttribute` — Shape Attribute
+- `SocialRole` — Social Role
+- `SolidAngleMeasure` — Solid Angle Measure
+- `SurfaceChange` — Surface Change
+- `SymbolicString` — Symbolic String
+- `TherapeuticalProcess` — Therapeutical Process
+- `TimePosition` — Time Position
+- `Touching` — Touching
+- `Transaction` — Transaction
+- `UnaryConstantFunctionQuantity` — Unary Constant Function Quantity
+- `VisualAttribute` — Visual Attribute
+- `Year` — Year
