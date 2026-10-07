@@ -41,6 +41,24 @@ ordinary-language coverage take priority over question-generation mechanics.
 The historical 20 Questions material remains as provenance and as a
 downstream success criterion; it is not an active implementation workstream.
 
+Firm decisions:
+
+- The handcrafted v1 remains the incumbent player-facing tree; imported
+  ontologies are source, audit, and enrichment layers rather than replacements.
+- The mechanically expanded v2 is retired. Structural refinement comes before
+  large vocabulary batches.
+- The visible navigation tree has one primary parent per node. Alternate
+  parents remain typed, source-backed cross-links; unary nodes are allowed.
+- SUMO's public browser is a PDF-derived projection, not a current KIF-derived
+  taxonomy. Its PDF arc rule and four provisional placements are recorded in
+  the SUMO artifacts.
+- Biological expansion will use a curated, evolutionary source tree with
+  readable labels and compressed intermediate clades. Viruses get a separate
+  acellular-infectious-agent policy rather than being forced into ordinary
+  organism ancestry.
+- Definitions, aliases, source IDs, alternate edges, and provenance belong in
+  the data layer even when the default browser keeps them compact.
+
 ## How the WordNet tree was generated
 
 The tree is a reproducible presentation of WordNet 3.0, not a hand-edited
@@ -116,40 +134,62 @@ retaining ancestry and asking category-membership questions. It favors source
 fidelity by preserving synset identifiers, glosses, and all original
 hypernym edges.
 
-## V2 expansion: 5K–10K gameplay nodes
+## Retired v2 expansion
 
-V2 is a larger, reviewed version of the v1 tree, not a wholesale replacement
-with an external ontology. It keeps v1's top-level questions and everyday
-answer categories intact, then adds a selective life taxonomy and source-backed
-vocabulary candidates. The page remains understandable to someone playing
-ordinary 20 Questions: scientific rank names and identifiers are provenance
-and navigation aids, not a demand that players know biology jargon.
+The mechanically expanded 5K–10K profile is retained only for analysis. It
+was rejected because source-driven ancestry produced sparse nonliving coverage,
+unhelpful unary chains, and poor visible splits. No node budget or source
+target should be treated as a current commitment. The next profile must first
+pass the structural audit and then add reviewed leaves through a shared,
+versioned manifest.
 
-The target should be stated as **displayed nodes**, counting visible branches
-and leaves but not aliases, source records, glosses, or hidden alternate
-parents. A practical first allocation is:
+## Biological taxonomy graft
 
-- **About 1,000–1,500 nodes retained or refined from v1:** preserve the
-  familiar physical, living, geographic, food, artifact, person, and abstract
-  organization. V1 labels should not move merely to accommodate a source
-  taxonomy.
-- **About 2,500–5,000 life nodes:** expand animals, plants, fungi,
-  microorganisms, and extinct life under the existing living/natural
-  branches. This is the main v2 investment and can support either a 5K
-  conservative profile or a 10K richer profile.
-- **About 1,000–2,500 non-life additions:** use reviewed WordNet, Roget, and
-  reference-source candidates for familiar tools, foods, materials, places,
-  body parts, vehicles, occupations, and cultural objects. These additions
-  prevent v2 from becoming a biology encyclopedia with a thin everyday shell.
+The immediate biological task is to replace the current organism subtree with
+a curated display taxonomy. The links below are ordered by usefulness for this
+project, not by scientific authority alone:
 
-The implementation uses one shared manifest and can produce narrower profiles
-by lowering the source budgets:
+- [OneZoom Tree of Life Explorer](https://www.onezoom.org/) — best browsing
+  model for a large evolutionary tree; use its interface and common-name
+  presentation as design prior art, not as the sole authority.
+- [Open Tree of Life](https://tree.opentreeoflife.org/) — strongest open
+  candidate for evolutionary ancestry, stable taxon identifiers, and a tree
+  that keeps humans within tetrapod and lobe-finned-fish history.
+- [Catalogue of Life](https://www.catalogueoflife.org/explore) — strongest
+  candidate for accepted names, synonyms, and broad checklist authority;
+  compare its Base and Extended releases.
+- [GBIF Backbone Taxonomy](https://www.gbif.org/species) — excellent
+  browsable name-resolution and synonymy backbone for finding and normalizing
+  familiar organisms.
+- [NCBI Taxonomy Browser](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi)
+  — authoritative computational and sequence-linked taxonomy, especially for
+  microbes and viruses; too technical to copy directly.
+- [ITIS](https://www.itis.gov/) — stable government-supported name and rank
+  reference useful for cross-checking accepted placement.
+- [World Register of Marine Species](https://www.marinespecies.org/) —
+  expert-maintained marine supplement, not a general root.
+- [TimeTree](https://timetree.org/) — useful for evolutionary relationships
+  and divergence context, not as the visible noun hierarchy.
 
-The current profile uses a dual-resolution compromise: familiar v1 labels and
-reviewed examples are directly playable, while NCBI scientific detail and
-WordNet candidates are clearly labelled expansion branches. A compact profile
-can be generated later by lowering `--wordnet-target` and `--ncbi-target`; a
-fuller profile can raise them without forking the tree design.
+Recommended source combination: use Open Tree of Life for evolutionary
+structure, Catalogue of Life for accepted names and synonyms, GBIF and NCBI
+for normalization and coverage checks, and OneZoom as the browsing-model
+reference. Use ITIS, WoRMS, and TimeTree to resolve domain-specific gaps.
+Do not import any of these raw. Produce one reviewed crosswalk that preserves
+source IDs, accepted names, synonyms, rank, release, extinct status, and
+alternate placements while projecting a readable single-parent display tree.
+
+The visible tree should preserve major evolutionary facts—birds under
+dinosaurs and humans within tetrapods and lobe-finned fishes—while collapsing
+intermediate clades that do not improve a recognizable distinction. Common
+names lead; scientific names remain searchable aliases and provenance.
+Viruses receive a dedicated acellular-infectious-agent subtree with host,
+genome, transmission, disease, and ecological metadata rather than being
+forced into ordinary organism ancestry.
+
+The detailed criteria, notable-life policy, virus policy, and graft workflow
+below are the acceptance specification for this task. The later biological
+prior-art entries retain source-specific notes and access details.
 
 ## Future leaf-node priorities
 
@@ -1267,8 +1307,8 @@ adding hundreds or thousands of nouns, the next candidate should be a
 structure-first v1.1 review:
 
 - require every visible internal node to have at least two useful children;
-- collapse unary source paths and preserve their scientific/provenance detail
-  outside the default game view;
+- retain unary paths when they carry useful meaning or provenance; do not
+  treat one-child structure as an automatic defect;
 - inspect every top-level and second-level split for balanced candidate mass;
 - rewrite labels and branch descriptions so they express observable, stable
   distinctions rather than merely restating a parent label;
@@ -1311,10 +1351,7 @@ duplicate labels, and branch coverage.
 Prefer the smallest profile that covers common game answers while preserving
 the current one-page browsing experience.
 
-The next useful improvements are the v1.1 structural audit, a coverage report
-for ordinary game-answer lists, and only then a biological pilot containing the
-high-priority survivors, convergent examples, marsupials, and extinct groups
-described above. The pilot should produce compact and fuller profiles from one
-source manifest rather than forking the ontology. Wikidata, FoodOn, and
-Wikipedia can then be tested as separately labeled enrichment profiles, not
-silently merged into the WordNet ontology.
+The next useful improvements are the structural audit, the biological graft
+specified above, and a coverage report for ordinary noun candidates. Each
+profile should come from one source manifest rather than a forked ontology;
+Wikidata, FoodOn, and Wikipedia remain separately labeled enrichment sources.
