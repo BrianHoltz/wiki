@@ -33,19 +33,20 @@ parent. Removed parents remain visible as alternate cross-links.</div>
 const esc=v=>String(v).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 let data,byId,alternateChildren;
 function link(id){const n=byId.get(id);return n?`<a href="#${encodeURIComponent(id)}" data-node="${esc(id)}">${esc(n.label)}</a>`:esc(id)}
+function formatDefinition(text){return esc(text).replace(/&amp;%([A-Za-z0-9_]+)/g,(_,id)=>byId.has(id)?link(id):esc(id))}
 function renderNode(id){const n=byId.get(id);
 const childCount=`<span class="meta"> · ${n.children.length} &#8595;</span>`;
 const altCount=n.alternateParents.length?`<span class="meta"> · ${n.alternateParents.length} &#8593;</span>`:'';
 const provisional=n.provisionalParent?` <span class="meta">· provisional placement</span>`:'';
-const shortDef=n.definition?`<span class="definition" title="${esc(n.definition)}">${esc(n.definition)}</span>`:'';
+const shortDef=n.definition?`<span class="definition" title="${esc(n.definition)}">&mdash; ${formatDefinition(n.definition)}</span>`:'';
 const text=`${esc(n.label)}${childCount}${altCount}${provisional}${shortDef}`;
-const full=n.definition?`<div class="full-definition">${esc(n.definition)}</div>`:'';
+const full=n.definition?`<div class="full-definition"><strong>Definition:</strong> ${formatDefinition(n.definition)}</div>`:'';
 const alts=n.alternateParents.length?`<div class="alt"><strong>Alternate Parents:</strong> ${n.alternateParents.map(link).join(', ')}</div>`:'';
 const reverse=alternateChildren.get(id)||[];
 const reverseBlock=reverse.length?`<div class="reverse"><strong>Alternate Children:</strong> ${reverse.map(link).join(', ')}</div>`:'';
 return `<li id="${encodeURIComponent(id)}"><details><summary>${text}</summary>${full}${alts}${reverseBlock}<ul>${n.children.map(renderNode).join('')}</ul></details></li>`}
 function render(){document.querySelector('#tree').innerHTML=data.rootNodes.map(root=>`<h2>${esc(byId.get(root).label)}</h2><ul>${renderNode(root)}</ul>`).join('');
-document.querySelector('#summary').textContent=`${data.stats.nodeCount.toLocaleString()} concepts · ${data.stats.projectedEdgeCount.toLocaleString()} primary edges · ${data.stats.multipleParentNodeCount.toLocaleString()} alternate-parent cases · ${data.stats.unaryNodeCount.toLocaleString()} unary nodes`;
+document.querySelector('#summary').textContent=`${data.stats.nodeCount.toLocaleString()} concepts · ${data.stats.definitionCount.toLocaleString()} definitions · ${data.stats.projectedEdgeCount.toLocaleString()} primary edges · ${data.stats.multipleParentNodeCount.toLocaleString()} alternate-parent cases · ${data.stats.unaryNodeCount.toLocaleString()} unary nodes`;
 }
 document.querySelector('#expand').onclick=()=>document.querySelectorAll('#tree details').forEach(x=>x.open=true);
 document.querySelector('#collapse').onclick=()=>document.querySelectorAll('#tree details').forEach(x=>x.open=false);

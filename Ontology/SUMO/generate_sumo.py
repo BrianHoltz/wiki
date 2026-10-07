@@ -217,6 +217,7 @@ def build_pdf(pdf_graph: Path, definitions_dir: Path | None = None):
             "projectedEdgeCount": len(selected),
             "multipleParentNodeCount": sum(bool(value) for value in alternates.values()),
             "unaryNodeCount": len(unary),
+            "definitionCount": sum(bool(record["definition"]) for record in records),
             "rootCount": len(roots),
             "pdfEdgeCount": graph["edgeCount"],
             "provisionalPlacementCount": sum(
