@@ -1649,25 +1649,23 @@ not repeated here.
 Ontology
 ├── Entity
 │   ├── Physical entity
-│   │   └── SUMO-derived physical entity
 │   └── Abstract entity
 │       ├── Mathematical entity
 │       │   ├── Number
 │       │   ├── Set
 │       │   ├── Function
-│       │   ├── Mathematical relation
-│       │   ├── Logical object
-│       │   ├── Algebraic structure
-│       │   ├── Geometric structure
+│       │   ├── Logical entity
+│       │   ├── Algebraic entity
+│       │   ├── Geometric entity
 │       │   │   ├── Curve
 │       │   │   │   ├── Circle
 │       │   │   │   ├── Ellipse
 │       │   │   │   ├── Parabola
 │       │   │   │   └── Hyperbola
-│       │   ├── Topological structure
-│       │   ├── Analytic structure
-│       │   ├── Probability structure
-│       │   ├── Computational structure
+│       │   ├── Topological entity
+│       │   ├── Analytic entity
+│       │   ├── Probability entity
+│       │   ├── Computational entity
 │       │   │   ├── Algorithm
 │       │   │   ├── Complexity class
 │       │   │   ├── Computable function
@@ -1729,7 +1727,8 @@ The key placement decisions are now explicit:
 
 - `Physical entity` and `Abstract entity` are the first visible entity
   divisions.
-- The `SUMO-derived physical entity` supplies the initial physical subtree.
+- The physical branch uses the existing SUMO-derived projection without
+  treating `SUMO` as a visible ontological node.
 - Mathematical entities are abstract entities, with a first cut by
   entity kind rather than by college subject.
 - Properties and relations are siblings of Entity, not hidden under
@@ -1740,6 +1739,17 @@ The key placement decisions are now explicit:
 - Informational and social entities are provisionally under Abstract as
   representational or institutional patterns, while their physical
   embodiments remain linked to Physical entities.
+
+### Node naming standard
+
+Every visible node is a singular noun or a singular noun phrase. A modifier
+must refine a noun rather than stand alone; when a branch would otherwise be
+named only by an adjective such as `Physical` or `Abstract`, the parent noun
+is repeated as `Physical entity` or `Abstract entity`. Node names never use
+`and`; split distinct concepts into separate siblings. A category such as
+`Algebraic entity` is preferred to the course-like or overly generic
+`Algebraic structure`, and a relation belongs under `Relation` rather than
+being duplicated as a mathematical entity.
 
 The four non-mathematical abstract branches are a strawman census, not an
 assertion that they are equally mature:
