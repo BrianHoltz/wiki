@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>SUMO projected hierarchy</title>
+<title>SUMO PDF hierarchy</title>
 <style>
 :root{color-scheme:light dark;--bg:#fff;--fg:#202124;--muted:#5f6368;--panel:#f5f7fa;--line:#c7cbd1;--accent:#1769aa}
 @media(prefers-color-scheme:dark){:root{--bg:#17191c;--fg:#e8eaed;--muted:#b4bac4;--panel:#24282e;--line:#59616d;--accent:#8ab4f8}}
@@ -19,8 +19,8 @@ a{color:var(--accent)}#results{margin:10px 0 18px}.result{padding:5px 0;border-b
 </head>
 <body>
 <main>
-<h1>SUMO projected hierarchy</h1>
-<p class="muted">A browseable single-parent projection of the Suggested Upper Merged Ontology.</p>
+<h1>SUMO PDF hierarchy</h1>
+<p class="muted">A browseable single-parent rendering of the Ontology4 SUMO graph.</p>
 <div class="notice">This browser is rebuilt from the nodes and directed blue arcs in the
 official Ontology4 PDF graph, not from the current KIF hierarchy. For every node with
 multiple incoming arcs, it removes the longest arc and keeps the shortest as the visible
@@ -28,10 +28,6 @@ parent. Removed parents remain visible as alternate cross-links.</div>
 <div class="controls"><input id="search" type="search" placeholder="Search SUMO concepts">
 <button id="expand">Expand all</button><button id="collapse">Collapse all</button></div>
 <div id="summary" class="muted"></div><div id="results"></div><section id="tree"></section>
-<h2>Unary nodes</h2>
-<p class="muted">These nodes have exactly one child in the projected tree. They are retained
-for now and listed here for structural review.</p>
-<details><summary id="unary-summary"></summary><ul id="unary"></ul></details>
 </main>
 <script>
 const esc=v=>String(v).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -43,9 +39,8 @@ const text=`${esc(n.label)} <span class="meta">${esc(n.id)}${n.directParentCount
 if(!n.children.length)return `<li>${text}${alt}</li>`;
 return `<li><details open><summary>${text}</summary>${alt}<ul>${n.children.map(renderNode).join('')}</ul></details></li>`}
 function render(){document.querySelector('#tree').innerHTML=data.rootNodes.map(root=>`<h2>${esc(byId.get(root).label)}</h2><ul>${renderNode(root)}</ul>`).join('');
-document.querySelector('#summary').textContent=`${data.stats.nodeCount.toLocaleString()} concepts · ${data.stats.multipleParentNodeCount.toLocaleString()} with dropped cross-links`;
-document.querySelector('#unary-summary').textContent=`${data.stats.unaryNodeCount.toLocaleString()} unary nodes`;
-document.querySelector('#unary').innerHTML=data.unaryNodes.map(id=>`<li>${esc(byId.get(id).label)} <span class="meta">${esc(id)}</span></li>`).join('')}
+document.querySelector('#summary').textContent=`${data.stats.nodeCount.toLocaleString()} concepts · ${data.stats.projectedEdgeCount.toLocaleString()} primary edges · ${data.stats.multipleParentNodeCount.toLocaleString()} alternate-parent cases · ${data.stats.unaryNodeCount.toLocaleString()} unary nodes`;
+}
 document.querySelector('#expand').onclick=()=>document.querySelectorAll('#tree details').forEach(x=>x.open=true);
 document.querySelector('#collapse').onclick=()=>document.querySelectorAll('#tree details').forEach(x=>x.open=false);
 document.querySelector('#search').oninput=e=>{const q=e.target.value.trim().toLowerCase();

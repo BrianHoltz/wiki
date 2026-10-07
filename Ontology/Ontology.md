@@ -557,13 +557,14 @@ reason to let SUMO dictate the game structure. The incumbent's main advantage
 is precisely that its visible questions were designed for play rather than
 inherited from a formal ontology.
 
-#### SUMO PDF tree projection and unary-node audit
+#### SUMO PDF tree projection and unary-node policy
 
-The [SUMO browser](SUMO/index.html) is now rebuilt from the nodes and directed
-blue arcs in the [official Ontology4 SUMO PDF](https://www.ontology4.us/download/dot/SumoOntology.pdf),
+The [SUMO browser](SUMO/index.html) is rebuilt from the nodes and directed blue
+arcs in the [official Ontology4 SUMO PDF](https://www.ontology4.us/download/dot/SumoOntology.pdf),
 not from the current KIF hierarchy. The checked-in
 [`pdf-graph.json`](SUMO/pdf-graph.json) records the extracted 518 PDF nodes and
-554 vector arcs.
+554 vector arcs. Unary nodes are first-class citizens: a node having one child
+is not, by itself, evidence of a bad tree or a reason to collapse it.
 
 For each PDF node with multiple incoming arcs, the projection repeatedly
 removes the longest measured incoming arc until one primary parent remains.
@@ -579,11 +580,21 @@ PDF-derived edges. `Number` therefore sits in the abstract quantity branch,
 near the truth-value branch without being made a child of `True` or `False`.
 
 The projection contains 518 nodes and 517 primary edges, with 39 nodes having
-alternate parents. It retains every node with exactly one projected child,
-rather than silently collapsing these potentially meaningful distinctions.
-There are 51 such unary nodes. The [complete unary-node inventory](SUMO/unary-nodes.md)
-lists every one by SUMO identifier; the same list is embedded in
-`SUMO/sumo.json` for programmatic review.
+alternate parents and 51 unary nodes. The [complete unary-node inventory](SUMO/unary-nodes.md)
+is retained as a data reference, not a cleanup queue.
+
+The reproducible extraction recipe is:
+
+- download the PDF and record its URL and SHA-256 in
+  [`snapshot-manifest.json`](SUMO/snapshot-manifest.json);
+- convert it with `pdftocairo -svg` and `pdftotext -bbox`;
+- run [`extract_pdf_edges.py`](SUMO/extract_pdf_edges.py) to map vector arc
+  endpoints to PDF labels and measure each directed arc;
+- run [`generate_sumo.py`](SUMO/generate_sumo.py) with `--pdf-graph`;
+- for multiple incoming arcs, remove the longest repeatedly until one primary
+  parent remains, retaining removed parents as alternate cross-links; and
+- apply only the four explicitly marked provisional placements needed to keep
+  `Entity` as the sole root.
 
 ### Wikidata
 
