@@ -854,6 +854,139 @@ reason to let SUMO dictate the game structure. The incumbent's main advantage
 is precisely that its visible questions were designed for play rather than
 inherited from a formal ontology.
 
+### Revisit the highest layers: mathematics, types, and meaning
+
+The current SUMO projection is weakest at the top. `Entity`, `Abstract`,
+`Attribute`, `Relation`, `Proposition`, and related categories mix several
+different questions:
+
+- What sort of thing is this in the world?
+- Is it an object, event, quality, relation, description, or proposition?
+- Is it a mathematical structure, a formal symbol system, or a model of one?
+- Is it a class, an instance, a value, a type, or a type-level operation?
+
+These should not be forced into one shallow `Entity -> Abstract` ladder.
+SUMO remains useful as a source of formal distinctions and axioms, but its
+top-level presentation should be treated as a candidate mapping layer, not
+as the final upper ontology.
+
+#### Tegmark's mathematical-structure chart
+
+The attached chart is best treated as a visual prior-art rendering of the
+idea that increasingly rich mathematical structures arise by adding
+operations, predicates, axioms, topology, measure, geometry, and physical
+interpretation. The definitive scholarly source for that Tegmark framework is
+Max Tegmark's *The Mathematical Universe*:
+
+- [arXiv record and authoritative preprint](https://arxiv.org/abs/0704.0646)
+- [Published version, Foundations of Physics](https://doi.org/10.1007/s10701-007-9186-9)
+
+The chart image itself is not an authority for taxonomy, and its exact
+provenance should not be inferred from the screenshot alone. The paper is the
+source to cite for Tegmark's mathematical-structure/formal-system
+distinction; the image is useful as a compact design prompt for a future
+mathematical branch.
+
+#### What modern mathematics contributes
+
+Modern mathematics supplies a more disciplined upper-level vocabulary than
+SUMO's current abstraction branch, but not a ready-made everyday ontology.
+The useful ideas are complementary:
+
+- **Set-theoretic foundations** provide membership, subset, union, product,
+  function, relation, and structure-building operations. ZFC is a foundation
+  for mathematics, not a claim that every ordinary noun is best represented
+  as a set.
+- **Type theory** distinguishes terms, types, dependent types, constructors,
+  and proofs. This is close to the intuition behind Scala class hierarchies:
+  a type describes admissible values, subtyping expresses substitutability,
+  and traits or interfaces express reusable capabilities. Scala's model is
+  not itself an ontology, but it is a useful implementation metaphor for
+  separating nominal categories, structural capabilities, and instances.
+- **Category theory** emphasizes objects, morphisms, composition, identity,
+  products, coproducts, limits, and functors. It is especially valuable for
+  modeling relations and transformations that a noun-only tree cannot show.
+- **Structural mathematics** treats a mathematical object by its operations,
+  relations, and laws rather than by its material or name. This is a strong
+  antidote to confusing a class label with the properties that make its
+  instances members of the class.
+- **Formal systems and model theory** distinguish syntax, axioms, derivations,
+  interpretations, and models. This gives the ontology a clean place for
+  languages, theories, mathematical structures, and the real-world systems
+  they describe.
+
+The proposed synthesis is therefore not “replace SUMO with set theory.”
+Instead, add an explicit foundation-and-description layer above or beside
+the ordinary-world hierarchy:
+
+```text
+Reality and discourse
+├── Things and occurrences
+│   ├── Objects
+│   ├── Processes and events
+│   ├── Qualities and quantities
+│   └── Relations and situations
+├── Representations
+│   ├── Names and symbols
+│   ├── Descriptions and classifications
+│   ├── Propositions and assertions
+│   └── Formal systems and theories
+└── Structures
+    ├── Sets and collections
+    ├── Types and instances
+    ├── Algebraic structures
+    ├── Ordered and topological structures
+    ├── Geometric and measurable structures
+    ├── Categories, functors, and transformations
+    └── Physical models and laws
+```
+
+This is a conceptual backbone, not yet a replacement tree. In the data
+model, a node may have a **kind** (`object`, `event`, `quality`, `relation`,
+`representation`, `type`, `structure`, or `theory`) in addition to one or
+more parent links. The browser can still project a single primary navigation
+parent while retaining cross-links between a type and its instances, a
+structure and its models, and a proposition and the situation it describes.
+
+#### Candidate synthesis
+
+The current best option is a deliberately federated upper layer:
+
+| Role | Preferred source or idea | Use |
+| --- | --- | --- |
+| Player-facing conceptual organization | Curated v1 plus Roget's six broad classes | Familiar labels, balanced navigation, lexical discovery |
+| Formal semantic categories | SUMO, checked against Aristotle and Sowa | Object/process/quality/relation distinctions and axioms |
+| Contemporary labels and web entities | Schema.org | People, places, products, events, media, organizations |
+| Mathematical foundation | Set theory and structural type theory | Sets, functions, types, instances, constructors, proofs |
+| Transformations and relational structure | Category theory | Morphisms, composition, products, mappings, and equivalence |
+| Lexical coverage | WordNet and Roget's Thesaurus | Synsets, aliases, senses, common wording, conceptual neighborhoods |
+| Common-sense rules | Cyc/OpenCyc where licensing and access permit | Context, defaults, exceptions, and practical relations |
+
+The design consequence is important: **Roget should influence the visible
+conceptual partition, while SUMO, type theory, and category theory should
+provide typed metadata and cross-links.** None should be made the sole
+visible tree. Roget's organization is not a formal `is-a` taxonomy, and
+mathematical foundations are not a catalog of ordinary nouns; each becomes
+useful when assigned the job it actually performs well.
+
+#### Revisit procedure
+
+Before changing the published SUMO browser, build a small upper-ontology
+comparison manifest. For every top-level candidate, record its source
+definition, kind, intended children, alternate parents, and whether it is
+player-visible or metadata-only. Then test the competing projections against
+ordinary examples such as `dog`, `running`, `red`, `ownership`, `number`,
+`integer`, `group`, `function`, `software type`, `proposition`, and
+`quantum field`.
+
+The review should prefer a split whenever a node currently answers multiple
+incompatible questions. In particular, `Abstract` should not remain a
+catch-all for mathematical structures, attributes, propositions, relations,
+and fictional or informational entities. The first implementation should
+preserve SUMO provenance and alternate parents while introducing explicit
+kind metadata; only after that audit should we decide whether the visible
+root needs a new top-level partition.
+
 #### SUMO PDF tree projection and unary-node policy
 
 The [SUMO browser](SUMO/index.html) is rebuilt from the nodes and directed blue
