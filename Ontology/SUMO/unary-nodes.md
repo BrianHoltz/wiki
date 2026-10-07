@@ -1,8 +1,12 @@
 # SUMO unary-node inventory
 
-Generated from the current PDF-derived SUMO projection. These 51 concepts have exactly one projected child.
+Generated from the current PDF-derived SUMO projection after the organism
+backbone graft. These 53 concepts have exactly one projected child.
 
 - `ArtiﬁcialLanguage` — Artiﬁcial Language
+- `BioDinosauria` — Dinosauria
+- `BioStreptophyta` — Streptophyta
+- `BioSynapsida` — Synapsida
 - `Certiﬁcate` — Certiﬁcate
 - `ChemicalDecomposition` — Chemical Decomposition
 - `ChemicalProcess` — Chemical Process
@@ -17,7 +21,6 @@ Generated from the current PDF-derived SUMO projection. These 51 concepts have e
 - `EngineeringComponent` — Engineering Component
 - `Game` — Game
 - `GraphArc` — Graph Arc
-- `Hominid` — Hominid
 - `Impelling` — Impelling
 - `Increasing` — Increasing
 - `Injuring` — Injuring

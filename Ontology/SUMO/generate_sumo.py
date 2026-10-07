@@ -273,6 +273,11 @@ def main():
     parser.add_argument("--definitions-dir", type=Path)
     parser.add_argument("--external-definitions", type=Path)
     parser.add_argument("--editorial-definitions", type=Path)
+    parser.add_argument(
+        "--organism-graft",
+        action="store_true",
+        help="replace SUMO's organism projection with the curated clade backbone",
+    )
     parser.add_argument("--output", type=Path, required=True)
     args = parser.parse_args()
     if args.pdf_graph:
@@ -288,6 +293,10 @@ def main():
         parser.error("one of --source-dir or --pdf-graph is required")
     args.output.parent.mkdir(parents=True, exist_ok=True)
     args.output.write_text(json.dumps(result, separators=(",", ":")), encoding="utf-8")
+    if args.organism_graft:
+        from graft_organism import graft
+
+        graft(args.output)
     print(json.dumps(result["stats"], indent=2))
 
 
