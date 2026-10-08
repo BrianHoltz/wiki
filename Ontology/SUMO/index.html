@@ -30,11 +30,14 @@ Definitions identify project editorial content and retained SUMO content.</p>
 </main>
 <script>
 const esc=v=>String(v).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-let data,byId,alternateChildren;
+let data,byId,alternateChildren,descendantCounts;
+function descendantCount(id){if(descendantCounts.has(id))return descendantCounts.get(id);const n=byId.get(id);const count=n.children.reduce((total,child)=>total+1+descendantCount(child),0);descendantCounts.set(id,count);return count}
 function link(id){const n=byId.get(id);return n?`<a href="#${encodeURIComponent(id)}" data-node="${esc(id)}">${esc(n.label)}</a>`:esc(id)}
 function formatDefinition(text){return esc(text).replace(/&amp;%([A-Za-z0-9_]+)/g,(_,id)=>byId.has(id)?link(id):esc(id))}
 function renderNode(id,open=false){const n=byId.get(id);
-const childCount=`<span class="meta"> · ${n.children.length} &#8595;</span>`;
+const directChildren=n.children.length;
+const otherDescendants=descendantCount(id)-directChildren;
+const childCount=`<span class="meta"> · ${directChildren}+${otherDescendants} &#8595;</span>`;
 const altCount=n.alternateParents.length?`<span class="meta"> · ${n.alternateParents.length} &#8593;</span>`:'';
 const provisional=n.provisionalParent?` <span class="meta">· provisional placement</span>`:'';
 const shortDef=n.definition?`<span class="definition" title="${esc(n.definition)}">${formatDefinition(n.definition)}</span>`:'';
@@ -54,7 +57,7 @@ document.querySelector('#search').oninput=e=>{const q=e.target.value.trim().toLo
 const hits=data.nodes.filter(n=>`${n.id} ${n.label}`.toLowerCase().includes(q)).slice(0,100);
 document.querySelector('#results').innerHTML=q?`<strong>${hits.length}${hits.length===100?'+':''} matches</strong>`+
 hits.map(n=>`<div class="result">${link(n.id)} <span class="meta">${esc(n.id)}</span></div>`).join(''):''};
-fetch('sumo.json').then(r=>r.json()).then(x=>{data=x;byId=new Map(data.nodes.map(n=>[n.id,n]));alternateChildren=new Map();data.nodes.forEach(n=>n.alternateParents.forEach(parent=>{if(!alternateChildren.has(parent))alternateChildren.set(parent,[]);alternateChildren.get(parent).push(n.id)}));render()})
+fetch('sumo.json').then(r=>r.json()).then(x=>{data=x;byId=new Map(data.nodes.map(n=>[n.id,n]));descendantCounts=new Map();data.nodes.forEach(n=>descendantCount(n.id));alternateChildren=new Map();data.nodes.forEach(n=>n.alternateParents.forEach(parent=>{if(!alternateChildren.has(parent))alternateChildren.set(parent,[]);alternateChildren.get(parent).push(n.id)}));render()})
 .catch(e=>document.querySelector('#tree').textContent=`Could not load sumo.json: ${e}`);
 </script>
 </body>
