@@ -1706,12 +1706,10 @@ language and are testable against the existing tree.
 
 ### Slot definitions
 
-1. **Universal entity:** anything admitted by the ontology as an individual,
-   universal, class, proposition, property, relation, or other item over which
-   the ontology permits reference or quantification.
-2. **Non-predicative entity:** an entity considered in bearer, participant, or
-   subject position rather than in the predicative role of `Property` or
-   `Relation`.
+1. **Universal entity:** an entity considered as a bearer of properties or
+   participant in relations.
+2. **Non-predicative entity:** a bounded entity considered apart from its
+   properties and relations.
 3. **Realized entity:** an entity with physical embodiment or a determinate
    spatial or spatiotemporal extent, whether or not it is a self-connected
    object.

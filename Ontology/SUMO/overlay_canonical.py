@@ -22,11 +22,11 @@ def node(identifier: str, label: str, definition: str, *children: dict) -> dict:
 CANONICAL = node(
     "Entity",
     "Entity",
-    "Anything that can be identified, discussed, or related as a thing.",
+    "An entity considered as a bearer of properties or participant in relations.",
     node(
         "Object",
         "Object",
-        "An entity considered as a bearer of properties or participant in relations.",
+        "A bounded entity considered apart from its properties and relations.",
         node(
             "RealizedEntity",
             "Realized entity",
