@@ -39,7 +39,7 @@ function renderNode(id,open=false,children=null,lineage=false,childOpen=null){co
 const directChildren=n.children.length;
 const otherDescendants=descendantCount(id)-directChildren;
 const marker=open?'▼':'▶';
-const childCount=directChildren?`<span class="meta"> · ${directChildren}${otherDescendants?`+${otherDescendants}`:''}</span>`:'';
+const childCount=directChildren?`<span class="meta"> · ${directChildren}${otherDescendants?`+${otherDescendants}`:''} &#8595;</span>`:'';
 const altCount=n.alternateParents.length?`<span class="meta"> · ${n.alternateParents.length} &#8593;</span>`:'';
 const provisional=n.provisionalParent?` <span class="meta">· provisional placement</span>`:'';
 const shortDef=n.definition?`<span class="definition" title="${esc(n.definition)}">${formatDefinition(n.definition)}</span>`:'';
