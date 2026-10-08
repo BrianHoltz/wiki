@@ -1,0 +1,38 @@
+{
+  "sourceRepository": "https://github.com/ontologyportal/sumo",
+  "sourceRoot": "Ontology",
+  "derivedArtifact": "sumo.json",
+  "nodeCount": 530,
+  "projectedEdgeCount": 533,
+  "multipleParentNodeCount": 3,
+  "unaryNodeCount": 43,
+  "pdfSource": "https://www.ontology4.us/download/dot/SumoOntology.pdf",
+  "pdfSha256": "78708ee74a7e37e1985a497aaad066db11c8c4579fa372ca78814fa1b72e1852",
+  "pdfNodeCount": 518,
+  "pdfEdgeCount": 554,
+  "pdfRootCount": 1,
+  "definitionSource": "English documentation statements in the SUMO KIF source files",
+  "definitionCount": 455,
+  "definitionPolicy": "Use project editorial definitions for the canonical upper ontology and retain SUMO or graft definitions for physical descendants",
+  "canonicalOverlay": {
+    "script": "overlay_canonical.py",
+    "canonicalNodeCount": 121,
+    "physicalNodeCount": 414,
+    "upperOntology": "../Ontology.md#canonical-synthesis",
+    "policy": "Replace the SUMO upper ontology with Entity, Property, and Relation; retain the SUMO-derived physical projection"
+  },
+  "organismGraft": {
+    "source": "Human Knowledge 2000 taxonomy table + modern Wikipedia clade corrections",
+    "policy": "Monophyletic, interest-weighted backbone; specialist-only subdivisions telescoped",
+    "originEstimatePolicy": "Every grafted clade definition begins with an integer Mya origin estimate",
+    "legacyTaxaReplacementCount": 19
+  },
+  "primaryEdgeRule": "Repeatedly remove the longest measured incoming PDF arc until each node has one primary parent; apply four explicitly marked provisional placements to keep Entity as the only root",
+  "provisionalPlacements": {
+    "List": "Set",
+    "Number": "Quantity",
+    "Predicate": "Proposition",
+    "Sentence": "Proposition"
+  },
+  "licenseNote": "SUMO source files contain their own licensing and attribution notices. Review those notices before redistribution."
+}
