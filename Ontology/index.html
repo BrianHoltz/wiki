@@ -13,7 +13,7 @@ main{max-width:1100px;margin:auto;padding:24px}h1{margin:0 0 4px}h2{margin-top:2
 .summary-row{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin:18px 0 8px}.summary-actions{display:flex;gap:8px}
 input,button{background:var(--bg);border:1px solid var(--line);border-radius:5px;color:var(--fg);padding:8px 10px}
 input{min-width:280px;width:100%;box-sizing:border-box}button{cursor:pointer}ul{list-style:none;margin:0;padding-left:22px}li{margin:3px 0}
-.search-presets{display:flex;gap:8px;flex-wrap:wrap;margin:8px 0 10px}
+.search-row{display:flex;align-items:center;gap:8px;margin:8px 0 10px}.search-row input{flex:1;width:auto}.search-presets{display:flex;gap:8px;flex:none;margin:0}
 summary{cursor:pointer;display:flex;align-items:baseline;gap:4px;list-style:none}summary::-webkit-details-marker{display:none}summary::before{content:"\25B6";display:inline-block;flex:none;width:1em}details[open] > summary::before{content:"\25BC"}.meta{color:var(--muted);font-size:12px;margin-left:6px;flex:none}.definition{color:var(--muted);font-size:13px;margin-left:8px;flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;vertical-align:bottom}details[open] > summary .definition{overflow:visible;text-overflow:clip;white-space:normal;vertical-align:baseline}.alt,.reverse{font-size:13px;margin:6px 0 8px 22px}.alt,.reverse{color:var(--muted)}
 details.lineage > summary::before{content:"\25C6"}
 a{color:var(--accent)}#results{margin:10px 0 18px}.result{padding:5px 0;border-bottom:1px solid var(--line)}
@@ -22,9 +22,9 @@ a{color:var(--accent)}#results{margin:10px 0 18px}.result{padding:5px 0;border-b
 </head>
 <body>
 <main>
-<div class="summary-row"><div class="summary-actions"><button id="expand">Expand</button><button id="collapse">Collapse</button></div><a id="summary-link" href="https://humanknowledge.net/wiki/#!./Ontology/Ontology.md"><span id="summary" class="muted"></span></a></div>
-<input id="search" type="search" placeholder="Search this ontology">
-<div class="search-presets" aria-label="Search presets"><button type="button" data-search="primate" data-target="BioPrimates">primate</button><button type="button" data-search="drink" data-target="drink">drink</button><button type="button" data-search="flowering plant" data-target="BioAngiosperms">flowering plant</button><button type="button" data-search="number" data-target="Number">number</button><button type="button" data-search="natural language" data-target="NaturalLanguage">natural language</button><button type="button" data-search="island" data-target="Island">island</button></div>
+<div class="summary-row"><div class="summary-actions"><button id="expand">Expand...</button><button id="collapse">Collapse...</button></div><span id="summary" class="muted"></span></div>
+<div class="search-row"><input id="search" type="search" placeholder="Search this ontology">
+<div class="search-presets" aria-label="Search presets"><button type="button" data-search="primate" data-target="BioPrimates">primate</button><button type="button" data-search="drink" data-target="drink">drink</button><button type="button" data-search="flowering plant" data-target="BioAngiosperms">flowering plant</button><button type="button" data-search="number" data-target="Number">number</button><button type="button" data-search="island" data-target="Island">island</button></div></div>
 <div id="results"></div><section id="tree"></section>
 </main>
 <script>
@@ -52,7 +52,7 @@ if(lineageNode){const path=[],seen=new Set();for(let id=lineageNode;id&&!seen.ha
 else {lineageChildren=null;tree=data.rootNodes.map(root=>`<ul>${renderNode(root,nodeModes.get(root)===1)}</ul>`).join('')}
 document.querySelector('#tree').innerHTML=tree;
 const stats=data.stats||{}, count=(key,fallback=0)=>Number.isFinite(stats[key])?stats[key]:fallback;
-document.querySelector('#summary').textContent=`all ${count('nodeCount',data.nodes.length).toLocaleString()} concepts · ${count('definitionCount',data.nodes.filter(n=>n.definition).length).toLocaleString()} definitions · ${count('projectedEdgeCount').toLocaleString()} edges`;
+document.querySelector('#summary').innerHTML=`... all ${count('nodeCount',data.nodes.length).toLocaleString()} concepts · ${count('definitionCount',data.nodes.filter(n=>n.definition).length).toLocaleString()} definitions · ${count('projectedEdgeCount').toLocaleString()} edges in <a href="https://humanknowledge.net/wiki/#!./Ontology/Ontology.md">this Ontology</a>`;
 }
 document.querySelector('#expand').onclick=()=>{lineageNode=null;data.nodes.forEach(n=>nodeModes.set(n.id,1));render()};
 document.querySelector('#collapse').onclick=()=>{lineageNode=null;data.nodes.forEach(n=>nodeModes.set(n.id,0));render()};
