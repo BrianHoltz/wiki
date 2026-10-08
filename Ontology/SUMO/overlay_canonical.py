@@ -20,13 +20,13 @@ def node(identifier: str, label: str, definition: str, *children: dict) -> dict:
 
 
 CANONICAL = node(
-    "Ontology",
-    "Ontology",
-    "A structured account of the kinds of entity, property, and relation in a domain.",
+    "Entity",
+    "Entity",
+    "Anything that can be identified, discussed, or related as a thing.",
     node(
-        "Entity",
-        "Entity",
-        "Anything that can be identified, discussed, or related as a thing.",
+        "Object",
+        "Object",
+        "An entity considered as a bearer of properties or participant in relations.",
         node(
             "PhysicalEntity",
             "Physical entity",
@@ -255,6 +255,16 @@ def overlay(input_path: Path, output_path: Path) -> None:
         ]
         physical[identifier] = record
     physical_root = copy.deepcopy(physical.pop("Physical"))
+    physical_object = physical.pop("Object", None)
+    if physical_object:
+        physical_object["id"] = "PhysicalObject"
+        physical_object["label"] = "Physical object"
+        physical["PhysicalObject"] = physical_object
+        for record in physical.values():
+            record["children"] = [
+                "PhysicalObject" if child == "Object" else child
+                for child in record["children"]
+            ]
     physical_root["id"] = "PhysicalEntity"
     physical_root["label"] = "Physical entity"
     physical_root["definition"] = (
@@ -262,6 +272,10 @@ def overlay(input_path: Path, output_path: Path) -> None:
         "its descendants retain the SUMO-derived physical classification."
     )
     physical_root["definitionSource"] = "project editorial"
+    physical_root["children"] = [
+        "PhysicalObject" if child == "Object" else child
+        for child in physical_root["children"]
+    ]
     physical["PhysicalEntity"] = physical_root
 
     canonical, parents = flatten(CANONICAL)
@@ -275,8 +289,7 @@ def overlay(input_path: Path, output_path: Path) -> None:
         ]
     records["PhysicalEntity"]["directParentCount"] = 1
     records["PhysicalEntity"]["alternateParents"] = []
-    records["Entity"]["directParentCount"] = 1
-    records["Ontology"]["directParentCount"] = 0
+    records["Entity"]["directParentCount"] = 0
 
     nodes = sorted(records.values(), key=lambda item: (item["label"].lower(), item["id"]))
     selected_edges = sum(len(item["children"]) for item in nodes)
@@ -284,7 +297,7 @@ def overlay(input_path: Path, output_path: Path) -> None:
         "source": {
             **data["source"],
             "name": "Canonical upper ontology with SUMO physical projection",
-            "upperOntology": "Ontology/Ontology.md#canonical-synthesis",
+            "upperOntology": "Ontology/Ontology.md#upper-ontology",
             "overlayPolicy": (
                 "Replace the SUMO upper ontology with the project canonical "
                 "Entity/Property/Relation synthesis; retain SUMO physical descendants."
@@ -299,8 +312,8 @@ def overlay(input_path: Path, output_path: Path) -> None:
             "canonicalNodeCount": len(canonical),
             "physicalNodeCount": len(physical),
         },
-        "root": "Ontology",
-        "rootNodes": ["Ontology"],
+        "root": "Entity",
+        "rootNodes": ["Entity"],
         "nodes": nodes,
         "unaryNodes": [item["id"] for item in nodes if len(item["children"]) == 1],
         "organismGraft": data.get("organismGraft"),

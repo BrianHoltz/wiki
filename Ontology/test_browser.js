@@ -70,8 +70,38 @@ async function testBrowser(relativePath, dataPath) {
   const results = elements.get("#results");
   const presets = elements.get(".search-presets");
 
+  if (relativePath === "index.html") {
+    assert.equal(dataPath.root, "Entity", "canonical ontology root must be Entity");
+    assert.deepEqual(
+      dataPath.nodes.find((node) => node.id === "Entity").children,
+      ["Object", "Property", "Relation"],
+      "canonical Entity children must be Object, Property, and Relation",
+    );
+  }
   assert(tree.innerHTML.includes("Geopolitical Area"), `${relativePath}: target is not rendered`);
   assert(!tree.innerHTML.includes(">undefined<"), `${relativePath}: dangling child rendered`);
+
+  if (relativePath === "index.html") {
+    const objectDefinition = dataPath.nodes.find((node) => node.id === "Object").definition;
+    const objectStart = () => tree.innerHTML.indexOf('id="Object"');
+    const objectEnd = () => tree.innerHTML.indexOf("</div>", objectStart());
+    assert(
+      tree.innerHTML.slice(objectStart(), objectEnd()).includes('class="definition expanded"'),
+      `${relativePath}: expanded Object definition is not marked expanded`,
+    );
+    const objectButton = eventTarget("button.expander[data-node]", { node: "Object" });
+    tree.onclick({ target: objectButton });
+    assert(
+      !tree.innerHTML.slice(objectStart(), objectEnd()).includes('class="definition expanded"'),
+      `${relativePath}: collapsed Object definition remains expanded`,
+    );
+    tree.onclick({ target: objectButton });
+    const expandedObject = tree.innerHTML.slice(objectStart(), objectEnd());
+    assert(
+      expandedObject.includes('class="definition expanded"') && expandedObject.includes(objectDefinition.slice(0, 24)),
+      `${relativePath}: Object definition did not expand fully`,
+    );
+  }
 
   elements.get("#expand").onclick();
   assert(tree.innerHTML.includes('data-node="GeopoliticalArea"'), `${relativePath}: target child is not reachable`);
@@ -112,7 +142,7 @@ async function testBrowser(relativePath, dataPath) {
 }
 
 async function main() {
-  const canonical = assertDataIntegrity("sumo.json");
+  const canonical = assertDataIntegrity("ontology.json");
   const historical = assertDataIntegrity("SUMO/sumo.json");
   await testBrowser("index.html", canonical);
   await testBrowser("SUMO/index.html", historical);
