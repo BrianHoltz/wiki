@@ -1712,7 +1712,7 @@ language and are testable against the existing tree.
 2. **Non-predicative entity:** an entity considered in bearer, participant, or
    subject position rather than in the predicative role of `Property` or
    `Relation`.
-3. **Physical entity:** an entity with physical embodiment or a determinate
+3. **Realized entity:** an entity with physical embodiment or a determinate
    spatial or spatiotemporal extent, whether or not it is a self-connected
    object.
 4. **Mechanical body:** a physical entity whose state is modeled by mechanics,
@@ -1750,11 +1750,11 @@ language and are testable against the existing tree.
 - Slots 5 through 10 need labels that should be chosen from their technical
   prior-art uses rather than from the remaining everyday synonyms.
 
-### Entity, Object, Physical entity, Physical object
+### Entity, Object, Realized entity, Physical object
 
-- The current chain is `Entity → Object → Physical entity → Physical object`.
+- The current chain is `Entity → Object → Realized entity → Physical object`.
 - This is defensible only if `Entity` is the universal domain, `Object` is
-  the non-predicative bearer/participant branch, `Physical entity` includes
+  the non-predicative bearer/participant branch, `Realized entity` includes
   both material continuants and physical occurrences, and `Physical object`
   is the narrower self-connected material-continuant branch.
 - In philosophical and formal-ontology usage, `entity` is generally the broad
@@ -1763,10 +1763,10 @@ language and are testable against the existing tree.
   material continuant, or the target of intentional reference, but it is not
   a stable synonym for `entity`.
 - The chain becomes incoherent if `Object` is defined only as a physical
-  thing while `Physical entity` is its parent, or if `Physical object` merely
+  thing while `Realized entity` is its parent, or if `Physical object` merely
   repeats the meaning of `Object`. The three lower terms need distinct
   extension tests and non-overlapping definitions.
-- The immediate audit is therefore whether `Physical entity` genuinely needs
+- The immediate audit is therefore whether `Realized entity` genuinely needs
   to include processes and other non-object physical entities, and whether
   `Physical object` should be the sole home for ordinary spatially extended
   material things.
@@ -1779,6 +1779,8 @@ language and are testable against the existing tree.
 - **Concrete entity:** established as the opposite of abstract, but often
   includes events, places, and social particulars and therefore may be too
   broad or theory-dependent.
+- **Realized entity:** clear as a contrast with abstract entity, but less
+  established as a standard technical term and potentially too broad.
 - **Physical entity:** clear and currently understood, but generic enough
   that it does not distinguish the slot from `Thing`.
 - **Corporeal entity:** emphasizes embodiment, but usually suggests a living
@@ -1794,7 +1796,8 @@ language and are testable against the existing tree.
 
 The leading candidates are `Material entity` if matter is genuinely required,
 `Concrete entity` if the slot includes physically realized events and places,
-and retaining `Physical entity` if clarity outweighs terminology reuse.
+and retaining `Realized entity` if the intended contrast with abstraction
+outweighs its weaker prior-art status.
 
 ### Thing at the physical-entity or physical-object slot
 
@@ -1803,7 +1806,7 @@ when its existence as a physical phenomenon is disputed, even though fire is
 not an ordinary persisting object. That use treats `Thing` as “physically
 existent phenomenon,” not as “self-connected material object.”
 
-#### Thing as physical entity
+#### Thing as realized entity
 
 - **Result:** `Thing` covers material objects, fires, processes, events, and
   other physically realized phenomena.
@@ -1820,18 +1823,18 @@ existent phenomenon,” not as “self-connected material object.”
 
 - **Result:** `Thing` covers ordinary material objects but excludes fire and
   other physical processes from the colloquial “a thing.”
-- **Remaining physical-entity labels:** `Physical entity` is explicit and
+- **Remaining realized-entity labels:** `Realized entity` is explicit and
   broad; `Material entity` excludes fields and some physically real regions;
   `Concrete entity` may include events, places, and social particulars but is
   metaphysically variable; `Real entity` carries an unnecessary commitment
   about fictional and possible entities.
-- **Best option:** `Physical entity` is the least misleading remaining term,
+- **Best option:** `Realized entity` is the least misleading remaining term,
   with `Concrete entity` as the only serious replacement if the slot is
   deliberately expanded beyond matter-bearing entities.
 
 The current evidence therefore favors assigning `Thing` to the broader
-physical-existence slot and retaining `Physical object` for the narrower
-ordinary-object slot.
+physical-existence slot (`Realized entity`) and retaining `Physical object`
+for the narrower ordinary-object slot.
 
 ### Contrasts with abstract entity
 

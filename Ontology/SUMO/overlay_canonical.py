@@ -28,8 +28,8 @@ CANONICAL = node(
         "Object",
         "An entity considered as a bearer of properties or participant in relations.",
         node(
-            "PhysicalEntity",
-            "Physical entity",
+            "RealizedEntity",
+            "Realized entity",
             "An entity with a physical embodiment or location in space-time.",
         ),
         node(
@@ -265,8 +265,8 @@ def overlay(input_path: Path, output_path: Path) -> None:
                 "PhysicalObject" if child == "Object" else child
                 for child in record["children"]
             ]
-    physical_root["id"] = "PhysicalEntity"
-    physical_root["label"] = "Physical entity"
+    physical_root["id"] = "RealizedEntity"
+    physical_root["label"] = "Realized entity"
     physical_root["definition"] = (
         "An entity with a physical embodiment or location in space-time; "
         "its descendants retain the source physical classification."
@@ -276,10 +276,10 @@ def overlay(input_path: Path, output_path: Path) -> None:
         "PhysicalObject" if child == "Object" else child
         for child in physical_root["children"]
     ]
-    physical["PhysicalEntity"] = physical_root
+    physical["RealizedEntity"] = physical_root
 
     canonical, parents = flatten(CANONICAL)
-    canonical["PhysicalEntity"]["children"] = physical_root["children"]
+    canonical["RealizedEntity"]["children"] = physical_root["children"]
     records = {**canonical, **physical}
     for identifier, record in records.items():
         record["children"] = [child for child in record["children"] if child in records]
@@ -287,8 +287,8 @@ def overlay(input_path: Path, output_path: Path) -> None:
         record["alternateParents"] = [
             parent for parent in parents.get(identifier, [])[1:] if parent != "Entity"
         ]
-    records["PhysicalEntity"]["directParentCount"] = 1
-    records["PhysicalEntity"]["alternateParents"] = []
+    records["RealizedEntity"]["directParentCount"] = 1
+    records["RealizedEntity"]["alternateParents"] = []
     records["Entity"]["directParentCount"] = 0
     for record in records.values():
         if record.get("definitionSource") == "SUMO KIF":
