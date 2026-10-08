@@ -13,6 +13,7 @@ main{max-width:1100px;margin:auto;padding:24px}h1{margin:0 0 4px}h2{margin-top:2
 .controls{display:flex;gap:8px;flex-wrap:wrap;margin:18px 0}
 input,button{background:var(--bg);border:1px solid var(--line);border-radius:5px;color:var(--fg);padding:8px 10px}
 input{min-width:280px;flex:1}button{cursor:pointer}ul{list-style:none;margin:0;padding-left:22px}li{margin:3px 0}
+.search-presets{display:flex;gap:8px;flex-wrap:wrap;margin:8px 0 10px}
 summary{cursor:pointer;display:flex;align-items:baseline;gap:4px;list-style:none}summary::-webkit-details-marker{display:none}summary::before{content:"\25B6";display:inline-block;flex:none;width:1em}details[open] > summary::before{content:"\25BC"}.meta{color:var(--muted);font-size:12px;margin-left:6px;flex:none}.definition{color:var(--muted);font-size:13px;margin-left:8px;flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;vertical-align:bottom}details[open] > summary .definition{overflow:visible;text-overflow:clip;white-space:normal;vertical-align:baseline}.alt,.reverse{font-size:13px;margin:6px 0 8px 22px}.alt,.reverse{color:var(--muted)}
 details.lineage > summary::before{content:"\25C6"}
 a{color:var(--accent)}#results{margin:10px 0 18px}.result{padding:5px 0;border-bottom:1px solid var(--line)}
@@ -27,6 +28,7 @@ a{color:var(--accent)}#results{margin:10px 0 18px}.result{padding:5px 0;border-b
 with definitions from the <a href="https://github.com/ontologyportal/sumo">SUMO source</a>.</p>
 <div class="controls"><input id="search" type="search" placeholder="Search SUMO concepts">
 <button id="expand">Expand all</button><button id="collapse">Collapse all</button></div>
+<div class="search-presets" aria-label="Search presets"><button type="button" data-search="human">human</button><button type="button" data-search="animal">animal</button><button type="button" data-search="plant">plant</button><button type="button" data-search="artifact">artifact</button><button type="button" data-search="place">place</button><button type="button" data-search="abstract">abstract</button></div>
 <div id="summary" class="muted"></div><div id="results"></div><section id="tree"></section>
 </main>
 <script>
@@ -59,12 +61,15 @@ document.querySelector('#summary').textContent=`${count('nodeCount',data.nodes.l
 document.querySelector('#expand').onclick=()=>{lineageNode=null;data.nodes.forEach(n=>nodeModes.set(n.id,1));render()};
 document.querySelector('#collapse').onclick=()=>{lineageNode=null;data.nodes.forEach(n=>nodeModes.set(n.id,0));render()};
 function focusNode(id){lineageNode=null;for(let current=id;current;current=parentOf.get(current))nodeModes.set(current,1);render();document.getElementById(encodeURIComponent(id))?.scrollIntoView({block:'center'})}
+function focusLineage(id){lineageNode=id;render();document.getElementById(encodeURIComponent(id))?.scrollIntoView({block:'center'})}
 document.querySelector('#tree').onclick=e=>{const a=e.target.closest('a[data-node]');if(a){e.preventDefault();focusNode(a.dataset.node);return}const lineageButton=e.target.closest('button.lineage-toggle[data-node]');if(lineageButton){const id=lineageButton.dataset.node;lineageNode=lineageNode===id?null:id;render();return}const button=e.target.closest('button.expander[data-node]');if(!button)return;const id=button.dataset.node;nodeModes.set(id,nodeModes.get(id)===1?0:1);lineageNode=null;render()};
-document.querySelector('#results').onclick=e=>{const a=e.target.closest('a[data-node]');if(!a)return;e.preventDefault();focusNode(a.dataset.node)};
-document.querySelector('#search').oninput=e=>{const q=e.target.value.trim().toLowerCase();
+document.querySelector('#results').onclick=e=>{const a=e.target.closest('a[data-node]');if(!a)return;e.preventDefault();focusLineage(a.dataset.node)};
+function searchFor(q){q=q.trim().toLowerCase();
 const hits=data.nodes.filter(n=>`${n.id} ${n.label}`.toLowerCase().includes(q)).slice(0,100);
 document.querySelector('#results').innerHTML=q?`<strong>${hits.length}${hits.length===100?'+':''} matches</strong>`+
 hits.map(n=>`<div class="result">${link(n.id)} <span class="meta">${esc(n.id)}</span></div>`).join(''):''};
+document.querySelector('#search').oninput=e=>searchFor(e.target.value);
+document.querySelector('.search-presets').onclick=e=>{const button=e.target.closest('button[data-search]');if(!button)return;document.querySelector('#search').value=button.dataset.search;searchFor(button.dataset.search)};
 fetch('sumo.json').then(r=>r.json()).then(x=>{data=x;byId=new Map(data.nodes.map(n=>[n.id,n]));parentOf=new Map();data.nodes.forEach(n=>n.children.forEach(child=>parentOf.set(child,n.id)));descendantCounts=new Map();data.nodes.forEach(n=>descendantCount(n.id));nodeModes=new Map(data.nodes.map(n=>[n.id,0]));data.rootNodes.forEach(root=>nodeModes.set(root,1));lineageNode=null;alternateChildren=new Map();data.nodes.forEach(n=>n.alternateParents.forEach(parent=>{if(!alternateChildren.has(parent))alternateChildren.set(parent,[]);alternateChildren.get(parent).push(n.id)}));render()})
 .catch(e=>document.querySelector('#tree').textContent=`Could not load sumo.json: ${e}`);
 </script>
