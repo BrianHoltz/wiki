@@ -1655,6 +1655,9 @@ but DMOZ is the precise name for the data structure.
 
 ## Upper ontology notes
 
+- `Entity / Property / Relation` is our proposed triad, not a complete
+  arrangement copied from one prior art.
+
 ### Ontology
 
 - `Ontology` is our meta-level/browser wrapper; it is not a borrowed
@@ -1664,8 +1667,6 @@ but DMOZ is the precise name for the data structure.
 
 - `Entity` as a universal domain is shared by SUMO and broad formal-ontology
   and knowledge-representation practice; this exact placement is ours.
-- `Entity → Object / Property / Relation` is our synthesis, not a copied
-  hierarchy.
 - `Object` remains a close call: genuine entity kind or merely an argument
   role. Resolve it against events, propositions, numbers, organizations,
   fictional entities, and reified predicates before adding it.
@@ -1675,16 +1676,23 @@ but DMOZ is the precise name for the data structure.
 - `Property` as a top-level concept has precedent in philosophical/formal
   ontology and entity-property-value modeling; RDF/OWL uses “property” for
   relations, so the term is not stable across prior art.
-- This property node and its full child list were assembled in our
-  `overlay_canonical.py`; no single prior source supplied that group.
+- The child inventory was assembled in our maximal “Property candidates”
+  synthesis (`065fd48`) and copied into `overlay_canonical.py` (`f528ab0`);
+  it was not imported wholesale from one prior art. Its ingredients were
+  cross-compared from the prior-art families catalogued in that synthesis,
+  especially Aristotelian, SUMO/BFO-inspired, and formal/type-theoretic
+  variants.
 
 ### Relation
 
 - `Relation` as a top-level concept comes from logic, knowledge
-  representation, and conceptual modeling; the exact `Entity / Property /
-  Relation` triad is our synthesis.
-- The relation-child list was assembled in our `overlay_canonical.py`; no
-  single prior source supplied that group.
+  representation, and conceptual modeling.
+- The child inventory was assembled beside the property inventory in the
+  maximal candidate synthesis (`065fd48`) and copied into
+  `overlay_canonical.py` (`f528ab0`); it was not imported wholesale from one
+  prior art. It mixes subject-matter, logical, mathematical, operational,
+  and provenance axes, so several children are not justified as siblings and
+  require review.
 
 ## Upper ontology
 
