@@ -33,7 +33,7 @@ const esc=v=>String(v).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'
 let data,byId,alternateChildren;
 function link(id){const n=byId.get(id);return n?`<a href="#${encodeURIComponent(id)}" data-node="${esc(id)}">${esc(n.label)}</a>`:esc(id)}
 function formatDefinition(text){return esc(text).replace(/&amp;%([A-Za-z0-9_]+)/g,(_,id)=>byId.has(id)?link(id):esc(id))}
-function renderNode(id){const n=byId.get(id);
+function renderNode(id,open=false){const n=byId.get(id);
 const childCount=`<span class="meta"> · ${n.children.length} &#8595;</span>`;
 const altCount=n.alternateParents.length?`<span class="meta"> · ${n.alternateParents.length} &#8593;</span>`:'';
 const provisional=n.provisionalParent?` <span class="meta">· provisional placement</span>`:'';
@@ -42,8 +42,8 @@ const text=`${esc(n.label)}${childCount}${altCount}${provisional}${shortDef}`;
 const alts=n.alternateParents.length?`<div class="alt"><strong>Alternate Parents:</strong> ${n.alternateParents.map(link).join(', ')}</div>`:'';
 const reverse=alternateChildren.get(id)||[];
 const reverseBlock=reverse.length?`<div class="reverse"><strong>Alternate Children:</strong> ${reverse.map(link).join(', ')}</div>`:'';
-return `<li id="${encodeURIComponent(id)}"><details><summary>${text}</summary>${alts}${reverseBlock}<ul>${n.children.map(renderNode).join('')}</ul></details></li>`}
-function render(){document.querySelector('#tree').innerHTML=data.rootNodes.map(root=>`<ul>${renderNode(root)}</ul>`).join('');
+return `<li id="${encodeURIComponent(id)}"><details${open?' open':''}><summary>${text}</summary>${alts}${reverseBlock}<ul>${n.children.map(child=>renderNode(child)).join('')}</ul></details></li>`}
+function render(){document.querySelector('#tree').innerHTML=data.rootNodes.map(root=>`<ul>${renderNode(root,true)}</ul>`).join('');
 const stats=data.stats||{}, count=(key,fallback=0)=>Number.isFinite(stats[key])?stats[key]:fallback;
 document.querySelector('#summary').textContent=`${count('nodeCount',data.nodes.length).toLocaleString()} concepts · ${count('definitionCount',data.nodes.filter(n=>n.definition).length).toLocaleString()} definitions · ${count('projectedEdgeCount').toLocaleString()} primary edges · ${count('multipleParentNodeCount').toLocaleString()} alternate-parent cases · ${count('unaryNodeCount').toLocaleString()} unary nodes`;
 }
