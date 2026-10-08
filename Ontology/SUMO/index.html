@@ -35,7 +35,7 @@ let data,byId,alternateChildren,descendantCounts,parentOf,nodeModes,lineageNode;
 function descendantCount(id){if(descendantCounts.has(id))return descendantCounts.get(id);const n=byId.get(id);const count=n.children.reduce((total,child)=>total+1+descendantCount(child),0);descendantCounts.set(id,count);return count}
 function link(id){const n=byId.get(id);return n?`<a href="#${encodeURIComponent(id)}" data-node="${esc(id)}">${esc(n.label)}</a>`:esc(id)}
 function formatDefinition(text){return esc(text).replace(/&amp;%([A-Za-z0-9_]+)/g,(_,id)=>byId.has(id)?link(id):esc(id))}
-function renderNode(id,open=false,children=null,lineage=false){const n=byId.get(id);const visibleChildren=children||n.children;
+function renderNode(id,open=false,children=null,lineage=false,childOpen=null){const n=byId.get(id);const visibleChildren=children||n.children;
 const directChildren=n.children.length;
 const otherDescendants=descendantCount(id)-directChildren;
 const marker=lineage?'◆':open?'▼':'▶';
@@ -47,8 +47,8 @@ const text=`${esc(n.label)}${childCount}${altCount}${provisional}${shortDef}`;
 const alts=n.alternateParents.length?`<div class="alt"><strong>Alternate Parents:</strong> ${n.alternateParents.map(link).join(', ')}</div>`:'';
 const reverse=alternateChildren.get(id)||[];
 const reverseBlock=reverse.length?`<div class="reverse"><strong>Alternate Children:</strong> ${reverse.map(link).join(', ')}</div>`:'';
-return `<li id="${encodeURIComponent(id)}"><div class="node"><button class="expander" type="button" data-node="${esc(id)}">${marker}</button><span class="node-content">${text}</span></div>${alts}${reverseBlock}<ul class="children"${open?'':' hidden'}>${visibleChildren.map(child=>renderNode(child)).join('')}</ul></li>`}
-function renderLineage(path,index){const id=path[index],children=index===path.length-1?byId.get(id).children:[path[index+1]];return renderNode(id,true,children,index===path.length-1)}
+return `<li id="${encodeURIComponent(id)}"><div class="node"><button class="expander" type="button" data-node="${esc(id)}">${marker}</button><span class="node-content">${text}</span></div>${alts}${reverseBlock}<ul class="children"${open?'':' hidden'}>${visibleChildren.map(child=>renderNode(child,childOpen===null?nodeModes.get(child)===1:childOpen)).join('')}</ul></li>`}
+function renderLineage(path,index){const id=path[index],children=index===path.length-1?byId.get(id).children:[path[index+1]];return renderNode(id,true,children,index===path.length-1,index<path.length-1)}
 function render(){let tree;
 if(lineageNode){const path=[],seen=new Set();for(let id=lineageNode;id&&!seen.has(id);id=parentOf.get(id)){path.unshift(id);seen.add(id)}tree=`<ul>${renderLineage(path,0)}</ul>`}
 else tree=data.rootNodes.map(root=>`<ul>${renderNode(root,nodeModes.get(root)===1)}</ul>`).join('');
