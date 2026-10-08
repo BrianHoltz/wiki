@@ -46,7 +46,7 @@ const altCount=n.alternateParents.length?`<span class="meta"> · ${n.alternatePa
 const provisional=n.provisionalParent?` <span class="meta">· provisional placement</span>`:'';
 const shortDef=n.definition?`<span class="definition" title="${esc(n.definition)}">${formatDefinition(n.definition)}</span>`:'';
 const text=`<span class="node-title">${esc(n.label)}</span><button class="lineage-toggle" type="button" data-node="${esc(id)}">↖</button>${childCount}${altCount}${provisional}${shortDef}`;
-const alts=!lineageNode&&n.alternateParents.length?`<div class="alt"><strong>Alternate Parents:</strong> ${n.alternateParents.map(link).join(', ')}</div>`:'';
+const alts=!lineageNode&&open&&n.alternateParents.length?`<div class="alt"><strong>Alternate Parents:</strong> ${n.alternateParents.map(link).join(', ')}</div>`:'';
 const reverse=alternateChildren.get(id)||[];
 const reverseBlock=!lineageNode&&reverse.length?`<div class="reverse"><strong>Alternate Children:</strong> ${reverse.map(link).join(', ')}</div>`:'';
 return `<li id="${encodeURIComponent(id)}"><div class="node"><button class="expander" type="button" data-node="${esc(id)}">${marker}</button><span class="node-content">${text}</span></div>${alts}${reverseBlock}<ul class="children"${open?'':' hidden'}>${visibleChildren.map(child=>renderNode(child,lineageNode?lineageChildren?.has(child):nodeModes.get(child)===1)).join('')}</ul></li>`}

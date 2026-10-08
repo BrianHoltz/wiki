@@ -4,6 +4,7 @@
 - [ ] Historical SUMO browser loads the pre-extension `Entity` tree.
 - [ ] Root and first-level nodes open by default.
 - [ ] Triangle controls toggle only between collapsed and expanded states.
+- [ ] Alternate-parent lines are hidden while their node is collapsed.
 - [ ] The `↖` control sits immediately after the node title.
 - [ ] Lineage mode shows every ancestor through the selected node and only its direct children.
 - [ ] Lineage mode hides descendants below those direct children and alternate-parent projections.
