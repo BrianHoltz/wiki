@@ -37,7 +37,9 @@ function formatDefinition(text){return esc(text).replace(/&amp;%([A-Za-z0-9_]+)/
 function renderNode(id,open=false){const n=byId.get(id);
 const directChildren=n.children.length;
 const otherDescendants=descendantCount(id)-directChildren;
-const childCount=`<span class="meta"> · ${directChildren}+${otherDescendants} &#8595;</span>`;
+const childCount=directChildren
+  ? `<span class="meta"> · ${directChildren}${otherDescendants?`+${otherDescendants}`:''} &#8595;</span>`
+  : '';
 const altCount=n.alternateParents.length?`<span class="meta"> · ${n.alternateParents.length} &#8593;</span>`:'';
 const provisional=n.provisionalParent?` <span class="meta">· provisional placement</span>`:'';
 const shortDef=n.definition?`<span class="definition" title="${esc(n.definition)}">${formatDefinition(n.definition)}</span>`:'';
