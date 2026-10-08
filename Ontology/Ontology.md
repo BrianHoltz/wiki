@@ -1103,6 +1103,115 @@ research pass should compare the formal definitions, licensing, maintenance,
 machine-readable availability, and coverage of these players before selecting
 which structures deserve a detailed synthesis study.
 
+### Compact upper-level trees
+
+#### Aristotle's Categories
+
+```text
+Being
+└── Substance
+    └── Body
+        ├── Natural body
+        └── Artificial body
+```
+
+#### Sowa's Knowledge Representation Ontology
+
+```text
+Entity
+├── Physical
+│   ├── Continuant
+│   │   └── Object
+│   └── Occurrent
+└── Abstract
+    ├── Continuant
+    └── Occurrent
+```
+
+#### Suggested Upper Merged Ontology
+
+```text
+Entity
+├── Physical
+│   ├── Object
+│   │   └── SelfConnectedObject
+│   └── Process
+└── Abstract
+```
+
+#### Descriptive Ontology for Linguistic and Cognitive Engineering
+
+```text
+Particular
+├── Endurant
+│   ├── PhysicalEndurant
+│   │   └── PhysicalObject
+│   └── NonPhysicalEndurant
+├── Perdurant
+│   └── Event
+├── Quality
+└── Abstract
+```
+
+#### Basic Formal Ontology
+
+```text
+Entity
+├── Continuant
+│   ├── IndependentContinuant
+│   │   └── MaterialEntity
+│   │       └── Object
+│   └── SpecificallyDependentContinuant
+└── Occurrent
+    └── Process
+```
+
+#### General Formal Ontology
+
+```text
+Entity
+├── Concrete
+│   ├── Presential
+│   │   └── MaterialObject
+│   └── Process
+└── Abstract
+    └── Category
+```
+
+#### Unified Foundational Ontology
+
+```text
+Entity
+├── Endurant
+│   ├── Object
+│   │   └── MaterialObject
+│   └── Moment
+└── Perdurant
+    └── Event
+```
+
+#### WordNet noun hierarchy
+
+```text
+Entity
+├── PhysicalEntity
+│   └── Thing
+│       └── Object
+└── Abstraction
+```
+
+#### Schema.org
+
+```text
+Thing
+├── Place
+│   └── Landform
+├── Product
+│   └── IndividualProduct
+├── CreativeWork
+└── Event
+```
+
 ### SUMO PDF tree projection and unary-node policy
 
 The [SUMO browser](SUMO/index.html) is rebuilt from the nodes and directed blue
