@@ -1657,22 +1657,34 @@ but DMOZ is the precise name for the data structure.
 
 ### Ontology
 
-- `Ontology` as a root is our meta-level/browser wrapper, not a borrowed
+- `Ontology` is our meta-level/browser wrapper; it is not a borrowed
   upper-ontology category.
-- The modeled root may instead be `Entity`; retain `Ontology` as metadata or
-  navigation chrome if that is the cleaner distinction.
 
 ### Entity
 
-- `Entity` as the domain root follows broad formal-ontology and
-  knowledge-representation usage; the exact placement here is our synthesis,
-  not a copied tree.
-- The proposed `Entity → Object / Property / Relation` arrangement is ours;
-  I have not identified a prior source that establishes those exact siblings.
-- `Object` needs a decision before adoption: a genuine entity kind, or merely
-  an entity's role as an argument of predication. Do not add it as a child
-  until events, propositions, numbers, organizations, fictional entities,
-  and reified properties/relations have been tested against that distinction.
+- `Entity` as a universal domain is shared by SUMO and broad formal-ontology
+  and knowledge-representation practice; this exact placement is ours.
+- `Entity → Object / Property / Relation` is our synthesis, not a copied
+  hierarchy.
+- `Object` remains a close call: genuine entity kind or merely an argument
+  role. Resolve it against events, propositions, numbers, organizations,
+  fictional entities, and reified predicates before adding it.
+
+### Property
+
+- `Property` as a top-level concept has precedent in philosophical/formal
+  ontology and entity-property-value modeling; RDF/OWL uses “property” for
+  relations, so the term is not stable across prior art.
+- This property node and its full child list were assembled in our
+  `overlay_canonical.py`; no single prior source supplied that group.
+
+### Relation
+
+- `Relation` as a top-level concept comes from logic, knowledge
+  representation, and conceptual modeling; the exact `Entity / Property /
+  Relation` triad is our synthesis.
+- The relation-child list was assembled in our `overlay_canonical.py`; no
+  single prior source supplied that group.
 
 ## Upper ontology
 
