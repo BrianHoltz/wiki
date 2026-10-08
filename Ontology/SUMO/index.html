@@ -16,6 +16,7 @@ input{min-width:280px;flex:1}button{cursor:pointer}ul{list-style:none;margin:0;p
 summary{cursor:pointer;display:flex;align-items:baseline;gap:4px;list-style:none}summary::-webkit-details-marker{display:none}summary::before{content:"\25B6";display:inline-block;flex:none;width:1em}details[open] > summary::before{content:"\25BC"}.meta{color:var(--muted);font-size:12px;margin-left:6px;flex:none}.definition{color:var(--muted);font-size:13px;margin-left:8px;flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;vertical-align:bottom}details[open] > summary .definition{overflow:visible;text-overflow:clip;white-space:normal;vertical-align:baseline}.alt,.reverse{font-size:13px;margin:6px 0 8px 22px}.alt,.reverse{color:var(--muted)}
 details.lineage > summary::before{content:"\25C6"}
 a{color:var(--accent)}#results{margin:10px 0 18px}.result{padding:5px 0;border-bottom:1px solid var(--line)}
+.node{display:flex;align-items:baseline;gap:4px}.expander{background:transparent;border:0;color:var(--fg);cursor:pointer;font:inherit;padding:0;width:1em}.children[hidden]{display:none}
 </style>
 </head>
 <body>
@@ -37,9 +38,8 @@ function formatDefinition(text){return esc(text).replace(/&amp;%([A-Za-z0-9_]+)/
 function renderNode(id,open=false,children=null,lineage=false){const n=byId.get(id);const visibleChildren=children||n.children;
 const directChildren=n.children.length;
 const otherDescendants=descendantCount(id)-directChildren;
-const childCount=directChildren
-  ? `<span class="meta"> · ${directChildren}${otherDescendants?`+${otherDescendants}`:''} &#8595;</span>`
-  : '';
+const marker=lineage?'◆':open?'▼':'▶';
+const childCount=directChildren?`<span class="meta"> · ${directChildren}${otherDescendants?`+${otherDescendants}`:''}</span>`:'';
 const altCount=n.alternateParents.length?`<span class="meta"> · ${n.alternateParents.length} &#8593;</span>`:'';
 const provisional=n.provisionalParent?` <span class="meta">· provisional placement</span>`:'';
 const shortDef=n.definition?`<span class="definition" title="${esc(n.definition)}">${formatDefinition(n.definition)}</span>`:'';
@@ -47,7 +47,7 @@ const text=`${esc(n.label)}${childCount}${altCount}${provisional}${shortDef}`;
 const alts=n.alternateParents.length?`<div class="alt"><strong>Alternate Parents:</strong> ${n.alternateParents.map(link).join(', ')}</div>`:'';
 const reverse=alternateChildren.get(id)||[];
 const reverseBlock=reverse.length?`<div class="reverse"><strong>Alternate Children:</strong> ${reverse.map(link).join(', ')}</div>`:'';
-return `<li id="${encodeURIComponent(id)}"><details${open?' open':''}${lineage?' class="lineage"':''}><summary data-node="${esc(id)}">${text}</summary>${alts}${reverseBlock}<ul>${visibleChildren.map(child=>renderNode(child)).join('')}</ul></details></li>`}
+return `<li id="${encodeURIComponent(id)}"><div class="node"><button class="expander" type="button" data-node="${esc(id)}">${marker}</button><span class="node-content">${text}</span></div>${alts}${reverseBlock}<ul class="children"${open?'':' hidden'}>${visibleChildren.map(child=>renderNode(child)).join('')}</ul></li>`}
 function renderLineage(path,index){const id=path[index],children=index===path.length-1?byId.get(id).children:[path[index+1]];return renderNode(id,true,children,index===path.length-1)}
 function render(){let tree;
 if(lineageNode){const path=[],seen=new Set();for(let id=lineageNode;id&&!seen.has(id);id=parentOf.get(id)){path.unshift(id);seen.add(id)}tree=`<ul>${renderLineage(path,0)}</ul>`}
@@ -58,7 +58,7 @@ document.querySelector('#summary').textContent=`${count('nodeCount',data.nodes.l
 }
 document.querySelector('#expand').onclick=()=>{lineageNode=null;data.nodes.forEach(n=>nodeModes.set(n.id,1));render()};
 document.querySelector('#collapse').onclick=()=>{lineageNode=null;data.nodes.forEach(n=>nodeModes.set(n.id,0));render()};
-document.querySelector('#tree').onclick=e=>{const a=e.target.closest('a[data-node]');if(a){e.preventDefault();const node=document.getElementById(encodeURIComponent(a.dataset.node));if(node){node.scrollIntoView({block:'center'});node.querySelector(':scope > details').open=true}return}const summary=e.target.closest('summary[data-node]');if(!summary)return;e.preventDefault();const id=summary.dataset.node,mode=nodeModes.get(id)||0;if(mode===0){nodeModes.set(id,1)}else if(mode===1){nodeModes.set(id,2);lineageNode=id}else{nodeModes.set(id,0);lineageNode=null}render()};
+document.querySelector('#tree').onclick=e=>{const a=e.target.closest('a[data-node]');if(a){e.preventDefault();const node=document.getElementById(encodeURIComponent(a.dataset.node));if(node){nodeModes.set(a.dataset.node,1);lineageNode=null;render();document.getElementById(encodeURIComponent(a.dataset.node))?.scrollIntoView({block:'center'})}return}const button=e.target.closest('button.expander[data-node]');if(!button)return;const id=button.dataset.node,mode=nodeModes.get(id)||0;if(mode===0){nodeModes.set(id,1)}else if(mode===1){nodeModes.set(id,2);lineageNode=id}else{nodeModes.set(id,0);lineageNode=null}render()};
 document.querySelector('#search').oninput=e=>{const q=e.target.value.trim().toLowerCase();
 const hits=data.nodes.filter(n=>`${n.id} ${n.label}`.toLowerCase().includes(q)).slice(0,100);
 document.querySelector('#results').innerHTML=q?`<strong>${hits.length}${hits.length===100?'+':''} matches</strong>`+
