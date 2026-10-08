@@ -1833,6 +1833,29 @@ The current evidence therefore favors assigning `Thing` to the broader
 physical-existence slot and retaining `Physical object` for the narrower
 ordinary-object slot.
 
+### Contrasts with abstract entity
+
+- Concrete
+- Physical
+- Material
+- Real
+- Actual
+- Existent
+- Embodied
+- Particular
+- Sensible
+- Tangible
+- Phenomenal
+- Objective
+- Empirical
+- Spatiotemporal
+- Corporeal
+- Substantial
+- Worldly
+- Natural
+- Instantiated
+- Realized
+
 ### Prior-art definitions of the candidate words
 
 #### Entity
