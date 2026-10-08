@@ -4,11 +4,11 @@
 
 * [BrianThinks](BrianThinks.md)
 * [BrianThinksManually](BrianThinksManually.md)
-* Ontology
+* [Ontology](Ontology/Ontology.md)
   * [My ontology](Ontology/)
-  * [Human knowledge ontology](Ontology/HumanKnowledge/)
-  * [SUMO ontology](Ontology/SUMO/)
-  * [Propædia ontology](Ontology/Propaedia/)
+  * [Human knowledge](Ontology/HumanKnowledge/)
+  * [SUMO](Ontology/SUMO/)
+  * [Propædia](Ontology/Propaedia/)
 
 [Artificial Intelligence]()
 

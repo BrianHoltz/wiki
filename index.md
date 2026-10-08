@@ -1,14 +1,14 @@
 ### Human Knowledge
 
-- [BrianThinks](BrianThinks.md) — AI proxy constitution
-- [BrianThinksManually](BrianThinksManually.md) — AI proxy portal
-- Ontology
-  - [My ontology](Ontology/) — canonical ontology browser
-  - [Human knowledge outline](Ontology/HumanKnowledge/) — human knowledge outline browser
-  - [SUMO](Ontology/SUMO/) — SUMO ontology browser
-  - [Roget's 1911 conceptual tree](Ontology/Rogets/) — Roget's thesaurus browser
-  - [Propædia](Ontology/Propaedia/) — Propædia outline browser
-  - [Wikipedia categories](Ontology/Wikipedia/) — Wikipedia category browser
+- [BrianThinks](BrianThinks.md)
+- [BrianThinksManually](BrianThinksManually.md)
+- [Ontology](Ontology/Ontology.md)
+  - [My ontology](Ontology/)
+  - [Human knowledge](Ontology/HumanKnowledge/)
+  - [SUMO](Ontology/SUMO/)
+  - [Roget's 1911 conceptual tree](Ontology/Rogets/)
+  - [Propædia](Ontology/Propaedia/)
+  - [Wikipedia categories](Ontology/Wikipedia/)
 
 ### Artificial Intelligence
 
