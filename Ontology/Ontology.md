@@ -1749,6 +1749,27 @@ language and are testable against the existing tree.
 - Slots 5 through 10 need labels that should be chosen from their technical
   prior-art uses rather than from the remaining everyday synonyms.
 
+### Entity, Object, Physical entity, Physical object
+
+- The current chain is `Entity → Object → Physical entity → Physical object`.
+- This is defensible only if `Entity` is the universal domain, `Object` is
+  the non-predicative bearer/participant branch, `Physical entity` includes
+  both material continuants and physical occurrences, and `Physical object`
+  is the narrower self-connected material-continuant branch.
+- In philosophical and formal-ontology usage, `entity` is generally the broad
+  term for anything admitted as existing or as a domain individual. `Object`
+  is more variable: it commonly means an ordinary bearer of properties, a
+  material continuant, or the target of intentional reference, but it is not
+  a stable synonym for `entity`.
+- The chain becomes incoherent if `Object` is defined only as a physical
+  thing while `Physical entity` is its parent, or if `Physical object` merely
+  repeats the meaning of `Object`. The three lower terms need distinct
+  extension tests and non-overlapping definitions.
+- The immediate audit is therefore whether `Physical entity` genuinely needs
+  to include processes and other non-object physical entities, and whether
+  `Physical object` should be the sole home for ordinary spatially extended
+  material things.
+
 ### Prior-art definitions of the candidate words
 
 #### Entity

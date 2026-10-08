@@ -269,7 +269,7 @@ def overlay(input_path: Path, output_path: Path) -> None:
     physical_root["label"] = "Physical entity"
     physical_root["definition"] = (
         "An entity with a physical embodiment or location in space-time; "
-        "its descendants retain the SUMO-derived physical classification."
+        "its descendants retain the source physical classification."
     )
     physical_root["definitionSource"] = "project editorial"
     physical_root["children"] = [
@@ -290,17 +290,19 @@ def overlay(input_path: Path, output_path: Path) -> None:
     records["PhysicalEntity"]["directParentCount"] = 1
     records["PhysicalEntity"]["alternateParents"] = []
     records["Entity"]["directParentCount"] = 0
+    for record in records.values():
+        if record.get("definitionSource") == "SUMO KIF":
+            record["definitionSource"] = "source KIF"
 
     nodes = sorted(records.values(), key=lambda item: (item["label"].lower(), item["id"]))
     selected_edges = sum(len(item["children"]) for item in nodes)
     output = {
         "source": {
-            **data["source"],
-            "name": "Canonical upper ontology with SUMO physical projection",
+            "name": "Canonical upper ontology with historical physical projection",
             "upperOntology": "Ontology/Ontology.md#upper-ontology",
             "overlayPolicy": (
-                "Replace the SUMO upper ontology with the project canonical "
-                "Entity/Property/Relation synthesis; retain SUMO physical descendants."
+                "Use the project canonical Entity/Object/Property/Relation "
+                "projection while retaining the historical physical descendants."
             ),
         },
         "stats": {
