@@ -3,272 +3,72 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Wikipedia Category Browser</title>
+<title>Wikipedia categories</title>
 <style>
-:root {
-  color-scheme: light dark;
-  --accent: #2f6feb;
-  --background: #fff;
-  --text: #1f2328;
-  --panel: #f6f8fa;
-  --muted: #57606a;
-  --border: #8c959f;
-  --link: #0969da;
-  --warning: #9a6700;
-}
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0d1117;
-    --text: #e6edf3;
-    --panel: #161b22;
-    --muted: #8b949e;
-    --border: #6e7681;
-    --link: #58a6ff;
-    --warning: #d29922;
-  }
-}
-body {
-  color: var(--text);
-  background: var(--background);
-  font: 15px/1.45 system-ui, -apple-system, sans-serif;
-  margin: 0 auto;
-  max-width: 1200px;
-  padding: 24px;
-}
-h1 { margin-bottom: 6px; }
-a { color: var(--link); }
-.intro, .notice {
-  background: var(--panel);
-  border-left: 4px solid var(--accent);
-  padding: 10px 14px;
-  margin: 10px 0;
-}
-.notice { border-left-color: var(--warning); }
-.controls {
-  display: flex;
-  gap: 8px;
-  flex-wrap: wrap;
-  margin: 18px 0;
-}
-input, select, button {
-  color: var(--text);
-  background: var(--panel);
-  border: 1px solid var(--border);
-  border-radius: 6px;
-  padding: 9px 12px;
-}
-input { flex: 1 1 280px; }
-button { cursor: pointer; }
-button:hover { border-color: var(--accent); }
-#status { color: var(--muted); margin: 8px 0; }
-#search-results { margin: 8px 0 18px; }
-.result {
-  display: inline-block;
-  margin: 3px 8px 3px 0;
-  padding: 4px 8px;
-  border: 1px solid var(--border);
-  border-radius: 5px;
-  cursor: pointer;
-}
-details { margin: 4px 0 4px 12px; }
-summary { cursor: pointer; padding: 5px; }
-summary:hover { background: var(--panel); }
-.children { border-left: 1px solid var(--border); margin-left: 9px; padding-left: 8px; }
-.category-meta, .loading, .empty, .error {
-  color: var(--muted);
-  font-size: .9em;
-  padding: 3px 6px 6px 25px;
-}
-.error { color: var(--warning); }
-.category-meta a { margin-left: 8px; }
-.load-more { margin: 6px 0 8px 25px; }
-[hidden] { display: none !important; }
+:root{color-scheme:light dark;--bg:#fff;--fg:#202124;--muted:#5f6368;--panel:#f5f7fa;--line:#c7cbd1;--accent:#1769aa}
+@media(prefers-color-scheme:dark){:root{--bg:#17191c;--fg:#e8eaed;--muted:#b4bac4;--panel:#24282e;--line:#59616d;--accent:#8ab4f8}}
+body{background:var(--bg);color:var(--fg);font:15px/1.45 system-ui,sans-serif;margin:0}
+main{max-width:1100px;margin:auto;padding:24px}h1{margin:0 0 4px}h2{margin-top:28px}
+.muted{color:var(--muted)}.notice{background:var(--panel);border-left:4px solid var(--accent);padding:12px 16px}
+.summary-row{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin:18px 0 8px}.summary-actions{display:flex;gap:8px}
+input,button{background:var(--bg);border:1px solid var(--line);border-radius:5px;color:var(--fg);padding:8px 10px}
+input{min-width:280px;width:100%;box-sizing:border-box}button{cursor:pointer}ul{list-style:none;margin:0;padding-left:22px}li{margin:3px 0}
+.search-row{display:flex;align-items:center;gap:8px;margin:8px 0 10px}.search-row input{flex:1;width:auto}.search-presets{display:flex;gap:8px;flex:none;margin:0}
+summary{cursor:pointer;display:flex;align-items:baseline;gap:4px;list-style:none}summary::-webkit-details-marker{display:none}summary::before{content:"\25B6";display:inline-block;flex:none;width:1em}details[open] > summary::before{content:"\25BC"}.meta{color:var(--muted);font-size:12px;margin-left:6px;flex:none}.definition{color:var(--muted);font-size:13px;margin-left:8px;flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;vertical-align:bottom}.definition.expanded{overflow:visible;text-overflow:clip;white-space:normal;vertical-align:baseline}
+details.lineage > summary::before{content:"\25C6"}
+a{color:var(--accent)}#results{margin:10px 0 18px}.result{padding:5px 0;border-bottom:1px solid var(--line)}
+.node{display:flex;align-items:baseline;gap:4px}.node-content{display:flex;align-items:baseline;gap:4px;min-width:0;flex:1}.expander,.lineage-toggle{background:transparent;border:0;color:var(--fg);cursor:pointer;font:inherit;padding:0;width:1em}.expander-placeholder{display:inline-block;flex:none;width:1em}.lineage-toggle{color:var(--accent)}.children[hidden]{display:none}
 </style>
 </head>
 <body>
-<h1>Wikipedia Category Browser</h1>
-<div class="intro">
-  This browser explores a static snapshot of Wikipedia’s category system,
-  beginning with
-  <a href="https://en.wikipedia.org/wiki/Category:Main_topic_classifications"
-     target="_blank" rel="noopener">Main topic classifications</a>.
-  Expand a category to browse its locally packaged subcategories. Search finds
-  categories in the snapshot, and every category has a link to its live
-  Wikipedia page.
-</div>
-<div class="notice">
-  Wikipedia categories are a many-parent graph, not a clean taxonomy. They
-  include article topics, people, places, maintenance groupings, and
-  navigation aids; cycles and duplicate paths are possible. This snapshot
-  contains the two navigation roots through depth 3. Deeper categories remain
-  available through their live links. This page does not claim that a
-  category is a noun class or a 20 Questions branch.
-</div>
-<div class="controls">
-  <select id="root">
-    <option value="Category:Main topic classifications">Main topic classifications</option>
-    <option value="Category:Contents">Contents</option>
-  </select>
-  <button id="load-root">Load root</button>
-  <input id="search" type="search" placeholder="Search Wikipedia categories...">
-  <button id="search-button">Search</button>
-</div>
-<div id="status" role="status"></div>
-<div id="search-results"></div>
-<main id="tree"></main>
+<main>
+<div class="summary-row"><div class="summary-actions"><button id="expand">Expand...</button><button id="collapse">Collapse...</button></div><span id="summary" class="muted"></span></div>
+<div class="search-row"><input id="search" type="search" placeholder="Search this ontology">
+<div class="search-presets" aria-label="Search presets"><button type="button" data-search="geography" data-target="Category:Geography">geography</button><button type="button" data-search="science" data-target="Category:Science">science</button><button type="button" data-search="biology" data-target="Category:Biology">biology</button><button type="button" data-search="history" data-target="Category:History">history</button><button type="button" data-search="mathematics" data-target="Category:Mathematics">mathematics</button></div></div>
+<div id="results"></div><section id="tree"></section>
+</main>
 <script>
-const tree = document.querySelector("#tree");
-const status = document.querySelector("#status");
-const results = document.querySelector("#search-results");
-let snapshot = null;
-
-function categoryUrl(title) {
-  return `https://en.wikipedia.org/wiki/${encodeURIComponent(title.replaceAll(" ", "_"))}`;
+const esc=v=>String(v).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+let data,byId,descendantCounts,parentOf,nodeModes,lineageNode,lineageChildren;
+function descendantCount(id){if(descendantCounts.has(id))return descendantCounts.get(id);const n=byId.get(id);const count=n.children.reduce((total,child)=>total+1+descendantCount(child),0);descendantCounts.set(id,count);return count}
+function link(id){const n=byId.get(id);return n?`<a href="#${encodeURIComponent(id)}" data-node="${esc(id)}">${esc(n.label)}</a>`:esc(id)}
+function sourceLink(n){return n.sourceUrl?` <a class="source-link" href="${esc(n.sourceUrl)}" target="_blank" rel="noopener" aria-label="Open source for ${esc(n.label)}">↗</a>`:''}
+function formatDefinition(text){return esc(text).replace(/&amp;%([A-Za-z0-9_]+)/g,(_,id)=>byId.has(id)?link(id):esc(id))}
+function renderNode(id,open=false,children=null,lineage=false,childOpen=null){const n=byId.get(id);const visibleChildren=children||lineageChildren?.get(id)||n.children;
+const directChildren=n.children.length;
+const otherDescendants=descendantCount(id)-directChildren;
+const marker=open?'▼':'▶';
+const childCount=directChildren?`<span class="meta"> · ${directChildren}${otherDescendants?`+${otherDescendants}`:''} &#8595;</span>`:'';
+const provisional=n.provisionalParent?` <span class="meta">· provisional placement</span>`:'';
+const shortDef=n.definition?`<span class="definition${open?' expanded':''}" title="${esc(n.definition)}">${formatDefinition(n.definition)}</span>`:'';
+const expander=directChildren?`<button class="expander" type="button" data-node="${esc(id)}">${marker}</button>`:'<span class="expander-placeholder" aria-hidden="true"></span>';
+const text=`<span class="node-title">${link(id)}${sourceLink(n)}</span><button class="lineage-toggle" type="button" data-node="${esc(id)}">↖</button>${childCount}${provisional}${shortDef}`;
+return `<li id="${encodeURIComponent(id)}"><div class="node">${expander}<span class="node-content">${text}</span></div><ul class="children"${open?'':' hidden'}>${visibleChildren.map(child=>renderNode(child,lineageNode?lineageChildren?.has(child):nodeModes.get(child)===1)).join('')}</ul></li>`}
+function renderLineage(path){lineageChildren=new Map(path.map((id,index)=>[id,index===path.length-1?byId.get(id).children:[path[index+1]]]));return renderNode(path[0],true)}
+function render(){let tree;
+if(lineageNode){const path=[],seen=new Set();for(let id=lineageNode;id&&!seen.has(id);id=parentOf.get(id)){path.unshift(id);seen.add(id)}tree=`<ul>${renderLineage(path)}</ul>`}
+else {lineageChildren=null;tree=data.rootNodes.map(root=>`<ul>${renderNode(root,nodeModes.get(root)===1)}</ul>`).join('')}
+document.querySelector('#tree').innerHTML=tree;
+const stats=data.stats||{}, count=(key,fallback=0)=>Number.isFinite(stats[key])?stats[key]:fallback;
+const source=data.source||{}, sourceLabel=source.name||'this Ontology';
+const sourceUrl=source.url||'https://humanknowledge.net/wiki/#!./Ontology/Ontology.md';
+const sourceText=`<a href="${esc(sourceUrl)}" target="_blank" rel="noopener">${esc(sourceLabel)}</a>`;
+document.querySelector('#summary').innerHTML=`... all ${count('nodeCount',data.nodes.length).toLocaleString()} concepts · ${count('definitionCount',data.nodes.filter(n=>n.definition).length).toLocaleString()} definitions · ${count('projectedEdgeCount').toLocaleString()} edges in ${sourceText}`;
 }
-
-function setStatus(text) {
-  status.textContent = text;
-}
-
-function categoryLabel(title) {
-  return title.replace(/^Category:/, "");
-}
-
-function addMessage(parent, className, text) {
-  const message = document.createElement("div");
-  message.className = className;
-  message.textContent = text;
-  parent.append(message);
-  return message;
-}
-
-function addCategory(parent, title, ancestry = new Set()) {
-  const details = document.createElement("details");
-  details.className = "category";
-  details.dataset.title = title;
-  const summary = document.createElement("summary");
-  summary.textContent = categoryLabel(title);
-  details.append(summary);
-
-  const meta = document.createElement("div");
-  meta.className = "category-meta";
-  const record = snapshot.categories[title];
-  if (!record) {
-    meta.textContent = "Outside the packaged snapshot.";
-    const link = document.createElement("a");
-    link.href = categoryUrl(title);
-    link.target = "_blank";
-    link.rel = "noopener";
-    link.textContent = "Open live category";
-    meta.append(link);
-  } else {
-    meta.textContent =
-      `Snapshot depth ${record.depth}; ${record.children.length} packaged subcategories`;
-    if (record.truncated) {
-      meta.textContent += "; deeper subcategories omitted";
-    }
-    const link = document.createElement("a");
-    link.href = categoryUrl(title);
-    link.target = "_blank";
-    link.rel = "noopener";
-    link.textContent = "Open live category";
-    meta.append(link);
-  }
-  details.append(meta);
-
-  const children = document.createElement("div");
-  children.className = "children";
-  details.append(children);
-  parent.append(details);
-
-  details.addEventListener("toggle", () => {
-    if (!details.open || details.dataset.loaded) return;
-    details.dataset.loaded = "true";
-    if (ancestry.has(title)) {
-      addMessage(children, "empty", "Cycle detected; this path is not expanded again.");
-      return;
-    }
-    const nextAncestry = new Set(ancestry);
-    nextAncestry.add(title);
-    if (!record || !record.children.length) {
-      addMessage(
-        children,
-        "empty",
-        record && record.truncated
-          ? "Deeper subcategories are outside this static snapshot."
-          : "No subcategories in this snapshot."
-      );
-      return;
-    }
-    record.children.forEach((child) => {
-      if (nextAncestry.has(child)) {
-        addMessage(children, "empty", `Cycle omitted: ${categoryLabel(child)}`);
-      } else {
-        addCategory(children, child, nextAncestry);
-      }
-    });
-    if (record.truncated) {
-      addMessage(children, "empty", "Deeper subcategories are omitted from this snapshot.");
-    }
-  });
-  return details;
-}
-
-function loadRoot() {
-  tree.replaceChildren();
-  results.replaceChildren();
-  if (!snapshot) return;
-  const title = document.querySelector("#root").value;
-  const root = addCategory(tree, title);
-  root.open = true;
-  setStatus(
-    `Loaded ${title}. Static snapshot: ${snapshot.snapshot.category_count.toLocaleString()} categories through depth ${snapshot.snapshot.max_depth}.`
-  );
-}
-
-function searchCategories() {
-  const query = document.querySelector("#search").value.trim();
-  results.replaceChildren();
-  if (!query) return;
-  const normalized = query.toLowerCase();
-  const matches = Object.keys(snapshot.categories)
-    .filter((title) => title.toLowerCase().includes(normalized))
-    .slice(0, 100);
-  if (!matches.length) {
-    addMessage(results, "empty", "No category pages found in the static snapshot.");
-  } else {
-    matches.forEach((title) => {
-      const result = document.createElement("button");
-      result.className = "result";
-      result.textContent = categoryLabel(title);
-      result.onclick = () => {
-        const root = addCategory(tree, title);
-        root.open = true;
-        root.scrollIntoView({ behavior: "smooth", block: "start" });
-      };
-      results.append(result);
-    });
-  }
-  setStatus(`Found ${matches.length}${matches.length === 100 ? "+" : ""} snapshot matches.`);
-}
-
-document.querySelector("#load-root").onclick = loadRoot;
-document.querySelector("#search-button").onclick = searchCategories;
-document.querySelector("#search").addEventListener("keydown", (event) => {
-  if (event.key === "Enter") searchCategories();
-});
-fetch("categories.json")
-  .then((response) => {
-    if (!response.ok) throw new Error(`Could not load categories.json (${response.status})`);
-    return response.json();
-  })
-  .then((data) => {
-    snapshot = data;
-    loadRoot();
-  })
-  .catch((error) => {
-    setStatus(`Static snapshot unavailable: ${error.message}`);
-  });
+document.querySelector('#expand').onclick=()=>{lineageNode=null;data.nodes.forEach(n=>nodeModes.set(n.id,1));render()};
+document.querySelector('#collapse').onclick=()=>{lineageNode=null;data.nodes.forEach(n=>nodeModes.set(n.id,0));render()};
+function focusNode(id){lineageNode=null;for(let current=id;current;current=parentOf.get(current))nodeModes.set(current,1);render();document.getElementById(encodeURIComponent(id))?.scrollIntoView({block:'center'})}
+function focusLineage(id){lineageNode=id;render();document.getElementById(encodeURIComponent(id))?.scrollIntoView({block:'center'})}
+document.querySelector('#tree').onclick=e=>{const a=e.target.closest('a[data-node]');if(a){e.preventDefault();focusNode(a.dataset.node);return}const lineageButton=e.target.closest('button.lineage-toggle[data-node]');if(lineageButton){const id=lineageButton.dataset.node;lineageNode=lineageNode===id?null:id;render();return}const button=e.target.closest('button.expander[data-node]');if(!button)return;const id=button.dataset.node;nodeModes.set(id,nodeModes.get(id)===1?0:1);lineageNode=null;render()};
+document.querySelector('#results').onclick=e=>{const a=e.target.closest('a[data-node]');if(!a)return;e.preventDefault();focusLineage(a.dataset.node)};
+function searchFor(q){q=q.trim().toLowerCase();
+const hits=data.nodes.filter(n=>`${n.id} ${n.label}`.toLowerCase().includes(q)).slice(0,100);
+document.querySelector('#results').innerHTML=q?`<strong>${hits.length}${hits.length===100?'+':''} matches</strong>`+
+hits.map(n=>`<div class="result">${link(n.id)} <span class="meta">${esc(n.id)}</span></div>`).join(''):''};
+document.querySelector('#search').oninput=e=>searchFor(e.target.value);
+document.querySelector('.search-presets').onclick=e=>{const button=e.target.closest('button[data-target]');if(!button)return;document.querySelector('#search').value=button.dataset.search;document.querySelector('#results').innerHTML='';focusLineage(button.dataset.target)};
+fetch('ontology.json').then(r=>r.json()).then(x=>{data=x;byId=new Map(data.nodes.map(n=>[n.id,n]));parentOf=new Map();data.nodes.forEach(n=>n.children.forEach(child=>parentOf.set(child,n.id)));descendantCounts=new Map();data.nodes.forEach(n=>descendantCount(n.id));nodeModes=new Map(data.nodes.map(n=>[n.id,0]));data.rootNodes.forEach(root=>{nodeModes.set(root,1);byId.get(root).children.forEach(child=>nodeModes.set(child,1))});lineageNode=null;render()})
+.catch(e=>document.querySelector('#tree').textContent=`Could not load ontology.json: ${e}`);
 </script>
 </body>
 </html>

@@ -50,7 +50,10 @@ if(lineageNode){const path=[],seen=new Set();for(let id=lineageNode;id&&!seen.ha
 else {lineageChildren=null;tree=data.rootNodes.map(root=>`<ul>${renderNode(root,nodeModes.get(root)===1)}</ul>`).join('')}
 document.querySelector('#tree').innerHTML=tree;
 const stats=data.stats||{}, count=(key,fallback=0)=>Number.isFinite(stats[key])?stats[key]:fallback;
-document.querySelector('#summary').innerHTML=`... all ${count('nodeCount',data.nodes.length).toLocaleString()} concepts · ${count('definitionCount',data.nodes.filter(n=>n.definition).length).toLocaleString()} definitions · ${count('projectedEdgeCount').toLocaleString()} edges in <a href="https://humanknowledge.net/wiki/#!./Ontology/Ontology.md">My ontology</a>`;
+const source=data.source||{}, sourceLabel=source.name||'this Ontology';
+const sourceUrl=source.url||'https://humanknowledge.net/wiki/#!./Ontology/Ontology.md';
+const sourceText=`<a href="${esc(sourceUrl)}" target="_blank" rel="noopener">${esc(sourceLabel)}</a>`;
+document.querySelector('#summary').innerHTML=`... all ${count('nodeCount',data.nodes.length).toLocaleString()} concepts · ${count('definitionCount',data.nodes.filter(n=>n.definition).length).toLocaleString()} definitions · ${count('projectedEdgeCount').toLocaleString()} edges in ${sourceText}`;
 }
 document.querySelector('#expand').onclick=()=>{lineageNode=null;data.nodes.forEach(n=>nodeModes.set(n.id,1));render()};
 document.querySelector('#collapse').onclick=()=>{lineageNode=null;data.nodes.forEach(n=>nodeModes.set(n.id,0));render()};

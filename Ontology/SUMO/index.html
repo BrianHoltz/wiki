@@ -3,17 +3,17 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>SUMO PDF hierarchy</title>
+<title>SUMO ontology</title>
 <style>
 :root{color-scheme:light dark;--bg:#fff;--fg:#202124;--muted:#5f6368;--panel:#f5f7fa;--line:#c7cbd1;--accent:#1769aa}
 @media(prefers-color-scheme:dark){:root{--bg:#17191c;--fg:#e8eaed;--muted:#b4bac4;--panel:#24282e;--line:#59616d;--accent:#8ab4f8}}
 body{background:var(--bg);color:var(--fg);font:15px/1.45 system-ui,sans-serif;margin:0}
 main{max-width:1100px;margin:auto;padding:24px}h1{margin:0 0 4px}h2{margin-top:28px}
 .muted{color:var(--muted)}.notice{background:var(--panel);border-left:4px solid var(--accent);padding:12px 16px}
-.controls{display:flex;gap:8px;flex-wrap:wrap;margin:18px 0}
+.summary-row{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin:18px 0 8px}.summary-actions{display:flex;gap:8px}
 input,button{background:var(--bg);border:1px solid var(--line);border-radius:5px;color:var(--fg);padding:8px 10px}
-input{min-width:280px;flex:1}button{cursor:pointer}ul{list-style:none;margin:0;padding-left:22px}li{margin:3px 0}
-.search-presets{display:flex;gap:8px;flex:none;margin:0}
+input{min-width:280px;width:100%;box-sizing:border-box}button{cursor:pointer}ul{list-style:none;margin:0;padding-left:22px}li{margin:3px 0}
+.search-row{display:flex;align-items:center;gap:8px;margin:8px 0 10px}.search-row input{flex:1;width:auto}.search-presets{display:flex;gap:8px;flex:none;margin:0}
 summary{cursor:pointer;display:flex;align-items:baseline;gap:4px;list-style:none}summary::-webkit-details-marker{display:none}summary::before{content:"\25B6";display:inline-block;flex:none;width:1em}details[open] > summary::before{content:"\25BC"}.meta{color:var(--muted);font-size:12px;margin-left:6px;flex:none}.definition{color:var(--muted);font-size:13px;margin-left:8px;flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;vertical-align:bottom}.definition.expanded{overflow:visible;text-overflow:clip;white-space:normal;vertical-align:baseline}
 details.lineage > summary::before{content:"\25C6"}
 a{color:var(--accent)}#results{margin:10px 0 18px}.result{padding:5px 0;border-bottom:1px solid var(--line)}
@@ -22,20 +22,17 @@ a{color:var(--accent)}#results{margin:10px 0 18px}.result{padding:5px 0;border-b
 </head>
 <body>
 <main>
-<h1>SUMO PDF hierarchy</h1>
-<p class="muted">A browseable single-parent rendering of the
-<a href="https://www.ontology4.us/download/dot/SumoOntology.pdf">Ontology4 SUMO PDF graph</a>,
-with definitions from the <a href="https://github.com/ontologyportal/sumo">SUMO source</a>.</p>
-<div class="controls"><input id="search" type="search" placeholder="Search SUMO concepts">
-<div class="search-presets" aria-label="Search presets"><button type="button" data-search="primate" data-target="Primate">primate</button><button type="button" data-search="drink" data-target="drink">drink</button><button type="button" data-search="flowering plant" data-target="FloweringPlant">flowering plant</button><button type="button" data-search="number" data-target="Number">number</button><button type="button" data-search="island" data-target="Island">island</button></div>
-<button id="expand">Expand...</button><button id="collapse">Collapse...</button></div>
-<div id="summary" class="muted"></div><div id="results"></div><section id="tree"></section>
+<div class="summary-row"><div class="summary-actions"><button id="expand">Expand...</button><button id="collapse">Collapse...</button></div><span id="summary" class="muted"></span></div>
+<div class="search-row"><input id="search" type="search" placeholder="Search this ontology">
+<div class="search-presets" aria-label="Search presets"><button type="button" data-search="primate" data-target="Primate">primate</button><button type="button" data-search="drink" data-target="drink">drink</button><button type="button" data-search="flowering plant" data-target="FloweringPlant">flowering plant</button><button type="button" data-search="number" data-target="Number">number</button><button type="button" data-search="island" data-target="Island">island</button></div></div>
+<div id="results"></div><section id="tree"></section>
 </main>
 <script>
 const esc=v=>String(v).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 let data,byId,descendantCounts,parentOf,nodeModes,lineageNode,lineageChildren;
 function descendantCount(id){if(descendantCounts.has(id))return descendantCounts.get(id);const n=byId.get(id);const count=n.children.reduce((total,child)=>total+1+descendantCount(child),0);descendantCounts.set(id,count);return count}
 function link(id){const n=byId.get(id);return n?`<a href="#${encodeURIComponent(id)}" data-node="${esc(id)}">${esc(n.label)}</a>`:esc(id)}
+function sourceLink(n){return n.sourceUrl?` <a class="source-link" href="${esc(n.sourceUrl)}" target="_blank" rel="noopener" aria-label="Open source for ${esc(n.label)}">↗</a>`:''}
 function formatDefinition(text){return esc(text).replace(/&amp;%([A-Za-z0-9_]+)/g,(_,id)=>byId.has(id)?link(id):esc(id))}
 function renderNode(id,open=false,children=null,lineage=false,childOpen=null){const n=byId.get(id);const visibleChildren=children||lineageChildren?.get(id)||n.children;
 const directChildren=n.children.length;
@@ -45,7 +42,7 @@ const childCount=directChildren?`<span class="meta"> · ${directChildren}${other
 const provisional=n.provisionalParent?` <span class="meta">· provisional placement</span>`:'';
 const shortDef=n.definition?`<span class="definition${open?' expanded':''}" title="${esc(n.definition)}">${formatDefinition(n.definition)}</span>`:'';
 const expander=directChildren?`<button class="expander" type="button" data-node="${esc(id)}">${marker}</button>`:'<span class="expander-placeholder" aria-hidden="true"></span>';
-const text=`<span class="node-title">${esc(n.label)}</span><button class="lineage-toggle" type="button" data-node="${esc(id)}">↖</button>${childCount}${provisional}${shortDef}`;
+const text=`<span class="node-title">${link(id)}${sourceLink(n)}</span><button class="lineage-toggle" type="button" data-node="${esc(id)}">↖</button>${childCount}${provisional}${shortDef}`;
 return `<li id="${encodeURIComponent(id)}"><div class="node">${expander}<span class="node-content">${text}</span></div><ul class="children"${open?'':' hidden'}>${visibleChildren.map(child=>renderNode(child,lineageNode?lineageChildren?.has(child):nodeModes.get(child)===1)).join('')}</ul></li>`}
 function renderLineage(path){lineageChildren=new Map(path.map((id,index)=>[id,index===path.length-1?byId.get(id).children:[path[index+1]]]));return renderNode(path[0],true)}
 function render(){let tree;
@@ -53,7 +50,10 @@ if(lineageNode){const path=[],seen=new Set();for(let id=lineageNode;id&&!seen.ha
 else {lineageChildren=null;tree=data.rootNodes.map(root=>`<ul>${renderNode(root,nodeModes.get(root)===1)}</ul>`).join('')}
 document.querySelector('#tree').innerHTML=tree;
 const stats=data.stats||{}, count=(key,fallback=0)=>Number.isFinite(stats[key])?stats[key]:fallback;
-document.querySelector('#summary').textContent=`${count('nodeCount',data.nodes.length).toLocaleString()} concepts · ${count('definitionCount',data.nodes.filter(n=>n.definition).length).toLocaleString()} definitions · ${count('projectedEdgeCount').toLocaleString()} primary edges · ${count('multipleParentNodeCount').toLocaleString()} alternate-parent cases · ${count('unaryNodeCount').toLocaleString()} unary nodes`;
+const source=data.source||{}, sourceLabel=source.name||'this Ontology';
+const sourceUrl=source.url||'https://humanknowledge.net/wiki/#!./Ontology/Ontology.md';
+const sourceText=`<a href="${esc(sourceUrl)}" target="_blank" rel="noopener">${esc(sourceLabel)}</a>`;
+document.querySelector('#summary').innerHTML=`... all ${count('nodeCount',data.nodes.length).toLocaleString()} concepts · ${count('definitionCount',data.nodes.filter(n=>n.definition).length).toLocaleString()} definitions · ${count('projectedEdgeCount').toLocaleString()} edges in ${sourceText}`;
 }
 document.querySelector('#expand').onclick=()=>{lineageNode=null;data.nodes.forEach(n=>nodeModes.set(n.id,1));render()};
 document.querySelector('#collapse').onclick=()=>{lineageNode=null;data.nodes.forEach(n=>nodeModes.set(n.id,0));render()};
@@ -67,8 +67,8 @@ document.querySelector('#results').innerHTML=q?`<strong>${hits.length}${hits.len
 hits.map(n=>`<div class="result">${link(n.id)} <span class="meta">${esc(n.id)}</span></div>`).join(''):''};
 document.querySelector('#search').oninput=e=>searchFor(e.target.value);
 document.querySelector('.search-presets').onclick=e=>{const button=e.target.closest('button[data-target]');if(!button)return;document.querySelector('#search').value=button.dataset.search;document.querySelector('#results').innerHTML='';focusLineage(button.dataset.target)};
-fetch('sumo.json').then(r=>r.json()).then(x=>{data=x;byId=new Map(data.nodes.map(n=>[n.id,n]));parentOf=new Map();data.nodes.forEach(n=>n.children.forEach(child=>parentOf.set(child,n.id)));descendantCounts=new Map();data.nodes.forEach(n=>descendantCount(n.id));nodeModes=new Map(data.nodes.map(n=>[n.id,0]));data.rootNodes.forEach(root=>nodeModes.set(root,1));lineageNode=null;render()})
-.catch(e=>document.querySelector('#tree').textContent=`Could not load sumo.json: ${e}`);
+fetch('ontology.json').then(r=>r.json()).then(x=>{data=x;byId=new Map(data.nodes.map(n=>[n.id,n]));parentOf=new Map();data.nodes.forEach(n=>n.children.forEach(child=>parentOf.set(child,n.id)));descendantCounts=new Map();data.nodes.forEach(n=>descendantCount(n.id));nodeModes=new Map(data.nodes.map(n=>[n.id,0]));data.rootNodes.forEach(root=>{nodeModes.set(root,1);byId.get(root).children.forEach(child=>nodeModes.set(child,1))});lineageNode=null;render()})
+.catch(e=>document.querySelector('#tree').textContent=`Could not load ontology.json: ${e}`);
 </script>
 </body>
 </html>
