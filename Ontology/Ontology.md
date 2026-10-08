@@ -1796,6 +1796,43 @@ The leading candidates are `Material entity` if matter is genuinely required,
 `Concrete entity` if the slot includes physically realized events and places,
 and retaining `Physical entity` if clarity outweighs terminology reuse.
 
+### Thing at the physical-entity or physical-object slot
+
+The colloquial test favors the broader slot: fire can be called “not a thing”
+when its existence as a physical phenomenon is disputed, even though fire is
+not an ordinary persisting object. That use treats `Thing` as “physically
+existent phenomenon,” not as “self-connected material object.”
+
+#### Thing as physical entity
+
+- **Result:** `Thing` covers material objects, fires, processes, events, and
+  other physically realized phenomena.
+- **Remaining physical-object labels:** `Object` is academically familiar
+  but is already needed for the non-predicative branch; `Physical object` is
+  clear but repetitive; `Material object` is precise for matter-bearing
+  objects but excludes nonmaterial physical entities; `Body` is too
+  mechanics-specific.
+- **Best option:** retain `Physical object` unless the root-level `Object`
+  decision frees `Object` for this narrower slot. The repetition is less
+  damaging than making `Thing` too narrow for ordinary colloquial use.
+
+#### Thing as physical object
+
+- **Result:** `Thing` covers ordinary material objects but excludes fire and
+  other physical processes from the colloquial “a thing.”
+- **Remaining physical-entity labels:** `Physical entity` is explicit and
+  broad; `Material entity` excludes fields and some physically real regions;
+  `Concrete entity` may include events, places, and social particulars but is
+  metaphysically variable; `Real entity` carries an unnecessary commitment
+  about fictional and possible entities.
+- **Best option:** `Physical entity` is the least misleading remaining term,
+  with `Concrete entity` as the only serious replacement if the slot is
+  deliberately expanded beyond matter-bearing entities.
+
+The current evidence therefore favors assigning `Thing` to the broader
+physical-existence slot and retaining `Physical object` for the narrower
+ordinary-object slot.
+
 ### Prior-art definitions of the candidate words
 
 #### Entity
