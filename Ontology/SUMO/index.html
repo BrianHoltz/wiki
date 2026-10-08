@@ -58,7 +58,7 @@ document.querySelector('#summary').textContent=`${count('nodeCount',data.nodes.l
 }
 document.querySelector('#expand').onclick=()=>{lineageNode=null;data.nodes.forEach(n=>nodeModes.set(n.id,1));render()};
 document.querySelector('#collapse').onclick=()=>{lineageNode=null;data.nodes.forEach(n=>nodeModes.set(n.id,0));render()};
-function focusNode(id){nodeModes.set(id,1);lineageNode=null;render();document.getElementById(encodeURIComponent(id))?.scrollIntoView({block:'center'})}
+function focusNode(id){lineageNode=null;for(let current=id;current;current=parentOf.get(current))nodeModes.set(current,1);render();document.getElementById(encodeURIComponent(id))?.scrollIntoView({block:'center'})}
 document.querySelector('#tree').onclick=e=>{const a=e.target.closest('a[data-node]');if(a){e.preventDefault();focusNode(a.dataset.node);return}const lineageButton=e.target.closest('button.lineage-toggle[data-node]');if(lineageButton){const id=lineageButton.dataset.node;lineageNode=lineageNode===id?null:id;render();return}const button=e.target.closest('button.expander[data-node]');if(!button)return;const id=button.dataset.node;nodeModes.set(id,nodeModes.get(id)===1?0:1);lineageNode=null;render()};
 document.querySelector('#results').onclick=e=>{const a=e.target.closest('a[data-node]');if(!a)return;e.preventDefault();focusNode(a.dataset.node)};
 document.querySelector('#search').oninput=e=>{const q=e.target.value.trim().toLowerCase();
