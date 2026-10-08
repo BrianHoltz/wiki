@@ -74,8 +74,8 @@ async function testBrowser(relativePath, dataPath) {
     assert.equal(dataPath.root, "Entity", "canonical ontology root must be Entity");
     assert.deepEqual(
       dataPath.nodes.find((node) => node.id === "Entity").children,
-      ["Object", "Property", "Relation"],
-      "canonical Entity children must be Object, Property, and Relation",
+      ["Object", "AbstractEntity", "Property", "Relation"],
+      "canonical Entity children must be Object, AbstractEntity, Property, and Relation",
     );
   }
   assert(tree.innerHTML.includes("Geopolitical Area"), `${relativePath}: target is not rendered`);

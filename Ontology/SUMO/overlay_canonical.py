@@ -257,26 +257,35 @@ def overlay(input_path: Path, output_path: Path) -> None:
     physical_root = copy.deepcopy(physical.pop("Physical"))
     physical_object = physical.pop("Object", None)
     if physical_object:
-        physical_object["id"] = "PhysicalObject"
-        physical_object["label"] = "Physical object"
-        physical["PhysicalObject"] = physical_object
+        physical_object["id"] = "RealizedObject"
+        physical_object["label"] = "Realized object (Thing)"
+        physical_object["definition"] = (
+            "A realized object, also called a thing, with a spatially bounded "
+            "or self-connected physical extent."
+        )
+        physical["RealizedObject"] = physical_object
         for record in physical.values():
             record["children"] = [
-                "PhysicalObject" if child == "Object" else child
+                "RealizedObject" if child == "Object" else child
                 for child in record["children"]
             ]
-    physical_root["id"] = "RealizedEntity"
-    physical_root["label"] = "Realized entity"
+    physical_root["id"] = "Object"
+    physical_root["label"] = "Object"
     physical_root["definition"] = "An entity with a physical embodiment or location in space-time."
     physical_root["definitionSource"] = "project editorial"
     physical_root["children"] = [
-        "PhysicalObject" if child == "Object" else child
+        "RealizedObject" if child == "Object" else child
         for child in physical_root["children"]
     ]
-    physical["RealizedEntity"] = physical_root
+    physical["Object"] = physical_root
 
     canonical, parents = flatten(CANONICAL)
-    canonical["RealizedEntity"]["children"] = physical_root["children"]
+    canonical.pop("Object")
+    canonical.pop("RealizedEntity")
+    canonical["Entity"]["children"] = ["Object", "AbstractEntity", "Property", "Relation"]
+    parents.pop("Object")
+    parents.pop("RealizedEntity")
+    parents["AbstractEntity"] = ["Entity"]
     records = {**canonical, **physical}
     for identifier, record in records.items():
         record["children"] = [child for child in record["children"] if child in records]
@@ -284,8 +293,8 @@ def overlay(input_path: Path, output_path: Path) -> None:
         record["alternateParents"] = [
             parent for parent in parents.get(identifier, [])[1:] if parent != "Entity"
         ]
-    records["RealizedEntity"]["directParentCount"] = 1
-    records["RealizedEntity"]["alternateParents"] = []
+    records["Object"]["directParentCount"] = 1
+    records["Object"]["alternateParents"] = []
     records["Entity"]["directParentCount"] = 0
     for record in records.values():
         if record.get("definitionSource") == "SUMO KIF":
@@ -298,7 +307,7 @@ def overlay(input_path: Path, output_path: Path) -> None:
             "name": "Canonical upper ontology with historical physical projection",
             "upperOntology": "Ontology/Ontology.md#upper-ontology",
             "overlayPolicy": (
-                "Use the project canonical Entity/Object/Property/Relation "
+                "Use the project canonical Entity/Object/AbstractEntity/Property/Relation "
                 "projection while retaining the historical physical descendants."
             ),
         },
