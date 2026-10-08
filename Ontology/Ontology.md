@@ -41,6 +41,22 @@ ordinary-language coverage take priority over question-generation mechanics.
 The historical 20 Questions material remains as provenance and as a
 downstream success criterion; it is not an active implementation workstream.
 
+The project is now best understood as a general-purpose, scientifically and
+mathematically informed ontology whose canonical tree is one human-facing
+projection. The underlying model may be a richer graph or multidimensional
+structure with multiple relations, facets, and alternate classifications.
+That multidimensionality is a strength, not a lesser substitute for a tree:
+it is analogous in spirit to useful vector representations learned by large
+language models, although the analogy is motivational rather than a claim
+that embeddings are an ontology. The immediate priority is deliberately
+narrower: refine the canonical tree projection without prematurely
+committing the whole underlying model to a single hierarchy.
+
+The current design rationale and unresolved questions are recorded in the
+[ontology design memoranda](OntologyDesignMemoranda.md). This document keeps
+the decisions and criteria that govern implementation; the memorandum
+preserves the fuller argument and candidate comparisons.
+
 Firm decisions:
 
 - The handcrafted v1 remains the incumbent player-facing tree; imported
@@ -1638,6 +1654,31 @@ but DMOZ is the precise name for the data structure.
   but this project will not merge it into the WordNet tree.
 ## Upper ontology
 
+### Canonical-tree criteria
+
+The canonical tree is a privileged presentation of the richer ontology, not
+a claim that reality itself has one intrinsically correct tree shape. A
+candidate projection should satisfy these criteria:
+
+- **Coverage:** where a sibling split claims to be exhaustive, its children
+  should collectively cover the parent.
+- **Disjointness:** siblings should be mutually exclusive where the subject
+  matter supports that claim; overlap should be represented explicitly rather
+  than hidden.
+- **Uniform edge semantics:** canonical parent-child edges should have one
+  declared meaning, currently a subtype or kind-of relation. Instance,
+  part-of, property, use, study, and provenance edges belong in the
+  underlying graph or metadata, not mixed into the visible hierarchy.
+- **Single canonical parent:** every non-root display node should have one
+  reviewed route in the tree, while the underlying graph may preserve
+  multiple inheritance and alternate parentage.
+- **Principled sibling splits:** siblings should be distinguished by one
+  coherent dimension or discriminating principle rather than by an
+  opportunistic list of unrelated features.
+- **Traversal intelligibility:** every level should earn its place by making a
+  meaningful distinction that helps a human reach ordinary concepts without
+  unnecessary upper-ontology machinery.
+
 ### Canonical synthesis
 
 This is the single current proposal. It is the default structure to review.
@@ -1781,6 +1822,55 @@ embodiment. `Role`, `Status`, `Agreement`, and `Practice` can be social
 entities or properties of participants. The source graph should preserve
 those facets; the player-facing projection can retain the four siblings only
 if they produce useful questions and recognizable leaves.
+
+### Reification and the Entity root
+
+Properties and relations can themselves be entities when they are reified and
+discussed as objects of predication. For example, the relation `larger-than`
+can have an arity, inverse, symmetry, and transitivity, while a property can
+itself have a domain, range, or relation to another property. This does not
+by itself require the visible tree to become:
+
+```text
+Entity
+├── Object
+├── Property
+└── Relation
+```
+
+That arrangement is an important candidate to compare, but it risks treating
+`Property` and `Relation` as representational roles rather than fundamental
+kinds, and `Object` may be too narrow for events, propositions, numbers,
+organizations, and other admitted entities. The current `Ontology` →
+`Entity` / `Property` / `Relation` arrangement therefore remains provisional:
+`Entity` is the candidate universal domain of discourse, while `Property` and
+`Relation` are useful top-level semantic roles in the current projection.
+Reification must remain possible without forcing every reified relation or
+property into a second, inconsistent copy of the tree.
+
+The upper-ontology comparison must distinguish kinds from roles and must test
+whether an alternative such as `Entity` → `Object` / `Property` / `Relation`
+provides a genuinely exhaustive, appropriately disjoint, human-traversable
+partition. No root restructuring follows merely from the fact that
+properties and relations can be entities.
+
+### Formalization stress test
+
+Formalizability is a design-quality criterion, not the immediate deliverable.
+For every candidate upper structure, ask whether a competent formal
+logician or type theorist could translate the ontology and its edge semantics
+into a disciplined typed formalism without first repairing fundamental
+category mistakes. The test should preserve distinctions among kinds and
+instances, types and values, words and concepts, objects and descriptions,
+and referents and representations.
+
+This project should remain ontology-first rather than becoming a type-theory
+or Lean project. Russell-style paradoxes and unrestricted self-reference are
+warnings to use disciplined semantics, types, or levels; they are not
+reasons to prohibit properties, relations, propositions, or classes from
+being modeled as entities. A successful formalization test is evidence of
+clarity and durability, not a requirement to formalize the entire ontology
+now.
 
 ### Top-layer coverage inventory
 Before choosing a root arrangement, we need an unordered inventory of the
