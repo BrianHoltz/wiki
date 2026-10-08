@@ -14,6 +14,7 @@ main{max-width:1100px;margin:auto;padding:24px}h1{margin:0 0 4px}h2{margin-top:2
 input,button{background:var(--bg);border:1px solid var(--line);border-radius:5px;color:var(--fg);padding:8px 10px}
 input{min-width:280px;flex:1}button{cursor:pointer}ul{list-style:none;margin:0;padding-left:22px}li{margin:3px 0}
 summary{cursor:pointer;display:flex;align-items:baseline;gap:4px;list-style:none}summary::-webkit-details-marker{display:none}summary::before{content:"\25B6";display:inline-block;flex:none;width:1em}details[open] > summary::before{content:"\25BC"}.meta{color:var(--muted);font-size:12px;margin-left:6px;flex:none}.definition{color:var(--muted);font-size:13px;margin-left:8px;flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;vertical-align:bottom}details[open] > summary .definition{overflow:visible;text-overflow:clip;white-space:normal;vertical-align:baseline}.alt,.reverse{font-size:13px;margin:6px 0 8px 22px}.alt,.reverse{color:var(--muted)}
+details.lineage > summary::before{content:"\25C6"}
 a{color:var(--accent)}#results{margin:10px 0 18px}.result{padding:5px 0;border-bottom:1px solid var(--line)}
 </style>
 </head>
@@ -30,11 +31,11 @@ Definitions identify project editorial content and retained SUMO content.</p>
 </main>
 <script>
 const esc=v=>String(v).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-let data,byId,alternateChildren,descendantCounts;
+let data,byId,alternateChildren,descendantCounts,parentOf,nodeModes,lineageNode;
 function descendantCount(id){if(descendantCounts.has(id))return descendantCounts.get(id);const n=byId.get(id);const count=n.children.reduce((total,child)=>total+1+descendantCount(child),0);descendantCounts.set(id,count);return count}
 function link(id){const n=byId.get(id);return n?`<a href="#${encodeURIComponent(id)}" data-node="${esc(id)}">${esc(n.label)}</a>`:esc(id)}
 function formatDefinition(text){return esc(text).replace(/&amp;%([A-Za-z0-9_]+)/g,(_,id)=>byId.has(id)?link(id):esc(id))}
-function renderNode(id,open=false){const n=byId.get(id);
+function renderNode(id,open=false,children=null,lineage=false){const n=byId.get(id);const visibleChildren=children||n.children;
 const directChildren=n.children.length;
 const otherDescendants=descendantCount(id)-directChildren;
 const childCount=directChildren
@@ -47,19 +48,23 @@ const text=`${esc(n.label)}${childCount}${altCount}${provisional}${shortDef}`;
 const alts=n.alternateParents.length?`<div class="alt"><strong>Alternate Parents:</strong> ${n.alternateParents.map(link).join(', ')}</div>`:'';
 const reverse=alternateChildren.get(id)||[];
 const reverseBlock=reverse.length?`<div class="reverse"><strong>Alternate Children:</strong> ${reverse.map(link).join(', ')}</div>`:'';
-return `<li id="${encodeURIComponent(id)}"><details${open?' open':''}><summary>${text}</summary>${alts}${reverseBlock}<ul>${n.children.map(child=>renderNode(child)).join('')}</ul></details></li>`}
-function render(){document.querySelector('#tree').innerHTML=data.rootNodes.map(root=>`<ul>${renderNode(root,true)}</ul>`).join('');
+return `<li id="${encodeURIComponent(id)}"><details${open?' open':''}${lineage?' class="lineage"':''}><summary data-node="${esc(id)}">${text}</summary>${alts}${reverseBlock}<ul>${visibleChildren.map(child=>renderNode(child)).join('')}</ul></details></li>`}
+function renderLineage(path,index){const id=path[index],children=index===path.length-1?byId.get(id).children:[path[index+1]];return renderNode(id,true,children,index===path.length-1)}
+function render(){let tree;
+if(lineageNode){const path=[],seen=new Set();for(let id=lineageNode;id&&!seen.has(id);id=parentOf.get(id)){path.unshift(id);seen.add(id)}tree=`<ul>${renderLineage(path,0)}</ul>`}
+else tree=data.rootNodes.map(root=>`<ul>${renderNode(root,nodeModes.get(root)===1)}</ul>`).join('');
+document.querySelector('#tree').innerHTML=tree;
 const stats=data.stats||{}, count=(key,fallback=0)=>Number.isFinite(stats[key])?stats[key]:fallback;
 document.querySelector('#summary').textContent=`${count('nodeCount',data.nodes.length).toLocaleString()} concepts · ${count('definitionCount',data.nodes.filter(n=>n.definition).length).toLocaleString()} definitions · ${count('projectedEdgeCount').toLocaleString()} primary edges · ${count('multipleParentNodeCount').toLocaleString()} alternate-parent cases · ${count('unaryNodeCount').toLocaleString()} unary nodes`;
 }
-document.querySelector('#expand').onclick=()=>document.querySelectorAll('#tree details').forEach(x=>x.open=true);
-document.querySelector('#collapse').onclick=()=>document.querySelectorAll('#tree details').forEach(x=>x.open=false);
-document.querySelector('#tree').onclick=e=>{const a=e.target.closest('a[data-node]');if(!a)return;e.preventDefault();const node=document.getElementById(encodeURIComponent(a.dataset.node));if(node){node.scrollIntoView({block:'center'});node.querySelector(':scope > details').open=true}};
+document.querySelector('#expand').onclick=()=>{lineageNode=null;data.nodes.forEach(n=>nodeModes.set(n.id,1));render()};
+document.querySelector('#collapse').onclick=()=>{lineageNode=null;data.nodes.forEach(n=>nodeModes.set(n.id,0));render()};
+document.querySelector('#tree').onclick=e=>{const a=e.target.closest('a[data-node]');if(a){e.preventDefault();const node=document.getElementById(encodeURIComponent(a.dataset.node));if(node){node.scrollIntoView({block:'center'});node.querySelector(':scope > details').open=true}return}const summary=e.target.closest('summary[data-node]');if(!summary)return;e.preventDefault();const id=summary.dataset.node,mode=nodeModes.get(id)||0;if(mode===0){nodeModes.set(id,1)}else if(mode===1){nodeModes.set(id,2);lineageNode=id}else{nodeModes.set(id,0);lineageNode=null}render()};
 document.querySelector('#search').oninput=e=>{const q=e.target.value.trim().toLowerCase();
 const hits=data.nodes.filter(n=>`${n.id} ${n.label}`.toLowerCase().includes(q)).slice(0,100);
 document.querySelector('#results').innerHTML=q?`<strong>${hits.length}${hits.length===100?'+':''} matches</strong>`+
 hits.map(n=>`<div class="result">${link(n.id)} <span class="meta">${esc(n.id)}</span></div>`).join(''):''};
-fetch('sumo.json').then(r=>r.json()).then(x=>{data=x;byId=new Map(data.nodes.map(n=>[n.id,n]));descendantCounts=new Map();data.nodes.forEach(n=>descendantCount(n.id));alternateChildren=new Map();data.nodes.forEach(n=>n.alternateParents.forEach(parent=>{if(!alternateChildren.has(parent))alternateChildren.set(parent,[]);alternateChildren.get(parent).push(n.id)}));render()})
+fetch('sumo.json').then(r=>r.json()).then(x=>{data=x;byId=new Map(data.nodes.map(n=>[n.id,n]));parentOf=new Map();data.nodes.forEach(n=>n.children.forEach(child=>parentOf.set(child,n.id)));descendantCounts=new Map();data.nodes.forEach(n=>descendantCount(n.id));nodeModes=new Map(data.nodes.map(n=>[n.id,0]));data.rootNodes.forEach(root=>nodeModes.set(root,1));lineageNode=null;alternateChildren=new Map();data.nodes.forEach(n=>n.alternateParents.forEach(parent=>{if(!alternateChildren.has(parent))alternateChildren.set(parent,[]);alternateChildren.get(parent).push(n.id)}));render()})
 .catch(e=>document.querySelector('#tree').textContent=`Could not load sumo.json: ${e}`);
 </script>
 </body>
