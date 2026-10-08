@@ -13,6 +13,11 @@ SUBCLASS_RE = re.compile(r"^\s*\(subclass\s+([^\s()]+)\s+([^\s()]+)\)")
 DOC_START_RE = re.compile(
     r"\(documentation\s+([^\s()]+)\s+English(?:Language|WrittenLanguage)\s+\""
 )
+TERM_ALIASES = {"GeoPoliticalArea": "GeopoliticalArea"}
+
+
+def canonical_term(term: str) -> str:
+    return TERM_ALIASES.get(term, term)
 
 
 def label(term: str) -> str:
@@ -172,11 +177,13 @@ def build_pdf(
     editorial_definitions: Path | None = None,
 ):
     graph = json.loads(pdf_graph.read_text(encoding="utf-8"))
-    nodes = set(graph["nodes"])
+    nodes = {canonical_term(term) for term in graph["nodes"]}
     incoming = defaultdict(list)
     for edge in graph["edges"]:
-        nodes.update((edge["parent"], edge["child"]))
-        incoming[edge["child"]].append(edge)
+        parent = canonical_term(edge["parent"])
+        child = canonical_term(edge["child"])
+        nodes.update((parent, child))
+        incoming[child].append({**edge, "parent": parent, "child": child})
 
     selected, alternates = {}, {}
     for child, edges in incoming.items():
