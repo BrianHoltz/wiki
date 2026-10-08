@@ -35,6 +35,9 @@ function eventTarget(selector, dataset) {
 
 async function loadBrowser(relativePath, dataPath) {
   const source = fs.readFileSync(path.join(root, relativePath), "utf8");
+  if (relativePath === "index.html") {
+    assert(!/\bsumo\b/i.test(source), "canonical browser contains a SUMO reference");
+  }
   const script = source.match(/<script>([\s\S]*)<\/script>/)[1];
   const elements = new Map(
     ["#tree", "#summary", "#expand", "#collapse", "#search", "#results", ".search-presets"]

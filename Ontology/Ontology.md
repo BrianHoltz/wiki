@@ -1872,6 +1872,118 @@ being modeled as entities. A successful formalization test is evidence of
 clarity and durability, not a requirement to formalize the entire ontology
 now.
 
+### Breadth-first upper-ontology review shadow
+
+The current workstream is breadth-first: review and define the shallowest
+levels before adding or polishing deeper branches. The following shadow of
+the first three levels is a review instrument, not a new settled hierarchy.
+Its labels come from the current canonical synthesis, which was assembled
+from our prior design work and compared against broad formal-ontology,
+knowledge-representation, mathematical, and conceptual-modeling traditions.
+The underlying graph may retain additional facets and cross-links.
+
+```text
+Ontology
+├── Entity
+│   ├── Physical entity
+│   └── Abstract entity
+├── Property
+│   ├── Quality
+│   ├── Quantity
+│   ├── Quality value
+│   ├── Disposition
+│   ├── Capability
+│   ├── Function
+│   ├── Purpose
+│   ├── Role
+│   ├── Status
+│   ├── Norm
+│   ├── Obligation
+│   ├── Goal
+│   ├── Preference
+│   ├── Modal property
+│   ├── Logical property
+│   └── Mathematical property
+└── Relation
+    ├── Classification relation
+    ├── Part-whole relation
+    ├── Spatial relation
+    ├── Temporal relation
+    ├── Causal relation
+    ├── Explanatory relation
+    ├── Participation relation
+    ├── Social relation
+    ├── Institutional relation
+    ├── Perceptual relation
+    ├── Epistemic relation
+    ├── Logical relation
+    ├── Set-theoretic relation
+    ├── Mathematical relation
+    ├── Transformation relation
+    ├── Representational relation
+    ├── Identity relation
+    ├── Equivalence relation
+    └── Provenance relation
+```
+
+#### Level-one and level-two provenance and tensions
+
+- **`Ontology`** is our meta-level container for the model and its canonical
+  presentation. It is not necessarily an entity in the modeled domain. The
+  key tension is whether the browser should expose this wrapper or begin at
+  `Entity` while retaining `Ontology` only as metadata.
+- **`Entity`** is our working candidate for the broad domain of discourse:
+  anything the ontology admits as something that can be identified,
+  discussed, or related. Its provenance is the recurring entity/object root
+  pattern in formal and knowledge-representation systems, reinforced by the
+  reification requirement. Its tension is breadth: entities, roles,
+  descriptions, properties, and relations may all be entities when reified,
+  so `Entity` is not automatically a clean natural kind.
+- **`Property`** is our provisional semantic category for characteristics
+  attributed to entities. `Quality`, `Quantity`, `Quality value`,
+  `Disposition`, and `Capability` are the strongest candidates. `Function`,
+  `Purpose`, `Role`, `Status`, `Norm`, `Obligation`, `Goal`, and
+  `Preference` are weaker: they may instead be relations, contextual roles,
+  institutional entities, rules, desired states, or intentional objects.
+  The branch currently mixes intrinsic characteristics with relational,
+  normative, teleological, and social concepts.
+- **`Relation`** is our provisional category for connections, comparisons,
+  mappings, and ordered associations among entities. Its provenance is
+  ordinary relational logic, conceptual modeling, property graphs, and
+  formal knowledge representation. Its main tension is not whether these
+  items are relations, but whether relation families such as `Identity`,
+  `Equivalence`, `Logical`, `Mathematical`, `Social`, and `Institutional`
+  are parallel semantic kinds or overlapping dimensions.
+
+#### Level-three review priorities
+
+- **`Physical entity` versus `Abstract entity`** is an intuitive and widely
+  used first entity split, but `Abstract entity` risks becoming a residual
+  bucket for information, mathematics, institutions, propositions, and
+  fictional entities. Physical embodiment, dependence, and representation
+  may be orthogonal facets rather than mutually exclusive kinds.
+- **Property candidates** must be separated by semantic role before deeper
+  expansion. In particular, test whether `Purpose` is the object of a
+  `has-purpose` relation, `Norm` is an abstract rule, `Obligation` is a
+  deontic relation or status, and `Goal` is an intended state or proposition.
+  Do not preserve them under `Property` merely because something can be said
+  to have one.
+- **Relation candidates** need an arity and edge-semantics audit. A visible
+  family should say whether it groups relations by subject matter
+  (`Social`, `Spatial`), logical behavior (`Identity`, `Equivalence`), or
+  operation (`Transformation`, `Mapping`). Mixing those axes at one level
+  may violate the canonical-tree criteria.
+- **All level-three nodes** should receive a short definition, provenance
+  note, representative edge cases, and a formalization test before their
+  descendants are expanded. The review should ask whether each node is a
+  kind, a role, a relation family, a representational artifact, or merely a
+  useful browsing facet.
+
+This review shadow intentionally does not authorize an immediate rewrite of
+the canonical tree. It establishes the questions that the next breadth-first
+pass must answer, preserving the current projection while its shallow
+categories are refined and stress-tested.
+
 ### Top-layer coverage inventory
 Before choosing a root arrangement, we need an unordered inventory of the
 important high-level kinds of thing that must have a home in the first two or
