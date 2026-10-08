@@ -1700,30 +1700,112 @@ but DMOZ is the precise name for the data structure.
 
 ## Entity Object Thing Item Being
 
-The vocabulary needs separate names for several nested slots. `Object` cannot
-simultaneously be the generic non-property/non-relation child of `Entity` and
-the existing child under `Physical entity`.
+The following numbered slots separate ontological work from the later choice
+of English labels. The definitions are intentionally stricter than ordinary
+language and are testable against the existing tree.
 
-- **Ontology root:** `Entity` remains the leading candidate.
-- **Non-property/non-relation entity:** a slot contrasting with `Property` and
-  `Relation`; candidate terms are `Thing` or `Item`, not `Object` unless the
-  existing physical branch is renamed.
-- **Physical or material entity:** an entity with a location or extent in
-  spacetime; `Object` is currently used in this neighborhood.
-- **Mechanical body:** a physically extended entity with mechanics-relevant
-  characteristics such as mass and susceptibility to forces; `Body` is a
-  candidate, but its boundary and relation to physical object need definition.
-- **Ethical subject:** reserve `Being` for the ethics section; do not use it
-  as an upper-ontology category.
+### Slot definitions
 
-Slots still requiring allocation among these terms or additional vocabulary:
+1. **Universal entity:** anything admitted by the ontology as an individual,
+   universal, class, proposition, property, relation, or other item over which
+   the ontology permits reference or quantification. This is the current
+   definition of `Entity` and the proposed root.
+2. **Non-predicative entity:** an entity considered in bearer, participant, or
+   subject position rather than in the predicative role of `Property` or
+   `Relation`. This is the unresolved slot currently being considered for the
+   root's third branch.
+3. **Physical entity:** an entity with physical embodiment or a determinate
+   spatial or spatiotemporal extent, whether or not it is a self-connected
+   object. This is the existing `Physical entity` branch definition.
+4. **Mechanical body:** a physical entity whose state is modeled by mechanics,
+   including some determinate mass, geometry, motion, or force interaction.
+   Mass is not required of every useful body model, but the slot excludes
+   merely informational, abstract, and purely social entities.
+5. **Abstract entity:** an entity whose identity is not tied to one particular
+   physical embodiment. This is the existing `Abstract entity` definition,
+   subject to the warning that it must not become a residual bucket.
+6. **Occurrence:** an entity that unfolds, persists, or changes through time
+   as an event, process, activity, transition, or state. The slot is needed
+   even if the visible tree places occurrences under a broader object-like
+   branch.
+7. **Place or region:** an entity specified by spatial, temporal, or
+   spatiotemporal extent, location, boundary, or coordinate relations.
+8. **Information or representation:** an entity whose identity depends on
+   content, encoding, signification, or reproducible informational structure,
+   whether or not it has a physical carrier.
+9. **Collection or system:** an entity constituted by members, parts, elements,
+   or organized interactions and treated as one unit.
+10. **Agent or organism:** an entity capable of autonomous activity, response,
+    or directed action in the relevant model; organism is a biological
+    specialization, while agent is a functional or behavioral role.
+11. **Ethical subject:** an entity considered as a bearer of moral standing,
+    claims, duties, or welfare. Reserve `Being` for this ethics slot rather
+    than using it in the upper ontology.
 
-- abstract or nonphysical entity;
-- event, process, or occurrence;
-- place, region, or spacetime extent;
-- information or representational artifact;
-- collection, aggregate, or system;
-- agent or organism.
+### Candidate slot assignments
+
+- `Entity` is the settled label for slot 1.
+- Slot 2 should not use `Object` while `Object` remains a physical-tree label.
+  `Thing` is broader and more natural; `Item` is more enumeration-oriented.
+- `Object` currently best fits slot 3's ordinary physical-object
+  neighborhood, but the tree must rename the deeper physical use to preserve
+  one unambiguous label.
+- `Body` is the candidate for slot 4, subject to deciding whether force
+  interaction and mass are defining or merely typical.
+- `Being` is reserved for slot 11 and is off-limits for the upper ontology.
+- Slots 5 through 10 need labels that should be chosen from their technical
+  prior-art uses rather than from the remaining everyday synonyms.
+
+### Prior-art definitions of the candidate words
+
+#### Entity
+
+- **SUMO:** `Entity` is the universal class at the top of the SUMO hierarchy.
+- **BFO:** `entity` is used for anything that exists or has existed, including
+  continuants and occurrents; see [BFO 2020](https://basic-formal-ontology.org/bfo-2020.html).
+- **Schema.org:** `Thing` is the most generic type, so Schema.org does not use
+  `Entity` in the same root role; see [Thing](https://schema.org/Thing).
+
+#### Object
+
+- **SUMO:** `Object` is roughly an ordinary object whose spatiotemporal extent
+  divides into spatial parts parallel to the time axis; this is the source
+  definition currently attached to our physical branch.
+- **BFO:** an object is a material entity that is spatially extended,
+  maximally self-connected, and persists through time as an independent
+  continuant.
+- **OWL/RDF:** “object” commonly appears in the object position of a triple,
+  while an `owl:ObjectProperty` relates individuals; this is a syntactic or
+  relational use, not a universal ontological root.
+
+#### Thing
+
+- **WordNet:** `thing.n.01` is “a separate and self-contained entity.”
+- **Schema.org:** `Thing` is “the most generic type of item,” with all other
+  Schema.org types descending from it.
+- **DOLCE-style usage:** “thing” is ordinary-language vocabulary rather than
+  a sufficiently precise foundational category; formal distinctions are made
+  with endurant, perdurant, quality, region, and social-object categories.
+
+#### Item
+
+- **CIDOC CRM:** `E77 Persistent Item` covers persistent items of material,
+  immaterial, or propositional nature that can be identified and referred to;
+  see [CIDOC CRM](https://cidoc-crm.org/).
+- **Schema.org:** “item” is the generic vocabulary for an instance of a
+  `Thing`, not a peer upper-ontology category.
+- **SKOS:** an `skos:Concept` is an item in a concept scheme identified by a
+  URI; this is an information-model use, not a claim about all entities.
+
+#### Being
+
+- **WordNet:** `being.n.01` denotes the state or fact of existing, while other
+  senses denote a living thing or person; the word is therefore polysemous.
+- **Aristotelian and scholastic traditions:** “being” names what is or what
+  exists, but the term does not by itself supply a usable partition of beings.
+- **Ethics:** “being” is commonly used for a morally considerable subject or
+  living entity; reserve this specialized use for the ethics section rather
+  than overload the upper ontology.
 
 ## Upper ontology
 
