@@ -267,10 +267,7 @@ def overlay(input_path: Path, output_path: Path) -> None:
             ]
     physical_root["id"] = "RealizedEntity"
     physical_root["label"] = "Realized entity"
-    physical_root["definition"] = (
-        "An entity with a physical embodiment or location in space-time; "
-        "its descendants retain the source physical classification."
-    )
+    physical_root["definition"] = "An entity with a physical embodiment or location in space-time."
     physical_root["definitionSource"] = "project editorial"
     physical_root["children"] = [
         "PhysicalObject" if child == "Object" else child
