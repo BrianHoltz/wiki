@@ -1655,27 +1655,31 @@ but DMOZ is the precise name for the data structure.
 
 ## Upper ontology notes
 
-- `Entity / Property / Relation` is our proposed triad, not a complete
-  arrangement copied from one prior art.
-
-### Ontology
-
-- `Ontology` is our meta-level/browser wrapper; it is not a borrowed
-  upper-ontology category.
-
 ### Entity
 
+- `Entity / Property / Relation` is our proposed triad, not a complete
+  arrangement copied from one prior art.
 - `Entity` as a universal domain is shared by SUMO and broad formal-ontology
   and knowledge-representation practice; this exact placement is ours.
-- `Object` remains a close call: genuine entity kind or merely an argument
-  role. Resolve it against events, propositions, numbers, organizations,
-  fictional entities, and reified predicates before adding it.
+
+#### Object
+
+- `Entity` is the safer root label for anything admitted into discourse;
+  `Object` is narrower and often means a particular bearer or an argument of
+  predication.
+- `Object` has strong precedent in SUMO's object/process distinction and in
+  ordinary knowledge-representation vocabulary, but those uses do not make
+  it exhaustive of events, propositions, numbers, organizations, fictional
+  entities, or reified predicates.
+- Renaming the current second-level `Entity` note to `Object` is useful only
+  if the branch is intended to exclude properties and relations; otherwise
+  `Object` falsely suggests that those reified entities are outside it.
 
 ### Property
 
-- `Property` as a top-level concept has precedent in philosophical/formal
-  ontology and entity-property-value modeling; RDF/OWL uses “property” for
-  relations, so the term is not stable across prior art.
+- `Property` as a top-level child of `Entity` has precedent in
+  philosophical/formal ontology and entity-property-value modeling; RDF/OWL
+  uses “property” for relations, so the term is not stable across prior art.
 - The child inventory was assembled in our maximal “Property candidates”
   synthesis (`065fd48`) and copied into `overlay_canonical.py` (`f528ab0`);
   it was not imported wholesale from one prior art. Its ingredients were
