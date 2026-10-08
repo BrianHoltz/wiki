@@ -39,7 +39,7 @@ function formatDefinition(text){return esc(text).replace(/&amp;%([A-Za-z0-9_]+)/
 function renderNode(id,open=false,children=null,lineage=false,childOpen=null){const n=byId.get(id);const visibleChildren=children||n.children;
 const directChildren=n.children.length;
 const otherDescendants=descendantCount(id)-directChildren;
-const marker=lineage?'◆':open?'▼':'▶';
+const marker=id===lineageNode||lineage?'◆':open?'▼':'▶';
 const childCount=directChildren?`<span class="meta"> · ${directChildren}${otherDescendants?`+${otherDescendants}`:''}</span>`:'';
 const altCount=n.alternateParents.length?`<span class="meta"> · ${n.alternateParents.length} &#8593;</span>`:'';
 const provisional=n.provisionalParent?` <span class="meta">· provisional placement</span>`:'';
