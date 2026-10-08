@@ -1109,8 +1109,8 @@ which structures deserve a detailed synthesis study.
 
 ```text
 Entity: an entity considered as a bearer of properties or participant in relations.
-├── Object: an entity with a physical embodiment or location in space-time.
-│   ├── Realized object (Thing): a realized object, also called a thing, with a spatially bounded or self-connected physical extent.
+├── Realized entity: an entity with a physical embodiment or location in space-time.
+│   ├── Object: a physical entity that is spatially bounded or self-connected.
 │   └── Process: an entity that unfolds, persists, or changes through time as an event, process, activity, transition, or state.
 ├── Abstract entity: an idealized object considered apart from any particular realization.
 ├── Property: a repeatable characteristic, capability, disposition, or value attributable to an entity.
@@ -1829,10 +1829,11 @@ language and are testable against the existing tree.
 
 1. **Universal entity:** an entity considered as a bearer of properties or
    participant in relations.
-2. **Object:** an entity with physical embodiment or a determinate spatial or
-   spatiotemporal extent, whether or not it is a self-connected object.
-3. **Realized object (Thing):** a realized object with a spatially bounded or
-   self-connected physical extent.
+2. **Realized entity:** an entity with physical embodiment or a determinate
+   spatial or spatiotemporal extent, whether or not it is a self-connected
+   object.
+3. **Object:** a realized entity with a spatially bounded or self-connected
+   physical extent.
 4. **Mechanical body:** a physical entity whose state is modeled by mechanics,
    including some determinate mass, geometry, motion, or force interaction.
    Mass is not required of every useful body model.
@@ -1856,31 +1857,31 @@ language and are testable against the existing tree.
 ### Candidate slot assignments
 
 - `Entity` is the settled label for slot 1.
-- `Object` is the settled label for slot 2.
-- `Realized object (Thing)` is the settled label for slot 3: something that
-  exists as a spatially bounded or self-connected physical phenomenon.
+- `Realized entity` is the settled label for slot 2.
+- `Object` is the settled label for slot 3: a realized entity with a spatially
+  bounded or self-connected physical extent.
 - `Body` is the candidate for slot 4, subject to deciding whether force
   interaction and mass are defining or merely typical.
 - `Being` is reserved for slot 11 and is off-limits for the upper ontology.
 - Slots 5 through 10 need labels that should be chosen from their technical
   prior-art uses rather than from the remaining everyday synonyms.
 
-### Entity, Object, Realized object (Thing)
+### Entity, Realized entity, Object
 
-- The current chain is `Entity → Object → Realized object (Thing)`, with
+- The current chain is `Entity → Realized entity → Object`, with
   `Abstract entity`, `Property`, and `Relation` as the other direct children
   of `Entity`.
-- This is defensible if `Entity` is the universal domain, `Object` is the
-  physically realized branch, and `Realized object (Thing)` is the narrower
+- This is defensible if `Entity` is the universal domain, `Realized entity`
+  is the physically realized branch, and `Object` is the narrower
   self-connected material-object branch.
 - In philosophical and formal-ontology usage, `entity` is generally the broad
   term for anything admitted as existing or as a domain individual. `Object`
   is more variable: it commonly means an ordinary bearer of properties, a
   material continuant, or the target of intentional reference, but it is not
   a stable synonym for `entity`.
-- The revised chain avoids using `Object` both for a broad non-predicative
-  category and for the physical-object source branch. `Object` now includes
-  physical processes, while `Realized object (Thing)` is reserved for the
+- The revised chain avoids using `Object` as a broad non-predicative category
+  while retaining it for the narrower physical-object branch. `Realized
+  entity` includes physical processes, while `Object` is reserved for the
   narrower object branch.
 
 ### Options for the physical-entity label
@@ -1906,28 +1907,27 @@ language and are testable against the existing tree.
   possible entities, but imports a disputed metaphysical commitment and may
   conflict with the intended treatment of fictional entities as entities.
 
-The current assignment is `Object` for the broad physical branch and
-`Realized object (Thing)` for the narrower spatially bounded or self-connected
-object branch.
+The current assignment is `Realized entity` for the broad physical branch and
+`Object` for the narrower spatially bounded or self-connected object branch.
 
-### Thing at the object or realized-object slot
+### Thing at the realized-entity or object slot
 
 The colloquial test favors the broader slot: fire can be called “not a thing”
 when its existence as a physical phenomenon is disputed, even though fire is
 not an ordinary persisting object. That use treats `Thing` as “physically
 existent phenomenon,” not as “self-connected material object.”
 
-#### Thing as object
+#### Thing as realized entity
 
 - **Result:** `Thing` covers material objects, fires, processes, events, and
   other physically realized phenomena.
-- **Remaining realized-object labels:** `Realized object` is explicit;
+- **Remaining object labels:** `Object` is explicit;
   `Material object` is precise for matter-bearing objects but excludes
   nonmaterial physical entities; `Body` is too mechanics-specific.
-- **Best option:** use `Realized object (Thing)` for the narrower branch while
-  retaining `Object` for the broader physical branch.
+- **Best option:** use `Object` for the narrower branch while retaining
+  `Realized entity` for the broader physical branch.
 
-#### Thing as realized object
+#### Thing as object
 
 - **Result:** `Thing` covers ordinary material objects but excludes fire and
   other physical processes from the colloquial “a thing.”
@@ -1936,8 +1936,8 @@ existent phenomenon,” not as “self-connected material object.”
   `Concrete entity` may include events, places, and social particulars but is
   metaphysically variable.
 
-The current assignment therefore uses `Thing` as the colloquial synonym in
-`Realized object (Thing)` while `Object` remains the broader physical branch.
+The current assignment therefore keeps `Thing` as a discussion synonym only;
+the node names are `Realized entity` and `Object`.
 
 ### Contrasts with abstract entity
 

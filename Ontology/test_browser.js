@@ -74,8 +74,8 @@ async function testBrowser(relativePath, dataPath) {
     assert.equal(dataPath.root, "Entity", "canonical ontology root must be Entity");
     assert.deepEqual(
       dataPath.nodes.find((node) => node.id === "Entity").children,
-      ["Object", "AbstractEntity", "Property", "Relation"],
-      "canonical Entity children must be Object, AbstractEntity, Property, and Relation",
+      ["RealizedEntity", "AbstractEntity", "Property", "Relation"],
+      "canonical Entity children must be RealizedEntity, AbstractEntity, Property, and Relation",
     );
   }
   assert(tree.innerHTML.includes("Geopolitical Area"), `${relativePath}: target is not rendered`);
@@ -83,13 +83,16 @@ async function testBrowser(relativePath, dataPath) {
 
   if (relativePath === "index.html") {
     const objectDefinition = dataPath.nodes.find((node) => node.id === "Object").definition;
+    const realizedEntityButton = eventTarget("button.expander[data-node]", { node: "RealizedEntity" });
+    tree.onclick({ target: realizedEntityButton });
     const objectStart = () => tree.innerHTML.indexOf('id="Object"');
     const objectEnd = () => tree.innerHTML.indexOf("</div>", objectStart());
+    const objectButton = eventTarget("button.expander[data-node]", { node: "Object" });
+    tree.onclick({ target: objectButton });
     assert(
       tree.innerHTML.slice(objectStart(), objectEnd()).includes('class="definition expanded"'),
       `${relativePath}: expanded Object definition is not marked expanded`,
     );
-    const objectButton = eventTarget("button.expander[data-node]", { node: "Object" });
     tree.onclick({ target: objectButton });
     assert(
       !tree.innerHTML.slice(objectStart(), objectEnd()).includes('class="definition expanded"'),
