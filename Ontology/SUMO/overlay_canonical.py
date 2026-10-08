@@ -35,7 +35,7 @@ CANONICAL = node(
         node(
             "AbstractEntity",
             "Abstract entity",
-            "An entity whose identity does not depend on one particular physical embodiment.",
+            "An idealized object considered apart from any particular realization.",
             node(
                 "MathematicalEntity",
                 "Mathematical entity",

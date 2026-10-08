@@ -1716,8 +1716,8 @@ language and are testable against the existing tree.
 4. **Mechanical body:** a physical entity whose state is modeled by mechanics,
    including some determinate mass, geometry, motion, or force interaction.
    Mass is not required of every useful body model.
-5. **Abstract entity:** an entity whose identity is not tied to one particular
-   physical embodiment.
+5. **Abstract entity:** an idealized object considered apart from any
+   particular realization.
 6. **Occurrence:** an entity that unfolds, persists, or changes through time
    as an event, process, activity, transition, or state.
 7. **Place or region:** an entity specified by spatial, temporal, or
