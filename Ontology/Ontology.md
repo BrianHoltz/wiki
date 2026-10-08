@@ -1739,10 +1739,11 @@ language and are testable against the existing tree.
 
 - `Entity` is the settled label for slot 1.
 - Slot 2 should not use `Object` while `Object` remains a physical-tree label.
-  `Thing` is broader and more natural; `Item` is more enumeration-oriented.
-- `Object` currently best fits slot 3's ordinary physical-object
-  neighborhood, but the tree must rename the deeper physical use to preserve
-  one unambiguous label.
+  `Thing` is provisionally assigned to the physical-existence slot currently
+  represented by `Physical object`: something that exists as a phenomenon in
+  this universe, in the colloquial sense of “that is not a thing.”
+- `Object` remains available for the non-predicative branch only if the
+  physical branch is given a different label.
 - `Body` is the candidate for slot 4, subject to deciding whether force
   interaction and mass are defining or merely typical.
 - `Being` is reserved for slot 11 and is off-limits for the upper ontology.
@@ -1769,6 +1770,31 @@ language and are testable against the existing tree.
   to include processes and other non-object physical entities, and whether
   `Physical object` should be the sole home for ordinary spatially extended
   material things.
+
+### Options for the physical-entity label
+
+- **Material entity:** precise when the slot requires matter, but potentially
+  excludes fields, spacetime regions, and other physically real non-matter
+  entities.
+- **Concrete entity:** established as the opposite of abstract, but often
+  includes events, places, and social particulars and therefore may be too
+  broad or theory-dependent.
+- **Physical entity:** clear and currently understood, but generic enough
+  that it does not distinguish the slot from `Thing`.
+- **Corporeal entity:** emphasizes embodiment, but usually suggests a living
+  body and is too narrow for artifacts, regions, and physical processes.
+- **Natural entity:** unsuitable because artifacts and engineered systems are
+  physical without being natural.
+- **Continuant:** technically useful for an entity that persists through
+  time, but it excludes processes and is specialized foundational-ontology
+  vocabulary rather than ordinary noun vocabulary.
+- **Real entity:** supports the intended contrast with fictional or merely
+  possible entities, but imports a disputed metaphysical commitment and may
+  conflict with the intended treatment of fictional entities as entities.
+
+The leading candidates are `Material entity` if matter is genuinely required,
+`Concrete entity` if the slot includes physically realized events and places,
+and retaining `Physical entity` if clarity outweighs terminology reuse.
 
 ### Prior-art definitions of the candidate words
 
