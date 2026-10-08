@@ -24,7 +24,7 @@ a{color:var(--accent)}#results{margin:10px 0 18px}.result{padding:5px 0;border-b
 <main>
 <div class="summary-row"><div class="summary-actions"><button id="expand">Expand</button><button id="collapse">Collapse</button></div><a id="summary-link" href="Ontology.md"><span id="summary" class="muted"></span></a></div>
 <input id="search" type="search" placeholder="Search this ontology">
-<div class="search-presets" aria-label="Search presets"><button type="button" data-search="human">human</button><button type="button" data-search="animal">animal</button><button type="button" data-search="plant">plant</button><button type="button" data-search="artifact">artifact</button><button type="button" data-search="place">place</button><button type="button" data-search="abstract">abstract</button></div>
+<div class="search-presets" aria-label="Search presets"><button type="button" data-search="human" data-target="HumanLanguage">human</button><button type="button" data-search="animal" data-target="BioAnimalia">animal</button><button type="button" data-search="plant" data-target="BioAngiosperms">plant</button><button type="button" data-search="artifact" data-target="Artifact">artifact</button><button type="button" data-search="relation" data-target="Relation">relation</button><button type="button" data-search="abstract" data-target="AbstractEntity">abstract</button></div>
 <div id="results"></div><section id="tree"></section>
 </main>
 <script>
@@ -65,7 +65,7 @@ const hits=data.nodes.filter(n=>`${n.id} ${n.label}`.toLowerCase().includes(q)).
 document.querySelector('#results').innerHTML=q?`<strong>${hits.length}${hits.length===100?'+':''} matches</strong>`+
 hits.map(n=>`<div class="result">${link(n.id)} <span class="meta">${esc(n.id)}</span></div>`).join(''):''};
 document.querySelector('#search').oninput=e=>searchFor(e.target.value);
-document.querySelector('.search-presets').onclick=e=>{const button=e.target.closest('button[data-search]');if(!button)return;document.querySelector('#search').value=button.dataset.search;searchFor(button.dataset.search)};
+document.querySelector('.search-presets').onclick=e=>{const button=e.target.closest('button[data-target]');if(!button)return;document.querySelector('#search').value=button.dataset.search;document.querySelector('#results').innerHTML='';focusLineage(button.dataset.target)};
 fetch('sumo.json').then(r=>r.json()).then(x=>{data=x;byId=new Map(data.nodes.map(n=>[n.id,n]));parentOf=new Map();data.nodes.forEach(n=>n.children.forEach(child=>parentOf.set(child,n.id)));descendantCounts=new Map();data.nodes.forEach(n=>descendantCount(n.id));nodeModes=new Map(data.nodes.map(n=>[n.id,0]));data.rootNodes.forEach(root=>{nodeModes.set(root,1);byId.get(root).children.forEach(child=>nodeModes.set(child,1))});lineageNode=null;alternateChildren=new Map();data.nodes.forEach(n=>n.alternateParents.forEach(parent=>{if(!alternateChildren.has(parent))alternateChildren.set(parent,[]);alternateChildren.get(parent).push(n.id)}));render()})
 .catch(e=>document.querySelector('#tree').textContent=`Could not load sumo.json: ${e}`);
 </script>

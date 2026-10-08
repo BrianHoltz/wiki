@@ -12,5 +12,5 @@
 - [ ] Expand and Collapse controls affect the full tree.
 - [ ] Search results open the complete ancestor chain and scroll to the matched node.
 - [ ] Search-result links open the matched node in diamond lineage mode.
-- [ ] Preset search buttons populate the search box and display matching results.
+- [ ] Preset search buttons populate the search box and immediately open their target in diamond lineage mode.
 - [ ] The count summary is a normal link to `Ontology.md`.
