@@ -1708,26 +1708,20 @@ language and are testable against the existing tree.
 
 1. **Universal entity:** anything admitted by the ontology as an individual,
    universal, class, proposition, property, relation, or other item over which
-   the ontology permits reference or quantification. This is the current
-   definition of `Entity` and the proposed root.
+   the ontology permits reference or quantification.
 2. **Non-predicative entity:** an entity considered in bearer, participant, or
    subject position rather than in the predicative role of `Property` or
-   `Relation`. This is the unresolved slot currently being considered for the
-   root's third branch.
+   `Relation`.
 3. **Physical entity:** an entity with physical embodiment or a determinate
    spatial or spatiotemporal extent, whether or not it is a self-connected
-   object. This is the existing `Physical entity` branch definition.
+   object.
 4. **Mechanical body:** a physical entity whose state is modeled by mechanics,
    including some determinate mass, geometry, motion, or force interaction.
-   Mass is not required of every useful body model, but the slot excludes
-   merely informational, abstract, and purely social entities.
+   Mass is not required of every useful body model.
 5. **Abstract entity:** an entity whose identity is not tied to one particular
-   physical embodiment. This is the existing `Abstract entity` definition,
-   subject to the warning that it must not become a residual bucket.
+   physical embodiment.
 6. **Occurrence:** an entity that unfolds, persists, or changes through time
-   as an event, process, activity, transition, or state. The slot is needed
-   even if the visible tree places occurrences under a broader object-like
-   branch.
+   as an event, process, activity, transition, or state.
 7. **Place or region:** an entity specified by spatial, temporal, or
    spatiotemporal extent, location, boundary, or coordinate relations.
 8. **Information or representation:** an entity whose identity depends on
@@ -1739,8 +1733,7 @@ language and are testable against the existing tree.
     or directed action in the relevant model; organism is a biological
     specialization, while agent is a functional or behavioral role.
 11. **Ethical subject:** an entity considered as a bearer of moral standing,
-    claims, duties, or welfare. Reserve `Being` for this ethics slot rather
-    than using it in the upper ontology.
+    claims, duties, or welfare.
 
 ### Candidate slot assignments
 
