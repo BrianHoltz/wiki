@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Ontology hierarchy</title>
+<title>My ontology</title>
 <style>
 :root{color-scheme:light dark;--bg:#fff;--fg:#202124;--muted:#5f6368;--panel:#f5f7fa;--line:#c7cbd1;--accent:#1769aa}
 @media(prefers-color-scheme:dark){:root{--bg:#17191c;--fg:#e8eaed;--muted:#b4bac4;--panel:#24282e;--line:#59616d;--accent:#8ab4f8}}
@@ -32,6 +32,7 @@ const esc=v=>String(v).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'
 let data,byId,descendantCounts,parentOf,nodeModes,lineageNode,lineageChildren;
 function descendantCount(id){if(descendantCounts.has(id))return descendantCounts.get(id);const n=byId.get(id);const count=n.children.reduce((total,child)=>total+1+descendantCount(child),0);descendantCounts.set(id,count);return count}
 function link(id){const n=byId.get(id);return n?`<a href="#${encodeURIComponent(id)}" data-node="${esc(id)}">${esc(n.label)}</a>`:esc(id)}
+function sourceLink(n){return n.sourceUrl?` <a class="source-link" href="${esc(n.sourceUrl)}" target="_blank" rel="noopener" aria-label="Open source for ${esc(n.label)}">↗</a>`:''}
 function formatDefinition(text){return esc(text).replace(/&amp;%([A-Za-z0-9_]+)/g,(_,id)=>byId.has(id)?link(id):esc(id))}
 function renderNode(id,open=false,children=null,lineage=false,childOpen=null){const n=byId.get(id);const visibleChildren=children||lineageChildren?.get(id)||n.children;
 const directChildren=n.children.length;
@@ -41,7 +42,7 @@ const childCount=directChildren?`<span class="meta"> · ${directChildren}${other
 const provisional=n.provisionalParent?` <span class="meta">· provisional placement</span>`:'';
 const shortDef=n.definition?`<span class="definition${open?' expanded':''}" title="${esc(n.definition)}">${formatDefinition(n.definition)}</span>`:'';
 const expander=directChildren?`<button class="expander" type="button" data-node="${esc(id)}">${marker}</button>`:'<span class="expander-placeholder" aria-hidden="true"></span>';
-const text=`<span class="node-title">${esc(n.label)}</span><button class="lineage-toggle" type="button" data-node="${esc(id)}">↖</button>${childCount}${provisional}${shortDef}`;
+const text=`<span class="node-title">${link(id)}${sourceLink(n)}</span><button class="lineage-toggle" type="button" data-node="${esc(id)}">↖</button>${childCount}${provisional}${shortDef}`;
 return `<li id="${encodeURIComponent(id)}"><div class="node">${expander}<span class="node-content">${text}</span></div><ul class="children"${open?'':' hidden'}>${visibleChildren.map(child=>renderNode(child,lineageNode?lineageChildren?.has(child):nodeModes.get(child)===1)).join('')}</ul></li>`}
 function renderLineage(path){lineageChildren=new Map(path.map((id,index)=>[id,index===path.length-1?byId.get(id).children:[path[index+1]]]));return renderNode(path[0],true)}
 function render(){let tree;
@@ -49,7 +50,7 @@ if(lineageNode){const path=[],seen=new Set();for(let id=lineageNode;id&&!seen.ha
 else {lineageChildren=null;tree=data.rootNodes.map(root=>`<ul>${renderNode(root,nodeModes.get(root)===1)}</ul>`).join('')}
 document.querySelector('#tree').innerHTML=tree;
 const stats=data.stats||{}, count=(key,fallback=0)=>Number.isFinite(stats[key])?stats[key]:fallback;
-document.querySelector('#summary').innerHTML=`... all ${count('nodeCount',data.nodes.length).toLocaleString()} concepts · ${count('definitionCount',data.nodes.filter(n=>n.definition).length).toLocaleString()} definitions · ${count('projectedEdgeCount').toLocaleString()} edges in <a href="https://humanknowledge.net/wiki/#!./Ontology/Ontology.md">this Ontology</a>`;
+document.querySelector('#summary').innerHTML=`... all ${count('nodeCount',data.nodes.length).toLocaleString()} concepts · ${count('definitionCount',data.nodes.filter(n=>n.definition).length).toLocaleString()} definitions · ${count('projectedEdgeCount').toLocaleString()} edges in <a href="https://humanknowledge.net/wiki/#!./Ontology/Ontology.md">My ontology</a>`;
 }
 document.querySelector('#expand').onclick=()=>{lineageNode=null;data.nodes.forEach(n=>nodeModes.set(n.id,1));render()};
 document.querySelector('#collapse').onclick=()=>{lineageNode=null;data.nodes.forEach(n=>nodeModes.set(n.id,0));render()};
