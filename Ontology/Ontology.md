@@ -1708,7 +1708,7 @@ language and are testable against the existing tree.
 
 1. **Universal entity:** an entity considered as a bearer of properties or
    participant in relations.
-2. **Non-predicative entity:** a bounded entity considered apart from its
+2. **Non-predicative entity:** a first-order entity considered apart from its
    properties and relations.
 3. **Realized entity:** an entity with physical embodiment or a determinate
    spatial or spatiotemporal extent, whether or not it is a self-connected

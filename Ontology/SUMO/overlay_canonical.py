@@ -26,7 +26,7 @@ CANONICAL = node(
     node(
         "Object",
         "Object",
-        "A bounded entity considered apart from its properties and relations.",
+        "A first-order entity considered apart from its properties and relations.",
         node(
             "RealizedEntity",
             "Realized entity",
