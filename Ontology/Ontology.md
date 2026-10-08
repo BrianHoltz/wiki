@@ -1,4 +1,4 @@
-# 20 Questions Ontology
+# Ontology
 
 ## Status
 
@@ -1675,7 +1675,7 @@ but DMOZ is the precise name for the data structure.
   if the branch is intended to exclude properties and relations; otherwise
   `Object` falsely suggests that those reified entities are outside it.
 
-### Property
+#### Property
 
 - `Property` as a top-level child of `Entity` has precedent in
   philosophical/formal ontology and entity-property-value modeling; RDF/OWL
@@ -1687,7 +1687,7 @@ but DMOZ is the precise name for the data structure.
   especially Aristotelian, SUMO/BFO-inspired, and formal/type-theoretic
   variants.
 
-### Relation
+#### Relation
 
 - `Relation` as a top-level concept comes from logic, knowledge
   representation, and conceptual modeling.
@@ -1772,8 +1772,8 @@ if they produce useful questions and recognizable leaves.
 Properties and relations can themselves be entities when they are reified and
 discussed as objects of predication. For example, the relation `larger-than`
 can have an arity, inverse, symmetry, and transitivity, while a property can
-itself have a domain, range, or relation to another property. This does not
-by itself require the visible tree to become:
+itself have a domain, range, or relation to another property. The canonical
+upper structure is:
 
 ```text
 Entity
@@ -1782,21 +1782,15 @@ Entity
 └── Relation
 ```
 
-That arrangement is an important candidate to compare, but it risks treating
-`Property` and `Relation` as representational roles rather than fundamental
-kinds, and `Object` may be too narrow for events, propositions, numbers,
-organizations, and other admitted entities. The current `Ontology` →
-`Entity` / `Property` / `Relation` arrangement therefore remains provisional:
-`Entity` is the candidate universal domain of discourse, while `Property` and
-`Relation` are useful top-level semantic roles in the current projection.
-Reification must remain possible without forcing every reified relation or
-property into a second, inconsistent copy of the tree.
+`Property` and `Relation` may still be representational roles rather than
+fundamental kinds, and `Object` may be too narrow for events, propositions,
+numbers, organizations, and other admitted entities. Reification must remain
+possible without forcing every reified relation or property into a second,
+inconsistent copy of the tree.
 
-The upper-ontology comparison must distinguish kinds from roles and must test
-whether an alternative such as `Entity` → `Object` / `Property` / `Relation`
-provides a genuinely exhaustive, appropriately disjoint, human-traversable
-partition. No root restructuring follows merely from the fact that
-properties and relations can be entities.
+The upper-ontology comparison must distinguish kinds from roles and continue
+testing whether `Entity` → `Object` / `Property` / `Relation` provides a
+genuinely exhaustive, appropriately disjoint, human-traversable partition.
 
 ### Formalization stress test
 
@@ -2333,11 +2327,11 @@ forcing those concepts into either triad.
 The canonical tree above supersedes the earlier profiles in this subsection.
 The profiles below are retained only to document rejected projections and
 implementation tradeoffs; none is an alternative visible root. The visible
-top level remains:
+top level is:
 
 ```text
-Ontology
-├── Entity
+Entity
+├── Object
 ├── Property
 └── Relation
 ```
@@ -2731,7 +2725,8 @@ semantic model.
 ### Canonical implementation rules
 
 Use the **minimal semantic variant** as the initial visible projection, with
-`Entity`, `Property`, and `Relation` as the only mandatory top-level nodes.
+`Entity` as the root and `Object`, `Property`, and `Relation` as its mandatory
+children.
 Add the other variants as named profile projections over the same source
 graph. In particular:
 
