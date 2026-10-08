@@ -2,7 +2,12 @@
 
 - [BrianThinks](BrianThinks.md) — AI proxy constitution
 - [BrianThinksManually](BrianThinksManually.md) — AI proxy portal
-- [Ontology](Ontology/Ontology.md)
+- Ontology
+  - [My ontology](Ontology/) — canonical ontology browser
+  - [SUMO](Ontology/SUMO/) — SUMO ontology browser
+  - [Roget's 1911 conceptual tree](Ontology/Rogets/) — Roget's thesaurus browser
+  - [Propædia](Ontology/Propaedia/) — Propædia outline browser
+  - [Wikipedia categories](Ontology/Wikipedia/) — Wikipedia category browser
 
 ### Artificial Intelligence
 
