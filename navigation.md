@@ -4,7 +4,11 @@
 
 * [BrianThinks](BrianThinks.md)
 * [BrianThinksManually](BrianThinksManually.md)
-* [20 Questions Noun Hierarchy](Ontology/)
+* Ontology
+  * [My ontology](Ontology/)
+  * [Human knowledge ontology](Ontology/HumanKnowledge/)
+  * [SUMO ontology](Ontology/SUMO/)
+  * [Propædia ontology](Ontology/Propaedia/)
 
 [Artificial Intelligence]()
 
