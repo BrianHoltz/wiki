@@ -1108,108 +1108,108 @@ which structures deserve a detailed synthesis study.
 #### Aristotle's Categories
 
 ```text
-Being
-└── Substance
-    └── Body
-        ├── Natural body
-        └── Artificial body
+Being  # Aristotle: that which is said to be or exists in any category.
+└── Substance  # Aristotle: what is neither said of a subject nor in a subject.
+    └── Body  # Aristotle: a quantity having three dimensions.
+        ├── Natural body  # Aristotle: a body arising by nature.
+        └── Artificial body  # Aristotle: a body produced by art or craft.
 ```
 
 #### Sowa's Knowledge Representation Ontology
 
 ```text
-Entity
-├── Physical
-│   ├── Continuant
-│   │   └── Object
-│   └── Occurrent
-└── Abstract
-    ├── Continuant
-    └── Occurrent
+Entity  # Sowa: anything that exists, whether physical or abstract.
+├── Physical  # Sowa: an entity located in the physical world.
+│   ├── Continuant  # Sowa: a physical entity that persists through time.
+│   │   └── Object  # Sowa: a physical continuant with an independent identity.
+│   └── Occurrent  # Sowa: a physical entity that unfolds or occurs in time.
+└── Abstract  # Sowa: an entity that exists only as an abstraction.
+    ├── Continuant  # Sowa: an abstract entity treated as persistent.
+    └── Occurrent  # Sowa: an abstract entity treated as temporal or occurring.
 ```
 
 #### Suggested Upper Merged Ontology
 
 ```text
-Entity
-├── Physical
-│   ├── Object
-│   │   └── SelfConnectedObject
-│   └── Process
-└── Abstract
+Entity  # SUMO: the universal class containing every object in the ontology.
+├── Physical  # SUMO: entities that have a location in space or time.
+│   ├── Object  # SUMO: a physical entity that is not a process.
+│   │   └── SelfConnectedObject  # SUMO: an object whose parts are connected.
+│   └── Process  # SUMO: a physical entity that has temporal parts or stages.
+└── Abstract  # SUMO: entities that are not physical.
 ```
 
 #### Descriptive Ontology for Linguistic and Cognitive Engineering
 
 ```text
-Particular
-├── Endurant
-│   ├── PhysicalEndurant
-│   │   └── PhysicalObject
-│   └── NonPhysicalEndurant
-├── Perdurant
-│   └── Event
-├── Quality
-└── Abstract
+Particular  # DOLCE: an individual that is not a universal.
+├── Endurant  # DOLCE: an entity wholly present at each time it exists.
+│   ├── PhysicalEndurant  # DOLCE: an endurant with physical presence.
+│   │   └── PhysicalObject  # DOLCE: a physical endurant with independent existence.
+│   └── NonPhysicalEndurant  # DOLCE: an endurant without physical presence.
+├── Perdurant  # DOLCE: an entity that unfolds over time.
+│   └── Event  # DOLCE: a perdurant with temporal boundaries.
+├── Quality  # DOLCE: an individual dependent on an entity and characterizing it.
+└── Abstract  # DOLCE: an entity that is neither physical nor temporal.
 ```
 
 #### Basic Formal Ontology
 
 ```text
-Entity
-├── Continuant
-│   ├── IndependentContinuant
-│   │   └── MaterialEntity
-│   │       └── Object
-│   └── SpecificallyDependentContinuant
-└── Occurrent
-    └── Process
+Entity  # BFO: anything that exists in reality.
+├── Continuant  # BFO: an entity that persists through time while remaining present.
+│   ├── IndependentContinuant  # BFO: a continuant that does not inhere in another.
+│   │   └── MaterialEntity  # BFO: an independent continuant with a material extent.
+│   │       └── Object  # BFO: a material entity that is spatially bounded and self-connected.
+│   └── SpecificallyDependentContinuant  # BFO: a continuant dependent on one bearer.
+└── Occurrent  # BFO: an entity that unfolds or has temporal parts.
+    └── Process  # BFO: an occurrent with temporal extent and unfolding.
 ```
 
 #### General Formal Ontology
 
 ```text
-Entity
-├── Concrete
-│   ├── Presential
-│   │   └── MaterialObject
-│   └── Process
-└── Abstract
-    └── Category
+Entity  # GFO: anything that can be represented in the ontology.
+├── Concrete  # GFO: an entity that exists in space-time.
+│   ├── Presential  # GFO: a concrete entity present at a given time.
+│   │   └── MaterialObject  # GFO: a material presential occupying space.
+│   └── Process  # GFO: a concrete entity that unfolds through time.
+└── Abstract  # GFO: an entity not located in space-time.
+    └── Category  # GFO: an abstract entity used to classify individuals.
 ```
 
 #### Unified Foundational Ontology
 
 ```text
-Entity
-├── Endurant
-│   ├── Object
-│   │   └── MaterialObject
-│   └── Moment
-└── Perdurant
-    └── Event
+Entity  # UFO: anything that exists according to the domain theory.
+├── Endurant  # UFO: an entity wholly present whenever it exists.
+│   ├── Object  # UFO: an endurant that bears properties and participates in events.
+│   │   └── MaterialObject  # UFO: an object with material or physical realization.
+│   └── Moment  # UFO: an existentially dependent endurant.
+└── Perdurant  # UFO: an entity whose existence unfolds over time.
+    └── Event  # UFO: a perdurant composed of temporal parts.
 ```
 
 #### WordNet noun hierarchy
 
 ```text
-Entity
-├── PhysicalEntity
-│   └── Thing
-│       └── Object
-└── Abstraction
+Entity  # WordNet: something that has distinct and independent existence.
+├── PhysicalEntity  # WordNet: an entity that has a physical existence.
+│   └── Thing  # WordNet: an entity regarded as an object or unit.
+│       └── Object  # WordNet: a tangible and visible entity.
+└── Abstraction  # WordNet: a general concept formed by abstraction.
 ```
 
 #### Schema.org
 
 ```text
-Thing
-├── Place
-│   └── Landform
-├── Product
-│   └── IndividualProduct
-├── CreativeWork
-└── Event
+Thing  # Schema.org: the most generic type of item.
+├── Place  # Schema.org: a physical location.
+│   └── Landform  # Schema.org: a natural physical feature of the Earth.
+├── Product  # Schema.org: any offered product or service.
+│   └── IndividualProduct  # Schema.org: a single, identifiable product instance.
+├── CreativeWork  # Schema.org: the most generic kind of creative work.
+└── Event  # Schema.org: an event happening at a given time and location.
 ```
 
 ### SUMO PDF tree projection and unary-node policy
