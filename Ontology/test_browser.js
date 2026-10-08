@@ -77,6 +77,11 @@ async function testBrowser(relativePath, dataPath) {
       ["RealizedEntity", "AbstractEntity", "Property", "Relation"],
       "canonical Entity children must be RealizedEntity, AbstractEntity, Property, and Relation",
     );
+    assert.deepEqual(
+      dataPath.nodes.find((node) => node.id === "Collection").children,
+      ["Group"],
+      "Collection must retain its Group child",
+    );
   }
   assert(tree.innerHTML.includes("Geopolitical Area"), `${relativePath}: target is not rendered`);
   assert(!tree.innerHTML.includes(">undefined<"), `${relativePath}: dangling child rendered`);
@@ -108,6 +113,8 @@ async function testBrowser(relativePath, dataPath) {
 
   elements.get("#expand").onclick();
   assert(tree.innerHTML.includes('data-node="GeopoliticalArea"'), `${relativePath}: target child is not reachable`);
+  assert(!tree.innerHTML.includes("Alternate Parents:"), `${relativePath}: alternate parents rendered`);
+  assert(!tree.innerHTML.includes("Alternate Children:"), `${relativePath}: alternate children rendered`);
 
   const geographicArea = eventTarget("button.expander[data-node]", { node: "GeographicArea" });
   tree.onclick({ target: geographicArea });
