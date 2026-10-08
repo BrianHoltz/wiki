@@ -1698,6 +1698,33 @@ but DMOZ is the precise name for the data structure.
   and provenance axes, so several children are not justified as siblings and
   require review.
 
+## Entity Object Thing Item Being
+
+The vocabulary needs separate names for several nested slots. `Object` cannot
+simultaneously be the generic non-property/non-relation child of `Entity` and
+the existing child under `Physical entity`.
+
+- **Ontology root:** `Entity` remains the leading candidate.
+- **Non-property/non-relation entity:** a slot contrasting with `Property` and
+  `Relation`; candidate terms are `Thing` or `Item`, not `Object` unless the
+  existing physical branch is renamed.
+- **Physical or material entity:** an entity with a location or extent in
+  spacetime; `Object` is currently used in this neighborhood.
+- **Mechanical body:** a physically extended entity with mechanics-relevant
+  characteristics such as mass and susceptibility to forces; `Body` is a
+  candidate, but its boundary and relation to physical object need definition.
+- **Ethical subject:** reserve `Being` for the ethics section; do not use it
+  as an upper-ontology category.
+
+Slots still requiring allocation among these terms or additional vocabulary:
+
+- abstract or nonphysical entity;
+- event, process, or occurrence;
+- place, region, or spacetime extent;
+- information or representational artifact;
+- collection, aggregate, or system;
+- agent or organism.
+
 ## Upper ontology
 
 ### Canonical-tree criteria
