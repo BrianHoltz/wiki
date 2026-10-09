@@ -18,6 +18,7 @@
   take priority over node count or premature vocabulary expansion.
 - **Biology:**
   - Preserve evolutionary ancestry, including birds within dinosaurs and mammals within synapsids.
+  - Keep every biological subtree monophyletic.
   - Record source, release, stable ID, rank, and date for each placement.
   - Balance familiar, agricultural, medical, ecological, extinct, and unusual taxa.
   - Prefer readable common labels; retain scientific names and aliases in metadata.
@@ -32,166 +33,18 @@
   - Include familiar, high-impact, food, pet, farm, disease, keystone, extinct, and evolutionary-example taxa.
   - Put scientific-only names in metadata unless they have a clear player interpretation.
 
-## Status
-
-The canonical browser and its source projections are committed. The current
-work is tree-first: structural review, source comparison, ordinary-language
-coverage, and separately labeled reference trees. The design memorandum keeps
-longer arguments and unresolved alternatives; this document keeps current
-criteria and implementation-facing decisions.
-
 ## What to add
 
-- Structural branch repairs and balanced sibling splits.
-- A curated biological taxonomy with compressed, source-backed ancestry.
-- Viruses and other acellular infectious agents.
-- Familiar, high-impact, agricultural, medical, extinct, and evolutionary-example taxa.
-- Roget and WordNet labels, aliases, glosses, and sense frequencies.
-- Product vocabulary for tools, foods, appliances, clothing, vehicles, electronics, materials, and household goods.
-- Everyday nouns for foods, materials, vehicles, body parts, places, occupations, cultural objects, people, and fictional entities.
-
-## Biology implementation
-
-### How the graft should work
-
-The graft should begin from the v1 organism branches and map source taxa into
-those homes through an explicit reviewed crosswalk. The pipeline should:
-
-- choose one authority for accepted names and parentage for each release,
-  preferably Catalogue of Life or GBIF for broad coverage, with Open Tree of
-  Life, NCBI, ITIS, and specialized sources used for validation;
-- retain stable source identifiers, rank, accepted name, synonyms, extinct
-  status, and source version in a manifest;
-- collapse taxonomic ranks that do not improve a 20 Questions split, while
-  retaining enough ancestors to explain scientific placement;
-- create visible nodes only for selected notable taxa and the ancestors needed
-  to make their branches intelligible;
-- preserve alternate scientific placements and synonymy as metadata rather
-  than duplicating visible nodes;
-- attach a short plain-language description and, where useful, an “often
-  confused with” or “convergent with” note; and
-- run a tree review for every new branch: recognizable entries, non-trivial
-  sibling distinctions, balanced candidate mass, and a clear semantic split.
-
-The visible hierarchy must not use evolutionary relatedness as the only
-question strategy. A player should first encounter useful distinctions such
-as animal versus plant, vertebrate versus invertebrate, aquatic versus
-terrestrial, or domesticated versus wild where those splits are more
-answerable than a deep scientific rank. Scientific taxonomy determines
-correct homes and metadata; the v1 information design determines the
-player-facing order.
-
-### Acceptance and quality gates
-
-Every proposed v2 node should have a review record containing its label,
-parent, source identifier and release, common-name evidence, familiarity
-score, scientific-interest rationale, and rejection reason if not accepted.
-Automated checks should reject or flag:
-
-- duplicate visible labels with no disambiguating parent context;
-- branches containing only one weakly notable child;
-- taxa whose source parentage is unresolved or contradictory;
-- scientific-only labels that have no useful player interpretation;
-- nodes whose proposed discriminator is nearly empty or nearly universal; and
-- overrepresented clades that consume the budget without adding distinct
-  gameplay choices.
-
-The implemented biological pilot is the reviewed **9,955-node profile**. It
-should be judged as a candidate browser, not yet as the final gameplay tree:
-the next review pass should demote or hide scientific-only leaves, retain
-notable ancestors, and preserve the seed examples that explain evolutionary
-history. This staged review is safer than mechanically promoting every
-scientific record to a casual-game answer.
-
-## Vocabulary coverage audits from open encyclopedias and scored word lists
-
-The tree should have an explicit **must-include audit** in addition to
-taxonomy-driven expansion. The goal is not to copy an encyclopedia's
-categories. It is to extract candidate entry titles, normalize them to noun
-senses, and check whether familiar answers have a clear home in v1 or v2.
-This gives us a defensible answer to “what obvious things did we forget?”
-
-### Open and openly accessible encyclopedia sources
-
-There is no single open, modern, general-purpose encyclopedia that is both
-compact and already shaped like a 20 Questions noun tree. A practical source
-set is therefore a combination of open-license article title lists and
-compact knowledge outlines:
-
-- **Simple English Wikipedia:** its CC BY-SA dump is a strong approachability
-  source because article titles and explanations are intentionally written for
-  a wider reading audience. It is broad but editorially noisy; use titles and
-  lead concepts for candidate discovery, not Wikipedia category parentage.
-- **English Wikipedia:** the full CC BY-SA dump supplies the largest open
-  candidate inventory, redirects, and links to taxobox-backed organism
-  articles. Page views, incoming links, and article lead quality can provide
-  familiarity signals, but article existence is not evidence that a noun is a
-  good game answer.
-- **Wiktionary:** its regularly published dumps provide open lexical entries,
-  parts of speech, definitions, inflections, synonyms, and language labels.
-  It is better than an encyclopedia for deciding whether a candidate is
-  actually used as an English noun, but its crowdsourced sense structure
-  requires filtering and quality checks.
-- **Encyclopedia of Life:** the open biodiversity portal is a useful
-  approachable organism-entry source with common names, images, and links to
-  scientific authorities. It is not a single-volume general encyclopedia, so
-  it should supply biological familiarity evidence rather than the general
-  ontology root.
-- **Public-domain reference works:** the 1911 *Encyclopaedia Britannica* and
-  other Internet Archive or Project Gutenberg encyclopedias can supply
-  historically prominent names and concepts. They are useful negative controls
-  for cultural coverage, but their dated science and vocabulary make them
-  unsuitable as the sole modern must-include list.
-
-The *Propædia* browser in [`Propaedia/index.html`](Propaedia/index.html) is a
-particularly useful compact outline for auditing broad domain coverage. It
-should be used to ask whether our top-level organization has room for a domain,
-while open encyclopedic article titles should supply candidate leaves.
-
-### Scored noun inventories
-
-We can also construct a ranked noun list rather than rely on one encyclopedia.
-The strongest openly available signals are complementary:
-
-- [wordfreq](https://github.com/rspeer/wordfreq) supplies frequency estimates
-  and top-word lists derived from multiple corpora. It is a good first
-  frequency prior, but its list is not noun-filtered and frequency is not the
-  same as game usefulness.
-- [WordNet](https://wordnet.princeton.edu/) supplies noun synsets, lemma
-  counts, glosses, and hypernyms. Its corpus counts provide a reproducible
-  lexical familiarity signal, while its sense inventory prevents treating
-  every spelling as a distinct concept.
-- The [MRC Psycholinguistic Database](https://websites.psychology.uwa.edu.au/school/MRCDatabase/uwa_mrc.htm)
-  and [Brysbaert concreteness ratings](https://doi.org/10.3758/s13428-015-0631-6)
-  provide familiarity, imageability, age-of-acquisition, and concreteness
-  features for many English words. These are especially useful for separating
-  playable concrete nouns from frequent but abstract function words.
-- [Google Books Ngram Viewer](https://books.google.com/ngrams/) and
-  [Wikipedia pageviews](https://pageviews.wmcloud.org/) provide historical
-  and current prominence signals. They should be treated as measurable
-  evidence, not as ground truth: corpus bias, capitalization, inflection, and
-  media attention can distort rankings.
-
-A reproducible must-include audit can combine these signals into a declared
-score such as:
-
-```text
-candidate score =
-    frequency
-  + concreteness and imageability
-  + age-of-acquisition familiarity
-  + encyclopedia/pageview prominence
-  + WordNet sense and noun evidence
-  - ambiguity, proper-name noise, and source disagreement
-```
-
-For each proposed noun, the audit should retain the raw features, candidate
-senses, source URLs or IDs, normalized label, and proposed v1/v2 parent. We
-should then publish separate thresholded lists—for example, the top 1,000,
-3,000, and 5,000 everyday nouns—rather than silently treating one ranking as
-canonical. A candidate becomes a must-include only after it also passes the
-game checks: a recognizable answer interpretation, a clear home, and a
-non-trivial question against its siblings.
+- **Categories**
+  - Upper-ontology branches and missing semantic distinctions.
+  - Biological clades with monophyletic, source-backed ancestry.
+  - Product categories for tools, foods, appliances, clothing, vehicles, electronics, materials, and household goods.
+  - Coverage categories from Propædia, Schema.org, Wikipedia, WordNet, Roget, and FoodOn.
+- **Individuals**
+  - Familiar, high-impact, agricultural, medical, extinct, and evolutionary-example taxa.
+  - Viruses and other acellular infectious agents.
+  - Everyday nouns for foods, materials, vehicles, body parts, places, occupations, cultural objects, people, and fictional entities.
+  - Product leaves and lexical aliases supported by WordNet, Roget, Wiktionary, and encyclopedic sources.
 
 ## Prior art
 
@@ -409,35 +262,6 @@ snapshot-dependent; links are the authoritative places to refresh them.
   [WordNet paper](https://doi.org/10.1007/978-94-011-2016-8_2) is a standard
   reference point for lexical-semantic systems.
 - **Fit:** best initial canonical backbone for common noun gameplay.
-
-### 20Q.net and Akinator
-
-These are notable game systems rather than downloadable ontologies. They are
-important prior art because they optimize the actual interaction this project
-is trying to support: identifying a player-selected answer through a sequence
-of questions.
-
-- **20Q.net:** Robin Burgener's computerized 20 Questions experiment began in
-  1988; the commercial handheld version appeared in 2003, and the service was
-  also published as a website. The system is described as a learned neural
-  network and folk taxonomy rather than a fixed public hierarchy. Its current
-  internal question/answer inventory and node count are proprietary or
-  undocumented. Its historical existence as a web and handheld product,
-  multiple category editions, and long-running public use are the relevant
-  prominence measures. See the
-  [20Q overview](https://en.wikipedia.org/wiki/20Q).
-- **Akinator:** Elokence launched this French video game in 2007. It asks
-  about characters, objects, films, and animals, learns from prior players,
-  and accepts graded answers such as “probably” and “probably not.” Its
-  internal classification database and node count are not public. Its
-  commercial web, mobile, and game presence and its sustained international
-  availability are practical prominence proxies. See the
-  [Akinator overview](https://en.wikipedia.org/wiki/Akinator).
-- **Fit:** both systems demonstrate that question selection, uncertainty
-  handling, and feedback can matter more to gameplay than a formally pure
-  hierarchy. They are useful behavioral benchmarks, but their learned
-  databases should not be silently substituted for WordNet's auditable source
-  graph.
 
 ### Ontology4 upper-ontology survey
 
@@ -1182,7 +1006,7 @@ into the public repository without permission.
 ### Online biological taxonomies
 
 These resources are the strongest available prior art for extending the
-organism portion of a general noun hierarchy. None is a complete 20 Questions
+organism portion of a general noun hierarchy. None is a complete general
 ontology: they optimize taxonomic identity, scientific names, synonymy, and
 research interoperability rather than familiar labels or balanced gameplay.
 
@@ -1310,7 +1134,7 @@ while retaining the omitted clades, ranks, and source identifiers in metadata.
   [Dynamic visualisation of million-tip trees](https://doi.org/10.1111/2041-210X.13766).
 - **Fit:** the best interface prior art for keeping a huge scientifically
   grounded tree navigable. Its species-first display is too deep and
-  biological for the whole 20 Questions ontology, but its zoomed overview,
+  biological for the whole ontology, but its zoomed overview,
   common names, images, and source links suggest how v2 can hide taxonomic
   detail without discarding it.
 
@@ -1416,7 +1240,7 @@ is the best supplement for evolutionary-history and divergence-time context.
 - **Prominence proxy:** its vocabulary is embedded in web search and structured
   data tooling across the four founding search ecosystems.
 - **Fit:** practical for artifact, organization, person, and event categories;
-  too shallow for a complete 20 Questions noun tree.
+  too shallow for a complete noun ontology.
 
 ### FoodOn
 
@@ -1490,11 +1314,6 @@ but DMOZ is the precise name for the data structure.
   maintenance categories, or topical collections rather than kinds of
   things. Multiple parents and cycles must be preserved in the source
   manifest and resolved only in a declared display projection.
-- **20 Questions use:** after graph validation, a 5K–10K projection could
-  provide an interesting contrast to WordNet. Selection should favor
-  frequently encountered, semantically concrete categories while retaining
-  source IDs and alternate parent links. It should remain a separately named
-  DMOZ profile rather than being silently merged into the WordNet tree.
 
 ### Human Knowledge
 
@@ -3042,10 +2861,4 @@ NLTK_DATA=~/nltk_data /tmp/wordnet-ontology-venv/bin/python \
 
 The active constraint is the shared static browser: searchable, collapsible,
 single-parent navigation with source links, counts, lineage, and definitions
-when supplied. The former 5K–10K target, page-performance measurements, and
-20 Questions mechanics belong to the historical WordNet experiment, not to a
-current product commitment.
-
-The current shared renderer is the UI constraint that remains active. Old
-20 Questions performance targets and generated-question mechanics are historical
-rather than current implementation requirements.
+when supplied.
