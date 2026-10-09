@@ -288,7 +288,7 @@ def overlay(input_path: Path, output_path: Path) -> None:
     selected_edges = sum(len(item["children"]) for item in nodes)
     output = {
         "source": {
-            "name": "Canonical upper ontology with historical physical projection",
+            "name": "My Ontology",
             "upperOntology": "Ontology/Ontology.md#upper-ontology",
             "overlayPolicy": (
                 "Use the project canonical Entity/RealizedEntity/AbstractEntity/Property/Relation "

@@ -55,14 +55,23 @@ async function loadBrowser(relativePath, dataPath) {
     assert(!/\bsumo\b/i.test(source), "canonical browser contains a SUMO reference");
   }
   const script = scriptOf(source);
+  const examples = ["Object", "primate", "Primate"].map((query) => ({
+    dataset: { query },
+    onclick: null,
+  }));
   const elements = new Map(
-    ["#tree", "#summary", "#expand", "#collapse", "#search", "#results", ".search-presets"]
+    ["#tree", "#summary", "#expand", "#collapse", "#search", "#results"]
       .map((selector) => [selector, { innerHTML: "", textContent: "", value: "" }]),
   );
+  elements.set(".search-example", examples);
   const document = {
     querySelector(selector) {
       assert(elements.has(selector), `${relativePath}: unexpected selector ${selector}`);
       return elements.get(selector);
+    },
+    querySelectorAll(selector) {
+      assert.equal(selector, ".search-example", `${relativePath}: unexpected selector list ${selector}`);
+      return examples;
     },
     getElementById() {
       return { scrollIntoView() {} };
@@ -89,7 +98,7 @@ async function testBrowser(relativePath, dataPath, presetTarget, presetSearch, e
   const tree = elements.get("#tree");
   const search = elements.get("#search");
   const results = elements.get("#results");
-  const presets = elements.get(".search-presets");
+  const examples = elements.get(".search-example");
   const branch = data.nodes.find((node) => node.children.length > 0);
   const leaf = data.nodes.find((node) => node.children.length === 0);
   assert(branch && leaf, `${relativePath}: normalized data needs branches and leaves`);
@@ -97,6 +106,12 @@ async function testBrowser(relativePath, dataPath, presetTarget, presetSearch, e
   assert(!tree.innerHTML.includes(">undefined<"), `${relativePath}: dangling child rendered`);
   assert(tree.innerHTML.includes("class=\"lineage-toggle\""), `${relativePath}: lineage arrow missing`);
   assert(tree.innerHTML.includes("class=\"meta\""), `${relativePath}: child counts missing`);
+  assert.equal(examples.length, 3, `${relativePath}: search examples are missing`);
+  for (const example of examples) {
+    assert.equal(typeof example.onclick, "function", `${relativePath}: search example is not wired`);
+    example.onclick();
+    assert.equal(search.value, example.dataset.query, `${relativePath}: search example did not populate search`);
+  }
   assert(!source.includes("search-presets"), `${relativePath}: obsolete search suggestions remain`);
   assert(!tree.innerHTML.includes("Suggested question:"), `${relativePath}: generated question text rendered`);
   assert(!tree.innerHTML.match(/data-node="[^"]+"><\/a>/), `${relativePath}: blank node rendered`);
@@ -182,8 +197,10 @@ async function main() {
   const canonicalSource = fs.readFileSync(path.join(root, "index.html"), "utf8");
   const canonicalScript = scriptOf(canonicalSource);
   const canonicalStyle = canonicalSource.match(/<style>([\s\S]*)<\/style>/)[1];
+  assert(!canonicalSource.includes("Canonical upper ontology with historical physical projection"));
   const sources = [];
   for (const [page, data, target, query, expected] of browsers) {
+    if (page === "index.html") assert.equal(assertDataIntegrity(data).source.name, "My Ontology");
     sources.push(await testBrowser(page, data, target, query, expected));
   }
   for (const [index, source] of sources.entries()) {

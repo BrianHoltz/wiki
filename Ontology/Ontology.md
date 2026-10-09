@@ -1062,6 +1062,18 @@ adding reviewed leaves through a shared, versioned manifest.
 
 ## Implementation
 
+### Publishing the tree to the wiki
+
+Any change to the ontology tree or to the page that presents it must be
+published to the wiki before the work is complete. Regenerate the affected
+`ontology.json` and `index.html` artifacts from their source data and
+generator, run the browser regression checks, and copy the validated artifacts
+to the wiki's `Ontology/` publication directory. Publish the corresponding
+manifest or source snapshot whenever the generated data or its provenance
+changes. The regression checks must exercise the example search buttons as
+well as ordinary search, expansion, collapse, and lineage navigation. Do not
+leave a source-tree or browser change visible only in a local working copy.
+
 ### Node information notes
 
 The browser should place a Unicode information glyph `ⓘ` after child and

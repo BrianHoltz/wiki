@@ -1,71 +1,70 @@
-| Word | My ontology | Human Knowledge | SUMO | Roget's | Propædia | Wikipedia |
+| Word&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | My Ontology | Human Knowledge | SUMO | Roget's | Propædia | Wikipedia |
 |---|---|---|---|---|---|---|
-| **Upper Ontology** |  |  |  |  |  |  |
+## Upper Ontology
+
+| Word&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | My Ontology | Human Knowledge | SUMO | Roget's | Propædia | Wikipedia |
+|---|---|---|---|---|---|---|
 | abstraction |  |  |  |  |  | ✅ |
 | being |  |  |  |  |  |  |
 | body |  |  |  |  |  |  |
 | category |  |  |  |  |  |  |
 | continuant |  |  |  |  |  |  |
-| creativeWork |  |  |  |  |  |  |
 | endurant |  |  |  |  |  |  |
 | entity | ✅ |  | ✅ |  |  |  |
-| independentContinuant |  |  |  |  |  |  |
-| individualProduct |  |  |  |  |  |  |
 | landform |  |  |  |  |  |  |
-| materialEntity |  |  |  |  |  |  |
-| materialObject |  |  |  |  |  |  |
-| nonPhysicalEndurant |  |  |  |  |  |  |
 | object | ✅ |  | ✅ |  |  |  |
 | occurrent |  |  |  |  |  |  |
 | particular |  |  |  |  |  |  |
 | perdurant |  |  |  |  |  |  |
-| physicalEndurant |  |  |  |  |  |  |
-| physicalEntity |  |  |  |  |  |  |
-| physicalObject |  |  |  |  |  |  |
 | place |  |  |  | ✅ |  |  |
-| presential |  |  |  |  |  |  |
 | process | ✅ |  | ✅ |  |  |  |
 | product | ✅ |  | ✅ |  |  |  |
 | quality | ✅ |  |  |  |  |  |
-| selfConnectedObject | ✅ |  | ✅ |  |  |  |
-| specificallyDependentContinuant |  |  |  |  |  |  |
 | substance | ✅ |  | ✅ |  |  |  |
 | thing |  |  |  |  |  |  |
-| **Biology** |  |  |  |  |  |  |
-| amniotes |  |  |  |  |  |  |
+
+## Biology
+
+| Word&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | My Ontology | Human Knowledge | SUMO | Roget's | Propædia | Wikipedia |
+|---|---|---|---|---|---|---|
+| amniote |  |  |  |  |  |  |
 | amoebozoa |  |  |  |  |  |  |
-| amphibians |  |  |  |  |  |  |
-| animals |  |  |  |  |  |  |
-| archaea |  |  |  |  |  | ✅ |
+| amphibian | ✅ |  | ✅ |  |  |  |
+| animal | ✅ |  | ✅ | ✅ |  |  |
+| archaeon |  |  |  |  |  |  |
 | archaeplastida |  |  |  |  |  |  |
-| archosaurs |  |  |  |  |  |  |
+| archosaur |  |  |  |  |  |  |
 | ascomycota |  |  |  |  |  |  |
-| bacteria |  |  |  |  |  | ✅ |
+| bacterium | ✅ |  | ✅ |  |  |  |
 | basidiomycota |  |  |  |  |  |  |
-| bilaterians |  |  |  |  |  |  |
-| birds |  |  |  |  |  |  |
-| bryophytes |  |  |  |  |  |  |
-| chordates |  |  |  |  |  |  |
-| conifers |  |  |  |  |  |  |
-| crocodilians |  |  |  |  |  |  |
-| deuterostomes |  |  |  |  |  |  |
+| bilaterian |  |  |  |  |  |  |
+| bird | ✅ |  | ✅ |  |  |  |
+| bryophyte |  |  |  |  |  |  |
+| chordate |  |  |  |  |  |  |
+| conifer |  |  |  |  |  |  |
+| crocodilian |  |  |  |  |  |  |
+| deuterostome |  |  |  |  |  |  |
 | dikarya |  |  |  |  |  |  |
-| dinosaurs |  |  |  |  |  |  |
-| echinoderms |  |  |  |  |  |  |
-| eudicots |  |  |  |  |  |  |
+| dinosaur |  |  |  |  |  |  |
+| echinoderm |  |  |  |  |  |  |
+| eudicot |  |  |  |  |  |  |
 | eukaryota |  |  |  |  |  |  |
-| fungi |  |  |  |  |  |  |
-| gymnosperms |  |  |  |  |  |  |
-| mammals |  |  |  |  |  |  |
-| monocots |  |  |  |  |  |  |
+| fungus | ✅ |  | ✅ |  |  |  |
+| gymnosperm |  |  |  |  |  |  |
+| mammal | ✅ |  | ✅ |  |  |  |
+| monocot |  |  |  |  |  |  |
 | opisthokonta |  |  |  |  |  |  |
-| protostomes |  |  |  |  |  |  |
+| protostome |  |  |  |  |  |  |
 | sar |  |  |  |  |  |  |
-| sauropsids |  |  |  |  |  |  |
-| synapsids |  |  |  |  |  |  |
-| tetrapods |  |  |  |  |  |  |
-| vertebrates |  |  |  |  |  |  |
-| **Difficult Words** |  |  |  |  |  |  |
+| sauropsid |  |  |  |  |  |  |
+| synapsid |  |  |  |  |  |  |
+| tetrapod |  |  |  |  |  |  |
+| vertebrate | ✅ |  | ✅ |  |  |  |
+
+## Difficult Words
+
+| Word&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | My Ontology | Human Knowledge | SUMO | Roget's | Propædia | Wikipedia |
+|---|---|---|---|---|---|---|
 | affordance |  |  |  |  |  |  |
 | algorithm | ✅ |  |  |  |  |  |
 | area |  |  |  |  |  |  |
@@ -85,7 +84,7 @@
 | corporation | ✅ |  |  |  |  |  |
 | counterfactual |  |  |  |  |  |  |
 | currency | ✅ |  |  |  |  |  |
-| data | ✅ |  |  |  |  | ✅ |
+| datum |  |  |  |  |  |  |
 | decision |  |  |  |  |  |  |
 | dependence |  |  |  |  |  |  |
 | disposition | ✅ |  |  |  |  |  |
@@ -155,13 +154,17 @@
 | virus | ✅ |  | ✅ |  |  |  |
 | void |  |  |  |  |  |  |
 | wave |  |  |  |  |  |  |
-| **Roget's Thesaurus** |  |  |  |  |  |  |
+
+## Roget's Thesaurus
+
+| Word&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | My Ontology | Human Knowledge | SUMO | Roget's | Propædia | Wikipedia |
+|---|---|---|---|---|---|---|
 | abode |  |  |  | ✅ |  |  |
 | abrogation |  |  |  | ✅ |  |  |
 | absence |  |  |  | ✅ |  |  |
 | absurdity |  |  |  | ✅ |  |  |
 | accompaniment |  |  |  | ✅ |  |  |
-| accounts |  |  |  | ✅ |  |  |
+| account |  |  |  |  |  |  |
 | accusation |  |  |  | ✅ |  |  |
 | achromatism |  |  |  | ✅ |  |  |
 | acquisition |  |  |  | ✅ |  |  |
@@ -174,7 +177,7 @@
 | adversity |  |  |  | ✅ |  |  |
 | advice |  |  |  | ✅ |  |  |
 | affectation |  |  |  | ✅ |  |  |
-| affections |  |  |  | ✅ |  |  |
+| affection |  |  |  |  |  |  |
 | affirmation |  |  |  | ✅ |  |  |
 | age |  |  |  | ✅ |  |  |
 | agency |  |  |  | ✅ |  |  |
@@ -200,7 +203,7 @@
 | approach |  |  |  | ✅ |  |  |
 | approbation |  |  |  | ✅ |  |  |
 | arena |  |  |  | ✅ |  |  |
-| arms |  |  |  | ✅ |  |  |
+| arm |  |  |  |  |  |  |
 | arrangement |  |  |  | ✅ |  |  |
 | arrival |  |  |  | ✅ |  |  |
 | artist |  |  |  | ✅ |  |  |
@@ -294,7 +297,7 @@
 | concurrence |  |  |  | ✅ |  |  |
 | condemnation |  |  |  | ✅ |  |  |
 | condiment |  |  |  | ✅ |  |  |
-| conditions |  |  |  | ✅ |  |  |
+| condition |  |  |  |  |  |  |
 | condolence |  |  |  | ✅ |  |  |
 | conduct |  |  |  | ✅ |  |  |
 | conduit |  |  |  | ✅ |  |  |
@@ -308,7 +311,6 @@
 | contempt |  |  |  | ✅ |  |  |
 | content |  |  |  | ✅ |  |  |
 | contention |  |  |  | ✅ |  |  |
-| contents |  |  |  | ✅ |  | ✅ |
 | contiguity |  |  |  | ✅ |  |  |
 | continuity |  |  |  | ✅ |  |  |
 | contraction |  |  |  | ✅ |  |  |
@@ -657,8 +659,8 @@
 | marsh |  |  |  | ✅ |  |  |
 | mart |  |  |  | ✅ |  |  |
 | master |  |  |  | ✅ |  |  |
+| material |  |  |  |  |  |  |
 | materiality |  |  |  | ✅ |  |  |
-| materials |  |  |  | ✅ |  | ✅ |
 | maxim |  |  |  | ✅ |  |  |
 | mean |  |  |  | ✅ |  |  |
 | meaning |  |  |  | ✅ |  |  |
