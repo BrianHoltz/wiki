@@ -350,7 +350,7 @@ def overlay(input_path: Path, output_path: Path) -> None:
     selected_edges = sum(len(item["children"]) for item in nodes)
     output = {
         "source": {
-            "name": "My ontology",
+            "name": "My Ontology",
             "upperOntology": "Ontology/Ontology.md#upper-ontologies",
             "overlayPolicy": (
                 "Use the project canonical Entity/RealizedEntity/AbstractEntity/Property/Relation "
