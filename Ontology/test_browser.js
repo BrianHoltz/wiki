@@ -9,7 +9,7 @@ const root = __dirname;
 const browsers = [
   ["index.html", "ontology.json", "Object", "primate", "Primate"],
   ["SUMO/index.html", "SUMO/ontology.json", "Object", "primate", "Primate"],
-  ["HumanKnowledge/index.html", "HumanKnowledge/ontology.json", "part-3", "life", "part-3"],
+  ["HumanKnowledge/index.html", "HumanKnowledge/ontology.json", "hk-1", "philosophy", "hk-1"],
   ["Propaedia/index.html", "Propaedia/ontology.json", "part-3", "life", "part-3"],
   ["Rogets/index.html", "Rogets/ontology.json", "roget-node-23", "number", "roget-node-23"],
   ["Wikipedia/index.html", "Wikipedia/ontology.json", "Category:Geography", "geography", "Category:Geography"],
@@ -97,7 +97,18 @@ async function testBrowser(relativePath, dataPath, presetTarget, presetSearch, e
   assert(!tree.innerHTML.includes(">undefined<"), `${relativePath}: dangling child rendered`);
   assert(tree.innerHTML.includes("class=\"lineage-toggle\""), `${relativePath}: lineage arrow missing`);
   assert(tree.innerHTML.includes("class=\"meta\""), `${relativePath}: child counts missing`);
-  assert(source.includes("class=\"search-presets\""), `${relativePath}: search presets missing`);
+  assert(!source.includes("search-presets"), `${relativePath}: obsolete search suggestions remain`);
+  assert(!tree.innerHTML.includes("Suggested question:"), `${relativePath}: generated question text rendered`);
+  assert(!tree.innerHTML.match(/data-node="[^"]+"><\/a>/), `${relativePath}: blank node rendered`);
+  const childIds = new Set(data.nodes.flatMap((node) => node.children));
+  for (const rootNode of data.rootNodes) {
+    assert(!childIds.has(rootNode), `${relativePath}: child node incorrectly listed as a root`);
+  }
+  if (relativePath === "Rogets/index.html") {
+    assert(tree.innerHTML.includes("Words Expressing Abstract Relations"), "Roget titles are not mixed case");
+    assert(!tree.innerHTML.includes("WORDS EXPRESSING"), "Roget boilerplate definition rendered");
+    assert(!tree.innerHTML.includes(" / 0001. Existence"), "Roget repeated path definition rendered");
+  }
   if (data.nodes.some((node) => node.sourceUrl)) {
     assert(tree.innerHTML.includes("class=\"source-link\""), `${relativePath}: source links missing`);
   }
@@ -163,11 +174,6 @@ async function testBrowser(relativePath, dataPath, presetTarget, presetSearch, e
     preventDefault() {},
   });
   assert(tree.innerHTML.includes(`id="${encodedId(leaf.id)}"`), `${relativePath}: search result did not open lineage view`);
-
-  presets.onclick({
-    target: eventTarget("button[data-target]", { search: presetSearch, target: presetTarget }),
-  });
-  assert(tree.innerHTML.includes(`id="${encodedId(expectedTarget)}"`), `${relativePath}: preset did not navigate`);
 
   return source;
 }

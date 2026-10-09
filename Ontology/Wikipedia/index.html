@@ -13,7 +13,7 @@ main{max-width:1100px;margin:auto;padding:24px}h1{margin:0 0 4px}h2{margin-top:2
 .summary-row{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin:18px 0 8px}.summary-actions{display:flex;gap:8px}
 input,button{background:var(--bg);border:1px solid var(--line);border-radius:5px;color:var(--fg);padding:8px 10px}
 input{min-width:280px;width:100%;box-sizing:border-box}button{cursor:pointer}ul{list-style:none;margin:0;padding-left:22px}li{margin:3px 0}
-.search-row{display:flex;align-items:center;gap:8px;margin:8px 0 10px}.search-row input{flex:1;width:auto}.search-presets{display:flex;gap:8px;flex:none;margin:0}
+.search-row{display:flex;align-items:center;gap:8px;margin:8px 0 10px}.search-row input{flex:1;width:auto}
 summary{cursor:pointer;display:flex;align-items:baseline;gap:4px;list-style:none}summary::-webkit-details-marker{display:none}summary::before{content:"\25B6";display:inline-block;flex:none;width:1em}details[open] > summary::before{content:"\25BC"}.meta{color:var(--muted);font-size:12px;margin-left:6px;flex:none}.definition{color:var(--muted);font-size:13px;margin-left:8px;flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;vertical-align:bottom}.definition.expanded{overflow:visible;text-overflow:clip;white-space:normal;vertical-align:baseline}
 details.lineage > summary::before{content:"\25C6"}
 a{color:var(--accent)}#results{margin:10px 0 18px}.result{padding:5px 0;border-bottom:1px solid var(--line)}
@@ -24,14 +24,16 @@ a{color:var(--accent)}#results{margin:10px 0 18px}.result{padding:5px 0;border-b
 <main>
 <div class="summary-row"><div class="summary-actions"><button id="expand">Expand...</button><button id="collapse">Collapse...</button></div><span id="summary" class="muted"></span></div>
 <div class="search-row"><input id="search" type="search" placeholder="Search this ontology">
-<div class="search-presets" aria-label="Search presets"><button type="button" data-search="geography" data-target="Category:Geography">geography</button><button type="button" data-search="science" data-target="Category:Science">science</button><button type="button" data-search="biology" data-target="Category:Biology">biology</button><button type="button" data-search="history" data-target="Category:History">history</button><button type="button" data-search="mathematics" data-target="Category:Mathematics">mathematics</button></div></div>
+ </div>
 <div id="results"></div><section id="tree"></section>
 </main>
 <script>
 const esc=v=>String(v).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 let data,byId,descendantCounts,parentOf,nodeModes,lineageNode,lineageChildren;
 function descendantCount(id){if(descendantCounts.has(id))return descendantCounts.get(id);const n=byId.get(id);const count=n.children.reduce((total,child)=>total+1+descendantCount(child),0);descendantCounts.set(id,count);return count}
-function link(id){const n=byId.get(id);return n?`<a href="#${encodeURIComponent(id)}" data-node="${esc(id)}">${esc(n.label)}</a>`:esc(id)}
+function displayLabel(n){if(/^Roget's Thesaurus/i.test(data?.source?.name||''))return n.label.toLowerCase().replace(/\b[\wÀ-ÿ][\wÀ-ÿ'’-]*/g,w=>w.charAt(0).toUpperCase()+w.slice(1));return n.label}
+function displayDefinition(n){if(!n.definition)return '';if(/^Roget's Thesaurus/i.test(data?.source?.name||'')&&(/^WORDS EXPRESSING\b/i.test(n.definition)||n.definition.endsWith(` / ${n.label}`)))return '';return n.definition}
+function link(id){const n=byId.get(id);return n?`<a href="#${encodeURIComponent(id)}" data-node="${esc(id)}">${esc(displayLabel(n))}</a>`:esc(id)}
 function sourceLink(n){return n.sourceUrl?` <a class="source-link" href="${esc(n.sourceUrl)}" target="_blank" rel="noopener" aria-label="Open source for ${esc(n.label)}">↗</a>`:''}
 function formatDefinition(text){return esc(text).replace(/&amp;%([A-Za-z0-9_]+)/g,(_,id)=>byId.has(id)?link(id):esc(id))}
 function renderNode(id,open=false,children=null,lineage=false,childOpen=null){const n=byId.get(id);const visibleChildren=children||lineageChildren?.get(id)||n.children;
@@ -40,7 +42,7 @@ const otherDescendants=descendantCount(id)-directChildren;
 const marker=open?'▼':'▶';
 const childCount=directChildren?`<span class="meta"> · ${directChildren}${otherDescendants?`+${otherDescendants}`:''} &#8595;</span>`:'';
 const provisional=n.provisionalParent?` <span class="meta">· provisional placement</span>`:'';
-const shortDef=n.definition?`<span class="definition${open?' expanded':''}" title="${esc(n.definition)}">${formatDefinition(n.definition)}</span>`:'';
+const definition=displayDefinition(n);const shortDef=definition?`<span class="definition${open?' expanded':''}" title="${esc(definition)}">${formatDefinition(definition)}</span>`:'';
 const expander=directChildren?`<button class="expander" type="button" data-node="${esc(id)}">${marker}</button>`:'<span class="expander-placeholder" aria-hidden="true"></span>';
 const text=`<span class="node-title">${link(id)}${sourceLink(n)}</span><button class="lineage-toggle" type="button" data-node="${esc(id)}">↖</button>${childCount}${provisional}${shortDef}`;
 return `<li id="${encodeURIComponent(id)}"><div class="node">${expander}<span class="node-content">${text}</span></div><ul class="children"${open?'':' hidden'}>${visibleChildren.map(child=>renderNode(child,lineageNode?lineageChildren?.has(child):nodeModes.get(child)===1)).join('')}</ul></li>`}
@@ -66,8 +68,8 @@ const hits=data.nodes.filter(n=>`${n.id} ${n.label}`.toLowerCase().includes(q)).
 document.querySelector('#results').innerHTML=q?`<strong>${hits.length}${hits.length===100?'+':''} matches</strong>`+
 hits.map(n=>`<div class="result">${link(n.id)} <span class="meta">${esc(n.id)}</span></div>`).join(''):''};
 document.querySelector('#search').oninput=e=>searchFor(e.target.value);
-document.querySelector('.search-presets').onclick=e=>{const button=e.target.closest('button[data-target]');if(!button)return;document.querySelector('#search').value=button.dataset.search;document.querySelector('#results').innerHTML='';focusLineage(button.dataset.target)};
-fetch('ontology.json').then(r=>r.json()).then(x=>{data=x;byId=new Map(data.nodes.map(n=>[n.id,n]));parentOf=new Map();data.nodes.forEach(n=>n.children.forEach(child=>parentOf.set(child,n.id)));descendantCounts=new Map();data.nodes.forEach(n=>descendantCount(n.id));nodeModes=new Map(data.nodes.map(n=>[n.id,0]));data.rootNodes.forEach(root=>{nodeModes.set(root,1);byId.get(root).children.forEach(child=>nodeModes.set(child,1))});lineageNode=null;render()})
+function normalizeTree(){const byId=new Map(data.nodes.map(n=>[n.id,n]));const expand=id=>{const n=byId.get(id);return n&&!String(n.label||'').trim()?n.children.flatMap(expand):[id]};data.nodes.forEach(n=>{n.children=n.children.flatMap(expand)});data.rootNodes=data.rootNodes.flatMap(expand);data.nodes=data.nodes.filter(n=>String(n.label||'').trim());const childIds=new Set(data.nodes.flatMap(n=>n.children));data.rootNodes=data.nodes.filter(n=>!childIds.has(n.id)).map(n=>n.id)}
+fetch('ontology.json').then(r=>r.json()).then(x=>{data=x;normalizeTree();data.nodes.forEach(n=>{if(/^Suggested question:/i.test(n.definition||''))n.definition=null});byId=new Map(data.nodes.map(n=>[n.id,n]));parentOf=new Map();data.nodes.forEach(n=>n.children.forEach(child=>parentOf.set(child,n.id)));descendantCounts=new Map();data.nodes.forEach(n=>descendantCount(n.id));nodeModes=new Map(data.nodes.map(n=>[n.id,0]));data.rootNodes.forEach(root=>{nodeModes.set(root,1);byId.get(root).children.forEach(child=>nodeModes.set(child,1))});lineageNode=null;render()})
 .catch(e=>document.querySelector('#tree').textContent=`Could not load ontology.json: ${e}`);
 </script>
 </body>

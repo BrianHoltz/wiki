@@ -211,7 +211,9 @@ def build_pdf(
     definitions = load_definitions(definitions_dir, nodes)
     external = load_definition_file(external_definitions, nodes)
     editorial = load_definition_file(editorial_definitions, nodes)
-    roots = sorted(nodes - set(selected), key=lambda term: (term != "Entity", label(term).lower(), term))
+    roots = ["Entity"] if "Entity" in nodes else sorted(
+        nodes - set(selected), key=lambda term: (label(term).lower(), term)
+    )
     records = [
         {
             "id": term,

@@ -22,11 +22,7 @@
   },
   "root": "Entity",
   "rootNodes": [
-    "Entity",
-    "City",
-    "GeoPoliticalArea",
-    "Nation",
-    "Province"
+    "Entity"
   ],
   "provisionalPlacements": {
     "List": "Set",

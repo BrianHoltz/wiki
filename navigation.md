@@ -6,7 +6,7 @@
 * [BrianThinksManually](BrianThinksManually.md)
 * [Ontology](Ontology/Ontology.md)
   * [My ontology](Ontology/)
-  * [Human knowledge](Ontology/HumanKnowledge/)
+  * [Human Knowledge](Ontology/HumanKnowledge/)
   * [SUMO](Ontology/SUMO/)
   * [Propædia](Ontology/Propaedia/)
 

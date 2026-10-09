@@ -1,1717 +1,761 @@
 {
   "source": {
-    "name": "Human Knowledge Outline",
-    "url": "https://en.wikipedia.org/wiki/Propaedia"
+    "name": "Human Knowledge: Foundations and Limits",
+    "author": "Brian Holtz",
+    "url": "https://humanknowledge.net/Thoughts/HumanKnowledge.txt"
   },
-  "stats": {
-    "nodeCount": 228,
-    "definitionCount": 51,
-    "projectedEdgeCount": 218,
-    "multipleParentNodeCount": 0,
-    "unaryNodeCount": 1
-  },
-  "root": "part-1",
+  "root": "hk-0",
   "rootNodes": [
-    "part-1",
-    "part-2",
-    "part-3",
-    "part-4",
-    "part-5",
-    "part-6",
-    "part-7",
-    "part-8",
-    "part-9",
-    "part-10"
+    "hk-0",
+    "hk-1",
+    "hk-2",
+    "hk-3",
+    "hk-4",
+    "hk-5",
+    "hk-6",
+    "hk-A"
   ],
+  "stats": {
+    "nodeCount": 103,
+    "definitionCount": 0,
+    "projectedEdgeCount": 95,
+    "multipleParentNodeCount": 0,
+    "unaryNodeCount": 0
+  },
   "nodes": [
     {
-      "id": "part-1",
-      "label": "1. Matter and Energy",
+      "id": "hk-0",
+      "label": "0. Prologue",
       "children": [
-        "part-1.1",
-        "part-1.2",
-        "part-1.3"
+        "hk-0-1",
+        "hk-0-2",
+        "hk-0-3",
+        "hk-0-4",
+        "hk-0-5",
+        "hk-0-6",
+        "hk-0-7",
+        "hk-0-8",
+        "hk-0-9",
+        "hk-0-10"
       ],
-      "alternateParents": [],
-      "definition": "Suggested question: Is it related to 1. matter and energy?"
+      "alternateParents": []
     },
     {
-      "id": "part-1.1",
-      "label": "1.1 Atoms",
+      "id": "hk-0-1",
+      "label": "0.1. Definition",
+      "children": [],
+      "alternateParents": []
+    },
+    {
+      "id": "hk-0-2",
+      "label": "0.2. Assertions",
+      "children": [],
+      "alternateParents": []
+    },
+    {
+      "id": "hk-0-3",
+      "label": "0.3. Scope",
+      "children": [],
+      "alternateParents": []
+    },
+    {
+      "id": "hk-0-4",
+      "label": "0.4. Organization",
+      "children": [],
+      "alternateParents": []
+    },
+    {
+      "id": "hk-0-5",
+      "label": "0.5. Questions Asked",
+      "children": [],
+      "alternateParents": []
+    },
+    {
+      "id": "hk-0-6",
+      "label": "0.6. Audience",
+      "children": [],
+      "alternateParents": []
+    },
+    {
+      "id": "hk-0-7",
+      "label": "0.7. Copyright",
+      "children": [],
+      "alternateParents": []
+    },
+    {
+      "id": "hk-0-8",
+      "label": "0.8. Authority",
+      "children": [],
+      "alternateParents": []
+    },
+    {
+      "id": "hk-0-9",
+      "label": "0.9. Criticism",
+      "children": [],
+      "alternateParents": []
+    },
+    {
+      "id": "hk-0-10",
+      "label": "0.10. Motivation",
+      "children": [],
+      "alternateParents": []
+    },
+    {
+      "id": "hk-1",
+      "label": "1. Philosophy",
       "children": [
-        "part-1.1.1",
-        "part-1.1.2"
+        "hk-1-1",
+        "hk-1-2",
+        "hk-1-3"
       ],
-      "alternateParents": [],
-      "definition": "Suggested question: Is it related to 1.1 atoms?"
-    },
-    {
-      "id": "part-1.1.1",
-      "label": "1.1.1 Structure and Properties of Atoms",
-      "children": [],
       "alternateParents": []
     },
     {
-      "id": "part-1.1.2",
-      "label": "1.1.2 Atomic Nuclei and Elementary Particles",
-      "children": [],
-      "alternateParents": []
-    },
-    {
-      "id": "part-1.2",
-      "label": "1.2 Energy, Radiation, and States of Matter",
+      "id": "hk-1-1",
+      "label": "1.1. Metaphysics",
       "children": [
-        "part-1.2.1",
-        "part-1.2.2",
-        "part-1.2.3",
-        "part-1.2.4",
-        "part-1.2.5",
-        "part-1.2.6",
-        "part-1.2.7",
-        "part-1.2.8"
+        "hk-1-1-1",
+        "hk-1-1-2"
       ],
-      "alternateParents": [],
-      "definition": "Suggested question: Is it related to 1.2 energy, radiation, and states of matter?"
+      "alternateParents": []
     },
     {
-      "id": "part-1.2.1",
-      "label": "1.2.1 Chemical Elements: Periodic Variation in Their Properties",
+      "id": "hk-1-1-1",
+      "label": "1.1.1. Ontology",
       "children": [],
       "alternateParents": []
     },
     {
-      "id": "part-1.2.2",
-      "label": "1.2.2 Chemical Compounds: Molecular Structure and Chemical Bonding",
+      "id": "hk-1-1-2",
+      "label": "1.1.2. Theology",
       "children": [],
       "alternateParents": []
     },
     {
-      "id": "part-1.2.3",
-      "label": "1.2.3 Chemical Reactions",
-      "children": [],
-      "alternateParents": []
-    },
-    {
-      "id": "part-1.2.4",
-      "label": "1.2.4 Heat, Thermodynamics, Liquids, Gases, Plasmas",
-      "children": [],
-      "alternateParents": []
-    },
-    {
-      "id": "part-1.2.5",
-      "label": "1.2.5 The Solid State of Matter",
-      "children": [],
-      "alternateParents": []
-    },
-    {
-      "id": "part-1.2.6",
-      "label": "1.2.6 Mechanics of Particles, Rigid and Deformable Bodies: Elasticity, Vibration, and Flow",
-      "children": [],
-      "alternateParents": []
-    },
-    {
-      "id": "part-1.2.7",
-      "label": "1.2.7 Electricity and Magnetism",
-      "children": [],
-      "alternateParents": []
-    },
-    {
-      "id": "part-1.2.8",
-      "label": "1.2.8 Waves and Wave Motion",
-      "children": [],
-      "alternateParents": []
-    },
-    {
-      "id": "part-1.3",
-      "label": "1.3 The Universe",
+      "id": "hk-1-2",
+      "label": "1.2. Epistemology",
       "children": [
-        "part-1.3.1",
-        "part-1.3.2",
-        "part-1.3.3"
+        "hk-1-2-1",
+        "hk-1-2-2"
       ],
-      "alternateParents": [],
-      "definition": "Suggested question: Is it related to 1.3 the universe?"
-    },
-    {
-      "id": "part-1.3.1",
-      "label": "1.3.1 The Cosmos",
-      "children": [],
       "alternateParents": []
     },
     {
-      "id": "part-1.3.2",
-      "label": "1.3.2 Galaxies and Stars",
-      "children": [],
-      "alternateParents": []
-    },
-    {
-      "id": "part-1.3.3",
-      "label": "1.3.3 The Solar System",
-      "children": [],
-      "alternateParents": []
-    },
-    {
-      "id": "part-2",
-      "label": "2. The Earth",
+      "id": "hk-1-2-1",
+      "label": "1.2.1. Philosophy Of Mind",
       "children": [
-        "part-2.1",
-        "part-2.2",
-        "part-2.3",
-        "part-2.4"
+        "hk-1-2-1-1",
+        "hk-1-2-1-2",
+        "hk-1-2-1-3"
       ],
-      "alternateParents": [],
-      "definition": "Suggested question: Is it related to 2. the earth?"
+      "alternateParents": []
     },
     {
-      "id": "part-2.1",
-      "label": "2.1 Earth's Properties, Structure, Composition",
+      "id": "hk-1-2-1-1",
+      "label": "1.2.1.1. Essence of Mind",
+      "children": [],
+      "alternateParents": []
+    },
+    {
+      "id": "hk-1-2-1-2",
+      "label": "1.2.1.2. Accidence of Mind",
+      "children": [],
+      "alternateParents": []
+    },
+    {
+      "id": "hk-1-2-1-3",
+      "label": "1.2.1.3. Relations of Mind",
+      "children": [],
+      "alternateParents": []
+    },
+    {
+      "id": "hk-1-2-2",
+      "label": "1.2.2. Philosophy Of Science",
+      "children": [],
+      "alternateParents": []
+    },
+    {
+      "id": "hk-1-3",
+      "label": "1.3. Axiology",
       "children": [
-        "part-2.1.1",
-        "part-2.1.2",
-        "part-2.1.3",
-        "part-2.1.4"
+        "hk-1-3-1",
+        "hk-1-3-2",
+        "hk-1-3-3",
+        "hk-1-3-4"
       ],
-      "alternateParents": [],
-      "definition": "Suggested question: Is it related to 2.1 earth's properties, structure, composition?"
+      "alternateParents": []
     },
     {
-      "id": "part-2.1.1",
-      "label": "2.1.1 The Planet Earth",
+      "id": "hk-1-3-1",
+      "label": "1.3.1. Ethics",
       "children": [],
       "alternateParents": []
     },
     {
-      "id": "part-2.1.2",
-      "label": "2.1.2 Earth's Physical Properties",
+      "id": "hk-1-3-2",
+      "label": "1.3.2. Political Philosophy",
       "children": [],
       "alternateParents": []
     },
     {
-      "id": "part-2.1.3",
-      "label": "2.1.3 Structure and Composition of the Earth's Interior",
+      "id": "hk-1-3-3",
+      "label": "1.3.3. Virtue Philosophy",
       "children": [],
       "alternateParents": []
     },
     {
-      "id": "part-2.1.4",
-      "label": "2.1.4 Minerals and Rocks",
+      "id": "hk-1-3-4",
+      "label": "1.3.4. Aesthetics",
       "children": [],
       "alternateParents": []
     },
     {
-      "id": "part-2.2",
-      "label": "2.2 Earth's Envelope",
+      "id": "hk-2",
+      "label": "2. Mathematics",
       "children": [
-        "part-2.2.1",
-        "part-2.2.2",
-        "part-2.2.3"
+        "hk-2-1",
+        "hk-2-2",
+        "hk-2-3",
+        "hk-2-4",
+        "hk-2-5",
+        "hk-2-6",
+        "hk-2-7"
       ],
-      "alternateParents": [],
-      "definition": "Suggested question: Is it related to 2.2 earth's envelope?"
-    },
-    {
-      "id": "part-2.2.1",
-      "label": "2.2.1 The Atmosphere",
-      "children": [],
       "alternateParents": []
     },
     {
-      "id": "part-2.2.2",
-      "label": "2.2.2 The Hydrosphere: the Oceans, Freshwater and Ice Masses",
-      "children": [],
-      "alternateParents": []
-    },
-    {
-      "id": "part-2.2.3",
-      "label": "2.2.3 Weather and Climate",
-      "children": [],
-      "alternateParents": []
-    },
-    {
-      "id": "part-2.3",
-      "label": "2.3 Surface Features",
+      "id": "hk-2-1",
+      "label": "2.1. Logic",
       "children": [
-        "part-2.3.1",
-        "part-2.3.2"
+        "hk-2-1-1",
+        "hk-2-1-2",
+        "hk-2-1-3"
       ],
-      "alternateParents": [],
-      "definition": "Suggested question: Is it related to 2.3 surface features?"
+      "alternateParents": []
     },
     {
-      "id": "part-2.3.1",
-      "label": "2.3.1 Physical Features of the Earth's Surface",
+      "id": "hk-2-1-1",
+      "label": "2.1.1. Formal Logic",
       "children": [],
       "alternateParents": []
     },
     {
-      "id": "part-2.3.2",
-      "label": "2.3.2 Features Produced by Geomorphic Processes",
+      "id": "hk-2-1-2",
+      "label": "2.1.2. Metalogic",
       "children": [],
       "alternateParents": []
     },
     {
-      "id": "part-2.4",
-      "label": "2.4 Earth's History",
+      "id": "hk-2-1-3",
+      "label": "2.1.3. Applied Logic",
+      "children": [],
+      "alternateParents": []
+    },
+    {
+      "id": "hk-2-2",
+      "label": "2.2. Set Theory",
+      "children": [],
+      "alternateParents": []
+    },
+    {
+      "id": "hk-2-3",
+      "label": "2.3. Algebra",
       "children": [
-        "part-2.4.1",
-        "part-2.4.2",
-        "part-2.4.3"
+        "hk-2-3-1",
+        "hk-2-3-2"
       ],
-      "alternateParents": [],
-      "definition": "Suggested question: Is it related to 2.4 earth's history?"
+      "alternateParents": []
     },
     {
-      "id": "part-2.4.1",
-      "label": "2.4.1 Origin and Development of the Earth and Its Envelopes",
+      "id": "hk-2-3-1",
+      "label": "2.3.1. Arithmetic",
       "children": [],
       "alternateParents": []
     },
     {
-      "id": "part-2.4.2",
-      "label": "2.4.2 The Interpretation of the Geologic Record",
+      "id": "hk-2-3-2",
+      "label": "2.3.2. Number Theory",
       "children": [],
       "alternateParents": []
     },
     {
-      "id": "part-2.4.3",
-      "label": "2.4.3 Eras and Periods of Geologic Time",
+      "id": "hk-2-4",
+      "label": "2.4. Geometry",
       "children": [],
       "alternateParents": []
     },
     {
-      "id": "part-3",
-      "label": "3. Life",
+      "id": "hk-2-5",
+      "label": "2.5. Analysis",
+      "children": [],
+      "alternateParents": []
+    },
+    {
+      "id": "hk-2-6",
+      "label": "2.6. Combinatorics",
+      "children": [],
+      "alternateParents": []
+    },
+    {
+      "id": "hk-2-7",
+      "label": "2.7. Applied Mathematics",
+      "children": [],
+      "alternateParents": []
+    },
+    {
+      "id": "hk-3",
+      "label": "3. Natural Science",
       "children": [
-        "part-3.1",
-        "part-3.2",
-        "part-3.3",
-        "part-3.4",
-        "part-3.5"
+        "hk-3-1",
+        "hk-3-2",
+        "hk-3-3",
+        "hk-3-4",
+        "hk-3-5"
       ],
-      "alternateParents": [],
-      "definition": "Suggested question: Is it related to 3. life?"
+      "alternateParents": []
     },
     {
-      "id": "part-3.1",
-      "label": "3.1 The Nature and Diversity of Life",
+      "id": "hk-3-1",
+      "label": "3.1. Physics",
       "children": [
-        "part-3.1.1",
-        "part-3.1.2",
-        "part-3.1.3"
+        "hk-3-1-1",
+        "hk-3-1-2",
+        "hk-3-1-3",
+        "hk-3-1-4",
+        "hk-3-1-5"
       ],
-      "alternateParents": [],
-      "definition": "Suggested question: Is it related to 3.1 the nature and diversity of life?"
-    },
-    {
-      "id": "part-3.1.1",
-      "label": "3.1.1 Characteristics of Life",
-      "children": [],
       "alternateParents": []
     },
     {
-      "id": "part-3.1.2",
-      "label": "3.1.2 The Origin and Evolution of Life",
-      "children": [],
-      "alternateParents": []
-    },
-    {
-      "id": "part-3.1.3",
-      "label": "3.1.3 Classification of Living Things",
-      "children": [],
-      "alternateParents": []
-    },
-    {
-      "id": "part-3.2",
-      "label": "3.2 The Molecular Basis of Life",
+      "id": "hk-3-1-1",
+      "label": "3.1.1. Mechanics",
       "children": [
-        "part-3.2.1",
-        "part-3.2.2",
-        "part-3.2.3"
+        "hk-3-1-1-1",
+        "hk-3-1-1-2",
+        "hk-3-1-1-3"
       ],
-      "alternateParents": [],
-      "definition": "Suggested question: Is it related to 3.2 the molecular basis of life?"
+      "alternateParents": []
     },
     {
-      "id": "part-3.2.1",
-      "label": "3.2.1 Chemicals and the Vital Processes",
+      "id": "hk-3-1-1-1",
+      "label": "3.1.1.1. Rigid Mechanics",
       "children": [],
       "alternateParents": []
     },
     {
-      "id": "part-3.2.2",
-      "label": "3.2.2 Metabolism: Bioenergetics and Biosynthesis",
+      "id": "hk-3-1-1-2",
+      "label": "3.1.1.2. Non-Rigid Mechanics",
       "children": [],
       "alternateParents": []
     },
     {
-      "id": "part-3.2.3",
-      "label": "3.2.3 Vital Processes at the Molecular Level",
+      "id": "hk-3-1-1-3",
+      "label": "3.1.1.3. Relativity",
       "children": [],
       "alternateParents": []
     },
     {
-      "id": "part-3.3",
-      "label": "3.3 The Structures and Functions of Organisms",
+      "id": "hk-3-1-2",
+      "label": "3.1.2. Wave Physics",
+      "children": [],
+      "alternateParents": []
+    },
+    {
+      "id": "hk-3-1-3",
+      "label": "3.1.3. Thermodynamics",
+      "children": [],
+      "alternateParents": []
+    },
+    {
+      "id": "hk-3-1-4",
+      "label": "3.1.4. Electromagnetics",
+      "children": [],
+      "alternateParents": []
+    },
+    {
+      "id": "hk-3-1-5",
+      "label": "3.1.5. Quantum Physics",
+      "children": [],
+      "alternateParents": []
+    },
+    {
+      "id": "hk-3-2",
+      "label": "3.2. Astronomy",
       "children": [
-        "part-3.3.1",
-        "part-3.3.2",
-        "part-3.3.3",
-        "part-3.3.4",
-        "part-3.3.5",
-        "part-3.3.6",
-        "part-3.3.7",
-        "part-3.3.8",
-        "part-3.3.9"
+        "hk-3-2-1",
+        "hk-3-2-2",
+        "hk-3-2-3",
+        "hk-3-2-4"
       ],
-      "alternateParents": [],
-      "definition": "Suggested question: Is it related to 3.3 the structures and functions of organisms?"
+      "alternateParents": []
     },
     {
-      "id": "part-3.3.1",
-      "label": "3.3.1 Cellular Basis of Form and Function",
+      "id": "hk-3-2-1",
+      "label": "3.2.1. Cosmology",
       "children": [],
       "alternateParents": []
     },
     {
-      "id": "part-3.3.2",
-      "label": "3.3.2 Relation of Form and Function in Organisms",
+      "id": "hk-3-2-2",
+      "label": "3.2.2. Galactic Astronomy",
       "children": [],
       "alternateParents": []
     },
     {
-      "id": "part-3.3.3",
-      "label": "3.3.3 Coordination of Vital Processes: Regulation and Integration",
+      "id": "hk-3-2-3",
+      "label": "3.2.3. Stellar Astronomy",
       "children": [],
       "alternateParents": []
     },
     {
-      "id": "part-3.3.4",
-      "label": "3.3.4 Covering and Support: Integumentary, Skeletal, and Musculatory Systems",
+      "id": "hk-3-2-4",
+      "label": "3.2.4. Planetary Astronomy",
       "children": [],
       "alternateParents": []
     },
     {
-      "id": "part-3.3.5",
-      "label": "3.3.5 Nutrition: the Procurement and Processing of Nutrients",
+      "id": "hk-3-3",
+      "label": "3.3. Chemistry",
       "children": [],
       "alternateParents": []
     },
     {
-      "id": "part-3.3.6",
-      "label": "3.3.6 Gas Exchange, Internal Transport, and Elimination",
+      "id": "hk-3-4",
+      "label": "3.4. Geoscience",
       "children": [],
       "alternateParents": []
     },
     {
-      "id": "part-3.3.7",
-      "label": "3.3.7 Reproduction and Sex",
-      "children": [],
-      "alternateParents": []
-    },
-    {
-      "id": "part-3.3.8",
-      "label": "3.3.8 Development: Growth, Differentiation, and Morphogenesis",
-      "children": [],
-      "alternateParents": []
-    },
-    {
-      "id": "part-3.3.9",
-      "label": "3.3.9 Heredity: the Transmission of Traits",
-      "children": [],
-      "alternateParents": []
-    },
-    {
-      "id": "part-3.4",
-      "label": "3.4 The Behavior of Organisms",
+      "id": "hk-3-5",
+      "label": "3.5. Biology",
       "children": [
-        "part-3.4.1",
-        "part-3.4.2"
+        "hk-3-5-1",
+        "hk-3-5-2",
+        "hk-3-5-3",
+        "hk-3-5-4",
+        "hk-3-5-5",
+        "hk-3-5-6",
+        "hk-3-5-7",
+        "hk-3-5-8"
       ],
-      "alternateParents": [],
-      "definition": "Suggested question: Is it related to 3.4 the behavior of organisms?"
+      "alternateParents": []
     },
     {
-      "id": "part-3.4.1",
-      "label": "3.4.1 Nature and Patterns of Behavior",
+      "id": "hk-3-5-1",
+      "label": "3.5.1. Molecular Biology",
       "children": [],
       "alternateParents": []
     },
     {
-      "id": "part-3.4.2",
-      "label": "3.4.2 Development and Range of Behavioral Capacities: Individual and Group Behavior",
+      "id": "hk-3-5-2",
+      "label": "3.5.2. Cellular Biology",
       "children": [],
       "alternateParents": []
     },
     {
-      "id": "part-3.5",
-      "label": "3.5 The Biosphere",
+      "id": "hk-3-5-3",
+      "label": "3.5.3. Physiology",
       "children": [
-        "part-3.5.1",
-        "part-3.5.2",
-        "part-3.5.3",
-        "part-3.5.4",
-        "part-3.5.5"
+        "hk-3-5-3-1",
+        "hk-3-5-3-2",
+        "hk-3-5-3-3",
+        "hk-3-5-3-4",
+        "hk-3-5-3-5",
+        "hk-3-5-3-6",
+        "hk-3-5-3-7",
+        "hk-3-5-3-8"
       ],
-      "alternateParents": [],
-      "definition": "Suggested question: Is it related to 3.5 the biosphere?"
+      "alternateParents": []
     },
     {
-      "id": "part-3.5.1",
-      "label": "3.5.1 Basic Features of the Biosphere",
+      "id": "hk-3-5-3-1",
+      "label": "3.5.3.1. Reproductive Systems",
       "children": [],
       "alternateParents": []
     },
     {
-      "id": "part-3.5.2",
-      "label": "3.5.2 Populations and Communities",
+      "id": "hk-3-5-3-2",
+      "label": "3.5.3.2. Respiratory Systems",
       "children": [],
       "alternateParents": []
     },
     {
-      "id": "part-3.5.3",
-      "label": "3.5.3 Disease and Death",
+      "id": "hk-3-5-3-3",
+      "label": "3.5.3.3. Digestive Systems",
       "children": [],
       "alternateParents": []
     },
     {
-      "id": "part-3.5.4",
-      "label": "3.5.4 Biogeographic Distribution of Organisms: Ecosystems",
+      "id": "hk-3-5-3-4",
+      "label": "3.5.3.4. Circulatory Systems",
       "children": [],
       "alternateParents": []
     },
     {
-      "id": "part-3.5.5",
-      "label": "3.5.5 The Place of Humans in the Biosphere",
+      "id": "hk-3-5-3-5",
+      "label": "3.5.3.5. Supportive-Protective Systems",
       "children": [],
       "alternateParents": []
     },
     {
-      "id": "part-4",
-      "label": "4. Human Life",
+      "id": "hk-3-5-3-6",
+      "label": "3.5.3.6. Actuating Systems",
+      "children": [],
+      "alternateParents": []
+    },
+    {
+      "id": "hk-3-5-3-7",
+      "label": "3.5.3.7. Immune Systems",
+      "children": [],
+      "alternateParents": []
+    },
+    {
+      "id": "hk-3-5-3-8",
+      "label": "3.5.3.8. Cybernetic Systems",
+      "children": [],
+      "alternateParents": []
+    },
+    {
+      "id": "hk-3-5-4",
+      "label": "3.5.4. Ethology",
+      "children": [],
+      "alternateParents": []
+    },
+    {
+      "id": "hk-3-5-5",
+      "label": "3.5.5. Evolutionary Biology",
       "children": [
-        "part-4.1",
-        "part-4.2",
-        "part-4.3"
+        "hk-3-5-5-1",
+        "hk-3-5-5-2",
+        "hk-3-5-5-3"
       ],
-      "alternateParents": [],
-      "definition": "Suggested question: Is it related to 4. human life?"
+      "alternateParents": []
     },
     {
-      "id": "part-4.1",
-      "label": "4.1 The Development of Human Life",
+      "id": "hk-3-5-5-1",
+      "label": "3.5.5.1. Genetics",
+      "children": [],
+      "alternateParents": []
+    },
+    {
+      "id": "hk-3-5-5-2",
+      "label": "3.5.5.2. Paleontology",
+      "children": [],
+      "alternateParents": []
+    },
+    {
+      "id": "hk-3-5-5-3",
+      "label": "3.5.5.3. Taxonomy",
+      "children": [],
+      "alternateParents": []
+    },
+    {
+      "id": "hk-3-5-6",
+      "label": "3.5.6. Anthropology",
+      "children": [],
+      "alternateParents": []
+    },
+    {
+      "id": "hk-3-5-7",
+      "label": "3.5.7. Ecology",
+      "children": [],
+      "alternateParents": []
+    },
+    {
+      "id": "hk-3-5-8",
+      "label": "3.5.8. Exobiology",
+      "children": [],
+      "alternateParents": []
+    },
+    {
+      "id": "hk-4",
+      "label": "4. Technology",
+      "children": [],
+      "alternateParents": []
+    },
+    {
+      "id": "hk-5",
+      "label": "5. Social Science",
       "children": [
-        "part-4.1.1",
-        "part-4.1.2"
+        "hk-5-1",
+        "hk-5-2",
+        "hk-5-3",
+        "hk-5-4",
+        "hk-5-5",
+        "hk-5-6",
+        "hk-5-7"
       ],
-      "alternateParents": [],
-      "definition": "Suggested question: Is it related to 4.1 the development of human life?"
-    },
-    {
-      "id": "part-4.1.1",
-      "label": "4.1.1 Human Evolution",
-      "children": [],
       "alternateParents": []
     },
     {
-      "id": "part-4.1.2",
-      "label": "4.1.2 Human Heredity: the Races",
-      "children": [],
-      "alternateParents": []
-    },
-    {
-      "id": "part-4.2",
-      "label": "4.2 The Human Body: Health and Disease",
+      "id": "hk-5-1",
+      "label": "5.1. Economics",
       "children": [
-        "part-4.2.1",
-        "part-4.2.2",
-        "part-4.2.3",
-        "part-4.2.4"
+        "hk-5-1-1",
+        "hk-5-1-2"
       ],
-      "alternateParents": [],
-      "definition": "Suggested question: Is it related to 4.2 the human body: health and disease?"
+      "alternateParents": []
     },
     {
-      "id": "part-4.2.1",
-      "label": "4.2.1 The Structures and Functions of the Human Body",
+      "id": "hk-5-1-1",
+      "label": "5.1.1. Macroeconomics",
       "children": [],
       "alternateParents": []
     },
     {
-      "id": "part-4.2.2",
-      "label": "4.2.2 Human Health",
-      "children": [],
-      "alternateParents": []
-    },
-    {
-      "id": "part-4.2.3",
-      "label": "4.2.3 Human Diseases",
-      "children": [],
-      "alternateParents": []
-    },
-    {
-      "id": "part-4.2.4",
-      "label": "4.2.4 The Practice of Medicine and Care of Health",
-      "children": [],
-      "alternateParents": []
-    },
-    {
-      "id": "part-4.3",
-      "label": "4.3 Human Behavior and Experience",
+      "id": "hk-5-1-2",
+      "label": "5.1.2. Microeconomics",
       "children": [
-        "part-4.3.1",
-        "part-4.3.2",
-        "part-4.3.3",
-        "part-4.3.4",
-        "part-4.3.5",
-        "part-4.3.6"
+        "hk-5-1-2-1",
+        "hk-5-1-2-2",
+        "hk-5-1-2-3"
       ],
-      "alternateParents": [],
-      "definition": "Suggested question: Is it related to 4.3 human behavior and experience?"
+      "alternateParents": []
     },
     {
-      "id": "part-4.3.1",
-      "label": "4.3.1 General theories of human nature and behavior",
+      "id": "hk-5-1-2-1",
+      "label": "5.1.2.1. Market Theory",
       "children": [],
       "alternateParents": []
     },
     {
-      "id": "part-4.3.2",
-      "label": "4.3.2 Antecedent conditions and developmental processes affecting a person's behavior and conscious experience",
+      "id": "hk-5-1-2-2",
+      "label": "5.1.2.2. Market Imperfections",
       "children": [],
       "alternateParents": []
     },
     {
-      "id": "part-4.3.3",
-      "label": "4.3.3 Influence of the current environment on a person's behavior and conscious experience: attention, sensation, and perception",
+      "id": "hk-5-1-2-3",
+      "label": "5.1.2.3. Public Policy",
       "children": [],
       "alternateParents": []
     },
     {
-      "id": "part-4.3.4",
-      "label": "4.3.4 Current Internal states affecting a person' behavior and conscious experience",
+      "id": "hk-5-2",
+      "label": "5.2. Political Science",
       "children": [],
       "alternateParents": []
     },
     {
-      "id": "part-4.3.5",
-      "label": "4.3.5 Development of Learning and Thinking",
+      "id": "hk-5-3",
+      "label": "5.3. Sociology",
       "children": [],
       "alternateParents": []
     },
     {
-      "id": "part-4.3.6",
-      "label": "4.3.6 Personality and the Self: Integration and Disintegration",
+      "id": "hk-5-4",
+      "label": "5.4. Psychology",
       "children": [],
       "alternateParents": []
     },
     {
-      "id": "part-5",
-      "label": "5. Society",
+      "id": "hk-5-5",
+      "label": "5.5. Linguistics",
+      "children": [],
+      "alternateParents": []
+    },
+    {
+      "id": "hk-5-6",
+      "label": "5.6. History",
+      "children": [],
+      "alternateParents": []
+    },
+    {
+      "id": "hk-5-7",
+      "label": "5.7. Futurology",
       "children": [
-        "part-5.1",
-        "part-5.2",
-        "part-5.3",
-        "part-5.4",
-        "part-5.5",
-        "part-5.6"
+        "hk-5-7-1",
+        "hk-5-7-2",
+        "hk-5-7-3",
+        "hk-5-7-4",
+        "hk-5-7-5",
+        "hk-5-7-6",
+        "hk-5-7-7",
+        "hk-5-7-8",
+        "hk-5-7-9"
       ],
-      "alternateParents": [],
-      "definition": "Suggested question: Is it related to 5. society?"
+      "alternateParents": []
     },
     {
-      "id": "part-5.1",
-      "label": "5.1 Social Groups: Ethnic groups and Cultures",
+      "id": "hk-5-7-1",
+      "label": "5.7.1. Impossible Advances",
+      "children": [],
+      "alternateParents": []
+    },
+    {
+      "id": "hk-5-7-2",
+      "label": "5.7.2. Improbable Advances",
+      "children": [],
+      "alternateParents": []
+    },
+    {
+      "id": "hk-5-7-3",
+      "label": "5.7.3. Academic Developments",
+      "children": [],
+      "alternateParents": []
+    },
+    {
+      "id": "hk-5-7-4",
+      "label": "5.7.4. Technological Developments",
+      "children": [],
+      "alternateParents": []
+    },
+    {
+      "id": "hk-5-7-5",
+      "label": "5.7.5. Industrial Developments",
+      "children": [],
+      "alternateParents": []
+    },
+    {
+      "id": "hk-5-7-6",
+      "label": "5.7.6. Sociopolitical Developments",
+      "children": [],
+      "alternateParents": []
+    },
+    {
+      "id": "hk-5-7-7",
+      "label": "5.7.7. Challenges",
+      "children": [],
+      "alternateParents": []
+    },
+    {
+      "id": "hk-5-7-8",
+      "label": "5.7.8. Possible Catastrophes",
+      "children": [],
+      "alternateParents": []
+    },
+    {
+      "id": "hk-5-7-9",
+      "label": "5.7.9. Timeline",
+      "children": [],
+      "alternateParents": []
+    },
+    {
+      "id": "hk-6",
+      "label": "6. Epilogue",
+      "children": [],
+      "alternateParents": []
+    },
+    {
+      "id": "hk-A",
+      "label": "A. Appendices",
       "children": [
-        "part-5.1.1",
-        "part-5.1.2",
-        "part-5.1.3",
-        "part-5.1.4"
+        "hk-A-1",
+        "hk-A-2"
       ],
-      "alternateParents": [],
-      "definition": "Suggested question: Is it related to 5.1 social groups: ethnic groups and cultures?"
-    },
-    {
-      "id": "part-5.1.1",
-      "label": "5.1.1 Peoples and Cultures of the World",
-      "children": [],
-      "alternateParents": []
-    },
-    {
-      "id": "part-5.1.2",
-      "label": "5.1.2 The Development of Human Culture",
-      "children": [],
-      "alternateParents": []
-    },
-    {
-      "id": "part-5.1.3",
-      "label": "5.1.3 Major Cultural Components and Institutions of Societies",
-      "children": [],
-      "alternateParents": []
-    },
-    {
-      "id": "part-5.1.4",
-      "label": "5.1.4 Language and Communication",
-      "children": [],
-      "alternateParents": []
-    },
-    {
-      "id": "part-5.2",
-      "label": "5.2 Social Organization and Social Change",
-      "children": [
-        "part-5.2.1",
-        "part-5.2.2",
-        "part-5.2.3",
-        "part-5.2.4"
-      ],
-      "alternateParents": [],
-      "definition": "Suggested question: Is it related to 5.2 social organization and social change?"
-    },
-    {
-      "id": "part-5.2.1",
-      "label": "5.2.1 Social Structure and Change",
-      "children": [],
-      "alternateParents": []
-    },
-    {
-      "id": "part-5.2.2",
-      "label": "5.2.2 The Group Structure of Society",
-      "children": [],
-      "alternateParents": []
-    },
-    {
-      "id": "part-5.2.3",
-      "label": "5.2.3 Social Status",
-      "children": [],
-      "alternateParents": []
-    },
-    {
-      "id": "part-5.2.4",
-      "label": "5.2.4 Human Populations: Urban and Rural Communities",
-      "children": [],
-      "alternateParents": []
-    },
-    {
-      "id": "part-5.3",
-      "label": "5.3 The Production, Distribution, and Utilization of Wealth",
-      "children": [
-        "part-5.3.1",
-        "part-5.3.2",
-        "part-5.3.3",
-        "part-5.3.4",
-        "part-5.3.5",
-        "part-5.3.6"
-      ],
-      "alternateParents": [],
-      "definition": "Suggested question: Is it related to 5.3 the production, distribution, and utilization of wealth?"
-    },
-    {
-      "id": "part-5.3.1",
-      "label": "5.3.1 Economic Concepts, Issues, and Systems",
-      "children": [],
-      "alternateParents": []
-    },
-    {
-      "id": "part-5.3.2",
-      "label": "5.3.2 Consumer and Market: Pricing and Mechanisms for Distributing Goods",
-      "children": [],
-      "alternateParents": []
-    },
-    {
-      "id": "part-5.3.3",
-      "label": "5.3.3 The Organization of Production and Distribution",
-      "children": [],
-      "alternateParents": []
-    },
-    {
-      "id": "part-5.3.4",
-      "label": "5.3.4 The Distribution of Income and Wealth",
-      "children": [],
-      "alternateParents": []
-    },
-    {
-      "id": "part-5.3.5",
-      "label": "5.3.5 Macroeconomics",
-      "children": [],
-      "alternateParents": []
-    },
-    {
-      "id": "part-5.3.6",
-      "label": "5.3.6 Economic Growth and Planning",
-      "children": [],
-      "alternateParents": []
-    },
-    {
-      "id": "part-5.4",
-      "label": "5.4 Politics and Government",
-      "children": [
-        "part-5.4.1",
-        "part-5.4.2",
-        "part-5.4.3",
-        "part-5.4.4"
-      ],
-      "alternateParents": [],
-      "definition": "Suggested question: Is it related to 5.4 politics and government?"
-    },
-    {
-      "id": "part-5.4.1",
-      "label": "5.4.1 Political Theory",
-      "children": [],
-      "alternateParents": []
-    },
-    {
-      "id": "part-5.4.2",
-      "label": "5.4.2 Political Institutions: the Structure, Branches, & Offices of Government",
-      "children": [],
-      "alternateParents": []
-    },
-    {
-      "id": "part-5.4.3",
-      "label": "5.4.3 Functioning of Government: the Dynamics of the Political Process",
-      "children": [],
-      "alternateParents": []
-    },
-    {
-      "id": "part-5.4.4",
-      "label": "5.4.4 International Relations: Peace and War",
-      "children": [],
-      "alternateParents": []
-    },
-    {
-      "id": "part-5.5",
-      "label": "5.5 Law",
-      "children": [
-        "part-5.5.1",
-        "part-5.5.2",
-        "part-5.5.3"
-      ],
-      "alternateParents": [],
-      "definition": "Suggested question: Is it related to 5.5 law?"
-    },
-    {
-      "id": "part-5.5.1",
-      "label": "5.5.1 Philosophies and Systems of Law; the Practice of Law",
-      "children": [],
-      "alternateParents": []
-    },
-    {
-      "id": "part-5.5.2",
-      "label": "5.5.2 Branches of Public Law, Substantive and Procedural",
-      "children": [],
-      "alternateParents": []
-    },
-    {
-      "id": "part-5.5.3",
-      "label": "5.5.3 Branches of Private Law, Substantive and Procedural",
-      "children": [],
-      "alternateParents": []
-    },
-    {
-      "id": "part-5.6",
-      "label": "5.6 Education",
-      "children": [
-        "part-5.6.1",
-        "part-5.6.2"
-      ],
-      "alternateParents": [],
-      "definition": "Suggested question: Is it related to 5.6 education?"
-    },
-    {
-      "id": "part-5.6.1",
-      "label": "5.6.1 Aims and Organization of Education",
-      "children": [],
-      "alternateParents": []
-    },
-    {
-      "id": "part-5.6.2",
-      "label": "5.6.2 Education Around the World",
-      "children": [],
-      "alternateParents": []
-    },
-    {
-      "id": "part-6",
-      "label": "6. Art",
-      "children": [
-        "part-6.1",
-        "part-6.2"
-      ],
-      "alternateParents": [],
-      "definition": "Suggested question: Is it related to 6. art?"
-    },
-    {
-      "id": "part-6.1",
-      "label": "6.1 Art in General",
-      "children": [
-        "part-6.1.1",
-        "part-6.1.2",
-        "part-6.1.3"
-      ],
-      "alternateParents": [],
-      "definition": "Suggested question: Is it related to 6.1 art in general?"
-    },
-    {
-      "id": "part-6.1.1",
-      "label": "6.1.1 Theory and Classification of the Arts",
-      "children": [],
-      "alternateParents": []
-    },
-    {
-      "id": "part-6.1.2",
-      "label": "6.1.2 Experience and Criticism of Art; the Nonaesthetic Context of Art",
-      "children": [],
-      "alternateParents": []
-    },
-    {
-      "id": "part-6.1.3",
-      "label": "6.1.3 Characteristics of the Arts in Particular Cultures",
-      "children": [],
-      "alternateParents": []
-    },
-    {
-      "id": "part-6.2",
-      "label": "6.2 Particular Arts",
-      "children": [
-        "part-6.2.1",
-        "part-6.2.2",
-        "part-6.2.3",
-        "part-6.2.4",
-        "part-6.2.5",
-        "part-6.2.6",
-        "part-6.2.7",
-        "part-6.2.8",
-        "part-6.2.9"
-      ],
-      "alternateParents": [],
-      "definition": "Suggested question: Is it related to 6.2 particular arts?"
-    },
-    {
-      "id": "part-6.2.1",
-      "label": "6.2.1 Literature",
-      "children": [],
-      "alternateParents": []
-    },
-    {
-      "id": "part-6.2.2",
-      "label": "6.2.2 Theater",
-      "children": [],
-      "alternateParents": []
-    },
-    {
-      "id": "part-6.2.3",
-      "label": "6.2.3 Motion Pictures",
-      "children": [],
-      "alternateParents": []
-    },
-    {
-      "id": "part-6.2.4",
-      "label": "6.2.4 Music",
-      "children": [],
-      "alternateParents": []
-    },
-    {
-      "id": "part-6.2.5",
-      "label": "6.2.5 Dance",
-      "children": [],
-      "alternateParents": []
-    },
-    {
-      "id": "part-6.2.6",
-      "label": "6.2.6 Architecture, Garden and Landscape Design, and Urban Design",
-      "children": [],
-      "alternateParents": []
-    },
-    {
-      "id": "part-6.2.7",
-      "label": "6.2.7 Sculpture",
-      "children": [],
-      "alternateParents": []
-    },
-    {
-      "id": "part-6.2.8",
-      "label": "6.2.8 Drawing, Painting, Printmaking, Photography",
-      "children": [],
-      "alternateParents": []
-    },
-    {
-      "id": "part-6.2.9",
-      "label": "6.2.9 Decoration and Design",
-      "children": [],
-      "alternateParents": []
-    },
-    {
-      "id": "part-7",
-      "label": "7. Technology",
-      "children": [
-        "part-7.1",
-        "part-7.2",
-        "part-7.3"
-      ],
-      "alternateParents": [],
-      "definition": "Suggested question: Is it related to 7. technology?"
-    },
-    {
-      "id": "part-7.1",
-      "label": "7.1 Nature & Development of Technology",
-      "children": [
-        "part-7.1.1",
-        "part-7.1.2"
-      ],
-      "alternateParents": [],
-      "definition": "Suggested question: Is it related to 7.1 nature & development of technology?"
-    },
-    {
-      "id": "part-7.1.1",
-      "label": "7.1.1 Technology: Its Scope and History",
-      "children": [],
-      "alternateParents": []
-    },
-    {
-      "id": "part-7.1.2",
-      "label": "7.1.2 The Organization of Human Work",
-      "children": [],
-      "alternateParents": []
-    },
-    {
-      "id": "part-7.2",
-      "label": "7.2 Elements of Technology",
-      "children": [
-        "part-7.2.1",
-        "part-7.2.2",
-        "part-7.2.3",
-        "part-7.2.4",
-        "part-7.2.5"
-      ],
-      "alternateParents": [],
-      "definition": "Suggested question: Is it related to 7.2 elements of technology?"
-    },
-    {
-      "id": "part-7.2.1",
-      "label": "7.2.1 Technology of Energy Conversion and Utilization",
-      "children": [],
-      "alternateParents": []
-    },
-    {
-      "id": "part-7.2.2",
-      "label": "7.2.2 Technology of Tools and Machines",
-      "children": [],
-      "alternateParents": []
-    },
-    {
-      "id": "part-7.2.3",
-      "label": "7.2.3 Technology of Measurement, Observation, and Control",
-      "children": [],
-      "alternateParents": []
-    },
-    {
-      "id": "part-7.2.4",
-      "label": "7.2.4 Extraction and Conversion of Industrial Raw Materials",
-      "children": [],
-      "alternateParents": []
-    },
-    {
-      "id": "part-7.2.5",
-      "label": "7.2.5 Technology of Industrial Production Processes",
-      "children": [],
-      "alternateParents": []
-    },
-    {
-      "id": "part-7.3",
-      "label": "7.3 Fields of Technology",
-      "children": [
-        "part-7.3.1",
-        "part-7.3.2",
-        "part-7.3.3",
-        "part-7.3.4",
-        "part-7.3.5",
-        "part-7.3.6",
-        "part-7.3.7",
-        "part-7.3.8"
-      ],
-      "alternateParents": [],
-      "definition": "Suggested question: Is it related to 7.3 fields of technology?"
-    },
-    {
-      "id": "part-7.3.1",
-      "label": "7.3.1 Agriculture and Food Production",
-      "children": [],
-      "alternateParents": []
-    },
-    {
-      "id": "part-7.3.2",
-      "label": "7.3.2 Technology of the Major Industries",
-      "children": [],
-      "alternateParents": []
-    },
-    {
-      "id": "part-7.3.3",
-      "label": "7.3.3 Construction Technology",
-      "children": [],
-      "alternateParents": []
-    },
-    {
-      "id": "part-7.3.4",
-      "label": "7.3.4 Transportation Technology",
-      "children": [],
-      "alternateParents": []
-    },
-    {
-      "id": "part-7.3.5",
-      "label": "7.3.5 Technology of Information Processing and of Communications Systems",
-      "children": [],
-      "alternateParents": []
-    },
-    {
-      "id": "part-7.3.6",
-      "label": "7.3.6 Military Technology",
-      "children": [],
-      "alternateParents": []
-    },
-    {
-      "id": "part-7.3.7",
-      "label": "7.3.7 Technology of the Urban Community",
-      "children": [],
-      "alternateParents": []
-    },
-    {
-      "id": "part-7.3.8",
-      "label": "7.3.8 Technology of Earth and Space Exploration",
-      "children": [],
-      "alternateParents": []
-    },
-    {
-      "id": "part-8",
-      "label": "8. Religion",
-      "children": [
-        "part-8.1",
-        "part-8.2"
-      ],
-      "alternateParents": [],
-      "definition": "Suggested question: Is it related to 8. religion?"
-    },
-    {
-      "id": "part-8.1",
-      "label": "8.1 Religion in General",
-      "children": [
-        "part-8.1.1",
-        "part-8.1.2"
-      ],
-      "alternateParents": [],
-      "definition": "Suggested question: Is it related to 8.1 religion in general?"
-    },
-    {
-      "id": "part-8.1.1",
-      "label": "8.1.1 Knowledge and Understanding of Religion",
-      "children": [],
-      "alternateParents": []
-    },
-    {
-      "id": "part-8.1.2",
-      "label": "8.1.2 Religious Life: Institutions and Practices",
-      "children": [],
-      "alternateParents": []
-    },
-    {
-      "id": "part-8.2",
-      "label": "8.2 Particular Religions",
-      "children": [
-        "part-8.2.1",
-        "part-8.2.2",
-        "part-8.2.3",
-        "part-8.2.4",
-        "part-8.2.5",
-        "part-8.2.6",
-        "part-8.2.7",
-        "part-8.2.8",
-        "part-8.2.9"
-      ],
-      "alternateParents": [],
-      "definition": "Suggested question: Is it related to 8.2 particular religions?"
-    },
-    {
-      "id": "part-8.2.1",
-      "label": "8.2.1 Prehistoric Religion and Primitive Religion",
-      "children": [],
-      "alternateParents": []
-    },
-    {
-      "id": "part-8.2.2",
-      "label": "8.2.2 Religions of Ancient Peoples",
-      "children": [],
-      "alternateParents": []
-    },
-    {
-      "id": "part-8.2.3",
-      "label": "8.2.3 Hinduism and Other Religions of India",
-      "children": [],
-      "alternateParents": []
-    },
-    {
-      "id": "part-8.2.4",
-      "label": "8.2.4 Buddhism",
-      "children": [],
-      "alternateParents": []
-    },
-    {
-      "id": "part-8.2.5",
-      "label": "8.2.5 Indigenous Religions of East Asia: Religions of China, Korea, and Japan",
-      "children": [],
-      "alternateParents": []
-    },
-    {
-      "id": "part-8.2.6",
-      "label": "8.2.6 Judaism",
-      "children": [],
-      "alternateParents": []
-    },
-    {
-      "id": "part-8.2.7",
-      "label": "8.2.7 Christianity",
-      "children": [],
-      "alternateParents": []
-    },
-    {
-      "id": "part-8.2.8",
-      "label": "8.2.8 Islam",
-      "children": [],
-      "alternateParents": []
-    },
-    {
-      "id": "part-8.2.9",
-      "label": "8.2.9 Other Religions and Religious Movements in the Modern World",
-      "children": [],
-      "alternateParents": []
-    },
-    {
-      "id": "part-9",
-      "label": "9. History",
-      "children": [
-        "part-9.1",
-        "part-9.2",
-        "part-9.3",
-        "part-9.4",
-        "part-9.5",
-        "part-9.6",
-        "part-9.7"
-      ],
-      "alternateParents": [],
-      "definition": "Suggested question: Is it related to 9. history?"
-    },
-    {
-      "id": "part-9.1",
-      "label": "9.1 Ancient Southwest Asia, North Africa, and Europe",
-      "children": [
-        "part-9.1.1",
-        "part-9.1.2"
-      ],
-      "alternateParents": [],
-      "definition": "Suggested question: Is it related to 9.1 ancient southwest asia, north africa, and europe?"
-    },
-    {
-      "id": "part-9.1.1",
-      "label": "9.1.1 Ancient Southwest Asia and Egypt, the Aegean, and North Africa",
-      "children": [],
-      "alternateParents": []
-    },
-    {
-      "id": "part-9.1.2",
-      "label": "9.1.2 Ancient Europe and Classical Civilizations of the Mediterranean to AD 395",
-      "children": [],
-      "alternateParents": []
-    },
-    {
-      "id": "part-9.2",
-      "label": "9.2 Medieval Southwest Asia, North Africa, and Europe",
-      "children": [
-        "part-9.2.1",
-        "part-9.2.2",
-        "part-9.2.3",
-        "part-9.2.4"
-      ],
-      "alternateParents": [],
-      "definition": "Suggested question: Is it related to 9.2 medieval southwest asia, north africa, and europe?"
-    },
-    {
-      "id": "part-9.2.1",
-      "label": "9.2.1 The Byzantine Empire and Europe from AD 395–1050",
-      "children": [],
-      "alternateParents": []
-    },
-    {
-      "id": "part-9.2.2",
-      "label": "9.2.2 The Formative Period in Islamic History, AD 622–1055",
-      "children": [],
-      "alternateParents": []
-    },
-    {
-      "id": "part-9.2.3",
-      "label": "9.2.3 Western Christendom in the High and Later Middle Ages 1050–1500",
-      "children": [],
-      "alternateParents": []
-    },
-    {
-      "id": "part-9.2.4",
-      "label": "9.2.4 The Crusades, the Islamic States, and Eastern Christendom 1050–1480",
-      "children": [],
-      "alternateParents": []
-    },
-    {
-      "id": "part-9.3",
-      "label": "9.3 East, Central, South, and Southeast Asia",
-      "children": [
-        "part-9.3.1",
-        "part-9.3.2",
-        "part-9.3.3",
-        "part-9.3.4",
-        "part-9.3.5",
-        "part-9.3.6",
-        "part-9.3.7"
-      ],
-      "alternateParents": [],
-      "definition": "Suggested question: Is it related to 9.3 east, central, south, and southeast asia?"
-    },
-    {
-      "id": "part-9.3.1",
-      "label": "9.3.1 China to the Beginning of the Late T'ang AD 755",
-      "children": [],
-      "alternateParents": []
-    },
-    {
-      "id": "part-9.3.2",
-      "label": "9.3.2 China from the Late T'ang to the Late Ch'ing AD 755–1839",
-      "children": [],
-      "alternateParents": []
-    },
-    {
-      "id": "part-9.3.3",
-      "label": "9.3.3 Central and Northeast Asia to 1750",
-      "children": [],
-      "alternateParents": []
-    },
-    {
-      "id": "part-9.3.4",
-      "label": "9.3.4 Japan to the Meiji Restoration 1868, Korea to 1910",
-      "children": [],
-      "alternateParents": []
-    },
-    {
-      "id": "part-9.3.5",
-      "label": "9.3.5 The Indian Subcontinent and Ceylon to AD 1200",
-      "children": [],
-      "alternateParents": []
-    },
-    {
-      "id": "part-9.3.6",
-      "label": "9.3.6 The Indian Subcontinent 1200–1761, Ceylon 1200–1505",
-      "children": [],
-      "alternateParents": []
-    },
-    {
-      "id": "part-9.3.7",
-      "label": "9.3.7 Southeast Asia to 1600",
-      "children": [],
-      "alternateParents": []
-    },
-    {
-      "id": "part-9.4",
-      "label": "9.4 Sub-Saharan Africa to 1885",
-      "children": [
-        "part-9.4.1",
-        "part-9.4.2",
-        "part-9.4.3",
-        "part-9.4.4",
-        "part-9.4.5"
-      ],
-      "alternateParents": [],
-      "definition": "Suggested question: Is it related to 9.4 sub-saharan africa to 1885?"
-    },
-    {
-      "id": "part-9.4.1",
-      "label": "9.4.1 West Africa to 1885",
-      "children": [],
-      "alternateParents": []
-    },
-    {
-      "id": "part-9.4.2",
-      "label": "9.4.2 The Nilotic Sudan and Ethiopia AD 550–1885",
-      "children": [],
-      "alternateParents": []
-    },
-    {
-      "id": "part-9.4.3",
-      "label": "9.4.3 East Africa and Madagascar to 1885",
-      "children": [],
-      "alternateParents": []
-    },
-    {
-      "id": "part-9.4.4",
-      "label": "9.4.4 Central Africa to 1885",
-      "children": [],
-      "alternateParents": []
-    },
-    {
-      "id": "part-9.4.5",
-      "label": "9.4.5 Southern Africa to 1885",
-      "children": [],
-      "alternateParents": []
-    },
-    {
-      "id": "part-9.5",
-      "label": "9.5 Pre-Columbian America",
-      "children": [
-        "part-9.5.1",
-        "part-9.5.2"
-      ],
-      "alternateParents": [],
-      "definition": "Suggested question: Is it related to 9.5 pre-columbian america?"
-    },
-    {
-      "id": "part-9.5.1",
-      "label": "9.5.1 Andean Civilization to AD 1540",
-      "children": [],
-      "alternateParents": []
-    },
-    {
-      "id": "part-9.5.2",
-      "label": "9.5.2 Meso-American Civilization to AD 1540",
-      "children": [],
-      "alternateParents": []
-    },
-    {
-      "id": "part-9.6",
-      "label": "9.6 The Modern World to 1920",
-      "children": [
-        "part-9.6.1",
-        "part-9.6.2",
-        "part-9.6.3",
-        "part-9.6.4",
-        "part-9.6.5",
-        "part-9.6.6",
-        "part-9.6.7",
-        "part-9.6.8",
-        "part-9.6.9",
-        "part-9.6.10",
-        "part-9.6.11"
-      ],
-      "alternateParents": [],
-      "definition": "Suggested question: Is it related to 9.6 the modern world to 1920?"
-    },
-    {
-      "id": "part-9.6.1",
-      "label": "9.6.1 Western Europe 1500–1789",
-      "children": [],
-      "alternateParents": []
-    },
-    {
-      "id": "part-9.6.2",
-      "label": "9.6.2 Eastern Europe, Southwest Asia, and North Africa 1480–1800",
-      "children": [],
-      "alternateParents": []
-    },
-    {
-      "id": "part-9.6.3",
-      "label": "9.6.3 Europe 1789–1920",
-      "children": [],
-      "alternateParents": []
-    },
-    {
-      "id": "part-9.6.4",
-      "label": "9.6.4 European Colonies in the Americas 1492–1790",
-      "children": [],
-      "alternateParents": []
-    },
-    {
-      "id": "part-9.6.5",
-      "label": "9.6.5 United States and Canada 1763–1920",
-      "children": [],
-      "alternateParents": []
-    },
-    {
-      "id": "part-9.6.6",
-      "label": "9.6.6 Latin-America and Caribbean to 1920",
-      "children": [],
-      "alternateParents": []
-    },
-    {
-      "id": "part-9.6.7",
-      "label": "9.6.7 Australia and Oceania to 1920",
-      "children": [],
-      "alternateParents": []
-    },
-    {
-      "id": "part-9.6.8",
-      "label": "9.6.8 South Asia Under European Imperialism 1500–1920",
-      "children": [],
-      "alternateParents": []
-    },
-    {
-      "id": "part-9.6.9",
-      "label": "9.6.9 Southeast Asia Under European Imperialism 1600–1920",
-      "children": [],
-      "alternateParents": []
-    },
-    {
-      "id": "part-9.6.10",
-      "label": "9.6.10 China until Revolution 1839–1911, Japan from Meiji Restoration to 1910",
-      "children": [],
-      "alternateParents": []
-    },
-    {
-      "id": "part-9.6.11",
-      "label": "9.6.11 Southwest Asia, North Africa 1800–1920, Sub-Saharan Africa 1885–1920: Under European Imperialism",
-      "children": [],
-      "alternateParents": []
-    },
-    {
-      "id": "part-9.7",
-      "label": "9.7 The World Since 1920",
-      "children": [
-        "part-9.7.1",
-        "part-9.7.2",
-        "part-9.7.3",
-        "part-9.7.4",
-        "part-9.7.5",
-        "part-9.7.6",
-        "part-9.7.7",
-        "part-9.7.8"
-      ],
-      "alternateParents": [],
-      "definition": "Suggested question: Is it related to 9.7 the world since 1920?"
-    },
-    {
-      "id": "part-9.7.1",
-      "label": "9.7.1 International Movements, Diplomacy and War Since 1920",
-      "children": [],
-      "alternateParents": []
-    },
-    {
-      "id": "part-9.7.2",
-      "label": "9.7.2 Europe Since 1920",
-      "children": [],
-      "alternateParents": []
-    },
-    {
-      "id": "part-9.7.3",
-      "label": "9.7.3 The United States and Canada Since 1920",
-      "children": [],
-      "alternateParents": []
-    },
-    {
-      "id": "part-9.7.4",
-      "label": "9.7.4 Latin American and Caribbean Nations Since 1920",
-      "children": [],
-      "alternateParents": []
-    },
-    {
-      "id": "part-9.7.5",
-      "label": "9.7.5 China in Revolution, Japanese Hegemony",
-      "children": [],
-      "alternateParents": []
-    },
-    {
-      "id": "part-9.7.6",
-      "label": "9.7.6 South and Southeast Asia: the Late Colonial Period and Nations Since 1920",
-      "children": [],
-      "alternateParents": []
-    },
-    {
-      "id": "part-9.7.7",
-      "label": "9.7.7 Australia and Oceania Since 1920",
-      "children": [],
-      "alternateParents": []
-    },
-    {
-      "id": "part-9.7.8",
-      "label": "9.7.8 Southwest Asia and Africa: the Late Colonial Period and Nations since 1920",
-      "children": [],
-      "alternateParents": []
-    },
-    {
-      "id": "part-10",
-      "label": "10. Branches of Knowledge",
-      "children": [
-        "part-10.1",
-        "part-10.2",
-        "part-10.3",
-        "part-10.4",
-        "part-10.5",
-        "part-10.6"
-      ],
-      "alternateParents": [],
-      "definition": "Suggested question: Is it related to 10. branches of knowledge?"
-    },
-    {
-      "id": "part-10.1",
-      "label": "10.1 Logic",
-      "children": [
-        "part-10.1.1",
-        "part-10.1.2"
-      ],
-      "alternateParents": [],
-      "definition": "Suggested question: Is it related to 10.1 logic?"
-    },
-    {
-      "id": "part-10.1.1",
-      "label": "10.1.1 History and Philosophy of Logic",
-      "children": [],
-      "alternateParents": []
-    },
-    {
-      "id": "part-10.1.2",
-      "label": "10.1.2 Formal Logic, Metalogic, & Applied Logic",
-      "children": [],
-      "alternateParents": []
-    },
-    {
-      "id": "part-10.2",
-      "label": "10.2 Mathematics",
-      "children": [
-        "part-10.2.1",
-        "part-10.2.2",
-        "part-10.2.3"
-      ],
-      "alternateParents": [],
-      "definition": "Suggested question: Is it related to 10.2 mathematics?"
-    },
-    {
-      "id": "part-10.2.1",
-      "label": "10.2.1 History and Foundations of Mathematics",
-      "children": [],
-      "alternateParents": []
-    },
-    {
-      "id": "part-10.2.2",
-      "label": "10.2.2 Branches of Mathematics",
-      "children": [],
-      "alternateParents": []
-    },
-    {
-      "id": "part-10.2.3",
-      "label": "10.2.3 Applications of Mathematics",
-      "children": [],
-      "alternateParents": []
-    },
-    {
-      "id": "part-10.3",
-      "label": "10.3 Science",
-      "children": [
-        "part-10.3.1",
-        "part-10.3.2",
-        "part-10.3.3",
-        "part-10.3.4",
-        "part-10.3.5",
-        "part-10.3.6",
-        "part-10.3.7"
-      ],
-      "alternateParents": [],
-      "definition": "Suggested question: Is it related to 10.3 science?"
-    },
-    {
-      "id": "part-10.3.1",
-      "label": "10.3.1 History and Philosophy of Science",
-      "children": [],
-      "alternateParents": []
-    },
-    {
-      "id": "part-10.3.2",
-      "label": "10.3.2 The Physical Sciences",
-      "children": [],
-      "alternateParents": []
-    },
-    {
-      "id": "part-10.3.3",
-      "label": "10.3.3 The Earth Sciences",
-      "children": [],
-      "alternateParents": []
-    },
-    {
-      "id": "part-10.3.4",
-      "label": "10.3.4 The Biological Sciences",
-      "children": [],
-      "alternateParents": []
-    },
-    {
-      "id": "part-10.3.5",
-      "label": "10.3.5 Medicine",
-      "children": [],
-      "alternateParents": []
-    },
-    {
-      "id": "part-10.3.6",
-      "label": "10.3.6 The Social Sciences, Psychology, Linguistics",
-      "children": [],
-      "alternateParents": []
-    },
-    {
-      "id": "part-10.3.7",
-      "label": "10.3.7 The Technological Sciences",
-      "children": [],
-      "alternateParents": []
-    },
-    {
-      "id": "part-10.4",
-      "label": "10.4 History and The Humanities",
-      "children": [
-        "part-10.4.1",
-        "part-10.4.2"
-      ],
-      "alternateParents": [],
-      "definition": "Suggested question: Is it related to 10.4 history and the humanities?"
-    },
-    {
-      "id": "part-10.4.1",
-      "label": "10.4.1 Historiography",
-      "children": [],
-      "alternateParents": []
-    },
-    {
-      "id": "part-10.4.2",
-      "label": "10.4.2 The Humanities and Humanistic Scholarship",
-      "children": [],
-      "alternateParents": []
-    },
-    {
-      "id": "part-10.5",
-      "label": "10.5 Philosophy",
-      "children": [
-        "part-10.5.1",
-        "part-10.5.2",
-        "part-10.5.3"
-      ],
-      "alternateParents": [],
-      "definition": "Suggested question: Is it related to 10.5 philosophy?"
-    },
-    {
-      "id": "part-10.5.1",
-      "label": "10.5.1 History of Philosophy",
-      "children": [],
-      "alternateParents": []
-    },
-    {
-      "id": "part-10.5.2",
-      "label": "10.5.2 Divisions of Philosophy",
-      "children": [],
       "alternateParents": []
     },
     {
-      "id": "part-10.5.3",
-      "label": "10.5.3 Philosophical Schools and Doctrines",
+      "id": "hk-A-1",
+      "label": "A.1. Unanswered Questions",
       "children": [],
       "alternateParents": []
-    },
-    {
-      "id": "part-10.6",
-      "label": "10.6 Preservation of Knowledge",
-      "children": [
-        "part-10.6.1"
-      ],
-      "alternateParents": [],
-      "definition": "Suggested question: Is it related to 10.6 preservation of knowledge?"
     },
     {
-      "id": "part-10.6.1",
-      "label": "10.6.1 Institutions and Techniques for the Collection, Storage, Dissemination and Preservation of Knowledge",
+      "id": "hk-A-2",
+      "label": "A.2. References",
       "children": [],
       "alternateParents": []
     }
-  ],
-  "unaryNodes": []
+  ]
 }
