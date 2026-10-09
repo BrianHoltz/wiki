@@ -151,6 +151,7 @@ Use these compact vocabularies as adversarial test sets for the ontology.
 | set | ✅ |  | ✅ |  |  |  |
 | shadow |  |  |  |  |  |  |
 | signal | ✅ |  |  |  |  |  |
+| soliton |  |  |  |  |  | ✅ |
 | spacetime |  |  |  |  |  | ✅ |
 | species |  |  |  |  |  | ✅ |
 | statement |  |  |  |  |  |  |
