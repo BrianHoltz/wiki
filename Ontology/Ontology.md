@@ -598,6 +598,10 @@ classes.”
 Entity: that which can be referred to.
 ├── Realized entity: an entity that takes no arguments and has spatiotemporal embodiment.
 │   ├── Object: a realized entity regarded as persisting through time.
+│   │   ├── Agent
+│   │   ├── Collection
+│   │   ├── Region
+│   │   └── Self Connected Object
 │   └── Process: a realized entity regarded as occurring through time.
 ├── Abstract entity: an entity that takes no arguments and lacks spatiotemporal embodiment.
 ├── Property: an entity that takes one argument.
@@ -611,6 +615,10 @@ Entity: anything that exists, whether physical or abstract.
 ├── Physical: an entity located in the physical world.
 │   ├── Continuant: a physical entity that persists through time.
 │   │   └── Object: a physical continuant with an independent identity.
+│   │       ├── Physical object
+│   │       ├── Biological object
+│   │       ├── Artifact
+│   │       └── Social object
 │   └── Occurrent: a physical entity that unfolds or occurs in time.
 └── Abstract: an entity that exists only as an abstraction.
     ├── Continuant: an abstract entity treated as persistent.
@@ -623,7 +631,14 @@ Entity: anything that exists, whether physical or abstract.
 Entity: the universal class containing every object in the ontology.
 ├── Physical: entities that have a location in space or time.
 │   ├── Object: a physical entity that is not a process.
-│   │   └── SelfConnectedObject: an object whose parts are connected.
+│   │   ├── SelfConnectedObject: an object whose parts are connected.
+│   │   │   ├── ContentBearingObject
+│   │   │   ├── CorpuscularObject
+│   │   │   ├── Food
+│   │   │   └── Substance
+│   │   ├── Agent
+│   │   ├── Collection
+│   │   └── Region
 │   └── Process: a physical entity that has temporal parts or stages.
 └── Abstract: entities that are not physical.
 ```
@@ -635,6 +650,8 @@ Particular: an individual that is not a universal.
 ├── Endurant: an entity wholly present at each time it exists.
 │   ├── PhysicalEndurant: an endurant with physical presence.
 │   │   └── PhysicalObject: a physical endurant with independent existence.
+│   │       ├── AgentivePhysicalObject
+│   │       └── NonAgentivePhysicalObject
 │   └── NonPhysicalEndurant: an endurant without physical presence.
 ├── Perdurant: an entity that unfolds over time.
 │   └── Event: a perdurant with temporal boundaries.
@@ -650,6 +667,8 @@ Entity: anything that exists in reality.
 │   ├── IndependentContinuant: a continuant that does not inhere in another.
 │   │   └── MaterialEntity: an independent continuant with a material extent.
 │   │       └── Object: a material entity that is spatially bounded and self-connected.
+│   │           ├── ObjectAggregate
+│   │           └── FiatObjectPart
 │   └── SpecificallyDependentContinuant: a continuant dependent on one bearer.
 └── Occurrent: an entity that unfolds or has temporal parts.
     └── Process: an occurrent with temporal extent and unfolding.
@@ -662,6 +681,9 @@ Entity: anything that can be represented in the ontology.
 ├── Concrete: an entity that exists in space-time.
 │   ├── Presential: a concrete entity present at a given time.
 │   │   └── MaterialObject: a material presential occupying space.
+│   │       ├── PhysicalObject
+│   │       ├── BiologicalObject
+│   │       └── Artifact
 │   └── Process: a concrete entity that unfolds through time.
 └── Abstract: an entity not located in space-time.
     └── Category: an abstract entity used to classify individuals.
@@ -674,6 +696,9 @@ Entity: anything that exists according to the domain theory.
 ├── Endurant: an entity wholly present whenever it exists.
 │   ├── Object: an endurant that bears properties and participates in events.
 │   │   └── MaterialObject: an object with material or physical realization.
+│   │       ├── PhysicalObject
+│   │       ├── BiologicalObject
+│   │       └── SocialObject
 │   └── Moment: an existentially dependent endurant.
 └── Perdurant: an entity whose existence unfolds over time.
     └── Event: a perdurant composed of temporal parts.
@@ -689,16 +714,24 @@ Entity: something that has distinct and independent existence.
 └── Abstraction: a general concept formed by abstraction.
 ```
 
+`Object` has no further child classes in this compact WordNet excerpt; its
+physical branch is represented by `PhysicalEntity → Thing → Object`.
+
 ##### Schema.org
 
 ```text
 Thing: the most generic type of item.
-├── Place: a physical location.
-│   └── Landform: a natural physical feature of the Earth.
-├── Product: any offered product or service.
-│   └── IndividualProduct: a single, identifiable product instance.
+├── Action: an event caused by an agent.
+├── BioChemEntity: a biological or chemical entity.
 ├── CreativeWork: the most generic kind of creative work.
-└── Event: an event happening at a given time and location.
+├── Event: an event happening at a given time and location.
+├── Intangible: an item that is not physical or tangible.
+├── MedicalEntity: an entity relevant to medicine or healthcare.
+├── Organization: a structured group of people.
+├── Person: an individual human being.
+├── Place: a physical location.
+├── Product: any offered product or service.
+└── Taxon: a biological taxonomic group.
 ```
 
 ##### Aristotle's Categories
