@@ -271,6 +271,56 @@ def overlay(input_path: Path, output_path: Path) -> None:
     parents["RealizedEntity"] = ["Entity"]
     parents["AbstractEntity"] = ["Entity"]
     records = {**canonical, **physical}
+    records.update(
+        {
+            "Item": {
+                "id": "Item",
+                "label": "Item",
+                "definition": "An object distinguished as a single unit.",
+                "definitionSource": "project editorial",
+                "children": ["AbioticObject", "BiologicalObject", "Artifact"],
+                "alternateParents": [],
+            },
+            "AbioticObject": {
+                "id": "AbioticObject",
+                "label": "Abiotic object",
+                "definition": "An item of nonbiological, nonartificial origin.",
+                "definitionSource": "project editorial",
+                "children": [],
+                "alternateParents": [],
+            },
+            "BiologicalObject": {
+                "id": "BiologicalObject",
+                "label": "Biological object",
+                "definition": "An item constituted by or originating from biological activity.",
+                "definitionSource": "project editorial",
+                "children": [],
+                "alternateParents": [],
+            },
+        }
+    )
+    records["Object"]["children"] = [
+        "Item",
+        "Collection",
+        "Region",
+        "Agent",
+        "SelfConnectedObject",
+    ]
+    records["Agent"]["definition"] = "To be moved — an entity capable of intentional action."
+    records["Agent"]["definitionSource"] = "project editorial"
+    records["SelfConnectedObject"]["definition"] = (
+        "To be moved — an object whose parts are connected."
+    )
+    records["SelfConnectedObject"]["definitionSource"] = "project editorial"
+    parents["Object"] = ["RealizedEntity"]
+    parents["Item"] = ["Object"]
+    parents["AbioticObject"] = ["Item"]
+    parents["BiologicalObject"] = ["Item"]
+    parents["Artifact"] = ["Item"]
+    parents["Collection"] = ["Object"]
+    parents["Region"] = ["Object"]
+    parents["Agent"] = ["Object"]
+    parents["SelfConnectedObject"] = ["Object"]
     records["Object"]["definition"] = "A realized entity regarded as persisting through time."
     records["Process"]["definition"] = "A realized entity regarded as occurring through time."
     for identifier, record in records.items():
@@ -290,7 +340,7 @@ def overlay(input_path: Path, output_path: Path) -> None:
     selected_edges = sum(len(item["children"]) for item in nodes)
     output = {
         "source": {
-            "name": "My Ontology",
+            "name": "My ontology",
             "upperOntology": "Ontology/Ontology.md#upper-ontologies",
             "overlayPolicy": (
                 "Use the project canonical Entity/RealizedEntity/AbstractEntity/Property/Relation "
@@ -303,7 +353,7 @@ def overlay(input_path: Path, output_path: Path) -> None:
             "multipleParentNodeCount": sum(bool(item["alternateParents"]) for item in nodes),
             "unaryNodeCount": sum(len(item["children"]) == 1 for item in nodes),
             "definitionCount": sum(bool(item.get("definition")) for item in nodes),
-            "canonicalNodeCount": len(canonical),
+            "canonicalNodeCount": len(canonical) + 3,
             "physicalNodeCount": len(physical),
         },
         "root": "Entity",

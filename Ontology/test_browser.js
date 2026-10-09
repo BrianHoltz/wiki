@@ -200,7 +200,15 @@ async function main() {
     if (data.source?.upperOntology) {
       assert.equal(data.source.upperOntology, "Ontology/Ontology.md#upper-ontologies", `${page}: stale upper-ontology link`);
     }
-    if (page === "index.html") assert.equal(assertDataIntegrity(data).source.name, "My Ontology");
+    if (page === "index.html") {
+      const canonical = assertDataIntegrity(data);
+      assert.equal(canonical.source.name, "My ontology");
+      const nodes = new Map(canonical.nodes.map((node) => [node.id, node]));
+      assert.deepEqual(nodes.get("Object").children, ["Item", "Collection", "Region", "Agent", "SelfConnectedObject"]);
+      assert.deepEqual(nodes.get("Item").children, ["AbioticObject", "BiologicalObject", "Artifact"]);
+      assert.match(nodes.get("Agent").definition, /^To be moved —/);
+      assert.match(nodes.get("SelfConnectedObject").definition, /^To be moved —/);
+    }
     sources.push(await testBrowser(page, data, query, expected));
   }
   for (const [index, source] of sources.entries()) {
