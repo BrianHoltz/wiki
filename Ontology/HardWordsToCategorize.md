@@ -30,6 +30,40 @@
 | specificallyDependentContinuant |  |  |  |  |  |  |
 | substance | ✅ |  | ✅ |  |  |  |
 | thing |  |  |  |  |  |  |
+| Biology |  |  |  |  |  |  |
+| amniotes |  |  |  |  |  |  |
+| amoebozoa |  |  |  |  |  |  |
+| amphibians |  |  |  |  |  |  |
+| animals |  |  |  |  |  |  |
+| archaea |  |  |  |  |  | ✅ |
+| archaeplastida |  |  |  |  |  |  |
+| archosaurs |  |  |  |  |  |  |
+| ascomycota |  |  |  |  |  |  |
+| bacteria |  |  |  |  |  | ✅ |
+| basidiomycota |  |  |  |  |  |  |
+| bilaterians |  |  |  |  |  |  |
+| birds |  |  |  |  |  |  |
+| bryophytes |  |  |  |  |  |  |
+| chordates |  |  |  |  |  |  |
+| conifers |  |  |  |  |  |  |
+| crocodilians |  |  |  |  |  |  |
+| deuterostomes |  |  |  |  |  |  |
+| dikarya |  |  |  |  |  |  |
+| dinosaurs |  |  |  |  |  |  |
+| echinoderms |  |  |  |  |  |  |
+| eudicots |  |  |  |  |  |  |
+| eukaryota |  |  |  |  |  |  |
+| fungi |  |  |  |  |  |  |
+| gymnosperms |  |  |  |  |  |  |
+| mammals |  |  |  |  |  |  |
+| monocots |  |  |  |  |  |  |
+| opisthokonta |  |  |  |  |  |  |
+| protostomes |  |  |  |  |  |  |
+| sar |  |  |  |  |  |  |
+| sauropsids |  |  |  |  |  |  |
+| synapsids |  |  |  |  |  |  |
+| tetrapods |  |  |  |  |  |  |
+| vertebrates |  |  |  |  |  |  |
 | Difficult Words |  |  |  |  |  |  |
 | absence |  |  |  |  |  |  |
 | action |  |  |  |  |  |  |
