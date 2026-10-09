@@ -107,10 +107,20 @@ async function testBrowser(relativePath, dataPath, presetTarget, presetSearch, e
   assert(tree.innerHTML.includes("class=\"lineage-toggle\""), `${relativePath}: lineage arrow missing`);
   assert(tree.innerHTML.includes("class=\"meta\""), `${relativePath}: child counts missing`);
   assert.equal(examples.length, 3, `${relativePath}: search examples are missing`);
+  const searchRow = source.match(/<div class="search-row">([\s\S]*?)<\/div>/)?.[1] || "";
+  assert(searchRow.includes('<input id="search"'), `${relativePath}: search input is missing`);
+  assert(
+    searchRow.indexOf('id="search"') < searchRow.indexOf('class="search-examples"'),
+    `${relativePath}: search examples are not to the right of the search input`,
+  );
+  for (const query of ["Object", "primate", "Primate"]) {
+    assert(source.includes(`class="search-example" type="button" data-query="${query}"`), `${relativePath}: missing ${query} example`);
+  }
   for (const example of examples) {
     assert.equal(typeof example.onclick, "function", `${relativePath}: search example is not wired`);
     example.onclick();
     assert.equal(search.value, example.dataset.query, `${relativePath}: search example did not populate search`);
+    assert(results.innerHTML.includes("matches"), `${relativePath}: search example did not update results`);
   }
   assert(!source.includes("search-presets"), `${relativePath}: obsolete search suggestions remain`);
   assert(!tree.innerHTML.includes("Suggested question:"), `${relativePath}: generated question text rendered`);
@@ -200,6 +210,10 @@ async function main() {
   assert(!canonicalSource.includes("Canonical upper ontology with historical physical projection"));
   const sources = [];
   for (const [page, data, target, query, expected] of browsers) {
+    assert(!/historical physical projection/i.test(data.source?.overlayPolicy || ""), `${page}: stale overlay title remains`);
+    if (data.source?.upperOntology) {
+      assert.equal(data.source.upperOntology, "Ontology/Ontology.md#upper-ontologies", `${page}: stale upper-ontology link`);
+    }
     if (page === "index.html") assert.equal(assertDataIntegrity(data).source.name, "My Ontology");
     sources.push(await testBrowser(page, data, target, query, expected));
   }

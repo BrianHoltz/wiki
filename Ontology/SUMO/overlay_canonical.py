@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Replace the SUMO upper ontology while retaining its physical projection."""
+"""Overlay SUMO data with the project's canonical ontology."""
 
 from __future__ import annotations
 
@@ -289,10 +289,10 @@ def overlay(input_path: Path, output_path: Path) -> None:
     output = {
         "source": {
             "name": "My Ontology",
-            "upperOntology": "Ontology/Ontology.md#upper-ontology",
+            "upperOntology": "Ontology/Ontology.md#upper-ontologies",
             "overlayPolicy": (
                 "Use the project canonical Entity/RealizedEntity/AbstractEntity/Property/Relation "
-                "projection while retaining the historical physical descendants."
+                "projection with source-linked descendants."
             ),
         },
         "stats": {
