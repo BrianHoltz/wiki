@@ -76,6 +76,183 @@ project, not by scientific authority alone:
 - [TimeTree](https://timetree.org/) — useful for evolutionary relationships
   and divergence context, not as the visible noun hierarchy.
 
+#### Online biological taxonomies
+
+These resources are the strongest available prior art for extending the
+organism portion of a general noun hierarchy. None is a complete general
+ontology: they optimize taxonomic identity, scientific names, synonymy, and
+research interoperability rather than familiar labels or balanced gameplay.
+
+##### Catalogue of Life
+
+- **Origin:** an international taxonomic data initiative launched in 2001,
+  coordinated through the Species 2000 and Integrated Taxonomic Information
+  System communities and now hosted by the Catalogue of Life partnership.
+- **Current status:** active and release-based. The [Catalogue of Life
+  releases](https://www.catalogueoflife.org/data/download) distinguish a
+  verified Base Release from a broader Extended Release.
+- **Node count:** release-dependent; the current catalog reports millions of
+  accepted species and names, with counts varying by release and inclusion
+  policy. Use the release metadata rather than a timeless number.
+- **Prominence proxy:** widely used as a global checklist and taxonomic
+  reference, with expert-verified coverage and downloadable releases.
+- **Fit:** the best initial authority for accepted organism names and
+  high-level taxonomic placement. It should supply biological structure while
+  the curated tree supplies playable common-language grouping.
+
+##### GBIF Backbone Taxonomy
+
+- **Origin:** built by the Global Biodiversity Information Facility, an
+  international intergovernmental biodiversity-data infrastructure founded in
+  2001.
+- **Current status:** active, versioned, and designed to normalize names from
+  many biodiversity datasets. See the
+  [GBIF Backbone Taxonomy](https://www.gbif.org/dataset/7ddf754f-d193-4cc9-b351-99906754a03b).
+- **Node count:** release-dependent and measured in names, taxa, and
+  synonymized records rather than one fixed class count.
+- **Prominence proxy:** GBIF is a major global biodiversity data network; its
+  backbone is used for occurrence-data name matching across a large
+  publishing ecosystem.
+- **Fit:** excellent for resolving common names and synonyms to scientific
+  taxa and for finding candidate organisms. It is more of a cross-dataset
+  nomenclatural backbone than a carefully curated game hierarchy.
+
+##### NCBI Taxonomy
+
+- **Origin:** developed by the National Center for Biotechnology Information
+  at the U.S. National Library of Medicine to organize organisms represented
+  in genetic and genomic databases.
+- **Current status:** active, continuously updated, and available through the
+  [NCBI Taxonomy database](https://www.ncbi.nlm.nih.gov/taxonomy).
+- **Node count:** release- and database-dependent; it contains hundreds of
+  thousands of scientific taxa and many sequence-associated records, with
+  counts exposed through NCBI's statistics and downloads.
+- **Prominence proxy:** it is embedded in GenBank, RefSeq, and other major
+  NCBI sequence resources, making it a standard computational taxonomy for
+  molecular biology.
+- **Fit:** authoritative for sequence-linked scientific identity and useful
+  for validating deep organism branches, but too technical and unevenly
+  familiar to serve as the visible game taxonomy.
+
+##### Open Tree of Life
+
+- **Origin:** an open-science collaboration funded by the U.S. National
+  Science Foundation and other partners, launched in the 2010s.
+- **Current status:** active research infrastructure combining a synthetic
+  tree with source taxonomies and stable taxon identifiers. Browse it at the
+  [Open Tree of Life](https://tree.opentreeoflife.org/).
+- **Node count:** release-dependent and measured in taxa and phylogenetic
+  relationships; the synthetic tree incorporates millions of named taxa from
+  contributing sources.
+- **Prominence proxy:** open APIs, stable identifiers, and published
+  computational methods make it a notable research platform for large-scale
+  comparative biology.
+- **Fit:** useful for scientifically coherent ancestry and for checking
+  extinct groups, including dinosaurs. It should be treated as a validation
+  and enrichment source, not copied wholesale into a one-page game tree.
+
+##### Integrated Taxonomic Information System (ITIS)
+
+- **Origin:** a U.S. and international interagency project established in the
+  1990s to provide authoritative taxonomic names and hierarchy.
+- **Current status:** active, maintained, and available through the
+  [ITIS database](https://www.itis.gov/).
+- **Node count:** release-dependent, with hundreds of thousands of taxonomic
+  names and records across included organism groups.
+- **Prominence proxy:** long-running government-supported identifiers and
+  reuse in biodiversity and environmental datasets.
+- **Fit:** a useful stable-name and rank authority, especially for
+  cross-checking Catalogue of Life and GBIF mappings. Its coverage and
+  scientific granularity are too specialized to define the whole game tree.
+
+##### World Register of Marine Species
+
+- **Origin:** an international marine-taxonomy initiative launched in 2007
+  and coordinated through the Flanders Marine Institute.
+- **Current status:** active, expert-managed, and release-based; see
+  [WoRMS](https://www.marinespecies.org/).
+- **Node count:** release-dependent, with hundreds of thousands of marine
+  taxa and names across accepted and synonymized records.
+- **Prominence proxy:** the principal global reference for marine organism
+  names and taxonomic status.
+- **Fit:** a high-quality specialized supplement for marine life, but not a
+  general organism root.
+
+#### Approachable cladistic and evolutionary trees
+
+The most useful biological prior art for v2 is not a single taxonomy copied
+verbatim. It is a scientifically defensible source tree paired with a
+deliberately compressed display. A cladistic source should be allowed to say
+that humans are sarcopterygian vertebrates and therefore nested within the
+broader evolutionary history of fishes, even though “fish” remains an
+everyday answer category. The visible game tree can collapse intermediate
+clades when they do not create a recognizable answer or a useful question,
+while retaining the omitted clades, ranks, and source identifiers in metadata.
+
+##### OneZoom Tree of Life Explorer
+
+- **Origin:** conceived in 2011, released as open-source software in 2012,
+  and maintained since 2015 by a UK charitable organization.
+- **Current status:** active, free, and designed explicitly for public
+  exploration. OneZoom uses a fractal, map-like interface so a very large
+  tree can be explored on one page; its current tree relies heavily on the
+  Open Tree of Life and mixes other declared sources. See the
+  [OneZoom explorer](https://www.onezoom.org/) and its
+  [data and methodology overview](https://www.onezoom.org/about.html).
+- **Node count:** the project is intended to display a million-tip-scale tree;
+  the exact visible count changes with its source-data release and display
+  configuration.
+- **Prominence proxy:** open-source software, a charitable organization,
+  collaboration with the Linnean Society, and published methods including
+  [Dynamic visualisation of million-tip trees](https://doi.org/10.1111/2041-210X.13766).
+- **Fit:** the best interface prior art for keeping a huge scientifically
+  grounded tree navigable. Its species-first display is too deep and
+  biological for the whole ontology, but its zoomed overview,
+  common names, images, and source links suggest how v2 can hide taxonomic
+  detail without discarding it.
+
+##### TimeTree
+
+- **Origin:** developed by Blair Hedges, Sudhir Kumar, and collaborators as a
+  public knowledge base for evolutionary relationships and divergence times;
+  the current major resource is TimeTree 5.
+- **Current status:** active research and teaching resource. The
+  [TimeTree site](https://timetree.org/about) combines published divergence
+  estimates and lets users explore the evolutionary timescale between taxa.
+- **Node count:** release-dependent; TimeTree 5 is a large species-level
+  synthesis rather than a compact hand-authored hierarchy. Its useful unit is
+  a dated relationship, not a game category.
+- **Prominence proxy:** TimeTree 5 is described in a 2022 article in
+  *Molecular Biology and Evolution*,
+  [An Expanded Resource for Species Divergence Times](https://doi.org/10.1093/molbev/msac174).
+- **Fit:** useful for validating evolutionary-history examples and explaining
+  why apparently different organisms are convergent rather than close
+  relatives. It should validate relationships and dates, not dictate every
+  visible v2 split.
+
+##### Recommended collapsed-clade pattern
+
+These resources support a three-layer design for the life portion of v2:
+
+- **Source layer:** retain the accepted scientific tree, including clades
+  that are important for statements such as “tetrapods are nested within
+  lobe-finned fishes.”
+- **Navigation layer:** retain only ancestors that create a useful
+  distinction, explain a notable organism, or keep the visible branch
+  intelligible. Collapse ranks such as some orders and families when all
+  selected descendants would otherwise form a one-child chain.
+- **Answer layer:** show familiar common names and notable clades such as
+  mammals, birds, marsupials, dinosaurs, coelacanths, and monotremes. Add a
+  short scientific note where everyday language hides a meaningful
+  relationship, rather than forcing the player to answer with a Latin clade.
+
+This is not permission to redraw evolutionary relationships for convenience.
+It is a presentation projection: source parentage, alternate placements,
+synonyms, and suppressed intermediate clades remain auditable. OneZoom is the
+strongest model for the browsing interaction; Open Tree of Life and Catalogue
+of Life remain the principal candidates for taxonomic validation; and TimeTree
+is the best supplement for evolutionary-history and divergence-time context.
+
 #### Single-pane and compressed tree renders
 
 The previous list was not responsive to the requirement. The intended format
@@ -263,180 +440,54 @@ snapshot-dependent; links are the authoritative places to refresh them.
   reference point for lexical-semantic systems.
 - **Fit:** best initial canonical backbone for common noun gameplay.
 
-### Ontology4 upper-ontology survey
+### Upper ontologies
 
-The [Ontology4 upper-ontology index](https://www.ontology4.us/english/Ontologies/Upper-Ontologies/)
-collects several historically important approaches: Aristotle, Sowa, Cyc,
-SUMO, Schema.org, and the Ontological Sextett. The Sextett page also links
-the proposed UMO. Ontology4 is useful as a comparative visual catalog, but
-its pages are adaptations and diagrams rather than authoritative releases of
-the underlying ontologies. The following entries evaluate the linked
-approaches against this project's specific goal: a familiar, navigable,
-question-oriented noun hierarchy.
+These systems are design prior art, not replacements for the canonical tree.
+They contribute distinctions, metadata patterns, validation methods, or
+coverage; none should dictate the visible hierarchy wholesale.
 
-#### Aristotle's categories
+- **Aristotle's Categories:** substance, quantity, quality, relation, place,
+  time, position, state, action, and passion. Useful as a sanity check that
+  things, properties, relations, and events are not conflated.
+- **Sowa's Knowledge Representation Ontology:** a lattice of physical and
+  abstract, independent, relative, and mediating entities, including objects,
+  processes, schemas, scripts, situations, and descriptions. Useful as a
+  typed overlay, not a tree.
+- **Cyc/OpenCyc:** classes, individuals, predicates, rules, exceptions, and
+  context-sensitive microtheories. Useful for common-sense relations, but too
+  large and access-constrained for the visible browser.
+- **SUMO:** a formal hierarchy of entities, objects, processes, attributes, and
+  relations with axioms and WordNet mappings. Best formal validation backbone;
+  project it to one display parent rather than showing it raw.
+- **Schema.org:** practical types for people, organizations, places, products,
+  events, creative works, medical entities, and intangible things. Useful for
+  contemporary labels and aliases, but shallow and web-oriented.
+- **BFO:** continuants, occurrents, material entities, processes, qualities,
+  roles, functions, dispositions, and sites. Useful for principled type checks.
+- **DOLCE:** endurants, perdurants, qualities, regions, abstracts, and social
+  objects. Useful for linguistic and cognitive distinctions.
+- **GFO and UFO:** continuants, presentials, processes, events, objects,
+  dispositions, situations, roles, relators, qualities, and social facts.
+  Useful comparison families for time and dependence.
+- **OntoClean:** rigidity, identity, unity, and dependence as tests for whether
+  a proposed subclass relation is semantically defensible.
+- **gist and PROTON:** compact practical upper vocabularies for things,
+  people, organizations, events, places, information, and abstract concepts.
+  Useful candidates for interoperable metadata.
+- **Roget, WordNet, FrameNet, and Propædia:** lexical neighborhoods, synsets,
+  frames, and knowledge domains. Useful enrichment sources, not `is-a` roots.
+- **RDF/RDFS, OWL, Common Logic, and SHACL:** graph, vocabulary, logic, and
+  validation infrastructure. They support the data model rather than define
+  the visible noun tree.
+- **Mereology, social ontology, and process ontology:** part-whole,
+  institution, role, norm, event, activity, and change distinctions that the
+  tree should preserve as typed relations or facets.
 
-- **Source:** [Ontology4's Aristotle page](https://www.ontology4.us/english/Ontologies/Upper-Ontologies/Aristotle%20Ontology/index.html)
-  and the [historical text](https://classics.mit.edu/Aristotle/categories.html).
-- **What it is:** a philosophical account of categories of being and
-  predication, traditionally including substance, quantity, quality,
-  relation, place, time, position, state, action, and passion.
-- **Structure:** a small conceptual partition, not a deep `is-a` hierarchy.
-  It separates entities from properties, relations, and event-like
-  predicates, but does not supply ordinary leaves such as `animal → mammal →
-  dog`.
-- **Status and access:** the historical work is public domain; the Ontology4
-  rendering is a modern adaptation with no clearly stated independent release
-  or machine-readable distribution.
-- **Fit:** low as the game hierarchy, medium as a design sanity check.
-  Aristotle can remind us to distinguish things, qualities, relations, and
-  events, but “substance” is far too broad and abstract to be a useful
-  player-facing branch.
-
-#### Sowa's KR ontology
-
-- **Source:** [Sowa's top-level ontology](https://www.jfsowa.com/ontology/toplevel.htm)
-  and [Ontology4's Sowa page](https://www.ontology4.us/english/Ontologies/Upper-Ontologies/Sowa%20Ontology/index.html).
-- **What it is:** a formal synthesis influenced by Peirce and Whitehead,
-  organized around distinctions such as independent, relative, and mediating;
-  physical and abstract; and continuant and occurrent.
-- **Structure:** a lattice or diamond rather than a tree, with categories such
-  as object, process, schema, script, participation, description, situation,
-  reason, and purpose. Its formal combinations are useful for knowledge
-  representation but do not naturally become familiar questions.
-- **Status and access:** maintained primarily as scholarly explanatory web
-  material rather than as a current, populated, independently versioned
-  ontology release. The source page is openly viewable; licensing for
-  derivative diagrams and text should be checked before redistribution.
-- **Fit:** low to medium. It is a useful internal type system if the game
-  expands beyond nouns into events, properties, and relations, but its
-  categories are not suitable as ordinary player language.
-
-#### Cyc and OpenCyc
-
-- **Source:** [Cyc](https://cyc.com/), the [Cyc FAQ](https://cyc.com/faq/),
-  and [Ontology4's Cyc rendering](https://www.ontology4.us/english/Ontologies/Upper-Ontologies/Cyc%20Ontology/index.html).
-- **What it is:** a large formal common-sense knowledge base, inference
-  system, and ontology rather than merely an upper-level taxonomy. It
-  represents classes, individuals, predicates, rules, and contextual
-  microtheories.
-- **Structure:** rich logical assertions and relations, with collections,
-  functions, predicates, and context-sensitive knowledge. It can express
-  exceptions and practical facts that a simple hierarchy cannot.
-- **Status and access:** Cycorp remains commercially active, but the current
-  Cyc system and knowledge base are not an unrestricted public ontology
-  download. Historical OpenCyc material should not be confused with the
-  current commercial system, and its exact license and currency require
-  verification before reuse.
-- **Fit:** medium for symbolic reasoning, low for a lightweight game tree.
-  Cyc could inspire rules such as typical uses or contexts, but its scale,
-  engineering burden, and access model make it a poor incumbent replacement.
-
-#### SUMO
-
-- **Source:** [Ontology4's SUMO page](https://www.ontology4.us/english/Ontologies/Upper-Ontologies/Sumo%20Ontology/index.html),
-  the [SUMO project](https://www.ontologyportal.org/), and its active
-  [public repository](https://github.com/ontologyportal/sumo).
-- **What it is:** the Suggested Upper Merged Ontology, combining a formal
-  upper ontology with broad domain ontologies, logical axioms, relations, and
-  WordNet-related mappings.
-- **Structure:** a substantial `subclass` hierarchy plus `instance`,
-  part-whole, temporal, spatial, and other relations. It covers animals,
-  anatomy, vehicles, geography, artifacts, processes, and culture, but uses
-  multiple inheritance and formal relations that do not fit a strict
-  single-parent browser.
-- **Status and access:** actively maintained in a public repository. The
-  repository is inspectable and substantially more current and reproducible
-  than the Ontology4 diagram. Licensing must be checked per file and
-  subcomponent, especially where WordNet-derived data is involved.
-- **Fit:** high as a semantic and provenance backbone, medium as direct game
-  vocabulary. SUMO is the best candidate from the Ontology4 list for a
-  structured improvement vector, but it should be projected into a curated
-  game tree rather than displayed raw.
-
-#### Schema.org
-
-- **Source:** [Ontology4's Schema.org page](https://www.ontology4.us/english/Ontologies/Upper-Ontologies/schema.org%20Ontology/index.html),
-  [Schema.org](https://schema.org/), its [latest vocabulary](https://schema.org/version/latest/),
-  and the [source repository](https://github.com/schemaorg/schemaorg).
-- **What it is:** a pragmatic web-markup vocabulary jointly developed for
-  structured data understood by search engines, not a universal formal upper
-  ontology.
-- **Structure:** a human-readable `Thing` hierarchy with branches such as
-  Person, Organization, Place, Product, Event, CreativeWork, MedicalEntity,
-  and Intangible, plus many properties and enumerations. It has multiple
-  inheritance and web/commerce/media/medical biases.
-- **Status and access:** actively released and openly inspectable through the
-  official site and repository. Its release process and licensing information
-  are documented by the project, but the exact terms should be preserved when
-  redistributing derived data.
-- **Fit:** medium-high for contemporary familiar labels and broad category
-  discovery, low as a complete noun ontology. It is especially useful for
-  people, places, products, food, media, vehicles, and events, but it omits
-  much of the ordinary physical and biological world that v1 handles well.
-
-#### Ontological Sextett
-
-- **Source:** [Ontology4's Sextett page](https://www.ontology4.us/english/Ontologies/Upper-Ontologies/Sextett%20Ontology/index.html).
-- **What it is:** a proposed extension of the classical ontological
-  rectangle, notably adding explicit relationships so statements such as
-  “Picasso painted Guernica” are not forced into an entity-only taxonomy.
-- **Structure:** a compact set of primitives involving entities, attributes,
-  and relations. The page does not establish a complete, independently
-  standardized machine-readable hierarchy.
-- **Status and access:** a static Ontology4 proposal with no evident current
-  release process, standards body, or independent implementation. No clear
-  redistribution license is stated.
-- **Fit:** low to medium as modeling inspiration, low as content. Its
-  strongest contribution is the reminder that relations and attributes should
-  be stored alongside the noun hierarchy rather than confused with noun
-  categories.
-
-#### UMO
-
-- **Source:** [Ontology4's UMO page](https://www.ontology4.us/english/Ontologies/Upper-Ontologies/UMO%20Ontology/index.html);
-  it is introduced from the [Sextett page](https://www.ontology4.us/english/Ontologies/Upper-Ontologies/Sextett%20Ontology/index.html).
-- **What it is:** an “upmost minimal ontology,” intended to extend the
-  Sextett with relations while reducing category names to base symbols.
-- **Structure:** minimal primitives, explicit relationships, attributes, and
-  superclass inheritance. The page illustrates distinguishing things using
-  attributes such as age, color, weight, nationality, and height.
-- **Status and access:** a static Ontology4 proposal without an evident
-  versioned release, active standards process, maintained repository, or
-  independent user community. Licensing is not clearly stated.
-- **Fit:** low as a ready-made hierarchy, medium as a custom-engineering
-  pattern. UMO's attribute emphasis could inform question generation, but it
-  supplies neither the familiar nouns nor the reviewed parentage needed by
-  this project.
-
-#### Ontology4 recommendation
-
-None of these upper ontologies should replace the incumbent v1 tree directly.
-The best alternative is **SUMO as a semantic backbone**, with Schema.org as a
-secondary source for contemporary human-facing categories and WordNet as the
-lexical bridge. The best improvement vector is therefore layered:
-
-- retain v1's player-facing top-level organization and hand-reviewed
-  discriminators;
-- map v1 leaves and future candidates to SUMO classes where a stable semantic
-  anchor exists;
-- use SUMO relations and axioms as validation and metadata, not as visible
-  unary or multi-parent branches;
-- use Schema.org and WordNet to discover familiar labels, aliases, and
-  missing everyday siblings; and
-- preserve all source identifiers and alternate parents in a manifest while
-  projecting only a balanced single-parent navigation tree.
-
-This is an improvement in auditability and scientific consistency, not a
-reason to let SUMO dictate the game structure. The incumbent's main advantage
-is precisely that its visible questions were designed for play rather than
-inherited from a formal ontology.
-
-Product-type systems are another important prior-art family. The detailed
-comparison appears below as a prior-art supplement to the upper-layer
-discussion; its placement is editorial, not architectural. These systems
-inform physical-artifact vocabulary and coverage audits, never the upper
-ontology's root categories.
+The combined design lesson is to keep entity kinds, properties, relations,
+processes, information, and formal structures distinct; retain time,
+dependence, part-whole, and social context as metadata; and use formal
+ontologies to audit definitions and mappings rather than to supply the whole
+player-facing branch order.
 
 ### Mathematics
 
@@ -488,184 +539,7 @@ functions`, `Recursive functions`, `Automata`, `Formal languages`, and
 classes.”
 
 
-### Upper-ontology approaches
-
-The following are the principal named approaches worth evaluating before we
-invent a new arrangement. They are not interchangeable: some are formal
-upper ontologies, some are domain or linguistic ontologies, some are
-foundational theories, and some are modeling methodologies. This list names
-the players without yet ranking their suitability or reproducing their
-structures.
-
-### Formal and foundational upper ontologies
-
-- **Aristotle's Categories** — the classical inventory of substance,
-  quantity, quality, relation, place, time, position, state, action, and
-  passion.
-- **Cyc / OpenCyc** — a large common-sense knowledge base with collections,
-  individuals, predicates, rules, and context-sensitive microtheories.
-- **Suggested Upper Merged Ontology (SUMO)** — a broad formal ontology with
-  entities, objects, processes, attributes, relations, axioms, and mappings.
-- **Sowa's Knowledge Representation Ontology** — a Peircean and
-  Whitehead-influenced lattice of physical, abstract, independent, relative,
-  and mediating categories.
-- **DOLCE (Descriptive Ontology for Linguistic and Cognitive Engineering)** —
-  a philosophically and linguistically motivated ontology distinguishing
-  endurants, perdurants, qualities, regions, abstracts, and social objects.
-- **BFO (Basic Formal Ontology)** — a realist upper ontology centered on
-  continuants, occurrents, material entities, processes, qualities, roles,
-  functions, dispositions, and sites; widely used in biomedical OBO
-  ontologies.
-- **GFO (General Formal Ontology)** — a broad foundational ontology with
-  continuants, presentials, processes, time, space, levels of reality,
-  categories, and formal relations.
-- **UFO (Unified Foundational Ontology)** — a foundational ontology for
-  conceptual modeling, especially objects, events, dispositions, situations,
-  roles, relators, qualities, and social commitments.
-- **OntoClean** — a methodology rather than a complete ontology; it uses
-  meta-properties such as rigidity, identity, unity, and dependence to audit
-  taxonomic commitments.
-- **gist** — a compact practical upper ontology emphasizing things,
-  organizations, people, events, places, physical and abstract entities, and
-  reusable semantic patterns.
-- **PROTON (Proto Ontology)** — a lightweight upper ontology designed for
-  broad semantic-web interoperability, including entities, events, agents,
-  information, and abstract concepts.
-- **Basic Formal Ontology 2020 and the OBO Foundry principles** — a current
-  ecosystem around BFO that adds governance, orthogonality, textual
-  definitions, identifiers, and domain-ontology interoperability.
-
-### Philosophical and metaphysical families
-
-- **Aristotelian substance-and-accident ontology** — substances bear
-  qualities, relations, quantities, and activities.
-- **Four-Category Ontology** — a modern Aristotelian framework distinguishing
-  substantial universals, substantial particulars, non-substantial
-  universals, and non-substantial particulars.
-- **Three-dimensional endurance ontology** — objects persist by being wholly
-  present at successive times.
-- **Four-dimensional perdurance ontology** — objects are extended through
-  time as temporal parts or spacetime worms.
-- **Process ontology** — processes, events, activities, and change are
-  fundamental rather than secondary to enduring objects.
-- **Trope theory** — particularized properties or property instances are
-  fundamental and resemblance classes can form universals.
-- **Mereology and formal mereotopology** — part, whole, overlap, boundary,
-  connection, and location provide a foundation for physical and spatial
-  organization.
-- **Realist, nominalist, conceptualist, and structuralist theories of
-  universals** — competing accounts of whether kinds and properties exist
-  independently, are names, are concepts, or are patterns of structure.
-- **Social ontology** — institutions, roles, statuses, norms, collective
-  intentionality, and institutional facts, associated with work by Searle,
-  Gilbert, Tuomela, and related traditions.
-
-### Linguistic and cognitive organization systems
-
-- **Roget's Thesaurus** — a broad conceptual-semantic classification of
-  language organized into major classes, divisions, sections, and synonym
-  neighborhoods.
-- **WordNet** — a lexical ontology of synsets connected mainly by
-  hypernymy, meronymy, entailment, and related semantic relations.
-- **FrameNet** — a frame-semantic resource organizing meanings around
-  situations, participants, roles, and lexical realizations.
-- **Propædia** — Encyclopaedia Britannica's knowledge classification,
-  organized around domains, disciplines, and the major branches of human
-  knowledge.
-- **The Generalized Upper Model (GUM)** — a linguistically motivated
-  ontology for semantic interpretation, including situations, processes,
-  objects, qualities, and roles.
-- **Jackendoff's conceptual semantics** — a theory of conceptual structure
-  involving events, things, paths, places, properties, states, and
-  argument structures.
-- **Cognitive linguistics and image-schema systems** — recurring structures
-  such as containment, source-path-goal, part-whole, force, and balance.
-- **The Lexical Markup Framework and ISO terminology standards** — standards
-  for representing lexical entries, concepts, designations, definitions, and
-  terminology systems rather than a complete upper ontology.
-
-### Knowledge-representation and semantic-web standards
-
-- **Common Logic (ISO/IEC 24707)** — a logic framework for exchanging
-  ontologies and theories across first-order and related logical notations.
-- **RDF, RDFS, and OWL** — W3C graph, vocabulary, and description-logic
-  standards for classes, properties, individuals, restrictions, and
-  inference.
-- **Schema.org** — a pragmatic web vocabulary covering things, actions,
-  people, organizations, places, products, events, creative works, and
-  intangible entities.
-- **SHACL** — a constraint language for validating RDF graphs; useful for
-  enforcing the data model even though it is not an upper ontology.
-- **CIDOC Conceptual Reference Model (CIDOC CRM)** — an event-and-history
-  ontology for cultural heritage, documentation, people, objects, places,
-  events, and provenance.
-- **ISO 15926** — a reference-data and lifecycle model for process plants and
-  engineering information, notable for its treatment of objects, activities,
-  temporal parts, and relationships.
-- **SIOC, FOAF, and related social-web vocabularies** — reusable models for
-  people, accounts, documents, communities, and online relations.
-- **OBO Foundry ontologies** — a coordinated family of domain ontologies
-  using shared identifiers, BFO alignment, and explicit relations.
-
-### Mathematical and computational foundations
-
-- **Zermelo-Fraenkel set theory with Choice (ZFC)** — the dominant classical
-  set-theoretic foundation for mathematics.
-- **NBG and Morse-Kelley class theories** — set theories that make classes
-  explicit alongside sets, useful when distinguishing collections from
-  proper classes.
-- **Structural set theory and ETCS** — category-oriented alternatives to
-  element-first set theory, emphasizing sets through maps and structure.
-- **Simple type theory and the typed lambda calculus** — foundations based on
-  types, terms, functions, and typed abstraction.
-- **Dependent type theory** — a foundation in which types may depend on
-  values and propositions can be represented as types.
-- **Martin-Löf type theory and the Calculus of Constructions** — influential
-  constructive and proof-assistant foundations.
-- **Homotopy Type Theory and the Univalent Foundations program** — a
-  type-theoretic foundation treating identity and equivalence structurally.
-- **Category theory** — a structural language of objects, morphisms,
-  composition, functors, natural transformations, limits, and equivalences.
-- **Topos theory** — category-theoretic foundations in which a topos behaves
-  like a generalized universe of sets and supports internal logic.
-- **Universal algebra and algebraic specification** — structures defined by
-  signatures, operations, equations, and homomorphisms.
-- **Model theory** — the distinction among formal languages, theories,
-  structures, interpretations, satisfaction, and models.
-- **Formal methods and proof assistants** — systems such as Lean, Coq, Agda,
-  Isabelle, and HOL that make types, terms, proofs, definitions, and
-  checked derivations computationally explicit.
-- **Programming-language type systems** — nominal, structural, algebraic,
-  refinement, effect, capability, and dependent types; Scala is a useful
-  practical example but not itself a universal ontology.
-
-### Broad domain and scientific frameworks
-
-- **Cognitive Atlas and schema-based cognitive ontologies** — concepts and
-  relations for mental functions, tasks, and brain measurements.
-- **Gene Ontology** — a controlled vocabulary organized around molecular
-  function, biological process, and cellular component.
-- **Environment Ontology and Phenotype ontologies** — examples of
-  interoperable domain systems for environments, traits, qualities, and
-  biological observations.
-- **CIDOC CRM and FRBR / IFLA Library Reference Model** — event, work,
-  expression, manifestation, item, agent, and bibliographic identity
-  frameworks.
-- **Geographic information ontologies and GeoSPARQL** — places, geometries,
-  coordinate reference systems, spatial relations, and geographic features.
-- **BFO-aligned biomedical ontologies** — a large practical test of whether
-  continuant, occurrent, quality, role, function, and disposition categories
-  can support detailed domain modeling.
-- **Systems engineering and product-lifecycle reference models** — examples
-  such as ISO 15926, STEP, and SysML that organize artifacts, functions,
-  requirements, states, activities, and system decomposition.
-
-This roster is intentionally broader than the Ontology4 catalog. The next
-research pass should compare the formal definitions, licensing, maintenance,
-machine-readable availability, and coverage of these players before selecting
-which structures deserve a detailed synthesis study.
-
-### Compact upper-level trees
+### Upper Ontology Excerpts
 
 #### Our ontology
 
@@ -785,45 +659,6 @@ Being: that which is said to be or exists in any category.
         ├── Natural body: a body arising by nature.
         └── Artificial body: a body produced by art or craft.
 ```
-
-### SUMO PDF tree projection and unary-node policy
-
-The [SUMO browser](SUMO/index.html) is rebuilt from the nodes and directed blue
-arcs in the [official Ontology4 SUMO PDF](https://www.ontology4.us/download/dot/SumoOntology.pdf),
-not from the current KIF hierarchy. The checked-in
-[`pdf-graph.json`](SUMO/pdf-graph.json) records the extracted 518 PDF nodes and
-554 vector arcs. Unary nodes are first-class citizens: a node having one child
-is not, by itself, evidence of a bad tree or a reason to collapse it.
-
-For each PDF node with multiple incoming arcs, the projection repeatedly
-removes the longest measured incoming arc until one primary parent remains.
-Removed parents remain visible as alternate cross-links. This makes `Object`
-have exactly the PDF's four visible children: `Agent`, `Collection`, `Region`,
-and `SelfConnectedObject`.
-
-`Entity` is now the only root. The four disconnected PDF labels receive
-explicit provisional placements: `List → Set`, `Number → Quantity`,
-`Predicate → Proposition`, and `Sentence → Proposition`. These are marked
-provisional in the browser and data rather than being misrepresented as
-PDF-derived edges. `Number` therefore sits in the abstract quantity branch,
-near the truth-value branch without being made a child of `True` or `False`.
-
-The projection contains 518 nodes and 517 primary edges, with 39 nodes having
-alternate parents and 51 unary nodes. The [complete unary-node inventory](SUMO/unary-nodes.md)
-is retained as a data reference, not a cleanup queue.
-
-The reproducible extraction recipe is:
-
-- download the PDF and record its URL and SHA-256 in
-  [`snapshot-manifest.json`](SUMO/snapshot-manifest.json);
-- convert it with `pdftocairo -svg` and `pdftotext -bbox`;
-- run [`extract_pdf_edges.py`](SUMO/extract_pdf_edges.py) to map vector arc
-  endpoints to PDF labels and measure each directed arc;
-- run [`generate_sumo.py`](SUMO/generate_sumo.py) with `--pdf-graph`;
-- for multiple incoming arcs, remove the longest repeatedly until one primary
-  parent remains, retaining removed parents as alternate cross-links; and
-- apply only the four explicitly marked provisional placements needed to keep
-  `Entity` as the sole root.
 
 ### Wikidata
 
@@ -1003,183 +838,6 @@ SUMO/PDF-derived tree. Amazon and Walmart material can be used for internal
 audits where authorized, but no proprietary taxonomy content should be copied
 into the public repository without permission.
 
-### Online biological taxonomies
-
-These resources are the strongest available prior art for extending the
-organism portion of a general noun hierarchy. None is a complete general
-ontology: they optimize taxonomic identity, scientific names, synonymy, and
-research interoperability rather than familiar labels or balanced gameplay.
-
-#### Catalogue of Life
-
-- **Origin:** an international taxonomic data initiative launched in 2001,
-  coordinated through the Species 2000 and Integrated Taxonomic Information
-  System communities and now hosted by the Catalogue of Life partnership.
-- **Current status:** active and release-based. The [Catalogue of Life
-  releases](https://www.catalogueoflife.org/data/download) distinguish a
-  verified Base Release from a broader Extended Release.
-- **Node count:** release-dependent; the current catalog reports millions of
-  accepted species and names, with counts varying by release and inclusion
-  policy. Use the release metadata rather than a timeless number.
-- **Prominence proxy:** widely used as a global checklist and taxonomic
-  reference, with expert-verified coverage and downloadable releases.
-- **Fit:** the best initial authority for accepted organism names and
-  high-level taxonomic placement. It should supply biological structure while
-  the curated tree supplies playable common-language grouping.
-
-#### GBIF Backbone Taxonomy
-
-- **Origin:** built by the Global Biodiversity Information Facility, an
-  international intergovernmental biodiversity-data infrastructure founded in
-  2001.
-- **Current status:** active, versioned, and designed to normalize names from
-  many biodiversity datasets. See the
-  [GBIF Backbone Taxonomy](https://www.gbif.org/dataset/7ddf754f-d193-4cc9-b351-99906754a03b).
-- **Node count:** release-dependent and measured in names, taxa, and
-  synonymized records rather than one fixed class count.
-- **Prominence proxy:** GBIF is a major global biodiversity data network; its
-  backbone is used for occurrence-data name matching across a large
-  publishing ecosystem.
-- **Fit:** excellent for resolving common names and synonyms to scientific
-  taxa and for finding candidate organisms. It is more of a cross-dataset
-  nomenclatural backbone than a carefully curated game hierarchy.
-
-#### NCBI Taxonomy
-
-- **Origin:** developed by the National Center for Biotechnology Information
-  at the U.S. National Library of Medicine to organize organisms represented
-  in genetic and genomic databases.
-- **Current status:** active, continuously updated, and available through the
-  [NCBI Taxonomy database](https://www.ncbi.nlm.nih.gov/taxonomy).
-- **Node count:** release- and database-dependent; it contains hundreds of
-  thousands of scientific taxa and many sequence-associated records, with
-  counts exposed through NCBI's statistics and downloads.
-- **Prominence proxy:** it is embedded in GenBank, RefSeq, and other major
-  NCBI sequence resources, making it a standard computational taxonomy for
-  molecular biology.
-- **Fit:** authoritative for sequence-linked scientific identity and useful
-  for validating deep organism branches, but too technical and unevenly
-  familiar to serve as the visible game taxonomy.
-
-#### Open Tree of Life
-
-- **Origin:** an open-science collaboration funded by the U.S. National
-  Science Foundation and other partners, launched in the 2010s.
-- **Current status:** active research infrastructure combining a synthetic
-  tree with source taxonomies and stable taxon identifiers. Browse it at the
-  [Open Tree of Life](https://tree.opentreeoflife.org/).
-- **Node count:** release-dependent and measured in taxa and phylogenetic
-  relationships; the synthetic tree incorporates millions of named taxa from
-  contributing sources.
-- **Prominence proxy:** open APIs, stable identifiers, and published
-  computational methods make it a notable research platform for large-scale
-  comparative biology.
-- **Fit:** useful for scientifically coherent ancestry and for checking
-  extinct groups, including dinosaurs. It should be treated as a validation
-  and enrichment source, not copied wholesale into a one-page game tree.
-
-#### Integrated Taxonomic Information System (ITIS)
-
-- **Origin:** a U.S. and international interagency project established in the
-  1990s to provide authoritative taxonomic names and hierarchy.
-- **Current status:** active, maintained, and available through the
-  [ITIS database](https://www.itis.gov/).
-- **Node count:** release-dependent, with hundreds of thousands of taxonomic
-  names and records across included organism groups.
-- **Prominence proxy:** long-running government-supported identifiers and
-  reuse in biodiversity and environmental datasets.
-- **Fit:** a useful stable-name and rank authority, especially for
-  cross-checking Catalogue of Life and GBIF mappings. Its coverage and
-  scientific granularity are too specialized to define the whole game tree.
-
-#### World Register of Marine Species
-
-- **Origin:** an international marine-taxonomy initiative launched in 2007
-  and coordinated through the Flanders Marine Institute.
-- **Current status:** active, expert-managed, and release-based; see
-  [WoRMS](https://www.marinespecies.org/).
-- **Node count:** release-dependent, with hundreds of thousands of marine
-  taxa and names across accepted and synonymized records.
-- **Prominence proxy:** the principal global reference for marine organism
-  names and taxonomic status.
-- **Fit:** a high-quality specialized supplement for marine life, but not a
-  general organism root.
-
-### Approachable cladistic and evolutionary trees
-
-The most useful biological prior art for v2 is not a single taxonomy copied
-verbatim. It is a scientifically defensible source tree paired with a
-deliberately compressed display. A cladistic source should be allowed to say
-that humans are sarcopterygian vertebrates and therefore nested within the
-broader evolutionary history of fishes, even though “fish” remains an
-everyday answer category. The visible game tree can collapse intermediate
-clades when they do not create a recognizable answer or a useful question,
-while retaining the omitted clades, ranks, and source identifiers in metadata.
-
-#### OneZoom Tree of Life Explorer
-
-- **Origin:** conceived in 2011, released as open-source software in 2012,
-  and maintained since 2015 by a UK charitable organization.
-- **Current status:** active, free, and designed explicitly for public
-  exploration. OneZoom uses a fractal, map-like interface so a very large
-  tree can be explored on one page; its current tree relies heavily on the
-  Open Tree of Life and mixes other declared sources. See the
-  [OneZoom explorer](https://www.onezoom.org/) and its
-  [data and methodology overview](https://www.onezoom.org/about.html).
-- **Node count:** the project is intended to display a million-tip-scale tree;
-  the exact visible count changes with its source-data release and display
-  configuration.
-- **Prominence proxy:** open-source software, a charitable organization,
-  collaboration with the Linnean Society, and published methods including
-  [Dynamic visualisation of million-tip trees](https://doi.org/10.1111/2041-210X.13766).
-- **Fit:** the best interface prior art for keeping a huge scientifically
-  grounded tree navigable. Its species-first display is too deep and
-  biological for the whole ontology, but its zoomed overview,
-  common names, images, and source links suggest how v2 can hide taxonomic
-  detail without discarding it.
-
-#### TimeTree
-
-- **Origin:** developed by Blair Hedges, Sudhir Kumar, and collaborators as a
-  public knowledge base for evolutionary relationships and divergence times;
-  the current major resource is TimeTree 5.
-- **Current status:** active research and teaching resource. The
-  [TimeTree site](https://timetree.org/about) combines published divergence
-  estimates and lets users explore the evolutionary timescale between taxa.
-- **Node count:** release-dependent; TimeTree 5 is a large species-level
-  synthesis rather than a compact hand-authored hierarchy. Its useful unit is
-  a dated relationship, not a game category.
-- **Prominence proxy:** TimeTree 5 is described in a 2022 article in
-  *Molecular Biology and Evolution*,
-  [An Expanded Resource for Species Divergence Times](https://doi.org/10.1093/molbev/msac174).
-- **Fit:** useful for validating evolutionary-history examples and explaining
-  why apparently different organisms are convergent rather than close
-  relatives. It should validate relationships and dates, not dictate every
-  visible v2 split.
-
-#### Recommended collapsed-clade pattern
-
-These resources support a three-layer design for the life portion of v2:
-
-- **Source layer:** retain the accepted scientific tree, including clades
-  that are important for statements such as “tetrapods are nested within
-  lobe-finned fishes.”
-- **Navigation layer:** retain only ancestors that create a useful
-  distinction, explain a notable organism, or keep the visible branch
-  intelligible. Collapse ranks such as some orders and families when all
-  selected descendants would otherwise form a one-child chain.
-- **Answer layer:** show familiar common names and notable clades such as
-  mammals, birds, marsupials, dinosaurs, coelacanths, and monotremes. Add a
-  short scientific note where everyday language hides a meaningful
-  relationship, rather than forcing the player to answer with a Latin clade.
-
-This is not permission to redraw evolutionary relationships for convenience.
-It is a presentation projection: source parentage, alternate placements,
-synonyms, and suppressed intermediate clades remain auditable. OneZoom is the
-strongest model for the browsing interaction; Open Tree of Life and Catalogue
-of Life remain the principal candidates for taxonomic validation; and TimeTree
-is the best supplement for evolutionary-history and divergence-time context.
-
 ### Roget’s Thesaurus
 
 - **Origin:** Peter Mark Roget’s classification began in London in 1805 and
@@ -1212,6 +870,16 @@ is the best supplement for evolutionary-history and divergence-time context.
 - **Fit:** valuable for high-level distinctions such as object, process,
   attribute, and situation; too abstract and axiom-heavy for the default
   everyday noun page.
+
+### SUMO PDF projection
+
+The active SUMO browser is a projection of the official Ontology4 PDF graph,
+not the current KIF hierarchy. The checked-in graph contains 518 nodes and 554
+arcs. The display chooses one primary parent for multi-parent nodes, retains
+removed parents as alternate metadata, keeps unary nodes, and uses `Entity` as
+the only root. Four provisional placements connect otherwise disconnected
+labels: `List → Set`, `Number → Quantity`, `Predicate → Proposition`, and
+`Sentence → Proposition`.
 
 ### DBpedia
 
