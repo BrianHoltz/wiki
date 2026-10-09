@@ -312,6 +312,16 @@ def overlay(input_path: Path, output_path: Path) -> None:
         "To be moved — an object whose parts are connected."
     )
     records["SelfConnectedObject"]["definitionSource"] = "project editorial"
+    for identifier, definition in {
+        "Item": "An object distinguished as a single unit.",
+        "AbioticObject": "An item of nonbiological, nonartificial origin.",
+        "BiologicalObject": "An item constituted by or originating from biological activity.",
+        "Artifact": "An item intentionally produced or modified for a purpose.",
+        "Collection": "An object constituted by multiple members.",
+        "Region": "An object defined by spatial extent or boundaries.",
+    }.items():
+        records[identifier]["definition"] = definition
+        records[identifier]["definitionSource"] = "project editorial"
     parents["Object"] = ["RealizedEntity"]
     parents["Item"] = ["Object"]
     parents["AbioticObject"] = ["Item"]

@@ -206,6 +206,12 @@ async function main() {
       const nodes = new Map(canonical.nodes.map((node) => [node.id, node]));
       assert.deepEqual(nodes.get("Object").children, ["Item", "Collection", "Region", "Agent", "SelfConnectedObject"]);
       assert.deepEqual(nodes.get("Item").children, ["AbioticObject", "BiologicalObject", "Artifact"]);
+      assert.equal(nodes.get("Item").definition, "An object distinguished as a single unit.");
+      assert.equal(nodes.get("AbioticObject").definition, "An item of nonbiological, nonartificial origin.");
+      assert.equal(nodes.get("BiologicalObject").definition, "An item constituted by or originating from biological activity.");
+      assert.equal(nodes.get("Artifact").definition, "An item intentionally produced or modified for a purpose.");
+      assert.equal(nodes.get("Collection").definition, "An object constituted by multiple members.");
+      assert.equal(nodes.get("Region").definition, "An object defined by spatial extent or boundaries.");
       assert.match(nodes.get("Agent").definition, /^To be moved —/);
       assert.match(nodes.get("SelfConnectedObject").definition, /^To be moved —/);
     }
