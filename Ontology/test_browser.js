@@ -13,6 +13,7 @@ const browsers = [
   ["Propaedia/index.html", "Propaedia/ontology.json", "life", "part-3"],
   ["Rogets/index.html", "Rogets/ontology.json", "number", "roget-node-23"],
   ["Wikipedia/index.html", "Wikipedia/ontology.json", "geography", "Category:Geography"],
+  ["GPT/index.html", "GPT/ontology.json", "organism", "Organism"],
 ];
 
 function readData(relativePath) {
@@ -221,7 +222,7 @@ async function main() {
     assert.equal(scriptOf(source), canonicalScript, `${browsers[index][0]}: renderer differs from canonical browser`);
     assert.equal(source.match(/<style>([\s\S]*)<\/style>/)[1], canonicalStyle, `${browsers[index][0]}: layout differs from canonical browser`);
   }
-  console.log("Ontology browser tests passed for all six browsers.");
+  console.log("Ontology browser tests passed for all seven browsers.");
 }
 
 main().catch((error) => {

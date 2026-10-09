@@ -1,0 +1,5511 @@
+{
+  "source": {
+    "name": "GPT Ontology",
+    "description": "ChatGPT-generated ontology proposal",
+    "url": "ontology-tree.md"
+  },
+  "stats": {
+    "nodeCount": 555,
+    "projectedEdgeCount": 554,
+    "definitionCount": 555
+  },
+  "root": "Entity",
+  "rootNodes": [
+    "Entity"
+  ],
+  "nodes": [
+    {
+      "id": "Entity",
+      "label": "Entity",
+      "definition": "Anything admitted as a subject of reference or predication.",
+      "children": [
+        "RealizedEntity",
+        "AbstractEntity"
+      ]
+    },
+    {
+      "id": "RealizedEntity",
+      "label": "Realized entity",
+      "definition": "An entity individuated by its concrete occurrence, embodiment, or situated realization.",
+      "children": [
+        "Object",
+        "Region",
+        "Process",
+        "StateInstance",
+        "DependentFeature",
+        "SocialEntity"
+      ],
+      "notes": [
+        "Situated social and dependent entities are included. No universal present, atomistic substance metaphysics, or exclusively material embodiment is assumed."
+      ]
+    },
+    {
+      "id": "AbstractEntity",
+      "label": "Abstract entity",
+      "definition": "An entity individuated without reference to a particular concrete realization.",
+      "children": [
+        "AbstractStructure",
+        "MathematicalEntity",
+        "InformationContent",
+        "QuantityValue",
+        "QualityValue",
+        "PredicateSpecification",
+        "MeasurementUnit"
+      ],
+      "notes": [
+        "Abstract does not mean unreal, eternal, or causally inert by stipulation. These are content, structure, and predicate identity criteria; nominalist and realist interpretations remain open."
+      ]
+    },
+    {
+      "id": "Object",
+      "label": "Object",
+      "definition": "A realized entity identified by its organization or constitution rather than by an occurrence.",
+      "children": [
+        "Item",
+        "MaterialPortion",
+        "Collection",
+        "SocialObject",
+        "FieldConfiguration",
+        "InformationToken"
+      ],
+      "notes": [
+        "Organization-based individuation permits either three-dimensional or spacetime models. Canonical Object and Process descriptions are not declared disjoint."
+      ]
+    },
+    {
+      "id": "Item",
+      "label": "Item",
+      "definition": "An object unified as one constituent whole rather than by membership alone.",
+      "children": [
+        "NaturalObject",
+        "BioticObject",
+        "MaterialBody",
+        "Artifact"
+      ]
+    },
+    {
+      "id": "NaturalObject",
+      "label": "Natural object",
+      "definition": "An item whose kind identity does not require intentional production or modification.",
+      "children": [
+        "AbioticObject"
+      ]
+    },
+    {
+      "id": "AbioticObject",
+      "label": "Abiotic object",
+      "definition": "A natural object whose constitution does not derive from biological activity.",
+      "children": []
+    },
+    {
+      "id": "BioticObject",
+      "label": "Biotic object",
+      "definition": "An item constituted by an organism or by products of biological activity.",
+      "children": [
+        "Organism",
+        "BiologicalStructure",
+        "AcellularInfectiousEntity"
+      ],
+      "aliases": [
+        "Biological object"
+      ],
+      "notes": [
+        "Canonical ancestry is compressed; alternate superclass links and biological source lineage retain the intervening categories."
+      ]
+    },
+    {
+      "id": "MaterialBody",
+      "label": "Material body",
+      "definition": "An item individuated as a bounded body of matter.",
+      "children": [
+        "ParticleBody",
+        "AstronomicalBody",
+        "GeologicalBody"
+      ]
+    },
+    {
+      "id": "ParticleBody",
+      "label": "Particle body",
+      "definition": "A material body treated as an individual constituent at microscopic scales.",
+      "children": [
+        "Atom",
+        "AtomicNucleus",
+        "SubatomicParticle",
+        "Molecule"
+      ]
+    },
+    {
+      "id": "Atom",
+      "label": "Atom",
+      "definition": "A particle body consisting of a nucleus and its bound electrons.",
+      "children": []
+    },
+    {
+      "id": "AtomicNucleus",
+      "label": "Atomic nucleus",
+      "definition": "A particle body consisting of one or more nucleons that form an atomic core.",
+      "children": [],
+      "alternateParents": [
+        "SubatomicParticle"
+      ],
+      "aliases": [
+        "Atomic Nucleus"
+      ]
+    },
+    {
+      "id": "SubatomicParticle",
+      "label": "Subatomic particle",
+      "definition": "A particle body belonging to a constituent kind below the atomic level.",
+      "children": [
+        "Electron",
+        "Proton",
+        "Neutron"
+      ],
+      "aliases": [
+        "Subatomic Particle"
+      ]
+    },
+    {
+      "id": "Electron",
+      "label": "Electron",
+      "definition": "A negatively charged lepton of the electron species.",
+      "children": []
+    },
+    {
+      "id": "Proton",
+      "label": "Proton",
+      "definition": "A positively charged nucleon of the proton species.",
+      "children": []
+    },
+    {
+      "id": "Neutron",
+      "label": "Neutron",
+      "definition": "An electrically neutral nucleon of the neutron species.",
+      "children": []
+    },
+    {
+      "id": "Molecule",
+      "label": "Molecule",
+      "definition": "A particle body of two or more chemically bonded atoms forming one molecular unit.",
+      "children": [],
+      "notes": [
+        "Neutral molecules are central examples; charged molecular units are included here. Atoms and molecules are individuals; substance portions are amounts of material."
+      ]
+    },
+    {
+      "id": "AstronomicalBody",
+      "label": "Celestial body",
+      "definition": "A material body individuated on astronomical scales.",
+      "children": [
+        "Star",
+        "Planet",
+        "Satellite",
+        "SmallCelestialBody"
+      ],
+      "aliases": [
+        "Astronomical Body"
+      ]
+    },
+    {
+      "id": "Star",
+      "label": "Star",
+      "definition": "A celestial body sustained during its active lifetime by nuclear fusion.",
+      "children": []
+    },
+    {
+      "id": "Planet",
+      "label": "Planet",
+      "definition": "A roughly rounded celestial body orbiting a star that dominates its orbital neighborhood.",
+      "children": []
+    },
+    {
+      "id": "Satellite",
+      "label": "Natural satellite",
+      "definition": "A celestial body naturally orbiting another celestial body other than a star.",
+      "children": []
+    },
+    {
+      "id": "SmallCelestialBody",
+      "label": "Small celestial body",
+      "definition": "A celestial body smaller than a planet and neither a star nor a natural satellite.",
+      "children": [
+        "Asteroid",
+        "Comet"
+      ]
+    },
+    {
+      "id": "Asteroid",
+      "label": "Asteroid",
+      "definition": "A small celestial body primarily composed of rock or metal.",
+      "children": []
+    },
+    {
+      "id": "Comet",
+      "label": "Comet",
+      "definition": "A small celestial body whose volatile material can produce a coma near a star.",
+      "children": []
+    },
+    {
+      "id": "GeologicalBody",
+      "label": "Geological body",
+      "definition": "A material body individuated by geological structure or formation.",
+      "children": [
+        "Rock",
+        "Mountain"
+      ]
+    },
+    {
+      "id": "Rock",
+      "label": "Rock",
+      "definition": "A consolidated geological body composed of minerals or mineraloids.",
+      "children": []
+    },
+    {
+      "id": "Mountain",
+      "label": "Mountain",
+      "definition": "A geological body forming a prominent elevation of the land surface.",
+      "children": []
+    },
+    {
+      "id": "Organism",
+      "label": "Organism",
+      "definition": "A cellular living individual with an integrated biological organization.",
+      "children": [
+        "Bacterium",
+        "Archaeon",
+        "Eukaryote",
+        "Animal"
+      ]
+    },
+    {
+      "id": "Bacterium",
+      "label": "Bacterium",
+      "definition": "An organism belonging to the bacterial lineage.",
+      "children": [],
+      "aliases": [
+        "Bacteria"
+      ]
+    },
+    {
+      "id": "Archaeon",
+      "label": "Archaeon",
+      "definition": "An organism belonging to the archaeal lineage.",
+      "children": [],
+      "aliases": [
+        "Archaea"
+      ]
+    },
+    {
+      "id": "Eukaryote",
+      "label": "Eukaryote",
+      "definition": "An organism belonging to the lineage characterized ancestrally by nucleated cells.",
+      "children": [
+        "Plant",
+        "Fungus"
+      ],
+      "aliases": [
+        "Eukaryota"
+      ]
+    },
+    {
+      "id": "Plant",
+      "label": "Land plant",
+      "definition": "A eukaryote belonging to the embryophyte lineage.",
+      "children": [
+        "Moss",
+        "VascularPlant"
+      ],
+      "aliases": [
+        "Embryophyta",
+        "Embryophyte",
+        "Plant",
+        "land plant"
+      ]
+    },
+    {
+      "id": "Moss",
+      "label": "Moss",
+      "definition": "A land plant belonging to the moss lineage, Bryophyta.",
+      "children": [],
+      "aliases": [
+        "Bryophyta"
+      ]
+    },
+    {
+      "id": "VascularPlant",
+      "label": "Vascular plant",
+      "definition": "A land plant belonging to the lineage with specialized vascular tissues.",
+      "children": [
+        "Fern",
+        "SeedPlant",
+        "Lycophyte"
+      ],
+      "aliases": [
+        "Tracheophyta"
+      ]
+    },
+    {
+      "id": "Fern",
+      "label": "Fern",
+      "definition": "A vascular plant belonging to the fern lineage, including horsetails.",
+      "children": [],
+      "aliases": [
+        "Polypodiopsida"
+      ]
+    },
+    {
+      "id": "SeedPlant",
+      "label": "Seed plant",
+      "definition": "A vascular plant belonging to the lineage characterized by seeds.",
+      "children": [
+        "Gymnosperm",
+        "FloweringPlant"
+      ],
+      "aliases": [
+        "Spermatophyta"
+      ]
+    },
+    {
+      "id": "Gymnosperm",
+      "label": "Gymnosperm",
+      "definition": "A seed plant in the living lineages whose ovules are not enclosed in ovaries.",
+      "children": [],
+      "aliases": [
+        "Acrogymnospermae"
+      ]
+    },
+    {
+      "id": "FloweringPlant",
+      "label": "Flowering plant",
+      "definition": "A seed plant belonging to the angiosperm lineage.",
+      "children": [],
+      "aliases": [
+        "Flowering Plant",
+        "Magnoliopsida"
+      ]
+    },
+    {
+      "id": "Fungus",
+      "label": "Fungus",
+      "definition": "A eukaryote belonging to the fungal lineage.",
+      "children": [],
+      "aliases": [
+        "Fungi"
+      ]
+    },
+    {
+      "id": "Animal",
+      "label": "Animal",
+      "definition": "A eukaryote belonging to the metazoan lineage.",
+      "children": [
+        "Sponge",
+        "Cnidarian",
+        "Bilaterian",
+        "Vertebrate"
+      ],
+      "alternateParents": [
+        "Eukaryote"
+      ],
+      "aliases": [
+        "Metazoa"
+      ],
+      "notes": [
+        "Canonical ancestry is compressed; alternate superclass links and biological source lineage retain the intervening categories."
+      ]
+    },
+    {
+      "id": "Sponge",
+      "label": "Sponge",
+      "definition": "An animal belonging to the sponge lineage, Porifera.",
+      "children": [],
+      "aliases": [
+        "Porifera"
+      ]
+    },
+    {
+      "id": "Cnidarian",
+      "label": "Cnidarian",
+      "definition": "An animal belonging to the lineage characterized by cnidocytes.",
+      "children": [],
+      "aliases": [
+        "Cnidaria"
+      ]
+    },
+    {
+      "id": "Bilaterian",
+      "label": "Bilaterian",
+      "definition": "An animal belonging to the lineage with ancestrally bilateral body organization.",
+      "children": [
+        "Arthropod",
+        "Mollusc",
+        "Annelid",
+        "Nematode",
+        "Echinoderm",
+        "Chordate"
+      ],
+      "aliases": [
+        "Bilateria"
+      ]
+    },
+    {
+      "id": "Arthropod",
+      "label": "Arthropod",
+      "definition": "A bilaterian belonging to the lineage with jointed appendages and an exoskeleton.",
+      "children": [
+        "Insect",
+        "Arachnid"
+      ],
+      "aliases": [
+        "Arthropoda"
+      ]
+    },
+    {
+      "id": "Insect",
+      "label": "Insect",
+      "definition": "An arthropod belonging to the lineage with ancestrally three pairs of thoracic legs.",
+      "children": [],
+      "aliases": [
+        "Insecta"
+      ]
+    },
+    {
+      "id": "Arachnid",
+      "label": "Arachnid",
+      "definition": "An arthropod belonging to the arachnid lineage, including spiders and scorpions.",
+      "children": [],
+      "aliases": [
+        "Arachnida"
+      ]
+    },
+    {
+      "id": "Mollusc",
+      "label": "Mollusc",
+      "definition": "A bilaterian belonging to the molluscan lineage.",
+      "children": [],
+      "aliases": [
+        "Mollusca"
+      ]
+    },
+    {
+      "id": "Annelid",
+      "label": "Annelid",
+      "definition": "A bilaterian belonging to the annelid lineage of segmented worms.",
+      "children": [],
+      "aliases": [
+        "Annelida"
+      ]
+    },
+    {
+      "id": "Nematode",
+      "label": "Nematode",
+      "definition": "A bilaterian belonging to the nematode lineage of roundworms.",
+      "children": [],
+      "aliases": [
+        "Nematoda"
+      ]
+    },
+    {
+      "id": "Echinoderm",
+      "label": "Echinoderm",
+      "definition": "A bilaterian belonging to the lineage with a water vascular system.",
+      "children": [],
+      "aliases": [
+        "Echinodermata"
+      ]
+    },
+    {
+      "id": "Chordate",
+      "label": "Chordate",
+      "definition": "A bilaterian belonging to the lineage characterized ancestrally by a notochord.",
+      "children": [],
+      "aliases": [
+        "Chordata"
+      ]
+    },
+    {
+      "id": "Vertebrate",
+      "label": "Vertebrate",
+      "definition": "A chordate belonging to the lineage characterized ancestrally by vertebral elements.",
+      "children": [
+        "JawedVertebrate",
+        "Amniote"
+      ],
+      "alternateParents": [
+        "Chordate"
+      ],
+      "aliases": [
+        "Vertebrata"
+      ],
+      "notes": [
+        "Canonical ancestry is compressed; alternate superclass links and biological source lineage retain the intervening categories."
+      ]
+    },
+    {
+      "id": "JawedVertebrate",
+      "label": "Jawed vertebrate",
+      "definition": "A vertebrate belonging to the lineage characterized ancestrally by jaws.",
+      "children": [
+        "CartilaginousFish",
+        "BonyVertebrate"
+      ],
+      "aliases": [
+        "Gnathostomata"
+      ]
+    },
+    {
+      "id": "CartilaginousFish",
+      "label": "Cartilaginous fish",
+      "definition": "A jawed vertebrate belonging to the shark, ray, and chimaera lineage.",
+      "children": [],
+      "aliases": [
+        "Chondrichthyes"
+      ]
+    },
+    {
+      "id": "BonyVertebrate",
+      "label": "Bony vertebrate",
+      "definition": "A jawed vertebrate belonging to the bony-vertebrate lineage, including tetrapods.",
+      "children": [
+        "RayFinnedFish",
+        "LobeFinnedVertebrate"
+      ],
+      "aliases": [
+        "Euteleostomi"
+      ]
+    },
+    {
+      "id": "RayFinnedFish",
+      "label": "Ray-finned fish",
+      "definition": "A bony vertebrate belonging to the ray-finned lineage.",
+      "children": [],
+      "aliases": [
+        "Actinopterygii"
+      ]
+    },
+    {
+      "id": "LobeFinnedVertebrate",
+      "label": "Lobe-finned vertebrate",
+      "definition": "A bony vertebrate belonging to the lobe-finned lineage, including tetrapods.",
+      "children": [
+        "Tetrapod"
+      ],
+      "aliases": [
+        "Sarcopterygii"
+      ]
+    },
+    {
+      "id": "Tetrapod",
+      "label": "Tetrapod",
+      "definition": "A lobe-finned vertebrate belonging to the lineage with ancestrally four limbs.",
+      "children": [
+        "Amphibian"
+      ],
+      "aliases": [
+        "Tetrapoda"
+      ]
+    },
+    {
+      "id": "Amphibian",
+      "label": "Amphibian",
+      "definition": "A tetrapod belonging to the amphibian lineage, including frogs, salamanders, and caecilians.",
+      "children": [],
+      "aliases": [
+        "Amphibia"
+      ]
+    },
+    {
+      "id": "Amniote",
+      "label": "Amniote",
+      "definition": "A tetrapod belonging to the lineage with ancestrally amniotic embryonic membranes.",
+      "children": [
+        "Synapsid",
+        "Mammal",
+        "Sauropsid"
+      ],
+      "alternateParents": [
+        "Tetrapod"
+      ],
+      "aliases": [
+        "Amniota"
+      ],
+      "notes": [
+        "Canonical ancestry is compressed; alternate superclass links and biological source lineage retain the intervening categories."
+      ]
+    },
+    {
+      "id": "Synapsid",
+      "label": "Synapsid",
+      "definition": "An amniote belonging to the mammal-line lineage with an ancestral single temporal opening.",
+      "children": []
+    },
+    {
+      "id": "Mammal",
+      "label": "Mammal",
+      "definition": "A synapsid belonging to the lineage characterized by mammary glands and hair.",
+      "children": [
+        "Monotreme",
+        "Marsupial",
+        "PlacentalMammal",
+        "Primate"
+      ],
+      "alternateParents": [
+        "Synapsid"
+      ],
+      "aliases": [
+        "Mammalia"
+      ],
+      "notes": [
+        "Canonical ancestry is compressed; alternate superclass links and biological source lineage retain the intervening categories."
+      ]
+    },
+    {
+      "id": "Monotreme",
+      "label": "Monotreme",
+      "definition": "A mammal belonging to the egg-laying monotreme lineage.",
+      "children": [],
+      "aliases": [
+        "Monotremata"
+      ]
+    },
+    {
+      "id": "Marsupial",
+      "label": "Marsupial-line mammal",
+      "definition": "A mammal belonging to Metatheria, including living marsupials and their extinct stem relatives.",
+      "children": [],
+      "aliases": [
+        "Marsupial",
+        "Metatheria"
+      ]
+    },
+    {
+      "id": "PlacentalMammal",
+      "label": "Eutherian mammal",
+      "definition": "A mammal belonging to Eutheria, including crown placentals and their extinct stem relatives.",
+      "children": [
+        "Carnivoran",
+        "Rodent",
+        "Cetartiodactyl",
+        "Perissodactyl",
+        "Lagomorph"
+      ],
+      "aliases": [
+        "Eutheria"
+      ]
+    },
+    {
+      "id": "Carnivoran",
+      "label": "Carnivoran",
+      "definition": "A placental mammal belonging to the order Carnivora, irrespective of diet.",
+      "children": [
+        "Canine",
+        "Feline"
+      ],
+      "aliases": [
+        "Carnivora",
+        "Carnivore"
+      ]
+    },
+    {
+      "id": "Canine",
+      "label": "Canid",
+      "definition": "A carnivoran belonging to the dog family, Canidae.",
+      "children": [
+        "Dog"
+      ],
+      "aliases": [
+        "Canidae",
+        "Canine"
+      ]
+    },
+    {
+      "id": "Feline",
+      "label": "Felid",
+      "definition": "A carnivoran belonging to the cat family, Felidae.",
+      "children": [
+        "Cat"
+      ],
+      "aliases": [
+        "Felidae",
+        "Feline"
+      ]
+    },
+    {
+      "id": "Dog",
+      "label": "Domestic dog",
+      "definition": "A canid belonging to the domestic dog lineage.",
+      "children": [],
+      "aliases": [
+        "Canis lupus familiaris"
+      ]
+    },
+    {
+      "id": "Cat",
+      "label": "Domestic cat",
+      "definition": "A felid belonging to the domestic cat lineage.",
+      "children": [],
+      "aliases": [
+        "Felis catus"
+      ]
+    },
+    {
+      "id": "Primate",
+      "label": "Primate",
+      "definition": "A placental mammal belonging to the primate lineage.",
+      "children": [
+        "Ape",
+        "Simian"
+      ],
+      "alternateParents": [
+        "PlacentalMammal"
+      ],
+      "aliases": [
+        "Primates"
+      ],
+      "notes": [
+        "Canonical ancestry is compressed; alternate superclass links and biological source lineage retain the intervening categories."
+      ]
+    },
+    {
+      "id": "Ape",
+      "label": "Ape",
+      "definition": "A primate belonging to the hominoid lineage, including humans.",
+      "children": [
+        "Hominid",
+        "Human"
+      ],
+      "alternateParents": [
+        "Simian"
+      ],
+      "aliases": [
+        "Hominoidea"
+      ],
+      "notes": [
+        "Canonical ancestry is compressed; alternate superclass links and biological source lineage retain the intervening categories."
+      ]
+    },
+    {
+      "id": "Hominid",
+      "label": "Great ape",
+      "definition": "An ape belonging to the family Hominidae, including humans.",
+      "children": [],
+      "aliases": [
+        "Hominid",
+        "Hominidae"
+      ]
+    },
+    {
+      "id": "Human",
+      "label": "Human",
+      "definition": "A great ape belonging to the species Homo sapiens.",
+      "children": [],
+      "alternateParents": [
+        "Hominid"
+      ],
+      "aliases": [
+        "Homo sapiens",
+        "Person"
+      ],
+      "notes": [
+        "Canonical ancestry is compressed; alternate superclass links and biological source lineage retain the intervening categories."
+      ]
+    },
+    {
+      "id": "Rodent",
+      "label": "Rodent",
+      "definition": "A placental mammal belonging to the rodent lineage.",
+      "children": [],
+      "aliases": [
+        "Rodentia"
+      ]
+    },
+    {
+      "id": "Cetartiodactyl",
+      "label": "Cetartiodactyl",
+      "definition": "A placental mammal in the even-toed ungulate and cetacean lineage.",
+      "children": [
+        "Cetacean"
+      ],
+      "aliases": [
+        "Artiodactyla"
+      ]
+    },
+    {
+      "id": "Cetacean",
+      "label": "Cetacean",
+      "definition": "A cetartiodactyl belonging to the whale, dolphin, and porpoise lineage.",
+      "children": [],
+      "aliases": [
+        "Cetacea"
+      ]
+    },
+    {
+      "id": "Perissodactyl",
+      "label": "Odd-toed ungulate",
+      "definition": "A placental mammal belonging to the horse, rhinoceros, and tapir lineage.",
+      "children": [],
+      "aliases": [
+        "Perissodactyla"
+      ]
+    },
+    {
+      "id": "Sauropsid",
+      "label": "Sauropsid",
+      "definition": "An amniote belonging to the reptile-line lineage, including birds.",
+      "children": [
+        "Turtle",
+        "Lepidosaur",
+        "Archosaur"
+      ],
+      "aliases": [
+        "Sauropsida"
+      ]
+    },
+    {
+      "id": "Turtle",
+      "label": "Turtle",
+      "definition": "A sauropsid belonging to the turtle lineage.",
+      "children": [],
+      "aliases": [
+        "Testudines"
+      ]
+    },
+    {
+      "id": "Lepidosaur",
+      "label": "Lepidosaur",
+      "definition": "A sauropsid belonging to the lizard, snake, and tuatara lineage.",
+      "children": [],
+      "aliases": [
+        "Lepidosauria"
+      ]
+    },
+    {
+      "id": "Archosaur",
+      "label": "Archosaur",
+      "definition": "A sauropsid belonging to the crocodilian and dinosaur lineage.",
+      "children": [
+        "Crocodilian",
+        "Dinosaur"
+      ],
+      "aliases": [
+        "Archosauria"
+      ]
+    },
+    {
+      "id": "Crocodilian",
+      "label": "Crocodilian",
+      "definition": "An archosaur belonging to the crocodile, alligator, and gharial lineage.",
+      "children": [],
+      "aliases": [
+        "Crocodylia"
+      ]
+    },
+    {
+      "id": "Dinosaur",
+      "label": "Dinosaur",
+      "definition": "An archosaur belonging to Dinosauria, including birds.",
+      "children": [
+        "Bird"
+      ],
+      "aliases": [
+        "Dinosauria"
+      ]
+    },
+    {
+      "id": "Bird",
+      "label": "Bird",
+      "definition": "A dinosaur belonging to the avian lineage.",
+      "children": [],
+      "aliases": [
+        "Aves"
+      ]
+    },
+    {
+      "id": "BiologicalStructure",
+      "label": "Biological structure",
+      "definition": "A biotic object individuated by its structural organization within or from an organism.",
+      "children": [
+        "Cell",
+        "AnatomicalStructure"
+      ]
+    },
+    {
+      "id": "Cell",
+      "label": "Cell",
+      "definition": "A biological structure bounded by a membrane and organized as a cellular unit.",
+      "children": []
+    },
+    {
+      "id": "AnatomicalStructure",
+      "label": "Anatomical structure",
+      "definition": "A biological structure constituting an anatomical unit of an organism.",
+      "children": [
+        "BodyPart",
+        "ReproductiveBody",
+        "Fruit"
+      ],
+      "aliases": [
+        "Anatomical Structure"
+      ]
+    },
+    {
+      "id": "BodyPart",
+      "label": "Body part",
+      "definition": "An anatomical structure identified as a constituent part of an organism's body.",
+      "children": [
+        "BodyCovering",
+        "BodyJunction",
+        "BodyVessel",
+        "Organ"
+      ],
+      "aliases": [
+        "Body Part"
+      ]
+    },
+    {
+      "id": "BodyCovering",
+      "label": "Body covering",
+      "definition": "A body part forming an outer protective layer.",
+      "children": [],
+      "aliases": [
+        "Body Covering"
+      ]
+    },
+    {
+      "id": "BodyJunction",
+      "label": "Body junction",
+      "definition": "A body part forming the connection between bodily structures.",
+      "children": [],
+      "aliases": [
+        "Body Junction"
+      ]
+    },
+    {
+      "id": "BodyVessel",
+      "label": "Body vessel",
+      "definition": "A body part forming a conduit for bodily fluids.",
+      "children": [],
+      "aliases": [
+        "Body Vessel"
+      ]
+    },
+    {
+      "id": "Organ",
+      "label": "Organ",
+      "definition": "A body part integrating tissues into a functional anatomical unit.",
+      "children": [
+        "Gland"
+      ]
+    },
+    {
+      "id": "Gland",
+      "label": "Gland",
+      "definition": "An organ specialized for producing and releasing secretions.",
+      "children": []
+    },
+    {
+      "id": "ReproductiveBody",
+      "label": "Reproductive body",
+      "definition": "An anatomical structure organized for producing or developing offspring.",
+      "children": [],
+      "aliases": [
+        "Reproductive Body"
+      ]
+    },
+    {
+      "id": "AcellularInfectiousEntity",
+      "label": "Acellular infectious entity",
+      "definition": "A biotic object propagated through hosts without cellular organization of its own.",
+      "children": [
+        "Virus",
+        "Viroid",
+        "Prion"
+      ]
+    },
+    {
+      "id": "Virus",
+      "label": "Virus",
+      "definition": "An acellular infectious entity whose genome replicates through host-cell machinery.",
+      "children": []
+    },
+    {
+      "id": "Viroid",
+      "label": "Viroid",
+      "definition": "An acellular infectious entity consisting of a replicating noncoding RNA without a capsid.",
+      "children": []
+    },
+    {
+      "id": "Prion",
+      "label": "Prion",
+      "definition": "An acellular infectious entity propagated by inducing a protein conformation in host proteins.",
+      "children": []
+    },
+    {
+      "id": "Artifact",
+      "label": "Artifact",
+      "definition": "An item whose identity involves intentional production or modification for a purpose.",
+      "children": [
+        "Device",
+        "EngineeringComponent",
+        "Clothing",
+        "Furniture",
+        "Container",
+        "StationaryArtifact",
+        "ArtWork",
+        "InformationCarrier",
+        "TextileArtifact"
+      ]
+    },
+    {
+      "id": "Device",
+      "label": "Device",
+      "definition": "An artifact organized to perform an operation through its construction.",
+      "children": [
+        "Machine",
+        "TransportationDevice",
+        "MusicalInstrument",
+        "Weapon",
+        "Tool"
+      ]
+    },
+    {
+      "id": "Machine",
+      "label": "Machine",
+      "definition": "A device using an organized mechanism to transform energy or execute operations.",
+      "children": [
+        "Computer",
+        "Appliance"
+      ]
+    },
+    {
+      "id": "Computer",
+      "label": "Computer",
+      "definition": "A machine that executes encoded operations on data.",
+      "children": []
+    },
+    {
+      "id": "Appliance",
+      "label": "Appliance",
+      "definition": "A machine designed for a routine household or personal task.",
+      "children": []
+    },
+    {
+      "id": "TransportationDevice",
+      "label": "Vehicle",
+      "definition": "A device designed to carry people or goods between places.",
+      "children": [
+        "LandVehicle",
+        "Watercraft",
+        "Aircraft",
+        "Spacecraft"
+      ],
+      "aliases": [
+        "Transportation Device"
+      ]
+    },
+    {
+      "id": "LandVehicle",
+      "label": "Land vehicle",
+      "definition": "A vehicle designed for travel over land.",
+      "children": []
+    },
+    {
+      "id": "Watercraft",
+      "label": "Watercraft",
+      "definition": "A vehicle designed for travel on or through water.",
+      "children": []
+    },
+    {
+      "id": "Aircraft",
+      "label": "Aircraft",
+      "definition": "A vehicle designed for controlled travel through the atmosphere.",
+      "children": []
+    },
+    {
+      "id": "Spacecraft",
+      "label": "Spacecraft",
+      "definition": "A vehicle designed for travel beyond the atmosphere.",
+      "children": []
+    },
+    {
+      "id": "MusicalInstrument",
+      "label": "Musical instrument",
+      "definition": "A device designed to produce controlled sounds for music.",
+      "children": [],
+      "aliases": [
+        "Musical Instrument"
+      ]
+    },
+    {
+      "id": "Weapon",
+      "label": "Weapon",
+      "definition": "A device designed to inflict injury or destructive force.",
+      "children": []
+    },
+    {
+      "id": "Tool",
+      "label": "Tool",
+      "definition": "A device designed for direct manipulation in performing a task.",
+      "children": []
+    },
+    {
+      "id": "EngineeringComponent",
+      "label": "Engineered component",
+      "definition": "An artifact designed as a constituent of an engineered assembly.",
+      "children": [
+        "EngineeringConnection"
+      ],
+      "aliases": [
+        "Engineering Component"
+      ]
+    },
+    {
+      "id": "EngineeringConnection",
+      "label": "Engineered connector",
+      "definition": "An engineered component designed to join other components.",
+      "children": [],
+      "aliases": [
+        "Engineering Connection"
+      ]
+    },
+    {
+      "id": "Clothing",
+      "label": "Clothing",
+      "definition": "An artifact designed to be worn as a bodily covering.",
+      "children": []
+    },
+    {
+      "id": "Furniture",
+      "label": "Furniture",
+      "definition": "An artifact designed to support activities in an occupied space.",
+      "children": []
+    },
+    {
+      "id": "Container",
+      "label": "Manufactured container",
+      "definition": "An artifact designed to enclose or hold contents.",
+      "children": []
+    },
+    {
+      "id": "StationaryArtifact",
+      "label": "Built structure",
+      "definition": "An artifact designed as a structure fixed to a site.",
+      "children": [
+        "Building"
+      ],
+      "aliases": [
+        "Room",
+        "Stationary Artifact"
+      ]
+    },
+    {
+      "id": "Building",
+      "label": "Building",
+      "definition": "A built structure enclosing space for occupancy or sheltered use.",
+      "children": []
+    },
+    {
+      "id": "ArtWork",
+      "label": "Physical artwork",
+      "definition": "An artifact whose constitutive purpose is aesthetic or artistic presentation.",
+      "children": [],
+      "aliases": [
+        "Art Work"
+      ]
+    },
+    {
+      "id": "InformationCarrier",
+      "label": "Manufactured information carrier",
+      "definition": "An artifact designed to embody or store interpretable content.",
+      "children": [
+        "PrintedBook"
+      ],
+      "aliases": [
+        "Content Bearing Object",
+        "Document",
+        "Motion Picture",
+        "Text"
+      ]
+    },
+    {
+      "id": "PrintedBook",
+      "label": "Printed book",
+      "definition": "An information carrier consisting of bound pages containing a book's content.",
+      "children": [],
+      "aliases": [
+        "Book"
+      ]
+    },
+    {
+      "id": "MaterialPortion",
+      "label": "Material portion",
+      "definition": "An object individuated as an amount of material rather than as a structured whole.",
+      "children": [
+        "Substance",
+        "BiologicalMaterial",
+        "ManufacturedMaterial",
+        "GeologicalMaterial"
+      ]
+    },
+    {
+      "id": "Substance",
+      "label": "Substance portion",
+      "definition": "A material portion individuated by chemical composition.",
+      "children": [
+        "PureSubstance",
+        "Mixture",
+        "Mineral"
+      ],
+      "aliases": [
+        "Mineral",
+        "Substance"
+      ]
+    },
+    {
+      "id": "PureSubstance",
+      "label": "Pure substance portion",
+      "definition": "A substance portion having one chemical substance as its specified composition.",
+      "children": [
+        "ElementalSubstance",
+        "CompoundSubstance"
+      ],
+      "aliases": [
+        "Pure Substance"
+      ]
+    },
+    {
+      "id": "ElementalSubstance",
+      "label": "Elemental substance portion",
+      "definition": "A pure substance portion composed of one chemical element.",
+      "children": [
+        "Metal"
+      ],
+      "aliases": [
+        "Elemental Substance"
+      ]
+    },
+    {
+      "id": "Metal",
+      "label": "Elemental metal portion",
+      "definition": "An elemental substance portion of an element exhibiting metallic properties.",
+      "children": [],
+      "aliases": [
+        "Metal"
+      ]
+    },
+    {
+      "id": "CompoundSubstance",
+      "label": "Compound substance portion",
+      "definition": "A pure substance portion of chemically bonded elements in fixed composition.",
+      "children": [
+        "Water",
+        "Carbohydrate",
+        "Protein"
+      ],
+      "aliases": [
+        "Compound Substance"
+      ]
+    },
+    {
+      "id": "Water",
+      "label": "Water portion",
+      "definition": "A compound substance portion whose chemical substance is H2O.",
+      "children": [],
+      "aliases": [
+        "Water"
+      ]
+    },
+    {
+      "id": "Carbohydrate",
+      "label": "Carbohydrate portion",
+      "definition": "A compound substance portion of a sugar, saccharide polymer, or their chemical derivatives.",
+      "children": [],
+      "aliases": [
+        "Carbohydrate"
+      ]
+    },
+    {
+      "id": "Protein",
+      "label": "Protein portion",
+      "definition": "A compound substance portion of one polypeptide-based macromolecular substance.",
+      "children": [],
+      "aliases": [
+        "Enzyme",
+        "Protein"
+      ],
+      "notes": [
+        "This node denotes a portion of one protein substance. A protein molecule is a Molecule; a mixed protein preparation is a Mixture with a composition facet. RNA catalysts are permitted by Enzyme specification."
+      ]
+    },
+    {
+      "id": "Mixture",
+      "label": "Mixture portion",
+      "definition": "A substance portion containing multiple chemical substances as constituents.",
+      "children": [
+        "Solution"
+      ],
+      "aliases": [
+        "Mixture",
+        "Water"
+      ]
+    },
+    {
+      "id": "Solution",
+      "label": "Solution portion",
+      "definition": "A mixture portion forming one homogeneous phase with dispersed solutes.",
+      "children": [],
+      "aliases": [
+        "Solution"
+      ]
+    },
+    {
+      "id": "Mineral",
+      "label": "Mineral substance portion",
+      "definition": "A substance portion belonging to a naturally formed mineral species with characteristic structure and composition.",
+      "children": [],
+      "aliases": [
+        "Mineral"
+      ]
+    },
+    {
+      "id": "BiologicalMaterial",
+      "label": "Biological material portion",
+      "definition": "A material portion produced by or constituting an organism.",
+      "children": [
+        "BodySubstance"
+      ],
+      "aliases": [
+        "Biological object"
+      ]
+    },
+    {
+      "id": "BodySubstance",
+      "label": "Body material portion",
+      "definition": "A biological material portion originating as or constituting bodily tissue, fluid, secretion, or excretion.",
+      "children": [
+        "Blood",
+        "Tissue"
+      ],
+      "aliases": [
+        "Body Substance"
+      ]
+    },
+    {
+      "id": "Blood",
+      "label": "Blood portion",
+      "definition": "A body material portion of the circulating fluid carrying blood cells.",
+      "children": [],
+      "aliases": [
+        "Blood"
+      ]
+    },
+    {
+      "id": "Tissue",
+      "label": "Tissue portion",
+      "definition": "A body material portion organized as a tissue of cells and associated matrix.",
+      "children": [
+        "Bone",
+        "FatTissue",
+        "Muscle"
+      ],
+      "aliases": [
+        "Tissue"
+      ]
+    },
+    {
+      "id": "Bone",
+      "label": "Bone tissue portion",
+      "definition": "A tissue portion with mineralized extracellular matrix forming skeletal bone.",
+      "children": [],
+      "aliases": [
+        "Bone"
+      ]
+    },
+    {
+      "id": "FatTissue",
+      "label": "Adipose tissue portion",
+      "definition": "A tissue portion specialized for storage in fat-containing cells.",
+      "children": [],
+      "aliases": [
+        "Fat Tissue"
+      ]
+    },
+    {
+      "id": "Muscle",
+      "label": "Muscle tissue portion",
+      "definition": "A tissue portion specialized for contraction through muscle cells.",
+      "children": [],
+      "aliases": [
+        "Muscle"
+      ]
+    },
+    {
+      "id": "ManufacturedMaterial",
+      "label": "Manufactured material portion",
+      "definition": "A material portion intentionally processed to meet a specified material use.",
+      "children": [
+        "Fabric",
+        "PreparedFood"
+      ]
+    },
+    {
+      "id": "Fabric",
+      "label": "Fabric portion",
+      "definition": "A manufactured material portion formed as a flexible textile sheet.",
+      "children": [],
+      "aliases": [
+        "Fabric"
+      ]
+    },
+    {
+      "id": "PreparedFood",
+      "label": "Prepared food portion",
+      "definition": "A manufactured material portion processed for consumption as food.",
+      "children": [],
+      "aliases": [
+        "Food"
+      ]
+    },
+    {
+      "id": "Collection",
+      "label": "Collection",
+      "definition": "An object individuated by its members rather than by an integrated constituent structure.",
+      "children": [
+        "MaterialAggregate",
+        "SocialGroup"
+      ]
+    },
+    {
+      "id": "MaterialAggregate",
+      "label": "Material aggregate",
+      "definition": "A collection whose members are material objects.",
+      "children": [
+        "AstronomicalSystem",
+        "HumanGroup",
+        "OrganismAggregate"
+      ]
+    },
+    {
+      "id": "AstronomicalSystem",
+      "label": "Astronomical system",
+      "definition": "A material aggregate whose members form an astronomical grouping.",
+      "children": [
+        "Galaxy"
+      ],
+      "aliases": [
+        "Astronomical Body"
+      ]
+    },
+    {
+      "id": "Galaxy",
+      "label": "Galaxy",
+      "definition": "An astronomical system of stars, gas, and other matter bound on galactic scales.",
+      "children": []
+    },
+    {
+      "id": "HumanGroup",
+      "label": "Human group",
+      "definition": "A material aggregate of humans identified by a shared membership criterion.",
+      "children": [
+        "AgeGroup",
+        "EthnicGroup",
+        "FamilyGroup",
+        "Community"
+      ],
+      "aliases": [
+        "Group"
+      ]
+    },
+    {
+      "id": "AgeGroup",
+      "label": "Age cohort",
+      "definition": "A human group whose membership is specified by an age range or birth interval.",
+      "children": [],
+      "aliases": [
+        "Age Group"
+      ]
+    },
+    {
+      "id": "EthnicGroup",
+      "label": "Ethnic group",
+      "definition": "A human group whose membership involves shared ethnic identification or heritage.",
+      "children": [],
+      "aliases": [
+        "Ethnic Group"
+      ]
+    },
+    {
+      "id": "FamilyGroup",
+      "label": "Family group",
+      "definition": "A human group whose membership is constituted by kinship or familial recognition.",
+      "children": [],
+      "aliases": [
+        "Family Group"
+      ]
+    },
+    {
+      "id": "Community",
+      "label": "Community",
+      "definition": "A human group sustained by shared association, place, or practice.",
+      "children": []
+    },
+    {
+      "id": "Organization",
+      "label": "Organization",
+      "definition": "A social group constituted by coordinated participation under an enduring structure.",
+      "children": [
+        "OrganizationUnit",
+        "EducationalOrganization",
+        "PoliticalOrganization",
+        "ReligiousOrganization",
+        "Corporation",
+        "Club",
+        "Court",
+        "MarketInstitution"
+      ],
+      "alternateParents": [
+        "SocialObject"
+      ],
+      "aliases": [
+        "Institutional entity"
+      ]
+    },
+    {
+      "id": "OrganizationUnit",
+      "label": "Organizational unit",
+      "definition": "An organization constituted as an internal division of another organization.",
+      "children": [],
+      "aliases": [
+        "Organization Unit"
+      ]
+    },
+    {
+      "id": "EducationalOrganization",
+      "label": "Educational organization",
+      "definition": "An organization constituted to provide education.",
+      "children": [
+        "School"
+      ],
+      "aliases": [
+        "Educational Organization"
+      ]
+    },
+    {
+      "id": "School",
+      "label": "School",
+      "definition": "An educational organization constituted for organized teaching of enrolled learners.",
+      "children": []
+    },
+    {
+      "id": "PoliticalOrganization",
+      "label": "Political organization",
+      "definition": "An organization constituted to pursue or exercise political power.",
+      "children": [
+        "Government"
+      ],
+      "aliases": [
+        "Political Organization"
+      ]
+    },
+    {
+      "id": "Government",
+      "label": "Government",
+      "definition": "A political organization constituted to exercise public governing authority.",
+      "children": [],
+      "alternateParents": [
+        "InstitutionalEntity"
+      ],
+      "aliases": [
+        "State"
+      ]
+    },
+    {
+      "id": "ReligiousOrganization",
+      "label": "Religious organization",
+      "definition": "An organization constituted to sustain religious practice or affiliation.",
+      "children": [],
+      "aliases": [
+        "Religious Organization"
+      ]
+    },
+    {
+      "id": "Corporation",
+      "label": "Corporation",
+      "definition": "An organization constituted as a distinct legal corporate person.",
+      "children": [],
+      "alternateParents": [
+        "InstitutionalEntity"
+      ],
+      "aliases": [
+        "Coorporation"
+      ]
+    },
+    {
+      "id": "Club",
+      "label": "Club",
+      "definition": "An organization constituted by voluntary membership for shared activities.",
+      "children": []
+    },
+    {
+      "id": "Court",
+      "label": "Court",
+      "definition": "An organization constituted to adjudicate disputes under recognized rules.",
+      "children": [],
+      "alternateParents": [
+        "InstitutionalEntity"
+      ]
+    },
+    {
+      "id": "MarketInstitution",
+      "label": "Market organization",
+      "definition": "An organization constituted to organize or administer exchange among participants.",
+      "children": [],
+      "aliases": [
+        "Market"
+      ]
+    },
+    {
+      "id": "SocialObject",
+      "label": "Social object",
+      "definition": "An object whose identity is constituted by situated social recognition or practice.",
+      "children": [
+        "Institution",
+        "Office",
+        "Currency"
+      ],
+      "aliases": [
+        "Social entity"
+      ]
+    },
+    {
+      "id": "Institution",
+      "label": "Institution",
+      "definition": "A social object consisting of an established system of rules, positions, and practices.",
+      "children": [],
+      "alternateParents": [
+        "InstitutionalEntity"
+      ],
+      "aliases": [
+        "Institutional entity",
+        "Market"
+      ]
+    },
+    {
+      "id": "Office",
+      "label": "Office",
+      "definition": "A social object consisting of a continuing institutional position with specified duties and powers.",
+      "children": [],
+      "alternateParents": [
+        "InstitutionalEntity"
+      ]
+    },
+    {
+      "id": "Currency",
+      "label": "Currency system",
+      "definition": "A social object constituting a recognized system of monetary units and issuance.",
+      "children": [],
+      "alternateParents": [
+        "InstitutionalEntity"
+      ],
+      "aliases": [
+        "Currency"
+      ]
+    },
+    {
+      "id": "Region",
+      "label": "Region",
+      "definition": "A realized entity individuated by an extent rather than by what occupies it.",
+      "children": [
+        "SpatialRegion",
+        "TemporalRegion",
+        "SpacetimeRegion"
+      ],
+      "aliases": [
+        "Body Junction",
+        "Hole"
+      ],
+      "notes": [
+        "A reference-dependent concrete extent is distinguished from its coordinate description or mathematical region model. Holes and rooms here are spaces; surrounding walls and structures are objects."
+      ]
+    },
+    {
+      "id": "SpatialRegion",
+      "label": "Spatial region",
+      "definition": "A region individuated by spatial extent in a specified reference framework.",
+      "children": [
+        "GeographicArea",
+        "Room",
+        "Hole"
+      ],
+      "aliases": [
+        "Astronomical Body"
+      ]
+    },
+    {
+      "id": "TemporalRegion",
+      "label": "Temporal region",
+      "definition": "A region individuated by temporal extent in a specified reference framework.",
+      "children": [
+        "TimeInterval",
+        "TimeInstant"
+      ]
+    },
+    {
+      "id": "TimeInterval",
+      "label": "Time interval",
+      "definition": "A temporal region containing the times between specified bounds.",
+      "children": []
+    },
+    {
+      "id": "TimeInstant",
+      "label": "Time instant",
+      "definition": "A temporal region specified as a single temporal position.",
+      "children": []
+    },
+    {
+      "id": "SpacetimeRegion",
+      "label": "Spacetime region",
+      "definition": "A region individuated by combined spatial and temporal extent.",
+      "children": []
+    },
+    {
+      "id": "GeographicArea",
+      "label": "Geographic area",
+      "definition": "A spatial region identified relative to a planetary surface.",
+      "children": [
+        "LandArea",
+        "GeopoliticalArea",
+        "WaterArea"
+      ],
+      "aliases": [
+        "Address",
+        "Geographic Area",
+        "Market"
+      ]
+    },
+    {
+      "id": "LandArea",
+      "label": "Land area",
+      "definition": "A geographic area whose specified extent lies on land.",
+      "children": [
+        "Continent",
+        "Island"
+      ],
+      "aliases": [
+        "Land Area"
+      ]
+    },
+    {
+      "id": "Continent",
+      "label": "Continental area",
+      "definition": "A land area corresponding to a principal continental landmass.",
+      "children": [],
+      "aliases": [
+        "Continent"
+      ]
+    },
+    {
+      "id": "Island",
+      "label": "Island area",
+      "definition": "A land area corresponding to land surrounded by water.",
+      "children": [],
+      "aliases": [
+        "Island"
+      ]
+    },
+    {
+      "id": "GeopoliticalArea",
+      "label": "Jurisdictional area",
+      "definition": "A geographic area delimited by a political or administrative jurisdiction.",
+      "children": [
+        "State"
+      ],
+      "aliases": [
+        "Geopolitical Area"
+      ]
+    },
+    {
+      "id": "State",
+      "label": "State territory",
+      "definition": "A jurisdictional area corresponding to a sovereign state or a federated state.",
+      "children": [],
+      "aliases": [
+        "State"
+      ]
+    },
+    {
+      "id": "WaterArea",
+      "label": "Water area",
+      "definition": "A geographic area corresponding to a body or course of water.",
+      "children": [
+        "FreshWaterArea",
+        "SaltWaterArea",
+        "StaticWaterArea",
+        "StreamWaterArea"
+      ],
+      "aliases": [
+        "Water Area"
+      ]
+    },
+    {
+      "id": "FreshWaterArea",
+      "label": "Freshwater area",
+      "definition": "A water area whose water is characterized by low salinity.",
+      "children": [],
+      "aliases": [
+        "Fresh Water Area"
+      ]
+    },
+    {
+      "id": "SaltWaterArea",
+      "label": "Saltwater area",
+      "definition": "A water area whose water is characterized by substantial salinity.",
+      "children": [],
+      "aliases": [
+        "Salt Water Area"
+      ]
+    },
+    {
+      "id": "StaticWaterArea",
+      "label": "Standing-water area",
+      "definition": "A water area corresponding to a principally standing body of water.",
+      "children": [],
+      "aliases": [
+        "Static Water Area"
+      ]
+    },
+    {
+      "id": "StreamWaterArea",
+      "label": "Flowing-water area",
+      "definition": "A water area corresponding to a principally flowing watercourse.",
+      "children": [],
+      "aliases": [
+        "Stream Water Area"
+      ]
+    },
+    {
+      "id": "Room",
+      "label": "Room space",
+      "definition": "A spatial region delimited as an interior compartment of a built structure.",
+      "children": [],
+      "aliases": [
+        "Room"
+      ]
+    },
+    {
+      "id": "Hole",
+      "label": "Hole space",
+      "definition": "A spatial region delimited by an opening or cavity in a surrounding object.",
+      "children": [],
+      "aliases": [
+        "Hole"
+      ]
+    },
+    {
+      "id": "Process",
+      "label": "Process",
+      "definition": "A realized entity individuated as an occurrence or course of activity or change.",
+      "children": [
+        "PhysicalProcess",
+        "Creation",
+        "Damaging",
+        "BiologicalProcess",
+        "MentalProcess",
+        "IntentionalProcess",
+        "SocialInteraction",
+        "encode",
+        "decode",
+        "ObservationProcess",
+        "Event",
+        "SignalOccurrence"
+      ],
+      "aliases": [
+        "Market",
+        "Practice"
+      ]
+    },
+    {
+      "id": "PhysicalProcess",
+      "label": "Physical process",
+      "definition": "A process individuated by a change in physical configuration, composition, or energy.",
+      "children": [
+        "Motion",
+        "Touching",
+        "Radiating",
+        "ConfigurationChange",
+        "SurfaceChange",
+        "QuantityChange",
+        "StateChange",
+        "ChemicalProcess",
+        "wett",
+        "dry",
+        "Absorbing"
+      ]
+    },
+    {
+      "id": "Motion",
+      "label": "Motion",
+      "definition": "A physical process involving change of spatial position relative to a reference framework.",
+      "children": [
+        "BodyMotion",
+        "Transportation",
+        "Putting",
+        "Removing",
+        "Impelling"
+      ]
+    },
+    {
+      "id": "BodyMotion",
+      "label": "Bodily movement",
+      "definition": "A motion of an organism's body or body parts.",
+      "children": [
+        "walk",
+        "swim",
+        "dance"
+      ],
+      "alternateParents": [
+        "BiologicalProcess"
+      ],
+      "aliases": [
+        "Body Motion"
+      ]
+    },
+    {
+      "id": "walk",
+      "label": "Walking",
+      "definition": "A bodily movement advancing by successive supported steps.",
+      "children": [],
+      "aliases": [
+        "walk"
+      ]
+    },
+    {
+      "id": "swim",
+      "label": "Swimming",
+      "definition": "A bodily movement advancing through fluid by propulsive action.",
+      "children": [],
+      "aliases": [
+        "swim"
+      ]
+    },
+    {
+      "id": "dance",
+      "label": "Dancing",
+      "definition": "A bodily movement organized as rhythmic or expressive performance.",
+      "children": [],
+      "aliases": [
+        "dance"
+      ]
+    },
+    {
+      "id": "Transportation",
+      "label": "Transport",
+      "definition": "A motion organized to convey something between locations.",
+      "children": [],
+      "aliases": [
+        "Transportation"
+      ]
+    },
+    {
+      "id": "Putting",
+      "label": "Placement",
+      "definition": "A motion ending with an object at an intended location.",
+      "children": [],
+      "aliases": [
+        "Putting"
+      ]
+    },
+    {
+      "id": "Removing",
+      "label": "Removal",
+      "definition": "A motion taking an object away from a specified location.",
+      "children": [],
+      "aliases": [
+        "Removing"
+      ]
+    },
+    {
+      "id": "Impelling",
+      "label": "Propulsion",
+      "definition": "A motion produced by imparting force or momentum to an object.",
+      "children": [
+        "shoot"
+      ],
+      "aliases": [
+        "Impelling"
+      ]
+    },
+    {
+      "id": "shoot",
+      "label": "Shooting",
+      "definition": "A propulsion that launches a projectile from a discharge mechanism.",
+      "children": [],
+      "aliases": [
+        "shoot"
+      ]
+    },
+    {
+      "id": "Touching",
+      "label": "Contact onset",
+      "definition": "A physical process establishing contact between objects.",
+      "children": [
+        "impact"
+      ],
+      "aliases": [
+        "Touching"
+      ]
+    },
+    {
+      "id": "impact",
+      "label": "Impact",
+      "definition": "A contact onset involving rapid transfer of momentum.",
+      "children": [],
+      "aliases": [
+        "impact"
+      ]
+    },
+    {
+      "id": "Radiating",
+      "label": "Emission",
+      "definition": "A physical process releasing energy outward from a source.",
+      "children": [
+        "RadiatingLight",
+        "RadiatingSound"
+      ],
+      "aliases": [
+        "Radiating"
+      ]
+    },
+    {
+      "id": "RadiatingLight",
+      "label": "Light emission",
+      "definition": "An emission of electromagnetic radiation in an optical range.",
+      "children": [],
+      "aliases": [
+        "Radiating Light"
+      ]
+    },
+    {
+      "id": "RadiatingSound",
+      "label": "Sound emission",
+      "definition": "An emission of mechanical pressure waves through a medium.",
+      "children": [
+        "music"
+      ],
+      "aliases": [
+        "Radiating Sound"
+      ]
+    },
+    {
+      "id": "ConfigurationChange",
+      "label": "Configuration change",
+      "definition": "A physical process changing arrangement, connection, or form.",
+      "children": [
+        "attach",
+        "detach",
+        "combine",
+        "separate",
+        "substitute",
+        "ShapeChange",
+        "Poking",
+        "cover",
+        "uncover"
+      ]
+    },
+    {
+      "id": "attach",
+      "label": "Attachment",
+      "definition": "A configuration change joining objects through an enduring connection.",
+      "children": [],
+      "aliases": [
+        "attach"
+      ]
+    },
+    {
+      "id": "detach",
+      "label": "Detachment",
+      "definition": "A configuration change removing a connection between objects.",
+      "children": [],
+      "aliases": [
+        "detach"
+      ]
+    },
+    {
+      "id": "combine",
+      "label": "Combination",
+      "definition": "A configuration change bringing constituents together into a whole or mixture.",
+      "children": [],
+      "aliases": [
+        "combine"
+      ]
+    },
+    {
+      "id": "separate",
+      "label": "Separation",
+      "definition": "A configuration change dividing or isolating constituents.",
+      "children": [],
+      "aliases": [
+        "separate"
+      ]
+    },
+    {
+      "id": "substitute",
+      "label": "Replacement",
+      "definition": "A configuration change exchanging one constituent for another.",
+      "children": [],
+      "aliases": [
+        "substitute"
+      ]
+    },
+    {
+      "id": "ShapeChange",
+      "label": "Shape change",
+      "definition": "A configuration change altering an object's geometric form.",
+      "children": [
+        "cut"
+      ],
+      "aliases": [
+        "Shape Change"
+      ]
+    },
+    {
+      "id": "cut",
+      "label": "Cutting",
+      "definition": "A shape change dividing material along a path through applied force.",
+      "children": [],
+      "aliases": [
+        "cut"
+      ]
+    },
+    {
+      "id": "Poking",
+      "label": "Poking",
+      "definition": "A configuration change caused by a localized directed push into or against a surface.",
+      "children": []
+    },
+    {
+      "id": "cover",
+      "label": "Covering",
+      "definition": "A configuration change placing a layer or object over another.",
+      "children": [],
+      "aliases": [
+        "cover"
+      ]
+    },
+    {
+      "id": "uncover",
+      "label": "Uncovering",
+      "definition": "A configuration change exposing something by removing a covering.",
+      "children": [],
+      "aliases": [
+        "uncover"
+      ]
+    },
+    {
+      "id": "SurfaceChange",
+      "label": "Surface change",
+      "definition": "A physical process altering a surface's condition or constitution.",
+      "children": [
+        "Coloring"
+      ],
+      "aliases": [
+        "Surface Change"
+      ]
+    },
+    {
+      "id": "Coloring",
+      "label": "Coloring",
+      "definition": "A surface change altering its color through treatment or applied material.",
+      "children": []
+    },
+    {
+      "id": "QuantityChange",
+      "label": "Quantity change",
+      "definition": "A physical process changing the magnitude of a specified physical quantity.",
+      "children": [
+        "Increasing",
+        "Decreasing"
+      ],
+      "aliases": [
+        "Quantity Change"
+      ]
+    },
+    {
+      "id": "Increasing",
+      "label": "Increase",
+      "definition": "A quantity change raising a specified magnitude.",
+      "children": [
+        "Heating"
+      ],
+      "aliases": [
+        "Increasing"
+      ]
+    },
+    {
+      "id": "Decreasing",
+      "label": "Decrease",
+      "definition": "A quantity change lowering a specified magnitude.",
+      "children": [
+        "Cooling"
+      ],
+      "aliases": [
+        "Decreasing"
+      ]
+    },
+    {
+      "id": "Heating",
+      "label": "Heating",
+      "definition": "An increase of temperature through energy transfer or conversion.",
+      "children": []
+    },
+    {
+      "id": "Cooling",
+      "label": "Cooling",
+      "definition": "A decrease of temperature through energy transfer or conversion.",
+      "children": []
+    },
+    {
+      "id": "StateChange",
+      "label": "Phase change",
+      "definition": "A physical process changing the phase of a material.",
+      "children": [
+        "Boiling",
+        "Condensing",
+        "Freezing",
+        "Melting"
+      ],
+      "aliases": [
+        "State Change"
+      ]
+    },
+    {
+      "id": "Boiling",
+      "label": "Boiling",
+      "definition": "A phase change from liquid to gas through vapor formation within the liquid.",
+      "children": []
+    },
+    {
+      "id": "Condensing",
+      "label": "Condensation",
+      "definition": "A phase change from gas to liquid.",
+      "children": [],
+      "aliases": [
+        "Condensing"
+      ]
+    },
+    {
+      "id": "Freezing",
+      "label": "Freezing",
+      "definition": "A phase change from liquid to solid.",
+      "children": []
+    },
+    {
+      "id": "Melting",
+      "label": "Melting",
+      "definition": "A phase change from solid to liquid.",
+      "children": []
+    },
+    {
+      "id": "ChemicalProcess",
+      "label": "Chemical reaction",
+      "definition": "A physical process changing chemical species through rearrangement of chemical bonds or electrons.",
+      "children": [
+        "ChemicalSynthesis",
+        "ChemicalDecomposition",
+        "combust"
+      ],
+      "aliases": [
+        "Chemical Process"
+      ]
+    },
+    {
+      "id": "ChemicalSynthesis",
+      "label": "Chemical synthesis",
+      "definition": "A chemical reaction producing a target substance from precursor substances.",
+      "children": [],
+      "aliases": [
+        "Chemical Synthesis"
+      ]
+    },
+    {
+      "id": "ChemicalDecomposition",
+      "label": "Chemical decomposition",
+      "definition": "A chemical reaction breaking a chemical species into simpler species.",
+      "children": [],
+      "aliases": [
+        "Chemical Decomposition"
+      ]
+    },
+    {
+      "id": "combust",
+      "label": "Combustion",
+      "definition": "A chemical reaction involving rapid oxidation with release of energy.",
+      "children": [],
+      "aliases": [
+        "combust"
+      ]
+    },
+    {
+      "id": "wett",
+      "label": "Wetting",
+      "definition": "A physical process establishing liquid contact over a material surface.",
+      "children": [],
+      "aliases": [
+        "wett"
+      ]
+    },
+    {
+      "id": "dry",
+      "label": "Drying",
+      "definition": "A physical process removing liquid or moisture from a material.",
+      "children": [],
+      "aliases": [
+        "dry"
+      ]
+    },
+    {
+      "id": "Creation",
+      "label": "Creation",
+      "definition": "A process bringing an entity into existence within the specified context.",
+      "children": [
+        "Making"
+      ]
+    },
+    {
+      "id": "Making",
+      "label": "Making",
+      "definition": "A creation accomplished through intentional production.",
+      "children": [
+        "Constructing",
+        "Cooking",
+        "Manufacture",
+        "ContentDevelopment"
+      ]
+    },
+    {
+      "id": "Constructing",
+      "label": "Construction",
+      "definition": "A making that assembles components into a structure.",
+      "children": [],
+      "aliases": [
+        "Constructing"
+      ]
+    },
+    {
+      "id": "Cooking",
+      "label": "Cooking",
+      "definition": "A making that prepares food through controlled physical or chemical treatment.",
+      "children": []
+    },
+    {
+      "id": "Manufacture",
+      "label": "Manufacturing",
+      "definition": "A making organized to produce artifacts or processed materials.",
+      "children": [],
+      "aliases": [
+        "Manufacture"
+      ]
+    },
+    {
+      "id": "ContentDevelopment",
+      "label": "Content creation",
+      "definition": "A making that produces or revises representational content.",
+      "children": [
+        "write"
+      ],
+      "aliases": [
+        "Content Development",
+        "Publication"
+      ]
+    },
+    {
+      "id": "write",
+      "label": "Writing",
+      "definition": "A content creation producing linguistic content in an inscribed or encoded form.",
+      "children": [],
+      "alternateParents": [
+        "IntentionalProcess"
+      ],
+      "aliases": [
+        "write"
+      ]
+    },
+    {
+      "id": "Damaging",
+      "label": "Damage",
+      "definition": "A process reducing an entity's integrity or functional capacity.",
+      "children": [
+        "Destruction",
+        "Injuring"
+      ],
+      "aliases": [
+        "Damaging"
+      ]
+    },
+    {
+      "id": "Destruction",
+      "label": "Destruction",
+      "definition": "A damage ending the entity's identity or operative organization.",
+      "children": [
+        "kill"
+      ]
+    },
+    {
+      "id": "BiologicalProcess",
+      "label": "Biological process",
+      "definition": "A process constituted by the activity or life history of biological entities.",
+      "children": [
+        "PhysiologicProcess",
+        "OrganismProcess",
+        "Ingesting",
+        "PathologicProcess"
+      ],
+      "aliases": [
+        "Biological Process"
+      ]
+    },
+    {
+      "id": "PhysiologicProcess",
+      "label": "Physiological process",
+      "definition": "A biological process contributing to the normal functioning of an organism.",
+      "children": [
+        "OrganOrTissueProcess",
+        "breath",
+        "Digesting"
+      ],
+      "aliases": [
+        "Physiologic Process"
+      ]
+    },
+    {
+      "id": "OrganOrTissueProcess",
+      "label": "Organ or tissue activity",
+      "definition": "A physiological process individuated at the level of an organ or tissue.",
+      "children": [],
+      "aliases": [
+        "Organ Or Tissue Process"
+      ]
+    },
+    {
+      "id": "OrganismProcess",
+      "label": "Organism-level process",
+      "definition": "A biological process individuated by an organism's life history or integrated activity.",
+      "children": [
+        "Birth",
+        "Death",
+        "Growth",
+        "Replication",
+        "BiologicalDevelopment"
+      ],
+      "aliases": [
+        "Organism Process"
+      ]
+    },
+    {
+      "id": "Birth",
+      "label": "Birth",
+      "definition": "An organism-level process in which offspring emerge or are delivered from a parent.",
+      "children": []
+    },
+    {
+      "id": "Death",
+      "label": "Death",
+      "definition": "An organism-level process ending the organism's life.",
+      "children": [],
+      "alternateParents": [
+        "Event"
+      ]
+    },
+    {
+      "id": "Growth",
+      "label": "Biological growth",
+      "definition": "An organism-level process increasing bodily size or biological mass.",
+      "children": [],
+      "aliases": [
+        "Growth"
+      ]
+    },
+    {
+      "id": "Replication",
+      "label": "Reproduction",
+      "definition": "An organism-level process generating new organisms of a lineage.",
+      "children": [
+        "AsexualReplication",
+        "SexualReplication"
+      ],
+      "aliases": [
+        "Replication"
+      ]
+    },
+    {
+      "id": "AsexualReplication",
+      "label": "Asexual reproduction",
+      "definition": "A reproduction without fusion of gametes.",
+      "children": [],
+      "aliases": [
+        "Asexual Replication"
+      ]
+    },
+    {
+      "id": "SexualReplication",
+      "label": "Sexual reproduction",
+      "definition": "A reproduction involving fusion of gametes.",
+      "children": [],
+      "aliases": [
+        "Sexual Replication"
+      ]
+    },
+    {
+      "id": "breath",
+      "label": "Breathing",
+      "definition": "A physiological process moving respiratory medium into and out of respiratory structures.",
+      "children": [],
+      "aliases": [
+        "breath"
+      ]
+    },
+    {
+      "id": "Digesting",
+      "label": "Digestion",
+      "definition": "A physiological process breaking ingested material into absorbable constituents.",
+      "children": [],
+      "aliases": [
+        "Digesting"
+      ]
+    },
+    {
+      "id": "Ingesting",
+      "label": "Ingestion",
+      "definition": "A biological process taking material into an organism for consumption.",
+      "children": [
+        "eat",
+        "drink"
+      ],
+      "aliases": [
+        "Ingesting"
+      ]
+    },
+    {
+      "id": "eat",
+      "label": "Eating",
+      "definition": "An ingestion of food through an oral opening.",
+      "children": [],
+      "aliases": [
+        "eat"
+      ]
+    },
+    {
+      "id": "drink",
+      "label": "Drinking",
+      "definition": "An ingestion of liquid through an oral opening.",
+      "children": [],
+      "aliases": [
+        "drink"
+      ]
+    },
+    {
+      "id": "PathologicProcess",
+      "label": "Pathological process",
+      "definition": "A biological process constituting a disorder of biological functioning.",
+      "children": [],
+      "aliases": [
+        "Pathologic Process"
+      ]
+    },
+    {
+      "id": "Injuring",
+      "label": "Injury",
+      "definition": "A damage to a living organism's body.",
+      "children": [
+        "poison"
+      ],
+      "alternateParents": [
+        "BiologicalProcess"
+      ],
+      "aliases": [
+        "Injuring"
+      ]
+    },
+    {
+      "id": "poison",
+      "label": "Poisoning",
+      "definition": "An injury caused by a substance's toxic action.",
+      "children": [],
+      "aliases": [
+        "poison"
+      ]
+    },
+    {
+      "id": "kill",
+      "label": "Killing",
+      "definition": "A destruction that causes an organism's death.",
+      "children": [],
+      "alternateParents": [
+        "BiologicalProcess"
+      ],
+      "aliases": [
+        "kill"
+      ]
+    },
+    {
+      "id": "MentalProcess",
+      "label": "Mental process",
+      "definition": "A process constituted by perception, cognition, emotion, or other mental activity.",
+      "children": [
+        "Perception",
+        "Remembering",
+        "CognitiveProcess"
+      ],
+      "aliases": [
+        "Psychological Process"
+      ]
+    },
+    {
+      "id": "Perception",
+      "label": "Perception",
+      "definition": "A mental process acquiring sensory awareness of something.",
+      "children": [
+        "hear",
+        "see",
+        "smell",
+        "taste",
+        "TactilePerception"
+      ]
+    },
+    {
+      "id": "hear",
+      "label": "Hearing",
+      "definition": "A perception through the auditory system.",
+      "children": [],
+      "aliases": [
+        "hear"
+      ]
+    },
+    {
+      "id": "see",
+      "label": "Seeing",
+      "definition": "A perception through the visual system.",
+      "children": [],
+      "aliases": [
+        "see"
+      ]
+    },
+    {
+      "id": "smell",
+      "label": "Smelling",
+      "definition": "A perception through the olfactory system.",
+      "children": [],
+      "aliases": [
+        "smell"
+      ]
+    },
+    {
+      "id": "taste",
+      "label": "Tasting",
+      "definition": "A perception through the gustatory system.",
+      "children": [],
+      "aliases": [
+        "taste"
+      ]
+    },
+    {
+      "id": "TactilePerception",
+      "label": "Touch perception",
+      "definition": "A perception through bodily contact or mechanical stimulation of skin.",
+      "children": [],
+      "aliases": [
+        "Tactile Perception"
+      ]
+    },
+    {
+      "id": "Remembering",
+      "label": "Remembering",
+      "definition": "A mental process retrieving or sustaining previously acquired experience or information.",
+      "children": []
+    },
+    {
+      "id": "CognitiveProcess",
+      "label": "Cognitive process",
+      "definition": "A mental process operating on interpretations, representations, or judgments.",
+      "children": [
+        "calculate",
+        "classify",
+        "compare",
+        "learn",
+        "plan",
+        "predict",
+        "reason",
+        "select",
+        "read"
+      ]
+    },
+    {
+      "id": "calculate",
+      "label": "Calculation",
+      "definition": "A cognitive process determining a result through specified operations.",
+      "children": [],
+      "aliases": [
+        "calculate"
+      ]
+    },
+    {
+      "id": "classify",
+      "label": "Classifying",
+      "definition": "A cognitive process assigning something to a category.",
+      "children": [],
+      "aliases": [
+        "classify"
+      ]
+    },
+    {
+      "id": "compare",
+      "label": "Comparison",
+      "definition": "A cognitive process determining similarities or differences.",
+      "children": [],
+      "aliases": [
+        "compare"
+      ]
+    },
+    {
+      "id": "learn",
+      "label": "Learning",
+      "definition": "A cognitive process acquiring or revising knowledge or skill.",
+      "children": [],
+      "aliases": [
+        "learn"
+      ]
+    },
+    {
+      "id": "plan",
+      "label": "Planning",
+      "definition": "A cognitive process constructing a course of intended action.",
+      "children": [],
+      "aliases": [
+        "plan"
+      ]
+    },
+    {
+      "id": "predict",
+      "label": "Prediction",
+      "definition": "A cognitive process forming a judgment about an unobserved outcome.",
+      "children": [],
+      "aliases": [
+        "predict"
+      ]
+    },
+    {
+      "id": "reason",
+      "label": "Reasoning",
+      "definition": "A cognitive process drawing conclusions from premises or considerations.",
+      "children": [],
+      "aliases": [
+        "reason"
+      ]
+    },
+    {
+      "id": "select",
+      "label": "Selection",
+      "definition": "A cognitive process choosing among alternatives.",
+      "children": [],
+      "aliases": [
+        "select"
+      ]
+    },
+    {
+      "id": "IntentionalProcess",
+      "label": "Intentional activity",
+      "definition": "A process constituted by an agent's purposive action.",
+      "children": [
+        "Guiding",
+        "Maintaining",
+        "Repairing",
+        "TherapeuticalProcess",
+        "Searching",
+        "Maneuver",
+        "RecreationOrExercise"
+      ],
+      "aliases": [
+        "Intentional Process"
+      ]
+    },
+    {
+      "id": "Guiding",
+      "label": "Guidance",
+      "definition": "An intentional activity directing another's action toward an outcome.",
+      "children": [
+        "Managing",
+        "Steering",
+        "EducationalProcess"
+      ],
+      "aliases": [
+        "Guiding"
+      ]
+    },
+    {
+      "id": "Managing",
+      "label": "Management",
+      "definition": "A guidance coordinating resources, participants, or operations.",
+      "children": [],
+      "aliases": [
+        "Managing"
+      ]
+    },
+    {
+      "id": "Steering",
+      "label": "Steering",
+      "definition": "A guidance controlling the direction of a moving system.",
+      "children": []
+    },
+    {
+      "id": "EducationalProcess",
+      "label": "Education",
+      "definition": "A guidance organized to support another's learning.",
+      "children": [],
+      "aliases": [
+        "Educational Process"
+      ]
+    },
+    {
+      "id": "Maintaining",
+      "label": "Maintenance",
+      "definition": "An intentional activity preserving a specified condition or capacity.",
+      "children": [
+        "Keeping"
+      ],
+      "aliases": [
+        "Maintaining"
+      ]
+    },
+    {
+      "id": "Keeping",
+      "label": "Retention",
+      "definition": "A maintenance preserving possession, custody, or presence.",
+      "children": [
+        "confine"
+      ],
+      "aliases": [
+        "Keeping"
+      ]
+    },
+    {
+      "id": "confine",
+      "label": "Confinement",
+      "definition": "A retention restricting an entity's movement beyond a boundary.",
+      "children": [],
+      "aliases": [
+        "conﬁne"
+      ]
+    },
+    {
+      "id": "Repairing",
+      "label": "Repair",
+      "definition": "An intentional activity restoring damaged organization or capacity.",
+      "children": [],
+      "aliases": [
+        "Repairing"
+      ]
+    },
+    {
+      "id": "TherapeuticalProcess",
+      "label": "Treatment",
+      "definition": "An intentional activity intended to alleviate or correct a health condition.",
+      "children": [
+        "Surgery"
+      ],
+      "aliases": [
+        "Therapeutical Process"
+      ]
+    },
+    {
+      "id": "Surgery",
+      "label": "Surgery",
+      "definition": "A treatment involving operative intervention in bodily tissue.",
+      "children": []
+    },
+    {
+      "id": "Searching",
+      "label": "Search",
+      "definition": "An intentional activity attempting to find a specified entity or information.",
+      "children": [
+        "Investigating",
+        "pursue"
+      ],
+      "aliases": [
+        "Searching"
+      ]
+    },
+    {
+      "id": "Investigating",
+      "label": "Investigation",
+      "definition": "A search organized to establish an answer through evidence.",
+      "children": [
+        "DiagnosticProcess"
+      ],
+      "aliases": [
+        "Investigating"
+      ]
+    },
+    {
+      "id": "DiagnosticProcess",
+      "label": "Diagnosis",
+      "definition": "An investigation intended to identify a condition or its cause.",
+      "children": [],
+      "aliases": [
+        "Diagnostic Process"
+      ]
+    },
+    {
+      "id": "pursue",
+      "label": "Pursuit",
+      "definition": "A search involving following or tracking a target.",
+      "children": [],
+      "aliases": [
+        "pursue"
+      ]
+    },
+    {
+      "id": "Maneuver",
+      "label": "Maneuver",
+      "definition": "An intentional activity executing a coordinated change of position for an objective.",
+      "children": []
+    },
+    {
+      "id": "RecreationOrExercise",
+      "label": "Recreation or exercise",
+      "definition": "An intentional activity undertaken for enjoyment, practice, or bodily conditioning.",
+      "children": [
+        "Gaming"
+      ],
+      "aliases": [
+        "Recreation Or Exercise"
+      ]
+    },
+    {
+      "id": "Gaming",
+      "label": "Game playing",
+      "definition": "A recreation or exercise conducted under the rules of a game.",
+      "children": [
+        "Sport"
+      ],
+      "aliases": [
+        "Game",
+        "Gaming"
+      ]
+    },
+    {
+      "id": "Sport",
+      "label": "Sport participation",
+      "definition": "A game playing involving organized competition in physical skill or exertion.",
+      "children": [],
+      "aliases": [
+        "Sport"
+      ]
+    },
+    {
+      "id": "SocialInteraction",
+      "label": "Social interaction",
+      "definition": "A process constituted by reciprocal or socially directed action among participants.",
+      "children": [
+        "Communication",
+        "Meeting",
+        "Cooperation",
+        "pretend",
+        "Contest",
+        "LegalAction",
+        "ChangeOfPossession",
+        "Transaction",
+        "OrganizationalProcess",
+        "PoliticalProcess",
+        "ReligiousProcess"
+      ],
+      "aliases": [
+        "Social Interaction"
+      ]
+    },
+    {
+      "id": "Communication",
+      "label": "Communication",
+      "definition": "A social interaction conveying interpretable content to a recipient.",
+      "children": [
+        "LinguisticCommunication",
+        "Disseminating",
+        "Publication"
+      ]
+    },
+    {
+      "id": "LinguisticCommunication",
+      "label": "Linguistic communication",
+      "definition": "A communication using expressions of a language.",
+      "children": [
+        "Directing",
+        "committ",
+        "declare",
+        "express",
+        "state"
+      ],
+      "aliases": [
+        "Linguistic Communication"
+      ]
+    },
+    {
+      "id": "Disseminating",
+      "label": "Dissemination",
+      "definition": "A communication distributing content to an audience.",
+      "children": [
+        "advertise"
+      ],
+      "aliases": [
+        "Disseminating"
+      ]
+    },
+    {
+      "id": "advertise",
+      "label": "Advertising",
+      "definition": "A dissemination intended to promote interest in an offering or activity.",
+      "children": [],
+      "aliases": [
+        "advertise"
+      ]
+    },
+    {
+      "id": "Directing",
+      "label": "Directive communication",
+      "definition": "A linguistic communication intended to elicit an action or response.",
+      "children": [
+        "order",
+        "question",
+        "request"
+      ],
+      "aliases": [
+        "Directing"
+      ]
+    },
+    {
+      "id": "order",
+      "label": "Ordering",
+      "definition": "A directive communication presented as authoritative instruction.",
+      "children": [],
+      "aliases": [
+        "order"
+      ]
+    },
+    {
+      "id": "question",
+      "label": "Questioning",
+      "definition": "A directive communication seeking an answer.",
+      "children": [],
+      "aliases": [
+        "question"
+      ]
+    },
+    {
+      "id": "request",
+      "label": "Requesting",
+      "definition": "A directive communication asking for action without claiming authority to compel it.",
+      "children": [],
+      "aliases": [
+        "request"
+      ]
+    },
+    {
+      "id": "committ",
+      "label": "Committing",
+      "definition": "A linguistic communication undertaking a commitment.",
+      "children": [],
+      "aliases": [
+        "committ"
+      ]
+    },
+    {
+      "id": "declare",
+      "label": "Declaring",
+      "definition": "A linguistic communication purporting to establish a status through recognized authority.",
+      "children": [],
+      "aliases": [
+        "declare"
+      ]
+    },
+    {
+      "id": "express",
+      "label": "Expressing",
+      "definition": "A linguistic communication conveying an attitude, feeling, or intention.",
+      "children": [],
+      "aliases": [
+        "express"
+      ]
+    },
+    {
+      "id": "state",
+      "label": "Asserting",
+      "definition": "A linguistic communication presenting a proposition as true.",
+      "children": [],
+      "aliases": [
+        "state"
+      ]
+    },
+    {
+      "id": "Meeting",
+      "label": "Meeting",
+      "definition": "A social interaction involving participants assembled for a shared occasion.",
+      "children": []
+    },
+    {
+      "id": "Cooperation",
+      "label": "Cooperation",
+      "definition": "A social interaction coordinating participants toward a shared outcome.",
+      "children": []
+    },
+    {
+      "id": "pretend",
+      "label": "Pretending",
+      "definition": "A social interaction enacting a situation understood as imagined.",
+      "children": [],
+      "aliases": [
+        "pretend"
+      ]
+    },
+    {
+      "id": "Contest",
+      "label": "Contest",
+      "definition": "A social interaction organized around incompatible participant objectives or competing outcomes.",
+      "children": [
+        "ViolentContest"
+      ]
+    },
+    {
+      "id": "ViolentContest",
+      "label": "Violent contest",
+      "definition": "A contest conducted through physical force against participants.",
+      "children": [
+        "Battle",
+        "War"
+      ],
+      "aliases": [
+        "Violent Contest"
+      ]
+    },
+    {
+      "id": "Battle",
+      "label": "Battle",
+      "definition": "A violent contest constituting an episode of organized armed conflict.",
+      "children": []
+    },
+    {
+      "id": "War",
+      "label": "War",
+      "definition": "A violent contest constituting sustained organized armed conflict.",
+      "children": []
+    },
+    {
+      "id": "LegalAction",
+      "label": "Legal proceeding",
+      "definition": "A social interaction conducted through recognized legal procedures.",
+      "children": [],
+      "aliases": [
+        "Legal Action"
+      ]
+    },
+    {
+      "id": "ChangeOfPossession",
+      "label": "Possession transfer",
+      "definition": "A social interaction changing custody, control, possession, or ownership entitlement.",
+      "children": [
+        "Getting",
+        "Giving",
+        "OwnershipTransfer"
+      ],
+      "aliases": [
+        "Change Of Possession"
+      ]
+    },
+    {
+      "id": "Getting",
+      "label": "Acquisition",
+      "definition": "A possession transfer considered as receipt by a participant.",
+      "children": [
+        "borrow",
+        "UnilateralGetting"
+      ],
+      "aliases": [
+        "Getting"
+      ]
+    },
+    {
+      "id": "Giving",
+      "label": "Giving",
+      "definition": "A possession transfer considered as provision by a participant.",
+      "children": [
+        "lend",
+        "UnilateralGiving"
+      ]
+    },
+    {
+      "id": "borrow",
+      "label": "Borrowing",
+      "definition": "An acquisition with an undertaking to return the received item or its equivalent.",
+      "children": [],
+      "aliases": [
+        "borrow"
+      ]
+    },
+    {
+      "id": "lend",
+      "label": "Lending",
+      "definition": "A giving with an expectation of return of the item or its equivalent.",
+      "children": [],
+      "aliases": [
+        "lend"
+      ]
+    },
+    {
+      "id": "UnilateralGetting",
+      "label": "Unilateral taking",
+      "definition": "An acquisition without a reciprocal provision by the acquiring participant.",
+      "children": [],
+      "aliases": [
+        "Unilateral Getting"
+      ]
+    },
+    {
+      "id": "UnilateralGiving",
+      "label": "Unilateral giving",
+      "definition": "A giving without a reciprocal transfer from the recipient.",
+      "children": [],
+      "aliases": [
+        "Unilateral Giving"
+      ]
+    },
+    {
+      "id": "Transaction",
+      "label": "Transaction",
+      "definition": "A social interaction implementing an agreed exchange or change of entitlement.",
+      "children": [
+        "FinancialTransaction"
+      ]
+    },
+    {
+      "id": "FinancialTransaction",
+      "label": "Financial transaction",
+      "definition": "A transaction involving monetary value, payment, or financial claims.",
+      "children": [
+        "buy",
+        "sell",
+        "bet"
+      ],
+      "aliases": [
+        "Financial Transaction"
+      ]
+    },
+    {
+      "id": "buy",
+      "label": "Buying",
+      "definition": "A financial transaction considered as acquisition in exchange for payment.",
+      "children": [],
+      "aliases": [
+        "buy"
+      ]
+    },
+    {
+      "id": "sell",
+      "label": "Selling",
+      "definition": "A financial transaction considered as provision in exchange for payment.",
+      "children": [],
+      "aliases": [
+        "sell"
+      ]
+    },
+    {
+      "id": "bet",
+      "label": "Betting",
+      "definition": "A financial transaction staking value on an uncertain outcome.",
+      "children": [],
+      "aliases": [
+        "bet"
+      ]
+    },
+    {
+      "id": "OrganizationalProcess",
+      "label": "Organizational process",
+      "definition": "A social interaction constituted by an organization's procedures or coordinated activity.",
+      "children": [
+        "JoiningAnOrganization",
+        "LeavingAnOrganization",
+        "MilitaryProcess",
+        "RegulatoryProcess"
+      ],
+      "aliases": [
+        "Organizational Process"
+      ]
+    },
+    {
+      "id": "JoiningAnOrganization",
+      "label": "Organizational admission",
+      "definition": "An organizational process establishing someone's membership or participation.",
+      "children": [
+        "hire",
+        "matriculate"
+      ],
+      "aliases": [
+        "Joining An Organization"
+      ]
+    },
+    {
+      "id": "hire",
+      "label": "Hiring",
+      "definition": "An organizational admission establishing an employment engagement.",
+      "children": [],
+      "aliases": [
+        "hire"
+      ]
+    },
+    {
+      "id": "matriculate",
+      "label": "Matriculation",
+      "definition": "An organizational admission establishing a student's enrollment.",
+      "children": [],
+      "aliases": [
+        "matriculate"
+      ]
+    },
+    {
+      "id": "LeavingAnOrganization",
+      "label": "Organizational departure",
+      "definition": "An organizational process ending someone's membership or participation.",
+      "children": [
+        "graduate",
+        "terminate_Employment"
+      ],
+      "aliases": [
+        "Leaving An Organization"
+      ]
+    },
+    {
+      "id": "graduate",
+      "label": "Graduation",
+      "definition": "An organizational departure marking completion of a course of study.",
+      "children": [],
+      "aliases": [
+        "graduate"
+      ]
+    },
+    {
+      "id": "terminate_Employment",
+      "label": "Employment termination",
+      "definition": "An organizational departure ending an employment engagement.",
+      "children": [],
+      "aliases": [
+        "terminate Employment"
+      ]
+    },
+    {
+      "id": "PoliticalProcess",
+      "label": "Political process",
+      "definition": "A social interaction concerning collective governing power or public decisions.",
+      "children": [],
+      "aliases": [
+        "Political Process"
+      ]
+    },
+    {
+      "id": "MilitaryProcess",
+      "label": "Military process",
+      "definition": "An organizational process constituted by military operations or administration.",
+      "children": [],
+      "aliases": [
+        "Military Process"
+      ]
+    },
+    {
+      "id": "RegulatoryProcess",
+      "label": "Regulation",
+      "definition": "An organizational process establishing, applying, or enforcing governing requirements.",
+      "children": [],
+      "aliases": [
+        "Regulatory Process"
+      ]
+    },
+    {
+      "id": "ReligiousProcess",
+      "label": "Religious practice occurrence",
+      "definition": "A social interaction enacting religious beliefs, observances, or rites.",
+      "children": [],
+      "aliases": [
+        "Religious Process"
+      ]
+    },
+    {
+      "id": "Publication",
+      "label": "Publication",
+      "definition": "A communication making content available to a public audience.",
+      "children": []
+    },
+    {
+      "id": "read",
+      "label": "Reading",
+      "definition": "A cognitive process interpreting inscribed or encoded linguistic content.",
+      "children": [],
+      "aliases": [
+        "read"
+      ]
+    },
+    {
+      "id": "encode",
+      "label": "Encoding",
+      "definition": "A process transforming content into a representation under a coding scheme.",
+      "children": [],
+      "aliases": [
+        "encode"
+      ]
+    },
+    {
+      "id": "decode",
+      "label": "Decoding",
+      "definition": "A process recovering content from a representation under a coding scheme.",
+      "children": [],
+      "aliases": [
+        "decode"
+      ]
+    },
+    {
+      "id": "music",
+      "label": "Musical sound production",
+      "definition": "A sound emission organized as musical performance.",
+      "children": [],
+      "aliases": [
+        "music"
+      ]
+    },
+    {
+      "id": "ObservationProcess",
+      "label": "Observation activity",
+      "definition": "A process acquiring information through attention, detection, or instrumentation.",
+      "children": [
+        "MeasurementProcess"
+      ],
+      "aliases": [
+        "Observation"
+      ]
+    },
+    {
+      "id": "MeasurementProcess",
+      "label": "Measurement activity",
+      "definition": "An observation activity assigning a quantity value through a specified procedure.",
+      "children": [],
+      "aliases": [
+        "Measurement"
+      ]
+    },
+    {
+      "id": "StateInstance",
+      "label": "State instance",
+      "definition": "A realized entity consisting in an entity or system's condition over a specified context.",
+      "children": [
+        "MentalState",
+        "RelationalState",
+        "Status"
+      ],
+      "aliases": [
+        "Fact",
+        "Social entity"
+      ]
+    },
+    {
+      "id": "MentalState",
+      "label": "Mental state",
+      "definition": "A state instance constituted by a subject's mental condition.",
+      "children": [
+        "BeliefState",
+        "PreferenceState"
+      ]
+    },
+    {
+      "id": "BeliefState",
+      "label": "Belief state",
+      "definition": "A mental state in which a subject accepts a proposition as true.",
+      "children": [
+        "KnowledgeState"
+      ],
+      "aliases": [
+        "Belief"
+      ]
+    },
+    {
+      "id": "KnowledgeState",
+      "label": "Knowledge state",
+      "definition": "A belief state counted as knowledge under specified epistemic criteria.",
+      "children": [],
+      "aliases": [
+        "Knowledge"
+      ]
+    },
+    {
+      "id": "PreferenceState",
+      "label": "Preference state",
+      "definition": "A mental state ranking alternatives as more or less desirable.",
+      "children": [],
+      "aliases": [
+        "Preference"
+      ]
+    },
+    {
+      "id": "RelationalState",
+      "label": "Relational state",
+      "definition": "A state instance constituted by a connection among two or more participants.",
+      "children": [
+        "Relationship",
+        "Agreement",
+        "ObligationInstance"
+      ],
+      "aliases": [
+        "Relation"
+      ]
+    },
+    {
+      "id": "Relationship",
+      "label": "Social relationship instance",
+      "definition": "A relational state sustained by social interaction or recognition.",
+      "children": [],
+      "alternateParents": [
+        "SocialEntity"
+      ],
+      "aliases": [
+        "Relationship"
+      ]
+    },
+    {
+      "id": "Agreement",
+      "label": "Agreement instance",
+      "definition": "A relational state constituted by participants' shared acceptance or commitment.",
+      "children": [],
+      "alternateParents": [
+        "SocialEntity"
+      ],
+      "aliases": [
+        "Agreement",
+        "Contract"
+      ]
+    },
+    {
+      "id": "ObligationInstance",
+      "label": "Obligation instance",
+      "definition": "A relational state binding a bearer to a required action under a normative context.",
+      "children": [],
+      "aliases": [
+        "Contract",
+        "Obligation"
+      ]
+    },
+    {
+      "id": "Status",
+      "label": "Status instance",
+      "definition": "A state instance consisting in socially recognized standing in a context.",
+      "children": [],
+      "alternateParents": [
+        "SocialEntity"
+      ],
+      "aliases": [
+        "License",
+        "Patent",
+        "Status"
+      ]
+    },
+    {
+      "id": "DependentFeature",
+      "label": "Dependent feature",
+      "definition": "A realized entity individuated through the particular bearer whose feature it is.",
+      "children": [
+        "Quality",
+        "Disposition",
+        "RoleInstance",
+        "PurposeInstance"
+      ],
+      "aliases": [
+        "Property"
+      ]
+    },
+    {
+      "id": "Quality",
+      "label": "Quality instance",
+      "definition": "A dependent feature specifying a bearer's actual condition on a descriptive dimension.",
+      "children": [
+        "QuantitativeQuality"
+      ],
+      "aliases": [
+        "Quality"
+      ]
+    },
+    {
+      "id": "QuantitativeQuality",
+      "label": "Quantitative quality instance",
+      "definition": "A quality instance admitting magnitude on a specified scale.",
+      "children": [],
+      "aliases": [
+        "Quantity"
+      ]
+    },
+    {
+      "id": "Disposition",
+      "label": "Disposition instance",
+      "definition": "A dependent feature consisting in a bearer's tendency to respond under specified conditions.",
+      "children": [
+        "Capability"
+      ],
+      "aliases": [
+        "Disposition"
+      ]
+    },
+    {
+      "id": "Capability",
+      "label": "Capability instance",
+      "definition": "A disposition instance enabling a bearer to perform a specified activity.",
+      "children": [],
+      "aliases": [
+        "Capability"
+      ]
+    },
+    {
+      "id": "RoleInstance",
+      "label": "Role instance",
+      "definition": "A dependent feature constituted by a bearer's assigned or contextual function.",
+      "children": [],
+      "aliases": [
+        "Role"
+      ]
+    },
+    {
+      "id": "PurposeInstance",
+      "label": "Purpose instance",
+      "definition": "A dependent feature constituted by an intended outcome assigned to a bearer.",
+      "children": [],
+      "aliases": [
+        "Purpose"
+      ]
+    },
+    {
+      "id": "AbstractStructure",
+      "label": "Abstract structure",
+      "definition": "An abstract entity individuated by constituent elements and their organization.",
+      "children": [
+        "ComputationalEntity",
+        "Language",
+        "FormalLanguage",
+        "Notation"
+      ]
+    },
+    {
+      "id": "MathematicalEntity",
+      "label": "Mathematical entity",
+      "definition": "An abstract entity individuated by mathematical specification.",
+      "children": [
+        "Number",
+        "Set",
+        "Sequence",
+        "Function",
+        "AlgebraicEntity",
+        "GeometricEntity",
+        "TopologicalEntity",
+        "AnalyticEntity",
+        "ProbabilityEntity",
+        "Graph"
+      ]
+    },
+    {
+      "id": "Number",
+      "label": "Number",
+      "definition": "A mathematical object specifying numerical magnitude, order, or a numerical extension thereof.",
+      "children": [
+        "NaturalNumber",
+        "Integer",
+        "RationalNumber",
+        "RealNumber",
+        "ComplexNumber"
+      ]
+    },
+    {
+      "id": "NaturalNumber",
+      "label": "Natural number",
+      "definition": "A number in the nonnegative integer sequence beginning with zero.",
+      "children": [],
+      "alternateParents": [
+        "Integer"
+      ]
+    },
+    {
+      "id": "Integer",
+      "label": "Integer",
+      "definition": "A number in the whole-number sequence and its negatives.",
+      "children": [],
+      "alternateParents": [
+        "RationalNumber"
+      ]
+    },
+    {
+      "id": "RationalNumber",
+      "label": "Rational number",
+      "definition": "A number expressible as a ratio of integers with nonzero denominator.",
+      "children": [],
+      "alternateParents": [
+        "RealNumber"
+      ]
+    },
+    {
+      "id": "RealNumber",
+      "label": "Real number",
+      "definition": "A number in the complete ordered field extending the rational numbers.",
+      "children": [],
+      "alternateParents": [
+        "ComplexNumber"
+      ]
+    },
+    {
+      "id": "ComplexNumber",
+      "label": "Complex number",
+      "definition": "A number expressible as a real part plus an imaginary part times a square root of minus one.",
+      "children": []
+    },
+    {
+      "id": "Set",
+      "label": "Set",
+      "definition": "A mathematical object individuated extensionally by its members under a specified set theory.",
+      "children": []
+    },
+    {
+      "id": "Sequence",
+      "label": "Sequence",
+      "definition": "A mathematical object assigning an element to each position in an ordered index domain.",
+      "children": []
+    },
+    {
+      "id": "Function",
+      "label": "Function",
+      "definition": "A mathematical object assigning exactly one output to each input in its domain.",
+      "children": [
+        "ComputableFunction"
+      ]
+    },
+    {
+      "id": "ComputableFunction",
+      "label": "Computable function",
+      "definition": "A function whose outputs can be obtained by an effective computational procedure.",
+      "children": [
+        "RecursiveFunction"
+      ]
+    },
+    {
+      "id": "RecursiveFunction",
+      "label": "Recursive function",
+      "definition": "A computable function definable by the specified recursion formalism.",
+      "children": []
+    },
+    {
+      "id": "AlgebraicEntity",
+      "label": "Algebraic structure",
+      "definition": "A mathematical structure specified by operations and their governing laws.",
+      "children": [
+        "AlgebraicGroup"
+      ],
+      "aliases": [
+        "Algebraic entity"
+      ]
+    },
+    {
+      "id": "AlgebraicGroup",
+      "label": "Algebraic group",
+      "definition": "An algebraic structure with one associative operation, an identity, and inverses.",
+      "children": []
+    },
+    {
+      "id": "GeometricEntity",
+      "label": "Geometric object",
+      "definition": "A mathematical object specified through spatial form or geometric incidence.",
+      "children": [
+        "Curve"
+      ],
+      "aliases": [
+        "Geometric entity"
+      ]
+    },
+    {
+      "id": "Curve",
+      "label": "Curve",
+      "definition": "A geometric object parameterized along one dimension, subject to a specified regularity.",
+      "children": [
+        "Circle",
+        "Ellipse",
+        "Parabola",
+        "Hyperbola"
+      ]
+    },
+    {
+      "id": "Circle",
+      "label": "Circle",
+      "definition": "A planar curve whose points are at one fixed distance from a center.",
+      "children": [],
+      "alternateParents": [
+        "Ellipse"
+      ]
+    },
+    {
+      "id": "Ellipse",
+      "label": "Ellipse",
+      "definition": "A planar curve whose distances to two foci have a constant sum.",
+      "children": []
+    },
+    {
+      "id": "Parabola",
+      "label": "Parabola",
+      "definition": "A planar curve whose points are equidistant from a focus and a directrix.",
+      "children": []
+    },
+    {
+      "id": "Hyperbola",
+      "label": "Hyperbola",
+      "definition": "A planar curve whose distances to two foci have a constant absolute difference.",
+      "children": []
+    },
+    {
+      "id": "TopologicalEntity",
+      "label": "Topological structure",
+      "definition": "A mathematical structure specified by neighborhoods, open sets, or continuity relations.",
+      "children": [],
+      "aliases": [
+        "Topological entity"
+      ]
+    },
+    {
+      "id": "AnalyticEntity",
+      "label": "Analytic structure",
+      "definition": "A mathematical structure specified through limiting or differential relations.",
+      "children": [],
+      "aliases": [
+        "Analytic entity"
+      ]
+    },
+    {
+      "id": "ProbabilityEntity",
+      "label": "Probability structure",
+      "definition": "A mathematical structure specifying probabilistic outcomes and their measures.",
+      "children": [],
+      "aliases": [
+        "Probability entity"
+      ]
+    },
+    {
+      "id": "Graph",
+      "label": "Graph",
+      "definition": "A mathematical structure of vertices and edges connecting specified vertex occurrences.",
+      "children": []
+    },
+    {
+      "id": "ComputationalEntity",
+      "label": "Computational structure",
+      "definition": "An abstract structure specified by computational operations, states, or resources.",
+      "children": [
+        "Algorithm",
+        "Automaton",
+        "ComplexityClass",
+        "Software"
+      ],
+      "aliases": [
+        "Computational entity"
+      ]
+    },
+    {
+      "id": "Algorithm",
+      "label": "Algorithm",
+      "definition": "A computational structure specifying an effective procedure for a class of tasks.",
+      "children": []
+    },
+    {
+      "id": "Automaton",
+      "label": "Abstract automaton",
+      "definition": "A computational structure specified by states and rules of transition.",
+      "children": [],
+      "aliases": [
+        "Automaton"
+      ]
+    },
+    {
+      "id": "ComplexityClass",
+      "label": "Complexity class",
+      "definition": "A computational structure grouping problems by specified resource bounds and a computational model.",
+      "children": []
+    },
+    {
+      "id": "Software",
+      "label": "Software content",
+      "definition": "A computational structure encoded as instructions or associated data for execution or interpretation.",
+      "children": [],
+      "aliases": [
+        "Software"
+      ]
+    },
+    {
+      "id": "InformationContent",
+      "label": "Information content",
+      "definition": "An abstract entity individuated by what can be conveyed, recorded, interpreted, or asserted.",
+      "children": [
+        "Data",
+        "Proposition",
+        "RepresentationalEntity",
+        "NormativeContent",
+        "Practice",
+        "TheorySpecification"
+      ],
+      "aliases": [
+        "Informational entity",
+        "Social entity"
+      ]
+    },
+    {
+      "id": "Data",
+      "label": "Data content",
+      "definition": "An information content represented as values or observations for interpretation or processing.",
+      "children": [
+        "Record",
+        "Dataset"
+      ],
+      "aliases": [
+        "Data"
+      ]
+    },
+    {
+      "id": "Record",
+      "label": "Record content",
+      "definition": "A data content preserving information about an entity, occurrence, or assertion.",
+      "children": [
+        "Observation"
+      ],
+      "aliases": [
+        "Record"
+      ]
+    },
+    {
+      "id": "Dataset",
+      "label": "Dataset content",
+      "definition": "A data content comprising records or values organized as one body for use.",
+      "children": [],
+      "aliases": [
+        "Dataset"
+      ]
+    },
+    {
+      "id": "Observation",
+      "label": "Observation result",
+      "definition": "A record content reporting what was detected or perceived.",
+      "children": [
+        "Measurement"
+      ],
+      "aliases": [
+        "Observation"
+      ]
+    },
+    {
+      "id": "Measurement",
+      "label": "Measurement result",
+      "definition": "An observation result assigning a measured value with its measurement context.",
+      "children": [],
+      "aliases": [
+        "Measurement"
+      ]
+    },
+    {
+      "id": "QuantityValue",
+      "label": "Quantity value",
+      "definition": "An abstract entity specifying magnitude through a number and a scale or unit.",
+      "children": [],
+      "alternateParents": [
+        "QualityValue"
+      ],
+      "aliases": [
+        "Measurement",
+        "Quantity"
+      ]
+    },
+    {
+      "id": "QualityValue",
+      "label": "Quality value",
+      "definition": "An abstract entity specifying a position or category in a descriptive value domain.",
+      "children": [],
+      "aliases": [
+        "Quality"
+      ]
+    },
+    {
+      "id": "Proposition",
+      "label": "Proposition",
+      "definition": "An information content capable of truth or falsity in an interpretation.",
+      "children": [
+        "Fact",
+        "Theorem",
+        "Belief",
+        "Knowledge",
+        "Goal"
+      ]
+    },
+    {
+      "id": "Fact",
+      "label": "True proposition",
+      "definition": "A proposition true in the specified interpretation.",
+      "children": [],
+      "aliases": [
+        "Fact"
+      ],
+      "notes": [
+        "Truth is interpretation-indexed. A worldly state of affairs is a State instance, not the proposition describing it."
+      ]
+    },
+    {
+      "id": "Theorem",
+      "label": "Theorem",
+      "definition": "A proposition established by proof in a specified formal system.",
+      "children": []
+    },
+    {
+      "id": "Belief",
+      "label": "Belief content",
+      "definition": "A proposition accepted as true by a subject in a specified context.",
+      "children": [],
+      "aliases": [
+        "Belief"
+      ]
+    },
+    {
+      "id": "Knowledge",
+      "label": "Knowledge content",
+      "definition": "A proposition known by a subject under specified epistemic criteria.",
+      "children": [],
+      "aliases": [
+        "Knowledge"
+      ]
+    },
+    {
+      "id": "Goal",
+      "label": "Goal content",
+      "definition": "A proposition specifying a state of affairs an agent aims to realize.",
+      "children": [],
+      "aliases": [
+        "Goal"
+      ]
+    },
+    {
+      "id": "RepresentationalEntity",
+      "label": "Representational content",
+      "definition": "An information content organized to represent, encode, or express something.",
+      "children": [
+        "Description",
+        "Model",
+        "Classification",
+        "Schema",
+        "Proof",
+        "FormalExpression",
+        "LinguisticExpression",
+        "Text",
+        "Message",
+        "Document",
+        "Image",
+        "Audio",
+        "Video",
+        "Series",
+        "Address",
+        "SignalContent"
+      ],
+      "aliases": [
+        "Representational entity"
+      ]
+    },
+    {
+      "id": "Description",
+      "label": "Description",
+      "definition": "A representational content characterizing an entity or situation.",
+      "children": [
+        "Definition",
+        "Summary",
+        "FictionalDescription"
+      ]
+    },
+    {
+      "id": "Definition",
+      "label": "Definition",
+      "definition": "A description stipulating or delimiting the meaning or application of an expression or category.",
+      "children": []
+    },
+    {
+      "id": "Summary",
+      "label": "Summary",
+      "definition": "A description condensing the principal content of a larger representation.",
+      "children": []
+    },
+    {
+      "id": "Model",
+      "label": "Model content",
+      "definition": "A representational content representing selected features or relationships of a target.",
+      "children": [
+        "MathematicalModel"
+      ],
+      "aliases": [
+        "Model"
+      ]
+    },
+    {
+      "id": "MathematicalModel",
+      "label": "Mathematical model",
+      "definition": "A model content expressed through mathematical structures and constraints.",
+      "children": [
+        "PhysicalSystemModel"
+      ]
+    },
+    {
+      "id": "PhysicalSystemModel",
+      "label": "Physical-system model",
+      "definition": "A mathematical model representing a physical system.",
+      "children": [],
+      "aliases": [
+        "Physical system model"
+      ]
+    },
+    {
+      "id": "Classification",
+      "label": "Classification scheme",
+      "definition": "A representational content specifying categories and criteria for assigning entities to them.",
+      "children": [],
+      "aliases": [
+        "Classification"
+      ]
+    },
+    {
+      "id": "Schema",
+      "label": "Schema",
+      "definition": "A representational content specifying permitted structures and constraints for representations.",
+      "children": [
+        "OntologyRepresentation"
+      ]
+    },
+    {
+      "id": "OntologyRepresentation",
+      "label": "Ontology specification",
+      "definition": "A schema specifying entity categories, relations, and their intended semantics.",
+      "children": [],
+      "aliases": [
+        "Ontology"
+      ]
+    },
+    {
+      "id": "Proof",
+      "label": "Proof",
+      "definition": "A representational content establishing a conclusion through valid steps in a specified system.",
+      "children": []
+    },
+    {
+      "id": "FormalExpression",
+      "label": "Formal expression",
+      "definition": "A representational content constructed according to a formal syntax.",
+      "children": [
+        "LogicalEntity",
+        "SymbolicString"
+      ]
+    },
+    {
+      "id": "LogicalEntity",
+      "label": "Logical expression",
+      "definition": "A formal expression interpreted in a specified logical system.",
+      "children": [],
+      "aliases": [
+        "Logical entity"
+      ]
+    },
+    {
+      "id": "SymbolicString",
+      "label": "Symbol string",
+      "definition": "A formal expression consisting of an ordered sequence of symbols.",
+      "children": [
+        "Character"
+      ],
+      "aliases": [
+        "Symbolic String"
+      ]
+    },
+    {
+      "id": "Character",
+      "label": "Character string",
+      "definition": "A symbol string of one character in a specified encoding or alphabet.",
+      "children": [],
+      "aliases": [
+        "Character"
+      ],
+      "notes": [
+        "A character as an abstract alphabet element is represented by this one-character string class; a glyph occurrence is an Information token; a narrative character is a Fictional entity description."
+      ]
+    },
+    {
+      "id": "LinguisticExpression",
+      "label": "Linguistic expression",
+      "definition": "A representational content constructed from meaningful units of a language.",
+      "children": [
+        "Morpheme",
+        "Word",
+        "Phrase",
+        "Sentence"
+      ],
+      "aliases": [
+        "Label",
+        "Linguistic Expression",
+        "Name"
+      ]
+    },
+    {
+      "id": "Morpheme",
+      "label": "Morpheme",
+      "definition": "A linguistic expression that is a minimal meaning-bearing grammatical unit.",
+      "children": []
+    },
+    {
+      "id": "Word",
+      "label": "Word",
+      "definition": "A linguistic expression treated as a lexical unit by a language's conventions.",
+      "children": [
+        "Noun",
+        "Verb",
+        "Adjective",
+        "Adverb",
+        "Particle"
+      ]
+    },
+    {
+      "id": "Noun",
+      "label": "Noun",
+      "definition": "A word in a grammatical category conventionally serving as a nominal head.",
+      "children": []
+    },
+    {
+      "id": "Verb",
+      "label": "Verb",
+      "definition": "A word in a grammatical category conventionally serving as a predicate head.",
+      "children": []
+    },
+    {
+      "id": "Adjective",
+      "label": "Adjective",
+      "definition": "A word in a grammatical category conventionally modifying a nominal expression.",
+      "children": []
+    },
+    {
+      "id": "Adverb",
+      "label": "Adverb",
+      "definition": "A word in a grammatical category conventionally modifying a predicate or other modifier.",
+      "children": []
+    },
+    {
+      "id": "Particle",
+      "label": "Grammatical particle",
+      "definition": "A word whose grammatical function is not assigned to the principal lexical categories.",
+      "children": [],
+      "aliases": [
+        "Particle"
+      ]
+    },
+    {
+      "id": "Phrase",
+      "label": "Phrase",
+      "definition": "A linguistic expression organized around a grammatical head without requiring a full clause.",
+      "children": [
+        "NounPhrase",
+        "VerbPhrase",
+        "PrepositionalPhrase"
+      ]
+    },
+    {
+      "id": "NounPhrase",
+      "label": "Noun phrase",
+      "definition": "A phrase whose grammatical head or distribution is nominal.",
+      "children": [],
+      "aliases": [
+        "Noun Phrase"
+      ]
+    },
+    {
+      "id": "VerbPhrase",
+      "label": "Verb phrase",
+      "definition": "A phrase whose grammatical head is verbal.",
+      "children": [],
+      "aliases": [
+        "Verb Phrase"
+      ]
+    },
+    {
+      "id": "PrepositionalPhrase",
+      "label": "Prepositional phrase",
+      "definition": "A phrase headed by a preposition or corresponding adposition.",
+      "children": [],
+      "aliases": [
+        "Prepositional Phrase"
+      ]
+    },
+    {
+      "id": "Sentence",
+      "label": "Sentence",
+      "definition": "A linguistic expression conventionally functioning as a complete sentential unit.",
+      "children": [],
+      "aliases": [
+        "Senctence"
+      ]
+    },
+    {
+      "id": "Text",
+      "label": "Text content",
+      "definition": "A representational content organized as an extended linguistic composition.",
+      "children": [
+        "Article",
+        "Certificate"
+      ],
+      "aliases": [
+        "Text"
+      ]
+    },
+    {
+      "id": "Article",
+      "label": "Article content",
+      "definition": "A text content composed as a relatively self-contained contribution to a publication.",
+      "children": [],
+      "aliases": [
+        "Article"
+      ]
+    },
+    {
+      "id": "Book",
+      "label": "Book content",
+      "definition": "A document content composed as a substantial self-contained work for book publication.",
+      "children": [],
+      "aliases": [
+        "Book"
+      ]
+    },
+    {
+      "id": "Certificate",
+      "label": "Certificate content",
+      "definition": "A text content attesting a fact or status under an issuer's authority.",
+      "children": [],
+      "aliases": [
+        "Certiﬁcate",
+        "Patent"
+      ]
+    },
+    {
+      "id": "Message",
+      "label": "Message content",
+      "definition": "A representational content composed for conveyance to a recipient.",
+      "children": [],
+      "aliases": [
+        "Message"
+      ]
+    },
+    {
+      "id": "Document",
+      "label": "Document content",
+      "definition": "A representational content organized as an identifiable documentary unit.",
+      "children": [
+        "Book"
+      ],
+      "aliases": [
+        "Document"
+      ]
+    },
+    {
+      "id": "Image",
+      "label": "Image content",
+      "definition": "A representational content encoding a spatial visual presentation.",
+      "children": [
+        "Icon"
+      ],
+      "aliases": [
+        "Image"
+      ]
+    },
+    {
+      "id": "Icon",
+      "label": "Icon content",
+      "definition": "An image content representing a referent through resemblance or convention.",
+      "children": [],
+      "aliases": [
+        "Icon"
+      ]
+    },
+    {
+      "id": "Audio",
+      "label": "Audio content",
+      "definition": "A representational content encoding a sound presentation.",
+      "children": [],
+      "aliases": [
+        "Audio"
+      ]
+    },
+    {
+      "id": "Video",
+      "label": "Video content",
+      "definition": "A representational content encoding a temporal sequence of visual presentations.",
+      "children": [
+        "MotionPicture"
+      ],
+      "aliases": [
+        "Video"
+      ]
+    },
+    {
+      "id": "MotionPicture",
+      "label": "Motion-picture content",
+      "definition": "A video content composed as a cinematic work.",
+      "children": [],
+      "aliases": [
+        "Motion Picture"
+      ]
+    },
+    {
+      "id": "Series",
+      "label": "Publication series",
+      "definition": "A representational content grouping publications under a continuing identity or plan.",
+      "children": [
+        "Periodical"
+      ],
+      "aliases": [
+        "Series"
+      ]
+    },
+    {
+      "id": "Periodical",
+      "label": "Periodical series",
+      "definition": "A publication series intended to issue successive parts at recurring intervals.",
+      "children": [],
+      "aliases": [
+        "Periodical"
+      ]
+    },
+    {
+      "id": "Language",
+      "label": "Language system",
+      "definition": "An abstract structure of signs and conventions for constructing interpretable expressions.",
+      "children": [
+        "HumanLanguage",
+        "ArtificialLanguage",
+        "AnimalLanguage"
+      ],
+      "aliases": [
+        "Language"
+      ]
+    },
+    {
+      "id": "HumanLanguage",
+      "label": "Human language",
+      "definition": "A language system used or designed for human linguistic communication.",
+      "children": [
+        "NaturalLanguage",
+        "ConstructedLanguage"
+      ],
+      "aliases": [
+        "Human Language"
+      ]
+    },
+    {
+      "id": "NaturalLanguage",
+      "label": "Natural language",
+      "definition": "A human language developed through communal use rather than deliberate full design.",
+      "children": [],
+      "aliases": [
+        "Natural Language"
+      ]
+    },
+    {
+      "id": "ConstructedLanguage",
+      "label": "Constructed human language",
+      "definition": "A human language deliberately designed as a linguistic system.",
+      "children": [],
+      "alternateParents": [
+        "ArtificialLanguage"
+      ],
+      "aliases": [
+        "Constructed Language"
+      ]
+    },
+    {
+      "id": "ArtificialLanguage",
+      "label": "Artificial language",
+      "definition": "A language system deliberately specified rather than arising through natural communal use.",
+      "children": [
+        "ComputerLanguage"
+      ],
+      "aliases": [
+        "Artiﬁcial Language"
+      ]
+    },
+    {
+      "id": "ComputerLanguage",
+      "label": "Computer language",
+      "definition": "An artificial language specified for representing instructions or data for computer processing.",
+      "children": [],
+      "aliases": [
+        "Computer Language"
+      ]
+    },
+    {
+      "id": "FormalLanguage",
+      "label": "Formal language",
+      "definition": "An abstract structure consisting of strings admitted by a specified formal syntax.",
+      "children": [],
+      "alternateParents": [
+        "Set"
+      ],
+      "notes": [
+        "The language here is the extension of admitted strings; a grammar specifying it is representational content. No claim that every natural language is identical to a formal-language extension."
+      ]
+    },
+    {
+      "id": "AnimalLanguage",
+      "label": "Animal communication system",
+      "definition": "A language system constituted by nonhuman animals' structured signaling conventions.",
+      "children": [],
+      "aliases": [
+        "Animal Language"
+      ]
+    },
+    {
+      "id": "NormativeContent",
+      "label": "Normative content",
+      "definition": "An information content specifying permissions, requirements, or standards of conduct.",
+      "children": [
+        "Norm",
+        "Obligation",
+        "Contract",
+        "License",
+        "Patent",
+        "InferenceRule"
+      ],
+      "aliases": [
+        "Institutional entity"
+      ]
+    },
+    {
+      "id": "Norm",
+      "label": "Norm specification",
+      "definition": "A normative content prescribing or evaluating conduct in a context.",
+      "children": [
+        "Law",
+        "Policy",
+        "Convention"
+      ],
+      "aliases": [
+        "Norm"
+      ]
+    },
+    {
+      "id": "Law",
+      "label": "Legal rule",
+      "definition": "A norm specification recognized as governing under a legal system.",
+      "children": [],
+      "aliases": [
+        "Law"
+      ]
+    },
+    {
+      "id": "Policy",
+      "label": "Policy specification",
+      "definition": "A norm specification adopted to guide decisions or conduct within a domain.",
+      "children": [],
+      "aliases": [
+        "Policy"
+      ]
+    },
+    {
+      "id": "Convention",
+      "label": "Convention specification",
+      "definition": "A norm specification sustained by shared acceptance or customary coordination.",
+      "children": [],
+      "aliases": [
+        "Convention"
+      ]
+    },
+    {
+      "id": "Obligation",
+      "label": "Obligation specification",
+      "definition": "A normative content specifying an action required of a bearer in a context.",
+      "children": [],
+      "aliases": [
+        "Obligation"
+      ]
+    },
+    {
+      "id": "Contract",
+      "label": "Contract content",
+      "definition": "A normative content specifying mutually accepted terms that establish obligations or rights.",
+      "children": [],
+      "aliases": [
+        "Contract"
+      ]
+    },
+    {
+      "id": "License",
+      "label": "License content",
+      "definition": "A normative content granting permission under specified terms and authority.",
+      "children": [],
+      "aliases": [
+        "License"
+      ]
+    },
+    {
+      "id": "Patent",
+      "label": "Patent grant content",
+      "definition": "A normative content specifying an exclusive legal right concerning an invention.",
+      "children": [],
+      "aliases": [
+        "Patent"
+      ]
+    },
+    {
+      "id": "Practice",
+      "label": "Practice pattern",
+      "definition": "An information content specifying a recurrent socially recognized way of acting.",
+      "children": [
+        "Game"
+      ],
+      "aliases": [
+        "Practice"
+      ]
+    },
+    {
+      "id": "Game",
+      "label": "Game rule system",
+      "definition": "A practice pattern specifying permitted moves, objectives, and conditions of play.",
+      "children": [
+        "SportRules"
+      ],
+      "aliases": [
+        "Game"
+      ]
+    },
+    {
+      "id": "SportRules",
+      "label": "Sport rule system",
+      "definition": "A game rule system specifying competition in physical skill or exertion.",
+      "children": [],
+      "aliases": [
+        "Sport"
+      ]
+    },
+    {
+      "id": "PredicateSpecification",
+      "label": "Predicate specification",
+      "definition": "An abstract entity specifying a condition on one or more arguments in an interpretation.",
+      "children": [
+        "Property",
+        "Relation",
+        "EntityKind"
+      ]
+    },
+    {
+      "id": "Property",
+      "label": "Property specification",
+      "definition": "A predicate specification applying a condition to one argument.",
+      "children": [
+        "DescriptiveProperty",
+        "Role",
+        "Purpose",
+        "Preference"
+      ],
+      "aliases": [
+        "Property"
+      ]
+    },
+    {
+      "id": "DescriptiveProperty",
+      "label": "Descriptive property specification",
+      "definition": "A property specification characterizing an entity without assigning a role or prescribing conduct.",
+      "children": [
+        "QualityProperty",
+        "Quantity",
+        "ModalProperty",
+        "LogicalProperty",
+        "MathematicalProperty",
+        "DispositionProperty",
+        "SentientRole",
+        "CognitiveRole"
+      ]
+    },
+    {
+      "id": "QualityProperty",
+      "label": "Quality property specification",
+      "definition": "A descriptive property specification assigning a category or value on a qualitative dimension.",
+      "children": [],
+      "aliases": [
+        "Quality"
+      ]
+    },
+    {
+      "id": "Quantity",
+      "label": "Quantity property specification",
+      "definition": "A descriptive property specification assigning a magnitude on a specified scale.",
+      "children": [],
+      "aliases": [
+        "Quantity"
+      ],
+      "notes": [
+        "A class of unary quantity specifications. Actual bearer-specific magnitudes are Quantitative quality instances; numbers with units or scales are Quantity values."
+      ]
+    },
+    {
+      "id": "ModalProperty",
+      "label": "Modal property specification",
+      "definition": "A descriptive property specification concerning necessity, possibility, or contingency under a modality.",
+      "children": [],
+      "aliases": [
+        "Modal property"
+      ]
+    },
+    {
+      "id": "LogicalProperty",
+      "label": "Logical property specification",
+      "definition": "A descriptive property specification determined by logical form or consequence.",
+      "children": [],
+      "aliases": [
+        "Logical property"
+      ]
+    },
+    {
+      "id": "MathematicalProperty",
+      "label": "Mathematical property specification",
+      "definition": "A descriptive property specification determined by a mathematical condition.",
+      "children": [],
+      "aliases": [
+        "Mathematical property"
+      ]
+    },
+    {
+      "id": "DispositionProperty",
+      "label": "Disposition property specification",
+      "definition": "A descriptive property specification characterizing conditional tendencies of a bearer.",
+      "children": [
+        "CapabilityProperty"
+      ],
+      "aliases": [
+        "Disposition"
+      ]
+    },
+    {
+      "id": "CapabilityProperty",
+      "label": "Capability property specification",
+      "definition": "A disposition property specification characterizing the ability to perform an activity.",
+      "children": [],
+      "aliases": [
+        "Capability"
+      ]
+    },
+    {
+      "id": "Role",
+      "label": "Role specification",
+      "definition": "A property specification characterizing an entity by its contextual function or standing.",
+      "children": [
+        "AgentRole",
+        "Person",
+        "LocationRole",
+        "InstrumentRole",
+        "ContentBearerRole",
+        "ProductRole",
+        "Food",
+        "BiologicallyActiveSubstance",
+        "Symbol"
+      ],
+      "aliases": [
+        "Role"
+      ]
+    },
+    {
+      "id": "AgentRole",
+      "label": "Agent role specification",
+      "definition": "A role specification characterizing participation as an intentional actor.",
+      "children": []
+    },
+    {
+      "id": "SentientRole",
+      "label": "Sentience specification",
+      "definition": "A descriptive property specification characterizing an entity as a subject of experience.",
+      "children": []
+    },
+    {
+      "id": "CognitiveRole",
+      "label": "Cognition specification",
+      "definition": "A descriptive property specification characterizing an entity as a bearer of cognitive activity.",
+      "children": []
+    },
+    {
+      "id": "Person",
+      "label": "Personhood specification",
+      "definition": "A role specification characterizing recognized personal standing under a stated biological, social, or legal criterion.",
+      "children": [],
+      "aliases": [
+        "Person"
+      ],
+      "notes": [
+        "This is a class of unary personhood specifications, not a subclass of Human. A bearer may be a human, an organization, or another entity under explicitly recorded criteria. Biological humans retain a direct route through Human."
+      ]
+    },
+    {
+      "id": "LocationRole",
+      "label": "Location role specification",
+      "definition": "A role specification characterizing an entity as where another is situated.",
+      "children": []
+    },
+    {
+      "id": "InstrumentRole",
+      "label": "Instrument role specification",
+      "definition": "A role specification characterizing an entity as a means in an activity.",
+      "children": []
+    },
+    {
+      "id": "ContentBearerRole",
+      "label": "Content bearer specification",
+      "definition": "A role specification characterizing an entity as embodying interpretable content.",
+      "children": []
+    },
+    {
+      "id": "ProductRole",
+      "label": "Product specification",
+      "definition": "A role specification characterizing an entity as an output of production in a context.",
+      "children": []
+    },
+    {
+      "id": "Food",
+      "label": "Food specification",
+      "definition": "A role specification characterizing material as intended or suitable for consumption by an organism.",
+      "children": [
+        "Beverage",
+        "Vegetable",
+        "FruitFood",
+        "AnimalDerivedFood"
+      ],
+      "aliases": [
+        "Food"
+      ]
+    },
+    {
+      "id": "Beverage",
+      "label": "Beverage specification",
+      "definition": "A food specification characterizing a liquid intended for drinking.",
+      "children": [],
+      "aliases": [
+        "Beverage"
+      ]
+    },
+    {
+      "id": "Meat",
+      "label": "Meat specification",
+      "definition": "A food specification characterizing animal tissue as food.",
+      "children": [],
+      "aliases": [
+        "Meat"
+      ]
+    },
+    {
+      "id": "Vegetable",
+      "label": "Vegetable food specification",
+      "definition": "A food specification characterizing edible plant material conventionally treated as vegetable food.",
+      "children": [],
+      "aliases": [
+        "Vegetable"
+      ]
+    },
+    {
+      "id": "FruitFood",
+      "label": "Fruit food specification",
+      "definition": "A food specification characterizing botanical fruits as food.",
+      "children": [],
+      "aliases": [
+        "Fruit"
+      ]
+    },
+    {
+      "id": "Fruit",
+      "label": "Botanical fruit",
+      "definition": "An anatomical structure developing from a flower's ovary, sometimes with associated tissues.",
+      "children": [],
+      "aliases": [
+        "Fruit"
+      ]
+    },
+    {
+      "id": "BiologicallyActiveSubstance",
+      "label": "Bioactive material specification",
+      "definition": "A role specification characterizing material by its effect on biological activity.",
+      "children": [
+        "Hormone",
+        "Nutrient",
+        "Enzyme"
+      ],
+      "aliases": [
+        "Biologically Active Substance"
+      ]
+    },
+    {
+      "id": "Hormone",
+      "label": "Hormone specification",
+      "definition": "A bioactive material specification characterizing a signaling substance regulating target cells through a biological signaling system.",
+      "children": [],
+      "aliases": [
+        "Hormone"
+      ]
+    },
+    {
+      "id": "Nutrient",
+      "label": "Nutrient specification",
+      "definition": "A bioactive material specification characterizing a substance required or utilized for growth, maintenance, or metabolism.",
+      "children": [
+        "Vitamin"
+      ],
+      "aliases": [
+        "Nutrient"
+      ]
+    },
+    {
+      "id": "Vitamin",
+      "label": "Vitamin specification",
+      "definition": "A nutrient specification characterizing an organic micronutrient required in small amounts by a specified organism.",
+      "children": [],
+      "aliases": [
+        "Vitamin"
+      ]
+    },
+    {
+      "id": "Enzyme",
+      "label": "Enzyme specification",
+      "definition": "A bioactive material specification characterizing a biological catalyst.",
+      "children": [],
+      "aliases": [
+        "Enzyme"
+      ]
+    },
+    {
+      "id": "Purpose",
+      "label": "Purpose specification",
+      "definition": "A property specification assigning an intended outcome or use to an entity.",
+      "children": [],
+      "aliases": [
+        "Purpose"
+      ]
+    },
+    {
+      "id": "Preference",
+      "label": "Preference specification",
+      "definition": "A property specification characterizing an ordering of alternatives for a subject in a context.",
+      "children": [],
+      "aliases": [
+        "Preference"
+      ]
+    },
+    {
+      "id": "Relation",
+      "label": "Relation specification",
+      "definition": "A predicate specification applying a condition to two or more arguments.",
+      "children": [
+        "ClassificationRelation",
+        "PartWholeRelation",
+        "SpatialRelation",
+        "TemporalRelation",
+        "CausalRelation",
+        "ExplanatoryRelation",
+        "ParticipationRelation",
+        "SocialRelation",
+        "PerceptualRelation",
+        "EpistemicRelation",
+        "LogicalRelation",
+        "MathematicalRelation",
+        "TransformationRelation",
+        "RepresentationalRelation",
+        "ProvenanceRelation"
+      ],
+      "aliases": [
+        "Relation"
+      ]
+    },
+    {
+      "id": "ClassificationRelation",
+      "label": "Classification relation specification",
+      "definition": "A relation specification connecting an entity to a class it instantiates or a class to its superclass.",
+      "children": [],
+      "aliases": [
+        "Classification relation"
+      ]
+    },
+    {
+      "id": "PartWholeRelation",
+      "label": "Part-whole relation specification",
+      "definition": "A relation specification connecting a constituent to the whole it constitutes.",
+      "children": [],
+      "aliases": [
+        "Part-whole relation"
+      ]
+    },
+    {
+      "id": "SpatialRelation",
+      "label": "Spatial relation specification",
+      "definition": "A relation specification connecting entities through spatial position, extent, or orientation.",
+      "children": [],
+      "aliases": [
+        "Spatial relation"
+      ]
+    },
+    {
+      "id": "TemporalRelation",
+      "label": "Temporal relation specification",
+      "definition": "A relation specification connecting entities through temporal position, duration, or sequence.",
+      "children": [],
+      "aliases": [
+        "Temporal relation"
+      ]
+    },
+    {
+      "id": "CausalRelation",
+      "label": "Causal relation specification",
+      "definition": "A relation specification connecting a contributing cause to an effect in a context.",
+      "children": [],
+      "aliases": [
+        "Causal relation"
+      ]
+    },
+    {
+      "id": "ExplanatoryRelation",
+      "label": "Explanatory relation specification",
+      "definition": "A relation specification connecting an explanans to what it accounts for.",
+      "children": [],
+      "aliases": [
+        "Explanatory relation"
+      ]
+    },
+    {
+      "id": "ParticipationRelation",
+      "label": "Participation relation specification",
+      "definition": "A relation specification connecting a participant to an occurrence and its participation context.",
+      "children": [],
+      "aliases": [
+        "Participation relation"
+      ]
+    },
+    {
+      "id": "SocialRelation",
+      "label": "Social relation specification",
+      "definition": "A relation specification connecting participants through social interaction or recognition.",
+      "children": [
+        "InstitutionalRelation"
+      ],
+      "aliases": [
+        "Social relation"
+      ]
+    },
+    {
+      "id": "InstitutionalRelation",
+      "label": "Institutional relation specification",
+      "definition": "A social relation specification established by institutional rules or authority.",
+      "children": [],
+      "aliases": [
+        "Institutional relation"
+      ]
+    },
+    {
+      "id": "PerceptualRelation",
+      "label": "Perceptual relation specification",
+      "definition": "A relation specification connecting a perceiver to an object of perception.",
+      "children": [],
+      "aliases": [
+        "Perceptual relation"
+      ]
+    },
+    {
+      "id": "EpistemicRelation",
+      "label": "Epistemic relation specification",
+      "definition": "A relation specification connecting a subject, content, or evidence through epistemic standing.",
+      "children": [],
+      "aliases": [
+        "Epistemic relation"
+      ]
+    },
+    {
+      "id": "LogicalRelation",
+      "label": "Logical relation specification",
+      "definition": "A relation specification determined by logical consequence or logical form.",
+      "children": [
+        "IdentityRelation"
+      ],
+      "aliases": [
+        "Logical relation"
+      ]
+    },
+    {
+      "id": "MathematicalRelation",
+      "label": "Mathematical relation specification",
+      "definition": "A relation specification connecting mathematical objects under a mathematical condition.",
+      "children": [
+        "SetTheoreticRelation",
+        "EquivalenceRelation"
+      ],
+      "aliases": [
+        "Mathematical relation"
+      ]
+    },
+    {
+      "id": "SetTheoreticRelation",
+      "label": "Set-theoretic relation specification",
+      "definition": "A mathematical relation specification connecting sets or their elements through membership or set structure.",
+      "children": [],
+      "aliases": [
+        "Set-theoretic relation"
+      ]
+    },
+    {
+      "id": "TransformationRelation",
+      "label": "Transformation relation specification",
+      "definition": "A relation specification connecting an input or prior entity to a result of transformation.",
+      "children": [],
+      "aliases": [
+        "Transformation relation"
+      ]
+    },
+    {
+      "id": "RepresentationalRelation",
+      "label": "Representational relation specification",
+      "definition": "A relation specification connecting a representation to its content, referent, or encoding convention.",
+      "children": [],
+      "aliases": [
+        "Representational relation"
+      ]
+    },
+    {
+      "id": "IdentityRelation",
+      "label": "Identity relation specification",
+      "definition": "A logical relation specification satisfied exactly when its two arguments are the same entity.",
+      "children": [],
+      "aliases": [
+        "Identity relation"
+      ]
+    },
+    {
+      "id": "EquivalenceRelation",
+      "label": "Equivalence relation specification",
+      "definition": "A mathematical relation specification reflexive, symmetric, and transitive on its stated domain.",
+      "children": [],
+      "aliases": [
+        "Equivalence relation"
+      ]
+    },
+    {
+      "id": "ProvenanceRelation",
+      "label": "Provenance relation specification",
+      "definition": "A relation specification connecting an entity to a source, derivation, or production context.",
+      "children": [],
+      "aliases": [
+        "Provenance relation"
+      ]
+    },
+    {
+      "id": "Symbol",
+      "label": "Symbol specification",
+      "definition": "A role specification characterizing a sign as representing something under an interpretation.",
+      "children": [
+        "Name",
+        "Label"
+      ],
+      "aliases": [
+        "Symbol"
+      ]
+    },
+    {
+      "id": "Name",
+      "label": "Name specification",
+      "definition": "A symbol specification characterizing a sign as designating an entity.",
+      "children": [],
+      "aliases": [
+        "Name"
+      ]
+    },
+    {
+      "id": "Label",
+      "label": "Label specification",
+      "definition": "A symbol specification characterizing a sign as identifying or annotating something in a representation.",
+      "children": [],
+      "aliases": [
+        "Label"
+      ]
+    },
+    {
+      "id": "Address",
+      "label": "Address content",
+      "definition": "A representational content identifying a destination within an addressing system.",
+      "children": [],
+      "aliases": [
+        "Address"
+      ]
+    },
+    {
+      "id": "Notation",
+      "label": "Notation system",
+      "definition": "An abstract structure of symbols and conventions for representing a domain.",
+      "children": [],
+      "aliases": [
+        "Notation"
+      ]
+    },
+    {
+      "id": "FictionalDescription",
+      "label": "Fictional entity description",
+      "definition": "A description specifying an entity within an imagined narrative or world.",
+      "children": [],
+      "aliases": [
+        "Character"
+      ]
+    },
+    {
+      "id": "Event",
+      "label": "Event",
+      "definition": "A process individuated as a bounded occurrence in a specified context.",
+      "children": []
+    },
+    {
+      "id": "SignalOccurrence",
+      "label": "Signal occurrence",
+      "definition": "A process whose concrete variation conveys information under an interpretation.",
+      "children": [],
+      "aliases": [
+        "Signal"
+      ]
+    },
+    {
+      "id": "SignalContent",
+      "label": "Signal content",
+      "definition": "A representational content conveyed through a signal occurrence.",
+      "children": [],
+      "aliases": [
+        "Signal"
+      ]
+    },
+    {
+      "id": "SocialEntity",
+      "label": "Socially constituted entity",
+      "definition": "A realized entity whose identity depends on social recognition, interaction, or practice.",
+      "children": [
+        "InstitutionalEntity"
+      ],
+      "aliases": [
+        "Social entity"
+      ]
+    },
+    {
+      "id": "InstitutionalEntity",
+      "label": "Institutionally constituted entity",
+      "definition": "A socially constituted entity whose identity depends on institutional rules or authority.",
+      "children": [],
+      "aliases": [
+        "Institutional entity"
+      ]
+    },
+    {
+      "id": "FieldConfiguration",
+      "label": "Physical field configuration",
+      "definition": "An object individuated as the organized state of a physical field over a specified domain.",
+      "children": []
+    },
+    {
+      "id": "InformationToken",
+      "label": "Information token",
+      "definition": "An object individuated as a particular embodiment of interpretable content.",
+      "children": [
+        "MonetaryToken",
+        "LinguisticToken"
+      ],
+      "aliases": [
+        "Audio",
+        "Content Bearing Object",
+        "Document",
+        "Icon",
+        "Image",
+        "Symbol",
+        "Video"
+      ]
+    },
+    {
+      "id": "MonetaryToken",
+      "label": "Monetary token",
+      "definition": "An information token embodying a monetary denomination or monetary claim.",
+      "children": [],
+      "aliases": [
+        "Currency"
+      ]
+    },
+    {
+      "id": "LinguisticToken",
+      "label": "Linguistic token",
+      "definition": "An information token embodying a particular linguistic expression.",
+      "children": [],
+      "aliases": [
+        "Character",
+        "Text"
+      ]
+    },
+    {
+      "id": "OrganismAggregate",
+      "label": "Organism aggregate",
+      "definition": "A material aggregate whose members are organisms.",
+      "children": [],
+      "aliases": [
+        "Group"
+      ]
+    },
+    {
+      "id": "SocialGroup",
+      "label": "Social group",
+      "definition": "A collection whose membership is constituted by social recognition or coordinated interaction.",
+      "children": [
+        "Organization"
+      ],
+      "aliases": [
+        "Group"
+      ]
+    },
+    {
+      "id": "EntityKind",
+      "label": "Entity kind specification",
+      "definition": "A predicate specification delimiting a class of entities through identity-relevant criteria.",
+      "children": [
+        "TaxonSpecification"
+      ],
+      "alternateParents": [
+        "Property"
+      ]
+    },
+    {
+      "id": "TaxonSpecification",
+      "label": "Taxon specification",
+      "definition": "An entity kind specification identifying membership in a biological taxon.",
+      "children": []
+    },
+    {
+      "id": "TheorySpecification",
+      "label": "Theory specification",
+      "definition": "An information content specifying a body of claims and their inferential commitments.",
+      "children": []
+    },
+    {
+      "id": "InferenceRule",
+      "label": "Inference rule specification",
+      "definition": "A normative content specifying permitted inferential transitions in a formal system.",
+      "children": []
+    },
+    {
+      "id": "MeasurementUnit",
+      "label": "Measurement unit",
+      "definition": "An abstract entity specifying a reference magnitude for expressing quantity values.",
+      "children": [],
+      "aliases": [
+        "Currency"
+      ]
+    },
+    {
+      "id": "Simian",
+      "label": "Simian",
+      "definition": "A primate belonging to the monkey-and-ape lineage, Simiiformes.",
+      "children": [],
+      "aliases": [
+        "Simiiformes"
+      ]
+    },
+    {
+      "id": "Lycophyte",
+      "label": "Lycophyte",
+      "definition": "A vascular plant belonging to the clubmoss, spikemoss, and quillwort lineage.",
+      "children": [],
+      "aliases": [
+        "Fern",
+        "Lycopodiopsida"
+      ]
+    },
+    {
+      "id": "Lagomorph",
+      "label": "Lagomorph",
+      "definition": "A placental mammal belonging to the rabbit, hare, and pika lineage.",
+      "children": [],
+      "aliases": [
+        "Lagomorpha",
+        "Rodent"
+      ]
+    },
+    {
+      "id": "TextileArtifact",
+      "label": "Textile article",
+      "definition": "An artifact constituted as a made article of textile material.",
+      "children": [],
+      "aliases": [
+        "Fabric"
+      ]
+    },
+    {
+      "id": "GeologicalMaterial",
+      "label": "Geological material portion",
+      "definition": "A material portion individuated by geological origin or occurrence.",
+      "children": [],
+      "aliases": [
+        "Mineral"
+      ]
+    },
+    {
+      "id": "AnimalDerivedFood",
+      "label": "Animal-derived food specification",
+      "definition": "A food specification characterizing material derived from animals, including tissues, eggs, or secretions.",
+      "children": [
+        "Meat"
+      ],
+      "aliases": [
+        "Meat"
+      ]
+    },
+    {
+      "id": "BiologicalDevelopment",
+      "label": "Biological development",
+      "definition": "An organism-level process changing biological organization or developmental stage.",
+      "children": [],
+      "aliases": [
+        "Growth"
+      ]
+    },
+    {
+      "id": "Absorbing",
+      "label": "Energy absorption",
+      "definition": "A physical process taking up energy from incident radiation or a propagating disturbance.",
+      "children": [
+        "AbsorbingLight",
+        "AbsorbingSound"
+      ],
+      "aliases": [
+        "Radiating"
+      ]
+    },
+    {
+      "id": "AbsorbingLight",
+      "label": "Light absorption",
+      "definition": "An energy absorption taking up energy from optical electromagnetic radiation.",
+      "children": [],
+      "aliases": [
+        "Radiating Light"
+      ]
+    },
+    {
+      "id": "AbsorbingSound",
+      "label": "Sound absorption",
+      "definition": "An energy absorption taking up energy from propagating mechanical pressure waves.",
+      "children": [],
+      "aliases": [
+        "Radiating Sound"
+      ]
+    },
+    {
+      "id": "OwnershipTransfer",
+      "label": "Ownership transfer",
+      "definition": "A possession transfer changing a legally or socially recognized ownership entitlement.",
+      "children": [],
+      "aliases": [
+        "Change Of Possession"
+      ]
+    }
+  ]
+}

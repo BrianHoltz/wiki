@@ -9,6 +9,7 @@
   * [Human Knowledge](Ontology/HumanKnowledge/)
   * [SUMO](Ontology/SUMO/)
   * [Propædia](Ontology/Propaedia/)
+  * [GPT Ontology](Ontology/GPT/)
 
 [Artificial Intelligence]()
 

@@ -1,0 +1,36 @@
+{
+  "status": "passed",
+  "mutations_rejected": 6,
+  "tests": [
+    {
+      "mutation": "Subclass cycle",
+      "status": "rejected_as_expected",
+      "diagnostic": "AssertionError: Subclass cycle at Item"
+    },
+    {
+      "mutation": "Empty definition",
+      "status": "rejected_as_expected",
+      "diagnostic": "AssertionError: Complete nonempty definitions"
+    },
+    {
+      "mutation": "Dangling parent",
+      "status": "rejected_as_expected",
+      "diagnostic": "AssertionError: Every nonroot has one valid primary parent"
+    },
+    {
+      "mutation": "Missing original coverage row",
+      "status": "rejected_as_expected",
+      "diagnostic": "AssertionError: Exactly one mapping for every original record"
+    },
+    {
+      "mutation": "Wrong relation arity",
+      "status": "rejected_as_expected",
+      "diagnostic": "AssertionError: Predicate type exists and has proper arity: predicate:instance_of"
+    },
+    {
+      "mutation": "Mismatched taxon identity despite compatible broad ancestry",
+      "status": "rejected_as_expected",
+      "diagnostic": "AssertionError: Retrieved taxon identity matches intended taxon: Lycophyte"
+    }
+  ]
+}

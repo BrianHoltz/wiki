@@ -1,0 +1,1635 @@
+{
+  "status": "passed",
+  "scope": "Structural, coverage, formal-level, ancestry-data, and selected semantic-counterexample checks; not a proof of philosophical completeness, definition correctness, or logical consistency of all possible formalizations.",
+  "checks_passed": 392,
+  "canonical_class_count": 555,
+  "canonical_edge_count": 554,
+  "alternate_superclass_edge_count": 32,
+  "defined_class_expression_count": 46,
+  "predicate_instance_count": 20,
+  "original_record_count": 439,
+  "mapped_original_record_count": 439,
+  "unmapped_original_records": [],
+  "mapping_counts": {
+    "revised": 340,
+    "disambiguated": 72,
+    "faceted": 23,
+    "merged_alias": 4
+  },
+  "maximum_canonical_depth": 13,
+  "example_depths": {
+    "Organism": 5,
+    "Human": 12,
+    "Dog": 13,
+    "Bird": 12,
+    "Book": 5,
+    "Corporation": 6,
+    "Region": 2,
+    "Circle": 5
+  },
+  "taxonomy_source_id_count": 59,
+  "taxonomy_edges_checked": 61,
+  "taxonomy_editorial_exceptions": [
+    {
+      "class": "Synapsid",
+      "reason": "Not represented as an intervening clade in the retrieved NCBI lineage; retained as an explicitly editorial extension."
+    }
+  ],
+  "source_actual_edge_count": 444,
+  "source_actual_multiple_parent_records": {
+    "GeopoliticalArea": [
+      "Agent",
+      "GeographicArea"
+    ],
+    "Group": [
+      "Agent",
+      "SocialEntity"
+    ],
+    "Artifact": [
+      "CorpuscularObject",
+      "Item"
+    ],
+    "Organization": [
+      "Group",
+      "InstitutionalEntity"
+    ],
+    "Government": [
+      "InstitutionalEntity",
+      "PoliticalOrganization"
+    ],
+    "Language": [
+      "LinguisticExpression",
+      "RepresentationalEntity"
+    ]
+  },
+  "checks": [
+    {
+      "name": "Supported schema version",
+      "status": "passed"
+    },
+    {
+      "name": "Every node is a class specification",
+      "status": "passed"
+    },
+    {
+      "name": "Unique class and expression IDs",
+      "status": "passed"
+    },
+    {
+      "name": "Unique canonical labels",
+      "status": "passed"
+    },
+    {
+      "name": "Complete nonempty definitions",
+      "status": "passed"
+    },
+    {
+      "name": "Stable class identifiers",
+      "status": "passed"
+    },
+    {
+      "name": "Exactly one Entity root",
+      "status": "passed"
+    },
+    {
+      "name": "Every nonroot has one valid primary parent",
+      "status": "passed"
+    },
+    {
+      "name": "Every alternate superclass exists",
+      "status": "passed"
+    },
+    {
+      "name": "No repeated alternate parents",
+      "status": "passed"
+    },
+    {
+      "name": "Combined canonical and alternate graph is acyclic",
+      "status": "passed"
+    },
+    {
+      "name": "Every class reaches Entity",
+      "status": "passed"
+    },
+    {
+      "name": "Canonical traversal stays at or below 13 edges",
+      "status": "passed"
+    },
+    {
+      "name": "Every sibling group has an explicit split policy",
+      "status": "passed"
+    },
+    {
+      "name": "No unearned exhaustive or global disjoint partition axioms",
+      "status": "passed"
+    },
+    {
+      "name": "Expression entry exists: facet:Agent",
+      "status": "passed"
+    },
+    {
+      "name": "Expression base exists: facet:Agent",
+      "status": "passed"
+    },
+    {
+      "name": "Supported expression operation: facet:Agent",
+      "status": "passed"
+    },
+    {
+      "name": "Restriction uses a unary specification class: facet:Agent",
+      "status": "passed"
+    },
+    {
+      "name": "Expression entry exists: facet:SentientAgent",
+      "status": "passed"
+    },
+    {
+      "name": "Expression base exists: facet:SentientAgent",
+      "status": "passed"
+    },
+    {
+      "name": "Supported expression operation: facet:SentientAgent",
+      "status": "passed"
+    },
+    {
+      "name": "Restriction uses a unary specification class: facet:SentientAgent",
+      "status": "passed"
+    },
+    {
+      "name": "Supported expression operation: facet:SentientAgent",
+      "status": "passed"
+    },
+    {
+      "name": "Restriction uses a unary specification class: facet:SentientAgent",
+      "status": "passed"
+    },
+    {
+      "name": "Expression entry exists: facet:CognitiveAgent",
+      "status": "passed"
+    },
+    {
+      "name": "Expression base exists: facet:CognitiveAgent",
+      "status": "passed"
+    },
+    {
+      "name": "Supported expression operation: facet:CognitiveAgent",
+      "status": "passed"
+    },
+    {
+      "name": "Restriction uses a unary specification class: facet:CognitiveAgent",
+      "status": "passed"
+    },
+    {
+      "name": "Supported expression operation: facet:CognitiveAgent",
+      "status": "passed"
+    },
+    {
+      "name": "Restriction uses a unary specification class: facet:CognitiveAgent",
+      "status": "passed"
+    },
+    {
+      "name": "Expression entry exists: facet:AquaticMammal",
+      "status": "passed"
+    },
+    {
+      "name": "Expression base exists: facet:AquaticMammal",
+      "status": "passed"
+    },
+    {
+      "name": "Supported expression operation: facet:AquaticMammal",
+      "status": "passed"
+    },
+    {
+      "name": "Expression entry exists: facet:HoofedMammal",
+      "status": "passed"
+    },
+    {
+      "name": "Expression base exists: facet:HoofedMammal",
+      "status": "passed"
+    },
+    {
+      "name": "Supported expression operation: facet:HoofedMammal",
+      "status": "passed"
+    },
+    {
+      "name": "Expression entry exists: facet:MicroOrganism",
+      "status": "passed"
+    },
+    {
+      "name": "Expression base exists: facet:MicroOrganism",
+      "status": "passed"
+    },
+    {
+      "name": "Supported expression operation: facet:MicroOrganism",
+      "status": "passed"
+    },
+    {
+      "name": "Expression entry exists: facet:ToxicOrganism",
+      "status": "passed"
+    },
+    {
+      "name": "Expression base exists: facet:ToxicOrganism",
+      "status": "passed"
+    },
+    {
+      "name": "Supported expression operation: facet:ToxicOrganism",
+      "status": "passed"
+    },
+    {
+      "name": "Expression entry exists: facet:Invertebrate",
+      "status": "passed"
+    },
+    {
+      "name": "Expression base exists: facet:Invertebrate",
+      "status": "passed"
+    },
+    {
+      "name": "Supported expression operation: facet:Invertebrate",
+      "status": "passed"
+    },
+    {
+      "name": "Restriction class exists: facet:Invertebrate",
+      "status": "passed"
+    },
+    {
+      "name": "Complement is relative to a superclass: facet:Invertebrate",
+      "status": "passed"
+    },
+    {
+      "name": "Expression entry exists: facet:Fish",
+      "status": "passed"
+    },
+    {
+      "name": "Expression base exists: facet:Fish",
+      "status": "passed"
+    },
+    {
+      "name": "Supported expression operation: facet:Fish",
+      "status": "passed"
+    },
+    {
+      "name": "Expression entry exists: facet:Reptile",
+      "status": "passed"
+    },
+    {
+      "name": "Expression base exists: facet:Reptile",
+      "status": "passed"
+    },
+    {
+      "name": "Supported expression operation: facet:Reptile",
+      "status": "passed"
+    },
+    {
+      "name": "Restriction class exists: facet:Reptile",
+      "status": "passed"
+    },
+    {
+      "name": "Complement is relative to a superclass: facet:Reptile",
+      "status": "passed"
+    },
+    {
+      "name": "Expression entry exists: facet:Monkey",
+      "status": "passed"
+    },
+    {
+      "name": "Expression base exists: facet:Monkey",
+      "status": "passed"
+    },
+    {
+      "name": "Supported expression operation: facet:Monkey",
+      "status": "passed"
+    },
+    {
+      "name": "Restriction class exists: facet:Monkey",
+      "status": "passed"
+    },
+    {
+      "name": "Complement is relative to a superclass: facet:Monkey",
+      "status": "passed"
+    },
+    {
+      "name": "Expression entry exists: facet:Alga",
+      "status": "passed"
+    },
+    {
+      "name": "Expression base exists: facet:Alga",
+      "status": "passed"
+    },
+    {
+      "name": "Supported expression operation: facet:Alga",
+      "status": "passed"
+    },
+    {
+      "name": "Expression entry exists: facet:NonFloweringPlant",
+      "status": "passed"
+    },
+    {
+      "name": "Expression base exists: facet:NonFloweringPlant",
+      "status": "passed"
+    },
+    {
+      "name": "Supported expression operation: facet:NonFloweringPlant",
+      "status": "passed"
+    },
+    {
+      "name": "Restriction class exists: facet:NonFloweringPlant",
+      "status": "passed"
+    },
+    {
+      "name": "Complement is relative to a superclass: facet:NonFloweringPlant",
+      "status": "passed"
+    },
+    {
+      "name": "Expression entry exists: facet:ColdBloodedVertebrate",
+      "status": "passed"
+    },
+    {
+      "name": "Expression base exists: facet:ColdBloodedVertebrate",
+      "status": "passed"
+    },
+    {
+      "name": "Supported expression operation: facet:ColdBloodedVertebrate",
+      "status": "passed"
+    },
+    {
+      "name": "Expression entry exists: facet:Warm-BloodedVertebrate",
+      "status": "passed"
+    },
+    {
+      "name": "Expression base exists: facet:Warm-BloodedVertebrate",
+      "status": "passed"
+    },
+    {
+      "name": "Supported expression operation: facet:Warm-BloodedVertebrate",
+      "status": "passed"
+    },
+    {
+      "name": "Expression entry exists: facet:CarnivoreDiet",
+      "status": "passed"
+    },
+    {
+      "name": "Expression base exists: facet:CarnivoreDiet",
+      "status": "passed"
+    },
+    {
+      "name": "Supported expression operation: facet:CarnivoreDiet",
+      "status": "passed"
+    },
+    {
+      "name": "Expression entry exists: facet:DualObjectProcess",
+      "status": "passed"
+    },
+    {
+      "name": "Expression base exists: facet:DualObjectProcess",
+      "status": "passed"
+    },
+    {
+      "name": "Supported expression operation: facet:DualObjectProcess",
+      "status": "passed"
+    },
+    {
+      "name": "Expression entry exists: facet:InternalChange",
+      "status": "passed"
+    },
+    {
+      "name": "Expression base exists: facet:InternalChange",
+      "status": "passed"
+    },
+    {
+      "name": "Supported expression operation: facet:InternalChange",
+      "status": "passed"
+    },
+    {
+      "name": "Expression entry exists: facet:Transfer",
+      "status": "passed"
+    },
+    {
+      "name": "Expression base exists: facet:Transfer",
+      "status": "passed"
+    },
+    {
+      "name": "Supported expression operation: facet:Transfer",
+      "status": "passed"
+    },
+    {
+      "name": "Expression entry exists: facet:SelfConnectedObject",
+      "status": "passed"
+    },
+    {
+      "name": "Expression base exists: facet:SelfConnectedObject",
+      "status": "passed"
+    },
+    {
+      "name": "Supported expression operation: facet:SelfConnectedObject",
+      "status": "passed"
+    },
+    {
+      "name": "Expression entry exists: facet:CorpuscularObject",
+      "status": "passed"
+    },
+    {
+      "name": "Expression base exists: facet:CorpuscularObject",
+      "status": "passed"
+    },
+    {
+      "name": "Supported expression operation: facet:CorpuscularObject",
+      "status": "passed"
+    },
+    {
+      "name": "Expression entry exists: facet:ContentBearingObject",
+      "status": "passed"
+    },
+    {
+      "name": "Expression base exists: facet:ContentBearingObject",
+      "status": "passed"
+    },
+    {
+      "name": "Supported expression operation: facet:ContentBearingObject",
+      "status": "passed"
+    },
+    {
+      "name": "Restriction uses a unary specification class: facet:ContentBearingObject",
+      "status": "passed"
+    },
+    {
+      "name": "Expression entry exists: facet:Product",
+      "status": "passed"
+    },
+    {
+      "name": "Expression base exists: facet:Product",
+      "status": "passed"
+    },
+    {
+      "name": "Supported expression operation: facet:Product",
+      "status": "passed"
+    },
+    {
+      "name": "Restriction uses a unary specification class: facet:Product",
+      "status": "passed"
+    },
+    {
+      "name": "Expression entry exists: facet:FoodBearer",
+      "status": "passed"
+    },
+    {
+      "name": "Expression base exists: facet:FoodBearer",
+      "status": "passed"
+    },
+    {
+      "name": "Supported expression operation: facet:FoodBearer",
+      "status": "passed"
+    },
+    {
+      "name": "Restriction uses a unary specification class: facet:FoodBearer",
+      "status": "passed"
+    },
+    {
+      "name": "Expression entry exists: facet:BeverageBearer",
+      "status": "passed"
+    },
+    {
+      "name": "Expression base exists: facet:BeverageBearer",
+      "status": "passed"
+    },
+    {
+      "name": "Supported expression operation: facet:BeverageBearer",
+      "status": "passed"
+    },
+    {
+      "name": "Restriction uses a unary specification class: facet:BeverageBearer",
+      "status": "passed"
+    },
+    {
+      "name": "Expression entry exists: facet:MeatBearer",
+      "status": "passed"
+    },
+    {
+      "name": "Expression base exists: facet:MeatBearer",
+      "status": "passed"
+    },
+    {
+      "name": "Supported expression operation: facet:MeatBearer",
+      "status": "passed"
+    },
+    {
+      "name": "Restriction uses a unary specification class: facet:MeatBearer",
+      "status": "passed"
+    },
+    {
+      "name": "Expression entry exists: facet:VegetableBearer",
+      "status": "passed"
+    },
+    {
+      "name": "Expression base exists: facet:VegetableBearer",
+      "status": "passed"
+    },
+    {
+      "name": "Supported expression operation: facet:VegetableBearer",
+      "status": "passed"
+    },
+    {
+      "name": "Restriction uses a unary specification class: facet:VegetableBearer",
+      "status": "passed"
+    },
+    {
+      "name": "Expression entry exists: facet:FruitFoodBearer",
+      "status": "passed"
+    },
+    {
+      "name": "Expression base exists: facet:FruitFoodBearer",
+      "status": "passed"
+    },
+    {
+      "name": "Supported expression operation: facet:FruitFoodBearer",
+      "status": "passed"
+    },
+    {
+      "name": "Restriction uses a unary specification class: facet:FruitFoodBearer",
+      "status": "passed"
+    },
+    {
+      "name": "Expression entry exists: facet:BioactiveMaterial",
+      "status": "passed"
+    },
+    {
+      "name": "Expression base exists: facet:BioactiveMaterial",
+      "status": "passed"
+    },
+    {
+      "name": "Supported expression operation: facet:BioactiveMaterial",
+      "status": "passed"
+    },
+    {
+      "name": "Restriction uses a unary specification class: facet:BioactiveMaterial",
+      "status": "passed"
+    },
+    {
+      "name": "Expression entry exists: facet:HormoneBearer",
+      "status": "passed"
+    },
+    {
+      "name": "Expression base exists: facet:HormoneBearer",
+      "status": "passed"
+    },
+    {
+      "name": "Supported expression operation: facet:HormoneBearer",
+      "status": "passed"
+    },
+    {
+      "name": "Restriction uses a unary specification class: facet:HormoneBearer",
+      "status": "passed"
+    },
+    {
+      "name": "Expression entry exists: facet:NutrientBearer",
+      "status": "passed"
+    },
+    {
+      "name": "Expression base exists: facet:NutrientBearer",
+      "status": "passed"
+    },
+    {
+      "name": "Supported expression operation: facet:NutrientBearer",
+      "status": "passed"
+    },
+    {
+      "name": "Restriction uses a unary specification class: facet:NutrientBearer",
+      "status": "passed"
+    },
+    {
+      "name": "Expression entry exists: facet:VitaminBearer",
+      "status": "passed"
+    },
+    {
+      "name": "Expression base exists: facet:VitaminBearer",
+      "status": "passed"
+    },
+    {
+      "name": "Supported expression operation: facet:VitaminBearer",
+      "status": "passed"
+    },
+    {
+      "name": "Restriction uses a unary specification class: facet:VitaminBearer",
+      "status": "passed"
+    },
+    {
+      "name": "Expression entry exists: facet:EnzymeBearer",
+      "status": "passed"
+    },
+    {
+      "name": "Expression base exists: facet:EnzymeBearer",
+      "status": "passed"
+    },
+    {
+      "name": "Supported expression operation: facet:EnzymeBearer",
+      "status": "passed"
+    },
+    {
+      "name": "Restriction uses a unary specification class: facet:EnzymeBearer",
+      "status": "passed"
+    },
+    {
+      "name": "Expression entry exists: facet:AgentCollection",
+      "status": "passed"
+    },
+    {
+      "name": "Expression base exists: facet:AgentCollection",
+      "status": "passed"
+    },
+    {
+      "name": "Supported expression operation: facet:AgentCollection",
+      "status": "passed"
+    },
+    {
+      "name": "Restriction uses a unary specification class: facet:AgentCollection",
+      "status": "passed"
+    },
+    {
+      "name": "Expression entry exists: facet:PersonBearer",
+      "status": "passed"
+    },
+    {
+      "name": "Expression base exists: facet:PersonBearer",
+      "status": "passed"
+    },
+    {
+      "name": "Supported expression operation: facet:PersonBearer",
+      "status": "passed"
+    },
+    {
+      "name": "Restriction uses a unary specification class: facet:PersonBearer",
+      "status": "passed"
+    },
+    {
+      "name": "Expression entry exists: facet:IntentionalPsychologicalProcess",
+      "status": "passed"
+    },
+    {
+      "name": "Expression base exists: facet:IntentionalPsychologicalProcess",
+      "status": "passed"
+    },
+    {
+      "name": "Supported expression operation: facet:IntentionalPsychologicalProcess",
+      "status": "passed"
+    },
+    {
+      "name": "Restriction class exists: facet:IntentionalPsychologicalProcess",
+      "status": "passed"
+    },
+    {
+      "name": "Expression entry exists: facet:OrganicObject",
+      "status": "passed"
+    },
+    {
+      "name": "Expression base exists: facet:OrganicObject",
+      "status": "passed"
+    },
+    {
+      "name": "Supported expression operation: facet:OrganicObject",
+      "status": "passed"
+    },
+    {
+      "name": "Expression entry exists: facet:InstitutionalBearer",
+      "status": "passed"
+    },
+    {
+      "name": "Expression class reference exists: facet:InstitutionalBearer",
+      "status": "passed"
+    },
+    {
+      "name": "Expression entry exists: facet:LocationBearer",
+      "status": "passed"
+    },
+    {
+      "name": "Expression base exists: facet:LocationBearer",
+      "status": "passed"
+    },
+    {
+      "name": "Supported expression operation: facet:LocationBearer",
+      "status": "passed"
+    },
+    {
+      "name": "Restriction uses a unary specification class: facet:LocationBearer",
+      "status": "passed"
+    },
+    {
+      "name": "Expression entry exists: facet:SymbolBearer",
+      "status": "passed"
+    },
+    {
+      "name": "Expression base exists: facet:SymbolBearer",
+      "status": "passed"
+    },
+    {
+      "name": "Supported expression operation: facet:SymbolBearer",
+      "status": "passed"
+    },
+    {
+      "name": "Restriction uses a unary specification class: facet:SymbolBearer",
+      "status": "passed"
+    },
+    {
+      "name": "Expression entry exists: facet:NameBearer",
+      "status": "passed"
+    },
+    {
+      "name": "Expression base exists: facet:NameBearer",
+      "status": "passed"
+    },
+    {
+      "name": "Supported expression operation: facet:NameBearer",
+      "status": "passed"
+    },
+    {
+      "name": "Restriction uses a unary specification class: facet:NameBearer",
+      "status": "passed"
+    },
+    {
+      "name": "Expression entry exists: facet:LabelBearer",
+      "status": "passed"
+    },
+    {
+      "name": "Expression base exists: facet:LabelBearer",
+      "status": "passed"
+    },
+    {
+      "name": "Supported expression operation: facet:LabelBearer",
+      "status": "passed"
+    },
+    {
+      "name": "Restriction uses a unary specification class: facet:LabelBearer",
+      "status": "passed"
+    },
+    {
+      "name": "Expression entry exists: facet:SlimeMold",
+      "status": "passed"
+    },
+    {
+      "name": "Expression base exists: facet:SlimeMold",
+      "status": "passed"
+    },
+    {
+      "name": "Supported expression operation: facet:SlimeMold",
+      "status": "passed"
+    },
+    {
+      "name": "Expression entry exists: facet:AnimalFoodBearer",
+      "status": "passed"
+    },
+    {
+      "name": "Expression base exists: facet:AnimalFoodBearer",
+      "status": "passed"
+    },
+    {
+      "name": "Supported expression operation: facet:AnimalFoodBearer",
+      "status": "passed"
+    },
+    {
+      "name": "Restriction uses a unary specification class: facet:AnimalFoodBearer",
+      "status": "passed"
+    },
+    {
+      "name": "Expression entry exists: facet:ImpureWater",
+      "status": "passed"
+    },
+    {
+      "name": "Expression base exists: facet:ImpureWater",
+      "status": "passed"
+    },
+    {
+      "name": "Supported expression operation: facet:ImpureWater",
+      "status": "passed"
+    },
+    {
+      "name": "Expression entry exists: facet:PrintedProduction",
+      "status": "passed"
+    },
+    {
+      "name": "Expression base exists: facet:PrintedProduction",
+      "status": "passed"
+    },
+    {
+      "name": "Supported expression operation: facet:PrintedProduction",
+      "status": "passed"
+    },
+    {
+      "name": "Exactly one mapping for every original record",
+      "status": "passed"
+    },
+    {
+      "name": "All mappings have explicit existing targets",
+      "status": "passed"
+    },
+    {
+      "name": "Original labels and definitions retained",
+      "status": "passed"
+    },
+    {
+      "name": "All original child edges retained for audit",
+      "status": "passed"
+    },
+    {
+      "name": "Coverage baseline is all 439 source records",
+      "status": "passed"
+    },
+    {
+      "name": "Predicate instances use a separate unique namespace",
+      "status": "passed"
+    },
+    {
+      "name": "Predicate type exists and has proper arity: predicate:instance_of",
+      "status": "passed"
+    },
+    {
+      "name": "Predicate ranges are defined classes: predicate:instance_of",
+      "status": "passed"
+    },
+    {
+      "name": "Predicate formal level is explicit: predicate:instance_of",
+      "status": "passed"
+    },
+    {
+      "name": "Predicate type exists and has proper arity: predicate:subclass_of",
+      "status": "passed"
+    },
+    {
+      "name": "Predicate ranges are defined classes: predicate:subclass_of",
+      "status": "passed"
+    },
+    {
+      "name": "Predicate formal level is explicit: predicate:subclass_of",
+      "status": "passed"
+    },
+    {
+      "name": "Predicate type exists and has proper arity: predicate:part_of",
+      "status": "passed"
+    },
+    {
+      "name": "Predicate ranges are defined classes: predicate:part_of",
+      "status": "passed"
+    },
+    {
+      "name": "Predicate formal level is explicit: predicate:part_of",
+      "status": "passed"
+    },
+    {
+      "name": "Predicate type exists and has proper arity: predicate:member_of",
+      "status": "passed"
+    },
+    {
+      "name": "Predicate ranges are defined classes: predicate:member_of",
+      "status": "passed"
+    },
+    {
+      "name": "Predicate formal level is explicit: predicate:member_of",
+      "status": "passed"
+    },
+    {
+      "name": "Predicate type exists and has proper arity: predicate:collection_member_of",
+      "status": "passed"
+    },
+    {
+      "name": "Predicate ranges are defined classes: predicate:collection_member_of",
+      "status": "passed"
+    },
+    {
+      "name": "Predicate formal level is explicit: predicate:collection_member_of",
+      "status": "passed"
+    },
+    {
+      "name": "Predicate type exists and has proper arity: predicate:located_in",
+      "status": "passed"
+    },
+    {
+      "name": "Predicate ranges are defined classes: predicate:located_in",
+      "status": "passed"
+    },
+    {
+      "name": "Predicate formal level is explicit: predicate:located_in",
+      "status": "passed"
+    },
+    {
+      "name": "Predicate type exists and has proper arity: predicate:occurs_during",
+      "status": "passed"
+    },
+    {
+      "name": "Predicate ranges are defined classes: predicate:occurs_during",
+      "status": "passed"
+    },
+    {
+      "name": "Predicate formal level is explicit: predicate:occurs_during",
+      "status": "passed"
+    },
+    {
+      "name": "Predicate type exists and has proper arity: predicate:participates_in",
+      "status": "passed"
+    },
+    {
+      "name": "Predicate ranges are defined classes: predicate:participates_in",
+      "status": "passed"
+    },
+    {
+      "name": "Predicate formal level is explicit: predicate:participates_in",
+      "status": "passed"
+    },
+    {
+      "name": "Predicate type exists and has proper arity: predicate:realizes_content",
+      "status": "passed"
+    },
+    {
+      "name": "Predicate ranges are defined classes: predicate:realizes_content",
+      "status": "passed"
+    },
+    {
+      "name": "Predicate formal level is explicit: predicate:realizes_content",
+      "status": "passed"
+    },
+    {
+      "name": "Predicate type exists and has proper arity: predicate:satisfies_role",
+      "status": "passed"
+    },
+    {
+      "name": "Predicate ranges are defined classes: predicate:satisfies_role",
+      "status": "passed"
+    },
+    {
+      "name": "Predicate formal level is explicit: predicate:satisfies_role",
+      "status": "passed"
+    },
+    {
+      "name": "Predicate type exists and has proper arity: predicate:has_quality",
+      "status": "passed"
+    },
+    {
+      "name": "Predicate ranges are defined classes: predicate:has_quality",
+      "status": "passed"
+    },
+    {
+      "name": "Predicate formal level is explicit: predicate:has_quality",
+      "status": "passed"
+    },
+    {
+      "name": "Predicate type exists and has proper arity: predicate:has_quality_value",
+      "status": "passed"
+    },
+    {
+      "name": "Predicate ranges are defined classes: predicate:has_quality_value",
+      "status": "passed"
+    },
+    {
+      "name": "Predicate formal level is explicit: predicate:has_quality_value",
+      "status": "passed"
+    },
+    {
+      "name": "Predicate type exists and has proper arity: predicate:has_quantity_value",
+      "status": "passed"
+    },
+    {
+      "name": "Predicate ranges are defined classes: predicate:has_quantity_value",
+      "status": "passed"
+    },
+    {
+      "name": "Predicate formal level is explicit: predicate:has_quantity_value",
+      "status": "passed"
+    },
+    {
+      "name": "Predicate type exists and has proper arity: predicate:quantity_greater_than",
+      "status": "passed"
+    },
+    {
+      "name": "Predicate ranges are defined classes: predicate:quantity_greater_than",
+      "status": "passed"
+    },
+    {
+      "name": "Predicate formal level is explicit: predicate:quantity_greater_than",
+      "status": "passed"
+    },
+    {
+      "name": "Predicate type exists and has proper arity: predicate:causally_contributes_to",
+      "status": "passed"
+    },
+    {
+      "name": "Predicate ranges are defined classes: predicate:causally_contributes_to",
+      "status": "passed"
+    },
+    {
+      "name": "Predicate formal level is explicit: predicate:causally_contributes_to",
+      "status": "passed"
+    },
+    {
+      "name": "Predicate type exists and has proper arity: predicate:derived_from",
+      "status": "passed"
+    },
+    {
+      "name": "Predicate ranges are defined classes: predicate:derived_from",
+      "status": "passed"
+    },
+    {
+      "name": "Predicate formal level is explicit: predicate:derived_from",
+      "status": "passed"
+    },
+    {
+      "name": "Predicate type exists and has proper arity: predicate:same_as",
+      "status": "passed"
+    },
+    {
+      "name": "Predicate ranges are defined classes: predicate:same_as",
+      "status": "passed"
+    },
+    {
+      "name": "Predicate formal level is explicit: predicate:same_as",
+      "status": "passed"
+    },
+    {
+      "name": "Predicate type exists and has proper arity: predicate:has_arity",
+      "status": "passed"
+    },
+    {
+      "name": "Predicate ranges are defined classes: predicate:has_arity",
+      "status": "passed"
+    },
+    {
+      "name": "Predicate formal level is explicit: predicate:has_arity",
+      "status": "passed"
+    },
+    {
+      "name": "Predicate type exists and has proper arity: predicate:describes_fictional_entity",
+      "status": "passed"
+    },
+    {
+      "name": "Predicate ranges are defined classes: predicate:describes_fictional_entity",
+      "status": "passed"
+    },
+    {
+      "name": "Predicate formal level is explicit: predicate:describes_fictional_entity",
+      "status": "passed"
+    },
+    {
+      "name": "Predicate type exists and has proper arity: predicate:is_red",
+      "status": "passed"
+    },
+    {
+      "name": "Predicate ranges are defined classes: predicate:is_red",
+      "status": "passed"
+    },
+    {
+      "name": "Predicate formal level is explicit: predicate:is_red",
+      "status": "passed"
+    },
+    {
+      "name": "Retrieved taxon identity matches intended taxon: Bacterium",
+      "status": "passed"
+    },
+    {
+      "name": "Retrieved taxon identity matches intended taxon: Archaeon",
+      "status": "passed"
+    },
+    {
+      "name": "Retrieved taxon identity matches intended taxon: Eukaryote",
+      "status": "passed"
+    },
+    {
+      "name": "Retrieved taxon identity matches intended taxon: Plant",
+      "status": "passed"
+    },
+    {
+      "name": "Retrieved taxonomic ancestry: Plant -> Eukaryote",
+      "status": "passed"
+    },
+    {
+      "name": "Retrieved taxon identity matches intended taxon: Moss",
+      "status": "passed"
+    },
+    {
+      "name": "Retrieved taxonomic ancestry: Moss -> Plant",
+      "status": "passed"
+    },
+    {
+      "name": "Retrieved taxon identity matches intended taxon: VascularPlant",
+      "status": "passed"
+    },
+    {
+      "name": "Retrieved taxonomic ancestry: VascularPlant -> Plant",
+      "status": "passed"
+    },
+    {
+      "name": "Retrieved taxon identity matches intended taxon: Fern",
+      "status": "passed"
+    },
+    {
+      "name": "Retrieved taxonomic ancestry: Fern -> VascularPlant",
+      "status": "passed"
+    },
+    {
+      "name": "Retrieved taxon identity matches intended taxon: SeedPlant",
+      "status": "passed"
+    },
+    {
+      "name": "Retrieved taxonomic ancestry: SeedPlant -> VascularPlant",
+      "status": "passed"
+    },
+    {
+      "name": "Retrieved taxon identity matches intended taxon: Gymnosperm",
+      "status": "passed"
+    },
+    {
+      "name": "Retrieved taxonomic ancestry: Gymnosperm -> SeedPlant",
+      "status": "passed"
+    },
+    {
+      "name": "Retrieved taxon identity matches intended taxon: FloweringPlant",
+      "status": "passed"
+    },
+    {
+      "name": "Retrieved taxonomic ancestry: FloweringPlant -> SeedPlant",
+      "status": "passed"
+    },
+    {
+      "name": "Retrieved taxon identity matches intended taxon: Fungus",
+      "status": "passed"
+    },
+    {
+      "name": "Retrieved taxonomic ancestry: Fungus -> Eukaryote",
+      "status": "passed"
+    },
+    {
+      "name": "Retrieved taxon identity matches intended taxon: Animal",
+      "status": "passed"
+    },
+    {
+      "name": "Retrieved taxonomic ancestry: Animal -> Eukaryote",
+      "status": "passed"
+    },
+    {
+      "name": "Retrieved taxon identity matches intended taxon: Sponge",
+      "status": "passed"
+    },
+    {
+      "name": "Retrieved taxonomic ancestry: Sponge -> Animal",
+      "status": "passed"
+    },
+    {
+      "name": "Retrieved taxon identity matches intended taxon: Cnidarian",
+      "status": "passed"
+    },
+    {
+      "name": "Retrieved taxonomic ancestry: Cnidarian -> Animal",
+      "status": "passed"
+    },
+    {
+      "name": "Retrieved taxon identity matches intended taxon: Bilaterian",
+      "status": "passed"
+    },
+    {
+      "name": "Retrieved taxonomic ancestry: Bilaterian -> Animal",
+      "status": "passed"
+    },
+    {
+      "name": "Retrieved taxon identity matches intended taxon: Arthropod",
+      "status": "passed"
+    },
+    {
+      "name": "Retrieved taxonomic ancestry: Arthropod -> Bilaterian",
+      "status": "passed"
+    },
+    {
+      "name": "Retrieved taxon identity matches intended taxon: Insect",
+      "status": "passed"
+    },
+    {
+      "name": "Retrieved taxonomic ancestry: Insect -> Arthropod",
+      "status": "passed"
+    },
+    {
+      "name": "Retrieved taxon identity matches intended taxon: Arachnid",
+      "status": "passed"
+    },
+    {
+      "name": "Retrieved taxonomic ancestry: Arachnid -> Arthropod",
+      "status": "passed"
+    },
+    {
+      "name": "Retrieved taxon identity matches intended taxon: Mollusc",
+      "status": "passed"
+    },
+    {
+      "name": "Retrieved taxonomic ancestry: Mollusc -> Bilaterian",
+      "status": "passed"
+    },
+    {
+      "name": "Retrieved taxon identity matches intended taxon: Annelid",
+      "status": "passed"
+    },
+    {
+      "name": "Retrieved taxonomic ancestry: Annelid -> Bilaterian",
+      "status": "passed"
+    },
+    {
+      "name": "Retrieved taxon identity matches intended taxon: Nematode",
+      "status": "passed"
+    },
+    {
+      "name": "Retrieved taxonomic ancestry: Nematode -> Bilaterian",
+      "status": "passed"
+    },
+    {
+      "name": "Retrieved taxon identity matches intended taxon: Echinoderm",
+      "status": "passed"
+    },
+    {
+      "name": "Retrieved taxonomic ancestry: Echinoderm -> Bilaterian",
+      "status": "passed"
+    },
+    {
+      "name": "Retrieved taxon identity matches intended taxon: Chordate",
+      "status": "passed"
+    },
+    {
+      "name": "Retrieved taxonomic ancestry: Chordate -> Bilaterian",
+      "status": "passed"
+    },
+    {
+      "name": "Retrieved taxon identity matches intended taxon: Vertebrate",
+      "status": "passed"
+    },
+    {
+      "name": "Retrieved taxonomic ancestry: Vertebrate -> Animal",
+      "status": "passed"
+    },
+    {
+      "name": "Retrieved taxonomic ancestry: Vertebrate -> Chordate",
+      "status": "passed"
+    },
+    {
+      "name": "Retrieved taxon identity matches intended taxon: JawedVertebrate",
+      "status": "passed"
+    },
+    {
+      "name": "Retrieved taxonomic ancestry: JawedVertebrate -> Vertebrate",
+      "status": "passed"
+    },
+    {
+      "name": "Retrieved taxon identity matches intended taxon: CartilaginousFish",
+      "status": "passed"
+    },
+    {
+      "name": "Retrieved taxonomic ancestry: CartilaginousFish -> JawedVertebrate",
+      "status": "passed"
+    },
+    {
+      "name": "Retrieved taxon identity matches intended taxon: BonyVertebrate",
+      "status": "passed"
+    },
+    {
+      "name": "Retrieved taxonomic ancestry: BonyVertebrate -> JawedVertebrate",
+      "status": "passed"
+    },
+    {
+      "name": "Retrieved taxon identity matches intended taxon: RayFinnedFish",
+      "status": "passed"
+    },
+    {
+      "name": "Retrieved taxonomic ancestry: RayFinnedFish -> BonyVertebrate",
+      "status": "passed"
+    },
+    {
+      "name": "Retrieved taxon identity matches intended taxon: LobeFinnedVertebrate",
+      "status": "passed"
+    },
+    {
+      "name": "Retrieved taxonomic ancestry: LobeFinnedVertebrate -> BonyVertebrate",
+      "status": "passed"
+    },
+    {
+      "name": "Retrieved taxon identity matches intended taxon: Tetrapod",
+      "status": "passed"
+    },
+    {
+      "name": "Retrieved taxonomic ancestry: Tetrapod -> LobeFinnedVertebrate",
+      "status": "passed"
+    },
+    {
+      "name": "Retrieved taxon identity matches intended taxon: Amphibian",
+      "status": "passed"
+    },
+    {
+      "name": "Retrieved taxonomic ancestry: Amphibian -> Tetrapod",
+      "status": "passed"
+    },
+    {
+      "name": "Retrieved taxon identity matches intended taxon: Amniote",
+      "status": "passed"
+    },
+    {
+      "name": "Retrieved taxonomic ancestry: Amniote -> Vertebrate",
+      "status": "passed"
+    },
+    {
+      "name": "Retrieved taxonomic ancestry: Amniote -> Tetrapod",
+      "status": "passed"
+    },
+    {
+      "name": "Retrieved taxon identity matches intended taxon: Mammal",
+      "status": "passed"
+    },
+    {
+      "name": "Retrieved taxonomic ancestry: Mammal -> Amniote",
+      "status": "passed"
+    },
+    {
+      "name": "Retrieved taxon identity matches intended taxon: Monotreme",
+      "status": "passed"
+    },
+    {
+      "name": "Retrieved taxonomic ancestry: Monotreme -> Mammal",
+      "status": "passed"
+    },
+    {
+      "name": "Retrieved taxon identity matches intended taxon: Marsupial",
+      "status": "passed"
+    },
+    {
+      "name": "Retrieved taxonomic ancestry: Marsupial -> Mammal",
+      "status": "passed"
+    },
+    {
+      "name": "Retrieved taxon identity matches intended taxon: PlacentalMammal",
+      "status": "passed"
+    },
+    {
+      "name": "Retrieved taxonomic ancestry: PlacentalMammal -> Mammal",
+      "status": "passed"
+    },
+    {
+      "name": "Retrieved taxon identity matches intended taxon: Carnivoran",
+      "status": "passed"
+    },
+    {
+      "name": "Retrieved taxonomic ancestry: Carnivoran -> PlacentalMammal",
+      "status": "passed"
+    },
+    {
+      "name": "Retrieved taxon identity matches intended taxon: Canine",
+      "status": "passed"
+    },
+    {
+      "name": "Retrieved taxonomic ancestry: Canine -> Carnivoran",
+      "status": "passed"
+    },
+    {
+      "name": "Retrieved taxon identity matches intended taxon: Feline",
+      "status": "passed"
+    },
+    {
+      "name": "Retrieved taxonomic ancestry: Feline -> Carnivoran",
+      "status": "passed"
+    },
+    {
+      "name": "Retrieved taxon identity matches intended taxon: Dog",
+      "status": "passed"
+    },
+    {
+      "name": "Retrieved taxonomic ancestry: Dog -> Canine",
+      "status": "passed"
+    },
+    {
+      "name": "Retrieved taxon identity matches intended taxon: Cat",
+      "status": "passed"
+    },
+    {
+      "name": "Retrieved taxonomic ancestry: Cat -> Feline",
+      "status": "passed"
+    },
+    {
+      "name": "Retrieved taxon identity matches intended taxon: Primate",
+      "status": "passed"
+    },
+    {
+      "name": "Retrieved taxonomic ancestry: Primate -> Mammal",
+      "status": "passed"
+    },
+    {
+      "name": "Retrieved taxonomic ancestry: Primate -> PlacentalMammal",
+      "status": "passed"
+    },
+    {
+      "name": "Retrieved taxon identity matches intended taxon: Ape",
+      "status": "passed"
+    },
+    {
+      "name": "Retrieved taxonomic ancestry: Ape -> Primate",
+      "status": "passed"
+    },
+    {
+      "name": "Retrieved taxonomic ancestry: Ape -> Simian",
+      "status": "passed"
+    },
+    {
+      "name": "Retrieved taxon identity matches intended taxon: Hominid",
+      "status": "passed"
+    },
+    {
+      "name": "Retrieved taxonomic ancestry: Hominid -> Ape",
+      "status": "passed"
+    },
+    {
+      "name": "Retrieved taxon identity matches intended taxon: Human",
+      "status": "passed"
+    },
+    {
+      "name": "Retrieved taxonomic ancestry: Human -> Ape",
+      "status": "passed"
+    },
+    {
+      "name": "Retrieved taxonomic ancestry: Human -> Hominid",
+      "status": "passed"
+    },
+    {
+      "name": "Retrieved taxon identity matches intended taxon: Rodent",
+      "status": "passed"
+    },
+    {
+      "name": "Retrieved taxonomic ancestry: Rodent -> PlacentalMammal",
+      "status": "passed"
+    },
+    {
+      "name": "Retrieved taxon identity matches intended taxon: Cetartiodactyl",
+      "status": "passed"
+    },
+    {
+      "name": "Retrieved taxonomic ancestry: Cetartiodactyl -> PlacentalMammal",
+      "status": "passed"
+    },
+    {
+      "name": "Retrieved taxon identity matches intended taxon: Cetacean",
+      "status": "passed"
+    },
+    {
+      "name": "Retrieved taxonomic ancestry: Cetacean -> Cetartiodactyl",
+      "status": "passed"
+    },
+    {
+      "name": "Retrieved taxon identity matches intended taxon: Perissodactyl",
+      "status": "passed"
+    },
+    {
+      "name": "Retrieved taxonomic ancestry: Perissodactyl -> PlacentalMammal",
+      "status": "passed"
+    },
+    {
+      "name": "Retrieved taxon identity matches intended taxon: Sauropsid",
+      "status": "passed"
+    },
+    {
+      "name": "Retrieved taxonomic ancestry: Sauropsid -> Amniote",
+      "status": "passed"
+    },
+    {
+      "name": "Retrieved taxon identity matches intended taxon: Turtle",
+      "status": "passed"
+    },
+    {
+      "name": "Retrieved taxonomic ancestry: Turtle -> Sauropsid",
+      "status": "passed"
+    },
+    {
+      "name": "Retrieved taxon identity matches intended taxon: Lepidosaur",
+      "status": "passed"
+    },
+    {
+      "name": "Retrieved taxonomic ancestry: Lepidosaur -> Sauropsid",
+      "status": "passed"
+    },
+    {
+      "name": "Retrieved taxon identity matches intended taxon: Archosaur",
+      "status": "passed"
+    },
+    {
+      "name": "Retrieved taxonomic ancestry: Archosaur -> Sauropsid",
+      "status": "passed"
+    },
+    {
+      "name": "Retrieved taxon identity matches intended taxon: Crocodilian",
+      "status": "passed"
+    },
+    {
+      "name": "Retrieved taxonomic ancestry: Crocodilian -> Archosaur",
+      "status": "passed"
+    },
+    {
+      "name": "Retrieved taxon identity matches intended taxon: Dinosaur",
+      "status": "passed"
+    },
+    {
+      "name": "Retrieved taxonomic ancestry: Dinosaur -> Archosaur",
+      "status": "passed"
+    },
+    {
+      "name": "Retrieved taxon identity matches intended taxon: Bird",
+      "status": "passed"
+    },
+    {
+      "name": "Retrieved taxonomic ancestry: Bird -> Dinosaur",
+      "status": "passed"
+    },
+    {
+      "name": "Retrieved taxon identity matches intended taxon: Simian",
+      "status": "passed"
+    },
+    {
+      "name": "Retrieved taxonomic ancestry: Simian -> Primate",
+      "status": "passed"
+    },
+    {
+      "name": "Retrieved taxon identity matches intended taxon: Lycophyte",
+      "status": "passed"
+    },
+    {
+      "name": "Retrieved taxonomic ancestry: Lycophyte -> VascularPlant",
+      "status": "passed"
+    },
+    {
+      "name": "Retrieved taxon identity matches intended taxon: Lagomorph",
+      "status": "passed"
+    },
+    {
+      "name": "Retrieved taxonomic ancestry: Lagomorph -> PlacentalMammal",
+      "status": "passed"
+    },
+    {
+      "name": "Birds retain Dinosaur ancestry",
+      "status": "passed"
+    },
+    {
+      "name": "Humans retain ape, tetrapod, and lobe-finned ancestry",
+      "status": "passed"
+    },
+    {
+      "name": "Fungi do not inherit Land plant",
+      "status": "passed"
+    },
+    {
+      "name": "Viruses are not cellular organisms",
+      "status": "passed"
+    },
+    {
+      "name": "Celestial bodies are not regions",
+      "status": "passed"
+    },
+    {
+      "name": "Jurisdictional areas are not agents",
+      "status": "passed"
+    },
+    {
+      "name": "Room and hole denote spaces",
+      "status": "passed"
+    },
+    {
+      "name": "Language systems are not expressions",
+      "status": "passed"
+    },
+    {
+      "name": "Film content is not Text",
+      "status": "passed"
+    },
+    {
+      "name": "Molecules are not amounts of compound substance",
+      "status": "passed"
+    },
+    {
+      "name": "Atoms are not elemental material portions",
+      "status": "passed"
+    },
+    {
+      "name": "Enzymatic classification does not force every enzyme to be protein",
+      "status": "passed"
+    },
+    {
+      "name": "Personhood specifications do not become humans",
+      "status": "passed"
+    },
+    {
+      "name": "Property and Relation are specification kinds",
+      "status": "passed"
+    },
+    {
+      "name": "Actual qualities and relational states remain realized",
+      "status": "passed"
+    },
+    {
+      "name": "Game rules and playing are separated",
+      "status": "passed"
+    },
+    {
+      "name": "Buying and selling are not forced disjoint",
+      "status": "passed"
+    },
+    {
+      "name": "Combustion is not forced to be decomposition",
+      "status": "passed"
+    },
+    {
+      "name": "Birth does not imply creation of a previously nonexistent organism",
+      "status": "passed"
+    }
+  ]
+}

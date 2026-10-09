@@ -1,0 +1,62 @@
+{
+  "FORMAT.md": {
+    "bytes": 5660,
+    "sha256": "142ef03a1cccd408e378fe1fde938ecd2813d0d87c0104981b5973da4ebb2416"
+  },
+  "README.md": {
+    "bytes": 1745,
+    "sha256": "3afb134da1d76573fcd2e5432fad38e308c70ac9d355ff22611b4261d2863a88"
+  },
+  "architecture.md": {
+    "bytes": 8075,
+    "sha256": "ec4dd337c96db9f5a05eb8ad0310dafb7402ab62ce7a3080b9da010e331f055f"
+  },
+  "coverage-map.json": {
+    "bytes": 233609,
+    "sha256": "c8e1b65643e977d4b435fdc118f10471903cf2f213423e9a1ca8b8f3c9451d02"
+  },
+  "coverage-map.md": {
+    "bytes": 105442,
+    "sha256": "a5543dbbd5a44be920369266ce362c03ef6bcfc5999dde7d6630e41e0cfec8da"
+  },
+  "ontology-proposal.json": {
+    "bytes": 416300,
+    "sha256": "c85f0f2490a611d1375047bb231fed4d6622948c30b95e2cc7d9fbf35e0f1525"
+  },
+  "ontology-tree.md": {
+    "bytes": 149166,
+    "sha256": "f123b3a21e499950a40ea5a460a9b0e7d6e863da8cff5f787e1feffa5065de46"
+  },
+  "original-snapshot.json": {
+    "bytes": 165714,
+    "sha256": "ecfd32d12e1aa3214a9da52e9c4b1331ca7d78034146c08e64758926ebd8b8f3"
+  },
+  "provenance-checks.json": {
+    "bytes": 1574,
+    "sha256": "89c805787605fd0b9c72e9f9f3334f1633b743db46d0aa401d44b1060a7d1c78"
+  },
+  "render.py": {
+    "bytes": 5200,
+    "sha256": "54f1d48347ccd306466cfef3ac7e31906935966e13d9250b1841ee7bcf28af02"
+  },
+  "source-evidence.zip": {
+    "bytes": 408879,
+    "sha256": "a299d493274ca338f6eef068b65503c92f51cf297613c2e4f22112dc5b0ac190"
+  },
+  "stress-tests.md": {
+    "bytes": 6665,
+    "sha256": "bdff1697add22b45acb3bc65a20ff0ea7395b3e54875d46f76d1d63e127bcae9"
+  },
+  "validate.py": {
+    "bytes": 10595,
+    "sha256": "d514a62f38b5f61157ee271ce8e0fd9dee246f36634849602b3c08c62c3a7522"
+  },
+  "validation-negative-tests.json": {
+    "bytes": 1167,
+    "sha256": "6326577fc6931933f839ecd50c722b0817814290f869c5861ec8357cfdab4d2b"
+  },
+  "validation-report.json": {
+    "bytes": 44048,
+    "sha256": "4b48d44723f2f03f71a2502e3bdc7d9fd899d0c31249479bc6a2652704e875d1"
+  }
+}
