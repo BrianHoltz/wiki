@@ -9,6 +9,7 @@
   - [Roget's 1911 conceptual tree](Ontology/Rogets/)
   - [Propædia](Ontology/Propaedia/)
   - [Wikipedia categories](Ontology/Wikipedia/)
+  - [GPT Ontology](Ontology/GPT/)
 
 ### Artificial Intelligence
 
