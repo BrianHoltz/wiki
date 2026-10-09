@@ -14,6 +14,25 @@
   by source material or an explicit project definition.
 - Source graphs remain authoritative. A one-parent tree is a reproducible
   navigation projection, not a semantic rewrite.
+- Classify by kind, not role. The canonical parent should express what an
+  entity is, not a role it happens to play. Roles such as agent, location,
+  participant, container, bearer, or instrument should normally be represented
+  as properties, relations, or alternate classifications unless the role
+  defines the entity's kind.
+- Prefer coverage over forced uniqueness. Every concept should have at least
+  one defensible home. Multiple defensible classifications are preferable to
+  leaving a concept unclassified; the canonical tree selects one primary home
+  while preserving useful alternatives.
+- Treat ambiguity as information. Multiple plausible homes are expected in a
+  multidimensional ontology and should be preserved as alternate
+  classifications. Persistent ambiguity near the upper ontology is also a
+  signal to reexamine whether the categories represent genuinely distinct
+  kinds.
+- Choose the canonical parent by essence, alternatives by applicability. When
+  several classifications apply, prefer as the primary parent the category
+  that best describes what the entity is; retain categories describing what it
+  does, where it is, how it is used, or what relationships it participates in
+  as alternate structure or metadata.
 - Structural quality, familiar labels, useful branching, and source fidelity
   take priority over node count or premature vocabulary expansion.
 - **Biology:**
