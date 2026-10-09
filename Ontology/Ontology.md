@@ -598,11 +598,15 @@ classes.”
 Entity: that which can be referred to.
 ├── Realized entity: an entity that takes no arguments and has spatiotemporal embodiment.
 │   ├── Object: a realized entity regarded as persisting through time.
-│   │   ├── Agent
-│   │   ├── Collection
-│   │   ├── Region
-│   │   ├── Location
-│   │   └── Self Connected Object
+│   │   ├── Item: an object distinguished as a single unit.
+│   │   │   ├── Abiotic object: an item of nonbiological, nonartificial origin.
+│   │   │   ├── Biological object: an item constituted by or originating from biological activity.
+│   │   │   └── Artifact: an item intentionally produced or modified for a purpose.
+│   │   ├── Collection: an object constituted by multiple members.
+│   │   ├── Region: an object defined by spatial extent or boundaries.
+│   │   ├── Agent: To be moved — an entity capable of intentional action.
+│   │   ├── Location: To be moved — a spatial place or extent.
+│   │   └── Self Connected Object: To be moved — an object whose parts are connected.
 │   └── Process: a realized entity regarded as occurring through time.
 ├── Abstract entity: an entity that takes no arguments and lacks spatiotemporal embodiment.
 ├── Property: an entity that takes one argument.
