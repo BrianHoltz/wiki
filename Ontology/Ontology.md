@@ -601,6 +601,7 @@ Entity: that which can be referred to.
 │   │   ├── Agent
 │   │   ├── Collection
 │   │   ├── Region
+│   │   ├── Location
 │   │   └── Self Connected Object
 │   └── Process: a realized entity regarded as occurring through time.
 ├── Abstract entity: an entity that takes no arguments and lacks spatiotemporal embodiment.
@@ -618,7 +619,10 @@ Entity: anything that exists, whether physical or abstract.
 │   │       ├── Physical object
 │   │       ├── Biological object
 │   │       ├── Artifact
-│   │       └── Social object
+│   │       ├── Social object
+│   │       ├── Region
+│   │       ├── Location
+│   │       └── Collection
 │   └── Occurrent: a physical entity that unfolds or occurs in time.
 └── Abstract: an entity that exists only as an abstraction.
     ├── Continuant: an abstract entity treated as persistent.
@@ -638,7 +642,8 @@ Entity: the universal class containing every object in the ontology.
 │   │   │   └── Substance
 │   │   ├── Agent
 │   │   ├── Collection
-│   │   └── Region
+│   │   ├── Region
+│   │   └── Location
 │   └── Process: a physical entity that has temporal parts or stages.
 └── Abstract: entities that are not physical.
 ```
@@ -651,7 +656,10 @@ Particular: an individual that is not a universal.
 │   ├── PhysicalEndurant: an endurant with physical presence.
 │   │   └── PhysicalObject: a physical endurant with independent existence.
 │   │       ├── AgentivePhysicalObject
-│   │       └── NonAgentivePhysicalObject
+│   │       ├── NonAgentivePhysicalObject
+│   │       ├── Region
+│   │       ├── Place
+│   │       └── Collection
 │   └── NonPhysicalEndurant: an endurant without physical presence.
 ├── Perdurant: an entity that unfolds over time.
 │   └── Event: a perdurant with temporal boundaries.
@@ -668,7 +676,8 @@ Entity: anything that exists in reality.
 │   │   └── MaterialEntity: an independent continuant with a material extent.
 │   │       └── Object: a material entity that is spatially bounded and self-connected.
 │   │           ├── ObjectAggregate
-│   │           └── FiatObjectPart
+│   │           ├── FiatObjectPart
+│   │           └── Site
 │   └── SpecificallyDependentContinuant: a continuant dependent on one bearer.
 └── Occurrent: an entity that unfolds or has temporal parts.
     └── Process: an occurrent with temporal extent and unfolding.
@@ -683,7 +692,10 @@ Entity: anything that can be represented in the ontology.
 │   │   └── MaterialObject: a material presential occupying space.
 │   │       ├── PhysicalObject
 │   │       ├── BiologicalObject
-│   │       └── Artifact
+│   │       ├── Artifact
+│   │       ├── Region
+│   │       ├── Place
+│   │       └── Collection
 │   └── Process: a concrete entity that unfolds through time.
 └── Abstract: an entity not located in space-time.
     └── Category: an abstract entity used to classify individuals.
@@ -698,7 +710,10 @@ Entity: anything that exists according to the domain theory.
 │   │   └── MaterialObject: an object with material or physical realization.
 │   │       ├── PhysicalObject
 │   │       ├── BiologicalObject
-│   │       └── SocialObject
+│   │       ├── SocialObject
+│   │       ├── Region
+│   │       ├── Place
+│   │       └── Collection
 │   └── Moment: an existentially dependent endurant.
 └── Perdurant: an entity whose existence unfolds over time.
     └── Event: a perdurant composed of temporal parts.
@@ -711,11 +726,11 @@ Entity: something that has distinct and independent existence.
 ├── PhysicalEntity: an entity that has a physical existence.
 │   └── Thing: an entity regarded as an object or unit.
 │       └── Object: a tangible and visible entity.
+│           ├── Region
+│           ├── Location
+│           └── Collection
 └── Abstraction: a general concept formed by abstraction.
 ```
-
-`Object` has no further child classes in this compact WordNet excerpt; its
-physical branch is represented by `PhysicalEntity → Thing → Object`.
 
 ##### Schema.org
 
@@ -726,10 +741,12 @@ Thing: the most generic type of item.
 ├── CreativeWork: the most generic kind of creative work.
 ├── Event: an event happening at a given time and location.
 ├── Intangible: an item that is not physical or tangible.
+│   └── ItemList: a collection of items.
 ├── MedicalEntity: an entity relevant to medicine or healthcare.
 ├── Organization: a structured group of people.
 ├── Person: an individual human being.
 ├── Place: a physical location.
+│   └── AdministrativeArea: a geographic region.
 ├── Product: any offered product or service.
 └── Taxon: a biological taxonomic group.
 ```
@@ -741,7 +758,10 @@ Being: that which is said to be or exists in any category.
 └── Substance: what is neither said of a subject nor in a subject.
     └── Body: a quantity having three dimensions.
         ├── Natural body: a body arising by nature.
-        └── Artificial body: a body produced by art or craft.
+        ├── Artificial body: a body produced by art or craft.
+        ├── Region
+        ├── Place
+        └── Collection
 ```
 
 ### Wikidata
