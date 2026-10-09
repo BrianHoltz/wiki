@@ -7,12 +7,12 @@ const vm = require("node:vm");
 
 const root = __dirname;
 const browsers = [
-  ["index.html", "ontology.json", "Object", "primate", "Primate"],
-  ["SUMO/index.html", "SUMO/ontology.json", "Object", "primate", "Primate"],
-  ["HumanKnowledge/index.html", "HumanKnowledge/ontology.json", "hk-1", "philosophy", "hk-1"],
-  ["Propaedia/index.html", "Propaedia/ontology.json", "part-3", "life", "part-3"],
-  ["Rogets/index.html", "Rogets/ontology.json", "roget-node-23", "number", "roget-node-23"],
-  ["Wikipedia/index.html", "Wikipedia/ontology.json", "Category:Geography", "geography", "Category:Geography"],
+  ["index.html", "ontology.json", "flowering plant", "FloweringPlant"],
+  ["SUMO/index.html", "SUMO/ontology.json", "flowering plant", "FloweringPlant"],
+  ["HumanKnowledge/index.html", "HumanKnowledge/ontology.json", "philosophy", "hk-1"],
+  ["Propaedia/index.html", "Propaedia/ontology.json", "life", "part-3"],
+  ["Rogets/index.html", "Rogets/ontology.json", "number", "roget-node-23"],
+  ["Wikipedia/index.html", "Wikipedia/ontology.json", "geography", "Category:Geography"],
 ];
 
 function readData(relativePath) {
@@ -55,23 +55,14 @@ async function loadBrowser(relativePath, dataPath) {
     assert(!/\bsumo\b/i.test(source), "canonical browser contains a SUMO reference");
   }
   const script = scriptOf(source);
-  const examples = ["Object", "primate", "Primate"].map((query) => ({
-    dataset: { query },
-    onclick: null,
-  }));
   const elements = new Map(
-    ["#tree", "#summary", "#expand", "#collapse", "#search", "#results"]
+    ["#tree", "#summary", "#expand", "#collapse", "#search", "#results", ".search-presets"]
       .map((selector) => [selector, { innerHTML: "", textContent: "", value: "" }]),
   );
-  elements.set(".search-example", examples);
   const document = {
     querySelector(selector) {
       assert(elements.has(selector), `${relativePath}: unexpected selector ${selector}`);
       return elements.get(selector);
-    },
-    querySelectorAll(selector) {
-      assert.equal(selector, ".search-example", `${relativePath}: unexpected selector list ${selector}`);
-      return examples;
     },
     getElementById() {
       return { scrollIntoView() {} };
@@ -92,13 +83,13 @@ function encodedId(id) {
   return encodeURIComponent(id);
 }
 
-async function testBrowser(relativePath, dataPath, presetTarget, presetSearch, expectedTarget) {
+async function testBrowser(relativePath, dataPath, presetSearch, presetTarget) {
   const data = assertDataIntegrity(dataPath);
   const { elements, source } = await loadBrowser(relativePath, data);
   const tree = elements.get("#tree");
   const search = elements.get("#search");
   const results = elements.get("#results");
-  const examples = elements.get(".search-example");
+  const presets = elements.get(".search-presets");
   const branch = data.nodes.find((node) => node.children.length > 0);
   const leaf = data.nodes.find((node) => node.children.length === 0);
   assert(branch && leaf, `${relativePath}: normalized data needs branches and leaves`);
@@ -106,23 +97,18 @@ async function testBrowser(relativePath, dataPath, presetTarget, presetSearch, e
   assert(!tree.innerHTML.includes(">undefined<"), `${relativePath}: dangling child rendered`);
   assert(tree.innerHTML.includes("class=\"lineage-toggle\""), `${relativePath}: lineage arrow missing`);
   assert(tree.innerHTML.includes("class=\"meta\""), `${relativePath}: child counts missing`);
-  assert.equal(examples.length, 3, `${relativePath}: search examples are missing`);
+  assert.equal((source.match(/data-search="/g) || []).length, 5, `${relativePath}: search presets are missing`);
   const searchRow = source.match(/<div class="search-row">([\s\S]*?)<\/div>/)?.[1] || "";
   assert(searchRow.includes('<input id="search"'), `${relativePath}: search input is missing`);
   assert(
-    searchRow.indexOf('id="search"') < searchRow.indexOf('class="search-examples"'),
-    `${relativePath}: search examples are not to the right of the search input`,
+    searchRow.indexOf('id="search"') < searchRow.indexOf('class="search-presets"'),
+    `${relativePath}: search presets are not to the right of the search input`,
   );
-  for (const query of ["Object", "primate", "Primate"]) {
-    assert(source.includes(`class="search-example" type="button" data-query="${query}"`), `${relativePath}: missing ${query} example`);
-  }
-  for (const example of examples) {
-    assert.equal(typeof example.onclick, "function", `${relativePath}: search example is not wired`);
-    example.onclick();
-    assert.equal(search.value, example.dataset.query, `${relativePath}: search example did not populate search`);
-    assert(results.innerHTML.includes("matches"), `${relativePath}: search example did not update results`);
-  }
-  assert(!source.includes("search-presets"), `${relativePath}: obsolete search suggestions remain`);
+  assert.equal(typeof presets.onclick, "function", `${relativePath}: search presets are not wired`);
+  presets.onclick({ target: eventTarget("button[data-target]", { search: presetSearch, target: presetTarget }) });
+  assert.equal(search.value, presetSearch, `${relativePath}: preset did not populate search`);
+  assert(tree.innerHTML.includes(`id="${encodedId(presetTarget)}"`), `${relativePath}: preset did not navigate`);
+  assert(!source.includes("search-example"), `${relativePath}: duplicate search-example controls remain`);
   assert(!tree.innerHTML.includes("Suggested question:"), `${relativePath}: generated question text rendered`);
   assert(!tree.innerHTML.match(/data-node="[^"]+"><\/a>/), `${relativePath}: blank node rendered`);
   const childIds = new Set(data.nodes.flatMap((node) => node.children));
@@ -209,13 +195,13 @@ async function main() {
   const canonicalStyle = canonicalSource.match(/<style>([\s\S]*)<\/style>/)[1];
   assert(!canonicalSource.includes("Canonical upper ontology with historical physical projection"));
   const sources = [];
-  for (const [page, data, target, query, expected] of browsers) {
+  for (const [page, data, query, expected] of browsers) {
     assert(!/historical physical projection/i.test(data.source?.overlayPolicy || ""), `${page}: stale overlay title remains`);
     if (data.source?.upperOntology) {
       assert.equal(data.source.upperOntology, "Ontology/Ontology.md#upper-ontologies", `${page}: stale upper-ontology link`);
     }
-    if (page === "index.html") assert.equal(assertDataIntegrity(data).source.name, "My Ontology");
-    sources.push(await testBrowser(page, data, target, query, expected));
+    if (page === "index.html") assert.equal(assertDataIntegrity(data).source.name, "My ontology");
+    sources.push(await testBrowser(page, data, query, expected));
   }
   for (const [index, source] of sources.entries()) {
     assert.equal(scriptOf(source), canonicalScript, `${browsers[index][0]}: renderer differs from canonical browser`);

@@ -13,7 +13,7 @@ main{max-width:1100px;margin:auto;padding:24px}h1{margin:0 0 4px}h2{margin-top:2
 .summary-row{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin:18px 0 8px}.summary-actions{display:flex;gap:8px}
 input,button{background:var(--bg);border:1px solid var(--line);border-radius:5px;color:var(--fg);padding:8px 10px}
 input{min-width:280px;width:100%;box-sizing:border-box}button{cursor:pointer}ul{list-style:none;margin:0;padding-left:22px}li{margin:3px 0}
-.search-row{display:flex;align-items:center;gap:8px;margin:8px 0 10px}.search-row input{flex:1;width:auto}.search-examples{display:flex;gap:4px;flex:none}
+.search-row{display:flex;align-items:center;gap:8px;margin:8px 0 10px}.search-row input{flex:1;width:auto}.search-presets{display:flex;gap:8px;flex:none;margin:0}
 summary{cursor:pointer;display:flex;align-items:baseline;gap:4px;list-style:none}summary::-webkit-details-marker{display:none}summary::before{content:"\25B6";display:inline-block;flex:none;width:1em}details[open] > summary::before{content:"\25BC"}.meta{color:var(--muted);font-size:12px;margin-left:6px;flex:none}.definition{color:var(--muted);font-size:13px;margin-left:8px;flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;vertical-align:bottom}.definition.expanded{overflow:visible;text-overflow:clip;white-space:normal;vertical-align:baseline}
 details.lineage > summary::before{content:"\25C6"}
 a{color:var(--accent)}#results{margin:10px 0 18px}.result{padding:5px 0;border-bottom:1px solid var(--line)}
@@ -23,7 +23,7 @@ a{color:var(--accent)}#results{margin:10px 0 18px}.result{padding:5px 0;border-b
 <body>
 <main>
 <div class="summary-row"><div class="summary-actions"><button id="expand">Expand...</button><button id="collapse">Collapse...</button></div><span id="summary" class="muted"></span></div>
-<div class="search-row"><input id="search" type="search" placeholder="Search this ontology"><span class="search-examples" aria-label="Search examples"><button class="search-example" type="button" data-query="Object">Object</button><button class="search-example" type="button" data-query="primate">primate</button><button class="search-example" type="button" data-query="Primate">Primate</button></span>
+<div class="search-row"><input id="search" type="search" placeholder="Search this ontology"><div class="search-presets" aria-label="Search presets"><button type="button" data-search="number" data-target="roget-node-23">number</button><button type="button" data-search="time" data-target="roget-node-27">time</button><button type="button" data-search="change" data-target="roget-node-31">change</button><button type="button" data-search="cause" data-target="roget-node-36">cause</button><button type="button" data-search="religion" data-target="roget-node-143">religion</button></div>
  </div>
 <div id="results"></div><section id="tree"></section>
 </main>
@@ -68,7 +68,7 @@ const hits=data.nodes.filter(n=>`${n.id} ${n.label}`.toLowerCase().includes(q)).
 document.querySelector('#results').innerHTML=q?`<strong>${hits.length}${hits.length===100?'+':''} matches</strong>`+
 hits.map(n=>`<div class="result">${link(n.id)} <span class="meta">${esc(n.id)}</span></div>`).join(''):''};
 document.querySelector('#search').oninput=e=>searchFor(e.target.value);
-document.querySelectorAll('.search-example').forEach(button=>button.onclick=()=>{const search=document.querySelector('#search');search.value=button.dataset.query;searchFor(search.value)});
+document.querySelector('.search-presets').onclick=e=>{const button=e.target.closest('button[data-target]');if(!button)return;document.querySelector('#search').value=button.dataset.search;document.querySelector('#results').innerHTML='';focusLineage(button.dataset.target)};
 function normalizeTree(){const byId=new Map(data.nodes.map(n=>[n.id,n]));const expand=id=>{const n=byId.get(id);return n&&!String(n.label||'').trim()?n.children.flatMap(expand):[id]};data.nodes.forEach(n=>{n.children=n.children.flatMap(expand)});data.rootNodes=data.rootNodes.flatMap(expand);data.nodes=data.nodes.filter(n=>String(n.label||'').trim());const childIds=new Set(data.nodes.flatMap(n=>n.children));data.rootNodes=data.nodes.filter(n=>!childIds.has(n.id)).map(n=>n.id)}
 fetch('ontology.json').then(r=>r.json()).then(x=>{data=x;normalizeTree();data.nodes.forEach(n=>{if(/^Suggested question:/i.test(n.definition||''))n.definition=null});byId=new Map(data.nodes.map(n=>[n.id,n]));parentOf=new Map();data.nodes.forEach(n=>n.children.forEach(child=>parentOf.set(child,n.id)));descendantCounts=new Map();data.nodes.forEach(n=>descendantCount(n.id));nodeModes=new Map(data.nodes.map(n=>[n.id,0]));data.rootNodes.forEach(root=>{nodeModes.set(root,1);byId.get(root).children.forEach(child=>nodeModes.set(child,1))});lineageNode=null;render()})
 .catch(e=>document.querySelector('#tree').textContent=`Could not load ontology.json: ${e}`);
