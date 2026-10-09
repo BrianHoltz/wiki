@@ -95,7 +95,7 @@ async function testBrowser(relativePath, dataPath, presetSearch, presetTarget) {
   assert(branch && leaf, `${relativePath}: normalized data needs branches and leaves`);
   assert(tree.innerHTML.includes(`data-node="${branch.id}"`), `${relativePath}: target is not rendered`);
   assert(!tree.innerHTML.includes(">undefined<"), `${relativePath}: dangling child rendered`);
-  assert(tree.innerHTML.includes("class=\"lineage-toggle\""), `${relativePath}: lineage arrow missing`);
+  assert(!tree.innerHTML.includes("lineage-toggle"), `${relativePath}: obsolete lineage arrow rendered`);
   assert(tree.innerHTML.includes("class=\"meta\""), `${relativePath}: child counts missing`);
   assert.equal((source.match(/data-search="/g) || []).length, 5, `${relativePath}: search presets are missing`);
   const searchRow = source.match(/<div class="search-row">([\s\S]*?)<\/div>/)?.[1] || "";
@@ -173,9 +173,9 @@ async function testBrowser(relativePath, dataPath, presetSearch, presetTarget) {
     );
   }
 
-  const lineageButton = eventTarget("button.lineage-toggle[data-node]", { node: leaf.id });
-  tree.onclick({ target: lineageButton });
-  assert(tree.innerHTML.includes(`id="${encodedId(leaf.id)}"`), `${relativePath}: lineage arrow did not focus node`);
+  const nodeLink = eventTarget("a[data-node]", { node: leaf.id });
+  tree.onclick({ target: nodeLink, preventDefault() {} });
+  assert(tree.innerHTML.includes(`id="${encodedId(leaf.id)}"`), `${relativePath}: node name did not open lineage view`);
 
   search.value = leaf.label.split(/\s+/).slice(0, 2).join(" ");
   search.oninput({ target: search });
@@ -200,7 +200,7 @@ async function main() {
     if (data.source?.upperOntology) {
       assert.equal(data.source.upperOntology, "Ontology/Ontology.md#upper-ontologies", `${page}: stale upper-ontology link`);
     }
-    if (page === "index.html") assert.equal(assertDataIntegrity(data).source.name, "My ontology");
+    if (page === "index.html") assert.equal(assertDataIntegrity(data).source.name, "My Ontology");
     sources.push(await testBrowser(page, data, query, expected));
   }
   for (const [index, source] of sources.entries()) {

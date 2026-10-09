@@ -17,7 +17,7 @@ input{min-width:280px;width:100%;box-sizing:border-box}button{cursor:pointer}ul{
 summary{cursor:pointer;display:flex;align-items:baseline;gap:4px;list-style:none}summary::-webkit-details-marker{display:none}summary::before{content:"\25B6";display:inline-block;flex:none;width:1em}details[open] > summary::before{content:"\25BC"}.meta{color:var(--muted);font-size:12px;margin-left:6px;flex:none}.definition{color:var(--muted);font-size:13px;margin-left:8px;flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;vertical-align:bottom}.definition.expanded{overflow:visible;text-overflow:clip;white-space:normal;vertical-align:baseline}
 details.lineage > summary::before{content:"\25C6"}
 a{color:var(--accent)}#results{margin:10px 0 18px}.result{padding:5px 0;border-bottom:1px solid var(--line)}
-.node{display:flex;align-items:baseline;gap:4px}.node-content{display:flex;align-items:baseline;gap:4px;min-width:0;flex:1}.expander,.lineage-toggle{background:transparent;border:0;color:var(--fg);cursor:pointer;font:inherit;padding:0;width:1em}.expander-placeholder{display:inline-block;flex:none;width:1em}.lineage-toggle{color:var(--accent)}.children[hidden]{display:none}
+.node{display:flex;align-items:baseline;gap:4px}.node-content{display:flex;align-items:baseline;gap:4px;min-width:0;flex:1}.expander{background:transparent;border:0;color:var(--fg);cursor:pointer;font:inherit;padding:0;width:1em}.expander-placeholder{display:inline-block;flex:none;width:1em}.children[hidden]{display:none}
 </style>
 </head>
 <body>
@@ -44,7 +44,7 @@ const childCount=directChildren?`<span class="meta"> · ${directChildren}${other
 const provisional=n.provisionalParent?` <span class="meta">· provisional placement</span>`:'';
 const definition=displayDefinition(n);const shortDef=definition?`<span class="definition${open?' expanded':''}" title="${esc(definition)}">${formatDefinition(definition)}</span>`:'';
 const expander=directChildren?`<button class="expander" type="button" data-node="${esc(id)}">${marker}</button>`:'<span class="expander-placeholder" aria-hidden="true"></span>';
-const text=`<span class="node-title">${link(id)}${sourceLink(n)}</span><button class="lineage-toggle" type="button" data-node="${esc(id)}">↖</button>${childCount}${provisional}${shortDef}`;
+const text=`<span class="node-title">${link(id)}${sourceLink(n)}</span>${childCount}${provisional}${shortDef}`;
 return `<li id="${encodeURIComponent(id)}"><div class="node">${expander}<span class="node-content">${text}</span></div><ul class="children"${open?'':' hidden'}>${visibleChildren.map(child=>renderNode(child,lineageNode?lineageChildren?.has(child):nodeModes.get(child)===1)).join('')}</ul></li>`}
 function renderLineage(path){lineageChildren=new Map(path.map((id,index)=>[id,index===path.length-1?byId.get(id).children:[path[index+1]]]));return renderNode(path[0],true)}
 function render(){let tree;
@@ -61,7 +61,7 @@ document.querySelector('#expand').onclick=()=>{lineageNode=null;data.nodes.forEa
 document.querySelector('#collapse').onclick=()=>{lineageNode=null;data.nodes.forEach(n=>nodeModes.set(n.id,0));render()};
 function focusNode(id){lineageNode=null;for(let current=id;current;current=parentOf.get(current))nodeModes.set(current,1);render();document.getElementById(encodeURIComponent(id))?.scrollIntoView({block:'center'})}
 function focusLineage(id){lineageNode=id;render();document.getElementById(encodeURIComponent(id))?.scrollIntoView({block:'center'})}
-document.querySelector('#tree').onclick=e=>{const a=e.target.closest('a[data-node]');if(a){e.preventDefault();focusNode(a.dataset.node);return}const lineageButton=e.target.closest('button.lineage-toggle[data-node]');if(lineageButton){const id=lineageButton.dataset.node;lineageNode=lineageNode===id?null:id;render();return}const button=e.target.closest('button.expander[data-node]');if(!button)return;const id=button.dataset.node;nodeModes.set(id,nodeModes.get(id)===1?0:1);lineageNode=null;render()};
+document.querySelector('#tree').onclick=e=>{const a=e.target.closest('a[data-node]');if(a){e.preventDefault();const id=a.dataset.node;lineageNode=lineageNode===id?null:id;render();return}const button=e.target.closest('button.expander[data-node]');if(!button)return;const id=button.dataset.node;nodeModes.set(id,nodeModes.get(id)===1?0:1);lineageNode=null;render()};
 document.querySelector('#results').onclick=e=>{const a=e.target.closest('a[data-node]');if(!a)return;e.preventDefault();focusLineage(a.dataset.node)};
 function searchFor(q){q=q.trim().toLowerCase();
 const hits=data.nodes.filter(n=>`${n.id} ${n.label}`.toLowerCase().includes(q)).slice(0,100);

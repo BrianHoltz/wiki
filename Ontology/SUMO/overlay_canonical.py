@@ -22,7 +22,7 @@ def node(identifier: str, label: str, definition: str, *children: dict) -> dict:
 CANONICAL = node(
     "Entity",
     "Entity",
-    "An entity considered as a bearer of properties or participant in relations.",
+    "That which can be referred to.",
     node(
         "Object",
         "Object",
@@ -30,12 +30,12 @@ CANONICAL = node(
         node(
             "RealizedEntity",
             "Realized entity",
-            "An entity with a physical embodiment or location in space-time.",
+            "An entity that takes no arguments and has spatiotemporal embodiment.",
         ),
         node(
             "AbstractEntity",
             "Abstract entity",
-            "An idealized object considered apart from any particular realization.",
+            "An entity that takes no arguments and lacks spatiotemporal embodiment.",
             node(
                 "MathematicalEntity",
                 "Mathematical entity",
@@ -156,7 +156,7 @@ CANONICAL = node(
     node(
         "Property",
         "Property",
-        "A repeatable characteristic, capability, disposition, or value attributable to an entity.",
+        "An entity that takes one argument.",
         node("Quality", "Quality", "A characteristic describing how an entity is."),
         node("Quantity", "Quantity", "A property specifying how many, how much, or to what extent."),
         node("QualityValue", "Quality value", "A value that specifies a quality on a scale or comparison."),
@@ -177,7 +177,7 @@ CANONICAL = node(
     node(
         "Relation",
         "Relation",
-        "A way in which two or more entities are connected, compared, or ordered.",
+        "An entity that takes more than one argument.",
         node("ClassificationRelation", "Classification relation", "A relation that assigns an entity to a kind or category."),
         node("PartWholeRelation", "Part-whole relation", "A relation between a whole and one of its parts."),
         node("SpatialRelation", "Spatial relation", "A relation concerning location, distance, direction, or containment."),
@@ -260,7 +260,7 @@ def overlay(input_path: Path, output_path: Path) -> None:
         physical["Object"] = physical_object
     physical_root["id"] = "RealizedEntity"
     physical_root["label"] = "Realized entity"
-    physical_root["definition"] = "An entity with a physical embodiment or location in space-time."
+    physical_root["definition"] = "An entity that takes no arguments and has spatiotemporal embodiment."
     physical_root["definitionSource"] = "project editorial"
     physical["RealizedEntity"] = physical_root
 
@@ -271,6 +271,8 @@ def overlay(input_path: Path, output_path: Path) -> None:
     parents["RealizedEntity"] = ["Entity"]
     parents["AbstractEntity"] = ["Entity"]
     records = {**canonical, **physical}
+    records["Object"]["definition"] = "A realized entity regarded as persisting through time."
+    records["Process"]["definition"] = "A realized entity regarded as occurring through time."
     for identifier, record in records.items():
         record["children"] = [child for child in record["children"] if child in records]
         record["directParentCount"] = len(parents.get(identifier, []))

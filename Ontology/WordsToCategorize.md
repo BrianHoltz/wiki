@@ -1,3 +1,14 @@
+## Other Word Lists
+
+Use these compact vocabularies as adversarial test sets for the ontology.
+
+- **Basic English 850-word list** — [Complete list on Wiktionary](https://en.wiktionary.org/wiki/Appendix:Basic_English_word_list)
+- **Thing Explainer's ten-hundred words** — Randall Munroe's [xkcd word list](https://xkcd.com/simplewriter/words.js), with an [overview](https://www.explainxkcd.com/wiki/index.php/Thing_Explainer)
+- **Esperanto Root Vocabulary** — [Overview and source history](https://en.wikipedia.org/wiki/Esperanto_vocabulary)
+- **Swadesh List** — [100- and 207-concept lists](https://en.wiktionary.org/wiki/Appendix:Swadesh_list)
+- **Simple English Wikipedia Basic English Combined Wordlist** — [Complete 2,626-word list](https://simple.wikipedia.org/wiki/Wikipedia:Basic_English_combined_wordlist)
+- **General Service List** — [High-frequency English vocabulary](https://en.wikipedia.org/wiki/General_Service_List)
+
 | Word&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | My Ontology | Human Knowledge | SUMO | Roget's | Propædia | Wikipedia |
 |---|---|---|---|---|---|---|
 ## Upper Ontology
