@@ -1,5 +1,35 @@
 # Ontology
 
+## Other Word Lists
+
+Use these compact vocabularies as adversarial test sets for the ontology.
+They are deliberately different: some are controlled English, some are
+frequency lists, and some are cross-linguistic concept inventories.
+
+- **Basic English 850-word list** — C. K. Ogden's controlled English core,
+  with a useful 1,000-word extension. [Read the complete list on
+  Wiktionary](https://en.wiktionary.org/wiki/Appendix:Basic_English_word_list).
+- **Thing Explainer's ten-hundred words** — Randall Munroe's *Thing
+  Explainer* vocabulary, published directly in the [xkcd
+  `words.js` list](https://xkcd.com/simplewriter/words.js). The
+  [Explain xkcd overview](https://www.explainxkcd.com/wiki/index.php/Thing_Explainer)
+  gives the context and links to the list.
+- **Esperanto Root Vocabulary** — Esperanto began with roughly 900 root
+  words and uses productive affixes to derive more vocabulary. [See the
+  overview and source history](https://en.wikipedia.org/wiki/Esperanto_vocabulary).
+- **Swadesh List** — 100- and 207-concept core lists designed for
+  cross-language comparison; useful for testing body, nature, perception,
+  action, and relationship concepts. [Review the list on
+  Wiktionary](https://en.wiktionary.org/wiki/Appendix:Swadesh_list).
+- **Simple English Wikipedia Basic English Combined Wordlist** — a larger
+  2,626-word expansion that combines the core list, international terms,
+  addenda, compounds, and permitted derived forms. [Inspect the complete
+  wordlist](https://simple.wikipedia.org/wiki/Wikipedia:Basic_English_combined_wordlist).
+- **General Service List** — a classic high-frequency English vocabulary
+  list of roughly 2,000 word families, useful for checking ordinary
+  language coverage rather than only semantic primitives. [Read about the
+  list and its revisions](https://en.wikipedia.org/wiki/General_Service_List).
+
 ## Principles
 
 - The handcrafted v1 remains the player-facing canonical tree; imported systems
