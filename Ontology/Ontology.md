@@ -16,6 +16,21 @@
   navigation projection, not a semantic rewrite.
 - Structural quality, familiar labels, useful branching, and source fidelity
   take priority over node count or premature vocabulary expansion.
+- **Biology:**
+  - Preserve evolutionary ancestry, including birds within dinosaurs and mammals within synapsids.
+  - Record source, release, stable ID, rank, and date for each placement.
+  - Balance familiar, agricultural, medical, ecological, extinct, and unusual taxa.
+  - Prefer readable common labels; retain scientific names and aliases in metadata.
+  - Compress uninformative ranks while preserving the hidden source path.
+  - Keep convergent forms separate and record convergence metadata.
+  - Keep extinct taxa in evolutionary context with extinct status.
+  - Use one visible parent; retain alternate placements, synonyms, and source edges.
+  - Expose branches only for useful distinctions and balance major clades.
+  - Version snapshots and migration reports so updates cannot silently move leaves.
+  - Give viruses a separate acellular-infectious-agent branch with host, genome, and transmission metadata.
+  - Do not imply that viruses form one clean ranked lineage.
+  - Include familiar, high-impact, food, pet, farm, disease, keystone, extinct, and evolutionary-example taxa.
+  - Put scientific-only names in metadata unless they have a clear player interpretation.
 
 ## Status
 
@@ -25,161 +40,17 @@ coverage, and separately labeled reference trees. The design memorandum keeps
 longer arguments and unresolved alternatives; this document keeps current
 criteria and implementation-facing decisions.
 
-## Future leaf-node priorities
+## What to add
 
-The immediate objective is to improve the tree and its information design
-before adding a large undifferentiated noun list. Leaf additions should be
-grafted into a reviewed structural home, not used to compensate for a weak
-parent branch. The task list is:
+- Structural branch repairs and balanced sibling splits.
+- A curated biological taxonomy with compressed, source-backed ancestry.
+- Viruses and other acellular infectious agents.
+- Familiar, high-impact, agricultural, medical, extinct, and evolutionary-example taxa.
+- Roget and WordNet labels, aliases, glosses, and sense frequencies.
+- Product vocabulary for tools, foods, appliances, clothing, vehicles, electronics, materials, and household goods.
+- Everyday nouns for foods, materials, vehicles, body parts, places, occupations, cultural objects, people, and fictional entities.
 
-- [ ] **Complete the structural audit:** repair overloaded v1 branches,
-  improve sibling balance, clarify observable distinctions, and document
-  intentional unary paths before adding major leaf batches.
-- [ ] **Replace the organism subtree:** choose a public biological source
-  combination and build a curated display taxonomy that preserves
-  evolutionary accuracy while compressing opaque intermediate clades.
-- [ ] **Add the virus policy and pilot:** include important viruses and virus
-  families, but do not imply that viruses are ordinary organisms or that
-  viruses are primarily related to one another by host. Keep host range,
-  genome type, and transmission metadata separate from the visible parentage.
-- [ ] **Graft notable life leaves:** add familiar, medically or agriculturally
-  important, ecologically important, extinct, and evolutionarily instructive
-  organisms under the reviewed biological tree.
-- [ ] **Map Roget and WordNet vocabulary:** use their concepts, synsets,
-  aliases, glosses, and sense frequencies to make SUMO and the biological
-  tree searchable in ordinary language without copying their parentage
-  blindly.
-- [ ] **Graft product vocabulary:** compare Google Product Taxonomy, GS1 GPC,
-  UNSPSC, eCl@ss, ETIM, and authorized Amazon/Walmart category exports to
-  identify missing tools, foods, appliances, clothing, vehicles, electronics,
-  materials, and household goods. Import reviewed leaves and source mappings,
-  not retail department structure wholesale.
-- [ ] **Audit everyday noun coverage:** score candidate tools, foods,
-  materials, vehicles, body parts, places, occupations, cultural objects,
-  people, and fictional entities from encyclopedias, Schema.org, Wikipedia,
-  word-frequency lists, and concreteness data.
-- [ ] **Run tree and coverage review:** test branch balance, duplicate labels,
-  ambiguous senses, recognizable stopping points, source completeness, and the
-  5K–10K page-performance budget before promoting a tranche. Compatibility with
-  20 Questions remains a downstream success criterion, not the current design
-  activity.
-
-### Biological replacement criteria
-
-The organism replacement should be judged as a curated display taxonomy, not
-as a raw dump from whichever database has the most records. In addition to the
-three proposed criteria—scientific accuracy, notable organism coverage, and
-readable labels—it should satisfy these gates:
-
-- **Evolutionary correctness:** the tree should allow humans and other
-  tetrapods to remain nested within lobe-finned fish ancestry, birds beneath
-  dinosaurs, and mammals within the appropriate synapsid lineage. Everyday
-  labels such as “fish” may remain useful gameplay categories, but they must
-  not silently replace the scientific provenance.
-- **Authority and reproducibility:** every parentage decision needs a source,
-  release, stable identifier, rank, and date. Conflicts between authorities
-  should be retained as evidence and resolved by an explicit policy.
-- **Notability diversity:** budget for familiar organisms, food and farm
-  species, pets, disease agents, keystone organisms, culturally important
-  organisms, extinct groups, and evolutionary oddities. Do not let species
-  count or corpus frequency alone crowd out entire branches.
-- **Readable presentation:** every opaque taxon needs a short plain-language
-  description, an understandable visible label where one exists, and a
-  searchable scientific-name alias. Scientific-only names should normally be
-  metadata or an expandable detail layer rather than default leaves.
-- **Rank compression with provenance:** retain an intermediate clade when it
-  explains a major evolutionary distinction or supports a useful question;
-  collapse it when it adds no playable split. The hidden source path must
-  preserve every omitted ancestor.
-- **Convergence and polyphyly clarity:** convergent forms such as bats and
-  birds, dolphins and fish, cacti and euphorbs, or marsupial and placental
-  analogues must not be placed together merely because they look or behave
-  alike. Add “convergent with” metadata instead.
-- **Extinct-life continuity:** fossils, dinosaurs, trilobites, ammonites, and
-  other extinct groups should remain in the same evolutionary history as
-  living relatives, with extinct status visible in metadata and descriptions.
-- **Single-parent usability:** the visible tree needs one reviewed display
-  parent per node, while alternate placements, synonyms, taxonomic opinions,
-  and source edges remain available for audit.
-- **Classification utility:** each visible branch should create an intuitive,
-  non-trivial distinction and have a clear interpretation for a general
-  reader. Scientific rank alone is not a sufficient reason to expose a
-  branch.
-- **Budget and balance:** measure both node count and candidate mass by branch,
-  reserve capacity for plants, fungi, microbes, and extinct life, and prevent
-  charismatic animals from consuming the entire profile.
-- **Version stability:** retain a snapshot manifest and a migration report so
-  that a source update cannot silently move familiar leaves or erase aliases.
-
-### Virus placement policy
-
-Viruses deserve inclusion but should not be forced into the organism taxonomy.
-They are acellular infectious entities with diverse evolutionary histories;
-many are more meaningfully related through host, genome, replication strategy,
-or shared viral ancestry than through a single universal tree. The default
-visible design should therefore use a dedicated **Virus and other acellular
-infectious agents** subtree under the physical/biological-agent region, while
-retaining host associations and biological hypotheses as cross-links.
-
-The virus pilot should include familiar and high-impact examples—such as
-influenza, HIV, SARS-CoV-2, Ebola, rabies, herpesviruses, bacteriophages, and
-plant viruses—alongside a compact set of major genome or replication groups.
-It should not imply that all named viruses form a clean ranked lineage.
-Each entry should record host range, disease or ecological relevance, genome
-type, transmission mode, accepted name, synonyms, and source release. If a
-future authoritative source supports a stronger viral tree, it can replace
-the provisional subtree without changing the host-association metadata.
-
-### Selecting notable life entries
-
-The biological graft should use a two-axis inclusion policy rather than simply
-taking the most frequent taxa or copying every species in a source database.
-Each candidate receives separate scores for **public familiarity** and
-**evolutionary or scientific interest**, with a minimum evidence threshold for
-either score and a manual placement review.
-
-Public-familiarity candidates include organisms that a general player is
-likely to recognize from ordinary life, food, pets, farming, medicine,
-children's education, news, or common media. This favors entries such as dog,
-cat, horse, cow, chicken, bee, butterfly, oak, rose, mushroom, wheat, corn,
-yeast, salmon, shark, whale, and crocodile. Common names remain the primary
-visible labels, with scientific names and accepted taxon IDs stored as
-metadata and searchable aliases.
-
-Scientific-interest candidates are deliberately not limited to familiar
-species. They include organisms or clades that make the tree explain
-evolutionary history, unusual body plans, or convergence. The initial
-high-priority set should include:
-
-- **Conspicuous evolutionary survivors and transitional examples:** coelacanth
-  (correctly spelled and linked to its lobe-finned lineage), horseshoe crab,
-  tuatara, nautilus, lungfish, monotremes, and other living lineages commonly
-  discussed as evolutionarily distinctive.
-- **Convergent-evolution examples:** marsupials as a complete visible branch
-  rather than a few isolated species; separately recognizable marsupials such
-  as kangaroo, koala, wombat, opossum, and Tasmanian devil; and representative
-  convergences such as bats versus birds, dolphins versus fish, sharks versus
-  other streamlined swimmers, cactus-like euphorbs versus cacti, and
-  anteaters versus aardvarks. The tree should not imply that convergent
-  appearance means close ancestry.
-- **Major extinct and deep-time groups:** dinosaurs, pterosaurs, trilobites,
-  ammonites, non-avian theropods, sauropods, early tetrapods, and other
-  culturally or scientifically notable extinct groups. Extinct taxa should
-  remain under biological history, not be diverted into “historical object” or
-  fictional branches.
-- **Representative diversity:** at least one playable set of entries for each
-  major animal, plant, fungal, and microbial branch, including organisms that
-  are ecologically important, medically important, agriculturally important,
-  or morphologically unusual. Selection should avoid spending the whole
-  budget on one charismatic group.
-
-This policy is a **notability sample**, not a claim that omitted taxa are
-unimportant. A candidate should be included only when its visible label has a
-clear answer interpretation, its taxonomic placement is supported by a
-declared source release, and it contributes either recognizable game coverage
-or a meaningful evolutionary contrast. A species with only a scientific
-binomial and no usable common-language label generally belongs in metadata or
-an optional detail layer, not as a default leaf.
+## Biology implementation
 
 ### How the graft should work
 
