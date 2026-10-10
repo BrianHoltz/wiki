@@ -1295,7 +1295,7 @@
         "total": null,
         "extinct": null,
         "extant": 10868,
-        "note": "Whole-clade extinct count is unavailable; the tree shows ? for extinct. The extant component exhausts living representatives of the clade."
+        "note": "Whole-clade extinct count is unavailable and omitted from the tree. The extant component exhausts living representatives of the clade."
       }
     },
     "col-Squamata": {
@@ -1504,7 +1504,7 @@
         "total": null,
         "extinct": null,
         "extant": 410,
-        "note": "Whole-clade extinct count is unavailable; the tree shows ? for extinct. The extant component exhausts living representatives of the clade."
+        "note": "Whole-clade extinct count is unavailable and omitted from the tree. The extant component exhausts living representatives of the clade."
       }
     },
     "PlacentalMammal": {
@@ -1528,7 +1528,7 @@
         "total": null,
         "extinct": null,
         "extant": 6376,
-        "note": "Whole-clade extinct count is unavailable; the tree shows ? for extinct. The extant component exhausts living representatives of the clade."
+        "note": "Whole-clade extinct count is unavailable and omitted from the tree. The extant component exhausts living representatives of the clade."
       }
     },
     "Carnivoran": {
@@ -1882,7 +1882,7 @@
         "total": null,
         "extinct": null,
         "extant": 6791,
-        "note": "Whole-clade extinct count is unavailable; the tree shows ? for extinct. The extant component exhausts living representatives of the clade."
+        "note": "Whole-clade extinct count is unavailable and omitted from the tree. The extant component exhausts living representatives of the clade."
       }
     },
     "Dinosaur": {
@@ -1912,7 +1912,7 @@
         "total": null,
         "extinct": null,
         "extant": 10868,
-        "note": "Whole-clade extinct count is unavailable; the tree shows ? for extinct. The extant component exhausts living representatives of the clade."
+        "note": "Whole-clade extinct count is unavailable and omitted from the tree. The extant component exhausts living representatives of the clade."
       }
     },
     "Fish": {

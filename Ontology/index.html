@@ -36,13 +36,13 @@ function displayDefinition(n){if(!n.definition)return '';if(/^Roget's Thesaurus/
 function link(id){const n=byId.get(id);return n?`<a href="#${encodeURIComponent(id)}" data-node="${esc(id)}">${esc(displayLabel(n))}</a>`:esc(id)}
 function sourceLink(n){return n.sourceUrl?` <a class="source-link" href="${esc(n.sourceUrl)}" target="_blank" rel="noopener" aria-label="Open source for ${esc(n.label)}">↗</a>`:''}
 function formatDefinition(text){return esc(text).replace(/&amp;%([A-Za-z0-9_]+)/g,(_,id)=>byId.has(id)?link(id):esc(id))}
-function formatSpeciesCount(count){if(count===null||count===undefined)return '?';if(count<1000)return String(count);const rounded=Number(count.toPrecision(3));const unit=rounded>=1e6?1e6:1e3;return (rounded/unit).toPrecision(3)+(unit===1e6?'M':'K')}
-function speciesStats(n){const s=n.speciesCount;if(!s)return '';const hasSplit=s.extinct!==null||s.extant!==null;const count=hasSplit||s.total===null?`${formatSpeciesCount(s.extinct)}/${formatSpeciesCount(s.extant)}`:formatSpeciesCount(s.total);return `<a class="species-count" href="${esc(s.url)}" target="_blank" rel="noopener">${count}</a>`}
+function formatSpeciesCount(count){if(count===null||count===undefined)return '';if(count<1000)return String(count);const rounded=Number(count.toPrecision(3));const unit=rounded>=1e6?1e6:1e3;return (rounded/unit).toPrecision(3)+(unit===1e6?'M':'K')}
+function speciesStats(n){const s=n.speciesCount;if(!s)return '';const known=v=>v!==null&&v!==undefined;const parts=[];if(known(s.extinct))parts.push(`${formatSpeciesCount(s.extinct)}☠`);if(known(s.extant))parts.push(`${formatSpeciesCount(s.extant)}♥`);const count=parts.length?parts.join('+'):(known(s.total)?formatSpeciesCount(s.total):'');return count?`<a class="species-count" href="${esc(s.url)}" target="_blank" rel="noopener">${count}</a>`:''}
 function renderNode(id,open=false,children=null,lineage=false,childOpen=null){const n=byId.get(id);const visibleChildren=children||lineageChildren?.get(id)||n.children;
 const directChildren=n.children.length;
 const otherDescendants=descendantCount(id)-directChildren;
 const marker=open?'▼':'▶';
-const species=speciesStats(n);const childrenStats=directChildren?`${directChildren}${otherDescendants?`+${otherDescendants}`:''} &#8595;`:'';
+const species=speciesStats(n);const childrenStats=directChildren?`${directChildren}${otherDescendants?`+${otherDescendants}`:''}&#8595;`:'';
 const childCount=childrenStats||species?`<span class="meta node-stats">${childrenStats}${childrenStats&&species?' ':''}${species}</span>`:'';
 const provisional=n.provisionalParent?` <span class="meta">· provisional placement</span>`:'';
 const definition=displayDefinition(n).trim();const shortDef=definition?`<span class="definition${open?' expanded':''}" title="${esc(definition)}">&nbsp;${formatDefinition(definition)}</span>`:'';

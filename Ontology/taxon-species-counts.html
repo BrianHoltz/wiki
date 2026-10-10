@@ -4,7 +4,7 @@
 <style>body{font:16px/1.5 system-ui;max-width:70em;margin:2em auto;padding:0 1em}article{border-top:1px solid #ccc;padding:1em 0;scroll-margin-top:1em}h2{margin:.3em 0}a{overflow-wrap:anywhere}dt{font-weight:600}dd{margin-bottom:.7em}</style>
 <h1>Taxon species counts</h1>
 <p>Research retrieved 2026.10.10. Named accepted/described species, not extrapolated undiscovered diversity. At most three significant digits, preserving significant trailing zeroes. Extant counts are last; missing extinction status is never assumed extant. Counts and extinction coverage are source-dependent, and mixed-source clade counts are not necessarily additive.</p>
-<p>Tree numbers are compact, suggestive counts: a lone number is a total without a split; a pair is extinct/extant, with extant last. ? means an unavailable count. Click a tree count for evidence. COL records with missing extinction flags do not become extant by subtraction. Source coverage and extinction periods differ.</p>
+<p>Tree numbers are compact, suggestive counts: a lone number is a total without a split; ☠ follows extinct counts and ♥ follows extant counts, with extant last. Unavailable counts are omitted. Click a tree count for evidence. COL records with missing extinction flags do not become extant by subtraction. Source coverage and extinction periods differ.</p>
 <p><a href="taxon-species-counts.json">Authoritative research JSON</a></p>
 <h2>Sources</h2><dl>
 <dt id="source-col"><a href="https://doi.org/10.48580/dgz5n">Catalogue of Life COL26.9 base release</a> — 2026.09.11</dt>
@@ -372,7 +372,7 @@
 <article id="Archosaur"><h2>Archosauria: represented crown groups</h2>
 <p>Total: 11,071; Explicitly extinct: 176; Explicitly extant: 10,868; Unset extinction status: 27.</p><p>Accepted species in the COL26.9 base checklist; fossils included where covered and missing extinction status retained as unknown. Crocodilians plus birds; omits non-avian fossil archosaurs not represented by these components.</p>
 <p>Disjoint components added or subtracted within the same COL release.</p>
-<p>Whole-clade extinct count is unavailable; the tree shows ? for extinct. The extant component exhausts living representatives of the clade.</p>
+<p>Whole-clade extinct count is unavailable and omitted from the tree. The extant component exhausts living representatives of the clade.</p>
 <p>Components: +1 × <a href="#Crocodilian">Crocodylia</a>, +1 × <a href="#Bird">Aves</a>.</p>
 <p>Sources: <a href="#source-col">Catalogue of Life COL26.9 base release</a>.</p>
 <p>GPT: Archosaur. </p>
@@ -427,7 +427,7 @@
 <article id="Marsupial"><h2>Marsupialia</h2>
 <p>Total: 433; Explicitly extinct: 23; Explicitly extant: 410.</p><p>Living and recently extinct species (since 1500); domestic species included. Fossil species excluded. Crown-group component only; the GPT node also includes fossil stem relatives whose count is unavailable.</p>
 <p>Filter infraclass = Marsupialia; extinct = 1 or 0.</p>
-<p>Whole-clade extinct count is unavailable; the tree shows ? for extinct. The extant component exhausts living representatives of the clade.</p>
+<p>Whole-clade extinct count is unavailable and omitted from the tree. The extant component exhausts living representatives of the clade.</p>
 <p>Sources: <a href="#source-mdd">ASM Mammal Diversity Database v2.5</a>.</p>
 <p>GPT: Marsupial. </p>
 <p>.: Marsupial. Conventional named taxon; older functional wording is approximate.</p>
@@ -436,7 +436,7 @@
 <article id="PlacentalMammal"><h2>Placentalia</h2>
 <p>Total: 6,466; Explicitly extinct: 90; Explicitly extant: 6,376.</p><p>Living and recently extinct species (since 1500); domestic species included. Fossil species excluded. Crown-group component only; the GPT node also includes fossil stem relatives whose count is unavailable.</p>
 <p>Filter infraclass = Placentalia; extinct = 1 or 0.</p>
-<p>Whole-clade extinct count is unavailable; the tree shows ? for extinct. The extant component exhausts living representatives of the clade.</p>
+<p>Whole-clade extinct count is unavailable and omitted from the tree. The extant component exhausts living representatives of the clade.</p>
 <p>Sources: <a href="#source-mdd">ASM Mammal Diversity Database v2.5</a>.</p>
 <p>GPT: PlacentalMammal. </p>
 </article>
@@ -542,7 +542,7 @@
 <article id="Synapsid"><h2>Synapsida: mammalian component</h2>
 <p>Total: 6,904; Explicitly extinct: 113; Explicitly extant: 6,791.</p><p>Living and recently extinct mammals only; fossil non-mammalian synapsids and fossil mammals are outside this source.</p>
 <p>Same living/recent component as Mammalia.</p>
-<p>Whole-clade extinct count is unavailable; the tree shows ? for extinct. The extant component exhausts living representatives of the clade.</p>
+<p>Whole-clade extinct count is unavailable and omitted from the tree. The extant component exhausts living representatives of the clade.</p>
 <p>Components: +1 × <a href="#Mammal">Mammalia</a>.</p>
 <p>Sources: <a href="#source-mdd">ASM Mammal Diversity Database v2.5</a>.</p>
 <p>GPT: Synapsid. </p>
@@ -550,7 +550,7 @@
 <article id="Dinosaur"><h2>Dinosauria: avian component</h2>
 <p>Total: 11,044; Explicitly extinct: 176; Explicitly extant: 10,868.</p><p>Avian component only; non-avian fossil dinosaur species are not included. COL extinction flags apply only to species covered by its Aves checklist.</p>
 <p>Same avian component as Aves.</p>
-<p>Whole-clade extinct count is unavailable; the tree shows ? for extinct. The extant component exhausts living representatives of the clade.</p>
+<p>Whole-clade extinct count is unavailable and omitted from the tree. The extant component exhausts living representatives of the clade.</p>
 <p>Components: +1 × <a href="#Bird">Aves</a>.</p>
 <p>Sources: <a href="#source-col">Catalogue of Life COL26.9 base release</a>.</p>
 <p>GPT: Dinosaur. </p>

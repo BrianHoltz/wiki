@@ -79,7 +79,7 @@ def main():
              '<h1>Taxon species counts</h1>',
              f'<p>Research retrieved {e(evidence["retrieved"])}. {e(evidence["policy"])}</p>',
              '<p>Tree numbers are compact, suggestive counts: a lone number is a total without a split; '
-             'a pair is extinct/extant, with extant last. ? means an unavailable count. '
+             '☠ follows extinct counts and ♥ follows extant counts, with extant last. Unavailable counts are omitted. '
              'Click a tree count for evidence. COL records with missing extinction '
              'flags do not become extant by subtraction. Source coverage and extinction periods differ.</p>',
              '<p><a href="taxon-species-counts.json">Authoritative research JSON</a></p>',

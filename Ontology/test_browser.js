@@ -104,21 +104,24 @@ async function testBrowser(relativePath, dataPath, presetSearch, presetTarget) {
     const start = tree.innerHTML.indexOf(`id="${encodedId(id)}"`);
     const row = tree.innerHTML.slice(start, tree.innerHTML.indexOf("</div>", start));
     assert(row.includes('class="species-count"'), `${relativePath}: species count missing on ${id}`);
+    assert(!row.includes("?"), `${relativePath}: unavailable count rendered on ${id}`);
     assert(!row.includes("†"), `${relativePath}: species dagger clutter on ${id}`);
     assert(row.includes(value.url), `${relativePath}: evidence link missing on ${id}`);
   }
-  for (const [count, expected] of [[230000,"230K"],[30040,"30.0K"],[1000,"1.00K"],[999500,"1.00M"],[999499,"999K"],[2030000,"2.03M"],[0,"0"],[1,"1"],[null,"?"]]) {
+  for (const [count, expected] of [[230000,"230K"],[30040,"30.0K"],[1000,"1.00K"],[999500,"1.00M"],[999499,"999K"],[2030000,"2.03M"],[0,"0"],[1,"1"],[null,""]]) {
     assert.equal(context.formatSpeciesCount(count), expected);
   }
   const sample = { taxon: "Sample", scope: "Test", url: "evidence.html", retrieved: "2026.10.10" };
-  const renderedCount = values => context.speciesStats({speciesCount: {...sample, ...values}}).split(">")[1].split("</a")[0];
+  const renderedCount = values => (context.speciesStats({speciesCount: {...sample, ...values}}).match(/>([^<]*)<\/a>/) || [null, ""])[1];
   assert.equal(renderedCount({total:30040, extinct:null, extant:null}), "30.0K");
-  assert.equal(renderedCount({total:30040, extinct:40, extant:30000}), "40/30.0K");
-  assert.equal(renderedCount({total:null, extinct:40, extant:null}), "40/?");
-  assert.equal(renderedCount({total:null, extinct:null, extant:30000}), "?/30.0K");
-  assert.equal(renderedCount({total:null, extinct:null, extant:null}), "?/?");
-  assert.equal(renderedCount({total:30040, extinct:40, extant:null}), "40/?");
+  assert.equal(renderedCount({total:30040, extinct:40, extant:30000}), "40☠+30.0K♥");
+  assert.equal(renderedCount({total:null, extinct:40, extant:null}), "40☠");
+  assert.equal(renderedCount({total:null, extinct:null, extant:30000}), "30.0K♥");
+  assert.equal(renderedCount({total:null, extinct:null, extant:null}), "");
+  assert.equal(renderedCount({total:30040, extinct:40, extant:null}), "40☠");
+  assert.equal(renderedCount({total:1, extinct:0, extant:1}), "0☠+1♥");
   assert.equal(context.speciesStats({}), "");
+  assert(!tree.innerHTML.includes(" &#8595;"), `${relativePath}: space before down arrow`);
   assert.equal((source.match(/data-search="/g) || []).length, 5, `${relativePath}: search presets are missing`);
   const searchRow = source.match(/<div class="search-row">([\s\S]*?)<\/div>/)?.[1] || "";
   assert(searchRow.includes('<input id="search"'), `${relativePath}: search input is missing`);
@@ -190,7 +193,7 @@ async function testBrowser(relativePath, dataPath, presetSearch, presetTarget) {
   const otherDescendants = countDescendants(branch.id) - branch.children.length;
   if (otherDescendants) {
     assert(
-      tree.innerHTML.slice(branchStart, childrenStart).includes(`+${otherDescendants} &#8595;`),
+      tree.innerHTML.slice(branchStart, childrenStart).includes(`+${otherDescendants}&#8595;`),
       `${relativePath}: descendant count missing`,
     );
   }
