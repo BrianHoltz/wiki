@@ -1,4 +1,4 @@
-# Ontology
+# My Ontology
 
 ## Principles
 
