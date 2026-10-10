@@ -1183,6 +1183,24 @@ matches. Its maintained data is [taxon-species-counts.json](taxon-species-counts
 [render_species_counts.py](render_species_counts.py) generates the catalogue
 and each browser's count sidecar.
 
+### Browser navigation
+
+Clicking a node title shows only its primary lineage and direct children,
+with those children collapsed. A second consecutive click on the same title
+restores the complete prior view, including its expansion states and any
+previous lineage focus. Clicking a different title focuses that node and
+makes the current view its restoration target.
+
+A triangle toggles only its own node, preserving every other expansion state
+and the current lineage projection. A triangle click breaks a consecutive
+title-click pair. Global Expand and Collapse return to the full tree.
+
+The [browser regression suite](test_browser.js) checks visible lineage and
+children, switching focus, restoring full and focused views, and isolated
+triangle toggles in every browser. GPT rendering and species-count builds
+run this suite automatically; other artifact builds must run it before
+publication.
+
 ### Node information notes
 
 The browser should place a Unicode information glyph `ⓘ` after child and

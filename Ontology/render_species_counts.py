@@ -6,6 +6,7 @@ Existing files are rewritten in place so editor/file-watcher inodes stay live.
 """
 import html
 import json
+import subprocess
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
@@ -113,3 +114,4 @@ def main():
 
 if __name__ == '__main__':
     main()
+    subprocess.run(['node', str(ROOT / 'test_browser.js')], check=True)

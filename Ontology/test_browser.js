@@ -154,6 +154,7 @@ async function testBrowser(relativePath, dataPath, presetSearch, presetTarget) {
   assert(!tree.innerHTML.includes("Alternate Parents:"), `${relativePath}: alternate parents rendered`);
   assert(!tree.innerHTML.includes("Alternate Children:"), `${relativePath}: alternate children rendered`);
 
+  elements.get("#expand").onclick();
   const definitionNode = data.nodes.find((node) => node.definition && node.children.length > 0);
   if (definitionNode) {
     const definitionButton = eventTarget("button.expander[data-node]", { node: definitionNode.id });
@@ -201,9 +202,78 @@ async function testBrowser(relativePath, dataPath, presetSearch, presetTarget) {
     );
   }
 
-  const nodeLink = eventTarget("a[data-node]", { node: leaf.id });
-  tree.onclick({ target: nodeLink, preventDefault() {} });
-  assert(tree.innerHTML.includes(`id="${encodedId(leaf.id)}"`), `${relativePath}: node name did not open lineage view`);
+  // Parse nested list visibility: hidden descendants still exist in the HTML.
+  const rows = () => {
+    const result = new Map(), lists = [], nodes = [];
+    const tokens = tree.innerHTML.matchAll(/<li id="([^"]+)">|<ul([^>]*)>|<\/ul>|<\/li>/g);
+    for (const token of tokens) {
+      if (token[1] !== undefined) {
+        const id = decodeURIComponent(token[1]);
+        result.set(id, {visible: lists.every(Boolean), open: false}); nodes.push(id);
+      } else if (token[2] !== undefined) {
+        const open = !/\bhidden\b/.test(token[2]);
+        if (/class="children"/.test(token[2])) result.get(nodes.at(-1)).open = open;
+        lists.push(open);
+      } else if (token[0] === "</ul>") lists.pop();
+      else nodes.pop();
+    }
+    return result;
+  };
+  const nodes = new Map(data.nodes.map(n => [n.id, n]));
+  const parents = new Map(data.nodes.flatMap(n => n.children.map(child => [child, n.id])));
+  const title = id => tree.onclick({target: eventTarget("a[data-node]", {node:id}), preventDefault() {}});
+  const triangle = id => tree.onclick({target: eventTarget("button.expander[data-node]", {node:id})});
+  const assertLineage = id => {
+    const expected = new Set(nodes.get(id).children);
+    for (let current=id; current; current=parents.get(current)) expected.add(current);
+    assert.deepEqual([...rows()].filter(([,r]) => r.visible).map(([id]) => id).sort(),
+      [...expected].sort(), `${relativePath}: title must show only lineage and direct children of ${id}`);
+  };
+  const assertTriangleIsolation = id => {
+    const before = rows(); triangle(id); const after = rows();
+    assert.deepEqual([...after.keys()], [...before.keys()], `${relativePath}: triangle changed the projection`);
+    for (const [other, state] of before) {
+      assert.equal(after.get(other).open, other === id ? !state.open : state.open,
+        `${relativePath}: triangle changed another node's expansion: ${other}`);
+    }
+  };
+  const focus = nodes.has("Primate") ? "Primate" : data.nodes.find(n => parents.has(n.id) && n.children.length)?.id || branch.id;
+  const second = nodes.get(focus).children[0] || parents.get(focus);
+  for (const initial of ["#expand", "#collapse"]) {
+    elements.get(initial).onclick();
+    assertTriangleIsolation(branch.id);
+    const original = tree.innerHTML;
+    title(focus); assertLineage(focus);
+    title(focus);
+    assert.equal(tree.innerHTML, original, `${relativePath}: repeated title did not restore the prior view`);
+    title(focus); assertLineage(focus);
+    const focused = tree.innerHTML;
+    title(second); assertLineage(second);
+    title(second);
+    assert.equal(tree.innerHTML, focused, `${relativePath}: repeated different title did not restore earlier lineage`);
+    // Test every title exposed in the lineage, including ancestors and children.
+    for (const id of [...rows()].filter(([id,r]) => r.visible && id !== focus).map(([id]) => id)) {
+      elements.get(initial).onclick(); title(focus); title(id); assertLineage(id);
+    }
+    elements.get(initial).onclick(); title(focus);
+    const beforeToggle = tree.innerHTML;
+    assertTriangleIsolation(focus); assertTriangleIsolation(focus);
+    assert.equal(tree.innerHTML, beforeToggle, `${relativePath}: triangle pair did not restore lineage`);
+    const ancestor = parents.get(focus);
+    if (ancestor) { assertTriangleIsolation(ancestor); assertTriangleIsolation(ancestor); }
+    const childBranch = nodes.get(focus).children.find(id => nodes.get(id).children.length);
+    if (childBranch) { assertTriangleIsolation(childBranch); assertTriangleIsolation(childBranch); }
+    // Undo must preserve custom expansion inside an earlier lineage as well.
+    if (childBranch) triangle(childBranch);
+    const customized = tree.innerHTML;
+    title(second); assertLineage(second); title(second);
+    assert.equal(tree.innerHTML, customized, `${relativePath}: undo lost prior lineage expansion states`);
+    // A triangle breaks consecutive title clicks: the next title focuses afresh.
+    triangle(focus); title(focus); assertLineage(focus);
+    title(focus);
+    assert.equal(rows().get(focus).open, false, `${relativePath}: restore lost a triangle change`);
+  }
+  title(leaf.id); assertLineage(leaf.id);
 
   search.value = leaf.label.split(/\s+/).slice(0, 2).join(" ");
   search.oninput({ target: search });
@@ -222,6 +292,10 @@ async function main() {
   const canonicalScript = scriptOf(canonicalSource);
   const canonicalStyle = canonicalSource.match(/<style>([\s\S]*)<\/style>/)[1];
   assert(!canonicalSource.includes("Canonical upper ontology with historical physical projection"));
+  const gpt = readData("GPT/ontology.json");
+  const gptNodes = new Map(gpt.nodes.map(n => [n.id, n]));
+  assert(gptNodes.get("Eukaryote").children.includes("Animal"), "GPT Animal must be displayed under Eukaryote");
+  assert(!gptNodes.get("Organism").children.includes("Animal"), "GPT Animal must not be Eukaryote's sibling");
   const sources = [];
   for (const [page, data, query, expected] of browsers) {
     assert(!/historical physical projection/i.test(data.source?.overlayPolicy || ""), `${page}: stale overlay title remains`);

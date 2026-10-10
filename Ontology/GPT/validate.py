@@ -43,7 +43,8 @@ def ancestors(i,all_edges=True):
 check('Every class reaches Entity',all(i=='Entity' or 'Entity' in ancestors(i,False) for i in nodes))
 def depth(i):return 0 if nodes[i]['primary_parent'] is None else 1+depth(nodes[i]['primary_parent'])
 depths={i:depth(i) for i in nodes}
-check('Canonical traversal stays at or below 13 edges',max(depths.values())<=13)
+check('Canonical traversal stays at or below 14 edges',max(depths.values())<=14)
+check('Animal has Eukaryote as its displayed primary parent',nodes['Animal']['primary_parent']=='Eukaryote')
 children=collections.defaultdict(list)
 for i,n in nodes.items():
     if n['primary_parent']:children[n['primary_parent']].append(i)

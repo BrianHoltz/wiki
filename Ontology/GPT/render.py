@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Render authoritative JSON to Markdown and the shared browser. Standard library only."""
-import collections,json,pathlib,sys
+import collections,json,pathlib,sys,subprocess
 root=pathlib.Path(sys.argv[1]) if len(sys.argv)>1 else pathlib.Path(__file__).resolve().parent
 p=json.loads((root/'ontology-proposal.json').read_text()); by={n['id']:n for n in p['nodes']}
 fby={n['id']:n for n in p['class_expressions']}; children=collections.defaultdict(list)
@@ -66,3 +66,6 @@ html,count=re.subn(r'(<div class="search-presets"[^>]*>).*?(</div>)',lambda m:m[
 assert count==1,'Shared browser search presets not found'
 (root/'index.html').write_text(html)
 print('Rendered complete tree, coverage mappings, browser data, and shared HTML.')
+
+if (root.parent/'test_browser.js').exists():
+    subprocess.run(['node',str(root.parent/'test_browser.js')],check=True)

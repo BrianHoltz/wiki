@@ -273,8 +273,7 @@
       "children": [
         "Bacterium",
         "Archaeon",
-        "Eukaryote",
-        "Animal"
+        "Eukaryote"
       ]
     },
     {
@@ -301,7 +300,8 @@
       "definition": "An organism belonging to the lineage characterized ancestrally by nucleated cells.",
       "children": [
         "Plant",
-        "Fungus"
+        "Fungus",
+        "Animal"
       ],
       "aliases": [
         "Eukaryota"
@@ -402,9 +402,6 @@
         "Cnidarian",
         "Bilaterian",
         "Vertebrate"
-      ],
-      "alternateParents": [
-        "Eukaryote"
       ],
       "aliases": [
         "Metazoa"

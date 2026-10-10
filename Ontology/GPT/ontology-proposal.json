@@ -394,7 +394,7 @@
         "axis": "selected evolutionary lineages",
         "coverage": "selective",
         "disjointness": "overlapping_ancestry",
-        "note": "Animal is displayed directly for accessibility, with Eukaryote retained as alternate superclass."
+        "note": "Selected cellular lineages; eukaryotic kingdoms are subclasses of Eukaryote."
       }
     },
     {
@@ -943,10 +943,8 @@
       "id": "Animal",
       "label": "Animal",
       "definition": "A eukaryote belonging to the metazoan lineage.",
-      "primary_parent": "Organism",
-      "alternate_parents": [
-        "Eukaryote"
-      ],
+      "primary_parent": "Eukaryote",
+      "alternate_parents": [],
       "node_kind": "class",
       "definition_status": "proposal_editorial",
       "aliases": [

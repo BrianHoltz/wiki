@@ -4,12 +4,12 @@
     "sha256": "cabc797d3662039f6e501bfbd4e4d66d101ae928c1ef1ec665ea61c0df20d215"
   },
   "README.md": {
-    "bytes": 2128,
-    "sha256": "f926492e912cc07e1961b03c5a4851abe3801273cc42269eef437761d25a6523"
+    "bytes": 2254,
+    "sha256": "de72f7487af278e0e498dd7d7fe4cc79d4aa395dece310689e3a89f744fc462e"
   },
   "architecture.md": {
     "bytes": 8498,
-    "sha256": "89974c6c32f453a8785378e68a1077a54dd7ab3b1d57093bfab4d503b90fe109"
+    "sha256": "c5a9a0714c82e928f892ed40de158e71f9cbd82b2048a95244c52a5d7ca830a3"
   },
   "coverage-map.json": {
     "bytes": 233723,
@@ -20,20 +20,20 @@
     "sha256": "6f940b8d800caa4f605f00ec68567c4205fe96fc599aa3285bac59f707351241"
   },
   "index.html": {
-    "bytes": 9968,
-    "sha256": "32e0c66da9da465ff895b3296cd85daca6875ddb3377ce7f6637e6cc8be500ab"
+    "bytes": 11954,
+    "sha256": "cccc5d09348d15bc441a3ec84de604a308fa892337979f62e57502402a04b2c3"
   },
   "ontology-proposal.json": {
-    "bytes": 416292,
-    "sha256": "cce4748068a4f3d2e1e6ca24a1a8905a420f286c60817ef62250fe0c467a56aa"
+    "bytes": 416246,
+    "sha256": "a5daaba8b3689a0ece67128e74eb516a0b9a8b6eae8b0dfb46200c852ca55b41"
   },
   "ontology-tree.md": {
-    "bytes": 149158,
-    "sha256": "b26a72d20a8451380574eae7ed9663a499fe115907c11df9125a26f2f53f752c"
+    "bytes": 149282,
+    "sha256": "c8d0d4728de38ae2bf870ab00b7ba18cc5a8704357904c1e9a85ee05365c1c93"
   },
   "ontology.json": {
-    "bytes": 146144,
-    "sha256": "795065e60683c8b022976d00c8041746f127995a95f661610dede056e072756a"
+    "bytes": 146087,
+    "sha256": "24e3a28f43fc42f9079ba626423e9277498dee65e0f8609e947f84a1f33a9d69"
   },
   "original-snapshot.json": {
     "bytes": 165714,
@@ -44,8 +44,8 @@
     "sha256": "89c805787605fd0b9c72e9f9f3334f1633b743db46d0aa401d44b1060a7d1c78"
   },
   "render.py": {
-    "bytes": 6756,
-    "sha256": "1cb5c32f05d7a89d3686f9ec3cdf690a5e3179cb5044ad449588b71d55ace41d"
+    "bytes": 6888,
+    "sha256": "4013de3353d25337e168a7a336b28f47362f768492e0d084beab1ad80e3e9266"
   },
   "source-evidence.zip": {
     "bytes": 408879,
@@ -56,15 +56,19 @@
     "sha256": "bdff1697add22b45acb3bc65a20ff0ea7395b3e54875d46f76d1d63e127bcae9"
   },
   "validate.py": {
-    "bytes": 10595,
-    "sha256": "d514a62f38b5f61157ee271ce8e0fd9dee246f36634849602b3c08c62c3a7522"
+    "bytes": 10704,
+    "sha256": "54aa75871bbc71f51bdc9559cd696c0216830fa27f45ceb7b3869a70bf694a2a"
   },
   "validation-negative-tests.json": {
     "bytes": 1167,
     "sha256": "6326577fc6931933f839ecd50c722b0817814290f869c5861ec8357cfdab4d2b"
   },
   "validation-report.json": {
-    "bytes": 44048,
-    "sha256": "4b48d44723f2f03f71a2502e3bdc7d9fd899d0c31249479bc6a2652704e875d1"
+    "bytes": 44156,
+    "sha256": "ffcf407d64ddaf9dcf880c3db2b434f5c297d23cced3b1445d70799350ffd014"
+  },
+  "species-counts.json": {
+    "bytes": 21965,
+    "sha256": "b9ac135502406eee2bf4cb51166a7edff57eb6d13ae89cfd403d0320bfbd172d"
   }
 }

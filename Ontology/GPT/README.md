@@ -6,7 +6,7 @@ The authoritative source is [ontology-proposal.json](ontology-proposal.json). It
 
 The proposal is an is-a tree with an explicitly richer classification graph. No branch silently asserts that its children exhaust the parent or exclude each other. Role specifications and actual role bearers are distinct.
 
-[Validation results](validation-report.json) report the exact checks and limitations. The maximum canonical depth is 13 edges; Organism is 5 edges from Entity, Human 12, and Corporation 6. All classes and expressions have definitions.
+[Validation results](validation-report.json) report the exact checks and limitations. The maximum canonical depth is 14 edges; Organism is 5 edges from Entity, Human 13, and Corporation 6. All classes and expressions have definitions.
 
 To verify or regenerate after editing the JSON, use Python 3 with its standard library:
 
@@ -19,4 +19,4 @@ Read [the data-format notes](FORMAT.md) before making machine-assisted edits. [S
 
 The original proposal was prepared without changing the incumbent ontology. Subsequent approved revisions are maintained here; `original-snapshot.json` remains historical evidence.
 
-`render.py` also regenerates the browser data and `index.html`, using the shared browser in `../index.html`. To check browser behavior, run `node ../test_browser.js` from this directory. Publish approved GPT changes to the wiki using the repository deployment destination, scoped to this folder.
+`render.py` also regenerates the browser data and `index.html`, using the shared browser in `../index.html`. Rendering automatically runs the shared browser regression suite, including title-focus restoration and isolated triangle toggles. To run it separately, use `node ../test_browser.js` from this directory. Publish approved GPT changes to the wiki using the repository deployment destination, scoped to this folder.

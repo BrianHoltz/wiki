@@ -26,54 +26,54 @@ Sibling lists are **selective**, not declarations of exhaustiveness or disjointn
                                         - <a id="FloweringPlant"></a>**Flowering plant** — A seed plant belonging to the angiosperm lineage. `FloweringPlant`
                                     - <a id="Lycophyte"></a>**Lycophyte** — A vascular plant belonging to the clubmoss, spikemoss, and quillwort lineage. `Lycophyte`
                             - <a id="Fungus"></a>**Fungus** — A eukaryote belonging to the fungal lineage. `Fungus`
-                        - <a id="Animal"></a>**Animal** — A eukaryote belonging to the metazoan lineage. `Animal`
-                            - <a id="Sponge"></a>**Sponge** — An animal belonging to the sponge lineage, Porifera. `Sponge`
-                            - <a id="Cnidarian"></a>**Cnidarian** — An animal belonging to the lineage characterized by cnidocytes. `Cnidarian`
-                            - <a id="Bilaterian"></a>**Bilaterian** — An animal belonging to the lineage with ancestrally bilateral body organization. `Bilaterian`
-                                - <a id="Arthropod"></a>**Arthropod** — A bilaterian belonging to the lineage with jointed appendages and an exoskeleton. `Arthropod`
-                                    - <a id="Insect"></a>**Insect** — An arthropod belonging to the lineage with ancestrally three pairs of thoracic legs. `Insect`
-                                    - <a id="Arachnid"></a>**Arachnid** — An arthropod belonging to the arachnid lineage, including spiders and scorpions. `Arachnid`
-                                - <a id="Mollusc"></a>**Mollusc** — A bilaterian belonging to the molluscan lineage. `Mollusc`
-                                - <a id="Annelid"></a>**Annelid** — A bilaterian belonging to the annelid lineage of segmented worms. `Annelid`
-                                - <a id="Nematode"></a>**Nematode** — A bilaterian belonging to the nematode lineage of roundworms. `Nematode`
-                                - <a id="Echinoderm"></a>**Echinoderm** — A bilaterian belonging to the lineage with a water vascular system. `Echinoderm`
-                                - <a id="Chordate"></a>**Chordate** — A bilaterian belonging to the lineage characterized ancestrally by a notochord. `Chordate`
-                            - <a id="Vertebrate"></a>**Vertebrate** — A chordate belonging to the lineage characterized ancestrally by vertebral elements. `Vertebrate`
-                                - <a id="JawedVertebrate"></a>**Jawed vertebrate** — A vertebrate belonging to the lineage characterized ancestrally by jaws. `JawedVertebrate`
-                                    - <a id="CartilaginousFish"></a>**Cartilaginous fish** — A jawed vertebrate belonging to the shark, ray, and chimaera lineage. `CartilaginousFish`
-                                    - <a id="BonyVertebrate"></a>**Bony vertebrate** — A jawed vertebrate belonging to the bony-vertebrate lineage, including tetrapods. `BonyVertebrate`
-                                        - <a id="RayFinnedFish"></a>**Ray-finned fish** — A bony vertebrate belonging to the ray-finned lineage. `RayFinnedFish`
-                                        - <a id="LobeFinnedVertebrate"></a>**Lobe-finned vertebrate** — A bony vertebrate belonging to the lobe-finned lineage, including tetrapods. `LobeFinnedVertebrate`
-                                            - <a id="Tetrapod"></a>**Tetrapod** — A lobe-finned vertebrate belonging to the lineage with ancestrally four limbs. `Tetrapod`
-                                                - <a id="Amphibian"></a>**Amphibian** — A tetrapod belonging to the amphibian lineage, including frogs, salamanders, and caecilians. `Amphibian`
-                                - <a id="Amniote"></a>**Amniote** — A tetrapod belonging to the lineage with ancestrally amniotic embryonic membranes. `Amniote`
-                                    - <a id="Synapsid"></a>**Synapsid** — An amniote belonging to the mammal-line lineage with an ancestral single temporal opening. `Synapsid`
-                                    - <a id="Mammal"></a>**Mammal** — A synapsid belonging to the lineage characterized by mammary glands and hair. `Mammal`
-                                        - <a id="Monotreme"></a>**Monotreme** — A mammal belonging to the egg-laying monotreme lineage. `Monotreme`
-                                        - <a id="Marsupial"></a>**Marsupial-line mammal** — A mammal belonging to Metatheria, including living marsupials and their extinct stem relatives. `Marsupial`
-                                        - <a id="PlacentalMammal"></a>**Eutherian mammal** — A mammal belonging to Eutheria, including crown placentals and their extinct stem relatives. `PlacentalMammal`
-                                            - <a id="Carnivoran"></a>**Carnivoran** — A placental mammal belonging to the order Carnivora, irrespective of diet. `Carnivoran`
-                                                - <a id="Canine"></a>**Canid** — A carnivoran belonging to the dog family, Canidae. `Canine`
-                                                    - <a id="Dog"></a>**Domestic dog** — A canid belonging to the domestic dog lineage. `Dog`
-                                                - <a id="Feline"></a>**Felid** — A carnivoran belonging to the cat family, Felidae. `Feline`
-                                                    - <a id="Cat"></a>**Domestic cat** — A felid belonging to the domestic cat lineage. `Cat`
-                                            - <a id="Rodent"></a>**Rodent** — A placental mammal belonging to the rodent lineage. `Rodent`
-                                            - <a id="Cetartiodactyl"></a>**Cetartiodactyl** — A placental mammal in the even-toed ungulate and cetacean lineage. `Cetartiodactyl`
-                                                - <a id="Cetacean"></a>**Cetacean** — A cetartiodactyl belonging to the whale, dolphin, and porpoise lineage. `Cetacean`
-                                            - <a id="Perissodactyl"></a>**Odd-toed ungulate** — A placental mammal belonging to the horse, rhinoceros, and tapir lineage. `Perissodactyl`
-                                            - <a id="Lagomorph"></a>**Lagomorph** — A placental mammal belonging to the rabbit, hare, and pika lineage. `Lagomorph`
-                                        - <a id="Primate"></a>**Primate** — A placental mammal belonging to the primate lineage. `Primate`
-                                            - <a id="Ape"></a>**Ape** — A primate belonging to the hominoid lineage, including humans. `Ape`
-                                                - <a id="Hominid"></a>**Great ape** — An ape belonging to the family Hominidae, including humans. `Hominid`
-                                                - <a id="Human"></a>**Human** — A great ape belonging to the species Homo sapiens. `Human`
-                                            - <a id="Simian"></a>**Simian** — A primate belonging to the monkey-and-ape lineage, Simiiformes. `Simian`
-                                    - <a id="Sauropsid"></a>**Sauropsid** — An amniote belonging to the reptile-line lineage, including birds. `Sauropsid`
-                                        - <a id="Turtle"></a>**Turtle** — A sauropsid belonging to the turtle lineage. `Turtle`
-                                        - <a id="Lepidosaur"></a>**Lepidosaur** — A sauropsid belonging to the lizard, snake, and tuatara lineage. `Lepidosaur`
-                                        - <a id="Archosaur"></a>**Archosaur** — A sauropsid belonging to the crocodilian and dinosaur lineage. `Archosaur`
-                                            - <a id="Crocodilian"></a>**Crocodilian** — An archosaur belonging to the crocodile, alligator, and gharial lineage. `Crocodilian`
-                                            - <a id="Dinosaur"></a>**Dinosaur** — An archosaur belonging to Dinosauria, including birds. `Dinosaur`
-                                                - <a id="Bird"></a>**Bird** — A dinosaur belonging to the avian lineage. `Bird`
+                            - <a id="Animal"></a>**Animal** — A eukaryote belonging to the metazoan lineage. `Animal`
+                                - <a id="Sponge"></a>**Sponge** — An animal belonging to the sponge lineage, Porifera. `Sponge`
+                                - <a id="Cnidarian"></a>**Cnidarian** — An animal belonging to the lineage characterized by cnidocytes. `Cnidarian`
+                                - <a id="Bilaterian"></a>**Bilaterian** — An animal belonging to the lineage with ancestrally bilateral body organization. `Bilaterian`
+                                    - <a id="Arthropod"></a>**Arthropod** — A bilaterian belonging to the lineage with jointed appendages and an exoskeleton. `Arthropod`
+                                        - <a id="Insect"></a>**Insect** — An arthropod belonging to the lineage with ancestrally three pairs of thoracic legs. `Insect`
+                                        - <a id="Arachnid"></a>**Arachnid** — An arthropod belonging to the arachnid lineage, including spiders and scorpions. `Arachnid`
+                                    - <a id="Mollusc"></a>**Mollusc** — A bilaterian belonging to the molluscan lineage. `Mollusc`
+                                    - <a id="Annelid"></a>**Annelid** — A bilaterian belonging to the annelid lineage of segmented worms. `Annelid`
+                                    - <a id="Nematode"></a>**Nematode** — A bilaterian belonging to the nematode lineage of roundworms. `Nematode`
+                                    - <a id="Echinoderm"></a>**Echinoderm** — A bilaterian belonging to the lineage with a water vascular system. `Echinoderm`
+                                    - <a id="Chordate"></a>**Chordate** — A bilaterian belonging to the lineage characterized ancestrally by a notochord. `Chordate`
+                                - <a id="Vertebrate"></a>**Vertebrate** — A chordate belonging to the lineage characterized ancestrally by vertebral elements. `Vertebrate`
+                                    - <a id="JawedVertebrate"></a>**Jawed vertebrate** — A vertebrate belonging to the lineage characterized ancestrally by jaws. `JawedVertebrate`
+                                        - <a id="CartilaginousFish"></a>**Cartilaginous fish** — A jawed vertebrate belonging to the shark, ray, and chimaera lineage. `CartilaginousFish`
+                                        - <a id="BonyVertebrate"></a>**Bony vertebrate** — A jawed vertebrate belonging to the bony-vertebrate lineage, including tetrapods. `BonyVertebrate`
+                                            - <a id="RayFinnedFish"></a>**Ray-finned fish** — A bony vertebrate belonging to the ray-finned lineage. `RayFinnedFish`
+                                            - <a id="LobeFinnedVertebrate"></a>**Lobe-finned vertebrate** — A bony vertebrate belonging to the lobe-finned lineage, including tetrapods. `LobeFinnedVertebrate`
+                                                - <a id="Tetrapod"></a>**Tetrapod** — A lobe-finned vertebrate belonging to the lineage with ancestrally four limbs. `Tetrapod`
+                                                    - <a id="Amphibian"></a>**Amphibian** — A tetrapod belonging to the amphibian lineage, including frogs, salamanders, and caecilians. `Amphibian`
+                                    - <a id="Amniote"></a>**Amniote** — A tetrapod belonging to the lineage with ancestrally amniotic embryonic membranes. `Amniote`
+                                        - <a id="Synapsid"></a>**Synapsid** — An amniote belonging to the mammal-line lineage with an ancestral single temporal opening. `Synapsid`
+                                        - <a id="Mammal"></a>**Mammal** — A synapsid belonging to the lineage characterized by mammary glands and hair. `Mammal`
+                                            - <a id="Monotreme"></a>**Monotreme** — A mammal belonging to the egg-laying monotreme lineage. `Monotreme`
+                                            - <a id="Marsupial"></a>**Marsupial-line mammal** — A mammal belonging to Metatheria, including living marsupials and their extinct stem relatives. `Marsupial`
+                                            - <a id="PlacentalMammal"></a>**Eutherian mammal** — A mammal belonging to Eutheria, including crown placentals and their extinct stem relatives. `PlacentalMammal`
+                                                - <a id="Carnivoran"></a>**Carnivoran** — A placental mammal belonging to the order Carnivora, irrespective of diet. `Carnivoran`
+                                                    - <a id="Canine"></a>**Canid** — A carnivoran belonging to the dog family, Canidae. `Canine`
+                                                        - <a id="Dog"></a>**Domestic dog** — A canid belonging to the domestic dog lineage. `Dog`
+                                                    - <a id="Feline"></a>**Felid** — A carnivoran belonging to the cat family, Felidae. `Feline`
+                                                        - <a id="Cat"></a>**Domestic cat** — A felid belonging to the domestic cat lineage. `Cat`
+                                                - <a id="Rodent"></a>**Rodent** — A placental mammal belonging to the rodent lineage. `Rodent`
+                                                - <a id="Cetartiodactyl"></a>**Cetartiodactyl** — A placental mammal in the even-toed ungulate and cetacean lineage. `Cetartiodactyl`
+                                                    - <a id="Cetacean"></a>**Cetacean** — A cetartiodactyl belonging to the whale, dolphin, and porpoise lineage. `Cetacean`
+                                                - <a id="Perissodactyl"></a>**Odd-toed ungulate** — A placental mammal belonging to the horse, rhinoceros, and tapir lineage. `Perissodactyl`
+                                                - <a id="Lagomorph"></a>**Lagomorph** — A placental mammal belonging to the rabbit, hare, and pika lineage. `Lagomorph`
+                                            - <a id="Primate"></a>**Primate** — A placental mammal belonging to the primate lineage. `Primate`
+                                                - <a id="Ape"></a>**Ape** — A primate belonging to the hominoid lineage, including humans. `Ape`
+                                                    - <a id="Hominid"></a>**Great ape** — An ape belonging to the family Hominidae, including humans. `Hominid`
+                                                    - <a id="Human"></a>**Human** — A great ape belonging to the species Homo sapiens. `Human`
+                                                - <a id="Simian"></a>**Simian** — A primate belonging to the monkey-and-ape lineage, Simiiformes. `Simian`
+                                        - <a id="Sauropsid"></a>**Sauropsid** — An amniote belonging to the reptile-line lineage, including birds. `Sauropsid`
+                                            - <a id="Turtle"></a>**Turtle** — A sauropsid belonging to the turtle lineage. `Turtle`
+                                            - <a id="Lepidosaur"></a>**Lepidosaur** — A sauropsid belonging to the lizard, snake, and tuatara lineage. `Lepidosaur`
+                                            - <a id="Archosaur"></a>**Archosaur** — A sauropsid belonging to the crocodilian and dinosaur lineage. `Archosaur`
+                                                - <a id="Crocodilian"></a>**Crocodilian** — An archosaur belonging to the crocodile, alligator, and gharial lineage. `Crocodilian`
+                                                - <a id="Dinosaur"></a>**Dinosaur** — An archosaur belonging to Dinosauria, including birds. `Dinosaur`
+                                                    - <a id="Bird"></a>**Bird** — A dinosaur belonging to the avian lineage. `Bird`
                     - <a id="BiologicalStructure"></a>**Biological structure** — A biotic object individuated by its structural organization within or from an organism. `BiologicalStructure`
                         - <a id="Cell"></a>**Cell** — A biological structure bounded by a membrane and organized as a cellular unit. `Cell`
                         - <a id="AnatomicalStructure"></a>**Anatomical structure** — A biological structure constituting an anatomical unit of an organism. `AnatomicalStructure`
@@ -569,7 +569,6 @@ These are semantic subclass links, not use, location, part-whole, or provenance 
 | Class | Additional superclass |
 |---|---|
 | [Atomic nucleus](#AtomicNucleus) | [Subatomic particle](#SubatomicParticle) |
-| [Animal](#Animal) | [Eukaryote](#Eukaryote) |
 | [Vertebrate](#Vertebrate) | [Chordate](#Chordate) |
 | [Amniote](#Amniote) | [Tetrapod](#Tetrapod) |
 | [Mammal](#Mammal) | [Synapsid](#Synapsid) |
@@ -700,7 +699,7 @@ All child groups are selective. The following notes expose the axis and any expe
 | [Celestial body](#AstronomicalBody) | defined distinguishing criteria of the named child kinds | not_asserted | Named subclasses provide coverage without asserting a closed partition. |
 | [Small celestial body](#SmallCelestialBody) | defined distinguishing criteria of the named child kinds | not_asserted | Named subclasses provide coverage without asserting a closed partition. |
 | [Geological body](#GeologicalBody) | defined distinguishing criteria of the named child kinds | not_asserted | Named subclasses provide coverage without asserting a closed partition. |
-| [Organism](#Organism) | selected evolutionary lineages | overlapping_ancestry | Animal is displayed directly for accessibility, with Eukaryote retained as alternate superclass. |
+| [Organism](#Organism) | selected evolutionary lineages | overlapping_ancestry | Selected cellular lineages; eukaryotic kingdoms are subclasses of Eukaryote. |
 | [Eukaryote](#Eukaryote) | selected evolutionary lineages | overlapping_ancestry | Compressed evolutionary subclasses; hidden source lineage preserves omitted ranks. No assertion that selected children exhaust the taxon. |
 | [Land plant](#Plant) | selected evolutionary lineages | overlapping_ancestry | Moss and vascular plants do not exhaust land plants; liverworts and hornworts remain admissible. |
 | [Vascular plant](#VascularPlant) | selected evolutionary lineages | overlapping_ancestry | Compressed evolutionary subclasses; hidden source lineage preserves omitted ranks. No assertion that selected children exhaust the taxon. |

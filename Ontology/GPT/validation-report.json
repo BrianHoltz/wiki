@@ -1,10 +1,10 @@
 {
   "status": "passed",
   "scope": "Structural, coverage, formal-level, ancestry-data, and selected semantic-counterexample checks; not a proof of philosophical completeness, definition correctness, or logical consistency of all possible formalizations.",
-  "checks_passed": 392,
+  "checks_passed": 393,
   "canonical_class_count": 555,
   "canonical_edge_count": 554,
-  "alternate_superclass_edge_count": 32,
+  "alternate_superclass_edge_count": 31,
   "defined_class_expression_count": 46,
   "predicate_instance_count": 20,
   "original_record_count": 439,
@@ -16,12 +16,12 @@
     "faceted": 23,
     "merged_alias": 4
   },
-  "maximum_canonical_depth": 13,
+  "maximum_canonical_depth": 14,
   "example_depths": {
     "Organism": 5,
-    "Human": 12,
-    "Dog": 13,
-    "Bird": 12,
+    "Human": 13,
+    "Dog": 14,
+    "Bird": 13,
     "Book": 5,
     "Corporation": 6,
     "Region": 2,
@@ -112,7 +112,11 @@
       "status": "passed"
     },
     {
-      "name": "Canonical traversal stays at or below 13 edges",
+      "name": "Canonical traversal stays at or below 14 edges",
+      "status": "passed"
+    },
+    {
+      "name": "Animal has Eukaryote as its displayed primary parent",
       "status": "passed"
     },
     {
