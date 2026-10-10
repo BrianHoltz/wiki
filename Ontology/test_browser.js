@@ -114,13 +114,16 @@ async function testBrowser(relativePath, dataPath, presetSearch, presetTarget) {
   const sample = { taxon: "Sample", scope: "Test", url: "evidence.html", retrieved: "2026.10.10" };
   const renderedCount = values => (context.speciesStats({speciesCount: {...sample, ...values}}).match(/>([^<]*)<\/a>/) || [null, ""])[1];
   assert.equal(renderedCount({total:30040, extinct:null, extant:null}), "30.0K");
-  assert.equal(renderedCount({total:30040, extinct:40, extant:30000}), "40☠+30.0K♥");
-  assert.equal(renderedCount({total:null, extinct:40, extant:null}), "40☠");
-  assert.equal(renderedCount({total:null, extinct:null, extant:30000}), "30.0K♥");
+  assert.equal(renderedCount({total:30040, extinct:40, extant:30000}), "40☠︎+30.0K♥︎");
+  assert.equal(renderedCount({total:null, extinct:40, extant:null}), "40☠︎");
+  assert.equal(renderedCount({total:null, extinct:null, extant:30000}), "30.0K♥︎");
   assert.equal(renderedCount({total:null, extinct:null, extant:null}), "");
-  assert.equal(renderedCount({total:30040, extinct:40, extant:null}), "40☠");
-  assert.equal(renderedCount({total:1, extinct:0, extant:1}), "0☠+1♥");
+  assert.equal(renderedCount({total:30040, extinct:40, extant:null}), "40☠︎");
+  assert.equal(renderedCount({total:1, extinct:0, extant:1}), "0☠︎+1♥︎");
   assert.equal(context.speciesStats({}), "");
+  if (counts.Animal) {
+    assert.equal(renderedCount(counts.Animal), "169K☠︎+1.48M♥︎");
+  }
   assert(!tree.innerHTML.includes(" &#8595;"), `${relativePath}: space before down arrow`);
   assert.equal((source.match(/data-search="/g) || []).length, 5, `${relativePath}: search presets are missing`);
   const searchRow = source.match(/<div class="search-row">([\s\S]*?)<\/div>/)?.[1] || "";

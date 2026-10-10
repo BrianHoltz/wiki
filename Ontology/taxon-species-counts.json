@@ -1,13 +1,13 @@
 {
   "retrieved": "2026.10.10",
-  "policy": "Named accepted/described species, not extrapolated undiscovered diversity. At most three significant digits, preserving significant trailing zeroes. Extant counts are last; missing extinction status is never assumed extant. Counts and extinction coverage are source-dependent, and mixed-source clade counts are not necessarily additive.",
+  "policy": "Suggestive counts of identified species, independently selected for each ontology node and each extinction category from high-quality reference taxonomies. Closest reference taxa and proxies are explicit. Extinct and extant sources need not agree or add up, and counts never roll up through ontology children. No composite counts are assembled for paraphyletic groups. Omit unavailable counts; a known unsplit total has no status glyph. At most three significant digits with K/M, retaining significant trailing zeros. ☠︎ means catalogued extinct species; ♥︎ means extant or source-reported non-fossil/living-tree proxy, always last. Text presentation keeps the symbols monochrome.",
   "sources": {
     "col": {
       "title": "Catalogue of Life COL26.9 base release",
       "url": "https://doi.org/10.48580/dgz5n",
       "date": "2026.09.11",
       "dataset": 316321,
-      "notes": "Base release chosen for taxonomic scrutiny. Accepted species only; synonyms and provisional acceptance excluded. The full catalogue remains incomplete. Extinct=true and extinct=false are separate filters; unset flags remain unknown."
+      "notes": "Direct speciesExtantCount from reference-taxon metrics in COL26.9 Base. These publisher metrics include accepted and provisionally accepted species; sparse individual extinction flags are not used to discard the living count."
     },
     "mdd": {
       "title": "ASM Mammal Diversity Database v2.5",
@@ -44,19 +44,66 @@
       "url": "https://amphibiaweb.org/",
       "date": "2026.10.10",
       "notes": "9136 species: 8055 frogs, 846 salamanders and 235 caecilians; headline does not split extinct and extant."
+    },
+    "pbdb": {
+      "title": "Paleobiology Database",
+      "url": "https://paleobiodb.org/data1.2/taxa/list",
+      "date": "2026.10.10",
+      "notes": "Live API reference-subtree counts: accepted species, extant=no, pres=regular, rowcount=yes. Fossil coverage and classification are incomplete; these are catalogued species, not all species that ever lived."
+    },
+    "onezoom": {
+      "title": "OneZoom living tree",
+      "url": "https://www.onezoom.org/data_sources.load?tabs=all",
+      "date": "2026.10.10",
+      "notes": "Direct species counts on named-clade text pages. Main-tree coverage reflects its Open Tree of Life snapshot and includes some recently extinct leaves; use as a suggestive living-species reference, not a completeness claim."
+    },
+    "wfo": {
+      "title": "World Flora Online",
+      "url": "https://worldfloraonline.org/",
+      "date": "2026.10.10",
+      "notes": "382401 accepted land-plant species; living/non-fossil checklist proxy."
+    },
+    "worldplants": {
+      "title": "World Plants v26.08",
+      "url": "https://www.worldplants.de/world-plants-complete-list/total-species-count",
+      "date": "2026.08.02",
+      "notes": "Direct published group statistics; gymnosperms 1194 non-fossil species, with the reference’s acceptance policy."
+    },
+    "iucn": {
+      "title": "IUCN Red List 2026-1, Table 1a",
+      "url": "https://nc.iucnredlist.org/redlist/content/attachment_files/2026-1_RL_Table1a.pdf",
+      "date": "2026.07.09",
+      "notes": "Use the estimated described-species column and source-reported subtotals, never evaluated or threatened counts. Non-fossil estimates can retain recently extinct species."
     }
   },
   "records": {
     "Bacterium": {
       "taxon": "Bacteria",
-      "total": 26397,
-      "extinct": 0,
-      "extant": 4827,
+      "total": null,
+      "extinct": 152,
+      "extant": 26525,
+      "references": {
+        "extant": {
+          "count": 26525,
+          "source": "col",
+          "taxon": "Bacteria",
+          "url": "https://api.checklistbank.org/dataset/316321/taxon/CRRY6/metrics",
+          "method": "Publisher-supplied speciesExtantCount from the reference-taxon metrics. Includes the release’s accepted and provisionally accepted species; does not rely on extinct=false annotations."
+        },
+        "extinct": {
+          "count": 152,
+          "source": "pbdb",
+          "taxon": "Bacteria",
+          "url": "https://paleobiodb.org/data1.2/taxa/list.json?base_name=Bacteria&rel=all_children&rank=species&extant=no&taxon_status=accepted&pres=regular&limit=1&rowcount=yes",
+          "method": "records_found: accepted species below the reference taxon, extant=no, pres=regular. Junior synonyms, ichnotaxa and form taxa excluded. A catalogue count, not an estimate of all species that ever existed."
+        }
+      },
       "sources": [
-        "col"
+        "col",
+        "pbdb"
       ],
-      "scope": "Accepted catalogued species, including fossil and recently extinct species where covered. Coverage is incomplete; missing extinction flags are unknown, not extant.",
-      "method": "Accepted species below COL taxon CRRY6; extinction status queried separately.",
+      "scope": "Independent source snapshots; source coverage, dates and species concepts differ. Counts do not roll up in the ontology.",
+      "method": "Direct reference-taxon counts; no ontology-child totals or composite-taxon arithmetic.",
       "mappings": {
         "GPT": [
           {
@@ -79,25 +126,41 @@
           {
             "id": "Category:Bacteria",
             "interpretation": "Species in the associated taxon, not counts of Wikipedia articles or subcategories."
+          },
+          {
+            "id": "Category:Prokaryotes",
+            "interpretation": "Associated reference-taxon count, not Wikipedia category/article counts. Bacteria is a closest-reference proxy excluding Archaea."
           }
         ]
-      },
-      "queries": {
-        "total": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=CRRY6&rank=species&status=accepted&limit=0",
-        "extinct": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=CRRY6&rank=species&status=accepted&limit=0&extinct=true",
-        "extant": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=CRRY6&rank=species&status=accepted&limit=0&extinct=false"
       }
     },
     "Archaeon": {
       "taxon": "Archaea",
-      "total": 790,
-      "extinct": 0,
-      "extant": 0,
+      "total": null,
+      "extinct": 4,
+      "extant": 792,
+      "references": {
+        "extant": {
+          "count": 792,
+          "source": "col",
+          "taxon": "Archaea",
+          "url": "https://api.checklistbank.org/dataset/316321/taxon/CRLT8/metrics",
+          "method": "Publisher-supplied speciesExtantCount from the reference-taxon metrics. Includes the release’s accepted and provisionally accepted species; does not rely on extinct=false annotations."
+        },
+        "extinct": {
+          "count": 4,
+          "source": "pbdb",
+          "taxon": "Archaea",
+          "url": "https://paleobiodb.org/data1.2/taxa/list.json?base_name=Archaea&rel=all_children&rank=species&extant=no&taxon_status=accepted&pres=regular&limit=1&rowcount=yes",
+          "method": "records_found: accepted species below the reference taxon, extant=no, pres=regular. Junior synonyms, ichnotaxa and form taxa excluded. A catalogue count, not an estimate of all species that ever existed."
+        }
+      },
       "sources": [
-        "col"
+        "col",
+        "pbdb"
       ],
-      "scope": "Accepted catalogued species, including fossil and recently extinct species where covered. Coverage is incomplete; missing extinction flags are unknown, not extant.",
-      "method": "Accepted species below COL taxon CRLT8; extinction status queried separately.",
+      "scope": "Independent source snapshots; source coverage, dates and species concepts differ. Counts do not roll up in the ontology.",
+      "method": "Direct reference-taxon counts; no ontology-child totals or composite-taxon arithmetic.",
       "mappings": {
         "GPT": [
           {
@@ -110,161 +173,291 @@
             "interpretation": "Species in the associated taxon, not counts of Wikipedia articles or subcategories."
           }
         ]
-      },
-      "queries": {
-        "total": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=CRLT8&rank=species&status=accepted&limit=0",
-        "extinct": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=CRLT8&rank=species&status=accepted&limit=0&extinct=true",
-        "extant": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=CRLT8&rank=species&status=accepted&limit=0&extinct=false"
       }
     },
     "Eukaryote": {
       "taxon": "Eukaryota",
-      "total": 2142032,
-      "extinct": 169945,
-      "extant": 879328,
+      "total": null,
+      "extinct": 21956,
+      "extant": 2052948,
+      "references": {
+        "extant": {
+          "count": 2052948,
+          "source": "col",
+          "taxon": "Eukaryota",
+          "url": "https://api.checklistbank.org/dataset/316321/taxon/CS5HF/metrics",
+          "method": "Publisher-supplied speciesExtantCount from the reference-taxon metrics. Includes the release’s accepted and provisionally accepted species; does not rely on extinct=false annotations."
+        },
+        "extinct": {
+          "count": 21956,
+          "source": "pbdb",
+          "taxon": "Eukaryota",
+          "url": "https://paleobiodb.org/data1.2/taxa/list.json?base_name=Eukaryota&rel=all_children&rank=species&extant=no&taxon_status=accepted&pres=regular&limit=1&rowcount=yes",
+          "method": "records_found: accepted species below the reference taxon, extant=no, pres=regular. Junior synonyms, ichnotaxa and form taxa excluded. A catalogue count, not an estimate of all species that ever existed."
+        }
+      },
       "sources": [
-        "col"
+        "col",
+        "pbdb"
       ],
-      "scope": "Accepted catalogued species, including fossil and recently extinct species where covered. Coverage is incomplete; missing extinction flags are unknown, not extant.",
-      "method": "Accepted species below COL taxon CS5HF; extinction status queried separately.",
+      "scope": "Independent source snapshots; source coverage, dates and species concepts differ. Counts do not roll up in the ontology.",
+      "method": "Direct reference-taxon counts; no ontology-child totals or composite-taxon arithmetic.",
       "mappings": {
         "GPT": [
           {
             "id": "Eukaryote"
           }
+        ],
+        "Wikipedia": [
+          {
+            "id": "Category:Eukaryotes",
+            "interpretation": "Associated reference-taxon count, not Wikipedia category/article counts."
+          }
         ]
-      },
-      "queries": {
-        "total": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=CS5HF&rank=species&status=accepted&limit=0",
-        "extinct": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=CS5HF&rank=species&status=accepted&limit=0&extinct=true",
-        "extant": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=CS5HF&rank=species&status=accepted&limit=0&extinct=false"
       }
     },
     "Moss": {
       "taxon": "Bryophyta",
-      "total": 12031,
-      "extinct": 298,
-      "extant": 11733,
+      "total": null,
+      "extinct": 110,
+      "extant": 11954,
+      "references": {
+        "extant": {
+          "count": 11954,
+          "source": "col",
+          "taxon": "Bryophyta",
+          "url": "https://api.checklistbank.org/dataset/316321/taxon/BJ5TM/metrics",
+          "method": "Publisher-supplied speciesExtantCount from the reference-taxon metrics. Includes the release’s accepted and provisionally accepted species; does not rely on extinct=false annotations."
+        },
+        "extinct": {
+          "count": 110,
+          "source": "pbdb",
+          "taxon": "Bryophyta",
+          "url": "https://paleobiodb.org/data1.2/taxa/list.json?base_name=Bryophyta&rel=all_children&rank=species&extant=no&taxon_status=accepted&pres=regular&limit=1&rowcount=yes",
+          "method": "records_found: accepted species below the reference taxon, extant=no, pres=regular. Junior synonyms, ichnotaxa and form taxa excluded. A catalogue count, not an estimate of all species that ever existed."
+        }
+      },
       "sources": [
-        "col"
+        "col",
+        "pbdb"
       ],
-      "scope": "Accepted catalogued species, including fossil and recently extinct species where covered. Coverage is incomplete; missing extinction flags are unknown, not extant.",
-      "method": "Accepted species below COL taxon BJ5TM; extinction status queried separately.",
+      "scope": "Independent source snapshots; source coverage, dates and species concepts differ. Counts do not roll up in the ontology.",
+      "method": "Direct reference-taxon counts; no ontology-child totals or composite-taxon arithmetic.",
       "mappings": {
         "GPT": [
           {
             "id": "Moss"
           }
+        ],
+        ".": [
+          {
+            "id": "Moss"
+          }
+        ],
+        "SUMO": [
+          {
+            "id": "Moss"
+          }
         ]
-      },
-      "queries": {
-        "total": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=BJ5TM&rank=species&status=accepted&limit=0",
-        "extinct": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=BJ5TM&rank=species&status=accepted&limit=0&extinct=true",
-        "extant": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=BJ5TM&rank=species&status=accepted&limit=0&extinct=false"
       }
     },
     "VascularPlant": {
       "taxon": "Tracheophyta",
-      "total": 368650,
-      "extinct": 387,
-      "extant": 2345,
+      "total": null,
+      "extinct": 9980,
+      "extant": 369513,
+      "references": {
+        "extant": {
+          "count": 369513,
+          "source": "col",
+          "taxon": "Tracheophyta",
+          "url": "https://api.checklistbank.org/dataset/316321/taxon/TP/metrics",
+          "method": "Publisher-supplied speciesExtantCount from the reference-taxon metrics. Includes the release’s accepted and provisionally accepted species; does not rely on extinct=false annotations."
+        },
+        "extinct": {
+          "count": 9980,
+          "source": "pbdb",
+          "taxon": "Tracheophyta",
+          "url": "https://paleobiodb.org/data1.2/taxa/list.json?base_name=Tracheophyta&rel=all_children&rank=species&extant=no&taxon_status=accepted&pres=regular&limit=1&rowcount=yes",
+          "method": "records_found: accepted species below the reference taxon, extant=no, pres=regular. Junior synonyms, ichnotaxa and form taxa excluded. A catalogue count, not an estimate of all species that ever existed."
+        }
+      },
       "sources": [
-        "col"
+        "col",
+        "pbdb"
       ],
-      "scope": "Accepted catalogued species, including fossil and recently extinct species where covered. Coverage is incomplete; missing extinction flags are unknown, not extant.",
-      "method": "Accepted species below COL taxon TP; extinction status queried separately.",
+      "scope": "Independent source snapshots; source coverage, dates and species concepts differ. Counts do not roll up in the ontology.",
+      "method": "Direct reference-taxon counts; no ontology-child totals or composite-taxon arithmetic.",
       "mappings": {
         "GPT": [
           {
             "id": "VascularPlant"
           }
         ]
-      },
-      "queries": {
-        "total": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=TP&rank=species&status=accepted&limit=0",
-        "extinct": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=TP&rank=species&status=accepted&limit=0&extinct=true",
-        "extant": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=TP&rank=species&status=accepted&limit=0&extinct=false"
       }
     },
     "Fern": {
       "taxon": "Polypodiopsida",
-      "total": 12457,
-      "extinct": 0,
-      "extant": 0,
+      "total": null,
+      "extinct": 982,
+      "extant": 12523,
+      "references": {
+        "extant": {
+          "count": 12523,
+          "source": "col",
+          "taxon": "Polypodiopsida",
+          "url": "https://api.checklistbank.org/dataset/316321/taxon/GV/metrics",
+          "method": "Publisher-supplied speciesExtantCount from the reference-taxon metrics. Includes the release’s accepted and provisionally accepted species; does not rely on extinct=false annotations."
+        },
+        "extinct": {
+          "count": 982,
+          "source": "pbdb",
+          "taxon": "Polypodiopsida",
+          "url": "https://paleobiodb.org/data1.2/taxa/list.json?base_name=Polypodiopsida&rel=all_children&rank=species&extant=no&taxon_status=accepted&pres=regular&limit=1&rowcount=yes",
+          "method": "records_found: accepted species below the reference taxon, extant=no, pres=regular. Junior synonyms, ichnotaxa and form taxa excluded. A catalogue count, not an estimate of all species that ever existed."
+        }
+      },
       "sources": [
-        "col"
+        "col",
+        "pbdb"
       ],
-      "scope": "Accepted catalogued species, including fossil and recently extinct species where covered. Coverage is incomplete; missing extinction flags are unknown, not extant.",
-      "method": "Accepted species below COL taxon GV; extinction status queried separately.",
+      "scope": "Independent source snapshots; source coverage, dates and species concepts differ. Counts do not roll up in the ontology.",
+      "method": "Direct reference-taxon counts; no ontology-child totals or composite-taxon arithmetic.",
       "mappings": {
         "GPT": [
           {
             "id": "Fern"
           }
+        ],
+        ".": [
+          {
+            "id": "Fern"
+          },
+          {
+            "id": "NonFloweringPlant",
+            "interpretation": "Polypodiopsida proxy for the spore-bearing non-flowering branch; other non-flowering groups excluded."
+          }
+        ],
+        "SUMO": [
+          {
+            "id": "Fern"
+          },
+          {
+            "id": "NonFloweringPlant",
+            "interpretation": "Polypodiopsida proxy for the spore-bearing non-flowering branch; other non-flowering groups excluded."
+          }
         ]
-      },
-      "queries": {
-        "total": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=GV&rank=species&status=accepted&limit=0",
-        "extinct": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=GV&rank=species&status=accepted&limit=0&extinct=true",
-        "extant": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=GV&rank=species&status=accepted&limit=0&extinct=false"
       }
     },
     "Lycophyte": {
       "taxon": "Lycopodiopsida",
-      "total": 1503,
-      "extinct": 0,
-      "extant": 0,
+      "total": null,
+      "extinct": 161,
+      "extant": 1518,
+      "references": {
+        "extant": {
+          "count": 1518,
+          "source": "col",
+          "taxon": "Lycopodiopsida",
+          "url": "https://api.checklistbank.org/dataset/316321/taxon/LYC/metrics",
+          "method": "Publisher-supplied speciesExtantCount from the reference-taxon metrics. Includes the release’s accepted and provisionally accepted species; does not rely on extinct=false annotations."
+        },
+        "extinct": {
+          "count": 161,
+          "source": "pbdb",
+          "taxon": "Lycopodiopsida",
+          "url": "https://paleobiodb.org/data1.2/taxa/list.json?base_name=Lycopodiopsida&rel=all_children&rank=species&extant=no&taxon_status=accepted&pres=regular&limit=1&rowcount=yes",
+          "method": "records_found: accepted species below the reference taxon, extant=no, pres=regular. Junior synonyms, ichnotaxa and form taxa excluded. A catalogue count, not an estimate of all species that ever existed."
+        }
+      },
       "sources": [
-        "col"
+        "col",
+        "pbdb"
       ],
-      "scope": "Accepted catalogued species, including fossil and recently extinct species where covered. Coverage is incomplete; missing extinction flags are unknown, not extant.",
-      "method": "Accepted species below COL taxon LYC; extinction status queried separately.",
+      "scope": "Independent source snapshots; source coverage, dates and species concepts differ. Counts do not roll up in the ontology.",
+      "method": "Direct reference-taxon counts; no ontology-child totals or composite-taxon arithmetic.",
       "mappings": {
         "GPT": [
           {
             "id": "Lycophyte"
           }
         ]
-      },
-      "queries": {
-        "total": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=LYC&rank=species&status=accepted&limit=0",
-        "extinct": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=LYC&rank=species&status=accepted&limit=0&extinct=true",
-        "extant": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=LYC&rank=species&status=accepted&limit=0&extinct=false"
       }
     },
     "Fungus": {
       "taxon": "Fungi",
-      "total": 157044,
-      "extinct": 153,
-      "extant": 156891,
+      "total": null,
+      "extinct": 249,
+      "extant": 156938,
+      "references": {
+        "extant": {
+          "count": 156938,
+          "source": "col",
+          "taxon": "Fungi",
+          "url": "https://api.checklistbank.org/dataset/316321/taxon/F/metrics",
+          "method": "Publisher-supplied speciesExtantCount from the reference-taxon metrics. Includes the release’s accepted and provisionally accepted species; does not rely on extinct=false annotations."
+        },
+        "extinct": {
+          "count": 249,
+          "source": "pbdb",
+          "taxon": "Fungi",
+          "url": "https://paleobiodb.org/data1.2/taxa/list.json?base_name=Fungi&rel=all_children&rank=species&extant=no&taxon_status=accepted&pres=regular&limit=1&rowcount=yes",
+          "method": "records_found: accepted species below the reference taxon, extant=no, pres=regular. Junior synonyms, ichnotaxa and form taxa excluded. A catalogue count, not an estimate of all species that ever existed."
+        }
+      },
       "sources": [
-        "col"
+        "col",
+        "pbdb"
       ],
-      "scope": "Accepted catalogued species, including fossil and recently extinct species where covered. Coverage is incomplete; missing extinction flags are unknown, not extant.",
-      "method": "Accepted species below COL taxon F; extinction status queried separately.",
+      "scope": "Independent source snapshots; source coverage, dates and species concepts differ. Counts do not roll up in the ontology.",
+      "method": "Direct reference-taxon counts; no ontology-child totals or composite-taxon arithmetic.",
       "mappings": {
         "GPT": [
           {
             "id": "Fungus"
           }
+        ],
+        ".": [
+          {
+            "id": "Fungus",
+            "interpretation": "Modern Fungi reference; the older definition also mentions slime molds, which are outside this count."
+          }
+        ],
+        "SUMO": [
+          {
+            "id": "Fungus",
+            "interpretation": "Modern Fungi reference; the older definition also mentions slime molds, which are outside this count."
+          }
         ]
-      },
-      "queries": {
-        "total": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=F&rank=species&status=accepted&limit=0",
-        "extinct": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=F&rank=species&status=accepted&limit=0&extinct=true",
-        "extant": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=F&rank=species&status=accepted&limit=0&extinct=false"
       }
     },
     "Animal": {
       "taxon": "Animalia",
-      "total": 1534287,
-      "extinct": 129067,
-      "extant": 689062,
+      "total": null,
+      "extinct": 169100,
+      "extant": 1483995,
+      "references": {
+        "extant": {
+          "count": 1483995,
+          "source": "col",
+          "taxon": "Animalia",
+          "url": "https://api.checklistbank.org/dataset/316321/taxon/N/metrics",
+          "method": "Publisher-supplied speciesExtantCount from the reference-taxon metrics. Includes the release’s accepted and provisionally accepted species; does not rely on extinct=false annotations."
+        },
+        "extinct": {
+          "count": 169100,
+          "source": "pbdb",
+          "taxon": "Animalia",
+          "url": "https://paleobiodb.org/data1.2/taxa/list.json?base_name=Animalia&rel=all_children&rank=species&extant=no&taxon_status=accepted&pres=regular&limit=1&rowcount=yes",
+          "method": "records_found: accepted species below the reference taxon, extant=no, pres=regular. Junior synonyms, ichnotaxa and form taxa excluded. A catalogue count, not an estimate of all species that ever existed."
+        }
+      },
       "sources": [
-        "col"
+        "col",
+        "pbdb"
       ],
-      "scope": "Accepted catalogued species, including fossil and recently extinct species where covered. Coverage is incomplete; missing extinction flags are unknown, not extant.",
-      "method": "Accepted species below COL taxon N; extinction status queried separately.",
+      "scope": "Independent source snapshots; source coverage, dates and species concepts differ. Counts do not roll up in the ontology.",
+      "method": "Direct reference-taxon counts; no ontology-child totals or composite-taxon arithmetic.",
       "mappings": {
         "GPT": [
           {
@@ -289,253 +482,385 @@
             "interpretation": "Associated taxon Animalia; this thesaurus topic is not a taxonomic subclass node."
           }
         ]
-      },
-      "queries": {
-        "total": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=N&rank=species&status=accepted&limit=0",
-        "extinct": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=N&rank=species&status=accepted&limit=0&extinct=true",
-        "extant": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=N&rank=species&status=accepted&limit=0&extinct=false"
       }
     },
     "Sponge": {
       "taxon": "Porifera",
-      "total": 9930,
-      "extinct": 59,
-      "extant": 7289,
+      "total": null,
+      "extinct": 2861,
+      "extant": 9875,
+      "references": {
+        "extant": {
+          "count": 9875,
+          "source": "col",
+          "taxon": "Porifera",
+          "url": "https://api.checklistbank.org/dataset/316321/taxon/B8TXQ/metrics",
+          "method": "Publisher-supplied speciesExtantCount from the reference-taxon metrics. Includes the release’s accepted and provisionally accepted species; does not rely on extinct=false annotations."
+        },
+        "extinct": {
+          "count": 2861,
+          "source": "pbdb",
+          "taxon": "Porifera",
+          "url": "https://paleobiodb.org/data1.2/taxa/list.json?base_name=Porifera&rel=all_children&rank=species&extant=no&taxon_status=accepted&pres=regular&limit=1&rowcount=yes",
+          "method": "records_found: accepted species below the reference taxon, extant=no, pres=regular. Junior synonyms, ichnotaxa and form taxa excluded. A catalogue count, not an estimate of all species that ever existed."
+        }
+      },
       "sources": [
-        "col"
+        "col",
+        "pbdb"
       ],
-      "scope": "Accepted catalogued species, including fossil and recently extinct species where covered. Coverage is incomplete; missing extinction flags are unknown, not extant.",
-      "method": "Accepted species below COL taxon B8TXQ; extinction status queried separately.",
+      "scope": "Independent source snapshots; source coverage, dates and species concepts differ. Counts do not roll up in the ontology.",
+      "method": "Direct reference-taxon counts; no ontology-child totals or composite-taxon arithmetic.",
       "mappings": {
         "GPT": [
           {
             "id": "Sponge"
           }
         ]
-      },
-      "queries": {
-        "total": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=B8TXQ&rank=species&status=accepted&limit=0",
-        "extinct": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=B8TXQ&rank=species&status=accepted&limit=0&extinct=true",
-        "extant": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=B8TXQ&rank=species&status=accepted&limit=0&extinct=false"
       }
     },
     "Cnidarian": {
       "taxon": "Cnidaria",
-      "total": 20625,
-      "extinct": 6051,
-      "extant": 3314,
+      "total": null,
+      "extinct": 7058,
+      "extant": 14594,
+      "references": {
+        "extant": {
+          "count": 14594,
+          "source": "col",
+          "taxon": "Cnidaria",
+          "url": "https://api.checklistbank.org/dataset/316321/taxon/CN2/metrics",
+          "method": "Publisher-supplied speciesExtantCount from the reference-taxon metrics. Includes the release’s accepted and provisionally accepted species; does not rely on extinct=false annotations."
+        },
+        "extinct": {
+          "count": 7058,
+          "source": "pbdb",
+          "taxon": "Cnidaria",
+          "url": "https://paleobiodb.org/data1.2/taxa/list.json?base_name=Cnidaria&rel=all_children&rank=species&extant=no&taxon_status=accepted&pres=regular&limit=1&rowcount=yes",
+          "method": "records_found: accepted species below the reference taxon, extant=no, pres=regular. Junior synonyms, ichnotaxa and form taxa excluded. A catalogue count, not an estimate of all species that ever existed."
+        }
+      },
       "sources": [
-        "col"
+        "col",
+        "pbdb"
       ],
-      "scope": "Accepted catalogued species, including fossil and recently extinct species where covered. Coverage is incomplete; missing extinction flags are unknown, not extant.",
-      "method": "Accepted species below COL taxon CN2; extinction status queried separately.",
+      "scope": "Independent source snapshots; source coverage, dates and species concepts differ. Counts do not roll up in the ontology.",
+      "method": "Direct reference-taxon counts; no ontology-child totals or composite-taxon arithmetic.",
       "mappings": {
         "GPT": [
           {
             "id": "Cnidarian"
           }
         ]
-      },
-      "queries": {
-        "total": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=CN2&rank=species&status=accepted&limit=0",
-        "extinct": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=CN2&rank=species&status=accepted&limit=0&extinct=true",
-        "extant": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=CN2&rank=species&status=accepted&limit=0&extinct=false"
       }
     },
     "Arthropod": {
       "taxon": "Arthropoda",
-      "total": 1155626,
-      "extinct": 31153,
-      "extant": 607820,
+      "total": null,
+      "extinct": 48400,
+      "extant": 1202736,
+      "references": {
+        "extant": {
+          "count": 1202736,
+          "source": "col",
+          "taxon": "Arthropoda",
+          "url": "https://api.checklistbank.org/dataset/316321/taxon/RT/metrics",
+          "method": "Publisher-supplied speciesExtantCount from the reference-taxon metrics. Includes the release’s accepted and provisionally accepted species; does not rely on extinct=false annotations."
+        },
+        "extinct": {
+          "count": 48400,
+          "source": "pbdb",
+          "taxon": "Arthropoda",
+          "url": "https://paleobiodb.org/data1.2/taxa/list.json?base_name=Arthropoda&rel=all_children&rank=species&extant=no&taxon_status=accepted&pres=regular&limit=1&rowcount=yes",
+          "method": "records_found: accepted species below the reference taxon, extant=no, pres=regular. Junior synonyms, ichnotaxa and form taxa excluded. A catalogue count, not an estimate of all species that ever existed."
+        }
+      },
       "sources": [
-        "col"
+        "col",
+        "pbdb"
       ],
-      "scope": "Accepted catalogued species, including fossil and recently extinct species where covered. Coverage is incomplete; missing extinction flags are unknown, not extant.",
-      "method": "Accepted species below COL taxon RT; extinction status queried separately.",
+      "scope": "Independent source snapshots; source coverage, dates and species concepts differ. Counts do not roll up in the ontology.",
+      "method": "Direct reference-taxon counts; no ontology-child totals or composite-taxon arithmetic.",
       "mappings": {
         "GPT": [
           {
             "id": "Arthropod"
           }
         ]
-      },
-      "queries": {
-        "total": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=RT&rank=species&status=accepted&limit=0",
-        "extinct": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=RT&rank=species&status=accepted&limit=0&extinct=true",
-        "extant": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=RT&rank=species&status=accepted&limit=0&extinct=false"
       }
     },
     "Insect": {
       "taxon": "Insecta",
-      "total": 943497,
-      "extinct": 13821,
-      "extant": 529195,
+      "total": null,
+      "extinct": 28969,
+      "extant": 1006953,
+      "references": {
+        "extant": {
+          "count": 1006953,
+          "source": "col",
+          "taxon": "Insecta",
+          "url": "https://api.checklistbank.org/dataset/316321/taxon/H6/metrics",
+          "method": "Publisher-supplied speciesExtantCount from the reference-taxon metrics. Includes the release’s accepted and provisionally accepted species; does not rely on extinct=false annotations."
+        },
+        "extinct": {
+          "count": 28969,
+          "source": "pbdb",
+          "taxon": "Insecta",
+          "url": "https://paleobiodb.org/data1.2/taxa/list.json?base_name=Insecta&rel=all_children&rank=species&extant=no&taxon_status=accepted&pres=regular&limit=1&rowcount=yes",
+          "method": "records_found: accepted species below the reference taxon, extant=no, pres=regular. Junior synonyms, ichnotaxa and form taxa excluded. A catalogue count, not an estimate of all species that ever existed."
+        }
+      },
       "sources": [
-        "col"
+        "col",
+        "pbdb"
       ],
-      "scope": "Accepted catalogued species, including fossil and recently extinct species where covered. Coverage is incomplete; missing extinction flags are unknown, not extant.",
-      "method": "Accepted species below COL taxon H6; extinction status queried separately.",
+      "scope": "Independent source snapshots; source coverage, dates and species concepts differ. Counts do not roll up in the ontology.",
+      "method": "Direct reference-taxon counts; no ontology-child totals or composite-taxon arithmetic.",
       "mappings": {
         "GPT": [
           {
             "id": "Insect"
           }
         ]
-      },
-      "queries": {
-        "total": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=H6&rank=species&status=accepted&limit=0",
-        "extinct": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=H6&rank=species&status=accepted&limit=0&extinct=true",
-        "extant": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=H6&rank=species&status=accepted&limit=0&extinct=false"
       }
     },
     "Arachnid": {
       "taxon": "Arachnida",
-      "total": 98104,
-      "extinct": 146,
-      "extant": 34340,
+      "total": null,
+      "extinct": 2138,
+      "extant": 98135,
+      "references": {
+        "extant": {
+          "count": 98135,
+          "source": "col",
+          "taxon": "Arachnida",
+          "url": "https://api.checklistbank.org/dataset/316321/taxon/CCQKT/metrics",
+          "method": "Publisher-supplied speciesExtantCount from the reference-taxon metrics. Includes the release’s accepted and provisionally accepted species; does not rely on extinct=false annotations."
+        },
+        "extinct": {
+          "count": 2138,
+          "source": "pbdb",
+          "taxon": "Arachnida",
+          "url": "https://paleobiodb.org/data1.2/taxa/list.json?base_name=Arachnida&rel=all_children&rank=species&extant=no&taxon_status=accepted&pres=regular&limit=1&rowcount=yes",
+          "method": "records_found: accepted species below the reference taxon, extant=no, pres=regular. Junior synonyms, ichnotaxa and form taxa excluded. A catalogue count, not an estimate of all species that ever existed."
+        }
+      },
       "sources": [
-        "col"
+        "col",
+        "pbdb"
       ],
-      "scope": "Accepted catalogued species, including fossil and recently extinct species where covered. Coverage is incomplete; missing extinction flags are unknown, not extant.",
-      "method": "Accepted species below COL taxon CCQKT; extinction status queried separately.",
+      "scope": "Independent source snapshots; source coverage, dates and species concepts differ. Counts do not roll up in the ontology.",
+      "method": "Direct reference-taxon counts; no ontology-child totals or composite-taxon arithmetic.",
       "mappings": {
         "GPT": [
           {
             "id": "Arachnid"
           }
         ]
-      },
-      "queries": {
-        "total": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=CCQKT&rank=species&status=accepted&limit=0",
-        "extinct": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=CCQKT&rank=species&status=accepted&limit=0&extinct=true",
-        "extant": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=CCQKT&rank=species&status=accepted&limit=0&extinct=false"
       }
     },
     "Mollusc": {
       "taxon": "Mollusca",
-      "total": 155263,
-      "extinct": 65861,
-      "extant": 13339,
+      "total": null,
+      "extinct": 51543,
+      "extant": 89578,
+      "references": {
+        "extant": {
+          "count": 89578,
+          "source": "col",
+          "taxon": "Mollusca",
+          "url": "https://api.checklistbank.org/dataset/316321/taxon/M2L/metrics",
+          "method": "Publisher-supplied speciesExtantCount from the reference-taxon metrics. Includes the release’s accepted and provisionally accepted species; does not rely on extinct=false annotations."
+        },
+        "extinct": {
+          "count": 51543,
+          "source": "pbdb",
+          "taxon": "Mollusca",
+          "url": "https://paleobiodb.org/data1.2/taxa/list.json?base_name=Mollusca&rel=all_children&rank=species&extant=no&taxon_status=accepted&pres=regular&limit=1&rowcount=yes",
+          "method": "records_found: accepted species below the reference taxon, extant=no, pres=regular. Junior synonyms, ichnotaxa and form taxa excluded. A catalogue count, not an estimate of all species that ever existed."
+        }
+      },
       "sources": [
-        "col"
+        "col",
+        "pbdb"
       ],
-      "scope": "Accepted catalogued species, including fossil and recently extinct species where covered. Coverage is incomplete; missing extinction flags are unknown, not extant.",
-      "method": "Accepted species below COL taxon M2L; extinction status queried separately.",
+      "scope": "Independent source snapshots; source coverage, dates and species concepts differ. Counts do not roll up in the ontology.",
+      "method": "Direct reference-taxon counts; no ontology-child totals or composite-taxon arithmetic.",
       "mappings": {
         "GPT": [
           {
             "id": "Mollusc"
           }
         ]
-      },
-      "queries": {
-        "total": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=M2L&rank=species&status=accepted&limit=0",
-        "extinct": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=M2L&rank=species&status=accepted&limit=0&extinct=true",
-        "extant": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=M2L&rank=species&status=accepted&limit=0&extinct=false"
       }
     },
     "Annelid": {
       "taxon": "Annelida",
-      "total": 19038,
-      "extinct": 1528,
-      "extant": 14946,
+      "total": null,
+      "extinct": 120,
+      "extant": 17564,
+      "references": {
+        "extant": {
+          "count": 17564,
+          "source": "col",
+          "taxon": "Annelida",
+          "url": "https://api.checklistbank.org/dataset/316321/taxon/NN/metrics",
+          "method": "Publisher-supplied speciesExtantCount from the reference-taxon metrics. Includes the release’s accepted and provisionally accepted species; does not rely on extinct=false annotations."
+        },
+        "extinct": {
+          "count": 120,
+          "source": "pbdb",
+          "taxon": "Annelida",
+          "url": "https://paleobiodb.org/data1.2/taxa/list.json?base_name=Annelida&rel=all_children&rank=species&extant=no&taxon_status=accepted&pres=regular&limit=1&rowcount=yes",
+          "method": "records_found: accepted species below the reference taxon, extant=no, pres=regular. Junior synonyms, ichnotaxa and form taxa excluded. A catalogue count, not an estimate of all species that ever existed."
+        }
+      },
       "sources": [
-        "col"
+        "col",
+        "pbdb"
       ],
-      "scope": "Accepted catalogued species, including fossil and recently extinct species where covered. Coverage is incomplete; missing extinction flags are unknown, not extant.",
-      "method": "Accepted species below COL taxon NN; extinction status queried separately.",
+      "scope": "Independent source snapshots; source coverage, dates and species concepts differ. Counts do not roll up in the ontology.",
+      "method": "Direct reference-taxon counts; no ontology-child totals or composite-taxon arithmetic.",
       "mappings": {
         "GPT": [
           {
             "id": "Annelid"
           }
         ]
-      },
-      "queries": {
-        "total": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=NN&rank=species&status=accepted&limit=0",
-        "extinct": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=NN&rank=species&status=accepted&limit=0&extinct=true",
-        "extant": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=NN&rank=species&status=accepted&limit=0&extinct=false"
       }
     },
     "Nematode": {
       "taxon": "Nematoda",
-      "total": 19628,
-      "extinct": 30,
-      "extant": 4781,
+      "total": null,
+      "extinct": 110,
+      "extant": 19611,
+      "references": {
+        "extant": {
+          "count": 19611,
+          "source": "col",
+          "taxon": "Nematoda",
+          "url": "https://api.checklistbank.org/dataset/316321/taxon/NM/metrics",
+          "method": "Publisher-supplied speciesExtantCount from the reference-taxon metrics. Includes the release’s accepted and provisionally accepted species; does not rely on extinct=false annotations."
+        },
+        "extinct": {
+          "count": 110,
+          "source": "pbdb",
+          "taxon": "Nematoda",
+          "url": "https://paleobiodb.org/data1.2/taxa/list.json?base_name=Nematoda&rel=all_children&rank=species&extant=no&taxon_status=accepted&pres=regular&limit=1&rowcount=yes",
+          "method": "records_found: accepted species below the reference taxon, extant=no, pres=regular. Junior synonyms, ichnotaxa and form taxa excluded. A catalogue count, not an estimate of all species that ever existed."
+        }
+      },
       "sources": [
-        "col"
+        "col",
+        "pbdb"
       ],
-      "scope": "Accepted catalogued species, including fossil and recently extinct species where covered. Coverage is incomplete; missing extinction flags are unknown, not extant.",
-      "method": "Accepted species below COL taxon NM; extinction status queried separately.",
+      "scope": "Independent source snapshots; source coverage, dates and species concepts differ. Counts do not roll up in the ontology.",
+      "method": "Direct reference-taxon counts; no ontology-child totals or composite-taxon arithmetic.",
       "mappings": {
         "GPT": [
           {
             "id": "Nematode"
           }
         ]
-      },
-      "queries": {
-        "total": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=NM&rank=species&status=accepted&limit=0",
-        "extinct": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=NM&rank=species&status=accepted&limit=0&extinct=true",
-        "extant": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=NM&rank=species&status=accepted&limit=0&extinct=false"
       }
     },
     "Echinoderm": {
       "taxon": "Echinodermata",
-      "total": 11890,
-      "extinct": 4160,
-      "extant": 3163,
+      "total": null,
+      "extinct": 5374,
+      "extant": 7758,
+      "references": {
+        "extant": {
+          "count": 7758,
+          "source": "col",
+          "taxon": "Echinodermata",
+          "url": "https://api.checklistbank.org/dataset/316321/taxon/CHN/metrics",
+          "method": "Publisher-supplied speciesExtantCount from the reference-taxon metrics. Includes the release’s accepted and provisionally accepted species; does not rely on extinct=false annotations."
+        },
+        "extinct": {
+          "count": 5374,
+          "source": "pbdb",
+          "taxon": "Echinodermata",
+          "url": "https://paleobiodb.org/data1.2/taxa/list.json?base_name=Echinodermata&rel=all_children&rank=species&extant=no&taxon_status=accepted&pres=regular&limit=1&rowcount=yes",
+          "method": "records_found: accepted species below the reference taxon, extant=no, pres=regular. Junior synonyms, ichnotaxa and form taxa excluded. A catalogue count, not an estimate of all species that ever existed."
+        }
+      },
       "sources": [
-        "col"
+        "col",
+        "pbdb"
       ],
-      "scope": "Accepted catalogued species, including fossil and recently extinct species where covered. Coverage is incomplete; missing extinction flags are unknown, not extant.",
-      "method": "Accepted species below COL taxon CHN; extinction status queried separately.",
+      "scope": "Independent source snapshots; source coverage, dates and species concepts differ. Counts do not roll up in the ontology.",
+      "method": "Direct reference-taxon counts; no ontology-child totals or composite-taxon arithmetic.",
       "mappings": {
         "GPT": [
           {
             "id": "Echinoderm"
           }
         ]
-      },
-      "queries": {
-        "total": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=CHN&rank=species&status=accepted&limit=0",
-        "extinct": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=CHN&rank=species&status=accepted&limit=0&extinct=true",
-        "extant": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=CHN&rank=species&status=accepted&limit=0&extinct=false"
       }
     },
     "Chordate": {
       "taxon": "Chordata",
-      "total": 79748,
-      "extinct": 570,
-      "extant": 26294,
+      "total": null,
+      "extinct": 35097,
+      "extant": 79200,
+      "references": {
+        "extant": {
+          "count": 79200,
+          "source": "col",
+          "taxon": "Chordata",
+          "url": "https://api.checklistbank.org/dataset/316321/taxon/CH2/metrics",
+          "method": "Publisher-supplied speciesExtantCount from the reference-taxon metrics. Includes the release’s accepted and provisionally accepted species; does not rely on extinct=false annotations."
+        },
+        "extinct": {
+          "count": 35097,
+          "source": "pbdb",
+          "taxon": "Chordata",
+          "url": "https://paleobiodb.org/data1.2/taxa/list.json?base_name=Chordata&rel=all_children&rank=species&extant=no&taxon_status=accepted&pres=regular&limit=1&rowcount=yes",
+          "method": "records_found: accepted species below the reference taxon, extant=no, pres=regular. Junior synonyms, ichnotaxa and form taxa excluded. A catalogue count, not an estimate of all species that ever existed."
+        }
+      },
       "sources": [
-        "col"
+        "col",
+        "pbdb"
       ],
-      "scope": "Accepted catalogued species, including fossil and recently extinct species where covered. Coverage is incomplete; missing extinction flags are unknown, not extant.",
-      "method": "Accepted species below COL taxon CH2; extinction status queried separately.",
+      "scope": "Independent source snapshots; source coverage, dates and species concepts differ. Counts do not roll up in the ontology.",
+      "method": "Direct reference-taxon counts; no ontology-child totals or composite-taxon arithmetic.",
       "mappings": {
         "GPT": [
           {
             "id": "Chordate"
           }
         ]
-      },
-      "queries": {
-        "total": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=CH2&rank=species&status=accepted&limit=0",
-        "extinct": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=CH2&rank=species&status=accepted&limit=0&extinct=true",
-        "extant": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=CH2&rank=species&status=accepted&limit=0&extinct=false"
       }
     },
     "Vertebrate": {
       "taxon": "Vertebrata",
-      "total": 76572,
-      "extinct": 570,
-      "extant": 26240,
+      "total": null,
+      "extinct": 34286,
+      "extant": 76024,
+      "references": {
+        "extant": {
+          "count": 76024,
+          "source": "col",
+          "taxon": "Vertebrata",
+          "url": "https://api.checklistbank.org/dataset/316321/taxon/8V4V3/metrics",
+          "method": "Publisher-supplied speciesExtantCount from the reference-taxon metrics. Includes the release’s accepted and provisionally accepted species; does not rely on extinct=false annotations."
+        },
+        "extinct": {
+          "count": 34286,
+          "source": "pbdb",
+          "taxon": "Vertebrata",
+          "url": "https://paleobiodb.org/data1.2/taxa/list.json?base_name=Vertebrata&rel=all_children&rank=species&extant=no&taxon_status=accepted&pres=regular&limit=1&rowcount=yes",
+          "method": "records_found: accepted species below the reference taxon, extant=no, pres=regular. Junior synonyms, ichnotaxa and form taxa excluded. A catalogue count, not an estimate of all species that ever existed."
+        }
+      },
       "sources": [
-        "col"
+        "col",
+        "pbdb"
       ],
-      "scope": "Accepted catalogued species, including fossil and recently extinct species where covered. Coverage is incomplete; missing extinction flags are unknown, not extant.",
-      "method": "Accepted species below COL taxon 8V4V3; extinction status queried separately.",
+      "scope": "Independent source snapshots; source coverage, dates and species concepts differ. Counts do not roll up in the ontology.",
+      "method": "Direct reference-taxon counts; no ontology-child totals or composite-taxon arithmetic.",
       "mappings": {
         "GPT": [
           {
@@ -554,214 +879,326 @@
             "interpretation": ""
           }
         ]
-      },
-      "queries": {
-        "total": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=8V4V3&rank=species&status=accepted&limit=0",
-        "extinct": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=8V4V3&rank=species&status=accepted&limit=0&extinct=true",
-        "extant": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=8V4V3&rank=species&status=accepted&limit=0&extinct=false"
       }
     },
     "JawedVertebrate": {
       "taxon": "Gnathostomata",
-      "total": 76430,
-      "extinct": 570,
-      "extant": 26240,
+      "total": null,
+      "extinct": 33516,
+      "extant": 75882,
+      "references": {
+        "extant": {
+          "count": 75882,
+          "source": "col",
+          "taxon": "Gnathostomata",
+          "url": "https://api.checklistbank.org/dataset/316321/taxon/8V4V5/metrics",
+          "method": "Publisher-supplied speciesExtantCount from the reference-taxon metrics. Includes the release’s accepted and provisionally accepted species; does not rely on extinct=false annotations."
+        },
+        "extinct": {
+          "count": 33516,
+          "source": "pbdb",
+          "taxon": "Gnathostomata",
+          "url": "https://paleobiodb.org/data1.2/taxa/list.json?base_name=Gnathostomata&rel=all_children&rank=species&extant=no&taxon_status=accepted&pres=regular&limit=1&rowcount=yes",
+          "method": "records_found: accepted species below the reference taxon, extant=no, pres=regular. Junior synonyms, ichnotaxa and form taxa excluded. A catalogue count, not an estimate of all species that ever existed."
+        }
+      },
       "sources": [
-        "col"
+        "col",
+        "pbdb"
       ],
-      "scope": "Accepted catalogued species, including fossil and recently extinct species where covered. Coverage is incomplete; missing extinction flags are unknown, not extant.",
-      "method": "Accepted species below COL taxon 8V4V5; extinction status queried separately.",
+      "scope": "Independent source snapshots; source coverage, dates and species concepts differ. Counts do not roll up in the ontology.",
+      "method": "Direct reference-taxon counts; no ontology-child totals or composite-taxon arithmetic.",
       "mappings": {
         "GPT": [
           {
             "id": "JawedVertebrate"
           }
         ]
-      },
-      "queries": {
-        "total": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=8V4V5&rank=species&status=accepted&limit=0",
-        "extinct": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=8V4V5&rank=species&status=accepted&limit=0&extinct=true",
-        "extant": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=8V4V5&rank=species&status=accepted&limit=0&extinct=false"
       }
     },
     "CartilaginousFish": {
       "taxon": "Chondrichthyes",
-      "total": 1354,
-      "extinct": 0,
-      "extant": 9,
+      "total": null,
+      "extinct": 2950,
+      "extant": 1355,
+      "references": {
+        "extant": {
+          "count": 1355,
+          "source": "col",
+          "taxon": "Chondrichthyes",
+          "url": "https://api.checklistbank.org/dataset/316321/taxon/8X6G5/metrics",
+          "method": "Publisher-supplied speciesExtantCount from the reference-taxon metrics. Includes the release’s accepted and provisionally accepted species; does not rely on extinct=false annotations."
+        },
+        "extinct": {
+          "count": 2950,
+          "source": "pbdb",
+          "taxon": "Chondrichthyes",
+          "url": "https://paleobiodb.org/data1.2/taxa/list.json?base_name=Chondrichthyes&rel=all_children&rank=species&extant=no&taxon_status=accepted&pres=regular&limit=1&rowcount=yes",
+          "method": "records_found: accepted species below the reference taxon, extant=no, pres=regular. Junior synonyms, ichnotaxa and form taxa excluded. A catalogue count, not an estimate of all species that ever existed."
+        }
+      },
       "sources": [
-        "col"
+        "col",
+        "pbdb"
       ],
-      "scope": "Accepted catalogued species, including fossil and recently extinct species where covered. Coverage is incomplete; missing extinction flags are unknown, not extant.",
-      "method": "Accepted species below COL taxon 8X6G5; extinction status queried separately.",
+      "scope": "Independent source snapshots; source coverage, dates and species concepts differ. Counts do not roll up in the ontology.",
+      "method": "Direct reference-taxon counts; no ontology-child totals or composite-taxon arithmetic.",
       "mappings": {
         "GPT": [
           {
             "id": "CartilaginousFish"
           }
         ]
-      },
-      "queries": {
-        "total": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=8X6G5&rank=species&status=accepted&limit=0",
-        "extinct": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=8X6G5&rank=species&status=accepted&limit=0&extinct=true",
-        "extant": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=8X6G5&rank=species&status=accepted&limit=0&extinct=false"
       }
     },
     "BonyVertebrate": {
       "taxon": "Osteichthyes",
-      "total": 75076,
-      "extinct": 570,
-      "extant": 26231,
+      "total": null,
+      "extinct": 29589,
+      "extant": 74527,
+      "references": {
+        "extant": {
+          "count": 74527,
+          "source": "col",
+          "taxon": "Osteichthyes",
+          "url": "https://api.checklistbank.org/dataset/316321/taxon/8VVWB/metrics",
+          "method": "Publisher-supplied speciesExtantCount from the reference-taxon metrics. Includes the release’s accepted and provisionally accepted species; does not rely on extinct=false annotations."
+        },
+        "extinct": {
+          "count": 29589,
+          "source": "pbdb",
+          "taxon": "Osteichthyes",
+          "url": "https://paleobiodb.org/data1.2/taxa/list.json?base_name=Osteichthyes&rel=all_children&rank=species&extant=no&taxon_status=accepted&pres=regular&limit=1&rowcount=yes",
+          "method": "records_found: accepted species below the reference taxon, extant=no, pres=regular. Junior synonyms, ichnotaxa and form taxa excluded. A catalogue count, not an estimate of all species that ever existed."
+        }
+      },
       "sources": [
-        "col"
+        "col",
+        "pbdb"
       ],
-      "scope": "Accepted catalogued species, including fossil and recently extinct species where covered. Coverage is incomplete; missing extinction flags are unknown, not extant.",
-      "method": "Accepted species below COL taxon 8VVWB; extinction status queried separately.",
+      "scope": "Independent source snapshots; source coverage, dates and species concepts differ. Counts do not roll up in the ontology.",
+      "method": "Direct reference-taxon counts; no ontology-child totals or composite-taxon arithmetic.",
       "mappings": {
         "GPT": [
           {
             "id": "BonyVertebrate"
           }
         ]
-      },
-      "queries": {
-        "total": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=8VVWB&rank=species&status=accepted&limit=0",
-        "extinct": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=8VVWB&rank=species&status=accepted&limit=0&extinct=true",
-        "extant": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=8VVWB&rank=species&status=accepted&limit=0&extinct=false"
       }
     },
     "RayFinnedFish": {
       "taxon": "Actinopterygii",
-      "total": 35991,
-      "extinct": 288,
-      "extant": 85,
+      "total": null,
+      "extinct": 4721,
+      "extant": 35713,
+      "references": {
+        "extant": {
+          "count": 35713,
+          "source": "col",
+          "taxon": "Actinopterygii",
+          "url": "https://api.checklistbank.org/dataset/316321/taxon/8VR36/metrics",
+          "method": "Publisher-supplied speciesExtantCount from the reference-taxon metrics. Includes the release’s accepted and provisionally accepted species; does not rely on extinct=false annotations."
+        },
+        "extinct": {
+          "count": 4721,
+          "source": "pbdb",
+          "taxon": "Actinopterygii",
+          "url": "https://paleobiodb.org/data1.2/taxa/list.json?base_name=Actinopterygii&rel=all_children&rank=species&extant=no&taxon_status=accepted&pres=regular&limit=1&rowcount=yes",
+          "method": "records_found: accepted species below the reference taxon, extant=no, pres=regular. Junior synonyms, ichnotaxa and form taxa excluded. A catalogue count, not an estimate of all species that ever existed."
+        }
+      },
       "sources": [
-        "col"
+        "col",
+        "pbdb"
       ],
-      "scope": "Accepted catalogued species, including fossil and recently extinct species where covered. Coverage is incomplete; missing extinction flags are unknown, not extant.",
-      "method": "Accepted species below COL taxon 8VR36; extinction status queried separately.",
+      "scope": "Independent source snapshots; source coverage, dates and species concepts differ. Counts do not roll up in the ontology.",
+      "method": "Direct reference-taxon counts; no ontology-child totals or composite-taxon arithmetic.",
       "mappings": {
         "GPT": [
           {
             "id": "RayFinnedFish"
           }
         ]
-      },
-      "queries": {
-        "total": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=8VR36&rank=species&status=accepted&limit=0",
-        "extinct": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=8VR36&rank=species&status=accepted&limit=0&extinct=true",
-        "extant": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=8VR36&rank=species&status=accepted&limit=0&extinct=false"
       }
     },
     "Tetrapod": {
       "taxon": "Tetrapoda",
-      "total": 39077,
-      "extinct": 282,
-      "extant": 26146,
+      "total": null,
+      "extinct": 23693,
+      "extant": 38806,
+      "references": {
+        "extant": {
+          "count": 38806,
+          "source": "col",
+          "taxon": "Tetrapoda",
+          "url": "https://api.checklistbank.org/dataset/316321/taxon/9CK8W/metrics",
+          "method": "Publisher-supplied speciesExtantCount from the reference-taxon metrics. Includes the release’s accepted and provisionally accepted species; does not rely on extinct=false annotations."
+        },
+        "extinct": {
+          "count": 23693,
+          "source": "pbdb",
+          "taxon": "Tetrapoda",
+          "url": "https://paleobiodb.org/data1.2/taxa/list.json?base_name=Tetrapoda&rel=all_children&rank=species&extant=no&taxon_status=accepted&pres=regular&limit=1&rowcount=yes",
+          "method": "records_found: accepted species below the reference taxon, extant=no, pres=regular. Junior synonyms, ichnotaxa and form taxa excluded. A catalogue count, not an estimate of all species that ever existed."
+        }
+      },
       "sources": [
-        "col"
+        "col",
+        "pbdb"
       ],
-      "scope": "Accepted catalogued species, including fossil and recently extinct species where covered. Coverage is incomplete; missing extinction flags are unknown, not extant.",
-      "method": "Accepted species below COL taxon 9CK8W; extinction status queried separately.",
+      "scope": "Independent source snapshots; source coverage, dates and species concepts differ. Counts do not roll up in the ontology.",
+      "method": "Direct reference-taxon counts; no ontology-child totals or composite-taxon arithmetic.",
       "mappings": {
         "GPT": [
           {
             "id": "Tetrapod"
           }
         ]
-      },
-      "queries": {
-        "total": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=9CK8W&rank=species&status=accepted&limit=0",
-        "extinct": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=9CK8W&rank=species&status=accepted&limit=0&extinct=true",
-        "extant": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=9CK8W&rank=species&status=accepted&limit=0&extinct=false"
       }
     },
     "Amphibian": {
       "taxon": "Amphibia",
-      "total": 8923,
-      "extinct": 7,
-      "extant": 8916,
+      "total": null,
+      "extinct": 772,
+      "extant": 9136,
+      "references": {
+        "extant": {
+          "count": 9136,
+          "source": "amphibiaweb",
+          "taxon": "Amphibia",
+          "url": "https://amphibiaweb.org/",
+          "method": "Published live species counter retrieved 2026.10.10, used as a living/non-fossil species proxy; can include recently extinct taxa."
+        },
+        "extinct": {
+          "count": 772,
+          "source": "pbdb",
+          "taxon": "Amphibia",
+          "url": "https://paleobiodb.org/data1.2/taxa/list.json?base_name=Amphibia&rel=all_children&rank=species&extant=no&taxon_status=accepted&pres=regular&limit=1&rowcount=yes",
+          "method": "records_found: accepted species below the reference taxon, extant=no, pres=regular. Junior synonyms, ichnotaxa and form taxa excluded. A catalogue count, not an estimate of all species that ever existed."
+        }
+      },
       "sources": [
         "col",
+        "pbdb",
         "amphibiaweb"
       ],
-      "scope": "Current AmphibiaWeb recognized species total; no extinction breakdown supplied by the headline. COL26.9 statuses are retained only as older comparison data.",
-      "method": "Accepted species below COL taxon PH; extinction status queried separately.",
+      "scope": "Independent source snapshots; source coverage, dates and species concepts differ. Counts do not roll up in the ontology.",
+      "method": "Direct reference-taxon counts; no ontology-child totals or composite-taxon arithmetic.",
       "mappings": {
         "GPT": [
           {
             "id": "Amphibian"
           }
+        ],
+        ".": [
+          {
+            "id": "Amphibian"
+          }
+        ],
+        "SUMO": [
+          {
+            "id": "Amphibian"
+          }
         ]
-      },
-      "queries": {
-        "total": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=PH&rank=species&status=accepted&limit=0",
-        "extinct": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=PH&rank=species&status=accepted&limit=0&extinct=true",
-        "extant": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=PH&rank=species&status=accepted&limit=0&extinct=false"
-      },
-      "display": {
-        "total": 9136,
-        "extinct": null,
-        "extant": null,
-        "note": "Tree uses the current AmphibiaWeb total (2026.10.10). Its headline does not split extinction status; dated COL counts remain here for comparison."
       }
     },
     "Turtle": {
       "taxon": "Testudines",
-      "total": 370,
-      "extinct": 0,
-      "extant": 0,
+      "total": null,
+      "extinct": 1005,
+      "extant": 370,
+      "references": {
+        "extant": {
+          "count": 370,
+          "source": "col",
+          "taxon": "Testudines",
+          "url": "https://api.checklistbank.org/dataset/316321/taxon/477/metrics",
+          "method": "Publisher-supplied speciesExtantCount from the reference-taxon metrics. Includes the release’s accepted and provisionally accepted species; does not rely on extinct=false annotations."
+        },
+        "extinct": {
+          "count": 1005,
+          "source": "pbdb",
+          "taxon": "Testudines",
+          "url": "https://paleobiodb.org/data1.2/taxa/list.json?base_name=Testudines&rel=all_children&rank=species&extant=no&taxon_status=accepted&pres=regular&limit=1&rowcount=yes",
+          "method": "records_found: accepted species below the reference taxon, extant=no, pres=regular. Junior synonyms, ichnotaxa and form taxa excluded. A catalogue count, not an estimate of all species that ever existed."
+        }
+      },
       "sources": [
-        "col"
+        "col",
+        "pbdb"
       ],
-      "scope": "Accepted catalogued species, including fossil and recently extinct species where covered. Coverage is incomplete; missing extinction flags are unknown, not extant.",
-      "method": "Accepted species below COL taxon 477; extinction status queried separately.",
+      "scope": "Independent source snapshots; source coverage, dates and species concepts differ. Counts do not roll up in the ontology.",
+      "method": "Direct reference-taxon counts; no ontology-child totals or composite-taxon arithmetic.",
       "mappings": {
         "GPT": [
           {
             "id": "Turtle"
           }
         ]
-      },
-      "queries": {
-        "total": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=477&rank=species&status=accepted&limit=0",
-        "extinct": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=477&rank=species&status=accepted&limit=0&extinct=true",
-        "extant": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=477&rank=species&status=accepted&limit=0&extinct=false"
       }
     },
     "Crocodilian": {
       "taxon": "Crocodylia",
-      "total": 27,
-      "extinct": 0,
-      "extant": 0,
+      "total": null,
+      "extinct": 262,
+      "extant": 27,
+      "references": {
+        "extant": {
+          "count": 27,
+          "source": "col",
+          "taxon": "Crocodylia",
+          "url": "https://api.checklistbank.org/dataset/316321/taxon/329/metrics",
+          "method": "Publisher-supplied speciesExtantCount from the reference-taxon metrics. Includes the release’s accepted and provisionally accepted species; does not rely on extinct=false annotations."
+        },
+        "extinct": {
+          "count": 262,
+          "source": "pbdb",
+          "taxon": "Crocodylia",
+          "url": "https://paleobiodb.org/data1.2/taxa/list.json?base_name=Crocodylia&rel=all_children&rank=species&extant=no&taxon_status=accepted&pres=regular&limit=1&rowcount=yes",
+          "method": "records_found: accepted species below the reference taxon, extant=no, pres=regular. Junior synonyms, ichnotaxa and form taxa excluded. A catalogue count, not an estimate of all species that ever existed."
+        }
+      },
       "sources": [
-        "col"
+        "col",
+        "pbdb"
       ],
-      "scope": "Accepted catalogued species, including fossil and recently extinct species where covered. Coverage is incomplete; missing extinction flags are unknown, not extant.",
-      "method": "Accepted species below COL taxon 329; extinction status queried separately.",
+      "scope": "Independent source snapshots; source coverage, dates and species concepts differ. Counts do not roll up in the ontology.",
+      "method": "Direct reference-taxon counts; no ontology-child totals or composite-taxon arithmetic.",
       "mappings": {
         "GPT": [
           {
             "id": "Crocodilian"
           }
         ]
-      },
-      "queries": {
-        "total": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=329&rank=species&status=accepted&limit=0",
-        "extinct": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=329&rank=species&status=accepted&limit=0&extinct=true",
-        "extant": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=329&rank=species&status=accepted&limit=0&extinct=false"
       }
     },
     "Bird": {
       "taxon": "Aves",
-      "total": 11044,
-      "extinct": 176,
+      "total": null,
+      "extinct": 1743,
       "extant": 10868,
+      "references": {
+        "extant": {
+          "count": 10868,
+          "source": "col",
+          "taxon": "Aves",
+          "url": "https://api.checklistbank.org/dataset/316321/taxon/V2/metrics",
+          "method": "Publisher-supplied speciesExtantCount from the reference-taxon metrics. Includes the release’s accepted and provisionally accepted species; does not rely on extinct=false annotations."
+        },
+        "extinct": {
+          "count": 1743,
+          "source": "pbdb",
+          "taxon": "Aves",
+          "url": "https://paleobiodb.org/data1.2/taxa/list.json?base_name=Aves&rel=all_children&rank=species&extant=no&taxon_status=accepted&pres=regular&limit=1&rowcount=yes",
+          "method": "records_found: accepted species below the reference taxon, extant=no, pres=regular. Junior synonyms, ichnotaxa and form taxa excluded. A catalogue count, not an estimate of all species that ever existed."
+        }
+      },
       "sources": [
-        "col"
+        "col",
+        "pbdb"
       ],
-      "scope": "Accepted catalogued species, including fossil and recently extinct species where covered. Coverage is incomplete; missing extinction flags are unknown, not extant.",
-      "method": "Accepted species below COL taxon V2; extinction status queried separately.",
+      "scope": "Independent source snapshots; source coverage, dates and species concepts differ. Counts do not roll up in the ontology.",
+      "method": "Direct reference-taxon counts; no ontology-child totals or composite-taxon arithmetic.",
       "mappings": {
         "GPT": [
           {
@@ -780,23 +1217,36 @@
             "interpretation": ""
           }
         ]
-      },
-      "queries": {
-        "total": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=V2&rank=species&status=accepted&limit=0",
-        "extinct": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=V2&rank=species&status=accepted&limit=0&extinct=true",
-        "extant": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=V2&rank=species&status=accepted&limit=0&extinct=false"
       }
     },
     "Reptile": {
       "taxon": "Reptilia",
-      "total": 12649,
-      "extinct": 0,
-      "extant": 0,
+      "total": null,
+      "extinct": 7851,
+      "extant": 12650,
+      "references": {
+        "extant": {
+          "count": 12650,
+          "source": "reptile",
+          "taxon": "Non-avian reptiles",
+          "url": "https://www.reptile-database.org/db-info/SpeciesStat.html",
+          "method": "Published June 2026 non-avian reptile total, used as a non-fossil living-species proxy. No sum of our tree nodes."
+        },
+        "extinct": {
+          "count": 7851,
+          "source": "pbdb",
+          "taxon": "Reptilia",
+          "url": "https://paleobiodb.org/data1.2/taxa/list.json?base_name=Reptilia&rel=all_children&rank=species&extant=no&taxon_status=accepted&pres=regular&limit=1&rowcount=yes",
+          "method": "records_found: accepted species below the reference taxon, extant=no, pres=regular. Junior synonyms, ichnotaxa and form taxa excluded. A catalogue count, not an estimate of all species that ever existed."
+        }
+      },
       "sources": [
-        "col"
+        "col",
+        "pbdb",
+        "reptile"
       ],
-      "scope": "Accepted catalogued species, including fossil and recently extinct species where covered. Coverage is incomplete; missing extinction flags are unknown, not extant.",
-      "method": "Accepted species below COL taxon RP; extinction status queried separately.",
+      "scope": "Independent source snapshots; source coverage, dates and species concepts differ. Counts do not roll up in the ontology.",
+      "method": "Direct reference-taxon counts; no ontology-child totals or composite-taxon arithmetic.",
       "mappings": {
         ".": [
           {
@@ -810,229 +1260,70 @@
             "interpretation": ""
           }
         ]
-      },
-      "queries": {
-        "total": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=RP&rank=species&status=accepted&limit=0",
-        "extinct": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=RP&rank=species&status=accepted&limit=0&extinct=true",
-        "extant": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=RP&rank=species&status=accepted&limit=0&extinct=false"
-      }
-    },
-    "col-Ctenophora": {
-      "taxon": "Ctenophora",
-      "total": 197,
-      "extinct": 15,
-      "extant": 2,
-      "sources": [
-        "col"
-      ],
-      "scope": "Accepted catalogued species, including fossil and recently extinct species where covered. Coverage is incomplete; missing extinction flags are unknown, not extant.",
-      "method": "Accepted species below COL taxon B8V3L; extinction status queried separately.",
-      "mappings": {},
-      "queries": {
-        "total": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=B8V3L&rank=species&status=accepted&limit=0",
-        "extinct": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=B8V3L&rank=species&status=accepted&limit=0&extinct=true",
-        "extant": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=B8V3L&rank=species&status=accepted&limit=0&extinct=false"
-      }
-    },
-    "col-Placozoa": {
-      "taxon": "Placozoa",
-      "total": 4,
-      "extinct": 0,
-      "extant": 0,
-      "sources": [
-        "col"
-      ],
-      "scope": "Accepted catalogued species, including fossil and recently extinct species where covered. Coverage is incomplete; missing extinction flags are unknown, not extant.",
-      "method": "Accepted species below COL taxon B8V3N; extinction status queried separately.",
-      "mappings": {},
-      "queries": {
-        "total": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=B8V3N&rank=species&status=accepted&limit=0",
-        "extinct": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=B8V3N&rank=species&status=accepted&limit=0&extinct=true",
-        "extant": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=B8V3N&rank=species&status=accepted&limit=0&extinct=false"
-      }
-    },
-    "col-Liliopsida": {
-      "taxon": "Liliopsida",
-      "total": 84523,
-      "extinct": 0,
-      "extant": 0,
-      "sources": [
-        "col"
-      ],
-      "scope": "Accepted catalogued species, including fossil and recently extinct species where covered. Coverage is incomplete; missing extinction flags are unknown, not extant.",
-      "method": "Accepted species below COL taxon L2L; extinction status queried separately.",
-      "mappings": {},
-      "queries": {
-        "total": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=L2L&rank=species&status=accepted&limit=0",
-        "extinct": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=L2L&rank=species&status=accepted&limit=0&extinct=true",
-        "extant": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=L2L&rank=species&status=accepted&limit=0&extinct=false"
-      }
-    },
-    "col-Pinopsida": {
-      "taxon": "Pinopsida",
-      "total": 835,
-      "extinct": 0,
-      "extant": 835,
-      "sources": [
-        "col"
-      ],
-      "scope": "Accepted catalogued species, including fossil and recently extinct species where covered. Coverage is incomplete; missing extinction flags are unknown, not extant.",
-      "method": "Accepted species below COL taxon C7ZVJ; extinction status queried separately.",
-      "mappings": {},
-      "queries": {
-        "total": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=C7ZVJ&rank=species&status=accepted&limit=0",
-        "extinct": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=C7ZVJ&rank=species&status=accepted&limit=0&extinct=true",
-        "extant": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=C7ZVJ&rank=species&status=accepted&limit=0&extinct=false"
-      }
-    },
-    "col-Cycadopsida": {
-      "taxon": "Cycadopsida",
-      "total": 376,
-      "extinct": 0,
-      "extant": 0,
-      "sources": [
-        "col"
-      ],
-      "scope": "Accepted catalogued species, including fossil and recently extinct species where covered. Coverage is incomplete; missing extinction flags are unknown, not extant.",
-      "method": "Accepted species below COL taxon CGVH9; extinction status queried separately.",
-      "mappings": {},
-      "queries": {
-        "total": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=CGVH9&rank=species&status=accepted&limit=0",
-        "extinct": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=CGVH9&rank=species&status=accepted&limit=0&extinct=true",
-        "extant": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=CGVH9&rank=species&status=accepted&limit=0&extinct=false"
-      }
-    },
-    "col-Ginkgoopsida": {
-      "taxon": "Ginkgoopsida",
-      "total": 388,
-      "extinct": 387,
-      "extant": 0,
-      "sources": [
-        "col"
-      ],
-      "scope": "Accepted catalogued species, including fossil and recently extinct species where covered. Coverage is incomplete; missing extinction flags are unknown, not extant.",
-      "method": "Accepted species below COL taxon BT; extinction status queried separately.",
-      "mappings": {},
-      "queries": {
-        "total": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=BT&rank=species&status=accepted&limit=0",
-        "extinct": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=BT&rank=species&status=accepted&limit=0&extinct=true",
-        "extant": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=BT&rank=species&status=accepted&limit=0&extinct=false"
-      }
-    },
-    "col-Marchantiophyta": {
-      "taxon": "Marchantiophyta",
-      "total": 7500,
-      "extinct": 184,
-      "extant": 7316,
-      "sources": [
-        "col"
-      ],
-      "scope": "Accepted catalogued species, including fossil and recently extinct species where covered. Coverage is incomplete; missing extinction flags are unknown, not extant.",
-      "method": "Accepted species below COL taxon 9J9G3; extinction status queried separately.",
-      "mappings": {},
-      "queries": {
-        "total": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=9J9G3&rank=species&status=accepted&limit=0",
-        "extinct": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=9J9G3&rank=species&status=accepted&limit=0&extinct=true",
-        "extant": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=9J9G3&rank=species&status=accepted&limit=0&extinct=false"
-      }
-    },
-    "col-Anthocerotophyta": {
-      "taxon": "Anthocerotophyta",
-      "total": 305,
-      "extinct": 81,
-      "extant": 224,
-      "sources": [
-        "col"
-      ],
-      "scope": "Accepted catalogued species, including fossil and recently extinct species where covered. Coverage is incomplete; missing extinction flags are unknown, not extant.",
-      "method": "Accepted species below COL taxon 9JHQ8; extinction status queried separately.",
-      "mappings": {},
-      "queries": {
-        "total": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=9JHQ8&rank=species&status=accepted&limit=0",
-        "extinct": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=9JHQ8&rank=species&status=accepted&limit=0&extinct=true",
-        "extant": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=9JHQ8&rank=species&status=accepted&limit=0&extinct=false"
-      }
-    },
-    "col-Sarcopterygii": {
-      "taxon": "Sarcopterygii",
-      "total": 8,
-      "extinct": 0,
-      "extant": 0,
-      "sources": [
-        "col"
-      ],
-      "scope": "Accepted catalogued species, including fossil and recently extinct species where covered. Coverage is incomplete; missing extinction flags are unknown, not extant.",
-      "method": "Accepted species below COL taxon 8VSMX; extinction status queried separately.",
-      "mappings": {},
-      "queries": {
-        "total": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=8VSMX&rank=species&status=accepted&limit=0",
-        "extinct": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=8VSMX&rank=species&status=accepted&limit=0&extinct=true",
-        "extant": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=8VSMX&rank=species&status=accepted&limit=0&extinct=false"
-      }
-    },
-    "col-Mammalia": {
-      "taxon": "Mammalia",
-      "total": 6461,
-      "extinct": 99,
-      "extant": 6362,
-      "sources": [
-        "col"
-      ],
-      "scope": "Accepted catalogued species, including fossil and recently extinct species where covered. Coverage is incomplete; missing extinction flags are unknown, not extant.",
-      "method": "Accepted species below COL taxon 6224G; extinction status queried separately.",
-      "mappings": {},
-      "queries": {
-        "total": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=6224G&rank=species&status=accepted&limit=0",
-        "extinct": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=6224G&rank=species&status=accepted&limit=0&extinct=true",
-        "extant": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=6224G&rank=species&status=accepted&limit=0&extinct=false"
       }
     },
     "Plant": {
       "taxon": "Embryophyta",
-      "total": 388486,
-      "extinct": 950,
-      "extant": 21618,
+      "total": null,
+      "extinct": 11092,
+      "extant": 382401,
+      "references": {
+        "extinct": {
+          "count": 11092,
+          "source": "pbdb",
+          "taxon": "Embryophyta",
+          "url": "https://paleobiodb.org/data1.2/taxa/list.json?base_name=Embryophyta&rel=all_children&rank=species&extant=no&taxon_status=accepted&pres=regular&limit=1&rowcount=yes",
+          "method": "records_found: accepted species below the reference taxon, extant=no, pres=regular. Junior synonyms, ichnotaxa and form taxa excluded. A catalogue count, not an estimate of all species that ever existed."
+        },
+        "extant": {
+          "count": 382401,
+          "source": "wfo",
+          "taxon": "Embryophyta",
+          "url": "https://worldfloraonline.org/",
+          "method": "Published accepted-species total for land plants, used as a living/non-fossil species proxy; recently extinct taxa can remain in the checklist."
+        }
+      },
       "sources": [
-        "col"
+        "pbdb",
+        "wfo"
       ],
-      "scope": "Accepted species in the COL26.9 base checklist; fossils included where covered and missing extinction status retained as unknown. Land plants only; algae excluded.",
-      "method": "Disjoint components added or subtracted within the same COL release.",
+      "scope": "Independent source snapshots; source coverage, dates and species concepts differ. Counts do not roll up in the ontology.",
+      "method": "Direct reference-taxon counts; no ontology-child totals or composite-taxon arithmetic.",
       "mappings": {
         "GPT": [
           {
             "id": "Plant"
           }
         ]
-      },
-      "components": [
-        {
-          "record": "VascularPlant",
-          "coefficient": 1
-        },
-        {
-          "record": "Moss",
-          "coefficient": 1
-        },
-        {
-          "record": "col-Marchantiophyta",
-          "coefficient": 1
-        },
-        {
-          "record": "col-Anthocerotophyta",
-          "coefficient": 1
-        }
-      ]
+      }
     },
     "FloweringPlant": {
-      "taxon": "Angiosperms",
-      "total": 353091,
-      "extinct": 0,
-      "extant": 1510,
+      "taxon": "Magnoliophyta",
+      "total": null,
+      "extinct": 153,
+      "extant": 368486,
+      "references": {
+        "extinct": {
+          "count": 153,
+          "source": "pbdb",
+          "taxon": "Magnoliophyta",
+          "url": "https://paleobiodb.org/data1.2/taxa/list.json?base_name=Magnoliophyta&rel=all_children&rank=species&extant=no&taxon_status=accepted&pres=regular&limit=1&rowcount=yes",
+          "method": "records_found: accepted species below the reference taxon, extant=no, pres=regular. Junior synonyms, ichnotaxa and form taxa excluded. A catalogue count, not an estimate of all species that ever existed."
+        },
+        "extant": {
+          "count": 368486,
+          "source": "onezoom",
+          "taxon": "Flowering plants (Magnoliopsida)",
+          "url": "https://www.onezoom.org/life/@Magnoliopsida",
+          "method": "Species count printed for the named clade in the main living-tree text page. Living-tree proxy can include recently extinct leaves; tree coverage differs from specialist checklists."
+        }
+      },
       "sources": [
-        "col"
+        "pbdb",
+        "onezoom"
       ],
-      "scope": "Accepted species in the COL26.9 base checklist; fossils included where covered and missing extinction status retained as unknown. Monocots plus dicots in COL; matches the broad NCBI angiosperm lineage.",
-      "method": "Disjoint components added or subtracted within the same COL release.",
+      "scope": "Independent source snapshots; source coverage, dates and species concepts differ. Counts do not roll up in the ontology.",
+      "method": "Direct reference-taxon counts; no ontology-child totals or composite-taxon arithmetic.",
       "mappings": {
         "GPT": [
           {
@@ -1051,388 +1342,370 @@
             "interpretation": ""
           }
         ]
-      },
-      "components": [
-        {
-          "record": "col-Liliopsida",
-          "coefficient": 1
-        },
-        {
-          "record": "col-Magnoliopsida",
-          "coefficient": 1
-        }
-      ]
-    },
-    "col-Magnoliopsida": {
-      "taxon": "Magnoliopsida",
-      "total": 268568,
-      "extinct": 0,
-      "extant": 1510,
-      "sources": [
-        "col"
-      ],
-      "scope": "Accepted catalogued species, including fossil and recently extinct species where covered. Coverage is incomplete; missing extinction flags are unknown, not extant.",
-      "method": "Accepted species below COL taxon MG; extinction status queried separately.",
-      "mappings": {},
-      "queries": {
-        "total": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=MG&rank=species&status=accepted&limit=0",
-        "extinct": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=MG&rank=species&status=accepted&limit=0&extinct=true",
-        "extant": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=MG&rank=species&status=accepted&limit=0&extinct=false"
       }
     },
     "Gymnosperm": {
-      "taxon": "Acrogymnospermae",
-      "total": 1599,
-      "extinct": 387,
-      "extant": 835,
+      "taxon": "Gymnospermae",
+      "total": null,
+      "extinct": 1089,
+      "extant": 1194,
+      "references": {
+        "extinct": {
+          "count": 1089,
+          "source": "pbdb",
+          "taxon": "Gymnospermae",
+          "url": "https://paleobiodb.org/data1.2/taxa/list.json?base_name=Gymnospermae&rel=all_children&rank=species&extant=no&taxon_status=accepted&pres=regular&limit=1&rowcount=yes",
+          "method": "records_found: accepted species below the reference taxon, extant=no, pres=regular. Junior synonyms, ichnotaxa and form taxa excluded. A catalogue count, not an estimate of all species that ever existed."
+        },
+        "extant": {
+          "count": 1194,
+          "source": "worldplants",
+          "taxon": "Gymnosperms",
+          "url": "https://www.worldplants.de/world-plants-complete-list/total-species-count",
+          "method": "Published gymnosperm species count in World Plants 26.08, used as a non-fossil living-species proxy."
+        }
+      },
       "sources": [
-        "col"
+        "pbdb",
+        "worldplants"
       ],
-      "scope": "Accepted species in the COL26.9 base checklist; fossils included where covered and missing extinction status retained as unknown. Includes catalogued fossil ginkgos; gnetophytes are placed in Pinopsida by this checklist.",
-      "method": "Disjoint components added or subtracted within the same COL release.",
+      "scope": "Independent source snapshots; source coverage, dates and species concepts differ. Counts do not roll up in the ontology.",
+      "method": "Direct reference-taxon counts; no ontology-child totals or composite-taxon arithmetic.",
       "mappings": {
         "GPT": [
           {
             "id": "Gymnosperm"
           }
         ]
-      },
-      "components": [
-        {
-          "record": "col-Pinopsida",
-          "coefficient": 1
-        },
-        {
-          "record": "col-Cycadopsida",
-          "coefficient": 1
-        },
-        {
-          "record": "col-Ginkgoopsida",
-          "coefficient": 1
-        }
-      ]
+      }
     },
     "SeedPlant": {
       "taxon": "Spermatophyta",
-      "total": 354690,
-      "extinct": 387,
-      "extant": 2345,
+      "total": null,
+      "extinct": 6188,
+      "extant": 370438,
+      "references": {
+        "extinct": {
+          "count": 6188,
+          "source": "pbdb",
+          "taxon": "Spermatophyta",
+          "url": "https://paleobiodb.org/data1.2/taxa/list.json?base_name=Spermatophyta&rel=all_children&rank=species&extant=no&taxon_status=accepted&pres=regular&limit=1&rowcount=yes",
+          "method": "records_found: accepted species below the reference taxon, extant=no, pres=regular. Junior synonyms, ichnotaxa and form taxa excluded. A catalogue count, not an estimate of all species that ever existed."
+        },
+        "extant": {
+          "count": 370438,
+          "source": "onezoom",
+          "taxon": "Spermatophyta",
+          "url": "https://www.onezoom.org/life/@Spermatophyta=10218",
+          "method": "Species count printed for the named clade in the main living-tree text page. Living-tree proxy can include recently extinct leaves; tree coverage differs from specialist checklists."
+        }
+      },
       "sources": [
-        "col"
+        "pbdb",
+        "onezoom"
       ],
-      "scope": "Accepted species in the COL26.9 base checklist; fossils included where covered and missing extinction status retained as unknown.",
-      "method": "Disjoint components added or subtracted within the same COL release.",
+      "scope": "Independent source snapshots; source coverage, dates and species concepts differ. Counts do not roll up in the ontology.",
+      "method": "Direct reference-taxon counts; no ontology-child totals or composite-taxon arithmetic.",
       "mappings": {
         "GPT": [
           {
             "id": "SeedPlant"
           }
         ]
-      },
-      "components": [
-        {
-          "record": "Gymnosperm",
-          "coefficient": 1
-        },
-        {
-          "record": "FloweringPlant",
-          "coefficient": 1
-        }
-      ]
+      }
     },
     "Bilaterian": {
       "taxon": "Bilateria",
-      "total": 1503531,
-      "extinct": 122942,
-      "extant": 678457,
+      "total": null,
+      "extinct": 158724,
+      "extant": 1399466,
+      "references": {
+        "extinct": {
+          "count": 158724,
+          "source": "pbdb",
+          "taxon": "Bilateria",
+          "url": "https://paleobiodb.org/data1.2/taxa/list.json?base_name=Bilateria&rel=all_children&rank=species&extant=no&taxon_status=accepted&pres=regular&limit=1&rowcount=yes",
+          "method": "records_found: accepted species below the reference taxon, extant=no, pres=regular. Junior synonyms, ichnotaxa and form taxa excluded. A catalogue count, not an estimate of all species that ever existed."
+        },
+        "extant": {
+          "count": 1399466,
+          "source": "onezoom",
+          "taxon": "Bilateria",
+          "url": "https://www.onezoom.org/life/@Bilateria=117569",
+          "method": "Species count printed for the named clade in the main living-tree text page. Living-tree proxy can include recently extinct leaves; tree coverage differs from specialist checklists."
+        }
+      },
       "sources": [
-        "col"
+        "pbdb",
+        "onezoom"
       ],
-      "scope": "Accepted species in the COL26.9 base checklist; fossils included where covered and missing extinction status retained as unknown. Animalia minus the four non-bilaterian phyla.",
-      "method": "Disjoint components added or subtracted within the same COL release.",
+      "scope": "Independent source snapshots; source coverage, dates and species concepts differ. Counts do not roll up in the ontology.",
+      "method": "Direct reference-taxon counts; no ontology-child totals or composite-taxon arithmetic.",
       "mappings": {
         "GPT": [
           {
             "id": "Bilaterian"
           }
         ]
-      },
-      "components": [
-        {
-          "record": "Animal",
-          "coefficient": 1
-        },
-        {
-          "record": "Sponge",
-          "coefficient": -1
-        },
-        {
-          "record": "Cnidarian",
-          "coefficient": -1
-        },
-        {
-          "record": "col-Ctenophora",
-          "coefficient": -1
-        },
-        {
-          "record": "col-Placozoa",
-          "coefficient": -1
-        }
-      ]
+      }
     },
     "LobeFinnedVertebrate": {
-      "taxon": "Sarcopterygii including tetrapods",
-      "total": 39085,
-      "extinct": 282,
-      "extant": 26146,
+      "taxon": "Sarcopterygii",
+      "total": null,
+      "extinct": 24406,
+      "extant": 34896,
+      "references": {
+        "extinct": {
+          "count": 24406,
+          "source": "pbdb",
+          "taxon": "Sarcopterygii",
+          "url": "https://paleobiodb.org/data1.2/taxa/list.json?base_name=Sarcopterygii&rel=all_children&rank=species&extant=no&taxon_status=accepted&pres=regular&limit=1&rowcount=yes",
+          "method": "records_found: accepted species below the reference taxon, extant=no, pres=regular. Junior synonyms, ichnotaxa and form taxa excluded. A catalogue count, not an estimate of all species that ever existed."
+        },
+        "extant": {
+          "count": 34896,
+          "source": "onezoom",
+          "taxon": "Lobe Finned Fishes, including Tetrapods (Sarcopterygii)",
+          "url": "https://www.onezoom.org/life/@Sarcopterygii",
+          "method": "Species count printed for the named clade in the main living-tree text page. Living-tree proxy can include recently extinct leaves; tree coverage differs from specialist checklists."
+        }
+      },
       "sources": [
-        "col"
+        "pbdb",
+        "onezoom"
       ],
-      "scope": "Accepted species in the COL26.9 base checklist; fossils included where covered and missing extinction status retained as unknown. COL fish-only Sarcopterygii expanded to the GPT node’s clade including tetrapods.",
-      "method": "Disjoint components added or subtracted within the same COL release.",
+      "scope": "Independent source snapshots; source coverage, dates and species concepts differ. Counts do not roll up in the ontology.",
+      "method": "Direct reference-taxon counts; no ontology-child totals or composite-taxon arithmetic.",
       "mappings": {
         "GPT": [
           {
             "id": "LobeFinnedVertebrate"
           }
         ]
-      },
-      "components": [
-        {
-          "record": "col-Sarcopterygii",
-          "coefficient": 1
-        },
-        {
-          "record": "Tetrapod",
-          "coefficient": 1
-        }
-      ]
+      }
     },
     "Amniote": {
       "taxon": "Amniota",
-      "total": 30154,
-      "extinct": 275,
-      "extant": 17230,
+      "total": null,
+      "extinct": 22683,
+      "extant": 26201,
+      "references": {
+        "extinct": {
+          "count": 22683,
+          "source": "pbdb",
+          "taxon": "Amniota",
+          "url": "https://paleobiodb.org/data1.2/taxa/list.json?base_name=Amniota&rel=all_children&rank=species&extant=no&taxon_status=accepted&pres=regular&limit=1&rowcount=yes",
+          "method": "records_found: accepted species below the reference taxon, extant=no, pres=regular. Junior synonyms, ichnotaxa and form taxa excluded. A catalogue count, not an estimate of all species that ever existed."
+        },
+        "extant": {
+          "count": 26201,
+          "source": "onezoom",
+          "taxon": "Amniota",
+          "url": "https://www.onezoom.org/life/@Amniota=229560",
+          "method": "Species count printed for the named clade in the main living-tree text page. Living-tree proxy can include recently extinct leaves; tree coverage differs from specialist checklists."
+        }
+      },
       "sources": [
-        "col"
+        "pbdb",
+        "onezoom"
       ],
-      "scope": "Accepted species in the COL26.9 base checklist; fossils included where covered and missing extinction status retained as unknown.",
-      "method": "Disjoint components added or subtracted within the same COL release.",
+      "scope": "Independent source snapshots; source coverage, dates and species concepts differ. Counts do not roll up in the ontology.",
+      "method": "Direct reference-taxon counts; no ontology-child totals or composite-taxon arithmetic.",
       "mappings": {
         "GPT": [
           {
             "id": "Amniote"
           }
         ]
-      },
-      "components": [
-        {
-          "record": "Tetrapod",
-          "coefficient": 1
-        },
-        {
-          "record": "Amphibian",
-          "coefficient": -1
-        }
-      ]
+      }
     },
     "Sauropsid": {
       "taxon": "Sauropsida",
-      "total": 23693,
-      "extinct": 176,
-      "extant": 10868,
+      "total": null,
+      "extinct": 7851,
+      "extant": 21155,
+      "references": {
+        "extinct": {
+          "count": 7851,
+          "source": "pbdb",
+          "taxon": "Sauropsida",
+          "url": "https://paleobiodb.org/data1.2/taxa/list.json?base_name=Sauropsida&rel=all_children&rank=species&extant=no&taxon_status=accepted&pres=regular&limit=1&rowcount=yes",
+          "method": "records_found: accepted species below the reference taxon, extant=no, pres=regular. Junior synonyms, ichnotaxa and form taxa excluded. A catalogue count, not an estimate of all species that ever existed."
+        },
+        "extant": {
+          "count": 21155,
+          "source": "onezoom",
+          "taxon": "Sauropsida",
+          "url": "https://www.onezoom.org/life/@Sauropsida=639642",
+          "method": "Species count printed for the named clade in the main living-tree text page. Living-tree proxy can include recently extinct leaves; tree coverage differs from specialist checklists."
+        }
+      },
       "sources": [
-        "col"
+        "pbdb",
+        "onezoom"
       ],
-      "scope": "Accepted species in the COL26.9 base checklist; fossils included where covered and missing extinction status retained as unknown. Includes birds.",
-      "method": "Disjoint components added or subtracted within the same COL release.",
+      "scope": "Independent source snapshots; source coverage, dates and species concepts differ. Counts do not roll up in the ontology.",
+      "method": "Direct reference-taxon counts; no ontology-child totals or composite-taxon arithmetic.",
       "mappings": {
         "GPT": [
           {
             "id": "Sauropsid"
           }
         ]
-      },
-      "components": [
-        {
-          "record": "Reptile",
-          "coefficient": 1
-        },
-        {
-          "record": "Bird",
-          "coefficient": 1
-        }
-      ]
+      }
     },
     "Archosaur": {
-      "taxon": "Archosauria: represented crown groups",
-      "total": 11071,
-      "extinct": 176,
-      "extant": 10868,
+      "taxon": "Archosauria",
+      "total": null,
+      "extinct": 4665,
+      "extant": 10025,
+      "references": {
+        "extinct": {
+          "count": 4665,
+          "source": "pbdb",
+          "taxon": "Archosauria",
+          "url": "https://paleobiodb.org/data1.2/taxa/list.json?base_name=Archosauria&rel=all_children&rank=species&extant=no&taxon_status=accepted&pres=regular&limit=1&rowcount=yes",
+          "method": "records_found: accepted species below the reference taxon, extant=no, pres=regular. Junior synonyms, ichnotaxa and form taxa excluded. A catalogue count, not an estimate of all species that ever existed."
+        },
+        "extant": {
+          "count": 10025,
+          "source": "onezoom",
+          "taxon": "Archosauria",
+          "url": "https://www.onezoom.org/life/@Archosauria=335588",
+          "method": "Species count printed for the named clade in the main living-tree text page. Living-tree proxy can include recently extinct leaves; tree coverage differs from specialist checklists."
+        }
+      },
       "sources": [
-        "col"
+        "pbdb",
+        "onezoom"
       ],
-      "scope": "Accepted species in the COL26.9 base checklist; fossils included where covered and missing extinction status retained as unknown. Crocodilians plus birds; omits non-avian fossil archosaurs not represented by these components.",
-      "method": "Disjoint components added or subtracted within the same COL release.",
+      "scope": "Independent source snapshots; source coverage, dates and species concepts differ. Counts do not roll up in the ontology.",
+      "method": "Direct reference-taxon counts; no ontology-child totals or composite-taxon arithmetic.",
       "mappings": {
         "GPT": [
           {
             "id": "Archosaur"
           }
         ]
-      },
-      "components": [
-        {
-          "record": "Crocodilian",
-          "coefficient": 1
-        },
-        {
-          "record": "Bird",
-          "coefficient": 1
-        }
-      ],
-      "display": {
-        "total": null,
-        "extinct": null,
-        "extant": 10868,
-        "note": "Whole-clade extinct count is unavailable and omitted from the tree. The extant component exhausts living representatives of the clade."
       }
-    },
-    "col-Squamata": {
-      "taxon": "Squamata",
-      "total": 12251,
-      "extinct": 0,
-      "extant": 0,
-      "sources": [
-        "col"
-      ],
-      "scope": "Accepted catalogued species, including fossil and recently extinct species where covered. Coverage is incomplete; missing extinction flags are unknown, not extant.",
-      "method": "Accepted species below COL taxon 45C; extinction status queried separately.",
-      "mappings": {},
-      "queries": {
-        "total": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=45C&rank=species&status=accepted&limit=0",
-        "extinct": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=45C&rank=species&status=accepted&limit=0&extinct=true",
-        "extant": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=45C&rank=species&status=accepted&limit=0&extinct=false"
-      }
-    },
-    "Tuatara": {
-      "taxon": "Sphenodon punctatus",
-      "total": 1,
-      "extinct": 0,
-      "extant": 1,
-      "sources": [
-        "reptile"
-      ],
-      "scope": "One currently recognized tuatara species.",
-      "method": "Reptile Database June 2026: Rhynchocephalia = 1.",
-      "mappings": {}
     },
     "Lepidosaur": {
       "taxon": "Lepidosauria",
-      "total": 12252,
-      "extinct": 0,
-      "extant": 1,
+      "total": null,
+      "extinct": 81,
+      "extant": 10899,
+      "references": {
+        "extinct": {
+          "count": 81,
+          "source": "pbdb",
+          "taxon": "Lepidosauria",
+          "url": "https://paleobiodb.org/data1.2/taxa/list.json?base_name=Lepidosauria&rel=all_children&rank=species&extant=no&taxon_status=accepted&pres=regular&limit=1&rowcount=yes",
+          "method": "records_found: accepted species below the reference taxon, extant=no, pres=regular. Junior synonyms, ichnotaxa and form taxa excluded. A catalogue count, not an estimate of all species that ever existed."
+        },
+        "extant": {
+          "count": 10899,
+          "source": "onezoom",
+          "taxon": "Lepidosauria",
+          "url": "https://www.onezoom.org/life/@Lepidosauria=35881",
+          "method": "Species count printed for the named clade in the main living-tree text page. Living-tree proxy can include recently extinct leaves; tree coverage differs from specialist checklists."
+        }
+      },
       "sources": [
-        "col",
-        "reptile"
+        "pbdb",
+        "onezoom"
       ],
-      "scope": "Accepted species in the COL26.9 base checklist; fossils included where covered and missing extinction status retained as unknown.",
-      "method": "Squamata plus Rhynchocephalia.",
+      "scope": "Independent source snapshots; source coverage, dates and species concepts differ. Counts do not roll up in the ontology.",
+      "method": "Direct reference-taxon counts; no ontology-child totals or composite-taxon arithmetic.",
       "mappings": {
         "GPT": [
           {
             "id": "Lepidosaur"
           }
         ]
-      },
-      "components": [
-        {
-          "record": "col-Squamata",
-          "coefficient": 1
-        },
-        {
-          "record": "Tuatara",
-          "coefficient": 1
-        }
-      ]
-    },
-    "Invertebrate": {
-      "taxon": "Animalia excluding Vertebrata",
-      "total": 1457715,
-      "extinct": 128497,
-      "extant": 662822,
-      "sources": [
-        "col"
-      ],
-      "scope": "Accepted species in the COL26.9 base checklist; fossils included where covered and missing extinction status retained as unknown. A paraphyletic aggregate, not a single clade.",
-      "method": "Disjoint components added or subtracted within the same COL release.",
-      "mappings": {
-        ".": [
-          {
-            "id": "Invertebrate",
-            "interpretation": ""
-          }
-        ],
-        "SUMO": [
-          {
-            "id": "Invertebrate",
-            "interpretation": ""
-          }
-        ]
-      },
-      "components": [
-        {
-          "record": "Animal",
-          "coefficient": 1
-        },
-        {
-          "record": "Vertebrate",
-          "coefficient": -1
-        }
-      ]
+      }
     },
     "Organism": {
-      "taxon": "Cellular life",
-      "total": 2169219,
-      "extinct": 169945,
-      "extant": 884155,
+      "taxon": "Life",
+      "total": null,
+      "extinct": 191541,
+      "extant": 2228001,
+      "references": {
+        "extinct": {
+          "count": 191541,
+          "source": "pbdb",
+          "taxon": "Life",
+          "url": "https://paleobiodb.org/data1.2/taxa/list.json?base_name=Life&rel=all_children&rank=species&extant=no&taxon_status=accepted&pres=regular&limit=1&rowcount=yes",
+          "method": "records_found: accepted species below the reference taxon, extant=no, pres=regular. Junior synonyms, ichnotaxa and form taxa excluded. A catalogue count, not an estimate of all species that ever existed."
+        },
+        "extant": {
+          "count": 2228001,
+          "source": "onezoom",
+          "taxon": "All life (biota)",
+          "url": "https://www.onezoom.org/life/@biota=93302",
+          "method": "Species count printed for the named clade in the main living-tree text page. Living-tree proxy can include recently extinct leaves; tree coverage differs from specialist checklists."
+        }
+      },
       "sources": [
-        "col"
+        "pbdb",
+        "onezoom"
       ],
-      "scope": "Accepted species in the COL26.9 base checklist; fossils included where covered and missing extinction status retained as unknown. Eukaryota, Bacteria and Archaea; viruses excluded.",
-      "method": "Disjoint components added or subtracted within the same COL release.",
+      "scope": "Independent source snapshots; source coverage, dates and species concepts differ. Counts do not roll up in the ontology.",
+      "method": "Direct reference-taxon counts; no ontology-child totals or composite-taxon arithmetic.",
       "mappings": {
         "GPT": [
           {
             "id": "Organism"
           }
+        ],
+        ".": [
+          {
+            "id": "Organism"
+          }
+        ],
+        "SUMO": [
+          {
+            "id": "Organism"
+          }
+        ],
+        "Wikipedia": [
+          {
+            "id": "Category:Life",
+            "interpretation": "Associated reference-taxon count, not Wikipedia category/article counts."
+          },
+          {
+            "id": "Category:Organisms",
+            "interpretation": "Associated reference-taxon count, not Wikipedia category/article counts."
+          }
         ]
-      },
-      "components": [
-        {
-          "record": "Eukaryote",
-          "coefficient": 1
-        },
-        {
-          "record": "Bacterium",
-          "coefficient": 1
-        },
-        {
-          "record": "Archaeon",
-          "coefficient": 1
-        }
-      ]
+      }
     },
     "Mammal": {
       "taxon": "Mammalia",
-      "total": 6904,
-      "extinct": 113,
+      "total": null,
+      "extinct": 13957,
       "extant": 6791,
+      "references": {
+        "extinct": {
+          "count": 13957,
+          "source": "pbdb",
+          "taxon": "Mammalia",
+          "url": "https://paleobiodb.org/data1.2/taxa/list.json?base_name=Mammalia&rel=all_children&rank=species&extant=no&taxon_status=accepted&pres=regular&limit=1&rowcount=yes",
+          "method": "records_found: accepted species below the reference taxon, extant=no, pres=regular. Junior synonyms, ichnotaxa and form taxa excluded. A catalogue count, not an estimate of all species that ever existed."
+        },
+        "extant": {
+          "count": 6791,
+          "source": "mdd",
+          "taxon": "Mammalia",
+          "url": "https://www.mammaldiversity.org/releases/",
+          "method": "All species rows Count extinct=0 rows in MDD v2.5; domestic species included."
+        }
+      },
       "sources": [
+        "pbdb",
         "mdd"
       ],
-      "scope": "Living and recently extinct species (since 1500); domestic species included. Fossil species excluded.",
-      "method": "All species rows",
+      "scope": "Independent source snapshots; source coverage, dates and species concepts differ. Counts do not roll up in the ontology.",
+      "method": "Direct reference-taxon counts; no ontology-child totals or composite-taxon arithmetic.",
       "mappings": {
         "GPT": [
           {
@@ -1455,14 +1728,31 @@
     },
     "Monotreme": {
       "taxon": "Monotremata",
-      "total": 5,
-      "extinct": 0,
+      "total": null,
+      "extinct": 14,
       "extant": 5,
+      "references": {
+        "extinct": {
+          "count": 14,
+          "source": "pbdb",
+          "taxon": "Monotremata",
+          "url": "https://paleobiodb.org/data1.2/taxa/list.json?base_name=Monotremata&rel=all_children&rank=species&extant=no&taxon_status=accepted&pres=regular&limit=1&rowcount=yes",
+          "method": "records_found: accepted species below the reference taxon, extant=no, pres=regular. Junior synonyms, ichnotaxa and form taxa excluded. A catalogue count, not an estimate of all species that ever existed."
+        },
+        "extant": {
+          "count": 5,
+          "source": "mdd",
+          "taxon": "Monotremata",
+          "url": "https://www.mammaldiversity.org/releases/",
+          "method": "Filter order = Monotremata; extinct = 1 or 0. Count extinct=0 rows in MDD v2.5; domestic species included."
+        }
+      },
       "sources": [
+        "pbdb",
         "mdd"
       ],
-      "scope": "Living and recently extinct species (since 1500); domestic species included. Fossil species excluded.",
-      "method": "Filter order = Monotremata; extinct = 1 or 0.",
+      "scope": "Independent source snapshots; source coverage, dates and species concepts differ. Counts do not roll up in the ontology.",
+      "method": "Direct reference-taxon counts; no ontology-child totals or composite-taxon arithmetic.",
       "mappings": {
         "GPT": [
           {
@@ -1472,15 +1762,32 @@
       }
     },
     "Marsupial": {
-      "taxon": "Marsupialia",
-      "total": 433,
-      "extinct": 23,
+      "taxon": "Metatheria",
+      "total": null,
+      "extinct": 833,
       "extant": 410,
+      "references": {
+        "extinct": {
+          "count": 833,
+          "source": "pbdb",
+          "taxon": "Metatheria",
+          "url": "https://paleobiodb.org/data1.2/taxa/list.json?base_name=Metatheria&rel=all_children&rank=species&extant=no&taxon_status=accepted&pres=regular&limit=1&rowcount=yes",
+          "method": "records_found: accepted species below the reference taxon, extant=no, pres=regular. Junior synonyms, ichnotaxa and form taxa excluded. A catalogue count, not an estimate of all species that ever existed."
+        },
+        "extant": {
+          "count": 410,
+          "source": "mdd",
+          "taxon": "Marsupialia",
+          "url": "https://www.mammaldiversity.org/releases/",
+          "method": "Filter infraclass = Marsupialia; extinct = 1 or 0. Count extinct=0 rows in MDD v2.5; domestic species included."
+        }
+      },
       "sources": [
+        "pbdb",
         "mdd"
       ],
-      "scope": "Living and recently extinct species (since 1500); domestic species included. Fossil species excluded. Crown-group component only; the GPT node also includes fossil stem relatives whose count is unavailable.",
-      "method": "Filter infraclass = Marsupialia; extinct = 1 or 0.",
+      "scope": "Independent source snapshots; source coverage, dates and species concepts differ. Counts do not roll up in the ontology.",
+      "method": "Direct reference-taxon counts; no ontology-child totals or composite-taxon arithmetic.",
       "mappings": {
         "GPT": [
           {
@@ -1499,48 +1806,70 @@
             "interpretation": "Conventional named taxon; older functional wording is approximate."
           }
         ]
-      },
-      "display": {
-        "total": null,
-        "extinct": null,
-        "extant": 410,
-        "note": "Whole-clade extinct count is unavailable and omitted from the tree. The extant component exhausts living representatives of the clade."
       }
     },
     "PlacentalMammal": {
-      "taxon": "Placentalia",
-      "total": 6466,
-      "extinct": 90,
+      "taxon": "Eutheria",
+      "total": null,
+      "extinct": 12507,
       "extant": 6376,
+      "references": {
+        "extinct": {
+          "count": 12507,
+          "source": "pbdb",
+          "taxon": "Eutheria",
+          "url": "https://paleobiodb.org/data1.2/taxa/list.json?base_name=Eutheria&rel=all_children&rank=species&extant=no&taxon_status=accepted&pres=regular&limit=1&rowcount=yes",
+          "method": "records_found: accepted species below the reference taxon, extant=no, pres=regular. Junior synonyms, ichnotaxa and form taxa excluded. A catalogue count, not an estimate of all species that ever existed."
+        },
+        "extant": {
+          "count": 6376,
+          "source": "mdd",
+          "taxon": "Placentalia",
+          "url": "https://www.mammaldiversity.org/releases/",
+          "method": "Filter infraclass = Placentalia; extinct = 1 or 0. Count extinct=0 rows in MDD v2.5; domestic species included."
+        }
+      },
       "sources": [
+        "pbdb",
         "mdd"
       ],
-      "scope": "Living and recently extinct species (since 1500); domestic species included. Fossil species excluded. Crown-group component only; the GPT node also includes fossil stem relatives whose count is unavailable.",
-      "method": "Filter infraclass = Placentalia; extinct = 1 or 0.",
+      "scope": "Independent source snapshots; source coverage, dates and species concepts differ. Counts do not roll up in the ontology.",
+      "method": "Direct reference-taxon counts; no ontology-child totals or composite-taxon arithmetic.",
       "mappings": {
         "GPT": [
           {
             "id": "PlacentalMammal"
           }
         ]
-      },
-      "display": {
-        "total": null,
-        "extinct": null,
-        "extant": 6376,
-        "note": "Whole-clade extinct count is unavailable and omitted from the tree. The extant component exhausts living representatives of the clade."
       }
     },
     "Carnivoran": {
       "taxon": "Carnivora",
-      "total": 320,
-      "extinct": 6,
+      "total": null,
+      "extinct": 1324,
       "extant": 314,
+      "references": {
+        "extinct": {
+          "count": 1324,
+          "source": "pbdb",
+          "taxon": "Carnivora",
+          "url": "https://paleobiodb.org/data1.2/taxa/list.json?base_name=Carnivora&rel=all_children&rank=species&extant=no&taxon_status=accepted&pres=regular&limit=1&rowcount=yes",
+          "method": "records_found: accepted species below the reference taxon, extant=no, pres=regular. Junior synonyms, ichnotaxa and form taxa excluded. A catalogue count, not an estimate of all species that ever existed."
+        },
+        "extant": {
+          "count": 314,
+          "source": "mdd",
+          "taxon": "Carnivora",
+          "url": "https://www.mammaldiversity.org/releases/",
+          "method": "Filter order = Carnivora; extinct = 1 or 0. Count extinct=0 rows in MDD v2.5; domestic species included."
+        }
+      },
       "sources": [
+        "pbdb",
         "mdd"
       ],
-      "scope": "Living and recently extinct species (since 1500); domestic species included. Fossil species excluded.",
-      "method": "Filter order = Carnivora; extinct = 1 or 0.",
+      "scope": "Independent source snapshots; source coverage, dates and species concepts differ. Counts do not roll up in the ontology.",
+      "method": "Direct reference-taxon counts; no ontology-child totals or composite-taxon arithmetic.",
       "mappings": {
         "GPT": [
           {
@@ -1551,14 +1880,31 @@
     },
     "Canine": {
       "taxon": "Canidae",
-      "total": 40,
-      "extinct": 1,
+      "total": null,
+      "extinct": 235,
       "extant": 39,
+      "references": {
+        "extinct": {
+          "count": 235,
+          "source": "pbdb",
+          "taxon": "Canidae",
+          "url": "https://paleobiodb.org/data1.2/taxa/list.json?base_name=Canidae&rel=all_children&rank=species&extant=no&taxon_status=accepted&pres=regular&limit=1&rowcount=yes",
+          "method": "records_found: accepted species below the reference taxon, extant=no, pres=regular. Junior synonyms, ichnotaxa and form taxa excluded. A catalogue count, not an estimate of all species that ever existed."
+        },
+        "extant": {
+          "count": 39,
+          "source": "mdd",
+          "taxon": "Canidae",
+          "url": "https://www.mammaldiversity.org/releases/",
+          "method": "Filter family = Canidae; extinct = 1 or 0. Count extinct=0 rows in MDD v2.5; domestic species included."
+        }
+      },
       "sources": [
+        "pbdb",
         "mdd"
       ],
-      "scope": "Living and recently extinct species (since 1500); domestic species included. Fossil species excluded.",
-      "method": "Filter family = Canidae; extinct = 1 or 0.",
+      "scope": "Independent source snapshots; source coverage, dates and species concepts differ. Counts do not roll up in the ontology.",
+      "method": "Direct reference-taxon counts; no ontology-child totals or composite-taxon arithmetic.",
       "mappings": {
         "GPT": [
           {
@@ -1581,14 +1927,31 @@
     },
     "Feline": {
       "taxon": "Felidae",
-      "total": 46,
-      "extinct": 0,
+      "total": null,
+      "extinct": 133,
       "extant": 46,
+      "references": {
+        "extinct": {
+          "count": 133,
+          "source": "pbdb",
+          "taxon": "Felidae",
+          "url": "https://paleobiodb.org/data1.2/taxa/list.json?base_name=Felidae&rel=all_children&rank=species&extant=no&taxon_status=accepted&pres=regular&limit=1&rowcount=yes",
+          "method": "records_found: accepted species below the reference taxon, extant=no, pres=regular. Junior synonyms, ichnotaxa and form taxa excluded. A catalogue count, not an estimate of all species that ever existed."
+        },
+        "extant": {
+          "count": 46,
+          "source": "mdd",
+          "taxon": "Felidae",
+          "url": "https://www.mammaldiversity.org/releases/",
+          "method": "Filter family = Felidae; extinct = 1 or 0. Count extinct=0 rows in MDD v2.5; domestic species included."
+        }
+      },
       "sources": [
+        "pbdb",
         "mdd"
       ],
-      "scope": "Living and recently extinct species (since 1500); domestic species included. Fossil species excluded.",
-      "method": "Filter family = Felidae; extinct = 1 or 0.",
+      "scope": "Independent source snapshots; source coverage, dates and species concepts differ. Counts do not roll up in the ontology.",
+      "method": "Direct reference-taxon counts; no ontology-child totals or composite-taxon arithmetic.",
       "mappings": {
         "GPT": [
           {
@@ -1611,14 +1974,31 @@
     },
     "Dog": {
       "taxon": "Canis familiaris",
-      "total": 1,
+      "total": null,
       "extinct": 0,
       "extant": 1,
+      "references": {
+        "extinct": {
+          "count": 0,
+          "source": "pbdb",
+          "taxon": "Canis familiaris",
+          "url": "https://paleobiodb.org/data1.2/taxa/list.json?base_name=Canis+familiaris&rel=all_children&rank=species&extant=no&taxon_status=accepted&pres=regular&limit=1&rowcount=yes",
+          "method": "records_found: accepted species below the reference taxon, extant=no, pres=regular. Junior synonyms, ichnotaxa and form taxa excluded. A catalogue count, not an estimate of all species that ever existed."
+        },
+        "extant": {
+          "count": 1,
+          "source": "mdd",
+          "taxon": "Canis familiaris",
+          "url": "https://www.mammaldiversity.org/releases/",
+          "method": "Filter sciName = Canis_familiaris; extinct = 1 or 0. Count extinct=0 rows in MDD v2.5; domestic species included."
+        }
+      },
       "sources": [
+        "pbdb",
         "mdd"
       ],
-      "scope": "Living and recently extinct species (since 1500); domestic species included. Fossil species excluded. MDD treats Canis familiaris as a species; GPT’s NCBI reference treats it as a Canis lupus subspecies. Count is one containing species, not breeds.",
-      "method": "Filter sciName = Canis_familiaris; extinct = 1 or 0.",
+      "scope": "Independent source snapshots; source coverage, dates and species concepts differ. Counts do not roll up in the ontology.",
+      "method": "Direct reference-taxon counts; no ontology-child totals or composite-taxon arithmetic.",
       "mappings": {
         "GPT": [
           {
@@ -1629,14 +2009,31 @@
     },
     "Cat": {
       "taxon": "Felis catus",
-      "total": 1,
+      "total": null,
       "extinct": 0,
       "extant": 1,
+      "references": {
+        "extinct": {
+          "count": 0,
+          "source": "pbdb",
+          "taxon": "Felis catus",
+          "url": "https://paleobiodb.org/data1.2/taxa/list.json?base_name=Felis+catus&rel=all_children&rank=species&extant=no&taxon_status=accepted&pres=regular&limit=1&rowcount=yes",
+          "method": "records_found: accepted species below the reference taxon, extant=no, pres=regular. Junior synonyms, ichnotaxa and form taxa excluded. A catalogue count, not an estimate of all species that ever existed."
+        },
+        "extant": {
+          "count": 1,
+          "source": "mdd",
+          "taxon": "Felis catus",
+          "url": "https://www.mammaldiversity.org/releases/",
+          "method": "Filter sciName = Felis_catus; extinct = 1 or 0. Count extinct=0 rows in MDD v2.5; domestic species included."
+        }
+      },
       "sources": [
+        "pbdb",
         "mdd"
       ],
-      "scope": "Living and recently extinct species (since 1500); domestic species included. Fossil species excluded.",
-      "method": "Filter sciName = Felis_catus; extinct = 1 or 0.",
+      "scope": "Independent source snapshots; source coverage, dates and species concepts differ. Counts do not roll up in the ontology.",
+      "method": "Direct reference-taxon counts; no ontology-child totals or composite-taxon arithmetic.",
       "mappings": {
         "GPT": [
           {
@@ -1647,14 +2044,31 @@
     },
     "Primate": {
       "taxon": "Primates",
-      "total": 514,
-      "extinct": 4,
+      "total": null,
+      "extinct": 734,
       "extant": 510,
+      "references": {
+        "extinct": {
+          "count": 734,
+          "source": "pbdb",
+          "taxon": "Primates",
+          "url": "https://paleobiodb.org/data1.2/taxa/list.json?base_name=Primates&rel=all_children&rank=species&extant=no&taxon_status=accepted&pres=regular&limit=1&rowcount=yes",
+          "method": "records_found: accepted species below the reference taxon, extant=no, pres=regular. Junior synonyms, ichnotaxa and form taxa excluded. A catalogue count, not an estimate of all species that ever existed."
+        },
+        "extant": {
+          "count": 510,
+          "source": "mdd",
+          "taxon": "Primates",
+          "url": "https://www.mammaldiversity.org/releases/",
+          "method": "Filter order = Primates; extinct = 1 or 0. Count extinct=0 rows in MDD v2.5; domestic species included."
+        }
+      },
       "sources": [
+        "pbdb",
         "mdd"
       ],
-      "scope": "Living and recently extinct species (since 1500); domestic species included. Fossil species excluded.",
-      "method": "Filter order = Primates; extinct = 1 or 0.",
+      "scope": "Independent source snapshots; source coverage, dates and species concepts differ. Counts do not roll up in the ontology.",
+      "method": "Direct reference-taxon counts; no ontology-child totals or composite-taxon arithmetic.",
       "mappings": {
         "GPT": [
           {
@@ -1677,16 +2091,43 @@
     },
     "Ape": {
       "taxon": "Hominoidea",
-      "total": 28,
-      "extinct": 0,
+      "total": null,
+      "extinct": 86,
       "extant": 28,
+      "references": {
+        "extinct": {
+          "count": 86,
+          "source": "pbdb",
+          "taxon": "Hominoidea",
+          "url": "https://paleobiodb.org/data1.2/taxa/list.json?base_name=Hominoidea&rel=all_children&rank=species&extant=no&taxon_status=accepted&pres=regular&limit=1&rowcount=yes",
+          "method": "records_found: accepted species below the reference taxon, extant=no, pres=regular. Junior synonyms, ichnotaxa and form taxa excluded. A catalogue count, not an estimate of all species that ever existed."
+        },
+        "extant": {
+          "count": 28,
+          "source": "mdd",
+          "taxon": "Hominoidea",
+          "url": "https://www.mammaldiversity.org/releases/",
+          "method": "Filter superfamily = Hominoidea; extinct = 1 or 0. Count extinct=0 rows in MDD v2.5; domestic species included."
+        }
+      },
       "sources": [
+        "pbdb",
         "mdd"
       ],
-      "scope": "Living and recently extinct species (since 1500); domestic species included. Fossil species excluded.",
-      "method": "Filter superfamily = Hominoidea; extinct = 1 or 0.",
+      "scope": "Independent source snapshots; source coverage, dates and species concepts differ. Counts do not roll up in the ontology.",
+      "method": "Direct reference-taxon counts; no ontology-child totals or composite-taxon arithmetic.",
       "mappings": {
         "GPT": [
+          {
+            "id": "Ape"
+          }
+        ],
+        ".": [
+          {
+            "id": "Ape"
+          }
+        ],
+        "SUMO": [
           {
             "id": "Ape"
           }
@@ -1695,16 +2136,43 @@
     },
     "Hominid": {
       "taxon": "Hominidae",
-      "total": 8,
-      "extinct": 0,
+      "total": null,
+      "extinct": 61,
       "extant": 8,
+      "references": {
+        "extinct": {
+          "count": 61,
+          "source": "pbdb",
+          "taxon": "Hominidae",
+          "url": "https://paleobiodb.org/data1.2/taxa/list.json?base_name=Hominidae&rel=all_children&rank=species&extant=no&taxon_status=accepted&pres=regular&limit=1&rowcount=yes",
+          "method": "records_found: accepted species below the reference taxon, extant=no, pres=regular. Junior synonyms, ichnotaxa and form taxa excluded. A catalogue count, not an estimate of all species that ever existed."
+        },
+        "extant": {
+          "count": 8,
+          "source": "mdd",
+          "taxon": "Hominidae",
+          "url": "https://www.mammaldiversity.org/releases/",
+          "method": "Filter family = Hominidae; extinct = 1 or 0. Count extinct=0 rows in MDD v2.5; domestic species included."
+        }
+      },
       "sources": [
+        "pbdb",
         "mdd"
       ],
-      "scope": "Living and recently extinct species (since 1500); domestic species included. Fossil species excluded.",
-      "method": "Filter family = Hominidae; extinct = 1 or 0.",
+      "scope": "Independent source snapshots; source coverage, dates and species concepts differ. Counts do not roll up in the ontology.",
+      "method": "Direct reference-taxon counts; no ontology-child totals or composite-taxon arithmetic.",
       "mappings": {
         "GPT": [
+          {
+            "id": "Hominid"
+          }
+        ],
+        ".": [
+          {
+            "id": "Hominid"
+          }
+        ],
+        "SUMO": [
           {
             "id": "Hominid"
           }
@@ -1713,14 +2181,31 @@
     },
     "Human": {
       "taxon": "Homo sapiens",
-      "total": 1,
+      "total": null,
       "extinct": 0,
       "extant": 1,
+      "references": {
+        "extinct": {
+          "count": 0,
+          "source": "pbdb",
+          "taxon": "Homo sapiens",
+          "url": "https://paleobiodb.org/data1.2/taxa/list.json?base_name=Homo+sapiens&rel=all_children&rank=species&extant=no&taxon_status=accepted&pres=regular&limit=1&rowcount=yes",
+          "method": "records_found: accepted species below the reference taxon, extant=no, pres=regular. Junior synonyms, ichnotaxa and form taxa excluded. A catalogue count, not an estimate of all species that ever existed."
+        },
+        "extant": {
+          "count": 1,
+          "source": "mdd",
+          "taxon": "Homo sapiens",
+          "url": "https://www.mammaldiversity.org/releases/",
+          "method": "Filter sciName = Homo_sapiens; extinct = 1 or 0. Count extinct=0 rows in MDD v2.5; domestic species included."
+        }
+      },
       "sources": [
+        "pbdb",
         "mdd"
       ],
-      "scope": "Living and recently extinct species (since 1500); domestic species included. Fossil species excluded.",
-      "method": "Filter sciName = Homo_sapiens; extinct = 1 or 0.",
+      "scope": "Independent source snapshots; source coverage, dates and species concepts differ. Counts do not roll up in the ontology.",
+      "method": "Direct reference-taxon counts; no ontology-child totals or composite-taxon arithmetic.",
       "mappings": {
         "GPT": [
           {
@@ -1749,16 +2234,43 @@
     },
     "Rodent": {
       "taxon": "Rodentia",
-      "total": 2820,
-      "extinct": 54,
+      "total": null,
+      "extinct": 2730,
       "extant": 2766,
+      "references": {
+        "extinct": {
+          "count": 2730,
+          "source": "pbdb",
+          "taxon": "Rodentia",
+          "url": "https://paleobiodb.org/data1.2/taxa/list.json?base_name=Rodentia&rel=all_children&rank=species&extant=no&taxon_status=accepted&pres=regular&limit=1&rowcount=yes",
+          "method": "records_found: accepted species below the reference taxon, extant=no, pres=regular. Junior synonyms, ichnotaxa and form taxa excluded. A catalogue count, not an estimate of all species that ever existed."
+        },
+        "extant": {
+          "count": 2766,
+          "source": "mdd",
+          "taxon": "Rodentia",
+          "url": "https://www.mammaldiversity.org/releases/",
+          "method": "Filter order = Rodentia; extinct = 1 or 0. Count extinct=0 rows in MDD v2.5; domestic species included."
+        }
+      },
       "sources": [
+        "pbdb",
         "mdd"
       ],
-      "scope": "Living and recently extinct species (since 1500); domestic species included. Fossil species excluded.",
-      "method": "Filter order = Rodentia; extinct = 1 or 0.",
+      "scope": "Independent source snapshots; source coverage, dates and species concepts differ. Counts do not roll up in the ontology.",
+      "method": "Direct reference-taxon counts; no ontology-child totals or composite-taxon arithmetic.",
       "mappings": {
         "GPT": [
+          {
+            "id": "Rodent"
+          }
+        ],
+        ".": [
+          {
+            "id": "Rodent"
+          }
+        ],
+        "SUMO": [
           {
             "id": "Rodent"
           }
@@ -1767,14 +2279,31 @@
     },
     "Cetartiodactyl": {
       "taxon": "Artiodactyla",
-      "total": 374,
-      "extinct": 6,
+      "total": null,
+      "extinct": 2410,
       "extant": 368,
+      "references": {
+        "extinct": {
+          "count": 2410,
+          "source": "pbdb",
+          "taxon": "Artiodactyla",
+          "url": "https://paleobiodb.org/data1.2/taxa/list.json?base_name=Artiodactyla&rel=all_children&rank=species&extant=no&taxon_status=accepted&pres=regular&limit=1&rowcount=yes",
+          "method": "records_found: accepted species below the reference taxon, extant=no, pres=regular. Junior synonyms, ichnotaxa and form taxa excluded. A catalogue count, not an estimate of all species that ever existed."
+        },
+        "extant": {
+          "count": 368,
+          "source": "mdd",
+          "taxon": "Artiodactyla",
+          "url": "https://www.mammaldiversity.org/releases/",
+          "method": "Filter order = Artiodactyla; extinct = 1 or 0. Count extinct=0 rows in MDD v2.5; domestic species included."
+        }
+      },
       "sources": [
+        "pbdb",
         "mdd"
       ],
-      "scope": "Living and recently extinct species (since 1500); domestic species included. Fossil species excluded.",
-      "method": "Filter order = Artiodactyla; extinct = 1 or 0.",
+      "scope": "Independent source snapshots; source coverage, dates and species concepts differ. Counts do not roll up in the ontology.",
+      "method": "Direct reference-taxon counts; no ontology-child totals or composite-taxon arithmetic.",
       "mappings": {
         "GPT": [
           {
@@ -1785,14 +2314,31 @@
     },
     "Cetacean": {
       "taxon": "Cetacea",
-      "total": 102,
-      "extinct": 0,
+      "total": null,
+      "extinct": 623,
       "extant": 102,
+      "references": {
+        "extinct": {
+          "count": 623,
+          "source": "pbdb",
+          "taxon": "Cetacea",
+          "url": "https://paleobiodb.org/data1.2/taxa/list.json?base_name=Cetacea&rel=all_children&rank=species&extant=no&taxon_status=accepted&pres=regular&limit=1&rowcount=yes",
+          "method": "records_found: accepted species below the reference taxon, extant=no, pres=regular. Junior synonyms, ichnotaxa and form taxa excluded. A catalogue count, not an estimate of all species that ever existed."
+        },
+        "extant": {
+          "count": 102,
+          "source": "mdd",
+          "taxon": "Cetacea",
+          "url": "https://www.mammaldiversity.org/releases/",
+          "method": "Filter suborder = Cetacea; extinct = 1 or 0. Count extinct=0 rows in MDD v2.5; domestic species included."
+        }
+      },
       "sources": [
+        "pbdb",
         "mdd"
       ],
-      "scope": "Living and recently extinct species (since 1500); domestic species included. Fossil species excluded.",
-      "method": "Filter suborder = Cetacea; extinct = 1 or 0.",
+      "scope": "Independent source snapshots; source coverage, dates and species concepts differ. Counts do not roll up in the ontology.",
+      "method": "Direct reference-taxon counts; no ontology-child totals or composite-taxon arithmetic.",
       "mappings": {
         "GPT": [
           {
@@ -1803,14 +2349,31 @@
     },
     "Perissodactyl": {
       "taxon": "Perissodactyla",
-      "total": 18,
-      "extinct": 0,
+      "total": null,
+      "extinct": 1052,
       "extant": 18,
+      "references": {
+        "extinct": {
+          "count": 1052,
+          "source": "pbdb",
+          "taxon": "Perissodactyla",
+          "url": "https://paleobiodb.org/data1.2/taxa/list.json?base_name=Perissodactyla&rel=all_children&rank=species&extant=no&taxon_status=accepted&pres=regular&limit=1&rowcount=yes",
+          "method": "records_found: accepted species below the reference taxon, extant=no, pres=regular. Junior synonyms, ichnotaxa and form taxa excluded. A catalogue count, not an estimate of all species that ever existed."
+        },
+        "extant": {
+          "count": 18,
+          "source": "mdd",
+          "taxon": "Perissodactyla",
+          "url": "https://www.mammaldiversity.org/releases/",
+          "method": "Filter order = Perissodactyla; extinct = 1 or 0. Count extinct=0 rows in MDD v2.5; domestic species included."
+        }
+      },
       "sources": [
+        "pbdb",
         "mdd"
       ],
-      "scope": "Living and recently extinct species (since 1500); domestic species included. Fossil species excluded.",
-      "method": "Filter order = Perissodactyla; extinct = 1 or 0.",
+      "scope": "Independent source snapshots; source coverage, dates and species concepts differ. Counts do not roll up in the ontology.",
+      "method": "Direct reference-taxon counts; no ontology-child totals or composite-taxon arithmetic.",
       "mappings": {
         "GPT": [
           {
@@ -1821,32 +2384,78 @@
     },
     "Simian": {
       "taxon": "Simiiformes",
-      "total": 359,
-      "extinct": 1,
+      "total": null,
+      "extinct": 267,
       "extant": 358,
+      "references": {
+        "extinct": {
+          "count": 267,
+          "source": "pbdb",
+          "taxon": "Simiiformes",
+          "url": "https://paleobiodb.org/data1.2/taxa/list.json?base_name=Simiiformes&rel=all_children&rank=species&extant=no&taxon_status=accepted&pres=regular&limit=1&rowcount=yes",
+          "method": "records_found: accepted species below the reference taxon, extant=no, pres=regular. Junior synonyms, ichnotaxa and form taxa excluded. A catalogue count, not an estimate of all species that ever existed."
+        },
+        "extant": {
+          "count": 358,
+          "source": "mdd",
+          "taxon": "Simiiformes",
+          "url": "https://www.mammaldiversity.org/releases/",
+          "method": "Filter infraorder = Simiiformes; extinct = 1 or 0. Count extinct=0 rows in MDD v2.5; domestic species included."
+        }
+      },
       "sources": [
+        "pbdb",
         "mdd"
       ],
-      "scope": "Living and recently extinct species (since 1500); domestic species included. Fossil species excluded.",
-      "method": "Filter infraorder = Simiiformes; extinct = 1 or 0.",
+      "scope": "Independent source snapshots; source coverage, dates and species concepts differ. Counts do not roll up in the ontology.",
+      "method": "Direct reference-taxon counts; no ontology-child totals or composite-taxon arithmetic.",
       "mappings": {
         "GPT": [
           {
             "id": "Simian"
+          }
+        ],
+        ".": [
+          {
+            "id": "Monkey",
+            "interpretation": "Simiiformes proxy includes apes; no paraphyletic monkey total assembled."
+          }
+        ],
+        "SUMO": [
+          {
+            "id": "Monkey",
+            "interpretation": "Simiiformes proxy includes apes; no paraphyletic monkey total assembled."
           }
         ]
       }
     },
     "Lagomorph": {
       "taxon": "Lagomorpha",
-      "total": 115,
-      "extinct": 1,
+      "total": null,
+      "extinct": 148,
       "extant": 114,
+      "references": {
+        "extinct": {
+          "count": 148,
+          "source": "pbdb",
+          "taxon": "Lagomorpha",
+          "url": "https://paleobiodb.org/data1.2/taxa/list.json?base_name=Lagomorpha&rel=all_children&rank=species&extant=no&taxon_status=accepted&pres=regular&limit=1&rowcount=yes",
+          "method": "records_found: accepted species below the reference taxon, extant=no, pres=regular. Junior synonyms, ichnotaxa and form taxa excluded. A catalogue count, not an estimate of all species that ever existed."
+        },
+        "extant": {
+          "count": 114,
+          "source": "mdd",
+          "taxon": "Lagomorpha",
+          "url": "https://www.mammaldiversity.org/releases/",
+          "method": "Filter order = Lagomorpha; extinct = 1 or 0. Count extinct=0 rows in MDD v2.5; domestic species included."
+        }
+      },
       "sources": [
+        "pbdb",
         "mdd"
       ],
-      "scope": "Living and recently extinct species (since 1500); domestic species included. Fossil species excluded.",
-      "method": "Filter order = Lagomorpha; extinct = 1 or 0.",
+      "scope": "Independent source snapshots; source coverage, dates and species concepts differ. Counts do not roll up in the ontology.",
+      "method": "Direct reference-taxon counts; no ontology-child totals or composite-taxon arithmetic.",
       "mappings": {
         "GPT": [
           {
@@ -1856,73 +2465,94 @@
       }
     },
     "Synapsid": {
-      "taxon": "Synapsida: mammalian component",
-      "total": 6904,
-      "extinct": 113,
+      "taxon": "Synapsida",
+      "total": null,
+      "extinct": 14784,
       "extant": 6791,
+      "references": {
+        "extinct": {
+          "count": 14784,
+          "source": "pbdb",
+          "taxon": "Synapsida",
+          "url": "https://paleobiodb.org/data1.2/taxa/list.json?base_name=Synapsida&rel=all_children&rank=species&extant=no&taxon_status=accepted&pres=regular&limit=1&rowcount=yes",
+          "method": "records_found: accepted species below the reference taxon, extant=no, pres=regular. Junior synonyms, ichnotaxa and form taxa excluded. A catalogue count, not an estimate of all species that ever existed."
+        },
+        "extant": {
+          "count": 6791,
+          "source": "mdd",
+          "taxon": "Mammalia",
+          "url": "https://www.mammaldiversity.org/releases/",
+          "method": "Closest living reference is Mammalia: all living synapsids are mammals. Count extinct=0 rows in MDD v2.5; fossil count independently uses PBDB Synapsida."
+        }
+      },
       "sources": [
+        "pbdb",
         "mdd"
       ],
-      "scope": "Living and recently extinct mammals only; fossil non-mammalian synapsids and fossil mammals are outside this source.",
-      "method": "Same living/recent component as Mammalia.",
+      "scope": "Independent source snapshots; source coverage, dates and species concepts differ. Counts do not roll up in the ontology.",
+      "method": "Direct reference-taxon counts; no ontology-child totals or composite-taxon arithmetic.",
       "mappings": {
         "GPT": [
           {
             "id": "Synapsid"
           }
         ]
-      },
-      "components": [
-        {
-          "record": "Mammal",
-          "coefficient": 1
-        }
-      ],
-      "display": {
-        "total": null,
-        "extinct": null,
-        "extant": 6791,
-        "note": "Whole-clade extinct count is unavailable and omitted from the tree. The extant component exhausts living representatives of the clade."
       }
     },
     "Dinosaur": {
-      "taxon": "Dinosauria: avian component",
-      "total": 11044,
-      "extinct": 176,
+      "taxon": "Dinosauria",
+      "total": null,
+      "extinct": 3538,
       "extant": 10868,
+      "references": {
+        "extinct": {
+          "count": 3538,
+          "source": "pbdb",
+          "taxon": "Dinosauria",
+          "url": "https://paleobiodb.org/data1.2/taxa/list.json?base_name=Dinosauria&rel=all_children&rank=species&extant=no&taxon_status=accepted&pres=regular&limit=1&rowcount=yes",
+          "method": "records_found: accepted species below the reference taxon, extant=no, pres=regular. Junior synonyms, ichnotaxa and form taxa excluded. A catalogue count, not an estimate of all species that ever existed."
+        },
+        "extant": {
+          "count": 10868,
+          "source": "col",
+          "taxon": "Aves",
+          "url": "https://api.checklistbank.org/dataset/316321/taxon/V2/metrics",
+          "method": "Closest living reference is Aves: birds are the living dinosaurs. Direct speciesExtantCount; extinct count independently uses PBDB Dinosauria."
+        }
+      },
       "sources": [
+        "pbdb",
         "col"
       ],
-      "scope": "Avian component only; non-avian fossil dinosaur species are not included. COL extinction flags apply only to species covered by its Aves checklist.",
-      "method": "Same avian component as Aves.",
+      "scope": "Independent source snapshots; source coverage, dates and species concepts differ. Counts do not roll up in the ontology.",
+      "method": "Direct reference-taxon counts; no ontology-child totals or composite-taxon arithmetic.",
       "mappings": {
         "GPT": [
           {
             "id": "Dinosaur"
           }
         ]
-      },
-      "components": [
-        {
-          "record": "Bird",
-          "coefficient": 1
-        }
-      ],
-      "display": {
-        "total": null,
-        "extinct": null,
-        "extant": 10868,
-        "note": "Whole-clade extinct count is unavailable and omitted from the tree. The extant component exhausts living representatives of the clade."
       }
     },
     "Fish": {
       "taxon": "Fishes excluding tetrapods",
-      "total": 37772,
+      "total": null,
+      "extinct": null,
+      "extant": 37772,
+      "references": {
+        "extant": {
+          "count": 37772,
+          "source": "fishes",
+          "taxon": "Recent fishes excluding tetrapods",
+          "url": "https://researcharchive.calacademy.org/research/ichthyology/catalog/fishcatmain.asp",
+          "method": "Published valid recent-fish species count, used as a living-species proxy; recent extinctions can be retained. The reference supplies this informal group total directly."
+        }
+      },
       "sources": [
         "fishes"
       ],
-      "scope": "Valid fish species in Eschmeyer’s Catalog; no extinction breakdown supplied by the headline statistic.",
-      "method": "Published valid-species total, not all names or synonyms.",
+      "scope": "Independent source snapshots; source coverage, dates and species concepts differ. Counts do not roll up in the ontology.",
+      "method": "Direct reference-taxon counts; no ontology-child totals or composite-taxon arithmetic.",
       "mappings": {
         ".": [
           {
@@ -1941,11 +2571,22 @@
     "Virus": {
       "taxon": "ICTV virus and viroid species",
       "total": 17554,
+      "extinct": null,
+      "extant": null,
+      "references": {
+        "total": {
+          "count": 17554,
+          "source": "ictv",
+          "taxon": "ICTV virus and viroid species",
+          "url": "https://ictv.global/news/MSL41",
+          "method": "Published MSL41 species count without an extinction split; includes viroids. Closest reference for older protein-coated Virus wording; no subtraction or composite calculation."
+        }
+      },
       "sources": [
         "ictv"
       ],
-      "scope": "Recognized ICTV MSL41 species, including 45 viroid species; cellular organisms excluded. Extinction status is not applicable to the classification.",
-      "method": "MSL41 species rows. GPT’s acellular infectious-entity definition admits viroids; older protein-coated Virus definitions do not.",
+      "scope": "Independent source snapshots; source coverage, dates and species concepts differ. Counts do not roll up in the ontology.",
+      "method": "Direct reference-taxon counts; no ontology-child totals or composite-taxon arithmetic.",
       "mappings": {
         "GPT": [
           {
@@ -1957,40 +2598,48 @@
             "id": "Category:Viruses",
             "interpretation": "Species in the associated taxon, not counts of Wikipedia articles or subcategories."
           }
-        ]
-      }
-    },
-    "CoatedVirus": {
-      "taxon": "ICTV species excluding viroids",
-      "total": 17509,
-      "sources": [
-        "ictv"
-      ],
-      "scope": "MSL41 species excluding the 45 viroids (Pospiviroidae 40; Avsunviroidae 5). Intended as a viral-species proxy for the older protein-coated definition; ICTV also covers satellite viruses and virus-derived entities.",
-      "method": "17554 minus 40 minus 5. No extinction breakdown.",
-      "mappings": {
+        ],
         ".": [
           {
-            "id": "Virus"
+            "id": "Virus",
+            "interpretation": "ICTV viral-entity species proxy; includes viroids beyond the older protein-coated definition."
           }
         ],
         "SUMO": [
           {
-            "id": "Virus"
+            "id": "Virus",
+            "interpretation": "ICTV viral-entity species proxy; includes viroids beyond the older protein-coated definition."
           }
         ]
       }
     },
     "LegacyPlant": {
       "taxon": "Plantae",
-      "total": 389184,
-      "extinct": 1646,
-      "extant": 21620,
+      "total": null,
+      "extinct": 14070,
+      "extant": 389072,
+      "references": {
+        "extant": {
+          "count": 389072,
+          "source": "col",
+          "taxon": "Plantae",
+          "url": "https://api.checklistbank.org/dataset/316321/taxon/P/metrics",
+          "method": "Publisher-supplied speciesExtantCount from the reference-taxon metrics. Includes the release’s accepted and provisionally accepted species; does not rely on extinct=false annotations."
+        },
+        "extinct": {
+          "count": 14070,
+          "source": "pbdb",
+          "taxon": "Plantae",
+          "url": "https://paleobiodb.org/data1.2/taxa/list.json?base_name=Plantae&rel=all_children&rank=species&extant=no&taxon_status=accepted&pres=regular&limit=1&rowcount=yes",
+          "method": "records_found: accepted species below the reference taxon, extant=no, pres=regular. Junior synonyms, ichnotaxa and form taxa excluded. A catalogue count, not an estimate of all species that ever existed."
+        }
+      },
       "sources": [
-        "col"
+        "col",
+        "pbdb"
       ],
-      "scope": "Accepted catalogued species, including fossil and recently extinct species where covered. Coverage is incomplete; missing extinction flags are unknown, not extant.",
-      "method": "Accepted species below COL taxon P; extinction status queried separately.",
+      "scope": "Independent source snapshots; source coverage, dates and species concepts differ. Counts do not roll up in the ontology.",
+      "method": "Direct reference-taxon counts; no ontology-child totals or composite-taxon arithmetic.",
       "mappings": {
         ".": [
           {
@@ -2004,46 +2653,76 @@
             "interpretation": "Conventional Plantae kingdom, including its algae; the older functional definition does not coincide exactly with this taxon."
           }
         ]
+      }
+    },
+    "Invertebrate": {
+      "taxon": "Invertebrates",
+      "total": null,
+      "extinct": null,
+      "extant": 1457195,
+      "references": {
+        "extant": {
+          "count": 1457195,
+          "source": "iucn",
+          "taxon": "Invertebrates",
+          "url": "https://nc.iucnredlist.org/redlist/content/attachment_files/2026-1_RL_Table1a.pdf",
+          "method": "Direct INVERTEBRATES subtotal in the Estimated Number of described species column, not evaluated or threatened species. No assembly from ontology children."
+        }
       },
-      "queries": {
-        "total": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=P&rank=species&status=accepted&limit=0",
-        "extinct": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=P&rank=species&status=accepted&limit=0&extinct=true",
-        "extant": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=P&rank=species&status=accepted&limit=0&extinct=false"
+      "sources": [
+        "iucn"
+      ],
+      "scope": "Published reference-group estimate; no composite calculation in our ontology. Non-fossil described-species proxy may include recent extinctions.",
+      "method": "Use the source’s reported group subtotal directly.",
+      "mappings": {
+        ".": [
+          {
+            "id": "Invertebrate",
+            "interpretation": ""
+          }
+        ],
+        "SUMO": [
+          {
+            "id": "Invertebrate",
+            "interpretation": ""
+          }
+        ]
+      }
+    },
+    "Alga": {
+      "taxon": "Algae: green-algal reference",
+      "total": null,
+      "extinct": null,
+      "extant": 14739,
+      "references": {
+        "extant": {
+          "count": 14739,
+          "source": "iucn",
+          "taxon": "Green algae (Charophyta and Chlorophyta)",
+          "url": "https://nc.iucnredlist.org/redlist/content/attachment_files/2026-1_RL_Table1a.pdf",
+          "method": "Direct Green Algae described-species figure, used as the closest living-species proxy for the legacy plant-like Alga node."
+        }
+      },
+      "sources": [
+        "iucn"
+      ],
+      "scope": "Closest published green-algal reference; excludes red and brown algae. No composite count assembled in our tree.",
+      "method": "Direct source-reported reference-group count.",
+      "mappings": {
+        ".": [
+          {
+            "id": "Alga"
+          }
+        ],
+        "SUMO": [
+          {
+            "id": "Alga"
+          }
+        ]
       }
     }
   },
-  "comparisons": [
-    {
-      "taxon": "Land plants",
-      "count": 382401,
-      "source": "https://worldfloraonline.org/",
-      "scope": "World Flora Online accepted land-plant species; different backbone and fossil coverage from COL."
-    },
-    {
-      "taxon": "Vascular plants",
-      "count": 360349,
-      "source": "https://www.worldplants.de/world-plants-complete-list/total-species-count",
-      "scope": "World Plants 26.08 non-fossil species, including provisionally accepted names and microspecies; differs from COL acceptance filter."
-    },
-    {
-      "taxon": "Gymnosperms",
-      "count": 1194,
-      "source": "https://www.worldplants.de/world-plants-complete-list/total-species-count",
-      "scope": "World Plants 26.08 non-fossil recognized species; COL includes fossil ginkgos."
-    },
-    {
-      "taxon": "Amphibians",
-      "count": 9136,
-      "source": "https://amphibiaweb.org/",
-      "scope": "Live AmphibiaWeb total, retrieved 2026.10.10; headline lacks extinction breakdown. COL dated checklist supplies explicit statuses but is less current."
-    },
-    {
-      "taxon": "Prokaryotes",
-      "count": 22681,
-      "source": "https://lpsn.dsmz.de/text/numbers",
-      "scope": "LPSN 2026.09.18: ICNP valid species excluding synonyms; different nomenclatural scope from COL, including its botanical-code and Candidatus coverage."
-    }
-  ],
+  "comparisons": [],
   "exclusions": [
     {
       "datasets": [
@@ -2051,27 +2730,15 @@
         "SUMO"
       ],
       "nodes": [
-        "Fungus"
-      ],
-      "reason": "Explicitly includes slime molds and true fungi: not equivalent to modern Fungi."
-    },
-    {
-      "datasets": [
-        ".",
-        "SUMO"
-      ],
-      "nodes": [
-        "Monkey",
         "AquaticMammal",
         "HoofedMammal",
-        "Alga",
-        "NonFloweringPlant",
+        "Carnivore",
         "MicroOrganism",
         "ColdBloodedVertebrate",
-        "WarmBloodedVertebrate",
+        "Warm-BloodedVertebrate",
         "ToxicOrganism"
       ],
-      "reason": "Functional, ecological, informal or polyphyletic grouping without a defensible matching global checklist count."
+      "reason": "Ecological, dietary, temperature or informal grouping without a sufficiently useful single matching reference; no composite count assembled."
     },
     {
       "datasets": [
@@ -2079,7 +2746,7 @@
         "Propaedia"
       ],
       "nodes": [],
-      "reason": "Packaged chapters describe taxonomy and biology topics, not corresponding taxon nodes."
+      "reason": "Packaged entries are subject chapters rather than taxon nodes."
     }
   ]
 }

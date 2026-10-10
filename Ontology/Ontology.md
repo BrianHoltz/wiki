@@ -1150,6 +1150,39 @@ changes. The regression checks must exercise the example search buttons as
 well as ordinary search, expansion, collapse, and lineage navigation. Do not
 leave a source-tree or browser change visible only in a local working copy.
 
+### Taxon species counts
+
+All rendered ontologies use independent reference counts for taxon nodes.
+Choose a high-quality taxonomy with a useful count for each node and each
+extinction category; the two categories may use different sources. Map to the
+closest reference taxon when no exact match has data, recording any scope
+difference. Counts need not agree across sources or roll up through our tree.
+Do not assemble composite counts for paraphyletic or informal groups; a
+subtotal published by a reference source is usable directly.
+
+Living counts primarily use [Catalogue of Life](https://doi.org/10.48580/dgz5n)
+reference-taxon metrics (`speciesExtantCount`), supplemented by specialist
+checklists and [OneZoom](https://www.onezoom.org/data_sources.load?tabs=all).
+Extinct counts primarily use the
+[Paleobiology Database](https://paleobiodb.org/data1.2/taxa/list): accepted
+species below the reference taxon, `extant=no`, excluding ichnotaxa and form
+taxa. These are catalogued species, not estimates of every species that ever
+lived. Living-tree and non-fossil checklist counts are suggestive proxies and
+can retain recently extinct species. Use source-reported values without
+subtracting uncertain extinction flags or reconciling different classifications.
+
+The monochrome symbols follow their counts: ☠︎ for extinct and ♥︎ for extant,
+with extant last and `+` between them. Omit unavailable counts; show a known
+zero as zero. An available total without an extinction split has no symbol.
+Abbreviate thousands and millions with K and M, using at most three significant
+digits and retaining significant trailing zeros. Thus 30,040 becomes 30.0K.
+
+The [source and mapping catalogue](taxon-species-counts.html) records each
+reference taxon, source, retrieval date, count and method, including approximate
+matches. Its maintained data is [taxon-species-counts.json](taxon-species-counts.json);
+[render_species_counts.py](render_species_counts.py) generates the catalogue
+and each browser's count sidecar.
+
 ### Node information notes
 
 The browser should place a Unicode information glyph `ⓘ` after child and

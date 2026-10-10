@@ -18,7 +18,7 @@ summary{cursor:pointer;display:flex;align-items:baseline;gap:4px;list-style:none
 details.lineage > summary::before{content:"\25C6"}
 a{color:var(--accent)}#results{margin:10px 0 18px}.result{padding:5px 0;border-bottom:1px solid var(--line)}
 .node{display:flex;align-items:baseline;gap:4px}.node-content{display:flex;align-items:baseline;gap:0;min-width:0;flex:1}.expander{background:transparent;border:0;color:var(--fg);cursor:pointer;font:inherit;padding:0;width:1em}.expander-placeholder{display:inline-block;flex:none;width:1em;text-align:center;color:var(--fg)}.children[hidden]{display:none}
-.node-content:has(>.definition.expanded){display:block}.node-title{display:inline-block}.node-content>.meta{white-space:nowrap}.expander{flex:none}.node-stats{margin-left:4px}.species-count{color:inherit;text-decoration:none}.species-count:hover{text-decoration:underline}
+.node-content:has(>.definition.expanded){display:block}.node-title{display:inline-block}.node-content>.meta{white-space:nowrap}.expander{flex:none}.node-stats{margin-left:4px}.species-count{font-variant-emoji:text;color:inherit;text-decoration:none}.species-count:hover{text-decoration:underline}
 </style>
 </head>
 <body>
@@ -37,7 +37,7 @@ function link(id){const n=byId.get(id);return n?`<a href="#${encodeURIComponent(
 function sourceLink(n){return n.sourceUrl?` <a class="source-link" href="${esc(n.sourceUrl)}" target="_blank" rel="noopener" aria-label="Open source for ${esc(n.label)}">↗</a>`:''}
 function formatDefinition(text){return esc(text).replace(/&amp;%([A-Za-z0-9_]+)/g,(_,id)=>byId.has(id)?link(id):esc(id))}
 function formatSpeciesCount(count){if(count===null||count===undefined)return '';if(count<1000)return String(count);const rounded=Number(count.toPrecision(3));const unit=rounded>=1e6?1e6:1e3;return (rounded/unit).toPrecision(3)+(unit===1e6?'M':'K')}
-function speciesStats(n){const s=n.speciesCount;if(!s)return '';const known=v=>v!==null&&v!==undefined;const parts=[];if(known(s.extinct))parts.push(`${formatSpeciesCount(s.extinct)}☠`);if(known(s.extant))parts.push(`${formatSpeciesCount(s.extant)}♥`);const count=parts.length?parts.join('+'):(known(s.total)?formatSpeciesCount(s.total):'');return count?`<a class="species-count" href="${esc(s.url)}" target="_blank" rel="noopener">${count}</a>`:''}
+function speciesStats(n){const s=n.speciesCount;if(!s)return '';const known=v=>v!==null&&v!==undefined;const parts=[];if(known(s.extinct))parts.push(`${formatSpeciesCount(s.extinct)}☠︎`);if(known(s.extant))parts.push(`${formatSpeciesCount(s.extant)}♥︎`);const count=parts.length?parts.join('+'):(known(s.total)?formatSpeciesCount(s.total):'');return count?`<a class="species-count" href="${esc(s.url)}" target="_blank" rel="noopener">${count}</a>`:''}
 function renderNode(id,open=false,children=null,lineage=false,childOpen=null){const n=byId.get(id);const visibleChildren=children||lineageChildren?.get(id)||n.children;
 const directChildren=n.children.length;
 const otherDescendants=descendantCount(id)-directChildren;

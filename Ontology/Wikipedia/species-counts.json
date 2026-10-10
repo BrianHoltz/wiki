@@ -1,30 +1,70 @@
 {
   "Category:Bacteria": {
-    "total": 26397,
-    "extinct": null,
-    "extant": null,
+    "total": null,
+    "extinct": 152,
+    "extant": 26525,
     "taxon": "Bacteria",
-    "scope": "Accepted catalogued species, including fossil and recently extinct species where covered. Coverage is incomplete; missing extinction flags are unknown, not extant.",
+    "scope": "Independent source snapshots; source coverage, dates and species concepts differ. Counts do not roll up in the ontology.",
     "interpretation": "Species in the associated taxon, not counts of Wikipedia articles or subcategories.",
     "url": "../taxon-species-counts.html#Bacterium",
     "retrieved": "2026.10.10"
   },
+  "Category:Prokaryotes": {
+    "total": null,
+    "extinct": 152,
+    "extant": 26525,
+    "taxon": "Bacteria",
+    "scope": "Independent source snapshots; source coverage, dates and species concepts differ. Counts do not roll up in the ontology.",
+    "interpretation": "Associated reference-taxon count, not Wikipedia category/article counts. Bacteria is a closest-reference proxy excluding Archaea.",
+    "url": "../taxon-species-counts.html#Bacterium",
+    "retrieved": "2026.10.10"
+  },
   "Category:Archaea": {
-    "total": 790,
-    "extinct": null,
-    "extant": null,
+    "total": null,
+    "extinct": 4,
+    "extant": 792,
     "taxon": "Archaea",
-    "scope": "Accepted catalogued species, including fossil and recently extinct species where covered. Coverage is incomplete; missing extinction flags are unknown, not extant.",
+    "scope": "Independent source snapshots; source coverage, dates and species concepts differ. Counts do not roll up in the ontology.",
     "interpretation": "Species in the associated taxon, not counts of Wikipedia articles or subcategories.",
     "url": "../taxon-species-counts.html#Archaeon",
     "retrieved": "2026.10.10"
   },
+  "Category:Eukaryotes": {
+    "total": null,
+    "extinct": 21956,
+    "extant": 2052948,
+    "taxon": "Eukaryota",
+    "scope": "Independent source snapshots; source coverage, dates and species concepts differ. Counts do not roll up in the ontology.",
+    "interpretation": "Associated reference-taxon count, not Wikipedia category/article counts.",
+    "url": "../taxon-species-counts.html#Eukaryote",
+    "retrieved": "2026.10.10"
+  },
+  "Category:Life": {
+    "total": null,
+    "extinct": 191541,
+    "extant": 2228001,
+    "taxon": "Life",
+    "scope": "Independent source snapshots; source coverage, dates and species concepts differ. Counts do not roll up in the ontology.",
+    "interpretation": "Associated reference-taxon count, not Wikipedia category/article counts.",
+    "url": "../taxon-species-counts.html#Organism",
+    "retrieved": "2026.10.10"
+  },
+  "Category:Organisms": {
+    "total": null,
+    "extinct": 191541,
+    "extant": 2228001,
+    "taxon": "Life",
+    "scope": "Independent source snapshots; source coverage, dates and species concepts differ. Counts do not roll up in the ontology.",
+    "interpretation": "Associated reference-taxon count, not Wikipedia category/article counts.",
+    "url": "../taxon-species-counts.html#Organism",
+    "retrieved": "2026.10.10"
+  },
   "Category:Humans": {
-    "total": 1,
+    "total": null,
     "extinct": 0,
     "extant": 1,
     "taxon": "Homo sapiens",
-    "scope": "Living and recently extinct species (since 1500); domestic species included. Fossil species excluded.",
+    "scope": "Independent source snapshots; source coverage, dates and species concepts differ. Counts do not roll up in the ontology.",
     "interpretation": "Species in the associated taxon, not counts of Wikipedia articles or subcategories.",
     "url": "../taxon-species-counts.html#Human",
     "retrieved": "2026.10.10"
@@ -34,7 +74,7 @@
     "extinct": null,
     "extant": null,
     "taxon": "ICTV virus and viroid species",
-    "scope": "Recognized ICTV MSL41 species, including 45 viroid species; cellular organisms excluded. Extinction status is not applicable to the classification.",
+    "scope": "Independent source snapshots; source coverage, dates and species concepts differ. Counts do not roll up in the ontology.",
     "interpretation": "Species in the associated taxon, not counts of Wikipedia articles or subcategories.",
     "url": "../taxon-species-counts.html#Virus",
     "retrieved": "2026.10.10"
