@@ -1,0 +1,2085 @@
+{
+  "retrieved": "2026.10.10",
+  "policy": "Named accepted/described species, not extrapolated undiscovered diversity. At most three significant digits, preserving significant trailing zeroes. Extant counts are last; missing extinction status is never assumed extant. Counts and extinction coverage are source-dependent, and mixed-source clade counts are not necessarily additive.",
+  "sources": {
+    "col": {
+      "title": "Catalogue of Life COL26.9 base release",
+      "url": "https://doi.org/10.48580/dgz5n",
+      "date": "2026.09.11",
+      "dataset": 316321,
+      "notes": "Base release chosen for taxonomic scrutiny. Accepted species only; synonyms and provisional acceptance excluded. The full catalogue remains incomplete. Extinct=true and extinct=false are separate filters; unset flags remain unknown."
+    },
+    "mdd": {
+      "title": "ASM Mammal Diversity Database v2.5",
+      "url": "https://www.mammaldiversity.org/releases/",
+      "date": "2026.07.28",
+      "download": "https://raw.githubusercontent.com/mammaldiversity/mammaldiversity.github.io/master/assets/data/MDD.zip",
+      "file": "MDD_v2.5_6904species.csv",
+      "sha256": "0d07a7e9409712fa86c1e3afadcf4c67bf4f9e16d5693a878e11ec1bf6860493",
+      "notes": "6904 species: 113 recently extinct and 6791 extant, including 17 domestic species. Species concepts differ from other checklists."
+    },
+    "reptile": {
+      "title": "Reptile Database species statistics",
+      "url": "https://www.reptile-database.org/db-info/SpeciesStat.html",
+      "date": "2026.06.16",
+      "notes": "12650 recognized non-avian reptile species, including one tuatara. This headline does not supply extinction status for every species."
+    },
+    "fishes": {
+      "title": "Eschmeyer’s Catalog of Fishes",
+      "url": "https://researcharchive.calacademy.org/research/ichthyology/catalog/fishcatmain.asp",
+      "date": "2026.09.21",
+      "notes": "37772 valid fish species; synonyms excluded."
+    },
+    "ictv": {
+      "title": "ICTV Master Species List 41",
+      "url": "https://ictv.global/news/MSL41",
+      "date": "2026.03.20",
+      "archive": "https://doi.org/10.5281/zenodo.19154110",
+      "download": "https://ictv.global/msl/current",
+      "sha256": "9d262d7864f1f619445a897ae568718ed15b1309c8f0c157a12fd7fb9fd07801",
+      "notes": "17554 recognized species; the species worksheet contains 40 Pospiviroidae and 5 Avsunviroidae viroids."
+    },
+    "amphibiaweb": {
+      "title": "AmphibiaWeb live species counter",
+      "url": "https://amphibiaweb.org/",
+      "date": "2026.10.10",
+      "notes": "9136 species: 8055 frogs, 846 salamanders and 235 caecilians; headline does not split extinct and extant."
+    }
+  },
+  "records": {
+    "Bacterium": {
+      "taxon": "Bacteria",
+      "total": 26397,
+      "extinct": 0,
+      "extant": 4827,
+      "sources": [
+        "col"
+      ],
+      "scope": "Accepted catalogued species, including fossil and recently extinct species where covered. Coverage is incomplete; missing extinction flags are unknown, not extant.",
+      "method": "Accepted species below COL taxon CRRY6; extinction status queried separately.",
+      "mappings": {
+        "GPT": [
+          {
+            "id": "Bacterium"
+          }
+        ],
+        ".": [
+          {
+            "id": "Bacterium",
+            "interpretation": "Conventional named taxon; older functional wording is approximate."
+          }
+        ],
+        "SUMO": [
+          {
+            "id": "Bacterium",
+            "interpretation": "Conventional named taxon; older functional wording is approximate."
+          }
+        ],
+        "Wikipedia": [
+          {
+            "id": "Category:Bacteria",
+            "interpretation": "Species in the associated taxon, not counts of Wikipedia articles or subcategories."
+          }
+        ]
+      },
+      "queries": {
+        "total": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=CRRY6&rank=species&status=accepted&limit=0",
+        "extinct": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=CRRY6&rank=species&status=accepted&limit=0&extinct=true",
+        "extant": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=CRRY6&rank=species&status=accepted&limit=0&extinct=false"
+      }
+    },
+    "Archaeon": {
+      "taxon": "Archaea",
+      "total": 790,
+      "extinct": 0,
+      "extant": 0,
+      "sources": [
+        "col"
+      ],
+      "scope": "Accepted catalogued species, including fossil and recently extinct species where covered. Coverage is incomplete; missing extinction flags are unknown, not extant.",
+      "method": "Accepted species below COL taxon CRLT8; extinction status queried separately.",
+      "mappings": {
+        "GPT": [
+          {
+            "id": "Archaeon"
+          }
+        ],
+        "Wikipedia": [
+          {
+            "id": "Category:Archaea",
+            "interpretation": "Species in the associated taxon, not counts of Wikipedia articles or subcategories."
+          }
+        ]
+      },
+      "queries": {
+        "total": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=CRLT8&rank=species&status=accepted&limit=0",
+        "extinct": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=CRLT8&rank=species&status=accepted&limit=0&extinct=true",
+        "extant": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=CRLT8&rank=species&status=accepted&limit=0&extinct=false"
+      }
+    },
+    "Eukaryote": {
+      "taxon": "Eukaryota",
+      "total": 2142032,
+      "extinct": 169945,
+      "extant": 879328,
+      "sources": [
+        "col"
+      ],
+      "scope": "Accepted catalogued species, including fossil and recently extinct species where covered. Coverage is incomplete; missing extinction flags are unknown, not extant.",
+      "method": "Accepted species below COL taxon CS5HF; extinction status queried separately.",
+      "mappings": {
+        "GPT": [
+          {
+            "id": "Eukaryote"
+          }
+        ]
+      },
+      "queries": {
+        "total": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=CS5HF&rank=species&status=accepted&limit=0",
+        "extinct": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=CS5HF&rank=species&status=accepted&limit=0&extinct=true",
+        "extant": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=CS5HF&rank=species&status=accepted&limit=0&extinct=false"
+      }
+    },
+    "Moss": {
+      "taxon": "Bryophyta",
+      "total": 12031,
+      "extinct": 298,
+      "extant": 11733,
+      "sources": [
+        "col"
+      ],
+      "scope": "Accepted catalogued species, including fossil and recently extinct species where covered. Coverage is incomplete; missing extinction flags are unknown, not extant.",
+      "method": "Accepted species below COL taxon BJ5TM; extinction status queried separately.",
+      "mappings": {
+        "GPT": [
+          {
+            "id": "Moss"
+          }
+        ]
+      },
+      "queries": {
+        "total": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=BJ5TM&rank=species&status=accepted&limit=0",
+        "extinct": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=BJ5TM&rank=species&status=accepted&limit=0&extinct=true",
+        "extant": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=BJ5TM&rank=species&status=accepted&limit=0&extinct=false"
+      }
+    },
+    "VascularPlant": {
+      "taxon": "Tracheophyta",
+      "total": 368650,
+      "extinct": 387,
+      "extant": 2345,
+      "sources": [
+        "col"
+      ],
+      "scope": "Accepted catalogued species, including fossil and recently extinct species where covered. Coverage is incomplete; missing extinction flags are unknown, not extant.",
+      "method": "Accepted species below COL taxon TP; extinction status queried separately.",
+      "mappings": {
+        "GPT": [
+          {
+            "id": "VascularPlant"
+          }
+        ]
+      },
+      "queries": {
+        "total": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=TP&rank=species&status=accepted&limit=0",
+        "extinct": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=TP&rank=species&status=accepted&limit=0&extinct=true",
+        "extant": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=TP&rank=species&status=accepted&limit=0&extinct=false"
+      }
+    },
+    "Fern": {
+      "taxon": "Polypodiopsida",
+      "total": 12457,
+      "extinct": 0,
+      "extant": 0,
+      "sources": [
+        "col"
+      ],
+      "scope": "Accepted catalogued species, including fossil and recently extinct species where covered. Coverage is incomplete; missing extinction flags are unknown, not extant.",
+      "method": "Accepted species below COL taxon GV; extinction status queried separately.",
+      "mappings": {
+        "GPT": [
+          {
+            "id": "Fern"
+          }
+        ]
+      },
+      "queries": {
+        "total": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=GV&rank=species&status=accepted&limit=0",
+        "extinct": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=GV&rank=species&status=accepted&limit=0&extinct=true",
+        "extant": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=GV&rank=species&status=accepted&limit=0&extinct=false"
+      }
+    },
+    "Lycophyte": {
+      "taxon": "Lycopodiopsida",
+      "total": 1503,
+      "extinct": 0,
+      "extant": 0,
+      "sources": [
+        "col"
+      ],
+      "scope": "Accepted catalogued species, including fossil and recently extinct species where covered. Coverage is incomplete; missing extinction flags are unknown, not extant.",
+      "method": "Accepted species below COL taxon LYC; extinction status queried separately.",
+      "mappings": {
+        "GPT": [
+          {
+            "id": "Lycophyte"
+          }
+        ]
+      },
+      "queries": {
+        "total": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=LYC&rank=species&status=accepted&limit=0",
+        "extinct": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=LYC&rank=species&status=accepted&limit=0&extinct=true",
+        "extant": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=LYC&rank=species&status=accepted&limit=0&extinct=false"
+      }
+    },
+    "Fungus": {
+      "taxon": "Fungi",
+      "total": 157044,
+      "extinct": 153,
+      "extant": 156891,
+      "sources": [
+        "col"
+      ],
+      "scope": "Accepted catalogued species, including fossil and recently extinct species where covered. Coverage is incomplete; missing extinction flags are unknown, not extant.",
+      "method": "Accepted species below COL taxon F; extinction status queried separately.",
+      "mappings": {
+        "GPT": [
+          {
+            "id": "Fungus"
+          }
+        ]
+      },
+      "queries": {
+        "total": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=F&rank=species&status=accepted&limit=0",
+        "extinct": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=F&rank=species&status=accepted&limit=0&extinct=true",
+        "extant": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=F&rank=species&status=accepted&limit=0&extinct=false"
+      }
+    },
+    "Animal": {
+      "taxon": "Animalia",
+      "total": 1534287,
+      "extinct": 129067,
+      "extant": 689062,
+      "sources": [
+        "col"
+      ],
+      "scope": "Accepted catalogued species, including fossil and recently extinct species where covered. Coverage is incomplete; missing extinction flags are unknown, not extant.",
+      "method": "Accepted species below COL taxon N; extinction status queried separately.",
+      "mappings": {
+        "GPT": [
+          {
+            "id": "Animal"
+          }
+        ],
+        ".": [
+          {
+            "id": "Animal",
+            "interpretation": ""
+          }
+        ],
+        "SUMO": [
+          {
+            "id": "Animal",
+            "interpretation": ""
+          }
+        ],
+        "Rogets": [
+          {
+            "id": "roget-0366",
+            "interpretation": "Associated taxon Animalia; this thesaurus topic is not a taxonomic subclass node."
+          }
+        ]
+      },
+      "queries": {
+        "total": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=N&rank=species&status=accepted&limit=0",
+        "extinct": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=N&rank=species&status=accepted&limit=0&extinct=true",
+        "extant": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=N&rank=species&status=accepted&limit=0&extinct=false"
+      }
+    },
+    "Sponge": {
+      "taxon": "Porifera",
+      "total": 9930,
+      "extinct": 59,
+      "extant": 7289,
+      "sources": [
+        "col"
+      ],
+      "scope": "Accepted catalogued species, including fossil and recently extinct species where covered. Coverage is incomplete; missing extinction flags are unknown, not extant.",
+      "method": "Accepted species below COL taxon B8TXQ; extinction status queried separately.",
+      "mappings": {
+        "GPT": [
+          {
+            "id": "Sponge"
+          }
+        ]
+      },
+      "queries": {
+        "total": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=B8TXQ&rank=species&status=accepted&limit=0",
+        "extinct": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=B8TXQ&rank=species&status=accepted&limit=0&extinct=true",
+        "extant": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=B8TXQ&rank=species&status=accepted&limit=0&extinct=false"
+      }
+    },
+    "Cnidarian": {
+      "taxon": "Cnidaria",
+      "total": 20625,
+      "extinct": 6051,
+      "extant": 3314,
+      "sources": [
+        "col"
+      ],
+      "scope": "Accepted catalogued species, including fossil and recently extinct species where covered. Coverage is incomplete; missing extinction flags are unknown, not extant.",
+      "method": "Accepted species below COL taxon CN2; extinction status queried separately.",
+      "mappings": {
+        "GPT": [
+          {
+            "id": "Cnidarian"
+          }
+        ]
+      },
+      "queries": {
+        "total": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=CN2&rank=species&status=accepted&limit=0",
+        "extinct": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=CN2&rank=species&status=accepted&limit=0&extinct=true",
+        "extant": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=CN2&rank=species&status=accepted&limit=0&extinct=false"
+      }
+    },
+    "Arthropod": {
+      "taxon": "Arthropoda",
+      "total": 1155626,
+      "extinct": 31153,
+      "extant": 607820,
+      "sources": [
+        "col"
+      ],
+      "scope": "Accepted catalogued species, including fossil and recently extinct species where covered. Coverage is incomplete; missing extinction flags are unknown, not extant.",
+      "method": "Accepted species below COL taxon RT; extinction status queried separately.",
+      "mappings": {
+        "GPT": [
+          {
+            "id": "Arthropod"
+          }
+        ]
+      },
+      "queries": {
+        "total": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=RT&rank=species&status=accepted&limit=0",
+        "extinct": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=RT&rank=species&status=accepted&limit=0&extinct=true",
+        "extant": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=RT&rank=species&status=accepted&limit=0&extinct=false"
+      }
+    },
+    "Insect": {
+      "taxon": "Insecta",
+      "total": 943497,
+      "extinct": 13821,
+      "extant": 529195,
+      "sources": [
+        "col"
+      ],
+      "scope": "Accepted catalogued species, including fossil and recently extinct species where covered. Coverage is incomplete; missing extinction flags are unknown, not extant.",
+      "method": "Accepted species below COL taxon H6; extinction status queried separately.",
+      "mappings": {
+        "GPT": [
+          {
+            "id": "Insect"
+          }
+        ]
+      },
+      "queries": {
+        "total": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=H6&rank=species&status=accepted&limit=0",
+        "extinct": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=H6&rank=species&status=accepted&limit=0&extinct=true",
+        "extant": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=H6&rank=species&status=accepted&limit=0&extinct=false"
+      }
+    },
+    "Arachnid": {
+      "taxon": "Arachnida",
+      "total": 98104,
+      "extinct": 146,
+      "extant": 34340,
+      "sources": [
+        "col"
+      ],
+      "scope": "Accepted catalogued species, including fossil and recently extinct species where covered. Coverage is incomplete; missing extinction flags are unknown, not extant.",
+      "method": "Accepted species below COL taxon CCQKT; extinction status queried separately.",
+      "mappings": {
+        "GPT": [
+          {
+            "id": "Arachnid"
+          }
+        ]
+      },
+      "queries": {
+        "total": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=CCQKT&rank=species&status=accepted&limit=0",
+        "extinct": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=CCQKT&rank=species&status=accepted&limit=0&extinct=true",
+        "extant": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=CCQKT&rank=species&status=accepted&limit=0&extinct=false"
+      }
+    },
+    "Mollusc": {
+      "taxon": "Mollusca",
+      "total": 155263,
+      "extinct": 65861,
+      "extant": 13339,
+      "sources": [
+        "col"
+      ],
+      "scope": "Accepted catalogued species, including fossil and recently extinct species where covered. Coverage is incomplete; missing extinction flags are unknown, not extant.",
+      "method": "Accepted species below COL taxon M2L; extinction status queried separately.",
+      "mappings": {
+        "GPT": [
+          {
+            "id": "Mollusc"
+          }
+        ]
+      },
+      "queries": {
+        "total": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=M2L&rank=species&status=accepted&limit=0",
+        "extinct": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=M2L&rank=species&status=accepted&limit=0&extinct=true",
+        "extant": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=M2L&rank=species&status=accepted&limit=0&extinct=false"
+      }
+    },
+    "Annelid": {
+      "taxon": "Annelida",
+      "total": 19038,
+      "extinct": 1528,
+      "extant": 14946,
+      "sources": [
+        "col"
+      ],
+      "scope": "Accepted catalogued species, including fossil and recently extinct species where covered. Coverage is incomplete; missing extinction flags are unknown, not extant.",
+      "method": "Accepted species below COL taxon NN; extinction status queried separately.",
+      "mappings": {
+        "GPT": [
+          {
+            "id": "Annelid"
+          }
+        ]
+      },
+      "queries": {
+        "total": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=NN&rank=species&status=accepted&limit=0",
+        "extinct": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=NN&rank=species&status=accepted&limit=0&extinct=true",
+        "extant": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=NN&rank=species&status=accepted&limit=0&extinct=false"
+      }
+    },
+    "Nematode": {
+      "taxon": "Nematoda",
+      "total": 19628,
+      "extinct": 30,
+      "extant": 4781,
+      "sources": [
+        "col"
+      ],
+      "scope": "Accepted catalogued species, including fossil and recently extinct species where covered. Coverage is incomplete; missing extinction flags are unknown, not extant.",
+      "method": "Accepted species below COL taxon NM; extinction status queried separately.",
+      "mappings": {
+        "GPT": [
+          {
+            "id": "Nematode"
+          }
+        ]
+      },
+      "queries": {
+        "total": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=NM&rank=species&status=accepted&limit=0",
+        "extinct": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=NM&rank=species&status=accepted&limit=0&extinct=true",
+        "extant": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=NM&rank=species&status=accepted&limit=0&extinct=false"
+      }
+    },
+    "Echinoderm": {
+      "taxon": "Echinodermata",
+      "total": 11890,
+      "extinct": 4160,
+      "extant": 3163,
+      "sources": [
+        "col"
+      ],
+      "scope": "Accepted catalogued species, including fossil and recently extinct species where covered. Coverage is incomplete; missing extinction flags are unknown, not extant.",
+      "method": "Accepted species below COL taxon CHN; extinction status queried separately.",
+      "mappings": {
+        "GPT": [
+          {
+            "id": "Echinoderm"
+          }
+        ]
+      },
+      "queries": {
+        "total": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=CHN&rank=species&status=accepted&limit=0",
+        "extinct": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=CHN&rank=species&status=accepted&limit=0&extinct=true",
+        "extant": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=CHN&rank=species&status=accepted&limit=0&extinct=false"
+      }
+    },
+    "Chordate": {
+      "taxon": "Chordata",
+      "total": 79748,
+      "extinct": 570,
+      "extant": 26294,
+      "sources": [
+        "col"
+      ],
+      "scope": "Accepted catalogued species, including fossil and recently extinct species where covered. Coverage is incomplete; missing extinction flags are unknown, not extant.",
+      "method": "Accepted species below COL taxon CH2; extinction status queried separately.",
+      "mappings": {
+        "GPT": [
+          {
+            "id": "Chordate"
+          }
+        ]
+      },
+      "queries": {
+        "total": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=CH2&rank=species&status=accepted&limit=0",
+        "extinct": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=CH2&rank=species&status=accepted&limit=0&extinct=true",
+        "extant": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=CH2&rank=species&status=accepted&limit=0&extinct=false"
+      }
+    },
+    "Vertebrate": {
+      "taxon": "Vertebrata",
+      "total": 76572,
+      "extinct": 570,
+      "extant": 26240,
+      "sources": [
+        "col"
+      ],
+      "scope": "Accepted catalogued species, including fossil and recently extinct species where covered. Coverage is incomplete; missing extinction flags are unknown, not extant.",
+      "method": "Accepted species below COL taxon 8V4V3; extinction status queried separately.",
+      "mappings": {
+        "GPT": [
+          {
+            "id": "Vertebrate"
+          }
+        ],
+        ".": [
+          {
+            "id": "Vertebrate",
+            "interpretation": ""
+          }
+        ],
+        "SUMO": [
+          {
+            "id": "Vertebrate",
+            "interpretation": ""
+          }
+        ]
+      },
+      "queries": {
+        "total": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=8V4V3&rank=species&status=accepted&limit=0",
+        "extinct": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=8V4V3&rank=species&status=accepted&limit=0&extinct=true",
+        "extant": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=8V4V3&rank=species&status=accepted&limit=0&extinct=false"
+      }
+    },
+    "JawedVertebrate": {
+      "taxon": "Gnathostomata",
+      "total": 76430,
+      "extinct": 570,
+      "extant": 26240,
+      "sources": [
+        "col"
+      ],
+      "scope": "Accepted catalogued species, including fossil and recently extinct species where covered. Coverage is incomplete; missing extinction flags are unknown, not extant.",
+      "method": "Accepted species below COL taxon 8V4V5; extinction status queried separately.",
+      "mappings": {
+        "GPT": [
+          {
+            "id": "JawedVertebrate"
+          }
+        ]
+      },
+      "queries": {
+        "total": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=8V4V5&rank=species&status=accepted&limit=0",
+        "extinct": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=8V4V5&rank=species&status=accepted&limit=0&extinct=true",
+        "extant": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=8V4V5&rank=species&status=accepted&limit=0&extinct=false"
+      }
+    },
+    "CartilaginousFish": {
+      "taxon": "Chondrichthyes",
+      "total": 1354,
+      "extinct": 0,
+      "extant": 9,
+      "sources": [
+        "col"
+      ],
+      "scope": "Accepted catalogued species, including fossil and recently extinct species where covered. Coverage is incomplete; missing extinction flags are unknown, not extant.",
+      "method": "Accepted species below COL taxon 8X6G5; extinction status queried separately.",
+      "mappings": {
+        "GPT": [
+          {
+            "id": "CartilaginousFish"
+          }
+        ]
+      },
+      "queries": {
+        "total": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=8X6G5&rank=species&status=accepted&limit=0",
+        "extinct": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=8X6G5&rank=species&status=accepted&limit=0&extinct=true",
+        "extant": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=8X6G5&rank=species&status=accepted&limit=0&extinct=false"
+      }
+    },
+    "BonyVertebrate": {
+      "taxon": "Osteichthyes",
+      "total": 75076,
+      "extinct": 570,
+      "extant": 26231,
+      "sources": [
+        "col"
+      ],
+      "scope": "Accepted catalogued species, including fossil and recently extinct species where covered. Coverage is incomplete; missing extinction flags are unknown, not extant.",
+      "method": "Accepted species below COL taxon 8VVWB; extinction status queried separately.",
+      "mappings": {
+        "GPT": [
+          {
+            "id": "BonyVertebrate"
+          }
+        ]
+      },
+      "queries": {
+        "total": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=8VVWB&rank=species&status=accepted&limit=0",
+        "extinct": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=8VVWB&rank=species&status=accepted&limit=0&extinct=true",
+        "extant": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=8VVWB&rank=species&status=accepted&limit=0&extinct=false"
+      }
+    },
+    "RayFinnedFish": {
+      "taxon": "Actinopterygii",
+      "total": 35991,
+      "extinct": 288,
+      "extant": 85,
+      "sources": [
+        "col"
+      ],
+      "scope": "Accepted catalogued species, including fossil and recently extinct species where covered. Coverage is incomplete; missing extinction flags are unknown, not extant.",
+      "method": "Accepted species below COL taxon 8VR36; extinction status queried separately.",
+      "mappings": {
+        "GPT": [
+          {
+            "id": "RayFinnedFish"
+          }
+        ]
+      },
+      "queries": {
+        "total": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=8VR36&rank=species&status=accepted&limit=0",
+        "extinct": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=8VR36&rank=species&status=accepted&limit=0&extinct=true",
+        "extant": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=8VR36&rank=species&status=accepted&limit=0&extinct=false"
+      }
+    },
+    "Tetrapod": {
+      "taxon": "Tetrapoda",
+      "total": 39077,
+      "extinct": 282,
+      "extant": 26146,
+      "sources": [
+        "col"
+      ],
+      "scope": "Accepted catalogued species, including fossil and recently extinct species where covered. Coverage is incomplete; missing extinction flags are unknown, not extant.",
+      "method": "Accepted species below COL taxon 9CK8W; extinction status queried separately.",
+      "mappings": {
+        "GPT": [
+          {
+            "id": "Tetrapod"
+          }
+        ]
+      },
+      "queries": {
+        "total": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=9CK8W&rank=species&status=accepted&limit=0",
+        "extinct": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=9CK8W&rank=species&status=accepted&limit=0&extinct=true",
+        "extant": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=9CK8W&rank=species&status=accepted&limit=0&extinct=false"
+      }
+    },
+    "Amphibian": {
+      "taxon": "Amphibia",
+      "total": 8923,
+      "extinct": 7,
+      "extant": 8916,
+      "sources": [
+        "col",
+        "amphibiaweb"
+      ],
+      "scope": "Current AmphibiaWeb recognized species total; no extinction breakdown supplied by the headline. COL26.9 statuses are retained only as older comparison data.",
+      "method": "Accepted species below COL taxon PH; extinction status queried separately.",
+      "mappings": {
+        "GPT": [
+          {
+            "id": "Amphibian"
+          }
+        ]
+      },
+      "queries": {
+        "total": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=PH&rank=species&status=accepted&limit=0",
+        "extinct": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=PH&rank=species&status=accepted&limit=0&extinct=true",
+        "extant": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=PH&rank=species&status=accepted&limit=0&extinct=false"
+      },
+      "display": {
+        "total": 9136,
+        "extinct": null,
+        "extant": null,
+        "note": "Tree uses the current AmphibiaWeb total (2026.10.10). Its headline does not split extinction status; dated COL counts remain here for comparison."
+      }
+    },
+    "Turtle": {
+      "taxon": "Testudines",
+      "total": 370,
+      "extinct": 0,
+      "extant": 0,
+      "sources": [
+        "col"
+      ],
+      "scope": "Accepted catalogued species, including fossil and recently extinct species where covered. Coverage is incomplete; missing extinction flags are unknown, not extant.",
+      "method": "Accepted species below COL taxon 477; extinction status queried separately.",
+      "mappings": {
+        "GPT": [
+          {
+            "id": "Turtle"
+          }
+        ]
+      },
+      "queries": {
+        "total": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=477&rank=species&status=accepted&limit=0",
+        "extinct": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=477&rank=species&status=accepted&limit=0&extinct=true",
+        "extant": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=477&rank=species&status=accepted&limit=0&extinct=false"
+      }
+    },
+    "Crocodilian": {
+      "taxon": "Crocodylia",
+      "total": 27,
+      "extinct": 0,
+      "extant": 0,
+      "sources": [
+        "col"
+      ],
+      "scope": "Accepted catalogued species, including fossil and recently extinct species where covered. Coverage is incomplete; missing extinction flags are unknown, not extant.",
+      "method": "Accepted species below COL taxon 329; extinction status queried separately.",
+      "mappings": {
+        "GPT": [
+          {
+            "id": "Crocodilian"
+          }
+        ]
+      },
+      "queries": {
+        "total": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=329&rank=species&status=accepted&limit=0",
+        "extinct": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=329&rank=species&status=accepted&limit=0&extinct=true",
+        "extant": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=329&rank=species&status=accepted&limit=0&extinct=false"
+      }
+    },
+    "Bird": {
+      "taxon": "Aves",
+      "total": 11044,
+      "extinct": 176,
+      "extant": 10868,
+      "sources": [
+        "col"
+      ],
+      "scope": "Accepted catalogued species, including fossil and recently extinct species where covered. Coverage is incomplete; missing extinction flags are unknown, not extant.",
+      "method": "Accepted species below COL taxon V2; extinction status queried separately.",
+      "mappings": {
+        "GPT": [
+          {
+            "id": "Bird"
+          }
+        ],
+        ".": [
+          {
+            "id": "Bird",
+            "interpretation": ""
+          }
+        ],
+        "SUMO": [
+          {
+            "id": "Bird",
+            "interpretation": ""
+          }
+        ]
+      },
+      "queries": {
+        "total": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=V2&rank=species&status=accepted&limit=0",
+        "extinct": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=V2&rank=species&status=accepted&limit=0&extinct=true",
+        "extant": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=V2&rank=species&status=accepted&limit=0&extinct=false"
+      }
+    },
+    "Reptile": {
+      "taxon": "Reptilia",
+      "total": 12649,
+      "extinct": 0,
+      "extant": 0,
+      "sources": [
+        "col"
+      ],
+      "scope": "Accepted catalogued species, including fossil and recently extinct species where covered. Coverage is incomplete; missing extinction flags are unknown, not extant.",
+      "method": "Accepted species below COL taxon RP; extinction status queried separately.",
+      "mappings": {
+        ".": [
+          {
+            "id": "Reptile",
+            "interpretation": ""
+          }
+        ],
+        "SUMO": [
+          {
+            "id": "Reptile",
+            "interpretation": ""
+          }
+        ]
+      },
+      "queries": {
+        "total": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=RP&rank=species&status=accepted&limit=0",
+        "extinct": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=RP&rank=species&status=accepted&limit=0&extinct=true",
+        "extant": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=RP&rank=species&status=accepted&limit=0&extinct=false"
+      }
+    },
+    "col-Ctenophora": {
+      "taxon": "Ctenophora",
+      "total": 197,
+      "extinct": 15,
+      "extant": 2,
+      "sources": [
+        "col"
+      ],
+      "scope": "Accepted catalogued species, including fossil and recently extinct species where covered. Coverage is incomplete; missing extinction flags are unknown, not extant.",
+      "method": "Accepted species below COL taxon B8V3L; extinction status queried separately.",
+      "mappings": {},
+      "queries": {
+        "total": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=B8V3L&rank=species&status=accepted&limit=0",
+        "extinct": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=B8V3L&rank=species&status=accepted&limit=0&extinct=true",
+        "extant": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=B8V3L&rank=species&status=accepted&limit=0&extinct=false"
+      }
+    },
+    "col-Placozoa": {
+      "taxon": "Placozoa",
+      "total": 4,
+      "extinct": 0,
+      "extant": 0,
+      "sources": [
+        "col"
+      ],
+      "scope": "Accepted catalogued species, including fossil and recently extinct species where covered. Coverage is incomplete; missing extinction flags are unknown, not extant.",
+      "method": "Accepted species below COL taxon B8V3N; extinction status queried separately.",
+      "mappings": {},
+      "queries": {
+        "total": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=B8V3N&rank=species&status=accepted&limit=0",
+        "extinct": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=B8V3N&rank=species&status=accepted&limit=0&extinct=true",
+        "extant": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=B8V3N&rank=species&status=accepted&limit=0&extinct=false"
+      }
+    },
+    "col-Liliopsida": {
+      "taxon": "Liliopsida",
+      "total": 84523,
+      "extinct": 0,
+      "extant": 0,
+      "sources": [
+        "col"
+      ],
+      "scope": "Accepted catalogued species, including fossil and recently extinct species where covered. Coverage is incomplete; missing extinction flags are unknown, not extant.",
+      "method": "Accepted species below COL taxon L2L; extinction status queried separately.",
+      "mappings": {},
+      "queries": {
+        "total": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=L2L&rank=species&status=accepted&limit=0",
+        "extinct": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=L2L&rank=species&status=accepted&limit=0&extinct=true",
+        "extant": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=L2L&rank=species&status=accepted&limit=0&extinct=false"
+      }
+    },
+    "col-Pinopsida": {
+      "taxon": "Pinopsida",
+      "total": 835,
+      "extinct": 0,
+      "extant": 835,
+      "sources": [
+        "col"
+      ],
+      "scope": "Accepted catalogued species, including fossil and recently extinct species where covered. Coverage is incomplete; missing extinction flags are unknown, not extant.",
+      "method": "Accepted species below COL taxon C7ZVJ; extinction status queried separately.",
+      "mappings": {},
+      "queries": {
+        "total": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=C7ZVJ&rank=species&status=accepted&limit=0",
+        "extinct": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=C7ZVJ&rank=species&status=accepted&limit=0&extinct=true",
+        "extant": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=C7ZVJ&rank=species&status=accepted&limit=0&extinct=false"
+      }
+    },
+    "col-Cycadopsida": {
+      "taxon": "Cycadopsida",
+      "total": 376,
+      "extinct": 0,
+      "extant": 0,
+      "sources": [
+        "col"
+      ],
+      "scope": "Accepted catalogued species, including fossil and recently extinct species where covered. Coverage is incomplete; missing extinction flags are unknown, not extant.",
+      "method": "Accepted species below COL taxon CGVH9; extinction status queried separately.",
+      "mappings": {},
+      "queries": {
+        "total": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=CGVH9&rank=species&status=accepted&limit=0",
+        "extinct": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=CGVH9&rank=species&status=accepted&limit=0&extinct=true",
+        "extant": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=CGVH9&rank=species&status=accepted&limit=0&extinct=false"
+      }
+    },
+    "col-Ginkgoopsida": {
+      "taxon": "Ginkgoopsida",
+      "total": 388,
+      "extinct": 387,
+      "extant": 0,
+      "sources": [
+        "col"
+      ],
+      "scope": "Accepted catalogued species, including fossil and recently extinct species where covered. Coverage is incomplete; missing extinction flags are unknown, not extant.",
+      "method": "Accepted species below COL taxon BT; extinction status queried separately.",
+      "mappings": {},
+      "queries": {
+        "total": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=BT&rank=species&status=accepted&limit=0",
+        "extinct": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=BT&rank=species&status=accepted&limit=0&extinct=true",
+        "extant": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=BT&rank=species&status=accepted&limit=0&extinct=false"
+      }
+    },
+    "col-Marchantiophyta": {
+      "taxon": "Marchantiophyta",
+      "total": 7500,
+      "extinct": 184,
+      "extant": 7316,
+      "sources": [
+        "col"
+      ],
+      "scope": "Accepted catalogued species, including fossil and recently extinct species where covered. Coverage is incomplete; missing extinction flags are unknown, not extant.",
+      "method": "Accepted species below COL taxon 9J9G3; extinction status queried separately.",
+      "mappings": {},
+      "queries": {
+        "total": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=9J9G3&rank=species&status=accepted&limit=0",
+        "extinct": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=9J9G3&rank=species&status=accepted&limit=0&extinct=true",
+        "extant": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=9J9G3&rank=species&status=accepted&limit=0&extinct=false"
+      }
+    },
+    "col-Anthocerotophyta": {
+      "taxon": "Anthocerotophyta",
+      "total": 305,
+      "extinct": 81,
+      "extant": 224,
+      "sources": [
+        "col"
+      ],
+      "scope": "Accepted catalogued species, including fossil and recently extinct species where covered. Coverage is incomplete; missing extinction flags are unknown, not extant.",
+      "method": "Accepted species below COL taxon 9JHQ8; extinction status queried separately.",
+      "mappings": {},
+      "queries": {
+        "total": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=9JHQ8&rank=species&status=accepted&limit=0",
+        "extinct": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=9JHQ8&rank=species&status=accepted&limit=0&extinct=true",
+        "extant": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=9JHQ8&rank=species&status=accepted&limit=0&extinct=false"
+      }
+    },
+    "col-Sarcopterygii": {
+      "taxon": "Sarcopterygii",
+      "total": 8,
+      "extinct": 0,
+      "extant": 0,
+      "sources": [
+        "col"
+      ],
+      "scope": "Accepted catalogued species, including fossil and recently extinct species where covered. Coverage is incomplete; missing extinction flags are unknown, not extant.",
+      "method": "Accepted species below COL taxon 8VSMX; extinction status queried separately.",
+      "mappings": {},
+      "queries": {
+        "total": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=8VSMX&rank=species&status=accepted&limit=0",
+        "extinct": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=8VSMX&rank=species&status=accepted&limit=0&extinct=true",
+        "extant": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=8VSMX&rank=species&status=accepted&limit=0&extinct=false"
+      }
+    },
+    "col-Mammalia": {
+      "taxon": "Mammalia",
+      "total": 6461,
+      "extinct": 99,
+      "extant": 6362,
+      "sources": [
+        "col"
+      ],
+      "scope": "Accepted catalogued species, including fossil and recently extinct species where covered. Coverage is incomplete; missing extinction flags are unknown, not extant.",
+      "method": "Accepted species below COL taxon 6224G; extinction status queried separately.",
+      "mappings": {},
+      "queries": {
+        "total": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=6224G&rank=species&status=accepted&limit=0",
+        "extinct": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=6224G&rank=species&status=accepted&limit=0&extinct=true",
+        "extant": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=6224G&rank=species&status=accepted&limit=0&extinct=false"
+      }
+    },
+    "Plant": {
+      "taxon": "Embryophyta",
+      "total": 388486,
+      "extinct": 950,
+      "extant": 21618,
+      "sources": [
+        "col"
+      ],
+      "scope": "Accepted species in the COL26.9 base checklist; fossils included where covered and missing extinction status retained as unknown. Land plants only; algae excluded.",
+      "method": "Disjoint components added or subtracted within the same COL release.",
+      "mappings": {
+        "GPT": [
+          {
+            "id": "Plant"
+          }
+        ]
+      },
+      "components": [
+        {
+          "record": "VascularPlant",
+          "coefficient": 1
+        },
+        {
+          "record": "Moss",
+          "coefficient": 1
+        },
+        {
+          "record": "col-Marchantiophyta",
+          "coefficient": 1
+        },
+        {
+          "record": "col-Anthocerotophyta",
+          "coefficient": 1
+        }
+      ]
+    },
+    "FloweringPlant": {
+      "taxon": "Angiosperms",
+      "total": 353091,
+      "extinct": 0,
+      "extant": 1510,
+      "sources": [
+        "col"
+      ],
+      "scope": "Accepted species in the COL26.9 base checklist; fossils included where covered and missing extinction status retained as unknown. Monocots plus dicots in COL; matches the broad NCBI angiosperm lineage.",
+      "method": "Disjoint components added or subtracted within the same COL release.",
+      "mappings": {
+        "GPT": [
+          {
+            "id": "FloweringPlant"
+          }
+        ],
+        ".": [
+          {
+            "id": "FloweringPlant",
+            "interpretation": ""
+          }
+        ],
+        "SUMO": [
+          {
+            "id": "FloweringPlant",
+            "interpretation": ""
+          }
+        ]
+      },
+      "components": [
+        {
+          "record": "col-Liliopsida",
+          "coefficient": 1
+        },
+        {
+          "record": "col-Magnoliopsida",
+          "coefficient": 1
+        }
+      ]
+    },
+    "col-Magnoliopsida": {
+      "taxon": "Magnoliopsida",
+      "total": 268568,
+      "extinct": 0,
+      "extant": 1510,
+      "sources": [
+        "col"
+      ],
+      "scope": "Accepted catalogued species, including fossil and recently extinct species where covered. Coverage is incomplete; missing extinction flags are unknown, not extant.",
+      "method": "Accepted species below COL taxon MG; extinction status queried separately.",
+      "mappings": {},
+      "queries": {
+        "total": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=MG&rank=species&status=accepted&limit=0",
+        "extinct": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=MG&rank=species&status=accepted&limit=0&extinct=true",
+        "extant": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=MG&rank=species&status=accepted&limit=0&extinct=false"
+      }
+    },
+    "Gymnosperm": {
+      "taxon": "Acrogymnospermae",
+      "total": 1599,
+      "extinct": 387,
+      "extant": 835,
+      "sources": [
+        "col"
+      ],
+      "scope": "Accepted species in the COL26.9 base checklist; fossils included where covered and missing extinction status retained as unknown. Includes catalogued fossil ginkgos; gnetophytes are placed in Pinopsida by this checklist.",
+      "method": "Disjoint components added or subtracted within the same COL release.",
+      "mappings": {
+        "GPT": [
+          {
+            "id": "Gymnosperm"
+          }
+        ]
+      },
+      "components": [
+        {
+          "record": "col-Pinopsida",
+          "coefficient": 1
+        },
+        {
+          "record": "col-Cycadopsida",
+          "coefficient": 1
+        },
+        {
+          "record": "col-Ginkgoopsida",
+          "coefficient": 1
+        }
+      ]
+    },
+    "SeedPlant": {
+      "taxon": "Spermatophyta",
+      "total": 354690,
+      "extinct": 387,
+      "extant": 2345,
+      "sources": [
+        "col"
+      ],
+      "scope": "Accepted species in the COL26.9 base checklist; fossils included where covered and missing extinction status retained as unknown.",
+      "method": "Disjoint components added or subtracted within the same COL release.",
+      "mappings": {
+        "GPT": [
+          {
+            "id": "SeedPlant"
+          }
+        ]
+      },
+      "components": [
+        {
+          "record": "Gymnosperm",
+          "coefficient": 1
+        },
+        {
+          "record": "FloweringPlant",
+          "coefficient": 1
+        }
+      ]
+    },
+    "Bilaterian": {
+      "taxon": "Bilateria",
+      "total": 1503531,
+      "extinct": 122942,
+      "extant": 678457,
+      "sources": [
+        "col"
+      ],
+      "scope": "Accepted species in the COL26.9 base checklist; fossils included where covered and missing extinction status retained as unknown. Animalia minus the four non-bilaterian phyla.",
+      "method": "Disjoint components added or subtracted within the same COL release.",
+      "mappings": {
+        "GPT": [
+          {
+            "id": "Bilaterian"
+          }
+        ]
+      },
+      "components": [
+        {
+          "record": "Animal",
+          "coefficient": 1
+        },
+        {
+          "record": "Sponge",
+          "coefficient": -1
+        },
+        {
+          "record": "Cnidarian",
+          "coefficient": -1
+        },
+        {
+          "record": "col-Ctenophora",
+          "coefficient": -1
+        },
+        {
+          "record": "col-Placozoa",
+          "coefficient": -1
+        }
+      ]
+    },
+    "LobeFinnedVertebrate": {
+      "taxon": "Sarcopterygii including tetrapods",
+      "total": 39085,
+      "extinct": 282,
+      "extant": 26146,
+      "sources": [
+        "col"
+      ],
+      "scope": "Accepted species in the COL26.9 base checklist; fossils included where covered and missing extinction status retained as unknown. COL fish-only Sarcopterygii expanded to the GPT node’s clade including tetrapods.",
+      "method": "Disjoint components added or subtracted within the same COL release.",
+      "mappings": {
+        "GPT": [
+          {
+            "id": "LobeFinnedVertebrate"
+          }
+        ]
+      },
+      "components": [
+        {
+          "record": "col-Sarcopterygii",
+          "coefficient": 1
+        },
+        {
+          "record": "Tetrapod",
+          "coefficient": 1
+        }
+      ]
+    },
+    "Amniote": {
+      "taxon": "Amniota",
+      "total": 30154,
+      "extinct": 275,
+      "extant": 17230,
+      "sources": [
+        "col"
+      ],
+      "scope": "Accepted species in the COL26.9 base checklist; fossils included where covered and missing extinction status retained as unknown.",
+      "method": "Disjoint components added or subtracted within the same COL release.",
+      "mappings": {
+        "GPT": [
+          {
+            "id": "Amniote"
+          }
+        ]
+      },
+      "components": [
+        {
+          "record": "Tetrapod",
+          "coefficient": 1
+        },
+        {
+          "record": "Amphibian",
+          "coefficient": -1
+        }
+      ]
+    },
+    "Sauropsid": {
+      "taxon": "Sauropsida",
+      "total": 23693,
+      "extinct": 176,
+      "extant": 10868,
+      "sources": [
+        "col"
+      ],
+      "scope": "Accepted species in the COL26.9 base checklist; fossils included where covered and missing extinction status retained as unknown. Includes birds.",
+      "method": "Disjoint components added or subtracted within the same COL release.",
+      "mappings": {
+        "GPT": [
+          {
+            "id": "Sauropsid"
+          }
+        ]
+      },
+      "components": [
+        {
+          "record": "Reptile",
+          "coefficient": 1
+        },
+        {
+          "record": "Bird",
+          "coefficient": 1
+        }
+      ]
+    },
+    "Archosaur": {
+      "taxon": "Archosauria: represented crown groups",
+      "total": 11071,
+      "extinct": 176,
+      "extant": 10868,
+      "sources": [
+        "col"
+      ],
+      "scope": "Accepted species in the COL26.9 base checklist; fossils included where covered and missing extinction status retained as unknown. Crocodilians plus birds; omits non-avian fossil archosaurs not represented by these components.",
+      "method": "Disjoint components added or subtracted within the same COL release.",
+      "mappings": {
+        "GPT": [
+          {
+            "id": "Archosaur"
+          }
+        ]
+      },
+      "components": [
+        {
+          "record": "Crocodilian",
+          "coefficient": 1
+        },
+        {
+          "record": "Bird",
+          "coefficient": 1
+        }
+      ],
+      "display": {
+        "total": null,
+        "extinct": null,
+        "extant": 10868,
+        "note": "Whole-clade extinct count is unavailable; the tree shows ? for extinct. The extant component exhausts living representatives of the clade."
+      }
+    },
+    "col-Squamata": {
+      "taxon": "Squamata",
+      "total": 12251,
+      "extinct": 0,
+      "extant": 0,
+      "sources": [
+        "col"
+      ],
+      "scope": "Accepted catalogued species, including fossil and recently extinct species where covered. Coverage is incomplete; missing extinction flags are unknown, not extant.",
+      "method": "Accepted species below COL taxon 45C; extinction status queried separately.",
+      "mappings": {},
+      "queries": {
+        "total": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=45C&rank=species&status=accepted&limit=0",
+        "extinct": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=45C&rank=species&status=accepted&limit=0&extinct=true",
+        "extant": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=45C&rank=species&status=accepted&limit=0&extinct=false"
+      }
+    },
+    "Tuatara": {
+      "taxon": "Sphenodon punctatus",
+      "total": 1,
+      "extinct": 0,
+      "extant": 1,
+      "sources": [
+        "reptile"
+      ],
+      "scope": "One currently recognized tuatara species.",
+      "method": "Reptile Database June 2026: Rhynchocephalia = 1.",
+      "mappings": {}
+    },
+    "Lepidosaur": {
+      "taxon": "Lepidosauria",
+      "total": 12252,
+      "extinct": 0,
+      "extant": 1,
+      "sources": [
+        "col",
+        "reptile"
+      ],
+      "scope": "Accepted species in the COL26.9 base checklist; fossils included where covered and missing extinction status retained as unknown.",
+      "method": "Squamata plus Rhynchocephalia.",
+      "mappings": {
+        "GPT": [
+          {
+            "id": "Lepidosaur"
+          }
+        ]
+      },
+      "components": [
+        {
+          "record": "col-Squamata",
+          "coefficient": 1
+        },
+        {
+          "record": "Tuatara",
+          "coefficient": 1
+        }
+      ]
+    },
+    "Invertebrate": {
+      "taxon": "Animalia excluding Vertebrata",
+      "total": 1457715,
+      "extinct": 128497,
+      "extant": 662822,
+      "sources": [
+        "col"
+      ],
+      "scope": "Accepted species in the COL26.9 base checklist; fossils included where covered and missing extinction status retained as unknown. A paraphyletic aggregate, not a single clade.",
+      "method": "Disjoint components added or subtracted within the same COL release.",
+      "mappings": {
+        ".": [
+          {
+            "id": "Invertebrate",
+            "interpretation": ""
+          }
+        ],
+        "SUMO": [
+          {
+            "id": "Invertebrate",
+            "interpretation": ""
+          }
+        ]
+      },
+      "components": [
+        {
+          "record": "Animal",
+          "coefficient": 1
+        },
+        {
+          "record": "Vertebrate",
+          "coefficient": -1
+        }
+      ]
+    },
+    "Organism": {
+      "taxon": "Cellular life",
+      "total": 2169219,
+      "extinct": 169945,
+      "extant": 884155,
+      "sources": [
+        "col"
+      ],
+      "scope": "Accepted species in the COL26.9 base checklist; fossils included where covered and missing extinction status retained as unknown. Eukaryota, Bacteria and Archaea; viruses excluded.",
+      "method": "Disjoint components added or subtracted within the same COL release.",
+      "mappings": {
+        "GPT": [
+          {
+            "id": "Organism"
+          }
+        ]
+      },
+      "components": [
+        {
+          "record": "Eukaryote",
+          "coefficient": 1
+        },
+        {
+          "record": "Bacterium",
+          "coefficient": 1
+        },
+        {
+          "record": "Archaeon",
+          "coefficient": 1
+        }
+      ]
+    },
+    "Mammal": {
+      "taxon": "Mammalia",
+      "total": 6904,
+      "extinct": 113,
+      "extant": 6791,
+      "sources": [
+        "mdd"
+      ],
+      "scope": "Living and recently extinct species (since 1500); domestic species included. Fossil species excluded.",
+      "method": "All species rows",
+      "mappings": {
+        "GPT": [
+          {
+            "id": "Mammal"
+          }
+        ],
+        ".": [
+          {
+            "id": "Mammal",
+            "interpretation": ""
+          }
+        ],
+        "SUMO": [
+          {
+            "id": "Mammal",
+            "interpretation": ""
+          }
+        ]
+      }
+    },
+    "Monotreme": {
+      "taxon": "Monotremata",
+      "total": 5,
+      "extinct": 0,
+      "extant": 5,
+      "sources": [
+        "mdd"
+      ],
+      "scope": "Living and recently extinct species (since 1500); domestic species included. Fossil species excluded.",
+      "method": "Filter order = Monotremata; extinct = 1 or 0.",
+      "mappings": {
+        "GPT": [
+          {
+            "id": "Monotreme"
+          }
+        ]
+      }
+    },
+    "Marsupial": {
+      "taxon": "Marsupialia",
+      "total": 433,
+      "extinct": 23,
+      "extant": 410,
+      "sources": [
+        "mdd"
+      ],
+      "scope": "Living and recently extinct species (since 1500); domestic species included. Fossil species excluded. Crown-group component only; the GPT node also includes fossil stem relatives whose count is unavailable.",
+      "method": "Filter infraclass = Marsupialia; extinct = 1 or 0.",
+      "mappings": {
+        "GPT": [
+          {
+            "id": "Marsupial"
+          }
+        ],
+        ".": [
+          {
+            "id": "Marsupial",
+            "interpretation": "Conventional named taxon; older functional wording is approximate."
+          }
+        ],
+        "SUMO": [
+          {
+            "id": "Marsupial",
+            "interpretation": "Conventional named taxon; older functional wording is approximate."
+          }
+        ]
+      },
+      "display": {
+        "total": null,
+        "extinct": null,
+        "extant": 410,
+        "note": "Whole-clade extinct count is unavailable; the tree shows ? for extinct. The extant component exhausts living representatives of the clade."
+      }
+    },
+    "PlacentalMammal": {
+      "taxon": "Placentalia",
+      "total": 6466,
+      "extinct": 90,
+      "extant": 6376,
+      "sources": [
+        "mdd"
+      ],
+      "scope": "Living and recently extinct species (since 1500); domestic species included. Fossil species excluded. Crown-group component only; the GPT node also includes fossil stem relatives whose count is unavailable.",
+      "method": "Filter infraclass = Placentalia; extinct = 1 or 0.",
+      "mappings": {
+        "GPT": [
+          {
+            "id": "PlacentalMammal"
+          }
+        ]
+      },
+      "display": {
+        "total": null,
+        "extinct": null,
+        "extant": 6376,
+        "note": "Whole-clade extinct count is unavailable; the tree shows ? for extinct. The extant component exhausts living representatives of the clade."
+      }
+    },
+    "Carnivoran": {
+      "taxon": "Carnivora",
+      "total": 320,
+      "extinct": 6,
+      "extant": 314,
+      "sources": [
+        "mdd"
+      ],
+      "scope": "Living and recently extinct species (since 1500); domestic species included. Fossil species excluded.",
+      "method": "Filter order = Carnivora; extinct = 1 or 0.",
+      "mappings": {
+        "GPT": [
+          {
+            "id": "Carnivoran"
+          }
+        ]
+      }
+    },
+    "Canine": {
+      "taxon": "Canidae",
+      "total": 40,
+      "extinct": 1,
+      "extant": 39,
+      "sources": [
+        "mdd"
+      ],
+      "scope": "Living and recently extinct species (since 1500); domestic species included. Fossil species excluded.",
+      "method": "Filter family = Canidae; extinct = 1 or 0.",
+      "mappings": {
+        "GPT": [
+          {
+            "id": "Canine"
+          }
+        ],
+        ".": [
+          {
+            "id": "Canine",
+            "interpretation": "Conventional named taxon; older functional wording is approximate."
+          }
+        ],
+        "SUMO": [
+          {
+            "id": "Canine",
+            "interpretation": "Conventional named taxon; older functional wording is approximate."
+          }
+        ]
+      }
+    },
+    "Feline": {
+      "taxon": "Felidae",
+      "total": 46,
+      "extinct": 0,
+      "extant": 46,
+      "sources": [
+        "mdd"
+      ],
+      "scope": "Living and recently extinct species (since 1500); domestic species included. Fossil species excluded.",
+      "method": "Filter family = Felidae; extinct = 1 or 0.",
+      "mappings": {
+        "GPT": [
+          {
+            "id": "Feline"
+          }
+        ],
+        ".": [
+          {
+            "id": "Feline",
+            "interpretation": "Conventional named taxon; older functional wording is approximate."
+          }
+        ],
+        "SUMO": [
+          {
+            "id": "Feline",
+            "interpretation": "Conventional named taxon; older functional wording is approximate."
+          }
+        ]
+      }
+    },
+    "Dog": {
+      "taxon": "Canis familiaris",
+      "total": 1,
+      "extinct": 0,
+      "extant": 1,
+      "sources": [
+        "mdd"
+      ],
+      "scope": "Living and recently extinct species (since 1500); domestic species included. Fossil species excluded. MDD treats Canis familiaris as a species; GPT’s NCBI reference treats it as a Canis lupus subspecies. Count is one containing species, not breeds.",
+      "method": "Filter sciName = Canis_familiaris; extinct = 1 or 0.",
+      "mappings": {
+        "GPT": [
+          {
+            "id": "Dog"
+          }
+        ]
+      }
+    },
+    "Cat": {
+      "taxon": "Felis catus",
+      "total": 1,
+      "extinct": 0,
+      "extant": 1,
+      "sources": [
+        "mdd"
+      ],
+      "scope": "Living and recently extinct species (since 1500); domestic species included. Fossil species excluded.",
+      "method": "Filter sciName = Felis_catus; extinct = 1 or 0.",
+      "mappings": {
+        "GPT": [
+          {
+            "id": "Cat"
+          }
+        ]
+      }
+    },
+    "Primate": {
+      "taxon": "Primates",
+      "total": 514,
+      "extinct": 4,
+      "extant": 510,
+      "sources": [
+        "mdd"
+      ],
+      "scope": "Living and recently extinct species (since 1500); domestic species included. Fossil species excluded.",
+      "method": "Filter order = Primates; extinct = 1 or 0.",
+      "mappings": {
+        "GPT": [
+          {
+            "id": "Primate"
+          }
+        ],
+        ".": [
+          {
+            "id": "Primate",
+            "interpretation": ""
+          }
+        ],
+        "SUMO": [
+          {
+            "id": "Primate",
+            "interpretation": ""
+          }
+        ]
+      }
+    },
+    "Ape": {
+      "taxon": "Hominoidea",
+      "total": 28,
+      "extinct": 0,
+      "extant": 28,
+      "sources": [
+        "mdd"
+      ],
+      "scope": "Living and recently extinct species (since 1500); domestic species included. Fossil species excluded.",
+      "method": "Filter superfamily = Hominoidea; extinct = 1 or 0.",
+      "mappings": {
+        "GPT": [
+          {
+            "id": "Ape"
+          }
+        ]
+      }
+    },
+    "Hominid": {
+      "taxon": "Hominidae",
+      "total": 8,
+      "extinct": 0,
+      "extant": 8,
+      "sources": [
+        "mdd"
+      ],
+      "scope": "Living and recently extinct species (since 1500); domestic species included. Fossil species excluded.",
+      "method": "Filter family = Hominidae; extinct = 1 or 0.",
+      "mappings": {
+        "GPT": [
+          {
+            "id": "Hominid"
+          }
+        ]
+      }
+    },
+    "Human": {
+      "taxon": "Homo sapiens",
+      "total": 1,
+      "extinct": 0,
+      "extant": 1,
+      "sources": [
+        "mdd"
+      ],
+      "scope": "Living and recently extinct species (since 1500); domestic species included. Fossil species excluded.",
+      "method": "Filter sciName = Homo_sapiens; extinct = 1 or 0.",
+      "mappings": {
+        "GPT": [
+          {
+            "id": "Human"
+          }
+        ],
+        ".": [
+          {
+            "id": "Human",
+            "interpretation": ""
+          }
+        ],
+        "SUMO": [
+          {
+            "id": "Human",
+            "interpretation": ""
+          }
+        ],
+        "Wikipedia": [
+          {
+            "id": "Category:Humans",
+            "interpretation": "Species in the associated taxon, not counts of Wikipedia articles or subcategories."
+          }
+        ]
+      }
+    },
+    "Rodent": {
+      "taxon": "Rodentia",
+      "total": 2820,
+      "extinct": 54,
+      "extant": 2766,
+      "sources": [
+        "mdd"
+      ],
+      "scope": "Living and recently extinct species (since 1500); domestic species included. Fossil species excluded.",
+      "method": "Filter order = Rodentia; extinct = 1 or 0.",
+      "mappings": {
+        "GPT": [
+          {
+            "id": "Rodent"
+          }
+        ]
+      }
+    },
+    "Cetartiodactyl": {
+      "taxon": "Artiodactyla",
+      "total": 374,
+      "extinct": 6,
+      "extant": 368,
+      "sources": [
+        "mdd"
+      ],
+      "scope": "Living and recently extinct species (since 1500); domestic species included. Fossil species excluded.",
+      "method": "Filter order = Artiodactyla; extinct = 1 or 0.",
+      "mappings": {
+        "GPT": [
+          {
+            "id": "Cetartiodactyl"
+          }
+        ]
+      }
+    },
+    "Cetacean": {
+      "taxon": "Cetacea",
+      "total": 102,
+      "extinct": 0,
+      "extant": 102,
+      "sources": [
+        "mdd"
+      ],
+      "scope": "Living and recently extinct species (since 1500); domestic species included. Fossil species excluded.",
+      "method": "Filter suborder = Cetacea; extinct = 1 or 0.",
+      "mappings": {
+        "GPT": [
+          {
+            "id": "Cetacean"
+          }
+        ]
+      }
+    },
+    "Perissodactyl": {
+      "taxon": "Perissodactyla",
+      "total": 18,
+      "extinct": 0,
+      "extant": 18,
+      "sources": [
+        "mdd"
+      ],
+      "scope": "Living and recently extinct species (since 1500); domestic species included. Fossil species excluded.",
+      "method": "Filter order = Perissodactyla; extinct = 1 or 0.",
+      "mappings": {
+        "GPT": [
+          {
+            "id": "Perissodactyl"
+          }
+        ]
+      }
+    },
+    "Simian": {
+      "taxon": "Simiiformes",
+      "total": 359,
+      "extinct": 1,
+      "extant": 358,
+      "sources": [
+        "mdd"
+      ],
+      "scope": "Living and recently extinct species (since 1500); domestic species included. Fossil species excluded.",
+      "method": "Filter infraorder = Simiiformes; extinct = 1 or 0.",
+      "mappings": {
+        "GPT": [
+          {
+            "id": "Simian"
+          }
+        ]
+      }
+    },
+    "Lagomorph": {
+      "taxon": "Lagomorpha",
+      "total": 115,
+      "extinct": 1,
+      "extant": 114,
+      "sources": [
+        "mdd"
+      ],
+      "scope": "Living and recently extinct species (since 1500); domestic species included. Fossil species excluded.",
+      "method": "Filter order = Lagomorpha; extinct = 1 or 0.",
+      "mappings": {
+        "GPT": [
+          {
+            "id": "Lagomorph"
+          }
+        ]
+      }
+    },
+    "Synapsid": {
+      "taxon": "Synapsida: mammalian component",
+      "total": 6904,
+      "extinct": 113,
+      "extant": 6791,
+      "sources": [
+        "mdd"
+      ],
+      "scope": "Living and recently extinct mammals only; fossil non-mammalian synapsids and fossil mammals are outside this source.",
+      "method": "Same living/recent component as Mammalia.",
+      "mappings": {
+        "GPT": [
+          {
+            "id": "Synapsid"
+          }
+        ]
+      },
+      "components": [
+        {
+          "record": "Mammal",
+          "coefficient": 1
+        }
+      ],
+      "display": {
+        "total": null,
+        "extinct": null,
+        "extant": 6791,
+        "note": "Whole-clade extinct count is unavailable; the tree shows ? for extinct. The extant component exhausts living representatives of the clade."
+      }
+    },
+    "Dinosaur": {
+      "taxon": "Dinosauria: avian component",
+      "total": 11044,
+      "extinct": 176,
+      "extant": 10868,
+      "sources": [
+        "col"
+      ],
+      "scope": "Avian component only; non-avian fossil dinosaur species are not included. COL extinction flags apply only to species covered by its Aves checklist.",
+      "method": "Same avian component as Aves.",
+      "mappings": {
+        "GPT": [
+          {
+            "id": "Dinosaur"
+          }
+        ]
+      },
+      "components": [
+        {
+          "record": "Bird",
+          "coefficient": 1
+        }
+      ],
+      "display": {
+        "total": null,
+        "extinct": null,
+        "extant": 10868,
+        "note": "Whole-clade extinct count is unavailable; the tree shows ? for extinct. The extant component exhausts living representatives of the clade."
+      }
+    },
+    "Fish": {
+      "taxon": "Fishes excluding tetrapods",
+      "total": 37772,
+      "sources": [
+        "fishes"
+      ],
+      "scope": "Valid fish species in Eschmeyer’s Catalog; no extinction breakdown supplied by the headline statistic.",
+      "method": "Published valid-species total, not all names or synonyms.",
+      "mappings": {
+        ".": [
+          {
+            "id": "Fish",
+            "interpretation": ""
+          }
+        ],
+        "SUMO": [
+          {
+            "id": "Fish",
+            "interpretation": ""
+          }
+        ]
+      }
+    },
+    "Virus": {
+      "taxon": "ICTV virus and viroid species",
+      "total": 17554,
+      "sources": [
+        "ictv"
+      ],
+      "scope": "Recognized ICTV MSL41 species, including 45 viroid species; cellular organisms excluded. Extinction status is not applicable to the classification.",
+      "method": "MSL41 species rows. GPT’s acellular infectious-entity definition admits viroids; older protein-coated Virus definitions do not.",
+      "mappings": {
+        "GPT": [
+          {
+            "id": "Virus"
+          }
+        ],
+        "Wikipedia": [
+          {
+            "id": "Category:Viruses",
+            "interpretation": "Species in the associated taxon, not counts of Wikipedia articles or subcategories."
+          }
+        ]
+      }
+    },
+    "CoatedVirus": {
+      "taxon": "ICTV species excluding viroids",
+      "total": 17509,
+      "sources": [
+        "ictv"
+      ],
+      "scope": "MSL41 species excluding the 45 viroids (Pospiviroidae 40; Avsunviroidae 5). Intended as a viral-species proxy for the older protein-coated definition; ICTV also covers satellite viruses and virus-derived entities.",
+      "method": "17554 minus 40 minus 5. No extinction breakdown.",
+      "mappings": {
+        ".": [
+          {
+            "id": "Virus"
+          }
+        ],
+        "SUMO": [
+          {
+            "id": "Virus"
+          }
+        ]
+      }
+    },
+    "LegacyPlant": {
+      "taxon": "Plantae",
+      "total": 389184,
+      "extinct": 1646,
+      "extant": 21620,
+      "sources": [
+        "col"
+      ],
+      "scope": "Accepted catalogued species, including fossil and recently extinct species where covered. Coverage is incomplete; missing extinction flags are unknown, not extant.",
+      "method": "Accepted species below COL taxon P; extinction status queried separately.",
+      "mappings": {
+        ".": [
+          {
+            "id": "Plant",
+            "interpretation": "Conventional Plantae kingdom, including its algae; the older functional definition does not coincide exactly with this taxon."
+          }
+        ],
+        "SUMO": [
+          {
+            "id": "Plant",
+            "interpretation": "Conventional Plantae kingdom, including its algae; the older functional definition does not coincide exactly with this taxon."
+          }
+        ]
+      },
+      "queries": {
+        "total": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=P&rank=species&status=accepted&limit=0",
+        "extinct": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=P&rank=species&status=accepted&limit=0&extinct=true",
+        "extant": "https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=P&rank=species&status=accepted&limit=0&extinct=false"
+      }
+    }
+  },
+  "comparisons": [
+    {
+      "taxon": "Land plants",
+      "count": 382401,
+      "source": "https://worldfloraonline.org/",
+      "scope": "World Flora Online accepted land-plant species; different backbone and fossil coverage from COL."
+    },
+    {
+      "taxon": "Vascular plants",
+      "count": 360349,
+      "source": "https://www.worldplants.de/world-plants-complete-list/total-species-count",
+      "scope": "World Plants 26.08 non-fossil species, including provisionally accepted names and microspecies; differs from COL acceptance filter."
+    },
+    {
+      "taxon": "Gymnosperms",
+      "count": 1194,
+      "source": "https://www.worldplants.de/world-plants-complete-list/total-species-count",
+      "scope": "World Plants 26.08 non-fossil recognized species; COL includes fossil ginkgos."
+    },
+    {
+      "taxon": "Amphibians",
+      "count": 9136,
+      "source": "https://amphibiaweb.org/",
+      "scope": "Live AmphibiaWeb total, retrieved 2026.10.10; headline lacks extinction breakdown. COL dated checklist supplies explicit statuses but is less current."
+    },
+    {
+      "taxon": "Prokaryotes",
+      "count": 22681,
+      "source": "https://lpsn.dsmz.de/text/numbers",
+      "scope": "LPSN 2026.09.18: ICNP valid species excluding synonyms; different nomenclatural scope from COL, including its botanical-code and Candidatus coverage."
+    }
+  ],
+  "exclusions": [
+    {
+      "datasets": [
+        ".",
+        "SUMO"
+      ],
+      "nodes": [
+        "Fungus"
+      ],
+      "reason": "Explicitly includes slime molds and true fungi: not equivalent to modern Fungi."
+    },
+    {
+      "datasets": [
+        ".",
+        "SUMO"
+      ],
+      "nodes": [
+        "Monkey",
+        "AquaticMammal",
+        "HoofedMammal",
+        "Alga",
+        "NonFloweringPlant",
+        "MicroOrganism",
+        "ColdBloodedVertebrate",
+        "WarmBloodedVertebrate",
+        "ToxicOrganism"
+      ],
+      "reason": "Functional, ecological, informal or polyphyletic grouping without a defensible matching global checklist count."
+    },
+    {
+      "datasets": [
+        "HumanKnowledge",
+        "Propaedia"
+      ],
+      "nodes": [],
+      "reason": "Packaged chapters describe taxonomy and biology topics, not corresponding taxon nodes."
+    }
+  ]
+}

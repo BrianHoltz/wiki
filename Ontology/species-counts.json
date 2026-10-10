@@ -1,0 +1,162 @@
+{
+  "Bacterium": {
+    "total": 26397,
+    "extinct": null,
+    "extant": null,
+    "taxon": "Bacteria",
+    "scope": "Accepted catalogued species, including fossil and recently extinct species where covered. Coverage is incomplete; missing extinction flags are unknown, not extant.",
+    "interpretation": "Conventional named taxon; older functional wording is approximate.",
+    "url": "taxon-species-counts.html#Bacterium",
+    "retrieved": "2026.10.10"
+  },
+  "Animal": {
+    "total": 1534287,
+    "extinct": 129067,
+    "extant": null,
+    "taxon": "Animalia",
+    "scope": "Accepted catalogued species, including fossil and recently extinct species where covered. Coverage is incomplete; missing extinction flags are unknown, not extant.",
+    "interpretation": "",
+    "url": "taxon-species-counts.html#Animal",
+    "retrieved": "2026.10.10"
+  },
+  "Vertebrate": {
+    "total": 76572,
+    "extinct": 570,
+    "extant": null,
+    "taxon": "Vertebrata",
+    "scope": "Accepted catalogued species, including fossil and recently extinct species where covered. Coverage is incomplete; missing extinction flags are unknown, not extant.",
+    "interpretation": "",
+    "url": "taxon-species-counts.html#Vertebrate",
+    "retrieved": "2026.10.10"
+  },
+  "Bird": {
+    "total": 11044,
+    "extinct": 176,
+    "extant": 10868,
+    "taxon": "Aves",
+    "scope": "Accepted catalogued species, including fossil and recently extinct species where covered. Coverage is incomplete; missing extinction flags are unknown, not extant.",
+    "interpretation": "",
+    "url": "taxon-species-counts.html#Bird",
+    "retrieved": "2026.10.10"
+  },
+  "Reptile": {
+    "total": 12649,
+    "extinct": null,
+    "extant": null,
+    "taxon": "Reptilia",
+    "scope": "Accepted catalogued species, including fossil and recently extinct species where covered. Coverage is incomplete; missing extinction flags are unknown, not extant.",
+    "interpretation": "",
+    "url": "taxon-species-counts.html#Reptile",
+    "retrieved": "2026.10.10"
+  },
+  "FloweringPlant": {
+    "total": 353091,
+    "extinct": null,
+    "extant": null,
+    "taxon": "Angiosperms",
+    "scope": "Accepted species in the COL26.9 base checklist; fossils included where covered and missing extinction status retained as unknown. Monocots plus dicots in COL; matches the broad NCBI angiosperm lineage.",
+    "interpretation": "",
+    "url": "taxon-species-counts.html#FloweringPlant",
+    "retrieved": "2026.10.10"
+  },
+  "Invertebrate": {
+    "total": 1457715,
+    "extinct": 128497,
+    "extant": null,
+    "taxon": "Animalia excluding Vertebrata",
+    "scope": "Accepted species in the COL26.9 base checklist; fossils included where covered and missing extinction status retained as unknown. A paraphyletic aggregate, not a single clade.",
+    "interpretation": "",
+    "url": "taxon-species-counts.html#Invertebrate",
+    "retrieved": "2026.10.10"
+  },
+  "Mammal": {
+    "total": 6904,
+    "extinct": 113,
+    "extant": 6791,
+    "taxon": "Mammalia",
+    "scope": "Living and recently extinct species (since 1500); domestic species included. Fossil species excluded.",
+    "interpretation": "",
+    "url": "taxon-species-counts.html#Mammal",
+    "retrieved": "2026.10.10"
+  },
+  "Marsupial": {
+    "total": null,
+    "extinct": null,
+    "extant": 410,
+    "taxon": "Marsupialia",
+    "scope": "Living and recently extinct species (since 1500); domestic species included. Fossil species excluded. Crown-group component only; the GPT node also includes fossil stem relatives whose count is unavailable.",
+    "interpretation": "Conventional named taxon; older functional wording is approximate.",
+    "url": "taxon-species-counts.html#Marsupial",
+    "retrieved": "2026.10.10"
+  },
+  "Canine": {
+    "total": 40,
+    "extinct": 1,
+    "extant": 39,
+    "taxon": "Canidae",
+    "scope": "Living and recently extinct species (since 1500); domestic species included. Fossil species excluded.",
+    "interpretation": "Conventional named taxon; older functional wording is approximate.",
+    "url": "taxon-species-counts.html#Canine",
+    "retrieved": "2026.10.10"
+  },
+  "Feline": {
+    "total": 46,
+    "extinct": 0,
+    "extant": 46,
+    "taxon": "Felidae",
+    "scope": "Living and recently extinct species (since 1500); domestic species included. Fossil species excluded.",
+    "interpretation": "Conventional named taxon; older functional wording is approximate.",
+    "url": "taxon-species-counts.html#Feline",
+    "retrieved": "2026.10.10"
+  },
+  "Primate": {
+    "total": 514,
+    "extinct": 4,
+    "extant": 510,
+    "taxon": "Primates",
+    "scope": "Living and recently extinct species (since 1500); domestic species included. Fossil species excluded.",
+    "interpretation": "",
+    "url": "taxon-species-counts.html#Primate",
+    "retrieved": "2026.10.10"
+  },
+  "Human": {
+    "total": 1,
+    "extinct": 0,
+    "extant": 1,
+    "taxon": "Homo sapiens",
+    "scope": "Living and recently extinct species (since 1500); domestic species included. Fossil species excluded.",
+    "interpretation": "",
+    "url": "taxon-species-counts.html#Human",
+    "retrieved": "2026.10.10"
+  },
+  "Fish": {
+    "total": 37772,
+    "extinct": null,
+    "extant": null,
+    "taxon": "Fishes excluding tetrapods",
+    "scope": "Valid fish species in Eschmeyer’s Catalog; no extinction breakdown supplied by the headline statistic.",
+    "interpretation": "",
+    "url": "taxon-species-counts.html#Fish",
+    "retrieved": "2026.10.10"
+  },
+  "Virus": {
+    "total": 17509,
+    "extinct": null,
+    "extant": null,
+    "taxon": "ICTV species excluding viroids",
+    "scope": "MSL41 species excluding the 45 viroids (Pospiviroidae 40; Avsunviroidae 5). Intended as a viral-species proxy for the older protein-coated definition; ICTV also covers satellite viruses and virus-derived entities.",
+    "interpretation": "",
+    "url": "taxon-species-counts.html#CoatedVirus",
+    "retrieved": "2026.10.10"
+  },
+  "Plant": {
+    "total": 389184,
+    "extinct": 1646,
+    "extant": null,
+    "taxon": "Plantae",
+    "scope": "Accepted catalogued species, including fossil and recently extinct species where covered. Coverage is incomplete; missing extinction flags are unknown, not extant.",
+    "interpretation": "Conventional Plantae kingdom, including its algae; the older functional definition does not coincide exactly with this taxon.",
+    "url": "taxon-species-counts.html#LegacyPlant",
+    "retrieved": "2026.10.10"
+  }
+}

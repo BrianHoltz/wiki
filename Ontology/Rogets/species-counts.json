@@ -1,0 +1,12 @@
+{
+  "roget-0366": {
+    "total": 1534287,
+    "extinct": 129067,
+    "extant": null,
+    "taxon": "Animalia",
+    "scope": "Accepted catalogued species, including fossil and recently extinct species where covered. Coverage is incomplete; missing extinction flags are unknown, not extant.",
+    "interpretation": "Associated taxon Animalia; this thesaurus topic is not a taxonomic subclass node.",
+    "url": "../taxon-species-counts.html#Animal",
+    "retrieved": "2026.10.10"
+  }
+}

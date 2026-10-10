@@ -1,0 +1,597 @@
+<!doctype html><html lang="en"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Taxon species counts — sources and scope</title>
+<style>body{font:16px/1.5 system-ui;max-width:70em;margin:2em auto;padding:0 1em}article{border-top:1px solid #ccc;padding:1em 0;scroll-margin-top:1em}h2{margin:.3em 0}a{overflow-wrap:anywhere}dt{font-weight:600}dd{margin-bottom:.7em}</style>
+<h1>Taxon species counts</h1>
+<p>Research retrieved 2026.10.10. Named accepted/described species, not extrapolated undiscovered diversity. At most three significant digits, preserving significant trailing zeroes. Extant counts are last; missing extinction status is never assumed extant. Counts and extinction coverage are source-dependent, and mixed-source clade counts are not necessarily additive.</p>
+<p>Tree numbers are compact, suggestive counts: a lone number is a total without a split; a pair is extinct/extant, with extant last. ? means an unavailable count. Click a tree count for evidence. COL records with missing extinction flags do not become extant by subtraction. Source coverage and extinction periods differ.</p>
+<p><a href="taxon-species-counts.json">Authoritative research JSON</a></p>
+<h2>Sources</h2><dl>
+<dt id="source-col"><a href="https://doi.org/10.48580/dgz5n">Catalogue of Life COL26.9 base release</a> — 2026.09.11</dt>
+<dd>Base release chosen for taxonomic scrutiny. Accepted species only; synonyms and provisional acceptance excluded. The full catalogue remains incomplete. Extinct=true and extinct=false are separate filters; unset flags remain unknown.</dd>
+<dt id="source-mdd"><a href="https://www.mammaldiversity.org/releases/">ASM Mammal Diversity Database v2.5</a> — 2026.07.28</dt>
+<dd>6904 species: 113 recently extinct and 6791 extant, including 17 domestic species. Species concepts differ from other checklists.</dd>
+<dd><a href="https://raw.githubusercontent.com/mammaldiversity/mammaldiversity.github.io/master/assets/data/MDD.zip">Source dataset</a> — SHA-256 0d07a7e9409712fa86c1e3afadcf4c67bf4f9e16d5693a878e11ec1bf6860493</dd>
+<dt id="source-reptile"><a href="https://www.reptile-database.org/db-info/SpeciesStat.html">Reptile Database species statistics</a> — 2026.06.16</dt>
+<dd>12650 recognized non-avian reptile species, including one tuatara. This headline does not supply extinction status for every species.</dd>
+<dt id="source-fishes"><a href="https://researcharchive.calacademy.org/research/ichthyology/catalog/fishcatmain.asp">Eschmeyer’s Catalog of Fishes</a> — 2026.09.21</dt>
+<dd>37772 valid fish species; synonyms excluded.</dd>
+<dt id="source-ictv"><a href="https://ictv.global/news/MSL41">ICTV Master Species List 41</a> — 2026.03.20</dt>
+<dd>17554 recognized species; the species worksheet contains 40 Pospiviroidae and 5 Avsunviroidae viroids.</dd>
+<dd><a href="https://ictv.global/msl/current">Source dataset</a> — SHA-256 9d262d7864f1f619445a897ae568718ed15b1309c8f0c157a12fd7fb9fd07801</dd>
+<dt id="source-amphibiaweb"><a href="https://amphibiaweb.org/">AmphibiaWeb live species counter</a> — 2026.10.10</dt>
+<dd>9136 species: 8055 frogs, 846 salamanders and 235 caecilians; headline does not split extinct and extant.</dd>
+</dl><h2>Counts and mappings</h2>
+<article id="Bacterium"><h2>Bacteria</h2>
+<p>Total: 26,397; Explicitly extinct: 0; Explicitly extant: 4,827; Unset extinction status: 21,570.</p><p>Accepted catalogued species, including fossil and recently extinct species where covered. Coverage is incomplete; missing extinction flags are unknown, not extant.</p>
+<p>Accepted species below COL taxon CRRY6; extinction status queried separately.</p>
+<p>Sources: <a href="#source-col">Catalogue of Life COL26.9 base release</a>.</p>
+<p>API evidence: <a href="https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=CRRY6&amp;rank=species&amp;status=accepted&amp;limit=0">total</a>, <a href="https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=CRRY6&amp;rank=species&amp;status=accepted&amp;limit=0&amp;extinct=true">extinct</a>, <a href="https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=CRRY6&amp;rank=species&amp;status=accepted&amp;limit=0&amp;extinct=false">extant</a>.</p>
+<p>GPT: Bacterium. </p>
+<p>.: Bacterium. Conventional named taxon; older functional wording is approximate.</p>
+<p>SUMO: Bacterium. Conventional named taxon; older functional wording is approximate.</p>
+<p>Wikipedia: Category:Bacteria. Species in the associated taxon, not counts of Wikipedia articles or subcategories.</p>
+</article>
+<article id="Archaeon"><h2>Archaea</h2>
+<p>Total: 790; Explicitly extinct: 0; Explicitly extant: 0; Unset extinction status: 790.</p><p>Accepted catalogued species, including fossil and recently extinct species where covered. Coverage is incomplete; missing extinction flags are unknown, not extant.</p>
+<p>Accepted species below COL taxon CRLT8; extinction status queried separately.</p>
+<p>Sources: <a href="#source-col">Catalogue of Life COL26.9 base release</a>.</p>
+<p>API evidence: <a href="https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=CRLT8&amp;rank=species&amp;status=accepted&amp;limit=0">total</a>, <a href="https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=CRLT8&amp;rank=species&amp;status=accepted&amp;limit=0&amp;extinct=true">extinct</a>, <a href="https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=CRLT8&amp;rank=species&amp;status=accepted&amp;limit=0&amp;extinct=false">extant</a>.</p>
+<p>GPT: Archaeon. </p>
+<p>Wikipedia: Category:Archaea. Species in the associated taxon, not counts of Wikipedia articles or subcategories.</p>
+</article>
+<article id="Eukaryote"><h2>Eukaryota</h2>
+<p>Total: 2,142,032; Explicitly extinct: 169,945; Explicitly extant: 879,328; Unset extinction status: 1,092,759.</p><p>Accepted catalogued species, including fossil and recently extinct species where covered. Coverage is incomplete; missing extinction flags are unknown, not extant.</p>
+<p>Accepted species below COL taxon CS5HF; extinction status queried separately.</p>
+<p>Sources: <a href="#source-col">Catalogue of Life COL26.9 base release</a>.</p>
+<p>API evidence: <a href="https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=CS5HF&amp;rank=species&amp;status=accepted&amp;limit=0">total</a>, <a href="https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=CS5HF&amp;rank=species&amp;status=accepted&amp;limit=0&amp;extinct=true">extinct</a>, <a href="https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=CS5HF&amp;rank=species&amp;status=accepted&amp;limit=0&amp;extinct=false">extant</a>.</p>
+<p>GPT: Eukaryote. </p>
+</article>
+<article id="Moss"><h2>Bryophyta</h2>
+<p>Total: 12,031; Explicitly extinct: 298; Explicitly extant: 11,733.</p><p>Accepted catalogued species, including fossil and recently extinct species where covered. Coverage is incomplete; missing extinction flags are unknown, not extant.</p>
+<p>Accepted species below COL taxon BJ5TM; extinction status queried separately.</p>
+<p>Sources: <a href="#source-col">Catalogue of Life COL26.9 base release</a>.</p>
+<p>API evidence: <a href="https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=BJ5TM&amp;rank=species&amp;status=accepted&amp;limit=0">total</a>, <a href="https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=BJ5TM&amp;rank=species&amp;status=accepted&amp;limit=0&amp;extinct=true">extinct</a>, <a href="https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=BJ5TM&amp;rank=species&amp;status=accepted&amp;limit=0&amp;extinct=false">extant</a>.</p>
+<p>GPT: Moss. </p>
+</article>
+<article id="VascularPlant"><h2>Tracheophyta</h2>
+<p>Total: 368,650; Explicitly extinct: 387; Explicitly extant: 2,345; Unset extinction status: 365,918.</p><p>Accepted catalogued species, including fossil and recently extinct species where covered. Coverage is incomplete; missing extinction flags are unknown, not extant.</p>
+<p>Accepted species below COL taxon TP; extinction status queried separately.</p>
+<p>Sources: <a href="#source-col">Catalogue of Life COL26.9 base release</a>.</p>
+<p>API evidence: <a href="https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=TP&amp;rank=species&amp;status=accepted&amp;limit=0">total</a>, <a href="https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=TP&amp;rank=species&amp;status=accepted&amp;limit=0&amp;extinct=true">extinct</a>, <a href="https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=TP&amp;rank=species&amp;status=accepted&amp;limit=0&amp;extinct=false">extant</a>.</p>
+<p>GPT: VascularPlant. </p>
+</article>
+<article id="Fern"><h2>Polypodiopsida</h2>
+<p>Total: 12,457; Explicitly extinct: 0; Explicitly extant: 0; Unset extinction status: 12,457.</p><p>Accepted catalogued species, including fossil and recently extinct species where covered. Coverage is incomplete; missing extinction flags are unknown, not extant.</p>
+<p>Accepted species below COL taxon GV; extinction status queried separately.</p>
+<p>Sources: <a href="#source-col">Catalogue of Life COL26.9 base release</a>.</p>
+<p>API evidence: <a href="https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=GV&amp;rank=species&amp;status=accepted&amp;limit=0">total</a>, <a href="https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=GV&amp;rank=species&amp;status=accepted&amp;limit=0&amp;extinct=true">extinct</a>, <a href="https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=GV&amp;rank=species&amp;status=accepted&amp;limit=0&amp;extinct=false">extant</a>.</p>
+<p>GPT: Fern. </p>
+</article>
+<article id="Lycophyte"><h2>Lycopodiopsida</h2>
+<p>Total: 1,503; Explicitly extinct: 0; Explicitly extant: 0; Unset extinction status: 1,503.</p><p>Accepted catalogued species, including fossil and recently extinct species where covered. Coverage is incomplete; missing extinction flags are unknown, not extant.</p>
+<p>Accepted species below COL taxon LYC; extinction status queried separately.</p>
+<p>Sources: <a href="#source-col">Catalogue of Life COL26.9 base release</a>.</p>
+<p>API evidence: <a href="https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=LYC&amp;rank=species&amp;status=accepted&amp;limit=0">total</a>, <a href="https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=LYC&amp;rank=species&amp;status=accepted&amp;limit=0&amp;extinct=true">extinct</a>, <a href="https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=LYC&amp;rank=species&amp;status=accepted&amp;limit=0&amp;extinct=false">extant</a>.</p>
+<p>GPT: Lycophyte. </p>
+</article>
+<article id="Fungus"><h2>Fungi</h2>
+<p>Total: 157,044; Explicitly extinct: 153; Explicitly extant: 156,891.</p><p>Accepted catalogued species, including fossil and recently extinct species where covered. Coverage is incomplete; missing extinction flags are unknown, not extant.</p>
+<p>Accepted species below COL taxon F; extinction status queried separately.</p>
+<p>Sources: <a href="#source-col">Catalogue of Life COL26.9 base release</a>.</p>
+<p>API evidence: <a href="https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=F&amp;rank=species&amp;status=accepted&amp;limit=0">total</a>, <a href="https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=F&amp;rank=species&amp;status=accepted&amp;limit=0&amp;extinct=true">extinct</a>, <a href="https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=F&amp;rank=species&amp;status=accepted&amp;limit=0&amp;extinct=false">extant</a>.</p>
+<p>GPT: Fungus. </p>
+</article>
+<article id="Animal"><h2>Animalia</h2>
+<p>Total: 1,534,287; Explicitly extinct: 129,067; Explicitly extant: 689,062; Unset extinction status: 716,158.</p><p>Accepted catalogued species, including fossil and recently extinct species where covered. Coverage is incomplete; missing extinction flags are unknown, not extant.</p>
+<p>Accepted species below COL taxon N; extinction status queried separately.</p>
+<p>Sources: <a href="#source-col">Catalogue of Life COL26.9 base release</a>.</p>
+<p>API evidence: <a href="https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=N&amp;rank=species&amp;status=accepted&amp;limit=0">total</a>, <a href="https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=N&amp;rank=species&amp;status=accepted&amp;limit=0&amp;extinct=true">extinct</a>, <a href="https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=N&amp;rank=species&amp;status=accepted&amp;limit=0&amp;extinct=false">extant</a>.</p>
+<p>GPT: Animal. </p>
+<p>.: Animal. </p>
+<p>SUMO: Animal. </p>
+<p>Rogets: roget-0366. Associated taxon Animalia; this thesaurus topic is not a taxonomic subclass node.</p>
+</article>
+<article id="Sponge"><h2>Porifera</h2>
+<p>Total: 9,930; Explicitly extinct: 59; Explicitly extant: 7,289; Unset extinction status: 2,582.</p><p>Accepted catalogued species, including fossil and recently extinct species where covered. Coverage is incomplete; missing extinction flags are unknown, not extant.</p>
+<p>Accepted species below COL taxon B8TXQ; extinction status queried separately.</p>
+<p>Sources: <a href="#source-col">Catalogue of Life COL26.9 base release</a>.</p>
+<p>API evidence: <a href="https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=B8TXQ&amp;rank=species&amp;status=accepted&amp;limit=0">total</a>, <a href="https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=B8TXQ&amp;rank=species&amp;status=accepted&amp;limit=0&amp;extinct=true">extinct</a>, <a href="https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=B8TXQ&amp;rank=species&amp;status=accepted&amp;limit=0&amp;extinct=false">extant</a>.</p>
+<p>GPT: Sponge. </p>
+</article>
+<article id="Cnidarian"><h2>Cnidaria</h2>
+<p>Total: 20,625; Explicitly extinct: 6,051; Explicitly extant: 3,314; Unset extinction status: 11,260.</p><p>Accepted catalogued species, including fossil and recently extinct species where covered. Coverage is incomplete; missing extinction flags are unknown, not extant.</p>
+<p>Accepted species below COL taxon CN2; extinction status queried separately.</p>
+<p>Sources: <a href="#source-col">Catalogue of Life COL26.9 base release</a>.</p>
+<p>API evidence: <a href="https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=CN2&amp;rank=species&amp;status=accepted&amp;limit=0">total</a>, <a href="https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=CN2&amp;rank=species&amp;status=accepted&amp;limit=0&amp;extinct=true">extinct</a>, <a href="https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=CN2&amp;rank=species&amp;status=accepted&amp;limit=0&amp;extinct=false">extant</a>.</p>
+<p>GPT: Cnidarian. </p>
+</article>
+<article id="Arthropod"><h2>Arthropoda</h2>
+<p>Total: 1,155,626; Explicitly extinct: 31,153; Explicitly extant: 607,820; Unset extinction status: 516,653.</p><p>Accepted catalogued species, including fossil and recently extinct species where covered. Coverage is incomplete; missing extinction flags are unknown, not extant.</p>
+<p>Accepted species below COL taxon RT; extinction status queried separately.</p>
+<p>Sources: <a href="#source-col">Catalogue of Life COL26.9 base release</a>.</p>
+<p>API evidence: <a href="https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=RT&amp;rank=species&amp;status=accepted&amp;limit=0">total</a>, <a href="https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=RT&amp;rank=species&amp;status=accepted&amp;limit=0&amp;extinct=true">extinct</a>, <a href="https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=RT&amp;rank=species&amp;status=accepted&amp;limit=0&amp;extinct=false">extant</a>.</p>
+<p>GPT: Arthropod. </p>
+</article>
+<article id="Insect"><h2>Insecta</h2>
+<p>Total: 943,497; Explicitly extinct: 13,821; Explicitly extant: 529,195; Unset extinction status: 400,481.</p><p>Accepted catalogued species, including fossil and recently extinct species where covered. Coverage is incomplete; missing extinction flags are unknown, not extant.</p>
+<p>Accepted species below COL taxon H6; extinction status queried separately.</p>
+<p>Sources: <a href="#source-col">Catalogue of Life COL26.9 base release</a>.</p>
+<p>API evidence: <a href="https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=H6&amp;rank=species&amp;status=accepted&amp;limit=0">total</a>, <a href="https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=H6&amp;rank=species&amp;status=accepted&amp;limit=0&amp;extinct=true">extinct</a>, <a href="https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=H6&amp;rank=species&amp;status=accepted&amp;limit=0&amp;extinct=false">extant</a>.</p>
+<p>GPT: Insect. </p>
+</article>
+<article id="Arachnid"><h2>Arachnida</h2>
+<p>Total: 98,104; Explicitly extinct: 146; Explicitly extant: 34,340; Unset extinction status: 63,618.</p><p>Accepted catalogued species, including fossil and recently extinct species where covered. Coverage is incomplete; missing extinction flags are unknown, not extant.</p>
+<p>Accepted species below COL taxon CCQKT; extinction status queried separately.</p>
+<p>Sources: <a href="#source-col">Catalogue of Life COL26.9 base release</a>.</p>
+<p>API evidence: <a href="https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=CCQKT&amp;rank=species&amp;status=accepted&amp;limit=0">total</a>, <a href="https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=CCQKT&amp;rank=species&amp;status=accepted&amp;limit=0&amp;extinct=true">extinct</a>, <a href="https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=CCQKT&amp;rank=species&amp;status=accepted&amp;limit=0&amp;extinct=false">extant</a>.</p>
+<p>GPT: Arachnid. </p>
+</article>
+<article id="Mollusc"><h2>Mollusca</h2>
+<p>Total: 155,263; Explicitly extinct: 65,861; Explicitly extant: 13,339; Unset extinction status: 76,063.</p><p>Accepted catalogued species, including fossil and recently extinct species where covered. Coverage is incomplete; missing extinction flags are unknown, not extant.</p>
+<p>Accepted species below COL taxon M2L; extinction status queried separately.</p>
+<p>Sources: <a href="#source-col">Catalogue of Life COL26.9 base release</a>.</p>
+<p>API evidence: <a href="https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=M2L&amp;rank=species&amp;status=accepted&amp;limit=0">total</a>, <a href="https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=M2L&amp;rank=species&amp;status=accepted&amp;limit=0&amp;extinct=true">extinct</a>, <a href="https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=M2L&amp;rank=species&amp;status=accepted&amp;limit=0&amp;extinct=false">extant</a>.</p>
+<p>GPT: Mollusc. </p>
+</article>
+<article id="Annelid"><h2>Annelida</h2>
+<p>Total: 19,038; Explicitly extinct: 1,528; Explicitly extant: 14,946; Unset extinction status: 2,564.</p><p>Accepted catalogued species, including fossil and recently extinct species where covered. Coverage is incomplete; missing extinction flags are unknown, not extant.</p>
+<p>Accepted species below COL taxon NN; extinction status queried separately.</p>
+<p>Sources: <a href="#source-col">Catalogue of Life COL26.9 base release</a>.</p>
+<p>API evidence: <a href="https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=NN&amp;rank=species&amp;status=accepted&amp;limit=0">total</a>, <a href="https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=NN&amp;rank=species&amp;status=accepted&amp;limit=0&amp;extinct=true">extinct</a>, <a href="https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=NN&amp;rank=species&amp;status=accepted&amp;limit=0&amp;extinct=false">extant</a>.</p>
+<p>GPT: Annelid. </p>
+</article>
+<article id="Nematode"><h2>Nematoda</h2>
+<p>Total: 19,628; Explicitly extinct: 30; Explicitly extant: 4,781; Unset extinction status: 14,817.</p><p>Accepted catalogued species, including fossil and recently extinct species where covered. Coverage is incomplete; missing extinction flags are unknown, not extant.</p>
+<p>Accepted species below COL taxon NM; extinction status queried separately.</p>
+<p>Sources: <a href="#source-col">Catalogue of Life COL26.9 base release</a>.</p>
+<p>API evidence: <a href="https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=NM&amp;rank=species&amp;status=accepted&amp;limit=0">total</a>, <a href="https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=NM&amp;rank=species&amp;status=accepted&amp;limit=0&amp;extinct=true">extinct</a>, <a href="https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=NM&amp;rank=species&amp;status=accepted&amp;limit=0&amp;extinct=false">extant</a>.</p>
+<p>GPT: Nematode. </p>
+</article>
+<article id="Echinoderm"><h2>Echinodermata</h2>
+<p>Total: 11,890; Explicitly extinct: 4,160; Explicitly extant: 3,163; Unset extinction status: 4,567.</p><p>Accepted catalogued species, including fossil and recently extinct species where covered. Coverage is incomplete; missing extinction flags are unknown, not extant.</p>
+<p>Accepted species below COL taxon CHN; extinction status queried separately.</p>
+<p>Sources: <a href="#source-col">Catalogue of Life COL26.9 base release</a>.</p>
+<p>API evidence: <a href="https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=CHN&amp;rank=species&amp;status=accepted&amp;limit=0">total</a>, <a href="https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=CHN&amp;rank=species&amp;status=accepted&amp;limit=0&amp;extinct=true">extinct</a>, <a href="https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=CHN&amp;rank=species&amp;status=accepted&amp;limit=0&amp;extinct=false">extant</a>.</p>
+<p>GPT: Echinoderm. </p>
+</article>
+<article id="Chordate"><h2>Chordata</h2>
+<p>Total: 79,748; Explicitly extinct: 570; Explicitly extant: 26,294; Unset extinction status: 52,884.</p><p>Accepted catalogued species, including fossil and recently extinct species where covered. Coverage is incomplete; missing extinction flags are unknown, not extant.</p>
+<p>Accepted species below COL taxon CH2; extinction status queried separately.</p>
+<p>Sources: <a href="#source-col">Catalogue of Life COL26.9 base release</a>.</p>
+<p>API evidence: <a href="https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=CH2&amp;rank=species&amp;status=accepted&amp;limit=0">total</a>, <a href="https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=CH2&amp;rank=species&amp;status=accepted&amp;limit=0&amp;extinct=true">extinct</a>, <a href="https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=CH2&amp;rank=species&amp;status=accepted&amp;limit=0&amp;extinct=false">extant</a>.</p>
+<p>GPT: Chordate. </p>
+</article>
+<article id="Vertebrate"><h2>Vertebrata</h2>
+<p>Total: 76,572; Explicitly extinct: 570; Explicitly extant: 26,240; Unset extinction status: 49,762.</p><p>Accepted catalogued species, including fossil and recently extinct species where covered. Coverage is incomplete; missing extinction flags are unknown, not extant.</p>
+<p>Accepted species below COL taxon 8V4V3; extinction status queried separately.</p>
+<p>Sources: <a href="#source-col">Catalogue of Life COL26.9 base release</a>.</p>
+<p>API evidence: <a href="https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=8V4V3&amp;rank=species&amp;status=accepted&amp;limit=0">total</a>, <a href="https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=8V4V3&amp;rank=species&amp;status=accepted&amp;limit=0&amp;extinct=true">extinct</a>, <a href="https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=8V4V3&amp;rank=species&amp;status=accepted&amp;limit=0&amp;extinct=false">extant</a>.</p>
+<p>GPT: Vertebrate. </p>
+<p>.: Vertebrate. </p>
+<p>SUMO: Vertebrate. </p>
+</article>
+<article id="JawedVertebrate"><h2>Gnathostomata</h2>
+<p>Total: 76,430; Explicitly extinct: 570; Explicitly extant: 26,240; Unset extinction status: 49,620.</p><p>Accepted catalogued species, including fossil and recently extinct species where covered. Coverage is incomplete; missing extinction flags are unknown, not extant.</p>
+<p>Accepted species below COL taxon 8V4V5; extinction status queried separately.</p>
+<p>Sources: <a href="#source-col">Catalogue of Life COL26.9 base release</a>.</p>
+<p>API evidence: <a href="https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=8V4V5&amp;rank=species&amp;status=accepted&amp;limit=0">total</a>, <a href="https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=8V4V5&amp;rank=species&amp;status=accepted&amp;limit=0&amp;extinct=true">extinct</a>, <a href="https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=8V4V5&amp;rank=species&amp;status=accepted&amp;limit=0&amp;extinct=false">extant</a>.</p>
+<p>GPT: JawedVertebrate. </p>
+</article>
+<article id="CartilaginousFish"><h2>Chondrichthyes</h2>
+<p>Total: 1,354; Explicitly extinct: 0; Explicitly extant: 9; Unset extinction status: 1,345.</p><p>Accepted catalogued species, including fossil and recently extinct species where covered. Coverage is incomplete; missing extinction flags are unknown, not extant.</p>
+<p>Accepted species below COL taxon 8X6G5; extinction status queried separately.</p>
+<p>Sources: <a href="#source-col">Catalogue of Life COL26.9 base release</a>.</p>
+<p>API evidence: <a href="https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=8X6G5&amp;rank=species&amp;status=accepted&amp;limit=0">total</a>, <a href="https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=8X6G5&amp;rank=species&amp;status=accepted&amp;limit=0&amp;extinct=true">extinct</a>, <a href="https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=8X6G5&amp;rank=species&amp;status=accepted&amp;limit=0&amp;extinct=false">extant</a>.</p>
+<p>GPT: CartilaginousFish. </p>
+</article>
+<article id="BonyVertebrate"><h2>Osteichthyes</h2>
+<p>Total: 75,076; Explicitly extinct: 570; Explicitly extant: 26,231; Unset extinction status: 48,275.</p><p>Accepted catalogued species, including fossil and recently extinct species where covered. Coverage is incomplete; missing extinction flags are unknown, not extant.</p>
+<p>Accepted species below COL taxon 8VVWB; extinction status queried separately.</p>
+<p>Sources: <a href="#source-col">Catalogue of Life COL26.9 base release</a>.</p>
+<p>API evidence: <a href="https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=8VVWB&amp;rank=species&amp;status=accepted&amp;limit=0">total</a>, <a href="https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=8VVWB&amp;rank=species&amp;status=accepted&amp;limit=0&amp;extinct=true">extinct</a>, <a href="https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=8VVWB&amp;rank=species&amp;status=accepted&amp;limit=0&amp;extinct=false">extant</a>.</p>
+<p>GPT: BonyVertebrate. </p>
+</article>
+<article id="RayFinnedFish"><h2>Actinopterygii</h2>
+<p>Total: 35,991; Explicitly extinct: 288; Explicitly extant: 85; Unset extinction status: 35,618.</p><p>Accepted catalogued species, including fossil and recently extinct species where covered. Coverage is incomplete; missing extinction flags are unknown, not extant.</p>
+<p>Accepted species below COL taxon 8VR36; extinction status queried separately.</p>
+<p>Sources: <a href="#source-col">Catalogue of Life COL26.9 base release</a>.</p>
+<p>API evidence: <a href="https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=8VR36&amp;rank=species&amp;status=accepted&amp;limit=0">total</a>, <a href="https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=8VR36&amp;rank=species&amp;status=accepted&amp;limit=0&amp;extinct=true">extinct</a>, <a href="https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=8VR36&amp;rank=species&amp;status=accepted&amp;limit=0&amp;extinct=false">extant</a>.</p>
+<p>GPT: RayFinnedFish. </p>
+</article>
+<article id="Tetrapod"><h2>Tetrapoda</h2>
+<p>Total: 39,077; Explicitly extinct: 282; Explicitly extant: 26,146; Unset extinction status: 12,649.</p><p>Accepted catalogued species, including fossil and recently extinct species where covered. Coverage is incomplete; missing extinction flags are unknown, not extant.</p>
+<p>Accepted species below COL taxon 9CK8W; extinction status queried separately.</p>
+<p>Sources: <a href="#source-col">Catalogue of Life COL26.9 base release</a>.</p>
+<p>API evidence: <a href="https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=9CK8W&amp;rank=species&amp;status=accepted&amp;limit=0">total</a>, <a href="https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=9CK8W&amp;rank=species&amp;status=accepted&amp;limit=0&amp;extinct=true">extinct</a>, <a href="https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=9CK8W&amp;rank=species&amp;status=accepted&amp;limit=0&amp;extinct=false">extant</a>.</p>
+<p>GPT: Tetrapod. </p>
+</article>
+<article id="Amphibian"><h2>Amphibia</h2>
+<p>Total: 8,923; Explicitly extinct: 7; Explicitly extant: 8,916.</p><p>Current AmphibiaWeb recognized species total; no extinction breakdown supplied by the headline. COL26.9 statuses are retained only as older comparison data.</p>
+<p>Accepted species below COL taxon PH; extinction status queried separately.</p>
+<p>Tree uses the current AmphibiaWeb total (2026.10.10). Its headline does not split extinction status; dated COL counts remain here for comparison.</p>
+<p>Sources: <a href="#source-col">Catalogue of Life COL26.9 base release</a>, <a href="#source-amphibiaweb">AmphibiaWeb live species counter</a>.</p>
+<p>API evidence: <a href="https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=PH&amp;rank=species&amp;status=accepted&amp;limit=0">total</a>, <a href="https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=PH&amp;rank=species&amp;status=accepted&amp;limit=0&amp;extinct=true">extinct</a>, <a href="https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=PH&amp;rank=species&amp;status=accepted&amp;limit=0&amp;extinct=false">extant</a>.</p>
+<p>GPT: Amphibian. </p>
+</article>
+<article id="Turtle"><h2>Testudines</h2>
+<p>Total: 370; Explicitly extinct: 0; Explicitly extant: 0; Unset extinction status: 370.</p><p>Accepted catalogued species, including fossil and recently extinct species where covered. Coverage is incomplete; missing extinction flags are unknown, not extant.</p>
+<p>Accepted species below COL taxon 477; extinction status queried separately.</p>
+<p>Sources: <a href="#source-col">Catalogue of Life COL26.9 base release</a>.</p>
+<p>API evidence: <a href="https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=477&amp;rank=species&amp;status=accepted&amp;limit=0">total</a>, <a href="https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=477&amp;rank=species&amp;status=accepted&amp;limit=0&amp;extinct=true">extinct</a>, <a href="https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=477&amp;rank=species&amp;status=accepted&amp;limit=0&amp;extinct=false">extant</a>.</p>
+<p>GPT: Turtle. </p>
+</article>
+<article id="Crocodilian"><h2>Crocodylia</h2>
+<p>Total: 27; Explicitly extinct: 0; Explicitly extant: 0; Unset extinction status: 27.</p><p>Accepted catalogued species, including fossil and recently extinct species where covered. Coverage is incomplete; missing extinction flags are unknown, not extant.</p>
+<p>Accepted species below COL taxon 329; extinction status queried separately.</p>
+<p>Sources: <a href="#source-col">Catalogue of Life COL26.9 base release</a>.</p>
+<p>API evidence: <a href="https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=329&amp;rank=species&amp;status=accepted&amp;limit=0">total</a>, <a href="https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=329&amp;rank=species&amp;status=accepted&amp;limit=0&amp;extinct=true">extinct</a>, <a href="https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=329&amp;rank=species&amp;status=accepted&amp;limit=0&amp;extinct=false">extant</a>.</p>
+<p>GPT: Crocodilian. </p>
+</article>
+<article id="Bird"><h2>Aves</h2>
+<p>Total: 11,044; Explicitly extinct: 176; Explicitly extant: 10,868.</p><p>Accepted catalogued species, including fossil and recently extinct species where covered. Coverage is incomplete; missing extinction flags are unknown, not extant.</p>
+<p>Accepted species below COL taxon V2; extinction status queried separately.</p>
+<p>Sources: <a href="#source-col">Catalogue of Life COL26.9 base release</a>.</p>
+<p>API evidence: <a href="https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=V2&amp;rank=species&amp;status=accepted&amp;limit=0">total</a>, <a href="https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=V2&amp;rank=species&amp;status=accepted&amp;limit=0&amp;extinct=true">extinct</a>, <a href="https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=V2&amp;rank=species&amp;status=accepted&amp;limit=0&amp;extinct=false">extant</a>.</p>
+<p>GPT: Bird. </p>
+<p>.: Bird. </p>
+<p>SUMO: Bird. </p>
+</article>
+<article id="Reptile"><h2>Reptilia</h2>
+<p>Total: 12,649; Explicitly extinct: 0; Explicitly extant: 0; Unset extinction status: 12,649.</p><p>Accepted catalogued species, including fossil and recently extinct species where covered. Coverage is incomplete; missing extinction flags are unknown, not extant.</p>
+<p>Accepted species below COL taxon RP; extinction status queried separately.</p>
+<p>Sources: <a href="#source-col">Catalogue of Life COL26.9 base release</a>.</p>
+<p>API evidence: <a href="https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=RP&amp;rank=species&amp;status=accepted&amp;limit=0">total</a>, <a href="https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=RP&amp;rank=species&amp;status=accepted&amp;limit=0&amp;extinct=true">extinct</a>, <a href="https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=RP&amp;rank=species&amp;status=accepted&amp;limit=0&amp;extinct=false">extant</a>.</p>
+<p>.: Reptile. </p>
+<p>SUMO: Reptile. </p>
+</article>
+<article id="col-Ctenophora"><h2>Ctenophora</h2>
+<p>Total: 197; Explicitly extinct: 15; Explicitly extant: 2; Unset extinction status: 180.</p><p>Accepted catalogued species, including fossil and recently extinct species where covered. Coverage is incomplete; missing extinction flags are unknown, not extant.</p>
+<p>Accepted species below COL taxon B8V3L; extinction status queried separately.</p>
+<p>Sources: <a href="#source-col">Catalogue of Life COL26.9 base release</a>.</p>
+<p>API evidence: <a href="https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=B8V3L&amp;rank=species&amp;status=accepted&amp;limit=0">total</a>, <a href="https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=B8V3L&amp;rank=species&amp;status=accepted&amp;limit=0&amp;extinct=true">extinct</a>, <a href="https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=B8V3L&amp;rank=species&amp;status=accepted&amp;limit=0&amp;extinct=false">extant</a>.</p>
+</article>
+<article id="col-Placozoa"><h2>Placozoa</h2>
+<p>Total: 4; Explicitly extinct: 0; Explicitly extant: 0; Unset extinction status: 4.</p><p>Accepted catalogued species, including fossil and recently extinct species where covered. Coverage is incomplete; missing extinction flags are unknown, not extant.</p>
+<p>Accepted species below COL taxon B8V3N; extinction status queried separately.</p>
+<p>Sources: <a href="#source-col">Catalogue of Life COL26.9 base release</a>.</p>
+<p>API evidence: <a href="https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=B8V3N&amp;rank=species&amp;status=accepted&amp;limit=0">total</a>, <a href="https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=B8V3N&amp;rank=species&amp;status=accepted&amp;limit=0&amp;extinct=true">extinct</a>, <a href="https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=B8V3N&amp;rank=species&amp;status=accepted&amp;limit=0&amp;extinct=false">extant</a>.</p>
+</article>
+<article id="col-Liliopsida"><h2>Liliopsida</h2>
+<p>Total: 84,523; Explicitly extinct: 0; Explicitly extant: 0; Unset extinction status: 84,523.</p><p>Accepted catalogued species, including fossil and recently extinct species where covered. Coverage is incomplete; missing extinction flags are unknown, not extant.</p>
+<p>Accepted species below COL taxon L2L; extinction status queried separately.</p>
+<p>Sources: <a href="#source-col">Catalogue of Life COL26.9 base release</a>.</p>
+<p>API evidence: <a href="https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=L2L&amp;rank=species&amp;status=accepted&amp;limit=0">total</a>, <a href="https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=L2L&amp;rank=species&amp;status=accepted&amp;limit=0&amp;extinct=true">extinct</a>, <a href="https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=L2L&amp;rank=species&amp;status=accepted&amp;limit=0&amp;extinct=false">extant</a>.</p>
+</article>
+<article id="col-Pinopsida"><h2>Pinopsida</h2>
+<p>Total: 835; Explicitly extinct: 0; Explicitly extant: 835.</p><p>Accepted catalogued species, including fossil and recently extinct species where covered. Coverage is incomplete; missing extinction flags are unknown, not extant.</p>
+<p>Accepted species below COL taxon C7ZVJ; extinction status queried separately.</p>
+<p>Sources: <a href="#source-col">Catalogue of Life COL26.9 base release</a>.</p>
+<p>API evidence: <a href="https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=C7ZVJ&amp;rank=species&amp;status=accepted&amp;limit=0">total</a>, <a href="https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=C7ZVJ&amp;rank=species&amp;status=accepted&amp;limit=0&amp;extinct=true">extinct</a>, <a href="https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=C7ZVJ&amp;rank=species&amp;status=accepted&amp;limit=0&amp;extinct=false">extant</a>.</p>
+</article>
+<article id="col-Cycadopsida"><h2>Cycadopsida</h2>
+<p>Total: 376; Explicitly extinct: 0; Explicitly extant: 0; Unset extinction status: 376.</p><p>Accepted catalogued species, including fossil and recently extinct species where covered. Coverage is incomplete; missing extinction flags are unknown, not extant.</p>
+<p>Accepted species below COL taxon CGVH9; extinction status queried separately.</p>
+<p>Sources: <a href="#source-col">Catalogue of Life COL26.9 base release</a>.</p>
+<p>API evidence: <a href="https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=CGVH9&amp;rank=species&amp;status=accepted&amp;limit=0">total</a>, <a href="https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=CGVH9&amp;rank=species&amp;status=accepted&amp;limit=0&amp;extinct=true">extinct</a>, <a href="https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=CGVH9&amp;rank=species&amp;status=accepted&amp;limit=0&amp;extinct=false">extant</a>.</p>
+</article>
+<article id="col-Ginkgoopsida"><h2>Ginkgoopsida</h2>
+<p>Total: 388; Explicitly extinct: 387; Explicitly extant: 0; Unset extinction status: 1.</p><p>Accepted catalogued species, including fossil and recently extinct species where covered. Coverage is incomplete; missing extinction flags are unknown, not extant.</p>
+<p>Accepted species below COL taxon BT; extinction status queried separately.</p>
+<p>Sources: <a href="#source-col">Catalogue of Life COL26.9 base release</a>.</p>
+<p>API evidence: <a href="https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=BT&amp;rank=species&amp;status=accepted&amp;limit=0">total</a>, <a href="https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=BT&amp;rank=species&amp;status=accepted&amp;limit=0&amp;extinct=true">extinct</a>, <a href="https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=BT&amp;rank=species&amp;status=accepted&amp;limit=0&amp;extinct=false">extant</a>.</p>
+</article>
+<article id="col-Marchantiophyta"><h2>Marchantiophyta</h2>
+<p>Total: 7,500; Explicitly extinct: 184; Explicitly extant: 7,316.</p><p>Accepted catalogued species, including fossil and recently extinct species where covered. Coverage is incomplete; missing extinction flags are unknown, not extant.</p>
+<p>Accepted species below COL taxon 9J9G3; extinction status queried separately.</p>
+<p>Sources: <a href="#source-col">Catalogue of Life COL26.9 base release</a>.</p>
+<p>API evidence: <a href="https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=9J9G3&amp;rank=species&amp;status=accepted&amp;limit=0">total</a>, <a href="https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=9J9G3&amp;rank=species&amp;status=accepted&amp;limit=0&amp;extinct=true">extinct</a>, <a href="https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=9J9G3&amp;rank=species&amp;status=accepted&amp;limit=0&amp;extinct=false">extant</a>.</p>
+</article>
+<article id="col-Anthocerotophyta"><h2>Anthocerotophyta</h2>
+<p>Total: 305; Explicitly extinct: 81; Explicitly extant: 224.</p><p>Accepted catalogued species, including fossil and recently extinct species where covered. Coverage is incomplete; missing extinction flags are unknown, not extant.</p>
+<p>Accepted species below COL taxon 9JHQ8; extinction status queried separately.</p>
+<p>Sources: <a href="#source-col">Catalogue of Life COL26.9 base release</a>.</p>
+<p>API evidence: <a href="https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=9JHQ8&amp;rank=species&amp;status=accepted&amp;limit=0">total</a>, <a href="https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=9JHQ8&amp;rank=species&amp;status=accepted&amp;limit=0&amp;extinct=true">extinct</a>, <a href="https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=9JHQ8&amp;rank=species&amp;status=accepted&amp;limit=0&amp;extinct=false">extant</a>.</p>
+</article>
+<article id="col-Sarcopterygii"><h2>Sarcopterygii</h2>
+<p>Total: 8; Explicitly extinct: 0; Explicitly extant: 0; Unset extinction status: 8.</p><p>Accepted catalogued species, including fossil and recently extinct species where covered. Coverage is incomplete; missing extinction flags are unknown, not extant.</p>
+<p>Accepted species below COL taxon 8VSMX; extinction status queried separately.</p>
+<p>Sources: <a href="#source-col">Catalogue of Life COL26.9 base release</a>.</p>
+<p>API evidence: <a href="https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=8VSMX&amp;rank=species&amp;status=accepted&amp;limit=0">total</a>, <a href="https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=8VSMX&amp;rank=species&amp;status=accepted&amp;limit=0&amp;extinct=true">extinct</a>, <a href="https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=8VSMX&amp;rank=species&amp;status=accepted&amp;limit=0&amp;extinct=false">extant</a>.</p>
+</article>
+<article id="col-Mammalia"><h2>Mammalia</h2>
+<p>Total: 6,461; Explicitly extinct: 99; Explicitly extant: 6,362.</p><p>Accepted catalogued species, including fossil and recently extinct species where covered. Coverage is incomplete; missing extinction flags are unknown, not extant.</p>
+<p>Accepted species below COL taxon 6224G; extinction status queried separately.</p>
+<p>Sources: <a href="#source-col">Catalogue of Life COL26.9 base release</a>.</p>
+<p>API evidence: <a href="https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=6224G&amp;rank=species&amp;status=accepted&amp;limit=0">total</a>, <a href="https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=6224G&amp;rank=species&amp;status=accepted&amp;limit=0&amp;extinct=true">extinct</a>, <a href="https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=6224G&amp;rank=species&amp;status=accepted&amp;limit=0&amp;extinct=false">extant</a>.</p>
+</article>
+<article id="Plant"><h2>Embryophyta</h2>
+<p>Total: 388,486; Explicitly extinct: 950; Explicitly extant: 21,618; Unset extinction status: 365,918.</p><p>Accepted species in the COL26.9 base checklist; fossils included where covered and missing extinction status retained as unknown. Land plants only; algae excluded.</p>
+<p>Disjoint components added or subtracted within the same COL release.</p>
+<p>Components: +1 × <a href="#VascularPlant">Tracheophyta</a>, +1 × <a href="#Moss">Bryophyta</a>, +1 × <a href="#col-Marchantiophyta">Marchantiophyta</a>, +1 × <a href="#col-Anthocerotophyta">Anthocerotophyta</a>.</p>
+<p>Sources: <a href="#source-col">Catalogue of Life COL26.9 base release</a>.</p>
+<p>GPT: Plant. </p>
+</article>
+<article id="FloweringPlant"><h2>Angiosperms</h2>
+<p>Total: 353,091; Explicitly extinct: 0; Explicitly extant: 1,510; Unset extinction status: 351,581.</p><p>Accepted species in the COL26.9 base checklist; fossils included where covered and missing extinction status retained as unknown. Monocots plus dicots in COL; matches the broad NCBI angiosperm lineage.</p>
+<p>Disjoint components added or subtracted within the same COL release.</p>
+<p>Components: +1 × <a href="#col-Liliopsida">Liliopsida</a>, +1 × <a href="#col-Magnoliopsida">Magnoliopsida</a>.</p>
+<p>Sources: <a href="#source-col">Catalogue of Life COL26.9 base release</a>.</p>
+<p>GPT: FloweringPlant. </p>
+<p>.: FloweringPlant. </p>
+<p>SUMO: FloweringPlant. </p>
+</article>
+<article id="col-Magnoliopsida"><h2>Magnoliopsida</h2>
+<p>Total: 268,568; Explicitly extinct: 0; Explicitly extant: 1,510; Unset extinction status: 267,058.</p><p>Accepted catalogued species, including fossil and recently extinct species where covered. Coverage is incomplete; missing extinction flags are unknown, not extant.</p>
+<p>Accepted species below COL taxon MG; extinction status queried separately.</p>
+<p>Sources: <a href="#source-col">Catalogue of Life COL26.9 base release</a>.</p>
+<p>API evidence: <a href="https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=MG&amp;rank=species&amp;status=accepted&amp;limit=0">total</a>, <a href="https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=MG&amp;rank=species&amp;status=accepted&amp;limit=0&amp;extinct=true">extinct</a>, <a href="https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=MG&amp;rank=species&amp;status=accepted&amp;limit=0&amp;extinct=false">extant</a>.</p>
+</article>
+<article id="Gymnosperm"><h2>Acrogymnospermae</h2>
+<p>Total: 1,599; Explicitly extinct: 387; Explicitly extant: 835; Unset extinction status: 377.</p><p>Accepted species in the COL26.9 base checklist; fossils included where covered and missing extinction status retained as unknown. Includes catalogued fossil ginkgos; gnetophytes are placed in Pinopsida by this checklist.</p>
+<p>Disjoint components added or subtracted within the same COL release.</p>
+<p>Components: +1 × <a href="#col-Pinopsida">Pinopsida</a>, +1 × <a href="#col-Cycadopsida">Cycadopsida</a>, +1 × <a href="#col-Ginkgoopsida">Ginkgoopsida</a>.</p>
+<p>Sources: <a href="#source-col">Catalogue of Life COL26.9 base release</a>.</p>
+<p>GPT: Gymnosperm. </p>
+</article>
+<article id="SeedPlant"><h2>Spermatophyta</h2>
+<p>Total: 354,690; Explicitly extinct: 387; Explicitly extant: 2,345; Unset extinction status: 351,958.</p><p>Accepted species in the COL26.9 base checklist; fossils included where covered and missing extinction status retained as unknown.</p>
+<p>Disjoint components added or subtracted within the same COL release.</p>
+<p>Components: +1 × <a href="#Gymnosperm">Acrogymnospermae</a>, +1 × <a href="#FloweringPlant">Angiosperms</a>.</p>
+<p>Sources: <a href="#source-col">Catalogue of Life COL26.9 base release</a>.</p>
+<p>GPT: SeedPlant. </p>
+</article>
+<article id="Bilaterian"><h2>Bilateria</h2>
+<p>Total: 1,503,531; Explicitly extinct: 122,942; Explicitly extant: 678,457; Unset extinction status: 702,132.</p><p>Accepted species in the COL26.9 base checklist; fossils included where covered and missing extinction status retained as unknown. Animalia minus the four non-bilaterian phyla.</p>
+<p>Disjoint components added or subtracted within the same COL release.</p>
+<p>Components: +1 × <a href="#Animal">Animalia</a>, -1 × <a href="#Sponge">Porifera</a>, -1 × <a href="#Cnidarian">Cnidaria</a>, -1 × <a href="#col-Ctenophora">Ctenophora</a>, -1 × <a href="#col-Placozoa">Placozoa</a>.</p>
+<p>Sources: <a href="#source-col">Catalogue of Life COL26.9 base release</a>.</p>
+<p>GPT: Bilaterian. </p>
+</article>
+<article id="LobeFinnedVertebrate"><h2>Sarcopterygii including tetrapods</h2>
+<p>Total: 39,085; Explicitly extinct: 282; Explicitly extant: 26,146; Unset extinction status: 12,657.</p><p>Accepted species in the COL26.9 base checklist; fossils included where covered and missing extinction status retained as unknown. COL fish-only Sarcopterygii expanded to the GPT node’s clade including tetrapods.</p>
+<p>Disjoint components added or subtracted within the same COL release.</p>
+<p>Components: +1 × <a href="#col-Sarcopterygii">Sarcopterygii</a>, +1 × <a href="#Tetrapod">Tetrapoda</a>.</p>
+<p>Sources: <a href="#source-col">Catalogue of Life COL26.9 base release</a>.</p>
+<p>GPT: LobeFinnedVertebrate. </p>
+</article>
+<article id="Amniote"><h2>Amniota</h2>
+<p>Total: 30,154; Explicitly extinct: 275; Explicitly extant: 17,230; Unset extinction status: 12,649.</p><p>Accepted species in the COL26.9 base checklist; fossils included where covered and missing extinction status retained as unknown.</p>
+<p>Disjoint components added or subtracted within the same COL release.</p>
+<p>Components: +1 × <a href="#Tetrapod">Tetrapoda</a>, -1 × <a href="#Amphibian">Amphibia</a>.</p>
+<p>Sources: <a href="#source-col">Catalogue of Life COL26.9 base release</a>.</p>
+<p>GPT: Amniote. </p>
+</article>
+<article id="Sauropsid"><h2>Sauropsida</h2>
+<p>Total: 23,693; Explicitly extinct: 176; Explicitly extant: 10,868; Unset extinction status: 12,649.</p><p>Accepted species in the COL26.9 base checklist; fossils included where covered and missing extinction status retained as unknown. Includes birds.</p>
+<p>Disjoint components added or subtracted within the same COL release.</p>
+<p>Components: +1 × <a href="#Reptile">Reptilia</a>, +1 × <a href="#Bird">Aves</a>.</p>
+<p>Sources: <a href="#source-col">Catalogue of Life COL26.9 base release</a>.</p>
+<p>GPT: Sauropsid. </p>
+</article>
+<article id="Archosaur"><h2>Archosauria: represented crown groups</h2>
+<p>Total: 11,071; Explicitly extinct: 176; Explicitly extant: 10,868; Unset extinction status: 27.</p><p>Accepted species in the COL26.9 base checklist; fossils included where covered and missing extinction status retained as unknown. Crocodilians plus birds; omits non-avian fossil archosaurs not represented by these components.</p>
+<p>Disjoint components added or subtracted within the same COL release.</p>
+<p>Whole-clade extinct count is unavailable; the tree shows ? for extinct. The extant component exhausts living representatives of the clade.</p>
+<p>Components: +1 × <a href="#Crocodilian">Crocodylia</a>, +1 × <a href="#Bird">Aves</a>.</p>
+<p>Sources: <a href="#source-col">Catalogue of Life COL26.9 base release</a>.</p>
+<p>GPT: Archosaur. </p>
+</article>
+<article id="col-Squamata"><h2>Squamata</h2>
+<p>Total: 12,251; Explicitly extinct: 0; Explicitly extant: 0; Unset extinction status: 12,251.</p><p>Accepted catalogued species, including fossil and recently extinct species where covered. Coverage is incomplete; missing extinction flags are unknown, not extant.</p>
+<p>Accepted species below COL taxon 45C; extinction status queried separately.</p>
+<p>Sources: <a href="#source-col">Catalogue of Life COL26.9 base release</a>.</p>
+<p>API evidence: <a href="https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=45C&amp;rank=species&amp;status=accepted&amp;limit=0">total</a>, <a href="https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=45C&amp;rank=species&amp;status=accepted&amp;limit=0&amp;extinct=true">extinct</a>, <a href="https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=45C&amp;rank=species&amp;status=accepted&amp;limit=0&amp;extinct=false">extant</a>.</p>
+</article>
+<article id="Tuatara"><h2>Sphenodon punctatus</h2>
+<p>Total: 1; Explicitly extinct: 0; Explicitly extant: 1.</p><p>One currently recognized tuatara species.</p>
+<p>Reptile Database June 2026: Rhynchocephalia = 1.</p>
+<p>Sources: <a href="#source-reptile">Reptile Database species statistics</a>.</p>
+</article>
+<article id="Lepidosaur"><h2>Lepidosauria</h2>
+<p>Total: 12,252; Explicitly extinct: 0; Explicitly extant: 1; Unset extinction status: 12,251.</p><p>Accepted species in the COL26.9 base checklist; fossils included where covered and missing extinction status retained as unknown.</p>
+<p>Squamata plus Rhynchocephalia.</p>
+<p>Components: +1 × <a href="#col-Squamata">Squamata</a>, +1 × <a href="#Tuatara">Sphenodon punctatus</a>.</p>
+<p>Sources: <a href="#source-col">Catalogue of Life COL26.9 base release</a>, <a href="#source-reptile">Reptile Database species statistics</a>.</p>
+<p>GPT: Lepidosaur. </p>
+</article>
+<article id="Invertebrate"><h2>Animalia excluding Vertebrata</h2>
+<p>Total: 1,457,715; Explicitly extinct: 128,497; Explicitly extant: 662,822; Unset extinction status: 666,396.</p><p>Accepted species in the COL26.9 base checklist; fossils included where covered and missing extinction status retained as unknown. A paraphyletic aggregate, not a single clade.</p>
+<p>Disjoint components added or subtracted within the same COL release.</p>
+<p>Components: +1 × <a href="#Animal">Animalia</a>, -1 × <a href="#Vertebrate">Vertebrata</a>.</p>
+<p>Sources: <a href="#source-col">Catalogue of Life COL26.9 base release</a>.</p>
+<p>.: Invertebrate. </p>
+<p>SUMO: Invertebrate. </p>
+</article>
+<article id="Organism"><h2>Cellular life</h2>
+<p>Total: 2,169,219; Explicitly extinct: 169,945; Explicitly extant: 884,155; Unset extinction status: 1,115,119.</p><p>Accepted species in the COL26.9 base checklist; fossils included where covered and missing extinction status retained as unknown. Eukaryota, Bacteria and Archaea; viruses excluded.</p>
+<p>Disjoint components added or subtracted within the same COL release.</p>
+<p>Components: +1 × <a href="#Eukaryote">Eukaryota</a>, +1 × <a href="#Bacterium">Bacteria</a>, +1 × <a href="#Archaeon">Archaea</a>.</p>
+<p>Sources: <a href="#source-col">Catalogue of Life COL26.9 base release</a>.</p>
+<p>GPT: Organism. </p>
+</article>
+<article id="Mammal"><h2>Mammalia</h2>
+<p>Total: 6,904; Explicitly extinct: 113; Explicitly extant: 6,791.</p><p>Living and recently extinct species (since 1500); domestic species included. Fossil species excluded.</p>
+<p>All species rows</p>
+<p>Sources: <a href="#source-mdd">ASM Mammal Diversity Database v2.5</a>.</p>
+<p>GPT: Mammal. </p>
+<p>.: Mammal. </p>
+<p>SUMO: Mammal. </p>
+</article>
+<article id="Monotreme"><h2>Monotremata</h2>
+<p>Total: 5; Explicitly extinct: 0; Explicitly extant: 5.</p><p>Living and recently extinct species (since 1500); domestic species included. Fossil species excluded.</p>
+<p>Filter order = Monotremata; extinct = 1 or 0.</p>
+<p>Sources: <a href="#source-mdd">ASM Mammal Diversity Database v2.5</a>.</p>
+<p>GPT: Monotreme. </p>
+</article>
+<article id="Marsupial"><h2>Marsupialia</h2>
+<p>Total: 433; Explicitly extinct: 23; Explicitly extant: 410.</p><p>Living and recently extinct species (since 1500); domestic species included. Fossil species excluded. Crown-group component only; the GPT node also includes fossil stem relatives whose count is unavailable.</p>
+<p>Filter infraclass = Marsupialia; extinct = 1 or 0.</p>
+<p>Whole-clade extinct count is unavailable; the tree shows ? for extinct. The extant component exhausts living representatives of the clade.</p>
+<p>Sources: <a href="#source-mdd">ASM Mammal Diversity Database v2.5</a>.</p>
+<p>GPT: Marsupial. </p>
+<p>.: Marsupial. Conventional named taxon; older functional wording is approximate.</p>
+<p>SUMO: Marsupial. Conventional named taxon; older functional wording is approximate.</p>
+</article>
+<article id="PlacentalMammal"><h2>Placentalia</h2>
+<p>Total: 6,466; Explicitly extinct: 90; Explicitly extant: 6,376.</p><p>Living and recently extinct species (since 1500); domestic species included. Fossil species excluded. Crown-group component only; the GPT node also includes fossil stem relatives whose count is unavailable.</p>
+<p>Filter infraclass = Placentalia; extinct = 1 or 0.</p>
+<p>Whole-clade extinct count is unavailable; the tree shows ? for extinct. The extant component exhausts living representatives of the clade.</p>
+<p>Sources: <a href="#source-mdd">ASM Mammal Diversity Database v2.5</a>.</p>
+<p>GPT: PlacentalMammal. </p>
+</article>
+<article id="Carnivoran"><h2>Carnivora</h2>
+<p>Total: 320; Explicitly extinct: 6; Explicitly extant: 314.</p><p>Living and recently extinct species (since 1500); domestic species included. Fossil species excluded.</p>
+<p>Filter order = Carnivora; extinct = 1 or 0.</p>
+<p>Sources: <a href="#source-mdd">ASM Mammal Diversity Database v2.5</a>.</p>
+<p>GPT: Carnivoran. </p>
+</article>
+<article id="Canine"><h2>Canidae</h2>
+<p>Total: 40; Explicitly extinct: 1; Explicitly extant: 39.</p><p>Living and recently extinct species (since 1500); domestic species included. Fossil species excluded.</p>
+<p>Filter family = Canidae; extinct = 1 or 0.</p>
+<p>Sources: <a href="#source-mdd">ASM Mammal Diversity Database v2.5</a>.</p>
+<p>GPT: Canine. </p>
+<p>.: Canine. Conventional named taxon; older functional wording is approximate.</p>
+<p>SUMO: Canine. Conventional named taxon; older functional wording is approximate.</p>
+</article>
+<article id="Feline"><h2>Felidae</h2>
+<p>Total: 46; Explicitly extinct: 0; Explicitly extant: 46.</p><p>Living and recently extinct species (since 1500); domestic species included. Fossil species excluded.</p>
+<p>Filter family = Felidae; extinct = 1 or 0.</p>
+<p>Sources: <a href="#source-mdd">ASM Mammal Diversity Database v2.5</a>.</p>
+<p>GPT: Feline. </p>
+<p>.: Feline. Conventional named taxon; older functional wording is approximate.</p>
+<p>SUMO: Feline. Conventional named taxon; older functional wording is approximate.</p>
+</article>
+<article id="Dog"><h2>Canis familiaris</h2>
+<p>Total: 1; Explicitly extinct: 0; Explicitly extant: 1.</p><p>Living and recently extinct species (since 1500); domestic species included. Fossil species excluded. MDD treats Canis familiaris as a species; GPT’s NCBI reference treats it as a Canis lupus subspecies. Count is one containing species, not breeds.</p>
+<p>Filter sciName = Canis_familiaris; extinct = 1 or 0.</p>
+<p>Sources: <a href="#source-mdd">ASM Mammal Diversity Database v2.5</a>.</p>
+<p>GPT: Dog. </p>
+</article>
+<article id="Cat"><h2>Felis catus</h2>
+<p>Total: 1; Explicitly extinct: 0; Explicitly extant: 1.</p><p>Living and recently extinct species (since 1500); domestic species included. Fossil species excluded.</p>
+<p>Filter sciName = Felis_catus; extinct = 1 or 0.</p>
+<p>Sources: <a href="#source-mdd">ASM Mammal Diversity Database v2.5</a>.</p>
+<p>GPT: Cat. </p>
+</article>
+<article id="Primate"><h2>Primates</h2>
+<p>Total: 514; Explicitly extinct: 4; Explicitly extant: 510.</p><p>Living and recently extinct species (since 1500); domestic species included. Fossil species excluded.</p>
+<p>Filter order = Primates; extinct = 1 or 0.</p>
+<p>Sources: <a href="#source-mdd">ASM Mammal Diversity Database v2.5</a>.</p>
+<p>GPT: Primate. </p>
+<p>.: Primate. </p>
+<p>SUMO: Primate. </p>
+</article>
+<article id="Ape"><h2>Hominoidea</h2>
+<p>Total: 28; Explicitly extinct: 0; Explicitly extant: 28.</p><p>Living and recently extinct species (since 1500); domestic species included. Fossil species excluded.</p>
+<p>Filter superfamily = Hominoidea; extinct = 1 or 0.</p>
+<p>Sources: <a href="#source-mdd">ASM Mammal Diversity Database v2.5</a>.</p>
+<p>GPT: Ape. </p>
+</article>
+<article id="Hominid"><h2>Hominidae</h2>
+<p>Total: 8; Explicitly extinct: 0; Explicitly extant: 8.</p><p>Living and recently extinct species (since 1500); domestic species included. Fossil species excluded.</p>
+<p>Filter family = Hominidae; extinct = 1 or 0.</p>
+<p>Sources: <a href="#source-mdd">ASM Mammal Diversity Database v2.5</a>.</p>
+<p>GPT: Hominid. </p>
+</article>
+<article id="Human"><h2>Homo sapiens</h2>
+<p>Total: 1; Explicitly extinct: 0; Explicitly extant: 1.</p><p>Living and recently extinct species (since 1500); domestic species included. Fossil species excluded.</p>
+<p>Filter sciName = Homo_sapiens; extinct = 1 or 0.</p>
+<p>Sources: <a href="#source-mdd">ASM Mammal Diversity Database v2.5</a>.</p>
+<p>GPT: Human. </p>
+<p>.: Human. </p>
+<p>SUMO: Human. </p>
+<p>Wikipedia: Category:Humans. Species in the associated taxon, not counts of Wikipedia articles or subcategories.</p>
+</article>
+<article id="Rodent"><h2>Rodentia</h2>
+<p>Total: 2,820; Explicitly extinct: 54; Explicitly extant: 2,766.</p><p>Living and recently extinct species (since 1500); domestic species included. Fossil species excluded.</p>
+<p>Filter order = Rodentia; extinct = 1 or 0.</p>
+<p>Sources: <a href="#source-mdd">ASM Mammal Diversity Database v2.5</a>.</p>
+<p>GPT: Rodent. </p>
+</article>
+<article id="Cetartiodactyl"><h2>Artiodactyla</h2>
+<p>Total: 374; Explicitly extinct: 6; Explicitly extant: 368.</p><p>Living and recently extinct species (since 1500); domestic species included. Fossil species excluded.</p>
+<p>Filter order = Artiodactyla; extinct = 1 or 0.</p>
+<p>Sources: <a href="#source-mdd">ASM Mammal Diversity Database v2.5</a>.</p>
+<p>GPT: Cetartiodactyl. </p>
+</article>
+<article id="Cetacean"><h2>Cetacea</h2>
+<p>Total: 102; Explicitly extinct: 0; Explicitly extant: 102.</p><p>Living and recently extinct species (since 1500); domestic species included. Fossil species excluded.</p>
+<p>Filter suborder = Cetacea; extinct = 1 or 0.</p>
+<p>Sources: <a href="#source-mdd">ASM Mammal Diversity Database v2.5</a>.</p>
+<p>GPT: Cetacean. </p>
+</article>
+<article id="Perissodactyl"><h2>Perissodactyla</h2>
+<p>Total: 18; Explicitly extinct: 0; Explicitly extant: 18.</p><p>Living and recently extinct species (since 1500); domestic species included. Fossil species excluded.</p>
+<p>Filter order = Perissodactyla; extinct = 1 or 0.</p>
+<p>Sources: <a href="#source-mdd">ASM Mammal Diversity Database v2.5</a>.</p>
+<p>GPT: Perissodactyl. </p>
+</article>
+<article id="Simian"><h2>Simiiformes</h2>
+<p>Total: 359; Explicitly extinct: 1; Explicitly extant: 358.</p><p>Living and recently extinct species (since 1500); domestic species included. Fossil species excluded.</p>
+<p>Filter infraorder = Simiiformes; extinct = 1 or 0.</p>
+<p>Sources: <a href="#source-mdd">ASM Mammal Diversity Database v2.5</a>.</p>
+<p>GPT: Simian. </p>
+</article>
+<article id="Lagomorph"><h2>Lagomorpha</h2>
+<p>Total: 115; Explicitly extinct: 1; Explicitly extant: 114.</p><p>Living and recently extinct species (since 1500); domestic species included. Fossil species excluded.</p>
+<p>Filter order = Lagomorpha; extinct = 1 or 0.</p>
+<p>Sources: <a href="#source-mdd">ASM Mammal Diversity Database v2.5</a>.</p>
+<p>GPT: Lagomorph. </p>
+</article>
+<article id="Synapsid"><h2>Synapsida: mammalian component</h2>
+<p>Total: 6,904; Explicitly extinct: 113; Explicitly extant: 6,791.</p><p>Living and recently extinct mammals only; fossil non-mammalian synapsids and fossil mammals are outside this source.</p>
+<p>Same living/recent component as Mammalia.</p>
+<p>Whole-clade extinct count is unavailable; the tree shows ? for extinct. The extant component exhausts living representatives of the clade.</p>
+<p>Components: +1 × <a href="#Mammal">Mammalia</a>.</p>
+<p>Sources: <a href="#source-mdd">ASM Mammal Diversity Database v2.5</a>.</p>
+<p>GPT: Synapsid. </p>
+</article>
+<article id="Dinosaur"><h2>Dinosauria: avian component</h2>
+<p>Total: 11,044; Explicitly extinct: 176; Explicitly extant: 10,868.</p><p>Avian component only; non-avian fossil dinosaur species are not included. COL extinction flags apply only to species covered by its Aves checklist.</p>
+<p>Same avian component as Aves.</p>
+<p>Whole-clade extinct count is unavailable; the tree shows ? for extinct. The extant component exhausts living representatives of the clade.</p>
+<p>Components: +1 × <a href="#Bird">Aves</a>.</p>
+<p>Sources: <a href="#source-col">Catalogue of Life COL26.9 base release</a>.</p>
+<p>GPT: Dinosaur. </p>
+</article>
+<article id="Fish"><h2>Fishes excluding tetrapods</h2>
+<p>Total: 37,772.</p><p>Valid fish species in Eschmeyer’s Catalog; no extinction breakdown supplied by the headline statistic.</p>
+<p>Published valid-species total, not all names or synonyms.</p>
+<p>Sources: <a href="#source-fishes">Eschmeyer’s Catalog of Fishes</a>.</p>
+<p>.: Fish. </p>
+<p>SUMO: Fish. </p>
+</article>
+<article id="Virus"><h2>ICTV virus and viroid species</h2>
+<p>Total: 17,554.</p><p>Recognized ICTV MSL41 species, including 45 viroid species; cellular organisms excluded. Extinction status is not applicable to the classification.</p>
+<p>MSL41 species rows. GPT’s acellular infectious-entity definition admits viroids; older protein-coated Virus definitions do not.</p>
+<p>Sources: <a href="#source-ictv">ICTV Master Species List 41</a>.</p>
+<p>GPT: Virus. </p>
+<p>Wikipedia: Category:Viruses. Species in the associated taxon, not counts of Wikipedia articles or subcategories.</p>
+</article>
+<article id="CoatedVirus"><h2>ICTV species excluding viroids</h2>
+<p>Total: 17,509.</p><p>MSL41 species excluding the 45 viroids (Pospiviroidae 40; Avsunviroidae 5). Intended as a viral-species proxy for the older protein-coated definition; ICTV also covers satellite viruses and virus-derived entities.</p>
+<p>17554 minus 40 minus 5. No extinction breakdown.</p>
+<p>Sources: <a href="#source-ictv">ICTV Master Species List 41</a>.</p>
+<p>.: Virus. </p>
+<p>SUMO: Virus. </p>
+</article>
+<article id="LegacyPlant"><h2>Plantae</h2>
+<p>Total: 389,184; Explicitly extinct: 1,646; Explicitly extant: 21,620; Unset extinction status: 365,918.</p><p>Accepted catalogued species, including fossil and recently extinct species where covered. Coverage is incomplete; missing extinction flags are unknown, not extant.</p>
+<p>Accepted species below COL taxon P; extinction status queried separately.</p>
+<p>Sources: <a href="#source-col">Catalogue of Life COL26.9 base release</a>.</p>
+<p>API evidence: <a href="https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=P&amp;rank=species&amp;status=accepted&amp;limit=0">total</a>, <a href="https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=P&amp;rank=species&amp;status=accepted&amp;limit=0&amp;extinct=true">extinct</a>, <a href="https://api.checklistbank.org/dataset/316321/nameusage/search?taxonID=P&amp;rank=species&amp;status=accepted&amp;limit=0&amp;extinct=false">extant</a>.</p>
+<p>.: Plant. Conventional Plantae kingdom, including its algae; the older functional definition does not coincide exactly with this taxon.</p>
+<p>SUMO: Plant. Conventional Plantae kingdom, including its algae; the older functional definition does not coincide exactly with this taxon.</p>
+</article>
+<h2>Compared sources</h2><ul>
+<li><a href="https://worldfloraonline.org/">Land plants</a>: 382,401. World Flora Online accepted land-plant species; different backbone and fossil coverage from COL.</li>
+<li><a href="https://www.worldplants.de/world-plants-complete-list/total-species-count">Vascular plants</a>: 360,349. World Plants 26.08 non-fossil species, including provisionally accepted names and microspecies; differs from COL acceptance filter.</li>
+<li><a href="https://www.worldplants.de/world-plants-complete-list/total-species-count">Gymnosperms</a>: 1,194. World Plants 26.08 non-fossil recognized species; COL includes fossil ginkgos.</li>
+<li><a href="https://amphibiaweb.org/">Amphibians</a>: 9,136. Live AmphibiaWeb total, retrieved 2026.10.10; headline lacks extinction breakdown. COL dated checklist supplies explicit statuses but is less current.</li>
+<li><a href="https://lpsn.dsmz.de/text/numbers">Prokaryotes</a>: 22,681. LPSN 2026.09.18: ICNP valid species excluding synonyms; different nomenclatural scope from COL, including its botanical-code and Candidatus coverage.</li>
+</ul><h2>Unnumbered groupings</h2><ul>
+<li>., SUMO: Fungus. Explicitly includes slime molds and true fungi: not equivalent to modern Fungi.</li>
+<li>., SUMO: Monkey, AquaticMammal, HoofedMammal, Alga, NonFloweringPlant, MicroOrganism, ColdBloodedVertebrate, WarmBloodedVertebrate, ToxicOrganism. Functional, ecological, informal or polyphyletic grouping without a defensible matching global checklist count.</li>
+<li>HumanKnowledge, Propaedia: . Packaged chapters describe taxonomy and biology topics, not corresponding taxon nodes.</li>
+</ul></html>

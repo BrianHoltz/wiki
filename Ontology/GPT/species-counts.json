@@ -1,0 +1,622 @@
+{
+  "Bacterium": {
+    "total": 26397,
+    "extinct": null,
+    "extant": null,
+    "taxon": "Bacteria",
+    "scope": "Accepted catalogued species, including fossil and recently extinct species where covered. Coverage is incomplete; missing extinction flags are unknown, not extant.",
+    "interpretation": "",
+    "url": "../taxon-species-counts.html#Bacterium",
+    "retrieved": "2026.10.10"
+  },
+  "Archaeon": {
+    "total": 790,
+    "extinct": null,
+    "extant": null,
+    "taxon": "Archaea",
+    "scope": "Accepted catalogued species, including fossil and recently extinct species where covered. Coverage is incomplete; missing extinction flags are unknown, not extant.",
+    "interpretation": "",
+    "url": "../taxon-species-counts.html#Archaeon",
+    "retrieved": "2026.10.10"
+  },
+  "Eukaryote": {
+    "total": 2142032,
+    "extinct": 169945,
+    "extant": null,
+    "taxon": "Eukaryota",
+    "scope": "Accepted catalogued species, including fossil and recently extinct species where covered. Coverage is incomplete; missing extinction flags are unknown, not extant.",
+    "interpretation": "",
+    "url": "../taxon-species-counts.html#Eukaryote",
+    "retrieved": "2026.10.10"
+  },
+  "Moss": {
+    "total": 12031,
+    "extinct": 298,
+    "extant": 11733,
+    "taxon": "Bryophyta",
+    "scope": "Accepted catalogued species, including fossil and recently extinct species where covered. Coverage is incomplete; missing extinction flags are unknown, not extant.",
+    "interpretation": "",
+    "url": "../taxon-species-counts.html#Moss",
+    "retrieved": "2026.10.10"
+  },
+  "VascularPlant": {
+    "total": 368650,
+    "extinct": 387,
+    "extant": null,
+    "taxon": "Tracheophyta",
+    "scope": "Accepted catalogued species, including fossil and recently extinct species where covered. Coverage is incomplete; missing extinction flags are unknown, not extant.",
+    "interpretation": "",
+    "url": "../taxon-species-counts.html#VascularPlant",
+    "retrieved": "2026.10.10"
+  },
+  "Fern": {
+    "total": 12457,
+    "extinct": null,
+    "extant": null,
+    "taxon": "Polypodiopsida",
+    "scope": "Accepted catalogued species, including fossil and recently extinct species where covered. Coverage is incomplete; missing extinction flags are unknown, not extant.",
+    "interpretation": "",
+    "url": "../taxon-species-counts.html#Fern",
+    "retrieved": "2026.10.10"
+  },
+  "Lycophyte": {
+    "total": 1503,
+    "extinct": null,
+    "extant": null,
+    "taxon": "Lycopodiopsida",
+    "scope": "Accepted catalogued species, including fossil and recently extinct species where covered. Coverage is incomplete; missing extinction flags are unknown, not extant.",
+    "interpretation": "",
+    "url": "../taxon-species-counts.html#Lycophyte",
+    "retrieved": "2026.10.10"
+  },
+  "Fungus": {
+    "total": 157044,
+    "extinct": 153,
+    "extant": 156891,
+    "taxon": "Fungi",
+    "scope": "Accepted catalogued species, including fossil and recently extinct species where covered. Coverage is incomplete; missing extinction flags are unknown, not extant.",
+    "interpretation": "",
+    "url": "../taxon-species-counts.html#Fungus",
+    "retrieved": "2026.10.10"
+  },
+  "Animal": {
+    "total": 1534287,
+    "extinct": 129067,
+    "extant": null,
+    "taxon": "Animalia",
+    "scope": "Accepted catalogued species, including fossil and recently extinct species where covered. Coverage is incomplete; missing extinction flags are unknown, not extant.",
+    "interpretation": "",
+    "url": "../taxon-species-counts.html#Animal",
+    "retrieved": "2026.10.10"
+  },
+  "Sponge": {
+    "total": 9930,
+    "extinct": 59,
+    "extant": null,
+    "taxon": "Porifera",
+    "scope": "Accepted catalogued species, including fossil and recently extinct species where covered. Coverage is incomplete; missing extinction flags are unknown, not extant.",
+    "interpretation": "",
+    "url": "../taxon-species-counts.html#Sponge",
+    "retrieved": "2026.10.10"
+  },
+  "Cnidarian": {
+    "total": 20625,
+    "extinct": 6051,
+    "extant": null,
+    "taxon": "Cnidaria",
+    "scope": "Accepted catalogued species, including fossil and recently extinct species where covered. Coverage is incomplete; missing extinction flags are unknown, not extant.",
+    "interpretation": "",
+    "url": "../taxon-species-counts.html#Cnidarian",
+    "retrieved": "2026.10.10"
+  },
+  "Arthropod": {
+    "total": 1155626,
+    "extinct": 31153,
+    "extant": null,
+    "taxon": "Arthropoda",
+    "scope": "Accepted catalogued species, including fossil and recently extinct species where covered. Coverage is incomplete; missing extinction flags are unknown, not extant.",
+    "interpretation": "",
+    "url": "../taxon-species-counts.html#Arthropod",
+    "retrieved": "2026.10.10"
+  },
+  "Insect": {
+    "total": 943497,
+    "extinct": 13821,
+    "extant": null,
+    "taxon": "Insecta",
+    "scope": "Accepted catalogued species, including fossil and recently extinct species where covered. Coverage is incomplete; missing extinction flags are unknown, not extant.",
+    "interpretation": "",
+    "url": "../taxon-species-counts.html#Insect",
+    "retrieved": "2026.10.10"
+  },
+  "Arachnid": {
+    "total": 98104,
+    "extinct": 146,
+    "extant": null,
+    "taxon": "Arachnida",
+    "scope": "Accepted catalogued species, including fossil and recently extinct species where covered. Coverage is incomplete; missing extinction flags are unknown, not extant.",
+    "interpretation": "",
+    "url": "../taxon-species-counts.html#Arachnid",
+    "retrieved": "2026.10.10"
+  },
+  "Mollusc": {
+    "total": 155263,
+    "extinct": 65861,
+    "extant": null,
+    "taxon": "Mollusca",
+    "scope": "Accepted catalogued species, including fossil and recently extinct species where covered. Coverage is incomplete; missing extinction flags are unknown, not extant.",
+    "interpretation": "",
+    "url": "../taxon-species-counts.html#Mollusc",
+    "retrieved": "2026.10.10"
+  },
+  "Annelid": {
+    "total": 19038,
+    "extinct": 1528,
+    "extant": null,
+    "taxon": "Annelida",
+    "scope": "Accepted catalogued species, including fossil and recently extinct species where covered. Coverage is incomplete; missing extinction flags are unknown, not extant.",
+    "interpretation": "",
+    "url": "../taxon-species-counts.html#Annelid",
+    "retrieved": "2026.10.10"
+  },
+  "Nematode": {
+    "total": 19628,
+    "extinct": 30,
+    "extant": null,
+    "taxon": "Nematoda",
+    "scope": "Accepted catalogued species, including fossil and recently extinct species where covered. Coverage is incomplete; missing extinction flags are unknown, not extant.",
+    "interpretation": "",
+    "url": "../taxon-species-counts.html#Nematode",
+    "retrieved": "2026.10.10"
+  },
+  "Echinoderm": {
+    "total": 11890,
+    "extinct": 4160,
+    "extant": null,
+    "taxon": "Echinodermata",
+    "scope": "Accepted catalogued species, including fossil and recently extinct species where covered. Coverage is incomplete; missing extinction flags are unknown, not extant.",
+    "interpretation": "",
+    "url": "../taxon-species-counts.html#Echinoderm",
+    "retrieved": "2026.10.10"
+  },
+  "Chordate": {
+    "total": 79748,
+    "extinct": 570,
+    "extant": null,
+    "taxon": "Chordata",
+    "scope": "Accepted catalogued species, including fossil and recently extinct species where covered. Coverage is incomplete; missing extinction flags are unknown, not extant.",
+    "interpretation": "",
+    "url": "../taxon-species-counts.html#Chordate",
+    "retrieved": "2026.10.10"
+  },
+  "Vertebrate": {
+    "total": 76572,
+    "extinct": 570,
+    "extant": null,
+    "taxon": "Vertebrata",
+    "scope": "Accepted catalogued species, including fossil and recently extinct species where covered. Coverage is incomplete; missing extinction flags are unknown, not extant.",
+    "interpretation": "",
+    "url": "../taxon-species-counts.html#Vertebrate",
+    "retrieved": "2026.10.10"
+  },
+  "JawedVertebrate": {
+    "total": 76430,
+    "extinct": 570,
+    "extant": null,
+    "taxon": "Gnathostomata",
+    "scope": "Accepted catalogued species, including fossil and recently extinct species where covered. Coverage is incomplete; missing extinction flags are unknown, not extant.",
+    "interpretation": "",
+    "url": "../taxon-species-counts.html#JawedVertebrate",
+    "retrieved": "2026.10.10"
+  },
+  "CartilaginousFish": {
+    "total": 1354,
+    "extinct": null,
+    "extant": null,
+    "taxon": "Chondrichthyes",
+    "scope": "Accepted catalogued species, including fossil and recently extinct species where covered. Coverage is incomplete; missing extinction flags are unknown, not extant.",
+    "interpretation": "",
+    "url": "../taxon-species-counts.html#CartilaginousFish",
+    "retrieved": "2026.10.10"
+  },
+  "BonyVertebrate": {
+    "total": 75076,
+    "extinct": 570,
+    "extant": null,
+    "taxon": "Osteichthyes",
+    "scope": "Accepted catalogued species, including fossil and recently extinct species where covered. Coverage is incomplete; missing extinction flags are unknown, not extant.",
+    "interpretation": "",
+    "url": "../taxon-species-counts.html#BonyVertebrate",
+    "retrieved": "2026.10.10"
+  },
+  "RayFinnedFish": {
+    "total": 35991,
+    "extinct": 288,
+    "extant": null,
+    "taxon": "Actinopterygii",
+    "scope": "Accepted catalogued species, including fossil and recently extinct species where covered. Coverage is incomplete; missing extinction flags are unknown, not extant.",
+    "interpretation": "",
+    "url": "../taxon-species-counts.html#RayFinnedFish",
+    "retrieved": "2026.10.10"
+  },
+  "Tetrapod": {
+    "total": 39077,
+    "extinct": 282,
+    "extant": null,
+    "taxon": "Tetrapoda",
+    "scope": "Accepted catalogued species, including fossil and recently extinct species where covered. Coverage is incomplete; missing extinction flags are unknown, not extant.",
+    "interpretation": "",
+    "url": "../taxon-species-counts.html#Tetrapod",
+    "retrieved": "2026.10.10"
+  },
+  "Amphibian": {
+    "total": 9136,
+    "extinct": null,
+    "extant": null,
+    "taxon": "Amphibia",
+    "scope": "Current AmphibiaWeb recognized species total; no extinction breakdown supplied by the headline. COL26.9 statuses are retained only as older comparison data.",
+    "interpretation": "",
+    "url": "../taxon-species-counts.html#Amphibian",
+    "retrieved": "2026.10.10"
+  },
+  "Turtle": {
+    "total": 370,
+    "extinct": null,
+    "extant": null,
+    "taxon": "Testudines",
+    "scope": "Accepted catalogued species, including fossil and recently extinct species where covered. Coverage is incomplete; missing extinction flags are unknown, not extant.",
+    "interpretation": "",
+    "url": "../taxon-species-counts.html#Turtle",
+    "retrieved": "2026.10.10"
+  },
+  "Crocodilian": {
+    "total": 27,
+    "extinct": null,
+    "extant": null,
+    "taxon": "Crocodylia",
+    "scope": "Accepted catalogued species, including fossil and recently extinct species where covered. Coverage is incomplete; missing extinction flags are unknown, not extant.",
+    "interpretation": "",
+    "url": "../taxon-species-counts.html#Crocodilian",
+    "retrieved": "2026.10.10"
+  },
+  "Bird": {
+    "total": 11044,
+    "extinct": 176,
+    "extant": 10868,
+    "taxon": "Aves",
+    "scope": "Accepted catalogued species, including fossil and recently extinct species where covered. Coverage is incomplete; missing extinction flags are unknown, not extant.",
+    "interpretation": "",
+    "url": "../taxon-species-counts.html#Bird",
+    "retrieved": "2026.10.10"
+  },
+  "Plant": {
+    "total": 388486,
+    "extinct": 950,
+    "extant": null,
+    "taxon": "Embryophyta",
+    "scope": "Accepted species in the COL26.9 base checklist; fossils included where covered and missing extinction status retained as unknown. Land plants only; algae excluded.",
+    "interpretation": "",
+    "url": "../taxon-species-counts.html#Plant",
+    "retrieved": "2026.10.10"
+  },
+  "FloweringPlant": {
+    "total": 353091,
+    "extinct": null,
+    "extant": null,
+    "taxon": "Angiosperms",
+    "scope": "Accepted species in the COL26.9 base checklist; fossils included where covered and missing extinction status retained as unknown. Monocots plus dicots in COL; matches the broad NCBI angiosperm lineage.",
+    "interpretation": "",
+    "url": "../taxon-species-counts.html#FloweringPlant",
+    "retrieved": "2026.10.10"
+  },
+  "Gymnosperm": {
+    "total": 1599,
+    "extinct": 387,
+    "extant": null,
+    "taxon": "Acrogymnospermae",
+    "scope": "Accepted species in the COL26.9 base checklist; fossils included where covered and missing extinction status retained as unknown. Includes catalogued fossil ginkgos; gnetophytes are placed in Pinopsida by this checklist.",
+    "interpretation": "",
+    "url": "../taxon-species-counts.html#Gymnosperm",
+    "retrieved": "2026.10.10"
+  },
+  "SeedPlant": {
+    "total": 354690,
+    "extinct": 387,
+    "extant": null,
+    "taxon": "Spermatophyta",
+    "scope": "Accepted species in the COL26.9 base checklist; fossils included where covered and missing extinction status retained as unknown.",
+    "interpretation": "",
+    "url": "../taxon-species-counts.html#SeedPlant",
+    "retrieved": "2026.10.10"
+  },
+  "Bilaterian": {
+    "total": 1503531,
+    "extinct": 122942,
+    "extant": null,
+    "taxon": "Bilateria",
+    "scope": "Accepted species in the COL26.9 base checklist; fossils included where covered and missing extinction status retained as unknown. Animalia minus the four non-bilaterian phyla.",
+    "interpretation": "",
+    "url": "../taxon-species-counts.html#Bilaterian",
+    "retrieved": "2026.10.10"
+  },
+  "LobeFinnedVertebrate": {
+    "total": 39085,
+    "extinct": 282,
+    "extant": null,
+    "taxon": "Sarcopterygii including tetrapods",
+    "scope": "Accepted species in the COL26.9 base checklist; fossils included where covered and missing extinction status retained as unknown. COL fish-only Sarcopterygii expanded to the GPT node’s clade including tetrapods.",
+    "interpretation": "",
+    "url": "../taxon-species-counts.html#LobeFinnedVertebrate",
+    "retrieved": "2026.10.10"
+  },
+  "Amniote": {
+    "total": 30154,
+    "extinct": 275,
+    "extant": null,
+    "taxon": "Amniota",
+    "scope": "Accepted species in the COL26.9 base checklist; fossils included where covered and missing extinction status retained as unknown.",
+    "interpretation": "",
+    "url": "../taxon-species-counts.html#Amniote",
+    "retrieved": "2026.10.10"
+  },
+  "Sauropsid": {
+    "total": 23693,
+    "extinct": 176,
+    "extant": null,
+    "taxon": "Sauropsida",
+    "scope": "Accepted species in the COL26.9 base checklist; fossils included where covered and missing extinction status retained as unknown. Includes birds.",
+    "interpretation": "",
+    "url": "../taxon-species-counts.html#Sauropsid",
+    "retrieved": "2026.10.10"
+  },
+  "Archosaur": {
+    "total": null,
+    "extinct": null,
+    "extant": 10868,
+    "taxon": "Archosauria: represented crown groups",
+    "scope": "Accepted species in the COL26.9 base checklist; fossils included where covered and missing extinction status retained as unknown. Crocodilians plus birds; omits non-avian fossil archosaurs not represented by these components.",
+    "interpretation": "",
+    "url": "../taxon-species-counts.html#Archosaur",
+    "retrieved": "2026.10.10"
+  },
+  "Lepidosaur": {
+    "total": 12252,
+    "extinct": null,
+    "extant": null,
+    "taxon": "Lepidosauria",
+    "scope": "Accepted species in the COL26.9 base checklist; fossils included where covered and missing extinction status retained as unknown.",
+    "interpretation": "",
+    "url": "../taxon-species-counts.html#Lepidosaur",
+    "retrieved": "2026.10.10"
+  },
+  "Organism": {
+    "total": 2169219,
+    "extinct": 169945,
+    "extant": null,
+    "taxon": "Cellular life",
+    "scope": "Accepted species in the COL26.9 base checklist; fossils included where covered and missing extinction status retained as unknown. Eukaryota, Bacteria and Archaea; viruses excluded.",
+    "interpretation": "",
+    "url": "../taxon-species-counts.html#Organism",
+    "retrieved": "2026.10.10"
+  },
+  "Mammal": {
+    "total": 6904,
+    "extinct": 113,
+    "extant": 6791,
+    "taxon": "Mammalia",
+    "scope": "Living and recently extinct species (since 1500); domestic species included. Fossil species excluded.",
+    "interpretation": "",
+    "url": "../taxon-species-counts.html#Mammal",
+    "retrieved": "2026.10.10"
+  },
+  "Monotreme": {
+    "total": 5,
+    "extinct": 0,
+    "extant": 5,
+    "taxon": "Monotremata",
+    "scope": "Living and recently extinct species (since 1500); domestic species included. Fossil species excluded.",
+    "interpretation": "",
+    "url": "../taxon-species-counts.html#Monotreme",
+    "retrieved": "2026.10.10"
+  },
+  "Marsupial": {
+    "total": null,
+    "extinct": null,
+    "extant": 410,
+    "taxon": "Marsupialia",
+    "scope": "Living and recently extinct species (since 1500); domestic species included. Fossil species excluded. Crown-group component only; the GPT node also includes fossil stem relatives whose count is unavailable.",
+    "interpretation": "",
+    "url": "../taxon-species-counts.html#Marsupial",
+    "retrieved": "2026.10.10"
+  },
+  "PlacentalMammal": {
+    "total": null,
+    "extinct": null,
+    "extant": 6376,
+    "taxon": "Placentalia",
+    "scope": "Living and recently extinct species (since 1500); domestic species included. Fossil species excluded. Crown-group component only; the GPT node also includes fossil stem relatives whose count is unavailable.",
+    "interpretation": "",
+    "url": "../taxon-species-counts.html#PlacentalMammal",
+    "retrieved": "2026.10.10"
+  },
+  "Carnivoran": {
+    "total": 320,
+    "extinct": 6,
+    "extant": 314,
+    "taxon": "Carnivora",
+    "scope": "Living and recently extinct species (since 1500); domestic species included. Fossil species excluded.",
+    "interpretation": "",
+    "url": "../taxon-species-counts.html#Carnivoran",
+    "retrieved": "2026.10.10"
+  },
+  "Canine": {
+    "total": 40,
+    "extinct": 1,
+    "extant": 39,
+    "taxon": "Canidae",
+    "scope": "Living and recently extinct species (since 1500); domestic species included. Fossil species excluded.",
+    "interpretation": "",
+    "url": "../taxon-species-counts.html#Canine",
+    "retrieved": "2026.10.10"
+  },
+  "Feline": {
+    "total": 46,
+    "extinct": 0,
+    "extant": 46,
+    "taxon": "Felidae",
+    "scope": "Living and recently extinct species (since 1500); domestic species included. Fossil species excluded.",
+    "interpretation": "",
+    "url": "../taxon-species-counts.html#Feline",
+    "retrieved": "2026.10.10"
+  },
+  "Dog": {
+    "total": 1,
+    "extinct": 0,
+    "extant": 1,
+    "taxon": "Canis familiaris",
+    "scope": "Living and recently extinct species (since 1500); domestic species included. Fossil species excluded. MDD treats Canis familiaris as a species; GPT’s NCBI reference treats it as a Canis lupus subspecies. Count is one containing species, not breeds.",
+    "interpretation": "",
+    "url": "../taxon-species-counts.html#Dog",
+    "retrieved": "2026.10.10"
+  },
+  "Cat": {
+    "total": 1,
+    "extinct": 0,
+    "extant": 1,
+    "taxon": "Felis catus",
+    "scope": "Living and recently extinct species (since 1500); domestic species included. Fossil species excluded.",
+    "interpretation": "",
+    "url": "../taxon-species-counts.html#Cat",
+    "retrieved": "2026.10.10"
+  },
+  "Primate": {
+    "total": 514,
+    "extinct": 4,
+    "extant": 510,
+    "taxon": "Primates",
+    "scope": "Living and recently extinct species (since 1500); domestic species included. Fossil species excluded.",
+    "interpretation": "",
+    "url": "../taxon-species-counts.html#Primate",
+    "retrieved": "2026.10.10"
+  },
+  "Ape": {
+    "total": 28,
+    "extinct": 0,
+    "extant": 28,
+    "taxon": "Hominoidea",
+    "scope": "Living and recently extinct species (since 1500); domestic species included. Fossil species excluded.",
+    "interpretation": "",
+    "url": "../taxon-species-counts.html#Ape",
+    "retrieved": "2026.10.10"
+  },
+  "Hominid": {
+    "total": 8,
+    "extinct": 0,
+    "extant": 8,
+    "taxon": "Hominidae",
+    "scope": "Living and recently extinct species (since 1500); domestic species included. Fossil species excluded.",
+    "interpretation": "",
+    "url": "../taxon-species-counts.html#Hominid",
+    "retrieved": "2026.10.10"
+  },
+  "Human": {
+    "total": 1,
+    "extinct": 0,
+    "extant": 1,
+    "taxon": "Homo sapiens",
+    "scope": "Living and recently extinct species (since 1500); domestic species included. Fossil species excluded.",
+    "interpretation": "",
+    "url": "../taxon-species-counts.html#Human",
+    "retrieved": "2026.10.10"
+  },
+  "Rodent": {
+    "total": 2820,
+    "extinct": 54,
+    "extant": 2766,
+    "taxon": "Rodentia",
+    "scope": "Living and recently extinct species (since 1500); domestic species included. Fossil species excluded.",
+    "interpretation": "",
+    "url": "../taxon-species-counts.html#Rodent",
+    "retrieved": "2026.10.10"
+  },
+  "Cetartiodactyl": {
+    "total": 374,
+    "extinct": 6,
+    "extant": 368,
+    "taxon": "Artiodactyla",
+    "scope": "Living and recently extinct species (since 1500); domestic species included. Fossil species excluded.",
+    "interpretation": "",
+    "url": "../taxon-species-counts.html#Cetartiodactyl",
+    "retrieved": "2026.10.10"
+  },
+  "Cetacean": {
+    "total": 102,
+    "extinct": 0,
+    "extant": 102,
+    "taxon": "Cetacea",
+    "scope": "Living and recently extinct species (since 1500); domestic species included. Fossil species excluded.",
+    "interpretation": "",
+    "url": "../taxon-species-counts.html#Cetacean",
+    "retrieved": "2026.10.10"
+  },
+  "Perissodactyl": {
+    "total": 18,
+    "extinct": 0,
+    "extant": 18,
+    "taxon": "Perissodactyla",
+    "scope": "Living and recently extinct species (since 1500); domestic species included. Fossil species excluded.",
+    "interpretation": "",
+    "url": "../taxon-species-counts.html#Perissodactyl",
+    "retrieved": "2026.10.10"
+  },
+  "Simian": {
+    "total": 359,
+    "extinct": 1,
+    "extant": 358,
+    "taxon": "Simiiformes",
+    "scope": "Living and recently extinct species (since 1500); domestic species included. Fossil species excluded.",
+    "interpretation": "",
+    "url": "../taxon-species-counts.html#Simian",
+    "retrieved": "2026.10.10"
+  },
+  "Lagomorph": {
+    "total": 115,
+    "extinct": 1,
+    "extant": 114,
+    "taxon": "Lagomorpha",
+    "scope": "Living and recently extinct species (since 1500); domestic species included. Fossil species excluded.",
+    "interpretation": "",
+    "url": "../taxon-species-counts.html#Lagomorph",
+    "retrieved": "2026.10.10"
+  },
+  "Synapsid": {
+    "total": null,
+    "extinct": null,
+    "extant": 6791,
+    "taxon": "Synapsida: mammalian component",
+    "scope": "Living and recently extinct mammals only; fossil non-mammalian synapsids and fossil mammals are outside this source.",
+    "interpretation": "",
+    "url": "../taxon-species-counts.html#Synapsid",
+    "retrieved": "2026.10.10"
+  },
+  "Dinosaur": {
+    "total": null,
+    "extinct": null,
+    "extant": 10868,
+    "taxon": "Dinosauria: avian component",
+    "scope": "Avian component only; non-avian fossil dinosaur species are not included. COL extinction flags apply only to species covered by its Aves checklist.",
+    "interpretation": "",
+    "url": "../taxon-species-counts.html#Dinosaur",
+    "retrieved": "2026.10.10"
+  },
+  "Virus": {
+    "total": 17554,
+    "extinct": null,
+    "extant": null,
+    "taxon": "ICTV virus and viroid species",
+    "scope": "Recognized ICTV MSL41 species, including 45 viroid species; cellular organisms excluded. Extinction status is not applicable to the classification.",
+    "interpretation": "",
+    "url": "../taxon-species-counts.html#Virus",
+    "retrieved": "2026.10.10"
+  }
+}

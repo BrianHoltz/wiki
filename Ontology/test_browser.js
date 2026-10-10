@@ -73,11 +73,11 @@ async function loadBrowser(relativePath, dataPath) {
     console,
     document,
     encodeURIComponent,
-    fetch: () => Promise.resolve({ json: () => Promise.resolve(dataPath) }),
+    fetch: (url) => Promise.resolve({ json: () => Promise.resolve(url === "ontology.json" ? dataPath : readData(path.join(path.dirname(relativePath), "species-counts.json"))) }),
   };
   vm.runInNewContext(script, context, { filename: relativePath });
   await new Promise((resolve) => setImmediate(resolve));
-  return { elements, source };
+  return { elements, source, context };
 }
 
 function encodedId(id) {
@@ -86,7 +86,7 @@ function encodedId(id) {
 
 async function testBrowser(relativePath, dataPath, presetSearch, presetTarget) {
   const data = assertDataIntegrity(dataPath);
-  const { elements, source } = await loadBrowser(relativePath, data);
+  const { elements, source, context } = await loadBrowser(relativePath, data);
   const tree = elements.get("#tree");
   const search = elements.get("#search");
   const results = elements.get("#results");
@@ -97,7 +97,28 @@ async function testBrowser(relativePath, dataPath, presetSearch, presetTarget) {
   assert(tree.innerHTML.includes(`data-node="${branch.id}"`), `${relativePath}: target is not rendered`);
   assert(!tree.innerHTML.includes(">undefined<"), `${relativePath}: dangling child rendered`);
   assert(!tree.innerHTML.includes("lineage-toggle"), `${relativePath}: obsolete lineage arrow rendered`);
-  assert(tree.innerHTML.includes("class=\"meta\""), `${relativePath}: child counts missing`);
+  assert(tree.innerHTML.includes("class=\"meta node-stats\""), `${relativePath}: child counts missing`);
+  const counts = readData(path.join(path.dirname(relativePath), "species-counts.json"));
+  for (const [id, value] of Object.entries(counts)) {
+    assert(data.nodes.some(node => node.id === id), `${relativePath}: taxon mapping references missing node ${id}`);
+    const start = tree.innerHTML.indexOf(`id="${encodedId(id)}"`);
+    const row = tree.innerHTML.slice(start, tree.innerHTML.indexOf("</div>", start));
+    assert(row.includes('class="species-count"'), `${relativePath}: species count missing on ${id}`);
+    assert(!row.includes("†"), `${relativePath}: species dagger clutter on ${id}`);
+    assert(row.includes(value.url), `${relativePath}: evidence link missing on ${id}`);
+  }
+  for (const [count, expected] of [[230000,"230K"],[30040,"30.0K"],[1000,"1.00K"],[999500,"1.00M"],[999499,"999K"],[2030000,"2.03M"],[0,"0"],[1,"1"],[null,"?"]]) {
+    assert.equal(context.formatSpeciesCount(count), expected);
+  }
+  const sample = { taxon: "Sample", scope: "Test", url: "evidence.html", retrieved: "2026.10.10" };
+  const renderedCount = values => context.speciesStats({speciesCount: {...sample, ...values}}).split(">")[1].split("</a")[0];
+  assert.equal(renderedCount({total:30040, extinct:null, extant:null}), "30.0K");
+  assert.equal(renderedCount({total:30040, extinct:40, extant:30000}), "40/30.0K");
+  assert.equal(renderedCount({total:null, extinct:40, extant:null}), "40/?");
+  assert.equal(renderedCount({total:null, extinct:null, extant:30000}), "?/30.0K");
+  assert.equal(renderedCount({total:null, extinct:null, extant:null}), "?/?");
+  assert.equal(renderedCount({total:30040, extinct:40, extant:null}), "40/?");
+  assert.equal(context.speciesStats({}), "");
   assert.equal((source.match(/data-search="/g) || []).length, 5, `${relativePath}: search presets are missing`);
   const searchRow = source.match(/<div class="search-row">([\s\S]*?)<\/div>/)?.[1] || "";
   assert(searchRow.includes('<input id="search"'), `${relativePath}: search input is missing`);

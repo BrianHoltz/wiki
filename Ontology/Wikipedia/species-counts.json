@@ -1,0 +1,42 @@
+{
+  "Category:Bacteria": {
+    "total": 26397,
+    "extinct": null,
+    "extant": null,
+    "taxon": "Bacteria",
+    "scope": "Accepted catalogued species, including fossil and recently extinct species where covered. Coverage is incomplete; missing extinction flags are unknown, not extant.",
+    "interpretation": "Species in the associated taxon, not counts of Wikipedia articles or subcategories.",
+    "url": "../taxon-species-counts.html#Bacterium",
+    "retrieved": "2026.10.10"
+  },
+  "Category:Archaea": {
+    "total": 790,
+    "extinct": null,
+    "extant": null,
+    "taxon": "Archaea",
+    "scope": "Accepted catalogued species, including fossil and recently extinct species where covered. Coverage is incomplete; missing extinction flags are unknown, not extant.",
+    "interpretation": "Species in the associated taxon, not counts of Wikipedia articles or subcategories.",
+    "url": "../taxon-species-counts.html#Archaeon",
+    "retrieved": "2026.10.10"
+  },
+  "Category:Humans": {
+    "total": 1,
+    "extinct": 0,
+    "extant": 1,
+    "taxon": "Homo sapiens",
+    "scope": "Living and recently extinct species (since 1500); domestic species included. Fossil species excluded.",
+    "interpretation": "Species in the associated taxon, not counts of Wikipedia articles or subcategories.",
+    "url": "../taxon-species-counts.html#Human",
+    "retrieved": "2026.10.10"
+  },
+  "Category:Viruses": {
+    "total": 17554,
+    "extinct": null,
+    "extant": null,
+    "taxon": "ICTV virus and viroid species",
+    "scope": "Recognized ICTV MSL41 species, including 45 viroid species; cellular organisms excluded. Extinction status is not applicable to the classification.",
+    "interpretation": "Species in the associated taxon, not counts of Wikipedia articles or subcategories.",
+    "url": "../taxon-species-counts.html#Virus",
+    "retrieved": "2026.10.10"
+  }
+}
