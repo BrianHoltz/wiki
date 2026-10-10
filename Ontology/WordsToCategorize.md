@@ -115,6 +115,7 @@ Use these compact vocabularies as adversarial test sets for the ontology.
 | genome |  |  |  |  |  |  |
 | goal | ✅ |  |  |  |  |  |
 | hole | ✅ |  | ✅ |  |  |  |
+| identify |  |  |  |  |  |  |
 | image | ✅ |  |  |  |  |  |
 | instance |  |  |  |  |  |  |
 | institution | ✅ |  |  |  |  |  |
@@ -126,6 +127,7 @@ Use these compact vocabularies as adversarial test sets for the ontology.
 | mind |  |  |  |  |  | ✅ |
 | model | ✅ |  |  |  |  |  |
 | moment |  |  |  |  |  |  |
+| namespace |  |  |  |  |  |  |
 | network |  |  |  |  |  |  |
 | norm | ✅ |  |  |  |  |  |
 | nothingness |  |  |  |  |  |  |
@@ -159,6 +161,7 @@ Use these compact vocabularies as adversarial test sets for the ontology.
 | surface |  |  |  |  |  |  |
 | symbol | ✅ |  |  |  |  |  |
 | tool |  |  |  |  |  |  |
+| topic |  |  |  |  |  |  |
 | type |  |  |  |  |  |  |
 | unit |  |  |  |  |  |  |
 | vacuum |  |  |  |  |  | ✅ |
