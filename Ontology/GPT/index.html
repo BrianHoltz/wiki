@@ -18,7 +18,7 @@ summary{cursor:pointer;display:flex;align-items:baseline;gap:4px;list-style:none
 details.lineage > summary::before{content:"\25C6"}
 a{color:var(--accent)}#results{margin:10px 0 18px}.result{padding:5px 0;border-bottom:1px solid var(--line)}
 .node{display:flex;align-items:baseline;gap:4px}.node-content{display:flex;align-items:baseline;gap:4px;min-width:0;flex:1}.expander{background:transparent;border:0;color:var(--fg);cursor:pointer;font:inherit;padding:0;width:1em}.expander-placeholder{display:inline-block;flex:none;width:1em;text-align:center;color:var(--fg)}.children[hidden]{display:none}
-.node-content:has(>.definition.expanded){display:block}.node-title{display:inline-block}.node-content>.meta{white-space:nowrap}.expander{flex:none}
+.node-content:has(>.definition.expanded){display:block}.node-title{display:inline-block}.node-content>.meta{white-space:nowrap}.expander{flex:none}.node-stats{margin-left:0}.node-content:has(>.definition.expanded)>.node-stats{margin-left:4px}
 </style>
 </head>
 <body>
@@ -40,7 +40,7 @@ function renderNode(id,open=false,children=null,lineage=false,childOpen=null){co
 const directChildren=n.children.length;
 const otherDescendants=descendantCount(id)-directChildren;
 const marker=open?'▼':'▶';
-const childCount=directChildren?`<span class="meta"> · ${directChildren}${otherDescendants?`+${otherDescendants}`:''} &#8595;</span>`:'';
+const childCount=directChildren?`<span class="meta node-stats">${directChildren}${otherDescendants?`+${otherDescendants}`:''} &#8595;</span>`:'';
 const provisional=n.provisionalParent?` <span class="meta">· provisional placement</span>`:'';
 const definition=displayDefinition(n);const shortDef=definition?`<span class="definition${open?' expanded':''}" title="${esc(definition)}">${formatDefinition(definition)}</span>`:'';
 const expander=directChildren?`<button class="expander" type="button" data-node="${esc(id)}">${marker}</button>`:'<span class="expander-placeholder" aria-hidden="true">•</span>';
