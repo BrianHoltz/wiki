@@ -17,4 +17,6 @@ python3 render.py
 
 Read [the data-format notes](FORMAT.md) before making machine-assisted edits. [Stress-test cases](stress-tests.md) make the intended distinctions concrete. The source evidence archive contains the retrieved documents and taxonomy responses named in the proposal's source manifest; it supports provenance inspection without changing the original repository.
 
-The existing GitHub repository was read only. Nothing was pushed, published, or changed there.
+The original proposal was prepared without changing the incumbent ontology. Subsequent approved revisions are maintained here; `original-snapshot.json` remains historical evidence.
+
+`render.py` also regenerates the browser data and `index.html`, using the shared browser in `../index.html`. To check browser behavior, run `node ../test_browser.js` from this directory. Publish approved GPT changes to the wiki using the repository deployment destination, scoped to this folder.

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Render authoritative JSON to readable Markdown. Standard library only."""
+"""Render authoritative JSON to Markdown and the shared browser. Standard library only."""
 import collections,json,pathlib,sys
 root=pathlib.Path(sys.argv[1]) if len(sys.argv)>1 else pathlib.Path(__file__).resolve().parent
 p=json.loads((root/'ontology-proposal.json').read_text()); by={n['id']:n for n in p['nodes']}
@@ -41,4 +41,28 @@ for m in c['mappings']:
     lines.append(f'| `{m["original_id"]}` — {m["original_label"]} | {m["mapping_kind"]} | '+ '; '.join(refs)+' | '+m['note'].replace('|','&#124;')+' |')
 lines+=['','Original definitions and all child edges are preserved in [coverage-map.json](coverage-map.json) and the unmodified-data [original-snapshot.json](original-snapshot.json).','']
 (root/'coverage-map.md').write_text('\n'.join(lines))
-print('Rendered complete tree and all original-node mappings.')
+browser_nodes=[]
+for n in p['nodes']:
+    record={k:n[k] for k in ('id','label','definition')}
+    record['children']=children[n['id']]
+    for source,target in [('alternate_parents','alternateParents'),('aliases','aliases'),('notes','notes')]:
+        if n.get(source):record[target]=n[source]
+    browser_nodes.append(record)
+browser={
+    'source':{'name':'GPT Ontology','description':'ChatGPT-generated ontology proposal','url':'ontology-tree.md'},
+    'stats':{'nodeCount':len(by),'projectedEdgeCount':len(by)-1,'definitionCount':sum(bool(n['definition']) for n in browser_nodes)},
+    'root':p['root'],'rootNodes':[p['root']],'nodes':browser_nodes,
+}
+(root/'ontology.json').write_text(json.dumps(browser,ensure_ascii=False,indent=2)+'\n')
+# Keep the parent browser's shared behavior and layout, with proposal-specific presets.
+import re
+shared=root.parent/'index.html'
+html=(shared if shared.exists() else root/'index.html').read_text()
+html=re.sub(r'<title>.*?</title>','<title>GPT Ontology</title>',html,count=1)
+presets=[('object','Object'),('organism','Organism'),('animal','Animal'),('plant','Plant'),('artifact','Artifact')]
+assert all(target in by for _,target in presets)
+buttons=''.join(f'<button type="button" data-search="{query}" data-target="{target}">{query}</button>' for query,target in presets)
+html,count=re.subn(r'(<div class="search-presets"[^>]*>).*?(</div>)',lambda m:m[1]+buttons+m[2],html,count=1)
+assert count==1,'Shared browser search presets not found'
+(root/'index.html').write_text(html)
+print('Rendered complete tree, coverage mappings, browser data, and shared HTML.')

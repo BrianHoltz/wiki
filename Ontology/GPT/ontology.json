@@ -17,7 +17,7 @@
     {
       "id": "Entity",
       "label": "Entity",
-      "definition": "Anything admitted as a subject of reference or predication.",
+      "definition": "That which can be referred to, even if nonexistent.",
       "children": [
         "RealizedEntity",
         "AbstractEntity"

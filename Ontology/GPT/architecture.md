@@ -4,6 +4,8 @@ This is a replacement proposal, not an edit to the existing repository. It provi
 
 ## The main decisions
 
+**Entity means “that which can be referred to, even if nonexistent.”** Reference does not establish actual existence. Whether an expression such as “the largest prime number” refers to a nonexistent entity or fails to refer remains open. This root definition does not supply an identity criterion or ancestry for every nonexistent referent; the treatment of fictional referents remains a separate design question.
+
 **Keep Entity as the root; place predicate specifications inside Abstract entity.** The useful distinction is concrete realization versus abstract identity, not “takes no arguments” versus “takes arguments.” A unary property specification and a binary relation specification can both be entities, and their particular bearers and realizations can be entities too. This avoids treating redness, one apple's color, and the value representing that color as one thing.
 
 The root has two navigation routes, **Realized entity** and **Abstract entity**. This is a selective organizing distinction, not a declaration that all metaphysical problems have been solved. Abstract identity does not require Platonism; concrete realization does not require a universal present. Models can describe particulars through three-dimensional or spacetime representations.

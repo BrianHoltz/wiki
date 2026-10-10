@@ -1,31 +1,39 @@
 {
   "FORMAT.md": {
-    "bytes": 5660,
-    "sha256": "142ef03a1cccd408e378fe1fde938ecd2813d0d87c0104981b5973da4ebb2416"
+    "bytes": 5890,
+    "sha256": "cabc797d3662039f6e501bfbd4e4d66d101ae928c1ef1ec665ea61c0df20d215"
   },
   "README.md": {
-    "bytes": 1745,
-    "sha256": "3afb134da1d76573fcd2e5432fad38e308c70ac9d355ff22611b4261d2863a88"
+    "bytes": 2128,
+    "sha256": "f926492e912cc07e1961b03c5a4851abe3801273cc42269eef437761d25a6523"
   },
   "architecture.md": {
-    "bytes": 8075,
-    "sha256": "ec4dd337c96db9f5a05eb8ad0310dafb7402ab62ce7a3080b9da010e331f055f"
+    "bytes": 8498,
+    "sha256": "89974c6c32f453a8785378e68a1077a54dd7ab3b1d57093bfab4d503b90fe109"
   },
   "coverage-map.json": {
-    "bytes": 233609,
-    "sha256": "c8e1b65643e977d4b435fdc118f10471903cf2f213423e9a1ca8b8f3c9451d02"
+    "bytes": 233723,
+    "sha256": "b5944d96c8ff2610a431573f34d48e591fceeb48d755af7eba6147d7c1cb4a1d"
   },
   "coverage-map.md": {
-    "bytes": 105442,
-    "sha256": "a5543dbbd5a44be920369266ce362c03ef6bcfc5999dde7d6630e41e0cfec8da"
+    "bytes": 105556,
+    "sha256": "6f940b8d800caa4f605f00ec68567c4205fe96fc599aa3285bac59f707351241"
+  },
+  "index.html": {
+    "bytes": 9968,
+    "sha256": "32e0c66da9da465ff895b3296cd85daca6875ddb3377ce7f6637e6cc8be500ab"
   },
   "ontology-proposal.json": {
-    "bytes": 416300,
-    "sha256": "c85f0f2490a611d1375047bb231fed4d6622948c30b95e2cc7d9fbf35e0f1525"
+    "bytes": 416292,
+    "sha256": "cce4748068a4f3d2e1e6ca24a1a8905a420f286c60817ef62250fe0c467a56aa"
   },
   "ontology-tree.md": {
-    "bytes": 149166,
-    "sha256": "f123b3a21e499950a40ea5a460a9b0e7d6e863da8cff5f787e1feffa5065de46"
+    "bytes": 149158,
+    "sha256": "b26a72d20a8451380574eae7ed9663a499fe115907c11df9125a26f2f53f752c"
+  },
+  "ontology.json": {
+    "bytes": 146144,
+    "sha256": "795065e60683c8b022976d00c8041746f127995a95f661610dede056e072756a"
   },
   "original-snapshot.json": {
     "bytes": 165714,
@@ -36,8 +44,8 @@
     "sha256": "89c805787605fd0b9c72e9f9f3334f1633b743db46d0aa401d44b1060a7d1c78"
   },
   "render.py": {
-    "bytes": 5200,
-    "sha256": "54f1d48347ccd306466cfef3ac7e31906935966e13d9250b1841ee7bcf28af02"
+    "bytes": 6756,
+    "sha256": "1cb5c32f05d7a89d3686f9ec3cdf690a5e3179cb5044ad449588b71d55ace41d"
   },
   "source-evidence.zip": {
     "bytes": 408879,

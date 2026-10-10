@@ -1854,7 +1854,7 @@
       "targets": [
         "Entity"
       ],
-      "note": "Root ranges over admitted entities; tree nodes are class specifications, not named individuals.",
+      "note": "Root retains referability as its criterion and explicitly permits nonexistent referents. Whether a particular expression refers or fails to refer remains open; tree nodes denote classes, not named individuals.",
       "legacy_definition": "That which can be referred to.",
       "source_children": [
         "RealizedEntity",

@@ -6,7 +6,7 @@ Sibling lists are **selective**, not declarations of exhaustiveness or disjointn
 
 ## Canonical tree
 
-- <a id="Entity"></a>**Entity** — Anything admitted as a subject of reference or predication. `Entity`
+- <a id="Entity"></a>**Entity** — That which can be referred to, even if nonexistent. `Entity`
     - <a id="RealizedEntity"></a>**Realized entity** — An entity individuated by its concrete occurrence, embodiment, or situated realization. `RealizedEntity`
         - <a id="Object"></a>**Object** — A realized entity identified by its organization or constitution rather than by an occurrence. `Object`
             - <a id="Item"></a>**Item** — An object unified as one constituent whole rather than by membership alone. `Item`
