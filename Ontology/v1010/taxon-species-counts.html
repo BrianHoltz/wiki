@@ -1,0 +1,624 @@
+<!doctype html><html lang="en"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Taxon species counts — sources and scope</title>
+<style>body{font:16px/1.5 system-ui;max-width:70em;margin:2em auto;padding:0 1em}article{border-top:1px solid #ccc;padding:1em 0;scroll-margin-top:1em}h2{margin:.3em 0}a{overflow-wrap:anywhere}dt{font-weight:600}dd{margin-bottom:.7em}</style>
+<h1>Taxon species counts</h1>
+<p>Research retrieved 2026.10.10. Suggestive counts of identified species, independently selected for each ontology node and each extinction category from high-quality reference taxonomies. Closest reference taxa and proxies are explicit. Extinct and extant sources need not agree or add up, and counts never roll up through ontology children. No composite counts are assembled for paraphyletic groups. Omit unavailable counts; a known unsplit total has no status glyph. At most three significant digits with K/M, retaining significant trailing zeros. ☠︎ means catalogued extinct species; ♥︎ means extant or source-reported non-fossil/living-tree proxy, always last. Text presentation keeps the symbols monochrome.</p>
+<p>Tree numbers are compact, suggestive counts: a lone number is a total without a split; ☠︎ follows extinct counts and ♥︎ follows extant counts, with extant last. Unavailable counts are omitted. Living/non-fossil checklist proxies can retain recently extinct species. Click a tree count for its reference taxon and method. Counts from independent sources need not agree or add up; source coverage and extinction periods differ.</p>
+<p><a href="taxon-species-counts.json">Authoritative research JSON</a></p>
+<h2>Sources</h2><dl>
+<dt id="source-col"><a href="https://doi.org/10.48580/dgz5n">Catalogue of Life COL26.9 base release</a> — 2026.09.11</dt>
+<dd>Direct speciesExtantCount from reference-taxon metrics in COL26.9 Base. These publisher metrics include accepted and provisionally accepted species; sparse individual extinction flags are not used to discard the living count.</dd>
+<dt id="source-mdd"><a href="https://www.mammaldiversity.org/releases/">ASM Mammal Diversity Database v2.5</a> — 2026.07.28</dt>
+<dd>6904 species: 113 recently extinct and 6791 extant, including 17 domestic species. Species concepts differ from other checklists.</dd>
+<dd><a href="https://raw.githubusercontent.com/mammaldiversity/mammaldiversity.github.io/master/assets/data/MDD.zip">Source dataset</a> — SHA-256 0d07a7e9409712fa86c1e3afadcf4c67bf4f9e16d5693a878e11ec1bf6860493</dd>
+<dt id="source-reptile"><a href="https://www.reptile-database.org/db-info/SpeciesStat.html">Reptile Database species statistics</a> — 2026.06.16</dt>
+<dd>12650 recognized non-avian reptile species, including one tuatara. This headline does not supply extinction status for every species.</dd>
+<dt id="source-fishes"><a href="https://researcharchive.calacademy.org/research/ichthyology/catalog/fishcatmain.asp">Eschmeyer’s Catalog of Fishes</a> — 2026.09.21</dt>
+<dd>37772 valid fish species; synonyms excluded.</dd>
+<dt id="source-ictv"><a href="https://ictv.global/news/MSL41">ICTV Master Species List 41</a> — 2026.03.20</dt>
+<dd>17554 recognized species; the species worksheet contains 40 Pospiviroidae and 5 Avsunviroidae viroids.</dd>
+<dd><a href="https://ictv.global/msl/current">Source dataset</a> — SHA-256 9d262d7864f1f619445a897ae568718ed15b1309c8f0c157a12fd7fb9fd07801</dd>
+<dt id="source-amphibiaweb"><a href="https://amphibiaweb.org/">AmphibiaWeb live species counter</a> — 2026.10.10</dt>
+<dd>9136 species: 8055 frogs, 846 salamanders and 235 caecilians; headline does not split extinct and extant.</dd>
+<dt id="source-pbdb"><a href="https://paleobiodb.org/data1.2/taxa/list">Paleobiology Database</a> — 2026.10.10</dt>
+<dd>Live API reference-subtree counts: accepted species, extant=no, pres=regular, rowcount=yes. Fossil coverage and classification are incomplete; these are catalogued species, not all species that ever lived.</dd>
+<dt id="source-onezoom"><a href="https://www.onezoom.org/data_sources.load?tabs=all">OneZoom living tree</a> — 2026.10.10</dt>
+<dd>Direct species counts on named-clade text pages. Main-tree coverage reflects its Open Tree of Life snapshot and includes some recently extinct leaves; use as a suggestive living-species reference, not a completeness claim.</dd>
+<dt id="source-wfo"><a href="https://worldfloraonline.org/">World Flora Online</a> — 2026.10.10</dt>
+<dd>382401 accepted land-plant species; living/non-fossil checklist proxy.</dd>
+<dt id="source-worldplants"><a href="https://www.worldplants.de/world-plants-complete-list/total-species-count">World Plants v26.08</a> — 2026.08.02</dt>
+<dd>Direct published group statistics; gymnosperms 1194 non-fossil species, with the reference’s acceptance policy.</dd>
+<dt id="source-iucn"><a href="https://nc.iucnredlist.org/redlist/content/attachment_files/2026-1_RL_Table1a.pdf">IUCN Red List 2026-1, Table 1a</a> — 2026.07.09</dt>
+<dd>Use the estimated described-species column and source-reported subtotals, never evaluated or threatened counts. Non-fossil estimates can retain recently extinct species.</dd>
+</dl><h2>Counts and mappings</h2>
+<article id="Bacterium"><h2>Bacteria</h2>
+<p>Extinct reference count: 152; Extant reference count: 26,525.</p><p>Independent source snapshots; source coverage, dates and species concepts differ. Counts do not roll up in the ontology.</p>
+<p>Direct reference-taxon counts; no ontology-child totals or composite-taxon arithmetic.</p>
+<p>Extant: <a href="https://api.checklistbank.org/dataset/316321/taxon/CRRY6/metrics">Bacteria</a> — <a href="#source-col">Catalogue of Life COL26.9 base release</a>. Publisher-supplied speciesExtantCount from the reference-taxon metrics. Includes the release’s accepted and provisionally accepted species; does not rely on extinct=false annotations.</p>
+<p>Extinct: <a href="https://paleobiodb.org/data1.2/taxa/list.json?base_name=Bacteria&amp;rel=all_children&amp;rank=species&amp;extant=no&amp;taxon_status=accepted&amp;pres=regular&amp;limit=1&amp;rowcount=yes">Bacteria</a> — <a href="#source-pbdb">Paleobiology Database</a>. records_found: accepted species below the reference taxon, extant=no, pres=regular. Junior synonyms, ichnotaxa and form taxa excluded. A catalogue count, not an estimate of all species that ever existed.</p>
+<p>Sources: <a href="#source-col">Catalogue of Life COL26.9 base release</a>, <a href="#source-pbdb">Paleobiology Database</a>.</p>
+<p>GPT: Bacterium. </p>
+<p>.: Bacterium. Conventional named taxon; older functional wording is approximate.</p>
+<p>SUMO: Bacterium. Conventional named taxon; older functional wording is approximate.</p>
+<p>Wikipedia: Category:Bacteria, Category:Prokaryotes. Species in the associated taxon, not counts of Wikipedia articles or subcategories. Associated reference-taxon count, not Wikipedia category/article counts. Bacteria is a closest-reference proxy excluding Archaea.</p>
+</article>
+<article id="Archaeon"><h2>Archaea</h2>
+<p>Extinct reference count: 4; Extant reference count: 792.</p><p>Independent source snapshots; source coverage, dates and species concepts differ. Counts do not roll up in the ontology.</p>
+<p>Direct reference-taxon counts; no ontology-child totals or composite-taxon arithmetic.</p>
+<p>Extant: <a href="https://api.checklistbank.org/dataset/316321/taxon/CRLT8/metrics">Archaea</a> — <a href="#source-col">Catalogue of Life COL26.9 base release</a>. Publisher-supplied speciesExtantCount from the reference-taxon metrics. Includes the release’s accepted and provisionally accepted species; does not rely on extinct=false annotations.</p>
+<p>Extinct: <a href="https://paleobiodb.org/data1.2/taxa/list.json?base_name=Archaea&amp;rel=all_children&amp;rank=species&amp;extant=no&amp;taxon_status=accepted&amp;pres=regular&amp;limit=1&amp;rowcount=yes">Archaea</a> — <a href="#source-pbdb">Paleobiology Database</a>. records_found: accepted species below the reference taxon, extant=no, pres=regular. Junior synonyms, ichnotaxa and form taxa excluded. A catalogue count, not an estimate of all species that ever existed.</p>
+<p>Sources: <a href="#source-col">Catalogue of Life COL26.9 base release</a>, <a href="#source-pbdb">Paleobiology Database</a>.</p>
+<p>GPT: Archaeon. </p>
+<p>Wikipedia: Category:Archaea. Species in the associated taxon, not counts of Wikipedia articles or subcategories.</p>
+</article>
+<article id="Eukaryote"><h2>Eukaryota</h2>
+<p>Extinct reference count: 21,956; Extant reference count: 2,052,948.</p><p>Independent source snapshots; source coverage, dates and species concepts differ. Counts do not roll up in the ontology.</p>
+<p>Direct reference-taxon counts; no ontology-child totals or composite-taxon arithmetic.</p>
+<p>Extant: <a href="https://api.checklistbank.org/dataset/316321/taxon/CS5HF/metrics">Eukaryota</a> — <a href="#source-col">Catalogue of Life COL26.9 base release</a>. Publisher-supplied speciesExtantCount from the reference-taxon metrics. Includes the release’s accepted and provisionally accepted species; does not rely on extinct=false annotations.</p>
+<p>Extinct: <a href="https://paleobiodb.org/data1.2/taxa/list.json?base_name=Eukaryota&amp;rel=all_children&amp;rank=species&amp;extant=no&amp;taxon_status=accepted&amp;pres=regular&amp;limit=1&amp;rowcount=yes">Eukaryota</a> — <a href="#source-pbdb">Paleobiology Database</a>. records_found: accepted species below the reference taxon, extant=no, pres=regular. Junior synonyms, ichnotaxa and form taxa excluded. A catalogue count, not an estimate of all species that ever existed.</p>
+<p>Sources: <a href="#source-col">Catalogue of Life COL26.9 base release</a>, <a href="#source-pbdb">Paleobiology Database</a>.</p>
+<p>GPT: Eukaryote. </p>
+<p>Wikipedia: Category:Eukaryotes. Associated reference-taxon count, not Wikipedia category/article counts.</p>
+</article>
+<article id="Moss"><h2>Bryophyta</h2>
+<p>Extinct reference count: 110; Extant reference count: 11,954.</p><p>Independent source snapshots; source coverage, dates and species concepts differ. Counts do not roll up in the ontology.</p>
+<p>Direct reference-taxon counts; no ontology-child totals or composite-taxon arithmetic.</p>
+<p>Extant: <a href="https://api.checklistbank.org/dataset/316321/taxon/BJ5TM/metrics">Bryophyta</a> — <a href="#source-col">Catalogue of Life COL26.9 base release</a>. Publisher-supplied speciesExtantCount from the reference-taxon metrics. Includes the release’s accepted and provisionally accepted species; does not rely on extinct=false annotations.</p>
+<p>Extinct: <a href="https://paleobiodb.org/data1.2/taxa/list.json?base_name=Bryophyta&amp;rel=all_children&amp;rank=species&amp;extant=no&amp;taxon_status=accepted&amp;pres=regular&amp;limit=1&amp;rowcount=yes">Bryophyta</a> — <a href="#source-pbdb">Paleobiology Database</a>. records_found: accepted species below the reference taxon, extant=no, pres=regular. Junior synonyms, ichnotaxa and form taxa excluded. A catalogue count, not an estimate of all species that ever existed.</p>
+<p>Sources: <a href="#source-col">Catalogue of Life COL26.9 base release</a>, <a href="#source-pbdb">Paleobiology Database</a>.</p>
+<p>GPT: Moss. </p>
+<p>.: Moss. </p>
+<p>SUMO: Moss. </p>
+</article>
+<article id="VascularPlant"><h2>Tracheophyta</h2>
+<p>Extinct reference count: 9,980; Extant reference count: 369,513.</p><p>Independent source snapshots; source coverage, dates and species concepts differ. Counts do not roll up in the ontology.</p>
+<p>Direct reference-taxon counts; no ontology-child totals or composite-taxon arithmetic.</p>
+<p>Extant: <a href="https://api.checklistbank.org/dataset/316321/taxon/TP/metrics">Tracheophyta</a> — <a href="#source-col">Catalogue of Life COL26.9 base release</a>. Publisher-supplied speciesExtantCount from the reference-taxon metrics. Includes the release’s accepted and provisionally accepted species; does not rely on extinct=false annotations.</p>
+<p>Extinct: <a href="https://paleobiodb.org/data1.2/taxa/list.json?base_name=Tracheophyta&amp;rel=all_children&amp;rank=species&amp;extant=no&amp;taxon_status=accepted&amp;pres=regular&amp;limit=1&amp;rowcount=yes">Tracheophyta</a> — <a href="#source-pbdb">Paleobiology Database</a>. records_found: accepted species below the reference taxon, extant=no, pres=regular. Junior synonyms, ichnotaxa and form taxa excluded. A catalogue count, not an estimate of all species that ever existed.</p>
+<p>Sources: <a href="#source-col">Catalogue of Life COL26.9 base release</a>, <a href="#source-pbdb">Paleobiology Database</a>.</p>
+<p>GPT: VascularPlant. </p>
+</article>
+<article id="Fern"><h2>Polypodiopsida</h2>
+<p>Extinct reference count: 982; Extant reference count: 12,523.</p><p>Independent source snapshots; source coverage, dates and species concepts differ. Counts do not roll up in the ontology.</p>
+<p>Direct reference-taxon counts; no ontology-child totals or composite-taxon arithmetic.</p>
+<p>Extant: <a href="https://api.checklistbank.org/dataset/316321/taxon/GV/metrics">Polypodiopsida</a> — <a href="#source-col">Catalogue of Life COL26.9 base release</a>. Publisher-supplied speciesExtantCount from the reference-taxon metrics. Includes the release’s accepted and provisionally accepted species; does not rely on extinct=false annotations.</p>
+<p>Extinct: <a href="https://paleobiodb.org/data1.2/taxa/list.json?base_name=Polypodiopsida&amp;rel=all_children&amp;rank=species&amp;extant=no&amp;taxon_status=accepted&amp;pres=regular&amp;limit=1&amp;rowcount=yes">Polypodiopsida</a> — <a href="#source-pbdb">Paleobiology Database</a>. records_found: accepted species below the reference taxon, extant=no, pres=regular. Junior synonyms, ichnotaxa and form taxa excluded. A catalogue count, not an estimate of all species that ever existed.</p>
+<p>Sources: <a href="#source-col">Catalogue of Life COL26.9 base release</a>, <a href="#source-pbdb">Paleobiology Database</a>.</p>
+<p>GPT: Fern. </p>
+<p>.: Fern, NonFloweringPlant.  Polypodiopsida proxy for the spore-bearing non-flowering branch; other non-flowering groups excluded.</p>
+<p>SUMO: Fern, NonFloweringPlant.  Polypodiopsida proxy for the spore-bearing non-flowering branch; other non-flowering groups excluded.</p>
+</article>
+<article id="Lycophyte"><h2>Lycopodiopsida</h2>
+<p>Extinct reference count: 161; Extant reference count: 1,518.</p><p>Independent source snapshots; source coverage, dates and species concepts differ. Counts do not roll up in the ontology.</p>
+<p>Direct reference-taxon counts; no ontology-child totals or composite-taxon arithmetic.</p>
+<p>Extant: <a href="https://api.checklistbank.org/dataset/316321/taxon/LYC/metrics">Lycopodiopsida</a> — <a href="#source-col">Catalogue of Life COL26.9 base release</a>. Publisher-supplied speciesExtantCount from the reference-taxon metrics. Includes the release’s accepted and provisionally accepted species; does not rely on extinct=false annotations.</p>
+<p>Extinct: <a href="https://paleobiodb.org/data1.2/taxa/list.json?base_name=Lycopodiopsida&amp;rel=all_children&amp;rank=species&amp;extant=no&amp;taxon_status=accepted&amp;pres=regular&amp;limit=1&amp;rowcount=yes">Lycopodiopsida</a> — <a href="#source-pbdb">Paleobiology Database</a>. records_found: accepted species below the reference taxon, extant=no, pres=regular. Junior synonyms, ichnotaxa and form taxa excluded. A catalogue count, not an estimate of all species that ever existed.</p>
+<p>Sources: <a href="#source-col">Catalogue of Life COL26.9 base release</a>, <a href="#source-pbdb">Paleobiology Database</a>.</p>
+<p>GPT: Lycophyte. </p>
+</article>
+<article id="Fungus"><h2>Fungi</h2>
+<p>Extinct reference count: 249; Extant reference count: 156,938.</p><p>Independent source snapshots; source coverage, dates and species concepts differ. Counts do not roll up in the ontology.</p>
+<p>Direct reference-taxon counts; no ontology-child totals or composite-taxon arithmetic.</p>
+<p>Extant: <a href="https://api.checklistbank.org/dataset/316321/taxon/F/metrics">Fungi</a> — <a href="#source-col">Catalogue of Life COL26.9 base release</a>. Publisher-supplied speciesExtantCount from the reference-taxon metrics. Includes the release’s accepted and provisionally accepted species; does not rely on extinct=false annotations.</p>
+<p>Extinct: <a href="https://paleobiodb.org/data1.2/taxa/list.json?base_name=Fungi&amp;rel=all_children&amp;rank=species&amp;extant=no&amp;taxon_status=accepted&amp;pres=regular&amp;limit=1&amp;rowcount=yes">Fungi</a> — <a href="#source-pbdb">Paleobiology Database</a>. records_found: accepted species below the reference taxon, extant=no, pres=regular. Junior synonyms, ichnotaxa and form taxa excluded. A catalogue count, not an estimate of all species that ever existed.</p>
+<p>Sources: <a href="#source-col">Catalogue of Life COL26.9 base release</a>, <a href="#source-pbdb">Paleobiology Database</a>.</p>
+<p>GPT: Fungus. </p>
+<p>.: Fungus. Modern Fungi reference; the older definition also mentions slime molds, which are outside this count.</p>
+<p>SUMO: Fungus. Modern Fungi reference; the older definition also mentions slime molds, which are outside this count.</p>
+</article>
+<article id="Animal"><h2>Animalia</h2>
+<p>Extinct reference count: 169,100; Extant reference count: 1,483,995.</p><p>Independent source snapshots; source coverage, dates and species concepts differ. Counts do not roll up in the ontology.</p>
+<p>Direct reference-taxon counts; no ontology-child totals or composite-taxon arithmetic.</p>
+<p>Extant: <a href="https://api.checklistbank.org/dataset/316321/taxon/N/metrics">Animalia</a> — <a href="#source-col">Catalogue of Life COL26.9 base release</a>. Publisher-supplied speciesExtantCount from the reference-taxon metrics. Includes the release’s accepted and provisionally accepted species; does not rely on extinct=false annotations.</p>
+<p>Extinct: <a href="https://paleobiodb.org/data1.2/taxa/list.json?base_name=Animalia&amp;rel=all_children&amp;rank=species&amp;extant=no&amp;taxon_status=accepted&amp;pres=regular&amp;limit=1&amp;rowcount=yes">Animalia</a> — <a href="#source-pbdb">Paleobiology Database</a>. records_found: accepted species below the reference taxon, extant=no, pres=regular. Junior synonyms, ichnotaxa and form taxa excluded. A catalogue count, not an estimate of all species that ever existed.</p>
+<p>Sources: <a href="#source-col">Catalogue of Life COL26.9 base release</a>, <a href="#source-pbdb">Paleobiology Database</a>.</p>
+<p>GPT: Animal. </p>
+<p>.: Animal. </p>
+<p>SUMO: Animal. </p>
+<p>Rogets: roget-0366. Associated taxon Animalia; this thesaurus topic is not a taxonomic subclass node.</p>
+</article>
+<article id="Sponge"><h2>Porifera</h2>
+<p>Extinct reference count: 2,861; Extant reference count: 9,875.</p><p>Independent source snapshots; source coverage, dates and species concepts differ. Counts do not roll up in the ontology.</p>
+<p>Direct reference-taxon counts; no ontology-child totals or composite-taxon arithmetic.</p>
+<p>Extant: <a href="https://api.checklistbank.org/dataset/316321/taxon/B8TXQ/metrics">Porifera</a> — <a href="#source-col">Catalogue of Life COL26.9 base release</a>. Publisher-supplied speciesExtantCount from the reference-taxon metrics. Includes the release’s accepted and provisionally accepted species; does not rely on extinct=false annotations.</p>
+<p>Extinct: <a href="https://paleobiodb.org/data1.2/taxa/list.json?base_name=Porifera&amp;rel=all_children&amp;rank=species&amp;extant=no&amp;taxon_status=accepted&amp;pres=regular&amp;limit=1&amp;rowcount=yes">Porifera</a> — <a href="#source-pbdb">Paleobiology Database</a>. records_found: accepted species below the reference taxon, extant=no, pres=regular. Junior synonyms, ichnotaxa and form taxa excluded. A catalogue count, not an estimate of all species that ever existed.</p>
+<p>Sources: <a href="#source-col">Catalogue of Life COL26.9 base release</a>, <a href="#source-pbdb">Paleobiology Database</a>.</p>
+<p>GPT: Sponge. </p>
+</article>
+<article id="Cnidarian"><h2>Cnidaria</h2>
+<p>Extinct reference count: 7,058; Extant reference count: 14,594.</p><p>Independent source snapshots; source coverage, dates and species concepts differ. Counts do not roll up in the ontology.</p>
+<p>Direct reference-taxon counts; no ontology-child totals or composite-taxon arithmetic.</p>
+<p>Extant: <a href="https://api.checklistbank.org/dataset/316321/taxon/CN2/metrics">Cnidaria</a> — <a href="#source-col">Catalogue of Life COL26.9 base release</a>. Publisher-supplied speciesExtantCount from the reference-taxon metrics. Includes the release’s accepted and provisionally accepted species; does not rely on extinct=false annotations.</p>
+<p>Extinct: <a href="https://paleobiodb.org/data1.2/taxa/list.json?base_name=Cnidaria&amp;rel=all_children&amp;rank=species&amp;extant=no&amp;taxon_status=accepted&amp;pres=regular&amp;limit=1&amp;rowcount=yes">Cnidaria</a> — <a href="#source-pbdb">Paleobiology Database</a>. records_found: accepted species below the reference taxon, extant=no, pres=regular. Junior synonyms, ichnotaxa and form taxa excluded. A catalogue count, not an estimate of all species that ever existed.</p>
+<p>Sources: <a href="#source-col">Catalogue of Life COL26.9 base release</a>, <a href="#source-pbdb">Paleobiology Database</a>.</p>
+<p>GPT: Cnidarian. </p>
+</article>
+<article id="Arthropod"><h2>Arthropoda</h2>
+<p>Extinct reference count: 48,400; Extant reference count: 1,202,736.</p><p>Independent source snapshots; source coverage, dates and species concepts differ. Counts do not roll up in the ontology.</p>
+<p>Direct reference-taxon counts; no ontology-child totals or composite-taxon arithmetic.</p>
+<p>Extant: <a href="https://api.checklistbank.org/dataset/316321/taxon/RT/metrics">Arthropoda</a> — <a href="#source-col">Catalogue of Life COL26.9 base release</a>. Publisher-supplied speciesExtantCount from the reference-taxon metrics. Includes the release’s accepted and provisionally accepted species; does not rely on extinct=false annotations.</p>
+<p>Extinct: <a href="https://paleobiodb.org/data1.2/taxa/list.json?base_name=Arthropoda&amp;rel=all_children&amp;rank=species&amp;extant=no&amp;taxon_status=accepted&amp;pres=regular&amp;limit=1&amp;rowcount=yes">Arthropoda</a> — <a href="#source-pbdb">Paleobiology Database</a>. records_found: accepted species below the reference taxon, extant=no, pres=regular. Junior synonyms, ichnotaxa and form taxa excluded. A catalogue count, not an estimate of all species that ever existed.</p>
+<p>Sources: <a href="#source-col">Catalogue of Life COL26.9 base release</a>, <a href="#source-pbdb">Paleobiology Database</a>.</p>
+<p>GPT: Arthropod. </p>
+</article>
+<article id="Insect"><h2>Insecta</h2>
+<p>Extinct reference count: 28,969; Extant reference count: 1,006,953.</p><p>Independent source snapshots; source coverage, dates and species concepts differ. Counts do not roll up in the ontology.</p>
+<p>Direct reference-taxon counts; no ontology-child totals or composite-taxon arithmetic.</p>
+<p>Extant: <a href="https://api.checklistbank.org/dataset/316321/taxon/H6/metrics">Insecta</a> — <a href="#source-col">Catalogue of Life COL26.9 base release</a>. Publisher-supplied speciesExtantCount from the reference-taxon metrics. Includes the release’s accepted and provisionally accepted species; does not rely on extinct=false annotations.</p>
+<p>Extinct: <a href="https://paleobiodb.org/data1.2/taxa/list.json?base_name=Insecta&amp;rel=all_children&amp;rank=species&amp;extant=no&amp;taxon_status=accepted&amp;pres=regular&amp;limit=1&amp;rowcount=yes">Insecta</a> — <a href="#source-pbdb">Paleobiology Database</a>. records_found: accepted species below the reference taxon, extant=no, pres=regular. Junior synonyms, ichnotaxa and form taxa excluded. A catalogue count, not an estimate of all species that ever existed.</p>
+<p>Sources: <a href="#source-col">Catalogue of Life COL26.9 base release</a>, <a href="#source-pbdb">Paleobiology Database</a>.</p>
+<p>GPT: Insect. </p>
+</article>
+<article id="Arachnid"><h2>Arachnida</h2>
+<p>Extinct reference count: 2,138; Extant reference count: 98,135.</p><p>Independent source snapshots; source coverage, dates and species concepts differ. Counts do not roll up in the ontology.</p>
+<p>Direct reference-taxon counts; no ontology-child totals or composite-taxon arithmetic.</p>
+<p>Extant: <a href="https://api.checklistbank.org/dataset/316321/taxon/CCQKT/metrics">Arachnida</a> — <a href="#source-col">Catalogue of Life COL26.9 base release</a>. Publisher-supplied speciesExtantCount from the reference-taxon metrics. Includes the release’s accepted and provisionally accepted species; does not rely on extinct=false annotations.</p>
+<p>Extinct: <a href="https://paleobiodb.org/data1.2/taxa/list.json?base_name=Arachnida&amp;rel=all_children&amp;rank=species&amp;extant=no&amp;taxon_status=accepted&amp;pres=regular&amp;limit=1&amp;rowcount=yes">Arachnida</a> — <a href="#source-pbdb">Paleobiology Database</a>. records_found: accepted species below the reference taxon, extant=no, pres=regular. Junior synonyms, ichnotaxa and form taxa excluded. A catalogue count, not an estimate of all species that ever existed.</p>
+<p>Sources: <a href="#source-col">Catalogue of Life COL26.9 base release</a>, <a href="#source-pbdb">Paleobiology Database</a>.</p>
+<p>GPT: Arachnid. </p>
+</article>
+<article id="Mollusc"><h2>Mollusca</h2>
+<p>Extinct reference count: 51,543; Extant reference count: 89,578.</p><p>Independent source snapshots; source coverage, dates and species concepts differ. Counts do not roll up in the ontology.</p>
+<p>Direct reference-taxon counts; no ontology-child totals or composite-taxon arithmetic.</p>
+<p>Extant: <a href="https://api.checklistbank.org/dataset/316321/taxon/M2L/metrics">Mollusca</a> — <a href="#source-col">Catalogue of Life COL26.9 base release</a>. Publisher-supplied speciesExtantCount from the reference-taxon metrics. Includes the release’s accepted and provisionally accepted species; does not rely on extinct=false annotations.</p>
+<p>Extinct: <a href="https://paleobiodb.org/data1.2/taxa/list.json?base_name=Mollusca&amp;rel=all_children&amp;rank=species&amp;extant=no&amp;taxon_status=accepted&amp;pres=regular&amp;limit=1&amp;rowcount=yes">Mollusca</a> — <a href="#source-pbdb">Paleobiology Database</a>. records_found: accepted species below the reference taxon, extant=no, pres=regular. Junior synonyms, ichnotaxa and form taxa excluded. A catalogue count, not an estimate of all species that ever existed.</p>
+<p>Sources: <a href="#source-col">Catalogue of Life COL26.9 base release</a>, <a href="#source-pbdb">Paleobiology Database</a>.</p>
+<p>GPT: Mollusc. </p>
+</article>
+<article id="Annelid"><h2>Annelida</h2>
+<p>Extinct reference count: 120; Extant reference count: 17,564.</p><p>Independent source snapshots; source coverage, dates and species concepts differ. Counts do not roll up in the ontology.</p>
+<p>Direct reference-taxon counts; no ontology-child totals or composite-taxon arithmetic.</p>
+<p>Extant: <a href="https://api.checklistbank.org/dataset/316321/taxon/NN/metrics">Annelida</a> — <a href="#source-col">Catalogue of Life COL26.9 base release</a>. Publisher-supplied speciesExtantCount from the reference-taxon metrics. Includes the release’s accepted and provisionally accepted species; does not rely on extinct=false annotations.</p>
+<p>Extinct: <a href="https://paleobiodb.org/data1.2/taxa/list.json?base_name=Annelida&amp;rel=all_children&amp;rank=species&amp;extant=no&amp;taxon_status=accepted&amp;pres=regular&amp;limit=1&amp;rowcount=yes">Annelida</a> — <a href="#source-pbdb">Paleobiology Database</a>. records_found: accepted species below the reference taxon, extant=no, pres=regular. Junior synonyms, ichnotaxa and form taxa excluded. A catalogue count, not an estimate of all species that ever existed.</p>
+<p>Sources: <a href="#source-col">Catalogue of Life COL26.9 base release</a>, <a href="#source-pbdb">Paleobiology Database</a>.</p>
+<p>GPT: Annelid. </p>
+</article>
+<article id="Nematode"><h2>Nematoda</h2>
+<p>Extinct reference count: 110; Extant reference count: 19,611.</p><p>Independent source snapshots; source coverage, dates and species concepts differ. Counts do not roll up in the ontology.</p>
+<p>Direct reference-taxon counts; no ontology-child totals or composite-taxon arithmetic.</p>
+<p>Extant: <a href="https://api.checklistbank.org/dataset/316321/taxon/NM/metrics">Nematoda</a> — <a href="#source-col">Catalogue of Life COL26.9 base release</a>. Publisher-supplied speciesExtantCount from the reference-taxon metrics. Includes the release’s accepted and provisionally accepted species; does not rely on extinct=false annotations.</p>
+<p>Extinct: <a href="https://paleobiodb.org/data1.2/taxa/list.json?base_name=Nematoda&amp;rel=all_children&amp;rank=species&amp;extant=no&amp;taxon_status=accepted&amp;pres=regular&amp;limit=1&amp;rowcount=yes">Nematoda</a> — <a href="#source-pbdb">Paleobiology Database</a>. records_found: accepted species below the reference taxon, extant=no, pres=regular. Junior synonyms, ichnotaxa and form taxa excluded. A catalogue count, not an estimate of all species that ever existed.</p>
+<p>Sources: <a href="#source-col">Catalogue of Life COL26.9 base release</a>, <a href="#source-pbdb">Paleobiology Database</a>.</p>
+<p>GPT: Nematode. </p>
+</article>
+<article id="Echinoderm"><h2>Echinodermata</h2>
+<p>Extinct reference count: 5,374; Extant reference count: 7,758.</p><p>Independent source snapshots; source coverage, dates and species concepts differ. Counts do not roll up in the ontology.</p>
+<p>Direct reference-taxon counts; no ontology-child totals or composite-taxon arithmetic.</p>
+<p>Extant: <a href="https://api.checklistbank.org/dataset/316321/taxon/CHN/metrics">Echinodermata</a> — <a href="#source-col">Catalogue of Life COL26.9 base release</a>. Publisher-supplied speciesExtantCount from the reference-taxon metrics. Includes the release’s accepted and provisionally accepted species; does not rely on extinct=false annotations.</p>
+<p>Extinct: <a href="https://paleobiodb.org/data1.2/taxa/list.json?base_name=Echinodermata&amp;rel=all_children&amp;rank=species&amp;extant=no&amp;taxon_status=accepted&amp;pres=regular&amp;limit=1&amp;rowcount=yes">Echinodermata</a> — <a href="#source-pbdb">Paleobiology Database</a>. records_found: accepted species below the reference taxon, extant=no, pres=regular. Junior synonyms, ichnotaxa and form taxa excluded. A catalogue count, not an estimate of all species that ever existed.</p>
+<p>Sources: <a href="#source-col">Catalogue of Life COL26.9 base release</a>, <a href="#source-pbdb">Paleobiology Database</a>.</p>
+<p>GPT: Echinoderm. </p>
+</article>
+<article id="Chordate"><h2>Chordata</h2>
+<p>Extinct reference count: 35,097; Extant reference count: 79,200.</p><p>Independent source snapshots; source coverage, dates and species concepts differ. Counts do not roll up in the ontology.</p>
+<p>Direct reference-taxon counts; no ontology-child totals or composite-taxon arithmetic.</p>
+<p>Extant: <a href="https://api.checklistbank.org/dataset/316321/taxon/CH2/metrics">Chordata</a> — <a href="#source-col">Catalogue of Life COL26.9 base release</a>. Publisher-supplied speciesExtantCount from the reference-taxon metrics. Includes the release’s accepted and provisionally accepted species; does not rely on extinct=false annotations.</p>
+<p>Extinct: <a href="https://paleobiodb.org/data1.2/taxa/list.json?base_name=Chordata&amp;rel=all_children&amp;rank=species&amp;extant=no&amp;taxon_status=accepted&amp;pres=regular&amp;limit=1&amp;rowcount=yes">Chordata</a> — <a href="#source-pbdb">Paleobiology Database</a>. records_found: accepted species below the reference taxon, extant=no, pres=regular. Junior synonyms, ichnotaxa and form taxa excluded. A catalogue count, not an estimate of all species that ever existed.</p>
+<p>Sources: <a href="#source-col">Catalogue of Life COL26.9 base release</a>, <a href="#source-pbdb">Paleobiology Database</a>.</p>
+<p>GPT: Chordate. </p>
+</article>
+<article id="Vertebrate"><h2>Vertebrata</h2>
+<p>Extinct reference count: 34,286; Extant reference count: 76,024.</p><p>Independent source snapshots; source coverage, dates and species concepts differ. Counts do not roll up in the ontology.</p>
+<p>Direct reference-taxon counts; no ontology-child totals or composite-taxon arithmetic.</p>
+<p>Extant: <a href="https://api.checklistbank.org/dataset/316321/taxon/8V4V3/metrics">Vertebrata</a> — <a href="#source-col">Catalogue of Life COL26.9 base release</a>. Publisher-supplied speciesExtantCount from the reference-taxon metrics. Includes the release’s accepted and provisionally accepted species; does not rely on extinct=false annotations.</p>
+<p>Extinct: <a href="https://paleobiodb.org/data1.2/taxa/list.json?base_name=Vertebrata&amp;rel=all_children&amp;rank=species&amp;extant=no&amp;taxon_status=accepted&amp;pres=regular&amp;limit=1&amp;rowcount=yes">Vertebrata</a> — <a href="#source-pbdb">Paleobiology Database</a>. records_found: accepted species below the reference taxon, extant=no, pres=regular. Junior synonyms, ichnotaxa and form taxa excluded. A catalogue count, not an estimate of all species that ever existed.</p>
+<p>Sources: <a href="#source-col">Catalogue of Life COL26.9 base release</a>, <a href="#source-pbdb">Paleobiology Database</a>.</p>
+<p>GPT: Vertebrate. </p>
+<p>.: Vertebrate. </p>
+<p>SUMO: Vertebrate. </p>
+</article>
+<article id="JawedVertebrate"><h2>Gnathostomata</h2>
+<p>Extinct reference count: 33,516; Extant reference count: 75,882.</p><p>Independent source snapshots; source coverage, dates and species concepts differ. Counts do not roll up in the ontology.</p>
+<p>Direct reference-taxon counts; no ontology-child totals or composite-taxon arithmetic.</p>
+<p>Extant: <a href="https://api.checklistbank.org/dataset/316321/taxon/8V4V5/metrics">Gnathostomata</a> — <a href="#source-col">Catalogue of Life COL26.9 base release</a>. Publisher-supplied speciesExtantCount from the reference-taxon metrics. Includes the release’s accepted and provisionally accepted species; does not rely on extinct=false annotations.</p>
+<p>Extinct: <a href="https://paleobiodb.org/data1.2/taxa/list.json?base_name=Gnathostomata&amp;rel=all_children&amp;rank=species&amp;extant=no&amp;taxon_status=accepted&amp;pres=regular&amp;limit=1&amp;rowcount=yes">Gnathostomata</a> — <a href="#source-pbdb">Paleobiology Database</a>. records_found: accepted species below the reference taxon, extant=no, pres=regular. Junior synonyms, ichnotaxa and form taxa excluded. A catalogue count, not an estimate of all species that ever existed.</p>
+<p>Sources: <a href="#source-col">Catalogue of Life COL26.9 base release</a>, <a href="#source-pbdb">Paleobiology Database</a>.</p>
+<p>GPT: JawedVertebrate. </p>
+</article>
+<article id="CartilaginousFish"><h2>Chondrichthyes</h2>
+<p>Extinct reference count: 2,950; Extant reference count: 1,355.</p><p>Independent source snapshots; source coverage, dates and species concepts differ. Counts do not roll up in the ontology.</p>
+<p>Direct reference-taxon counts; no ontology-child totals or composite-taxon arithmetic.</p>
+<p>Extant: <a href="https://api.checklistbank.org/dataset/316321/taxon/8X6G5/metrics">Chondrichthyes</a> — <a href="#source-col">Catalogue of Life COL26.9 base release</a>. Publisher-supplied speciesExtantCount from the reference-taxon metrics. Includes the release’s accepted and provisionally accepted species; does not rely on extinct=false annotations.</p>
+<p>Extinct: <a href="https://paleobiodb.org/data1.2/taxa/list.json?base_name=Chondrichthyes&amp;rel=all_children&amp;rank=species&amp;extant=no&amp;taxon_status=accepted&amp;pres=regular&amp;limit=1&amp;rowcount=yes">Chondrichthyes</a> — <a href="#source-pbdb">Paleobiology Database</a>. records_found: accepted species below the reference taxon, extant=no, pres=regular. Junior synonyms, ichnotaxa and form taxa excluded. A catalogue count, not an estimate of all species that ever existed.</p>
+<p>Sources: <a href="#source-col">Catalogue of Life COL26.9 base release</a>, <a href="#source-pbdb">Paleobiology Database</a>.</p>
+<p>GPT: CartilaginousFish. </p>
+</article>
+<article id="BonyVertebrate"><h2>Osteichthyes</h2>
+<p>Extinct reference count: 29,589; Extant reference count: 74,527.</p><p>Independent source snapshots; source coverage, dates and species concepts differ. Counts do not roll up in the ontology.</p>
+<p>Direct reference-taxon counts; no ontology-child totals or composite-taxon arithmetic.</p>
+<p>Extant: <a href="https://api.checklistbank.org/dataset/316321/taxon/8VVWB/metrics">Osteichthyes</a> — <a href="#source-col">Catalogue of Life COL26.9 base release</a>. Publisher-supplied speciesExtantCount from the reference-taxon metrics. Includes the release’s accepted and provisionally accepted species; does not rely on extinct=false annotations.</p>
+<p>Extinct: <a href="https://paleobiodb.org/data1.2/taxa/list.json?base_name=Osteichthyes&amp;rel=all_children&amp;rank=species&amp;extant=no&amp;taxon_status=accepted&amp;pres=regular&amp;limit=1&amp;rowcount=yes">Osteichthyes</a> — <a href="#source-pbdb">Paleobiology Database</a>. records_found: accepted species below the reference taxon, extant=no, pres=regular. Junior synonyms, ichnotaxa and form taxa excluded. A catalogue count, not an estimate of all species that ever existed.</p>
+<p>Sources: <a href="#source-col">Catalogue of Life COL26.9 base release</a>, <a href="#source-pbdb">Paleobiology Database</a>.</p>
+<p>GPT: BonyVertebrate. </p>
+</article>
+<article id="RayFinnedFish"><h2>Actinopterygii</h2>
+<p>Extinct reference count: 4,721; Extant reference count: 35,713.</p><p>Independent source snapshots; source coverage, dates and species concepts differ. Counts do not roll up in the ontology.</p>
+<p>Direct reference-taxon counts; no ontology-child totals or composite-taxon arithmetic.</p>
+<p>Extant: <a href="https://api.checklistbank.org/dataset/316321/taxon/8VR36/metrics">Actinopterygii</a> — <a href="#source-col">Catalogue of Life COL26.9 base release</a>. Publisher-supplied speciesExtantCount from the reference-taxon metrics. Includes the release’s accepted and provisionally accepted species; does not rely on extinct=false annotations.</p>
+<p>Extinct: <a href="https://paleobiodb.org/data1.2/taxa/list.json?base_name=Actinopterygii&amp;rel=all_children&amp;rank=species&amp;extant=no&amp;taxon_status=accepted&amp;pres=regular&amp;limit=1&amp;rowcount=yes">Actinopterygii</a> — <a href="#source-pbdb">Paleobiology Database</a>. records_found: accepted species below the reference taxon, extant=no, pres=regular. Junior synonyms, ichnotaxa and form taxa excluded. A catalogue count, not an estimate of all species that ever existed.</p>
+<p>Sources: <a href="#source-col">Catalogue of Life COL26.9 base release</a>, <a href="#source-pbdb">Paleobiology Database</a>.</p>
+<p>GPT: RayFinnedFish. </p>
+</article>
+<article id="Tetrapod"><h2>Tetrapoda</h2>
+<p>Extinct reference count: 23,693; Extant reference count: 38,806.</p><p>Independent source snapshots; source coverage, dates and species concepts differ. Counts do not roll up in the ontology.</p>
+<p>Direct reference-taxon counts; no ontology-child totals or composite-taxon arithmetic.</p>
+<p>Extant: <a href="https://api.checklistbank.org/dataset/316321/taxon/9CK8W/metrics">Tetrapoda</a> — <a href="#source-col">Catalogue of Life COL26.9 base release</a>. Publisher-supplied speciesExtantCount from the reference-taxon metrics. Includes the release’s accepted and provisionally accepted species; does not rely on extinct=false annotations.</p>
+<p>Extinct: <a href="https://paleobiodb.org/data1.2/taxa/list.json?base_name=Tetrapoda&amp;rel=all_children&amp;rank=species&amp;extant=no&amp;taxon_status=accepted&amp;pres=regular&amp;limit=1&amp;rowcount=yes">Tetrapoda</a> — <a href="#source-pbdb">Paleobiology Database</a>. records_found: accepted species below the reference taxon, extant=no, pres=regular. Junior synonyms, ichnotaxa and form taxa excluded. A catalogue count, not an estimate of all species that ever existed.</p>
+<p>Sources: <a href="#source-col">Catalogue of Life COL26.9 base release</a>, <a href="#source-pbdb">Paleobiology Database</a>.</p>
+<p>GPT: Tetrapod. </p>
+</article>
+<article id="Amphibian"><h2>Amphibia</h2>
+<p>Extinct reference count: 772; Extant reference count: 9,136.</p><p>Independent source snapshots; source coverage, dates and species concepts differ. Counts do not roll up in the ontology.</p>
+<p>Direct reference-taxon counts; no ontology-child totals or composite-taxon arithmetic.</p>
+<p>Extant: <a href="https://amphibiaweb.org/">Amphibia</a> — <a href="#source-amphibiaweb">AmphibiaWeb live species counter</a>. Published live species counter retrieved 2026.10.10, used as a living/non-fossil species proxy; can include recently extinct taxa.</p>
+<p>Extinct: <a href="https://paleobiodb.org/data1.2/taxa/list.json?base_name=Amphibia&amp;rel=all_children&amp;rank=species&amp;extant=no&amp;taxon_status=accepted&amp;pres=regular&amp;limit=1&amp;rowcount=yes">Amphibia</a> — <a href="#source-pbdb">Paleobiology Database</a>. records_found: accepted species below the reference taxon, extant=no, pres=regular. Junior synonyms, ichnotaxa and form taxa excluded. A catalogue count, not an estimate of all species that ever existed.</p>
+<p>Sources: <a href="#source-col">Catalogue of Life COL26.9 base release</a>, <a href="#source-pbdb">Paleobiology Database</a>, <a href="#source-amphibiaweb">AmphibiaWeb live species counter</a>.</p>
+<p>GPT: Amphibian. </p>
+<p>.: Amphibian. </p>
+<p>SUMO: Amphibian. </p>
+</article>
+<article id="Turtle"><h2>Testudines</h2>
+<p>Extinct reference count: 1,005; Extant reference count: 370.</p><p>Independent source snapshots; source coverage, dates and species concepts differ. Counts do not roll up in the ontology.</p>
+<p>Direct reference-taxon counts; no ontology-child totals or composite-taxon arithmetic.</p>
+<p>Extant: <a href="https://api.checklistbank.org/dataset/316321/taxon/477/metrics">Testudines</a> — <a href="#source-col">Catalogue of Life COL26.9 base release</a>. Publisher-supplied speciesExtantCount from the reference-taxon metrics. Includes the release’s accepted and provisionally accepted species; does not rely on extinct=false annotations.</p>
+<p>Extinct: <a href="https://paleobiodb.org/data1.2/taxa/list.json?base_name=Testudines&amp;rel=all_children&amp;rank=species&amp;extant=no&amp;taxon_status=accepted&amp;pres=regular&amp;limit=1&amp;rowcount=yes">Testudines</a> — <a href="#source-pbdb">Paleobiology Database</a>. records_found: accepted species below the reference taxon, extant=no, pres=regular. Junior synonyms, ichnotaxa and form taxa excluded. A catalogue count, not an estimate of all species that ever existed.</p>
+<p>Sources: <a href="#source-col">Catalogue of Life COL26.9 base release</a>, <a href="#source-pbdb">Paleobiology Database</a>.</p>
+<p>GPT: Turtle. </p>
+</article>
+<article id="Crocodilian"><h2>Crocodylia</h2>
+<p>Extinct reference count: 262; Extant reference count: 27.</p><p>Independent source snapshots; source coverage, dates and species concepts differ. Counts do not roll up in the ontology.</p>
+<p>Direct reference-taxon counts; no ontology-child totals or composite-taxon arithmetic.</p>
+<p>Extant: <a href="https://api.checklistbank.org/dataset/316321/taxon/329/metrics">Crocodylia</a> — <a href="#source-col">Catalogue of Life COL26.9 base release</a>. Publisher-supplied speciesExtantCount from the reference-taxon metrics. Includes the release’s accepted and provisionally accepted species; does not rely on extinct=false annotations.</p>
+<p>Extinct: <a href="https://paleobiodb.org/data1.2/taxa/list.json?base_name=Crocodylia&amp;rel=all_children&amp;rank=species&amp;extant=no&amp;taxon_status=accepted&amp;pres=regular&amp;limit=1&amp;rowcount=yes">Crocodylia</a> — <a href="#source-pbdb">Paleobiology Database</a>. records_found: accepted species below the reference taxon, extant=no, pres=regular. Junior synonyms, ichnotaxa and form taxa excluded. A catalogue count, not an estimate of all species that ever existed.</p>
+<p>Sources: <a href="#source-col">Catalogue of Life COL26.9 base release</a>, <a href="#source-pbdb">Paleobiology Database</a>.</p>
+<p>GPT: Crocodilian. </p>
+</article>
+<article id="Bird"><h2>Aves</h2>
+<p>Extinct reference count: 1,743; Extant reference count: 10,868.</p><p>Independent source snapshots; source coverage, dates and species concepts differ. Counts do not roll up in the ontology.</p>
+<p>Direct reference-taxon counts; no ontology-child totals or composite-taxon arithmetic.</p>
+<p>Extant: <a href="https://api.checklistbank.org/dataset/316321/taxon/V2/metrics">Aves</a> — <a href="#source-col">Catalogue of Life COL26.9 base release</a>. Publisher-supplied speciesExtantCount from the reference-taxon metrics. Includes the release’s accepted and provisionally accepted species; does not rely on extinct=false annotations.</p>
+<p>Extinct: <a href="https://paleobiodb.org/data1.2/taxa/list.json?base_name=Aves&amp;rel=all_children&amp;rank=species&amp;extant=no&amp;taxon_status=accepted&amp;pres=regular&amp;limit=1&amp;rowcount=yes">Aves</a> — <a href="#source-pbdb">Paleobiology Database</a>. records_found: accepted species below the reference taxon, extant=no, pres=regular. Junior synonyms, ichnotaxa and form taxa excluded. A catalogue count, not an estimate of all species that ever existed.</p>
+<p>Sources: <a href="#source-col">Catalogue of Life COL26.9 base release</a>, <a href="#source-pbdb">Paleobiology Database</a>.</p>
+<p>GPT: Bird. </p>
+<p>.: Bird. </p>
+<p>SUMO: Bird. </p>
+</article>
+<article id="Reptile"><h2>Reptilia</h2>
+<p>Extinct reference count: 7,851; Extant reference count: 12,650.</p><p>Independent source snapshots; source coverage, dates and species concepts differ. Counts do not roll up in the ontology.</p>
+<p>Direct reference-taxon counts; no ontology-child totals or composite-taxon arithmetic.</p>
+<p>Extant: <a href="https://www.reptile-database.org/db-info/SpeciesStat.html">Non-avian reptiles</a> — <a href="#source-reptile">Reptile Database species statistics</a>. Published June 2026 non-avian reptile total, used as a non-fossil living-species proxy. No sum of our tree nodes.</p>
+<p>Extinct: <a href="https://paleobiodb.org/data1.2/taxa/list.json?base_name=Reptilia&amp;rel=all_children&amp;rank=species&amp;extant=no&amp;taxon_status=accepted&amp;pres=regular&amp;limit=1&amp;rowcount=yes">Reptilia</a> — <a href="#source-pbdb">Paleobiology Database</a>. records_found: accepted species below the reference taxon, extant=no, pres=regular. Junior synonyms, ichnotaxa and form taxa excluded. A catalogue count, not an estimate of all species that ever existed.</p>
+<p>Sources: <a href="#source-col">Catalogue of Life COL26.9 base release</a>, <a href="#source-pbdb">Paleobiology Database</a>, <a href="#source-reptile">Reptile Database species statistics</a>.</p>
+<p>.: Reptile. </p>
+<p>SUMO: Reptile. </p>
+</article>
+<article id="Plant"><h2>Embryophyta</h2>
+<p>Extinct reference count: 11,092; Extant reference count: 382,401.</p><p>Independent source snapshots; source coverage, dates and species concepts differ. Counts do not roll up in the ontology.</p>
+<p>Direct reference-taxon counts; no ontology-child totals or composite-taxon arithmetic.</p>
+<p>Extinct: <a href="https://paleobiodb.org/data1.2/taxa/list.json?base_name=Embryophyta&amp;rel=all_children&amp;rank=species&amp;extant=no&amp;taxon_status=accepted&amp;pres=regular&amp;limit=1&amp;rowcount=yes">Embryophyta</a> — <a href="#source-pbdb">Paleobiology Database</a>. records_found: accepted species below the reference taxon, extant=no, pres=regular. Junior synonyms, ichnotaxa and form taxa excluded. A catalogue count, not an estimate of all species that ever existed.</p>
+<p>Extant: <a href="https://worldfloraonline.org/">Embryophyta</a> — <a href="#source-wfo">World Flora Online</a>. Published accepted-species total for land plants, used as a living/non-fossil species proxy; recently extinct taxa can remain in the checklist.</p>
+<p>Sources: <a href="#source-pbdb">Paleobiology Database</a>, <a href="#source-wfo">World Flora Online</a>.</p>
+<p>GPT: Plant. </p>
+</article>
+<article id="FloweringPlant"><h2>Magnoliophyta</h2>
+<p>Extinct reference count: 153; Extant reference count: 368,486.</p><p>Independent source snapshots; source coverage, dates and species concepts differ. Counts do not roll up in the ontology.</p>
+<p>Direct reference-taxon counts; no ontology-child totals or composite-taxon arithmetic.</p>
+<p>Extinct: <a href="https://paleobiodb.org/data1.2/taxa/list.json?base_name=Magnoliophyta&amp;rel=all_children&amp;rank=species&amp;extant=no&amp;taxon_status=accepted&amp;pres=regular&amp;limit=1&amp;rowcount=yes">Magnoliophyta</a> — <a href="#source-pbdb">Paleobiology Database</a>. records_found: accepted species below the reference taxon, extant=no, pres=regular. Junior synonyms, ichnotaxa and form taxa excluded. A catalogue count, not an estimate of all species that ever existed.</p>
+<p>Extant: <a href="https://www.onezoom.org/life/@Magnoliopsida">Flowering plants (Magnoliopsida)</a> — <a href="#source-onezoom">OneZoom living tree</a>. Species count printed for the named clade in the main living-tree text page. Living-tree proxy can include recently extinct leaves; tree coverage differs from specialist checklists.</p>
+<p>Sources: <a href="#source-pbdb">Paleobiology Database</a>, <a href="#source-onezoom">OneZoom living tree</a>.</p>
+<p>GPT: FloweringPlant. </p>
+<p>.: FloweringPlant. </p>
+<p>SUMO: FloweringPlant. </p>
+</article>
+<article id="Gymnosperm"><h2>Gymnospermae</h2>
+<p>Extinct reference count: 1,089; Extant reference count: 1,194.</p><p>Independent source snapshots; source coverage, dates and species concepts differ. Counts do not roll up in the ontology.</p>
+<p>Direct reference-taxon counts; no ontology-child totals or composite-taxon arithmetic.</p>
+<p>Extinct: <a href="https://paleobiodb.org/data1.2/taxa/list.json?base_name=Gymnospermae&amp;rel=all_children&amp;rank=species&amp;extant=no&amp;taxon_status=accepted&amp;pres=regular&amp;limit=1&amp;rowcount=yes">Gymnospermae</a> — <a href="#source-pbdb">Paleobiology Database</a>. records_found: accepted species below the reference taxon, extant=no, pres=regular. Junior synonyms, ichnotaxa and form taxa excluded. A catalogue count, not an estimate of all species that ever existed.</p>
+<p>Extant: <a href="https://www.worldplants.de/world-plants-complete-list/total-species-count">Gymnosperms</a> — <a href="#source-worldplants">World Plants v26.08</a>. Published gymnosperm species count in World Plants 26.08, used as a non-fossil living-species proxy.</p>
+<p>Sources: <a href="#source-pbdb">Paleobiology Database</a>, <a href="#source-worldplants">World Plants v26.08</a>.</p>
+<p>GPT: Gymnosperm. </p>
+</article>
+<article id="SeedPlant"><h2>Spermatophyta</h2>
+<p>Extinct reference count: 6,188; Extant reference count: 370,438.</p><p>Independent source snapshots; source coverage, dates and species concepts differ. Counts do not roll up in the ontology.</p>
+<p>Direct reference-taxon counts; no ontology-child totals or composite-taxon arithmetic.</p>
+<p>Extinct: <a href="https://paleobiodb.org/data1.2/taxa/list.json?base_name=Spermatophyta&amp;rel=all_children&amp;rank=species&amp;extant=no&amp;taxon_status=accepted&amp;pres=regular&amp;limit=1&amp;rowcount=yes">Spermatophyta</a> — <a href="#source-pbdb">Paleobiology Database</a>. records_found: accepted species below the reference taxon, extant=no, pres=regular. Junior synonyms, ichnotaxa and form taxa excluded. A catalogue count, not an estimate of all species that ever existed.</p>
+<p>Extant: <a href="https://www.onezoom.org/life/@Spermatophyta=10218">Spermatophyta</a> — <a href="#source-onezoom">OneZoom living tree</a>. Species count printed for the named clade in the main living-tree text page. Living-tree proxy can include recently extinct leaves; tree coverage differs from specialist checklists.</p>
+<p>Sources: <a href="#source-pbdb">Paleobiology Database</a>, <a href="#source-onezoom">OneZoom living tree</a>.</p>
+<p>GPT: SeedPlant. </p>
+</article>
+<article id="Bilaterian"><h2>Bilateria</h2>
+<p>Extinct reference count: 158,724; Extant reference count: 1,399,466.</p><p>Independent source snapshots; source coverage, dates and species concepts differ. Counts do not roll up in the ontology.</p>
+<p>Direct reference-taxon counts; no ontology-child totals or composite-taxon arithmetic.</p>
+<p>Extinct: <a href="https://paleobiodb.org/data1.2/taxa/list.json?base_name=Bilateria&amp;rel=all_children&amp;rank=species&amp;extant=no&amp;taxon_status=accepted&amp;pres=regular&amp;limit=1&amp;rowcount=yes">Bilateria</a> — <a href="#source-pbdb">Paleobiology Database</a>. records_found: accepted species below the reference taxon, extant=no, pres=regular. Junior synonyms, ichnotaxa and form taxa excluded. A catalogue count, not an estimate of all species that ever existed.</p>
+<p>Extant: <a href="https://www.onezoom.org/life/@Bilateria=117569">Bilateria</a> — <a href="#source-onezoom">OneZoom living tree</a>. Species count printed for the named clade in the main living-tree text page. Living-tree proxy can include recently extinct leaves; tree coverage differs from specialist checklists.</p>
+<p>Sources: <a href="#source-pbdb">Paleobiology Database</a>, <a href="#source-onezoom">OneZoom living tree</a>.</p>
+<p>GPT: Bilaterian. </p>
+</article>
+<article id="LobeFinnedVertebrate"><h2>Sarcopterygii</h2>
+<p>Extinct reference count: 24,406; Extant reference count: 34,896.</p><p>Independent source snapshots; source coverage, dates and species concepts differ. Counts do not roll up in the ontology.</p>
+<p>Direct reference-taxon counts; no ontology-child totals or composite-taxon arithmetic.</p>
+<p>Extinct: <a href="https://paleobiodb.org/data1.2/taxa/list.json?base_name=Sarcopterygii&amp;rel=all_children&amp;rank=species&amp;extant=no&amp;taxon_status=accepted&amp;pres=regular&amp;limit=1&amp;rowcount=yes">Sarcopterygii</a> — <a href="#source-pbdb">Paleobiology Database</a>. records_found: accepted species below the reference taxon, extant=no, pres=regular. Junior synonyms, ichnotaxa and form taxa excluded. A catalogue count, not an estimate of all species that ever existed.</p>
+<p>Extant: <a href="https://www.onezoom.org/life/@Sarcopterygii">Lobe Finned Fishes, including Tetrapods (Sarcopterygii)</a> — <a href="#source-onezoom">OneZoom living tree</a>. Species count printed for the named clade in the main living-tree text page. Living-tree proxy can include recently extinct leaves; tree coverage differs from specialist checklists.</p>
+<p>Sources: <a href="#source-pbdb">Paleobiology Database</a>, <a href="#source-onezoom">OneZoom living tree</a>.</p>
+<p>GPT: LobeFinnedVertebrate. </p>
+</article>
+<article id="Amniote"><h2>Amniota</h2>
+<p>Extinct reference count: 22,683; Extant reference count: 26,201.</p><p>Independent source snapshots; source coverage, dates and species concepts differ. Counts do not roll up in the ontology.</p>
+<p>Direct reference-taxon counts; no ontology-child totals or composite-taxon arithmetic.</p>
+<p>Extinct: <a href="https://paleobiodb.org/data1.2/taxa/list.json?base_name=Amniota&amp;rel=all_children&amp;rank=species&amp;extant=no&amp;taxon_status=accepted&amp;pres=regular&amp;limit=1&amp;rowcount=yes">Amniota</a> — <a href="#source-pbdb">Paleobiology Database</a>. records_found: accepted species below the reference taxon, extant=no, pres=regular. Junior synonyms, ichnotaxa and form taxa excluded. A catalogue count, not an estimate of all species that ever existed.</p>
+<p>Extant: <a href="https://www.onezoom.org/life/@Amniota=229560">Amniota</a> — <a href="#source-onezoom">OneZoom living tree</a>. Species count printed for the named clade in the main living-tree text page. Living-tree proxy can include recently extinct leaves; tree coverage differs from specialist checklists.</p>
+<p>Sources: <a href="#source-pbdb">Paleobiology Database</a>, <a href="#source-onezoom">OneZoom living tree</a>.</p>
+<p>GPT: Amniote. </p>
+</article>
+<article id="Sauropsid"><h2>Sauropsida</h2>
+<p>Extinct reference count: 7,851; Extant reference count: 21,155.</p><p>Independent source snapshots; source coverage, dates and species concepts differ. Counts do not roll up in the ontology.</p>
+<p>Direct reference-taxon counts; no ontology-child totals or composite-taxon arithmetic.</p>
+<p>Extinct: <a href="https://paleobiodb.org/data1.2/taxa/list.json?base_name=Sauropsida&amp;rel=all_children&amp;rank=species&amp;extant=no&amp;taxon_status=accepted&amp;pres=regular&amp;limit=1&amp;rowcount=yes">Sauropsida</a> — <a href="#source-pbdb">Paleobiology Database</a>. records_found: accepted species below the reference taxon, extant=no, pres=regular. Junior synonyms, ichnotaxa and form taxa excluded. A catalogue count, not an estimate of all species that ever existed.</p>
+<p>Extant: <a href="https://www.onezoom.org/life/@Sauropsida=639642">Sauropsida</a> — <a href="#source-onezoom">OneZoom living tree</a>. Species count printed for the named clade in the main living-tree text page. Living-tree proxy can include recently extinct leaves; tree coverage differs from specialist checklists.</p>
+<p>Sources: <a href="#source-pbdb">Paleobiology Database</a>, <a href="#source-onezoom">OneZoom living tree</a>.</p>
+<p>GPT: Sauropsid. </p>
+</article>
+<article id="Archosaur"><h2>Archosauria</h2>
+<p>Extinct reference count: 4,665; Extant reference count: 10,025.</p><p>Independent source snapshots; source coverage, dates and species concepts differ. Counts do not roll up in the ontology.</p>
+<p>Direct reference-taxon counts; no ontology-child totals or composite-taxon arithmetic.</p>
+<p>Extinct: <a href="https://paleobiodb.org/data1.2/taxa/list.json?base_name=Archosauria&amp;rel=all_children&amp;rank=species&amp;extant=no&amp;taxon_status=accepted&amp;pres=regular&amp;limit=1&amp;rowcount=yes">Archosauria</a> — <a href="#source-pbdb">Paleobiology Database</a>. records_found: accepted species below the reference taxon, extant=no, pres=regular. Junior synonyms, ichnotaxa and form taxa excluded. A catalogue count, not an estimate of all species that ever existed.</p>
+<p>Extant: <a href="https://www.onezoom.org/life/@Archosauria=335588">Archosauria</a> — <a href="#source-onezoom">OneZoom living tree</a>. Species count printed for the named clade in the main living-tree text page. Living-tree proxy can include recently extinct leaves; tree coverage differs from specialist checklists.</p>
+<p>Sources: <a href="#source-pbdb">Paleobiology Database</a>, <a href="#source-onezoom">OneZoom living tree</a>.</p>
+<p>GPT: Archosaur. </p>
+</article>
+<article id="Lepidosaur"><h2>Lepidosauria</h2>
+<p>Extinct reference count: 81; Extant reference count: 10,899.</p><p>Independent source snapshots; source coverage, dates and species concepts differ. Counts do not roll up in the ontology.</p>
+<p>Direct reference-taxon counts; no ontology-child totals or composite-taxon arithmetic.</p>
+<p>Extinct: <a href="https://paleobiodb.org/data1.2/taxa/list.json?base_name=Lepidosauria&amp;rel=all_children&amp;rank=species&amp;extant=no&amp;taxon_status=accepted&amp;pres=regular&amp;limit=1&amp;rowcount=yes">Lepidosauria</a> — <a href="#source-pbdb">Paleobiology Database</a>. records_found: accepted species below the reference taxon, extant=no, pres=regular. Junior synonyms, ichnotaxa and form taxa excluded. A catalogue count, not an estimate of all species that ever existed.</p>
+<p>Extant: <a href="https://www.onezoom.org/life/@Lepidosauria=35881">Lepidosauria</a> — <a href="#source-onezoom">OneZoom living tree</a>. Species count printed for the named clade in the main living-tree text page. Living-tree proxy can include recently extinct leaves; tree coverage differs from specialist checklists.</p>
+<p>Sources: <a href="#source-pbdb">Paleobiology Database</a>, <a href="#source-onezoom">OneZoom living tree</a>.</p>
+<p>GPT: Lepidosaur. </p>
+</article>
+<article id="Organism"><h2>Life</h2>
+<p>Extinct reference count: 191,541; Extant reference count: 2,228,001.</p><p>Independent source snapshots; source coverage, dates and species concepts differ. Counts do not roll up in the ontology.</p>
+<p>Direct reference-taxon counts; no ontology-child totals or composite-taxon arithmetic.</p>
+<p>Extinct: <a href="https://paleobiodb.org/data1.2/taxa/list.json?base_name=Life&amp;rel=all_children&amp;rank=species&amp;extant=no&amp;taxon_status=accepted&amp;pres=regular&amp;limit=1&amp;rowcount=yes">Life</a> — <a href="#source-pbdb">Paleobiology Database</a>. records_found: accepted species below the reference taxon, extant=no, pres=regular. Junior synonyms, ichnotaxa and form taxa excluded. A catalogue count, not an estimate of all species that ever existed.</p>
+<p>Extant: <a href="https://www.onezoom.org/life/@biota=93302">All life (biota)</a> — <a href="#source-onezoom">OneZoom living tree</a>. Species count printed for the named clade in the main living-tree text page. Living-tree proxy can include recently extinct leaves; tree coverage differs from specialist checklists.</p>
+<p>Sources: <a href="#source-pbdb">Paleobiology Database</a>, <a href="#source-onezoom">OneZoom living tree</a>.</p>
+<p>GPT: Organism. </p>
+<p>.: Organism. </p>
+<p>SUMO: Organism. </p>
+<p>Wikipedia: Category:Life, Category:Organisms. Associated reference-taxon count, not Wikipedia category/article counts. Associated reference-taxon count, not Wikipedia category/article counts.</p>
+</article>
+<article id="Mammal"><h2>Mammalia</h2>
+<p>Extinct reference count: 13,957; Extant reference count: 6,791.</p><p>Independent source snapshots; source coverage, dates and species concepts differ. Counts do not roll up in the ontology.</p>
+<p>Direct reference-taxon counts; no ontology-child totals or composite-taxon arithmetic.</p>
+<p>Extinct: <a href="https://paleobiodb.org/data1.2/taxa/list.json?base_name=Mammalia&amp;rel=all_children&amp;rank=species&amp;extant=no&amp;taxon_status=accepted&amp;pres=regular&amp;limit=1&amp;rowcount=yes">Mammalia</a> — <a href="#source-pbdb">Paleobiology Database</a>. records_found: accepted species below the reference taxon, extant=no, pres=regular. Junior synonyms, ichnotaxa and form taxa excluded. A catalogue count, not an estimate of all species that ever existed.</p>
+<p>Extant: <a href="https://www.mammaldiversity.org/releases/">Mammalia</a> — <a href="#source-mdd">ASM Mammal Diversity Database v2.5</a>. All species rows Count extinct=0 rows in MDD v2.5; domestic species included.</p>
+<p>Sources: <a href="#source-pbdb">Paleobiology Database</a>, <a href="#source-mdd">ASM Mammal Diversity Database v2.5</a>.</p>
+<p>GPT: Mammal. </p>
+<p>.: Mammal. </p>
+<p>SUMO: Mammal. </p>
+</article>
+<article id="Monotreme"><h2>Monotremata</h2>
+<p>Extinct reference count: 14; Extant reference count: 5.</p><p>Independent source snapshots; source coverage, dates and species concepts differ. Counts do not roll up in the ontology.</p>
+<p>Direct reference-taxon counts; no ontology-child totals or composite-taxon arithmetic.</p>
+<p>Extinct: <a href="https://paleobiodb.org/data1.2/taxa/list.json?base_name=Monotremata&amp;rel=all_children&amp;rank=species&amp;extant=no&amp;taxon_status=accepted&amp;pres=regular&amp;limit=1&amp;rowcount=yes">Monotremata</a> — <a href="#source-pbdb">Paleobiology Database</a>. records_found: accepted species below the reference taxon, extant=no, pres=regular. Junior synonyms, ichnotaxa and form taxa excluded. A catalogue count, not an estimate of all species that ever existed.</p>
+<p>Extant: <a href="https://www.mammaldiversity.org/releases/">Monotremata</a> — <a href="#source-mdd">ASM Mammal Diversity Database v2.5</a>. Filter order = Monotremata; extinct = 1 or 0. Count extinct=0 rows in MDD v2.5; domestic species included.</p>
+<p>Sources: <a href="#source-pbdb">Paleobiology Database</a>, <a href="#source-mdd">ASM Mammal Diversity Database v2.5</a>.</p>
+<p>GPT: Monotreme. </p>
+</article>
+<article id="Marsupial"><h2>Metatheria</h2>
+<p>Extinct reference count: 833; Extant reference count: 410.</p><p>Independent source snapshots; source coverage, dates and species concepts differ. Counts do not roll up in the ontology.</p>
+<p>Direct reference-taxon counts; no ontology-child totals or composite-taxon arithmetic.</p>
+<p>Extinct: <a href="https://paleobiodb.org/data1.2/taxa/list.json?base_name=Metatheria&amp;rel=all_children&amp;rank=species&amp;extant=no&amp;taxon_status=accepted&amp;pres=regular&amp;limit=1&amp;rowcount=yes">Metatheria</a> — <a href="#source-pbdb">Paleobiology Database</a>. records_found: accepted species below the reference taxon, extant=no, pres=regular. Junior synonyms, ichnotaxa and form taxa excluded. A catalogue count, not an estimate of all species that ever existed.</p>
+<p>Extant: <a href="https://www.mammaldiversity.org/releases/">Marsupialia</a> — <a href="#source-mdd">ASM Mammal Diversity Database v2.5</a>. Filter infraclass = Marsupialia; extinct = 1 or 0. Count extinct=0 rows in MDD v2.5; domestic species included.</p>
+<p>Sources: <a href="#source-pbdb">Paleobiology Database</a>, <a href="#source-mdd">ASM Mammal Diversity Database v2.5</a>.</p>
+<p>GPT: Marsupial. </p>
+<p>.: Marsupial. Conventional named taxon; older functional wording is approximate.</p>
+<p>SUMO: Marsupial. Conventional named taxon; older functional wording is approximate.</p>
+</article>
+<article id="PlacentalMammal"><h2>Eutheria</h2>
+<p>Extinct reference count: 12,507; Extant reference count: 6,376.</p><p>Independent source snapshots; source coverage, dates and species concepts differ. Counts do not roll up in the ontology.</p>
+<p>Direct reference-taxon counts; no ontology-child totals or composite-taxon arithmetic.</p>
+<p>Extinct: <a href="https://paleobiodb.org/data1.2/taxa/list.json?base_name=Eutheria&amp;rel=all_children&amp;rank=species&amp;extant=no&amp;taxon_status=accepted&amp;pres=regular&amp;limit=1&amp;rowcount=yes">Eutheria</a> — <a href="#source-pbdb">Paleobiology Database</a>. records_found: accepted species below the reference taxon, extant=no, pres=regular. Junior synonyms, ichnotaxa and form taxa excluded. A catalogue count, not an estimate of all species that ever existed.</p>
+<p>Extant: <a href="https://www.mammaldiversity.org/releases/">Placentalia</a> — <a href="#source-mdd">ASM Mammal Diversity Database v2.5</a>. Filter infraclass = Placentalia; extinct = 1 or 0. Count extinct=0 rows in MDD v2.5; domestic species included.</p>
+<p>Sources: <a href="#source-pbdb">Paleobiology Database</a>, <a href="#source-mdd">ASM Mammal Diversity Database v2.5</a>.</p>
+<p>GPT: PlacentalMammal. </p>
+</article>
+<article id="Carnivoran"><h2>Carnivora</h2>
+<p>Extinct reference count: 1,324; Extant reference count: 314.</p><p>Independent source snapshots; source coverage, dates and species concepts differ. Counts do not roll up in the ontology.</p>
+<p>Direct reference-taxon counts; no ontology-child totals or composite-taxon arithmetic.</p>
+<p>Extinct: <a href="https://paleobiodb.org/data1.2/taxa/list.json?base_name=Carnivora&amp;rel=all_children&amp;rank=species&amp;extant=no&amp;taxon_status=accepted&amp;pres=regular&amp;limit=1&amp;rowcount=yes">Carnivora</a> — <a href="#source-pbdb">Paleobiology Database</a>. records_found: accepted species below the reference taxon, extant=no, pres=regular. Junior synonyms, ichnotaxa and form taxa excluded. A catalogue count, not an estimate of all species that ever existed.</p>
+<p>Extant: <a href="https://www.mammaldiversity.org/releases/">Carnivora</a> — <a href="#source-mdd">ASM Mammal Diversity Database v2.5</a>. Filter order = Carnivora; extinct = 1 or 0. Count extinct=0 rows in MDD v2.5; domestic species included.</p>
+<p>Sources: <a href="#source-pbdb">Paleobiology Database</a>, <a href="#source-mdd">ASM Mammal Diversity Database v2.5</a>.</p>
+<p>GPT: Carnivoran. </p>
+</article>
+<article id="Canine"><h2>Canidae</h2>
+<p>Extinct reference count: 235; Extant reference count: 39.</p><p>Independent source snapshots; source coverage, dates and species concepts differ. Counts do not roll up in the ontology.</p>
+<p>Direct reference-taxon counts; no ontology-child totals or composite-taxon arithmetic.</p>
+<p>Extinct: <a href="https://paleobiodb.org/data1.2/taxa/list.json?base_name=Canidae&amp;rel=all_children&amp;rank=species&amp;extant=no&amp;taxon_status=accepted&amp;pres=regular&amp;limit=1&amp;rowcount=yes">Canidae</a> — <a href="#source-pbdb">Paleobiology Database</a>. records_found: accepted species below the reference taxon, extant=no, pres=regular. Junior synonyms, ichnotaxa and form taxa excluded. A catalogue count, not an estimate of all species that ever existed.</p>
+<p>Extant: <a href="https://www.mammaldiversity.org/releases/">Canidae</a> — <a href="#source-mdd">ASM Mammal Diversity Database v2.5</a>. Filter family = Canidae; extinct = 1 or 0. Count extinct=0 rows in MDD v2.5; domestic species included.</p>
+<p>Sources: <a href="#source-pbdb">Paleobiology Database</a>, <a href="#source-mdd">ASM Mammal Diversity Database v2.5</a>.</p>
+<p>GPT: Canine. </p>
+<p>.: Canine. Conventional named taxon; older functional wording is approximate.</p>
+<p>SUMO: Canine. Conventional named taxon; older functional wording is approximate.</p>
+</article>
+<article id="Feline"><h2>Felidae</h2>
+<p>Extinct reference count: 133; Extant reference count: 46.</p><p>Independent source snapshots; source coverage, dates and species concepts differ. Counts do not roll up in the ontology.</p>
+<p>Direct reference-taxon counts; no ontology-child totals or composite-taxon arithmetic.</p>
+<p>Extinct: <a href="https://paleobiodb.org/data1.2/taxa/list.json?base_name=Felidae&amp;rel=all_children&amp;rank=species&amp;extant=no&amp;taxon_status=accepted&amp;pres=regular&amp;limit=1&amp;rowcount=yes">Felidae</a> — <a href="#source-pbdb">Paleobiology Database</a>. records_found: accepted species below the reference taxon, extant=no, pres=regular. Junior synonyms, ichnotaxa and form taxa excluded. A catalogue count, not an estimate of all species that ever existed.</p>
+<p>Extant: <a href="https://www.mammaldiversity.org/releases/">Felidae</a> — <a href="#source-mdd">ASM Mammal Diversity Database v2.5</a>. Filter family = Felidae; extinct = 1 or 0. Count extinct=0 rows in MDD v2.5; domestic species included.</p>
+<p>Sources: <a href="#source-pbdb">Paleobiology Database</a>, <a href="#source-mdd">ASM Mammal Diversity Database v2.5</a>.</p>
+<p>GPT: Feline. </p>
+<p>.: Feline. Conventional named taxon; older functional wording is approximate.</p>
+<p>SUMO: Feline. Conventional named taxon; older functional wording is approximate.</p>
+</article>
+<article id="Dog"><h2>Canis familiaris</h2>
+<p>Extinct reference count: 0; Extant reference count: 1.</p><p>Independent source snapshots; source coverage, dates and species concepts differ. Counts do not roll up in the ontology.</p>
+<p>Direct reference-taxon counts; no ontology-child totals or composite-taxon arithmetic.</p>
+<p>Extinct: <a href="https://paleobiodb.org/data1.2/taxa/list.json?base_name=Canis+familiaris&amp;rel=all_children&amp;rank=species&amp;extant=no&amp;taxon_status=accepted&amp;pres=regular&amp;limit=1&amp;rowcount=yes">Canis familiaris</a> — <a href="#source-pbdb">Paleobiology Database</a>. records_found: accepted species below the reference taxon, extant=no, pres=regular. Junior synonyms, ichnotaxa and form taxa excluded. A catalogue count, not an estimate of all species that ever existed.</p>
+<p>Extant: <a href="https://www.mammaldiversity.org/releases/">Canis familiaris</a> — <a href="#source-mdd">ASM Mammal Diversity Database v2.5</a>. Filter sciName = Canis_familiaris; extinct = 1 or 0. Count extinct=0 rows in MDD v2.5; domestic species included.</p>
+<p>Sources: <a href="#source-pbdb">Paleobiology Database</a>, <a href="#source-mdd">ASM Mammal Diversity Database v2.5</a>.</p>
+<p>GPT: Dog. </p>
+</article>
+<article id="Cat"><h2>Felis catus</h2>
+<p>Extinct reference count: 0; Extant reference count: 1.</p><p>Independent source snapshots; source coverage, dates and species concepts differ. Counts do not roll up in the ontology.</p>
+<p>Direct reference-taxon counts; no ontology-child totals or composite-taxon arithmetic.</p>
+<p>Extinct: <a href="https://paleobiodb.org/data1.2/taxa/list.json?base_name=Felis+catus&amp;rel=all_children&amp;rank=species&amp;extant=no&amp;taxon_status=accepted&amp;pres=regular&amp;limit=1&amp;rowcount=yes">Felis catus</a> — <a href="#source-pbdb">Paleobiology Database</a>. records_found: accepted species below the reference taxon, extant=no, pres=regular. Junior synonyms, ichnotaxa and form taxa excluded. A catalogue count, not an estimate of all species that ever existed.</p>
+<p>Extant: <a href="https://www.mammaldiversity.org/releases/">Felis catus</a> — <a href="#source-mdd">ASM Mammal Diversity Database v2.5</a>. Filter sciName = Felis_catus; extinct = 1 or 0. Count extinct=0 rows in MDD v2.5; domestic species included.</p>
+<p>Sources: <a href="#source-pbdb">Paleobiology Database</a>, <a href="#source-mdd">ASM Mammal Diversity Database v2.5</a>.</p>
+<p>GPT: Cat. </p>
+</article>
+<article id="Primate"><h2>Primates</h2>
+<p>Extinct reference count: 734; Extant reference count: 510.</p><p>Independent source snapshots; source coverage, dates and species concepts differ. Counts do not roll up in the ontology.</p>
+<p>Direct reference-taxon counts; no ontology-child totals or composite-taxon arithmetic.</p>
+<p>Extinct: <a href="https://paleobiodb.org/data1.2/taxa/list.json?base_name=Primates&amp;rel=all_children&amp;rank=species&amp;extant=no&amp;taxon_status=accepted&amp;pres=regular&amp;limit=1&amp;rowcount=yes">Primates</a> — <a href="#source-pbdb">Paleobiology Database</a>. records_found: accepted species below the reference taxon, extant=no, pres=regular. Junior synonyms, ichnotaxa and form taxa excluded. A catalogue count, not an estimate of all species that ever existed.</p>
+<p>Extant: <a href="https://www.mammaldiversity.org/releases/">Primates</a> — <a href="#source-mdd">ASM Mammal Diversity Database v2.5</a>. Filter order = Primates; extinct = 1 or 0. Count extinct=0 rows in MDD v2.5; domestic species included.</p>
+<p>Sources: <a href="#source-pbdb">Paleobiology Database</a>, <a href="#source-mdd">ASM Mammal Diversity Database v2.5</a>.</p>
+<p>GPT: Primate. </p>
+<p>.: Primate. </p>
+<p>SUMO: Primate. </p>
+</article>
+<article id="Ape"><h2>Hominoidea</h2>
+<p>Extinct reference count: 86; Extant reference count: 28.</p><p>Independent source snapshots; source coverage, dates and species concepts differ. Counts do not roll up in the ontology.</p>
+<p>Direct reference-taxon counts; no ontology-child totals or composite-taxon arithmetic.</p>
+<p>Extinct: <a href="https://paleobiodb.org/data1.2/taxa/list.json?base_name=Hominoidea&amp;rel=all_children&amp;rank=species&amp;extant=no&amp;taxon_status=accepted&amp;pres=regular&amp;limit=1&amp;rowcount=yes">Hominoidea</a> — <a href="#source-pbdb">Paleobiology Database</a>. records_found: accepted species below the reference taxon, extant=no, pres=regular. Junior synonyms, ichnotaxa and form taxa excluded. A catalogue count, not an estimate of all species that ever existed.</p>
+<p>Extant: <a href="https://www.mammaldiversity.org/releases/">Hominoidea</a> — <a href="#source-mdd">ASM Mammal Diversity Database v2.5</a>. Filter superfamily = Hominoidea; extinct = 1 or 0. Count extinct=0 rows in MDD v2.5; domestic species included.</p>
+<p>Sources: <a href="#source-pbdb">Paleobiology Database</a>, <a href="#source-mdd">ASM Mammal Diversity Database v2.5</a>.</p>
+<p>GPT: Ape. </p>
+<p>.: Ape. </p>
+<p>SUMO: Ape. </p>
+</article>
+<article id="Hominid"><h2>Hominidae</h2>
+<p>Extinct reference count: 61; Extant reference count: 8.</p><p>Independent source snapshots; source coverage, dates and species concepts differ. Counts do not roll up in the ontology.</p>
+<p>Direct reference-taxon counts; no ontology-child totals or composite-taxon arithmetic.</p>
+<p>Extinct: <a href="https://paleobiodb.org/data1.2/taxa/list.json?base_name=Hominidae&amp;rel=all_children&amp;rank=species&amp;extant=no&amp;taxon_status=accepted&amp;pres=regular&amp;limit=1&amp;rowcount=yes">Hominidae</a> — <a href="#source-pbdb">Paleobiology Database</a>. records_found: accepted species below the reference taxon, extant=no, pres=regular. Junior synonyms, ichnotaxa and form taxa excluded. A catalogue count, not an estimate of all species that ever existed.</p>
+<p>Extant: <a href="https://www.mammaldiversity.org/releases/">Hominidae</a> — <a href="#source-mdd">ASM Mammal Diversity Database v2.5</a>. Filter family = Hominidae; extinct = 1 or 0. Count extinct=0 rows in MDD v2.5; domestic species included.</p>
+<p>Sources: <a href="#source-pbdb">Paleobiology Database</a>, <a href="#source-mdd">ASM Mammal Diversity Database v2.5</a>.</p>
+<p>GPT: Hominid. </p>
+<p>.: Hominid. </p>
+<p>SUMO: Hominid. </p>
+</article>
+<article id="Human"><h2>Homo sapiens</h2>
+<p>Extinct reference count: 0; Extant reference count: 1.</p><p>Independent source snapshots; source coverage, dates and species concepts differ. Counts do not roll up in the ontology.</p>
+<p>Direct reference-taxon counts; no ontology-child totals or composite-taxon arithmetic.</p>
+<p>Extinct: <a href="https://paleobiodb.org/data1.2/taxa/list.json?base_name=Homo+sapiens&amp;rel=all_children&amp;rank=species&amp;extant=no&amp;taxon_status=accepted&amp;pres=regular&amp;limit=1&amp;rowcount=yes">Homo sapiens</a> — <a href="#source-pbdb">Paleobiology Database</a>. records_found: accepted species below the reference taxon, extant=no, pres=regular. Junior synonyms, ichnotaxa and form taxa excluded. A catalogue count, not an estimate of all species that ever existed.</p>
+<p>Extant: <a href="https://www.mammaldiversity.org/releases/">Homo sapiens</a> — <a href="#source-mdd">ASM Mammal Diversity Database v2.5</a>. Filter sciName = Homo_sapiens; extinct = 1 or 0. Count extinct=0 rows in MDD v2.5; domestic species included.</p>
+<p>Sources: <a href="#source-pbdb">Paleobiology Database</a>, <a href="#source-mdd">ASM Mammal Diversity Database v2.5</a>.</p>
+<p>GPT: Human. </p>
+<p>.: Human. </p>
+<p>SUMO: Human. </p>
+<p>Wikipedia: Category:Humans. Species in the associated taxon, not counts of Wikipedia articles or subcategories.</p>
+</article>
+<article id="Rodent"><h2>Rodentia</h2>
+<p>Extinct reference count: 2,730; Extant reference count: 2,766.</p><p>Independent source snapshots; source coverage, dates and species concepts differ. Counts do not roll up in the ontology.</p>
+<p>Direct reference-taxon counts; no ontology-child totals or composite-taxon arithmetic.</p>
+<p>Extinct: <a href="https://paleobiodb.org/data1.2/taxa/list.json?base_name=Rodentia&amp;rel=all_children&amp;rank=species&amp;extant=no&amp;taxon_status=accepted&amp;pres=regular&amp;limit=1&amp;rowcount=yes">Rodentia</a> — <a href="#source-pbdb">Paleobiology Database</a>. records_found: accepted species below the reference taxon, extant=no, pres=regular. Junior synonyms, ichnotaxa and form taxa excluded. A catalogue count, not an estimate of all species that ever existed.</p>
+<p>Extant: <a href="https://www.mammaldiversity.org/releases/">Rodentia</a> — <a href="#source-mdd">ASM Mammal Diversity Database v2.5</a>. Filter order = Rodentia; extinct = 1 or 0. Count extinct=0 rows in MDD v2.5; domestic species included.</p>
+<p>Sources: <a href="#source-pbdb">Paleobiology Database</a>, <a href="#source-mdd">ASM Mammal Diversity Database v2.5</a>.</p>
+<p>GPT: Rodent. </p>
+<p>.: Rodent. </p>
+<p>SUMO: Rodent. </p>
+</article>
+<article id="Cetartiodactyl"><h2>Artiodactyla</h2>
+<p>Extinct reference count: 2,410; Extant reference count: 368.</p><p>Independent source snapshots; source coverage, dates and species concepts differ. Counts do not roll up in the ontology.</p>
+<p>Direct reference-taxon counts; no ontology-child totals or composite-taxon arithmetic.</p>
+<p>Extinct: <a href="https://paleobiodb.org/data1.2/taxa/list.json?base_name=Artiodactyla&amp;rel=all_children&amp;rank=species&amp;extant=no&amp;taxon_status=accepted&amp;pres=regular&amp;limit=1&amp;rowcount=yes">Artiodactyla</a> — <a href="#source-pbdb">Paleobiology Database</a>. records_found: accepted species below the reference taxon, extant=no, pres=regular. Junior synonyms, ichnotaxa and form taxa excluded. A catalogue count, not an estimate of all species that ever existed.</p>
+<p>Extant: <a href="https://www.mammaldiversity.org/releases/">Artiodactyla</a> — <a href="#source-mdd">ASM Mammal Diversity Database v2.5</a>. Filter order = Artiodactyla; extinct = 1 or 0. Count extinct=0 rows in MDD v2.5; domestic species included.</p>
+<p>Sources: <a href="#source-pbdb">Paleobiology Database</a>, <a href="#source-mdd">ASM Mammal Diversity Database v2.5</a>.</p>
+<p>GPT: Cetartiodactyl. </p>
+</article>
+<article id="Cetacean"><h2>Cetacea</h2>
+<p>Extinct reference count: 623; Extant reference count: 102.</p><p>Independent source snapshots; source coverage, dates and species concepts differ. Counts do not roll up in the ontology.</p>
+<p>Direct reference-taxon counts; no ontology-child totals or composite-taxon arithmetic.</p>
+<p>Extinct: <a href="https://paleobiodb.org/data1.2/taxa/list.json?base_name=Cetacea&amp;rel=all_children&amp;rank=species&amp;extant=no&amp;taxon_status=accepted&amp;pres=regular&amp;limit=1&amp;rowcount=yes">Cetacea</a> — <a href="#source-pbdb">Paleobiology Database</a>. records_found: accepted species below the reference taxon, extant=no, pres=regular. Junior synonyms, ichnotaxa and form taxa excluded. A catalogue count, not an estimate of all species that ever existed.</p>
+<p>Extant: <a href="https://www.mammaldiversity.org/releases/">Cetacea</a> — <a href="#source-mdd">ASM Mammal Diversity Database v2.5</a>. Filter suborder = Cetacea; extinct = 1 or 0. Count extinct=0 rows in MDD v2.5; domestic species included.</p>
+<p>Sources: <a href="#source-pbdb">Paleobiology Database</a>, <a href="#source-mdd">ASM Mammal Diversity Database v2.5</a>.</p>
+<p>GPT: Cetacean. </p>
+</article>
+<article id="Perissodactyl"><h2>Perissodactyla</h2>
+<p>Extinct reference count: 1,052; Extant reference count: 18.</p><p>Independent source snapshots; source coverage, dates and species concepts differ. Counts do not roll up in the ontology.</p>
+<p>Direct reference-taxon counts; no ontology-child totals or composite-taxon arithmetic.</p>
+<p>Extinct: <a href="https://paleobiodb.org/data1.2/taxa/list.json?base_name=Perissodactyla&amp;rel=all_children&amp;rank=species&amp;extant=no&amp;taxon_status=accepted&amp;pres=regular&amp;limit=1&amp;rowcount=yes">Perissodactyla</a> — <a href="#source-pbdb">Paleobiology Database</a>. records_found: accepted species below the reference taxon, extant=no, pres=regular. Junior synonyms, ichnotaxa and form taxa excluded. A catalogue count, not an estimate of all species that ever existed.</p>
+<p>Extant: <a href="https://www.mammaldiversity.org/releases/">Perissodactyla</a> — <a href="#source-mdd">ASM Mammal Diversity Database v2.5</a>. Filter order = Perissodactyla; extinct = 1 or 0. Count extinct=0 rows in MDD v2.5; domestic species included.</p>
+<p>Sources: <a href="#source-pbdb">Paleobiology Database</a>, <a href="#source-mdd">ASM Mammal Diversity Database v2.5</a>.</p>
+<p>GPT: Perissodactyl. </p>
+</article>
+<article id="Simian"><h2>Simiiformes</h2>
+<p>Extinct reference count: 267; Extant reference count: 358.</p><p>Independent source snapshots; source coverage, dates and species concepts differ. Counts do not roll up in the ontology.</p>
+<p>Direct reference-taxon counts; no ontology-child totals or composite-taxon arithmetic.</p>
+<p>Extinct: <a href="https://paleobiodb.org/data1.2/taxa/list.json?base_name=Simiiformes&amp;rel=all_children&amp;rank=species&amp;extant=no&amp;taxon_status=accepted&amp;pres=regular&amp;limit=1&amp;rowcount=yes">Simiiformes</a> — <a href="#source-pbdb">Paleobiology Database</a>. records_found: accepted species below the reference taxon, extant=no, pres=regular. Junior synonyms, ichnotaxa and form taxa excluded. A catalogue count, not an estimate of all species that ever existed.</p>
+<p>Extant: <a href="https://www.mammaldiversity.org/releases/">Simiiformes</a> — <a href="#source-mdd">ASM Mammal Diversity Database v2.5</a>. Filter infraorder = Simiiformes; extinct = 1 or 0. Count extinct=0 rows in MDD v2.5; domestic species included.</p>
+<p>Sources: <a href="#source-pbdb">Paleobiology Database</a>, <a href="#source-mdd">ASM Mammal Diversity Database v2.5</a>.</p>
+<p>GPT: Simian. </p>
+<p>.: Monkey. Simiiformes proxy includes apes; no paraphyletic monkey total assembled.</p>
+<p>SUMO: Monkey. Simiiformes proxy includes apes; no paraphyletic monkey total assembled.</p>
+</article>
+<article id="Lagomorph"><h2>Lagomorpha</h2>
+<p>Extinct reference count: 148; Extant reference count: 114.</p><p>Independent source snapshots; source coverage, dates and species concepts differ. Counts do not roll up in the ontology.</p>
+<p>Direct reference-taxon counts; no ontology-child totals or composite-taxon arithmetic.</p>
+<p>Extinct: <a href="https://paleobiodb.org/data1.2/taxa/list.json?base_name=Lagomorpha&amp;rel=all_children&amp;rank=species&amp;extant=no&amp;taxon_status=accepted&amp;pres=regular&amp;limit=1&amp;rowcount=yes">Lagomorpha</a> — <a href="#source-pbdb">Paleobiology Database</a>. records_found: accepted species below the reference taxon, extant=no, pres=regular. Junior synonyms, ichnotaxa and form taxa excluded. A catalogue count, not an estimate of all species that ever existed.</p>
+<p>Extant: <a href="https://www.mammaldiversity.org/releases/">Lagomorpha</a> — <a href="#source-mdd">ASM Mammal Diversity Database v2.5</a>. Filter order = Lagomorpha; extinct = 1 or 0. Count extinct=0 rows in MDD v2.5; domestic species included.</p>
+<p>Sources: <a href="#source-pbdb">Paleobiology Database</a>, <a href="#source-mdd">ASM Mammal Diversity Database v2.5</a>.</p>
+<p>GPT: Lagomorph. </p>
+</article>
+<article id="Synapsid"><h2>Synapsida</h2>
+<p>Extinct reference count: 14,784; Extant reference count: 6,791.</p><p>Independent source snapshots; source coverage, dates and species concepts differ. Counts do not roll up in the ontology.</p>
+<p>Direct reference-taxon counts; no ontology-child totals or composite-taxon arithmetic.</p>
+<p>Extinct: <a href="https://paleobiodb.org/data1.2/taxa/list.json?base_name=Synapsida&amp;rel=all_children&amp;rank=species&amp;extant=no&amp;taxon_status=accepted&amp;pres=regular&amp;limit=1&amp;rowcount=yes">Synapsida</a> — <a href="#source-pbdb">Paleobiology Database</a>. records_found: accepted species below the reference taxon, extant=no, pres=regular. Junior synonyms, ichnotaxa and form taxa excluded. A catalogue count, not an estimate of all species that ever existed.</p>
+<p>Extant: <a href="https://www.mammaldiversity.org/releases/">Mammalia</a> — <a href="#source-mdd">ASM Mammal Diversity Database v2.5</a>. Closest living reference is Mammalia: all living synapsids are mammals. Count extinct=0 rows in MDD v2.5; fossil count independently uses PBDB Synapsida.</p>
+<p>Sources: <a href="#source-pbdb">Paleobiology Database</a>, <a href="#source-mdd">ASM Mammal Diversity Database v2.5</a>.</p>
+<p>GPT: Synapsid. </p>
+</article>
+<article id="Dinosaur"><h2>Dinosauria</h2>
+<p>Extinct reference count: 3,538; Extant reference count: 10,868.</p><p>Independent source snapshots; source coverage, dates and species concepts differ. Counts do not roll up in the ontology.</p>
+<p>Direct reference-taxon counts; no ontology-child totals or composite-taxon arithmetic.</p>
+<p>Extinct: <a href="https://paleobiodb.org/data1.2/taxa/list.json?base_name=Dinosauria&amp;rel=all_children&amp;rank=species&amp;extant=no&amp;taxon_status=accepted&amp;pres=regular&amp;limit=1&amp;rowcount=yes">Dinosauria</a> — <a href="#source-pbdb">Paleobiology Database</a>. records_found: accepted species below the reference taxon, extant=no, pres=regular. Junior synonyms, ichnotaxa and form taxa excluded. A catalogue count, not an estimate of all species that ever existed.</p>
+<p>Extant: <a href="https://api.checklistbank.org/dataset/316321/taxon/V2/metrics">Aves</a> — <a href="#source-col">Catalogue of Life COL26.9 base release</a>. Closest living reference is Aves: birds are the living dinosaurs. Direct speciesExtantCount; extinct count independently uses PBDB Dinosauria.</p>
+<p>Sources: <a href="#source-pbdb">Paleobiology Database</a>, <a href="#source-col">Catalogue of Life COL26.9 base release</a>.</p>
+<p>GPT: Dinosaur. </p>
+</article>
+<article id="Fish"><h2>Fishes excluding tetrapods</h2>
+<p>Extant reference count: 37,772.</p><p>Independent source snapshots; source coverage, dates and species concepts differ. Counts do not roll up in the ontology.</p>
+<p>Direct reference-taxon counts; no ontology-child totals or composite-taxon arithmetic.</p>
+<p>Extant: <a href="https://researcharchive.calacademy.org/research/ichthyology/catalog/fishcatmain.asp">Recent fishes excluding tetrapods</a> — <a href="#source-fishes">Eschmeyer’s Catalog of Fishes</a>. Published valid recent-fish species count, used as a living-species proxy; recent extinctions can be retained. The reference supplies this informal group total directly.</p>
+<p>Sources: <a href="#source-fishes">Eschmeyer’s Catalog of Fishes</a>.</p>
+<p>.: Fish. </p>
+<p>SUMO: Fish. </p>
+</article>
+<article id="Virus"><h2>ICTV virus and viroid species</h2>
+<p>Total reference count: 17,554.</p><p>Independent source snapshots; source coverage, dates and species concepts differ. Counts do not roll up in the ontology.</p>
+<p>Direct reference-taxon counts; no ontology-child totals or composite-taxon arithmetic.</p>
+<p>Total: <a href="https://ictv.global/news/MSL41">ICTV virus and viroid species</a> — <a href="#source-ictv">ICTV Master Species List 41</a>. Published MSL41 species count without an extinction split; includes viroids. Closest reference for older protein-coated Virus wording; no subtraction or composite calculation.</p>
+<p>Sources: <a href="#source-ictv">ICTV Master Species List 41</a>.</p>
+<p>GPT: Virus. </p>
+<p>Wikipedia: Category:Viruses. Species in the associated taxon, not counts of Wikipedia articles or subcategories.</p>
+<p>.: Virus. ICTV viral-entity species proxy; includes viroids beyond the older protein-coated definition.</p>
+<p>SUMO: Virus. ICTV viral-entity species proxy; includes viroids beyond the older protein-coated definition.</p>
+</article>
+<article id="LegacyPlant"><h2>Plantae</h2>
+<p>Extinct reference count: 14,070; Extant reference count: 389,072.</p><p>Independent source snapshots; source coverage, dates and species concepts differ. Counts do not roll up in the ontology.</p>
+<p>Direct reference-taxon counts; no ontology-child totals or composite-taxon arithmetic.</p>
+<p>Extant: <a href="https://api.checklistbank.org/dataset/316321/taxon/P/metrics">Plantae</a> — <a href="#source-col">Catalogue of Life COL26.9 base release</a>. Publisher-supplied speciesExtantCount from the reference-taxon metrics. Includes the release’s accepted and provisionally accepted species; does not rely on extinct=false annotations.</p>
+<p>Extinct: <a href="https://paleobiodb.org/data1.2/taxa/list.json?base_name=Plantae&amp;rel=all_children&amp;rank=species&amp;extant=no&amp;taxon_status=accepted&amp;pres=regular&amp;limit=1&amp;rowcount=yes">Plantae</a> — <a href="#source-pbdb">Paleobiology Database</a>. records_found: accepted species below the reference taxon, extant=no, pres=regular. Junior synonyms, ichnotaxa and form taxa excluded. A catalogue count, not an estimate of all species that ever existed.</p>
+<p>Sources: <a href="#source-col">Catalogue of Life COL26.9 base release</a>, <a href="#source-pbdb">Paleobiology Database</a>.</p>
+<p>.: Plant. Conventional Plantae kingdom, including its algae; the older functional definition does not coincide exactly with this taxon.</p>
+<p>SUMO: Plant. Conventional Plantae kingdom, including its algae; the older functional definition does not coincide exactly with this taxon.</p>
+</article>
+<article id="Invertebrate"><h2>Invertebrates</h2>
+<p>Extant reference count: 1,457,195.</p><p>Published reference-group estimate; no composite calculation in our ontology. Non-fossil described-species proxy may include recent extinctions.</p>
+<p>Use the source’s reported group subtotal directly.</p>
+<p>Extant: <a href="https://nc.iucnredlist.org/redlist/content/attachment_files/2026-1_RL_Table1a.pdf">Invertebrates</a> — <a href="#source-iucn">IUCN Red List 2026-1, Table 1a</a>. Direct INVERTEBRATES subtotal in the Estimated Number of described species column, not evaluated or threatened species. No assembly from ontology children.</p>
+<p>Sources: <a href="#source-iucn">IUCN Red List 2026-1, Table 1a</a>.</p>
+<p>.: Invertebrate. </p>
+<p>SUMO: Invertebrate. </p>
+</article>
+<article id="Alga"><h2>Algae: green-algal reference</h2>
+<p>Extant reference count: 14,739.</p><p>Closest published green-algal reference; excludes red and brown algae. No composite count assembled in our tree.</p>
+<p>Direct source-reported reference-group count.</p>
+<p>Extant: <a href="https://nc.iucnredlist.org/redlist/content/attachment_files/2026-1_RL_Table1a.pdf">Green algae (Charophyta and Chlorophyta)</a> — <a href="#source-iucn">IUCN Red List 2026-1, Table 1a</a>. Direct Green Algae described-species figure, used as the closest living-species proxy for the legacy plant-like Alga node.</p>
+<p>Sources: <a href="#source-iucn">IUCN Red List 2026-1, Table 1a</a>.</p>
+<p>.: Alga. </p>
+<p>SUMO: Alga. </p>
+</article>
+<h2>Unnumbered groupings</h2><ul>
+<li>., SUMO: AquaticMammal, HoofedMammal, Carnivore, MicroOrganism, ColdBloodedVertebrate, Warm-BloodedVertebrate, ToxicOrganism. Ecological, dietary, temperature or informal grouping without a sufficiently useful single matching reference; no composite count assembled.</li>
+<li>HumanKnowledge, Propaedia: . Packaged entries are subject chapters rather than taxon nodes.</li>
+</ul></html>

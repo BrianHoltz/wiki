@@ -1,0 +1,49 @@
+{
+  "snapshot": "v1010",
+  "captured": "2026.10.10.Sat.1602.PDT",
+  "captureMode": "working-tree",
+  "baseCommit": "e1bbbf16458a6a2f8bfffa89e893db6dd86fbe52",
+  "nodeCount": 439,
+  "files": {
+    "index.html": {
+      "bytes": 12875,
+      "sha256": "0228746ef4ec1956f4f7c99a5d6acc5e0995464ffd4d34458a5edd893f75a668"
+    },
+    "ontology.json": {
+      "bytes": 128024,
+      "sha256": "89df12557715eef613037deb0107b2e8175568e08936bf8e6c559dbe52271f02"
+    },
+    "species-counts.json": {
+      "bytes": 10190,
+      "sha256": "c71ef143cd869c1060db9aa5ad82f60f5b6f7377b575fd2aacd59f930da0fb83"
+    },
+    "entity-counts.json": {
+      "bytes": 13771,
+      "sha256": "ce244feaad1e9b52cedeeae95719e4d5b030bc5e93c81b5bc5350bc6e6009dac"
+    },
+    "Ontology.md": {
+      "bytes": 78925,
+      "sha256": "441cddccdaab2dfc22744c88ef239d2bad315fc90750e93306cbfc91bb4bf529"
+    },
+    "taxon-species-counts.html": {
+      "bytes": 94458,
+      "sha256": "74c0453f6b2b6201df20dc589a98bbace81c9244cd85cfaf5a78189fbbbb7113"
+    },
+    "taxon-species-counts.json": {
+      "bytes": 109643,
+      "sha256": "b1bdcda75e0b538ae97ed7fb61ce9a8fbef1554878e3e34eecbf4a16978e4e33"
+    },
+    "entity-counts.html": {
+      "bytes": 25261,
+      "sha256": "b70c06f870f57cb30c2e6daa23e0538ff745595eba7f092a0981d9ee8c0ac9c6"
+    },
+    "entity-count-references.json": {
+      "bytes": 30578,
+      "sha256": "e4944d95b6db490a7e9d868501363a575eb1e7484023a5b0463ca7dbf4ff5bea"
+    }
+  },
+  "browser": {
+    "path": "../v1010.html",
+    "sha256": "9adef2f02f650c6af18aae29ae8fdc0712de83fc6c19a7a2791d2d1e0f44052e"
+  }
+}
