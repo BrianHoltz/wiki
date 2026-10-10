@@ -14,11 +14,11 @@ main{max-width:1100px;margin:auto;padding:24px}h1{margin:0 0 4px}h2{margin-top:2
 input,button{background:var(--bg);border:1px solid var(--line);border-radius:5px;color:var(--fg);padding:8px 10px}
 input{min-width:280px;width:100%;box-sizing:border-box}button{cursor:pointer}ul{list-style:none;margin:0;padding-left:22px}li{margin:3px 0}
 .search-row{display:flex;align-items:center;gap:8px;margin:8px 0 10px}.search-row input{flex:1;width:auto}.search-presets{display:flex;gap:8px;flex:none;margin:0}
-summary{cursor:pointer;display:flex;align-items:baseline;gap:4px;list-style:none}summary::-webkit-details-marker{display:none}summary::before{content:"\25B6";display:inline-block;flex:none;width:1em}details[open] > summary::before{content:"\25BC"}.meta{color:var(--muted);font-size:12px;margin-left:6px;flex:none}.definition{color:var(--muted);font-size:13px;margin-left:8px;flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;vertical-align:bottom}.definition.expanded{overflow:visible;text-overflow:clip;white-space:normal;vertical-align:baseline}
+summary{cursor:pointer;display:flex;align-items:baseline;gap:4px;list-style:none}summary::-webkit-details-marker{display:none}summary::before{content:"\25B6";display:inline-block;flex:none;width:1em}details[open] > summary::before{content:"\25BC"}.meta{color:var(--muted);font-size:12px;margin-left:6px;flex:none}.definition{color:var(--muted);font-size:13px;margin-left:0;flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;vertical-align:bottom}.definition.expanded{overflow:visible;text-overflow:clip;white-space:normal;vertical-align:baseline}
 details.lineage > summary::before{content:"\25C6"}
 a{color:var(--accent)}#results{margin:10px 0 18px}.result{padding:5px 0;border-bottom:1px solid var(--line)}
-.node{display:flex;align-items:baseline;gap:4px}.node-content{display:flex;align-items:baseline;gap:4px;min-width:0;flex:1}.expander{background:transparent;border:0;color:var(--fg);cursor:pointer;font:inherit;padding:0;width:1em}.expander-placeholder{display:inline-block;flex:none;width:1em;text-align:center;color:var(--fg)}.children[hidden]{display:none}
-.node-content:has(>.definition.expanded){display:block}.node-title{display:inline-block}.node-content>.meta{white-space:nowrap}.expander{flex:none}.node-stats{margin-left:0}.node-content:has(>.definition.expanded)>.node-stats{margin-left:4px}
+.node{display:flex;align-items:baseline;gap:4px}.node-content{display:flex;align-items:baseline;gap:0;min-width:0;flex:1}.expander{background:transparent;border:0;color:var(--fg);cursor:pointer;font:inherit;padding:0;width:1em}.expander-placeholder{display:inline-block;flex:none;width:1em;text-align:center;color:var(--fg)}.children[hidden]{display:none}
+.node-content:has(>.definition.expanded){display:block}.node-title{display:inline-block}.node-content>.meta{white-space:nowrap}.expander{flex:none}.node-stats{margin-left:4px}
 </style>
 </head>
 <body>
@@ -42,7 +42,7 @@ const otherDescendants=descendantCount(id)-directChildren;
 const marker=open?'▼':'▶';
 const childCount=directChildren?`<span class="meta node-stats">${directChildren}${otherDescendants?`+${otherDescendants}`:''} &#8595;</span>`:'';
 const provisional=n.provisionalParent?` <span class="meta">· provisional placement</span>`:'';
-const definition=displayDefinition(n);const shortDef=definition?`<span class="definition${open?' expanded':''}" title="${esc(definition)}">${formatDefinition(definition)}</span>`:'';
+const definition=displayDefinition(n).trim();const shortDef=definition?`<span class="definition${open?' expanded':''}" title="${esc(definition)}">&nbsp;${formatDefinition(definition)}</span>`:'';
 const expander=directChildren?`<button class="expander" type="button" data-node="${esc(id)}">${marker}</button>`:'<span class="expander-placeholder" aria-hidden="true">•</span>';
 const text=`<span class="node-title">${link(id)}${sourceLink(n)}</span>${childCount}${provisional}${shortDef}`;
 return `<li id="${encodeURIComponent(id)}"><div class="node">${expander}<span class="node-content">${text}</span></div><ul class="children"${open?'':' hidden'}>${visibleChildren.map(child=>renderNode(child,lineageNode?lineageChildren?.has(child):nodeModes.get(child)===1)).join('')}</ul></li>`}
