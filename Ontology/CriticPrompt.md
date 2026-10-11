@@ -17,10 +17,12 @@ initial message. Prompt 1 explicitly excludes attempts to find our work without
 supplying a locator. This is an instruction boundary, not a technical guarantee:
 record any reported exposure and restart if independence matters.
 
-Request a downloadable Markdown response named IndependentUpperOntology.md.
+Request a downloadable Markdown response named UpperOntologyModelName.md,
+replacing ModelName with the model label, for example UpperOntologyAstra.md
+or UpperOntologyGemini.md.
 If the interface cannot create files, save the complete returned Markdown
 verbatim. Import it unchanged into a model-specific review directory in the
-repo, such as Ontology/Reviews/Astra/IndependentUpperOntology.md, and commit it
+repo, such as Ontology/Reviews/Astra/UpperOntologyAstra.md, and commit it
 before proceeding. Record the actual model/version, reasoning setting, and
 source conversation when known; do not infer undisclosed identifiers. Keep any
 import metadata outside the model's original response.
@@ -101,7 +103,8 @@ and dependent features; texts versus carriers and content; organizations and
 institutional entities; numbers and mathematical structures; and fictional or
 impossible referents. Include concrete counterexamples, not just assurances.
 
-Write a standalone Markdown document named IndependentUpperOntology.md,
+Write a standalone Markdown document named UpperOntologyModelName.md
+(replace ModelName with your model label, such as Astra or Gemini),
 available as a downloadable file if supported; otherwise return its complete
 Markdown in the response. Include the upper tree with definitions, the
 architectural argument, sources consulted, and unresolved decisions. State the
@@ -113,7 +116,7 @@ for the project packet.
 
 ## Prompt 2 — project critique with repository context
 
-The repository and your preserved IndependentUpperOntology.md are now
+The repository and your preserved UpperOntologyModelName.md are now
 available. Examine the ontology project as an independent critic. Your saved
 initial proposal is evidence of your starting position, not a commitment you
 must defend. Critique the incumbent Omniversal Ontology and the GPT/Sol proposal
