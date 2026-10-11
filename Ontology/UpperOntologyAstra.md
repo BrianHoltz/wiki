@@ -1,10 +1,10 @@
-# Upper Ontology — Codex
+# Upper Ontology — Astra
 
 **Status:** a proposed upper ontology for organizing and understanding knowledge, with a preferred browsing tree and additional typed relationships. It is a design to evaluate, not a claim that the categories are uniquely correct.
 
 **Independence disclosure.** This session received prior project context before this proposal. The user subsequently authorized proceeding despite that exposure. This therefore cannot be represented as a blind test. No project materials were retrieved as research sources for this proposal. The arguments below are presented on their own merits, with external commitments distinguished from design choices; that procedure cannot guarantee that earlier exposure had no influence.
 
-**Label and metadata.** “Codex” is the proposal label and the assistant identity available in this session. No claim about an underlying model variant or reasoning setting is made.
+**Label and metadata.** “Astra” identifies the authoring model. The exact model version and reasoning setting are not recorded.
 
 ## 1. Recommendation and scope
 
