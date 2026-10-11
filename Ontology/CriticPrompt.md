@@ -1,54 +1,9 @@
 # Independent ontology critique and upper-tree proposal
 
-## How to use the prompts
-
-### Prompt 1 delivery
-
-Send only Prompt 1 to a fresh conversation in the model's ordinary chat
-interface, not a repo-connected coding agent or a chat inside a project with
-attached repository files. Disable repository connectors and project context;
-do not attach our trees, wiki links, design discussions, or Prompt 2. Where
-possible, disable memories or personalization that expose our ontology. A fresh
-chat interface alone does not guarantee the absence of that context.
-
-Allow web research into external ontologies and primary literature. Keep our
-project name, author name, repository address, and wiki address out of the
-initial message. Prompt 1 explicitly excludes attempts to find our work without
-supplying a locator. This is an instruction boundary, not a technical guarantee:
-record any reported exposure and restart if independence matters.
-
-Request a downloadable Markdown response named UpperOntologyModelName.md,
-replacing ModelName with the model label, for example UpperOntologyAstra.md
-or UpperOntologyGemini.md.
-If the interface cannot create files, save the complete returned Markdown
-verbatim. Import it unchanged into a model-specific review directory in the
-repo, such as Ontology/Reviews/Astra/UpperOntologyAstra.md, and commit it
-before proceeding. Record the actual model/version, reasoning setting, and
-source conversation when known; do not infer undisclosed identifiers. Keep any
-import metadata outside the model's original response.
-
-### Prompt 2 delivery
-
-Send Prompt 2 only after the initial response is preserved in a commit. The
-same chat can then receive the repository, or a repo-enabled agent can receive
-both the repository and that exact initial response. The latter offers better
-file inspection and executable checks; identify any change of model or session.
-
-Provide the full repository at a pinned revision, with an inventory of the
-ontology project and any relevant uncommitted files included in the packet.
-The inventory should distinguish maintained authority, historical references,
-experiments, and generated artifacts. Include the frozen OO snapshot and
-manifest, current OO sources, GPT/Sol proposal and coverage map, architecture
-and validation documentation, design memoranda, categorization backlog,
-reference ontologies and crosswalks, and relevant renderers and tests. The
-critique concerns the ontology project and its dependencies, not unrelated
-personal material elsewhere in the wiki.
-
-Save the second response separately as ProjectCritique.md in the same
-model-specific directory and commit it. Preserve the initial response unchanged;
-revisions belong in the critique. Have repository write access limited to the
-requested review artifact where practical. If the critic cannot access the
-full packet or execute checks, require an explicit scope statement.
+- Send Prompt 1 to a fresh chat with no repository context. Commit its response
+  unchanged as UpperOntologyModelName.md.
+- Send Prompt 2 to a repo-enabled agent with that saved response and the full
+  repository. Save and commit its critique separately as ProjectCritique.md.
 
 ## Prompt 1 — independent upper ontology in a fresh chat
 
