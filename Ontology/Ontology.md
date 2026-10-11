@@ -1150,7 +1150,72 @@ changes. The regression checks must exercise the example search buttons as
 well as ordinary search, expansion, collapse, and lineage navigation. Do not
 leave a source-tree or browser change visible only in a local working copy.
 
-### Taxon species counts
+### Entity counts
+
+Counts describe the population or vocabulary represented by a class, not the number of nodes displayed below it. Each entry specifies whether it counts kinds, instances, or catalogue records, and gives its scope. The inventory covers countable categories found in the [GPT tree](GPT/ontology.json) and [SUMO projection](ontology.json), plus useful narrower categories such as chemical elements and sovereign states even when they have no dedicated node. Source pages checked 2026.10.10; release and observation dates are stated where available. Approximate values are estimates, not exhaustive enumerations. Biological species counts use the separate [taxon catalogue](taxon-species-counts.html).
+
+The [entity count catalogue](entity-counts.html) exposes each claim, source, scope, and reviewed node mapping. [entity-count-references.json](entity-count-references.json) maintains the shared records; [render_entity_counts.py](render_entity_counts.py) generates each browser’s count sidecar and publishes the annotations. Rerun it after regenerating a browser. Counts remain independent of source graphs and tree child counts. The GPT [Markdown tree](GPT/ontology-tree.md) also includes the annotations.
+
+Entity annotations use the [taxon count symbol convention](#taxon-species-counts) for supported extant/extinct splits. Living-human and living-language counts have ♥︎; unsupported extinct counts remain omitted. ℵ₀ denotes countably infinite collections, and 𝔠 = 2^ℵ₀ denotes the uncountable continuum without assuming 𝔠 = ℵ₁. Broader nodes retain qualifiers such as “finite graphs,” “ℕ→ℕ,” or “Solar System.” Anatomical bone and muscle counts are not attached to GPT tissue-portion classes.
+
+#### Chemistry and physics
+
+- [Chemical elements](https://iupac.org/what-we-do/periodic-table-of-elements/) — **118 recognized kinds**, corresponding to atomic numbers 1–118; applies to Atom and Elemental substance portion. Element 119 is not an accepted discovery.
+- [Elementary particles](https://home.web.cern.ch/science/physics/standard-model/) — **17 Standard Model kinds** in the conventional chart: six quark flavours, six leptons, four gauge-boson kinds, and the Higgs boson. Antiparticles and colour states are not counted separately; this is not a count of all composite subatomic particles.
+- [Chemical substances](https://www.cas.org/cas-data/cas-registry) — **over 290 million registered substances** in CAS REGISTRY. A catalogue lower bound for known substances, not a count of every possible molecule or compound, nor of physical substance portions.
+- [Minerals](https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf) — **6,239 valid mineral species**, IMA-CNMNC master list, 2026.09; kinds represented by Mineral substance portion, not individual mineral grains.
+- [Vitamins](https://www.medlineplus.gov/ency/article/002399.htm) — **13 essential vitamin categories for humans**, including eight B vitamins; chemical vitamers within a category are not separate vitamins in this convention.
+- [Protein-building amino acids](https://medlineplus.gov/genetics/understanding/howgeneswork/protein/) — **20 standard kinds**; [nine are nutritionally essential for humans](https://www.medlineplus.gov/ency/article/002222.htm). This is the conventional standard set, not every naturally occurring amino acid.
+
+#### Astronomy
+
+- [Planets](https://science.nasa.gov/solar-system/planets/) — **eight Solar System planets**; **6,445 confirmed exoplanets** in the [NASA Exoplanet Archive](https://exoplanetarchive.ipac.caltech.edu/), release 2026.10.08. The exoplanet count is a discovery catalogue, not the estimated cosmic population.
+- [Dwarf planets](https://science.nasa.gov/solar-system/planets/) — **five officially recognized Solar System examples**: Ceres, Pluto, Haumea, Makemake, and Eris; many additional candidates exist.
+- [Natural satellites](https://science.nasa.gov/saturn/moons/) — **293 confirmed moons of Saturn**, NASA's 2026.08 reference count. This bounded-system count does not imply a total for all natural satellites.
+- [Asteroids](https://science.nasa.gov/solar-system/asteroids/facts/) — **about 1.1–1.9 million main-belt asteroids larger than 1 km**, plus millions of smaller bodies; an estimated population, not a discovery-list count.
+- [Comets](https://science.nasa.gov/solar-system/10-things-whats-that-space-rock/) — **likely billions in the Solar System**, NASA's population estimate; a discovery catalogue contains only a small fraction.
+- [Stars](https://science.nasa.gov/universe/stars/) — **more than 100 billion in the Milky Way**, an estimated population within our galaxy.
+- [Galaxies](https://science.nasa.gov/exoplanets/what-is-the-universe/) — **at least 100 billion in the observable universe**, NASA's broad estimate; faint-galaxy extrapolations depend on detection limits and cosmological models.
+- [Constellations](https://iauarchive.eso.org/public/themes/constellations/) — **88 IAU-defined sky regions**; this is a conventional partition of the sky, not 88 physical stellar systems.
+
+#### Geography and society
+
+- Sovereign states — **195 under the UN convention**: [193 member states](https://www.un.org/library/unms) and [two non-member observer states](https://research.un.org/en/unmembers/observers), the Holy See and Palestine. Recognition disputes change broader counts; “nation,” ethnic group, and state are not interchangeable. Applies to State territory and Geopolitical Area.
+- [Continents](https://en.wikipedia.org/wiki/Continent) — **seven in the familiar English-language convention**; other conventions use four, five, or six. Applies to Continental area.
+- [Oceans](https://oceanservice.noaa.gov/facts/howmanyoceans.html) — **five named oceans** within one connected global ocean; applies to Saltwater area.
+- [Lakes](https://doi.org/10.1002/2014GL060641) — **about 117 million with area at least 0.002 km²**, the GLOWABO satellite inventory (2014), excluding Greenland and Antarctica. A size-threshold estimate relevant to Standing-water area; lakes are not necessarily freshwater.
+- [Islands](https://www.usgs.gov/publications/global-islands) — **340,686 mapped marine islands**, calculated from 21,818 larger than 1 km² and 318,868 at most 1 km² in the USGS-described 30 m satellite inventory (2014 imagery, 2020 publication). Excludes its five continental mainlands; map resolution and shoreline rules limit completeness.
+- [Humans](https://en.wikipedia.org/wiki/World_population) — **about 8.3 billion living individuals in 2026**, a rounded global population estimate, not a count of everyone who has ever lived.
+- [Currency systems and codes](https://www.six-group.com/dam/download/financial-information/data-center/iso-currrency/lists/list-one.xml) — **178 distinct active ISO 4217 alphabetic codes** in SIX List One, published 2026.09.17; counted by deduplicating nonempty Ccy fields. Includes funds, precious-metal, testing, and no-currency codes, so this is not 178 circulating national currencies.
+
+#### Human anatomy
+
+- [Bones](https://seer.cancer.gov/training/manuals/Book4.pdf) — **206 in the conventional adult human skeleton**; individual variation and counting of fused bones can change the count. Applies to anatomical bones, not kinds of Bone tissue portion.
+- [Muscles](https://my.clevelandclinic.org/health/body/21048-skeletal-system) — **more than 600 in a human body**; anatomical count varies with grouping, not a count of muscle-tissue kinds.
+- [Chromosomes](https://www.genome.gov/genetics-glossary/Chromosome) — **46, arranged in 23 pairs, in a typical human diploid cell**; gametes and chromosomal variants have different counts.
+- [Cells](https://pubmed.ncbi.nlm.nih.gov/37722043/) — **about 36 trillion in a reference adult male and 28 trillion in a reference adult female**, Hatton et al. (2023); model-dependent individual counts, not cell-type counts or a total for all organisms.
+
+#### Language and formal vocabularies
+
+- [Human languages](https://en.wikipedia.org/wiki/Language#Linguistic_diversity) — **7,170 living languages**, Ethnologue's 29th edition (2026), as reported by Wikipedia. Language-versus-dialect boundaries depend on the catalogue; extinct and constructed languages are outside this total.
+- [Computer languages](https://hopl.info/) — **8,945 programming languages catalogued by HOPL**, including historical languages; this roster is not restricted to languages in active use and does not exhaust every possible formal language.
+- [Characters](https://www.unicode.org/versions/Unicode18.0.0/) — **172,808 encoded characters in the Unicode 18.0 summary**, dated 2026.09.16. The source retains a draft-status notice, so this count is provisional; it counts an encoding repertoire, not every symbol or glyph humans can create.
+- [Measurement units](https://www.nist.gov/pml/owm/metric-si/si-units) — **seven SI base units and 22 derived units with special names**, not all possible derived or non-SI units. The [SI prefix vocabulary](https://www.nist.gov/pml/owm/metric-si-prefixes) has **24 prefixes**.
+
+#### Mathematical cardinalities
+
+These are exact mathematical cardinalities rather than empirical estimates; the distinctions follow [Sundstrom's finite and infinite sets treatment](https://people.math.sc.edu/girardi/m300/book/Sundstrom2-1.pdf#page=486).
+
+- Natural number, Integer, and Rational number — each **countably infinite**, cardinality ℵ₀.
+- Real number and Complex number — each **uncountably infinite**, cardinality of the continuum, 2^ℵ₀; a complex number is a pair of real numbers.
+- Algorithm, Computable function, and Recursive function — each **countably infinite** under the usual finite-description convention. Finite formal expressions, finite symbol strings, and finite graphs of arbitrary size are also countable; this follows by finite-string encoding, not from a survey of existing examples.
+- Function — **2^ℵ₀ functions from natural numbers to natural numbers**; no single cardinality applies without fixing the domain and codomain. Set likewise has no universal set of all sets in ordinary set theory, so it receives no total.
+
+#### Scope limits
+
+Broad classes such as Entity, Object, Process, Organization, Artifact, Language system, Property specification, and Relation specification have no defensible finite global total without a narrower domain and counting rule. Books, buildings, games, software, words, ethnic groups, mountains, and constructed human languages likewise require a named catalogue or explicit inclusion boundary; no unsupported global number is assigned here. A blank count is not zero. Counts for nested or overlapping classes must not be added together.
+
+#### Taxon species counts
 
 All rendered ontologies use independent reference counts for taxon nodes.
 Choose a high-quality taxonomy with a useful count for each node and each

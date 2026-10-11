@@ -1,0 +1,937 @@
+{
+  "schema_version": 1,
+  "retrieved": "2026.10.10",
+  "project_source": "Ontology.md#entity-counts",
+  "policy": "Independent scoped reference counts; kinds, instances and catalogue records are not interchangeable. Counts do not roll up through the tree. ℵ₀ means countably infinite; 𝔠 = 2^ℵ₀ means uncountably infinite. No continuum-hypothesis assumption is made.",
+  "records": {
+    "elements": {
+      "display": "118 elements",
+      "claim": "[Chemical elements](https://iupac.org/what-we-do/periodic-table-of-elements/) — **118 recognized kinds**, corresponding to atomic numbers 1–118; applies to Atom and Elemental substance portion. Element 119 is not an accepted discovery.",
+      "sources": [
+        "https://iupac.org/what-we-do/periodic-table-of-elements/"
+      ],
+      "mappings": {
+        ".": [
+          {
+            "id": "Atom"
+          },
+          {
+            "id": "ElementalSubstance"
+          }
+        ],
+        "GPT": [
+          {
+            "id": "Atom"
+          },
+          {
+            "id": "ElementalSubstance"
+          }
+        ],
+        "SUMO": [
+          {
+            "id": "Atom"
+          },
+          {
+            "id": "ElementalSubstance"
+          }
+        ],
+        "Propaedia": [
+          {
+            "id": "part-1.2.1",
+            "interpretation": "A scoped reference count for the named subject within this outline topic, not a total for every topic member."
+          }
+        ]
+      }
+    },
+    "elementary-particles": {
+      "display": "17 elementary kinds",
+      "claim": "[Elementary particles](https://home.web.cern.ch/science/physics/standard-model/) — **17 Standard Model kinds** in the conventional chart: six quark flavours, six leptons, four gauge-boson kinds, and the Higgs boson. Antiparticles and colour states are not counted separately; this is not a count of all composite subatomic particles.",
+      "sources": [
+        "https://home.web.cern.ch/science/physics/standard-model/"
+      ],
+      "mappings": {
+        ".": [
+          {
+            "id": "SubatomicParticle"
+          }
+        ],
+        "GPT": [
+          {
+            "id": "SubatomicParticle"
+          }
+        ],
+        "SUMO": [
+          {
+            "id": "SubatomicParticle"
+          }
+        ],
+        "Propaedia": [
+          {
+            "id": "part-1.1.2",
+            "interpretation": "A scoped reference count for the named subject within this outline topic, not a total for every topic member."
+          }
+        ]
+      }
+    },
+    "substances": {
+      "display": ">290M registered",
+      "claim": "[Chemical substances](https://www.cas.org/cas-data/cas-registry) — **over 290 million registered substances** in CAS REGISTRY. A catalogue lower bound for known substances, not a count of every possible molecule or compound, nor of physical substance portions.",
+      "sources": [
+        "https://www.cas.org/cas-data/cas-registry"
+      ],
+      "mappings": {
+        ".": [
+          {
+            "id": "Substance"
+          }
+        ],
+        "GPT": [
+          {
+            "id": "Substance"
+          }
+        ],
+        "SUMO": [
+          {
+            "id": "Substance"
+          }
+        ]
+      }
+    },
+    "minerals": {
+      "display": "6.24K mineral kinds",
+      "claim": "[Minerals](https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf) — **6,239 valid mineral species**, IMA-CNMNC master list, 2026.09; kinds represented by Mineral substance portion, not individual mineral grains.",
+      "sources": [
+        "https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf"
+      ],
+      "mappings": {
+        ".": [
+          {
+            "id": "Mineral"
+          }
+        ],
+        "GPT": [
+          {
+            "id": "Mineral"
+          }
+        ],
+        "SUMO": [
+          {
+            "id": "Mineral"
+          }
+        ],
+        "Propaedia": [
+          {
+            "id": "part-2.1.4",
+            "interpretation": "A scoped reference count for the named subject within this outline topic, not a total for every topic member."
+          }
+        ]
+      }
+    },
+    "vitamins": {
+      "display": "13 human vitamins",
+      "claim": "[Vitamins](https://www.medlineplus.gov/ency/article/002399.htm) — **13 essential vitamin categories for humans**, including eight B vitamins; chemical vitamers within a category are not separate vitamins in this convention.",
+      "sources": [
+        "https://www.medlineplus.gov/ency/article/002399.htm"
+      ],
+      "mappings": {
+        ".": [
+          {
+            "id": "Vitamin"
+          }
+        ],
+        "GPT": [
+          {
+            "id": "Vitamin"
+          }
+        ],
+        "SUMO": [
+          {
+            "id": "Vitamin"
+          }
+        ],
+        "Wikipedia": [
+          {
+            "id": "Category:Vitamins"
+          }
+        ]
+      }
+    },
+    "amino-acids": {
+      "display": "20 standard; 9 essential",
+      "claim": "[Protein-building amino acids](https://medlineplus.gov/genetics/understanding/howgeneswork/protein/) — **20 standard kinds**; [nine are nutritionally essential for humans](https://www.medlineplus.gov/ency/article/002222.htm). This is the conventional standard set, not every naturally occurring amino acid.",
+      "sources": [
+        "https://medlineplus.gov/genetics/understanding/howgeneswork/protein/",
+        "https://www.medlineplus.gov/ency/article/002222.htm"
+      ],
+      "mappings": {}
+    },
+    "planets": {
+      "display": "8 Solar System; 6.45K exoplanets",
+      "claim": "[Planets](https://science.nasa.gov/solar-system/planets/) — **eight Solar System planets**; **6,445 confirmed exoplanets** in the [NASA Exoplanet Archive](https://exoplanetarchive.ipac.caltech.edu/), release 2026.10.08. The exoplanet count is a discovery catalogue, not the estimated cosmic population.",
+      "sources": [
+        "https://science.nasa.gov/solar-system/planets/",
+        "https://exoplanetarchive.ipac.caltech.edu/"
+      ],
+      "mappings": {
+        "GPT": [
+          {
+            "id": "Planet"
+          }
+        ],
+        "HumanKnowledge": [
+          {
+            "id": "hk-3-2-4"
+          }
+        ]
+      }
+    },
+    "dwarf-planets": {
+      "display": "5 recognized",
+      "claim": "[Dwarf planets](https://science.nasa.gov/solar-system/planets/) — **five officially recognized Solar System examples**: Ceres, Pluto, Haumea, Makemake, and Eris; many additional candidates exist.",
+      "sources": [
+        "https://science.nasa.gov/solar-system/planets/"
+      ],
+      "mappings": {}
+    },
+    "satellites": {
+      "display": "293 Saturn moons",
+      "claim": "[Natural satellites](https://science.nasa.gov/saturn/moons/) — **293 confirmed moons of Saturn**, NASA's 2026.08 reference count. This bounded-system count does not imply a total for all natural satellites.",
+      "sources": [
+        "https://science.nasa.gov/saturn/moons/"
+      ],
+      "mappings": {
+        "GPT": [
+          {
+            "id": "Satellite"
+          }
+        ]
+      }
+    },
+    "asteroids": {
+      "display": "≈1.1–1.9M >1 km",
+      "claim": "[Asteroids](https://science.nasa.gov/solar-system/asteroids/facts/) — **about 1.1–1.9 million main-belt asteroids larger than 1 km**, plus millions of smaller bodies; an estimated population, not a discovery-list count.",
+      "sources": [
+        "https://science.nasa.gov/solar-system/asteroids/facts/"
+      ],
+      "mappings": {
+        "GPT": [
+          {
+            "id": "Asteroid"
+          }
+        ]
+      }
+    },
+    "comets": {
+      "display": "billions in Solar System",
+      "claim": "[Comets](https://science.nasa.gov/solar-system/10-things-whats-that-space-rock/) — **likely billions in the Solar System**, NASA's population estimate; a discovery catalogue contains only a small fraction.",
+      "sources": [
+        "https://science.nasa.gov/solar-system/10-things-whats-that-space-rock/"
+      ],
+      "mappings": {
+        "GPT": [
+          {
+            "id": "Comet"
+          }
+        ]
+      }
+    },
+    "stars": {
+      "display": ">100B Milky Way",
+      "claim": "[Stars](https://science.nasa.gov/universe/stars/) — **more than 100 billion in the Milky Way**, an estimated population within our galaxy.",
+      "sources": [
+        "https://science.nasa.gov/universe/stars/"
+      ],
+      "mappings": {
+        "GPT": [
+          {
+            "id": "Star"
+          }
+        ],
+        "Propaedia": [
+          {
+            "id": "part-1.3.2",
+            "interpretation": "A scoped reference count for the named subject within this outline topic, not a total for every topic member."
+          }
+        ]
+      }
+    },
+    "galaxies": {
+      "display": "≥100B observable",
+      "claim": "[Galaxies](https://science.nasa.gov/exoplanets/what-is-the-universe/) — **at least 100 billion in the observable universe**, NASA's broad estimate; faint-galaxy extrapolations depend on detection limits and cosmological models.",
+      "sources": [
+        "https://science.nasa.gov/exoplanets/what-is-the-universe/"
+      ],
+      "mappings": {
+        "GPT": [
+          {
+            "id": "Galaxy"
+          }
+        ],
+        "Propaedia": [
+          {
+            "id": "part-1.3.2",
+            "interpretation": "A scoped reference count for the named subject within this outline topic, not a total for every topic member."
+          }
+        ]
+      }
+    },
+    "constellations": {
+      "display": "88 IAU regions",
+      "claim": "[Constellations](https://iauarchive.eso.org/public/themes/constellations/) — **88 IAU-defined sky regions**; this is a conventional partition of the sky, not 88 physical stellar systems.",
+      "sources": [
+        "https://iauarchive.eso.org/public/themes/constellations/"
+      ],
+      "mappings": {}
+    },
+    "states": {
+      "display": "195 UN states",
+      "claim": "Sovereign states — **195 under the UN convention**: [193 member states](https://www.un.org/library/unms) and [two non-member observer states](https://research.un.org/en/unmembers/observers), the Holy See and Palestine. Recognition disputes change broader counts; “nation,” ethnic group, and state are not interchangeable. Applies to State territory and Geopolitical Area.",
+      "sources": [
+        "https://www.un.org/library/unms",
+        "https://research.un.org/en/unmembers/observers"
+      ],
+      "mappings": {
+        ".": [
+          {
+            "id": "State"
+          }
+        ],
+        "GPT": [
+          {
+            "id": "State"
+          }
+        ],
+        "SUMO": [
+          {
+            "id": "State"
+          }
+        ],
+        "Wikipedia": [
+          {
+            "id": "Category:Countries"
+          }
+        ]
+      }
+    },
+    "continents": {
+      "display": "7 conventional",
+      "claim": "[Continents](https://en.wikipedia.org/wiki/Continent) — **seven in the familiar English-language convention**; other conventions use four, five, or six. Applies to Continental area.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Continent"
+      ],
+      "mappings": {
+        ".": [
+          {
+            "id": "Continent"
+          }
+        ],
+        "GPT": [
+          {
+            "id": "Continent"
+          }
+        ],
+        "SUMO": [
+          {
+            "id": "Continent"
+          }
+        ]
+      }
+    },
+    "oceans": {
+      "display": "5 oceans",
+      "claim": "[Oceans](https://oceanservice.noaa.gov/facts/howmanyoceans.html) — **five named oceans** within one connected global ocean; applies to Saltwater area.",
+      "sources": [
+        "https://oceanservice.noaa.gov/facts/howmanyoceans.html"
+      ],
+      "mappings": {
+        ".": [
+          {
+            "id": "SaltWaterArea"
+          }
+        ],
+        "GPT": [
+          {
+            "id": "SaltWaterArea"
+          }
+        ],
+        "SUMO": [
+          {
+            "id": "SaltWaterArea"
+          }
+        ],
+        "Rogets": [
+          {
+            "id": "roget-0341"
+          }
+        ],
+        "Propaedia": [
+          {
+            "id": "part-2.2.2",
+            "interpretation": "A scoped reference count for the named subject within this outline topic, not a total for every topic member."
+          }
+        ]
+      }
+    },
+    "lakes": {
+      "display": "≈117M lakes ≥0.002 km²",
+      "claim": "[Lakes](https://doi.org/10.1002/2014GL060641) — **about 117 million with area at least 0.002 km²**, the GLOWABO satellite inventory (2014), excluding Greenland and Antarctica. A size-threshold estimate relevant to Standing-water area; lakes are not necessarily freshwater.",
+      "sources": [
+        "https://doi.org/10.1002/2014GL060641"
+      ],
+      "mappings": {
+        ".": [
+          {
+            "id": "StaticWaterArea"
+          }
+        ],
+        "GPT": [
+          {
+            "id": "StaticWaterArea"
+          }
+        ],
+        "SUMO": [
+          {
+            "id": "StaticWaterArea"
+          }
+        ],
+        "Wikipedia": [
+          {
+            "id": "Category:Lakes"
+          }
+        ],
+        "Rogets": [
+          {
+            "id": "roget-0343",
+            "interpretation": "Count is for lakes only; the thesaurus heading also covers gulfs."
+          }
+        ],
+        "Propaedia": [
+          {
+            "id": "part-2.2.2",
+            "interpretation": "A scoped reference count for the named subject within this outline topic, not a total for every topic member."
+          }
+        ]
+      }
+    },
+    "islands": {
+      "display": "341K mapped marine",
+      "claim": "[Islands](https://www.usgs.gov/publications/global-islands) — **340,686 mapped marine islands**, calculated from 21,818 larger than 1 km² and 318,868 at most 1 km² in the USGS-described 30 m satellite inventory (2014 imagery, 2020 publication). Excludes its five continental mainlands; map resolution and shoreline rules limit completeness.",
+      "sources": [
+        "https://www.usgs.gov/publications/global-islands"
+      ],
+      "mappings": {
+        ".": [
+          {
+            "id": "Island"
+          }
+        ],
+        "GPT": [
+          {
+            "id": "Island"
+          }
+        ],
+        "SUMO": [
+          {
+            "id": "Island"
+          }
+        ],
+        "Rogets": [
+          {
+            "id": "roget-0346"
+          }
+        ]
+      }
+    },
+    "humans": {
+      "display": "≈8.30B living people",
+      "claim": "[Humans](https://en.wikipedia.org/wiki/World_population) — **about 8.3 billion living individuals in 2026**, a rounded global population estimate, not a count of everyone who has ever lived.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/World_population"
+      ],
+      "mappings": {
+        ".": [
+          {
+            "id": "Human"
+          }
+        ],
+        "GPT": [
+          {
+            "id": "Human"
+          }
+        ],
+        "SUMO": [
+          {
+            "id": "Human"
+          }
+        ],
+        "Wikipedia": [
+          {
+            "id": "Category:Humans"
+          },
+          {
+            "id": "Category:World population"
+          }
+        ],
+        "Propaedia": [
+          {
+            "id": "part-5.2.4",
+            "interpretation": "A scoped reference count for the named subject within this outline topic, not a total for every topic member."
+          }
+        ]
+      },
+      "extantDisplay": "≈8.30B",
+      "countLabel": "people"
+    },
+    "currency-codes": {
+      "display": "178 ISO codes",
+      "claim": "[Currency systems and codes](https://www.six-group.com/dam/download/financial-information/data-center/iso-currrency/lists/list-one.xml) — **178 distinct active ISO 4217 alphabetic codes** in SIX List One, published 2026.09.17; counted by deduplicating nonempty Ccy fields. Includes funds, precious-metal, testing, and no-currency codes, so this is not 178 circulating national currencies.",
+      "sources": [
+        "https://www.six-group.com/dam/download/financial-information/data-center/iso-currrency/lists/list-one.xml"
+      ],
+      "mappings": {
+        ".": [
+          {
+            "id": "Currency"
+          }
+        ],
+        "GPT": [
+          {
+            "id": "Currency"
+          }
+        ]
+      }
+    },
+    "bones": {
+      "display": "206/adult human",
+      "claim": "[Bones](https://seer.cancer.gov/training/manuals/Book4.pdf) — **206 in the conventional adult human skeleton**; individual variation and counting of fused bones can change the count. Applies to anatomical bones, not kinds of Bone tissue portion.",
+      "sources": [
+        "https://seer.cancer.gov/training/manuals/Book4.pdf"
+      ],
+      "mappings": {
+        ".": [
+          {
+            "id": "Bone"
+          }
+        ],
+        "SUMO": [
+          {
+            "id": "Bone"
+          }
+        ],
+        "Propaedia": [
+          {
+            "id": "part-4.2.1",
+            "interpretation": "A scoped reference count for the named subject within this outline topic, not a total for every topic member."
+          }
+        ]
+      },
+      "unmapped_detail": "GPT Bone denotes tissue portions, so the anatomical bone count is not attached there."
+    },
+    "muscles": {
+      "display": ">600/human",
+      "claim": "[Muscles](https://my.clevelandclinic.org/health/body/21048-skeletal-system) — **more than 600 in a human body**; anatomical count varies with grouping, not a count of muscle-tissue kinds.",
+      "sources": [
+        "https://my.clevelandclinic.org/health/body/21048-skeletal-system"
+      ],
+      "mappings": {
+        ".": [
+          {
+            "id": "Muscle"
+          }
+        ],
+        "SUMO": [
+          {
+            "id": "Muscle"
+          }
+        ],
+        "Propaedia": [
+          {
+            "id": "part-4.2.1",
+            "interpretation": "A scoped reference count for the named subject within this outline topic, not a total for every topic member."
+          }
+        ]
+      },
+      "unmapped_detail": "GPT Muscle denotes tissue portions, so the anatomical muscle count is not attached there."
+    },
+    "chromosomes": {
+      "display": "46/diploid human cell",
+      "claim": "[Chromosomes](https://www.genome.gov/genetics-glossary/Chromosome) — **46, arranged in 23 pairs, in a typical human diploid cell**; gametes and chromosomal variants have different counts.",
+      "sources": [
+        "https://www.genome.gov/genetics-glossary/Chromosome"
+      ],
+      "mappings": {
+        "Propaedia": [
+          {
+            "id": "part-4.2.1",
+            "interpretation": "A scoped reference count for the named subject within this outline topic, not a total for every topic member."
+          }
+        ]
+      }
+    },
+    "cells": {
+      "display": "≈36T male; 28T female",
+      "claim": "[Cells](https://pubmed.ncbi.nlm.nih.gov/37722043/) — **about 36 trillion in a reference adult male and 28 trillion in a reference adult female**, Hatton et al. (2023); model-dependent individual counts, not cell-type counts or a total for all organisms.",
+      "sources": [
+        "https://pubmed.ncbi.nlm.nih.gov/37722043/"
+      ],
+      "mappings": {
+        ".": [
+          {
+            "id": "Cell"
+          }
+        ],
+        "GPT": [
+          {
+            "id": "Cell"
+          }
+        ],
+        "SUMO": [
+          {
+            "id": "Cell"
+          }
+        ],
+        "HumanKnowledge": [
+          {
+            "id": "hk-3-5-2",
+            "interpretation": "Human cell populations are examples within this biology topic."
+          }
+        ],
+        "Propaedia": [
+          {
+            "id": "part-3.3.1",
+            "interpretation": "A scoped reference count for the named subject within this outline topic, not a total for every topic member."
+          }
+        ]
+      }
+    },
+    "human-languages": {
+      "display": "7.17K living human",
+      "claim": "[Human languages](https://en.wikipedia.org/wiki/Language#Linguistic_diversity) — **7,170 living languages**, Ethnologue's 29th edition (2026), as reported by Wikipedia. Language-versus-dialect boundaries depend on the catalogue; extinct and constructed languages are outside this total.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Language#Linguistic_diversity"
+      ],
+      "mappings": {
+        ".": [
+          {
+            "id": "HumanLanguage"
+          },
+          {
+            "id": "NaturalLanguage"
+          }
+        ],
+        "GPT": [
+          {
+            "id": "HumanLanguage"
+          },
+          {
+            "id": "NaturalLanguage"
+          }
+        ],
+        "SUMO": [
+          {
+            "id": "HumanLanguage"
+          },
+          {
+            "id": "NaturalLanguage"
+          }
+        ],
+        "Wikipedia": [
+          {
+            "id": "Category:Languages"
+          }
+        ],
+        "Rogets": [
+          {
+            "id": "roget-0560"
+          }
+        ],
+        "Propaedia": [
+          {
+            "id": "part-5.1.4",
+            "interpretation": "A scoped reference count for the named subject within this outline topic, not a total for every topic member."
+          }
+        ]
+      },
+      "extantDisplay": "7.17K",
+      "countLabel": "living human languages"
+    },
+    "computer-languages": {
+      "display": "8.95K catalogued",
+      "claim": "[Computer languages](https://hopl.info/) — **8,945 programming languages catalogued by HOPL**, including historical languages; this roster is not restricted to languages in active use and does not exhaust every possible formal language.",
+      "sources": [
+        "https://hopl.info/"
+      ],
+      "mappings": {
+        ".": [
+          {
+            "id": "ComputerLanguage"
+          }
+        ],
+        "GPT": [
+          {
+            "id": "ComputerLanguage"
+          }
+        ],
+        "SUMO": [
+          {
+            "id": "ComputerLanguage"
+          }
+        ]
+      }
+    },
+    "characters": {
+      "display": "173K Unicode; provisional",
+      "claim": "[Characters](https://www.unicode.org/versions/Unicode18.0.0/) — **172,808 encoded characters in the Unicode 18.0 summary**, dated 2026.09.16. The source retains a draft-status notice, so this count is provisional; it counts an encoding repertoire, not every symbol or glyph humans can create.",
+      "sources": [
+        "https://www.unicode.org/versions/Unicode18.0.0/"
+      ],
+      "mappings": {
+        ".": [
+          {
+            "id": "Character"
+          }
+        ],
+        "GPT": [
+          {
+            "id": "Character"
+          }
+        ],
+        "SUMO": [
+          {
+            "id": "Character"
+          }
+        ]
+      }
+    },
+    "measurement-units": {
+      "display": "7 SI base; 22 named derived",
+      "claim": "[Measurement units](https://www.nist.gov/pml/owm/metric-si/si-units) — **seven SI base units and 22 derived units with special names**, not all possible derived or non-SI units. The [SI prefix vocabulary](https://www.nist.gov/pml/owm/metric-si-prefixes) has **24 prefixes**.",
+      "sources": [
+        "https://www.nist.gov/pml/owm/metric-si/si-units",
+        "https://www.nist.gov/pml/owm/metric-si-prefixes"
+      ],
+      "mappings": {
+        "GPT": [
+          {
+            "id": "MeasurementUnit"
+          }
+        ],
+        "SUMO": [
+          {
+            "id": "UnitOfMeasure"
+          }
+        ]
+      },
+      "unmapped_detail": "The 24 SI prefixes are a vocabulary of scale factors, not additional units; no dedicated prefix node exists."
+    },
+    "countable-numbers": {
+      "display": "ℵ₀",
+      "claim": "Natural number, Integer, and Rational number — each **countably infinite**, cardinality ℵ₀.",
+      "sources": [
+        "https://people.math.sc.edu/girardi/m300/book/Sundstrom2-1.pdf#page=486"
+      ],
+      "mappings": {
+        "GPT": [
+          {
+            "id": "NaturalNumber"
+          },
+          {
+            "id": "Integer"
+          },
+          {
+            "id": "RationalNumber"
+          },
+          {
+            "id": "Number",
+            "display": "ℵ₀ ℕ/ℤ/ℚ",
+            "interpretation": "Cardinalities of these named number systems, not a total for every numerical extension."
+          }
+        ],
+        "SUMO": [
+          {
+            "id": "RationalNumber"
+          },
+          {
+            "id": "Number",
+            "display": "ℵ₀ ℕ/ℤ/ℚ",
+            "interpretation": "Cardinalities of these named number systems, not a total for every numerical extension."
+          }
+        ],
+        ".": [
+          {
+            "id": "Number",
+            "display": "ℵ₀ ℕ/ℤ/ℚ",
+            "interpretation": "Cardinalities of these named number systems, not a total for every numerical extension."
+          }
+        ],
+        "Rogets": [
+          {
+            "id": "roget-node-23",
+            "display": "ℵ₀ ℕ/ℤ/ℚ"
+          },
+          {
+            "id": "roget-node-24",
+            "display": "ℵ₀ ℕ/ℤ/ℚ"
+          },
+          {
+            "id": "roget-0084",
+            "display": "ℵ₀ ℕ/ℤ/ℚ"
+          }
+        ]
+      }
+    },
+    "uncountable-numbers": {
+      "display": "𝔠 uncountable",
+      "claim": "Real number and Complex number — each **uncountably infinite**, cardinality of the continuum, 2^ℵ₀; a complex number is a pair of real numbers.",
+      "sources": [
+        "https://people.math.sc.edu/girardi/m300/book/Sundstrom2-1.pdf#page=486"
+      ],
+      "mappings": {
+        "GPT": [
+          {
+            "id": "RealNumber"
+          },
+          {
+            "id": "ComplexNumber"
+          },
+          {
+            "id": "Number",
+            "display": "𝔠 ℝ/ℂ",
+            "interpretation": "Continuum cardinality 𝔠 = 2^ℵ₀, uncountably infinite; not asserted to equal ℵ₁."
+          }
+        ],
+        "SUMO": [
+          {
+            "id": "RealNumber"
+          },
+          {
+            "id": "ComplexNumber"
+          },
+          {
+            "id": "Number",
+            "display": "𝔠 ℝ/ℂ",
+            "interpretation": "Continuum cardinality 𝔠 = 2^ℵ₀, uncountably infinite; not asserted to equal ℵ₁."
+          }
+        ],
+        ".": [
+          {
+            "id": "Number",
+            "display": "𝔠 ℝ/ℂ",
+            "interpretation": "Continuum cardinality 𝔠 = 2^ℵ₀, uncountably infinite; not asserted to equal ℵ₁."
+          }
+        ],
+        "Rogets": [
+          {
+            "id": "roget-node-23",
+            "display": "𝔠 ℝ/ℂ"
+          },
+          {
+            "id": "roget-node-24",
+            "display": "𝔠 ℝ/ℂ"
+          },
+          {
+            "id": "roget-0084",
+            "display": "𝔠 ℝ/ℂ"
+          }
+        ]
+      }
+    },
+    "finite-descriptions": {
+      "display": "ℵ₀",
+      "claim": "Algorithm, Computable function, and Recursive function — each **countably infinite** under the usual finite-description convention. Finite formal expressions, finite symbol strings, and finite graphs of arbitrary size are also countable; this follows by finite-string encoding, not from a survey of existing examples.",
+      "sources": [
+        "https://people.math.sc.edu/girardi/m300/book/Sundstrom2-1.pdf#page=486"
+      ],
+      "mappings": {
+        ".": [
+          {
+            "id": "Algorithm"
+          },
+          {
+            "id": "ComputableFunction"
+          },
+          {
+            "id": "RecursiveFunction"
+          },
+          {
+            "id": "FormalExpression",
+            "display": "ℵ₀ finite syntax",
+            "interpretation": "Finite symbolic descriptions over a fixed countable encoding; not arbitrary infinite strings."
+          },
+          {
+            "id": "SymbolicString",
+            "display": "ℵ₀ finite syntax",
+            "interpretation": "Finite symbolic descriptions over a fixed countable encoding; not arbitrary infinite strings."
+          },
+          {
+            "id": "Graph",
+            "display": "ℵ₀ finite graphs",
+            "interpretation": "Finite graphs up to isomorphism, or with vertices in a fixed countable encoding; not all infinitely large or arbitrarily labelled graphs."
+          }
+        ],
+        "GPT": [
+          {
+            "id": "Algorithm"
+          },
+          {
+            "id": "ComputableFunction"
+          },
+          {
+            "id": "RecursiveFunction"
+          },
+          {
+            "id": "FormalExpression",
+            "display": "ℵ₀ finite syntax",
+            "interpretation": "Finite symbolic descriptions over a fixed countable encoding; not arbitrary infinite strings."
+          },
+          {
+            "id": "SymbolicString",
+            "display": "ℵ₀ finite syntax",
+            "interpretation": "Finite symbolic descriptions over a fixed countable encoding; not arbitrary infinite strings."
+          },
+          {
+            "id": "Graph",
+            "display": "ℵ₀ finite graphs",
+            "interpretation": "Finite graphs up to isomorphism, or with vertices in a fixed countable encoding; not all infinitely large or arbitrarily labelled graphs."
+          }
+        ],
+        "Wikipedia": [
+          {
+            "id": "Category:Algorithms"
+          }
+        ],
+        "SUMO": [
+          {
+            "id": "SymbolicString",
+            "display": "ℵ₀ finite syntax",
+            "interpretation": "Finite symbolic descriptions over a fixed countable encoding; not arbitrary infinite strings."
+          },
+          {
+            "id": "Graph",
+            "display": "ℵ₀ finite graphs",
+            "interpretation": "Finite graphs up to isomorphism, or with vertices in a fixed countable encoding; not all infinitely large or arbitrarily labelled graphs."
+          }
+        ]
+      }
+    },
+    "functions": {
+      "display": "𝔠 ℕ→ℕ",
+      "claim": "Function — **2^ℵ₀ functions from natural numbers to natural numbers**; no single cardinality applies without fixing the domain and codomain. Set likewise has no universal set of all sets in ordinary set theory, so it receives no total.",
+      "sources": [
+        "https://people.math.sc.edu/girardi/m300/book/Sundstrom2-1.pdf#page=486"
+      ],
+      "mappings": {
+        ".": [
+          {
+            "id": "Function"
+          }
+        ],
+        "GPT": [
+          {
+            "id": "Function"
+          }
+        ]
+      }
+    }
+  }
+}

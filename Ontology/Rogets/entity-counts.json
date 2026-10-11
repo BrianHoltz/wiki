@@ -1,0 +1,98 @@
+{
+  "roget-0341": [
+    {
+      "record": "oceans",
+      "display": "5 oceans",
+      "scope": "Oceans — five named oceans within one connected global ocean; applies to Saltwater area.",
+      "interpretation": "",
+      "url": "../entity-counts.html#oceans",
+      "retrieved": "2026.10.10"
+    }
+  ],
+  "roget-0343": [
+    {
+      "record": "lakes",
+      "display": "≈117M lakes ≥0.002 km²",
+      "scope": "Lakes — about 117 million with area at least 0.002 km², the GLOWABO satellite inventory (2014), excluding Greenland and Antarctica. A size-threshold estimate relevant to Standing-water area; lakes are not necessarily freshwater.",
+      "interpretation": "Count is for lakes only; the thesaurus heading also covers gulfs.",
+      "url": "../entity-counts.html#lakes",
+      "retrieved": "2026.10.10"
+    }
+  ],
+  "roget-0346": [
+    {
+      "record": "islands",
+      "display": "341K mapped marine",
+      "scope": "Islands — 340,686 mapped marine islands, calculated from 21,818 larger than 1 km² and 318,868 at most 1 km² in the USGS-described 30 m satellite inventory (2014 imagery, 2020 publication). Excludes its five continental mainlands; map resolution and shoreline rules limit completeness.",
+      "interpretation": "",
+      "url": "../entity-counts.html#islands",
+      "retrieved": "2026.10.10"
+    }
+  ],
+  "roget-0560": [
+    {
+      "record": "human-languages",
+      "display": "7.17K living human",
+      "scope": "Human languages — 7,170 living languages, Ethnologue's 29th edition (2026), as reported by Wikipedia. Language-versus-dialect boundaries depend on the catalogue; extinct and constructed languages are outside this total.",
+      "interpretation": "",
+      "url": "../entity-counts.html#human-languages",
+      "retrieved": "2026.10.10",
+      "extantDisplay": "7.17K",
+      "countLabel": "living human languages"
+    }
+  ],
+  "roget-node-23": [
+    {
+      "record": "countable-numbers",
+      "display": "ℵ₀ ℕ/ℤ/ℚ",
+      "scope": "Natural number, Integer, and Rational number — each countably infinite, cardinality ℵ₀.",
+      "interpretation": "",
+      "url": "../entity-counts.html#countable-numbers",
+      "retrieved": "2026.10.10"
+    },
+    {
+      "record": "uncountable-numbers",
+      "display": "𝔠 ℝ/ℂ",
+      "scope": "Real number and Complex number — each uncountably infinite, cardinality of the continuum, 2^ℵ₀; a complex number is a pair of real numbers.",
+      "interpretation": "",
+      "url": "../entity-counts.html#uncountable-numbers",
+      "retrieved": "2026.10.10"
+    }
+  ],
+  "roget-node-24": [
+    {
+      "record": "countable-numbers",
+      "display": "ℵ₀ ℕ/ℤ/ℚ",
+      "scope": "Natural number, Integer, and Rational number — each countably infinite, cardinality ℵ₀.",
+      "interpretation": "",
+      "url": "../entity-counts.html#countable-numbers",
+      "retrieved": "2026.10.10"
+    },
+    {
+      "record": "uncountable-numbers",
+      "display": "𝔠 ℝ/ℂ",
+      "scope": "Real number and Complex number — each uncountably infinite, cardinality of the continuum, 2^ℵ₀; a complex number is a pair of real numbers.",
+      "interpretation": "",
+      "url": "../entity-counts.html#uncountable-numbers",
+      "retrieved": "2026.10.10"
+    }
+  ],
+  "roget-0084": [
+    {
+      "record": "countable-numbers",
+      "display": "ℵ₀ ℕ/ℤ/ℚ",
+      "scope": "Natural number, Integer, and Rational number — each countably infinite, cardinality ℵ₀.",
+      "interpretation": "",
+      "url": "../entity-counts.html#countable-numbers",
+      "retrieved": "2026.10.10"
+    },
+    {
+      "record": "uncountable-numbers",
+      "display": "𝔠 ℝ/ℂ",
+      "scope": "Real number and Complex number — each uncountably infinite, cardinality of the continuum, 2^ℵ₀; a complex number is a pair of real numbers.",
+      "interpretation": "",
+      "url": "../entity-counts.html#uncountable-numbers",
+      "retrieved": "2026.10.10"
+    }
+  ]
+}

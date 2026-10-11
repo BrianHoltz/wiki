@@ -20,16 +20,16 @@
     "sha256": "6f940b8d800caa4f605f00ec68567c4205fe96fc599aa3285bac59f707351241"
   },
   "index.html": {
-    "bytes": 11954,
-    "sha256": "cccc5d09348d15bc441a3ec84de604a308fa892337979f62e57502402a04b2c3"
+    "bytes": 12851,
+    "sha256": "380563a69252dbb37c5c94dde256099afaf6d57e0ac9959fb74f175f765517f2"
   },
   "ontology-proposal.json": {
     "bytes": 416246,
     "sha256": "a5daaba8b3689a0ece67128e74eb516a0b9a8b6eae8b0dfb46200c852ca55b41"
   },
   "ontology-tree.md": {
-    "bytes": 149282,
-    "sha256": "c8d0d4728de38ae2bf870ab00b7ba18cc5a8704357904c1e9a85ee05365c1c93"
+    "bytes": 151643,
+    "sha256": "934af613974d905e37efb86d454dfc701b60f79359937302e8d37c6d25deff1a"
   },
   "ontology.json": {
     "bytes": 146087,
@@ -44,8 +44,8 @@
     "sha256": "89c805787605fd0b9c72e9f9f3334f1633b743db46d0aa401d44b1060a7d1c78"
   },
   "render.py": {
-    "bytes": 6888,
-    "sha256": "4013de3353d25337e168a7a336b28f47362f768492e0d084beab1ad80e3e9266"
+    "bytes": 9139,
+    "sha256": "8e5c6d2642d3ae7ef1287239679a7f69c7207391115a3f4d024f1d51321a685e"
   },
   "source-evidence.zip": {
     "bytes": 408879,
@@ -70,5 +70,9 @@
   "species-counts.json": {
     "bytes": 21965,
     "sha256": "b9ac135502406eee2bf4cb51166a7edff57eb6d13ae89cfd403d0320bfbd172d"
+  },
+  "entity-counts.json": {
+    "bytes": 17589,
+    "sha256": "df243ad8decb6280faf795d1529271b90ad3cc244f7f6655aa1326c94650c756"
   }
 }

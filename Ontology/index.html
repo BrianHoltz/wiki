@@ -18,7 +18,7 @@ summary{cursor:pointer;display:flex;align-items:baseline;gap:4px;list-style:none
 details.lineage > summary::before{content:"\25C6"}
 a{color:var(--accent)}#results{margin:10px 0 18px}.result{padding:5px 0;border-bottom:1px solid var(--line)}
 .node{display:flex;align-items:baseline;gap:4px}.node-content{display:flex;align-items:baseline;gap:0;min-width:0;flex:1}.expander{background:transparent;border:0;color:var(--fg);cursor:pointer;font:inherit;padding:0;width:1em}.expander-placeholder{display:inline-block;flex:none;width:1em;text-align:center;color:var(--fg)}.children[hidden]{display:none}
-.node-content:has(>.definition.expanded){display:block}.node-title{display:inline-block}.node-content>.meta{white-space:nowrap}.expander{flex:none}.node-stats{margin-left:4px}.species-count{font-variant-emoji:text;color:inherit;text-decoration:none}.species-count:hover{text-decoration:underline}
+.node-content:has(>.definition.expanded){display:block}.node-title{display:inline-block}.node-content>.meta{white-space:nowrap}.expander{flex:none}.node-stats{margin-left:4px}.entity-count,.species-count{font-variant-emoji:text;color:inherit;text-decoration:none}.entity-count:hover,.species-count:hover{text-decoration:underline}
 </style>
 </head>
 <body>
@@ -38,11 +38,23 @@ function sourceLink(n){return n.sourceUrl?` <a class="source-link" href="${esc(n
 function formatDefinition(text){return esc(text).replace(/&amp;%([A-Za-z0-9_]+)/g,(_,id)=>byId.has(id)?link(id):esc(id))}
 function formatSpeciesCount(count){if(count===null||count===undefined)return '';if(count<1000)return String(count);const rounded=Number(count.toPrecision(3));const unit=rounded>=1e6?1e6:1e3;return (rounded/unit).toPrecision(3)+(unit===1e6?'M':'K')}
 function speciesStats(n){const s=n.speciesCount;if(!s)return '';const known=v=>v!==null&&v!==undefined;const parts=[];if(known(s.extinct))parts.push(`${formatSpeciesCount(s.extinct)}☠︎`);if(known(s.extant))parts.push(`${formatSpeciesCount(s.extant)}♥︎`);const count=parts.length?parts.join('+'):(known(s.total)?formatSpeciesCount(s.total):'');return count?`<a class="species-count" href="${esc(s.url)}" target="_blank" rel="noopener">${count}</a>`:''}
+// Entity counts: scoped populations, catalogue totals and cardinalities.
+function formatEntityCount(s){
+const parts=[];
+if(s.extinctDisplay)parts.push(`${s.extinctDisplay}☠︎`);
+if(s.extantDisplay)parts.push(`${s.extantDisplay}♥︎`);
+return parts.length?parts.join('+')+(s.countLabel?` ${s.countLabel}`:''):s.display;
+}
+function entityStats(n){return (n.entityCounts||[]).map(s=>{
+const title=[s.scope,s.interpretation,s.retrieved?`Sources checked ${s.retrieved}`:''].filter(Boolean).join(' ');
+return `<a class="entity-count" href="${esc(s.url)}" title="${esc(title)}" aria-label="${esc(`${n.label}: ${formatEntityCount(s)}. ${title}`)}" target="_blank" rel="noopener">${esc(formatEntityCount(s))}</a>`;
+}).join(' · ')}
+// End entity counts.
 function renderNode(id,open=false,children=null,lineage=false,childOpen=null){const n=byId.get(id);const visibleChildren=children||lineageChildren?.get(id)||n.children;
 const directChildren=n.children.length;
 const otherDescendants=descendantCount(id)-directChildren;
 const marker=open?'▼':'▶';
-const species=speciesStats(n);const childrenStats=directChildren?`${directChildren}${otherDescendants?`+${otherDescendants}`:''}&#8595;`:'';
+const species=[speciesStats(n),entityStats(n)].filter(Boolean).join(' · ');const childrenStats=directChildren?`${directChildren}${otherDescendants?`+${otherDescendants}`:''}&#8595;`:'';
 const childCount=childrenStats||species?`<span class="meta node-stats">${childrenStats}${childrenStats&&species?' ':''}${species}</span>`:'';
 const provisional=n.provisionalParent?` <span class="meta">· provisional placement</span>`:'';
 const definition=displayDefinition(n).trim();const shortDef=definition?`<span class="definition${open?' expanded':''}" title="${esc(definition)}">&nbsp;${formatDefinition(definition)}</span>`:'';
@@ -82,8 +94,8 @@ hits.map(n=>`<div class="result">${link(n.id)} <span class="meta">${esc(n.id)}</
 document.querySelector('#search').oninput=e=>searchFor(e.target.value);
 document.querySelector('.search-presets').onclick=e=>{const button=e.target.closest('button[data-target]');if(!button)return;document.querySelector('#search').value=button.dataset.search;document.querySelector('#results').innerHTML='';focusLineage(button.dataset.target)};
 function normalizeTree(){const byId=new Map(data.nodes.map(n=>[n.id,n]));const expand=id=>{const n=byId.get(id);return n&&!String(n.label||'').trim()?n.children.flatMap(expand):[id]};data.nodes.forEach(n=>{n.children=n.children.flatMap(expand)});data.rootNodes=data.rootNodes.flatMap(expand);data.nodes=data.nodes.filter(n=>String(n.label||'').trim());const childIds=new Set(data.nodes.flatMap(n=>n.children));data.rootNodes=data.nodes.filter(n=>!childIds.has(n.id)).map(n=>n.id)}
-Promise.all(['ontology.json','species-counts.json'].map(url=>fetch(url).then(r=>{if(r.ok===false)throw new Error(`${url}: ${r.status}`);return r.json()}))).then(([x,counts])=>{data=x;data.nodes.forEach(n=>{n.speciesCount=counts[n.id]||null});normalizeTree();data.nodes.forEach(n=>{if(/^Suggested question:/i.test(n.definition||''))n.definition=null});byId=new Map(data.nodes.map(n=>[n.id,n]));parentOf=new Map();data.nodes.forEach(n=>n.children.forEach(child=>parentOf.set(child,n.id)));descendantCounts=new Map();data.nodes.forEach(n=>descendantCount(n.id));nodeModes=new Map(data.nodes.map(n=>[n.id,0]));data.rootNodes.forEach(root=>{nodeModes.set(root,1);byId.get(root).children.forEach(child=>nodeModes.set(child,1))});lineageNode=null;render()})
-.catch(e=>document.querySelector('#tree').textContent=`Could not load ontology or species counts: ${e}`);
+Promise.all(['ontology.json','species-counts.json','entity-counts.json'].map(url=>fetch(url).then(r=>{if(r.ok===false)throw new Error(`${url}: ${r.status}`);return r.json()}))).then(([x,counts,entities])=>{data=x;data.nodes.forEach(n=>{n.speciesCount=counts[n.id]||null;n.entityCounts=entities[n.id]||[]});normalizeTree();data.nodes.forEach(n=>{if(/^Suggested question:/i.test(n.definition||''))n.definition=null});byId=new Map(data.nodes.map(n=>[n.id,n]));parentOf=new Map();data.nodes.forEach(n=>n.children.forEach(child=>parentOf.set(child,n.id)));descendantCounts=new Map();data.nodes.forEach(n=>descendantCount(n.id));nodeModes=new Map(data.nodes.map(n=>[n.id,0]));data.rootNodes.forEach(root=>{nodeModes.set(root,1);byId.get(root).children.forEach(child=>nodeModes.set(child,1))});lineageNode=null;render()})
+.catch(e=>document.querySelector('#tree').textContent=`Could not load ontology or reference counts: ${e}`);
 </script>
 </body>
 </html>

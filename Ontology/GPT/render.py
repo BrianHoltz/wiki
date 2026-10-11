@@ -6,9 +6,18 @@ p=json.loads((root/'ontology-proposal.json').read_text()); by={n['id']:n for n i
 fby={n['id']:n for n in p['class_expressions']}; children=collections.defaultdict(list)
 for n in p['nodes']:
     if n['primary_parent']:children[n['primary_parent']].append(n['id'])
+entity_counts=json.loads((root/'entity-counts.json').read_text()) if (root/'entity-counts.json').exists() else {}
+def count_suffix(i):
+    links=[]
+    for c in entity_counts.get(i,[]):
+        parts=[c['extinctDisplay']+'☠︎'] if c.get('extinctDisplay') else []
+        if c.get('extantDisplay'):parts.append(c['extantDisplay']+'♥︎')
+        text=('+'.join(parts)+(' '+c['countLabel'] if c.get('countLabel') else '')) if parts else c['display']
+        links.append(f"[{text}]({c['url']})")
+    return (' — '+ ' · '.join(links)) if links else ''
 lines=['# Proposed ontology — complete canonical tree','',f"{len(by)} defined classes. Every indented edge means **is a subclass of**. One primary parent per nonroot; additional superclass edges and role-qualified expressions appear below. JSON is authoritative.",'','Sibling lists are **selective**, not declarations of exhaustiveness or disjointness. A specification and the entity satisfying it are distinct: “Food specification” classifies unary specifications; actual food portions use a qualified bearer expression.','', '## Canonical tree','']
 def walk(i,d):
-    n=by[i];lines.append('    '*d+f'- <a id="{i}"></a>**{n["label"]}** — {n["definition"]} `{i}`')
+    n=by[i];lines.append('    '*d+f'- <a id="{i}"></a>**{n["label"]}** — {n["definition"]} `{i}`'+count_suffix(i))
     for c in children[i]:walk(c,d+1)
 walk(p['root'],0)
 lines+=['','## Additional valid superclass edges','','These are semantic subclass links, not use, location, part-whole, or provenance relations.','', '| Class | Additional superclass |','|---|---|']
@@ -69,3 +78,29 @@ print('Rendered complete tree, coverage mappings, browser data, and shared HTML.
 
 if (root.parent/'test_browser.js').exists():
     subprocess.run(['node',str(root.parent/'test_browser.js')],check=True)
+
+# Refresh the downloadable proposal when generated browser dependencies change.
+manifest_path=root/'deliverable-manifest.json'
+package_path=root/'ontology-proposal-package.zip'
+if manifest_path.exists() and package_path.exists():
+    import hashlib,zipfile
+    manifest=json.loads(manifest_path.read_text())
+    if (root/'entity-counts.json').exists():manifest.setdefault('entity-counts.json',{})
+    for name in manifest:
+        content=(root/name).read_bytes()
+        manifest[name]={'bytes':len(content),'sha256':hashlib.sha256(content).hexdigest()}
+    manifest_path.write_text(json.dumps(manifest,indent=2)+'\n')
+    with zipfile.ZipFile(package_path) as previous:members=previous.namelist()
+    if (root/'entity-counts.json').exists():
+        for name in ['ontology-proposal/entity-counts.json','entity-counts.html','entity-count-references.json']:
+            if name not in members:members.append(name)
+    files={name:(root/name.removeprefix('ontology-proposal/') if name.startswith('ontology-proposal/') else root.parent/name) for name in members}
+    assert all(file.is_file() for file in files.values()), 'Package source member missing'
+    with zipfile.ZipFile(package_path,'w',compression=zipfile.ZIP_DEFLATED) as archive:
+        for name,file in files.items():archive.write(file,name)
+    with zipfile.ZipFile(package_path) as archive:
+        assert archive.testzip() is None
+        for name,entry in manifest.items():
+            content=archive.read('ontology-proposal/'+name)
+            assert len(content)==entry['bytes'] and hashlib.sha256(content).hexdigest()==entry['sha256'],name
+    print('Refreshed and verified proposal manifest and package.')

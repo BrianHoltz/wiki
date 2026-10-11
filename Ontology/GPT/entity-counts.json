@@ -1,0 +1,396 @@
+{
+  "Atom": [
+    {
+      "record": "elements",
+      "display": "118 elements",
+      "scope": "Chemical elements — 118 recognized kinds, corresponding to atomic numbers 1–118; applies to Atom and Elemental substance portion. Element 119 is not an accepted discovery.",
+      "interpretation": "",
+      "url": "../entity-counts.html#elements",
+      "retrieved": "2026.10.10"
+    }
+  ],
+  "ElementalSubstance": [
+    {
+      "record": "elements",
+      "display": "118 elements",
+      "scope": "Chemical elements — 118 recognized kinds, corresponding to atomic numbers 1–118; applies to Atom and Elemental substance portion. Element 119 is not an accepted discovery.",
+      "interpretation": "",
+      "url": "../entity-counts.html#elements",
+      "retrieved": "2026.10.10"
+    }
+  ],
+  "SubatomicParticle": [
+    {
+      "record": "elementary-particles",
+      "display": "17 elementary kinds",
+      "scope": "Elementary particles — 17 Standard Model kinds in the conventional chart: six quark flavours, six leptons, four gauge-boson kinds, and the Higgs boson. Antiparticles and colour states are not counted separately; this is not a count of all composite subatomic particles.",
+      "interpretation": "",
+      "url": "../entity-counts.html#elementary-particles",
+      "retrieved": "2026.10.10"
+    }
+  ],
+  "Substance": [
+    {
+      "record": "substances",
+      "display": ">290M registered",
+      "scope": "Chemical substances — over 290 million registered substances in CAS REGISTRY. A catalogue lower bound for known substances, not a count of every possible molecule or compound, nor of physical substance portions.",
+      "interpretation": "",
+      "url": "../entity-counts.html#substances",
+      "retrieved": "2026.10.10"
+    }
+  ],
+  "Mineral": [
+    {
+      "record": "minerals",
+      "display": "6.24K mineral kinds",
+      "scope": "Minerals — 6,239 valid mineral species, IMA-CNMNC master list, 2026.09; kinds represented by Mineral substance portion, not individual mineral grains.",
+      "interpretation": "",
+      "url": "../entity-counts.html#minerals",
+      "retrieved": "2026.10.10"
+    }
+  ],
+  "Vitamin": [
+    {
+      "record": "vitamins",
+      "display": "13 human vitamins",
+      "scope": "Vitamins — 13 essential vitamin categories for humans, including eight B vitamins; chemical vitamers within a category are not separate vitamins in this convention.",
+      "interpretation": "",
+      "url": "../entity-counts.html#vitamins",
+      "retrieved": "2026.10.10"
+    }
+  ],
+  "Planet": [
+    {
+      "record": "planets",
+      "display": "8 Solar System; 6.45K exoplanets",
+      "scope": "Planets — eight Solar System planets; 6,445 confirmed exoplanets in the NASA Exoplanet Archive, release 2026.10.08. The exoplanet count is a discovery catalogue, not the estimated cosmic population.",
+      "interpretation": "",
+      "url": "../entity-counts.html#planets",
+      "retrieved": "2026.10.10"
+    }
+  ],
+  "Satellite": [
+    {
+      "record": "satellites",
+      "display": "293 Saturn moons",
+      "scope": "Natural satellites — 293 confirmed moons of Saturn, NASA's 2026.08 reference count. This bounded-system count does not imply a total for all natural satellites.",
+      "interpretation": "",
+      "url": "../entity-counts.html#satellites",
+      "retrieved": "2026.10.10"
+    }
+  ],
+  "Asteroid": [
+    {
+      "record": "asteroids",
+      "display": "≈1.1–1.9M >1 km",
+      "scope": "Asteroids — about 1.1–1.9 million main-belt asteroids larger than 1 km, plus millions of smaller bodies; an estimated population, not a discovery-list count.",
+      "interpretation": "",
+      "url": "../entity-counts.html#asteroids",
+      "retrieved": "2026.10.10"
+    }
+  ],
+  "Comet": [
+    {
+      "record": "comets",
+      "display": "billions in Solar System",
+      "scope": "Comets — likely billions in the Solar System, NASA's population estimate; a discovery catalogue contains only a small fraction.",
+      "interpretation": "",
+      "url": "../entity-counts.html#comets",
+      "retrieved": "2026.10.10"
+    }
+  ],
+  "Star": [
+    {
+      "record": "stars",
+      "display": ">100B Milky Way",
+      "scope": "Stars — more than 100 billion in the Milky Way, an estimated population within our galaxy.",
+      "interpretation": "",
+      "url": "../entity-counts.html#stars",
+      "retrieved": "2026.10.10"
+    }
+  ],
+  "Galaxy": [
+    {
+      "record": "galaxies",
+      "display": "≥100B observable",
+      "scope": "Galaxies — at least 100 billion in the observable universe, NASA's broad estimate; faint-galaxy extrapolations depend on detection limits and cosmological models.",
+      "interpretation": "",
+      "url": "../entity-counts.html#galaxies",
+      "retrieved": "2026.10.10"
+    }
+  ],
+  "State": [
+    {
+      "record": "states",
+      "display": "195 UN states",
+      "scope": "Sovereign states — 195 under the UN convention: 193 member states and two non-member observer states, the Holy See and Palestine. Recognition disputes change broader counts; “nation,” ethnic group, and state are not interchangeable. Applies to State territory and Geopolitical Area.",
+      "interpretation": "",
+      "url": "../entity-counts.html#states",
+      "retrieved": "2026.10.10"
+    }
+  ],
+  "Continent": [
+    {
+      "record": "continents",
+      "display": "7 conventional",
+      "scope": "Continents — seven in the familiar English-language convention; other conventions use four, five, or six. Applies to Continental area.",
+      "interpretation": "",
+      "url": "../entity-counts.html#continents",
+      "retrieved": "2026.10.10"
+    }
+  ],
+  "SaltWaterArea": [
+    {
+      "record": "oceans",
+      "display": "5 oceans",
+      "scope": "Oceans — five named oceans within one connected global ocean; applies to Saltwater area.",
+      "interpretation": "",
+      "url": "../entity-counts.html#oceans",
+      "retrieved": "2026.10.10"
+    }
+  ],
+  "StaticWaterArea": [
+    {
+      "record": "lakes",
+      "display": "≈117M lakes ≥0.002 km²",
+      "scope": "Lakes — about 117 million with area at least 0.002 km², the GLOWABO satellite inventory (2014), excluding Greenland and Antarctica. A size-threshold estimate relevant to Standing-water area; lakes are not necessarily freshwater.",
+      "interpretation": "",
+      "url": "../entity-counts.html#lakes",
+      "retrieved": "2026.10.10"
+    }
+  ],
+  "Island": [
+    {
+      "record": "islands",
+      "display": "341K mapped marine",
+      "scope": "Islands — 340,686 mapped marine islands, calculated from 21,818 larger than 1 km² and 318,868 at most 1 km² in the USGS-described 30 m satellite inventory (2014 imagery, 2020 publication). Excludes its five continental mainlands; map resolution and shoreline rules limit completeness.",
+      "interpretation": "",
+      "url": "../entity-counts.html#islands",
+      "retrieved": "2026.10.10"
+    }
+  ],
+  "Human": [
+    {
+      "record": "humans",
+      "display": "≈8.30B living people",
+      "scope": "Humans — about 8.3 billion living individuals in 2026, a rounded global population estimate, not a count of everyone who has ever lived.",
+      "interpretation": "",
+      "url": "../entity-counts.html#humans",
+      "retrieved": "2026.10.10",
+      "extantDisplay": "≈8.30B",
+      "countLabel": "people"
+    }
+  ],
+  "Currency": [
+    {
+      "record": "currency-codes",
+      "display": "178 ISO codes",
+      "scope": "Currency systems and codes — 178 distinct active ISO 4217 alphabetic codes in SIX List One, published 2026.09.17; counted by deduplicating nonempty Ccy fields. Includes funds, precious-metal, testing, and no-currency codes, so this is not 178 circulating national currencies.",
+      "interpretation": "",
+      "url": "../entity-counts.html#currency-codes",
+      "retrieved": "2026.10.10"
+    }
+  ],
+  "Cell": [
+    {
+      "record": "cells",
+      "display": "≈36T male; 28T female",
+      "scope": "Cells — about 36 trillion in a reference adult male and 28 trillion in a reference adult female, Hatton et al. (2023); model-dependent individual counts, not cell-type counts or a total for all organisms.",
+      "interpretation": "",
+      "url": "../entity-counts.html#cells",
+      "retrieved": "2026.10.10"
+    }
+  ],
+  "HumanLanguage": [
+    {
+      "record": "human-languages",
+      "display": "7.17K living human",
+      "scope": "Human languages — 7,170 living languages, Ethnologue's 29th edition (2026), as reported by Wikipedia. Language-versus-dialect boundaries depend on the catalogue; extinct and constructed languages are outside this total.",
+      "interpretation": "",
+      "url": "../entity-counts.html#human-languages",
+      "retrieved": "2026.10.10",
+      "extantDisplay": "7.17K",
+      "countLabel": "living human languages"
+    }
+  ],
+  "NaturalLanguage": [
+    {
+      "record": "human-languages",
+      "display": "7.17K living human",
+      "scope": "Human languages — 7,170 living languages, Ethnologue's 29th edition (2026), as reported by Wikipedia. Language-versus-dialect boundaries depend on the catalogue; extinct and constructed languages are outside this total.",
+      "interpretation": "",
+      "url": "../entity-counts.html#human-languages",
+      "retrieved": "2026.10.10",
+      "extantDisplay": "7.17K",
+      "countLabel": "living human languages"
+    }
+  ],
+  "ComputerLanguage": [
+    {
+      "record": "computer-languages",
+      "display": "8.95K catalogued",
+      "scope": "Computer languages — 8,945 programming languages catalogued by HOPL, including historical languages; this roster is not restricted to languages in active use and does not exhaust every possible formal language.",
+      "interpretation": "",
+      "url": "../entity-counts.html#computer-languages",
+      "retrieved": "2026.10.10"
+    }
+  ],
+  "Character": [
+    {
+      "record": "characters",
+      "display": "173K Unicode; provisional",
+      "scope": "Characters — 172,808 encoded characters in the Unicode 18.0 summary, dated 2026.09.16. The source retains a draft-status notice, so this count is provisional; it counts an encoding repertoire, not every symbol or glyph humans can create.",
+      "interpretation": "",
+      "url": "../entity-counts.html#characters",
+      "retrieved": "2026.10.10"
+    }
+  ],
+  "MeasurementUnit": [
+    {
+      "record": "measurement-units",
+      "display": "7 SI base; 22 named derived",
+      "scope": "Measurement units — seven SI base units and 22 derived units with special names, not all possible derived or non-SI units. The SI prefix vocabulary has 24 prefixes.",
+      "interpretation": "",
+      "url": "../entity-counts.html#measurement-units",
+      "retrieved": "2026.10.10"
+    }
+  ],
+  "NaturalNumber": [
+    {
+      "record": "countable-numbers",
+      "display": "ℵ₀",
+      "scope": "Natural number, Integer, and Rational number — each countably infinite, cardinality ℵ₀.",
+      "interpretation": "",
+      "url": "../entity-counts.html#countable-numbers",
+      "retrieved": "2026.10.10"
+    }
+  ],
+  "Integer": [
+    {
+      "record": "countable-numbers",
+      "display": "ℵ₀",
+      "scope": "Natural number, Integer, and Rational number — each countably infinite, cardinality ℵ₀.",
+      "interpretation": "",
+      "url": "../entity-counts.html#countable-numbers",
+      "retrieved": "2026.10.10"
+    }
+  ],
+  "RationalNumber": [
+    {
+      "record": "countable-numbers",
+      "display": "ℵ₀",
+      "scope": "Natural number, Integer, and Rational number — each countably infinite, cardinality ℵ₀.",
+      "interpretation": "",
+      "url": "../entity-counts.html#countable-numbers",
+      "retrieved": "2026.10.10"
+    }
+  ],
+  "Number": [
+    {
+      "record": "countable-numbers",
+      "display": "ℵ₀ ℕ/ℤ/ℚ",
+      "scope": "Natural number, Integer, and Rational number — each countably infinite, cardinality ℵ₀.",
+      "interpretation": "Cardinalities of these named number systems, not a total for every numerical extension.",
+      "url": "../entity-counts.html#countable-numbers",
+      "retrieved": "2026.10.10"
+    },
+    {
+      "record": "uncountable-numbers",
+      "display": "𝔠 ℝ/ℂ",
+      "scope": "Real number and Complex number — each uncountably infinite, cardinality of the continuum, 2^ℵ₀; a complex number is a pair of real numbers.",
+      "interpretation": "Continuum cardinality 𝔠 = 2^ℵ₀, uncountably infinite; not asserted to equal ℵ₁.",
+      "url": "../entity-counts.html#uncountable-numbers",
+      "retrieved": "2026.10.10"
+    }
+  ],
+  "RealNumber": [
+    {
+      "record": "uncountable-numbers",
+      "display": "𝔠 uncountable",
+      "scope": "Real number and Complex number — each uncountably infinite, cardinality of the continuum, 2^ℵ₀; a complex number is a pair of real numbers.",
+      "interpretation": "",
+      "url": "../entity-counts.html#uncountable-numbers",
+      "retrieved": "2026.10.10"
+    }
+  ],
+  "ComplexNumber": [
+    {
+      "record": "uncountable-numbers",
+      "display": "𝔠 uncountable",
+      "scope": "Real number and Complex number — each uncountably infinite, cardinality of the continuum, 2^ℵ₀; a complex number is a pair of real numbers.",
+      "interpretation": "",
+      "url": "../entity-counts.html#uncountable-numbers",
+      "retrieved": "2026.10.10"
+    }
+  ],
+  "Algorithm": [
+    {
+      "record": "finite-descriptions",
+      "display": "ℵ₀",
+      "scope": "Algorithm, Computable function, and Recursive function — each countably infinite under the usual finite-description convention. Finite formal expressions, finite symbol strings, and finite graphs of arbitrary size are also countable; this follows by finite-string encoding, not from a survey of existing examples.",
+      "interpretation": "",
+      "url": "../entity-counts.html#finite-descriptions",
+      "retrieved": "2026.10.10"
+    }
+  ],
+  "ComputableFunction": [
+    {
+      "record": "finite-descriptions",
+      "display": "ℵ₀",
+      "scope": "Algorithm, Computable function, and Recursive function — each countably infinite under the usual finite-description convention. Finite formal expressions, finite symbol strings, and finite graphs of arbitrary size are also countable; this follows by finite-string encoding, not from a survey of existing examples.",
+      "interpretation": "",
+      "url": "../entity-counts.html#finite-descriptions",
+      "retrieved": "2026.10.10"
+    }
+  ],
+  "RecursiveFunction": [
+    {
+      "record": "finite-descriptions",
+      "display": "ℵ₀",
+      "scope": "Algorithm, Computable function, and Recursive function — each countably infinite under the usual finite-description convention. Finite formal expressions, finite symbol strings, and finite graphs of arbitrary size are also countable; this follows by finite-string encoding, not from a survey of existing examples.",
+      "interpretation": "",
+      "url": "../entity-counts.html#finite-descriptions",
+      "retrieved": "2026.10.10"
+    }
+  ],
+  "FormalExpression": [
+    {
+      "record": "finite-descriptions",
+      "display": "ℵ₀ finite syntax",
+      "scope": "Algorithm, Computable function, and Recursive function — each countably infinite under the usual finite-description convention. Finite formal expressions, finite symbol strings, and finite graphs of arbitrary size are also countable; this follows by finite-string encoding, not from a survey of existing examples.",
+      "interpretation": "Finite symbolic descriptions over a fixed countable encoding; not arbitrary infinite strings.",
+      "url": "../entity-counts.html#finite-descriptions",
+      "retrieved": "2026.10.10"
+    }
+  ],
+  "SymbolicString": [
+    {
+      "record": "finite-descriptions",
+      "display": "ℵ₀ finite syntax",
+      "scope": "Algorithm, Computable function, and Recursive function — each countably infinite under the usual finite-description convention. Finite formal expressions, finite symbol strings, and finite graphs of arbitrary size are also countable; this follows by finite-string encoding, not from a survey of existing examples.",
+      "interpretation": "Finite symbolic descriptions over a fixed countable encoding; not arbitrary infinite strings.",
+      "url": "../entity-counts.html#finite-descriptions",
+      "retrieved": "2026.10.10"
+    }
+  ],
+  "Graph": [
+    {
+      "record": "finite-descriptions",
+      "display": "ℵ₀ finite graphs",
+      "scope": "Algorithm, Computable function, and Recursive function — each countably infinite under the usual finite-description convention. Finite formal expressions, finite symbol strings, and finite graphs of arbitrary size are also countable; this follows by finite-string encoding, not from a survey of existing examples.",
+      "interpretation": "Finite graphs up to isomorphism, or with vertices in a fixed countable encoding; not all infinitely large or arbitrarily labelled graphs.",
+      "url": "../entity-counts.html#finite-descriptions",
+      "retrieved": "2026.10.10"
+    }
+  ],
+  "Function": [
+    {
+      "record": "functions",
+      "display": "𝔠 ℕ→ℕ",
+      "scope": "Function — 2^ℵ₀ functions from natural numbers to natural numbers; no single cardinality applies without fixing the domain and codomain. Set likewise has no universal set of all sets in ordinary set theory, so it receives no total.",
+      "interpretation": "",
+      "url": "../entity-counts.html#functions",
+      "retrieved": "2026.10.10"
+    }
+  ]
+}

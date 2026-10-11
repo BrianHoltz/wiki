@@ -1,0 +1,22 @@
+{
+  "hk-3-2-4": [
+    {
+      "record": "planets",
+      "display": "8 Solar System; 6.45K exoplanets",
+      "scope": "Planets — eight Solar System planets; 6,445 confirmed exoplanets in the NASA Exoplanet Archive, release 2026.10.08. The exoplanet count is a discovery catalogue, not the estimated cosmic population.",
+      "interpretation": "",
+      "url": "../entity-counts.html#planets",
+      "retrieved": "2026.10.10"
+    }
+  ],
+  "hk-3-5-2": [
+    {
+      "record": "cells",
+      "display": "≈36T male; 28T female",
+      "scope": "Cells — about 36 trillion in a reference adult male and 28 trillion in a reference adult female, Hatton et al. (2023); model-dependent individual counts, not cell-type counts or a total for all organisms.",
+      "interpretation": "Human cell populations are examples within this biology topic.",
+      "url": "../entity-counts.html#cells",
+      "retrieved": "2026.10.10"
+    }
+  ]
+}

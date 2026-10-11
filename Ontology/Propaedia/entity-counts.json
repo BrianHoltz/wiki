@@ -1,0 +1,128 @@
+{
+  "part-1.2.1": [
+    {
+      "record": "elements",
+      "display": "118 elements",
+      "scope": "Chemical elements — 118 recognized kinds, corresponding to atomic numbers 1–118; applies to Atom and Elemental substance portion. Element 119 is not an accepted discovery.",
+      "interpretation": "A scoped reference count for the named subject within this outline topic, not a total for every topic member.",
+      "url": "../entity-counts.html#elements",
+      "retrieved": "2026.10.10"
+    }
+  ],
+  "part-1.1.2": [
+    {
+      "record": "elementary-particles",
+      "display": "17 elementary kinds",
+      "scope": "Elementary particles — 17 Standard Model kinds in the conventional chart: six quark flavours, six leptons, four gauge-boson kinds, and the Higgs boson. Antiparticles and colour states are not counted separately; this is not a count of all composite subatomic particles.",
+      "interpretation": "A scoped reference count for the named subject within this outline topic, not a total for every topic member.",
+      "url": "../entity-counts.html#elementary-particles",
+      "retrieved": "2026.10.10"
+    }
+  ],
+  "part-2.1.4": [
+    {
+      "record": "minerals",
+      "display": "6.24K mineral kinds",
+      "scope": "Minerals — 6,239 valid mineral species, IMA-CNMNC master list, 2026.09; kinds represented by Mineral substance portion, not individual mineral grains.",
+      "interpretation": "A scoped reference count for the named subject within this outline topic, not a total for every topic member.",
+      "url": "../entity-counts.html#minerals",
+      "retrieved": "2026.10.10"
+    }
+  ],
+  "part-1.3.2": [
+    {
+      "record": "stars",
+      "display": ">100B Milky Way",
+      "scope": "Stars — more than 100 billion in the Milky Way, an estimated population within our galaxy.",
+      "interpretation": "A scoped reference count for the named subject within this outline topic, not a total for every topic member.",
+      "url": "../entity-counts.html#stars",
+      "retrieved": "2026.10.10"
+    },
+    {
+      "record": "galaxies",
+      "display": "≥100B observable",
+      "scope": "Galaxies — at least 100 billion in the observable universe, NASA's broad estimate; faint-galaxy extrapolations depend on detection limits and cosmological models.",
+      "interpretation": "A scoped reference count for the named subject within this outline topic, not a total for every topic member.",
+      "url": "../entity-counts.html#galaxies",
+      "retrieved": "2026.10.10"
+    }
+  ],
+  "part-2.2.2": [
+    {
+      "record": "oceans",
+      "display": "5 oceans",
+      "scope": "Oceans — five named oceans within one connected global ocean; applies to Saltwater area.",
+      "interpretation": "A scoped reference count for the named subject within this outline topic, not a total for every topic member.",
+      "url": "../entity-counts.html#oceans",
+      "retrieved": "2026.10.10"
+    },
+    {
+      "record": "lakes",
+      "display": "≈117M lakes ≥0.002 km²",
+      "scope": "Lakes — about 117 million with area at least 0.002 km², the GLOWABO satellite inventory (2014), excluding Greenland and Antarctica. A size-threshold estimate relevant to Standing-water area; lakes are not necessarily freshwater.",
+      "interpretation": "A scoped reference count for the named subject within this outline topic, not a total for every topic member.",
+      "url": "../entity-counts.html#lakes",
+      "retrieved": "2026.10.10"
+    }
+  ],
+  "part-5.2.4": [
+    {
+      "record": "humans",
+      "display": "≈8.30B living people",
+      "scope": "Humans — about 8.3 billion living individuals in 2026, a rounded global population estimate, not a count of everyone who has ever lived.",
+      "interpretation": "A scoped reference count for the named subject within this outline topic, not a total for every topic member.",
+      "url": "../entity-counts.html#humans",
+      "retrieved": "2026.10.10",
+      "extantDisplay": "≈8.30B",
+      "countLabel": "people"
+    }
+  ],
+  "part-4.2.1": [
+    {
+      "record": "bones",
+      "display": "206/adult human",
+      "scope": "Bones — 206 in the conventional adult human skeleton; individual variation and counting of fused bones can change the count. Applies to anatomical bones, not kinds of Bone tissue portion.",
+      "interpretation": "A scoped reference count for the named subject within this outline topic, not a total for every topic member.",
+      "url": "../entity-counts.html#bones",
+      "retrieved": "2026.10.10"
+    },
+    {
+      "record": "muscles",
+      "display": ">600/human",
+      "scope": "Muscles — more than 600 in a human body; anatomical count varies with grouping, not a count of muscle-tissue kinds.",
+      "interpretation": "A scoped reference count for the named subject within this outline topic, not a total for every topic member.",
+      "url": "../entity-counts.html#muscles",
+      "retrieved": "2026.10.10"
+    },
+    {
+      "record": "chromosomes",
+      "display": "46/diploid human cell",
+      "scope": "Chromosomes — 46, arranged in 23 pairs, in a typical human diploid cell; gametes and chromosomal variants have different counts.",
+      "interpretation": "A scoped reference count for the named subject within this outline topic, not a total for every topic member.",
+      "url": "../entity-counts.html#chromosomes",
+      "retrieved": "2026.10.10"
+    }
+  ],
+  "part-3.3.1": [
+    {
+      "record": "cells",
+      "display": "≈36T male; 28T female",
+      "scope": "Cells — about 36 trillion in a reference adult male and 28 trillion in a reference adult female, Hatton et al. (2023); model-dependent individual counts, not cell-type counts or a total for all organisms.",
+      "interpretation": "A scoped reference count for the named subject within this outline topic, not a total for every topic member.",
+      "url": "../entity-counts.html#cells",
+      "retrieved": "2026.10.10"
+    }
+  ],
+  "part-5.1.4": [
+    {
+      "record": "human-languages",
+      "display": "7.17K living human",
+      "scope": "Human languages — 7,170 living languages, Ethnologue's 29th edition (2026), as reported by Wikipedia. Language-versus-dialect boundaries depend on the catalogue; extinct and constructed languages are outside this total.",
+      "interpretation": "A scoped reference count for the named subject within this outline topic, not a total for every topic member.",
+      "url": "../entity-counts.html#human-languages",
+      "retrieved": "2026.10.10",
+      "extantDisplay": "7.17K",
+      "countLabel": "living human languages"
+    }
+  ]
+}

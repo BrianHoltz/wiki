@@ -73,7 +73,7 @@ async function loadBrowser(relativePath, dataPath) {
     console,
     document,
     encodeURIComponent,
-    fetch: (url) => Promise.resolve({ json: () => Promise.resolve(url === "ontology.json" ? dataPath : readData(path.join(path.dirname(relativePath), "species-counts.json"))) }),
+    fetch: (url) => Promise.resolve({ json: () => Promise.resolve(url === "ontology.json" ? dataPath : readData(path.join(path.dirname(relativePath), url))) }),
   };
   vm.runInNewContext(script, context, { filename: relativePath });
   await new Promise((resolve) => setImmediate(resolve));
@@ -123,6 +123,40 @@ async function testBrowser(relativePath, dataPath, presetSearch, presetTarget) {
   assert.equal(context.speciesStats({}), "");
   if (counts.Animal) {
     assert.equal(renderedCount(counts.Animal), "169K☠︎+1.48M♥︎");
+  }
+  const entityCounts = readData(path.join(path.dirname(relativePath), "entity-counts.json"));
+  for (const [id, annotations] of Object.entries(entityCounts)) {
+    assert(data.nodes.some(node => node.id === id), `${relativePath}: entity count maps to missing node ${id}`);
+    const start = tree.innerHTML.indexOf(`id="${encodedId(id)}"`);
+    const row = tree.innerHTML.slice(start, tree.innerHTML.indexOf("</div>", start));
+    for (const annotation of annotations) {
+      assert(row.includes(annotation.url), `${relativePath}: entity evidence missing on ${id}`);
+      assert(row.replaceAll("&gt;", ">").includes(context.formatEntityCount(annotation)), `${relativePath}: scoped entity count missing on ${id}`);
+      assert(row.includes('class="entity-count"'), `${relativePath}: entity annotation missing on ${id}`);
+      assert(row.includes('title="'), `${relativePath}: entity scope tooltip missing on ${id}`);
+    }
+  }
+  assert.equal(context.formatEntityCount({display:"ℵ₀"}), "ℵ₀");
+  assert.equal(context.formatEntityCount({display:"𝔠 uncountable"}), "𝔠 uncountable");
+  assert.equal(context.formatEntityCount({extinctDisplay:"40", extantDisplay:"30.0K"}), "40☠︎+30.0K♥︎");
+  assert.equal(context.formatEntityCount({extantDisplay:"7.17K", countLabel:"living languages"}), "7.17K♥︎ living languages");
+  assert.equal(context.formatEntityCount({extinctDisplay:"0", extantDisplay:"1"}), "0☠︎+1♥︎");
+  assert.equal(context.entityStats({}), "");
+  assert(context.entityStats({label:'<name>', entityCounts:[{display:'<count>', scope:'"scope"', url:'evidence.html'}]}).includes('&lt;count&gt;'));
+  if (relativePath === "GPT/index.html") {
+    for (const id of ["NaturalNumber", "Integer", "RationalNumber"]) {
+      assert.equal(entityCounts[id].find(s => s.record === "countable-numbers").display, "ℵ₀");
+    }
+    for (const id of ["RealNumber", "ComplexNumber"]) {
+      assert.equal(entityCounts[id].find(s => s.record === "uncountable-numbers").display, "𝔠 uncountable");
+    }
+    assert.equal(entityCounts.Function[0].display, "𝔠 ℕ→ℕ");
+    assert.equal(entityCounts.Graph[0].display, "ℵ₀ finite graphs");
+    assert(!entityCounts.Bone, "anatomical bone count incorrectly attached to tissue portions");
+    assert(!entityCounts.Muscle, "anatomical muscle count incorrectly attached to tissue portions");
+    assert.equal(entityCounts.Human[0].extantDisplay, "≈8.30B");
+    assert.equal(entityCounts.HumanLanguage[0].extantDisplay, "7.17K");
+    assert(!entityCounts.Particle, "elementary-particle count incorrectly attached to grammatical particles");
   }
   assert(!tree.innerHTML.includes(" &#8595;"), `${relativePath}: space before down arrow`);
   assert.equal((source.match(/data-search="/g) || []).length, 5, `${relativePath}: search presets are missing`);
