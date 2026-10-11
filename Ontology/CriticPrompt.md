@@ -3,7 +3,7 @@
 - Send Prompt 1 to a fresh chat with no repository context. Commit its response
   unchanged as UpperOntologyModelName.md.
 - Send Prompt 2 to a repo-enabled agent with that saved response and the full
-  repository. Save and commit its critique separately as ProjectCritique.md.
+  repository. Save and commit its critique separately as CritiqueByModelName.md.
 
 ## Prompt 1 — independent upper ontology in a fresh chat
 
@@ -122,9 +122,10 @@ complete replacement tree. Avoid arbitrary branching or depth limits beyond the
 requested reporting scope.
 
 Write the critique and revised upper tree as a standalone Markdown document
-named ProjectCritique.md. If repository writes are available, save it in the
-specified model-specific review directory using the repository's coordination
+named CritiqueByModelName.md, replacing ModelName with your model label, for
+example CritiqueByAstra.md or CritiqueByGemini.md. If you can write to the
+repository, save it alongside CriticPrompt.md using the repository's coordination
 and write rules. Otherwise provide a downloadable file or the complete Markdown
-response for import. Identify the repository revision and files inspected, model
+response; I will save and commit it there manually. Identify the repository revision and files inspected, model
 and session where known, tools or tests actually run, external sources used,
 limitations, and unresolved findings. Do not overwrite the independent proposal.
