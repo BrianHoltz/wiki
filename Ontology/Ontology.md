@@ -1,4 +1,4 @@
-# My Ontology
+# Omniversal Ontology
 
 ## Principles
 

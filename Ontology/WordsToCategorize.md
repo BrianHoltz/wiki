@@ -9,11 +9,11 @@ Use these compact vocabularies as adversarial test sets for the ontology.
 - **Simple English Wikipedia Basic English Combined Wordlist** — [Complete 2,626-word list](https://simple.wikipedia.org/wiki/Wikipedia:Basic_English_combined_wordlist)
 - **General Service List** — [High-frequency English vocabulary](https://en.wikipedia.org/wiki/General_Service_List)
 
-| Word&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | My Ontology | Human Knowledge | SUMO | Roget's | Propædia | Wikipedia |
+| Word&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Omniversal Ontology | Human Knowledge | SUMO | Roget's | Propædia | Wikipedia |
 |---|---|---|---|---|---|---|
 ## Upper Ontology
 
-| Word&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | My Ontology | Human Knowledge | SUMO | Roget's | Propædia | Wikipedia |
+| Word&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Omniversal Ontology | Human Knowledge | SUMO | Roget's | Propædia | Wikipedia |
 |---|---|---|---|---|---|---|
 | abstraction |  |  |  |  |  | ✅ |
 | being |  |  |  |  |  |  |
@@ -36,7 +36,7 @@ Use these compact vocabularies as adversarial test sets for the ontology.
 
 ## Biology
 
-| Word&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | My Ontology | Human Knowledge | SUMO | Roget's | Propædia | Wikipedia |
+| Word&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Omniversal Ontology | Human Knowledge | SUMO | Roget's | Propædia | Wikipedia |
 |---|---|---|---|---|---|---|
 | amniote |  |  |  |  |  |  |
 | amoebozoa |  |  |  |  |  |  |
@@ -74,7 +74,7 @@ Use these compact vocabularies as adversarial test sets for the ontology.
 
 ## Difficult Words
 
-| Word&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | My Ontology | Human Knowledge | SUMO | Roget's | Propædia | Wikipedia |
+| Word&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Omniversal Ontology | Human Knowledge | SUMO | Roget's | Propædia | Wikipedia |
 |---|---|---|---|---|---|---|
 | affordance |  |  |  |  |  |  |
 | algorithm | ✅ |  |  |  |  |  |
@@ -172,7 +172,7 @@ Use these compact vocabularies as adversarial test sets for the ontology.
 
 ## Roget's Thesaurus
 
-| Word&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | My Ontology | Human Knowledge | SUMO | Roget's | Propædia | Wikipedia |
+| Word&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Omniversal Ontology | Human Knowledge | SUMO | Roget's | Propædia | Wikipedia |
 |---|---|---|---|---|---|---|
 | abode |  |  |  | ✅ |  |  |
 | abrogation |  |  |  | ✅ |  |  |

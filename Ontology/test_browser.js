@@ -338,7 +338,7 @@ async function main() {
     }
     if (page === "index.html") {
       const canonical = assertDataIntegrity(data);
-      assert.equal(canonical.source.name, "My Ontology");
+      assert.equal(canonical.source.name, "Omniversal Ontology");
       const nodes = new Map(canonical.nodes.map((node) => [node.id, node]));
       assert.deepEqual(nodes.get("Object").children, ["Item", "Collection", "Region", "Agent", "SelfConnectedObject"]);
       assert.deepEqual(nodes.get("Item").children, ["AbioticObject", "BiologicalObject", "Artifact"]);
