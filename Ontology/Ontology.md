@@ -3,10 +3,10 @@
 ## Principles
 
 - The handcrafted v1 remains the player-facing canonical tree; imported systems are source, audit, and enrichment layers rather than replacements.
-- The visible navigation tree has one primary parent per node. Alternate parents, aliases, definitions, source IDs, and provenance remain in data.
+- The canonical tree has one primary parent per node. Definitions, alternate classifications and qualifications of a split must be inspectable from the public tree; aliases, source IDs and provenance support the same account in data.
 - The canonical upper structure is `Entity`, with `Realized entity` and `Abstract entity` as its principal distinction; `Object` and `Process` are children of `Realized entity`.
 - The browser is a shared static, searchable, collapsible tree. It does not generate suggested questions, and it displays definitions only when supplied by source material or an explicit project definition.
-- Source graphs remain authoritative. A one-parent tree is a reproducible navigation projection, not a semantic rewrite.
+- The canonical tree, its definitions and visible annotations state the project ontology. Machine-readable data must encode the same commitments without a substantially different, more authoritative hidden ontology. Imported source graphs remain authoritative for their own source claims; preserve those claims separately when the project makes a different decision.
 - Classify by kind, not role. The canonical parent should express what an entity is, not a role it happens to play. Roles such as agent, location, participant, container, bearer, or instrument should normally be represented as properties, relations, or alternate classifications unless the role defines the entity's kind.
 - Prefer coverage over forced uniqueness. Every concept should have at least one defensible home. Multiple defensible classifications are preferable to leaving a concept unclassified; the canonical tree selects one primary home while preserving useful alternatives.
 - Treat ambiguity as information. Multiple plausible homes are expected in a multidimensional ontology and should be preserved as alternate classifications. Persistent ambiguity near the upper ontology is also a signal to reexamine whether the categories represent genuinely distinct kinds.
@@ -637,19 +637,26 @@ The agent drives the comparison, testing and synthesis. Brian decides the conseq
 
 ### First decision: design priority
 
-**Question:** When a simple tree and a more faithful account of the concepts pull apart, which should lead?
+**Brian's direction:** tree first, with philosophical and academic defensibility. Simplicity and legibility contribute to defensibility. The public tree, definitions and annotations must express the substantive ontology; a significantly different hidden structure must not outrank them. No candidate upper tree is selected by this direction.
 
-- **Meaning first, approachable browsing — recommended.** Preserve distinctions and justified overlap in the underlying ontology; make the tree a readable view of it. This supports broad coverage, but some concepts need alternate routes or a short explanation.
-- **Tree first.** Favor one clear hierarchy and easy navigation. This offers a simpler browsing experience, but more borderline concepts require restricted definitions or secondary treatment.
-- **Formal theory first.** Adopt a coherent foundational account and organize around it. This offers stronger theoretical uniformity, but requires more philosophical commitments and may make navigation more technical.
+**Agent assessment:** use the tree as the authoritative account and make its data a faithful encoding. However, legibility does not establish a classification's truth, coverage or exclusivity. If a clean split fails a counterexample, revise the split or qualify its claim; presentation cannot rescue it. This differs from prioritizing an independently authoritative underlying graph.
 
-All options require valid relationships and explicit definitions. The choice sets the design priority; it does not select a model's tree or settle Entity's children. The recommendation follows the memoranda's distinction between a rich ontology and its canonical tree.
+### Next decision: must siblings exclude one another?
 
-**Decision needed from Brian:** choose an option or state a different priority. This decision is open. After the choice, the agent prepares the admission-and-reference brief.
+**Question:** Must every sibling group be a strict partition, or may it explicitly allow overlap?
+
+- **Disjoint where justified, overlap where necessary — recommended.** Seek simple, coherent splits, but make exceptions visible in the tree's definitions and notes. One primary parent provides a clear route; it does not imply that other classifications are false. This preserves more concepts, with some explanatory overhead.
+- **Require strict partitions throughout.** Every instance belongs to exactly one child at each split, and the children cover the parent. This gives a cleaner tree, but demands stronger arguments and may require excluding useful categories or restricting their meanings.
+
+**Test case:** under definitions proposed in this project, Event is a bounded occurrence and Process is ongoing activity. One marathon run meets both definitions. A disjoint split therefore requires revised definitions, a justified distinction between two subjects, or a different arrangement of the categories. The point is not that overlap must win: the stricter alternative must explain what its distinction buys and which familiar uses it excludes.
+
+**Biology constraint:** primary taxonomic ancestry is monophyletic. Habitat, diet and similar cross-cutting groupings cannot replace clades or become intermediate ancestry nodes. The overlap question supplies no exception to this requirement.
+
+**Decision needed from Brian:** accept the recommended policy or require strict partitions throughout. A policy allowing overlap does not decide that any particular root split overlaps; each proposed exception still needs a reason and a counterexample to the stricter alternative.
 
 ### Working method
 
-For each turning point, the agent supplies the question, recommendation, viable alternatives and their main consequences. Keep the opening brief short and high-level; retain supporting definitions, examples and objections below it or in linked analysis. Offer more detail when Brian requests it. Record his answer, its rationale and any qualifications before advancing dependent work. A failed stress test reopens the earliest affected decision.
+For each turning point, the agent supplies the question, recommendation, viable alternatives and their main consequences. Keep the opening brief short and high-level; retain supporting definitions, examples and objections below it or in linked analysis. Offer more detail when Brian requests it. Give an independent recommendation and the strongest counterargument to Brian's preference; change that recommendation only for better evidence or reasoning. Record his answer, its rationale and any qualifications before advancing dependent work. A failed stress test reopens the earliest affected decision.
 
 The agent owns input/version checks, claim verification, sense-level comparison, counterexample testing, decision records and synthesis. Bring Brian choices that materially change scope, identity, metaphysical commitments or the browsing experience; handle routine analysis and implementation within accepted decisions. Split a gate into several briefs when its choices are independent. Continue unrelated work while a decision is open, but do not treat silence as acceptance.
 
@@ -693,7 +700,7 @@ Decide when kinds, phases, roles, domains and ontic status belong in primary anc
 
 The agent presents tested candidate root structures and their tradeoffs; Brian chooses the root grouping and which partition claims it makes.
 
-Decide whether Entity's children must form an exhaustive, disjoint partition or may be an open set of overlapping categories. Distinguish the semantic structure from the first-level browsing menu. A useful menu is not proof of a fundamental partition; a compressed route must identify skipped semantic ancestors.
+Decide whether Entity's children must form an exhaustive, disjoint partition or may be an open set of overlapping categories. Require the public root grouping to state the accepted semantic commitments. A useful menu is not proof of a fundamental partition; any compressed route must visibly identify skipped semantic ancestors, and its data must encode the same account.
 
 Compare the GPT realized/abstract dyad, particular/predicable approaches, the six-category Astra and Gemini revisions, the seven-category Claude revision, and a root with orthogonal classifications instead of a mandatory exhaustive cut. Compare definitions and consequences, not labels. For each candidate require an organizing principle, inclusion argument, overlap/coverage policy, strongest objection and results on the same [stress tests](#stress-testing). In particular, test claimed disjointness between content and formal structures and claimed coverage of fields, absences, facts and possible worlds.
 
