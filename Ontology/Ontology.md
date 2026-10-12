@@ -637,18 +637,17 @@ The agent drives the comparison, testing and synthesis. Brian decides the conseq
 
 ### Next decision: admission and reference
 
-**Question:** Should the ontology directly accommodate fictional and impossible subjects, or classify only existing entities and their descriptions?
+**Constraints from Brian:** actuality, present existence and fictional status do not supply the fundamental kind distinction. Avoid parallel real and fictional trees: a portrayed human belongs near the human kind, not in a distant duplicate hierarchy. Brian's intended sense of the incumbent Realized entity is realizable, allowing a hypothetical subject such as Sasquatch without asserting that it exists. The precise realizability criterion and root placement remain undecided.
 
-- **Broad subjects, explicit status — recommended.** Give real, formal, fictional, hypothetical and impossible characterized subjects defensible homes. Entry in the tree implies neither actual existence nor realizability. This supports ordinary discourse, but requires visible distinctions between a subject, its description and what a source says about it.
-- **Existing entities only.** Include actual objects, works and descriptions; discuss Holmes or a round square through those representations. This keeps a narrower commitment about existence, but the tree's home is for the description rather than the purported subject. What counts as existing still needs an account for mathematics and other disputed cases.
+**Recommendation:** share the kind tree and make the scope of each classification visible. Holmes can have a home at Human as portrayed in the stories; this does not assert an actual human organism. A hypothesized organism likewise need not be an accepted taxon or receive an invented scientific lineage. Actuality, temporal status, fictional origin and possibility are distinct annotations, not interchangeable labels.
 
-**Proposed Entity definition:** an identifiable subject of discourse under a stated interpretation, without implying actual existence or realizability.
+**Decision needed from Brian:** permit explicitly attributed or hypothetical classifications in the shared kind tree, or give only actual descriptions those homes?
 
-**Guardrail:** a phrase does not automatically supply a referent. Retain “the largest prime” as a failed description under ordinary arithmetic; do not create an actual number satisfying it. Likewise, recording that a source characterizes a round square as round and square does not assert a realizable geometric instance.
+**Steelman of descriptions-only:** a novel and its descriptions actually exist; their supposed subjects need not. Keeping actual class membership separate from portrayal gives cleaner existence commitments and avoids treating an impossible characterization as an actual instance. Its cost is that a reader seeking Holmes reaches a description rather than the portrayed person. Either approach must keep that distinction explicit in the public account.
 
-**Strongest objection to the recommendation:** it can turn ontology into a catalogue of things people say. The admission rule must require enough identity and interpretive context to distinguish subjects, and keep attributed claims separate from assertions about actuality. The choice does not yet decide whether fictional subjects are abstract artifacts or adopt a particular theory of fiction.
+**Agent pushback:** “realizable” needs a stated test. Logical consistency, compatibility with physical laws and metaphysical possibility can disagree. An impossible portrayal can still portray a human, so realizability cannot by itself decide every depicted-kind placement. A tidy tree does not resolve this. Defer adopting realizability as a root cleave until its criterion and counterexamples are reviewed.
 
-**Decision needed from Brian:** broad subjects with explicit status, or existing entities with descriptions handling the rest?
+**Guardrail:** “the largest prime” remains a failed description under ordinary arithmetic; it does not supply an actual number. A source's round-square characterization is not an assertion that a realizable geometric instance is both round and square. Public annotations must carry these qualifications; supporting data may not quietly impose different semantics.
 
 ### Accepted direction: design priority
 
@@ -656,15 +655,19 @@ The agent drives the comparison, testing and synthesis. Brian decides the conseq
 
 **Agent assessment:** use the tree as the authoritative account and make its data a faithful encoding. However, legibility does not establish a classification's truth, coverage or exclusivity. If a clean split fails a counterexample, revise the split or qualify its claim; presentation cannot rescue it. This differs from prioritizing an independently authoritative underlying graph.
 
+**Steelman of a richer graph as authority:** multiple inheritance and typed relations can express overlapping kinds and dependencies without forcing one route to carry every commitment. Its cost here is that the tree can become an incomplete guide to the ontology. The accepted direction requires those commitments to be inspectable in the public tree and annotations instead of allowing a hidden account to overrule them.
+
 ### Accepted decision: sibling policy
 
 Seek disjointness where justified and permit overlap where necessary. Every proposed overlap needs an explicit reason and a counterexample to the stricter alternative; record the policy visibly with the split. Exhaustiveness is a separate claim requiring its own argument. Neither property follows from tree layout.
 
 Primary biological ancestry remains monophyletic. Habitat, diet and similar cross-cutting groupings cannot replace clades or become intermediate ancestry nodes. This requirement is unaffected by permission for other sibling groups to overlap.
 
+**Rationale:** justified overlap avoids manufacturing sharp boundaries where the definitions and cases do not support them. **Steelman of strict partitions:** exclusive, exhaustive children simplify classification, comparison and inference, and force clearer definitions. Preserve that discipline where defensible; reject it as a universal requirement when its exclusions lack a substantive argument. Monophyly is an ancestry criterion for biology, not a universal test for all ontology categories.
+
 ### Working method
 
-For each turning point, the agent supplies the question, recommendation, viable alternatives and their main consequences. Keep the opening brief short and high-level; retain supporting definitions, examples and objections below it or in linked analysis. Offer more detail when Brian requests it. Give an independent recommendation and the strongest counterargument to Brian's preference; change that recommendation only for better evidence or reasoning. Record his answer, its rationale and any qualifications before advancing dependent work. A failed stress test reopens the earliest affected decision.
+For each turning point, the agent supplies the question, recommendation, viable alternatives and their main consequences. Keep the opening brief short and high-level; retain supporting definitions, examples and objections below it or in linked analysis. Offer more detail when Brian requests it. Give an independent recommendation and the strongest counterargument to Brian's preference; change that recommendation only for better evidence or reasoning. Record his answer with the strongest defensible rationale, qualifications and steelman of rejected alternatives before advancing dependent work. Distinguish adopted choices from clarifications and unresolved questions. A failed stress test reopens the earliest affected decision.
 
 The agent owns input/version checks, claim verification, sense-level comparison, counterexample testing, decision records and synthesis. Bring Brian choices that materially change scope, identity, metaphysical commitments or the browsing experience; handle routine analysis and implementation within accepted decisions. Split a gate into several briefs when its choices are independent. Continue unrelated work while a decision is open, but do not treat silence as acceptance.
 
