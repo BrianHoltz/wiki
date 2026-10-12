@@ -635,23 +635,37 @@ The large RDF/XML text dump available for this project is not a general “Mozil
 
 The agent drives the comparison, testing and synthesis. Brian decides the consequential design choices, one compact brief at a time. The aim remains a general-purpose ontology with an intelligible canonical tree, as described in the [design memoranda](OntologyDesignMemoranda.md#1-project-goal).
 
-### Next decision: first root sketch
+### Next decision: Particular's principal categories
 
-**Question:** Where should the accepted Predicable distinction appear in the upper tree?
+**Question:** Which immediate children should we try under Particular?
 
-- **Direct principal categories — recommended for the trial.** Object, Occurrence, Particular feature, Region, Content, Formal entity and Predicable. This adds an explicit predicable branch to the [Astra revision](CritiqueByAstra.md#recommended-upper-tree), preserving direct access to recognizable categories. Its cost is that the categories use related but different criteria; their boundaries and any overlap need testing.
-- **Non-predicable / Predicable first.** Make constitutive applicability the first distinction, then organize non-predicables beneath it. This follows the organizing idea of [Fable's original split](UpperOntologyClaudeFable.md#1-summary-of-the-recommendation) without accepting its “cannot have instances” definition of Particular. Its strength is one explicit first criterion; its cost is a broad negatively named branch whose useful distinctions lie one level deeper.
-- **Realizable / Abstract / Predicable first.** Preserve Brian's broad subject categories alongside Predicable. Its strength is continuity and a short root; its cost is defining realizability and abstraction and stating whether the subject branches exclude predicables or overlap them. Actuality is not the test.
+- **Fable's six categories — recommended for the trial.** Object, Occurrence, Particular feature, Region, Construct and Formal entity. This adapts [Fable's original tree](UpperOntologyClaudeFable.md#4-the-upper-tree), using clearer feature and formal labels. Construct groups origin-anchored meaning and symbolic form; Formal entity groups subjects identified by formal conditions. The distinction must earn its place through identity tests.
+- **Astra's six categories, restricted to particulars.** Object, Occurrence, Particular feature, Region, Content and Formal entity. Symbolic structures remain under Formal entity; interpreted meaning goes under Content. Predicables retain their accepted separate root branch, and specifications are distinguished from what they specify. Its strength is direct access to meaning; its cost is testing whether Content and Formal entity give origin-sensitive works and expressions adequate identity accounts.
+- **Realizable / Abstract before the detailed kinds.** Retain a broad first distinction beneath Particular. Its strength is a compact overview; its cost is defining realizability and abstraction before the concrete cases earn their placements. Actuality cannot supply the distinction.
 
-**Recommendation's limit:** this is a trial shape, not an exhaustive partition or a completed account of properties. Predicables must have a visible home; specifications remain distinguishable from what they specify. Challenge definitions and placements against the [difficult-case inventory](WordsToCategorize.md#difficult-words). A defective split must be revised in the public tree.
+**Recommendation's limit:** the proposed six are open, not an asserted exhaustive partition. Construct would classify representational subjects, not relocate every fictional human or hypothetical animal out of its kind. Its proposed Characterized Object branch requires particular scrutiny against the accepted admission rule. The trial does not adopt every subclass or disjointness claim in Fable's proposal.
 
-**Decision needed from Brian:** try direct categories with Predicable, make Non-predicable / Predicable the first split, or try Realizable / Abstract / Predicable? Acceptance authorizes drafting and testing a shape, not all of its definitions or placements.
+**Decision needed from Brian:** try Fable's six, Astra's six with a separate Predicable branch, or Realizable / Abstract beneath Particular? The most consequential difference between the six-category trials is origin-anchored Construct versus interpretation-based Content.
+
+### Accepted decision: Particular / Predicable root split
+
+Entity has Particular and Predicable as its immediate children. The split is disjoint and exhaustive under the adopted distinction: an entity is either constitutively applicable as a characterization or complete as a subject without that applicability. This is a conceptual root partition, not a requirement that every later split be disjoint or exhaustive.
+
+**Particular:** an entity complete as a subject of characterization, rather than constitutively applicable to subjects as a characterization.
+
+**Meaning of complete:** lacking unfilled predicative positions, not being fully described, actually existent, physically independent or finished in time. Predicables can themselves be subjects of characterization; this does not make them Particulars, because their constitutive applicability remains. Copies, performances, representations and mathematical realizations do not by themselves settle category membership. The [accepted Predicable definition](#accepted-decision-constitutive-predicative-applicability) supplies the complementary criterion.
+
+**Rationale:** a common distinction organizes the difference between subjects and the properties or relations applicable to them without substituting specifications for their referents. It is adapted from the logical precedents in the [academic survey](#particular-academic-terminology), rather than importing an entire historical theory. It accommodates abstract and dependent particulars and higher-order predication while respecting the omniversal admission rule.
+
+**Steelman of direct principal categories:** exposing objects, occurrences, features and other familiar kinds immediately saves a broad intermediate level and avoids a technical first choice. Its cost is leaving their fundamental relation to predicables unstated at the root. The adopted split gives that relation priority, while its branches still need useful positive structure.
+
+**Steelman of Realizable / Abstract / Predicable:** it foregrounds embodiment or possibility alongside applicability and preserves familiar project vocabulary. Its cost is mixing criteria at one level and deciding what realization means before the particular kinds clarify it. Realizability may remain relevant below Particular, with an explicit criterion, rather than determining the root split.
 
 ### Accepted decision: constitutive predicative applicability
 
 **Definition:** a predicable is an entity whose nature is to characterize one or more subjects: it is applicable to them as a property or relation, and its application concerns whether or how those subjects qualify or stand related. This applicability is constitutive of the predicable, rather than a consequence of its being used to represent something. Its subject positions give it predicative arity; the subjects may themselves be predicables. Actual application or exemplification is not required.
 
-**Consequence:** predicables need a visible home distinct from specifications of them. Specifications under Content are legitimate subjects; they are not exhaustive substitutes for their referents. This decision establishes the conceptual distinction, not its level in the tree, the identity theory of properties or an independently existing universe of universals.
+**Consequence:** predicables need a visible home distinct from specifications of them. Specifications under Content are legitimate subjects; they are not exhaustive substitutes for their referents. The [root split](#accepted-decision-particular--predicable-root-split) places Particular and Predicable immediately under Entity. Neither decision settles the identity theory of properties or posits an independently existing universe of universals.
 
 **Rationale and tests:** redness characterizes a candidate bearer; being taller than relates candidates in ordered positions. Redness can itself be characterized as a color property. A book describing redness represents it without becoming applicable to red things as redness is. Two specifications can disagree about the same property without producing two different properties. A particular wall's redness remains distinguishable from the repeatable predicable. A function's numerical output does not by itself establish predicative applicability. “Aboutness” alone is too broad: a biography's subject can be essential to its identity, yet its representational aboutness differs from a predicable's applicability.
 
@@ -674,7 +688,7 @@ This survey compares representative definitions and their suitability for the ac
 
 **Assessment:** the closest precedents favor Particular or Individual as conventional labels for the non-predicative side, rather than revealing a universally agreed positive essence. Abstractness, physical independence, spatial uniqueness and being an instance each add commitments or answer different questions. The number two can be an object in Frege's account; calling it a particular across all philosophical frameworks would overstate agreement.
 
-**Frege-inspired candidate:** “A particular is an entity complete as a subject of characterization, rather than constitutively applicable to subjects as a characterization.” This is a project adaptation, not a quotation or an adoption of Frege's full theory. “Complete” means not requiring subjects to fill predicative positions; it does not mean fully specified, actually existent or causally independent. The contrast may improve the explanation, but the term must earn its usefulness on books, numbers, particular qualities and predicables receiving higher-order predication. No new definition is accepted by this survey.
+**Adopted Frege-inspired definition:** the [root decision](#accepted-decision-particular--predicable-root-split) uses completeness as a subject contrasted with constitutive predicative applicability. This is a project adaptation, not a quotation or an adoption of Frege's full theory. Test it on books, numbers, particular qualities and predicables receiving higher-order predication.
 
 ### Accepted decision: is-a parentage and first-pass scope
 
