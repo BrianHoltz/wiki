@@ -526,6 +526,82 @@ The six principal categories remain **open**, with explicitly qualified overlap.
 
 ### Tree with discriminating definitions
 
+A compact view of the same classes defined below. Every branch means is-a; siblings are not asserted to be disjoint or exhaustive.
+
+```text
+Entity
+├── Object
+│   ├── Physical object
+│   │   ├── Material body
+│   │   ├── Material portion
+│   │   └── Physical aggregate
+│   └── Social object
+│       ├── Institutional continuant
+│       └── Social collective
+├── Occurrence
+│   ├── Process
+│   │   ├── Physical process
+│   │   ├── Mental process
+│   │   └── Social process
+│   ├── Event
+│   │   ├── Transition event
+│   │   └── Achievement event
+│   └── State
+│       ├── Physical state
+│       ├── Mental state
+│       └── Social state
+├── Particular feature
+│   ├── Quality
+│   │   ├── Physical quality
+│   │   └── Phenomenal quality
+│   ├── Disposition
+│   ├── Relational feature
+│   │   ├── Role occupancy
+│   │   ├── Normative position
+│   │   └── Relator
+│   ├── Structural feature
+│   │   ├── Boundary feature
+│   │   └── Cavity feature
+│   └── Intentional attitude
+│       ├── Belief attitude
+│       ├── Conative attitude
+│       └── Preference attitude
+├── Region
+│   ├── Spatial region
+│   │   ├── Spatial point
+│   │   └── Spatial extent
+│   ├── Temporal region
+│   │   ├── Temporal instant
+│   │   └── Temporal extent
+│   └── Spatiotemporal region
+│       ├── Spatiotemporal point
+│       └── Spatiotemporal extent
+├── Content
+│   ├── Condition specification
+│   │   ├── Property specification
+│   │   └── Relation specification
+│   ├── Propositional content
+│   ├── Directive specification
+│   │   ├── Goal specification
+│   │   ├── Plan specification
+│   │   └── Norm specification
+│   └── Descriptive content
+│       ├── Model specification
+│       └── Narrative content
+└── Formal entity
+    ├── Mathematical entity
+    │   ├── Number
+    │   ├── Mathematical collection
+    │   └── Mathematical structure
+    ├── Symbolic structure
+    │   ├── Linguistic expression
+    │   ├── Formal-language expression
+    │   └── Diagrammatic expression
+    └── Scale determination
+        ├── Quantity magnitude
+        └── Scheme category
+```
+
 Indentation is authoritative: Entity is depth 0; the deepest displayed classes are depth 3. No adopted ancestor is silently omitted to bring a deeper class into this report.
 
 - **Entity:** an individuated subject admitted to a specified domain of discourse, without actuality or realizability being implied.

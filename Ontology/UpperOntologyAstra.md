@@ -95,6 +95,89 @@ A class identifier and a specification identifier should normally be separate, c
 
 ## 4. Upper tree with discriminating definitions
 
+A compact view of the same classes defined below. Every branch means is-a; siblings are not asserted to be disjoint or exhaustive.
+
+```text
+Entity
+├── Object
+│   ├── Physical object
+│   │   ├── Material body
+│   │   ├── Material portion
+│   │   └── Physical aggregate
+│   ├── Social object
+│   │   ├── Institutional continuant
+│   │   └── Social collective
+│   └── Subject
+│       ├── Experiencing subject
+│       └── Intentional agent
+├── Occurrence
+│   ├── Process
+│   │   ├── Physical process
+│   │   ├── Mental process
+│   │   └── Social process
+│   ├── Event
+│   │   ├── Transition event
+│   │   └── Achievement event
+│   └── State
+│       ├── Physical state
+│       ├── Mental state
+│       └── Social state
+├── Particular feature
+│   ├── Quality
+│   │   ├── Physical quality
+│   │   └── Phenomenal quality
+│   ├── Disposition
+│   │   ├── Capability
+│   │   └── Operative function
+│   ├── Relational feature
+│   │   ├── Role occupancy
+│   │   └── Normative position
+│   ├── Structural feature
+│   │   ├── Boundary feature
+│   │   └── Cavity feature
+│   └── Intentional attitude
+│       ├── Belief attitude
+│       ├── Conative attitude
+│       └── Preference attitude
+├── Region
+│   ├── Spatial region
+│   │   ├── Spatial point
+│   │   └── Spatial extent
+│   ├── Temporal region
+│   │   ├── Temporal instant
+│   │   └── Temporal extent
+│   ├── Spatiotemporal region
+│   │   ├── Spatiotemporal point
+│   │   └── Spatiotemporal extent
+│   └── Quality-space region
+│       ├── Quality-space point
+│       └── Quality-space range
+├── Content
+│   ├── Predicate
+│   │   ├── Property
+│   │   └── Relation
+│   ├── Propositional content
+│   ├── Directive specification
+│   │   ├── Goal specification
+│   │   ├── Plan specification
+│   │   └── Norm specification
+│   └── Descriptive content
+│       ├── Model specification
+│       └── Narrative content
+└── Formal entity
+    ├── Mathematical entity
+    │   ├── Number
+    │   ├── Mathematical collection
+    │   └── Mathematical structure
+    ├── Symbolic structure
+    │   ├── Linguistic expression
+    │   ├── Formal-language expression
+    │   └── Diagrammatic expression
+    └── Value
+        ├── Quantity value
+        └── Category value
+```
+
 The codes identify nodes for the constraint and argument tables. Depth is determined solely by indentation: E is depth 0; its children, grandchildren, and great-grandchildren are depths 1, 2, and 3. **Every edge in this list is is-a.** Bracketed comments do not add edges.
 
 - **E — Entity:** an individuated subject admitted to a specified domain of discourse for identification and predication, without existence or realizability being implied.
