@@ -635,24 +635,32 @@ The large RDF/XML text dump available for this project is not a general “Mozil
 
 The agent drives the comparison, testing and synthesis. Brian decides the consequential design choices, one compact brief at a time. The aim remains a general-purpose ontology with an intelligible canonical tree, as described in the [design memoranda](OntologyDesignMemoranda.md#1-project-goal).
 
-### First decision: design priority
+### Next decision: admission and reference
+
+**Question:** Should the ontology directly accommodate fictional and impossible subjects, or classify only existing entities and their descriptions?
+
+- **Broad subjects, explicit status — recommended.** Give real, formal, fictional, hypothetical and impossible characterized subjects defensible homes. Entry in the tree implies neither actual existence nor realizability. This supports ordinary discourse, but requires visible distinctions between a subject, its description and what a source says about it.
+- **Existing entities only.** Include actual objects, works and descriptions; discuss Holmes or a round square through those representations. This keeps a narrower commitment about existence, but the tree's home is for the description rather than the purported subject. What counts as existing still needs an account for mathematics and other disputed cases.
+
+**Proposed Entity definition:** an identifiable subject of discourse under a stated interpretation, without implying actual existence or realizability.
+
+**Guardrail:** a phrase does not automatically supply a referent. Retain “the largest prime” as a failed description under ordinary arithmetic; do not create an actual number satisfying it. Likewise, recording that a source characterizes a round square as round and square does not assert a realizable geometric instance.
+
+**Strongest objection to the recommendation:** it can turn ontology into a catalogue of things people say. The admission rule must require enough identity and interpretive context to distinguish subjects, and keep attributed claims separate from assertions about actuality. The choice does not yet decide whether fictional subjects are abstract artifacts or adopt a particular theory of fiction.
+
+**Decision needed from Brian:** broad subjects with explicit status, or existing entities with descriptions handling the rest?
+
+### Accepted direction: design priority
 
 **Brian's direction:** tree first, with philosophical and academic defensibility. Simplicity and legibility contribute to defensibility. The public tree, definitions and annotations must express the substantive ontology; a significantly different hidden structure must not outrank them. No candidate upper tree is selected by this direction.
 
 **Agent assessment:** use the tree as the authoritative account and make its data a faithful encoding. However, legibility does not establish a classification's truth, coverage or exclusivity. If a clean split fails a counterexample, revise the split or qualify its claim; presentation cannot rescue it. This differs from prioritizing an independently authoritative underlying graph.
 
-### Next decision: must siblings exclude one another?
+### Accepted decision: sibling policy
 
-**Question:** Must every sibling group be a strict partition, or may it explicitly allow overlap?
+Seek disjointness where justified and permit overlap where necessary. Every proposed overlap needs an explicit reason and a counterexample to the stricter alternative; record the policy visibly with the split. Exhaustiveness is a separate claim requiring its own argument. Neither property follows from tree layout.
 
-- **Disjoint where justified, overlap where necessary — recommended.** Seek simple, coherent splits, but make exceptions visible in the tree's definitions and notes. One primary parent provides a clear route; it does not imply that other classifications are false. This preserves more concepts, with some explanatory overhead.
-- **Require strict partitions throughout.** Every instance belongs to exactly one child at each split, and the children cover the parent. This gives a cleaner tree, but demands stronger arguments and may require excluding useful categories or restricting their meanings.
-
-**Test case:** under definitions proposed in this project, Event is a bounded occurrence and Process is ongoing activity. One marathon run meets both definitions. A disjoint split therefore requires revised definitions, a justified distinction between two subjects, or a different arrangement of the categories. The point is not that overlap must win: the stricter alternative must explain what its distinction buys and which familiar uses it excludes.
-
-**Biology constraint:** primary taxonomic ancestry is monophyletic. Habitat, diet and similar cross-cutting groupings cannot replace clades or become intermediate ancestry nodes. The overlap question supplies no exception to this requirement.
-
-**Decision needed from Brian:** accept the recommended policy or require strict partitions throughout. A policy allowing overlap does not decide that any particular root split overlaps; each proposed exception still needs a reason and a counterexample to the stricter alternative.
+Primary biological ancestry remains monophyletic. Habitat, diet and similar cross-cutting groupings cannot replace clades or become intermediate ancestry nodes. This requirement is unaffected by permission for other sibling groups to overlap.
 
 ### Working method
 
