@@ -635,19 +635,25 @@ The large RDF/XML text dump available for this project is not a general “Mozil
 
 The agent drives the comparison, testing and synthesis. Brian decides the consequential design choices, one compact brief at a time. The aim remains a general-purpose ontology with an intelligible canonical tree, as described in the [design memoranda](OntologyDesignMemoranda.md#1-project-goal).
 
-### Next decision: nodes and parentage
+### Next decision: first root sketch
 
-**Brian's leaning:** all tree edges should mean is-a. Evaluate the [candidate edge types](#candidate-edge-types) and the consequences of admitting additional relations before finalizing this contract.
+**Question:** Which organizing shape should we try immediately below Entity?
 
-**Recommendation:** keep every primary ancestry edge as class inclusion. Dog under Mammal means every dog is a mammal under the stated interpretation. Consider other relations as visibly named cross-links, member entries or notes, with the same semantics in the data. They do not become alternate ancestry merely because they connect two nodes.
+- **Direct principal categories — recommended for the trial.** Object, Occurrence, Particular feature, Region, Content and Formal entity, broadly following the [Astra revision](CritiqueByAstra.md#recommended-upper-tree). Readers reach recognizable distinctions immediately. The cost is that these use related but not identical criteria; Content/Formal entity boundaries and the placement of properties must be tested rather than assumed settled.
+- **Realizable / Abstract first.** Preserve the incumbent's familiar broad division, then distinguish objects, occurrences and other kinds beneath it. Its strongest case is one general first distinction; its cost is defining realizability without a residual Abstract bucket or unintended physics commitments. Actuality is not the test.
+- **Particular / Predicable first.** Separate individual subjects from repeatable properties and relations before their subcategories, following the [initial Claude proposal](UpperOntologyClaudeFable.md#1-summary-of-the-recommendation). Its strongest case is explicit predication discipline; its cost is a technical first choice that may not organize every intended subject cleanly.
 
-**Choice to resolve:** does “all edges” govern ancestry alone, or every represented relationship? A class tree can have only is-a ancestry while its public account also says that a tail is part of a dog or Fido instantiates Dog. A mixed hierarchy instead lets these relations select parents and changes what a path means.
+**Recommendation's limit:** the six-category sketch is an open proposal, not an asserted exhaustive partition or an adopted theory of properties. Test its branches in the public tree, especially against the [difficult-case inventory](WordsToCategorize.md#difficult-words). If a branch cannot earn a discriminating definition and a defensible is-a placement, revise it. There is no hidden richer ontology to rescue a defective visible split.
 
-**Steelman of strict is-a representation:** one relation minimizes interpretation and makes every ancestry path support class inclusion. Its cost is that individuals, components and other relationships need separate public treatment. Encoding Fido as the singleton class containing Fido preserves subclass edges but changes the node's denotation; it must not silently equate an individual with its singleton class.
+**Decision needed from Brian:** try the direct-category sketch, retain Realizable / Abstract as the first cut, or try Particular / Predicable? Acceptance authorizes drafting and testing a shape, not accepting all of its definitions or placements.
 
-**Steelman of mixed typed parentage:** readers can browse categories, individuals and components in one hierarchy, with each connector labeled. Its cost is that ancestry no longer supports one inference rule: a tail of a dog is not thereby a dog, and instance-of is not itself transitive.
+### Accepted decision: is-a parentage and first-pass scope
 
-**Decision needed from Brian:** uniform is-a ancestry with explicit public treatment of other relations, a stricter class-only representation, or mixed typed parentage? No additional edge family is adopted merely by being inventoried. This choice does not require every class to be rigid or settle the nature of Property and Relation.
+Every primary ancestry edge in the first-pass tree means is-a/class inclusion. Keep instance membership, parthood and other relations distinct from ancestry. Cross-links remain a possible future enhancement; no cross-link machinery, expanded relation inventory or implementation design is required for drafting the tree's overall shape.
+
+**Rationale:** one edge meaning keeps ancestry intelligible and its inclusion inferences consistent. Concentrate effort on a defensible root and upper branches, concise definitions and concrete counterexamples. Record a missing relationship as a limitation when it matters; neither build infrastructure for it nor disguise it as is-a.
+
+**Steelman of developing typed cross-links immediately:** additional relations can expose distinctions a class tree cannot express and reveal where apparently simple placements rely on hidden assumptions. Its cost is premature design and implementation before the categories are stable. Preserve the option through clear meanings and visible caveats, and defer the machinery. The [existing inventory](#candidate-edge-types) remains a reference, not an adopted schema or first-pass work requirement.
 
 ### Accepted decision: admission and actuality
 
@@ -678,6 +684,8 @@ Primary biological ancestry remains monophyletic. Habitat, diet and similar cros
 **Rationale:** justified overlap avoids manufacturing sharp boundaries where the definitions and cases do not support them. **Steelman of strict partitions:** exclusive, exhaustive children simplify classification, comparison and inference, and force clearer definitions. Preserve that discipline where defensible; reject it as a universal requirement when its exclusions lack a substantive argument. Monophyly is an ancestry criterion for biology, not a universal test for all ontology categories.
 
 ### Working method
+
+**First-pass scope:** draft and challenge the overall tree shape. Use the conceptual gates below as checks when a concrete placement needs them; do not require complete formalization, crosswalks, relation inventories, schema design or browser enhancements before proposing upper branches. Meaning-preserving migration, representation readiness and publication of changed tree artifacts belong to later accepted implementation work.
 
 For each turning point, the agent supplies the question, recommendation, viable alternatives and their main consequences. Keep the opening brief short and high-level; retain supporting definitions, examples and objections below it or in linked analysis. Offer more detail when Brian requests it. Give an independent recommendation and the strongest counterargument to Brian's preference; change that recommendation only for better evidence or reasoning. Record his answer with the strongest defensible rationale, qualifications and steelman of rejected alternatives before advancing dependent work. Distinguish adopted choices from clarifications and unresolved questions. A failed stress test reopens the earliest affected decision.
 
@@ -766,6 +774,8 @@ Apply accepted sense changes in dependency order: identity and duplicate-record 
 **Gate exit:** the affected stress tests and structural checks pass, navigation exposes retained senses, and the approved source generates reproducible published artifacts and manifests under [the publication contract](#publishing-the-tree-to-the-wiki). Browser acceptance includes search presets, ordinary search, expansion, collapse and lineage restoration. Acceptance of this process document does not itself accept a candidate ontology.
 
 ### Candidate edge types
+
+Reference only; further expansion and implementation are deferred during the first pass. The inventory does not authorize additional parentage types or a hidden authoritative structure.
 
 This is an extensible inventory of relation families to evaluate, not a finite list of every possible predicate. Each reads subject → target; the displayed tree can draw the inverse direction. Thus Mammal above Dog asserts Dog subclass-of Mammal. A relation's presence in the ontology does not make it eligible to supply tree parentage.
 
