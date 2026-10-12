@@ -42,11 +42,11 @@ The tree has 40 nodes including the root. Its deepest displayed nodes are three 
 
 This is an elucidation of a root, not a definition by genus and difference, because a root has no genus. Three things it deliberately separates:
 
-| Notion | What it is here | Not to be confused with |
-|---|---|---|
-| **Entityhood** | Membership in the ontology's *outer* domain: the domain the neutral quantifier ranges over. | Existence. |
-| **Existence** | An attribute (`onticStatus`), with an existence predicate E! picking out an *inner* domain relative to time. "Some entities do not exist" is written ∃x¬E!x. | A class. There is no node *Existent* or *Nonexistent*. |
-| **Reference** | A success relation `refersTo(r, e)` from a representation *r* (a use of a Symbolic Form, or an Attitude) to an entity *e*. A term that fails to refer is a term with no referent; it does not thereby create one. | Purported reference, which is a property of the representation. |
+| Notion               | What it is here                                                                                                                                                                                                         | Not to be confused with                                         |
+| -------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------- |
+| **Entityhood** | Membership in the ontology's*outer* domain: the domain the neutral quantifier ranges over.                                                                                                                            | Existence.                                                      |
+| **Existence**  | An attribute (`onticStatus`), with an existence predicate E! picking out an *inner* domain relative to time. "Some entities do not exist" is written ∃x¬E!x.                                                      | A class. There is no node*Existent* or *Nonexistent*.       |
+| **Reference**  | A success relation `refersTo(r, e)` from a representation *r* (a use of a Symbolic Form, or an Attitude) to an entity *e*. A term that fails to refer is a term with no referent; it does not thereby create one. | Purported reference, which is a property of the representation. |
 
 The two-domain regimentation follows the practice of Parsons, Zalta and Jacquette as reported in [SEP-NE §1.1]; Priest's alternative is a single quantifier read as ontologically neutral. Choosing the two-domain form is my design choice. It commits the ontology to *talking about* items of every status, and to nothing about which statuses are occupied. That is the descriptivist stance described in [SEP-Cat, introduction and §1.4].
 
@@ -86,23 +86,23 @@ To block the property version of Russell's paradox [SEP-Prop §2.4], predicables
 
 These are primitives of the framework. They are not, by default, instances of **Relation**: treating instantiation as one more relation that itself needs instantiating starts Bradley's regress [SEP-Prop §2.3]. They may be reified when needed, and are then classified like any other relation.
 
-| Tie | Holds between | Gloss |
-|---|---|---|
-| `instanceOf` | entity, class | exemplification proper |
-| `subclassOf` / `specializes` | class, class / predicable, predicable | the only tree edge |
-| `characterizedAs` | Characterized Object, class or predicable | "encoded," not exemplified (§5.6) |
-| `inheresIn` | Feature, bearer(s) | specific dependence |
-| `participatesIn` | Object, Occurrence | |
-| `occupies` / `occursAt` | Object or Occurrence, Region | |
-| `carriedBy` | Construct, carrier | generic dependence |
-| `expresses` | Symbolic Form, Content or Proposition | |
-| `about` | Content, Proposition or Attitude, any entity | aboutness; may fail |
-| `specifies` | Content (a specification), predicable or Occurrence-type | |
-| `conformsTo` | any entity, specification | |
-| `manifests` | Occurrence, Disposition | |
-| `hasValue` | Quality, Magnitude (at a time) | |
-| `plays` | entity, Role (in a context) | |
-| `partOf`, `memberOf`, `constitutedBy`, `dependsOn`, `derivedFrom` | various | never tree edges |
+| Tie                                                                         | Holds between                                            | Gloss                              |
+| --------------------------------------------------------------------------- | -------------------------------------------------------- | ---------------------------------- |
+| `instanceOf`                                                              | entity, class                                            | exemplification proper             |
+| `subclassOf` / `specializes`                                            | class, class / predicable, predicable                    | the only tree edge                 |
+| `characterizedAs`                                                         | Characterized Object, class or predicable                | "encoded," not exemplified (§5.6) |
+| `inheresIn`                                                               | Feature, bearer(s)                                       | specific dependence                |
+| `participatesIn`                                                          | Object, Occurrence                                       |                                    |
+| `occupies` / `occursAt`                                                 | Object or Occurrence, Region                             |                                    |
+| `carriedBy`                                                               | Construct, carrier                                       | generic dependence                 |
+| `expresses`                                                               | Symbolic Form, Content or Proposition                    |                                    |
+| `about`                                                                   | Content, Proposition or Attitude, any entity             | aboutness; may fail                |
+| `specifies`                                                               | Content (a specification), predicable or Occurrence-type |                                    |
+| `conformsTo`                                                              | any entity, specification                                |                                    |
+| `manifests`                                                               | Occurrence, Disposition                                  |                                    |
+| `hasValue`                                                                | Quality, Magnitude (at a time)                           |                                    |
+| `plays`                                                                   | entity, Role (in a context)                              |                                    |
+| `partOf`, `memberOf`, `constitutedBy`, `dependsOn`, `derivedFrom` | various                                                  | never tree edges                   |
 
 ### 3.4 Five things all called "realization"
 
@@ -207,69 +207,68 @@ Construct
 
 **Characterized Object:** leave this branch unexpanded. Fictional, mythical, posited and impossible are source/status descriptions here, not proposed primary subclasses for the consolidated tree. Fable's source-anchored Holmes construct must be distinguished from Holmes considered as a human under a story's attribution. Adopting this entire Construct branch would require resolving that distinction against the [accepted admission rule](Ontology.md#accepted-decision-admission-and-actuality); the sketch does not settle it.
 
-
 ---
 
 ## 5. Definitions
 
 ### 5.1 Level 1
 
-| Node | Definition |
-|---|---|
-| **Particular** | An entity that cannot have instances. It may have parts, members, copies, carriers or manifestations, but nothing is *an* it. |
+| Node                 | Definition                                                                                                                                                                                                                         |
+| -------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Particular** | An entity that cannot have instances. It may have parts, members, copies, carriers or manifestations, but nothing is*an* it.                                                                                                     |
 | **Predicable** | An entity that can be predicated of entities and can have instances (or, for relations, ordered groups of instances). The definition is neutral on whether predicables are universals, resemblance classes of tropes, or concepts. |
 
 ### 5.2 Level 2 under Particular
 
-| Node | Definition |
-|---|---|
-| **Object** | A particular that persists as one whole through time, can change while remaining itself, bears features and takes part in occurrences, and is not itself a feature or occurrence of something else. |
-| **Occurrence** | A particular that happens or obtains over time, has temporal phases (or is the instantaneous boundary of something that does), and depends on what takes part in it. |
-| **Feature** | A particular that exists only as a feature *of* one or more specific bearers and cannot move to another bearer. |
-| **Region** | A particular that is a portion of space, time or spacetime, identified by its extent and position and not by what occupies it. |
-| **Construct** | A particular whose identity is anchored in an origin (an act or tradition of representing) together with what is represented, and which is tied to no single carrier: it can be copied, taught, lost and revived. |
-| **Formal Object** | A particular whose identity is fixed entirely by a formal definition or structural condition; origin, location and carrier play no part in what it is. |
+| Node                    | Definition                                                                                                                                                                                                        |
+| ----------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Object**        | A particular that persists as one whole through time, can change while remaining itself, bears features and takes part in occurrences, and is not itself a feature or occurrence of something else.               |
+| **Occurrence**    | A particular that happens or obtains over time, has temporal phases (or is the instantaneous boundary of something that does), and depends on what takes part in it.                                              |
+| **Feature**       | A particular that exists only as a feature*of* one or more specific bearers and cannot move to another bearer.                                                                                                  |
+| **Region**        | A particular that is a portion of space, time or spacetime, identified by its extent and position and not by what occupies it.                                                                                    |
+| **Construct**     | A particular whose identity is anchored in an origin (an act or tradition of representing) together with what is represented, and which is tied to no single carrier: it can be copied, taught, lost and revived. |
+| **Formal Object** | A particular whose identity is fixed entirely by a formal definition or structural condition; origin, location and carrier play no part in what it is.                                                            |
 
 ### 5.3 Level 3 under Particular
 
-| Node | Definition |
-|---|---|
-| **Physical Object** | An object located in space and bearing physical qualities such as mass, charge or extension. |
-| **Social Object** | An object whose existence and unity consist in collective recognition or constitutive rules. It is constituted by members or a material basis without being identical to them. |
-| **Agent** | An object of a kind whose members bear attitudes and perform actions attributable to them. |
-| **Process** | An occurrence that is ongoing: it can continue, speed up, pause and resume, and any phase of it is an occurrence of the same sort. |
-| **Event** | An occurrence that is bounded and countable, with a definite start and end or a culmination; once over, it is fixed. |
-| **State** | An occurrence that consists in something's being a certain way throughout an interval, with no change required. |
-| **Quality** | A feature that is fully present whenever it exists and takes a value at each time (this apple's mass, this wall's colour). |
-| **Disposition** | A feature that is a readiness to behave in a certain way under certain conditions; it can exist unmanifested (this glass's fragility). |
-| **Attitude** | A feature of an agent that is directed at a content (her belief that it will rain, his intention to resign). |
-| **Relator** | A feature borne jointly by two or more bearers and binding them (this marriage, that employment, this debt). |
-| **Topological Feature** | A feature that is a boundary, surface or void of a host: it has location and shape but exists only as something of the host (the hole in this wall). |
-| **Spatial Region** | A region with spatial extent only (the volume this room occupies; the territory inside a border). |
-| **Temporal Region** | A region with temporal extent only (the year 1851; noon today). |
-| **Spatiotemporal Region** | A region with both (the space-time swept out by a flight). |
-| **Content** | A construct at the level of what is meant, presented or prescribed, independent of wording or notation (the novel as a work; a theory; a building code as a set of requirements). |
-| **Symbolic Form** | A construct at the level of signs: a symbol or arrangement of symbols in a language or notation, independent of any one inscription (the English text of a novel; a score; the letter A). |
-| **Characterized Object** | A construct that is what a source presents as an object. Its identity is fixed by the source and the properties ascribed there, whether or not anything satisfies them. |
-| **Number** | A formal object that answers "how many" or "how much," identified by its place in a number system. |
-| **Set** | A formal object identified solely by its members. |
-| **Function** | A formal object that assigns exactly one output to each admissible input, identified by its domain, codomain and assignments. |
-| **Mathematical Structure** | A formal object consisting of a domain with relations or operations on it, identified by that pattern (the natural numbers under successor; the Euclidean plane). |
-| **Magnitude** | A formal object that is a determinate amount, degree or position in a dimension of comparison (that much mass; that shade), identified independently of units and numerals. |
-| **Proposition** | A formal object that is true or false as a whole: what a declarative sentence says and what can be believed or denied. |
+| Node                             | Definition                                                                                                                                                                                |
+| -------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Physical Object**        | An object located in space and bearing physical qualities such as mass, charge or extension.                                                                                              |
+| **Social Object**          | An object whose existence and unity consist in collective recognition or constitutive rules. It is constituted by members or a material basis without being identical to them.            |
+| **Agent**                  | An object of a kind whose members bear attitudes and perform actions attributable to them.                                                                                                |
+| **Process**                | An occurrence that is ongoing: it can continue, speed up, pause and resume, and any phase of it is an occurrence of the same sort.                                                        |
+| **Event**                  | An occurrence that is bounded and countable, with a definite start and end or a culmination; once over, it is fixed.                                                                      |
+| **State**                  | An occurrence that consists in something's being a certain way throughout an interval, with no change required.                                                                           |
+| **Quality**                | A feature that is fully present whenever it exists and takes a value at each time (this apple's mass, this wall's colour).                                                                |
+| **Disposition**            | A feature that is a readiness to behave in a certain way under certain conditions; it can exist unmanifested (this glass's fragility).                                                    |
+| **Attitude**               | A feature of an agent that is directed at a content (her belief that it will rain, his intention to resign).                                                                              |
+| **Relator**                | A feature borne jointly by two or more bearers and binding them (this marriage, that employment, this debt).                                                                              |
+| **Topological Feature**    | A feature that is a boundary, surface or void of a host: it has location and shape but exists only as something of the host (the hole in this wall).                                      |
+| **Spatial Region**         | A region with spatial extent only (the volume this room occupies; the territory inside a border).                                                                                         |
+| **Temporal Region**        | A region with temporal extent only (the year 1851; noon today).                                                                                                                           |
+| **Spatiotemporal Region**  | A region with both (the space-time swept out by a flight).                                                                                                                                |
+| **Content**                | A construct at the level of what is meant, presented or prescribed, independent of wording or notation (the novel as a work; a theory; a building code as a set of requirements).         |
+| **Symbolic Form**          | A construct at the level of signs: a symbol or arrangement of symbols in a language or notation, independent of any one inscription (the English text of a novel; a score; the letter A). |
+| **Characterized Object**   | A construct that is what a source presents as an object. Its identity is fixed by the source and the properties ascribed there, whether or not anything satisfies them.                   |
+| **Number**                 | A formal object that answers "how many" or "how much," identified by its place in a number system.                                                                                        |
+| **Set**                    | A formal object identified solely by its members.                                                                                                                                         |
+| **Function**               | A formal object that assigns exactly one output to each admissible input, identified by its domain, codomain and assignments.                                                             |
+| **Mathematical Structure** | A formal object consisting of a domain with relations or operations on it, identified by that pattern (the natural numbers under successor; the Euclidean plane).                         |
+| **Magnitude**              | A formal object that is a determinate amount, degree or position in a dimension of comparison (that much mass; that shade), identified independently of units and numerals.               |
+| **Proposition**            | A formal object that is true or false as a whole: what a declarative sentence says and what can be believed or denied.                                                                    |
 
 ### 5.4 Under Predicable
 
-| Node | Definition |
-|---|---|
-| **Property** | A predicable that applies to one thing at a time (arity 1). This is the logician's broad sense; it includes kinds. |
-| **Relation** | A predicable that applies to two or more things taken in an order (arity ≥ 2, including variable arity). |
-| **Kind** | A property that says *what* its instances are, belongs to each instance for as long as it exists, and carries a criterion for counting and re-identifying them (horse, electron, prime number, novel). |
-| **Phase** | A property that classifies its instances by a stage they pass through owing to their own condition, and which they can leave while remaining themselves (larva, adolescent, molten). |
-| **Role** | A property that classifies its instances by the part they play relative to something else, and which they can leave while remaining themselves (student, employer, prey, catalyst, carrier). |
-| **Attribute** | A property that says *how* its instances are, not what they are (red, having a mass of 5 kg, fragile, taller than Socrates). |
-| **Internal Relation** | A relation that holds whenever its relata exist with the intrinsic properties they have (taller than, greater than, resembles). |
-| **External Relation** | A relation that is not settled by the existence and intrinsic properties of its relata (is 3 m from, is married to, owns, causes). |
+| Node                        | Definition                                                                                                                                                                                              |
+| --------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Property**          | A predicable that applies to one thing at a time (arity 1). This is the logician's broad sense; it includes kinds.                                                                                      |
+| **Relation**          | A predicable that applies to two or more things taken in an order (arity ≥ 2, including variable arity).                                                                                               |
+| **Kind**              | A property that says*what* its instances are, belongs to each instance for as long as it exists, and carries a criterion for counting and re-identifying them (horse, electron, prime number, novel). |
+| **Phase**             | A property that classifies its instances by a stage they pass through owing to their own condition, and which they can leave while remaining themselves (larva, adolescent, molten).                    |
+| **Role**              | A property that classifies its instances by the part they play relative to something else, and which they can leave while remaining themselves (student, employer, prey, catalyst, carrier).            |
+| **Attribute**         | A property that says*how* its instances are, not what they are (red, having a mass of 5 kg, fragile, taller than Socrates).                                                                           |
+| **Internal Relation** | A relation that holds whenever its relata exist with the intrinsic properties they have (taller than, greater than, resembles).                                                                         |
+| **External Relation** | A relation that is not settled by the existence and intrinsic properties of its relata (is 3 m from, is married to, owns, causes).                                                                      |
 
 ### 5.5 Note on labels
 
@@ -397,18 +396,18 @@ This is the dual-copula strategy (Mally, Zalta: "encoding" versus "exemplifying"
 
 ### 7.2 Two criteria that must not be merged
 
-| | **Arity criterion** | **Metaphysical criterion** |
-|---|---|---|
-| Question | How many argument places does the predicable have? | Does having it depend on anything other than the bearer? |
-| Values | unary / n-ary | intrinsic / extrinsic (for properties); internal / external (for relations) |
-| Decided by | canonical logical form | what makes predications true |
+|            | **Arity criterion**                          | **Metaphysical criterion**                                            |
+| ---------- | -------------------------------------------------- | --------------------------------------------------------------------------- |
+| Question   | How many argument places does the predicable have? | Does having it depend on anything other than the bearer?                    |
+| Values     | unary / n-ary                                      | intrinsic / extrinsic (for properties); internal / external (for relations) |
+| Decided by | canonical logical form                             | what makes predications true                                                |
 
 The two cross-classify. All four cells are occupied:
 
-| | Intrinsic or internal | Extrinsic or external |
-|---|---|---|
+|                 | Intrinsic or internal                  | Extrinsic or external                                                                                 |
+| --------------- | -------------------------------------- | ----------------------------------------------------------------------------------------------------- |
 | **Unary** | having a mass of 5 kg; being spherical | weighing 49 N (depends on the local field); being married; being an uncle; being a planet (IAU sense) |
-| **n-ary** | taller than; greater than | 3 m from; owes money to |
+| **n-ary** | taller than; greater than              | 3 m from; owes money to                                                                               |
 
 So "Property versus Relation" (arity) is not "intrinsic versus relational" (metaphysics). *Being married* is a Property by arity and relational by nature. Placing it under Relation because it "is really relational" would be a silent change of arity; placing *married to* under Property because marital status "is an attribute" would be the same error in the other direction.
 
@@ -416,14 +415,14 @@ So "Property versus Relation" (arity) is not "intrinsic versus relational" (meta
 
 A unary predicable may be obtained from an n-ary relation *R* by exactly these operations. In every case *R* keeps its arity and its place under Relation; the result is a **new** predicable under Property, carrying a `derivedFrom` record naming *R*, the operation, and any fixed arguments.
 
-| Operation | Form | Example | Result is typically |
-|---|---|---|---|
-| **Saturation** | λx. R(x, a) | taller than Socrates | Attribute |
-| **Value-fixing** (saturation by a Magnitude) | λx. mass(x) = 5 kg | having a mass of 5 kg | Attribute |
-| **Existential closure** | λx. ∃y R(x, y) | is married; is a parent | Attribute or Role |
-| **Universal closure** | λx. ∀y R(y, x) | is loved by everyone | Attribute |
-| **Reflexivization** | λx. R(x, x) | is self-employed | Attribute |
-| **Sortal restriction plus closure** | λx. K(x) ∧ ∃y R(x, y) | student = person enrolled somewhere | Role |
+| Operation                                          | Form                     | Example                             | Result is typically |
+| -------------------------------------------------- | ------------------------ | ----------------------------------- | ------------------- |
+| **Saturation**                               | λx. R(x, a)             | taller than Socrates                | Attribute           |
+| **Value-fixing** (saturation by a Magnitude) | λx. mass(x) = 5 kg      | having a mass of 5 kg               | Attribute           |
+| **Existential closure**                      | λx. ∃y R(x, y)         | is married; is a parent             | Attribute or Role   |
+| **Universal closure**                        | λx. ∀y R(y, x)         | is loved by everyone                | Attribute           |
+| **Reflexivization**                          | λx. R(x, x)             | is self-employed                    | Attribute           |
+| **Sortal restriction plus closure**          | λx. K(x) ∧ ∃y R(x, y) | student = person enrolled somewhere | Role                |
 
 These are the ordinary complex-predicate constructions (lambda abstraction, quantified and reflexive properties) described in [SEP-Prop §4.1, §6.1]. The record-keeping requirement is mine.
 
@@ -440,13 +439,13 @@ These are the ordinary complex-predicate constructions (lambda abstraction, quan
 
 Five items are easily run together. Using *horse*:
 
-| Item | Category | Note |
-|---|---|---|
-| the word "horse" | Symbolic Form | a predicate expression |
-| the concept HORSE | Content | what speakers grasp |
-| the kind *horse* | Predicable › Property › **Kind** | what Secretariat instantiates |
-| the class **Horse** | a node; its extension at a time is a **Set** | extension of the kind |
-| a specification of the kind (a diagnosis, a breed standard, a type designation) | Construct › Content (a **specification**) | `specifies` the kind |
+| Item                                                                            | Category                                          | Note                          |
+| ------------------------------------------------------------------------------- | ------------------------------------------------- | ----------------------------- |
+| the word "horse"                                                                | Symbolic Form                                     | a predicate expression        |
+| the concept HORSE                                                               | Content                                           | what speakers grasp           |
+| the kind*horse*                                                               | Predicable › Property ›**Kind**           | what Secretariat instantiates |
+| the class**Horse**                                                        | a node; its extension at a time is a**Set** | extension of the kind         |
+| a specification of the kind (a diagnosis, a breed standard, a type designation) | Construct › Content (a**specification**)   | `specifies` the kind        |
 
 How they relate:
 
@@ -471,33 +470,33 @@ How they relate:
 
 ### 8.1 Where navigation and semantics come apart
 
-| Class | Navigation parent | Also (semantic) | Deliberately **not** a superclass |
-|---|---|---|---|
-| Agent | Object | overlaps Physical Object and Social Object | |
-| Person (deeper) | Agent | | Organism: linked by `constitutedBy` or identity, left open, so the tree does not assume materialism |
-| Organization (deeper) | Social Object | Agent | Set of members; Content (its charter) |
-| Expression, text (deeper) | Symbolic Form | | Work: linked by `expresses` |
-| Specification (deeper) | Content | | the Kind it specifies: linked by `specifies` |
-| Role-holding (deeper) | Relator | | Role: a role-holding is a particular; a Role is a predicable it falls under |
-| Characterized Object | Construct | | whatever it is `characterizedAs` (Holmes is not under Person) |
-| Magnitude | Formal Object | | Attribute; Number |
-| Proposition | Formal Object | | Content: a Content may `express` or contain propositions |
-| Function | Formal Object | (Set, under set-theoretic foundations) | Relation |
+| Class                     | Navigation parent | Also (semantic)                            | Deliberately**not** a superclass                                                                |
+| ------------------------- | ----------------- | ------------------------------------------ | ----------------------------------------------------------------------------------------------------- |
+| Agent                     | Object            | overlaps Physical Object and Social Object |                                                                                                       |
+| Person (deeper)           | Agent             |                                            | Organism: linked by `constitutedBy` or identity, left open, so the tree does not assume materialism |
+| Organization (deeper)     | Social Object     | Agent                                      | Set of members; Content (its charter)                                                                 |
+| Expression, text (deeper) | Symbolic Form     |                                            | Work: linked by `expresses`                                                                         |
+| Specification (deeper)    | Content           |                                            | the Kind it specifies: linked by `specifies`                                                        |
+| Role-holding (deeper)     | Relator           |                                            | Role: a role-holding is a particular; a Role is a predicable it falls under                           |
+| Characterized Object      | Construct         |                                            | whatever it is `characterizedAs` (Holmes is not under Person)                                       |
+| Magnitude                 | Formal Object     |                                            | Attribute; Number                                                                                     |
+| Proposition               | Formal Object     |                                            | Content: a Content may `express` or contain propositions                                            |
+| Function                  | Formal Object     | (Set, under set-theoretic foundations)     | Relation                                                                                              |
 
 ### 8.2 Domain facet
 
 The subject areas named in the brief cut across the categorial tree. None is a superclass of what it indexes: *Mathematics* is a discipline (a Content and a social practice) and is not an ancestor of Number.
 
-| Domain | Where its subject matter sits |
-|---|---|
-| Physical | Physical Object; physical Processes, Events, States; Qualities and Dispositions of physical objects; Regions; Magnitudes of physical dimensions; physical Kinds and Relations |
-| Biological | Organism and its parts (under Physical Object); biological Processes; traits (Features); taxa (Kinds); life stages (Phases); ecological Roles |
-| Mental | Agent; Attitude; mental Events and States; Content; concepts |
-| Social | Social Object; Relator (commitments, obligations, rights); social Events; norms (Content); offices and statuses (Roles); fiat boundaries (Regions) |
-| Informational | Content; Symbolic Form; carriers (Physical Objects and Occurrences playing the carrier Role) |
-| Mathematical | Number, Set, Function, Mathematical Structure; mathematical Kinds and Relations |
-| Logical | Proposition; logical Relations (entailment); formal languages (Symbolic Form); proofs |
-| Fictional | Characterized Object; the works (Content) that characterize them |
+| Domain        | Where its subject matter sits                                                                                                                                                 |
+| ------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Physical      | Physical Object; physical Processes, Events, States; Qualities and Dispositions of physical objects; Regions; Magnitudes of physical dimensions; physical Kinds and Relations |
+| Biological    | Organism and its parts (under Physical Object); biological Processes; traits (Features); taxa (Kinds); life stages (Phases); ecological Roles                                 |
+| Mental        | Agent; Attitude; mental Events and States; Content; concepts                                                                                                                  |
+| Social        | Social Object; Relator (commitments, obligations, rights); social Events; norms (Content); offices and statuses (Roles); fiat boundaries (Regions)                            |
+| Informational | Content; Symbolic Form; carriers (Physical Objects and Occurrences playing the carrier Role)                                                                                  |
+| Mathematical  | Number, Set, Function, Mathematical Structure; mathematical Kinds and Relations                                                                                               |
+| Logical       | Proposition; logical Relations (entailment); formal languages (Symbolic Form); proofs                                                                                         |
+| Fictional     | Characterized Object; the works (Content) that characterize them                                                                                                              |
 
 ---
 
@@ -507,17 +506,18 @@ The subject areas named in the brief cut across the categorial tree. None is a s
 
 Take "this sack has a mass of 5 kg." Five entities are involved:
 
-| Entity | Category |
-|---|---|
+| Entity                    | Category                                             |
+| ------------------------- | ---------------------------------------------------- |
 | *having a mass of 5 kg* | Attribute (a predicable; shared by every 5 kg thing) |
-| this sack's mass | Quality (a particular; only this sack has it) |
-| 5 kg | Magnitude (one position in the mass dimension) |
-| 5 | Number |
-| the kilogram | a reference Magnitude fixed by a specification |
+| this sack's mass          | Quality (a particular; only this sack has it)        |
+| 5 kg                      | Magnitude (one position in the mass dimension)       |
+| 5                         | Number                                               |
+| the kilogram              | a reference Magnitude fixed by a specification       |
 
 Schema: Quality *q* `inheresIn` sack; *q* `instanceOf` Mass; *q* `hasValue` 5 kg at *t*. The Attribute is derived by value-fixing (§7.3).
 
 **Counterexamples that keep them apart.**
+
 - *Feature is not Property.* Two sacks of 5 kg share one Attribute and one Magnitude but have two Qualities: when one sack is half-emptied, its mass changes and the other's does not. Likewise a rose's colour can fade; the *same* Quality takes a new value, while the Attribute *red* does not fade.
 - *Value is not Property.* "5 kg is more than 3 kg" compares Magnitudes with no bearer in view. "The temperature rose by 5 K" names a difference that no object "has" as an attribute.
 - *Value is not Number.* 5 kg = 5000 g: one Magnitude, two numerals, two Numbers.
@@ -530,6 +530,7 @@ Schema: Quality *q* `inheresIn` sack; *q* `instanceOf` Mass; *q* `hasValue` 5 kg
 A **Disposition** is a feature that can be manifested under triggering conditions. A **capability**, on the most developed recent account, is a disposition in whose realization some organism or group has an interest, intermediate between a mere disposition and a function; on that account every function is a capability [Capabilities; IOF].
 
 **Counterexamples.**
+
 - *Disposition that is no capability:* iron's disposition to rust; a vase's fragility. Nobody speaks of the vase's "capability to break."
 - *Capability that is no function:* a stone's suitability for cracking nuts. The cited account explicitly sets such "task-based" cases aside [IOF], which shows they are a pressure point.
 - *Function without capability:* a seized water pump still has the function of pumping and has no present ability to do so. If functions are capabilities and capabilities are dispositions, the broken pump must still bear the disposition. Either dispositions survive the loss of their physical basis, or function is not a kind of disposition.
@@ -539,18 +540,19 @@ A **Disposition** is a feature that can be manifested under triggering condition
 
 ### 9.3 Purposes, goals, preferences, norms and obligations
 
-| Notion | Analysis | Category |
-|---|---|---|
-| goal, as what is aimed at | a specification of a state of affairs to bring about | Content (or Proposition) |
-| having a goal | an agent's intention or desire directed at that content | Attitude |
-| purpose of an artifact or act | *for* (x, end, by whom or by what history): ternary | External Relation; "has the purpose of cutting" by saturation |
-| preference | an attitude whose content is a comparison of two contents | Attitude |
-| preference ordering | a representation of someone's preferences | Mathematical Structure |
-| norm | prescriptive content valid within some system or community | Content |
-| obligation (particular) | a bond between obligor and obligee, grounded in a norm plus a triggering event | Relator |
-| type of obligation ("the duty to repay debts") | | Kind of Relators |
+| Notion                                         | Analysis                                                                       | Category                                                      |
+| ---------------------------------------------- | ------------------------------------------------------------------------------ | ------------------------------------------------------------- |
+| goal, as what is aimed at                      | a specification of a state of affairs to bring about                           | Content (or Proposition)                                      |
+| having a goal                                  | an agent's intention or desire directed at that content                        | Attitude                                                      |
+| purpose of an artifact or act                  | *for* (x, end, by whom or by what history): ternary                          | External Relation; "has the purpose of cutting" by saturation |
+| preference                                     | an attitude whose content is a comparison of two contents                      | Attitude                                                      |
+| preference ordering                            | a representation of someone's preferences                                      | Mathematical Structure                                        |
+| norm                                           | prescriptive content valid within some system or community                     | Content                                                       |
+| obligation (particular)                        | a bond between obligor and obligee, grounded in a norm plus a triggering event | Relator                                                       |
+| type of obligation ("the duty to repay debts") |                                                                                | Kind of Relators                                              |
 
 **Counterexamples.**
+
 - *Goal content is not goal attitude:* two people share one goal; one abandons it. One Content, two Attitudes, one of which has ended.
 - *Purpose is not a quality of the thing:* a manufactured paperweight and a physically indistinguishable found pebble differ in purpose and in nothing intrinsic.
 - *Preference is not an ordering:* a person can prefer A to B, B to C and C to A. The three Attitudes exist; no ordering represents them.
@@ -563,6 +565,7 @@ A **Disposition** is a feature that can be manifested under triggering condition
 **Test.** Could an instance cease to fall under the classifier and still be the same thing? If yes, it is a Phase or a Role and cannot be a tree node above a Kind.
 
 **Counterexamples to common placements.**
+
 - *Dog under Pet:* false for strays and wolves' cousins on farms; *pet* is a Role. Same for wheat under *food*, hammer-shaped rock under *tool*, dandelion under *weed*.
 - *Person under Student:* Student is anti-rigid; Person is rigid; the edge is ruled out by [OntoClean].
 - *Caterpillar and Butterfly as sibling Kinds:* one organism passes through both; they are Phases of a lepidopteran.
@@ -585,20 +588,21 @@ A **Disposition** is a feature that can be manifested under triggering condition
 
 For *Moby-Dick*:
 
-| Entity | Category | Library term [LRM] |
-|---|---|---|
-| the novel as a creation | Content (a work) | Work |
-| the 1851 English text | Symbolic Form (an expression) | Expression |
-| a German translation | another Symbolic Form expressing the same work | Expression |
-| a particular edition | a Kind of copies, with a specification (layout, ISBN) | Manifestation |
-| my paperback | Physical Object, playing the carrier Role | Item |
-| the pattern of ink on its pages | Quality of the paperback | |
-| a reading aloud | Event, playing the carrier Role | |
-| what the novel says about whaling | Propositions | |
+| Entity                            | Category                                              | Library term [LRM] |
+| --------------------------------- | ----------------------------------------------------- | ------------------ |
+| the novel as a creation           | Content (a work)                                      | Work               |
+| the 1851 English text             | Symbolic Form (an expression)                         | Expression         |
+| a German translation              | another Symbolic Form expressing the same work        | Expression         |
+| a particular edition              | a Kind of copies, with a specification (layout, ISBN) | Manifestation      |
+| my paperback                      | Physical Object, playing the carrier Role             | Item               |
+| the pattern of ink on its pages   | Quality of the paperback                              |                    |
+| a reading aloud                   | Event, playing the carrier Role                       |                    |
+| what the novel says about whaling | Propositions                                          |                    |
 
 BFO describes the same structure: the ink arrangement on a volume concretizes the novel, which is generically dependent [BFO-GDC]. CIDOC CRM makes the related point that creating a conceptual object is conceiving its content, not producing its first carrier [CRM].
 
 **Counterexamples.**
+
 - *Text is not carrier:* burning my copy does not destroy the text.
 - *Work is not text:* the translation is the same work in different words.
 - *Text is not work:* in Borges's story, Menard composes word for word a passage of *Don Quixote*; if origin matters to the identity of a work, that is one word-sequence and two works. The bare word-sequence, with origin stripped away, is a Formal Object.
@@ -609,6 +613,7 @@ BFO describes the same structure: the ink arrangement on a volume concretizes th
 ### 9.7 Organizations and institutional entities
 
 **Counterexamples to identifying an organization with anything simpler.**
+
 - *Not its members:* a company survives complete turnover of staff; a committee and a club can have exactly the same members and different powers and histories.
 - *Can have no members:* a dormant shell company.
 - *Not its buildings:* Ryle's visitor who has seen the colleges and libraries and asks where the university is commits a category mistake [SEP-Cat §2.1].
@@ -619,15 +624,15 @@ BFO describes the same structure: the ink arrangement on a volume concretizes th
 
 **"Institutional entity" is not one class.** What people call institutional is distributed across the tree by form:
 
-| Example | Category |
-|---|---|
-| a company, a state | Social Object |
-| a constitution, the rules of chess | Content (norms) |
-| the presidency, legal tender | Role |
-| a specific debt, a specific marriage | Relator |
-| an election, a wedding | Event |
-| a national border, a parcel of land | Region delimited by convention |
-| the euro as a unit of account | a reference Magnitude fixed by rule |
+| Example                              | Category                            |
+| ------------------------------------ | ----------------------------------- |
+| a company, a state                   | Social Object                       |
+| a constitution, the rules of chess   | Content (norms)                     |
+| the presidency, legal tender         | Role                                |
+| a specific debt, a specific marriage | Relator                             |
+| an election, a wedding               | Event                               |
+| a national border, a parcel of land  | Region delimited by convention      |
+| the euro as a unit of account        | a reference Magnitude fixed by rule |
 
 A single node "Institutional Entity" above these would have to be a superclass of objects, features, events, regions and predicables at once. *Institutional* is best treated as a dependence facet ("exists in virtue of collective acceptance"), alongside the domain facet.
 
@@ -658,30 +663,30 @@ A single node "Institutional Entity" above these would have to be a superclass o
 
 ### 10.1 First cut
 
-| Option | Exemplified by | Strength | Why not chosen |
-|---|---|---|---|
-| Abstract / Concrete | SUMO's Physical/Abstract [SUMO]; Hoffman and Rosenkrantz [SEP-Cat §1.4] | Familiar | No agreed criterion; works, institutions and characters fit neither side; the brief forbids assuming it exhaustive |
-| Continuant / Occurrent | BFO [BFO-sec] | Sharp, well axiomatised | Says nothing about predicables, formal objects or fiction; BFO is realist by design |
-| Four-way flat list (endurant, perdurant, quality, abstract) | DOLCE [DOLCE] | Close to common sense | "Abstract" is a remainder class; DOLCE is an ontology of particulars and leaves predicables outside |
-| Contingent / Necessary | Chisholm [SEP-Cat §1.4] | Clean modal criterion | Whether numbers or propositions exist necessarily is the disputed question |
-| Individual / Type (chosen, as Particular / Predicable) | UFO, GFO, Lowe's second level [UFO; GFO; SEP-Cat §1.4] | Logical criterion; supports instance/subclass discipline | Abstract for browsing; theory-relative for works and species |
-| Individual / Collection crossed with other partitions | Cyc (from background knowledge, not re-checked) | Explicit multi-partition | Many overlapping top-level partitions are hard to browse |
-| No single tree; category differences only | Ryle, the sceptical tradition [SEP-Cat §1.5, §2] | Honest about pluralism | Does not meet the requirement for a browsable root |
+| Option                                                      | Exemplified by                                                           | Strength                                                 | Why not chosen                                                                                                     |
+| ----------------------------------------------------------- | ------------------------------------------------------------------------ | -------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------ |
+| Abstract / Concrete                                         | SUMO's Physical/Abstract [SUMO]; Hoffman and Rosenkrantz [SEP-Cat §1.4] | Familiar                                                 | No agreed criterion; works, institutions and characters fit neither side; the brief forbids assuming it exhaustive |
+| Continuant / Occurrent                                      | BFO [BFO-sec]                                                            | Sharp, well axiomatised                                  | Says nothing about predicables, formal objects or fiction; BFO is realist by design                                |
+| Four-way flat list (endurant, perdurant, quality, abstract) | DOLCE [DOLCE]                                                            | Close to common sense                                    | "Abstract" is a remainder class; DOLCE is an ontology of particulars and leaves predicables outside                |
+| Contingent / Necessary                                      | Chisholm [SEP-Cat §1.4]                                                 | Clean modal criterion                                    | Whether numbers or propositions exist necessarily is the disputed question                                         |
+| Individual / Type (chosen, as Particular / Predicable)      | UFO, GFO, Lowe's second level [UFO; GFO; SEP-Cat §1.4]                  | Logical criterion; supports instance/subclass discipline | Abstract for browsing; theory-relative for works and species                                                       |
+| Individual / Collection crossed with other partitions       | Cyc (from background knowledge, not re-checked)                          | Explicit multi-partition                                 | Many overlapping top-level partitions are hard to browse                                                           |
+| No single tree; category differences only                   | Ryle, the sceptical tradition [SEP-Cat §1.5, §2]                       | Honest about pluralism                                   | Does not meet the requirement for a browsable root                                                                 |
 
 Thomasson's observation applies to all of these: exclusive-and-exhaustive splits can be generated at will from any yes/no question, so meeting those two conditions does not single out a system [SEP-Cat §1.5]. The choice has to be argued from what the system is for. Mine is argued from three needs: keeping instance-of apart from subclass-of, avoiding a silent metaphysics of the abstract, and supporting later domain growth.
 
 ### 10.2 Other choices
 
-| Decision | Chosen | Main alternative | Trade-off |
-|---|---|---|---|
-| Predicable layer | visible | Property and Relation directly under Entity | one level saved; arity derivations and metaproperties lose their common home |
-| Kind placement | under Property | Kind as a sibling of Property and Relation (Lowe-style) | keeps "instantiates" and "exemplifies" apart; mixes two axes in one sibling group |
-| Works and institutions | Construct | "abstract" remainder; or BFO's generically dependent continuant under Continuant | BFO's placement ties them to a realist continuant framework |
-| Fiction | Characterized Object with dual predication | a "fictional X" shadow class beside each real class; or membership in the real class with a status flag | shadow classes double the tree; status flags break existential inferences |
-| Values | Magnitude as Formal Object; "value" as a role | determinate universals; or DOLCE's abstract Region | see §9.1 |
-| Organizations | Social Object | aggregate of persons (a Physical Object) | fails the turnover and same-members cases |
-| States | under Occurrence | no State class | BFO-compatible; loses the State/Quality contrast |
-| Trope layer (Feature) | included | objects and predicables only | simpler; cannot say "the same colour faded" |
+| Decision               | Chosen                                        | Main alternative                                                                                        | Trade-off                                                                         |
+| ---------------------- | --------------------------------------------- | ------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------- |
+| Predicable layer       | visible                                       | Property and Relation directly under Entity                                                             | one level saved; arity derivations and metaproperties lose their common home      |
+| Kind placement         | under Property                                | Kind as a sibling of Property and Relation (Lowe-style)                                                 | keeps "instantiates" and "exemplifies" apart; mixes two axes in one sibling group |
+| Works and institutions | Construct                                     | "abstract" remainder; or BFO's generically dependent continuant under Continuant                        | BFO's placement ties them to a realist continuant framework                       |
+| Fiction                | Characterized Object with dual predication    | a "fictional X" shadow class beside each real class; or membership in the real class with a status flag | shadow classes double the tree; status flags break existential inferences         |
+| Values                 | Magnitude as Formal Object; "value" as a role | determinate universals; or DOLCE's abstract Region                                                      | see §9.1                                                                         |
+| Organizations          | Social Object                                 | aggregate of persons (a Physical Object)                                                                | fails the turnover and same-members cases                                         |
+| States                 | under Occurrence                              | no State class                                                                                          | BFO-compatible; loses the State/Quality contrast                                  |
+| Trope layer (Feature)  | included                                      | objects and predicables only                                                                            | simpler; cannot say "the same colour faded"                                       |
 
 ---
 
