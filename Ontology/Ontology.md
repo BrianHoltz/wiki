@@ -652,9 +652,36 @@ The six working buckets are Object, Occurrence, Feature, Region, Construct and F
 
 **Label recommendation:** retain Construct / Formal entity for the trial. Construction is viable only with an explicitly representational product sense. Abstraction would require either a stipulated origin-independent formal sense or a substantive broader category definition; changing the label alone must not silently change its extension. Origin-anchored / Formally identified describes the intended contrast more accurately than Constructed / Abstract, though it need not become the pair of node names. No replacement label is adopted by this comparison.
 
+**Formalism as the single-word alternative:** its strongest case is brevity and an association with explicit rules rather than physical careers. But the [mathematical usage illustrated by Paulson](https://arxiv.org/abs/1804.07860) concerns a framework in which mathematics is formalized, while [philosophical formalism](https://plato.stanford.edu/entries/formalism-mathematics/) names approaches to the nature of mathematics. Neither straightforwardly names every number, set, magnitude or mathematical mapping. “The number two is a Formalism” tests the proposed is-a meaning and strains those usages. A deliberate broader stipulation is possible, but sacrifices familiar meaning for brevity and can blur subjects with the systems representing them. Recommend retaining Formal entity pending a better encompassing noun; Formalism could name a narrower category of formal frameworks. No renaming is adopted here.
+
 **Main pressure point:** Construct / Formal entity depends on whether origin contributes to identity. Two independently originated works with the same wording can be different Constructs while sharing one formal word-pattern. This account requires testing for mathematical theories, software and language systems; the labels alone do not settle those cases.
 
 **Decision needed from Brian:** assess these definitions and the Feature label, particularly the origin-sensitive Construct / origin-independent Formal entity distinction. The [Fable expansion sketch](UpperOntologyClaudeFable.md#construct-expansion-for-comparison) supplies candidate descendants; it is not wholesale adoption of that sketch or its Characterized Object branch.
+
+#### Construct examples for review
+
+These are illustrative placements under the proposed origin-sensitive definition, not adopted new nodes. The named subject is the work, expression, image, curated content or specification; paper, stored bits and performances supply different subjects. An origin-independent formal pattern can be distinguished from its origin-anchored expression. The institutional force of a norm and its enactment are likewise separate questions.
+
+- **Moby-Dick as a novel:** a work retaining identity across copies and translations.
+- **A specified German translation of Moby-Dick:** an origin-anchored linguistic expression of that work.
+- **Hamlet as a dramatic work:** distinct from its scripts, performances and the people it portrays.
+- **Beethoven's Fifth as a musical composition:** a work distinguishable from a performance or sound recording.
+- **A particular edited score of Beethoven's Fifth:** a notational expression with an editorial origin.
+- **A particular studio recording's audio content:** an origin-anchored recorded expression, distinguished from a playback event or storage medium.
+- **A particular photographic image:** the image arising from a photographic origin, distinguished from a print and depicted scene.
+- **An organization's adopted logo design:** an origin-anchored visual design, distinguished from any one display or a generic geometric pattern.
+- **A surveyor's authored map:** a representation tied to a survey and interpretation, distinguished from its territory.
+- **An architect's design for an unbuilt bridge:** a specification, independent of whether the bridge is ever built.
+- **A chef's written recipe:** an originated procedure specification, distinguished from a meal or cooking episode.
+- **The U.S. Constitution considered as a normative text:** a historically originated content/expression, distinguished from parchment, enactment and the institutions governed.
+- **An agreed contract's terms:** originated specifications, distinguished from the document carrier and resulting obligations.
+- **A prescribed wedding liturgy:** a ceremony specification, distinguished from any performance or marriage.
+- **A choreographer's dance work:** an originated composition, distinguished from a dancer's movements at a time.
+- **A specified chess rulebook's rules:** a normative formulation, distinguished from a particular game or an origin-independent mathematical game model.
+- **A particular software release's source text:** an authored expression, distinguished from its execution and the mathematical function it may compute.
+- **A research team's climate-model formulation:** a selective representation with an intended interpretation, distinguished from climate and from underlying equations considered formally.
+- **A curated archaeological catalogue's content:** a provenance-sensitive selection and description, distinguished from the artifacts and an extensional set considered mathematically.
+- **An author's presented proof of a theorem:** an originated argument or exposition, distinguished from the theorem's truth and a derivation considered solely as a formal sequence.
 
 ### Accepted direction: six principal particular buckets
 
