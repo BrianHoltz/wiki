@@ -340,6 +340,11 @@ Entity
 │   │       ├── Mental state
 │   │       └── Social state
 │   ├── Feature
+│   │   ├── Quality
+│   │   ├── Disposition
+│   │   ├── Relational feature
+│   │   ├── Structural feature
+│   │   └── Attitude
 │   ├── Region
 │   ├── Composition
 │   └── Formal entity
@@ -650,23 +655,83 @@ The agent drives the comparison, testing and synthesis. Brian decides the conseq
 
 ### Provisional incumbent graft
 
-The [incumbent browser](index.html) displays the accepted Particular / Predicable root and six Particular categories from the [published data](ontology.json). Realized entity and Abstract entity are retired as root wrappers; their inherited descendants remain reachable. The graft retains all 437 inherited records other than the retired wrappers, adds twenty upper records, and selects exactly one displayed parent per nonroot record. It has 457 records and 456 ancestry edges.
+The [incumbent browser](index.html) displays the accepted Particular / Predicable root and six Particular categories from the [published data](ontology.json). Realized entity and Abstract entity are retired as root wrappers; their inherited descendants remain reachable. The graft retains all 437 inherited records other than the retired wrappers, adds twenty-three upper records, and selects exactly one displayed parent per nonroot record. It has 460 records and 459 ancestry edges.
 
-The accepted Object and Occurrence children and grandchildren are displayed with their adopted definitions. Deeper inherited placements remain provisional, as do Property / Relation and the unresolved Agent and Collection branches retained directly under Object. The browser marks these placements; definitions state consequential readings such as bearer-specific Quality, normative content versus obligation, and the contract agreement versus its text. Removing repeated displayed parents does not establish that every retained lower inclusion is sound. The inherited biology, physical carriers, mathematical subjects and social senses still require their planned review; the graft is not a validated domain ontology.
+The accepted Object and Occurrence children and grandchildren, and Feature children, are displayed with their adopted definitions. Deeper inherited placements remain provisional, as do Property / Relation and the unresolved Agent and Collection branches retained directly under Object. The browser marks these placements; definitions state consequential readings such as bearer-specific Quality, normative content versus obligation, and the contract agreement versus its text. Removing repeated displayed parents does not establish that every retained lower inclusion is sound. The inherited biology, physical carriers, mathematical subjects and social senses still require their planned review; the graft is not a validated domain ontology.
 
 [graft_upper_ontology.py](graft_upper_ontology.py) reads accepted definitions from this document and applies the explicit placement choices to the inherited data. Run it after rebuilding the legacy projection with [SUMO/overlay_canonical.py](SUMO/overlay_canonical.py). Its input checksum and retired wrapper IDs are recorded in the published data. The browser regression checks verify the root, reachability, unique displayed paths, search and navigation. The existing count annotations still refer to retained records; counts are not evidence for the graft's semantic placements.
 
-### Next decision: Feature's principal categories
+### Next decision: naming Relational feature
 
-**Question:** Adopt Quality, Disposition, Relational feature, Structural feature and Intentional attitude as open children of Feature?
+**Question:** Is there a shorter name covering bearer-specific connections and contextual standing?
 
-**Recommendation:** use [Astra's five branches](CritiqueByAstra.md#recommended-upper-tree) as the trial: a bearer's determination, manifestation tendency, externally grounded characteristic, host structure, and orientation toward content. Examples: this apple's mass, this glass's fragility, this person's office occupancy, this ring's hole, and this person's belief.
+**Recommendation:** retain Relational feature until a better name fits the full scope. Relator is an attractive single word but, in the compared proposals, names a narrower jointly dependent feature grounding a connection. Occupying a role or having a permission does not by itself commit us to a further jointly borne relator. Naming the whole parent Relator would either change that meaning or obscure the distinction.
 
-**Main alternative:** begin with Intrinsic / Relational feature. It offers a more uniform dependence criterion, but whether dispositions, structural features and attitudes are intrinsic is contested; the familiar kinds would be distributed across that disputed cut.
+The examples below are candidate subjects within this branch, not accepted new subclass nodes. They include one-sided standing, jointly grounded ties and physical connections; not all are institutional. They denote bearer-specific features, not the reusable predicables, documents or obtaining episodes. The candidate names are suggestions rather than exact synonyms; several cover only part of the scope.
 
-**Pressure test:** a belief can also be a disposition, and a hole is both structural and dependent on a host. The proposed branches are not disjoint. A belief attitude is a bearer-dependent Feature; the interval of believing is a State; the proposition believed is another subject. These distinctions must identify subjects rather than multiply labels for one subject without justification.
+#### Relational feature examples
 
-**Decision needed from Brian:** adopt the open five-way split, or prefer a dependence-first organization? Grandchildren remain a separate choice.
+- A particular marriage bond
+- A particular employment relationship
+- A person's occupancy of a treasurer position
+- A student's enrollment in a university
+- A person's citizenship in a polity
+- A tenant's tenancy of an apartment
+- An owner's title to a particular parcel
+- A creditor's claim against a particular debtor
+- A debtor's obligation to repay a particular loan
+- A licensee's permission to use a patented invention
+- A judge's jurisdiction over a particular case
+- A guardian's responsibility for a particular child
+- A person's membership in an informal group
+- A partner's stake in a particular venture
+- A promisor's commitment to a particular promisee
+- A particular parent–child kinship tie
+- One component's attachment to another
+- One object's separation from another at a specified time
+- One part's alignment with another at a specified time
+- One organism's symbiotic association with another
+
+#### Candidate names
+
+- Connection
+- Tie
+- Bond
+- Link
+- Association
+- Attachment
+- Affiliation
+- Alliance
+- Partnership
+- Membership
+- Standing
+- Position
+- Status
+- Capacity
+- Claim
+- Stake
+- Commitment
+- Obligation
+- Social tie
+- Relational standing
+
+### Accepted decision: Feature's principal categories
+
+Feature has Quality, Disposition, Relational feature, Structural feature and Attitude as its five working immediate children. These are open and potentially overlapping, not an exhaustive partition. Every edge means is-a and inherits bearer-specific identity and the omniversal admission rule. Grandchildren remain unadopted.
+
+- **Quality:** a Feature characterized by a determination in a qualitative or quantitative domain, without requiring a manifestation process to identify that determination. Examples: this apple's mass and this experience's felt character. The bearer-specific determination is distinct from its repeatable predicable and any formal value used to describe it.
+- **Disposition:** a Feature grounding a tendency or capacity for manifestations under specified conditions, whether or not a manifestation occurs. Examples: this glass's fragility and this magnet's tendency to attract specified materials.
+- **Relational feature:** a Feature whose individuation requires its bearer's connection to another entity or contextual framework. Examples: a particular role occupancy, permission or jointly grounded relationship. Mere description by a multi-argument predicate does not establish a distinct Feature.
+- **Structural feature:** a host-dependent Feature individuated by structural or topological organization, rather than merely by a numerical or categorical description. Examples: a particular cavity or host boundary. Its identity follows its host; it is distinct from an independently identified spatial Region.
+- **Attitude:** a Feature consisting in a subject's orientation toward content or a target, without requiring a purported target to exist. Examples: this person's belief, desire or preference. This is the directed mental sense of attitude, not bodily posture or a general manner of behaving.
+
+**Rationale:** determinations, manifestation tendencies, connections, host structures and directed orientations give useful homes to recurring bearer-dependent subjects. Fable and Astra broadly converge on these groups, although Astra's Relational feature is broader than Fable's Relator. Agreement supports the grouping without making their scopes identical.
+
+**Naming rationale:** Attitude carries the directed sense in its definition; Intentional adds terminology without a needed distinction here. Prefer single-word names where they preserve scope and legibility. Relational feature and Structural feature retain their working names pending adequate alternatives.
+
+**Steelman of alternatives:** Intrinsic / Relational first offers a uniform dependence criterion, but contested accounts of dispositions, structures and attitudes would control their principal placement. Intentional attitude makes directedness explicit and distinguishes posture or demeanor at a glance, but the adopted definition does that work. Relator supplies an established concise label for jointly dependent connections; broadening it to the entire relational branch loses the distinction between a bearer's contextual standing and a posited jointly dependent grounding feature.
+
+**Boundary tests:** belief as an attitude versus an interval of believing as a State; fragility versus a shattering Process; a hole versus its occupied Region; office occupancy versus the office and occupant; a permission versus its text and the reusable permission condition. Overlap requires an identity argument; multiple applicable descriptions need not identify one subject.
 
 ### Accepted decision: Occurrence's children and grandchildren
 

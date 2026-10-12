@@ -370,7 +370,11 @@ async function main() {
       }
       assert(!nodes.has("RealizedEntity") && !nodes.has("AbstractEntity"), "retired roots remain active");
       assert(nodes.get("Region").children.includes("GeographicArea"));
-      assert(nodes.get("Feature").children.includes("Hole"));
+      assert.deepEqual(nodes.get("Feature").children,
+        ["Quality", "Disposition", "RelationalFeature", "StructuralFeature", "Attitude"]);
+      assert(nodes.get("StructuralFeature").children.includes("Hole"));
+      assert(nodes.get("Attitude").children.includes("Preference"));
+      assert(nodes.get("RelationalFeature").children.includes("Obligation"));
       assert(nodes.get("Human").children.includes("Person"));
       assert(!nodes.get("Property").children.includes("Quality"), "particular quality remains a predicable");
       assert(nodes.get("FormalEntity").children.includes("MathematicalEntity"));

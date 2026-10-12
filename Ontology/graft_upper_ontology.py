@@ -29,6 +29,11 @@ OCCURRENCE_CATEGORIES = {
     "AchievementEvent": "Achievement event", "PhysicalState": "Physical state",
     "MentalState": "Mental state", "SocialState": "Social state",
 }
+FEATURE_CATEGORIES = {
+    "Quality": "Quality", "Disposition": "Disposition",
+    "RelationalFeature": "Relational feature", "StructuralFeature": "Structural feature",
+    "Attitude": "Attitude",
+}
 UPPER = {
     "Particular": "Particular",
     "Predicable": "Predicable",
@@ -41,6 +46,7 @@ UPPER = {
 }
 UPPER.update(OBJECT_CATEGORIES)
 UPPER.update(OCCURRENCE_CATEGORIES)
+UPPER.update(FEATURE_CATEGORIES)
 
 
 def section(text, heading):
@@ -64,7 +70,9 @@ def accepted_definitions(text):
             body = (section(text, "Accepted decision: Object's children and grandchildren")
                     if identifier in OBJECT_CATEGORIES else
                     section(text, "Accepted decision: Occurrence's children and grandchildren")
-                    if identifier in OCCURRENCE_CATEGORIES else six)
+                    if identifier in OCCURRENCE_CATEGORIES else
+                    section(text, "Accepted decision: Feature's principal categories")
+                    if identifier in FEATURE_CATEGORIES else six)
             definition = re.search(rf"^- \*\*{label}:\*\* (.+)$", body, re.M).group(1)
             definitions[identifier] = definition.split(" Examples:", 1)[0]
     return definitions
@@ -116,15 +124,15 @@ def graft(data, definitions):
         "FamilyGroup": "SocialCollective", "Collection": "Object",
         "MathematicalEntity": "FormalEntity", "QualityValue": "FormalEntity",
         "InformationalEntity": "Composition", "RepresentationalEntity": "Composition",
-        "AstronomicalBody": "PhysicalObject", "Hole": "Feature", "Person": "Human",
+        "AstronomicalBody": "PhysicalObject", "Hole": "StructuralFeature", "Person": "Human",
         "OrganizationUnit": "InstitutionalEntity",
         "Artifact": "Item", "Group": "Collection", "Organization": "InstitutionalEntity",
         "Government": "PoliticalOrganization", "Language": "RepresentationalEntity",
         "GeopoliticalArea": "GeographicArea",
         "Quality": "Feature", "Disposition": "Feature", "Capability": "Disposition",
-        "Preference": "Feature", "Obligation": "Feature", "Relationship": "Feature",
-        "Status": "Feature", "Agreement": "Feature", "License": "Feature",
-        "Contract": "Feature", "Role": "Property",
+        "Preference": "Attitude", "Obligation": "RelationalFeature", "Relationship": "RelationalFeature",
+        "Status": "RelationalFeature", "Agreement": "RelationalFeature", "License": "RelationalFeature",
+        "Contract": "RelationalFeature", "Role": "Property",
         "Purpose": "Composition", "Norm": "Composition", "Goal": "Composition",
         "Convention": "Composition", "Law": "Composition", "Policy": "Composition",
         "Proof": "Composition", "Definition": "Composition",
@@ -190,6 +198,8 @@ def graft(data, definitions):
                    PhysicalProcess="Process", MentalProcess="Process", SocialProcess="Process",
                    TransitionEvent="Event", AchievementEvent="Event",
                    PhysicalState="OccurrenceState", MentalState="OccurrenceState", SocialState="OccurrenceState")
+    parents.update(Quality="Feature", Disposition="Feature",
+                   RelationalFeature="Feature", StructuralFeature="Feature", Attitude="Feature")
     # State is the inherited territorial record; do not reuse its identity for an episode.
     if "State" in nodes:
         nodes["State"]["label"] = "State territory"
@@ -211,7 +221,8 @@ def graft(data, definitions):
              "Occurrence": ["Process", "Event", "OccurrenceState"],
              "Process": ["PhysicalProcess", "MentalProcess", "SocialProcess"],
              "Event": ["TransitionEvent", "AchievementEvent"],
-             "OccurrenceState": ["PhysicalState", "MentalState", "SocialState"]}
+             "OccurrenceState": ["PhysicalState", "MentalState", "SocialState"],
+             "Feature": ["Quality", "Disposition", "RelationalFeature", "StructuralFeature", "Attitude"]}
     for identifier, node in nodes.items():
         selected = [i for i, parent in parents.items() if parent == identifier]
         rank = order.get(identifier, old_children.get(identifier, []))
@@ -237,7 +248,7 @@ def graft(data, definitions):
     data["nodes"] = sorted(nodes.values(), key=lambda n: (n["label"].lower(), n["id"]))
     data.update(root="Entity", rootNodes=["Entity"])
     data["source"]["overlayPolicy"] = (
-        "Accepted Particular/Predicable root, six Particular categories and Object/Occurrence branches; "
+        "Accepted Particular/Predicable root, six Particular categories and Object/Occurrence/Feature branches; "
         "provisional single-parent graft of inherited descendants, with visible sense annotations.")
     data["source"]["graftDefinitions"] = "Ontology.md#accepted-decision-particulars-six-principal-categories"
     data["stats"] = {
