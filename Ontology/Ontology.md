@@ -633,25 +633,45 @@ The large RDF/XML text dump available for this project is not a general “Mozil
 
 ## Consolidating upper ontologies
 
-Proposed decision sequence. The aim is a general-purpose ontology with an intelligible canonical tree, as described in the [design memoranda](OntologyDesignMemoranda.md#1-project-goal). Each gate produces a reviewable decision before the next depends on it. A failed stress test reopens the earliest affected decision; the sequence is not a demand to settle all metaphysics before making progress. No proposed root structure or branch relocation is accepted merely by appearing here.
+The agent drives the comparison, testing and synthesis. Brian decides the consequential design choices, one compact brief at a time. The aim remains a general-purpose ontology with an intelligible canonical tree, as described in the [design memoranda](OntologyDesignMemoranda.md#1-project-goal).
 
-The comparison inputs are the preserved proposals by [Astra](UpperOntologyAstra.md), [Gemini](UpperOntologyGemini.md), and [Claude Fable](UpperOntologyClaudeFable.md); their repository-informed critiques by [Astra](CritiqueByAstra.md), [Gemini](CritiqueByGemini.md), and [Claude Fable](CritiqueByClaudeFable.md); the incumbent and [historical snapshot](v1010/Ontology.md); and the [GPT/Sol package](GPT/README.md), including its [architecture](GPT/architecture.md), [format](GPT/FORMAT.md), [coverage map](GPT/coverage-map.json), and [stress tests](GPT/stress-tests.md). Imported systems in [Prior art](#prior-art) supply distinctions, provenance and coverage probes; lexical and topical hierarchies do not automatically supply subclass axioms. The [critic prompts](CriticPrompt.md) explain the proposals' reporting scope, not a permanent ontology depth limit.
+### First decision: design priority
+
+**Question:** When a simple tree and a more faithful account of the concepts pull apart, which should lead?
+
+- **Meaning first, approachable browsing — recommended.** Preserve distinctions and justified overlap in the underlying ontology; make the tree a readable view of it. This supports broad coverage, but some concepts need alternate routes or a short explanation.
+- **Tree first.** Favor one clear hierarchy and easy navigation. This offers a simpler browsing experience, but more borderline concepts require restricted definitions or secondary treatment.
+- **Formal theory first.** Adopt a coherent foundational account and organize around it. This offers stronger theoretical uniformity, but requires more philosophical commitments and may make navigation more technical.
+
+All options require valid relationships and explicit definitions. The choice sets the design priority; it does not select a model's tree or settle Entity's children. The recommendation follows the memoranda's distinction between a rich ontology and its canonical tree.
+
+**Decision needed from Brian:** choose an option or state a different priority. This decision is open. After the choice, the agent prepares the admission-and-reference brief.
+
+### Working method
+
+For each turning point, the agent supplies the question, recommendation, viable alternatives and their main consequences. Keep the opening brief short and high-level; retain supporting definitions, examples and objections below it or in linked analysis. Offer more detail when Brian requests it. Record his answer, its rationale and any qualifications before advancing dependent work. A failed stress test reopens the earliest affected decision.
+
+The agent owns input/version checks, claim verification, sense-level comparison, counterexample testing, decision records and synthesis. Bring Brian choices that materially change scope, identity, metaphysical commitments or the browsing experience; handle routine analysis and implementation within accepted decisions. Split a gate into several briefs when its choices are independent. Continue unrelated work while a decision is open, but do not treat silence as acceptance.
 
 ### Evaluation contract and common baseline
 
-Decide which requirements are binding and which are hypotheses under review. Reconcile the incumbent's game-oriented language and realized/abstract preference with the memoranda's broader purpose and open root question. Keep semantic correctness and explicit commitments ahead of node count; evaluate browsing usefulness separately. Distinguish a false inclusion under agreed definitions from a contested definition, incomplete coverage, or a navigation preference.
+After the first decision, the agent translates the chosen priority into evaluation criteria and separates binding requirements from hypotheses under review. Reconcile game-oriented language and the incumbent's realized/abstract preference with the broader purpose and open root question. Distinguish a false inclusion under agreed definitions from a contested definition, incomplete coverage or navigation preference. Ask Brian only about remaining conflicts that materially affect the design.
 
 Compare the latest recommendations against one named source snapshot. Record each claim with its source passage, intended sense, supporting example, strongest objection and proposed discriminating test. Verify reported data defects against that snapshot rather than inheriting a critique's conclusion. Preserve first responses as evidence of starting positions; cross-reading and prior exposure mean model agreement is not independent corroboration.
 
-**Gate exit:** an agreed evaluation contract, exact input versions and a decision ledger with accepted, rejected and unresolved claims. A source-accounting percentage, passing validator or model vote cannot establish semantic correctness.
+**Gate exit:** the chosen priority is recorded, the evaluation contract reflects it, and exact input versions and a decision ledger are established. Source-accounting percentages, passing validators and model votes cannot establish semantic correctness.
 
 ### Admission, reference and assertion scope
+
+The agent tests admission policies and reference cases; Brian chooses the scope of Entity and the treatment of nonexistent subjects.
 
 Decide what Entity admits: actual subjects, formal subjects within a theory, fictional subjects, hypothetical posits and impossible characterizations. Separate admitting a record, successful reference, asserted existence, satisfiability and source-attributed predication. Choose how failed descriptions are retained without manufacturing an actual referent. Decide which existence questions remain explicitly open.
 
 **Gate exit:** a root definition and admission policy that handle a rock, a number, Holmes, a refuted planet and the largest prime without exporting story claims or failed descriptions as actual-world existence claims. The policy must still permit discussion of an undiscovered kind without equating that kind with an authored description.
 
 ### Node meanings and relationship contract
+
+The agent prepares worked representations and identifies incompatible meanings; Brian chooses the semantic contract, including the interpretation of Property and Relation.
 
 Decide what the tree's nodes denote and what every primary edge asserts. The recommended starting contract is classes with subclass inclusion: every child instance is a parent instance. Ordinary individuals, words, class handles, specifications, predicate applications and navigation portals require explicit distinctions. Instance-of, part-of, membership, bearing, participation, expression and satisfaction have their own typed links.
 
@@ -661,6 +681,8 @@ Resolve whether Property and Relation denote predicables, condition specificatio
 
 ### Identity, dependence and cross-cutting classifications
 
+The agent compares persistence and classification policies using shared examples; Brian decides the identity commitments and the division between primary ancestry and cross-cutting classifications.
+
 Decide the criteria for treating two descriptions as one subject or as related subjects. Establish provisional persistence rules for bodies, material portions, aggregates, institutions, occurrences, features, works, expressions and formal structures. Distinguish identity from co-location, representation, equal value and equivalence within a theory.
 
 Decide when kinds, phases, roles, domains and ontic status belong in primary ancestry, defined classifications or metadata. Test rigidity—the claim that an instance cannot cease belonging while remaining itself—rather than assigning it from a familiar label. A role-bearing class can be a valid subclass; whether it deserves primary navigation is a separate question. A designed tool and a rock used as a tool need not share the same kind. Explicitly compare combinations of proposed dimensions and explain incompatible combinations rather than assuming independence.
@@ -668,6 +690,8 @@ Decide when kinds, phases, roles, domains and ontic status belong in primary anc
 **Gate exit:** decisions for organization turnover, statue/clay, a moving hole, a student who graduates, and a broken pump. Record unresolved identity profiles and their costs; do not require agreement on every philosophical theory.
 
 ### Root partition or open grouping
+
+The agent presents tested candidate root structures and their tradeoffs; Brian chooses the root grouping and which partition claims it makes.
 
 Decide whether Entity's children must form an exhaustive, disjoint partition or may be an open set of overlapping categories. Distinguish the semantic structure from the first-level browsing menu. A useful menu is not proof of a fundamental partition; a compressed route must identify skipped semantic ancestors.
 
@@ -677,6 +701,8 @@ Compare the GPT realized/abstract dyad, particular/predicable approaches, the si
 
 ### Upper branches and predication reconciliation
 
+The agent drafts branches under the accepted contract and tests disputed placements; Brian decides remaining substantive alternatives, grouped into focused briefs.
+
 Resolve the children of the accepted root categories before expanding domain inventories. Review objects/processes/states, regions/features, content/formal subjects, social institutions and fictional representation under the agreed contract. A conversation's physical, mental and social classifications must be assessed for genuine overlap rather than assumed to denote either one subject or three.
 
 Give Property and Relation a dedicated pass. Resolve qualities, values, quantity mappings, dispositions, capabilities, operational versus assigned/selected functions, goals, attitudes, norms, obligations, role specifications and role occupancies. Decide whether relation families are semantic subclasses or browsing facets; distinguish classification from instantiation and specification, institutional from social, and exact equivalence from similarity. Decide whether a visible Predicate layer earns its place. Arity splits and kind/role distinctions are different axes.
@@ -684,6 +710,8 @@ Give Property and Relation a dedicated pass. Resolve qualities, values, quantity
 **Gate exit:** an upper-tree proposal through the reporting scope, with discriminating definitions, sibling policies and typed cross-links. Each disputed placement has a counterexample or an explicit design tradeoff. Deeper ancestry remains intact; no branches are invented to balance the display.
 
 ### Meaning-preserving reconciliation and coverage
+
+The agent prepares and checks sense-level mappings; Brian decides unresolved losses, changes of meaning or conflicting interpretations. Routine mappings follow accepted policy.
 
 Map source senses and assertions into the accepted structure before moving branches. Use the [GPT coverage map](GPT/coverage-map.json) as a starting record format, not an equivalence certificate. Include proposal additions and omissions as well as incumbent records. For each mapping specify source and target meanings, equivalence/narrowing/broadening/overlap or split-by-sense, old-assertion migration rules, evidence and decision status.
 
@@ -693,15 +721,23 @@ Preserve identifiers for stable meanings. Give incompatible senses distinct iden
 
 ### Representation and validation readiness
 
+The agent specifies and validates a representation that carries the accepted decisions. Bring Brian any capability or presentation tradeoff that would change those decisions.
+
 Specify the authoritative editable source, semantic parents, one primary navigation parent, typed assertions, defined classifications, aliases, scope, provenance and decision records. Evaluate [GPT's format](GPT/FORMAT.md) against the accepted decisions; adopting its engineering does not entail adopting its metaphysics. Require inspectable browser destinations for off-tree classifications and distinctions that the tree cannot display.
 
 **Gate exit:** a representation contract carrying the accepted distinctions and an acceptance suite covering both valid cases and deliberately invalid mutations. A validator must reject wrong predicate types and relation-family assignments, not merely check tuple length. Semantic reasoning, structural checks and browser behavior have separately stated limits.
 
 ### Bounded migration and publication
 
+The agent implements accepted changes in bounded batches, verifies them, and publishes completed work. Bring Brian any newly exposed design choice before making a dependent semantic change.
+
 Apply accepted sense changes in dependency order: identity and duplicate-record repairs, predication distinctions, affected upper branches, then domain refinements and crosswalk updates. Preserve source graphs and historical snapshots. For biology, select and document authority and lineage policy before accepting grafts; do not let familiar group labels or counts dictate ancestry. Independent accepted branches may proceed while other decisions remain open.
 
 **Gate exit:** the affected stress tests and structural checks pass, navigation exposes retained senses, and the approved source generates reproducible published artifacts and manifests under [the publication contract](#publishing-the-tree-to-the-wiki). Browser acceptance includes search presets, ordinary search, expansion, collapse and lineage restoration. Acceptance of this process document does not itself accept a candidate ontology.
+
+### Review inputs
+
+The comparison inputs are the preserved proposals by [Astra](UpperOntologyAstra.md), [Gemini](UpperOntologyGemini.md), and [Claude Fable](UpperOntologyClaudeFable.md); their repository-informed critiques by [Astra](CritiqueByAstra.md), [Gemini](CritiqueByGemini.md), and [Claude Fable](CritiqueByClaudeFable.md); the incumbent and [historical snapshot](v1010/Ontology.md); and the [GPT/Sol package](GPT/README.md), including its [architecture](GPT/architecture.md), [format](GPT/FORMAT.md), [coverage map](GPT/coverage-map.json), and [stress tests](GPT/stress-tests.md). Imported systems in [Prior art](#prior-art) supply distinctions, provenance and coverage probes; lexical and topical hierarchies do not automatically supply subclass axioms. The [critic prompts](CriticPrompt.md) explain the proposals' reporting scope, not a permanent ontology depth limit.
 
 ## Stress testing
 
