@@ -55,33 +55,34 @@ def section(text, heading):
 
 
 def accepted_definitions(text):
-    six = section(text, "Accepted decision: Particular's six principal categories")
     definitions = {}
-    for identifier, label in UPPER.items():
-        if identifier in {"Particular", "Predicable"}:
-            heading = ("Accepted decision: Particular / Predicable root split"
-                       if identifier == "Particular"
-                       else "Accepted decision: constitutive predicative applicability")
-            body = section(text, heading)
-            key = "Particular" if identifier == "Particular" else "Definition"
-            definitions[identifier] = re.search(
-                rf"^\*\*{key}:\*\* (.+)$", body, re.M).group(1)
+    for identifier, label in {**UPPER, "Entity": "Entity", "Property": "Property", "Relation": "Relation"}.items():
+        if identifier in {"Entity", "Property", "Relation"}:
+            heading = "Definition format: compact definitions and optional support"
+        elif identifier == "Particular":
+            heading = "Accepted decision: Particular / Predicable root split"
+        elif identifier == "Predicable":
+            heading = "Accepted decision: constitutive predicative applicability"
+        elif identifier in OBJECT_CATEGORIES:
+            heading = "Accepted decision: Object's children and grandchildren"
+        elif identifier in OCCURRENCE_CATEGORIES:
+            heading = "Accepted decision: Occurrence's children and grandchildren"
+        elif identifier in FEATURE_CATEGORIES:
+            heading = "Accepted decision: Feature's principal categories"
         else:
-            body = (section(text, "Accepted decision: Object's children and grandchildren")
-                    if identifier in OBJECT_CATEGORIES else
-                    section(text, "Accepted decision: Occurrence's children and grandchildren")
-                    if identifier in OCCURRENCE_CATEGORIES else
-                    section(text, "Accepted decision: Feature's principal categories")
-                    if identifier in FEATURE_CATEGORIES else six)
-            match = re.search(rf"^- \*\*{label}:\*\* (.+)$", body, re.M)
-            if match:
-                definitions[identifier] = match.group(1).split(" Examples:", 1)[0]
-            else:
-                block = body.split(f"#### {label}\n", 1)[1].split("\n#### ", 1)[0]
-                parts = [re.search(rf"^- \*\*{key}:\*\* (.+)$", block, re.M).group(1)
-                         for key in ("Core", "Explanation", "Example")]
-                definitions[identifier] = (parts[0] + " Explanation: " + parts[1]
-                                           + " Example: " + parts[2])
+            heading = "Accepted decision: Particular's six principal categories"
+        body = section(text, heading)
+        match = re.search(rf"^- \*\*{re.escape(label)}:\*\* (.+)$", body, re.M)
+        if not match:
+            raise ValueError(f"Missing core definition for {label}")
+        notes = []
+        for line in body[match.end():].splitlines()[1:]:
+            if not line.startswith("  - "):
+                break
+            notes.append(line[4:])
+        if len(notes) > 2:
+            raise ValueError(f"Too many supplementary bullets for {label}")
+        definitions[identifier] = {"definition": match.group(1), "definitionNotes": notes}
     return definitions
 
 
@@ -95,7 +96,7 @@ def graft(data, definitions):
             parents.setdefault(child, node["id"])
     for identifier, label in UPPER.items():
         nodes.setdefault(identifier, {"id": identifier, "children": []})
-        nodes[identifier].update(label=label, definition=definitions[identifier],
+        nodes[identifier].update(label=label, **definitions[identifier],
                                  definitionSource="accepted project definition",
                                  provisionalParent=None)
 
@@ -211,11 +212,13 @@ def graft(data, definitions):
     if "State" in nodes:
         nodes["State"]["label"] = "State territory"
     for identifier in UPPER:
-        nodes[identifier].update(definition=definitions[identifier],
+        nodes[identifier].update(**definitions[identifier],
                                  definitionSource="accepted project definition",
                                  provisionalParent=None)
     if "Relationship" in nodes:
         nodes["Relationship"]["label"] = "Social relationship"
+    for identifier in ("Entity", "Property", "Relation"):
+        nodes[identifier].update(**definitions[identifier])
     parents.pop("Entity", None)
     for identifier in nodes:
         if identifier != "Entity" and parents.get(identifier) not in nodes:

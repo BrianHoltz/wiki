@@ -661,17 +661,20 @@ The accepted Object and Occurrence children and grandchildren, and Feature child
 
 [graft_upper_ontology.py](graft_upper_ontology.py) reads accepted definitions from this document and applies the explicit placement choices to the inherited data. Run it after rebuilding the legacy projection with [SUMO/overlay_canonical.py](SUMO/overlay_canonical.py). Its input checksum and retired wrapper IDs are recorded in the published data. The browser regression checks verify the root, reachability, unique displayed paths, search and navigation. The existing count annotations still refer to retained records; counts are not evidence for the graft's semantic placements.
 
-### Definition format: three-part trial
+### Definition format: compact definitions and optional support
 
-Use this format for new or revised upper definitions:
+Each core definition stands alone and carries the necessary membership and identity conditions. Add at most two unlabeled supporting bullets only when explanation or a concrete contrast resolves a likely misunderstanding that the core and children do not resolve. Neither a supporting bullet nor an example adds a hidden membership condition. Prefer ordinary language; keep extended defenses and additional tests in the rationale sections. Examples from ordinary life do not restrict admission to actual subjects.
 
-- **Core:** a concise definition that stands alone and carries the necessary membership and identity conditions.
-- **Explanation:** clarification, disambiguation or useful consequences; do not place an essential restriction here that would make the Core misleading by itself.
-- **Example:** one concrete case or contrast that makes the category's center or most likely confusion immediately intelligible. The example need not cover the whole category and is not a further membership condition.
+The browser starts the core beside the name, truncates it in a collapsed row and wraps it fully when expanded. Supporting bullets appear only for an expanded taxon, immediately beneath its definition and before its children, indented farther than the immediate child taxa. They are explanatory prose, not taxonomic nodes: no Core / Explanation / Example labels, taxon counts or navigation controls. Definitions without supporting text add no supplementary block.
 
-Prefer ordinary language and a central example without substituting prototypes for criteria. Keep extended defenses, alternatives and additional tests in their existing rationale sections. An example from ordinary life does not restrict admission to actual subjects.
+The adopted upper definitions use this format without changing their scope, dependence or identity commitments. The published root and provisional Predicable children below use the same presentation; formatting does not adopt the provisional split.
 
-**Retrospective recommendation:** apply the format to the adopted upper definitions in one bounded editorial pass. Preserve their scope, dependence and identity commitments; surface any apparent need to change a definition as a separate design choice. Start with easily confused pairs such as Relation / Relationship, Feature / State and Composition / Formal entity. The pass is proposed; the remaining definitions retain their adopted wording.
+#### Published root and provisional predicable definitions
+
+- **Entity:** That which can be referred to.
+- **Property:** a Predicable applicable to one subject as a characterization; its subject may itself be a Predicable.
+- **Relation:** a Predicable applicable to two or more subjects as an ordered relational characterization.
+  - Married-to is a Relation; Alice and Bob's particular marriage bond is a Relationship.
 
 ### Accepted decision: Relationship as the Feature branch name
 
@@ -681,7 +684,7 @@ Relationship replaces Relational feature as the name of the accepted branch, pre
 
 #### Relation, relationship and relator
 
-The [adopted Relationship definition](#relationship) distinguishes a bearer-specific Feature from a repeatable Relation.
+The [adopted Relationship definition](#accepted-decision-features-principal-categories) distinguishes a bearer-specific Feature from a repeatable Relation.
 
 **Relation versus relationship:** married-to is a repeatable multi-subject characterization under Predicable / Relation. A particular marriage bond is a bearer-dependent subject under Particular / Feature. A spouse's particular entitlement is another relational feature. A marriage ceremony is an Occurrence; the marriage's obtaining over an interval is a State. Identifying these subjects needs more than changing their labels.
 
@@ -743,16 +746,16 @@ The examples below are candidate subjects within this branch, not accepted new s
 
 Feature has Quality, Disposition, Relationship, Structural feature and Attitude as its five working immediate children. These are open and potentially overlapping, not an exhaustive partition. Every edge means is-a and inherits bearer-specific identity and the omniversal admission rule. Grandchildren remain unadopted.
 
-- **Quality:** a Feature characterized by a determination in a qualitative or quantitative domain, without requiring a manifestation process to identify that determination. Examples: this apple's mass and this experience's felt character. The bearer-specific determination is distinct from its repeatable predicable and any formal value used to describe it.
-- **Disposition:** a Feature grounding a tendency or capacity for manifestations under specified conditions, whether or not a manifestation occurs. Examples: this glass's fragility and this magnet's tendency to attract specified materials.
-- **Structural feature:** a host-dependent Feature individuated by structural or topological organization, rather than merely by a numerical or categorical description. Examples: a particular cavity or host boundary. Its identity follows its host; it is distinct from an independently identified spatial Region.
-- **Attitude:** a Feature consisting in a subject's orientation toward content or a target, without requiring a purported target to exist. Examples: this person's belief, desire or preference. This is the directed mental sense of attitude, not bodily posture or a general manner of behaving.
-
-#### Relationship
-
-- **Core:** a Feature consisting in a bearer-specific connection or standing whose identity depends on another entity or a contextual framework.
-- **Explanation:** this is the particular tie or standing, rather than the repeatable Relation predicable. A relation's holding does not by itself establish a further Feature; a Relationship needs its own identity and dependence account. The category includes participant-specific standings as well as jointly grounded ties.
-- **Example:** married-to can characterize many couples; Alice and Bob's particular marriage bond is a Relationship. Alice's specific entitlement arising from that marriage is another Relationship.
+- **Quality:** a Feature characterized by a determination in a qualitative or quantitative domain, without requiring a manifestation process to identify that determination.
+  - This apple's mass is a Quality; the formal value used to describe it is a different subject.
+- **Disposition:** a Feature grounding a tendency or capacity for manifestations under specified conditions, whether or not a manifestation occurs.
+- **Relationship:** a Feature consisting in a bearer-specific connection or standing whose identity depends on another entity or a contextual framework.
+  - A relation's holding does not by itself establish a further Feature; a Relationship needs its own identity and dependence account.
+  - Married-to can characterize many couples; Alice and Bob's particular marriage bond is a Relationship.
+- **Structural feature:** a host-dependent Feature individuated by structural or topological organization, rather than merely by a numerical or categorical description.
+  - A ring's hole follows its host when the ring moves; it is distinct from the spatial Region it occupies at a time.
+- **Attitude:** a Feature consisting in a subject's orientation toward content or a target, without requiring a purported target to exist.
+  - Attitude here means a belief, desire or preference, not bodily posture or a general manner of behaving.
 
 **Rationale:** determinations, manifestation tendencies, connections, host structures and directed orientations give useful homes to recurring bearer-dependent subjects. Fable and Astra broadly converge on these groups, although Astra's Relational feature is broader than Fable's Relator. Agreement supports the grouping without making their scopes identical.
 
@@ -766,17 +769,21 @@ Feature has Quality, Disposition, Relationship, Structural feature and Attitude 
 
 Adopt [Astra's Occurrence branches](CritiqueByAstra.md#recommended-upper-tree): Process, Event and State as immediate children, with the children defined below. Every edge means is-a. All groups remain open and potentially overlapping; none asserts exhaustiveness, disjointness, actuality or physical reduction.
 
-- **Process:** an Occurrence identified through ongoing activity, operation or change, with its course relevant to its identity. Its phases need not each instantiate the same process kind at every granularity.
-- **Physical process:** a Process identified through changes or operations of physical systems. Examples: combustion and bodily circulation.
-- **Mental process:** a Process identified through cognitive, affective or experiential activity, without stipulating its identity with a physical process. Examples: deliberating and imagining.
-- **Social process:** a Process identified through social interaction, coordinated practice or institutional operation. Examples: negotiation and a parliamentary debate.
-- **Event:** an Occurrence individuated as a bounded happening under a specified event criterion, whether instantaneous or extended. Its boundary need not be a perfectly sharp instant.
-- **Transition event:** an Event identified by a change from one specified condition to another. Examples: a phase transition or a change of ownership.
-- **Achievement event:** an Event identified by attaining a specified endpoint or satisfaction condition, whether or not intended by an agent. Examples: reaching a summit or a reservoir reaching its specified capacity. Achievement does not imply merit or success in every broader respect.
-- **State:** an Occurrence identified by a specified condition obtaining over an interval, rather than by the detailed course producing or maintaining it. The subject is the obtaining episode, not its condition predicable, bearer-dependent Feature or temporal Region.
-- **Physical state:** a State identified through the condition or configuration of a physical system. Examples: a specified body's being at rest relative to a frame, or a sample's remaining frozen.
-- **Mental state:** a State identified through experience, cognition or an attitude's obtaining. Examples: an interval of feeling anxious or holding a specified belief.
-- **Social state:** a State identified through social relationships, practices or institutional standing. Examples: an interval of an office's being vacant or two people being married.
+- **Process:** an Occurrence identified through ongoing activity, operation or change, with its course relevant to its identity.
+  - A complex process need not have every phase instantiate the same process kind at every granularity.
+- **Physical process:** a Process identified through changes or operations of physical systems.
+- **Mental process:** a Process identified through cognitive, affective or experiential activity, without stipulating its identity with a physical process.
+- **Social process:** a Process identified through social interaction, coordinated practice or institutional operation.
+- **Event:** an Occurrence individuated as a bounded happening under a specified event criterion, whether instantaneous or extended.
+  - A storm can be both a bounded Event and an ongoing Process; boundedness need not mean perfectly sharp instants.
+- **Transition event:** an Event identified by a change from one specified condition to another.
+- **Achievement event:** an Event identified by attaining a specified endpoint or satisfaction condition, whether or not intended by an agent.
+  - A reservoir reaching its specified capacity can be an Achievement event without anyone pursuing that result.
+- **State:** an Occurrence identified by a specified condition obtaining over an interval, rather than by the detailed course producing or maintaining it.
+  - An interval of believing is a State; the bearer's belief attitude is a Feature, and the proposition believed is another subject.
+- **Physical state:** a State identified through the condition or configuration of a physical system.
+- **Mental state:** a State identified through experience, cognition or an attitude's obtaining.
+- **Social state:** a State identified through social relationships, practices or institutional standing.
 
 **Rationale:** course, bounded happening and obtaining condition are distinct ways to individuate occurrences. Physical, mental and social subclasses preserve their identifying activities or conditions without requiring reductive identity claims. Transition and Achievement separate condition change from endpoint attainment; a finish-line crossing may satisfy both. One primary tree route does not deny another genuine subclass relation.
 
@@ -788,13 +795,17 @@ Adopt [Astra's Occurrence branches](CritiqueByAstra.md#recommended-upper-tree): 
 
 Adopt [Astra's Object branches](CritiqueByAstra.md#recommended-upper-tree), with Physical object and Social object as immediate children. Physical object has Material body, Material portion and Physical aggregate; Social object has Institutional continuant and Social collective. These branches are open and potentially overlapping, not an exhaustive partition. Each inclusion means is-a and inherits Object's persistence criterion and the omniversal admission rule.
 
-- **Physical object:** an Object individuated through a physical body, retained matter or physical grouping. Its identity concerns the physical bearer, rather than a region it occupies or an episode involving it.
-- **Material body:** a Physical object whose bodily organization or unity governs its identity, allowing relevant changes of constituents. An organism or a repaired machine can remain the same body despite material replacement.
-- **Material portion:** a Physical object individuated by specified matter, whose retention governs its identity rather than the persistence of a shape or organized body. The clay used for a statue can remain the same portion after reshaping; merely preserving its mass need not preserve that portion.
-- **Physical aggregate:** a Physical object individuated as a plurality of physical members under a specified grouping and persistence rule, without requiring the unity of a single body. A heap of stones exemplifies the distinction; the rule must say what changes of membership preserve the aggregate.
-- **Social object:** an Object whose identity or persistence depends on social practice, affiliation, recognition or constitutive rules. The institution and its building need not be one subject; a merely socially described physical object does not qualify on that basis alone.
-- **Institutional continuant:** a Social object whose continuing identity is governed by an identifiable framework of constitutive rules, potentially surviving changes of members or occupants and periods of vacancy or inactivity. Examples include a corporation and an institutional office; the applicable framework determines which changes preserve them.
-- **Social collective:** a Social object individuated as a group through membership, affiliation or interaction under a specified persistence rule. An informal discussion group can qualify without an institutional charter; an institutional organization can also satisfy this definition.
+- **Physical object:** an Object individuated through a physical body, retained matter or physical grouping.
+- **Material body:** a Physical object whose bodily organization or unity governs its identity through relevant changes of constituents.
+  - A repaired machine can remain the same body despite replacement of its original material.
+- **Material portion:** a Physical object individuated by specified matter, whose retention governs its identity rather than the persistence of a shape or organized body.
+  - The clay used for a statue can remain the same portion after reshaping; replacing it with equally heavy clay need not preserve that portion.
+- **Physical aggregate:** a Physical object individuated as a plurality of physical members under a specified grouping and persistence rule, without requiring the unity of a single body.
+- **Social object:** an Object whose identity or persistence depends on social practice, affiliation, recognition or constitutive rules.
+  - A company can survive staff turnover without being identical to its staff or building.
+- **Institutional continuant:** a Social object whose continuing identity is governed by an identifiable framework of constitutive rules, potentially surviving changes of members or occupants and periods of vacancy or inactivity.
+  - A treasurer's office can remain the same office when its occupant resigns and it becomes vacant.
+- **Social collective:** a Social object individuated as a group through membership, affiliation or interaction under a specified persistence rule.
 
 **Rationale:** the Physical / Social split distinguishes grounds of identity, while their children distinguish bodily unity, retained matter, physical grouping, institutional continuity and social membership. Fable and Astra converge on the principal branches; Astra makes the material and social persistence distinctions explicit at the next level. This agreement supports a trial but does not prove disjointness or coverage.
 
@@ -808,12 +819,16 @@ Adopt [Astra's Object branches](CritiqueByAstra.md#recommended-upper-tree), with
 
 Particular has Object, Occurrence, Feature, Region, Composition and Formal entity as its six working immediate children. Adopt the following definitions for developing and testing the tree. The categories remain open; neither exhaustive coverage nor pairwise disjointness is asserted. All inherit the Particular definition and omniversal admission rule. Names may change without changing the adopted meanings.
 
-- **Object:** a particular individuated as a unified, persisting bearer through continuity of its body, material, membership or constitutive organization. Examples: an organism, a material portion, an organization. Its identity concerns the bearer rather than an occurrence involving it, a feature of it or a region it occupies.
-- **Occurrence:** a particular happening or obtaining episode individuated through its temporal unfolding, boundary or extent. Examples: a running process, a collision, an interval of being asleep. The definition includes instantaneous events and sustained states, not only changes.
-- **Feature:** a particular characteristic whose identity depends on specified bearers or hosts. Examples: this wall's color, this glass's fragility, a particular hole in a ring. The bearer-specific characteristic is distinct from a predicable applicable to bearers and from a specification of that predicable.
-- **Region:** a particular locus or extent individuated by positions within a specified spatial, temporal or spatiotemporal domain, rather than by its occupant. Examples: a spatial point, a time interval, a flight's swept-out spacetime region. Its frame and extent must be stated; it need not be occupied.
-- **Composition:** a particular intellectual or artistic product whose identity depends on its originating history together with its content or symbolic form, independently of any one carrier. Intellectual products include practical specifications, designs and curated accounts. Examples: a novel as a work, its English text as an expression, a plan specification. Fictional or hypothetical status does not make an ordinary subject a Composition.
-- **Formal entity:** a particular whose identity is fixed entirely by mathematical, logical or structural conditions within a specified framework, rather than by a physical or social career or an origin in representing it. Examples: the number two, a set, a mathematical mapping, an origin-independent symbolic pattern. A formal description of another subject does not make that subject a Formal entity.
+- **Object:** a Particular individuated as a unified, persisting bearer through continuity of its body, material, membership or constitutive organization.
+- **Occurrence:** a Particular happening or obtaining episode individuated through its temporal unfolding, boundary or extent.
+- **Feature:** a Particular characteristic whose identity depends on specified bearers or hosts.
+  - This wall's redness is a Feature; redness applicable to many walls is a Predicable.
+- **Region:** a Particular locus or extent individuated by positions within a specified spatial, temporal or spatiotemporal domain or frame, rather than by its occupant.
+- **Composition:** a Particular intellectual or artistic product whose identity depends on its originating history together with its content or symbolic form, independently of any one carrier.
+  - Independently originated works with identical wording can be different Compositions while sharing one formal word-pattern.
+  - A fictional human is not a Composition merely because a story portrays that human.
+- **Formal entity:** a Particular whose identity is fixed entirely by mathematical, logical or structural conditions within a specified framework, rather than by a physical or social career or an origin in representing it.
+  - A mathematical description of a bridge does not make the bridge a Formal entity.
 
 **Rationale:** persisting bearers, temporal episodes, bearer-dependent characteristics, positional extents, origin-anchored intellectual products and formally identified subjects raise different identity and classification questions. These six give those distinctions explicit homes beneath Particular. Naming refinement does not need to delay testing the meanings.
 
@@ -854,9 +869,10 @@ These are illustrative placements under the accepted origin-sensitive definition
 
 Entity has Particular and Predicable as its immediate children. The split is disjoint and exhaustive under the adopted distinction: an entity is either constitutively applicable as a characterization or complete as a subject without that applicability. This is a conceptual root partition, not a requirement that every later split be disjoint or exhaustive.
 
-**Particular:** an entity complete as a subject of characterization, rather than constitutively applicable to subjects as a characterization.
+- **Particular:** an entity complete as a subject of characterization, rather than constitutively applicable to subjects as a characterization.
+  - Complete means no unfilled predicative positions, not being fully described, physically independent, actual or finished.
 
-**Meaning of complete:** lacking unfilled predicative positions, not being fully described, actually existent, physically independent or finished in time. Predicables can themselves be subjects of characterization; this does not make them Particulars, because their constitutive applicability remains. Copies, performances, representations and mathematical realizations do not by themselves settle category membership. The [accepted Predicable definition](#accepted-decision-constitutive-predicative-applicability) supplies the complementary criterion.
+**Identity cautions:** copies, performances, representations and mathematical realizations do not by themselves settle category membership. The [accepted Predicable definition](#accepted-decision-constitutive-predicative-applicability) supplies the complementary criterion.
 
 **Rationale:** a common distinction organizes the difference between subjects and the properties or relations applicable to them without substituting specifications for their referents. It is adapted from the logical precedents in the [academic survey](#particular-academic-terminology), rather than importing an entire historical theory. It accommodates abstract and dependent particulars and higher-order predication while respecting the omniversal admission rule.
 
@@ -866,7 +882,9 @@ Entity has Particular and Predicable as its immediate children. The split is dis
 
 ### Accepted decision: constitutive predicative applicability
 
-**Definition:** a predicable is an entity whose nature is to characterize one or more subjects: it is applicable to them as a property or relation, and its application concerns whether or how those subjects qualify or stand related. This applicability is constitutive of the predicable, rather than a consequence of its being used to represent something. Its subject positions give it predicative arity; the subjects may themselves be predicables. Actual application or exemplification is not required.
+- **Predicable:** an entity constitutively applicable to one or more subjects as a characterization of whether or how they qualify or stand related, whether or not exemplified.
+  - Its subject positions give it predicative arity; its subjects may themselves be Predicables.
+  - Redness characterizes candidate bearers; a book describing redness represents it without becoming applicable to red things as redness is.
 
 **Consequence:** predicables need a visible home distinct from specifications of them. Specifications under Content are legitimate subjects; they are not exhaustive substitutes for their referents. The [root split](#accepted-decision-particular--predicable-root-split) places Particular and Predicable immediately under Entity. Neither decision settles the identity theory of properties or posits an independently existing universe of universals.
 

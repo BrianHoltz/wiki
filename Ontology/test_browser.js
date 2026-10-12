@@ -96,6 +96,33 @@ async function testBrowser(relativePath, dataPath, presetSearch, presetTarget) {
       assert(tree.innerHTML.includes(`>${label}</a>`), `${label}: accepted category not rendered`);
     }
   }
+  if (relativePath === "index.html") {
+    const relationship = data.nodes.find(n => n.id === "RelationalFeature");
+    const ownContent = html => html.split('<ul class="children"')[0];
+    const collapsed = ownContent(context.renderNode(relationship.id, false));
+    const expanded = ownContent(context.renderNode(relationship.id, true));
+    assert(!collapsed.includes("definition-notes"), "collapsed taxon includes supplementary block");
+    for (const note of relationship.definitionNotes) {
+      assert(!collapsed.includes(context.formatDefinition(note)), "collapsed row leaks supplementary prose");
+      assert(expanded.includes(`<li>${context.formatDefinition(note)}</li>`), "expanded taxon omits prose bullet");
+    }
+    assert(expanded.includes('<ul class="definition-notes">'));
+    assert(!expanded.includes("Explanation:") && !expanded.includes("Example:") && !expanded.includes("Core:"));
+    assert(collapsed.includes(context.formatDefinition(relationship.definition)), "core missing from collapsed row");
+    const leaf = data.nodes.find(n => !n.children.length && n.definitionNotes?.length);
+    assert(leaf, "no upper leaf available for expansion test");
+    assert(ownContent(context.renderNode(leaf.id, false)).includes('class="expander"'), "leaf definition cannot expand");
+    const click = {closest(selector) { return selector === "button.expander[data-node]" ? {dataset:{node:leaf.id}} : null; }};
+    context.focusNode(leaf.id);
+    const renderedLeaf = () => ownContent(tree.innerHTML.slice(tree.innerHTML.indexOf(`id="${encodedId(leaf.id)}"`)));
+    elements.get("#tree").onclick({target:click});
+    assert(!renderedLeaf().includes('class="definition-notes"'), "collapse leaves supplementary bullets rendered");
+    elements.get("#tree").onclick({target:click});
+    assert(renderedLeaf().includes('class="definition-notes"'), "leaf expansion does not reveal supplementary bullets");
+    for (const node of data.nodes) {
+      if (node.definitionNotes) assert(node.definitionNotes.length <= 2, `${node.id}: excessive support`);
+    }
+  }
   const search = elements.get("#search");
   const results = elements.get("#results");
   const presets = elements.get(".search-presets");
@@ -247,12 +274,13 @@ async function testBrowser(relativePath, dataPath, presetSearch, presetTarget) {
   // Parse nested list visibility: hidden descendants still exist in the HTML.
   const rows = () => {
     const result = new Map(), lists = [], nodes = [];
-    const tokens = tree.innerHTML.matchAll(/<li id="([^"]+)">|<ul([^>]*)>|<\/ul>|<\/li>/g);
+    const tokens = tree.innerHTML.matchAll(/<li(?: id="([^"]+)")?[^>]*>|<ul([^>]*)>|<\/ul>|<\/li>/g);
     for (const token of tokens) {
       if (token[1] !== undefined) {
         const id = decodeURIComponent(token[1]);
         result.set(id, {visible: lists.every(Boolean), open: false}); nodes.push(id);
-      } else if (token[2] !== undefined) {
+      } else if (token[0].startsWith("<li")) nodes.push(null);
+      else if (token[2] !== undefined) {
         const open = !/\bhidden\b/.test(token[2]);
         if (/class="children"/.test(token[2])) result.get(nodes.at(-1)).open = open;
         lists.push(open);
@@ -377,7 +405,7 @@ async function main() {
       assert(nodes.get("RelationalFeature").children.includes("Obligation"));
       assert.equal(nodes.get("RelationalFeature").label, "Relationship");
       assert.equal(nodes.get("Relationship").label, "Social relationship");
-      assert(nodes.get("RelationalFeature").definition.includes("Alice and Bob"));
+      assert(nodes.get("RelationalFeature").definitionNotes.some(note => note.includes("Alice and Bob")));
       assert(nodes.get("Human").children.includes("Person"));
       assert(!nodes.get("Property").children.includes("Quality"), "particular quality remains a predicable");
       assert(nodes.get("FormalEntity").children.includes("MathematicalEntity"));

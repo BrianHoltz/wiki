@@ -17,7 +17,7 @@ input{min-width:280px;width:100%;box-sizing:border-box}button{cursor:pointer}ul{
 summary{cursor:pointer;display:flex;align-items:baseline;gap:4px;list-style:none}summary::-webkit-details-marker{display:none}summary::before{content:"\25B6";display:inline-block;flex:none;width:1em}details[open] > summary::before{content:"\25BC"}.meta{color:var(--muted);font-size:12px;margin-left:6px;flex:none}.definition{color:var(--muted);font-size:13px;margin-left:0;flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;vertical-align:bottom}.definition.expanded{overflow:visible;text-overflow:clip;white-space:normal;vertical-align:baseline}
 details.lineage > summary::before{content:"\25C6"}
 a{color:var(--accent)}#results{margin:10px 0 18px}.result{padding:5px 0;border-bottom:1px solid var(--line)}
-.node{display:flex;align-items:baseline;gap:4px}.node-content{display:flex;align-items:baseline;gap:0;min-width:0;flex:1}.expander{background:transparent;border:0;color:var(--fg);cursor:pointer;font:inherit;padding:0;width:1em}.expander-placeholder{display:inline-block;flex:none;width:1em;text-align:center;color:var(--fg)}.children[hidden]{display:none}
+.node{display:flex;align-items:baseline;gap:4px}.node-content{display:flex;align-items:baseline;gap:0;min-width:0;flex:1}.expander{background:transparent;border:0;color:var(--fg);cursor:pointer;font:inherit;padding:0;width:1em}.expander-placeholder{display:inline-block;flex:none;width:1em;text-align:center;color:var(--fg)}.children[hidden]{display:none}.definition-notes{list-style:disc;padding-left:64px;margin:0;color:var(--muted);font-size:13px}.definition-notes>li{margin:0}
 .node-content:has(>.definition.expanded){display:block}.node-title{display:inline-block}.node-content>.meta{white-space:nowrap}.expander{flex:none}.node-stats{margin-left:4px}.entity-count,.species-count{font-variant-emoji:text;color:inherit;text-decoration:none}.entity-count:hover,.species-count:hover{text-decoration:underline}
 </style>
 </head>
@@ -53,14 +53,16 @@ return `<a class="entity-count" href="${esc(s.url)}" title="${esc(title)}" aria-
 function renderNode(id,open=false,children=null,lineage=false,childOpen=null){const n=byId.get(id);const visibleChildren=children||lineageChildren?.get(id)||n.children;
 const directChildren=n.children.length;
 const otherDescendants=descendantCount(id)-directChildren;
-const marker=open?'▼':'▶';
+const marker=directChildren?(open?'▼':'▶'):(open?'●':'○');
 const species=[speciesStats(n),entityStats(n)].filter(Boolean).join(' · ');const childrenStats=directChildren?`${directChildren}${otherDescendants?`+${otherDescendants}`:''}&#8595;`:'';
 const childCount=childrenStats||species?`<span class="meta node-stats">${childrenStats}${childrenStats&&species?' ':''}${species}</span>`:'';
 const provisional=n.provisionalParent?` <span class="meta">· provisional placement</span>`:'';
 const definition=displayDefinition(n).trim();const shortDef=definition?`<span class="definition${open?' expanded':''}" title="${esc(definition)}">&nbsp;${formatDefinition(definition)}</span>`:'';
-const expander=directChildren?`<button class="expander" type="button" data-node="${esc(id)}">${marker}</button>`:'<span class="expander-placeholder" aria-hidden="true">○</span>';
+const notes=Array.isArray(n.definitionNotes)?n.definitionNotes:[];
+const supplement=open&&notes.length?`<ul class="definition-notes">${notes.map(note=>`<li>${formatDefinition(note)}</li>`).join('')}</ul>`:'';
+const expander=directChildren||definition?`<button class="expander" type="button" data-node="${esc(id)}" aria-expanded="${open}" aria-label="${open?'Collapse':'Expand'} ${esc(displayLabel(n))}">${marker}</button>`:'<span class="expander-placeholder" aria-hidden="true">○</span>';
 const text=`<span class="node-title">${link(id)}${sourceLink(n)}</span>${childCount}${provisional}${shortDef}`;
-return `<li id="${encodeURIComponent(id)}"><div class="node">${expander}<span class="node-content">${text}</span></div><ul class="children"${open?'':' hidden'}>${visibleChildren.map(child=>renderNode(child,(lineageNode?lineageModes:nodeModes).get(child)===1)).join('')}</ul></li>`}
+return `<li id="${encodeURIComponent(id)}"><div class="node">${expander}<span class="node-content">${text}</span></div>${supplement}<ul class="children"${open?'':' hidden'}>${visibleChildren.map(child=>renderNode(child,(lineageNode?lineageModes:nodeModes).get(child)===1)).join('')}</ul></li>`}
 function renderLineage(path){lineageChildren=new Map(path.map((id,index)=>[id,index===path.length-1?byId.get(id).children:[path[index+1]]]));return renderNode(path[0],lineageModes.get(path[0])===1)}
 function render(){let tree;
 if(lineageNode){const path=[],seen=new Set();for(let id=lineageNode;id&&!seen.has(id);id=parentOf.get(id)){path.unshift(id);seen.add(id)}tree=`<ul>${renderLineage(path)}</ul>`}
