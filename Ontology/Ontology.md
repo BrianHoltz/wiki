@@ -2,9 +2,9 @@
 
 ## Principles
 
-- The handcrafted v1 remains the player-facing canonical tree; imported systems are source, audit, and enrichment layers rather than replacements.
+- The incumbent with the accepted upper graft remains the canonical tree; imported systems are source, audit, and enrichment layers rather than replacements.
 - The canonical tree has one primary parent per node. Definitions, alternate classifications and qualifications of a split must be inspectable from the public tree; aliases, source IDs and provenance support the same account in data.
-- The canonical upper structure is `Entity`, with `Realized entity` and `Abstract entity` as its principal distinction; `Object` and `Process` are children of `Realized entity`.
+- The canonical upper structure is Entity → Particular / Predicable. Particular contains Object, Occurrence, Feature, Region, Composition and Formal entity. Descendants in the [incumbent browser](index.html) are a provisional graft beneath these accepted categories.
 - The browser is a shared static, searchable, collapsible tree. It does not generate suggested questions, and it displays definitions only when supplied by source material or an explicit project definition.
 - The canonical tree, its definitions and visible annotations state the project ontology. Machine-readable data must encode the same commitments without a substantially different, more authoritative hidden ontology. Imported source graphs remain authoritative for their own source claims; preserve those claims separately when the project makes a different decision.
 - Classify by kind, not role. The canonical parent should express what an entity is, not a role it happens to play. Roles such as agent, location, participant, container, bearer, or instrument should normally be represented as properties, relations, or alternate classifications unless the role defines the entity's kind.
@@ -317,22 +317,17 @@ The current grafting hypothesis is therefore selective: use OpenMath and OMDoc f
 ##### Our ontology
 
 ```text
-Entity: that which can be referred to.
-├── Realized entity: an entity that takes no arguments and has spatiotemporal embodiment.
-│   ├── Object: a realized entity regarded as persisting through time.
-│   │   ├── Item: an object distinguished as a single unit.
-│   │   │   ├── Abiotic object: an item of nonbiological, nonartificial origin.
-│   │   │   ├── Biological object: an item constituted by or originating from biological activity.
-│   │   │   └── Artifact: an item intentionally produced or modified for a purpose.
-│   │   ├── Collection: an object constituted by multiple members.
-│   │   ├── Region: an object defined by spatial extent or boundaries.
-│   │   ├── Agent: To be moved — an entity capable of intentional action.
-│   │   ├── Location: To be moved — a spatial place or extent.
-│   │   └── Self Connected Object: To be moved — an object whose parts are connected.
-│   └── Process: a realized entity regarded as occurring through time.
-├── Abstract entity: an entity that takes no arguments and lacks spatiotemporal embodiment.
-├── Property: an entity that takes one argument.
-└── Relation: an entity that takes more than one argument.
+Entity
+├── Particular
+│   ├── Object
+│   ├── Occurrence
+│   ├── Feature
+│   ├── Region
+│   ├── Composition
+│   └── Formal entity
+└── Predicable
+    ├── Property       [provisional inherited branch]
+    └── Relation       [provisional inherited branch]
 ```
 
 ##### Sowa's Knowledge Representation Ontology
@@ -634,6 +629,14 @@ The large RDF/XML text dump available for this project is not a general “Mozil
 ## Consolidating upper ontologies
 
 The agent drives the comparison, testing and synthesis. Brian decides the consequential design choices, one compact brief at a time. The aim remains a general-purpose ontology with an intelligible canonical tree, as described in the [design memoranda](OntologyDesignMemoranda.md#1-project-goal).
+
+### Provisional incumbent graft
+
+The [incumbent browser](index.html) displays the accepted Particular / Predicable root and six Particular categories from the [published data](ontology.json). Realized entity and Abstract entity are retired as root wrappers; their inherited descendants remain reachable. The graft retains all 437 inherited records other than the retired wrappers, adds six upper records, and selects exactly one displayed parent per nonroot record. It has 443 records and 442 ancestry edges.
+
+Placements below the accepted categories are provisional, including Property / Relation and the Social object branch. The browser marks 47 provisional placements; definitions state consequential readings such as bearer-specific Quality, normative content versus obligation, and the contract agreement versus its text. Removing repeated displayed parents does not establish that every retained lower inclusion is sound. The inherited biology, physical carriers, mathematical subjects and social senses still require their planned review; the graft is not a validated domain ontology.
+
+[graft_upper_ontology.py](graft_upper_ontology.py) reads accepted definitions from this document and applies the explicit placement choices to the inherited data. Run it after rebuilding the legacy projection with [SUMO/overlay_canonical.py](SUMO/overlay_canonical.py). Its input checksum and retired wrapper IDs are recorded in the published data. The browser regression checks verify the root, reachability, unique displayed paths, search and navigation. The existing count annotations still refer to retained records; counts are not evidence for the graft's semantic placements.
 
 ### Next decision: Object's principal categories
 

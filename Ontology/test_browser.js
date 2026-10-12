@@ -88,6 +88,14 @@ async function testBrowser(relativePath, dataPath, presetSearch, presetTarget) {
   const data = assertDataIntegrity(dataPath);
   const { elements, source, context } = await loadBrowser(relativePath, data);
   const tree = elements.get("#tree");
+  if (relativePath === "index.html") {
+    const rowIds = [...tree.innerHTML.matchAll(/<li id="([^"]+)">/g)].map(match => match[1]);
+    assert.equal(rowIds.length, data.nodes.length, "canonical renderer omits or repeats records");
+    assert.equal(new Set(rowIds).size, rowIds.length, "canonical renderer has duplicate row IDs");
+    for (const label of ["Particular", "Predicable", "Composition", "Formal entity"]) {
+      assert(tree.innerHTML.includes(`>${label}</a>`), `${label}: accepted category not rendered`);
+    }
+  }
   const search = elements.get("#search");
   const results = elements.get("#results");
   const presets = elements.get(".search-presets");
@@ -340,16 +348,30 @@ async function main() {
       const canonical = assertDataIntegrity(data);
       assert.equal(canonical.source.name, "Omniversal Ontology");
       const nodes = new Map(canonical.nodes.map((node) => [node.id, node]));
-      assert.deepEqual(nodes.get("Object").children, ["Item", "Collection", "Region", "Agent", "SelfConnectedObject"]);
-      assert.deepEqual(nodes.get("Item").children, ["AbioticObject", "BiologicalObject", "Artifact"]);
-      assert.equal(nodes.get("Item").definition, "An object distinguished as a single unit.");
-      assert.equal(nodes.get("AbioticObject").definition, "An item of nonbiological, nonartificial origin.");
-      assert.equal(nodes.get("BiologicalObject").definition, "An item constituted by or originating from biological activity.");
-      assert.equal(nodes.get("Artifact").definition, "An item intentionally produced or modified for a purpose.");
-      assert.equal(nodes.get("Collection").definition, "An object constituted by multiple members.");
-      assert.equal(nodes.get("Region").definition, "An object defined by spatial extent or boundaries.");
-      assert.match(nodes.get("Agent").definition, /^To be moved —/);
-      assert.match(nodes.get("SelfConnectedObject").definition, /^To be moved —/);
+      assert.deepEqual(nodes.get("Entity").children, ["Particular", "Predicable"]);
+      assert.deepEqual(nodes.get("Particular").children,
+        ["Object", "Occurrence", "Feature", "Region", "Composition", "FormalEntity"]);
+      assert.deepEqual(nodes.get("Predicable").children, ["Property", "Relation"]);
+      assert(!nodes.has("RealizedEntity") && !nodes.has("AbstractEntity"), "retired roots remain active");
+      assert(nodes.get("Region").children.includes("GeographicArea"));
+      assert(nodes.get("Feature").children.includes("Hole"));
+      assert(nodes.get("Human").children.includes("Person"));
+      assert(!nodes.get("Property").children.includes("Quality"), "particular quality remains a predicable");
+      assert(nodes.get("FormalEntity").children.includes("MathematicalEntity"));
+      assert(nodes.get("Composition").children.includes("RepresentationalEntity"));
+      const incoming = new Map(canonical.nodes.map(n => [n.id, 0]));
+      canonical.nodes.forEach(n => n.children.forEach(id => incoming.set(id, incoming.get(id) + 1)));
+      for (const [id, count] of incoming) {
+        assert.equal(count, id === "Entity" ? 0 : 1, `${id}: incorrect primary-parent count`);
+      }
+      const reached = new Set();
+      const visit = id => {
+        assert(!reached.has(id), `${id}: cycle or repeated displayed path`);
+        reached.add(id);
+        nodes.get(id).children.forEach(visit);
+      };
+      visit("Entity");
+      assert.equal(reached.size, nodes.size, "canonical graft has unreachable records");
     }
     sources.push(await testBrowser(page, data, query, expected));
   }
