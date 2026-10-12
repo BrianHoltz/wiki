@@ -13,6 +13,15 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parent
+OBJECT_CATEGORIES = {
+    "PhysicalObject": "Physical object",
+    "MaterialBody": "Material body",
+    "MaterialPortion": "Material portion",
+    "PhysicalAggregate": "Physical aggregate",
+    "SocialEntity": "Social object",
+    "InstitutionalEntity": "Institutional continuant",
+    "SocialCollective": "Social collective",
+}
 UPPER = {
     "Particular": "Particular",
     "Predicable": "Predicable",
@@ -23,6 +32,7 @@ UPPER = {
     "Composition": "Composition",
     "FormalEntity": "Formal entity",
 }
+UPPER.update(OBJECT_CATEGORIES)
 
 
 def section(text, heading):
@@ -43,7 +53,9 @@ def accepted_definitions(text):
             definitions[identifier] = re.search(
                 rf"^\*\*{key}:\*\* (.+)$", body, re.M).group(1)
         else:
-            definition = re.search(rf"^- \*\*{label}:\*\* (.+)$", six, re.M).group(1)
+            body = (section(text, "Accepted decision: Object's children and grandchildren")
+                    if identifier in OBJECT_CATEGORIES else six)
+            definition = re.search(rf"^- \*\*{label}:\*\* (.+)$", body, re.M).group(1)
             definitions[identifier] = definition.split(" Examples:", 1)[0]
     return definitions
 
@@ -81,13 +93,18 @@ def graft(data, definitions):
         if label:
             node["label"] = label
 
-    # Reconnect whole inherited branches; avoid introducing unaccepted physical/social tiers.
+    # Reconnect inherited branches; deeper placements remain provisional.
     for identifier, parent in {
         "Process": "Occurrence", "Event": "Occurrence", "Practice": "Process",
         "SocialEntity": "Object", "InstitutionalEntity": "SocialEntity",
+        "Item": "MaterialBody", "SelfConnectedObject": "PhysicalObject",
+        "Substance": "MaterialPortion", "Institution": "InstitutionalEntity",
+        "Community": "SocialCollective",
+        "AgeGroup": "SocialCollective", "EthnicGroup": "SocialCollective",
+        "FamilyGroup": "SocialCollective", "Collection": "Object",
         "MathematicalEntity": "FormalEntity", "QualityValue": "FormalEntity",
         "InformationalEntity": "Composition", "RepresentationalEntity": "Composition",
-        "AstronomicalBody": "Object", "Hole": "Feature", "Person": "Human",
+        "AstronomicalBody": "PhysicalObject", "Hole": "Feature", "Person": "Human",
         "OrganizationUnit": "InstitutionalEntity",
         "Artifact": "Item", "Group": "Collection", "Organization": "InstitutionalEntity",
         "Government": "PoliticalOrganization", "Language": "RepresentationalEntity",
@@ -153,6 +170,14 @@ def graft(data, definitions):
         nodes[identifier].update(definition=definition,
                                  definitionSource="provisional project graft",
                                  provisionalParent="Predicable")
+    parents.update(PhysicalObject="Object", SocialEntity="Object",
+                   MaterialBody="PhysicalObject", MaterialPortion="PhysicalObject",
+                   PhysicalAggregate="PhysicalObject",
+                   InstitutionalEntity="SocialEntity", SocialCollective="SocialEntity")
+    for identifier in UPPER:
+        nodes[identifier].update(definition=definitions[identifier],
+                                 definitionSource="accepted project definition",
+                                 provisionalParent=None)
     parents.pop("Entity", None)
     for identifier in nodes:
         if identifier != "Entity" and parents.get(identifier) not in nodes:
@@ -160,7 +185,10 @@ def graft(data, definitions):
 
     order = {"Entity": ["Particular", "Predicable"],
              "Particular": ["Object", "Occurrence", "Feature", "Region", "Composition", "FormalEntity"],
-             "Predicable": ["Property", "Relation"]}
+             "Predicable": ["Property", "Relation"],
+             "Object": ["PhysicalObject", "SocialEntity", "Agent", "Collection"],
+             "PhysicalObject": ["MaterialBody", "MaterialPortion", "PhysicalAggregate"],
+             "SocialEntity": ["InstitutionalEntity", "SocialCollective"]}
     for identifier, node in nodes.items():
         selected = [i for i, parent in parents.items() if parent == identifier]
         rank = order.get(identifier, old_children.get(identifier, []))
@@ -186,7 +214,7 @@ def graft(data, definitions):
     data["nodes"] = sorted(nodes.values(), key=lambda n: (n["label"].lower(), n["id"]))
     data.update(root="Entity", rootNodes=["Entity"])
     data["source"]["overlayPolicy"] = (
-        "Accepted Particular/Predicable root and six Particular categories; "
+        "Accepted Particular/Predicable root, six Particular categories and Object branches; "
         "provisional single-parent graft of inherited descendants, with visible sense annotations.")
     data["source"]["graftDefinitions"] = "Ontology.md#accepted-decision-particulars-six-principal-categories"
     data["stats"] = {
@@ -194,7 +222,7 @@ def graft(data, definitions):
         "multipleParentNodeCount": 0,
         "unaryNodeCount": sum(len(n["children"]) == 1 for n in nodes.values()),
         "definitionCount": sum(bool(n.get("definition")) for n in nodes.values()),
-        "acceptedUpperNodeCount": 9,
+        "acceptedUpperNodeCount": len(UPPER) + 1,
         "provisionalPlacementCount": sum(bool(n.get("provisionalParent")) for n in nodes.values()),
     }
     data["unaryNodes"] = [n["id"] for n in data["nodes"] if len(n["children"]) == 1]

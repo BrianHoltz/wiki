@@ -320,6 +320,13 @@ The current grafting hypothesis is therefore selective: use OpenMath and OMDoc f
 Entity
 ├── Particular
 │   ├── Object
+│   │   ├── Physical object
+│   │   │   ├── Material body
+│   │   │   ├── Material portion
+│   │   │   └── Physical aggregate
+│   │   └── Social object
+│   │       ├── Institutional continuant
+│   │       └── Social collective
 │   ├── Occurrence
 │   ├── Feature
 │   ├── Region
@@ -632,23 +639,43 @@ The agent drives the comparison, testing and synthesis. Brian decides the conseq
 
 ### Provisional incumbent graft
 
-The [incumbent browser](index.html) displays the accepted Particular / Predicable root and six Particular categories from the [published data](ontology.json). Realized entity and Abstract entity are retired as root wrappers; their inherited descendants remain reachable. The graft retains all 437 inherited records other than the retired wrappers, adds six upper records, and selects exactly one displayed parent per nonroot record. It has 443 records and 442 ancestry edges.
+The [incumbent browser](index.html) displays the accepted Particular / Predicable root and six Particular categories from the [published data](ontology.json). Realized entity and Abstract entity are retired as root wrappers; their inherited descendants remain reachable. The graft retains all 437 inherited records other than the retired wrappers, adds eleven upper records, and selects exactly one displayed parent per nonroot record. It has 448 records and 447 ancestry edges.
 
-Placements below the accepted categories are provisional, including Property / Relation and the Social object branch. The browser marks 47 provisional placements; definitions state consequential readings such as bearer-specific Quality, normative content versus obligation, and the contract agreement versus its text. Removing repeated displayed parents does not establish that every retained lower inclusion is sound. The inherited biology, physical carriers, mathematical subjects and social senses still require their planned review; the graft is not a validated domain ontology.
+The accepted Object children and grandchildren are displayed with their adopted definitions. Deeper inherited placements remain provisional, as do Property / Relation and the unresolved Agent and Collection branches retained directly under Object. The browser marks these placements; definitions state consequential readings such as bearer-specific Quality, normative content versus obligation, and the contract agreement versus its text. Removing repeated displayed parents does not establish that every retained lower inclusion is sound. The inherited biology, physical carriers, mathematical subjects and social senses still require their planned review; the graft is not a validated domain ontology.
 
 [graft_upper_ontology.py](graft_upper_ontology.py) reads accepted definitions from this document and applies the explicit placement choices to the inherited data. Run it after rebuilding the legacy projection with [SUMO/overlay_canonical.py](SUMO/overlay_canonical.py). Its input checksum and retired wrapper IDs are recorded in the published data. The browser regression checks verify the root, reachability, unique displayed paths, search and navigation. The existing count annotations still refer to retained records; counts are not evidence for the graft's semantic placements.
 
-### Next decision: Object's principal categories
+### Next decision: Occurrence's principal categories
 
-**Question:** Should we begin Object with Physical object and Social object as open principal subcategories?
+**Question:** Adopt Process, Event and State as open children of Occurrence?
 
-- **Physical / Social — recommended for the trial.** Physical object: an Object whose identity is grounded in physical constitution or organization. Social object: an Object whose identity or persistence depends on social practices, membership, recognition or constitutive rules. These distinguish identity conditions without asserting that every possible Object belongs to either branch. Potential overlap requires an identity argument, not merely co-location or association.
-- **Material / Immaterial first.** One apparently simple first criterion, but the immaterial branch needs a positive account and risks becoming a remainder combining unlike identity conditions. Social objects may have physical bases without being identical to those bases.
-- **Include Agent or Subject as an immediate peer.** Makes agency or experience prominent, but introduces a different criterion from constitution. Agent can still be a genuine Object subtype; its placement should follow an account of what identifies the bearer, rather than its importance alone.
+**Recommendation:** yes, without declaring them disjoint. Process identifies ongoing activity by its course; Event identifies a bounded happening; State identifies a condition obtaining over an interval. Running, a collision and being asleep are the introductory examples.
 
-**Test:** an organism is a Physical object; a company can persist through complete staff turnover and is a Social object. A company's building and its corporation need not be one subject. Hypothetical nonphysical subjects may remain at Object pending a justified subdivision; no actuality restriction or exhaustive materialist partition is adopted.
+**Main alternative:** Process / State, with events treated as bounded processes or transitions. This gives a cleaner activity/condition split, but makes eventhood subordinate even when the occurrence is identified by its endpoint rather than its detailed unfolding.
 
-**Decision needed from Brian:** try Physical object / Social object as open branches, or choose another first organization? Domain subdivisions and the position of Agent remain subsequent questions.
+**Pressure test:** a storm can be described as both an ongoing process and a bounded event. Are these two descriptions of one occurrence, or differently individuated subjects? The open split permits overlap; the primary tree still needs one justified route for each retained class. A State here is an obtaining episode, not the condition predicable or a bearer-specific Feature.
+
+**Decision needed from Brian:** adopt the open three-way split, or prefer Process / State with Event below Process? Grandchildren remain a separate choice.
+
+### Accepted decision: Object's children and grandchildren
+
+Adopt [Astra's Object branches](CritiqueByAstra.md#recommended-upper-tree), with Physical object and Social object as immediate children. Physical object has Material body, Material portion and Physical aggregate; Social object has Institutional continuant and Social collective. These branches are open and potentially overlapping, not an exhaustive partition. Each inclusion means is-a and inherits Object's persistence criterion and the omniversal admission rule.
+
+- **Physical object:** an Object individuated through a physical body, retained matter or physical grouping. Its identity concerns the physical bearer, rather than a region it occupies or an episode involving it.
+- **Material body:** a Physical object whose bodily organization or unity governs its identity, allowing relevant changes of constituents. An organism or a repaired machine can remain the same body despite material replacement.
+- **Material portion:** a Physical object individuated by specified matter, whose retention governs its identity rather than the persistence of a shape or organized body. The clay used for a statue can remain the same portion after reshaping; merely preserving its mass need not preserve that portion.
+- **Physical aggregate:** a Physical object individuated as a plurality of physical members under a specified grouping and persistence rule, without requiring the unity of a single body. A heap of stones exemplifies the distinction; the rule must say what changes of membership preserve the aggregate.
+- **Social object:** an Object whose identity or persistence depends on social practice, affiliation, recognition or constitutive rules. The institution and its building need not be one subject; a merely socially described physical object does not qualify on that basis alone.
+- **Institutional continuant:** a Social object whose continuing identity is governed by an identifiable framework of constitutive rules, potentially surviving changes of members or occupants and periods of vacancy or inactivity. Examples include a corporation and an institutional office; the applicable framework determines which changes preserve them.
+- **Social collective:** a Social object individuated as a group through membership, affiliation or interaction under a specified persistence rule. An informal discussion group can qualify without an institutional charter; an institutional organization can also satisfy this definition.
+
+**Rationale:** the Physical / Social split distinguishes grounds of identity, while their children distinguish bodily unity, retained matter, physical grouping, institutional continuity and social membership. Fable and Astra converge on the principal branches; Astra makes the material and social persistence distinctions explicit at the next level. This agreement supports a trial but does not prove disjointness or coverage.
+
+**Naming rationale:** Social object includes informal collectives, so Institutional object is too narrow for that parent. Institutional continuant names the narrower rule-governed bearer. Continuant emphasizes identity through change; endurance alone does not distinguish institutions from other Objects, and no minimum lifespan or theory of temporal parts is imposed.
+
+**Steelman of alternatives:** Institutional object is plainer and avoids a technical term; it can name the same narrower category if its definition preserves continuity through turnover and vacancy. Material / Immaterial gives an apparently uniform first split but leaves the immaterial remainder without a common positive identity account. Agent as an immediate principal child foregrounds intentional subjects, but agency crosses physical and social identity grounds and needs its own placement review.
+
+**Boundary tests:** statue versus its clay; repaired machine versus original material; corporation versus staff and building; vacant office versus former occupant; informal group versus institution. A single displayed ancestry does not imply that other genuine subclass claims are false. Nonphysical subjects may remain at Object pending a justified branch.
 
 ### Accepted decision: Particular's six principal categories
 

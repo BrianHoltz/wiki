@@ -352,6 +352,15 @@ async function main() {
       assert.deepEqual(nodes.get("Particular").children,
         ["Object", "Occurrence", "Feature", "Region", "Composition", "FormalEntity"]);
       assert.deepEqual(nodes.get("Predicable").children, ["Property", "Relation"]);
+      assert.deepEqual(nodes.get("PhysicalObject").children.slice(0, 3),
+        ["MaterialBody", "MaterialPortion", "PhysicalAggregate"]);
+      assert.deepEqual(nodes.get("SocialEntity").children, ["InstitutionalEntity", "SocialCollective"]);
+      assert.equal(nodes.get("InstitutionalEntity").label, "Institutional continuant");
+      for (const id of ["PhysicalObject", "MaterialBody", "MaterialPortion", "PhysicalAggregate",
+                        "SocialEntity", "InstitutionalEntity", "SocialCollective"]) {
+        assert.equal(nodes.get(id).provisionalParent, null, `${id}: accepted branch marked provisional`);
+        assert.equal(nodes.get(id).definitionSource, "accepted project definition");
+      }
       assert(!nodes.has("RealizedEntity") && !nodes.has("AbstractEntity"), "retired roots remain active");
       assert(nodes.get("Region").children.includes("GeographicArea"));
       assert(nodes.get("Feature").children.includes("Hole"));
