@@ -31,7 +31,7 @@ OCCURRENCE_CATEGORIES = {
 }
 FEATURE_CATEGORIES = {
     "Quality": "Quality", "Disposition": "Disposition",
-    "RelationalFeature": "Relational feature", "StructuralFeature": "Structural feature",
+    "RelationalFeature": "Relationship", "StructuralFeature": "Structural feature",
     "Attitude": "Attitude",
 }
 UPPER = {
@@ -73,8 +73,15 @@ def accepted_definitions(text):
                     if identifier in OCCURRENCE_CATEGORIES else
                     section(text, "Accepted decision: Feature's principal categories")
                     if identifier in FEATURE_CATEGORIES else six)
-            definition = re.search(rf"^- \*\*{label}:\*\* (.+)$", body, re.M).group(1)
-            definitions[identifier] = definition.split(" Examples:", 1)[0]
+            match = re.search(rf"^- \*\*{label}:\*\* (.+)$", body, re.M)
+            if match:
+                definitions[identifier] = match.group(1).split(" Examples:", 1)[0]
+            else:
+                block = body.split(f"#### {label}\n", 1)[1].split("\n#### ", 1)[0]
+                parts = [re.search(rf"^- \*\*{key}:\*\* (.+)$", block, re.M).group(1)
+                         for key in ("Core", "Explanation", "Example")]
+                definitions[identifier] = (parts[0] + " Explanation: " + parts[1]
+                                           + " Example: " + parts[2])
     return definitions
 
 
@@ -207,6 +214,8 @@ def graft(data, definitions):
         nodes[identifier].update(definition=definitions[identifier],
                                  definitionSource="accepted project definition",
                                  provisionalParent=None)
+    if "Relationship" in nodes:
+        nodes["Relationship"]["label"] = "Social relationship"
     parents.pop("Entity", None)
     for identifier in nodes:
         if identifier != "Entity" and parents.get(identifier) not in nodes:

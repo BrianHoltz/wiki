@@ -375,6 +375,9 @@ async function main() {
       assert(nodes.get("StructuralFeature").children.includes("Hole"));
       assert(nodes.get("Attitude").children.includes("Preference"));
       assert(nodes.get("RelationalFeature").children.includes("Obligation"));
+      assert.equal(nodes.get("RelationalFeature").label, "Relationship");
+      assert.equal(nodes.get("Relationship").label, "Social relationship");
+      assert(nodes.get("RelationalFeature").definition.includes("Alice and Bob"));
       assert(nodes.get("Human").children.includes("Person"));
       assert(!nodes.get("Property").children.includes("Quality"), "particular quality remains a predicable");
       assert(nodes.get("FormalEntity").children.includes("MathematicalEntity"));

@@ -342,7 +342,7 @@ Entity
 │   ├── Feature
 │   │   ├── Quality
 │   │   ├── Disposition
-│   │   ├── Relational feature
+│   │   ├── Relationship
 │   │   ├── Structural feature
 │   │   └── Attitude
 │   ├── Region
@@ -661,15 +661,27 @@ The accepted Object and Occurrence children and grandchildren, and Feature child
 
 [graft_upper_ontology.py](graft_upper_ontology.py) reads accepted definitions from this document and applies the explicit placement choices to the inherited data. Run it after rebuilding the legacy projection with [SUMO/overlay_canonical.py](SUMO/overlay_canonical.py). Its input checksum and retired wrapper IDs are recorded in the published data. The browser regression checks verify the root, reachability, unique displayed paths, search and navigation. The existing count annotations still refer to retained records; counts are not evidence for the graft's semantic placements.
 
-### Next decision: naming Relational feature
+### Definition format: three-part trial
 
-**Question:** Is there a shorter name covering bearer-specific connections and contextual standing?
+Use this format for new or revised upper definitions:
 
-**Recommendation:** Relationship is the strongest short candidate, provided its definition marks a bearer-specific feature rather than the repeatable Relation predicable. Association is approachable but can suggest an organization or only mutual ties; Relational standing emphasizes a bearer's position but underplays physical connections and jointly grounded bonds. The adopted label remains Relational feature pending Brian's choice.
+- **Core:** a concise definition that stands alone and carries the necessary membership and identity conditions.
+- **Explanation:** clarification, disambiguation or useful consequences; do not place an essential restriction here that would make the Core misleading by itself.
+- **Example:** one concrete case or contrast that makes the category's center or most likely confusion immediately intelligible. The example need not cover the whole category and is not a further membership condition.
+
+Prefer ordinary language and a central example without substituting prototypes for criteria. Keep extended defenses, alternatives and additional tests in their existing rationale sections. An example from ordinary life does not restrict admission to actual subjects.
+
+**Retrospective recommendation:** apply the format to the adopted upper definitions in one bounded editorial pass. Preserve their scope, dependence and identity commitments; surface any apparent need to change a definition as a separate design choice. Start with easily confused pairs such as Relation / Relationship, Feature / State and Composition / Formal entity. The pass is proposed; the remaining definitions retain their adopted wording.
+
+### Accepted decision: Relationship as the Feature branch name
+
+Relationship replaces Relational feature as the name of the accepted branch, preserving its scope. The browser retains its existing stable identifier; the inherited narrower social-connection record is labeled Social relationship to distinguish it from the broader parent.
+
+**Rationale:** the familiar word names bearer-specific connections and standings while its contrast with Relation makes the particular / predicable distinction explicit. Neither name alone proves that every relational assertion denotes a further Feature. Association is approachable but can imply an organization or mutual ties; Relational standing emphasizes participant-specific positions but underplays whole bonds and physical connections. Relator remains a narrower candidate descendant, not the parent name.
 
 #### Relation, relationship and relator
 
-**Plain definition of the parent:** a bearer-specific connection or standing whose identity depends on another entity or a contextual framework. This is a proposed explanatory wording for the accepted Relational feature definition, not a new restriction to social ties or instantiated relation tuples.
+The [adopted Relationship definition](#relationship) distinguishes a bearer-specific Feature from a repeatable Relation.
 
 **Relation versus relationship:** married-to is a repeatable multi-subject characterization under Predicable / Relation. A particular marriage bond is a bearer-dependent subject under Particular / Feature. A spouse's particular entitlement is another relational feature. A marriage ceremony is an Occurrence; the marriage's obtaining over an interval is a State. Identifying these subjects needs more than changing their labels.
 
@@ -681,7 +693,7 @@ The accepted Object and Occurrence children and grandchildren, and Feature child
 
 The examples below are candidate subjects within this branch, not accepted new subclass nodes. They include one-sided standing, jointly grounded ties and physical connections; not all are institutional. They denote bearer-specific features, not the reusable predicables, documents or obtaining episodes. The candidate names are suggestions rather than exact synonyms; several cover only part of the scope.
 
-#### Relational feature examples
+#### Relationship examples
 
 - A particular marriage bond
 - A particular employment relationship
@@ -729,17 +741,22 @@ The examples below are candidate subjects within this branch, not accepted new s
 
 ### Accepted decision: Feature's principal categories
 
-Feature has Quality, Disposition, Relational feature, Structural feature and Attitude as its five working immediate children. These are open and potentially overlapping, not an exhaustive partition. Every edge means is-a and inherits bearer-specific identity and the omniversal admission rule. Grandchildren remain unadopted.
+Feature has Quality, Disposition, Relationship, Structural feature and Attitude as its five working immediate children. These are open and potentially overlapping, not an exhaustive partition. Every edge means is-a and inherits bearer-specific identity and the omniversal admission rule. Grandchildren remain unadopted.
 
 - **Quality:** a Feature characterized by a determination in a qualitative or quantitative domain, without requiring a manifestation process to identify that determination. Examples: this apple's mass and this experience's felt character. The bearer-specific determination is distinct from its repeatable predicable and any formal value used to describe it.
 - **Disposition:** a Feature grounding a tendency or capacity for manifestations under specified conditions, whether or not a manifestation occurs. Examples: this glass's fragility and this magnet's tendency to attract specified materials.
-- **Relational feature:** a Feature whose individuation requires its bearer's connection to another entity or contextual framework. Examples: a particular role occupancy, permission or jointly grounded relationship. Mere description by a multi-argument predicate does not establish a distinct Feature.
 - **Structural feature:** a host-dependent Feature individuated by structural or topological organization, rather than merely by a numerical or categorical description. Examples: a particular cavity or host boundary. Its identity follows its host; it is distinct from an independently identified spatial Region.
 - **Attitude:** a Feature consisting in a subject's orientation toward content or a target, without requiring a purported target to exist. Examples: this person's belief, desire or preference. This is the directed mental sense of attitude, not bodily posture or a general manner of behaving.
 
+#### Relationship
+
+- **Core:** a Feature consisting in a bearer-specific connection or standing whose identity depends on another entity or a contextual framework.
+- **Explanation:** this is the particular tie or standing, rather than the repeatable Relation predicable. A relation's holding does not by itself establish a further Feature; a Relationship needs its own identity and dependence account. The category includes participant-specific standings as well as jointly grounded ties.
+- **Example:** married-to can characterize many couples; Alice and Bob's particular marriage bond is a Relationship. Alice's specific entitlement arising from that marriage is another Relationship.
+
 **Rationale:** determinations, manifestation tendencies, connections, host structures and directed orientations give useful homes to recurring bearer-dependent subjects. Fable and Astra broadly converge on these groups, although Astra's Relational feature is broader than Fable's Relator. Agreement supports the grouping without making their scopes identical.
 
-**Naming rationale:** Attitude carries the directed sense in its definition; Intentional adds terminology without a needed distinction here. Prefer single-word names where they preserve scope and legibility. Relational feature and Structural feature retain their working names pending adequate alternatives.
+**Naming rationale:** Attitude carries the directed sense in its definition; Intentional adds terminology without a needed distinction here. Prefer single-word names where they preserve scope and legibility. Relationship preserves the accepted relational scope; Structural feature retains its working name pending an adequate alternative.
 
 **Steelman of alternatives:** Intrinsic / Relational first offers a uniform dependence criterion, but contested accounts of dispositions, structures and attitudes would control their principal placement. Intentional attitude makes directedness explicit and distinguishes posture or demeanor at a glance, but the adopted definition does that work. Relator supplies an established concise label for jointly dependent connections; broadening it to the entire relational branch loses the distinction between a bearer's contextual standing and a posited jointly dependent grounding feature.
 
