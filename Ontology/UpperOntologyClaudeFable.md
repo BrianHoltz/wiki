@@ -165,6 +165,49 @@ Entity
         └── External Relation
 ```
 
+### Construct expansion for comparison
+
+This is a comparison sketch supplied by the consolidating agent, not an adopted extension or an attribution of these subclass choices to Fable. It develops the original proposal's examples and the [revised Construct branch](CritiqueByClaudeFable.md#recommended-upper-tree). Every branch proposes is-a; overlap and completeness below Content remain unasserted.
+
+```text
+Construct
+├── Content
+│   ├── Work
+│   │   └── Narrative work
+│   ├── Specification
+│   │   ├── Goal specification
+│   │   ├── Plan specification
+│   │   ├── Norm specification
+│   │   ├── Design specification
+│   │   ├── Standard specification
+│   │   └── Condition specification
+│   └── Descriptive content
+│       ├── Theory content
+│       ├── Model content
+│       ├── Description content
+│       └── Record content
+├── Symbolic Form
+│   ├── Expression
+│   │   ├── Linguistic expression
+│   │   ├── Formal-language expression
+│   │   ├── Musical score expression
+│   │   └── Diagrammatic expression
+│   ├── Symbol
+│   └── Sign system
+│       ├── Notation system
+│       └── Language system
+└── Characterized Object
+```
+
+**Reading the sketch:** Work identifies an origin-anchored composition independently of its wording; Narrative work organizes presented situations or happenings. Specification prescribes or specifies a target, conduct, design, standard or assessable condition. Descriptive content presents an account of a subject, rather than prescribing it. A theory or record can also be a work; the branches are not an exclusive partition. Expression identifies a sign arrangement, Symbol an individual sign-form, and Sign system an organized repertoire with conventions. These denote carrier-independent constructs, not paper copies, inscriptions, utterance events or acts of recording. All proposed descendants inherit Construct's origin-sensitive identity; a purely origin-independent formal pattern belongs under Formal Object instead. Whether language systems and every proposed expression satisfy that origin criterion needs testing.
+
+**Comparison with Astra:** this Content branch broadly covers Astra's Directive specification and Descriptive content. Condition specification supplies a possible home for authored unary or multi-argument specifications, corresponding to Astra's Predicate, renamed Condition specification in its revision. It does not relocate Fable's Property or Relation: a condition specification describes a predicable and is not thereby that predicable. Fable's Proposition remains under Formal Object; Astra places Propositional content under Content. Fable's Symbolic Form is a sibling of Content inside Construct; Astra's Symbolic structure is under Formal entity. Thus Astra's Content does not correspond to all of Construct.
+
+**Identity test:** two independently originated works with the same wording can be distinct constructs in Fable's account. The origin-independent wording pattern can instead be one Formal Object. Astra's interpretation-based Content definition does not itself establish that same origin-sensitive distinction. Matching labels is insufficient to establish equivalent classes.
+
+**Characterized Object:** leave this branch unexpanded. Fictional, mythical, posited and impossible are source/status descriptions here, not proposed primary subclasses for the consolidated tree. Fable's source-anchored Holmes construct must be distinguished from Holmes considered as a human under a story's attribution. Adopting this entire Construct branch would require resolving that distinction against the [accepted admission rule](Ontology.md#accepted-decision-admission-and-actuality); the sketch does not settle it.
+
+
 ---
 
 ## 5. Definitions
