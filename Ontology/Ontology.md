@@ -631,6 +631,144 @@ The large RDF/XML text dump available for this project is not a general “Mozil
 - **Prominence proxy:** no external citation, usage, or page-view metric has been established; its relevance here is personal authorship, not public prominence.
 - **Fit:** explicitly **not an input, root, ranking prior, or graft target** for this ontology. “Ontology” is one topic within that outline, so the outline cannot logically serve as the ontology’s root. It may be studied separately, but this project will not merge it into the WordNet tree.
 
+## Consolidating upper ontologies
+
+Proposed decision sequence. The aim is a general-purpose ontology with an intelligible canonical tree, as described in the [design memoranda](OntologyDesignMemoranda.md#1-project-goal). Each gate produces a reviewable decision before the next depends on it. A failed stress test reopens the earliest affected decision; the sequence is not a demand to settle all metaphysics before making progress. No proposed root structure or branch relocation is accepted merely by appearing here.
+
+The comparison inputs are the preserved proposals by [Astra](UpperOntologyAstra.md), [Gemini](UpperOntologyGemini.md), and [Claude Fable](UpperOntologyClaudeFable.md); their repository-informed critiques by [Astra](CritiqueByAstra.md), [Gemini](CritiqueByGemini.md), and [Claude Fable](CritiqueByClaudeFable.md); the incumbent and [historical snapshot](v1010/Ontology.md); and the [GPT/Sol package](GPT/README.md), including its [architecture](GPT/architecture.md), [format](GPT/FORMAT.md), [coverage map](GPT/coverage-map.json), and [stress tests](GPT/stress-tests.md). Imported systems in [Prior art](#prior-art) supply distinctions, provenance and coverage probes; lexical and topical hierarchies do not automatically supply subclass axioms. The [critic prompts](CriticPrompt.md) explain the proposals' reporting scope, not a permanent ontology depth limit.
+
+### Evaluation contract and common baseline
+
+Decide which requirements are binding and which are hypotheses under review. Reconcile the incumbent's game-oriented language and realized/abstract preference with the memoranda's broader purpose and open root question. Keep semantic correctness and explicit commitments ahead of node count; evaluate browsing usefulness separately. Distinguish a false inclusion under agreed definitions from a contested definition, incomplete coverage, or a navigation preference.
+
+Compare the latest recommendations against one named source snapshot. Record each claim with its source passage, intended sense, supporting example, strongest objection and proposed discriminating test. Verify reported data defects against that snapshot rather than inheriting a critique's conclusion. Preserve first responses as evidence of starting positions; cross-reading and prior exposure mean model agreement is not independent corroboration.
+
+**Gate exit:** an agreed evaluation contract, exact input versions and a decision ledger with accepted, rejected and unresolved claims. A source-accounting percentage, passing validator or model vote cannot establish semantic correctness.
+
+### Admission, reference and assertion scope
+
+Decide what Entity admits: actual subjects, formal subjects within a theory, fictional subjects, hypothetical posits and impossible characterizations. Separate admitting a record, successful reference, asserted existence, satisfiability and source-attributed predication. Choose how failed descriptions are retained without manufacturing an actual referent. Decide which existence questions remain explicitly open.
+
+**Gate exit:** a root definition and admission policy that handle a rock, a number, Holmes, a refuted planet and the largest prime without exporting story claims or failed descriptions as actual-world existence claims. The policy must still permit discussion of an undiscovered kind without equating that kind with an authored description.
+
+### Node meanings and relationship contract
+
+Decide what the tree's nodes denote and what every primary edge asserts. The recommended starting contract is classes with subclass inclusion: every child instance is a parent instance. Ordinary individuals, words, class handles, specifications, predicate applications and navigation portals require explicit distinctions. Instance-of, part-of, membership, bearing, participation, expression and satisfaction have their own typed links.
+
+Resolve whether Property and Relation denote predicables, condition specifications, or separately linked subjects of both sorts. Distinguish a kind from its specification and a particular quality from a reusable condition. Declare predicate arguments, range types, evaluation indices and derivation rules before using arity to classify anything; dependence on a bearer is not argument-taking.
+
+**Gate exit:** worked representations of Dog, Fido, the word “dog”, a dog concept, a dog-kind specification, one cup's mass and a statement about relation arity. A typed formalization must preserve their differences without unrestricted comprehension. Selecting a proof assistant or export language is not required at this gate.
+
+### Identity, dependence and cross-cutting classifications
+
+Decide the criteria for treating two descriptions as one subject or as related subjects. Establish provisional persistence rules for bodies, material portions, aggregates, institutions, occurrences, features, works, expressions and formal structures. Distinguish identity from co-location, representation, equal value and equivalence within a theory.
+
+Decide when kinds, phases, roles, domains and ontic status belong in primary ancestry, defined classifications or metadata. Test rigidity—the claim that an instance cannot cease belonging while remaining itself—rather than assigning it from a familiar label. A role-bearing class can be a valid subclass; whether it deserves primary navigation is a separate question. A designed tool and a rock used as a tool need not share the same kind. Explicitly compare combinations of proposed dimensions and explain incompatible combinations rather than assuming independence.
+
+**Gate exit:** decisions for organization turnover, statue/clay, a moving hole, a student who graduates, and a broken pump. Record unresolved identity profiles and their costs; do not require agreement on every philosophical theory.
+
+### Root partition or open grouping
+
+Decide whether Entity's children must form an exhaustive, disjoint partition or may be an open set of overlapping categories. Distinguish the semantic structure from the first-level browsing menu. A useful menu is not proof of a fundamental partition; a compressed route must identify skipped semantic ancestors.
+
+Compare the GPT realized/abstract dyad, particular/predicable approaches, the six-category Astra and Gemini revisions, the seven-category Claude revision, and a root with orthogonal classifications instead of a mandatory exhaustive cut. Compare definitions and consequences, not labels. For each candidate require an organizing principle, inclusion argument, overlap/coverage policy, strongest objection and results on the same [stress tests](#stress-testing). In particular, test claimed disjointness between content and formal structures and claimed coverage of fields, absences, facts and possible worlds.
+
+**Gate exit:** an accepted root structure and navigation policy, with every root category defined and every asserted partition property justified. Unclassified cases remain visible; they are not evidence of exhaustiveness. A provisional open structure is acceptable when its known gaps and next discriminating cases are recorded.
+
+### Upper branches and predication reconciliation
+
+Resolve the children of the accepted root categories before expanding domain inventories. Review objects/processes/states, regions/features, content/formal subjects, social institutions and fictional representation under the agreed contract. A conversation's physical, mental and social classifications must be assessed for genuine overlap rather than assumed to denote either one subject or three.
+
+Give Property and Relation a dedicated pass. Resolve qualities, values, quantity mappings, dispositions, capabilities, operational versus assigned/selected functions, goals, attitudes, norms, obligations, role specifications and role occupancies. Decide whether relation families are semantic subclasses or browsing facets; distinguish classification from instantiation and specification, institutional from social, and exact equivalence from similarity. Decide whether a visible Predicate layer earns its place. Arity splits and kind/role distinctions are different axes.
+
+**Gate exit:** an upper-tree proposal through the reporting scope, with discriminating definitions, sibling policies and typed cross-links. Each disputed placement has a counterexample or an explicit design tradeoff. Deeper ancestry remains intact; no branches are invented to balance the display.
+
+### Meaning-preserving reconciliation and coverage
+
+Map source senses and assertions into the accepted structure before moving branches. Use the [GPT coverage map](GPT/coverage-map.json) as a starting record format, not an equivalence certificate. Include proposal additions and omissions as well as incumbent records. For each mapping specify source and target meanings, equivalence/narrowing/broadening/overlap or split-by-sense, old-assertion migration rules, evidence and decision status.
+
+Preserve identifiers for stable meanings. Give incompatible senses distinct identities, retain ambiguous legacy records as disambiguation routes, and reject conflicting duplicate definitions rather than letting import order choose one. Resolve Function, Role and Status collisions explicitly. Lexical matches in [Roget's crosswalk](Rogets/crosswalk.json) and ticks in [WordsToCategorize](WordsToCategorize.md) are candidate matches, not proof that the intended sense survives.
+
+**Gate exit:** reviewed mappings for each affected branch and a sense-level difficult-case ledger. Report source accounting, semantic coverage, assertion preservation and findability separately. No move is approved while its meaning or assertion translation remains unresolved.
+
+### Representation and validation readiness
+
+Specify the authoritative editable source, semantic parents, one primary navigation parent, typed assertions, defined classifications, aliases, scope, provenance and decision records. Evaluate [GPT's format](GPT/FORMAT.md) against the accepted decisions; adopting its engineering does not entail adopting its metaphysics. Require inspectable browser destinations for off-tree classifications and distinctions that the tree cannot display.
+
+**Gate exit:** a representation contract carrying the accepted distinctions and an acceptance suite covering both valid cases and deliberately invalid mutations. A validator must reject wrong predicate types and relation-family assignments, not merely check tuple length. Semantic reasoning, structural checks and browser behavior have separately stated limits.
+
+### Bounded migration and publication
+
+Apply accepted sense changes in dependency order: identity and duplicate-record repairs, predication distinctions, affected upper branches, then domain refinements and crosswalk updates. Preserve source graphs and historical snapshots. For biology, select and document authority and lineage policy before accepting grafts; do not let familiar group labels or counts dictate ancestry. Independent accepted branches may proceed while other decisions remain open.
+
+**Gate exit:** the affected stress tests and structural checks pass, navigation exposes retained senses, and the approved source generates reproducible published artifacts and manifests under [the publication contract](#publishing-the-tree-to-the-wiki). Browser acceptance includes search presets, ordinary search, expansion, collapse and lineage restoration. Acceptance of this process document does not itself accept a candidate ontology.
+
+## Stress testing
+
+The [WordsToCategorize inventory](WordsToCategorize.md), especially [Difficult Words](WordsToCategorize.md#difficult-words), is the vocabulary reservoir. Its upper-ontology, biology and Roget sections supply additional probes. A word can require several sense-specific tests; a tick establishes neither definition coverage nor a valid placement. Supplement it with the [memoranda's cases](OntologyDesignMemoranda.md#17-immediate-next-research-task), [GPT's worked examples](GPT/stress-tests.md), and counterexamples from the three critiques.
+
+For each test record the intended sense and context, subjects distinguished, identity assumptions, proposed class memberships, primary route, alternate classifications, required relations, permitted inferences and forbidden inferences. Record a result as pass, fail, unresolved or outside declared scope, with rationale. Unresolved or out-of-scope cases are not passes. A pass means the agreed distinctions and inference constraints survive; it does not require one predetermined school of ontology or a dedicated node for every word. Run a shared representative set during root selection, the full sense inventory before consolidated acceptance, and affected cases after each change. Add unfamiliar cases to test whether the rules generalize beyond examples used to design them.
+
+### Admission and nonexistent subjects
+
+Compare Holmes, Holmes in an adaptation, a refuted scientific posit, a round square, the largest prime, absence and nothingness. Preserve source characterization without implying actuality or importing contradictions into unrestricted core inference. Distinguish fictional subject, actual description, failed reference and impossible conditions. Check cross-work identity and actual authorship claims under the chosen fiction policy.
+
+### Classes, instances and reification
+
+Compare Dog, Fido, “dog”, a dog concept and a kind specification; distinguish a biological taxon as a classification from a historical lineage. State a relation's arity and transitivity without changing its argument-level meaning. Keep instance-of, subclass-of, specification-for, set membership and parthood distinct. Attempt Russell-style unrestricted self-membership and require the formal contract to prevent the inference rather than forbid all discussion of classes.
+
+### Features, conditions and values
+
+Give two cups the same measured mass. Distinguish their bearer-specific qualities, a reusable condition, quantity kind, measurement mapping, magnitude, unit and numeral. Equal values must not merge particular qualities. Test mass, color, severity and a database field storing Paris: being used as a value does not automatically make Paris a formal magnitude or predicate.
+
+### Arity and context transformations
+
+Start with HasMass(bearer, value, time). Fix value and time, fix only value, quantify over value, and encode the tuple as one object; record the different derived conditions. Compare jurisdiction, frame and time as arguments versus indices. Reject silent argument deletion, confusing a numerical function with a truth-valued predicate, and assigning a bearing relation to a participation family requiring an occurrence. Test nullary, variable-arity and higher-order cases with an explicit policy rather than silently excluding them.
+
+### Kinds, roles, phases and designed purposes
+
+Test a student who graduates, a dog becoming a pet, an inedible botanical fruit, a tomato as culinary vegetable, a designed hammer and a stone used to hammer. Preserve underlying identity and ancestry through changed roles. Distinguish artifact design history from temporary use; test whether a claimed rigid superclass can legitimately contain the proposed role or phase class.
+
+### Disposition, capability and function
+
+Test unbroken glass that never shatters, an unused capability, a task assessment that changes without changing the bearer, a broken pump retaining its assigned purpose, and an evolved biological function without an intentional designer. Separate capacity, manifestation, task-relative assessment, assignment and selection history. A lost capacity must not automatically erase design purpose or historical function.
+
+### Norms, goals, attitudes and binding positions
+
+Compare a norm's wording/content, its enactment, a particular obligation, a vacant office and its occupant. Distinguish goal specification, adopting the goal, purpose assignment, successful performance and preference. Test an obligation without a named beneficiary, an unadopted goal, preference for an unchangeable past, and cyclic preferences. Do not assume every norm is binding or morally correct, every preference is an intention, or every preference relation is an ordering.
+
+### Bodies, portions, aggregates and persistent institutions
+
+Compare statue/clay, a repaired ship, a river with changing water, a forest, a flock and a singleton set containing that flock. Test a corporation after total membership turnover, vacancy, schism and merger. Compare corporation, charter, building, members and legal personhood; compare state, government, territory and population. Co-location and institutional association must not substitute for identity, and changing members must follow a stated persistence rule.
+
+### Objects, processes, events and states
+
+Compare waterfall, flowing water, whirlpool, soliton, computation, wedding, wedding record and continuing marriage. Compare a steady condition with the activity maintaining it; test a conversation under physical, mental and social descriptions. State when descriptions classify one occurrence and when they identify related subjects. An event is not its record or type; its participants are not subclasses of it.
+
+### Regions, hosts, fields and physics commitments
+
+Move a ring with a hole and a ship with a room; distinguish cavity, boundary, occupant, host-relative region and region occupied at a time. Compare lake/water, mountain/extent, coordinate/location, vacuum/absence, a physical field and its mathematical model. Handle spacetime descriptions without a universal present or silently identifying a body with its career. Make point-based versus point-free and physical versus geometric interpretations explicit.
+
+### Content, syntax, carriers and execution
+
+Compare two printed copies, a digital copy, a translation, identical wording in independently originated works, a proposition and its sentence, a diagram and what it depicts. Distinguish language system from expression; genome sequence from molecule; algorithm from code, installed artifact and execution. Relate these subjects without making carriers subclasses of content or forcing one ambiguous word into one sense.
+
+### Mathematics, logic and truth
+
+Compare number/numeral, set/member, group as mathematical structure/social group, function as mapping/purpose, theorem/proposition/proof/proof-checking, model/target and fact/true proposition/worldly condition. Preserve identity versus isomorphism, equivalence and representation under declared foundations. Test singular propositions about contingent individuals, possible worlds and natural laws; unknown placement must not be concealed by a residual label such as Abstract.
+
+### Relation families and metaproperties
+
+Test institutional versus informal social relations, causation versus explanation, participation versus bearing, and attribution versus actual assertion. Require types, argument roles, domain and context. Test identity, exact equality, isomorphism, approximate similarity and shared nationality, including dual nationality: the last does not guarantee transitivity. Decide separately whether a family is a semantic subclass, a facet or a metamodel classification.
+
+### Biology and cross-domain coverage
+
+Test bird/dinosaur, mammal/synapsid and human/lobe-finned ancestry; separate carnivoran ancestry from carnivorous diet, thermoregulation from clade, and familiar fish/algae groupings from monophyletic lineage. Test extinct taxa, viruses, viroids and prions without asserting one clean lineage for all acellular infectious agents. Include RNA catalysts, mineral species versus coal samples, and pure water versus saline mixtures. Require declared source scope, preserved lineage and editorial exceptions; broad source accounting is not biological validation.
+
+### Preservation, findability and validator resistance
+
+Replay legacy assertions through split, merge, narrowed and broadened mappings; test Food, Person, Quality, Function, Role and Status across formal levels and senses. Every accepted sense must be findable through label, alias, disambiguation or facet, including off-tree edible-bearer classifications. Distinguish distinct-node counts from displayed path occurrences and entity-population counts. Deliberately introduce duplicate IDs, cycles, dangling links, multiple primary parents, missing definitions, wrong predicate types and scope leakage; require rejection. Exercise the [browser regression suite](test_browser.js) and extend its acceptance checks for semantic destinations, full ancestry and unique rendered identities. Passing browser tests cannot certify English definitions or philosophical coverage.
+
 ## History
 
 ### Retired v2 expansion
