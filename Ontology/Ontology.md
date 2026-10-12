@@ -635,19 +635,30 @@ The large RDF/XML text dump available for this project is not a general “Mozil
 
 The agent drives the comparison, testing and synthesis. Brian decides the consequential design choices, one compact brief at a time. The aim remains a general-purpose ontology with an intelligible canonical tree, as described in the [design memoranda](OntologyDesignMemoranda.md#1-project-goal).
 
-### Next decision: admission and reference
+### Next decision: nodes and parentage
 
-**Constraints from Brian:** actuality, present existence and fictional status do not supply the fundamental kind distinction. Avoid parallel real and fictional trees: a portrayed human belongs near the human kind, not in a distant duplicate hierarchy. Brian's intended sense of the incumbent Realized entity is realizable, allowing a hypothetical subject such as Sasquatch without asserting that it exists. The precise realizability criterion and root placement remain undecided.
+**Question:** Should the tree's backbone classify kinds, with every parent–child edge meaning the same thing?
 
-**Recommendation:** share the kind tree and make the scope of each classification visible. Holmes can have a home at Human as portrayed in the stories; this does not assert an actual human organism. A hypothesized organism likewise need not be an accepted taxon or receive an invented scientific lineage. Actuality, temporal status, fictional origin and possibility are distinct annotations, not interchangeable labels.
+- **Classes with inclusion edges — recommended.** Dog under Mammal means every dog is a mammal under the stated interpretation. Individuals can appear as visibly marked members or examples at their class; Fido is an instance of Dog, not a subclass. Parthood, location and representation get explicitly named links or notes, not ordinary ancestry edges.
+- **A mixed hierarchy with typed edges.** Put kinds, individuals and parts directly into one hierarchy, marking each edge as subclass, instance or part-of. This accommodates familiar browsing paths, but following a path no longer has one consistent meaning.
 
-**Decision needed from Brian:** permit explicitly attributed or hypothetical classifications in the shared kind tree, or give only actual descriptions those homes?
+**Test:** Dog → Mammal is class inclusion; Fido → Dog is membership; Fido's tail → Fido is parthood; “dog” → Dog is a linguistic relationship. These must not become interchangeable because they look like tree links.
 
-**Steelman of descriptions-only:** a novel and its descriptions actually exist; their supposed subjects need not. Keeping actual class membership separate from portrayal gives cleaner existence commitments and avoids treating an impossible characterization as an actual instance. Its cost is that a reader seeking Holmes reaches a description rather than the portrayed person. Either approach must keep that distinction explicit in the public account.
+**Steelman of the mixed hierarchy:** readers often want individual people, works and components directly beneath their categories or wholes. Explicit edge types can make such browsing honest. The cost is extra interpretation at every step and less reliable inference from ancestry alone.
 
-**Agent pushback:** “realizable” needs a stated test. Logical consistency, compatibility with physical laws and metaphysical possibility can disagree. An impossible portrayal can still portray a human, so realizability cannot by itself decide every depicted-kind placement. A tidy tree does not resolve this. Defer adopting realizability as a root cleave until its criterion and counterexamples are reviewed.
+**Decision needed from Brian:** use class inclusion for the backbone, with visibly distinct individual entries and other relationships, or adopt a mixed typed hierarchy? This choice does not require every class to be a rigid kind or settle the nature of Property and Relation; those follow in a separate brief.
 
-**Guardrail:** “the largest prime” remains a failed description under ordinary arithmetic; it does not supply an actual number. A source's round-square characterization is not an assertion that a realizable geometric instance is both round and square. Public annotations must carry these qualifications; supporting data may not quietly impose different semantics.
+### Accepted decision: admission and actuality
+
+**Rule:** a category does not require actuality in our universe unless that restriction is explicitly justified by what the category means. Membership requires satisfying its defining criteria under a stated context; fictional or hypothetical status alone neither establishes nor defeats membership.
+
+**Rationale:** the Omniversal Ontology is not confined to our local indexical universe. Actuality, present existence, fictional origin and possibility cross kinds and are not interchangeable. Do not build mirror actual and fictional trees. A category whose members happen all to be actual need not make actuality essential to membership. The public tree and annotations must expose context and status wherever they change the interpretation; its data must encode the same account.
+
+**Limits:** scope does not guarantee that every definition applies unchanged across universes. A historical clade requires the specified ancestry, not resemblance; an independently evolved bird-like organism is not thereby in our bird clade. Fictional classification must distinguish portrayed membership from actual-world assertion. A failed description such as “the largest prime” need not denote a subject; an impossible characterization does not establish a realizable instance. This rule settles the admission principle, not every reference or fiction identity policy.
+
+**Steelman of actuality-restricted membership:** limiting membership to actual entities supplies one comparatively clear domain for class inclusion and existence claims. Fiction and failed hypotheses can still be discussed through actual works, descriptions and acts of reference, avoiding commitments to nonexistent objects and inconsistent instances. Its cost is that the intended subject is replaced by its representation as the classificatory target, and a local domain restriction becomes fundamental to a project intended to extend beyond it. Retain an actuality restriction where a category's explicit meaning justifies it, rather than impose it across the tree.
+
+**Realizability remains open:** Brian's intended sense of the incumbent Realized entity is realizable, admitting hypothetical subjects such as Sasquatch. Logical consistency, physical possibility and metaphysical possibility require different criteria. This clarification does not adopt any of them as a root split or replace the accepted admission rule.
 
 ### Accepted direction: design priority
 
