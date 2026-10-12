@@ -352,6 +352,13 @@ async function main() {
       assert.deepEqual(nodes.get("Particular").children,
         ["Object", "Occurrence", "Feature", "Region", "Composition", "FormalEntity"]);
       assert.deepEqual(nodes.get("Predicable").children, ["Property", "Relation"]);
+      assert.deepEqual(nodes.get("Occurrence").children.slice(0, 3), ["Process", "Event", "OccurrenceState"]);
+      assert.deepEqual(nodes.get("Process").children.slice(0, 3), ["PhysicalProcess", "MentalProcess", "SocialProcess"]);
+      assert.deepEqual(nodes.get("Event").children, ["TransitionEvent", "AchievementEvent"]);
+      assert.deepEqual(nodes.get("OccurrenceState").children, ["PhysicalState", "MentalState", "SocialState"]);
+      assert.equal(nodes.get("OccurrenceState").label, "State");
+      assert.equal(nodes.get("State").label, "State territory");
+      assert(nodes.get("LandArea").children.includes("State"), "territorial State changed sense");
       assert.deepEqual(nodes.get("PhysicalObject").children.slice(0, 3),
         ["MaterialBody", "MaterialPortion", "PhysicalAggregate"]);
       assert.deepEqual(nodes.get("SocialEntity").children, ["InstitutionalEntity", "SocialCollective"]);

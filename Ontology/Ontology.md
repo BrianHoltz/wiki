@@ -328,6 +328,17 @@ Entity
 │   │       ├── Institutional continuant
 │   │       └── Social collective
 │   ├── Occurrence
+│   │   ├── Process
+│   │   │   ├── Physical process
+│   │   │   ├── Mental process
+│   │   │   └── Social process
+│   │   ├── Event
+│   │   │   ├── Transition event
+│   │   │   └── Achievement event
+│   │   └── State
+│   │       ├── Physical state
+│   │       ├── Mental state
+│   │       └── Social state
 │   ├── Feature
 │   ├── Region
 │   ├── Composition
@@ -639,23 +650,45 @@ The agent drives the comparison, testing and synthesis. Brian decides the conseq
 
 ### Provisional incumbent graft
 
-The [incumbent browser](index.html) displays the accepted Particular / Predicable root and six Particular categories from the [published data](ontology.json). Realized entity and Abstract entity are retired as root wrappers; their inherited descendants remain reachable. The graft retains all 437 inherited records other than the retired wrappers, adds eleven upper records, and selects exactly one displayed parent per nonroot record. It has 448 records and 447 ancestry edges.
+The [incumbent browser](index.html) displays the accepted Particular / Predicable root and six Particular categories from the [published data](ontology.json). Realized entity and Abstract entity are retired as root wrappers; their inherited descendants remain reachable. The graft retains all 437 inherited records other than the retired wrappers, adds twenty upper records, and selects exactly one displayed parent per nonroot record. It has 457 records and 456 ancestry edges.
 
-The accepted Object children and grandchildren are displayed with their adopted definitions. Deeper inherited placements remain provisional, as do Property / Relation and the unresolved Agent and Collection branches retained directly under Object. The browser marks these placements; definitions state consequential readings such as bearer-specific Quality, normative content versus obligation, and the contract agreement versus its text. Removing repeated displayed parents does not establish that every retained lower inclusion is sound. The inherited biology, physical carriers, mathematical subjects and social senses still require their planned review; the graft is not a validated domain ontology.
+The accepted Object and Occurrence children and grandchildren are displayed with their adopted definitions. Deeper inherited placements remain provisional, as do Property / Relation and the unresolved Agent and Collection branches retained directly under Object. The browser marks these placements; definitions state consequential readings such as bearer-specific Quality, normative content versus obligation, and the contract agreement versus its text. Removing repeated displayed parents does not establish that every retained lower inclusion is sound. The inherited biology, physical carriers, mathematical subjects and social senses still require their planned review; the graft is not a validated domain ontology.
 
 [graft_upper_ontology.py](graft_upper_ontology.py) reads accepted definitions from this document and applies the explicit placement choices to the inherited data. Run it after rebuilding the legacy projection with [SUMO/overlay_canonical.py](SUMO/overlay_canonical.py). Its input checksum and retired wrapper IDs are recorded in the published data. The browser regression checks verify the root, reachability, unique displayed paths, search and navigation. The existing count annotations still refer to retained records; counts are not evidence for the graft's semantic placements.
 
-### Next decision: Occurrence's principal categories
+### Next decision: Feature's principal categories
 
-**Question:** Adopt Process, Event and State as open children of Occurrence?
+**Question:** Adopt Quality, Disposition, Relational feature, Structural feature and Intentional attitude as open children of Feature?
 
-**Recommendation:** yes, without declaring them disjoint. Process identifies ongoing activity by its course; Event identifies a bounded happening; State identifies a condition obtaining over an interval. Running, a collision and being asleep are the introductory examples.
+**Recommendation:** use [Astra's five branches](CritiqueByAstra.md#recommended-upper-tree) as the trial: a bearer's determination, manifestation tendency, externally grounded characteristic, host structure, and orientation toward content. Examples: this apple's mass, this glass's fragility, this person's office occupancy, this ring's hole, and this person's belief.
 
-**Main alternative:** Process / State, with events treated as bounded processes or transitions. This gives a cleaner activity/condition split, but makes eventhood subordinate even when the occurrence is identified by its endpoint rather than its detailed unfolding.
+**Main alternative:** begin with Intrinsic / Relational feature. It offers a more uniform dependence criterion, but whether dispositions, structural features and attitudes are intrinsic is contested; the familiar kinds would be distributed across that disputed cut.
 
-**Pressure test:** a storm can be described as both an ongoing process and a bounded event. Are these two descriptions of one occurrence, or differently individuated subjects? The open split permits overlap; the primary tree still needs one justified route for each retained class. A State here is an obtaining episode, not the condition predicable or a bearer-specific Feature.
+**Pressure test:** a belief can also be a disposition, and a hole is both structural and dependent on a host. The proposed branches are not disjoint. A belief attitude is a bearer-dependent Feature; the interval of believing is a State; the proposition believed is another subject. These distinctions must identify subjects rather than multiply labels for one subject without justification.
 
-**Decision needed from Brian:** adopt the open three-way split, or prefer Process / State with Event below Process? Grandchildren remain a separate choice.
+**Decision needed from Brian:** adopt the open five-way split, or prefer a dependence-first organization? Grandchildren remain a separate choice.
+
+### Accepted decision: Occurrence's children and grandchildren
+
+Adopt [Astra's Occurrence branches](CritiqueByAstra.md#recommended-upper-tree): Process, Event and State as immediate children, with the children defined below. Every edge means is-a. All groups remain open and potentially overlapping; none asserts exhaustiveness, disjointness, actuality or physical reduction.
+
+- **Process:** an Occurrence identified through ongoing activity, operation or change, with its course relevant to its identity. Its phases need not each instantiate the same process kind at every granularity.
+- **Physical process:** a Process identified through changes or operations of physical systems. Examples: combustion and bodily circulation.
+- **Mental process:** a Process identified through cognitive, affective or experiential activity, without stipulating its identity with a physical process. Examples: deliberating and imagining.
+- **Social process:** a Process identified through social interaction, coordinated practice or institutional operation. Examples: negotiation and a parliamentary debate.
+- **Event:** an Occurrence individuated as a bounded happening under a specified event criterion, whether instantaneous or extended. Its boundary need not be a perfectly sharp instant.
+- **Transition event:** an Event identified by a change from one specified condition to another. Examples: a phase transition or a change of ownership.
+- **Achievement event:** an Event identified by attaining a specified endpoint or satisfaction condition, whether or not intended by an agent. Examples: reaching a summit or a reservoir reaching its specified capacity. Achievement does not imply merit or success in every broader respect.
+- **State:** an Occurrence identified by a specified condition obtaining over an interval, rather than by the detailed course producing or maintaining it. The subject is the obtaining episode, not its condition predicable, bearer-dependent Feature or temporal Region.
+- **Physical state:** a State identified through the condition or configuration of a physical system. Examples: a specified body's being at rest relative to a frame, or a sample's remaining frozen.
+- **Mental state:** a State identified through experience, cognition or an attitude's obtaining. Examples: an interval of feeling anxious or holding a specified belief.
+- **Social state:** a State identified through social relationships, practices or institutional standing. Examples: an interval of an office's being vacant or two people being married.
+
+**Rationale:** course, bounded happening and obtaining condition are distinct ways to individuate occurrences. Physical, mental and social subclasses preserve their identifying activities or conditions without requiring reductive identity claims. Transition and Achievement separate condition change from endpoint attainment; a finish-line crossing may satisfy both. One primary tree route does not deny another genuine subclass relation.
+
+**Steelman of alternatives:** Process / State with Event below Process reduces the principal branches and treats events as bounded processes, but makes eventhood subordinate even where an endpoint rather than a detailed course identifies the subject. Instantaneous / Extended events offers a uniform duration criterion, but duration depends on granularity and does less to distinguish what identifies a happening. Physical / Nonphysical for Process or State offers a binary division, but its remainder needs a positive account and prejudges how mental and social occurrences relate to physical ones. A stricter homogeneous-process account captures activities such as running, but requiring every phase to be of the same kind is too strong across granularities and complex processes.
+
+**Boundary tests:** a storm as process and event; a finish-line crossing as transition and achievement; a steady-state operation containing active processes; a mental state and its physiological correlate without assumed numerical identity; a belief attitude versus the episode of believing. The occurrence sense of State has a separate record from the incumbent geographic State territory; no territorial subject is converted into an episode.
 
 ### Accepted decision: Object's children and grandchildren
 
