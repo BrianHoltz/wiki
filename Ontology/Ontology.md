@@ -635,17 +635,32 @@ The large RDF/XML text dump available for this project is not a general “Mozil
 
 The agent drives the comparison, testing and synthesis. Brian decides the consequential design choices, one compact brief at a time. The aim remains a general-purpose ontology with an intelligible canonical tree, as described in the [design memoranda](OntologyDesignMemoranda.md#1-project-goal).
 
-### Next decision: Particular's principal categories
+### Next decision: definitions of Particular's principal categories
 
-**Question:** Which immediate children should we try under Particular?
+The six working buckets are Object, Occurrence, Feature, Region, Construct and Formal entity. Brian accepts this organizing shape; the following definitions are proposed for review. All six inherit the definition of Particular and the omniversal admission rule. They are open categories, not an asserted exhaustive or pairwise-disjoint partition.
 
-- **Fable's six categories — recommended for the trial.** Object, Occurrence, Particular feature, Region, Construct and Formal entity. This adapts [Fable's original tree](UpperOntologyClaudeFable.md#4-the-upper-tree), using clearer feature and formal labels. Construct groups origin-anchored meaning and symbolic form; Formal entity groups subjects identified by formal conditions. The distinction must earn its place through identity tests.
-- **Astra's six categories, restricted to particulars.** Object, Occurrence, Particular feature, Region, Content and Formal entity. Symbolic structures remain under Formal entity; interpreted meaning goes under Content. Predicables retain their accepted separate root branch, and specifications are distinguished from what they specify. Its strength is direct access to meaning; its cost is testing whether Content and Formal entity give origin-sensitive works and expressions adequate identity accounts.
-- **Realizable / Abstract before the detailed kinds.** Retain a broad first distinction beneath Particular. Its strength is a compact overview; its cost is defining realizability and abstraction before the concrete cases earn their placements. Actuality cannot supply the distinction.
+- **Object:** a particular individuated as a unified, persisting bearer through continuity of its body, material, membership or constitutive organization. Examples: an organism, a material portion, an organization. Its identity concerns the bearer rather than an occurrence involving it, a feature of it or a region it occupies.
+- **Occurrence:** a particular happening or obtaining episode individuated through its temporal unfolding, boundary or extent. Examples: a running process, a collision, an interval of being asleep. The definition includes instantaneous events and sustained states, not only changes.
+- **Feature:** a particular characteristic whose identity depends on specified bearers or hosts. Examples: this wall's color, this glass's fragility, a particular hole in a ring. The bearer-specific characteristic is distinct from a predicable applicable to bearers and from a specification of that predicable.
+- **Region:** a particular locus or extent individuated by positions within a specified spatial, temporal or spatiotemporal domain, rather than by its occupant. Examples: a spatial point, a time interval, a flight's swept-out spacetime region. Its frame and extent must be stated; it need not be occupied.
+- **Construct:** a particular whose identity depends on an origin in representing, composing or specifying, together with its content or symbolic form, independently of any one carrier. Examples: a novel as a work, its English text as an expression, a plan specification. Origin-sensitive identity distinguishes the construct from a purely formal pattern; fictional or hypothetical status does not make an ordinary subject a Construct.
+- **Formal entity:** a particular whose identity is fixed entirely by mathematical, logical or structural conditions within a specified framework, rather than by a physical or social career or an origin in representing it. Examples: the number two, a set, a mathematical mapping, an origin-independent symbolic pattern. A formal description of another subject does not make that subject a Formal entity.
 
-**Recommendation's limit:** the proposed six are open, not an asserted exhaustive partition. Construct would classify representational subjects, not relocate every fictional human or hypothetical animal out of its kind. Its proposed Characterized Object branch requires particular scrutiny against the accepted admission rule. The trial does not adopt every subclass or disjointness claim in Fable's proposal.
+**Labels:** recommend Feature rather than Particular feature. Its ancestry already supplies particularity; preserve bearer-specific identity in the definition so the label cannot silently acquire the universal-property sense. The longer label's strongest case is clarity out of context, which definitions and qualified references can supply. Formal entity avoids suggesting that this category is a subclass of the narrower Object branch; it does not imply that every formally describable entity belongs here.
 
-**Decision needed from Brian:** try Fable's six, Astra's six with a separate Predicable branch, or Realizable / Abstract beneath Particular? The most consequential difference between the six-category trials is origin-anchored Construct versus interpretation-based Content.
+**Main pressure point:** Construct / Formal entity depends on whether origin contributes to identity. Two independently originated works with the same wording can be different Constructs while sharing one formal word-pattern. This account requires testing for mathematical theories, software and language systems; the labels alone do not settle those cases.
+
+**Decision needed from Brian:** assess these definitions and the Feature label, particularly the origin-sensitive Construct / origin-independent Formal entity distinction. The [Fable expansion sketch](UpperOntologyClaudeFable.md#construct-expansion-for-comparison) supplies candidate descendants; it is not wholesale adoption of that sketch or its Characterized Object branch.
+
+### Accepted direction: six principal particular buckets
+
+Use the six working buckets described in the [definition brief](#next-decision-definitions-of-particulars-principal-categories) to develop Particular's upper branches. This accepts their organizing roles, not every proposed definition, subclass or disjointness policy.
+
+**Rationale:** persisting bearers, temporal episodes, bearer-dependent characteristics, positional extents, origin-anchored representations and formally identified subjects raise different identity and classification questions. The six provide concrete places to test those distinctions beneath the accepted root split.
+
+**Steelman of Content instead of Construct:** Astra's interpretation-based category brings meaning directly into view and separates it from symbolic structures. Its cost is that works and expressions whose identity depends on origin need an adequate account across Content and Formal entity. Construct foregrounds that identity question while keeping content and symbolic form distinguishable beneath it.
+
+**Steelman of Realizable / Abstract as an intermediate division:** it offers a familiar broad overview. Its cost is an additional disputed criterion before these more specific identity questions, and possible cross-cutting classifications. The working shape starts directly with the six; it does not prohibit a later justified account of realizability.
 
 ### Accepted decision: Particular / Predicable root split
 
