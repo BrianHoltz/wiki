@@ -637,16 +637,17 @@ The agent drives the comparison, testing and synthesis. Brian decides the conseq
 
 ### Next decision: nodes and parentage
 
-**Question:** Should the tree's backbone classify kinds, with every parent–child edge meaning the same thing?
+**Brian's leaning:** all tree edges should mean is-a. Evaluate the [candidate edge types](#candidate-edge-types) and the consequences of admitting additional relations before finalizing this contract.
 
-- **Classes with inclusion edges — recommended.** Dog under Mammal means every dog is a mammal under the stated interpretation. Individuals can appear as visibly marked members or examples at their class; Fido is an instance of Dog, not a subclass. Parthood, location and representation get explicitly named links or notes, not ordinary ancestry edges.
-- **A mixed hierarchy with typed edges.** Put kinds, individuals and parts directly into one hierarchy, marking each edge as subclass, instance or part-of. This accommodates familiar browsing paths, but following a path no longer has one consistent meaning.
+**Recommendation:** keep every primary ancestry edge as class inclusion. Dog under Mammal means every dog is a mammal under the stated interpretation. Consider other relations as visibly named cross-links, member entries or notes, with the same semantics in the data. They do not become alternate ancestry merely because they connect two nodes.
 
-**Test:** Dog → Mammal is class inclusion; Fido → Dog is membership; Fido's tail → Fido is parthood; “dog” → Dog is a linguistic relationship. These must not become interchangeable because they look like tree links.
+**Choice to resolve:** does “all edges” govern ancestry alone, or every represented relationship? A class tree can have only is-a ancestry while its public account also says that a tail is part of a dog or Fido instantiates Dog. A mixed hierarchy instead lets these relations select parents and changes what a path means.
 
-**Steelman of the mixed hierarchy:** readers often want individual people, works and components directly beneath their categories or wholes. Explicit edge types can make such browsing honest. The cost is extra interpretation at every step and less reliable inference from ancestry alone.
+**Steelman of strict is-a representation:** one relation minimizes interpretation and makes every ancestry path support class inclusion. Its cost is that individuals, components and other relationships need separate public treatment. Encoding Fido as the singleton class containing Fido preserves subclass edges but changes the node's denotation; it must not silently equate an individual with its singleton class.
 
-**Decision needed from Brian:** use class inclusion for the backbone, with visibly distinct individual entries and other relationships, or adopt a mixed typed hierarchy? This choice does not require every class to be a rigid kind or settle the nature of Property and Relation; those follow in a separate brief.
+**Steelman of mixed typed parentage:** readers can browse categories, individuals and components in one hierarchy, with each connector labeled. Its cost is that ancestry no longer supports one inference rule: a tail of a dog is not thereby a dog, and instance-of is not itself transitive.
+
+**Decision needed from Brian:** uniform is-a ancestry with explicit public treatment of other relations, a stricter class-only representation, or mixed typed parentage? No additional edge family is adopted merely by being inventoried. This choice does not require every class to be rigid or settle the nature of Property and Relation.
 
 ### Accepted decision: admission and actuality
 
@@ -763,6 +764,63 @@ The agent implements accepted changes in bounded batches, verifies them, and pub
 Apply accepted sense changes in dependency order: identity and duplicate-record repairs, predication distinctions, affected upper branches, then domain refinements and crosswalk updates. Preserve source graphs and historical snapshots. For biology, select and document authority and lineage policy before accepting grafts; do not let familiar group labels or counts dictate ancestry. Independent accepted branches may proceed while other decisions remain open.
 
 **Gate exit:** the affected stress tests and structural checks pass, navigation exposes retained senses, and the approved source generates reproducible published artifacts and manifests under [the publication contract](#publishing-the-tree-to-the-wiki). Browser acceptance includes search presets, ordinary search, expansion, collapse and lineage restoration. Acceptance of this process document does not itself accept a candidate ontology.
+
+### Candidate edge types
+
+This is an extensible inventory of relation families to evaluate, not a finite list of every possible predicate. Each reads subject → target; the displayed tree can draw the inverse direction. Thus Mammal above Dog asserts Dog subclass-of Mammal. A relation's presence in the ontology does not make it eligible to supply tree parentage.
+
+#### Classification and membership
+
+- **Subclass-of / kind-of / is-a:** class → class; Dog → Mammal. Every instance of the child satisfies the parent under the same interpretation. Supports chaining class inclusion. A role-defined subclass need not be a rigid kind.
+- **Instance-of / instantiates:** individual → class; Fido → Dog. Membership can propagate through subclass inclusion, but two instance-of links do not generally compose into another instance-of link.
+- **Subset-of:** set → set; {2, 4} → {2, 4, 6}. Every member of the first is a member of the second. This resembles inclusion of class extensions, but a set, a class and an individual are not automatically interchangeable.
+- **Member-of:** element → set, or participant → collective under separately defined senses. 2 belongs to {2, 4}; a person belongs to a club. Neither relation is subclassing; social membership is not automatically set-theoretic membership.
+- **Subproperty-of / relation specialization:** predicate → predicate; a narrower relation's applications are also applications of the broader relation with compatible signatures. This differs from classifying a relation specification as an instance of a relation-family class.
+- **Satisfies / classified-by / plays-role:** bearer or argument tuple → condition or role specification, with interpretation and context. A dog satisfying Pet criteria is not itself a Pet specification.
+
+The distinction between class inclusion and instance membership is explicit in [RDF Schema](https://www.w3.org/TR/rdf-schema/#ch_subclassof) and [OWL class assertions](https://www.w3.org/TR/owl2-syntax/#Class_Assertion_Axioms). These are formalization references, not a commitment to adopt their entire metamodel.
+
+#### Composition, constitution and dependence
+
+- **Part-of / has-part:** part → whole, or its inverse; this tail → this dog. State time, proper versus inclusive parthood and composition policy. “Is-a-part-of” is not a subtype of is-a; it normally names parthood. A class-level claim that tails are parts of dogs needs its own quantification rather than treating Tail as a subclass of Dog.
+- **Constituted-by / made-of:** subject → constituting body, material or constituents; statue → clay. Constitution need not establish identity or the same persistence conditions.
+- **Bears / inheres-in / depends-on:** bearer → feature, feature → bearer, or dependent subject → required subject. Distinguish cup, particular mass feature and recorded mass value; a dependence link does not count as a predicate argument by itself.
+- **Descends-from / lineage-member-of:** organism or lineage → ancestor or lineage, with the intended sense declared. Historical ancestry is not automatically subclassing. An organism-class taxonomy and a tree of historical lineage subjects require different node and edge contracts.
+
+#### Location, time and activity
+
+- **Located-in / occupies / contained-in:** subject → region, place or container with time/frame. Occupying a room does not make the occupant a room subtype; physical containment differs from parthood.
+- **Before / during / overlaps-in-time:** temporal subjects → temporal subjects under an ordering. Temporal relations require separate definitions; their chaining rules are not interchangeable.
+- **Participates-in / performs:** participant → occurrence, with role and context. A dancer participates in a dance; neither becomes a subtype of the other.
+- **Causes / enables / manifests / fulfills:** appropriately typed subjects or occurrences → effect, capacity or specification. Separate causal contribution, a disposition's manifestation and conformity to a plan; the shared English verb “realizes” does not establish one relation.
+
+#### Representation, attribution and provenance
+
+- **Expresses / encodes / carries:** expression or carrier → content under an interpretation. A page is not a subclass of the proposition printed on it.
+- **Represents / denotes / is-about:** representation → target or intended subject. Denotation failure needs a policy; being about something does not imply its actuality.
+- **Specifies / defines:** specification → class or condition under an interpretation. Distinguish an exact definition from a diagnostic description; satisfaction implies membership only under the accepted bridge.
+- **Attributed-in / portrayed-as:** claim or subject → source/scope or attributed classification. Preserve story claims without exporting them as actual-world assertions. The precise signature remains part of the admission formalization.
+- **Derived-from / authored-by / based-on:** result → source, author or antecedent with provenance context. Derivation and adaptation need not preserve identity.
+
+#### Identity, values and domain relations
+
+- **Identical-to / equivalent-to / similar-to:** distinguish one subject from equality of extension, isomorphism and approximate resemblance. Each equivalence requires a stated domain and criterion; resemblance does not inherit equivalence axioms.
+- **Has-value / measures / compares-with:** feature or measured subject → value, scale or comparator with relevant units, time and method. A value is not a predicate merely because it fills a field.
+- **Owns / owes / holds-office / prefers / believes:** domain-specific relations with named argument roles and normative or interpretive context. Inventory by family, then evaluate concrete signatures; no generic “related-to” supplies their inference rules.
+
+Relations involving more than two arguments may require a contextual assertion record rather than a bare binary edge. The [W3C n-ary relation note](https://www.w3.org/TR/swbp-n-aryRelations/) supplies encoding patterns; such an encoding does not erase the represented argument roles.
+
+#### Navigation without ontological inclusion
+
+- **Alias-of / search-redirect / see-also / topic-portal:** lexical or browsing connections. Exact wording is not proof of identity, and “studied by Biology” does not make an organism a subtype of the discipline. These links must be distinguishable from semantic assertions.
+
+#### Implications of expanding edge types
+
+An additional relation can improve coverage without changing is-a ancestry. The stronger change is permitting it to select a parent: root reachability then no longer guarantees class inclusion along the path. Mixed paths require rules for specific compositions, not automatic transitivity.
+
+Before adopting a family, require its endpoint types, direction/inverse, interpretation, time/context parameters, allowed inference and a prohibited inference. Add a concrete case that cannot be expressed adequately under the existing public contract. Specify whether the relation supplies parentage, is a cross-link, or appears as a note/member entry; its representation must remain inspectable and agree with the data.
+
+Allowing additional edge types does not by itself require multiple parents, nor does allowing overlapping classes require a mixed-edge tree. These are separate choices. Evaluate coverage gains against visual complexity, ambiguity, validation burden and migration cost. An all-is-a tree still needs a declared policy for individuals and other relations; excluding them from ancestry does not make those distinctions disappear.
 
 ### Review inputs
 
