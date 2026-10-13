@@ -1,6 +1,6 @@
 # Omniversal Ontology
 
-❓ Decision: [Region’s immediate children](#pending-decision-regions-immediate-children).
+❓ Decision: [Composition’s immediate children](#pending-decision-compositions-immediate-children).
 
 ## Principles
 
@@ -655,23 +655,34 @@ The large RDF/XML text dump available for this project is not a general “Mozil
 
 The agent drives the comparison, testing and synthesis. Brian decides the consequential design choices, one compact brief at a time. The aim remains a general-purpose ontology with an intelligible canonical tree, as described in the [design memoranda](OntologyDesignMemoranda.md#1-project-goal).
 
-### Pending decision: Region’s immediate children
+### Pending decision: Composition’s immediate children
 
-**Question for Brian:** adopt Spatial region, Temporal region and Spatiotemporal region as Region’s immediate children?
+**Question for Brian:** adopt Content and Symbolic form as Composition’s immediate children, distinguishing what a product presents from its organization of signs?
 
-**Recommendation:** adopt the three-way family shared by [Fable](UpperOntologyClaudeFable.md#4-the-upper-tree) and [Astra](CritiqueByAstra.md#recommended-upper-tree), with the following definitions. The organizing criterion is the positional domain that identifies the region.
+**Recommendation:** adopt the pair from the [Fable comparison sketch](UpperOntologyClaudeFable.md#construct-expansion-for-comparison), restricted by Composition’s accepted origin-sensitive identity. Use these definitions:
+
+- **Content:** a Composition identified by what it presents, asserts, prescribes or specifies, together with its originating history, independently of a particular wording or notation.
+- **Symbolic form:** a Composition identified by an originating organization of signs, independently of any one physical inscription or performance.
+
+These are open categories, not an asserted exhaustive or disjoint partition. Overlap requires the same subject to satisfy both identity accounts; one product expressing another does not establish identity. A purely origin-independent sign pattern belongs under Formal entity. Whether a natural language satisfies either definition requires its own identity review.
+
+**Strongest alternative:** Work and Expression. This gives familiar library distinctions between a work and its realizations, but imposes a narrower model on theories, standards, plans and sign systems. Keep those distinctions available as descendants rather than equating all Content with Work and all Symbolic form with a work’s Expression.
+
+**Reconciliation tests:** a novel versus its authored English wording and a paper copy; a building code’s requirements versus its enacted wording; two independently originated texts with identical words; a specification of redness versus redness itself. [Astra’s Content and Symbolic structure](CritiqueByAstra.md#recommended-upper-tree) cannot be merged by label alone: its formal sign structures need not share Composition’s originating-history criterion.
+
+**Decision boundary:** adopt the two immediate children and their meanings. Work, Specification, Expression and Sign system descendants remain separate decisions; fictional subjects retain classification by their portrayed kind.
+
+### Accepted decision: Region’s immediate children
+
+Adopt Spatial region, Temporal region and Spatiotemporal region as Region’s immediate children, distinguished by the positional domain that identifies them.
 
 - **Spatial region:** a Region individuated by positions within a specified spatial domain or frame.
 - **Temporal region:** a Region individuated by positions within a specified temporal domain or ordering.
 - **Spatiotemporal region:** a Region individuated jointly by spatial and temporal positions within a specified domain or frame.
 
-Keep the family open without a universal disjointness claim. A spatial slice or temporal projection of a spacetime region need not be the same subject as that region; any overlap needs an explicit identity account. The definitions require neither a universal present nor one physical theory of space and time.
+**Rationale:** the family shared by [Fable](UpperOntologyClaudeFable.md#4-the-upper-tree) and [Astra](CritiqueByAstra.md#recommended-upper-tree) distinguishes loci from their occupants and supports space, time and joint extents without requiring a universal present or one physical theory. Keep the family open without a universal disjointness claim. A spatial slice or temporal projection need not be identical to the spacetime region it projects; overlap requires an explicit identity account.
 
-**Strongest alternative:** put Spatial and Temporal beneath Spatiotemporal as its aspects. This foregrounds unified spacetime, but an aspect or projection is not automatically a subtype: a spatial region is not necessarily a spatiotemporal region. Separate immediate children preserve is-a ancestry without imposing that reduction.
-
-**Reconciliation tests:** a room’s occupied spatial extent versus the room; an hour versus a process lasting that hour; a storm’s spacetime extent versus the storm; a moving hole versus the regions it occupies. A mathematical color space does not qualify merely because it is called a space; its placement follows its formal identity.
-
-**Decision boundary:** this choice adopts immediate children and their definitions. Point / Extent grandchildren and inherited geographic placements need separate review.
+**Steelman of Spatial and Temporal beneath Spatiotemporal:** unified spacetime can explain their connections, but an aspect or projection is not automatically an is-a subtype. A room differs from its spatial extent, a process from its duration and a moving hole from its occupied regions. Mathematical color spaces follow formal identity rather than the word “space.” Point / Extent grandchildren and inherited geographic placements remain unadopted.
 
 ### Accepted decision: Predicable’s immediate children
 
@@ -683,9 +694,9 @@ Adopt Property and Relation as Predicable’s immediate children, using the [pub
 
 ### Provisional incumbent graft
 
-The [incumbent browser](index.html) displays the accepted Particular / Predicable root and six Particular categories from the [published data](ontology.json). Realized entity and Abstract entity are retired as root wrappers; their inherited descendants remain reachable. The graft retains all 437 inherited records other than the retired wrappers, adds twenty-three upper records, and selects exactly one displayed parent per nonroot record. It has 460 records and 459 ancestry edges.
+The [incumbent browser](index.html) displays the accepted Particular / Predicable root and six Particular categories from the [published data](ontology.json). Realized entity and Abstract entity are retired as root wrappers; their inherited descendants remain reachable. The graft retains all 437 inherited records other than the retired wrappers, adds twenty-six upper records, and selects exactly one displayed parent per nonroot record. It has 463 records and 462 ancestry edges.
 
-The accepted Object and Occurrence children and grandchildren, and Feature children, are displayed with their adopted definitions. Property and Relation are accepted beneath Predicable. Deeper inherited placements remain provisional, including the unresolved Agent and Collection branches retained directly under Object. The browser marks these placements; definitions state consequential readings such as bearer-specific Quality, normative content versus obligation, and the contract agreement versus its text. Removing repeated displayed parents does not establish that every retained lower inclusion is sound. The inherited biology, physical carriers, mathematical subjects and social senses still require their planned review; the graft is not a validated domain ontology.
+The accepted Object and Occurrence children and grandchildren, and Feature and Region children, are displayed with their adopted definitions. Property and Relation are accepted beneath Predicable. Deeper inherited placements remain provisional, including the unresolved Agent and Collection branches retained directly under Object. The browser marks these placements; definitions state consequential readings such as bearer-specific Quality, normative content versus obligation, and the contract agreement versus its text. Removing repeated displayed parents does not establish that every retained lower inclusion is sound. The inherited biology, physical carriers, mathematical subjects and social senses still require their planned review; the graft is not a validated domain ontology.
 
 [graft_upper_ontology.py](graft_upper_ontology.py) reads accepted definitions from this document and applies the explicit placement choices to the inherited data. Run it after rebuilding the legacy projection with [SUMO/overlay_canonical.py](SUMO/overlay_canonical.py). Its input checksum and retired wrapper IDs are recorded in the published data. The browser regression checks verify the root, reachability, unique displayed paths, search and navigation. The existing count annotations still refer to retained records; counts are not evidence for the graft's semantic placements.
 
