@@ -688,6 +688,49 @@ These twenty cases test the alternative trees below under the accepted origin-se
 
 The cases exercise translation, editing, recording, representation, prescription, executability, curation and formal reasoning. Also challenge every sketch with nonrepresentational abstract art, wordless music and a language developed by a community: meaningful content, signs and a discrete author cannot simply be assumed. For each case, name its primary destination, any genuine alternatives, and what change would preserve or destroy its identity.
 
+#### Possible dimensions and slices
+
+This is a brainstorm, not an exhaustive inventory or an adopted classification. “Promising” means worth testing for primary ancestry; “conditional” means useful but dependent on scope or identity choices; “poor primary split” means better suited to metadata or alternate browsing. Several slices overlap or combine; they are not independent coordinates.
+
+**The three sketches:** intended contribution asks what the product is for; constitutive form asks how it is organized, close to medium but independent of its physical carrier; work/expression identity asks what remains the same across realizations. The third is a distinction between identity levels, not a medium or purpose: a novel can remain one work across translations while each translation is a distinct expression. Work and Expression can overlap, so this is not automatically a clean partition.
+
+**Promising slices**
+
+- **Intended contribution:** describe, explain, prescribe, persuade, entertain or create an aesthetic experience. Mixed purposes challenge exclusive membership.
+- **Constitutive form:** linguistic, pictorial, musical, choreographic, computational or mixed organization. Distinguish a musical work from its written score.
+- **Identity across realizations:** what survives paraphrase, translation, rearrangement, reimplementation or copying? This tests work versus expression and may expose several identity criteria rather than one universal scale.
+- **Semantic operation:** narrate, argue, model, record, classify, specify or establish rules. This describes how a product organizes its contribution, rather than only why it was made.
+- **Representation and reference:** depict a subject, describe it, simulate it, prescribe a possible subject, or organize form without representing one. Abstract art tests the last category.
+- **Prescription and operation:** a requirement, a plan, an executable instruction or an evaluation criterion. Distinguish what should happen from how to produce or assess it.
+- **Organizing structure:** sequence, hierarchy, network, spatial arrangement, rule system or curated collection. A catalogue can have several structures at once.
+
+**Conditional slices**
+
+- **Sensory modality:** visual, auditory, tactile, movement-based or multisensory. Useful for expressions; a work can survive a change of modality.
+- **Symbolic versus nonsymbolic organization:** conventional signs versus resemblance, sound or designed arrangement. Music and abstract art resist a simple binary.
+- **Meaning versus expression:** interpreted content versus a particular wording, notation or arrangement. Distinguish related subjects before proposing sibling kinds.
+- **Abstractness of specification:** requirements, design, implementation or realized expression. These stages need not form disjoint ontological kinds.
+- **Participation:** fixed presentation, interactive composition or generative system. A game’s rules, player interaction and generated playthrough are different subjects.
+- **Completion and variability:** fixed, revisable, open-ended or parametrized products. A draft can become final without becoming a different kind of composition.
+- **Derivation:** original, translated, adapted, arranged, edited or compiled. A useful relation to prior products, but several derivations can apply together.
+- **Origin process:** authored, collaboratively developed, improvised, recorded, mechanically generated or curated. Creation method can matter to identity without defining the product’s kind.
+- **Conventional or institutional standing:** private proposal, adopted standard, enacted rule or ritual prescription. Standing can change while the text remains identical.
+- **Domain:** artistic, scientific, mathematical, technical, legal, religious or commercial. Familiar, but one work can cross domains; a subject-domain tree can drift toward classifying fields of study.
+
+**Poor primary splits, useful elsewhere**
+
+- **Historical era:** ancient, medieval, modern or another periodization. Dates describe provenance and depend on a chosen historical scheme.
+- **Geography:** place of origin, place represented or place of intended use. These are three different relations, none a general account of what the composition is.
+- **Creator:** individual, institution, community or machine-assisted production. Classifies provenance; changing attribution should not silently change ancestry.
+- **Audience:** children, experts, a profession or the general public. Readership and intended use can overlap or change.
+- **Language:** English, German or another language. Useful for expressions; multilingual and nonlinguistic compositions defeat a universal split.
+- **Carrier and file format:** paper, recording medium, PDF or source-file encoding. Classifies a carrier or representation, often a different subject from the Composition.
+- **Publication and access:** published, unpublished, public, private or restricted. Distribution can change without changing the product.
+- **Rights and ownership:** licensed, copyrighted, public-domain or owned by a particular party. Legal context and time control these statuses.
+- **Evaluation:** true, false, valid, beautiful, useful, popular or influential. These require standards, evidence or judgments; they do not supply a stable general first division.
+
+A useful slice can remain an alternate classification without becoming the principal tree. For any proposed principal split, ask whether it classifies the same subjects, survives changes that preserve their identity, handles the shared examples, and makes its overlap and coverage claims explicit.
+
 #### Subdivision by intended contribution
 
 **Principle:** what the originated product is designed to contribute. Descriptive composition presents an account; Prescriptive composition specifies conduct, requirements or an intended result; Artistic composition organizes an aesthetic or expressive work. These are defining purposes of products, not temporary uses of arbitrary objects.
