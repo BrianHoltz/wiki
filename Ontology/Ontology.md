@@ -657,30 +657,126 @@ The agent drives the comparison, testing and synthesis. Brian decides the conseq
 
 ### Pending decision: Composition’s immediate children
 
-**Question for Brian:** does Content / Symbolic form classify kinds of Composition, or distinguish meaning and expression within compositions? What immediate children give the accepted parent broad, defensible coverage?
+**Question for Brian:** which organizing principle gives Composition the most intelligible children and grandchildren while preserving the identity of works, expressions and specifications?
 
-**Recommendation:** keep the pair unadopted. The [Fable comparison sketch](UpperOntologyClaudeFable.md#construct-expansion-for-comparison) supplies a useful distinction, but its examples do not establish a nearly exhaustive division into kinds. The following candidate meanings and cases expose the unresolved identity and coverage questions.
+The three sketches below are alternatives for comparison, not adopted branches. Every edge proposes is-a, and every descendant inherits [Composition’s origin-sensitive definition](#accepted-decision-particulars-six-principal-categories). Classify the named intellectual or artistic product, not its carrier, performance, referent or origin-independent formal counterpart. Overlapping classes are permitted, but a primary tree route still needs justification. Source proposals in the [Fable comparison sketch](UpperOntologyClaudeFable.md#construct-expansion-for-comparison) and [Astra revision](CritiqueByAstra.md#recommended-upper-tree) are inputs, not equivalence certificates.
 
-#### Candidate meanings and examples
+#### Composition examples for testing
 
-- **Content:** a Composition identified by what it presents, asserts, prescribes or specifies, together with its originating history, independently of a particular wording or notation. Candidate examples: the requirements adopted in a particular building code, a particular evacuation plan’s prescribed actions, and an author’s explanatory account expressed in a theory. Paraphrase or translation can preserve the intended content; whether it preserves the identical Composition needs an identity rule. Generic requirements or propositions detached from any originating product are not automatically Compositions.
-- **Symbolic form:** a Composition identified by an originating organization of signs, independently of any one physical inscription or performance. Candidate examples: an author’s particular English wording, a composer’s authored score notation, and a programmer’s authored source-code text. Rewording or renotation changes this candidate subject even when requirements, music or behavior are preserved. The origin-independent sequence of characters is a Formal entity; the historically authored expression is the proposed Composition.
+These twenty cases test the alternative trees below under the accepted origin-sensitive definition; they are not adopted new nodes. The named subject is the work, expression, image, curated content or specification; paper, stored bits and performances supply different subjects. An origin-independent formal pattern can be distinguished from its origin-anchored expression. The institutional force of a norm and its enactment are likewise separate questions.
 
-For a particular evacuation plan, “leave by the east stairwell and assemble in the courtyard” specifies content; the exact authored sentences or diagram express it; a printed sheet is a physical carrier. Those are distinguishable subjects. This example does not prove that the plan itself belongs exclusively to one of the proposed children.
+- **Moby-Dick as a novel:** a work retaining identity across copies and translations.
+- **A specified German translation of Moby-Dick:** an origin-anchored linguistic expression of that work.
+- **Hamlet as a dramatic work:** distinct from its scripts, performances and the people it portrays.
+- **Beethoven's Fifth as a musical composition:** a work distinguishable from a performance or sound recording.
+- **A particular edited score of Beethoven's Fifth:** a notational expression with an editorial origin.
+- **A particular studio recording's audio content:** an origin-anchored recorded expression, distinguished from a playback event or storage medium.
+- **A particular photographic image:** the image arising from a photographic origin, distinguished from a print and depicted scene.
+- **An organization's adopted logo design:** an origin-anchored visual design, distinguished from any one display or a generic geometric pattern.
+- **A surveyor's authored map:** a representation tied to a survey and interpretation, distinguished from its territory.
+- **An architect's design for an unbuilt bridge:** a specification, independent of whether the bridge is ever built.
+- **A chef's written recipe:** an originated procedure specification, distinguished from a meal or cooking episode.
+- **The U.S. Constitution considered as a normative text:** a historically originated content/expression, distinguished from parchment, enactment and the institutions governed.
+- **An agreed contract's terms:** originated specifications, distinguished from the document carrier and resulting obligations.
+- **A prescribed wedding liturgy:** a ceremony specification, distinguished from any performance or marriage.
+- **A choreographer's dance work:** an originated composition, distinguished from a dancer's movements at a time.
+- **A specified chess rulebook's rules:** a normative formulation, distinguished from a particular game or an origin-independent mathematical game model.
+- **A particular software release's source text:** an authored expression, distinguished from its execution and the mathematical function it may compute.
+- **A research team's climate-model formulation:** a selective representation with an intended interpretation, distinguished from climate and from underlying equations considered formally.
+- **A curated archaeological catalogue's content:** a provenance-sensitive selection and description, distinguished from the artifacts and an extensional set considered mathematically.
+- **An author's presented proof of a theorem:** an originated argument or exposition, distinguished from the theorem's truth and a derivation considered solely as a formal sequence.
 
-#### Coverage and taxonomic objections
+The cases exercise translation, editing, recording, representation, prescription, executability, curation and formal reasoning. Also challenge every sketch with nonrepresentational abstract art, wordless music and a language developed by a community: meaningful content, signs and a discrete author cannot simply be assumed. For each case, name its primary destination, any genuine alternatives, and what change would preserve or destroy its identity.
 
-**Strongest coverage argument:** intellectual and artistic products generally offer meaning, organized form, or both. Composition’s adopted definition already refers to content or symbolic form, so the pair closely follows that wording. This is a proposed organizing intuition, not independent evidence of exhaustiveness: defining the parent in those terms cannot establish that the definition covers every intended intellectual or artistic product.
+#### Subdivision by intended contribution
 
-**Counterexamples to test:** an abstract painting’s artistic design, a wordless melody, and a choreographed dance. Their created organization need not be a system of signs, and they need not assert or prescribe anything. Calling all perceptible organization Symbolic form broadens “symbolic”; calling all aesthetic organization Content risks collapsing the distinction. A natural language and an improvised practice also need identity accounts before either can be treated as a Composition.
+**Principle:** what the originated product is designed to contribute. Descriptive composition presents an account; Prescriptive composition specifies conduct, requirements or an intended result; Artistic composition organizes an aesthetic or expressive work. These are defining purposes of products, not temporary uses of arbitrary objects.
 
-**Kinds versus levels:** a novel, plan or score can have both content and form. That alone is not an objection to overlapping siblings, which the project permits. The objection is that content and form may identify related products or levels of description rather than classify the whole product into useful kinds. Expressions of one content can differ, and similar forms can express different contents. Each proposed is-a edge needs a subject and identity account, not merely a has-content or has-form relationship.
+```text
+Composition
+├── Descriptive composition
+│   ├── Explanatory account
+│   ├── Representational model
+│   ├── Evidential record
+│   └── Curated catalogue
+├── Prescriptive composition
+│   ├── Normative formulation
+│   ├── Procedure specification
+│   ├── Design specification
+│   └── Program specification
+└── Artistic composition
+    ├── Literary work
+    ├── Musical work
+    ├── Visual artwork
+    └── Choreographic work
+```
 
-**Assessment:** neither exhaustiveness nor near-exhaustiveness is established. “Nearly exhaustive” requires a declared scope and defensible account of the omissions; no such accounting supports this pair. Content / Symbolic form can remain useful distinctions without earning the principal branching level.
+**Examples:** a proof or explanatory theory fits Explanatory account; a climate model and authored map fit Representational model; a documentary image or recording fits Evidential record; an archaeological catalogue fits Curated catalogue. Constitutional or contractual terms fit Normative formulation; a recipe or liturgy fits Procedure specification; a bridge or logo design fits Design specification; authored software instructions fit Program specification. A novel, symphony or dance has a direct artistic home.
 
-**Alternatives for comparison:** Work / Expression distinguishes an originated work from its particular realizations, but its application beyond library cases needs testing. Branching by the product’s purpose or medium gives more familiar groups, but overlaps and cross-medium works need explicit treatment. These are comparison directions, not adopted replacements.
+**Coverage and objections:** this is the most familiar route to the listed cases. It admits overlap: a documentary photograph may be artistic and evidential; an architectural design may be prescriptive and artistic. Purely entertaining games, exploratory sketches and conventional sign systems challenge coverage. Descriptive does not mean true, and fictional narrative need not be classified as factual description. The sketch offers broad illustrative coverage, not a demonstrated exhaustive partition. Translation and exact wording need expression-sensitive treatment within its branches.
 
-**Decision boundary:** Composition’s accepted origin-sensitive identity remains binding. Its immediate children remain open until concrete examples establish their membership, identity and coverage. [Astra’s Content and Symbolic structure](CritiqueByAstra.md#recommended-upper-tree) require sense-level comparison; matching labels do not reconcile different originating-history commitments.
+#### Subdivision by constitutive form
+
+**Principle:** the organization essential to the product, independent of its physical medium. Linguistic composition depends on linguistic organization; Visual composition on pictorial or spatial arrangement; Musical composition on musical organization; Choreographic composition on prescribed movement; Computational composition on computational instructions; Multimodal composition on an essential combination of forms. A file format or temporary encoding does not determine ancestry.
+
+```text
+Composition
+├── Linguistic composition
+│   ├── Literary text
+│   ├── Expository text
+│   └── Prescriptive text
+├── Visual composition
+│   ├── Pictorial composition
+│   ├── Diagrammatic composition
+│   └── Graphic design
+├── Musical composition
+│   ├── Musical work
+│   └── Arranged musical work
+├── Choreographic composition
+│   ├── Dance work
+│   └── Staged movement design
+├── Computational composition
+│   ├── Authored program
+│   └── Computational model formulation
+└── Multimodal composition
+    ├── Audiovisual work
+    ├── Interactive work
+    └── Integrated multimedia presentation
+```
+
+**Examples:** a particular novel translation fits Literary text; a written recipe fits Prescriptive text; a map fits Diagrammatic composition; a logo fits Graphic design; a symphony fits Musical work; a dance fits Dance work; a software release fits Authored program. A studio recording can express a Musical work without turning that work into an Audiovisual work merely because it has a digital carrier. A score is a notational expression of music; its written layout and the music specified need distinct classification targets.
+
+**Coverage and objections:** this route makes nonverbal art visible without calling every form symbolic. It is weaker for content preserved across forms: one evacuation plan may survive translation from prose to a diagram, so classifying the plan itself as Linguistic could confuse it with one expression. Multimodal means essentially combined forms, not an unrestricted remainder. Curated content, purely numerical arrangements, smell-based artistic designs and sign systems test omissions. Purpose-based distinctions such as norm, proof and specification cross these branches.
+
+#### Subdivision by work and expression identity
+
+**Principle:** whether identity is anchored in an originated intellectual or artistic contribution across realizations, or in one originated realization of that contribution. Work means the former; Expression means the latter. Neither means a physical copy or an execution event. This sketch develops the work/expression distinction available in the [accepted Composition rationale](#accepted-decision-particulars-six-principal-categories); it does not adopt an external cataloguing scheme wholesale.
+
+```text
+Composition
+├── Work
+│   ├── Artistic work
+│   ├── Explanatory work
+│   ├── Prescriptive work
+│   └── Curated work
+└── Expression
+    ├── Linguistic expression
+    ├── Notational expression
+    ├── Visual expression
+    └── Recorded expression
+```
+
+**Examples:** Moby-Dick, Hamlet and Beethoven’s Fifth fit Artistic work; a theory or presented proof fits Explanatory work; a plan, rule formulation or design fits Prescriptive work; the archaeological catalogue fits Curated work. A specified novel translation fits Linguistic expression; an edited score fits Notational expression; an originated image fits Visual expression; a studio recording’s content fits Recorded expression. Source code can be a Notational expression of an authored computational design without identifying the design with the mathematical function computed.
+
+**Coverage and objections:** this route addresses the work/translation, music/score and design/wording distinctions directly. Its strongest coverage argument is that an originated product is a contribution, a realization of one, or both. That argument depends on workable identity rules; calling every remaining product Work would merely conceal gaps. An expression can itself be a new work, as with a creative translation or arrangement, so disjointness is unasserted. An image conceived without a prior work, improvisation, community-developed languages and incremental software revisions test whether the distinction earns a universal first level. The Expression grandchildren are open: movement, tactile and other expressions need additional categories if this route is selected.
+
+#### Comparison criteria
+
+The intended-contribution tree offers familiar subjects; the constitutive-form tree foregrounds nonverbal and mixed forms; the work/expression tree foregrounds identity across translations and realizations. None establishes exhaustive coverage. A combined tree must still use is-a at every level and declare where it changes its organizing criterion.
+
+The Content / Symbolic form pair remains a useful comparison distinction, not an adopted split. A composition’s having content or form does not prove that it is identical to either; broadening Content to all aesthetic organization or Symbolic form to all perceptible organization erodes the distinction. Meaning-preserving reconciliation requires identifying which subject a source node denotes before assigning a parent.
+
+**Decision boundary:** compare these sketches against the shared cases before selecting immediate children. No candidate changes the accepted parent, adopts descendants, relocates inherited records or treats an unanswered choice as accepted.
 
 ### Accepted decision: Region’s immediate children
 
@@ -888,31 +984,6 @@ Particular has Object, Occurrence, Feature, Region, Composition and Formal entit
 **Steelman of Content instead of Composition:** Astra's interpretation-based category brings meaning directly into view and separates it from symbolic structures. Its cost is that works and expressions whose identity depends on origin need an adequate account across Content and Formal entity. Composition foregrounds that identity question while keeping content and symbolic form distinguishable beneath it.
 
 **Steelman of Realizable / Abstract as an intermediate division:** it offers a familiar broad overview. Its cost is an additional disputed criterion before these more specific identity questions, and possible cross-cutting classifications. The working shape starts directly with the six; it does not prohibit a later justified account of realizability.
-
-#### Composition examples for testing
-
-These are illustrative placements under the accepted origin-sensitive definition, not adopted new nodes. The named subject is the work, expression, image, curated content or specification; paper, stored bits and performances supply different subjects. An origin-independent formal pattern can be distinguished from its origin-anchored expression. The institutional force of a norm and its enactment are likewise separate questions.
-
-- **Moby-Dick as a novel:** a work retaining identity across copies and translations.
-- **A specified German translation of Moby-Dick:** an origin-anchored linguistic expression of that work.
-- **Hamlet as a dramatic work:** distinct from its scripts, performances and the people it portrays.
-- **Beethoven's Fifth as a musical composition:** a work distinguishable from a performance or sound recording.
-- **A particular edited score of Beethoven's Fifth:** a notational expression with an editorial origin.
-- **A particular studio recording's audio content:** an origin-anchored recorded expression, distinguished from a playback event or storage medium.
-- **A particular photographic image:** the image arising from a photographic origin, distinguished from a print and depicted scene.
-- **An organization's adopted logo design:** an origin-anchored visual design, distinguished from any one display or a generic geometric pattern.
-- **A surveyor's authored map:** a representation tied to a survey and interpretation, distinguished from its territory.
-- **An architect's design for an unbuilt bridge:** a specification, independent of whether the bridge is ever built.
-- **A chef's written recipe:** an originated procedure specification, distinguished from a meal or cooking episode.
-- **The U.S. Constitution considered as a normative text:** a historically originated content/expression, distinguished from parchment, enactment and the institutions governed.
-- **An agreed contract's terms:** originated specifications, distinguished from the document carrier and resulting obligations.
-- **A prescribed wedding liturgy:** a ceremony specification, distinguished from any performance or marriage.
-- **A choreographer's dance work:** an originated composition, distinguished from a dancer's movements at a time.
-- **A specified chess rulebook's rules:** a normative formulation, distinguished from a particular game or an origin-independent mathematical game model.
-- **A particular software release's source text:** an authored expression, distinguished from its execution and the mathematical function it may compute.
-- **A research team's climate-model formulation:** a selective representation with an intended interpretation, distinguished from climate and from underlying equations considered formally.
-- **A curated archaeological catalogue's content:** a provenance-sensitive selection and description, distinguished from the artifacts and an extensional set considered mathematically.
-- **An author's presented proof of a theorem:** an originated argument or exposition, distinguished from the theorem's truth and a derivation considered solely as a formal sequence.
 
 ### Accepted decision: Particular / Predicable root split
 
