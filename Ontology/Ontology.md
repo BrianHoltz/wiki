@@ -1,5 +1,7 @@
 # Omniversal Ontology
 
+❓ Decision: [Predicable’s immediate children](#pending-decision-predicables-immediate-children).
+
 ## Principles
 
 - The incumbent with the accepted upper graft remains the canonical tree; imported systems are source, audit, and enrichment layers rather than replacements.
@@ -652,6 +654,18 @@ The large RDF/XML text dump available for this project is not a general “Mozil
 ## Consolidating upper ontologies
 
 The agent drives the comparison, testing and synthesis. Brian decides the consequential design choices, one compact brief at a time. The aim remains a general-purpose ontology with an intelligible canonical tree, as described in the [design memoranda](OntologyDesignMemoranda.md#1-project-goal).
+
+### Pending decision: Predicable’s immediate children
+
+**Question for Brian:** adopt Property and Relation as Predicable’s immediate children, distinguished by one versus two-or-more subject positions, or treat Property as a unary subtype of a broader Relation category?
+
+**Recommendation:** adopt the [published provisional Property / Relation definitions](#published-root-and-provisional-predicable-definitions) as the first split. They preserve familiar names and give one explicit organizing criterion: predicative arity. The [accepted Predicable definition](#accepted-decision-constitutive-predicative-applicability) already requires one or more subject positions. Disjointness and exhaustiveness therefore depend on each predicable having a determinate arity; variable-arity cases need an explicit account before claiming a complete partition.
+
+**Strongest alternative:** Relation includes unary relations, with Property beneath it. This gives a uniform logical treatment but adds a broad intermediate category and uses Relation differently from the familiar contrast between a property and a relation among subjects. A formal model can treat both uniformly without requiring that extra tree level.
+
+**Reconciliation tests:** redness versus this wall’s redness; married-to versus Alice and Bob’s marriage bond; taller-than versus taller-than-Alice; transitive as a Property of a Relation. Distinguish the predicable from its wording or specification, and declared subject positions from contextual parameters. [Fable’s arity split](UpperOntologyClaudeFable.md#4-the-upper-tree) and [Astra’s condition specifications](CritiqueByAstra.md#recommended-upper-tree) concern different subjects; matching labels do not license merging them.
+
+**Decision boundary:** Brian’s answer settles this split and its definitions, not Property or Relation grandchildren. Kind / Role / Phase and relation-family groupings remain separate choices. The accepted Particular branches remain the basis for their own reconciliation; this question does not select an entire source tree or authorize bulk migration.
 
 ### Provisional incumbent graft
 
