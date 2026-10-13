@@ -1283,6 +1283,12 @@ Start with HasMass(bearer, value, time). Fix value and time, fix only value, qua
 
 Test a student who graduates, a dog becoming a pet, an inedible botanical fruit, a tomato as culinary vegetable, a designed hammer and a stone used to hammer. Preserve underlying identity and ancestry through changed roles. Distinguish artifact design history from temporary use; test whether a claimed rigid superclass can legitimately contain the proposed role or phase class.
 
+### Developmental stages
+
+Use the developmental and age terms in [Difficult Words](WordsToCategorize.md#difficult-words): child, juvenile, embryo, adult and related human, animal and plant vocabulary. Test whether a subject can change stage while retaining organism identity and clade ancestry. Distinguish the organism in a phase, its developmental condition, the interval during which that condition obtains, and the process or event of transition; these need not be the same subject.
+
+Compare child as a developmental phase with child as offspring, which need not imply youth; adult as biological maturity with adult or minor as legal standing; and mature as a context-dependent characterization. Test embryo / fetus, infant / adolescent, larva / pupa / imago, tadpole, hatchling / fledgling and seedling / sapling without treating them as one universal, exhaustive or disjoint stage sequence. Ask whether metamorphosis preserves the relevant identity, and distinguish a stage label from a biological clade. Stage-based classifications must preserve monophyletic primary ancestry. Their place in primary navigation, alternate classifications or metadata remains open.
+
 ### Disposition, capability and function
 
 Test unbroken glass that never shatters, an unused capability, a task assessment that changes without changing the bearer, a broken pump retaining its assigned purpose, and an evolved biological function without an intentional designer. Separate capacity, manifestation, task-relative assessment, assignment and selection history. A lost capacity must not automatically erase design purpose or historical function.

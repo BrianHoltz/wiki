@@ -74,8 +74,12 @@ Use these compact vocabularies as adversarial test sets for the ontology.
 
 ## Difficult Words
 
+Developmental and age terms are [adversarial phase-classification cases](Ontology.md#developmental-stages), including human, animal and plant vocabulary. Child also tests offspring as a relationship; minor tests legal status; mature and juvenile require a stated biological or social context. Blank cells make no coverage claim.
+
 | Word&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Omniversal Ontology | Human Knowledge | SUMO | Roget's | Propædia | Wikipedia |
 |---|---|---|---|---|---|---|
+| adolescent |  |  |  |  |  |  |
+| adult |  |  |  |  |  |  |
 | affordance |  |  |  |  |  |  |
 | algorithm | ✅ |  |  |  |  |  |
 | area |  |  |  |  |  |  |
@@ -85,6 +89,7 @@ Use these compact vocabularies as adversarial test sets for the ontology.
 | boundary |  |  |  |  |  |  |
 | capability | ✅ |  |  |  |  |  |
 | character | ✅ |  | ✅ |  |  |  |
+| child |  |  |  |  |  |  |
 | collection | ✅ |  | ✅ |  |  |  |
 | community | ✅ |  |  |  |  | ✅ |
 | computation |  |  |  |  |  |  |
@@ -102,36 +107,52 @@ Use these compact vocabularies as adversarial test sets for the ontology.
 | document | ✅ |  |  |  |  |  |
 | duration |  |  |  |  |  | ✅ |
 | ecosystem |  |  |  |  |  |  |
+| embryo |  |  |  |  |  |  |
 | emergence |  |  |  |  |  | ✅ |
 | energy |  |  |  |  |  | ✅ |
 | event | ✅ |  |  |  |  |  |
 | experience |  |  |  |  |  |  |
 | fact | ✅ |  |  |  |  |  |
+| fetus |  |  |  |  |  |  |
 | field |  |  |  |  |  |  |
+| fledgling |  |  |  |  |  |  |
 | force |  |  |  |  |  |  |
 | function | ✅ |  |  |  |  |  |
 | game | ✅ |  | ✅ |  |  |  |
 | gap |  |  |  |  |  |  |
 | genome |  |  |  |  |  |  |
 | goal | ✅ |  |  |  |  |  |
+| hatchling |  |  |  |  |  |  |
 | hole | ✅ |  | ✅ |  |  |  |
 | identify |  |  |  |  |  |  |
 | image | ✅ |  |  |  |  |  |
+| imago |  |  |  |  |  |  |
+| immature |  |  |  |  |  |  |
+| infant |  |  |  |  |  |  |
 | instance |  |  |  |  |  |  |
 | institution | ✅ |  |  |  |  |  |
 | intentionality |  |  |  |  |  |  |
 | interaction |  |  |  |  |  |  |
 | interior |  |  |  |  |  |  |
+| juvenile |  |  |  |  |  |  |
+| larva |  |  |  |  |  |  |
 | law | ✅ |  | ✅ |  |  | ✅ |
 | map |  |  |  |  |  |  |
+| mature |  |  |  |  |  |  |
 | mind |  |  |  |  |  | ✅ |
+| minor |  |  |  |  |  |  |
 | model | ✅ |  |  |  |  |  |
 | moment |  |  |  |  |  |  |
 | namespace |  |  |  |  |  |  |
+| neonate |  |  |  |  |  |  |
+| nestling |  |  |  |  |  |  |
 | network |  |  |  |  |  |  |
+| newborn |  |  |  |  |  |  |
 | norm | ✅ |  |  |  |  |  |
 | nothingness |  |  |  |  |  |  |
+| nymph |  |  |  |  |  |  |
 | obligation | ✅ |  | ✅ |  |  |  |
+| offspring |  |  |  |  |  |  |
 | organism | ✅ |  | ✅ |  |  |  |
 | ownership |  |  |  |  |  |  |
 | pattern |  |  |  |  |  |  |
@@ -142,6 +163,7 @@ Use these compact vocabularies as adversarial test sets for the ontology.
 | program |  |  |  |  |  |  |
 | proof | ✅ |  |  |  |  |  |
 | proposition | ✅ |  | ✅ |  |  |  |
+| pupa |  |  |  |  |  |  |
 | purpose | ✅ |  |  |  |  |  |
 | ratio |  |  |  |  |  |  |
 | recipe |  |  |  |  |  |  |
@@ -149,7 +171,10 @@ Use these compact vocabularies as adversarial test sets for the ontology.
 | reflection |  |  |  |  |  |  |
 | role | ✅ |  |  |  |  |  |
 | rule |  |  |  |  |  |  |
+| sapling |  |  |  |  |  |  |
+| seedling |  |  |  |  |  |  |
 | self |  |  |  |  |  | ✅ |
+| senescent |  |  |  |  |  |  |
 | set | ✅ |  | ✅ |  |  |  |
 | shadow |  |  |  |  |  |  |
 | signal | ✅ |  |  |  |  |  |
@@ -160,6 +185,8 @@ Use these compact vocabularies as adversarial test sets for the ontology.
 | structure |  |  |  |  |  | ✅ |
 | surface |  |  |  |  |  |  |
 | symbol | ✅ |  |  |  |  |  |
+| tadpole |  |  |  |  |  |  |
+| toddler |  |  |  |  |  |  |
 | tool |  |  |  |  |  |  |
 | topic |  |  |  |  |  |  |
 | type |  |  |  |  |  |  |
@@ -169,6 +196,7 @@ Use these compact vocabularies as adversarial test sets for the ontology.
 | virus | ✅ |  | ✅ |  |  |  |
 | void |  |  |  |  |  |  |
 | wave |  |  |  |  |  |  |
+| zygote |  |  |  |  |  |  |
 
 ## Roget's Thesaurus
 
