@@ -655,15 +655,27 @@ The large RDF/XML text dump available for this project is not a general “Mozil
 
 The agent drives the comparison, testing and synthesis. Brian decides the consequential design choices, one compact brief at a time. The aim remains a general-purpose ontology with an intelligible canonical tree, as described in the [design memoranda](OntologyDesignMemoranda.md#1-project-goal).
 
+### Accepted direction: Composition by constitutive form
+
+Organize Composition’s principal kinds by constitutive form: the organization that helps identify the originated product, independently of its physical carrier. Medium is useful shorthand, but paper, sound files and file formats do not determine what kind of Composition a subject is. The particular children remain unadopted.
+
+**Rationale:** purpose supplies a kind-defining criterion only where the category’s meaning requires it. Composition’s originating history does not make intended purpose the defining characteristic of every composition kind. A general-purpose purpose split invites classifications by what subjects do, rather than what they are; that shortcut would extend poorly across the ontology. Preserve purpose where a narrower kind genuinely requires it, without making it Composition’s principal axis.
+
+**Steelman of purpose:** familiar categories such as plan, recipe and norm derive much of their intelligibility from what they specify or prescribe. They remain useful narrower or alternate classifications. Their usefulness does not establish a uniform purpose-based first split for all compositions.
+
+**Steelman of Work / Expression:** the distinction exposes identity across translations, scores and realizations. Its cost as a principal split is that an expression can itself be an originated work, creating two natural homes or requiring separately justified subjects. Keep the distinction available for identity analysis rather than selecting it as the branching axis.
+
+**Unresolved limit:** form must be constitutive of the subject classified, not merely one means of expressing it. A plan’s instructions may survive replacement of prose by a diagram; a musical work differs from its written score. Origin-independent patterns remain Formal entities. These identity tests constrain any form-based tree; choosing this direction does not resolve them.
+
 ### Pending decision: Composition’s immediate children
 
-**Question for Brian:** which organizing principle gives Composition the most intelligible children and grandchildren while preserving the identity of works, expressions and specifications?
+**Question for Brian:** use familiar expressive forms directly, group them first by symbolic versus configurational organization, or divide by structural organization?
 
-The three sketches below are alternatives for comparison, not adopted branches. Every edge proposes is-a, and every descendant inherits [Composition’s origin-sensitive definition](#accepted-decision-particulars-six-principal-categories). Classify the named intellectual or artistic product, not its carrier, performance, referent or origin-independent formal counterpart. Overlapping classes are permitted, but a primary tree route still needs justification. Source proposals in the [Fable comparison sketch](UpperOntologyClaudeFable.md#construct-expansion-for-comparison) and [Astra revision](CritiqueByAstra.md#recommended-upper-tree) are inputs, not equivalence certificates.
+All three sketches follow the chosen direction, propose is-a edges and inherit [Composition’s origin-sensitive definition](#accepted-decision-particulars-six-principal-categories). They are open candidate families, not exhaustive or disjoint partitions. Physical carriers, performances and referents are different subjects.
 
 #### Composition examples for testing
 
-These twenty cases test the alternative trees below under the accepted origin-sensitive definition; they are not adopted new nodes. The named subject is the work, expression, image, curated content or specification; paper, stored bits and performances supply different subjects. An origin-independent formal pattern can be distinguished from its origin-anchored expression. The institutional force of a norm and its enactment are likewise separate questions.
+These twenty cases test the constitutive-form alternatives below under the accepted origin-sensitive definition; they are not adopted new nodes. The named subject is the work, expression, image, curated content or specification; paper, stored bits and performances supply different subjects. An origin-independent formal pattern can be distinguished from its origin-anchored expression. The institutional force of a norm and its enactment are likewise separate questions.
 
 - **Moby-Dick as a novel:** a work retaining identity across copies and translations.
 - **A specified German translation of Moby-Dick:** an origin-anchored linguistic expression of that work.
@@ -688,138 +700,98 @@ These twenty cases test the alternative trees below under the accepted origin-se
 
 The cases exercise translation, editing, recording, representation, prescription, executability, curation and formal reasoning. Also challenge every sketch with nonrepresentational abstract art, wordless music and a language developed by a community: meaningful content, signs and a discrete author cannot simply be assumed. For each case, name its primary destination, any genuine alternatives, and what change would preserve or destroy its identity.
 
-#### Possible dimensions and slices
+#### Familiar constitutive forms
 
-This is a brainstorm, not an exhaustive inventory or an adopted classification. “Promising” means worth testing for primary ancestry; “conditional” means useful but dependent on scope or identity choices; “poor primary split” means better suited to metadata or alternate browsing. Several slices overlap or combine; they are not independent coordinates.
-
-**The three sketches:** intended contribution asks what the product is for; constitutive form asks how it is organized, close to medium but independent of its physical carrier; work/expression identity asks what remains the same across realizations. The third is a distinction between identity levels, not a medium or purpose: a novel can remain one work across translations while each translation is a distinct expression. Work and Expression can overlap, so this is not automatically a clean partition.
-
-**Promising slices**
-
-- **Intended contribution:** describe, explain, prescribe, persuade, entertain or create an aesthetic experience. Mixed purposes challenge exclusive membership.
-- **Constitutive form:** linguistic, pictorial, musical, choreographic, computational or mixed organization. Distinguish a musical work from its written score.
-- **Identity across realizations:** what survives paraphrase, translation, rearrangement, reimplementation or copying? This tests work versus expression and may expose several identity criteria rather than one universal scale.
-- **Semantic operation:** narrate, argue, model, record, classify, specify or establish rules. This describes how a product organizes its contribution, rather than only why it was made.
-- **Representation and reference:** depict a subject, describe it, simulate it, prescribe a possible subject, or organize form without representing one. Abstract art tests the last category.
-- **Prescription and operation:** a requirement, a plan, an executable instruction or an evaluation criterion. Distinguish what should happen from how to produce or assess it.
-- **Organizing structure:** sequence, hierarchy, network, spatial arrangement, rule system or curated collection. A catalogue can have several structures at once.
-
-**Conditional slices**
-
-- **Sensory modality:** visual, auditory, tactile, movement-based or multisensory. Useful for expressions; a work can survive a change of modality.
-- **Symbolic versus nonsymbolic organization:** conventional signs versus resemblance, sound or designed arrangement. Music and abstract art resist a simple binary.
-- **Meaning versus expression:** interpreted content versus a particular wording, notation or arrangement. Distinguish related subjects before proposing sibling kinds.
-- **Abstractness of specification:** requirements, design, implementation or realized expression. These stages need not form disjoint ontological kinds.
-- **Participation:** fixed presentation, interactive composition or generative system. A game’s rules, player interaction and generated playthrough are different subjects.
-- **Completion and variability:** fixed, revisable, open-ended or parametrized products. A draft can become final without becoming a different kind of composition.
-- **Derivation:** original, translated, adapted, arranged, edited or compiled. A useful relation to prior products, but several derivations can apply together.
-- **Origin process:** authored, collaboratively developed, improvised, recorded, mechanically generated or curated. Creation method can matter to identity without defining the product’s kind.
-- **Conventional or institutional standing:** private proposal, adopted standard, enacted rule or ritual prescription. Standing can change while the text remains identical.
-- **Domain:** artistic, scientific, mathematical, technical, legal, religious or commercial. Familiar, but one work can cross domains; a subject-domain tree can drift toward classifying fields of study.
-
-**Poor primary splits, useful elsewhere**
-
-- **Historical era:** ancient, medieval, modern or another periodization. Dates describe provenance and depend on a chosen historical scheme.
-- **Geography:** place of origin, place represented or place of intended use. These are three different relations, none a general account of what the composition is.
-- **Creator:** individual, institution, community or machine-assisted production. Classifies provenance; changing attribution should not silently change ancestry.
-- **Audience:** children, experts, a profession or the general public. Readership and intended use can overlap or change.
-- **Language:** English, German or another language. Useful for expressions; multilingual and nonlinguistic compositions defeat a universal split.
-- **Carrier and file format:** paper, recording medium, PDF or source-file encoding. Classifies a carrier or representation, often a different subject from the Composition.
-- **Publication and access:** published, unpublished, public, private or restricted. Distribution can change without changing the product.
-- **Rights and ownership:** licensed, copyrighted, public-domain or owned by a particular party. Legal context and time control these statuses.
-- **Evaluation:** true, false, valid, beautiful, useful, popular or influential. These require standards, evidence or judgments; they do not supply a stable general first division.
-
-A useful slice can remain an alternate classification without becoming the principal tree. For any proposed principal split, ask whether it classifies the same subjects, survives changes that preserve their identity, handles the shared examples, and makes its overlap and coverage claims explicit.
-
-#### Subdivision by intended contribution
-
-**Principle:** what the originated product is designed to contribute. Descriptive composition presents an account; Prescriptive composition specifies conduct, requirements or an intended result; Artistic composition organizes an aesthetic or expressive work. These are defining purposes of products, not temporary uses of arbitrary objects.
-
-```text
-Composition
-├── Descriptive composition
-│   ├── Explanatory account
-│   ├── Representational model
-│   ├── Evidential record
-│   └── Curated catalogue
-├── Prescriptive composition
-│   ├── Normative formulation
-│   ├── Procedure specification
-│   ├── Design specification
-│   └── Program specification
-└── Artistic composition
-    ├── Literary work
-    ├── Musical work
-    ├── Visual artwork
-    └── Choreographic work
-```
-
-**Examples:** a proof or explanatory theory fits Explanatory account; a climate model and authored map fit Representational model; a documentary image or recording fits Evidential record; an archaeological catalogue fits Curated catalogue. Constitutional or contractual terms fit Normative formulation; a recipe or liturgy fits Procedure specification; a bridge or logo design fits Design specification; authored software instructions fit Program specification. A novel, symphony or dance has a direct artistic home.
-
-**Coverage and objections:** this is the most familiar route to the listed cases. It admits overlap: a documentary photograph may be artistic and evidential; an architectural design may be prescriptive and artistic. Purely entertaining games, exploratory sketches and conventional sign systems challenge coverage. Descriptive does not mean true, and fictional narrative need not be classified as factual description. The sketch offers broad illustrative coverage, not a demonstrated exhaustive partition. Translation and exact wording need expression-sensitive treatment within its branches.
-
-#### Subdivision by constitutive form
-
-**Principle:** the organization essential to the product, independent of its physical medium. Linguistic composition depends on linguistic organization; Visual composition on pictorial or spatial arrangement; Musical composition on musical organization; Choreographic composition on prescribed movement; Computational composition on computational instructions; Multimodal composition on an essential combination of forms. A file format or temporary encoding does not determine ancestry.
+**Recommendation:** begin with recognizable forms at the first level. Linguistic means organization through language; Visual means pictorial or spatial organization; Sonic means organized sound; Kinetic means organized movement; Computational means computational instructions or operations; Composite means an essential integration of distinct forms. Translation can preserve a linguistic work without preserving its exact wording. Being temporarily displayed or encoded in another medium does not change this classification.
 
 ```text
 Composition
 ├── Linguistic composition
-│   ├── Literary text
-│   ├── Expository text
-│   └── Prescriptive text
+│   ├── Prose composition
+│   ├── Verse composition
+│   └── Dialogue composition
 ├── Visual composition
 │   ├── Pictorial composition
 │   ├── Diagrammatic composition
-│   └── Graphic design
-├── Musical composition
-│   ├── Musical work
-│   └── Arranged musical work
-├── Choreographic composition
-│   ├── Dance work
-│   └── Staged movement design
+│   └── Geometric design
+├── Sonic composition
+│   ├── Musical composition
+│   ├── Speech-sound composition
+│   └── Designed soundscape
+├── Kinetic composition
+│   ├── Movement sequence
+│   └── Spatial staging design
 ├── Computational composition
 │   ├── Authored program
-│   └── Computational model formulation
-└── Multimodal composition
-    ├── Audiovisual work
-    ├── Interactive work
-    └── Integrated multimedia presentation
+│   └── Computational model
+└── Composite composition
+    ├── Audiovisual composition
+    ├── Integrated stage composition
+    └── Interactive multimedia composition
 ```
 
-**Examples:** a particular novel translation fits Literary text; a written recipe fits Prescriptive text; a map fits Diagrammatic composition; a logo fits Graphic design; a symphony fits Musical work; a dance fits Dance work; a software release fits Authored program. A studio recording can express a Musical work without turning that work into an Audiovisual work merely because it has a digital carrier. A score is a notational expression of music; its written layout and the music specified need distinct classification targets.
+**Examples:** a novel or particular translation is linguistic; an authored map or logo is visual; a symphony is sonic; a dance is kinetic; a software release’s computational design is computational. An essentially integrated film can be composite. A source text considered as wording and the program it expresses require distinct identity accounts; a score and its music likewise are not interchangeable subjects.
 
-**Coverage and objections:** this route makes nonverbal art visible without calling every form symbolic. It is weaker for content preserved across forms: one evacuation plan may survive translation from prose to a diagram, so classifying the plan itself as Linguistic could confuse it with one expression. Multimodal means essentially combined forms, not an unrestricted remainder. Curated content, purely numerical arrangements, smell-based artistic designs and sign systems test omissions. Purpose-based distinctions such as norm, proof and specification cross these branches.
+**Cost:** these branches use familiar but unevenly granular forms. Computational organization can also be linguistic; stage works can combine language, sound and movement. Composite is for essential integration, not a remainder for difficult cases. Tactile, olfactory and other created forms test coverage. Content preserved across very different forms, including normative terms and requirements, remains a substantive placement question.
 
-#### Subdivision by work and expression identity
+#### Symbolic and configurational organization
 
-**Principle:** whether identity is anchored in an originated intellectual or artistic contribution across realizations, or in one originated realization of that contribution. Work means the former; Expression means the latter. Neither means a physical copy or an execution event. This sketch develops the work/expression distinction available in the [accepted Composition rationale](#accepted-decision-particulars-six-principal-categories); it does not adopt an external cataloguing scheme wholesale.
+**Alternative:** first distinguish organization through interpreted signs from organization through perceptible arrangements; place essential integrations beside them. Configurational does not imply absence of meaning, and Symbolic does not require a linguistic purpose.
 
 ```text
 Composition
-├── Work
-│   ├── Artistic work
-│   ├── Explanatory work
-│   ├── Prescriptive work
-│   └── Curated work
-└── Expression
-    ├── Linguistic expression
-    ├── Notational expression
-    ├── Visual expression
-    └── Recorded expression
+├── Symbolic composition
+│   ├── Linguistic composition
+│   ├── Authored notation
+│   └── Computational composition
+├── Configurational composition
+│   ├── Visual arrangement
+│   ├── Sonic arrangement
+│   └── Movement arrangement
+└── Composite composition
+    ├── Symbolic-visual integration
+    ├── Symbolic-sonic integration
+    └── Symbolic-movement integration
 ```
 
-**Examples:** Moby-Dick, Hamlet and Beethoven’s Fifth fit Artistic work; a theory or presented proof fits Explanatory work; a plan, rule formulation or design fits Prescriptive work; the archaeological catalogue fits Curated work. A specified novel translation fits Linguistic expression; an edited score fits Notational expression; an originated image fits Visual expression; a studio recording’s content fits Recorded expression. Source code can be a Notational expression of an authored computational design without identifying the design with the mathematical function computed.
+**Examples:** a constitution’s wording, an edited score and source code follow the symbolic route; a nonrepresentational visual design, wordless music and choreography follow the configurational route. An integrated captioned image can combine both.
 
-**Coverage and objections:** this route addresses the work/translation, music/score and design/wording distinctions directly. Its strongest coverage argument is that an originated product is a contribution, a realization of one, or both. That argument depends on workable identity rules; calling every remaining product Work would merely conceal gaps. An expression can itself be a new work, as with a creative translation or arrangement, so disjointness is unasserted. An image conceived without a prior work, improvisation, community-developed languages and incremental software revisions test whether the distinction earns a universal first level. The Expression grandchildren are open: movement, tactile and other expressions need additional categories if this route is selected.
+**Cost:** a symbol also has a perceptible configuration; a diagram combines conventional signs and spatial organization; music can have notational or conventional symbolic features. A uniform rule for primary placement is therefore difficult. The extra level earns its place only if it explains the products’ constitutive identities, rather than duplicating two aspects present almost everywhere. This is not the rejected Content / Symbolic form pair: it contrasts kinds of organization, not meaning with its expression.
 
-#### Comparison criteria
+#### Structural organization
 
-The intended-contribution tree offers familiar subjects; the constitutive-form tree foregrounds nonverbal and mixed forms; the work/expression tree foregrounds identity across translations and realizations. None establishes exhaustive coverage. A combined tree must still use is-a at every level and declare where it changes its organizing criterion.
+**Alternative:** classify by the arrangement or rule structure constitutive of the product, before selecting familiar forms. Relational structure here is an originated arrangement of links, not the Predicable category Relation. An authored rule system likewise differs from the origin-independent mathematical system it specifies.
 
-The Content / Symbolic form pair remains a useful comparison distinction, not an adopted split. A composition’s having content or form does not prove that it is identical to either; broadening Content to all aesthetic organization or Symbolic form to all perceptible organization erodes the distinction. Meaning-preserving reconciliation requires identifying which subject a source node denotes before assigning a parent.
+```text
+Composition
+├── Sequential composition
+│   ├── Verbal sequence
+│   ├── Sonic sequence
+│   └── Movement sequence
+├── Spatial composition
+│   ├── Pictorial arrangement
+│   ├── Geometric arrangement
+│   └── Spatial diagram
+├── Relational composition
+│   ├── Authored hierarchy
+│   ├── Authored network
+│   └── Curated relational catalogue
+├── Rule-structured composition
+│   ├── Authored grammar
+│   ├── Authored program
+│   └── Authored game rules
+└── Composite composition
+    ├── Spatiotemporal arrangement
+    └── Integrated structural design
+```
 
-**Decision boundary:** compare these sketches against the shared cases before selecting immediate children. No candidate changes the accepted parent, adopts descendants, relocates inherited records or treats an unanswered choice as accepted.
+**Examples:** a poem, melody and dance share sequential organization; a logo and map share spatial organization; a curated ontology or linked catalogue can have relational organization; an authored grammar, software design and game formulation can have rule structure.
+
+**Cost:** nearly every sequence also has rules and relations, and a diagram’s spatial and relational structures may both be essential. The split therefore risks broad overlap and unfamiliar paths to ordinary products. Merely having a sequence, spatial layout or rule is insufficient: that organization must help individuate the composition. This route is more uniform structurally, but less immediately intelligible than familiar forms.
+
+#### Choice and coverage tests
+
+Prefer the familiar-form sketch for the first draft because it offers recognizable kinds without adding a disputed intermediate division. This is a recommendation, not adoption. Select children only after stating their membership and identity criteria, showing primary homes for the shared examples, and recording genuine alternatives or unresolved cases. No diagram establishes exhaustiveness by layout; no residual branch repairs a missing identity account.
 
 ### Accepted decision: Region’s immediate children
 
