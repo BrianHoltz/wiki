@@ -657,20 +657,30 @@ The agent drives the comparison, testing and synthesis. Brian decides the conseq
 
 ### Pending decision: Composition’s immediate children
 
-**Question for Brian:** adopt Content and Symbolic form as Composition’s immediate children, distinguishing what a product presents from its organization of signs?
+**Question for Brian:** does Content / Symbolic form classify kinds of Composition, or distinguish meaning and expression within compositions? What immediate children give the accepted parent broad, defensible coverage?
 
-**Recommendation:** adopt the pair from the [Fable comparison sketch](UpperOntologyClaudeFable.md#construct-expansion-for-comparison), restricted by Composition’s accepted origin-sensitive identity. Use these definitions:
+**Recommendation:** keep the pair unadopted. The [Fable comparison sketch](UpperOntologyClaudeFable.md#construct-expansion-for-comparison) supplies a useful distinction, but its examples do not establish a nearly exhaustive division into kinds. The following candidate meanings and cases expose the unresolved identity and coverage questions.
 
-- **Content:** a Composition identified by what it presents, asserts, prescribes or specifies, together with its originating history, independently of a particular wording or notation.
-- **Symbolic form:** a Composition identified by an originating organization of signs, independently of any one physical inscription or performance.
+#### Candidate meanings and examples
 
-These are open categories, not an asserted exhaustive or disjoint partition. Overlap requires the same subject to satisfy both identity accounts; one product expressing another does not establish identity. A purely origin-independent sign pattern belongs under Formal entity. Whether a natural language satisfies either definition requires its own identity review.
+- **Content:** a Composition identified by what it presents, asserts, prescribes or specifies, together with its originating history, independently of a particular wording or notation. Candidate examples: the requirements adopted in a particular building code, a particular evacuation plan’s prescribed actions, and an author’s explanatory account expressed in a theory. Paraphrase or translation can preserve the intended content; whether it preserves the identical Composition needs an identity rule. Generic requirements or propositions detached from any originating product are not automatically Compositions.
+- **Symbolic form:** a Composition identified by an originating organization of signs, independently of any one physical inscription or performance. Candidate examples: an author’s particular English wording, a composer’s authored score notation, and a programmer’s authored source-code text. Rewording or renotation changes this candidate subject even when requirements, music or behavior are preserved. The origin-independent sequence of characters is a Formal entity; the historically authored expression is the proposed Composition.
 
-**Strongest alternative:** Work and Expression. This gives familiar library distinctions between a work and its realizations, but imposes a narrower model on theories, standards, plans and sign systems. Keep those distinctions available as descendants rather than equating all Content with Work and all Symbolic form with a work’s Expression.
+For a particular evacuation plan, “leave by the east stairwell and assemble in the courtyard” specifies content; the exact authored sentences or diagram express it; a printed sheet is a physical carrier. Those are distinguishable subjects. This example does not prove that the plan itself belongs exclusively to one of the proposed children.
 
-**Reconciliation tests:** a novel versus its authored English wording and a paper copy; a building code’s requirements versus its enacted wording; two independently originated texts with identical words; a specification of redness versus redness itself. [Astra’s Content and Symbolic structure](CritiqueByAstra.md#recommended-upper-tree) cannot be merged by label alone: its formal sign structures need not share Composition’s originating-history criterion.
+#### Coverage and taxonomic objections
 
-**Decision boundary:** adopt the two immediate children and their meanings. Work, Specification, Expression and Sign system descendants remain separate decisions; fictional subjects retain classification by their portrayed kind.
+**Strongest coverage argument:** intellectual and artistic products generally offer meaning, organized form, or both. Composition’s adopted definition already refers to content or symbolic form, so the pair closely follows that wording. This is a proposed organizing intuition, not independent evidence of exhaustiveness: defining the parent in those terms cannot establish that the definition covers every intended intellectual or artistic product.
+
+**Counterexamples to test:** an abstract painting’s artistic design, a wordless melody, and a choreographed dance. Their created organization need not be a system of signs, and they need not assert or prescribe anything. Calling all perceptible organization Symbolic form broadens “symbolic”; calling all aesthetic organization Content risks collapsing the distinction. A natural language and an improvised practice also need identity accounts before either can be treated as a Composition.
+
+**Kinds versus levels:** a novel, plan or score can have both content and form. That alone is not an objection to overlapping siblings, which the project permits. The objection is that content and form may identify related products or levels of description rather than classify the whole product into useful kinds. Expressions of one content can differ, and similar forms can express different contents. Each proposed is-a edge needs a subject and identity account, not merely a has-content or has-form relationship.
+
+**Assessment:** neither exhaustiveness nor near-exhaustiveness is established. “Nearly exhaustive” requires a declared scope and defensible account of the omissions; no such accounting supports this pair. Content / Symbolic form can remain useful distinctions without earning the principal branching level.
+
+**Alternatives for comparison:** Work / Expression distinguishes an originated work from its particular realizations, but its application beyond library cases needs testing. Branching by the product’s purpose or medium gives more familiar groups, but overlaps and cross-medium works need explicit treatment. These are comparison directions, not adopted replacements.
+
+**Decision boundary:** Composition’s accepted origin-sensitive identity remains binding. Its immediate children remain open until concrete examples establish their membership, identity and coverage. [Astra’s Content and Symbolic structure](CritiqueByAstra.md#recommended-upper-tree) require sense-level comparison; matching labels do not reconcile different originating-history commitments.
 
 ### Accepted decision: Region’s immediate children
 
