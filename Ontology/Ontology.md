@@ -1,6 +1,6 @@
 # Omniversal Ontology
 
-❓ Decision: [Predicable’s immediate children](#pending-decision-predicables-immediate-children).
+❓ Decision: [Region’s immediate children](#pending-decision-regions-immediate-children).
 
 ## Principles
 
@@ -655,23 +655,37 @@ The large RDF/XML text dump available for this project is not a general “Mozil
 
 The agent drives the comparison, testing and synthesis. Brian decides the consequential design choices, one compact brief at a time. The aim remains a general-purpose ontology with an intelligible canonical tree, as described in the [design memoranda](OntologyDesignMemoranda.md#1-project-goal).
 
-### Pending decision: Predicable’s immediate children
+### Pending decision: Region’s immediate children
 
-**Question for Brian:** adopt Property and Relation as Predicable’s immediate children, distinguished by one versus two-or-more subject positions, or treat Property as a unary subtype of a broader Relation category?
+**Question for Brian:** adopt Spatial region, Temporal region and Spatiotemporal region as Region’s immediate children?
 
-**Recommendation:** adopt the [published provisional Property / Relation definitions](#published-root-and-provisional-predicable-definitions) as the first split. They preserve familiar names and give one explicit organizing criterion: predicative arity. The [accepted Predicable definition](#accepted-decision-constitutive-predicative-applicability) already requires one or more subject positions. Disjointness and exhaustiveness therefore depend on each predicable having a determinate arity; variable-arity cases need an explicit account before claiming a complete partition.
+**Recommendation:** adopt the three-way family shared by [Fable](UpperOntologyClaudeFable.md#4-the-upper-tree) and [Astra](CritiqueByAstra.md#recommended-upper-tree), with the following definitions. The organizing criterion is the positional domain that identifies the region.
 
-**Strongest alternative:** Relation includes unary relations, with Property beneath it. This gives a uniform logical treatment but adds a broad intermediate category and uses Relation differently from the familiar contrast between a property and a relation among subjects. A formal model can treat both uniformly without requiring that extra tree level.
+- **Spatial region:** a Region individuated by positions within a specified spatial domain or frame.
+- **Temporal region:** a Region individuated by positions within a specified temporal domain or ordering.
+- **Spatiotemporal region:** a Region individuated jointly by spatial and temporal positions within a specified domain or frame.
 
-**Reconciliation tests:** redness versus this wall’s redness; married-to versus Alice and Bob’s marriage bond; taller-than versus taller-than-Alice; transitive as a Property of a Relation. Distinguish the predicable from its wording or specification, and declared subject positions from contextual parameters. [Fable’s arity split](UpperOntologyClaudeFable.md#4-the-upper-tree) and [Astra’s condition specifications](CritiqueByAstra.md#recommended-upper-tree) concern different subjects; matching labels do not license merging them.
+Keep the family open without a universal disjointness claim. A spatial slice or temporal projection of a spacetime region need not be the same subject as that region; any overlap needs an explicit identity account. The definitions require neither a universal present nor one physical theory of space and time.
 
-**Decision boundary:** Brian’s answer settles this split and its definitions, not Property or Relation grandchildren. Kind / Role / Phase and relation-family groupings remain separate choices. The accepted Particular branches remain the basis for their own reconciliation; this question does not select an entire source tree or authorize bulk migration.
+**Strongest alternative:** put Spatial and Temporal beneath Spatiotemporal as its aspects. This foregrounds unified spacetime, but an aspect or projection is not automatically a subtype: a spatial region is not necessarily a spatiotemporal region. Separate immediate children preserve is-a ancestry without imposing that reduction.
+
+**Reconciliation tests:** a room’s occupied spatial extent versus the room; an hour versus a process lasting that hour; a storm’s spacetime extent versus the storm; a moving hole versus the regions it occupies. A mathematical color space does not qualify merely because it is called a space; its placement follows its formal identity.
+
+**Decision boundary:** this choice adopts immediate children and their definitions. Point / Extent grandchildren and inherited geographic placements need separate review.
+
+### Accepted decision: Predicable’s immediate children
+
+Adopt Property and Relation as Predicable’s immediate children, using the [published definitions](#published-root-and-predicable-definitions). Property has one subject position; Relation has two or more ordered subject positions. Subjects may themselves be Predicables. The split is disjoint and exhaustive for predicables of determinate arity; variable-arity cases require an explicit account before extending that claim.
+
+**Rationale:** predicative arity supplies one organizing criterion while preserving familiar names. Redness and taller-than-Alice are Properties; taller-than and married-to are Relations. This wall’s redness and Alice and Bob’s marriage bond are particular Features. Transitive can be a Property of a Relation. Specifications represent predicables and retain distinct identities.
+
+**Steelman of Property beneath Relation:** treating properties as unary relations gives a uniform logical account. Its cost is an extra broad tree level and a wider meaning of Relation than the familiar multi-subject contrast. A formal representation can treat both uniformly while the tree retains the adopted siblings. Property and Relation grandchildren remain unadopted.
 
 ### Provisional incumbent graft
 
 The [incumbent browser](index.html) displays the accepted Particular / Predicable root and six Particular categories from the [published data](ontology.json). Realized entity and Abstract entity are retired as root wrappers; their inherited descendants remain reachable. The graft retains all 437 inherited records other than the retired wrappers, adds twenty-three upper records, and selects exactly one displayed parent per nonroot record. It has 460 records and 459 ancestry edges.
 
-The accepted Object and Occurrence children and grandchildren, and Feature children, are displayed with their adopted definitions. Deeper inherited placements remain provisional, as do Property / Relation and the unresolved Agent and Collection branches retained directly under Object. The browser marks these placements; definitions state consequential readings such as bearer-specific Quality, normative content versus obligation, and the contract agreement versus its text. Removing repeated displayed parents does not establish that every retained lower inclusion is sound. The inherited biology, physical carriers, mathematical subjects and social senses still require their planned review; the graft is not a validated domain ontology.
+The accepted Object and Occurrence children and grandchildren, and Feature children, are displayed with their adopted definitions. Property and Relation are accepted beneath Predicable. Deeper inherited placements remain provisional, including the unresolved Agent and Collection branches retained directly under Object. The browser marks these placements; definitions state consequential readings such as bearer-specific Quality, normative content versus obligation, and the contract agreement versus its text. Removing repeated displayed parents does not establish that every retained lower inclusion is sound. The inherited biology, physical carriers, mathematical subjects and social senses still require their planned review; the graft is not a validated domain ontology.
 
 [graft_upper_ontology.py](graft_upper_ontology.py) reads accepted definitions from this document and applies the explicit placement choices to the inherited data. Run it after rebuilding the legacy projection with [SUMO/overlay_canonical.py](SUMO/overlay_canonical.py). Its input checksum and retired wrapper IDs are recorded in the published data. The browser regression checks verify the root, reachability, unique displayed paths, search and navigation. The existing count annotations still refer to retained records; counts are not evidence for the graft's semantic placements.
 
@@ -681,9 +695,9 @@ Each core definition stands alone and carries the necessary membership and ident
 
 The browser starts the core beside the name, truncates it in a collapsed row and wraps it fully when expanded. Supporting bullets appear only for an expanded taxon, immediately beneath its definition and before its children, indented farther than the immediate child taxa. They are explanatory prose, not taxonomic nodes: no Core / Explanation / Example labels, taxon counts or navigation controls. Definitions without supporting text add no supplementary block.
 
-The adopted upper definitions use this format without changing their scope, dependence or identity commitments. The published root and provisional Predicable children below use the same presentation; formatting does not adopt the provisional split.
+The adopted upper definitions use this format without changing their scope, dependence or identity commitments. The published root and accepted Predicable children below use the same presentation.
 
-#### Published root and provisional predicable definitions
+#### Published root and predicable definitions
 
 - **Entity:** That which can be referred to.
 - **Property:** a Predicable applicable to one subject as a characterization; its subject may itself be a Predicable.

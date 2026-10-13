@@ -191,13 +191,6 @@ def graft(data, definitions):
                    Occurrence="Particular", Feature="Particular", Region="Particular",
                    Composition="Particular", FormalEntity="Particular",
                    Property="Predicable", Relation="Predicable")
-    for identifier, definition in {
-        "Property": "A predicable applicable to one subject as a characterization; its subject may itself be a predicable.",
-        "Relation": "A predicable applicable to two or more subjects as an ordered relational characterization.",
-    }.items():
-        nodes[identifier].update(definition=definition,
-                                 definitionSource="provisional project graft",
-                                 provisionalParent="Predicable")
     parents.update(PhysicalObject="Object", SocialEntity="Object",
                    MaterialBody="PhysicalObject", MaterialPortion="PhysicalObject",
                    PhysicalAggregate="PhysicalObject",
@@ -218,7 +211,9 @@ def graft(data, definitions):
     if "Relationship" in nodes:
         nodes["Relationship"]["label"] = "Social relationship"
     for identifier in ("Entity", "Property", "Relation"):
-        nodes[identifier].update(**definitions[identifier])
+        nodes[identifier].update(**definitions[identifier],
+                                 definitionSource="accepted project definition",
+                                 provisionalParent=None)
     parents.pop("Entity", None)
     for identifier in nodes:
         if identifier != "Entity" and parents.get(identifier) not in nodes:
@@ -260,7 +255,7 @@ def graft(data, definitions):
     data["nodes"] = sorted(nodes.values(), key=lambda n: (n["label"].lower(), n["id"]))
     data.update(root="Entity", rootNodes=["Entity"])
     data["source"]["overlayPolicy"] = (
-        "Accepted Particular/Predicable root, six Particular categories and Object/Occurrence/Feature branches; "
+        "Accepted Particular/Predicable root, six Particular categories and Object/Occurrence/Feature branches and Property/Relation split; "
         "provisional single-parent graft of inherited descendants, with visible sense annotations.")
     data["source"]["graftDefinitions"] = "Ontology.md#accepted-decision-particulars-six-principal-categories"
     data["stats"] = {
@@ -268,7 +263,7 @@ def graft(data, definitions):
         "multipleParentNodeCount": 0,
         "unaryNodeCount": sum(len(n["children"]) == 1 for n in nodes.values()),
         "definitionCount": sum(bool(n.get("definition")) for n in nodes.values()),
-        "acceptedUpperNodeCount": len(UPPER) + 1,
+        "acceptedUpperNodeCount": len(UPPER) + 3,
         "provisionalPlacementCount": sum(bool(n.get("provisionalParent")) for n in nodes.values()),
     }
     data["unaryNodes"] = [n["id"] for n in data["nodes"] if len(n["children"]) == 1]
