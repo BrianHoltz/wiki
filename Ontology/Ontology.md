@@ -1,6 +1,6 @@
 # Omniversal Ontology
 
-❓ Decision: [Composition’s immediate children](#pending-decision-compositions-immediate-children).
+Composition: [accepted principal categories and definitions](#accepted-decision-compositions-immediate-children).
 
 ## Principles
 
@@ -657,7 +657,7 @@ The agent drives the comparison, testing and synthesis. Brian decides the conseq
 
 ### Accepted direction: Composition by constitutive form
 
-Organize Composition’s principal kinds by constitutive form: the organization that helps identify the originated product, independently of its physical carrier. Medium is useful shorthand, but paper, sound files and file formats do not determine what kind of Composition a subject is. The particular children remain unadopted.
+Organize Composition’s principal kinds by constitutive form: the organization that helps identify the originated product, independently of its physical carrier. Medium is useful shorthand, but paper, sound files and file formats do not determine what kind of Composition a subject is. The [principal children](#accepted-decision-compositions-immediate-children) are adopted as working categories; their coverage and deeper placements require testing.
 
 **Rationale:** purpose supplies a kind-defining criterion only where the category’s meaning requires it. Composition’s originating history does not make intended purpose the defining characteristic of every composition kind. A general-purpose purpose split invites classifications by what subjects do, rather than what they are; that shortcut would extend poorly across the ontology. Preserve purpose where a narrower kind genuinely requires it, without making it Composition’s principal axis.
 
@@ -667,11 +667,26 @@ Organize Composition’s principal kinds by constitutive form: the organization 
 
 **Unresolved limit:** form must be constitutive of the subject classified, not merely one means of expressing it. A plan’s instructions may survive replacement of prose by a diagram; a musical work differs from its written score. Origin-independent patterns remain Formal entities. These identity tests constrain any form-based tree; choosing this direction does not resolve them.
 
-### Pending decision: Composition’s immediate children
+### Accepted decision: Composition’s immediate children
 
-**Question for Brian:** use familiar expressive forms directly, group them first by symbolic versus configurational organization, or divide by structural organization?
+Composition has Text, Imagery, Spatial design, Audio, Choreography, Video, Software and Game as its eight working immediate children. These denote originated products under Composition’s inherited definition, not carriers, composing activities or particular performances. They are open, potentially overlapping families; neither exhaustiveness nor disjointness is asserted.
 
-All three sketches follow the chosen direction, propose is-a edges and inherit [Composition’s origin-sensitive definition](#accepted-decision-particulars-six-principal-categories). They are open candidate families, not exhaustive or disjoint partitions. Physical carriers, performances and referents are different subjects.
+- **Text:** a composition constituted by an organized sequence of words or other linguistic signs, whether preserved or conveyed through writing, speech, signing or memory. A memorized oral speech need never have been written. Written recipes, contractual wording, sermons, poems and novels have homes here as linguistic compositions; their medium-independent instructions or terms require separate identity analysis.
+- **Imagery:** a composition whose constitutive organization is a still pictorial or diagrammatic arrangement, independently of its particular display or carrier. Includes photographs, paintings, maps and diagrams; excludes moving-image organization as such. Depicting depth does not make an image a Spatial design.
+- **Spatial design:** a composition whose constitutive organization specifies three-dimensional form or the spatial arrangement of objects or environments. Includes sculptural designs, architectural spatial designs, gardens and installations; distinguishes the design from a particular sculpture, building or site. Sight and touch are access channels, not separate kinds here.
+- **Audio:** a composition whose identity depends on an organized sonic form, including musical, vocal and nonmusical sound organization, independently of a particular recording or performance. An authored recording’s interpreted sonic content can itself be an Audio composition. An audiobook conveys a Text and may also embody a distinct Audio composition; linguistic identity and sonic identity are not interchangeable.
+- **Choreography:** a composition specifying an organized pattern of movements, gestures, positions or coordinated actions for enactment. Includes dance, mime, staged movement and coordinated routines; allows machine movement where the movement pattern constitutes the work. The enacted episode is an Occurrence; a recording of it is a different subject.
+- **Video:** a composition whose constitutive organization includes a temporally ordered presentation of images, with or without integrated sound. Includes film, animation and authored moving-image recordings; neither a digital file nor cinema presentation is required. A recorded dance and its Choreography have different identity criteria.
+- **Software:** a composition constituted by computational instructions or operational structures interpreted or executed by a computing system. Includes authored programs and software systems, independently of a particular storage medium or execution. Source wording, computational behavior and the mathematical function computed are distinguishable subjects; equal behavior alone does not establish identical authored software.
+- **Game:** a composition establishing a framework for play through constitutive rules governing possible actions, constraints and goals or standards of success. Includes tabletop and digital games; competition or a final winning condition is not required. A game design differs from its rulebook’s wording, equipment, software implementation and particular play sessions. Integrated digital games may also qualify as Software and incorporate Audio, Imagery and Video works.
+
+**Rationale and naming:** familiar product names give intelligible destinations while retaining constitutive organization as the principal consideration. Text includes oral and signed language; Imagery, Audio and Video name composition kinds rather than file formats; Spatial design preserves broader scope than Sculpture; Choreography preserves broader scope than Dance. Software and Game retain computational and play-rule organization explicitly. Singular Game names the class; its instances are designed games.
+
+**Qualification:** Game’s play criterion cross-cuts expressive form, and Software can overlap Text and other branches. Retaining them does not establish a uniform partition. Preserve genuine alternative classifications and choose justified primary homes; leave unresolved subjects at Composition rather than inventing a miscellaneous class. Do not duplicate every purpose below every medium. Purpose, sensory access and dimensionality remain useful alternate classifications and coverage checks; narrower subclasses require their own membership and identity criteria.
+
+**Dimensionality check:** distinguish still surface organization, spatial form, images through time and spatial form through time. Count dimensions constitutive of the work, not a carrier’s thickness or time spent inspecting it. Kinetic sculpture, spatial sound, tactile works and compositions involving smell or taste challenge coverage; no extra branch is adopted merely to fill a dimensional grid.
+
+**Alternatives:** purpose-led categories capture meaningful kinds such as recipes, plans and norms but do not uniformly classify all compositions. Symbolic/configurational and structural organization remain comparison approaches, not adopted intermediate parents. Their extra levels require identity distinctions that justify the added browsing cost.
 
 #### Composition examples for testing
 
@@ -700,98 +715,11 @@ These twenty cases test the constitutive-form alternatives below under the accep
 
 The cases exercise translation, editing, recording, representation, prescription, executability, curation and formal reasoning. Also challenge every sketch with nonrepresentational abstract art, wordless music and a language developed by a community: meaningful content, signs and a discrete author cannot simply be assumed. For each case, name its primary destination, any genuine alternatives, and what change would preserve or destroy its identity.
 
-#### Familiar constitutive forms
+#### Identity and coverage tests
 
-**Recommendation:** begin with recognizable forms at the first level. Linguistic means organization through language; Visual means pictorial or spatial organization; Sonic means organized sound; Kinetic means organized movement; Computational means computational instructions or operations; Composite means an essential integration of distinct forms. Translation can preserve a linguistic work without preserving its exact wording. Being temporarily displayed or encoded in another medium does not change this classification.
+Test the principal categories against the shared examples above and these difficult cases: a recipe written as a poem; a sculpture intended for touch; audience-participation improvisation; a video game with unchanged rules but replaced story, imagery and sound; and a found object selected and presented as art. Distinguish the kind of a work from the identity of the particular work. For each case record primary destination, genuine alternate memberships, constituent works, identity-preserving changes and unresolved claims. Selection and presentation may help constitute a work without changing the selected physical object.
 
-```text
-Composition
-├── Linguistic composition
-│   ├── Prose composition
-│   ├── Verse composition
-│   └── Dialogue composition
-├── Visual composition
-│   ├── Pictorial composition
-│   ├── Diagrammatic composition
-│   └── Geometric design
-├── Sonic composition
-│   ├── Musical composition
-│   ├── Speech-sound composition
-│   └── Designed soundscape
-├── Kinetic composition
-│   ├── Movement sequence
-│   └── Spatial staging design
-├── Computational composition
-│   ├── Authored program
-│   └── Computational model
-└── Composite composition
-    ├── Audiovisual composition
-    ├── Integrated stage composition
-    └── Interactive multimedia composition
-```
-
-**Examples:** a novel or particular translation is linguistic; an authored map or logo is visual; a symphony is sonic; a dance is kinetic; a software release’s computational design is computational. An essentially integrated film can be composite. A source text considered as wording and the program it expresses require distinct identity accounts; a score and its music likewise are not interchangeable subjects.
-
-**Cost:** these branches use familiar but unevenly granular forms. Computational organization can also be linguistic; stage works can combine language, sound and movement. Composite is for essential integration, not a remainder for difficult cases. Tactile, olfactory and other created forms test coverage. Content preserved across very different forms, including normative terms and requirements, remains a substantive placement question.
-
-#### Symbolic and configurational organization
-
-**Alternative:** first distinguish organization through interpreted signs from organization through perceptible arrangements; place essential integrations beside them. Configurational does not imply absence of meaning, and Symbolic does not require a linguistic purpose.
-
-```text
-Composition
-├── Symbolic composition
-│   ├── Linguistic composition
-│   ├── Authored notation
-│   └── Computational composition
-├── Configurational composition
-│   ├── Visual arrangement
-│   ├── Sonic arrangement
-│   └── Movement arrangement
-└── Composite composition
-    ├── Symbolic-visual integration
-    ├── Symbolic-sonic integration
-    └── Symbolic-movement integration
-```
-
-**Examples:** a constitution’s wording, an edited score and source code follow the symbolic route; a nonrepresentational visual design, wordless music and choreography follow the configurational route. An integrated captioned image can combine both.
-
-**Cost:** a symbol also has a perceptible configuration; a diagram combines conventional signs and spatial organization; music can have notational or conventional symbolic features. A uniform rule for primary placement is therefore difficult. The extra level earns its place only if it explains the products’ constitutive identities, rather than duplicating two aspects present almost everywhere. This is not the rejected Content / Symbolic form pair: it contrasts kinds of organization, not meaning with its expression.
-
-#### Structural organization
-
-**Alternative:** classify by the arrangement or rule structure constitutive of the product, before selecting familiar forms. Relational structure here is an originated arrangement of links, not the Predicable category Relation. An authored rule system likewise differs from the origin-independent mathematical system it specifies.
-
-```text
-Composition
-├── Sequential composition
-│   ├── Verbal sequence
-│   ├── Sonic sequence
-│   └── Movement sequence
-├── Spatial composition
-│   ├── Pictorial arrangement
-│   ├── Geometric arrangement
-│   └── Spatial diagram
-├── Relational composition
-│   ├── Authored hierarchy
-│   ├── Authored network
-│   └── Curated relational catalogue
-├── Rule-structured composition
-│   ├── Authored grammar
-│   ├── Authored program
-│   └── Authored game rules
-└── Composite composition
-    ├── Spatiotemporal arrangement
-    └── Integrated structural design
-```
-
-**Examples:** a poem, melody and dance share sequential organization; a logo and map share spatial organization; a curated ontology or linked catalogue can have relational organization; an authored grammar, software design and game formulation can have rule structure.
-
-**Cost:** nearly every sequence also has rules and relations, and a diagram’s spatial and relational structures may both be essential. The split therefore risks broad overlap and unfamiliar paths to ordinary products. Merely having a sequence, spatial layout or rule is insufficient: that organization must help individuate the composition. This route is more uniform structurally, but less immediately intelligible than familiar forms.
-
-#### Choice and coverage tests
-
-Prefer the familiar-form sketch for the first draft because it offers recognizable kinds without adding a disputed intermediate division. This is a recommendation, not adoption. Select children only after stating their membership and identity criteria, showing primary homes for the shared examples, and recording genuine alternatives or unresolved cases. No diagram establishes exhaustiveness by layout; no residual branch repairs a missing identity account.
+Translation, paraphrase, notation changes and diagrammatic or demonstrated recipes test whether the subject is a Text, its expressed content or another composition. Formal patterns independent of originating history remain Formal entities. Passing layout or data checks cannot establish semantic coverage.
 
 ### Accepted decision: Region’s immediate children
 
