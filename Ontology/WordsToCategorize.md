@@ -1,6 +1,6 @@
 ## Other Word Lists
 
-Use these compact vocabularies as adversarial test sets for the ontology.
+Use these compact vocabularies as adversarial test sets for the ontology. Scenario-based [Composition stress tests](Ontology.md#composition-identity-form-and-medium) cover identity, medium changes, integrated works and performance boundaries; vocabulary ticks do not record those test outcomes.
 
 - **Basic English 850-word list** — [Complete list on Wiktionary](https://en.wiktionary.org/wiki/Appendix:Basic_English_word_list)
 - **Thing Explainer's ten-hundred words** — Randall Munroe's [xkcd word list](https://xkcd.com/simplewriter/words.js), with an [overview](https://www.explainxkcd.com/wiki/index.php/Thing_Explainer)
